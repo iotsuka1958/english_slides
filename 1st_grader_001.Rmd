@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = FALSE)
 <div style="display:inline-block;
   width:55%;vertical-align:top;">
 
-<img src="./apple.png" style="width: 95%" >
+<img src="./images/apple.png" style="width: 95%" >
 
  
 </div><div style="display: inline-block;
