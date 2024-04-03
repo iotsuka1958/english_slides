@@ -1,6 +1,6 @@
 ---
-title: "english_slide"
-author: "iotsuka"
+title: "Let's Study English Together"
+author: "Chiba Study Net"
 date: "`r Sys.Date()`"
 output:
   ioslides_presentation:
@@ -12,7 +12,20 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-<!-- Hello everyone. Welcome to the new English class. We are delighted to have you here. Let's enjoy studying English together for the next year. -->
+<!-- Hello everyone,
+Welcome to our online English learning class! I'm so happy to start learning together with all of you for the next year.
+Don't worry at all about learning English. We're going to have lots of fun, so there's no need to feel nervous.
+ -->
+
+
+## Enjoy
+
+- <span style="font-size:160%;">楽しく英語の勉強をしましょう
+<!-- We'll study English together, learn new things, and have a great time doing it. Remember, it's totally okay to make mistakes. That's how we learn and get better.
+Let's jump in with excitement and a positive attitude. I believe in each of you, and I'm here to help you every step of the way.
+Let's make this year awesome! -->
+
+
 
 ## Today's Key Phrase
 

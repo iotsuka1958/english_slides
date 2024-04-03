@@ -1,0 +1,33 @@
+---
+title: "Let's Study English Together"
+subtitle: "Alphabet"
+author: "Chiba Study Net"
+date: "`r Sys.Date()`"
+output:
+  ioslides_presentation:
+    css: ../my_font.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+<!-- Hello everyone. Welcome to the new English class. We are delighted to have you here. Let's enjoy studying English togetherr. -->
+
+# Let's learn the alphabet
+
+<!-- Let's learn the alphabet today. -->
+
+## 
+
+<span style="font-size:280%;">A B C D E F G</span>
+
+<br>
+
+<span style="font-size:280%;">H I J K L M N O P </hspan>
+
+<br>
+
+<span style="font-size:280%;">Q R S T U V W X Y Z</span>
+
