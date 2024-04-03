@@ -13,11 +13,11 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-<!-- Hello everyone. Welcome to the new English class. We are delighted to have you here. Let's enjoy studying English togetherr. -->
+<!-- Hello everyone. Welcome to the English class. We are delighted to have you here. Let's enjoy studying English together.  みなさん、こんにちは。英語の授業にようこそ。みなさんが参加してくれて、うれしいです。さあ、いっしょに英語の勉強をしましょう -->
+ 
+# Let's learn the alphabet | Today's topic
 
-# Let's learn the alphabet
-
-<!-- Let's learn the alphabet today. -->
+<!--Today we are going to learn the alphabet.  Let's learn the alphabet together. きょうはアルファベットの学習をします。いっしょにアルファベットを学習しましょう -->
 
 ## 
 
@@ -30,4 +30,23 @@ knitr::opts_chunk$set(echo = FALSE)
 <br>
 
 <span style="font-size:280%;">Q R S T U V W X Y Z</span>
+
+<span style="font-size:144%;">26文字あります</span>
+
+<!--
+We're going to learn the pronunciation of the English alphabet now.
+I'll read it out for you. Please listen carefully.
+これから英語のアルファベットの発音を勉強します。わたしが声に出して読んでみます。注意して聞いてください。
+
+A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
+
+Once more. もう1回見本を示します。
+
+A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
+
+聞き取れましたか？
+このように英語のアルファベットは26文字あります。
+-->
+
+
 
