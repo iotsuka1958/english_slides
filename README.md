@@ -1,14 +1,16 @@
 # english_slides
 
+## default regeon をあまりか東海岸に
 ```
 Sys.setenv(AWS_DEFAULT_REGION="us-east-1")
 ```
 
+## Rmdから音声付きの動画を作成
 ```
 ari::ari_narrate(
-  script = "001_alphabet.Rmd",
-  slides = "001_alphabet.html",
-  output = "001_alphabet.mp4",
+  script = "1st_grader/001_alphabet.Rmd",
+  slides = "1st_grader/001_alphabet.html",
+  output = "1st_grader/001_alphabet.mp4",
   voice = "Joey",
   delay = 10,
   zoom = 2,
