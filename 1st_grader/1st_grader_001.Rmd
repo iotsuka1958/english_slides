@@ -41,21 +41,4 @@ Let's make this year awesome! -->
 
 <!-- Look at the picture. What is on the table? There is an apple on the table. I will repeat again. There is an apple on the table. Please listen carefully. There is an apple on the table. -->
 
-## Slide with Bullets
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Slide with R Output
-
-```{r cars, echo = TRUE}
-summary(cars)
-```
-
-## Slide with Plot
-
-```{r pressure}
-plot(pressure)
-```
 
