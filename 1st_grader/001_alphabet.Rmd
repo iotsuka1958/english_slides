@@ -13,13 +13,13 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-<!-- Hello everyone. Welcome to the English class. We are delighted to have you here. Let's enjoy studying English together.  みなさん、こんにちは。英語の授業にようこそ。みなさんが参加してくれて、うれしくおもっています。さあ、いっしょに英語の勉強をしましょう -->
+<!-- Hello everyone. Welcome to the English class. We are delighted to have you here. Let's enjoy studying English together.  -->
  
-# Let's learn the alphabet | Today's topic
+# Let's learn the alphabet | アルファベットの勉強をしましょう
 
-<!--Today we are going to learn the alphabet.  Let's learn the alphabet together. きょうはアルファベットの学習をします。いっしょにアルファベットを学習しましょう -->
+<!--Today we are going to learn the alphabet.  Let's learn the alphabet together.  -->
 
-## アルファベット（大文字）
+## アルファベット
 
 <span style="font-size:280%;">A B C D E F G H I J</span>
 
@@ -30,29 +30,25 @@ knitr::opts_chunk$set(echo = FALSE)
 <br>
 
 <span style="font-size:280%;"> U V W X Y Z</span>
-
-<span style="font-size:144%;">26文字あります</span>
+<span style="font-size:144%;">　これは大文字です</span>
 
 <!--
 We're going to learn the pronunciation of the English alphabet now.
 I'll read it out for you. Please listen carefully.
-これから英語のアルファベットの発音を勉強します。わたしが声に出して読んでみます。注意して聞いてください。
+
 
 A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
 
-Once more. もう1回見本を示します。
+Once more. 
 
 A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
-
-聞き取れましたか？
-このように英語のアルファベットは26文字あります。
 
 Please listen once more.
 
 A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
 -->
 
-## アルファベット（小文字）
+## アルファベット
 
 <span style="font-size:280%;">$a$ $b$ $c$ $d$ $e$ $f$ $g$  $h$ $i$ $j$  </span>
 
@@ -62,19 +58,22 @@ A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
 
 <br>
 
-<span style="font-size:280%;">  $u$ $v$ $w$ $x$ $y$ $z$ </hspan>
+<span style="font-size:280%;">  $u$ $v$ $w$ $x$ $y$ $z$ </span>
+<span style="font-size:144%;">　これは小文字です</span>
+
 <!--
-These are lowercase letters. Please look carefully. It is also important to be able to write uppercase and lowercase letters.
-いまお見せしているのは小文字です。注意して見てください。発音が重要なのはもちろんですが、大文字と小文字を書き分けられるようになることも重要です
+These are lowercase letters. Please listen carefully.
 -->
 
----
+## 発音を聞きましょう<span style="font-size:60%;">(左が大文字、右が小文字です)</span>
 
 <center>
-<span style="font-size:1800%;">Aa</span>
+<span style="font-size:1600%;">Aa</span>
 </center>
 
-<!--ひとつずつ見ていきましょう。Please listen carefully.  A. A. A -->
+
+
+<!--Please listen carefully.  A. A. A. A. A.  -->
 
 
 ---
@@ -84,7 +83,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">b</span>
 </center>
 
-<!--- The next alphabet is B. Please listen carefully.  B. B. B. -->
+<!--- The next alphabet is B. Please listen carefully.  B. B. B. B. B.-->
 
 ---
 
@@ -93,7 +92,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">c</span>
 </center>
 
-<!--- The next alphabet is C. Please listen carefully.  C. C. C. -->
+<!--- The next alphabet is C. Please listen carefully.  C. C. C. C. C.-->
 
 ---
 
@@ -102,7 +101,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">d</span>
 </center>
 
-<!--- The next alphabet is D. Please listen carefully.  D. D. D. -->
+<!--- The next alphabet is D. Please listen carefully.  D. D. D. D. D.-->
 
 ---
 
@@ -111,7 +110,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">e</span>
 </center>
 
-<!--- The next alphabet is E. Please listen carefully. E. E. E. -->
+<!--- The next alphabet is E. Please listen carefully. E. E. E. E. E. -->
 
 ---
 
@@ -120,7 +119,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">f</span>
 </center>
 
-<!--- The next alphabet is F. Please listen carefully.  F. F. F. -->
+<!--- The next alphabet is F. Please listen carefully.  F. F. F. F. F.-->
 
 ---
 
@@ -129,7 +128,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1200%;">$g$</span>
 </center>
 
-<!--- The next alphabet is G. Please listen carefully.  G. G. G. -->
+<!--- The next alphabet is G. Please listen carefully.  G. G. G. G. G. -->
 
 ---
 
@@ -138,7 +137,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">h</span>
 </center>
 
-<!--- The next alphabet is H. Please listen carefully.  H. H. H. -->
+<!--- The next alphabet is H. Please listen carefully.  H. H. H. H. H. -->
 
 ---
 
@@ -146,7 +145,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1800%;">I</span> <span style="font-size:1400%;">i</span>
 </center>
 
-<!--- The next alphabet is I. Please listen carefully. I. I. I. -->
+<!--- The next alphabet is I. Please listen carefully. I. I. I. I. I. -->
 
 ---
 
@@ -155,16 +154,16 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1400%;">j</span>
 </center>
 
-<!--- The next alphabet is J. Please listen carefully. J. J. J. -->
+<!--- The next alphabet is J. Please listen carefully. J. J. J. J. J.-->
 
 ---
 
 <center>
-<span style="font-size:1400%;">K</span>
+<span style="font-size:1600%;">K</span>
 <span style="font-size:1400%;">k</span>
 </center>
 
-<!--- The next alphabet is K. Please listen carefully.  K. K. K. -->
+<!--- The next alphabet is K. Please listen carefully.  K. K. K. K. K. -->
 
 ---
 
@@ -172,7 +171,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1500%;">L</span> <span style="font-size:1400%;">l</span>
 </center>
 
-<!--- The next alphabet is L. Please listen carefully. L. L. L. -->
+<!--- The next alphabet is L. Please listen carefully. L. L. L. L. L. -->
 
 ---
 
@@ -183,7 +182,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1200%;">m</span>
 </center>
 
-<!--- The next alphabet is M. Please listen carefully.  M. M  M  -->
+<!--- The next alphabet is M. Please listen carefully.  M. M  M  M. M. -->
 
 ---
 
@@ -192,7 +191,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">n</span>
 </center>
 
-<!--- The next alphabet isNE. Please listen carefully. N. N. N. -->
+<!--- The next alphabet isNE. Please listen carefully. N. N. N. N. N. -->
 
 ---
 
@@ -201,7 +200,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">o</span>
 </center>
 
-<!--- The next alphabet is O. Please listen carefully.  O. O. O. -->
+<!--- The next alphabet is O. Please listen carefully.  O. O. O. O. ~.-->
 
 ---
 
@@ -210,7 +209,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1200%;">p</span>
 </center>
 
-<!--- The next alphabet is P. Please listen carefully. P. P. PE. -->
+<!--- The next alphabet is P. Please listen carefully. P. P. P. P. P. -->
 
 ---
 
@@ -219,7 +218,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1200%;">q</span>
 </center>
 
-<!--- The next alphabet is Q. Please listen carefully.  Q. Q. Q. -->
+<!--- The next alphabet is Q. Please listen carefully.  Q. Q. Q. Q. Q.-->
 
 ---
 
@@ -228,7 +227,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">r</span>
 </center>
 
-<!--- The next alphabet is R. Please listen carefully. R. R. R. -->
+<!--- The next alphabet is R. Please listen carefully. R. R. R. R. R.-->
 
 ---
 
@@ -237,7 +236,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">s</span>
 </center>
 
-<!--- The next alphabet is S. Please listen carefully.  S. S. S. -->
+<!--- The next alphabet is S. Please listen carefully.  S. S. S. S. S. -->
 
 ---
 
@@ -246,7 +245,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">t</span>
 </center>
 
-<!--- The next alphabet is T. Please listen carefully. T. T. T. -->
+<!--- The next alphabet is T. Please listen carefully. T. T. T. T. T.-->
 
 ---
 
@@ -255,7 +254,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">u</span>
 </center>
 
-<!--- The next alphabet is U. Please listen carefully.  U. U. U. -->
+<!--- The next alphabet is U. Please listen carefully.  U. U. U. U. U. -->
 
 ---
 
@@ -264,7 +263,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">v</span>
 </center>
 
-<!--- The next alphabet is V. Please listen carefully. V. V. V. -->
+<!--- The next alphabet is V. Please listen carefully. V. V. V. V. V. -->
 
 ---
 
@@ -273,8 +272,8 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1400%;">W</span>
 <span style="font-size:1200%;">w</span>
 </center>
-
-<!--- The next alphabet is W. Please listen carefully.  W. W. W. -->
+.
+<!--- The next alphabet is W. Please listen carefully.  W. W. W. W. W. -->
 
 ---
 
@@ -283,7 +282,7 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1600%;">x</span>
 </center>
 
-<!--- The next alphabet is X. Please listen carefully. X. X. X. -->
+<!--- The next alphabet is X. Please listen carefully. X. X. X. X. X. -->
 
 ---
 
@@ -292,16 +291,57 @@ These are lowercase letters. Please look carefully. It is also important to be a
 <span style="font-size:1200%;">y</span>
 </center>
 
-<!--- The next alphabet is Y. Please listen carefully.   Y. Y. Y.  -->
+<!--- The next alphabet is Y. Please listen carefully.   Y. Y. Y. Y. Y.  -->
 
----
+## 最後はZです
 
 <center>
 <span style="font-size:1600%;">Z</span>
 <span style="font-size:1400%;">z</span>
 </center>
 
-<!--- The last alphabet is . Please listen carefully.   Z. Z. Z.  -->
+<!--- The last alphabet is Z. Please listen carefully.   Z. Z. Z. Z. Z.  -->
+
+## もう一度 A から Z まで続けて発音します
+
+<span style="font-size:280%;">A B C D E F G H I J</span>
+
+<br>
+
+<span style="font-size:280%;">K L M N O P Q R S T</hspan>
+
+<br>
+
+<span style="font-size:280%;"> U V W X Y Z</span>
+<span style="font-size:144%;">　</span>
+
+<!-- Okay, I'll pronounce the alphabet from A to Z again. Please listen carefully. 
 
 
+A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
 
+Once more. 
+
+A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
+
+Please listen once more.
+
+A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
+-->
+
+## アルファベットの勉強をしました
+
+<span style="font-size:130%;"> - 身のまわりでアルファベットが使われているところはありますか</span>
+
+<span style="font-size:130%;"> - 聞き取れるようになったら、実際に何回も発音してみましょう</span>
+
+<span style="font-size:130%;"> -  大文字と小文字を区別できるようになりましょう</span>
+ 
+<span style="font-size:130%;">  - 大文字と小文字を書けるように練習しましょう</span>
+
+
+<!-- Today, we practiced the alphabet. How did it go? 
+・Where do you notice the alphabet being used around you?
+・Let's try pronouncing it ourselves.
+・let's practice distinguishing between uppercase and lowercase letters.
+- Let's learn to write uppercase and lowercase letters. -->
