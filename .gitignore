@@ -56,3 +56,10 @@ rsconnect/
 *.html
 *.pdf
 *.jpg
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.tex~
+*.toc
