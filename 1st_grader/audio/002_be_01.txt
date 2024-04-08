@@ -1,0 +1,16 @@
+<speak>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それぞれの英文を2回読みます。はじめはうまく聞き取れなくても心配する必要はありません。だんだん慣れてきます。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1.  I am a student.<break time="2s"/>I am a student.</p><break time="3s"/>
+<p>Number 2.  You are my friend.<break time="2s"/>You are my friend.</p><break time="3s"/>
+<p>Number 3.  He is tall. <break time="2s"/>He is tall.</p><break time="3s"/>
+<p>Number 4.  She is kind.<break time="2s"/>She is kind.</p><break time="3s"/>
+<p>Number 5.  The sky is blue.<break time="2s"/>The sky is blue.</p><break time="3s"/>
+<p>Number 6.  They are my classmates.<break time="2s"/>They are my classmates.</p><break time="3s"/>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  I am a student.<break time="5s"/>I am a student.</p><break time="3s"/>
+<p>Number 2.  You are my friend.<break time="5s"/>You are my friend.</p><break time="3s"/>
+<p>Number 3.  He is tall. <break time="5s"/>He is tall.</p><break time="3s"/>
+<p>Number 4.  She is kind.<break time="5s"/>She is kind.</p><break time="3s"/>
+<p>Number 5.  The sky is blue.<break time="5s"/>The sky is blue.</p><break time="3s"/>
+<p>Number 6.  They are my classmates.<break time="5s"/>They are my classmates.</p><break time="3s"/>
+</speak>
