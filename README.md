@@ -11,7 +11,7 @@ library(ari)
 ari::ari_narrate(
   script = "1st_grader/001_alphabet.Rmd",
   slides = "1st_grader/001_alphabet.html",
-  output = "1st_grader/001_alphabet.mp4",
+  output = "1st_grader/video/001_alphabet.mp4",
   voice = "Joey", #Salli
   delay = 10,
   zoom = 2,
