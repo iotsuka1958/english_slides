@@ -1,3 +1,4 @@
+「AはBだ」
 <speak>
 <p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それぞれの英文を2回読みます。はじめはうまく聞き取れなくても心配する必要はありません。だんだん慣れてきます。それでは、始めます。</lang>Please listen carefully.</p>
 <p>Number 1.  I am a student.<break time="2s"/>I am a student.</p><break time="3s"/>
@@ -14,3 +15,80 @@
 <p>Number 5.  The sky is blue.<break time="5s"/>The sky is blue.</p><break time="3s"/>
 <p>Number 6.  They are my classmates.<break time="5s"/>They are my classmates.</p><break time="3s"/>
 </speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+I am ...
+<speak>
+<speak>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1.  I am a student. <break time="2s"/>I am a student.<break time="3s"/></p>
+<p>Number 2.  I am tall. <break time="2s"/>I am tall.<break time="3s"/></p>
+<p>Number 3.  I am 13 years old.  <break time="2s"/>I am 13 years old.<break time="3s"/></p>
+<p>Number 4.  I am John. <break time="2s"/>I am John.<break time="3s"/></p>
+<p>Number 5.  I am happy. <break time="2s"/>I am happy.<break time="3s"/></p>
+<p>Number 6.  I am from Tokyo. <break time="2s"/>I am from Tokyo.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  I am a student. <break time="5s"/>I am a student.<break time="3s"/></p>
+<p>Number 2.  I am tall. <break time="5s"/>I am tall.<break time="3s"/></p>
+<p>Number 3.  I am 13 years old. <break time="5s"/>I am 13 years old.<break time="3s"/></p>
+<p>Number 4.  I am John. <break time="5s"/>I am John.<break time="3s"/></p>
+<p>Number 5.  I am happy. <break time="5s"/>I am happy.<break time="3s"/></p>
+<p>Number 6.  I am from Tokyo. <break time="5s"/>I am from Tokyo.<break time="3s"/></p>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+You are
+<speak>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1.  You are my friend.<break time="2s"/>You are my friend.<break time="3s"/></p>
+<p>Number 2.  You are very kind.<break time="2s"/>You are very kind.<break time="3s"/></p>
+<p>Number 3.  You are a good student. <break time="2s"/>You are a good student.<break time="3s"/></p>
+<p>Number 4.  You are good at baseball.<break time="2s"/>You are good at baseball.<break time="3s"/></p>
+<p>Number 5.  You are busy.<break time="2s"/>You are busy.<break time="3s"/></p>
+<p>Number 6.  You are from Chiba.<break time="2s"/>You are from Chiba.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  You are my friend.<break time="5s"/>You are my friend.<break time="3s"/></p>
+<p>Number 2.  You are very kind.<break time="5s"/>You are very kind.<break time="3s"/></p>
+<p>Number 3.  You are a good student. <break time="5s"/>You are a good student.<break time="3s"/></p>
+<p>Number 4.  You are good at baseball.<break time="5s"/>You are good at baseball.<break time="3s"/></p>
+<p>Number 5.  You are busy.<break time="5s"/>You are busy.<break time="3s"/></p>
+<p>Number 6.  You are from Chiba.<break time="5s"/>You are from Chiba.<break time="3s"/></p>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+I am, you are以外1
+<speak>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1.  This is my pencil.<break time="2s"/>This is my pencil.<break time="3s"/></p>
+<p>Number 2.  He is my classmate.<break time="2s"/>He is my classmate.<break time="3s"/></p>
+<p>Number 3.  She is a good singer. <break time="2s"/>She is a good singer.<break time="3s"/></p>
+<p>Number 4.  Your bike is new..<break time="2s"/>Your bike is new.<break time="3s"/></p>
+<p>Number 5.  George is  busy.<break time="2s"/>George is busy.<break time="3s"/></p>
+<p>Number 6.  Jane is from France.<break time="2s"/>Jane is from France.</p><break time="3s"/>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて   、実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  This is my pencil.<break time="5s"/>This is my pencil.<break time="3s"/></p>
+<p>Number 2.  He is my classmate.<break time="5s"/>He is my classmate.<break time="3s"/></p>
+<p>Number 3.  She is a good singer. <break time="5s"/>She is a good singer.<break time="3s"/></p>
+<p>Number 4.  Your bike is new.<break time="5s"/>Your bike is new.<break time="3s"/></p>
+<p>Number 5.  George is busy.<break time="5s"/>George is busy.<break time="3s"/></p>
+<p>Number 6.  Jane is from France.<break time="5s"/>Jane is from France.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p> 
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+I am, you are以外2
+<speak>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1.  These are my pencils.<break time="2s"/>These are  my pencils.<break time="3s"/></p>
+<p>Number 2.  They are my classmates.<break time="2s"/>They are my classmates.<break time="3s"/></p>
+<p>Number 3.  They are kind. <break time="2s"/>They are kind.<break time="3s"/></p>
+<p>Number 4.  The flowers are beautiful..<break time="2s"/>The flowers are beautiful.<break time="3s"/></p>
+<p>Number 5.  We are busy.<break time="2s"/>We are busy.<break time="3s"/></p>
+<p>Number 6.  Jane and George are from France.<break time="2s"/>Jane and George are from France.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  These are my pencils.<break time="5s"/>These are my pencils.><break time="3s"/></p>
+<p>Number 2.  They are my classmates.<break time="5s"/>They are my classmates.<break time="3s"/></p>
+<p>Number 3.  They are kind. <break time="5s"/>They are kind.<break time="3s"/></p>
+<p>Number 4.  The flowers are beautiful.<break time="5s"/>The flowers are beautiful.<break time="3s"/></p>
+<p>Number 5.  We are busy.<break time="5s"/>We are busy.<break time="3s"/></p>
+<p>Number 6.  Jane and George are from France.<break time="5s"/>Jane and George are from France.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p> 
+</speak>
+
+
