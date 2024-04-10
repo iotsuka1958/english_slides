@@ -2,7 +2,9 @@
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
-\usetheme{Madrid}
+\usetheme{metropolis}
+\usetheme{metropolis}
+\metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -51,10 +53,13 @@
 
 \bigskip
 
-\onslide<20->{\begin{exampleblock}{ポイント}
-  am, are, isはイコール($=$)の意味。まとめてbe動詞といいます
-     \end{exampleblock}
-}
+\begin{exampleblock}<20->{Topics for Today}
+\begin{itemize}
+ \item am, are, isはイコール($=$)の意味
+ \item まとめてbe動詞といいます
+\end{itemize}
+\end{exampleblock}
+
 
 % Embed the sound file
 \onslide<27>{%
@@ -63,7 +68,7 @@
 }
 \end{frame}
 
-\begin{frame}[plain]\frametitle{am, are, is --- みんな、なかまです $\longrightarrow be動詞といいます$}
+\begin{frame}[plain]\frametitle{am, are, is --- みんな、なかまですu $\longrightarrow$ be動詞といいます}
  \centering
 \begin{tikzpicture}
 % 補助グリッドを描画
@@ -82,7 +87,7 @@
 \end{frame}
 
 \begin{frame}[plain]{be動詞、どれ使う？}
- \centering\Huge
+ \centering\Large
 
 be動詞$\left\{\begin{tabular}[c]{l}
        am\\are\\is\end{tabular}\right\}$の使い分けを学習しよう
@@ -92,20 +97,22 @@ be動詞$\left\{\begin{tabular}[c]{l}
 \begin{frame}<1-20>[plain]\frametitle{I am 〜.}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \textbf{\color{red}{I am}} a student. \onslide*<2>{わたしは生徒です。}\onslide*<15-20>{\footnotesize (student: 生徒、学生)}
-   \item<3-> \textbf{\color{red}{I am}} tall. \onslide*<4>{わたしは背が高い。}\onslide*<16-20>{\footnotesize (tall: 背が高い)}
-   \item<5-> \textbf{\color{red}{I am}} 13 years old. \onslide*<6>{わたしは13歳です。}\onslide*<17-20>{\footnotesize (〜 years old: 〜歳だ)　〜には数字がはいります}
+   \item<1-> \textbf{\color{red}{I am}} a student. \onslide*<2>{わたしは生徒です。}\onslide*<15-20>{\footnotesize 　student: 生徒、学生}
+   \item<3-> \textbf{\color{red}{I am}} tall. \onslide*<4>{わたしは背が高い。}\onslide*<16-20>{\footnotesize 　tall: 背が高い}
+   \item<5-> \textbf{\color{red}{I am}} 13 years old. \onslide*<6>{わたしは13歳です。}\onslide*<17-20>{\footnotesize 　〜 years old: 〜歳だ　〜には数字がはいります}
    \item<7-> \textbf{\color{red}{I am}} John. \onslide*<8>{わたしはジョンです。}
-   \item<9-> \textbf{\color{red}{I am}} happy. \onslide*<10>{わたしは幸せです。}\onslide*<18-20>{\footnotesize (happy: 幸せだ)}
-   \item<11-> \textbf{\color{red}{I am}} from Tokyo. \onslide*<12>{わたしは東京の出身です。}\onslide*<19>{\footnotesize (from 〜: 〜の出身だ)}
+   \item<9-> \textbf{\color{red}{I am}} happy. \onslide*<10>{わたしは幸せです。}\onslide*<18-20>{\footnotesize 　happy: 幸せだ}
+   \item<11-> \textbf{\color{red}{I am}} from Tokyo. \onslide*<12>{わたしは東京の出身です。}\onslide*<19>{\footnotesize 　from 〜: 〜の出身だ}
   \end{enumerate}
 
 \bigskip
 
-\onslide<14->{\begin{exampleblock}{ポイント}
-  amはbe動詞。I am 〜.をひとつのパターンとして覚えよう
+\begin{exampleblock}<14->{Tpics for Today}
+\begin{itemize}
+ \item   amはbe動詞
+ \item I am 〜.をひとつのパターンとして覚えよう
+\end{itemize}
      \end{exampleblock}
-}
 
 % Embed the sound file
 \onslide<20>{%
@@ -119,20 +126,22 @@ be動詞$\left\{\begin{tabular}[c]{l}
 \begin{frame}<1-21>[plain]\frametitle{You are 〜.}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \textbf{\color{red}{You are}} my friend. \onslide*<2>{あなたはわたしのともだちです。}\onslide*<15-20>{\footnotesize (friend: ともだち、友人)}
-   \item<3-> \textbf{\color{red}{You are}} very kind. \onslide*<4>{あなたはとても親切だ。}\onslide*<16-20>{\footnotesize (kind: 親切だ)}
-   \item<5-> \textbf{\color{red}{You are}} a good student. \onslide*<6>{あなたはいい生徒です。}\onslide*<17-20>{\footnotesize (student: 生徒)}
-   \item<7-> \textbf{\color{red}{You are}} good at baseball. \onslide*<8>{あなたは野球がうまい。}\onslide*<18-20>{\footnotesize (good at 〜: 〜がうまい、得意だ)}
-   \item<9-> \textbf{\color{red}{You are}} busy. \onslide*<10>{あなたは忙しい。}\onslide*<19-20>{\footnotesize (happy: 幸せだ)}
-   \item<11-> \textbf{\color{red}{You are}} from Chiba. \onslide*<12>{あなたは千葉の出身です。}\onslide*<20>{\footnotesize (from 〜: 〜の出身だ)}
+   \item<1-> \textbf{\color{red}{You are}} my friend. \onslide*<2>{あなたはわたしのともだちです。}\onslide*<15-20>{\footnotesize 　friend: ともだち、友人}
+   \item<3-> \textbf{\color{red}{You are}} very kind. \onslide*<4>{あなたはとても親切だ。}\onslide*<16-20>{\footnotesize 　kind: 親切だ}
+   \item<5-> \textbf{\color{red}{You are}} a good student. \onslide*<6>{あなたはいい生徒です。}\onslide*<17-20>{\footnotesize 　student: 生徒}
+   \item<7-> \textbf{\color{red}{You are}} good at baseball. \onslide*<8>{あなたは野球がうまい。}\onslide*<18-20>{\footnotesize 　good at 〜: 〜がうまい、得意だ}
+   \item<9-> \textbf{\color{red}{You are}} busy. \onslide*<10>{あなたは忙しい。}\onslide*<19-20>{\footnotesize 　happy: 幸せだ}
+   \item<11-> \textbf{\color{red}{You are}} from Chiba. \onslide*<12>{あなたは千葉の出身です。}\onslide*<20>{\footnotesize 　from 〜: 〜の出身だ}
   \end{enumerate}
 
 \bigskip
 
-\onslide<14->{\begin{exampleblock}{ポイント}
-  areはbe動詞。You are 〜.をひとつのパターンとして覚えよう
+\begin{exampleblock}<14->{Topics for Today}
+\begin{itemize}
+ \item areはbe動詞
+ \item You are 〜.をひとつのパターンとして覚えよう
+\end{itemize}
      \end{exampleblock}
-}
 
 % Embed the sound file
 \onslide<21>{%
@@ -146,20 +155,22 @@ be動詞$\left\{\begin{tabular}[c]{l}
 \begin{frame}<1-21>[plain]\frametitle{I am, You are以外の場合(1)}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> This \textbf{\color{red}{is}} my pencil. \onslide*<2>{これはわたしの鉛筆です。}\onslide*<15-20>{\footnotesize (this: これ　pencil: 鉛筆)}
-   \item<3-> He \textbf{\color{red}{is}} my classmate. \onslide*<4>{彼はわたしのクラスメートです。}\onslide*<16-20>{\footnotesize (classmate: クラスメート、級友)}
-   \item<5-> She \textbf{\color{red}{is}} a good singer. \onslide*<6>{彼女は歌がうまい。}\onslide*<17-20>{\footnotesize (singer: 歌い手、歌手)}
-   \item<7-> Your bike \textbf{\color{red}{is}} new. \onslide*<8>{あなたの自転車は新しい。}\onslide*<18-20>{\footnotesize (bike: 自転車　new: 新しい)}
-   \item<9-> George \textbf{\color{red}{is}} busy. \onslide*<10>{ジョージは忙しい。}\onslide*<19-20>{\footnotesize (busy: 忙しい)}
-   \item<11-> Jane \textbf{\color{red}{is}} from France. \onslide*<12>{ジェーンはフランスの出身です。}\onslide*<20>{\footnotesize (from 〜: 〜の出身だ　France: フランス)}
+   \item<1-> This \textbf{\color{red}{is}} my pencil. \onslide*<2>{これはわたしの鉛筆です。}\onslide*<15-20>{\footnotesize this: これ　pencil: 鉛筆}
+   \item<3-> He \textbf{\color{red}{is}} my classmate. \onslide*<4>{彼はわたしのクラスメートです。}\onslide*<16-20>{\footnotesize 　　classmate: クラスメート、級友}
+   \item<5-> She \textbf{\color{red}{is}} a good singer. \onslide*<6>{彼女は歌がうまい。}\onslide*<17-20>{\footnotesize 　singer: 歌い手、歌手}
+   \item<7-> Your bike \textbf{\color{red}{is}} new. \onslide*<8>{あなたの自転車は新しい。}\onslide*<18-20>{\footnotesize 　bike: 自転車　new: 新しい}
+   \item<9-> George \textbf{\color{red}{is}} busy. \onslide*<10>{ジョージは忙しい。}\onslide*<19-20>{\footnotesize 　busy: 忙しい}
+   \item<11-> Jane \textbf{\color{red}{is}} from France. \onslide*<12>{ジェーンはフランスの出身です。}\onslide*<20>{\footnotesize 　from 〜: 〜の出身だ　France: フランス}
   \end{enumerate}
 
 \bigskip
 
-\onslide<14->{\begin{exampleblock}{ポイント}
-  I, You 以外で1つ(This, That, The book \ldots{})、1人(He, She, George, Jane \ldots{})で始まるときはisを使います
+\begin{exampleblock}<14->{Topics for Today}
+\begin{itemize}
+ \item I, You 以外で1つ(This, That, The book \ldots{})、1人(He, She, George, Jane \ldots{})で始まるときはisを使います
+\end{itemize}  
      \end{exampleblock}
-}
+
 
 % Embed the sound file
 \onslide<21>{%
@@ -174,20 +185,22 @@ be動詞$\left\{\begin{tabular}[c]{l}
 \begin{frame}<1-21>[plain]\frametitle{I am, You are以外の場合(2)}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> These \textbf{\color{red}{are}} my pencils. \onslide*<2>{これらはわたしの鉛筆です。}\onslide*<15-20>{\footnotesize (these: これら　pencil: 鉛筆)}
-   \item<3-> They \textbf{\color{red}{are}} my classmates. \onslide*<4>{彼らはわたしのクラスメートです。}\onslide*<16-20>{\footnotesize (they: 彼ら　classmate: クラスメート、級友)}
-   \item<5-> They \textbf{\color{red}{are}} kind. \onslide*<6>{彼らは親切だ。}\onslide*<17-20>{\footnotesize (kind: 親切な)}
-   \item<7-> The flowers \textbf{\color{red}{are}} beautiful. \onslide*<8>{その花は美しい。}\onslide*<18-20>{\footnotesize (flower: 花　beautifuk: 美しい)}
-   \item<9-> We \textbf{\color{red}{are}} busy. \onslide*<10>{わたしたちは忙しい。}\onslide*<19-20>{\footnotesize (we: わたしたち　busy: 忙しい)}
-   \item<11-> Jane and George \textbf{\color{red}{are}} from France. \onslide*<12>{ジェーンとジョージはフランスの出身です。}\onslide*<20>{\footnotesize (from 〜: 〜の出身だ　France: フランス)}
+   \item<1-> These \textbf{\color{red}{are}} my pencils. \onslide*<2>{これらはわたしの鉛筆です。}\onslide*<15-20>{\footnotesize 　these: これら　pencil: 鉛筆}
+   \item<3-> They \textbf{\color{red}{are}} my classmates. \onslide*<4>{彼らはわたしのクラスメートです。}\onslide*<16-20>{\footnotesize 　they: 彼ら　classmate: クラスメート、級友}
+   \item<5-> They \textbf{\color{red}{are}} kind. \onslide*<6>{彼らは親切だ。}\onslide*<17-20>{\footnotesize 　kind: 親切な}
+   \item<7-> The flowers \textbf{\color{red}{are}} beautiful. \onslide*<8>{その花は美しい。}\onslide*<18-20>{\footnotesize 　flower: 花　beautifuk: 美しい}
+   \item<9-> We \textbf{\color{red}{are}} busy. \onslide*<10>{わたしたちは忙しい。}\onslide*<19-20>{\footnotesize 　we: わたしたち　busy: 忙しい}
+   \item<11-> Jane and George \textbf{\color{red}{are}} from France. \onslide*<12>{ジェーンとジョージはフランスの出身です。}\onslide*<20>{\footnotesize 　from 〜: 〜の出身だ　France: フランス}
   \end{enumerate}
 
 \bigskip
 
-\onslide<14->{\begin{exampleblock}{ポイント}
-  I, You 以外で複数(2つ以上)のモノや人で始まるときはareを使います
+\begin{exampleblock}<14->{Topics for Today}
+\begin{itemize}
+ \item   I, You 以外で複数(2つ以上)のモノや人で始まるときはareを使います
+\end{itemize}
      \end{exampleblock}
-}
+
 % Embed the sound file
 \onslide<21>{%
 \myaudio{audio/002_be_05.mp3}\,\,{}Listen carefully.(注意して聞いてください)
@@ -195,17 +208,19 @@ be動詞$\left\{\begin{tabular}[c]{l}
 \end{frame}
 
 \begin{frame}[plain]{まとめ}
- 
 
+\begin{block}{be動詞の使い分け}
 
-{\LARGE
-\begin{numcases}{\text{be動詞の使い分け}}
- \text{Iではじまる}&\text{am}\\
- \text{Youではじまる}&\text{are}\\
- \text{1つ、1人}&\text{is}\\
- \text{2つ、2人以上}&\text{are}
+{\Large
+\begin{numcases}{\text{　}}
+ \text{\mbox{}\,\,{}Iではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{am}\\
+ \text{\mbox{}\,\,{}Youではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}\\
+ \text{\mbox{}\,\,{}1つ、1人}&$\longrightarrow$\,\,\,\,\,\,{}\text{is}\\
+ \text{\mbox{}\,\,{}2つ、2人以上}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}
 \end{numcases}
 }
+\end{block}
+
 
 \end{frame}
 

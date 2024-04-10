@@ -64,3 +64,5 @@ rsconnect/
 *.tex~
 *.toc
 *.txt~
+*synctex.gz
+

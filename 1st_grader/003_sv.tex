@@ -1,0 +1,105 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}---be動詞を学びます---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{目次}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{主語と動詞}
+\begin{frame}<1-34>[plain]\frametitle{Aは〜する.}
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item<1-> \textbf<14>{\color<14>{red}{I}} \textbf<15>{\color<15>{blue}{like}} music. \onslide*<2>{わたしは音楽が好きです。}\onslide*<28>{\footnotesize (like: 好き、好む　music: 音楽)}
+   \item<3-> \textbf<16>{\color<16>{red}{We}} \textbf<17>{\color<17>{blue}{go}} to school by bus. \onslide*<4>{われわれはバスで通学します。}\onslide*<29>{\footnotesize (by bus: バスで}
+   \item<5-> \textbf<18>{\color<18>{red}{They}} \textbf<19>{\color<19>{blue}{speak}} English and Japanese. \onslide*<6>{彼らは英語と日本語を話す。}\onslide*<30>{\footnotesize (speak: 話す)}
+   \item<7-> \textbf<20>{\color<20>{red}{I}} \textbf<21>{\color<21>{blue}{drink}} coffee every morning. \onslide*<8>{わたしは毎朝コーヒーを飲みます。}\onslide*<31>{(drink: 飲む　coffee: コーヒー　every morning: 毎朝)}
+   \item<9-> \textbf<22>{\color<22>{red}{They}} \textbf<23>{\color<23>{blue}{study}} at the library. \onslide*<10>{彼らは図書館で勉強します。}\onslide*<32>{\footnotesize (study: 勉強する　at the library: 図書館で)}
+   \item<11-> \textbf<24>{\color<24>{red}{We}} \textbf<25>{\color<25>{blue}{eat}} bread for breakfast. \onslide*<12>{われわれは朝食にパンを食べる。}\onslide*<33>{\footnotesize (eat: 食べる　bread: パン　for breakfast: 朝食に)}
+  \end{enumerate}
+
+\bigskip
+
+\begin{exampleblock}<27->{Topics for Today}
+  英文の骨格は主語と動詞です
+     \end{exampleblock}
+
+
+% Embed the sound file
+\onslide<34>{%
+\myaudio{./audio/002_be_02.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+}
+
+\end{frame}
+
+\section{主語と動詞の順番}
+\begin{frame}[plain]\frametitle{Aは〜する.}
+ % \setbeamercovered{transparent}
+
+\begin{columns}
+\begin{column}{.45\textwidth}
+\begin{block}{日本語}
+わたしは日本語を話します。\pause
+
+日本語をわたしは話します。\pause
+
+わたしは話します、日本語を。\pause
+
+日本語を話します。
+\end{block}
+\end{column}
+\pause
+\begin{column}{.45\textwidth}
+\begin{block}{英語}
+I speak Japanese.
+\end{block}
+\end{column}
+\end{columns}
+
+
+\bigskip
+\pause
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item   英文の骨格は主語と動詞です
+ \item   英語は語順がだいじです
+\end{itemize}
+     \end{exampleblock}
+\end{frame}
+
+
+
+\end{document}
+
