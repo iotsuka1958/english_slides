@@ -19,7 +19,21 @@
 %% 音声リンク表示
 \newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{English is fun.\,\,{}---be動詞を学びます---}
+%% \myEmph コマンドの定義
+%% オプション引数を利用するためにxparseパッケージを使用
+%% \myEmph[表示スライドの指定]{色}{文字}列}
+\usepackage{xparse}
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    % オプション引数が空の場合（{}）、デフォルトのnを使う
+    \IfNoValueTF{#1}{%
+        \textbf{\color{#2}{#3}}%
+    }{%
+        % オプション引数が与えられた場合、\textbf<n>{}を使う
+        \textbf{#1{\color{#2}{#3}}}%
+    }%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}---主語と動詞---}
 \author{}
 \institute[]{}
 \date[]
