@@ -90,5 +90,26 @@ I am, you are以外2
 <p>Number 6.  Jane and George are from France.<break time="5s"/>Jane and George are from France.<break time="3s"/></p>
 <p>Good job, everyone! That's all for our pronunciation practice.</p> 
 </speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+2. 
+3. 
+4. 
+5. 
+6. 
+<p>Number 1. I like music.<break time="2s"/>I like music.<break time="3s"/></p>
+<p>Number 2. We go to school by bus. <break time="2s"/>We go to school by bus.<break time="3s"/></p>
+<p>Number 3.  They speak English and Japanese. <break time="2s"/>They speak English and Japanese.<break time="3s"/></p>
+<p>Number 4. I drink coffee every morning.<break time="2s"/>I drink coffee every morning.<break time="3s"/></p>
+<p>Number 5.  They study at the library.<break time="2s"/>They study at the library.<break time="3s"/></p>
+<p>Number 6.  We eat bread for breakfast.<break time="2s"/>We eat bread for breakfast.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  These are my pencils.<break time="5s"/>These are my pencils.><break time="3s"/></p>
+<p>Number 2.  They are my classmates.<break time="5s"/>They are my classmates.<break time="3s"/></p>
+<p>Number 3.  They are kind. <break time="5s"/>They are kind.<break time="3s"/></p>
+The flowers are beautiful.<break time="5s"/>The flowers are beautiful.<break time="3s"/></p>
+<p>Number 5.  They study at the library.<break time="5s"/>They study at the library.<break time="3s"/></p>
+<p>Number 6.  We eat bread for breakfast.<break time="5s"/>We eat bread for breakfast.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p> 
+</speak>
 
