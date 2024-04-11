@@ -12,6 +12,7 @@
 \usepackage{fontawesome}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
+\usepackage{xcolor}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -19,18 +20,9 @@
 %% 音声リンク表示
 \newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% \myEmph コマンドの定義
-%% オプション引数を利用するためにxparseパッケージを使用
-%% \myEmph[表示スライドの指定]{色}{文字}列}
-\usepackage{xparse}
-\NewDocumentCommand{\myEmph}{O{} m m}{%
-    % オプション引数が空の場合（{}）、デフォルトのnを使う
-    \IfNoValueTF{#1}{%
-        \textbf{\color{#2}{#3}}%
-    }{%
-        % オプション引数が与えられた場合、\textbf<n>{}を使う
-        \textbf{#1{\color{#2}{#3}}}%
-    }%
+% \myEmph コマンドの定義
+\newcommand{\myEmph}[3]{%
+    \textbf<#1>{\color<#1>{#2}{#3}}%
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.\,\,{}---主語と動詞---}
@@ -113,6 +105,16 @@ I speak Japanese.
      \end{exampleblock}
 \end{frame}
 
+\begin{frame}[plain]\frametitle{hoge}
+ % \myEmph コマンドの定義
 
+
+hoge
+
+\textbf<1->{\color<2>{red}{oyoyo}} 
+\textbf<2>{\color<2>{red}{oyoyo}}
+\myEmph{1-2}{blue}{foobar}
+
+\end{frame}
 
 \end{document}

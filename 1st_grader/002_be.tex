@@ -5,6 +5,7 @@
 \usetheme{metropolis}
 \usetheme{metropolis}
 \metroset{block=fill}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{navigation symbols}{}
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -68,21 +69,21 @@
 }
 \end{frame}
 
-\begin{frame}[plain]\frametitle{am, are, is --- みんな、なかまですu $\longrightarrow$ be動詞といいます}
+\begin{frame}[plain]\frametitle{am, are, is --- みんな、なかまです}
  \centering
 \begin{tikzpicture}
 % 補助グリッドを描画
 %\draw[step=1cm, gray!20, very thin] (-6,-2) grid (6,6);
 % ノードの定義と配置
-\node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be動詞};
-5\node[circle, draw=black, fill=pink!30,minimum size=15mm, line width=1pt] (B) at (-5,0) {\LARGE am};
-\node[circle, draw=black, fill=blue!30, minimum size=15mm, line width=1pt] (C) at (0,5) {\LARGE are};
-\node[circle, draw=black, fill=green!30, minimum size=15mm, line width=1pt] (D) at (5,0) {\LARGE is};
 
+5\node[circle, draw=black, fill=pink!30,minimum size=15mm, line width=1pt] (B) at (-5,0) {\LARGE am};\pause
+\node[circle, draw=black, fill=blue!30, minimum size=15mm, line width=1pt] (C) at (0,5) {\LARGE are};\pause
+\node[circle, draw=black, fill=green!30, minimum size=15mm, line width=1pt] (D) at (5,0) {\LARGE is};\pause
+\node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be動詞};\pause
 % ノード間の線の描画
-\draw[-latex, line width=1.5pt] (A) -- node[above] {hoge} (B);
-\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {oyoyo} node[sloped, below] {tohoho} (C);
-\draw[-latex, line width=1.5pt] (A) -- node[above] {piyopiyo} (D);
+\draw[-latex, line width=1.5pt] (A) -- node[above] {} (B);\pause
+\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {} node[sloped, below] {} (C);\pause
+\draw[-latex, line width=1.5pt] (A) -- node[above] {} (D);
 \end{tikzpicture}
 \end{frame}
 
@@ -207,7 +208,8 @@ be動詞$\left\{\begin{tabular}[c]{l}
 }
 \end{frame}
 
-\begin{frame}[plain]{まとめ}
+\section{まとめ}
+\begin{frame}[plain]\frametitle{まとめ}
 
 \begin{block}{be動詞の使い分け}
 
@@ -220,10 +222,24 @@ be動詞$\left\{\begin{tabular}[c]{l}
 \end{numcases}
 }
 \end{block}
-
-
 \end{frame}
 
+\begin{frame}[plain]\frametitle{まとめ}
+ \centering
+\begin{tikzpicture}
+% 補助グリッドを描画
+%\draw[step=1cm, gray!20, very thin] (-6,-2) grid (6,6);
+% ノードの定義と配置
+\node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be動詞};\pause
+5\node[circle, draw=black, fill=pink!30,minimum size=15mm, line width=1pt] (B) at (-6,0) {\LARGE am};\pause
+\node[circle, draw=black, fill=blue!30, minimum size=15mm, line width=1pt] (C) at (0,5) {\LARGE are};\pause
+\node[circle, draw=black, fill=green!30, minimum size=15mm, line width=1pt] (D) at (6,0) {\LARGE is};\pause
 
+% ノード間の線の描画
+\draw[-latex, line width=1.5pt] (A) -- node[above] {Iのとき} (B);\pause
+\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {Youのとき}  node[sloped, below] {複数形なら} (C);\pause
+\draw[-latex, line width=1.5pt] (A) -- node[above] {単数形なら} node[below] {} (D);
+\end{tikzpicture}
+\end{frame}
 
 \end{document}
