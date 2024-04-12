@@ -12,6 +12,7 @@
 \usepackage{fontawesome}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
+\usetikzlibrary{backgrounds}
 \usepackage{xcolor}
 \usepackage{amsmath}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -48,14 +49,14 @@
   \titlepage
 \end{frame}
 
-\section*{目次}
+\section*{授業の流れ}
 \begin{frame}[plain]
   \frametitle{授業の流れ}
   \tableofcontents
 \end{frame}
 
 \section{一般動詞}
-\begin{frame}<1-36>[plain]\frametitle{一般動詞って？}
+\begin{frame}<1-36>[plain,label=example]\frametitle{一般動詞って？}
  % \setbeamercovered{transparent}
   \begin{enumerate}
    \item<1-> \myEmph[14]{red}{I} \myEmph[15,27,28]{blue}{like} basketball. \onslide*<2>{わたしはバスケットボールが好きです。}\onslide*<30>{\footnotesize 　like: 好き、好む　basketball: バスケットボール}
@@ -122,14 +123,93 @@ eat（食べる）& drink（飲む）\pause\\
 
 \bigskip
 \pause
+\hyperlink{example}{\beamerreturnbutton{pronunciation}}
 \begin{exampleblock}{Topics for Today}
 \begin{itemize}[<+- |alert@+>]
  \item  be動詞以外を一般動詞といいます
- \item 一般動詞はたくさんあります
- \item 一般動詞の意味はいろいろです
+ \item 一般動詞はたくさんあります。意味はいろいろです
 \end{itemize}
      \end{exampleblock}
 
 \end{frame}
 
+
+\begin{frame}[plain]\frametitle{be動詞と一般動詞}
+\begin{tikzpicture}
+
+% グリッドを描画（5mm刻み）
+%\draw[step=1cm, gray!20, very thin] (-6,0) grid (6,5);
+
+\node[rectangle, rounded corners, draw=black, fill=white] (verb) at (-3,5) {動詞};
+
+
+
+% 左側のノード（be動詞）
+\node[circle, draw=black, line width=1pt, fill=yellow!30, minimum size=2cm] (be) at (-2.5,2.5) {be動詞{\footnotesize ($=$)}};
+
+% 右側のノード（一般動詞）
+\node[rectangle, draw=black, line width=1pt, fill=pink!30, minimum width=4cm, minimum height=1.5cm, inner sep=20pt] (general) at (4,2.5) {一般動詞\,\,{}$\left\{\begin{array}{ll}
+\text{go}&\text{walk}\\
+\text{have}&\text{like}\\
+\text{speak}&\text{study}\\
+\text{eat}& \text{drink}\\
+\text{play}&\text{ほかにもたくさん}\\
+\end{array}\right.$};
+
+
+% 大きな長方形を描画して2つのノードを包む
+\begin{scope}[on background layer]
+\draw[draw=black!50, fill=blue!10, rounded corners, line width=1.5pt]
+    ([xshift=-25pt,yshift=50pt]be.north west) rectangle ([xshift=8pt,yshift=-12pt]general.south east);
+\end{scope}
+
+
+\end{tikzpicture}
+
+\end{frame}
+
+
+
+\section{わたし、あなた、それ以外}
+\begin{frame}[plain]\frametitle{人称}
+\begin{description}
+\item[１人称] 話し手（自分）のこと\pause{}\,\,{} $\longrightarrow$ Iとweだけ\pause
+\item[２人称] 聞き手（相手）のこと\pause{}\,\,{} $\longrightarrow$ youだけ\pause
+\item[３人称] １人称、２人称以外\pause{}\hspace{15pt} $\longrightarrow$ \begin{tabular}[t]{@{}l}
+he\\she\\it\\they\\the teacher\\this pencil\\the cats \end{tabular}
+\end{description}
+\end{frame}
+
+
+\section{Exercise}
+\begin{frame}<1-21>[plain]\frametitle{Exercises}
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item<1-> I am a student. \onslide*<2>{わたしは生徒です。}\onslide*<15-21>{\footnotesize 　a:１つの、1人の　student: 生徒、学生}
+   \item<3-> You play the guitar very well. \onslide*<4>{あなたはギターをとても上手にひく。}\onslide*<16-21>{\footnotesize 　guitar: ギター　very well: とてもじょうずに}
+  \item<5-> We drink coffee every morning. \onslide*<6>{われわれは毎朝コーヒーを飲みます。}\onslide*<17-21>{\footnotesize drink: 飲む　coffee: コーヒー　every morning: 毎朝}
+    \item<7-> They go to school by bus. \onslide*<8>{われわれはバスで通学します。}\onslide*<18-21>{\footnotesize 　by bus: バスで}
+   \item<9-> The sky is blue. \onslide*<10>{空は青い。}\onslide*<19-21>{\footnotesize 　the sky: 空　blue: 青い}
+   \item<11-> Birds sing in the morning. \onslide*<12>{鳥は朝鳴きます。}\onslide*<20-21>{\footnotesize 　bird: 鳥　sing: 歌う}
+  \end{enumerate}
+
+\bigskip
+
+\begin{exampleblock}<14->{Topics for Today}
+\begin{itemize}[<+->]
+ \item 1人称はIとweだけ
+ \item 2人称はyouだけ
+ \item それ以外はぜんぶ3人称です
+\end{itemize}
+\end{exampleblock}
+
+
+% Embed the sound file
+\onslide<21>{%
+\myaudio{audio/002_be_01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+
+}
+\end{frame}
+
 \end{document}
+!20
