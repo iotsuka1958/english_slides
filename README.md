@@ -35,3 +35,9 @@ ffmpeg -i video.mp4 -i video.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 output
 ```
 ffmpeg -i opening.mp4 -i opening.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 zzz.mp4
 ```
+
+amazon polly
+text-to-speech
+standared
+english,US
+Male,Joey

@@ -82,7 +82,7 @@ I am, you are以外2
 <p>Number 5.  We are busy.<break time="2s"/>We are busy.<break time="3s"/></p>
 <p>Number 6.  Jane and George are from France.<break time="2s"/>Jane and George are from France.<break time="3s"/></p>
 <p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
-<p>Number 1.  These are my pencils.<break time="5s"/>These are my pencils.><break time="3s"/></p>
+<p>Number 1.  These are my pencils.<break time="5s"/>These are my pencils.<break time="3s"/></p>
 <p>Number 2.  They are my classmates.<break time="5s"/>They are my classmates.<break time="3s"/></p>
 <p>Number 3.  They are kind. <break time="5s"/>They are kind.<break time="3s"/></p>
 <p>Number 4.  The flowers are beautiful.<break time="5s"/>The flowers are beautiful.<break time="3s"/></p>
@@ -91,12 +91,7 @@ I am, you are以外2
 <p>Good job, everyone! That's all for our pronunciation practice.</p> 
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-2. 
-3. 
-4. 
-5. 
-6. 
+SV
 <p>Number 1. I like music.<break time="2s"/>I like music.<break time="3s"/></p>
 <p>Number 2. We go to school by bus. <break time="2s"/>We go to school by bus.<break time="3s"/></p>
 <p>Number 3.  They speak English and Japanese. <break time="2s"/>They speak English and Japanese.<break time="3s"/></p>
@@ -104,12 +99,43 @@ I am, you are以外2
 <p>Number 5.  They study at the library.<break time="2s"/>They study at the library.<break time="3s"/></p>
 <p>Number 6.  We eat bread for breakfast.<break time="2s"/>We eat bread for breakfast.<break time="3s"/></p>
 <p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
-<p>Number 1.  These are my pencils.<break time="5s"/>These are my pencils.><break time="3s"/></p>
-<p>Number 2.  They are my classmates.<break time="5s"/>They are my classmates.<break time="3s"/></p>
-<p>Number 3.  They are kind. <break time="5s"/>They are kind.<break time="3s"/></p>
-The flowers are beautiful.<break time="5s"/>The flowers are beautiful.<break time="3s"/></p>
+<p>Number 1. I like music.<break time="5s"/>I like music.<break time="3s"/></p>
+<p>Number 2.  We go to school by bus. <break time="5s"/>We go to school by bus. <break time="3s"/></p>
+<p>Number 3.  They speak English and Japanese. <break time="5s"/>They speak English and Japanese.<break time="3s"/></p>
+<p>Number 4.  I drink coffee every morning.<break time="5s"/>I drink coffee every morning.<break time="3s"/></p>
 <p>Number 5.  They study at the library.<break time="5s"/>They study at the library.<break time="3s"/></p>
 <p>Number 6.  We eat bread for breakfast.<break time="5s"/>We eat bread for breakfast.<break time="3s"/></p>
 <p>Good job, everyone! That's all for our pronunciation practice.</p> 
 </speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+general_verb
+1. I like basketball.
+2. We walk to school.
+3. They speak English in Australia.
+4. I drink tea every morning.
+5. They study math every day.
+6. I play the guitar.
+<speak>
+<p>Hello everyone.  Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. I like basketball.<break time="2s"/>I like basketball.<break time="3s"/></p>
+<p>Number 2. We walk to school. <break time="2s"/>We walk to school.<break time="3s"/></p>
+<p>Number 3.  They speak English in Australia. <break time="2s"/>They speak English in Australia.<break time="3s"/></p>
+<p>Number 4. I drink tea every morning.<break time="2s"/>I drink tea every morning.<break time="3s"/></p>
+<p>Number 5.  They study math every day.<break time="2s"/>They study math every day.<break time="3s"/></p>
+<p>Number 6.  I play the guitar.<break time="2s"/>I play the guitar.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1. I like basketball.<break time="5s"/>I like basketball.<break time="3s"/></p>
+<p>Number 2.  We walk to school. <break time="5s"/>We walk to school. <break time="3s"/></p>
+<p>Number 3.  They speak English in Australia. <break time="5s"/>They speak English in Australia.<break time="3s"/></p>
+<p>Number 4.  I drink tea every morning.<break time="5s"/>I drink tea every morning.<break time="3s"/></p>
+<p>Number 5.  They study math every day.<break time="5s"/>They study math every day.<break time="3s"/></p>
+<p>Number 6.  I play the guitar.<break time="5s"/>I play the guitar.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p> 
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
 
