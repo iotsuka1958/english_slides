@@ -134,7 +134,31 @@ general_verb
 <p>Good job, everyone! That's all for our pronunciation practice.</p> 
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+人称exercises
+1. I am a student.
+2. You play the guitar very well.
+3. We drink coffee every morning.
+4. They go to school by bus.
+5. The sky is blue.
+6. Birds sing in the morning.
+<speak>
+<p>Hello everyone.  Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. I am a student.<break time="2s"/><break time="3s"/>I am a student.</p>
+<p>Number 2. You play the guitar very well. <break time="2s"/>You play the guitar very well.<break time="3s"/></p>
+<p>Number 3.  We drink coffee every morning. <break time="2s"/>We drink coffee every morning.<break time="3s"/></p>
+<p>Number 4. They go o school by bus.<break time="2s"/>They go to school by bus.<break time="3s"/></p>
+<p>Number 5.  The sky is blue.<break time="2s"/>The sky is blue.<break time="3s"/></p>
+<p>Number 6.  Birds sing in the morning.<break time="2s"/>Birds sing in the morning.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1. I like basketball.<break time="5s"/>I like basketball.<break time="3s"/></p>
+<p>Number 2.  We walk to school. <break time="5s"/>We walk to school. <break time="3s"/></p>
+<p>Number 3. We drink coffee every morning. <break time="5s"/>We drink coffee every morning..<break time="3s"/></p>
+<p>Number 4.  They go to school by bus.<break time="5s"/>They go to school by bus.<break time="3s"/></p>
+<p>Number 5.  The sky is blue.<break time="5s"/>The sky is blue.<break time="3s"/></p>
+<p>Number 6.  Birds sing in the morning.<break time="5s"/>Birds sing in the morning.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p> 
+</speak>
 
 
 

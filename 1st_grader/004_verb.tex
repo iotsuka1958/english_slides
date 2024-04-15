@@ -13,12 +13,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
 \usepackage{xcolor}
 \usepackage{amsmath}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 音声リンク表示
 \newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -55,30 +65,30 @@
   \tableofcontents
 \end{frame}
 
-\section{一般動詞}
-\begin{frame}<1-36>[plain,label=example]\frametitle{一般動詞って？}
+\section{一般動詞とは}
+\begin{frame}<1-37>[plain,label=example]\frametitle{一般動詞って？}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \myEmph[14]{red}{I} \myEmph[15,27,28]{blue}{like} basketball. \onslide*<2>{わたしはバスケットボールが好きです。}\onslide*<30>{\footnotesize 　like: 好き、好む　basketball: バスケットボール}
-   \item<3-> \myEmph[16]{red}{We} \myEmph[17,27,28]{blue}{walk} to school. \onslide*<4>{われわれは歩いて学校へ行きます。}\onslide*<31>{\footnotesize 　walk: 歩く}
-   \item<5-> \myEmph[18]{red}{They} \myEmph[19,27,28]{blue}{speak} English in Australia. \onslide*<6>{オースタラリアでは英語が話されています。}\onslide*<32>{\footnotesize 　speak: 話す　Australia:オーストラリア}
-   \item<7-> \myEmph[20]{red}{I} \myEmph[21,27,28]{blue}{drink} tea every morning. \onslide*<8>{わたしは毎朝お茶を飲みます。}\onslide*<33>{\footnotesize 　drink: 飲む　tea: お茶　every morning: 毎朝}
-   \item<9-> \myEmph[22]{red}{They} \myEmph[23,27,28]{blue}{study} math every day. \onslide*<10>{彼らは毎日数学を勉強します。}\onslide*<34>{\footnotesize study: 勉強する　math: 数学　every day: 毎日}
-   \item<11-> \myEmph[24]{red}{I} \myEmph[25,27,28]{blue}{play} the guitar. \onslide*<12>{わたしはギターをひきます。}\onslide*<35>{\footnotesize 　play: (楽器などを)演奏する　guitar: ギター}
+   \item<1-> \myEmph[14]{red}{I} \myEmph[15,27-29]{blue}{like} basketball. \onslide*<2>{わたしはバスケットボールが好きです。}\onslide*<31>{\footnotesize 　like: 好き、好む　basketball: バスケットボール}
+   \item<3-> \myEmph[16]{red}{We} \myEmph[17,27-29]{blue}{walk} to school. \onslide*<4>{われわれは歩いて学校へ行きます。}\onslide*<32>{\footnotesize 　walk: 歩く}
+   \item<5-> \myEmph[18]{red}{They} \myEmph[19,27-29]{blue}{speak} English in Australia. \onslide*<6>{オースタラリアでは英語が話されています。}\onslide*<33>{\footnotesize 　speak: 話す　Australia:オーストラリア}
+   \item<7-> \myEmph[20]{red}{I} \myEmph[21,27-29]{blue}{drink} tea every morning. \onslide*<8>{わたしは毎朝お茶を飲みます。}\onslide*<34>{\footnotesize 　drink: 飲む　tea: お茶　every morning: 毎朝}
+   \item<9-> \myEmph[22]{red}{They} \myEmph[23,27-29]{blue}{study} math every day. \onslide*<10>{彼らは毎日数学を勉強します。}\onslide*<35>{\footnotesize study: 勉強する　math: 数学　every day: 毎日}
+   \item<11-> \myEmph[24]{red}{I} \myEmph[25,27-29]{blue}{play} the guitar. \onslide*<12>{わたしはギターをひきます。}\onslide*<36>{\footnotesize 　play: (楽器などを)演奏する　guitar: ギター}
   \end{enumerate}
 
 \bigskip
 
 \begin{exampleblock}<28->{Topics for Today}
 \begin{itemize}
- \item<1->  be動詞以外を一般動詞といいます
- \item<2-> 一般動詞の意味はいろいろです
+ \item<1->  \myEmph[28]{orange}{be動詞以外を一般動詞といいます}
+ \item<2-> \myEmph[29]{orange}{一般動詞の意味はいろいろです}
 \end{itemize}
       \end{exampleblock}
 
 
 % Embed the sound file
-\onslide<36>{%
+\onslide<37>{%
 \myaudio{./audio/004_verb_01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
 }
 
@@ -169,8 +179,8 @@ eat（食べる）& drink（飲む）\pause\\
 \end{frame}
 
 
-
 \section{わたし、あなた、それ以外}
+\subsection{人称とは}
 \begin{frame}[plain]\frametitle{人称}
 \begin{description}
 \item[１人称] 話し手（自分）のこと\pause{}\,\,{} $\longrightarrow$ Iとweだけ\pause
@@ -180,36 +190,158 @@ he\\she\\it\\they\\the teacher\\this pencil\\the cats \end{tabular}
 \end{description}
 \end{frame}
 
-
-\section{Exercise}
-\begin{frame}<1-21>[plain]\frametitle{Exercises}
+\begin{frame}<1-29>[plain]\frametitle{Exercises}
+\onslide*<1->{つぎの文の主語は何人称ですか？}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> I am a student. \onslide*<2>{わたしは生徒です。}\onslide*<15-21>{\footnotesize 　a:１つの、1人の　student: 生徒、学生}
-   \item<3-> You play the guitar very well. \onslide*<4>{あなたはギターをとても上手にひく。}\onslide*<16-21>{\footnotesize 　guitar: ギター　very well: とてもじょうずに}
-  \item<5-> We drink coffee every morning. \onslide*<6>{われわれは毎朝コーヒーを飲みます。}\onslide*<17-21>{\footnotesize drink: 飲む　coffee: コーヒー　every morning: 毎朝}
-    \item<7-> They go to school by bus. \onslide*<8>{われわれはバスで通学します。}\onslide*<18-21>{\footnotesize 　by bus: バスで}
-   \item<9-> The sky is blue. \onslide*<10>{空は青い。}\onslide*<19-21>{\footnotesize 　the sky: 空　blue: 青い}
-   \item<11-> Birds sing in the morning. \onslide*<12>{鳥は朝鳴きます。}\onslide*<20-21>{\footnotesize 　bird: 鳥　sing: 歌う}
+   \item<1-> \myEmph[17]{red}{I} am a student. \onslide*<2>{わたしは生徒です。}\onslide*<23-28>{\footnotesize 　a:１つの、1人の　student: 生徒、学生}
+   \item<3-> \myEmph[18]{red}{You} play the guitar very well. \onslide*<4>{あなたはギターをとても上手にひく。}\onslide*<24-28>{\footnotesize 　guitar: ギター　very well: とてもじょうずに}
+  \item<5-> \myEmph[19]{red}{We} drink coffee every morning. \onslide*<6>{われわれは毎朝コーヒーを飲みます。}\onslide*<25-28>{\footnotesize drink: 飲む　coffee: コーヒー　every morning: 毎朝}
+    \item<7-> \myEmph[20]{red}{They} go to school by bus. \onslide*<8>{われわれはバスで通学します。}\onslide*<26-28>{\footnotesize 　by bus: バスで}
+   \item<9-> \myEmph[21]{red}{The} sky is blue. \onslide*<10>{空は青い。}\onslide*<27-28>{\footnotesize 　the sky: 空　blue: 青い}
+   \item<11-> \myEmph[22]{red}{Birds} sing in the morning. \onslide*<12>{鳥は朝鳴きます。}\onslide*<28>{\footnotesize 　bird: 鳥　sing: 歌う}
   \end{enumerate}
 
-\bigskip
 
 \begin{exampleblock}<14->{Topics for Today}
-\begin{itemize}[<+->]
- \item 1人称はIとweだけ
- \item 2人称はyouだけ
- \item それ以外はぜんぶ3人称です
+\begin{itemize}
+ \item<14-> \myEmph[14]{orange}{1人称はIとweだけ}
+ \item<15-> \myEmph[15]{orange}{2人称はyouだけ}
+ \item<16->  \myEmph[16]{orange}{それ以外はぜんぶ3人称です}
 \end{itemize}
 \end{exampleblock}
 
-
+\vspace*{-15pt}
 % Embed the sound file
-\onslide<21>{%
-\myaudio{audio/002_be_01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+\onslide<29>{%
+\myaudio{audio/004_verb_02.mp3}\,\,{}Listen carefully.(注意して聞いてください)
 
 }
 \end{frame}
 
+\section{動詞のかたち}
+\begin{frame}<1-20>[plain]\frametitle{主語によって動詞のかたちが定まる}
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item<1-> \myEmph[9,17]{red}{I} \myEmph[9,17]{blue}{like} music. \onslide*<2>{\footnotesize 　like: 好き、好む　music: 音楽}
+   \item<3-> \myEmph[10,17]{red}{We} \myEmph[10,17]{blue}{like} music.
+   \item<4-> \myEmph[11,17]{red}{You} \myEmph[11,17]{blue}{like} music.
+   \item<5-> \myEmph[12,18]{red}{He} \myEmph[12,18]{blue}{likes} music.
+   \item<6-> \myEmph[13,18]{red}{She} \myEmph[13,18]{blue}{likes} music.
+   \item<7-> \myEmph[14,18]{red}{Paul} \myEmph[14,18]{blue}{likes} music.
+   \item<8-> \myEmph[15,19]{red}{They} \myEmph[15,19]{blue}{like} music.
+  \end{enumerate}
+\begin{exampleblock}<17->{Topics for Today}
+\begin{itemize}
+ \item<1-> \myEmph[17]{orange}{主語が1人称、2人称のとき、動詞はそのまま}
+ \item<2-> \myEmph[18]{orange}{主語が3人称で単数のとき、---sとなります}\myEmph[19]{orange}{(複数ならそのままです)}
+\end{itemize}
+      \end{exampleblock}
+
+
+\end{frame}
+
+\section{3単現}
+\subsection{3単現のs}
+\begin{frame}<1-3>[plain]\frametitle{3単現のs}
+\Large
+
+\myEmph[2]{orange}{現在}を表す文では、
+主語が\myEmph[2]{orange}{3人称}で\myEmph[2]{orange}{単数}のとき\\動詞の最後に\myEmph[2]{orange}{--s}をつけます
+
+\pause
+
+\mbox{}\hfill$\longrightarrow{}$これを\myAnch{T1}{orange}{3単現の`s'}といいます\pause
+
+She play\myAnch{T2}{orange}{s} \,\,{}the guitar.
+
+% ノード間を結ぶ矢印を別のTikZ環境で描く
+\begin{tikzpicture}[remember picture,overlay]
+\draw[->,orange] (T1.south)to[out=-120,in=-30](T2.south);
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}<1-9>[plain]\frametitle{Exercises}
+つぎの空所に適当な動詞を選んで補って、現在のことを表す英文をつくってください。なお、必要があれば、形を変えてください
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item I (\onslide<2,8,9>{\textcolor{orange}{~have~}}) two cats.
+   \item We (\onslide<3,8,9>{\textcolor{orange}{~go~}}) to school by bus.
+   \item  She (\onslide<4,8,9>{\textcolor{orange}{~drinks~}}) coffee every morning.
+   \item Tom (\onslide<5,8,9>{\textcolor{orange}{~eats~}}) bread for breakfast.
+   \item Jennifer (\onslide<6,8,9>{\textcolor{orange}{~lives~}}) in Boston.
+   \item They (\onslide<7,8,9>{\textcolor{orange}{~speak~}}) English.
+  \end{enumerate}
+\end{column}
+\begin{column}{.45\textwidth}
+\begin{tcolorbox}[title=この中から選んでください]
+live, go, have, speak, drink, eat
+\end{tcolorbox}
+\end{column}
+\end{columns}
+
+% Embed the sound file
+\onslide<9>{%
+\myaudio{audio/004_verb_03.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+
+}
+\end{frame}
+
+\subsection{s以外の3単現}
+\begin{frame}<1-16>[plain]\frametitle{s以外の3単現}
+
+  \begin{enumerate}
+   \item<1-> She \myEmph[2]{orange}{drinks} coffee every morning. \onslide<2>{\textcolor{orange}{(drink $+$ s )}}
+   \item<3-> He \myEmph[3]{orange}{goes} to school by bus. \onslide<4>{\textcolor{orange}{(go $+$ es )}}
+  \item<5-> John \myEmph[5]{orange}{teaches} math. \onslide<6>{\textcolor{orange}{(teach $+$ es )}}
+    \item<7-> My father \myEmph[7]{orange}{washes} his car every Sunday. \onslide<8>{\textcolor{orange}{(wash $+$ es )}}
+   \item<9-> Jane \myEmph[9]{orange}{watches} television after supper. \onslide<10>{\textcolor{orange}{(watch $+$ es )}}
+   \item<11-> She \myEmph[11]{orange}{has} two cats. \onslide<12>{\textcolor{orange}{(haveの3単元はhas)}}
+  \end{enumerate}
+
+\begin{exampleblock}<13->{Topics for Today}
+\begin{itemize}
+ \item<1-> \myEmph[13]{orange}{3単現の原則: ---s}
+ \item<2-> \myEmph[14]{orange}{一部の動詞((go, teach, wash, watch\ldots{})の3単現: ---es}
+ \item<3-> \myEmph[15]{orange}{haveの3単現は: has}
+\end{itemize}
+      \end{exampleblock}
+
+% Embed the sound file
+\onslide<16>{%
+\myaudio{audio/004_verb_04.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+}
+\end{frame}
+
+\begin{frame}<1-9>[plain]\frametitle{Exercises}
+空所に適当な動詞を補ってください。なお、必要があれば、形を変えてください
+
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item George (\onslide<2,8,9>{\textcolor{orange}{~has~}}) two cats.
+{\footnotesize ジョージはネコを2匹飼っています。}
+   \item My mother (\onslide<3,8,9>{\textcolor{orange}{~teaches~}}) music.{\footnotesize 母は音楽を教えています。}
+   \item  She (\onslide<4,8,9>{\textcolor{orange}{~washes~}}) her car every Saturday.{\footnotesize 彼女は毎週土曜日に洗車します。}
+   \item Tom (\onslide<5,8,9>{\textcolor{orange}{~goes~}}) to church every Sunday.{\footnotesize トムは毎週日曜日に教会へ行きます。}
+   \item Jennifer (\onslide<6,8,9>{\textcolor{orange}{~watches~}}) television after supper.{\footnotesize ジェニファーは夕食後テレビをみます。}
+   \item He (\onslide<7,8,9>{\textcolor{orange}{~studies~}}) English every day.{\footnotesize 彼は毎日英語を勉強します。} \onslide<9>{\textcolor{orange}{studyの3単現はstdies}}
+  \end{enumerate}
+
+\begin{tcolorbox}[title=この中から選んでください]
+\centering
+ watch,~~~~~~~~study,~~~~~~~~have,~~~~~~~~teach,~~~~~~~~go,~~~~~~~~wash
+\end{tcolorbox}
+
+% Embed the sound file
+\onslide<9>{%
+\myaudio{audio/004_verb_05.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+
+}
+\end{frame}
 \end{document}
-!20
+
+
+
