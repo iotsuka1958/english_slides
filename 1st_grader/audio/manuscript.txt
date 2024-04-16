@@ -159,6 +159,85 @@ general_verb
 <p>Number 6.  Birds sing in the morning.<break time="5s"/>Birds sing in the morning.<break time="3s"/></p>
 <p>Good job, everyone! That's all for our pronunciation practice.</p> 
 </speak>
+%%%%%%%%%%%%%%%%%%%%%%%%
+3単現のs
+1. I ( have ) two cats.
+2. We ( go ) to school by bus.
+3. She ( drinks ) coffee every morning.
+4. Tom ( eats ) bread for breakfast.live, go, have, speak, drink, eat
+5. Jennifer ( lives ) in Boston.
+6. They ( speak ) English.
+<speak>
+<p>Hello everyone.  Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. I have two cats.<break time="2s"/><break time="3s"/>I have two cats.</p>
+<p>Number 2. We go to school by bus. <break time="2s"/>We go to school by bus.<break time="3s"/></p>
+<p>Number 3.  She drinks coffee every morning. <break time="2s"/>She drinks coffee every morning.<break time="3s"/></p>
+<p>Number 4. Tom eats bread for breakfast.<break time="2s"/>Tom eats bread for breakfast.<break time="3s"/></p>
+<p>Number 5.  Jennifer lives in Boston.<break time="2s"/>Jennifer lives in Boston.<break time="3s"/></p>
+<p>Number 6.  They speak English.<break time="2s"/>They speak English.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1. I have two cats.<break time="5s"/>I have two cats.<break time="3s"/></p>
+<p>Number 2.  We go to school by bus. <break time="5s"/>We go to school by bus. <break time="3s"/></p>
+<p>Number 3. She drinks coffee every morning. <break time="5s"/>She drinks coffee every morning..<break time="3s"/></p>
+<p>Number 4.  Tom eats bread for breakfast.<break time="5s"/>Tom eats bread for breakfast.<break time="3s"/></p>
+<p>Number 5.  Jennifer lives in Boston.<break time="5s"/>Jennifer lives in Boston.<break time="3s"/></p>
+<p>Number 6.  They speak English.<break time="5s"/>They speak English.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+s 以外の 3 単現
+1. She drinks coffee every morning.
+2. He goes to school by bus.
+3. John teaches math.
+4. My father washes his car every Sunday.
+5. Jane watches television after supper.
+6. She has two cats.
+<speak>
+<p>Hello everyone.  Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. She drinks coffee every morning.<break time="2s"/>She drinks coffee every morning.<break time="3s"/>.</p>
+<p>Number 2. He goes to school by bus. <break time="2s"/>He goes to school by bus.<break time="3s"/></p>
+<p>Number 3. John teaches math. <break time="2s"/>John teaches math.<break time="3s"/></p>
+<p>Number 4. My father washes his car every Sunday.<break time="2s"/>My father washes his car every Sunday.<break time="3s"/></p>
+<p>Number 5.  Jane watches television after supper.<break time="2s"/>Jane watches television after supper.<break time="3s"/></p>
+<p>Number 6. She has two cats <break time="2s"/>She has two cats.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1. She drinks coffee every morning.<break time="5s"/>She drinks coffee every morning.<break time="3s"/></p>
+<p>Number 2.  He goes to school by bus. <break time="5s"/>He goes to school by bus. <break time="3s"/></p>
+<p>Number 3. John teaches math. <break time="5s"/>John teaches math.<break time="3s"/></p>
+<p>Number 4. My father washes his car every Sunday. <break time="5s"/>My father washes his car every Sunday.<break time="3s"/></p>
+<p>Number 5.  Jane watches television after supper.<break time="5s"/>Jane watches television after supper.<break time="3s"/></p>
+<p>Number 6.  She has two cats.<break time="5s"/>She has two cats.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+%%%%%%%%%%%%%%%%%%
+まちがいやすい3単元現Exercises goes, washes
+George  has two cats.
+Jane  teaches music.
+She washes her car every Saturday.
+Tom goes to church every Sunday.
+Jennifer watches television after supper.
+He studies English every day.
+<speak>
+<p>Hello everyone.  Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. Gorge has two cats.<break time="2s"/>George has two cats.<break time="3s"/>.</p>
+<p>Number 2. My mother teaches music. <break time="2s"/>My mother teaches music.<break time="3s"/></p>
+<p>Number 3. She washes her car every Saturday. <break time="2s"/>She washes her car every Saturday.<break time="3s"/></p>
+<p>Number 4. Tom goes to church every Sunday.<break time="2s"/>Tom goes tochurch every Sunday.<break time="3s"/></p>
+<p>Number 5.  Jennifer watches television after supper.<break time="2s"/>Jennifer watches television after supper.<break time="3s"/></p>
+<p>Number 6. He studies English every day.<break time="2s"/>He studies English every day.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1. George has two cats.<break time="5s"/>George has two cats.<break time="3s"/></p>
+<p>Number 2.  My mother teaches music. <break time="5s"/>My mother teaches music. <break time="3s"/></p>
+<p>Number 3. She washes her car every Saturday. <break time="5s"/>She washes her car every Saturday.<break time="3s"/></p>
+<p>Number 4.Tom goes to church every Sunday. <break time="5s"/>Tom goes to church every Sunday.<break time="3s"/></p>
+<p>Number 5.  Jennifer watches television after supper.<break time="5s"/>Jennifer watches television after supper.<break time="3s"/></p>
+<p>Number 6.  He studies English every day.<break time="5s"/>He studies English every day.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+
 
 
 
