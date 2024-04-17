@@ -36,6 +36,9 @@ english,US
 Male,Joey
 
 # imager
+```
+library(imager)
+```
 
 ```
 img_1 <- load.image("./images/me_1.png")
@@ -57,14 +60,14 @@ gray_img_2 |> plot()
 
 ```
 # 画像ファイルを読み込み
-img_3 <- load.image("./images/me_3.png")
+img_1 <- load.image("./images/me_1.png")
 # 白黒に
-gray_img_3 <- img_3 |> grayscale()
+gray_img_1 <- img_1 |> grayscale()
 # 2値化。画素値が 0.375 より大きければそのピクセルの画素値は 1 にし、0.375以下なら 0 にすることで、白黒画像が作れます。
-gray_img_3[ gray_img_3 > .375] =1
-gray_img_3[ gray_img_3 <= .375] = 0
+gray_img_1[ gray_img_1 > .375] =1
+gray_img_1[ gray_img_1 <= .375] = 0
 # 思い切った線画にする（ただし黒地に白線）
-nega_img <- gray_img_3 |> isoblur(2) |> plot() |> imgradient("xy") |> with(sqrt(x^2+y^2)) |> threshold() |> as.cimg() 
+nega_img <- gray_img_1 |> isoblur(2) |> plot() |> imgradient("xy") |> with(sqrt(x^2+y^2)) |> threshold() |> as.cimg() 
 # 画像を保存
 imager::save.image(nega_img, "./images/nega_me.png")
 

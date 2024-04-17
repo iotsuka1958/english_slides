@@ -222,7 +222,7 @@ He studies English every day.
 <speak>
 <p>Hello everyone.  Please listen carefully as I read the example sentences.</p>
 <p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
-<p>Number 1. Gorge has two cats.<break time="2s"/>George has two cats.<break time="3s"/>.</p>
+<p>Number 1. George has two cats.<break time="2s"/>George has two cats.<break time="3s"/>.</p>
 <p>Number 2. My mother teaches music. <break time="2s"/>My mother teaches music.<break time="3s"/></p>
 <p>Number 3. She washes her car every Saturday. <break time="2s"/>She washes her car every Saturday.<break time="3s"/></p>
 <p>Number 4. Tom goes to church every Sunday.<break time="2s"/>Tom goes tochurch every Sunday.<break time="3s"/></p>
