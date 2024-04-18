@@ -10,6 +10,10 @@
 %% さまざまなアイコン
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
@@ -93,6 +97,17 @@ p
 \end{columns}
 \end{frame}
 
+\begin{frame}[plain]\frametitle{複数形のつくり方}
+ 
+\Large
+おしりに---sをつけます。
+
+a book $\longrightarrow$ book\textcolor{orange}{s}
+
+\end{frame}
+
+
+
 \begin{frame}<1-10>[plain]\frametitle{日本語とのちがい}
 \begin{columns}
 \begin{column}[t]{.45\textwidth}
@@ -123,6 +138,104 @@ p
       \end{exampleblock}
 
 \end{frame}
+
+
+\begin{frame}[plain]\frametitle{Exercises}
+
+\fcDog{0.4}{black}{1}\pause a dog\hspace{20pt}%
+\pause
+\fcDog{0.4}{black}{1}\fcDog{0.4}{black}{1}\pause two dogs
+\pause
+
+\fcCat{0.4}{black}{1}\pause a cat\hspace{40pt}%
+\pause
+\fcCat{0.4}{black}{1}\fcCat{0.4}{black}{1}\fcCat{0.4}{black}{1} \pause three cats
+\pause
+
+\fcBirdB{0.4}{black}{1}\pause a bird\hspace{45pt}%
+\pause
+\fcBirdB{0.4}{black}{1}
+\fcBirdB{0.4}{black}{1}
+\fcBirdB{0.4}{black}{1}
+\fcBirdB{0.4}{black}{1} \pause four birds
+
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Exercises(continued)}
+
+\fcBookB{0.4}{black}{1}\pause a book\hspace{20pt}%
+\pause
+\fcBookB{0.4}{black}{1}\fcBookB{0.4}{black}{1}%
+\fcBookB{0.4}{black}{1}\fcBookB{0.4}{black}{1}%
+\fcBookB{0.4}{black}{1} \pause five books
+\pause
+
+\bigskip
+
+\scalebox{.17}{\fcKey{0.4}{black}{2}}\,\,{}\pause a key\hspace{40pt}%
+\pause
+\scalebox{.17}{\fcKey{0.4}{black}{2}} \scalebox{.17}{\fcKey{0.4}{black}{2}} \scalebox{.17}{\fcKey{0.4}{black}{2}} \scalebox{.17}{\fcKey{0.4}{black}{2}} \scalebox{.17}{\fcKey{0.4}{black}{2}} \scalebox{.17}{\fcKey{0.4}{black}{2}}
+\pause
+ six keys
+\pause
+
+\scalebox{.25}{\fcChairA{0.4}{black}{2}}\pause a chair\hspace{40pt}%
+\pause
+\scalebox{.25}{\fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2}}
+\pause
+ seven chairs
+\pause
+
+\scalebox{1}{\fcBike{0.4}{black}{1}}\pause a bike\hspace{30pt}%
+\pause
+\scalebox{1}{\begin{tabular}{@{}lllll}
+\fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}\\
+ \fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}
+	     \end{tabular}}
+\pause
+\mbox{}\hspace*{.8\textwidth} eight bikes
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Exercises}
+
+\usymW{2710}{1cm}\pause a pencil\hspace{20pt}%
+\pause
+\usymW{2710}{1cm}\usymW{2710}{1cm}\usymW{2710}{1cm}\usymW{2710}{1cm}\usymW{2710}{1cm}\hspace{15pt}
+\usymW{2710}{1cm}\usymW{2710}{1cm}\usymW{2710}{1cm}\usymW{2710}{1cm}\pause
+
+\mbox{}\hspace{.8\textwidth} nine pencils
+\pause
+
+
+\bcfleur\,\,\,\,\pause a flower\hspace{45pt}%
+\pause
+\bcfleur\bcfleur\bcfleur\bcfleur\bcfleur\hspace{15pt}
+\bcfleur\bcfleur\bcfleur\bcfleur\bcfleur\hspace{10pt}
+\pause
+ten flowers
+\end{frame}
+
+\begin{frame}<1-9>[plain]\frametitle{Pronunciation}
+
+\begin{enumerate}
+ \item a dog~~~/~~~two dogs
+ \item a cat~~~/~~~three cats
+ \item a bird~~~~/~~~four birds
+ \item a book~~~/~~~five books
+ \item a key~~~/~~~six keys
+ \item a chair~~~/~~~seven chairs
+ \item a bike~~~/~~~eight bikes
+ \item a pencil~~~~/~~~nine pencils
+ \item a flower~~~/~~~ten flowers
+\end{enumerate}
+
+
+\end{frame}
+
+
+
 
 \begin{frame}<1-9>[plain]\frametitle{Exercises}
 空所に適当な動詞を補ってください。なお、必要があれば、形を変えてください

@@ -93,7 +93,9 @@ sketch <-  1 - threshold(zzz) |> as.cimg()
 plot(sketch)
 ```
 
-これでよければ、pngとして保存します。
+これでよければ、pngとして保存します。（べつに他の形式でもいい）
+x軸y軸が気になるかもしれませんが、保存した画像には軸は含まれません。
+
 ```{r}
 # 画像を保存
 imager::save.image(sketch, "./images/oyoyo.png")
