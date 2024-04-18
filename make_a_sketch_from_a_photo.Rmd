@@ -1,0 +1,102 @@
+---
+title: "make a Sketch from a Photo"
+author: "chiba_study_net"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(imager)
+```
+
+## 目的
+
+写真から線画をつくってみます。
+
+## 前準備
+
+アルファチャンネル用の関数を作成しておきます。
+[ここ](https://htsuda.net/archives/2130)で拾ってきました。
+
+
+```{r}
+# アルファチャネル操作用の関数
+applyAlpha = function( cimg, alpha, reverse = F ){
+  if( class( alpha )[ 1 ] == "cimg" ){
+    if( reverse ){
+      if( dim( cimg )[ 4 ] >= 3 ){
+        return( imappend( list( R(cimg), G(cimg), B(cimg), 1 - alpha ), axis = "c" ) )
+      } else {
+        return( imappend( list( cimg, 1 - alpha ), axis = "c" ) )
+      }
+    } else {
+      if( dim( cimg )[ 4 ] >= 3 ){
+        return( imappend( list( R(cimg), G(cimg), B(cimg), alpha ), axis = "c" ) )
+      } else {
+        return( imappend( list( cimg, alpha ), axis = "c" ) )
+      }
+    }
+  } else { # if alpha is an array
+    if( reverse ){
+      a = as.cimg( 1 - alpha, x = width( cimg ), y = height( cimg ), z = 1, cc = 1 )
+      if( dim( cimg )[ 4 ] >= 3 ){
+        return( imappend( list( R(cimg), G(cimg), B(cimg), a ), axis = "c" ) )
+      } else {
+        return( imappend( list( cimg, a ), axis = "c" ) )
+      }
+    } else {
+      a = as.cimg( alpha, x = width( cimg ), y = height( cimg ), z = 1, cc = 1 )
+      if( dim( cimg )[ 4 ] >= 3 ){
+        return( imappend( list( R(cimg), G(cimg), B(cimg), a ), axis = "c" ) )
+      } else {
+        return( imappend( list( cimg, a ), axis = "c" ) )
+      }
+    }
+  }
+}
+```
+
+## 実際に変換
+
+まあなんでもいいのですが、ここでは./images/me_1.pngを元の写真画像にします。
+
+
+```{r}
+# 画像ファイルを読み込み
+path <- "./images/me_1.png"
+img <- load.image(path)
+plot(img)
+```
+
+
+カラーではなくモノクロにします。
+```{r}
+# 白黒に
+gray_img <- img |> grayscale()
+plot(gray_img)
+```
+
+このままだとやけにリアルなので、もう少しざっくりした絵にします。
+2値化。画素値が 0.375 より大きければそのピクセルの画素値は 1 にし、0.375以下なら 0 にすることで、白黒画像が作れます。この値は、まあ適当に決めてください。
+```{r}
+gray_img[ gray_img > .375] =1
+gray_img[ gray_img <= .375] = 0
+plot(gray_img)
+```
+
+線画として抽出します。
+```{r}
+zzz <- gray_img |> isoblur(2) |> imgradient("xy") |> with(sqrt(x^2+y^2)) 
+sketch <-  1 - threshold(zzz) |> as.cimg()
+plot(sketch)
+```
+
+これでよければ、pngとして保存します。
+```{r}
+# 画像を保存
+imager::save.image(sketch, "./images/oyoyo.png")
+```
+
+このあとはどうとでもいじればいいですね。

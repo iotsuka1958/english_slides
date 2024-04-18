@@ -69,27 +69,27 @@
 
 \begin{frame}[plain]\frametitle{ひとつとふたつ以上}
 \begin{columns}
-\begin{column}{.2\textwidth}
-\IfFileExists{./images/apple.png}{%
-\includegraphics[width=.9\textwidth]{./images/apple.png}
-}{naiyo}
+\begin{column}{.25\textwidth}
+\IfFileExists{./images/one_book-crop.pdf}{%
+\rotatebox{-90}{\includegraphics[width=1.1\textwidth]{./images/one_book-crop.pdf}
+}}{naiyo}
 \end{column}\pause
-\begin{column}{.75\textwidth}\LARGE
+\begin{column}{.5\textwidth}\LARGE
 a book
 \end{column}
 \end{columns}
 
 \pause
 \begin{columns}
-\begin{column}{.2\textwidth}
-\IfFileExists{./images/apple.png}{%
-\includegraphics[width=.9\textwidth]{./images/apple.png}
-}{naiyo}
+\begin{column}{.25\textwidth}
+\IfFileExists{./images/two_books-crop.pdf}{%
+\rotatebox{-90}{\includegraphics[width=1.1\textwidth]{./images/two_books-crop.pdf}
+}}{naiyo}
 \end{column}\pause
-\begin{column}{.75\textwidth}\LARGE
+\begin{column}{.5\textwidth}\LARGE
 two book\myEmph[4]{orange}{s}
 \end{column}
-
+p
 \end{columns}
 \end{frame}
 
@@ -122,11 +122,33 @@ two book\myEmph[4]{orange}{s}
 \end{itemize}
       \end{exampleblock}
 
-
-
-
 \end{frame}
 
+\begin{frame}<1-9>[plain]\frametitle{Exercises}
+空所に適当な動詞を補ってください。なお、必要があれば、形を変えてください
+
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item George (\onslide<2,8,9>{\textcolor{orange}{~has~}}) two cats.
+{\footnotesize ジョージはネコを2匹飼っています。}
+   \item My mother (\onslide<3,8,9>{\textcolor{orange}{~teaches~}}) music.{\footnotesize 母は音楽を教えています。}
+   \item  She (\onslide<4,8,9>{\textcolor{orange}{~washes~}}) her car every Saturday.{\footnotesize 彼女は毎週土曜日に洗車します。}
+   \item Tom (\onslide<5,8,9>{\textcolor{orange}{~goes~}}) to church every Sunday.{\footnotesize トムは毎週日曜日に教会へ行きます。}
+   \item Jennifer (\onslide<6,8,9>{\textcolor{orange}{~watches~}}) television after supper.{\footnotesize ジェニファーは夕食後テレビをみます。}
+   \item He (\onslide<7,8,9>{\textcolor{orange}{~studies~}}) English every day.{\footnotesize 彼は毎日英語を勉強します。} \onslide<9>{\textcolor{orange}{studyの3単現はstdies}}
+  \end{enumerate}
+
+\begin{tcolorbox}[title=この中から選んでください]
+\centering
+ watch,~~~~~~~~study,~~~~~~~~have,~~~~~~~~teach,~~~~~~~~go,~~~~~~~~wash
+\end{tcolorbox}
+
+% Embed the sound file
+\onslide<9>{%
+\myaudio{audio/004_verb_05.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+
+}
+\end{frame}
 
 \begin{frame}<1-37>[plain,label=example]\frametitle{単数と複数}
  % \setbeamercovered{transparent}
@@ -154,11 +176,6 @@ two book\myEmph[4]{orange}{s}
 \myaudio{./audio/004_verb_01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
 }
 
-
-
 \end{frame}
 
 \end{document}
-
-
-
