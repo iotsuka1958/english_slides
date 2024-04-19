@@ -21,6 +21,7 @@
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
 \usepackage{tcolorbox}
+\usepackage{tikzpeople}
 \usepackage{xcolor}
 \usepackage{amsmath}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -302,11 +303,11 @@ a box\pause $\longrightarrow$ box\textcolor{orange}{es}
 \begin{frame}[plain]\frametitle{Pronunciation}
 
 \begin{enumerate}
- \item a bus~~~/~~~buses
- \item a potato~~~/~~~potatoes
- \item a tomato~~~/~~~tomatoes\pause
- \item a class~~~~/~~~classes\pause
- \item a box~~~/~~~boxes\pause
+ \item a bus~~~\pause{}/~~~buses\pause
+ \item a potato~~~\pause{}/~~~potatoes\pause
+ \item a tomato~~~\pause{}/~~~tomatoes\pause
+ \item a class~~~~\pause{}/~~~classes\pause
+ \item a box~~~\pause{}/~~~boxes
  \end{enumerate}
 \pause
 \myaudio{./audio/005_singular_plural_02.mp3}\,\,{}Listen carefully.(注意して聞いてください)
@@ -339,6 +340,44 @@ a box\pause $\longrightarrow$ box\textcolor{orange}{es}
 \scalebox{5}{\WomanFace \WomanFace \WomanFace \WomanFace} \hspace{25pt}
 \pause
 {\LARGE four  \textcolor{orange}{women}}
+\end{frame}
+
+\begin{frame}[plain]{注意すべき複数形}
+\scalebox{.7}{%
+\begin{tikzpicture}
+\node[sailor,female,minimum size=1.5cm,
+anchor=south,pin={85:I am Jane. I am twelve.}] at (6.25cm,0) {};
+%\node[charlie,minimum size=1.5cm,
+%anchor=south,,pin={105:I am Bob.}] at (5cm,0) {};
+\end{tikzpicture}
+}\pause
+\hspace{80pt}{\Large a child}
+\pause
+
+\bigskip
+
+\scalebox{.7}{%
+\begin{tikzpicture}
+\node[sailor,female,mirrored,minimum size=1.5cm,
+anchor=south] at (6.25cm,0) {};
+\node[charlie,minimum size=1.5cm,
+anchor=south,,pin={105:I am Bob. I am thirteen.}] at (5cm,0) {};
+\end{tikzpicture}
+}\pause
+\hspace{45pt}{\Large two \textcolor{orange}{children}}
+
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Pronunciation}
+
+\begin{enumerate}
+ \item a man~~~\pause{}/~~~men\pause
+ \item a woman~~~\pause{}/~~~women\pause
+ \item a child~~~\pause{}/~~~children
+  \end{enumerate}
+\pause
+\myaudio{./audio/005_singular_plural_03.mp3}\,\,{}Listen carefully.(注意して聞いてください)
 \end{frame}
 
 

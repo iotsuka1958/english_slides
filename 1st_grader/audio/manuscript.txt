@@ -297,5 +297,16 @@ A flower. A flower. Ten flowers. Ten flowers.
 </speak>
 %%%%%%%%
 不規則 man / men, woman / women, child / children
-
+<speak>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. A man.  <break time="2s"/>A man. <break time="2s"/>Men.  <break time="2s"/>Men<break time="3s"/></p>
+<p>Number 2. A woman. <break time="2s"/> A woman. <break time="2s"/>Women.<break time="2s"/> Women.<break time="3s"/></p>
+<p>Number 3. A child.<break time="2s"/> A child. <break time="2s"/>Children.<break time="2s"/>  Children.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  A man.  <break time="3s"/>A man. <break time="3s"/>Men.  <break time="3s"/>Men,<break time="3s"/></p>
+<p>Number 2.  A woman.  <break time="3s"/>A woman. <break time="3s"/>Women.  <break time="3s"/>Women,<break time="3s"/></p>
+<p>Number 3.  A child.  <break time="3s"/>A child. <break time="3s"/>Children. <break time="3s"/>Children.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
 
