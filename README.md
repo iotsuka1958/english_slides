@@ -60,14 +60,15 @@ gray_img_2 |> plot()
 
 ```
 # 画像ファイルを読み込み
-img_1 <- load.image("./images/me_1.png")
+path <- "./images/me_1.png"
+img <- load.image(path)
 # 白黒に
-gray_img_1 <- img_1 |> grayscale()
+gray_img <- img |> grayscale()
 # 2値化。画素値が 0.375 より大きければそのピクセルの画素値は 1 にし、0.375以下なら 0 にすることで、白黒画像が作れます。
-gray_img_1[ gray_img_1 > .375] =1
-gray_img_1[ gray_img_1 <= .375] = 0
+gray_img[ gray_img > .375] =1
+gray_img[ gray_img <= .375] = 0
 # 思い切った線画にする（ただし黒地に白線）
-nega_img <- gray_img_1 |> isoblur(2) |> plot() |> imgradient("xy") |> with(sqrt(x^2+y^2)) |> threshold() |> as.cimg() 
+nega_img <- gray_img |> isoblur(2) |> imgradient("xy") |> with(sqrt(x^2+y^2)) |> threshold() |> as.cimg() 
 # 画像を保存
 imager::save.image(nega_img, "./images/nega_me.png")
 
@@ -75,5 +76,58 @@ imager::save.image(nega_img, "./images/nega_me.png")
 #ターミナルで
  convert -negate nega_me.png posi_me.png
 # convertはimagemagickのコマンド
+```
 
+## another way
+
+```
+# アルファチャネル操作用の関数
+applyAlpha = function( cimg, alpha, reverse = F ){
+  if( class( alpha )[ 1 ] == "cimg" ){
+    if( reverse ){
+      if( dim( cimg )[ 4 ] >= 3 ){
+        return( imappend( list( R(cimg), G(cimg), B(cimg), 1 - alpha ), axis = "c" ) )
+      } else {
+        return( imappend( list( cimg, 1 - alpha ), axis = "c" ) )
+      }
+    } else {
+      if( dim( cimg )[ 4 ] >= 3 ){
+        return( imappend( list( R(cimg), G(cimg), B(cimg), alpha ), axis = "c" ) )
+      } else {
+        return( imappend( list( cimg, alpha ), axis = "c" ) )
+      }
+    }
+  } else { # if alpha is an array
+    if( reverse ){
+      a = as.cimg( 1 - alpha, x = width( cimg ), y = height( cimg ), z = 1, cc = 1 )
+      if( dim( cimg )[ 4 ] >= 3 ){
+        return( imappend( list( R(cimg), G(cimg), B(cimg), a ), axis = "c" ) )
+      } else {
+        return( imappend( list( cimg, a ), axis = "c" ) )
+      }
+    } else {
+      a = as.cimg( alpha, x = width( cimg ), y = height( cimg ), z = 1, cc = 1 )
+      if( dim( cimg )[ 4 ] >= 3 ){
+        return( imappend( list( R(cimg), G(cimg), B(cimg), a ), axis = "c" ) )
+      } else {
+        return( imappend( list( cimg, a ), axis = "c" ) )
+      }
+    }
+  }
+}
+
+# 画像ファイルを読み込み
+path <- "./images/me_1.png"
+img <- load.image(path)
+# 白黒に
+gray_img <- img |> grayscale()
+# 2値化。画素値が 0.375 より大きければそのピクセルの画素値は 1 にし、0.375以下なら 0 にすることで、白黒画像が作れます。
+gray_img[ gray_img > .375] =1
+gray_img[ gray_img <= .375] = 0
+# 思い切った線画にする（ただし黒地に白線）
+zzz <- gray_img |> isoblur(2) |> imgradient("xy") |> with(sqrt(x^2+y^2)) 
+sketch <-  1 - threshold(zzz) |> as.cimg()
+plot(sketch)
+# 画像を保存
+imager::save.image(sketch, "./images/oyoyo.png")
 ```
