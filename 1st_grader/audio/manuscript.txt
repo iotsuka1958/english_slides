@@ -237,8 +237,65 @@ He studies English every day.
 <p>Number 6.  He studies English every day.<break time="5s"/>He studies English every day.<break time="3s"/></p>
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </speak>
-
-
-
+%%%%%%%%%%%%%%%%%%%%%
+singular and plural
+A dog. A dog. Two dogs, Two dogs.
+A cat. A cat. Three cats. Three cats.
+A bird. A bird. Four birds. Four birds.
+A book. A book. Five books. Five books.
+A key. A key. Six keys. Six keys.
+A chair. A chair. Seven chairs. Seven chairs.
+A bike. A bike. Eight bikes. Eight bikes.
+A pencil. A pencil. Nine pencils. Nine pencils.
+A flower. A flower. Ten flowers. Ten flowers.
+<speak>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. A dog.  <break time="2s"/>Two dogs. <break time="2s"/>A dog.  <break time="2s"/>Two dogs,<break time="3s"/></p>
+<p>Number 2. A cat. <break time="2s"/> Three cats. <break time="2s"/>A cat.<break time="2s"/>  Three cats.<break time="3s"/></p>
+<p>Number 3. A bird. <break time="2s"/> Four birds. <break time="2s"/>A bird.<break time="2s"/>  Four birds.<break time="3s"/></p>
+<p>Number 4. A book.<break time="2s"/>  Five books. <break time="2s"/>A book. <break time="2s"/> Five books.<break time="3s"/></p>
+<p>Number 5. A key. <break time="2s"/> Six keys. <break time="2s"/>A key.<break time="2s"/>  Six keys.<break time="3s"/></p>
+<p>Number 6. A chair. <break time="2s"/> Seven chairs. <break time="2s"/>A chair. <break time="2s"/> Seven chairs.<break time="3s"/></p>
+<p>Number 7. A bike.<break time="2s"/>  Eight bikes. <break time="2s"/>A bike. <break time="2s"/> Eight bikes.<break time="3s"/></p>
+<p>Number 8. A pencil.<break time="2s"/>  Nine pencils. <break time="2s"/>A pencil.<break time="2s"/>  Nine pencils.<break time="3s"/></p>
+<p>Number 9. A flower.<break time="2s"/>  Ten flowers. <break time="2s"/>A flower.<break time="2s"/>  Ten flowers.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  A dog.  <break time="3s"/>Two dogs, <break time="3s"/>A dog.  <break time="3s"/>Two dogs,<break time="3s"/></p>
+<p>Number 2.  A cat.  <break time="3s"/>Three cats. <break time="3s"/>A cat.  <break time="3s"/>Three cats.<break time="3s"/></p>
+<p>Number 3.  A bird.  <break time="3s"/>Four birds. <break time="3s"/>A bird. <break time="3s"/>Four birds.<break time="3s"/></p>
+<p>Number 4.  A book.  <break time="3s"/>Five books. <break time="3s"/>A book. <break time="3s"/> Five books.<break time="3s"/></p>
+<p>Number 5.  A key. <break time="3s"/> Six keys. <break time="3s"/>A key. <break time="3s"/> Six keys.<break time="3s"/></p>
+<p>Number 6.  A chair.  <break time="3s"/>Seven chairs. <break time="5s"/>A chair. <break time="3s"/> Seven chairs.<break time="3s"/></p>
+<p>Number 7.  A bike. <break time="3s"/> Eight bikes. <break time="5s"/>A bike.  Eight bikes.<break time="3s"/></p>
+<p>Number 8.  A pencil. <break time="3s"/> Nine pencils. <break time="5s"/>A pencil.  Nine pencils.<break time="3s"/></p>
+<p>Number 9.  A flower. <break time="3s"/> Ten flowers. <break time="5s"/>A flower.  Ten flowers.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+%%%%%%%%%%%%%%%%%%
+-esの複数形
+1 a bus / buses
+2 a potato / potatoes
+3 a tomato / tomatoes
+4 a class / classes
+5 a box / boxes
+<speak>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. A bus.  <break time="2s"/>A bus. <break time="2s"/>Buses.  <break time="2s"/>Buses<break time="3s"/></p>
+<p>Number 2. A potato. <break time="2s"/> A potato <break time="2s"/>Potatoes<break time="2s"/> Potatoes.<break time="3s"/></p>
+<p>Number 3. A tomato.<break time="2s"/> A tomato. <break time="2s"/>Tomatoes.<break time="2s"/>  Tomatoes.<break time="3s"/></p>
+<p>Number 4. A class.<break time="2s"/>  A class. <break time="2s"/>Classes. <break time="2s"/> Classes.<break time="3s"/></p>
+<p>Number 5. A box. <break time="2s"/> A box. <break time="2s"/>Boxes.<break time="2s"/>  Boxes.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  A bus.  <break time="3s"/>A bus. <break time="3s"/>Buses.  <break time="3s"/>Buses,<break time="3s"/></p>
+<p>Number 2.  A potato.  <break time="3s"/>A potato. <break time="3s"/>Potatoes.  <break time="3s"/>Potatoes.<break time="3s"/></p>
+<p>Number 3.  A tomato.  <break time="3s"/>A tomato. <break time="3s"/>Tomatoes. <break time="3s"/>Tomatoes.<break time="3s"/></p>
+<p>Number 4.  A class.  <break time="3s"/>A class. <break time="3s"/>Classes. <break time="3s"/> Classes.<break time="3s"/></p>
+<p>Number 5.  A box. <break time="3s"/> A box. <break time="3s"/>Boxes. <break time="3s"/> Boxes.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+%%%%%%%%
+不規則 man / men, woman / women, child / children
 
 

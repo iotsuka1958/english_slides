@@ -7,6 +7,8 @@
 \setbeamertemplate{navigation symbols}{}
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% さまざまなアイコン
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fontawesome}
@@ -14,6 +16,7 @@
 \usepackage{twemojis}
 \usepackage{utfsym}
 \usepackage{bclogo}
+\usepackage{marvosym}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
@@ -93,21 +96,13 @@ a book
 \begin{column}{.5\textwidth}\LARGE
 two book\myEmph[4]{orange}{s}
 \end{column}
-p
+
 \end{columns}
 \end{frame}
 
-\begin{frame}[plain]\frametitle{複数形のつくり方}
- 
-\Large
-おしりに---sをつけます。
-
-a book $\longrightarrow$ book\textcolor{orange}{s}
-
-\end{frame}
 
 
-
+\subsection{日本語とのちがい}
 \begin{frame}<1-10>[plain]\frametitle{日本語とのちがい}
 \begin{columns}
 \begin{column}[t]{.45\textwidth}
@@ -139,7 +134,20 @@ a book $\longrightarrow$ book\textcolor{orange}{s}
 
 \end{frame}
 
+\section{複数形のつくり方}
+\subsection{基本}
+\begin{frame}[plain]\frametitle{複数形のつくり方}
+ 
+\Large
+おしりに---sをつけます。
 
+a book $\longrightarrow$ book\textcolor{orange}{s}
+
+\end{frame}
+
+
+
+\subsection{Exercises}
 \begin{frame}[plain]\frametitle{Exercises}
 
 \fcDog{0.4}{black}{1}\pause a dog\hspace{20pt}%
@@ -162,7 +170,7 @@ a book $\longrightarrow$ book\textcolor{orange}{s}
 \end{frame}
 
 
-\begin{frame}[plain]\frametitle{Exercises(continued)}
+\begin{frame}[plain]\frametitle{Exercises(Continued)}
 
 \fcBookB{0.4}{black}{1}\pause a book\hspace{20pt}%
 \pause
@@ -198,7 +206,7 @@ a book $\longrightarrow$ book\textcolor{orange}{s}
 \end{frame}
 
 
-\begin{frame}[plain]\frametitle{Exercises}
+\begin{frame}[plain]\frametitle{Exercises(Continued)}
 
 \usymW{2710}{1cm}\pause a pencil\hspace{20pt}%
 \pause
@@ -217,7 +225,8 @@ a book $\longrightarrow$ book\textcolor{orange}{s}
 ten flowers
 \end{frame}
 
-\begin{frame}<1-9>[plain]\frametitle{Pronunciation}
+
+\begin{frame}[plain]\frametitle{Pronunciation}
 
 \begin{enumerate}
  \item a dog~~~/~~~two dogs
@@ -231,9 +240,106 @@ ten flowers
  \item a flower~~~/~~~ten flowers
 \end{enumerate}
 
+% Embed the sound file
+\pause
+\myaudio{./audio/005_singular_plural_01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
 
 \end{frame}
 
+\subsection{注意すべき複数形}
+
+\begin{frame}[plain]{注意すべき複数形}
+
+\scalebox{.5}{\fcBus{0.4}{black}{2}}\hspace{15pt}\pause {\LARGE a bus}
+\pause
+
+\bigskip
+
+\bigskip
+
+\scalebox{.5}{\fcBus{0.4}{black}{2}\hspace{15pt}\fcBus{0.4}{black}{2}}\hspace{15pt}
+\pause {\LARGE two  bus\textcolor{orange}{es}}
+\end{frame}
+
+\begin{frame}[plain]{注意すべき複数形}
+\scalebox{.4}{\fcPotato{0.4}{black}{2}}\hspace{15pt}
+\pause
+{\LARGE a potato}
+\pause
+
+\bigskip
+
+\bigskip
+
+\scalebox{.4}{\fcPotato{0.4}{black}{2}\hspace{15pt}\fcPotato{0.4}{black}{2}}\hspace{15pt}
+\pause
+{\LARGE two  potato\textcolor{orange}{es}}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{注意すべき複数形}
+
+{\Large `s'ではなく\textcolor{orange}{`es'}をつける複数形があります}
+\pause
+
+\bigskip
+
+\begin{block}{--- $\rightarrow$ ---es}
+
+a bus \pause$\longrightarrow$ bus\textcolor{orange}{es}\pause
+
+a potato \pause$\longrightarrow$ potato\textcolor{orange}{es}\pause
+
+a tomato \pause$\longrightarrow$ tomato\textcolor{orange}{es}\pause
+
+a class \pause$\longrightarrow$ class\textcolor{orange}{es}\pause
+
+a box\pause $\longrightarrow$ box\textcolor{orange}{es}
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Pronunciation}
+
+\begin{enumerate}
+ \item a bus~~~/~~~buses
+ \item a potato~~~/~~~potatoes
+ \item a tomato~~~/~~~tomatoes\pause
+ \item a class~~~~/~~~classes\pause
+ \item a box~~~/~~~boxes\pause
+ \end{enumerate}
+\pause
+\myaudio{./audio/005_singular_plural_02.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+\end{frame}
+
+
+\begin{frame}[plain]{注意すべき複数形}
+\scalebox{5}{\ManFace}\hspace{15pt}
+\pause
+{\LARGE a man}
+\pause
+
+\bigskip
+
+\bigskip
+
+\scalebox{5}{\ManFace\hspace{5pt}\ManFace\hspace{5pt}\ManFace}\hspace{15pt}
+\pause
+{\LARGE three  \textcolor{orange}{men}}
+\end{frame}
+
+\begin{frame}[plain]{注意すべき複数形}
+\scalebox{5}{\WomanFace}\pause\hspace{15pt} {\LARGE a woman}
+\pause
+
+\bigskip
+
+\bigskip
+
+\scalebox{5}{\WomanFace \WomanFace \WomanFace \WomanFace} \hspace{25pt}
+\pause
+{\LARGE four  \textcolor{orange}{women}}
+\end{frame}
 
 
 
