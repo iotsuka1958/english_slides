@@ -1,0 +1,215 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}---There is a book on the table.---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{〜がある}
+
+\begin{frame}[plain]\frametitle{〜がある}
+\begin{columns}
+\begin{column}{.45\textwidth}
+\IfFileExists{./images/one_book.jpg}{%
+\rotatebox{0}{\includegraphics[width=.8\textwidth]{./images/one_book.jpg}
+}}{naiyo}
+\end{column}\pause
+\begin{column}{.5\textwidth}\LARGE
+There is a book on the table.
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{〜がある}
+\begin{columns}
+\begin{column}{.45\textwidth}
+\IfFileExists{./images/six_books.jpg}{%
+\rotatebox{0}{\includegraphics[width=1.1\textwidth]{./images/six_books.jpg}
+}}{naiyo}
+\end{column}\pause
+\begin{column}{.5\textwidth}\LARGE
+There are six books on the table.
+\end{column}
+\end{columns}
+\end{frame}
+
+\subsection{There is X($=$単数) + 場所}
+\begin{frame}[plain]\frametitle{There is a book on the table.}
+ \Large
+
+There \myEmph[4]{orange}{is} \myAnch{hako1}{black}{~X\,\,} $+$ \myAnch{hako2}{black}{\small 場所を表す表現} .\pause\hfill{} \fbox{~X~} が(どこどこに)ある\pause
+
+\bigskip
+
+\mbox{}\hspace{100pt}%
+\myAnch{subject}{black}{%
+$\left\{\begin{array}{l}
+\text{a book}\\
+\text{an apple}\\
+\text{a ball}\\
+\text{a cat \ldots}
+	 \end{array} \right.$}
+%
+\hspace{50.pt}%
+\myAnch{place}{black}{%
+$\left\{\begin{array}{l}
+\text{on the table}\\
+\text{on the chair}\\
+\text{onder the chair}\\
+\text{in the box \ldots}
+	 \end{array} \right.$}
+
+
+
+
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[thick,->] (subject.west) to[out=180,in=-90]node[midway,sloped,below] {\footnotesize \myEmph[4]{orange}{単数形}} (hako1.south);
+ \draw[thick,->] (place.west) to[out=120,in=-45] (hako2.south east);
+\end{tikzpicture}
+
+\end{frame}
+
+
+\subsection{There is X($=$複数) + 場所}
+\begin{frame}[plain]\frametitle{There are two books on the table.}
+ \Large
+
+There \myEmph[3]{orange}{are} \myAnch{hako1}{black}{~X\,\,} $+$ \myAnch{hako2}{black}{\small 場所を表す表現} .\pause\hfill{} \fbox{~X~} が(どこどこに)ある\pause
+
+\bigskip
+
+\bigskip
+
+\mbox{}\hspace{95pt}%
+\myAnch{subject}{black}{%
+$\left\{\begin{array}{l}
+\text{two books}\\
+\text{three apples}\\
+\text{four balls}\\
+\text{five cats \ldots}
+	 \end{array} \right.$}
+%
+%\hspace{45pt}%
+%\myAnch{place}{black}{%
+%$\left\{\begin{array}{l}
+%\text{on the table}\\
+%\text{on the chair}\\
+%\text{under the chair}\\
+%\text{in the box \ldots}
+%	 \end{array} \right.$}
+
+
+
+
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[thick,->] (subject.west) to[out=180,in=-90]node[midway,sloped,below] {\footnotesize \myEmph[3]{orange}{複数形}} (hako1.south);
+% \draw[thick,->] (place.north west) to[out=125,in=-45] (hako2.south east);
+\end{tikzpicture}
+
+\end{frame}
+
+
+
+
+
+
+
+
+5\begin{frame}<1-15>[plain]\frametitle{Exercises}
+\onslide*<1->{空所にisまたはareを補い、正しい英文にしましょう。あわせて、全体の意味を考えましょう。}
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item<2-> There (\onslide<3->{\myEmph[3]{orange}{~are~}}) three high schools in our city.
+   \item<4->  There (\onslide<5->{\myEmph[5]{orange}{~is~}}) a new computer on the desk.
+   \item<6-> There (\onslide<7->{\myEmph[7]{orange}{~are~}}) two boys in the park this morning.
+   \item<8-> There (\onslide<9->{\myEmph[9]{orange}{~is~}}) a cat by the tree now.
+   \item<10-> There (\onslide<11->{\myEmph[11]{orange}{~is~}}) a station near my house.
+  \end{enumerate}
+
+
+\begin{exampleblock}<12->{Topics for Today}
+\begin{itemize}
+ \item<13-> There is \myEmph[11]{orange}{単数形}.
+ \item<14-> There are \myEmph[12]{orange}{複数形}.
+\end{itemize}
+\end{exampleblock}
+
+\vspace*{-15pt}
+% Embed the sound file
+\onslide<15>{%
+\myaudio{audio/001_there_is__01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+
+}
+\end{frame}
+
+\end{document}
