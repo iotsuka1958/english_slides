@@ -54,6 +54,23 @@
     \fi
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.\,\,{}---There is a book on the table.---}
 \author{}
 \institute[]{}
@@ -178,14 +195,8 @@ $\left\{\begin{array}{l}
 
 \end{frame}
 
-
-
-
-
-
-
-
-5\begin{frame}<1-15>[plain]\frametitle{Exercises}
+\subsection{Exercises}
+\begin{frame}<1-15>[plain]\frametitle{Exercises}
 \onslide*<1->{空所にisまたはareを補い、正しい英文にしましょう。あわせて、全体の意味を考えましょう。}
  % \setbeamercovered{transparent}
   \begin{enumerate}
@@ -211,5 +222,96 @@ $\left\{\begin{array}{l}
 
 }
 \end{frame}
+
+\section{There was(were) X ...}
+\begin{frame}[plain]{〜があった}
+
+\begin{enumerate}
+ \item There was a cat in the garden yesterday.\pause
+ \item There was a river behind the house.\pause
+ \item There were two big trees in the park.\pause
+ \item There were three pictures on the wall.
+\end{enumerate}
+
+\pause
+\begin{exampleblock}{Topics for Today}
+過去のことをあらわすとき
+\begin{itemize}
+ \item There \textcolor{orange}{was 単数形}.\pause
+ \item There \textcolor{orange}{were 複数形}.
+\end{itemize}
+\end{exampleblock}
+\pause
+\myaudio{audio/001_there_is_02.mp3}\,\,{}Listen carefully.(注意して聞いてください
+
+
+\end{frame}
+
+\section{There is(are, was, were) not X ...}
+\begin{frame}[plain]{〜がない}
+
+\begin{enumerate}[<+->]
+ \item There is not a pen on the table.
+ \item There was not a cat in the garden yesterday.
+ \item There are not many cars on the road today.
+ \item There were not many clouds in the sky yesterday.
+\end{enumerate}
+
+\pause 
+\begin{exampleblock}<5->{Topics for Today}
+「〜がない（なかった）」
+\begin{itemize}
+ \item There $\left\{\begin{array}{l}\text{is}\\\text{was}\end{array}
+\right\}$ \textcolor{orange}{not} 単数形.\hspace{40pt}\pause
+There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
+\right\}$ \textcolor{orange}{not} 複数形.
+\end{itemize}
+\end{exampleblock}
+
+\pause
+% Embed the sound file
+\myaudio{audio/001_there_is_03.mp3}\,\,{}Listen carefully.(注意して聞いてください\end{frame}
+
+\section{Is there X ...?}
+\begin{frame}[plain]{〜がありますか？}
+ \Large
+
+疑問文のつくり方
+\vspace{20pt}
+
+\myAnch{there-1}{orange}{There} \myAnch{is-1}{olive}{is} a book on the table.
+\vspace{50pt}\pause
+
+\myAnch{is-2}{olive}{Is} \myAnch{there-2}{orange}{there} a book on the table \myAnch{question}{orange}{?}
+\pause
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[thick, orange, ->] (there-1.south) to[out=-90, in=90] (there-2.north); \pause
+ \draw[thick, olive, ->] (is-1.south) to[out=-90, in=90] (is-2.north);
+\pause
+\node at (-6.5,-1) {逆にするだけ};
+\pause
+\node at (0.5,0.25) {\scalebox{2}{\myRisingPitch}};
+\pause
+\node at (3.25,-1) {語尾のイントネーションに注意};
+\end{tikzpicture}
+
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+
+つぎの文の意味を考えましょう
+\begin{enumerate}
+ \item Is there a good restaurant in your town?
+ \item Are there many students in your class?
+ \item Was there a message for me?
+ \item Were there many people at the concert last night?
+\end{enumerate}
+
+ 
+
+\end{frame}
+
+
+
 
 \end{document}
