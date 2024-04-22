@@ -2,7 +2,7 @@
 001_there_is_01.mp3
 1. There ( are ) three high schools in our city.
 2. There ( is ) a new computer on the desk.
-3. There ( are ) two boys in the park this morning.
+3. There ( are ) two boys in the park.
 4. There ( is ) a cat by the tree now.
 5. There ( is ) a station near my house.
 <speak>
@@ -10,13 +10,13 @@
 <p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
 <p>Number 1. There are three high schools in our city. <break time="2s"/>There are three high schools in our city.<break time="3s"/></p>
 <p>Number 2. There is a new computer on the desk. <break time="2s"/>There is a new computer on the desk.<break time="3s"/></p>
-<p>Number 3. There are two boys in the park this morning. <break time="2s"/>There are two boys in the park this morning.<break time="3s"/></p>
+<p>Number 3. There are two boys in the park. <break time="2s"/>There are two boys in the park.<break time="3s"/></p>
 <p>Number 4. There is a cat by the tree now. <break time="2s"/>There is a cat by the tree now.<break time="3s"/></p>
 <p>Number 5. There is a station near my house. <break time="2s"/>There is a station near my house.<break time="3s"/></p>
 <p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
 <p>Number 1.  There are three high schools in our city. <break time="5s"/>There are three high schools in our city.<break time="3s"/></p>
 <p>Number 2.  There is a new computer on the desk. <break time="5s"/>There is a new computer on the desk.<break time="3s"/></p>
-<p>Number 3.  There are two boys in the park this morning. <break time="5s"/>There are two boys in the park this morning.<break time="3s"/></p>
+<p>Number 3.  There are two boys in the park. <break time="5s"/>There are two boys in the park.<break time="3s"/></p>
 <p>Number 4.  There is a cat by the tree now. <break time="5s"/>There is a cat by the tree now.<break time="3s"/></p>
 <p>Number 5.  There is a station near my house. <break time="5s"/>There is a station near my house.<break time="3s"/></p>
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
@@ -57,3 +57,17 @@
 <p>Number 4.  There were not many clouds in the sky yesterday. <break time="5s"/>There were not many clouds in the sky yesterday.<break time="3s"/></p>
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </speak>
+%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. There are two American students in our class. <break time="2s"/>There are two American students in our class.<break time="3s"/></p>
+<p>Number 2. There was a church on the corner five years ago. <break time="2s"/>There was a church on the corner five years ago.<break time="3s"/></p>
+<p>Number 3. Is there a hospital near here? <break time="2s"/>Is there a hospital near here?<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  There are two American students in our class. <break time="5s"/>There are two American students in our class.<break time="3s"/></p>
+<p>Number 2.  There was a church on the corner five years ago. <break time="5s"/>There was a church on the corner five years ago.<break time="3s"/></p>
+<p>Number 3.  Is there a hospital near here? <break time="5s"/>Is there a hospital near here?<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+
