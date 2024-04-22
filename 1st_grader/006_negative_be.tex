@@ -1,0 +1,180 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- I am not hungry. ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{be動詞の否定}
+\subsection{I am not hungry.}
+\begin{frame}<1-8>[plain]\frametitle{$\text{A}\neq\text{B}$}
+
+\begin{tabular}{lll}
+\onslide<1->{I am hungry.}& \onslide<2->{(I $=$ hungry)}& \onslide<4->{わたしはおなかがすいている。}\\
+\onslide<7->{I am \textcolor{orange}{not} hungry.}& \onslide<6->{(I $\neq$ hungry)}& \onslide<5->{わたしはおなかがすいていない。}
+%\onslide<8->{I\textcolor{orange}{'m not} hungry.}
+\end{tabular}
+
+\vspace{50pt}
+\onslide<3->{\small \mbox{}\hfill{}hungry: 空腹だ}
+
+\onslide<8->{%
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item  I am X. の否定はI am \textcolor{orange}{not} X. 
+% \item  縮めて I\textcolor{orange}{'m not} ということもあります
+\end{itemize}
+      \end{exampleblock}
+}
+
+\end{frame}
+
+\subsection{You are not from Canada.}
+\begin{frame}<1-9>[plain]\frametitle{$\text{A}\neq\text{B}$}
+
+\begin{tabular}{lll}
+\onslide<1->{You are from Canada.}& \onslide<2->{(You $=$ from Canada)}& \onslide<4->{あなたはカナダの出身です。}\\
+\onslide<7->{You \textcolor{orange}{are not} from Canada.}& \onslide<6->{(You $\neq$ from Canada)}& \onslide<5->{あなたはカナダの出身ではない。}\\
+\onslide<8->{You \textcolor{orange}{aren't} from Canada.}
+%\onslide<9->{You\textcolor{orange}{'re not} from Canada.}\\
+\end{tabular}
+
+\vspace{50pt}
+\onslide<3->{\small \mbox{}\hfill{}from 〜:  〜の出身だ}
+
+\onslide<9->{%
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item  You are X. の否定はYou \textcolor{orange}{are not}  
+ \item  縮めて You \textcolor{orange}{aren't} ということもあります
+% \item  You\textcolor{orange}{'re not} ということもあります
+\end{itemize}
+      \end{exampleblock}
+}
+
+\end{frame}
+
+\subsection{She is not a student.}
+\begin{frame}<1-9>[plain]\frametitle{$\text{A}\neq\text{B}$}
+
+\begin{tabular}{lll}
+\onslide<1->{She is a student.}& \onslide<2->{(She $=$ a student)}& \onslide<4->{彼女は学生です。}\\
+\onslide<7->{She \textcolor{orange}{is not} a student.}& \onslide<6->{(She $\neq$ a student)}& \onslide<5->{彼女は学生ではない。}\\
+\onslide<8->{She \textcolor{orange}{isn't} a student.}
+%\onslide<9->{She\textcolor{orange}{'s not} a student.}
+\end{tabular}
+
+\vspace{50pt}
+\onslide<3->{\small \mbox{}\hfill{}student: 生徒、学生}
+
+\onslide<9->{%
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item  She is X. の否定はShe \textcolor{orange}{is not} X.
+ \item  縮めて She \textcolor{orange}{isn't} ということもあります
+% \item  She\textcolor{orange}{'s not} ということもあります
+\end{itemize}
+      \end{exampleblock}
+}
+
+\end{frame}
+
+\begin{frame}<1-18>[plain]\frametitle{Exercises}
+つぎの各文を否定文にしてください。
+
+
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item His mother is a teacher.\\
+         \pause
+         His mother \textcolor{orange}{is not} a teacher. \pause{}/ His mother \textcolor{orange}{isn't} a teacher.\pause
+   \item The room is clean.\\
+         \pause
+         The room \textcolor{orange}{is not} clean. \pause{}/ The room \textcolor{orange}{isn't} clean.\pause
+   \item You are busy.\\
+         \pause
+         You \textcolor{orange}{are not} busy. \pause{}/ You \textcolor{orange}{aren't} busy.\pause
+   \item They are students.\\
+         \pause
+         They \textcolor{orange}{are not} students. \pause{}/ They \textcolor{orange}{aren't} students.
+   \item I am a doctor.\\
+         \pause
+         I \textcolor{orange}{am not} a doctor. \pause{} / *I \textcolor{olive}{amn't} a doctor.\,\,\,{}$\longleftarrow$こうはいいません\pause
+  \end{enumerate}
+
+
+
+% Embed the sound file
+\myaudio{audio/006_negative_be_01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+\end{frame}
+
+\end{document}
+

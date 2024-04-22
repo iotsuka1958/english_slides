@@ -1,9 +1,5 @@
-A dog.  Two dogs,
-A cat.  Three cats.
-A bird.  Four birds.
-A book.  Five books.
-A key.  Six keys.
-A chair.  Seven chairs.
-A bike.  Eight bikes.
-A pencil.  Nine pencils.
-A flower.  Ten flowers.
+His mother is a teacher. <break time="3s"/>His mother is not a teacher. <break time="3s"/>His mother isn’t a teacher.
+The room is clean. <break time="3s"/>The room is not clean. <break time="3s"/> The room isn’t clean.
+You are busy. <break time="3s"/>You are not busy. <break time="3s"/> You aren’t busy.
+George is a student. <break time="3s"/>George is not a student. <break time="3s"/>George isn’t a student.
+I am a doctor. <break time="3s"/>I am not a doctor.
