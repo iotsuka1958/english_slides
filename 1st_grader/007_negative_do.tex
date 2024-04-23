@@ -1,0 +1,186 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- I do not like coffee. ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{一般動詞の否定}
+\subsection{I do not like coffee.}
+\begin{frame}<1-11>[plain]\frametitle{do not / don't}
+
+\begin{tabular}{lll}
+ \onslide<1->{\scalebox{4}{\twemoji{smiling face with
+heart-eyes}\,\,\,{\tiny\mfCoffeeBean}\mfJavaBold{}}}&\onslide<2->{I like coffee.}& \onslide<4->{わたしはコーヒーが好きだ。}\\
+\onslide<7->{\scalebox{4}{\twemoji{person gesturing NO}\,\,\,{\tiny\mfCoffeeBean}\mfJavaBold{}}}&\onslide<6->{I \myAnch{long}{orange}{do not} like coffee.}&  \onslide<5->{わたしはコーヒーが好きではない。}\\[20pt]
+&\onslide<11->{I \myAnch{short}{orange}{don't} like coffee.}
+\end{tabular}
+
+\vspace{15pt}
+\onslide<3->{\small \mbox{}\hfill{}coffee: コーヒー}
+
+\onslide<8->{%
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item<9->  一般動詞の否定は\textcolor{orange}{$\text{do not} + \text{動詞}$}\pause
+ \item<10->  do notは縮めて \textcolor{orange}{$\text{don't} + \text{動詞}$}ということもあります
+\end{itemize}
+      \end{exampleblock}
+}
+
+\onslide<11>{
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[->, thick, orange] (long) to (short);
+\end{tikzpicture}
+}
+\end{frame}
+
+
+
+\begin{frame}<1-12>[plain]\frametitle{be動詞との比較}
+\begin{columns}[T]
+ \begin{column}{.48\textwidth}
+\begin{itemize}
+ \item I am \only<2->{\textcolor{orange}{not}} hungry.
+ \item You are \only<3->{\textcolor{orange}{not}} hungry.
+ \item He is \only<4->{\textcolor{orange}{not}}  hungry.
+\end{itemize}
+ \end{column}
+\begin{column}{.48\textwidth}
+\onslide<5->{\begin{tabular}[t]{l}
+	      be動詞\\
+              {\small $\left(\begin{array}{l}
+                      \text{am}\\
+                      \text{are}\\
+                      \text{is}
+                      \end{array}\right)$}
+            \end{tabular} $+\,\,\,\,\, \text{not}$
+}
+\end{column}
+\end{columns}
+
+\bigskip
+
+\bigskip
+
+\begin{columns}[T]
+ \begin{column}{.48\textwidth}
+\begin{itemize}
+ \item I \only<6->{\textcolor{orange}{do not}} like coffee.
+ \item You \only<7->{\textcolor{orange}{do not}} like coffee.
+ \item They \only<8->{\textcolor{orange}{do not}} like coffee.
+\end{itemize}
+ \end{column}
+\begin{column}{.48\textwidth}
+\mbox{}
+
+\vspace*{15pt}
+\onslide<9->{$\text{do not} + \text{動詞}$} 
+\end{column}
+\end{columns}
+
+\onslide<10->{%
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item<11->  be動詞の否定はnotを後ろにつける
+ \item<12-> 一般動詞の否定は do notを前につける
+\end{itemize}
+      \end{exampleblock}
+}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Exercises}
+ 
+つぎの文を否定文にしてください。
+\begin{enumerate}
+ \item I play soccer after school.\pause{}\hspace{63pt}{\footnotesize after school: 放課後に}\\\pause
+       I \textcolor{orange}{do not} play soccer after school.\\\pause
+       I \textcolor{orange}{don't} play soccer after school.\pause
+ \item You study math at night.\pause\hspace{68pt}{\footnotesize study: 勉強する　math: 数学　at night: 夜に}\\\pause
+       You \textcolor{orange}{do not} study math at night.\\\pause
+       You \textcolor{orange}{don't} study math at night.\pause
+ \item We eat meat at home.\pause\hspace{80pt}{\footnotesize eat: 食べる　meat: 肉}\\\pause
+       We \textcolor{orange}{do not} eat meat at home.\\\pause
+       We \textcolor{orange}{don't} eat meat at home.\pause
+ \item They like horror movies.\pause\hspace{70pt}{\footnotesize horror movie: ホラー映画}\\\pause
+       They \textcolor{orange}{do not} like horror movies.\\\pause
+       They \textcolor{orange}{don't} like horror movies.
+\end{enumerate}
+
+
+
+
+\end{frame}
+
+\end{document}
+
