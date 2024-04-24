@@ -1,5 +1,4 @@
-His mother is a teacher. <break time="3s"/>His mother is not a teacher. <break time="3s"/>His mother isn’t a teacher.
-The room is clean. <break time="3s"/>The room is not clean. <break time="3s"/> The room isn’t clean.
-You are busy. <break time="3s"/>You are not busy. <break time="3s"/> You aren’t busy.
-George is a student. <break time="3s"/>George is not a student. <break time="3s"/>George isn’t a student.
-I am a doctor. <break time="3s"/>I am not a doctor.
+I play soccer after school.<break time="3s"/>I do not play soccer after school.<break time="3s"/>I don’t play soccer after school.
+You study math at night.<break time="3s"/>You do not study math at night.<break time="3s"/>You don’t study math at night.
+We eat meat at home.<break time="3s"/>We do not eat meat at home.<break time="3s"/>We don’t eat meat at home.
+They like horror movies.<break time="3s"/>They do not like horror movies.<break time="3s"/>They don’t like horror movies.
