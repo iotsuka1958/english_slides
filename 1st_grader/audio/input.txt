@@ -1,4 +1,5 @@
-I play soccer after school.<break time="3s"/>I do not play soccer after school.<break time="3s"/>I don’t play soccer after school.
-You study math at night.<break time="3s"/>You do not study math at night.<break time="3s"/>You don’t study math at night.
-We eat meat at home.<break time="3s"/>We do not eat meat at home.<break time="3s"/>We don’t eat meat at home.
-They like horror movies.<break time="3s"/>They do not like horror movies.<break time="3s"/>They don’t like horror movies.
+I am late for the meeting. <break time="3s"/> Am I late for the meeting?
+You are hungry. <break time="3s"/> Are you hungry?
+They are happy. <break time="3s"/> Are they happy?
+She is in the kitchen.  <break time="3s"/>Is she in the kitchen?
+Our teacher is busy. <break time="3s"/> Is our teacher busy?

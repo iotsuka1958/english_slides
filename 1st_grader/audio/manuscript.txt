@@ -309,4 +309,29 @@ A flower. A flower. Ten flowers. Ten flowers.
 <p>Number 3.  A child.  <break time="3s"/>A child. <break time="3s"/>Children. <break time="3s"/>Children.<break time="3s"/></p>
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </speak>
+%%%%%%%%%%%%%%%%%%%%
+be動詞の疑問文
+I am late for the meeting. <break time="3s"/> Am I late for the meeting?
+You are hungry. <break time="3s"/> Are you hungry?
+They are happy. <break time="3s"/> Are they happy?
+She is in the kitchen.  <break time="3s"/>Is she in the kitchen?
+Our teacher is busy. <break time="3s"/> Is our teacher busy?
+
+<speak>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. I am late for the meeting. <break time="3s"/> Am I late for the meeting? <break time="2s"/>I am late for the meeting. <break time="3s"/> Am I late for the meeting?<break time="3s"/></p>
+<p>Number 2. You are hungry. <break time="3s"/> Are you hungry? <break time="2s"/>You are hungry. <break time="3s"/> Are you hungry?<break time="3s"/></p>
+<p>Number 3. They are happy. <break time="3s"/> Are they happy? <break time="2s"/>They are happy. <break time="3s"/> Are they happy?<break time="3s"/></p>
+<p>Number 4. She is in the kitchen.  <break time="3s"/>Is she in the kitchen? <break time="2s"/>She is in the kitchen.  <break time="3s"/>Is she in the kitchen?<break time="3s"/></p>
+<p>Number 5. Our teacher is busy. <break time="3s"/> Is our teacher busy? <break time="2s"/>Our teacher is busy. <break time="3s"/> Is our teacher busy?<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  I am late for the meeting. <break time="3s"/> Am I late for the meeting? <break time="5s"/>I am late for the meeting. <break time="3s"/> Am I late for the meeting?<break time="3s"/></p>
+<p>Number 2.  You are hungry. <break time="3s"/> Are you hungry? <break time="5s"/>You are hungry. <break time="3s"/> Are you hungry?<break time="3s"/></p>
+<p>Number 3.  They are happy. <break time="3s"/> Are they happy? <break time="5s"/>They are happy. <break time="3s"/> Are they happy?<break time="3s"/></p>
+<p>Number 4.  She is in the kitchen.  <break time="3s"/>Is she in the kitchen? <break time="5s"/>She is in the kitchen.  <break time="3s"/>Is she in the kitchen?<break time="3s"/></p>
+<p>Number 5.  Our teacher is busy. <break time="3s"/> Is our teacher busy? <break time="5s"/>Our teacher is busy. <break time="3s"/> Is our teacher busy?<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+
 
