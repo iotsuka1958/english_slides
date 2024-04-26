@@ -280,45 +280,49 @@ Is she a good singer?
 \pause
 
 \begin{columns}
-\begin{column}{.475\textwidth}
+\begin{column}{.49\textwidth}
 Is \myAnch{john}{orange}{John} a teacher?
 
 \pause
 
-\mbox{}\hspace{40pt}$\left\{\begin{array}{l}
-         \text{Yes, \myAnch{he1}{orange}{he} is.}\\\pause
-         \text{No, \myAnch{he2}{orange}{he} is not($=\text{isn't}$).}
-        \end{array}\right.$
+\vspace{10pt}
+
+\mbox{}\hfill$\left\{\begin{tabular}{l}
+         Yes, \myAnch{he1}{orange}{he} is.\\\pause
+         No, \myAnch{he2}{orange}{he} is not($=\text{isn't}$).
+        \end{tabular}\right.$
 
 \pause
 
-\mbox{}\hfill{}{\footnotesize }
+%\mbox{}\hfill{}{\footnotesize }
 
 \begin{tikzpicture}[remember picture,overlay]
- \draw[->,thick,orange] (john.south) -- (he1.north);
+ \draw[->,thick,orange] (john.south) to[out=-30,in=160] (he1.north west);
+ \draw[->,thick,orange] (john.south) to[out=-110, in=155] (he2.west);
 \end{tikzpicture}
 
 \end{column}
 \pause
-\begin{column}{.475\textwidth}
-Is Emily from Sydney?
+\begin{column}{.49\textwidth}
+Is \myAnch{emily}{orange}{Emily} from Sydne?
 
 \pause
 
-\mbox{}\hspace{40pt}$\left\{\begin{array}{l}
-         \text{Yes, she is.}\\\pause
-         \text{No, she is not($=\text{isn't}$).}
-        \end{array}\right.$
+\vspace{10pt}
+
+\mbox{}\hfill$\left\{\begin{tabular}{l}
+         Yes, \myAnch{she1}{orange}{she} is.\\\pause
+         No, \myAnch{she2}{orange}{she} is not($=\text{isn't}$).
+        \end{tabular}\right.$
+
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[->,thick,orange] (emily.south) to[out=-30,in=160] (she1.north west);
+ \draw[->,thick,orange] (emily.south) to[out=-165, in=165] (she2.west);
+\end{tikzpicture}
 
 \end{column}
 \end{columns}
-
-
-
-
-
 \end{frame}
-
 
 \begin{frame}[plain]{Is this  〜 ? / Is that 〜 ? と聞かれたら}
  \Large
@@ -329,35 +333,49 @@ Is Emily from Sydney?
 \pause
 
 \begin{columns}
-\begin{column}{.475\textwidth}
-Is this  your book?
+\begin{column}{.49\textwidth}
+Is \myAnch{this}{orange}{this} your book?
 
 \pause
 
-\mbox{}\hspace{40pt}$\left\{\begin{array}{l}
-         \text{Yes, it is.}\\\pause
-         \text{No, it is not.}
-        \end{array}\right.$
+\vspace{10pt}
+
+\mbox{}\hfill$\left\{\begin{tabular}{l}
+         Yes, \myAnch{it1}{orange}{it} is.\\\pause
+         No, \myAnch{it2}{orange}{it} is not($=\text{isn't}$).
+        \end{tabular}\right.$
 
 \pause
 
-\mbox{}\hfill{}{\footnotesize No, it is not. はNo, it isn't.ともいいます}
+%\mbox{}\hfill{}{\footnotesize }
+
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[->,thick,orange] (this.south) to[out=-30,in=160] (it1.north west);
+ \draw[->,thick,orange] (this.south) to[out=-110, in=165] (it2.west);
+\end{tikzpicture}
+
 \end{column}
 \pause
-\begin{column}{.475\textwidth}
-Is that your house?
+\begin{column}{.49\textwidth}
+Is \myAnch{that}{orange}{that} your house?
 
 \pause
 
-\mbox{}\hspace{40pt}$\left\{\begin{array}{l}
-         \text{Yes, it is.}\\\pause
-         \text{No, it is not.}
-        \end{array}\right.$
+\vspace{10pt}
+
+\mbox{}\hfill$\left\{\begin{tabular}{l}
+         Yes, \myAnch{it3}{orange}{it} is.\\\pause
+         No, \myAnch{it4}{orange}{it} is not($=\text{isn't}$).
+        \end{tabular}\right.$
+
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[->,thick,orange] (that.south) to[out=-30,in=160] (it3.north west);
+ \draw[->,thick,orange] (that.south) to[out=-165, in=165] (it4.west);
+\end{tikzpicture}
 
 \end{column}
 \end{columns}
-
-  \end{frame}
+\end{frame}
 
 \end{document}
 
