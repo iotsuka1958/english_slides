@@ -1,5 +1,3 @@
-I am late for the meeting. <break time="3s"/> Am I late for the meeting?
-You are hungry. <break time="3s"/> Are you hungry?
-They are happy. <break time="3s"/> Are they happy?
-She is in the kitchen.  <break time="3s"/>Is she in the kitchen?
-Our teacher is busy. <break time="3s"/> Is our teacher busy?
+She is from Australia. <break time="2s"/>Is she from Australia?
+He is from Australia. <break time="2s"/>Is she from Australia?
+Our teacher is from Australia. <break time="2s"/>Is our teacher from Australia?

@@ -1,3 +1,5 @@
+%%%%%%%%%%%%%%%%%%%%%
+002_be_01.mp3
 「AはBだ」
 <speak>
 <p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それぞれの英文を2回読みます。はじめはうまく聞き取れなくても心配する必要はありません。だんだん慣れてきます。それでは、始めます。</lang>Please listen carefully.</p>
@@ -16,6 +18,7 @@
 <p>Number 6.  They are my classmates.<break time="5s"/>They are my classmates.</p><break time="3s"/>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+002_be_02.mp3
 I am ...
 <speak>
 <speak>
@@ -35,6 +38,7 @@ I am ...
 <p>Number 6.  I am from Tokyo. <break time="5s"/>I am from Tokyo.<break time="3s"/></p>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+002_be_03.mp3
 You are
 <speak>
 <p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
@@ -53,6 +57,7 @@ You are
 <p>Number 6.  You are from Chiba.<break time="5s"/>You are from Chiba.<break time="3s"/></p>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+002_be_04.mp3
 I am, you are以外1
 <speak>
 <p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
@@ -72,6 +77,7 @@ I am, you are以外1
 <p>Good job, everyone! That's all for our pronunciation practice.</p> 
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+002_be_05.mp3
 I am, you are以外2
 <speak>
 <p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
@@ -91,6 +97,7 @@ I am, you are以外2
 <p>Good job, everyone! That's all for our pronunciation practice.</p> 
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+003_sv_01.mp3
 SV
 <p>Number 1. I like music.<break time="2s"/>I like music.<break time="3s"/></p>
 <p>Number 2. We go to school by bus. <break time="2s"/>We go to school by bus.<break time="3s"/></p>
@@ -108,6 +115,7 @@ SV
 <p>Good job, everyone! That's all for our pronunciation practice.</p> 
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+004_verb_01.mp3
 general_verb
 1. I like basketball.
 2. We walk to school.
@@ -134,6 +142,7 @@ general_verb
 <p>Good job, everyone! That's all for our pronunciation practice.</p> 
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+004_verb_02.mp3
 人称exercises
 1. I am a student.
 2. You play the guitar very well.
@@ -160,6 +169,7 @@ general_verb
 <p>Good job, everyone! That's all for our pronunciation practice.</p> 
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%
+004_verb_03.mp3
 3単現のs
 1. I ( have ) two cats.
 2. We ( go ) to school by bus.
@@ -186,6 +196,7 @@ general_verb
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+004_verb_04.mp3
 s 以外の 3 単現
 1. She drinks coffee every morning.
 2. He goes to school by bus.
@@ -212,7 +223,8 @@ s 以外の 3 単現
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </speak>
 %%%%%%%%%%%%%%%%%%
-まちがいやすい3単元現Exercises goes, washes
+004_verb_05.mp3
+まちがいやすい3単現Exercises goes, washes
 George  has two cats.
 Jane  teaches music.
 She washes her car every Saturday.
@@ -238,6 +250,7 @@ He studies English every day.
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%
+005_singular_plural_01.mp3
 singular and plural
 A dog. A dog. Two dogs, Two dogs.
 A cat. A cat. Three cats. Three cats.
@@ -273,6 +286,7 @@ A flower. A flower. Ten flowers. Ten flowers.
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </speak>
 %%%%%%%%%%%%%%%%%%
+05_singular_plural_02.mp3
 -esの複数形
 1 a bus / buses
 2 a potato / potatoes
@@ -296,6 +310,7 @@ A flower. A flower. Ten flowers. Ten flowers.
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </speak>
 %%%%%%%%
+05_singular_plural_03.mp3
 不規則 man / men, woman / women, child / children
 <speak>
 <p>Hello everyone. Please listen carefully as I read the example sentences.</p>
@@ -310,6 +325,55 @@ A flower. A flower. Ten flowers. Ten flowers.
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </speak>
 %%%%%%%%%%%%%%%%%%%%
+006_negative_be.mp3
+be動詞の否定文
+1. His mother is a teacher.
+His mother is not a teacher. / His mother isn’t a teacher.
+2. The room is clean.
+The room is not clean. / The room isn’t clean.
+3. You are busy.
+You are not busy. / You aren’t busy.
+4. George is a student.
+George is not a student. / George isn’t a student.
+5. I am a doctor.
+I am not a doctor.
+<speak>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. His mother is a teacher.<break time="3s"/>His mother is not a teacher. <break time="3s"/>His mother isn’t a teacher. <break time="2s"/>His mother is a teacher.<break time="3s"/>His mother is not a teacher. <break time="3s"/>His mother isn’t a teacher.<break time="3s"/></p>
+<p>Number 2. The room is clean.<break time="3s"/>The room is not clean.<break time="3s"/>The room isn’t clean. <break time="2s"/>The room is clean.<break time="3s"/>The room is not clean.<break time="3s"/>The room isn’t clean.<break time="3s"/></p>
+<p>Number 3. You are busy.<break time="3s"/>You are not busy.<break time="3s"/>You aren’t busy. <break time="2s"/>You are busy.<break time="3s"/>You are not busy.<break time="3s"/>You aren’t busy.<break time="3s"/></p>
+<p>Number 4. George is a student.<break time="3s"/>George is not a student.<break time="3s"/>George isn’t a student. <break time="2s"/>George is a student.<break time="3s"/>George is not a student.<break time="3s"/>George isn’t a student.<break time="3s"/></p>
+<p>Number 5. I am a doctor.<break time="3s"/>I am not a doctor. <break time="2s"/>I am a doctor.<break time="3s"/>I am not a doctor.<break time="3s"/></p>
+<p>Number 6.  <break time="2s"/><break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  His mother is a teacher.<break time="3s"/>His mother is not a teacher. <break time="3s"/>His mother isn’t a teacher. <break time="5s"/>His mother is a teacher.<break time="3s"/>His mother is not a teacher. <break time="3s"/>His mother isn’t a teacher.<break time="3s"/></p>
+<p>Number 2.  The room is clean.<break time="3s"/>The room is not clean.<break time="3s"/>The room isn’t clean. <break time="5s"/>The room is clean.<break time="3s"/>The room is not clean.<break time="3s"/>The room isn’t clean.<break time="3s"/></p>
+<p>Number 3.  You are busy.<break time="3s"/>You are not busy.<break time="3s"/>You aren’t busy. <break time="5s"/>You are busy.<break time="3s"/>You are not busy.<break time="3s"/>You aren’t busy.<break time="3s"/></p>
+<p>Number 4.  George is a student.<break time="3s"/>George is not a student.<break time="3s"/>George isn’t a student. <break time="5s"/>George is a student.<break time="3s"/>George is not a student.<break time="3s"/>George isn’t a student.<break time="3s"/></p>
+<p>Number 5.  I am a doctor.<break time="3s"/>I am not a doctor. <break time="5s"/>I am a doctor.<break time="3s"/>I am not a doctor.<break time="3s"/></p>
+<p>Number 6.   <break time="5s"/><break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+%%%%%%%%%%%%%%%%%%%%
+007_negative_do.mp3
+一般動詞の否定文
+<speak>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. I play soccer after school.<break time="3s"/>I do not play soccer after school.<break time="3s"/>I don’t play soccer after school. <break time="2s"/>I play soccer after school.<break time="3s"/>I do not play soccer after school.<break time="3s"/>I don’t play soccer after school.<break time="3s"/></p>
+<p>Number 2. You study math at night.<break time="3s"/>You do not study math at night.<break time="3s"/>You don’t study math at night. <break time="2s"/>You study math at night.<break time="3s"/>You do not study math at night.<break time="3s"/>You don’t study math at night.<break time="3s"/></p>
+<p>Number 3. We eat meat at home.<break time="3s"/>We do not eat meat at home.<break time="3s"/>We don’t eat meat at home. <break time="2s"/>We eat meat at home.<break time="3s"/>We do not eat meat at home.<break time="3s"/>We don’t eat meat at home.<break time="3s"/></p>
+<p>Number 4. They like horror movies.<break time="3s"/>They do not like horror movies.<break time="3s"/>They don’t like horror movies. <break time="2s"/>They like horror movies.<break time="3s"/>They do not like horror movies.<break time="3s"/>They don’t like horror movies.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  I play soccer after school.<break time="3s"/>I do not play soccer after school.<break time="3s"/>I don’t play soccer after school. <break time="5s"/>I play soccer after school.<break time="3s"/>I do not play soccer after school.<break time="3s"/>I don’t play soccer after school.<break time="3s"/></p>
+<p>Number 2.  You study math at night.<break time="3s"/>You do not study math at night.<break time="3s"/>You don’t study math at night. <break time="5s"/>You study math at night.<break time="3s"/>You do not study math at night.<break time="3s"/>You don’t study math at night.<break time="3s"/></p>
+<p>Number 3.  We eat meat at home.<break time="3s"/>We do not eat meat at home.<break time="3s"/>We don’t eat meat at home. <break time="5s"/>We eat meat at home.<break time="3s"/>We do not eat meat at home.<break time="3s"/>We don’t eat meat at home.<break time="3s"/></p>
+<p>Number 4.  They like horror movies.<break time="3s"/>They do not like horror movies.<break time="3s"/>They don’t like horror movies. <break time="5s"/>They like horror movies.<break time="3s"/>They do not like horror movies.<break time="3s"/>They don’t like horror movies.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+%%%%%%%%%%%%%%%%%%%%
+008_question_be_01.mp3
 be動詞の疑問文
 I am late for the meeting. <break time="3s"/> Am I late for the meeting?
 You are hungry. <break time="3s"/> Are you hungry?
