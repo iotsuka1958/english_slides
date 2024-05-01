@@ -12,6 +12,13 @@ ari::ari_narrate(
   script = "1st_grader/001_alphabet.Rmd",
   slides = "1st_grader/001_alphabet.html",
   output = "1st_grader/video/001_alphabet.mp4",
+  voice  = "Joanna",
+  delay = 10,
+  zoom = 2,
+  capture_method = "iterative"
+  )
+```
+
 ## pdfから静止画像を抽出
 
 ``` 
@@ -24,7 +31,6 @@ ffmpeg -i video.mp4 -i video.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 output
 ```
 
 ## 動画に音声を追加
-
 ```
 ffmpeg -i opening.mp4 -i opening.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 zzz.mp4
 ```
