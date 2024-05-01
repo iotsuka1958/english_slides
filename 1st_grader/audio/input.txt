@@ -1,1 +1,2 @@
-You are happy <break time="2s"/>Are you happy?
+Is this your book?<break time="3s"/>Yes, it is.<break time="3s"/>No, it is not.<break time="3s"/>No, it's not.<break time="3s"/>No, it isn't.
+Is that your house?<break time="3s"/>Yes, it is.<break time="3s"/>No, it is not.<break time="3s"/>No, it's not.<break time="3s"/>No, it isn't.
