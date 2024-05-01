@@ -372,8 +372,74 @@ I am not a doctor.
 <p>Number 4.  They like horror movies.<break time="3s"/>They do not like horror movies.<break time="3s"/>They don’t like horror movies. <break time="5s"/>They like horror movies.<break time="3s"/>They do not like horror movies.<break time="3s"/>They don’t like horror movies.<break time="3s"/></p>
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </speak>
-%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 008_question_be_01.mp3
+be動詞の疑問文
+I am late for the movie.
+AM I late for the movie?
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p>Number 1. You are happy <break time="2s"/>Are you happy? <break time="2s"/>You are happy <break time="2s"/>Are you happy?<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">こんどは、わたしのあとに続けてリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  You are happy <break time="2s"/>Are you happy? <break time="5s"/>You are happy <break time="2s"/>Are you happy?<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+008_question_be_02.mp3
+be動詞の疑問文
+You are happy. Are you happy?
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p>Number 1. You are happy <break time="2s"/>Are you happy? <break time="2s"/>You are happy <break time="2s"/>Are you happy?<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">こんどは、わたしのあとに続けてリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  You are happy <break time="2s"/>Are you happy? <break time="5s"/>You are happy <break time="2s"/>Are you happy?<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+008_question_be_03.mp3
+be動詞の疑問文
+She is from Australia. Is she from Australia?
+He is from Australia. Is he from Australia?
+Our teacher is from Australia. Is our teacher from Australia?
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p>Number 1. She is from Australia. <break time="2s"/>Is she from Australia? <break time="2s"/>She is from Australia. <break time="2s"/>Is she from Australia?<break time="3s"/></p>
+<p>Number 2. He is from Australia. <break time="2s"/>Is he from Australia? <break time="2s"/>He is from Australia. <break time="2s"/>Is he from Australia?<break time="3s"/></p>
+<p>Number 3. Our teacher is from Australia. <break time="2s"/>Is our teacher from Australia? <break time="2s"/>Our teacher is from Australia. <break time="2s"/>Is our teacher from Australia?<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">こんどは、わたしのあとに続けてリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  She is from Australia. <break time="2s"/>Is she from Australia? <break time="5s"/>She is from Australia. <break time="2s"/>Is she from Australia?<break time="3s"/></p>
+<p>Number 2.  He is from Australia. <break time="2s"/>Is he from Australia? <break time="5s"/>He is from Australia. <break time="2s"/>Is he from Australia?<break time="3s"/></p>
+<p>Number 3.  Our teacher is from Australia. <break time="2s"/>Is our teacher from Australia? <break time="5s"/>Our teacher is from Australia. <break time="2s"/>Is our teacher from Australia?<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+008_question_be_04.mp3
+be動詞の疑問文
+They are good singers. Are theygood singers?
+Jack and Betty are good singers. Are Jack and Betty good singers?
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. They are good singers. <break time="2s"/>Are they good singers? <break time="2s"/>They are good singers. <break time="2s"/>Are they good singers?<break time="3s"/></p>
+<p>Number 2. Jack and Betty are good singers. <break time="2s"/>Are Jack and Betty good singers? <break time="2s"/>Jack and Betty are good singers. <break time="2s"/>Are Jack and Betty good singers?<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  They are good singers. <break time="2s"/>Are they good singers? <break time="5s"/>They are good singers. <break time="2s"/>Are they good singers?<break time="3s"/></p>
+<p>Number 2.  Jack and Betty are good singers. <break time="2s"/>Are Jack and Betty good singers? <break time="5s"/>Jack and Betty are good singers. <break time="2s"/>Are Jack and Betty good singers?<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%
+008_question_be_05.mp3
 be動詞の疑問文
 I am late for the meeting. <break time="3s"/> Am I late for the meeting?
 You are hungry. <break time="3s"/> Are you hungry?

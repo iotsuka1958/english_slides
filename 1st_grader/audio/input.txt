@@ -1,3 +1,1 @@
-She is from Australia. <break time="2s"/>Is she from Australia?
-He is from Australia. <break time="2s"/>Is she from Australia?
-Our teacher is from Australia. <break time="2s"/>Is our teacher from Australia?
+You are happy <break time="2s"/>Are you happy?
