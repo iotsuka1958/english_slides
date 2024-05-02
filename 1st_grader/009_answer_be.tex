@@ -22,8 +22,9 @@
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
 \usepackage{tcolorbox}
+\usepackage{myascolorbox} %ascolorbox.sty(https://github.com/yasunari/ascolorbox)をlualatexで使えるようにzw2箇所を\zwに改変したもの
 \usepackage{tikzpeople}
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{amsmath}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
@@ -185,7 +186,7 @@ Is she a good singer?
 \pause
 
 \vspace{20pt}
-\mbox{}\hfill\myaudio{./audio/009_question_be_02.mp3}\,\,{}
+\mbox{}\hfill\myaudio{./audio/009_answer_be_02.mp3}\,\,{}
 
 \end{column}
 \end{columns}
@@ -247,7 +248,7 @@ Is \myAnch{emily}{orange}{Emily} from Sydney?
 
 \vspace{20pt}
 
-\mbox{}\hfill\myaudio{./audio/009_question_be_03.mp3}\,\,{}
+\mbox{}\hfill\myaudio{./audio/009_answer_be_03.mp3}\,\,{}
 \end{column}
 \end{columns}
 
@@ -285,7 +286,7 @@ Are they your friends?
 
 \vspace{20pt}
 
-\mbox{}\hfill\myaudio{./audio/009_question_be_04.mp3}\,\,{}
+\mbox{}\hfill\myaudio{./audio/009_answer_be_04.mp3}\,\,{}
 \end{frame}
 
 
@@ -382,21 +383,56 @@ Is \myAnch{that}{orange}{that} your house?
 
 
 
-\begin{frame}<1-9>[plain]\frametitle{Exercises}
-例にならって、つぎの質問に対する答えを2通りつくりましょう。
-
+\begin{frame}<1-20>[plain]\frametitle{Exercises}
+例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。
+\mbox{}\hfill\myaudio{./audio/009_answer_be_07.mp3}
 
 
 \begin{tabular}{rlcll}
-例:& Are you busy?& $\rightarrow$&(1) Yes, I am.&(2)No, I am not.\\
-1&Are you from Tokyo?&$\rightarrow$&(1) Yes, I am.&(2) No, I am not.\\
-2&Is she a science teacher?&$\rightarrow$& (1) Yes, she is.&(2) No, she is not.\\
-3&Is Peter in Japan now?&$\rightarrow$&(1) Yes, he is.&(2) No, he is not.\\
-4&Is math easy for you?&$\rightarrow$&(1) Yes, it is.&(2) No, it is not.\\
-5&Is that your car?&$\rightarrow$&(1) Yes, it is.&(2) No, it is no.
+\visible<1->{例}& \visible<1->{Are you busy?}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I am.}&\visible<4->{(2) No, I am not.}\\
+\visible<1->{1}&\visible<1->{Are you from Tokyo?}&\visible<5->{$\rightarrow$}&\visible<6->{(1) Yes, I am.}&\visible<7->{(2) No, I am not.}\\
+\visible<1->{2}&\visible<1->{Is she a science teacher?}&\visible<8->{$\rightarrow$}& \visible<9->{(1) Yes, she is.}&\visible<10->{(2) No, she is not.}\\
+\visible<1->{3}&\visible<1->{Is Peter in Japan now?}&\visible<11->{$\rightarrow$}&\visible<12->{(1) Yes, he is.}&\visible<13->{(2) No, he is not.}\\
+\visible<1->{4}&\visible<1->{Is math easy for you?}&\visible<14->{$\rightarrow$}&\visible<15->{(1) Yes, it is.}&\visible<16->{(2) No, it is not.}\\
+\visible<1->{5}&\visible<1->{Is that your car?}&\visible<17->{$\rightarrow$}&\visible<18->{(1) Yes, it is.}&\visible<19->{(2) No, it is not.}
 \end{tabular}
 
 \end{frame}
 
-\end{document}
+\begin{frame}[plain,t]\frametitle{Exercises}
+%\begin{ascolorbox3}{Susanの自己紹介を読んで、問に答えましょう}[orange][coltitle=orange!50!black]
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+  title=Susanの自己紹介を読んで、問に答えましょう。]
+\parindent=15pt
 
+\noindent{}Hi, I'm Susan, and I'm from New York. Nice to meet you!
+
+Look at this picture. It's my family.
+Dad, George, is a dentist, and Mom, Helen, teaches.
+I have a fifteen-year-old brother, Kevin, and our sweet dog, Brownie.
+
+I am really happy to meet you. Thank you!
+\mbox{}\hfill\myaudio{./audio/009_answer_be_08.mp3}
+\end{tcolorbox}
+%\end{ascolorbox3}
+
+\pause
+\begin{tabular}{rll}
+1&\visible<2->{Is Susan from New York?}&\visible<3->{Yes, she is.}\\
+2&\visible<2->{Is Susan's father a teacher?}&\visible<4->{No, he isn't.}\\
+3&\visible<2->{Is Helen a dentist?}&\visible<5->{No, she isn't.}\\
+4&\visible<2->{Is the name of Susan's dog Brownie?\hspace{20pt}\mbox{}}&\visible<6->{Yes, it is.}
+\end{tabular}
+
+\pause
+
+\mbox{}\hfill\myaudio{./audio/009_answer_be_09.mp3}\hspace{15pt}\mbox{}
+
+\end{frame}
+
+
+
+\end{document}

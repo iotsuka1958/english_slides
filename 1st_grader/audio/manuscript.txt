@@ -545,5 +545,57 @@ Are they your friends? Yes, they are. No,they are not. No, they're not. No, they
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </prosody>
 </speak>
+%%%%%%%%%%%%%%%%%%%%%%
+009_question_be_07.mp3
+Are you busy?
+Are you from Tokyo?
+Is she a science teacher?
+Is Peter in Japan now?
+Is math easy for you?
+Is that your car?
 
+speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully.</p>
+<p>Number 1. Are you busy? <break time="3s"/>Are you busy?<break time="3s"/></p>
+<p>Number 2. Are you from Tokyo? <break time="3s"/>Are you from Tokyo?<break time="3s"/></p>
+<p>Number 3. Is she a science teacher? <break time="3s"/>Is she a science teacher?<break time="3s"/></p>
+<p>Number 4. Is Peter in Japan now? <break time="3s"/>Is Peter in Japan now?<break time="3s"/></p>
+<p>Number 5. Is math easy for you? <break time="3s"/>Is math easy for you?<break time="3s"/></p>
+<p>Number 6. Is that your car? <break time="3s"/>Is that your car?<break time="3s"/></p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%
+009_question_be_08.mp4
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Please listen carefully.<break time="3s"/></p>
+<p>
+Hi, I’m Susan, and I’m from New York. Nice to meet you! Look at this picture. It’s my family. Dad, George, is a dentist, and Mom, Helen, teaches. I have a fifteen-year-old brother, Kevin, and our sweet dog, Brownie. I am really happy to meet you. Thank you!<break time="3s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度読みます。</lang>Please repeat after me.</p>
+<p>
+Hi, I’m Susan, and I’m from New York. Nice to meet you! Look at this picture. It’s my family. Dad, George, is a dentist, and Mom, Helen, teaches. I have a fifteen-year-old brother, Kevin, and our sweet dog, Brownie. I am really happy to meet you. Thank you!<break time="3s"/>
+</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%
+009_question_be_09.mp4
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Please listen carefully.</p>
+<p>Number 1. Is Susan from New York? <break time="3s"/>Yes, she is. <break time="2s"/>Is Susan from New York? <break time="3s"/>Yes, she is.<break time="3s"/></p>
+<p>Number 2. Is Susan’s father a teacher? <break time="3s"/>No, he isn’t. <break time="2s"/>Is Susan’s father a teacher? <break time="3s"/>No, he isn’t.<break time="3s"/></p>
+<p>Number 3. Is Helen a dentist? <break time="3s"/>No, she isn’t. <break time="2s"/>Is Helen a dentist? <break time="3s"/>No, she isn’t.<break time="3s"/></p>
+<p>Number 4. Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is. <break time="2s"/>Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けてリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  Is Susan from New York? <break time="3s"/>Yes, she is. <break time="5s"/>Is Susan from New York? <break time="3s"/>Yes, she is.<break time="3s"/></p>
+<p>Number 2.  Is Susan’s father a teacher? <break time="3s"/>No, he isn’t. <break time="5s"/>Is Susan’s father a teacher? <break time="3s"/>No, he isn’t.<break time="3s"/></p>
+<p>Number 3.  Is Helen a dentist? <break time="3s"/>No, she isn’t. <break time="5s"/>Is Helen a dentist? <break time="3s"/>No, she isn’t.<break time="3s"/></p>
+<p>Number 4.  Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is. <break time="5s"/>Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
 

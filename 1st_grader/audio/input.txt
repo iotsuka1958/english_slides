@@ -1,2 +1,4 @@
-Is this your book?<break time="3s"/>Yes, it is.<break time="3s"/>No, it is not.<break time="3s"/>No, it's not.<break time="3s"/>No, it isn't.
-Is that your house?<break time="3s"/>Yes, it is.<break time="3s"/>No, it is not.<break time="3s"/>No, it's not.<break time="3s"/>No, it isn't.
+Is Susan from New York? <break time="3s"/>Yes, she is.
+Is Susan’s father a teacher? <break time="3s"/>No, he isn’t.
+Is Helen a dentist? <break time="3s"/>No, she isn’t.
+Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is.
