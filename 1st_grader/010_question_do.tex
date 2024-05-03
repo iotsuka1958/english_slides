@@ -1,0 +1,304 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- Do you like baseball? ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+
+\section{一般動詞の疑問文}
+
+\subsection{わたしは〜ですか}
+\begin{frame}[plain]{わたしは〜しますか？}
+ \Large
+
+\mbox{}\hspace{35pt}I have  enough time. \pause
+\hspace{80pt}{\footnotesize enough: じゅうぶんな}\pause\hspace{-170pt}\raisebox{-5pt}{\scalebox{1.4}{\myDownwardPitch}}
+\pause
+
+\vspace{15pt}
+
+\myAnch{do}{orange}{Do} I have enough time \myAnch{question}{orange}{?}
+\pause
+\scalebox{1.4}{\myRisingPitch}
+
+\pause
+
+\mbox{}\hspace{50pt}\myAnch{txt1}{white}{先頭にDo}
+\hspace{80pt}\myAnch{txt2}{white}{文末に`?'}
+
+
+\begin{tikzpicture}[remember picture, overlay]
+\draw[->, thick, orange] (txt1.west) to[out=180, in=-90] (do.south);
+\draw[->, thick, orange] (txt2.west) to[out=180, in=-90] (question.south);
+\end{tikzpicture}
+
+\mbox{}\hfill\myaudio{./audio/010_question_do_01.mp3}
+
+\end{frame}
+
+
+
+\subsection{あなたは〜しますか}
+\begin{frame}[plain]{あなたは〜しますか？}
+ \Large
+
+\mbox{}\hspace{35pt}You play the guitar. \pause
+\hspace{80pt}{\footnotesize guitar: ギター}\pause\hspace{-140pt}\raisebox{-5pt}{\scalebox{1.4}{\myDownwardPitch}}
+\pause
+
+\vspace{15pt}
+
+\myAnch{do}{orange}{Do} you play the guitar \myAnch{question}{orange}{?}
+\pause
+\scalebox{1.4}{\myRisingPitch}
+
+\pause
+
+\mbox{}\hspace{50pt}\myAnch{txt1}{white}{先頭にDo}
+\hspace{80pt}\myAnch{txt2}{white}{文末に`?'}
+
+
+\begin{tikzpicture}[remember picture, overlay]
+\draw[->, thick, orange] (txt1.west) to[out=180, in=-90] (do.south);
+\draw[->, thick, orange] (txt2.west) to[out=180, in=-90] (question.south);
+\end{tikzpicture}
+
+\mbox{}\hfill\myaudio{./audio/010_question_do_02.mp3}
+
+\end{frame}
+
+
+
+
+\subsection{彼らは〜しますか}
+\begin{frame}[plain]{彼らは〜しますか？}
+ \Large
+\pause
+\mbox{}\hspace{35pt}They speak French. \pause
+\hspace{80pt}{\footnotesize speak: 話す　French: フランス語}\pause\hspace{-215pt}\raisebox{-5pt}{\scalebox{1.4}{\myDownwardPitch}}
+\pause
+
+\vspace{15pt}
+
+\myAnch{do}{orange}{Do} they speak French \myAnch{question}{orange}{?}
+\pause
+\scalebox{1.4}{\myRisingPitch}
+
+\pause
+
+\mbox{}\hspace{50pt}\myAnch{txt1}{white}{先頭にDo}
+\hspace{80pt}\myAnch{txt2}{white}{文末に`?'}
+
+
+\begin{tikzpicture}[remember picture, overlay]
+\draw[->, thick, orange] (txt1.west) to[out=180, in=-90] (do.south);
+\draw[->, thick, orange] (txt2.west) to[out=180, in=-90] (question.south);
+\end{tikzpicture}
+
+\vfill
+
+\mbox{}\hfill\myaudio{./audio/010_question_do_03.mp3}
+
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{要点}
+\Large
+\begin{tabular}{rlcl}
+ 1& I have enough time.\pause{} &$\rightarrow$ &\myEmph[7,9-]{orange}{Do} I have enough time\myEmph[7,10]{orange}{?}\pause{} \\
+ 2& You play the guitar.\pause{}&$\rightarrow$ &\myEmph[7,9-]{orange}{Do} you play the guitar\myEmph[7,10]{orange}{?}\pause{} \\
+ 3& They speak French.\pause{}&$\rightarrow$ &\myEmph[7,9-]{orange}{Do} they speak French\myEmph[7,10]{orange}{?}\pause
+\end{tabular}
+\pause
+
+\vfill
+
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item   先頭に `Do'を置く\pause
+ \item   文末に`?'をつける（イントネーションは\myRisingPitch{}）
+\end{itemize}
+     \end{exampleblock}
+
+\vfill
+
+\pause
+
+
+\mbox{}\hfill\visible<11>{\myaudio{./audio/010_question_do_04.mp3}}
+
+\end{frame}
+
+
+
+
+
+\subsection{彼は〜しますか}
+\begin{frame}[plain]{彼は〜しますか？}
+ \Large
+
+\pause
+
+
+\mbox{}\hspace{50pt}\alt<2-3>{You}{He} sing\only<5->{\myAnch{T1}{orange}{s}} well. \only<4>{\ding{55}}
+\hspace{85pt}\visible<3->{{\footnotesize well: じょうずに}}
+\hspace{-150pt}%
+\visible<7->{\raisebox{-5pt}{\scalebox{1.4}{\myDownwardPitch}}}
+
+\hspace{100pt}%
+\visible<6->{%
+\myAnch{T2}{orange}{\small 三単現の`s'}
+}
+
+\vspace{30pt}
+
+\onslide<8->{%
+\myAnch{does}{orange}{Does} he sing well \myAnch{question}{orange}{?}
+}
+\onslide<9->{%
+\scalebox{1.4}{\myRisingPitch}
+}
+
+\onslide<10->{%
+\mbox{}\hspace{50pt}\myAnch{txt1}{white}{%
+\small
+\begin{tabular}[t]{@{}l}
+先頭にDoes(Do\,\,\ding{55})\\
+(Does he sing\textcolor{red}{s}\,\,\ding{55})
+\end{tabular}
+}
+\hspace{60pt}\myAnch{txt2}{white}{\small 文末に`?'}
+
+\begin{tikzpicture}[remember picture, overlay]
+\draw[->, thick, orange] (txt1) to[out=180, in=-90] (does.south);
+\draw[->, thick, orange] (txt2.west) to[out=180, in=-45] (question.south);
+\end{tikzpicture}
+}
+
+\onslide<11->{%
+\mbox{}\hfill\myaudio{./audio/010_question_do_05.mp3}
+}
+\end{frame}
+
+
+\begin{frame}<1-10>[plain]\frametitle{Exercises}
+
+つぎの文を疑問文にしましょう。
+
+ \begin{enumerate}
+  \item<1-> You like flowers.\hspace{59.7pt}
+        \onslide<5->{$\longrightarrow$\,\,\,\,\, Do you like flowers?\bcfleur\bcfleur}
+  \item<1-> They live in Boston.\hspace{47.5pt}%
+        \onslide<6->{$\longrightarrow$\,\,\,\,\, Do they live in Boston?}
+  \item<1-> She teaches science.\hspace{42pt}%
+        \onslide<7->{$\longrightarrow$\,\,\,\,\, Does she teach science?}
+  \item<1-> He has  a car.\hspace{80.5pt}%
+        \onslide<8->{$\longrightarrow$\,\,\,\,\, Does he have a car?}
+  \item<1-> Our teacher walks to school.
+        \onslide<9->{$\longrightarrow$\,\,\,\,\, Does our teacher walk to school? }
+ \end{enumerate}
+
+\begin{exampleblock}<2->{Topics for Today}
+\begin{itemize}\small
+ \item<3->   先頭に `Do'を置く\pause
+ \item<4->   主語が三人称単数のときは`Does'
+\end{itemize}
+\end{exampleblock}
+\vspace{-10pt}
+% Embed the sound file
+\onslide<10>{%
+\mbox{}\hfill\myaudio{./audio/008_question_be_05.mp3}
+}
+
+\end{frame}
+
+
+\end{document}
+
