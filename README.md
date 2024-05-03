@@ -65,7 +65,7 @@ ffmpeg -i video.mp4 -i video.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 output
 
 # imager
 
-imagerパッケージを用いて、差心から線画を作成する手順
+imagerパッケージを用いて、写真から線画を作成する手順
 ```
 library(imager)
 ```
