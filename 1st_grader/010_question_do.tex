@@ -19,6 +19,8 @@
 \usepackage{marvosym}
 \usepackage{fontmfizz}
 \usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
@@ -191,9 +193,9 @@
 \begin{frame}[plain]\frametitle{要点}
 \Large
 \begin{tabular}{rlcl}
- 1& I have enough time.\pause{} &$\rightarrow$ &\myEmph[7,9-]{orange}{Do} I have enough time\myEmph[7,10]{orange}{?}\pause{} \\
- 2& You play the guitar.\pause{}&$\rightarrow$ &\myEmph[7,9-]{orange}{Do} you play the guitar\myEmph[7,10]{orange}{?}\pause{} \\
- 3& They speak French.\pause{}&$\rightarrow$ &\myEmph[7,9-]{orange}{Do} they speak French\myEmph[7,10]{orange}{?}\pause
+ 1& I have enough time.\pause{} &$\rightarrow$ &\myEmph[7,9-]{orange}{Do} I have enough time\myEmph[7,10-]{orange}{?}\pause{} \\
+ 2& You play the guitar.\pause{}&$\rightarrow$ &\myEmph[7,9-]{orange}{Do} you play the guitar\myEmph[7,10-]{orange}{?}\pause{} \\
+ 3& They speak French.\pause{}&$\rightarrow$ &\myEmph[7,9-]{orange}{Do} they speak French\myEmph[7,10-]{orange}{?}\pause
 \end{tabular}
 \pause
 
@@ -274,15 +276,15 @@
 
  \begin{enumerate}
   \item<1-> You like flowers.\hspace{59.7pt}
-        \onslide<5->{$\longrightarrow$\,\,\,\,\, Do you like flowers?\bcfleur\bcfleur}
+        \onslide<5->{$\longrightarrow$\,\,\,\,\, Do you like flowers?\hfill\scalebox{.75}{\bcfleur\bcfleur}}
   \item<1-> They live in Boston.\hspace{47.5pt}%
-        \onslide<6->{$\longrightarrow$\,\,\,\,\, Do they live in Boston?}
+        \onslide<6->{$\longrightarrow$\,\,\,\,\, Do they live in Boston?\hfill\scalebox{.25}{\worldflag{US}}}
   \item<1-> She teaches science.\hspace{42pt}%
-        \onslide<7->{$\longrightarrow$\,\,\,\,\, Does she teach science?}
+        \onslide<7->{$\longrightarrow$\,\,\,\,\, Does she teach science?\hfill\scalebox{1.75}{\twemoji{woman scientist}}}
   \item<1-> He has  a car.\hspace{80.5pt}%
-        \onslide<8->{$\longrightarrow$\,\,\,\,\, Does he have a car?}
+        \onslide<8->{$\longrightarrow$\,\,\,\,\, Does he have a car?\hfill\faCar}
   \item<1-> Our teacher walks to school.
-        \onslide<9->{$\longrightarrow$\,\,\,\,\, Does our teacher walk to school? }
+        \onslide<9->{$\longrightarrow$\,\,\,\,\, Does our teacher walk to school? \hfill\scalebox{.67}{\PHpedestrian}\,\,\scalebox{1.5}{\twemoji{school}}}
  \end{enumerate}
 
 \begin{exampleblock}<2->{Topics for Today}
