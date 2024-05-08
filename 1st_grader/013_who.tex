@@ -99,46 +99,45 @@
 \begin{frame}[plain]{Who is that man?}
  \Large
 
-%\mbox{}\hspace{47pt}That man is George.
+\mbox{}\hspace{47pt}That man is George
 
 \pause
 
+
 \vspace{7pt}
 
-\mbox{}\hspace{47pt}That man is \myAnch{focus}{orange}{George}.%
+\mbox{}\hspace{47pt}Is that man \alt<3->{\myAnch{FOCUS}{orange}{George}}{\myAnch{focus}{white}{George}}?%
 \hspace{20pt}{\normalsize YesまたはNoで答える疑問文}
 
-\pause
-
 \vspace{7pt}
 
-\myAnch{wh}{orange}{Who} is that man \myAnch{question}{orange}{?}
 \pause
-\scalebox{1.4}{\myDownwardPitch}
+
+\visible<4->{\myAnch{wh}{orange}{Who} is that man \myAnch{question}{orange}{?}}
+\visible<6->{\scalebox{1.4}{\myDownwardPitch}}
 
 \pause
 
 %\mbox{}\hspace{30pt}\myAnch{txt1}{white}{\small 先頭にWho}
 
-
+\visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->, thick, orange] (focus.south) to[out=-150, in=45] (wh.north);
+\draw[->, thick, orange] (focus.south) to[out=-165, in=30] (wh.north);
 \end{tikzpicture}
+}
 
-
-
+\visible<7->{%
 \begin{exampleblock}{Topics for Today}
 \pause
 \begin{itemize}\small
- \item   先頭に `Who'を置く\pause(主語と動詞の順番に注意)\pause
+ \item 「だれ」と聞くとき$\longrightarrow$\,\,\,先頭に `Who'を置く\pause(主語と動詞の順番に注意)
  \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
 \end{itemize}
      \end{exampleblock}
-
-\pause
-
+}
+\visible<8->{%
 \mbox{}\hfill\myaudio{./audio/013_who_01.mp3}
-
+}
 \end{frame}
 
 \end{document}
