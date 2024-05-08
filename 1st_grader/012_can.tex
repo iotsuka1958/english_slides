@@ -1,0 +1,372 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{circledsteps}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- I can play the guitar. ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+
+\section{can}
+
+\subsection{〜できる}
+\begin{frame}[plain]\frametitle{〜できる}
+ \Large
+
+I play the guitar every day. \pause
+\hspace{80pt}{\footnotesize every day: 毎日}
+
+\pause
+
+\vspace{15pt}
+
+I \textcolor{orange}{can} play the guitar.
+
+\pause
+
+\vfill
+
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item   「〜することができる」$\longrightarrow${\,\,\,}can $+$ 動詞
+ \end{itemize}
+     \end{exampleblock}
+
+\pause
+
+\mbox{}\hfill\visible{\myaudio{./audio/012_can_01.mp3}}
+
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{〜できる}
+
+つぎの英文の意味を考えましょう。
+
+\begin{enumerate}
+ \item I can play the guitar.
+ \item We can speak English.
+ \item You can sing very well.
+ \item He can swim.
+ \item She can read French.
+ \item They can dance very well.
+\end{enumerate}
+
+\pause
+
+\vfill
+
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item   主語がなんであってもcan $+$ 動詞
+ \end{itemize}
+     \end{exampleblock}
+
+\pause
+
+\mbox{}\hfill\visible{\myaudio{./audio/012_can_02.mp3}}
+\end{frame}
+
+
+\begin{frame}<1-7>[plain]\frametitle{Exercises}
+
+次の英文の(~~~~~~~~)内から動詞の正しい形を選び、○で囲みましょう。
+
+\begin{enumerate}
+ \item John ( play / \alt<2->{\Circled[outer color=orange]{plays}}{plays} / playing ) baseball.
+ \item Jane can ( \alt<3->{\Circled[outer color=orange]{play}}{play} / plays / playing ) the guitar.
+ \item You can ( \alt<4->{\Circled[outer color=orange]{sing}}{sing} / sings / seeing ) very well.
+ \item They can ( \alt<5->{\Circled[outer color=orange]{swim}}{swim} / swims / swimming ).
+ \item We can（ \alt<6->{\Circled[outer color=orange]{speak}}{speak} / speaks / reads ) Japanese.
+\end{enumerate}
+\pause
+
+\vfill
+
+\visible<7>{%
+\mbox{}\hfill\visible{\myaudio{./audio/012_can_03.mp3}}
+}
+
+\end{frame}
+
+\subsection{〜できない}
+\begin{frame}[plain]{〜できない}
+  \Large
+
+I can use a computer. \pause
+\hspace{80pt}{\footnotesize use: 使う　computer: コンピューター}
+
+\pause
+
+\vspace{15pt}
+
+I \textcolor{orange}{cannot} use a computer.\pause
+
+I \textcolor{orange}{can't} use a computer.
+
+
+
+\pause
+
+\vfill
+
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item   「〜することができない」$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{cannot}\\\text{can't}\end{tabular}\right\} + \text{動詞}$
+ \end{itemize}
+     \end{exampleblock}
+
+\pause
+
+\mbox{}\hfill{}\myaudio{./audio/012_can_04.mp3}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{〜できる、できない}
+ 
+
+\begin{enumerate}
+ \item I can skate very well, but I cannot ski.
+ \item Suzan can drive a car, but she can't ride a bicycle.
+ \item We can speak French, but we cannot speak Japanese.
+ \item They can sing very well, but they can't play the piano.
+\end{enumerate}
+\vfill
+
+\pause
+
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}\small
+ \item  「〜できる」$\longrightarrow$\,\,\, can $+$ 動詞\hfill{}「〜できない」$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{cannot}\\\text{can't}\end{tabular}\right\} + \text{動詞}$　\pause
+ \item 主語がなんであっても同じ
+ \end{itemize}
+     \end{exampleblock}
+
+\pause
+
+\mbox{}\hfill\visible<4>{\myaudio{./audio/012_can_05.mp3}}
+\end{frame}
+
+
+
+\begin{frame}<1-6>[plain]\frametitle{Exercises}
+
+日本文を参考にして(~~~~~~~~)の語を並べかえ、英文を完成させましょう。
+
+\begin{enumerate}
+
+ \item You ( can / the piano / play ) very well.
+\hspace{2\zw}\begin{minipage}{15\zw}あなたはとてもじょうずにピアノを弾くことができます。\end{minipage}
+\\
+\visible<2->{$\longrightarrow$\,\,\,You can play the piano very well.}
+ \item  ( run / Naomi / can ) fast.\hspace{8.75\zw}ナオミは速く走ることができます。\\
+\visible<3->{$\longrightarrow$\,\,\,Naomi can run fast.}
+ \item ( French / can't / I / speak ).\hspace{7.5\zw}%
+わたしはフランス語を話せません。\\
+\visible<4->{$\longrightarrow$\,\,\,I can't speak French.}
+ \item He ( a bicycle / ride / cannot ).\hspace{6.2\zw}彼は自転車に乗れません。\\
+\visible<5->{$\longrightarrow$\,\,\,He cannot ride a bicycle.}
+\end{enumerate}
+
+\pause
+
+\mbox{}\hfill\visible<6>{\myaudio{./audio/012_can_06.mp3}}
+\end{frame}
+
+
+\subsection{〜できますか}
+\begin{frame}[plain,t]{〜できますか？}
+ \Large
+
+\pause
+
+
+\myAnch{s-1}{orange}{You} \myAnch{aux-1}{olive}{can} play the guitar. \scalebox{2}{\myDownwardPitch}
+\vspace{30pt}\pause
+
+\myAnch{aux-2}{olive}{Can} \myAnch{s-2}{orange}{you} play the guitar\myAnch{question}{orange}{?}
+\pause
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[thick, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north); 
+ \draw[thick, olive, ->] (aux-1.south) to[out=-90, in=90] (aux-2.north);
+%\pause
+%\visible<8->{\node at (0.5,0.25) {\scalebox{2}{\myRisingPitch}};}
+\end{tikzpicture}
+
+\vspace{-25pt}
+\mbox{}\hspace{200pt}\visible<6->{\scalebox{2}{\myRisingPitch}}
+
+\hspace{40pt}\visible<5->{\small 主語の前にCan}
+\hspace{80pt}\visible<6-> {\small ?と最後のイントネーションに注意}
+
+\vfill
+
+\begin{exampleblock}<7->{Topics for Today}
+\visible<8->{%
+\begin{itemize}\small
+ \item   「〜することができますか？」$\longrightarrow${\,\,\,}$\text{Can} + \text{主語} + \text{動詞}$ \ldots{}\,\,?
+ \end{itemize}
+}
+     \end{exampleblock}
+
+ \mbox{}\hfill\visible<9->{\myaudio{./audio/012_can_07.mp3}}
+\end{frame}
+
+
+
+
+\begin{frame}<1-5>[plain]\frametitle{Exercises}
+
+日本文を参考にして(~~~~~~~~)の語を並べかえ、英文を完成させましょう。
+ただし先頭に来る単語は大文字で始めてください。
+
+\begin{enumerate}
+ \item  ( can / this English song / sing / you ) ?\hspace{2\zw}%
+\begin{minipage}{15\zw}あなたはこの英語の歌を歌うことができますか。\raisebox{-5pt}{\rotatebox{0}{\scalebox{2.5}{\twemoji{musical notes}}}}\end{minipage}
+\\
+\visible<2->{$\longrightarrow$\,\,\,Can you sing this English song?}
+ \item ( you / cook / can / pizza ) ?
+\hspace{5.3\zw}あなたはピザをつくれますか。\raisebox{5pt}{\rotatebox{-45}{\scalebox{2.5}{\twemoji{pizza}}}}\\
+\visible<3->{$\longrightarrow$\,\,\,Can you cook pizza?}
+ \item ( a car / John / drive / can ) ?\hspace{4.8\zw}%
+ジョンは車の運転ができますか。\raisebox{0pt}{\rotatebox{0}{\scalebox{2.5}{\twemoji{oncoming automobile}}}}\\
+\visible<4->{$\longrightarrow$\,\,\,Can John drive a car?}
+\end{enumerate}
+
+\pause
+
+\mbox{}\hfill\visible<5>{\myaudio{./audio/012_can_08.mp3}}
+\end{frame}
+
+\subsection{Can you 〜? と聞かれたら}
+\begin{frame}[plain]{Can you 〜? と聞かれたら}
+ \Large
+
+Can you cook pizza?
+
+\vspace{20pt}
+\pause
+
+\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}
+         \text{Yes, I can.}\\\pause
+         \text{No, I cannot.}\\\pause
+         \text{(}= \text{No, I can't.)}
+        \end{tabular}\right.$
+\pause
+
+\mbox{}\hfill\visible<5>{\myaudio{./audio/012_can_09.mp3}}
+
+
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。
+
+\begin{tabular}{rlcll}
+\visible<1->{例}& \visible<1->{Can you skate?}\hspace{2\zw}\scalebox{2}{\twemoji{ice skate}}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I can.}&\visible<4->{(2) No, I can't.($= \text{cannot}$)}\\
+\visible<1->{1}&\visible<1->{Can you read English?\hspace{10pt}\raisebox{0pt}{\bcbook}}&\visible<5->{$\rightarrow$}&\visible<6->{(1) Yes, I can}&\visible<7->{(2) No, I can't.}\\
+\visible<1->{2}&\visible<1->{Can they speak French?}&\visible<8->{$\rightarrow$}& \visible<9->{(1) Yes, they can.}&\visible<
+10->{(2) No, they can't.}\\
+\visible<1->{3}&\visible<1->{Can David and Bob sing well?}&\visible<11->{$\rightarrow$}&\visible<12->{(1) Yes, they can.}&\visible<13->{(2) No, they can't.}\\
+\visible<1->{4}&\visible<1->{Can she drive a car?\hspace{10pt}\raisebox{-5pt}{\scalebox{2.5}{\twemoji{automobile}}}}&\visible<14->{$\rightarrow$}&\visible<15->{(1) Yes, she can.}&\visible<16->{(2) No, she can't.}
+\end{tabular}
+
+\pause
+\vfill
+
+\mbox{}\hfill\visible<17->{\myaudio{./audio/012_can_10.mp3}}
+
+\end{frame}
+
+\end{document}
+

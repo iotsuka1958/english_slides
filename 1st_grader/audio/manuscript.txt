@@ -464,7 +464,7 @@ Our teacher is busy. <break time="3s"/> Is our teacher busy?
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%
-009_question_be_01.mp3
+009_answer_be_01.mp3
 Are you from New York?
 Yes, I am. No, I am not. No, I'm not.
 <speak>
@@ -477,7 +477,7 @@ Yes, I am. No, I am not. No, I'm not.
 </prosody>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%
-009_question_be_02.mp3
+009_answer_be_02.mp3
 s he a baseball player?<break time="3s"/>Yes, he is.<break time="3s"/>No, he is not.<break time="3s"/>No, he's not.<break time="3s"/>No, he isn't.
 Is she a good singer?<break time="3s"/>Yes, she is.<break time="3s"/>No, she is not.<break time="3s"/>No, she's not.<break time="3s"/>No, she isn't.
 
@@ -493,7 +493,7 @@ Is she a good singer?<break time="3s"/>Yes, she is.<break time="3s"/>No, she is 
 </prosody>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%
-009_question_be_03.mp3
+009_answer_be_03.mp3
 Iss John a techer? Yes, he is. No he's not. No, he isn't.
 Is emily from Sydney? Yes, she is. No, she's not. No, she isn't.
 
@@ -509,7 +509,7 @@ Is emily from Sydney? Yes, she is. No, she's not. No, she isn't.
 </prosody>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%
-009_question_be_04.mp3
+009_answer_be_04.mp3
 Are they your friends? Yes, they are. No,they are not. No, they're not. No, they aren't.
 
 <speak>
@@ -522,7 +522,7 @@ Are they your friends? Yes, they are. No,they are not. No, they're not. No, they
 </prosody>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%
-009_question_be_05.mp3
+009_answer_be_05.mp3
 <speak>
 <prosody volume="x-loud" rate="slow">
 <p>Please listen carefully.</p>
@@ -533,7 +533,7 @@ Are they your friends? Yes, they are. No,they are not. No, they're not. No, they
 </prosody>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%
-009_question_be_06.mp3
+009_answer_be_06.mp3
 <speak>
 <prosody volume="x-loud" rate="slow">
 <p>Please listen carefully.</p>
@@ -546,7 +546,7 @@ Are they your friends? Yes, they are. No,they are not. No, they're not. No, they
 </prosody>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%
-009_question_be_07.mp3
+009_answer_be_07.mp3
 Are you busy?
 Are you from Tokyo?
 Is she a science teacher?
@@ -566,7 +566,7 @@ speak>
 </prosody>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%
-009_question_be_08.mp4
+009_answer_be_08.mp4
 
 <speak>
 <prosody volume="x-loud" rate="slow">
@@ -581,7 +581,7 @@ Hi, I’m Susan, and I’m from New York. Nice to meet you! Look at this picture
 </prosody>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%
-009_question_be_09.mp4
+009_answer_be_09.mp4
 
 <speak>
 <prosody volume="x-loud" rate="slow">
@@ -595,6 +595,218 @@ Hi, I’m Susan, and I’m from New York. Nice to meet you! Look at this picture
 <p>Number 2.  Is Susan’s father a teacher? <break time="3s"/>No, he isn’t. <break time="5s"/>Is Susan’s father a teacher? <break time="3s"/>No, he isn’t.<break time="3s"/></p>
 <p>Number 3.  Is Helen a dentist? <break time="3s"/>No, she isn’t. <break time="5s"/>Is Helen a dentist? <break time="3s"/>No, she isn’t.<break time="3s"/></p>
 <p>Number 4.  Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is. <break time="5s"/>Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%
+010_question_do
+
+%%%%%%%%%%%%%%%%%%%%%%%
+011_answer_do
+
+%%%%%%%%%%%%%%%%%%%%%%%
+012_can_01.mp3
+
+I play the guitar every day. <break time="3s"/>I can play the guitar.
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully.</p>
+<p>I play the guitar every day. <break time="3s"/>I can play the guitar. <break time="3s"/>I play the guitar every day. <break time="3s"/>I can play the guitar.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けてリピートしてください。</lang>Please repeat after me.</p>
+<p> I play the guitar every day. <break time="3s"/>I can play the guitar. <break time="5s"/>I play the guitar every day. <break time="3s"/>I can play the guitar.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%
+012_can_02.mp3
+I can play the guitar.
+We can speak English.
+You can sing very well.
+He can swim.
+She can read French.
+They can dance very well.
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p>Number 1. I can play the guitar. <break time="2s"/>I can play the guitar.<break time="3s"/></p>
+<p>Number 2. We can speak English. <break time="2s"/>We can speak English.<break time="3s"/></p>
+<p>Number 3. You can sing very well. <break time="2s"/>You can sing very well.<break time="3s"/></p>
+<p>Number 4. He can swim. <break time="2s"/>He can swim.<break time="3s"/></p>
+<p>Number 5. She can read French. <break time="2s"/>She can read French.<break time="3s"/></p>
+<p>Number 6. They can dance very well. <break time="2s"/>They can dance very well.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けてにリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  I can play the guitar. <break time="5s"/>I can play the guitar.<break time="3s"/></p>
+<p>Number 2.  We can speak English. <break time="5s"/>We can speak English.<break time="3s"/></p>
+<p>Number 3.  You can sing very well. <break time="5s"/>You can sing very well.<break time="3s"/></p>
+<p>Number 4.  He can swim. <break time="5s"/>He can swim.<break time="3s"/></p>
+<p>Number 5.  She can read French. <break time="5s"/>She can read French.<break time="3s"/></p>
+<p>Number 6.  They can dance very well. <break time="5s"/>They can dance very well.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+012_can_03mp3
+John plays baseball.
+Jane can play the guitar.
+You can sing very well.
+They can swim.
+We can speak Japanese.
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. John plays baseball. <break time="2s"/>John plays baseball.<break time="3s"/></p>
+<p>Number 2. Jane can play the guitar. <break time="2s"/>Jane can play the guitar.<break time="3s"/></p>
+<p>Number 3. You can sing very well. <break time="2s"/>You can sing very well.<break time="3s"/></p>
+<p>Number 4. They can swim. <break time="2s"/>They can swim.<break time="3s"/></p>
+<p>Number 5. We can speak Japanese. <break time="2s"/>We can speak Japanese.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  John plays baseball. <break time="5s"/>John plays baseball.<break time="3s"/></p>
+<p>Number 2.  Jane can play the guitar. <break time="5s"/>Jane can play the guitar.<break time="3s"/></p>
+<p>Number 3.  You can sing very well. <break time="5s"/>You can sing very well.<break time="3s"/></p>
+<p>Number 4.  They can swim. <break time="5s"/>They can swim.<break time="3s"/></p>
+<p>Number 5.  We can speak Japanese. <break time="5s"/>We can speak Japanese.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%
+012_can_04.mp3
+I can use a computer.
+I cannot use a computer.
+I can’t use a computer.
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p>Number 1. I can use a computer. <break time="2s"/>I can use a computer.<break time="3s"/></p>
+<p>Number 2. I cannot use a computer. <break time="2s"/>I cannot use a computer.<break time="3s"/></p>
+<p>Number 3. I can’t use a computer. <break time="2s"/>I can’t use a computer.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  I can use a computer. <break time="5s"/>I can use a computer.<break time="5s"/></p>
+<p>Number 2.  I cannot use a computer. <break time="5s"/>I cannot use a computer.<break time="5s"/></p>
+<p>Number 3.  I can’t use a computer. <break time="5s"/>I can’t use a computer.<break time="5s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%
+012_can_05.mp3
+I can skate very well, but I cannot ski.
+Suzan can drive a car, but she can’t ride a bicycle.
+We can speak French, but we cannot speak Japanese.
+They can sing very well, but they can’t play the piano.
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. I can skate very well, but I cannot ski. <break time="2s"/>I can skate very well, but I cannot ski.<break time="3s"/></p>
+<p>Number 2. Suzan can drive a car, but she can’t ride a bicycle. <break time="2s"/>Suzan can drive a car, but she can’t ride a bicycle.<break time="3s"/></p>
+<p>Number 3. We can speak French, but we cannot speak Japanese. <break time="2s"/>We can speak French, but we cannot speak Japanese.<break time="3s"/></p>
+<p>Number 4. They can sing very well, but they can’t play the piano. <break time="2s"/>They can sing very well, but they can’t play the piano.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  I can skate very well, but I cannot ski. <break time="5s"/>I can skate very well, but I cannot ski.<break time="5s"/></p>
+<p>Number 2.  Suzan can drive a car, but she can’t ride a bicycle. <break time="5s"/>Suzan can drive a car, but she can’t ride a bicycle.<break time="5s"/></p>
+<p>Number 3.  We can speak French, but we cannot speak Japanese. <break time="5s"/>We can speak French, but we cannot speak Japanese.<break time="5s"/></p>
+<p>Number 4.  They can sing very well, but they can’t play the piano. <break time="5s"/>They can sing very well, but they can’t play the piano.<break time="5s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%
+012_can_06.mp3
+You can play the piano very well.
+Naomi can run fast.
+I can’t speak French.
+He cannot ride a bicycle.
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p>Number 1. You can play the piano very well. <break time="2s"/>You can play the piano very well.<break time="3s"/></p>
+<p>Number 2. Naomi can run fast. <break time="2s"/>Naomi can run fast.<break time="3s"/></p>
+<p>Number 3. I can’t speak French. <break time="2s"/>I can’t speak French.<break time="3s"/></p>
+<p>Number 4. He cannot ride a bicycle. <break time="2s"/>He cannot ride a bicycle.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けてリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  You can play the piano very well. <break time="5s"/>You can play the piano very well.<break time="5s"/></p>
+<p>Number 2.  Naomi can run fast. <break time="5s"/>Naomi can run fast.<break time="3s"/></p>
+<p>Number 3.  I can’t speak French. <break time="5s"/>I can’t speak French.<break time="5s"/></p>
+<p>Number 4.  He cannot ride a bicycle. <break time="5s"/>He cannot ride a bicycle.<break time="5s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%
+012_can_07.mp3
+You can play the guitar.
+Can you play the guitar?
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p>Number 1. You can play the guitar. <break time="2s"/>You can play the guitar.<break time="3s"/></p>
+<p>Number 2. Can you play the guitar? <break time="2s"/>Can you play the guitar?<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">こんどは、わたしのあとに続けてリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  You can play the guitar. <break time="5s"/>You can play the guitar.<break time="5s"/></p>
+<p>Number 2.  Can you play the guitar? <break time="5s"/>Can you play the guitar?<break time="5s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%
+012_can_08.mp3
+
+Can you sing this English song?
+Can you cook pizza?
+Can John drive a car?
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p>Number 1. Can you sing this English song? <break time="2s"/>Can you sing this English song?<break time="3s"/></p>
+<p>Number 2. Can you cook pizza? <break time="2s"/>Can you cook pizza?<break time="3s"/></p>
+<p>Number 3. Can John drive a car? <break time="2s"/>Can John drive a car?<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けてリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  Can you sing this English song? <break time="5s"/>Can you sing this English song?<break time="5s"/></p>
+<p>Number 2.  Can you cook pizza? <break time="5s"/>Can you cook pizza?<break time="5s"/></p>
+<p>Number 3.  Can John drive a car? <break time="5s"/>Can John drive a car?<break time="5s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%
+012_can_09.mp3
+Can you cook pizza? <break time="3s"/>Yes, I can.<break time="3s"/> No, I cannot.<break time="3s"/> No, I can’t.
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p>Can you cook pizza? <break time="3s"/>Yes, I can.<break time="3s"/> No, I cannot. <break time="3s"/>No, I can’t. <break time="5s"/>Can you cook pizza?<break time="3s"/> Yes, I can.<break time="3s"/> No, I cannot.<break time="3s"/> No, I can’t.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けてにリピートしてください。</lang>Please repeat after me.</p>
+<p>Can you cook pizza? <break time="3s"/>Yes, I can.<break time="3s"/> No, I cannot.<break time="3s"/> No, I can’t. <break time="5s"/>Can you cook pizza?<break time="3s"/> Yes, I can.<break time="3s"/> No, I cannot.<break time="3s"/> No, I can’t.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%
+012_can_10.mp3
+an you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t.
+Can you read English?<break time="3s"/>  Yes, I can.<break time="3s"/>  No, I can’t.
+Can they speak French?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.
+Can David and Bob sing well?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.
+Can she drive a car?<break time="3s"/>  Yes, she can.<break time="3s"/> No, she can’t.
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p>Can you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t. <break time="2s"/>Can you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t.<break time="3s"/></p>
+<p>Number 1. Can you read English?<break time="3s"/>  Yes, I can.<break time="3s"/>  No, I can’t. <break time="2s"/>Can you read English?<break time="3s"/>  Yes, I can.<break time="3s"/>  No, I can’t.<break time="3s"/></p>
+<p>Number 2. Can they speak French?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t. <break time="2s"/>Can they speak French?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.<break time="3s"/></p>
+<p>Number 3. Can David and Bob sing well?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t. <break time="2s"/>Can David and Bob sing well?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.<break time="3s"/></p>
+<p>Number 4. Can she drive a car?<break time="3s"/>  Yes, she can.<break time="3s"/> No, she can’t. <break time="2s"/>Can she drive a car?<break time="3s"/>  Yes, she can.<break time="3s"/> No, she can’t.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けてリピートしてください。</lang>Please repeat after me.</p>
+<p> Can you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t. <break time="5s"/>Can you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t.<break time="3s"/></p>
+<p>Number 1.  Can you read English?<break time="3s"/>  Yes, I can.<break time="3s"/>  No, I can’t. <break time="5s"/>Can you read English?<break time="3s"/>  Yes, I can.<break time="3s"/>  No, I can’t.<break time="3s"/></p>
+<p>Number 2.  Can they speak French?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t. <break time="5s"/>Can they speak French?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.<break time="3s"/></p>
+<p>Number 3.  Can David and Bob sing well?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t. <break time="5s"/>Can David and Bob sing well?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.<break time="3s"/></p>
+<p>Number 5.  Can she drive a car?<break time="3s"/>  Yes, she can.<break time="3s"/> No, she can’t. <break time="5s"/>Can she drive a car?<break time="3s"/>  Yes, she can.<break time="3s"/> No, she can’t.<break time="3s"/></p>
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </prosody>
 </speak>

@@ -1,4 +1,5 @@
-Is Susan from New York? <break time="3s"/>Yes, she is.
-Is Susan’s father a teacher? <break time="3s"/>No, he isn’t.
-Is Helen a dentist? <break time="3s"/>No, she isn’t.
-Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is.
+Can you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t.
+Can you read English?<break time="3s"/>  Yes, I can.<break time="3s"/>  No, I can’t.
+Can they speak French?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.
+Can David and Bob sing well?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.
+Can she drive a car?<break time="3s"/>  Yes, she can.<break time="3s"/> No, she can’t.
