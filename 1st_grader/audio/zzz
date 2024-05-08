@@ -1,15 +1,17 @@
 <speak>
 <prosody volume="x-loud" rate="slow">
-<p>Please listen carefully.</p>
-<p>Number 1. Is Susan from New York? <break time="3s"/>Yes, she is. <break time="2s"/>Is Susan from New York? <break time="3s"/>Yes, she is.<break time="3s"/></p>
-<p>Number 2. Is Susan’s father a teacher? <break time="3s"/>No, he isn’t. <break time="2s"/>Is Susan’s father a teacher? <break time="3s"/>No, he isn’t.<break time="3s"/></p>
-<p>Number 3. Is Helen a dentist? <break time="3s"/>No, she isn’t. <break time="2s"/>Is Helen a dentist? <break time="3s"/>No, she isn’t.<break time="3s"/></p>
-<p>Number 4. Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is. <break time="2s"/>Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is.<break time="3s"/></p>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p>Can you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t. <break time="2s"/>Can you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t.<break time="3s"/></p>
+<p>Number 1. Can you read English?<break time="3s"/>  Yes, I can.<break time="3s"/>  No, I can’t. <break time="2s"/>Can you read English?<break time="3s"/>  Yes, I can.<break time="3s"/>  No, I can’t.<break time="3s"/></p>
+<p>Number 2. Can they speak French?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t. <break time="2s"/>Can they speak French?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.<break time="3s"/></p>
+<p>Number 3. Can David and Bob sing well?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t. <break time="2s"/>Can David and Bob sing well?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.<break time="3s"/></p>
+<p>Number 4. Can she drive a car?<break time="3s"/>  Yes, she can.<break time="3s"/> No, she can’t. <break time="2s"/>Can she drive a car?<break time="3s"/>  Yes, she can.<break time="3s"/> No, she can’t.<break time="3s"/></p>
 <p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けてリピートしてください。</lang>Please repeat after me.</p>
-<p>Number 1.  Is Susan from New York? <break time="3s"/>Yes, she is. <break time="5s"/>Is Susan from New York? <break time="3s"/>Yes, she is.<break time="3s"/></p>
-<p>Number 2.  Is Susan’s father a teacher? <break time="3s"/>No, he isn’t. <break time="5s"/>Is Susan’s father a teacher? <break time="3s"/>No, he isn’t.<break time="3s"/></p>
-<p>Number 3.  Is Helen a dentist? <break time="3s"/>No, she isn’t. <break time="5s"/>Is Helen a dentist? <break time="3s"/>No, she isn’t.<break time="3s"/></p>
-<p>Number 4.  Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is. <break time="5s"/>Is the name of Susan’s dog Brownie? <break time="3s"/>Yes, it is.<break time="3s"/></p>
+<p> Can you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t. <break time="5s"/>Can you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t.<break time="3s"/></p>
+<p>Number 1.  Can you read English?<break time="3s"/>  Yes, I can.<break time="3s"/>  No, I can’t. <break time="5s"/>Can you read English?<break time="3s"/>  Yes, I can.<break time="3s"/>  No, I can’t.<break time="3s"/></p>
+<p>Number 2.  Can they speak French?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t. <break time="5s"/>Can they speak French?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.<break time="3s"/></p>
+<p>Number 3.  Can David and Bob sing well?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t. <break time="5s"/>Can David and Bob sing well?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.<break time="3s"/></p>
+<p>Number 4.  Can she drive a car?<break time="3s"/>  Yes, she can.<break time="3s"/> No, she can’t. <break time="5s"/>Can she drive a car?<break time="3s"/>  Yes, she can.<break time="3s"/> No, she can’t.<break time="3s"/></p>
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </prosody>
 </speak>
