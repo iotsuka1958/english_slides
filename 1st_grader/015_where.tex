@@ -1,0 +1,252 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- Where does Jane live? ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+
+\section{When}
+
+\subsection{Where is your key?: be動詞のとき}
+\begin{frame}[plain]{When is your birthday?}
+ \Large
+
+be動詞のとき
+
+\mbox{}\hspace{57pt}Your key is on the desk.
+
+\pause
+
+
+\vspace{7pt}
+
+\mbox{}\hspace{55pt}Is your key \alt<3->{\myAnch{FOCUS}{orange}{on the desk}}{\myAnch{focus}{white}{on the desk}}?%
+\hspace{20pt}{\normalsize YesまたはNoで答える疑問文}
+
+\vspace{7pt}
+
+\pause
+
+\visible<4->{\myAnch{wh}{orange}{Where} is your key \myAnch{question}{orange}{?}}
+\visible<6->{\scalebox{1.4}{\myDownwardPitch}}
+
+\pause
+
+%\mbox{}\hspace{30pt}\myAnch{txt1}{white}{\small 先頭にWho}
+
+\visible<5->{%
+\begin{tikzpicture}[remember picture, overlay]
+\draw[->, thick, orange] (focus.south) to[out=-165, in=30] (wh.north);
+\end{tikzpicture}
+}
+
+\visible<7->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item 「〜はどこ」と聞くとき$\longrightarrow$\,\,\,Where is 〜?
+ \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
+\end{itemize}
+     \end{exampleblock}
+}
+\visible<8->{%
+\mbox{}\hfill\myaudio{./audio/014_where_01.mp3}
+}
+\end{frame}
+
+\subsection{Where do they live?: 一般動詞のとき}
+\begin{frame}[plain]\frametitle{Where do they live?}
+\Large
+一般動詞のとき
+
+\pause
+
+\mbox{}\hspace{75pt}%
+They lives in Sydney.
+
+\pause
+
+\mbox{}\hspace{55pt}%
+Do they live \alt<5->{\myAnch{FOCUS2}{orange}{in Sydney}}{\myAnch{focus2}{white}{in Sydney}}?
+\hspace{10pt}\visible<4->{{\normalsize Yes/Noで答える疑問文}}
+
+\visible<6->{\myAnch{WH2}{orange}{Where} do they live?}
+
+\visible<7->{%
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[thick, orange, ->] (focus2.south) to[out=-165, in=15] (WH2.north east);
+\end{tikzpicture}
+}
+
+\visible<8->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item `When'を先頭に置いて、疑問文のかたちを続ける\,\,When do you  〜?
+ \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
+\end{itemize}
+     \end{exampleblock}
+}
+\visible<9->{%
+\mbox{}\hfill\myaudio{./audio/014_when_02.mp3}
+}
+\end{frame}
+
+\subsection{Exercises}
+\begin{frame}[plain]{Exercises}
+つぎの文の意味を考えましょう。
+
+\begin{tabular}{rll}
+1& Where is my phone? &　　{\small phone: 電話} \\
+2& Where are your shoes?& 　　{\small shoe:くつ}\\
+3& Where do they go for vacation? & 　　{\small vacation: バケーション}\\
+4& Where does the cat sleep?&　　{\small sleep: 眠る} \\
+\end{tabular}
+
+\visible<2->{%
+\mbox{}\hfill\myaudio{./audio/014_where_03.mp3}
+}
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+ 次の質問に対する答えとしてもっとも適切なものを，下のア～ウの中から選びましょう。
+
+\begin{enumerate}
+ \item A: Where is Mr. Brown from?\\
+B: \alt<2->{He's from the USA.}{(\hspace{100pt})}
+ \item A: Where does Naomi live?\\
+B: \alt<3->{She lives in Narita.}{(\hspace{100pt})}
+ \item A: Where does this bus go?\\
+B: \alt<4->{It goes to Chiba Station.}{(\hspace{100pt})}
+ \item A: Where does Tom study?\\
+B: \alt<5->{He studies in the library.}{(\hspace{100pt})}
+ \item A: Where is Mary now?\\
+B:\alt<6->{She's in the kitchen now.}{(\hspace{100pt})}
+\end{enumerate}
+\
+\begin{tcolorbox}
+\centering
+ア She lives in Narita.
+イ He studies in the library.
+ウ He's from the USA.
+エ It goes to Chiba Station.
+オ She's in the kitchen now.
+\end{tcolorbox}
+
+\visible<8->{%
+\mbox{}\hfill\myaudio{./audio/014_when_04.mp3}
+}
+
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+ (~~~~~~~~) 内の語句を並べかえ、AとBの対話を完成させましょう。なお、先頭の語は大文字で始めてください。
+
+\begin{enumerate}
+ \item A: ( Children's Day / when / is ) ? 
+\hspace{137.4pt}B: It's May 5th.\\
+\phantom{A: }\visible<2->{When is Children's Day?}
+ \item A: ( birthday / your / father's / when / is ) ?
+\hspace{83.5pt}B: It's July 2nd.\\
+\phantom{A: }\visible<3->{When is your father's birthday?}
+ \item A: ( to school / does / Mr. Brown / come / when ) ?
+\hspace{47pt}B: Around 7:00.\\
+\phantom{A: }\visible<4->{When does Mr. Brown come to school?}
+ \item A: ( does / the violin / when / play / your brother ) ?
+\hspace{39.7pt}B: After dinner.\\
+\phantom{A: }\visible<5->{When does your brother play the violin?}
+\end{enumerate}
+\visible<6->{%
+\mbox{}\hfill\myaudio{./audio/014_when_05.mp3}
+}
+\end{frame}
+\end{document}
