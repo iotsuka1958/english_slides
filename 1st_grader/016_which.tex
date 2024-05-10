@@ -1,0 +1,299 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- Where does Jane live? ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+ oyoyo
+\end{frame}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+
+
+\section{Which}
+
+\subsection{Which is your favorite color?: be動詞のとき}
+\begin{frame}[plain]{Which is your favorite color?}
+ \Large
+
+be動詞のとき
+
+\mbox{}\hspace{57pt}Your favorite color is pink.\hspace{50pt}{\small favorite: お気に入りの}
+
+\pause
+
+
+\vspace{7pt}
+
+\mbox{}\hspace{55pt}Is your favorite color \alt<3->{\myAnch{FOCUS}{orange}{pink}}{\myAnch{focus}{white}{pink}}?%
+\hspace{20pt}{\normalsize YesまたはNoで答える疑問文}
+
+\vspace{7pt}
+
+\pause
+
+\visible<4->{\myAnch{wh}{orange}{Which} is your favorite color \myAnch{question}{orange}{?}}
+\visible<6->{\scalebox{1.4}{\myDownwardPitch}}
+
+\pause
+
+
+\visible<5->{%
+\begin{tikzpicture}[remember picture, overlay]
+\draw[->, thick, orange] (focus.south) to[out=-165, in=30] (wh.north);
+\end{tikzpicture}
+}
+
+\visible<7->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item 「どれ、どちら」と聞くとき$\longrightarrow$\,\,\,which is 〜 ?
+ \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
+\end{itemize}
+     \end{exampleblock}
+}
+\visible<8->{%
+\mbox{}\hfill\myaudio{./audio/015_which_01.mp3}
+}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{Which is your favorite color, pink or blue?}
+\Large
+ 
+\begin{enumerate}
+\visible<1->{ \item Which is your favorite color?} \hfill\visible<2->{{\small どれ}}
+\visible<3->{ \item \textcolor{orange}{\bfseries Which} is your favorite color, \colorbox{pink}{pink}  \textcolor{orange}{\bfseries or} \colorbox{blue!50}{blue} ?}\hfill\visible<4->{{\small AとBのどちら}}
+\end{enumerate}
+
+\vspace{20pt}
+
+\visible<5->{%
+\begin{exampleblock}{Topic for Today}
+\pause
+\begin{itemize}
+ \item 「AとBのどちら」と聞くとき$\longrightarrow$\,\,\,\textcolor{orange}{\bfseries Which}  is 〜, \textcolor{orange}{\bfseries A or B} ?
+\end{itemize}
+     \end{exampleblock}
+}
+\visible<6->{%
+\mbox{}\hfill\myaudio{./audio/015_which_02.mp3}
+}
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+つぎの文の意味を考えましょう。
+
+\begin{enumerate}
+ \item Which is Ken's bag?
+ \item Which is your pencil?
+ \item Which is your favorite drink, tea or coffee?
+
+\end{enumerate} 
+
+\pause
+
+\mbox{}\hfill\myaudio{./audio/015_which_03.mp3}
+\end{frame}
+
+
+\subsection{Which do you like?: 一般動詞のとき}
+\begin{frame}[plain]\frametitle{Which season do you like?}
+\Large
+一般動詞のとき
+
+\pause
+
+\mbox{}\hspace{75pt}%
+You like summer.
+
+
+\pause
+
+\mbox{}\hspace{55pt}%
+Do you like \alt<5->{\myAnch{FOCUS2}{orange}{summer}}{\myAnch{focus2}{white}{summer}}?
+\hspace{10pt}\visible<4->{{\normalsize Yes/Noで答える疑問文}}
+
+\visible<6->{\myAnch{WH2}{orange}{Which} do you like, spring \textcolor{orange}{\bfseries or} summer?}\hfill\visible<7->{{\small AとBのどちら}}
+
+\visible<8->{%
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[thick, orange, ->] (focus2.south) to[out=-165, in=15] (WH2.north east);
+\end{tikzpicture}
+}
+
+\visible<9->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item `Which'を先頭に置いて、疑問文のかたちを続ける\,\,Which do you  〜?
+ \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
+\end{itemize}
+     \end{exampleblock}
+}
+\visible<10->{%
+\mbox{}\hfill\myaudio{./audio/015_which_04.mp3}
+}
+\end{frame}
+
+\subsection{Exercises}
+\begin{frame}[plain]{Exercises}
+つぎの文の意味を考えましょう。
+
+\begin{tabular}{rll}
+1& Which does he need, a pen or a pencil? &　　{\small need: 必要とする} \\
+2&Which does she eat for breakfast, cereal or toast? & 　　{\small cereal: シリアル}\\
+3& Which do you like, Englsi or math? & 　　{\small math: 数学}\\
+4& Which do they speak, English or Spanish?&　　{\small Spanish: スペイン語} \\
+\end{tabular}
+
+\visible<2->{%
+\mbox{}\hfill\myaudio{./audio/016_which_05.mp3}
+}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+ あたえられた状況に合うように、(~~~~~~~) に適語を入れなさい。
+
+\begin{enumerate}
+ \item どれが相手の自転車かをたずねる場合\\
+\alt<2->{\textcolor{orange}{Which}}{(\hspace{30pt})} is your bike?
+ \item ピザとパスタのどちらが好きかをたずねる場合\\
+\alt<3->{\textcolor{orange}{Which}}{(\hspace{30pt})} do you like, pizza \alt<3->{\textcolor{orange}{or}}{(\hspace{30pt})} pasta?
+ \item 猫と犬のどちらを飼いたいかをたずねる場合\\
+\alt<4->{\textcolor{orange}{Which}}{(\hspace{30pt})} do you want, a cat \alt<4->{\textcolor{orange}{or}}{(\hspace{30pt})} a dog?
+\end{enumerate}
+
+\visible<5->{%
+\mbox{}\hfill\myaudio{./audio/016_which_06.mp3}
+}
+\end{frame}
+
+\begin{frame}[plain]{$\text{Which} + \text{名詞}$}
+\begin{enumerate}
+ \visible<1->{\item \myAnch{pron}{orange}{Which} do you like, tea or coffee?}
+ \visible<2->{\item \myAnch{adj}{orange}{which\raisebox{5pt}{$\curvearrowright$}drink} do you like, tea or coffee?}\\ {\small どちらの飲みもの}
+\end{enumerate}
+
+\visible<3->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item \fbox{$\text{Which} + \text{名詞}$}\,\,がひとかたまりになって「どちらの〜」の意味で使うことがあります
+ \item \fbox{$\text{Which} + \text{名詞}$}\,\,も文の先頭にきます
+\end{itemize}
+     \end{exampleblock}
+}
+\visible<4->{%
+\mbox{}\hfill\myaudio{./audio/015_which_07.mp3}
+}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+つぎの文の意味を考えましょう。
+
+\begin{enumerate}
+ \item \visible<1->{Which color do you like, red or blue?}\hfill\visible<2->{color: 色}
+ \item \visible<1->{Which subject  do you like, music or art?}\hfill\visible<3->{subject: 科目}
+ \item \visible<1->{Which language do they speak, English or French?}\hfill\visible<4->{language: 言語}
+ \item \visible<1->{Which animal does she have, a cat or a dog?}\hfill\visible<5->{animal: 動物}
+\end{enumerate} 
+
+\visible<6->{%
+\mbox{}\hfill\myaudio{./audio/015_which_08.mp3}
+}
+\end{frame}
+
+\end{document}
