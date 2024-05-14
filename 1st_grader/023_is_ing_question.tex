@@ -1,0 +1,495 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{circledsteps}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- Is she studying? ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+
+
+\section{現在進行形の疑問文}
+
+\subsection{復習}
+\begin{frame}[plain]{復習}
+
+つぎの文を疑問文にしましょう。
+
+ \begin{enumerate}
+  \item<1-> I am late for the meeting.
+        \onslide<5->{$\longrightarrow$ Am I late for the meeting?}
+  \item<1-> You are hungry.
+        \onslide<6->{$\longrightarrow$ Are you hungry?}
+ \item<1-> They are happy.
+        \onslide<7->{$\longrightarrow$ Are they happy?}
+  \item<1-> She is in the kitchen.
+        \onslide<8->{$\longrightarrow$ Is she in the kitchen?}
+  \item<1-> Our teacher is busy.
+        \onslide<9->{$\longrightarrow$ Is our teacher busy? }
+ \end{enumerate}
+
+\begin{exampleblock}<2->{Topics for Today}
+be動詞の疑問文のつくり方
+\begin{itemize}
+ \item<3->  be動詞を先頭にする
+ \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
+\end{itemize}
+      \end{exampleblock}
+\vspace{-10pt}
+% Embed the sound file
+\onslide<10>{%
+\myaudio{./audio/008_question_be_05.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+}
+
+\end{frame}
+
+
+\subsection{現在進行形の疑問文のつくり方}
+\begin{frame}[plain]{現在進行形の疑問文}
+\Large
+
+\visible<1->{They \alt<1-3>{\myAnch{be1}{white}{are}}{\myAnch{BE1}{orange}{are}} studying.}\hfill\visible<2->{{\small study:勉強する}}
+
+\vspace{15pt}
+
+\visible<3->{\alt<1-3>{\myAnch{be2}{white}{Are}}{\myAnch{BE2}{orange}{Are}} they studying?} 
+
+\visible<4->{%
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[thick,orange,->] (be1.south) to[out=-90, in=90] (be2.north);
+\end{tikzpicture}
+}
+
+\begin{exampleblock}<5->{Topics for Today}
+現在進行形の疑問文のつくり方
+\begin{itemize}
+ \item<3->  be動詞を先頭にする
+ \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
+\end{itemize}
+      \end{exampleblock}
+
+\mbox{}\hfill\visible<6>{\myaudio{./audio/023_is_ing_question_01.mp3}}
+\end{frame}
+
+
+\begin{frame}<1-5>[plain]\frametitle{Exercises}
+
+日本文を参考にして(~~~~~~~~)の語を並べかえ、英文を完成させましょう。
+ただし先頭に来る単語は大文字で始めてください。
+
+
+
+\begin{enumerate}
+ \item  ( watchin/  you  / TV / are ) now?\hspace{3\zw}%
+あなたはいまテレビを見ていますか。\fcTelevision{0.025}{blue}{.5}\\
+\visible<2->{$\longrightarrow$\,\,\,Are you watching TV now?}
+ \item ( she / working/ is ) now ?
+\hspace{5.3\zw}彼女はいま働いていますか。\\
+\visible<3->{$\longrightarrow$\,\,\,Is she working now?}
+ \item ( sleeping / John / is ) now?\hspace{4.8\zw}%
+ジョンはいま寝ていますか。\raisebox{-10pt}{\scalebox{3}{\twemoji{sleepy face}}}\\
+\visible<4->{$\longrightarrow$\,\,\,Is John sleeping now?}
+\end{enumerate}
+
+\mbox{}\hfill\visible<5>{\myaudio{./audio/023_is_ing_question_02.mp3}}
+\end{frame}
+
+
+\begin{frame}<1-6>[plain]\frametitle{Exercises}
+
+次の英文の(~~~~~~~~)内から動詞の正しい形を選び、○で囲みましょう。
+
+\begin{enumerate}
+ \item ( Do / Does / \alt<2->{\Circled[outer color=orange]{Is}}{Is} / is ) she reading a book?.\hspace{10pt}\raisebox{0pt}{\bcbook}
+ \item ( Do / Does / \alt<3->{\Circled[outer color=orange]{Are}}{Are} / is ) you waiting for the bus?\hspace{10pt}\scalebox{2.5}{\twemoji{bus stop}\twemoji{bus}}
+ \item Are you ( \alt<4->{\Circled[outer color=orange]{listening}}{listening} / listen / playing ) to music now?
+  \item ( Do / Does / \alt<5->{\Circled[outer color=orange]{Are}}{Are} / Is ) George and Eric singing in the hall now?.\hspace{10pt}\raisebox{-5pt}{\rotatebox{0}{\scalebox{2.5}{\twemoji{musical notes}}}}
+\end{enumerate}
+\pause
+
+\vfill
+
+\visible<6>{%
+\mbox{}\hfill\visible{\myaudio{./audio/023_is_ing_question03.mp3}}
+}
+
+\end{frame}
+
+\subsection{現在進行形の疑問文への答え方}
+\begin{frame}[plain]{現在進行形の疑問文への答え方}
+
+\Large
+
+\begin{columns}
+\begin{column}{.425\textwidth}
+\visible<1->{{\small be動詞の疑問文のとき}}
+
+\visible<2->{Is he busy?}
+
+\pause
+\visible<3->{
+\mbox{}\hfill$\left\{\begin{tabular}{l}
+         \text{Yes, he is.}\\
+         \text{No, he is not.}\\
+         \text{(}= \text{No, he's not.)}\\
+         \text{(}= \text{No, he isn't.)}
+        \end{tabular}\right.$
+}
+\end{column}
+\begin{column}{.425\textwidth}
+\visible<4->{{\small 現在進行形のとき}}
+
+\visible<5->{Is he studying?}
+
+\visible<6->{%
+\mbox{}\hfill$\left\{\begin{tabular}{l}
+         \text{Yes, he is.}\\
+         \text{No, he is not.}\\
+         \text{(}= \text{No, he's not.)}\\
+         \text{(}= \text{No, he isn't.)}
+        \end{tabular}\right.$
+}
+\end{column}
+\end{columns}
+
+\vspace{-75pt}
+
+\visible<7->{\mbox{}\hfill\textcolor{Orange}{\bfseries \begin{tabular}{c}
+			   $\equiv$\\[-5pt]
+                           {\footnotesize (同じ)}
+			  \end{tabular}}\hfill\mbox{}}
+
+\vspace{25pt}
+
+\visible<8->{%
+\begin{exampleblock}{Topic for Today\,\,\,{\textcolor{black}{\mdseries ---現在進行形の疑問文への答え方---}}}
+\small
+
+\begin{itemize}
+ \item  be動詞の疑問文への答え方と同じ
+\end{itemize}
+      \end{exampleblock}
+}
+\vspace{-5pt}
+
+\mbox{}\hfill\visible<9>{\myaudio{./audio/023_is_ing_question_04.mp3}}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+例にならって、質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。
+
+\begin{tabular}{rl@{\,\,\,}c@{\,\,\,}l@{\,\,\,}l}
+\visible<1->{例}& \visible<1->{Is she eating lunch now?}\hspace{.5\zw}\fchamburger{0.05}{black}{.5}\fcFrenchFries{0.05}{black}{.5}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, she is.}&\visible<4->{(2) No, she is not.~~~\,}%
+\footnote{\visible<5->{No, she's not.やNo, she isn't.も\scalebox{1.4}{\twemoji{OK button}}}}\\
+\visible<1->{1}&\visible<1->{Are they studying in the library?\hspace{5pt}\raisebox{0pt}{\bcbook}}&\visible<6->{$\rightarrow$}&\visible<7->{(1) Yes, they are.}&\visible<8->{(2) No, they are not.}%
+\footnote{\visible<9->{No, they aren't.やNo they're not.も\scalebox{1.4}{\twemoji{OK button}}}}\\
+\visible<1->{2}&\visible<1->{Are you enjoying your vacation?}&\visible<10->{$\rightarrow$}& \visible<11->{(1) Yes, I am }&\visible<
+12->{(2) No, I am not.~~~~\,\,\,\,}%
+\footnote{\visible<13->{No, I'm not.も\scalebox{1.4}{\twemoji{OK button}}}\hspace{2\zw}\visible<14->{でもNo, I amn't.とはいいません。\scalebox{.5}{\bcbombe}}}\\
+\visible<1->{3}&\visible<1->{Is he sleeping in his room?}&\visible<15->{$\rightarrow$}&\visible<16->{(1) Yes, he is.}&\visible<17->{(2) No, he is not.}\\
+\visible<1->{4}&\visible<1->{Are Jack and Betty watching TV?\hspace{5pt}\raisebox{-5pt}{\fcTelevision{0.025}{blue}{.5}}}&\visible<18->{$\rightarrow$}&\visible<19->{(1) Yes, they are.}&\visible<20->{(2) No, they are not.}
+\end{tabular}
+
+\vfill
+
+\mbox{}\hfill\visible<21->{\myaudio{./audio/023_is_ing_05.mp3}}
+\end{frame}
+
+\subsection{What are you --ing?}
+\begin{frame}[plain]{What are you --ing?}
+\Large
+
+\mbox{}\hspace{75pt}%
+You are studying English now.
+
+
+\pause
+
+\mbox{}\hspace{55pt}%
+Are you studying \alt<4->{\myAnch{FOCUS2}{orange}{English}}{\myAnch{focus2}{white}{English}} now?
+\hspace{10pt}\visible<3->{{\normalsize Yes/Noで答える疑問文}}
+
+\visible<5->{\myAnch{WH2}{orange}{What} are you studying now?}%
+\hspace{2\zw}\visible<7->{{\small あなたはいまなにを勉強していますか。}}
+
+\vspace{-5pt}
+
+\visible<8->{\hspace{103pt}drinking}
+
+\vspace{-5pt}
+
+\visible<9->{\hspace{103pt}eating}
+
+\vspace{-5pt}
+
+\visible<10->{\hspace{103pt}{{\small ほかにもいろいろな動詞の--ing}}}
+
+
+\visible<11->{%
+\begin{exampleblock}{Topic for Today\,\,\,{\textcolor{black}{\mdseries ---What are you --ing?---}}}
+\small
+
+\begin{itemize}
+ \item  動詞を変えることでいろいろな意味を表せます
+\end{itemize}
+      \end{exampleblock}
+}
+
+\visible<6->{%
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[thick, orange, ->] (focus2.south) to[out=-165, in=15] (WH2.north east);
+\end{tikzpicture}
+}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+AとBとの対話になるように空所に適語を補いましょう。
+\begin{enumerate}
+ \item A: (\visible<2->{~~\textcolor{Orange}{What}~~}) are you studying?\\
+       B: I am studying math.%
+\hfill%
+\visible<6->{$\text{study}+\text{ing}\rightarrow{}\text{studying}$}
+ \item A: What are you watching?\\
+       B: I (\visible<3->{~~\textcolor{Orange}{am}~~}) watching TV.%
+\hfill%
+\visible<7->{$\text{watch}+\text{ing}\rightarrow{}\text{watching}$}
+ \item A: (\visible<4->{~~\textcolor{Orange}{What}~~}) is he making?\\
+       B: He is making a cake now.%
+\hfill%
+\visible<8->{$\text{mak\textcolor{red}{\bfseries e}}+\text{ing}\rightarrow{}\text{making}$}
+
+\item A: What  (\visible<5->{~~\textcolor{Orange}{are}~~})  you writing?\\
+       B: I am wriitng  a letter.%
+\hfill%
+\visible<9->{$\text{writ\textcolor{red}{\bfseries e}}+\text{ing}\rightarrow{}\text{writing}$}
+ \end{enumerate} 
+
+\hfill%
+\visible<10>{%
+つづりが`e'で終わる動詞の--ing形に注意しよう}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+(~~~~)内の動詞を用いて、あたえられた日本語の意味になるよう英文を作りましょう。
+なお、(~~~~)内の動詞は、必要があれば変化させてください。
+
+\bigskip
+
+\begin{tabular}{rll}
+ 1&あなたは何を食べているのですか。(eat) &\\
+ &\visible<2->{What are you eating?} & \\
+ 2&彼女は何を飲んでいますか。(drink) &\\
+ &\visible<3->{What is she drinking?} & \\
+3&彼は何を作っていますか。(make) &\\
+ &\visible<4->{What is he making?} & \\
+4&彼らは何を書いていますか。(write) & \\
+ &\visible<5->{What are they writing?} & \\
+\end{tabular}
+\end{frame}
+
+
+
+\begin{frame}[plain]{What are you doing?}
+\Large
+
+What are you \begin{tabular}[t]{l@{\,}}
+	      studying\\
+              \visible<2->{drinking}\\
+              \visible<3->{making}\\
+              \visible<4->{eating}\\
+              \multicolumn{1}{c}{\visible<5->{$\downarrow$}}\\
+              \,\,\,\visible<6->{doing}
+	     \end{tabular}
+? 
+
+\begin{exampleblock}<7->{Topic for Today}
+\small
+
+\begin{itemize}
+ \item  What are you doing?
+は「あなたは何をしていますか」という決まり文句として覚えよう
+\end{itemize}
+      \end{exampleblock}
+
+\end{frame}
+
+
+
+\begin{frame}[plain]{Exercises}
+ あたえられた日本語の意味になるよう英文を作りましょう。
+
+\begin{tabular}{rll}
+ 1&あなたは何をしていますか。 & \\
+ &\visible<2->{What are you doing?} & \\
+ 2&彼女は何をしていますか。 & \\
+ &\visible<3->{What is she doing?} & \\
+3&彼は何をしていますか。 & \\
+ &\visible<4->{What is he doing?} & \\
+4&彼らは何をしていますか。 & \\
+ &\visible<5->{What are they doing?} & \\
+\end{tabular}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+Aの質問に対するBの答えがあたえられた内容になるよう英文を書きましょう。
+\begin{enumerate}
+ \item A: What are you doing?\hspace{2\zw}{\small [数学の勉強をしています]}\hfill$2(a+b)=2a+2b$\\
+       B: \visible<2->{I am studying math.}%
+\item A: What is he doing?\hspace{2\zw}{\small [夕食を作っています]}\hspace{2\zw}{}\raisebox{-5pt}{\scalebox{2}{\twemoji{cooking}\twemoji{spaghetti}\twemoji{carrot}\twemoji{leafy green}\twemoji{tomato}\twemoji{meat on bone}}}\\
+       B: \visible<3->{He is cooking dinner}.%
+ \item A: What are they doing?\hspace{2\zw}{\small [川(the river)で泳いでいます]}\hfill\raisebox{-5pt}{\scalebox{2}{\twemoji{man swimming}}}\\
+       B: \visible<4->{They are swimming in the river.}%
+\hfill%
+\visible<6->{$\text{swi\textcolor{red}{m}}+\text{ing}\rightarrow{}\text{swi\textcolor{red}{mm}ing}}$
+ \item A: What is she doing?\hspace{2\zw}{\small [公園(the park)で走っています]}\hfill\scalebox{2.5}{\twemoji{woman running}}\\
+       B: \visible<5->{She is running in the park.}%
+\hfill%
+\visible<7->{$\text{ru\textcolor{red}{n}}+\text{ing}\rightarrow{}\text{ru\textcolor{red}{nn}ing}}$
+
+ \end{enumerate} 
+
+\end{frame}
+
+\subsection{Who is --ing?}
+\begin{frame}[plain]{Who is --ing?}
+\Large
+
+\visible<1->{\alt<1>{\myAnch{jimmy}{white}{Jimmy}}{\myAnch{JIMMY}{orange}{Jimmy}} is playing the guitar.}\hspace{20pt}\scalebox{6}{\twemoji{guitar}}
+\vspace{20pt}
+
+\visible<3->{\alt<1-2>{\myAnch{who}{white}{Who}}{\myAnch{WHO}{orange}{Who}} is playing the guitar\alt<1-2>{\myAnch{qm}{white}{?}}{\myAnch{QM}{orange}{?}}}
+\visible<5->{{\small だれがギターを演奏していますか}}
+
+\begin{exampleblock}<6->{Topics for Today}
+\small
+
+\begin{itemize}
+ \item 「だれが〜していますか」はWho is --ing?
+ \item Jimmy is.のように答えます
+\end{itemize}
+      \end{exampleblock}
+
+\smallskip
+
+
+\visible<4->{%
+\begin{tikzpicture}[remember picture, overlay]
+\draw[thick,orange,->] (jimmy.south) to (who.north);
+\end{tikzpicture}
+}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+ あたえられた日本語の意味になるよう英文を作りましょう。
+
+\begin{tabular}{rll}
+ 1&だれがその歌を歌っていますか。\scalebox{2.5}{\twemoji{woman singer}} & \\
+ &\visible<2->{Who is singing the song?} & \\
+2&だれがピアノを演奏していますか。\scalebox{2}{\twemoji{musical score}\,\,\twemoji{musical keyboard}} & \\
+ &\visible<3->{Who is playing the guitar?} & \\
+ 2&だれがテレビ(TV)を見ていますか。\scalebox{2.5}{\twemoji{television}} & \\
+ &\visible<4->{Who is watching TV?} & \\
+4&だれがあそこに座っていますか。 \raisebox{-5pt}{\fcChairA{0.05}{black}{.2}} &{\small (あそこに: over there)} \\
+ &\visible<5->{Who is sitting over there?} & $\text{si\textcolor{red}{t}}+\text{ing}\rightarrow{}\text{si\textcolor{red}{tt}ing}$\\
+\end{tabular}
+\end{frame}
+
+\begin{frame}[plain]{hoge}
+ \fcChairA{0.05}{black}{.2}
+\end{frame}
+
+\end{document}
