@@ -1,0 +1,211 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- He is not  reading a book now. ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+
+
+\section{現在進行形の否定}
+
+\subsection{復習}
+\begin{frame}[plain]{復習}
+
+つぎの各文を否定文にしてください。
+
+
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item \visible<1->{His mother is a teacher.}\\
+         \visible<2->{His mother \textcolor{orange}{is not} a teacher.} 
+         \,\,\,\visible<3->{His mother \textcolor{orange}{isn't} a teacher.}%
+         \hfill{}\visible<4->{($\text{is not} = \text{isn't}$)}
+   \item \visible<1->{The room is clean.}\\
+         \visible<5->{The room \textcolor{orange}{is not} clean.}
+         \,\,\,\visible<6->{The room \textcolor{orange}{isn't} clean.}%
+   \item \visible<1->{You are busy.}\\
+         \visible<7->{You \textcolor{orange}{are not} busy.}
+         \,\,\,\visible<8->{You \textcolor{orange}{aren't} busy.}%
+          \hfill{}\visible<9->{($\text{are not} = \text{aren't}$)}
+   \item \visible<1->{They are students.}\\
+         \visible<10->{They \textcolor{orange}{are not} students.} 
+         \,\,\,\visible<11->{They \textcolor{orange}{aren't} students.}%
+         
+   \item \visible<1->{I am a doctor.}\\
+         \visible<12->{I \textcolor{orange}{am not} a doctor.}
+         \,\,\,\visible<13->{*I \textcolor{olive}{amn't} a doctor.}\,\,\,{}%
+         \visible<14->{$\longleftarrow$こうはいいません}
+  \end{enumerate}
+
+% Embed the sound file
+\visible<15->{%
+\myaudio{audio/021_is_ing_negative_01.mp3}
+}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{復習}
+%
+       \begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item  be動詞の否定は、$\text{be動詞} + \text{not}$
+ \item  縮めて aren't($=\text{are not}$)、isn't($=\text{is not}$) ということもあります\\
+\mbox{}\hfill{}これを「短縮形」といいます
+% \item  She\textcolor{orange}{'s not} ということもあります
+\end{itemize}
+      \end{exampleblock}
+
+\end{frame}
+
+
+\begin{frame}[plain]{現在進行形の否定}
+\Large
+
+\visible<1->{They are studying now.}\hfill\visible<2->{{\small study:勉強する}}
+
+\visible<3->{They are \textcolor{orange}{not} studying now.} 
+
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+あたえられた日本文の意味になるように、空所に適切な単語を補いましょう。
+
+\begin{enumerate}
+ \item わたしは、いま読書をしていません。\\
+I \alt<2->{(\,\,am\,\,)~~(\,\,not\,\,)}{(\phantom{\,\,am\,\,})~~(\phantom{\,\,not\,\,})} reading a book now.
+ \item 彼女は、いま歌を歌っていません。\\
+She \alt<3->{(\,\,is\,\,)~~(\,\,not\,\,)}{(\phantom{\,\,is\,\,})~~(\phantom{\,\,not\,\,})} singing a song now.
+ \item わたしたちは、いま宿題をしていません。\\
+We \alt<4->{(\,\,are\,\,)~~(\,\,not\,\,)}{(\phantom{\,\,are\,\,})~~(\phantom{\,\,not\,\,})} doing homework now.
+ \item わたしたちのネコは、いまベッドの上で寝ていません。\\
+Our cat \alt<5->{(\,\,isn't\,\,)}{(\phantom{\,\,isn't\,\,})} sleeping on the bed now.
+ \item わたしたちは、いま数学の勉強をしてていません。\\
+We \alt<6->{(\,\,aren't\,\,)}{(\phantom{\,\,aren't\,\,})} studying math now.
+\end{enumerate} 
+
+
+\visible<6->{%
+\mbox{}\hfill\myaudio{./audio/021_is_ing_negative_02.mp3}
+}
+\end{frame}
+
+ \begin{frame}[plain]{Exercises}
+日本文を参考にして (~~~~~~) 内の語を並べかえ、英文を完成させましょう。  
+
+\vspace{-5pt}
+
+\begin{enumerate}
+ \item \visible<1->{{\small ジョンは、いまサッカーをしていません。}}\\\visible<1->{John ( playing / not / is ) soccer now.}
+\visible<2->{$\longrightarrow$\,\,\,\,John \textcolor{orange}{is not playing} soccer now.}
+ \item \visible<1->{{\small 彼らは、いまプールで泳いでいません。}}\\
+\visible<1->{They ( not / swimming / are) in the pool now.}\\
+\visible<3->{$\longrightarrow$\,\,\,\,They \textcolor{orange}{are not swimming} in the pool now.}
+ \item \visible<1->{{\small その犬は、いま庭を走っていません。}}\\
+\visible<1->{The dog ( running / not / is ) in the yard.}\\
+\visible<4->{$\longrightarrow$\,\,\,\,The dog \textcolor{orange}{is not running} in the yard.}
+ \item \visible<1->{{\small 彼女は、いま手紙を書いているのではありません。}}\\
+\visible<1->{She ( a letter / not / writing / is ) now.}
+\visible<5->{$\longrightarrow$\,\,\,\,She \textcolor{orange}{is not  writing a letter} now.}
+ \item \visible<1->{{\small 彼はいま、ケーキを作っているのではありません。}}\\
+\visible<1->{He (making / not / is ) cake now.}
+\visible<6->{$\longrightarrow$\,\,\,\,He \textcolor{orange}{is not making} cake now.}
+\end{enumerate}
+
+
+ \end{frame}
+
+
+
+
+
+\end{document}
