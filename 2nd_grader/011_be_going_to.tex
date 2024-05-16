@@ -1,0 +1,519 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{circledsteps}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- I am going to visit London. ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+
+
+\section{be going to--}
+
+\subsection{〜するつもり}
+\begin{frame}[plain]{be going to --}
+\Large
+\begin{enumerate}
+ \item<1-> I played tennis yesterday.\hfill{}{\small 過去のこと}
+ \item<2-> I play tennis after school.\hfill{}{\small 現在のこと}
+ \item<3-> I \alt<1-3>{\myAnch{aux1}{white}{am going to}}{\myAnch{AUX1}{Orange}{am going to}} play tennis tomorrow.%
+\hfill\visible<4->{するつもりです}
+\end{enumerate}
+
+\begin{exampleblock}<5->{Topic for Today}
+\small
+$\text{be}+\text{going to}+\text{原形}$は「計画」や「予定」など未来のことを
+表します。
+\end{exampleblock}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+ あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください。
+
+\begin{enumerate}
+ \item わたしは今夜テレビを見るつもりです。\\
+( TV / I / am / watch / going / to ) tonight.\\
+ \visible<2->{I am going to watch TV tonight.}
+ \item わたしたちは今週末パーティーをするつもりです。\\
+We ( going / are / this weekend / a party / have / to )\\
+\visible<3->{We are going to have a party this weekend.}
+ \item わたしの父は来月オーストラリアを訪れる予定です。\\
+My father ( going / is / visit / to / next / Australia / month )\\
+\visible<4->{My father is going to visit Australia next month. }
+ \item 彼らは今年の夏に山に登るつもりです。\\
+They ( to / going / climb / the montain / this / are / summer )\\
+\visible<5->{They are going to climb the montain this summer.}
+\end{enumerate}
+\end{frame}
+
+\section{be going to-- の否定}
+
+\begin{frame}[plain]{復習}
+
+つぎの各文を否定文にしてください。
+
+
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item \visible<1->{His mother is a teacher.}\\
+         \visible<2->{His mother \textcolor{orange}{is not} a teacher.} 
+         \,\,\,\visible<3->{His mother \textcolor{orange}{isn't} a teacher.}%
+         \hfill{}\visible<4->{($\text{is not} = \text{isn't}$)}
+   \item \visible<1->{The room is clean.}\\
+         \visible<5->{The room \textcolor{orange}{is not} clean.}
+         \,\,\,\visible<6->{The room \textcolor{orange}{isn't} clean.}%
+   \item \visible<1->{You are busy.}\\
+         \visible<7->{You \textcolor{orange}{are not} busy.}
+         \,\,\,\visible<8->{You \textcolor{orange}{aren't} busy.}%
+          \hfill{}\visible<9->{($\text{are not} = \text{aren't}$)}
+   \item \visible<1->{They are students.}\\
+         \visible<10->{They \textcolor{orange}{are not} students.} 
+         \,\,\,\visible<11->{They \textcolor{orange}{aren't} students.}%
+         
+   \item \visible<1->{I am a doctor.}\\
+         \visible<12->{I \textcolor{orange}{am not} a doctor.}
+         \,\,\,\visible<13->{*I \textcolor{olive}{amn't} a doctor.}\,\,\,{}%
+         \visible<14->{$\longleftarrow$こうはいいません}
+  \end{enumerate}
+
+% Embed the sound file
+\visible<15->{%
+\myaudio{audio/021_is_ing_negative_01.mp3}
+}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{復習}
+%
+       \begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item  be動詞の否定は、$\text{be動詞} + \text{not}$
+ \item  縮めて aren't($=\text{are not}$)、isn't($=\text{is not}$) ということもあります\\
+\mbox{}\hfill{}これを「短縮形」といいます
+% \item  She\textcolor{orange}{'s not} ということもあります
+\end{itemize}
+      \end{exampleblock}
+
+\end{frame}
+
+\subsection{be going to--の否定文のつくり方}
+\begin{frame}[plain]{be going to--の否定}
+\Large
+
+\visible<1->{They \myAnch{aux1}{orange}{are going to} \textcolor{OliveGreen}{play} tennis after school.}\hfill\visible<2->{{\small after school:放課後に}}
+
+\visible<3->{They \myAnch{aux2}{orange}{are} \textcolor{orange}{not}\,\, \myAnch{aux3}{orange}{going to} \textcolor{OliveGreen}{play} tennis after school.} 
+
+\begin{exampleblock}<4->{Topic for Today}
+be going to--の否定文のつくり方
+\begin{itemize}\small
+ \item  be動詞$\left\{\begin{tabular}{l}
+		       am\\
+                       are\\
+                       is
+		      \end{tabular}\right\}$の後ろにnotをいれる
+\end{itemize}
+      \end{exampleblock}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+ 与えられた日本文の意味になるようカッコ内の語句を並べ替えてください。
+
+\begin{enumerate}
+ \item わたしは今夜夕食を作るつもりはありません。\\
+I ( dinner / am / not / going / to / cook ) tonight.\\
+\visible<2->{I am not going to cook dinner tonight.}
+ \item 彼女は明日友達を訪ねるつもりはありません。\\
+She ( going / visit / her friend / is / not / to ) tomorrow.\\
+\visible<3->{She is not going to visit her friend tomorrow.}
+ \item わたしたちは今日公園に行くつもりはありません。\\
+We ( going / the park / to / not / are / go to) today.\\
+\visible<4->{We are not going to go to the park today.}
+ \item 彼らは今週の金曜日にパーティーを開くつもりはありません。\\
+They ( going / not / a party / to / are / have ) this Friday.\\
+\visible<5->{They are not going to have a party this Friday.}
+\end{enumerate}
+\end{frame}
+
+\section{be going to--の疑問文}
+\subsection{be going to--の疑問文のつくり方}
+\begin{frame}[plain]{be going to--の疑問文}
+\Large
+
+\visible<1->{They \fbox{\alt<1-3>{\myAnch{be1}{white}{are}}{\myAnch{BE1}{orange}{are}} \alt<1-3>{\myAnch{going1}{white}{going to}}{\myAnch{GOING1}{orange}{going to}}} visit France this summer.}\hfill\visible<2->{{\small visit:訪問する}}
+
+\vspace{15pt}
+
+\visible<3->{\alt<1-3>{\myAnch{be2}{white}{Are}}{\myAnch{BE2}{orange}{Are}} they \alt<1-3>{\myAnch{going2}{white}{going to}}{\myAnch{GOING2}{orange}{going to}} visit France this summer?} 
+
+\visible<4->{%
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[thick,orange,->] (be1.south) to[out=-90, in=90] (be2.north);
+ \draw[thick,orange,->] (going1.south) to[out=-90, in=90] (going2.north);
+\end{tikzpicture}
+}
+
+\begin{exampleblock}<5->{Topics for Today}
+be going to--の疑問文のつくり方
+\begin{itemize}
+ \item<3->  be動詞を先頭にする(be going to--のbeだけを前に)
+ \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
+\end{itemize}
+      \end{exampleblock}
+
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+
+次の英文の(~~~~~~~~)内から動詞の正しい形を選び、○で囲みましょう。
+
+\begin{enumerate}
+ \item ( Do / \alt<2->{\Circled[outer color=orange]{~~Are~~}}{~~Are~~} / Be )  you going to play tennis tomorrow?
+ \item Are they ( \alt<3->{\Circled[outer color=orange]{going to}}{going to} / go  / go to ) watch a movie tonight?
+ \item  ( \alt<4->{\Circled[outer color=orange]{~~Is~~}}{~~is~~} / Does / Do ) Bob going to read the book?
+ \item ( Is / Does / \alt<5->{\Circled[outer color=orange]{~~Are~~}}{~~Are~~}  ) Bob and Jane going to have a party this weekend?
+ \item  Is she going ( \alt<6->{\Circled[outer color=orange]{to write}}{to write} / write / listen ) a letter?.
+\end{enumerate}
+ \end{frame}
+
+
+
+\subsection{be going to--の疑問文への答え方}
+\begin{frame}[plain]{be going to--の疑問文への答え方}
+
+\Large
+
+\begin{columns}
+\begin{column}{.425\textwidth}
+\visible<1->{{\small be動詞の疑問文のとき}}
+
+\visible<2->{Is he busy?}
+
+\pause
+\visible<3->{
+\mbox{}\hfill$\left\{\begin{tabular}{l}
+         \text{Yes, he is.}\\
+         \text{No, he is not.}\\
+         \text{(}= \text{No, he's not.)}\\
+         \text{(}= \text{No, he isn't.)}
+        \end{tabular}\right.$
+}
+\end{column}
+\begin{column}{.425\textwidth}
+\visible<4->{{\small be going to--のとき}}
+
+\visible<5->{Is he going to study?}
+
+\visible<6->{%
+\mbox{}\hfill$\left\{\begin{tabular}{l}
+         \text{Yes, he is.}\\
+         \text{No, he is not.}\\
+         \text{(}= \text{No, he's not.)}\\
+         \text{(}= \text{No, he isn't.)}
+        \end{tabular}\right.$
+}
+\end{column}
+\end{columns}
+
+\vspace{-75pt}
+
+\visible<7->{\mbox{}\hfill\textcolor{Orange}{\bfseries \begin{tabular}{c}
+			   $\equiv$\\[-5pt]
+                           {\footnotesize (同じ)}
+			  \end{tabular}}\hfill\mbox{}}
+
+\vspace{25pt}
+
+\visible<8->{%
+\begin{exampleblock}{Topic for Today\,\,\,{\textcolor{black}{\mdseries ---be going to--の疑問文への答え方---}}}
+\small
+
+\begin{itemize}
+ \item  be動詞の疑問文への答え方と同じ
+\end{itemize}
+      \end{exampleblock}
+}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。
+
+\begin{tabular}{@{}r@{\,\,\,\,}l@{\,\,\,\,}c@{\,\,\,\,}l@{\,\,\,}l}
+\visible<1->{例}& \visible<1->{Are you going to play tennis tomorrow?}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I am.}&\visible<4->{(2) No, I'm not.}\\
+\visible<1->{1}&\visible<1->{Is she going to read the book?\hspace{10pt}\raisebox{0pt}{\bcbook}}&\visible<5->{$\rightarrow$}&\visible<6->{(1) Yes, she is.}&\visible<7->{(2) No, she isn't.}\\
+\visible<1->{2}&\visible<1->{Is he going to cook dinner tonight?}&\visible<8->{$\rightarrow$}& \visible<9->{(1) Yes, he is.}&%
+\visible<10->{(2) No, he isn't.}\\
+\visible<1->{3}&\visible<1->{Are they going to swim in the pool?}&\visible<11->{$\rightarrow$}&\visible<12->{(1) Yes, they are.}&\visible<13->{(2) No, they aren't.}\\
+\visible<1->{4}&\visible<1->{Are you going to buy a new car?\hspace{10pt}\raisebox{-5pt}{\scalebox{2.5}{\twemoji{automobile}}}}&\visible<14->{$\rightarrow$}&\visible<15->{(1) Yes, I am.}&\visible<16->{(2) No, I'm not.}
+\end{tabular}
+
+\pause
+\vfill
+
+\mbox{}\hfill\visible<17->{\myaudio{./audio/012_can_10.mp3}}
+
+\end{frame}
+
+
+\subsection{What are you --ing?}
+\begin{frame}[plain]{What are you --ing?}
+\Large
+
+\mbox{}\hspace{75pt}%
+You are going to buy a car.
+
+
+\pause
+
+\mbox{}\hspace{55pt}%
+Are you going to buy \alt<4->{\myAnch{FOCUS2}{orange}{a car}}{\myAnch{focus2}{white}{a car}}?
+\hspace{10pt}\visible<3->{{\normalsize Yes/Noで答える疑問文}}
+
+\visible<5->{\myAnch{WH2}{orange}{What} are you going to buy?}%
+\hspace{2\zw}\visible<7->{{\small あなたはなにを買うつもりですか。}}
+
+\vspace{-5pt}
+
+\visible<8->{\hspace{160pt}study}
+
+\vspace{-5pt}
+
+\visible<9->{\hspace{160pt}eat}
+
+\vspace{-5pt}
+
+\visible<10->{\hspace{160pt}{{\small ほかにもいろいろな動詞}}}
+
+
+\visible<11->{%
+\begin{exampleblock}{Topic for Today\,\,\,{\textcolor{black}{\mdseries 　　What are you going to --?}}}
+\small
+
+\begin{itemize}
+ \item  動詞を変えることでいろいろな意味を表せます
+\end{itemize}
+      \end{exampleblock}
+}
+
+\visible<6->{%
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[thick, orange, ->] (focus2.south) to[out=-165, in=15] (WH2.north east);
+\end{tikzpicture}
+}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+ あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください。
+\bigskip
+
+\begin{enumerate}
+ \item 彼は昼食に何を食べるつもりですか。\\
+( going / he /  eat / is / What / to ) for lunch?\\
+\visible<2->{What is he going to eat for lunch?}
+ \item 彼女は次に何を読むつもりですか。\\
+( she / read / is / What / going / to ) next?\\
+\visible<3->{What is she going to read next?}
+ \item あなたは店で何を買うつもりですか。\\
+( going / buy / you /  to / What / are ) at the store?\\
+\visible<4->{What are you going to buy at the store?}
+ \item あなたはテストのために何を勉強するつもりですか。\\
+( study / are /  to / What / going / you ) for the exam?\\
+\visible<5->{What are you going to study for the exam?}
+\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}[plain]{What are you going to do?}
+\Large
+What are you going to\begin{tabular}[t]{l@{\,}}
+	      make\\
+              \visible<2->{read}\\
+              \visible<3->{buy}\\
+              \visible<4->{eat}\\
+              \multicolumn{1}{c}{\visible<5->{$\downarrow$}}\\
+              \visible<6->{do}\visible<7->{\makebox[0pt][l]{{\small 　　　(一般的に)何をするつもりですか}}}
+	     \end{tabular}
+? 
+
+\begin{exampleblock}<8->{Topic for Today}
+\small
+
+\begin{itemize}
+ \item  What are you going to do?\\
+「あなたは何をするつもりですか」という決まり文句として覚えよう
+\end{itemize}
+      \end{exampleblock}
+
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+ あたえられた日本語の意味になるよう英文を作りましょう。
+
+\begin{tabular}{rl@{　　　}l}
+ 1&あなたは何をするつもりですか。 & \visible<2->{What are you going to do?} \\
+ 2&彼女は何をするつもりですか。 & \visible<3->{What is she going? to do} \\
+3&彼は何をするつもりですか。 &\visible<4->{What is he going to do?} \\
+4&彼らは何をするつもりですか。 &\visible<5->{What are they going to do?} \\
+\end{tabular}
+
+\begin{exampleblock}<6->{Topic for Today}
+\small
+
+\begin{itemize}
+ \item  主語によってbe動詞の形が変わることに気をつけよう
+\end{itemize}
+      \end{exampleblock}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+Aの質問に対するBの答えがあたえられた内容になるよう英文を書きましょう。
+\begin{enumerate}
+ \item A: What are you going to do?\hspace{2\zw}{\small [数学の勉強をするつもりです]}\hfill$a+a=2a$\\
+       B: \visible<2->{I am going to study math.}%
+\item A: What is he going to do?\hspace{2\zw}{\small [夕食を作るつもり]}\hspace{2\zw}{}\raisebox{-5pt}{\scalebox{2}{\twemoji{cooking}\twemoji{spaghetti}\twemoji{carrot}\twemoji{leafy green}\twemoji{tomato}\twemoji{meat on bone}}}\\
+       B: \visible<3->{He is going to cook dinner}.%
+ \item A: What are they going to do?\hspace{2\zw}{\small [川(the river)で泳ぐつもりです]}\hfill\raisebox{-5pt}{\scalebox{2}{\twemoji{man swimming}}}\\
+       B: \visible<4->{They are going to swim in the river.}%
+ \item A: What is she going to do?\hspace{2\zw}{\small [公園(the park)で走るつもりです]}\hfill\raisebox{-5pt}{\scalebox{2.5}{\twemoji{woman running}}}\\
+       B: \visible<5->{She is going to run in the park.}%
+ \end{enumerate} 
+
+\end{frame}
+
+
+\begin{frame}<1-6>[plain]{what以外の疑問詞を用いて}
+各文の意味について考えましょう。
+
+\begin{enumerate}
+ \item \alt<1>{Where}{\fcolorbox{Orange}{white}{Where}} is she going to play soccer?
+ \item \alt<1-2>{When}{\fcolorbox{Orange}{white}{When}} are you going to start your homework?
+ \item \alt<1-3>{What time}{\fcolorbox{Orange}{white}{What time} } are you going to wake up tomorrow?
+ \item \alt<1-4>{How long}{\fcolorbox{Orange}{white}{How long}} is he going to stay in Tokyo?
+\end{enumerate}
+
+\begin{exampleblock}<6->{Topic for Today}
+\small
+\begin{itemize}
+ \item  When(いつ)、Where(どこ)、What time(何時に)、How long(どのくらいの期間)
+\end{itemize}
+      \end{exampleblock}
+
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください
+ \begin{enumerate}
+  \item 彼はどこで友達と会うつもりですか。\\
+( going / to / meet / is / Where / he ) his friends?\\
+\visible<2->{Where is he going to meet his friends?}
+  \item 彼女はいつ祖父母を訪ねるつもりですか。\\
+( visit / is / When / to / going / she ) her grandparents?\\
+\visible<3->{When is she going to visit her grandparents?}
+  \item あなたたちは何時に会議を始めるつもりですか。\\
+What ( going / are / start / you / time / to ) the meeting?\\
+\visible<4->{What time are youe going to start the meeting?}
+  \item 彼らは今夜どれくらい勉強するつもりですか。\\
+How ( long/ they / to / study / going / are ) tonight?\\
+\visible<5->{How long are they going to study tonight?} 
+ \end{enumerate}
+\end{frame}
+
+\end{document}
+
+
