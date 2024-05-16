@@ -1,0 +1,299 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{circledsteps}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- It will be rainy tomorrow. ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+
+
+\section{will}
+
+\subsection{未来を表すwill}
+\begin{frame}[plain]{未来を表すwill}
+\Large
+\begin{enumerate}
+ \item<1-> I played tennis yesterday.\hfill{}{\small 過去のこと}
+ \item<2-> I play tennis tomorrow.\hfill{}{\small 現在のこと}
+ \item<3-> I \alt<1-3>{\myAnch{aux1}{white}{am going to}}{\myAnch{AUX1}{Orange}{am going to}} play tennis tomorrow.\hfill{\small 未来のこと}%
+ \item<4-> I  \alt<1-3>{\myAnch{aux1}{white}{will}}{\myAnch{AUX1}{Orange}{will}} play tennis tomorrow.
+
+\end{enumerate}
+
+\begin{exampleblock}<5->{Topic for Today}
+\small
+$\text{will}+\text{原形}$も未来のことを表します。
+\end{exampleblock}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Exercises}
+
+つぎの英文の意味を考えましょう。
+
+\begin{enumerate}
+ \item I will play baseball tomorrow.
+ \item We will have a party on Saturday.
+ \item You will be a good singer.
+ \item He will drive to the airport.
+ \item She will call him later.
+ \item They will clean the room.
+\end{enumerate}
+
+\pause
+
+\vfill
+
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item   主語がなんであってもwill $+$ 動詞($=\text{そのままの形}$)
+ \end{itemize}
+     \end{exampleblock}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+
+次の英文の(~~~~~~~~)内から動詞の正しい形を選び、○で囲みましょう。 
+
+\begin{enumerate}
+ \item I will ( \alt<2->{\Circled[outer color=orange]{~~study~~}}{~~study~~}  /~~studies~~/~~studied~~) English at home.
+ \item He will ( \alt<3->{\Circled[outer color=orange]{~~play~~}}{~~play~~} /~~plays~~/~~is playing~~) baseball tomorrow.
+ \item They always (  \alt<4->{\Circled[outer color=orange]{~~read~~}}{~~read~~} /~~reads~~/~~reading~~) books in the library after school.
+ \item She will (~~is~~/~~are~~/ \alt<5->{\Circled[outer color=orange]{~~be~~}}{~~be~~} ) free this month.
+ \item He will (~~am~~/~~is~~/ \alt<6->{\Circled[outer color=orange]{~~be~~}}{~~be~~} ) fourteen years old next month.
+\end{enumerate}
+
+\end{frame}
+
+\subsection{will not}
+\begin{frame}[plain]{willの否定文}
+\Large
+
+I will \myEmph[5-]{OliveGreen}{go} to the party tomorrow.
+
+\pause
+
+I \textcolor{Orange}{\bfseries will not}  \myEmph[5-]{OliveGreen}{go} to the party tomorrow.
+
+\pause
+
+I \textcolor{Orange}{\bfseries won't}  \myEmph[5-]{OliveGreen}{go} to the party tomorrow.
+
+\pause
+
+\begin{exampleblock}{Topic for Today}
+
+\begin{itemize}\small
+ \item   willの否定$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{will not}\\\text{won't}\end{tabular}\right\} + \text{動詞(=\text{そのままの形})}$
+ \end{itemize}
+     \end{exampleblock}
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+ 
+\begin{enumerate}
+ \item わたしは今夜コーヒーを飲みません。\\
+ I ~~( coffee / drink / will / not )~~tonight.\\
+\visible<2->{I will not drink coffee tonight.}
+ \item 彼女は今夜、テレビを見ません。\\
+She~~( watch / will / not / TV )~~tonight.\\
+\visible<3->{She will not watch TV tonight.}
+ \item 彼らは新しい車を買わないでしょう。\\
+ They~~( buy / will / not / a new car ).\\
+\visible<4->{They will not buy a new car.}
+ \item 明日は雨が降らないでしょう。\\
+It~~( be / rainy / not / will )~~tomorrow.\\
+\visible<5->{It will not be rainy tomorrow.}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[plain]{willの疑問文}
+
+\myAnch{s-1}{orange}{He} \myAnch{aux-1}{olive}{will} play tennis this weekend. \scalebox{2}{\myDownwardPitch}
+\vspace{30pt}\pause
+
+\myAnch{aux-2}{olive}{Will} \myAnch{s-2}{orange}{he} play tennis this weekend\myAnch{question}{orange}{?}
+\pause
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[thick, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north); 
+ \draw[thick, olive, ->] (aux-1.south) to[out=-90, in=90] (aux-2.north);
+%\pause
+%\visible<8->{\node at (0.5,0.25) {\scalebox{2}{\myRisingPitch}};}
+\end{tikzpicture}
+
+\vspace{-25pt}
+\mbox{}\hspace{200pt}\visible<6->{\scalebox{2}{\myRisingPitch}}
+
+\hspace{40pt}\visible<5->{\small 主語の前にWill}
+\hspace{80pt}\visible<6-> {\small ?と最後のイントネーションに注意}
+
+\vfill
+
+\begin{exampleblock}<7->{Topic for Today}
+\visible<8->{%
+\begin{itemize}\small
+ \item   willの疑問文」$\longrightarrow${\,\,\,}$\text{Will} + \text{主語} + \text{動詞(}=\text{そのままの形)}$ \ldots{}\,\,?
+ \end{itemize}
+}
+     \end{exampleblock}
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+
+\begin{enumerate}
+ \item 今夜彼らは映画を見るつもりですか。\\
+ ( a movie / they / will / watch ) tonight?  \\
+\visible<2->{Will they watch a movie tonight?}
+ \item 彼女は後で友達に電話するつもりですか。\\
+ ( call / will / she / her friend ) later? \\
+ \visible<3->{Will she call her friend later?}
+ \item 今週末は雨が降るでしょうか。\\
+ ( rain / will / it ) this weekend?  \\
+ \visible<4->{Will it rain  this weekend?}
+ \item 明日は忙しいですか。\\
+ ( will / busy  / you / be ) tomorrow?  \\
+ \visible<5->{Will you be busy tomorrow?}
+\end{enumerate}
+ \end{frame}
+
+
+\subsection{Will you 〜? と聞かれたら}
+\begin{frame}[plain]{Will you 〜? と聞かれたら}
+ \Large
+
+Will you be busy tomorrow?
+
+\vspace{20pt}
+\pause
+
+\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}
+         \text{Yes, I will.}\\\pause
+         \text{No, I will not.}\\\pause
+         \text{(}= \text{No, I won't.)}
+        \end{tabular}\right.$
+
+\end{frame}
+
+
+\subsection{willとbe going to--}
+\begin{frame}[plain]{willとbe going to--}
+ \Large
+
+\visible<1->{will / be going to--}%
+\hfill{}\visible<2->{どちらも未来のことを表します}
+
+\vfill
+
+\visible<3->{%
+$\left\{
+\begin{tabular}{@{}rl}
+A:& What's your plan for tomorrow?\\
+B:& I \textcolor{Orange}{\bfseries am going to } meet her.
+\end{tabular}\right.$%
+}
+\hfill{}\visible<4->{{\small あらかじめ計画したこと}}
+
+
+\visible<5->{%
+$\left\{
+\begin{tabular}{@{}rl}
+A:& I am hungry.\\
+B:& I \textcolor{OliveGreen}{\bfseries will} make pancakes.
+\end{tabular}\right.%
+}$
+\hfill{}\visible<6->{{\small 今やると決めたこと}}
+\end{frame}
+
+\end{document}

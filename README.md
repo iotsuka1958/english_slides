@@ -4,27 +4,26 @@
 
 あなたは英語のネイティブスピーカーで、外国人への英語教育の専門家です。
 いま、日本の中学生対象に練習問題を作成しています。
-以下の【例】の「ソース」に対する「問題」に従って、「課題」の「ソース」をもとにして「問題」を作成してください。
-問題はソースの和訳と、ソースの語句をランダムに並べ替えて、スラッシュで区切って()でくくった部分から成り立たせます。
-問題の最後にソースの英文を{}で括って追加します。さらに先頭に\visible<2->を追加します。
-また、ソースが2行以上に渡るときは、その各行に対して問題を作成してください。
+以下の【例】のように「ソース」から問題を作成します。「課題」の「ソース」をもとにして「問題」を作成してください。
+問題は
+・ソースの和訳
+・ソースの語句をランダムに並べ替えて、スラッシュで区切って()でくくった部分
+・ソースの英文を{}で括って、さらに先頭に\visible<2->を追加した部分
+から成り立たせます。
+
+ソースが2行以上に渡るときは、その各行に対して問題を作成してください。
 
 【例】
 ソース：     I am going to play tennis tomorrow.
-問題：       あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください
-        わたしは明日テニスをするつもりです。
-        ( to / tennis / am / tomorrow / going / I / play ) 
-        {I am going to play tennis tomorrow.}
+問題：       わたしは明日テニスをするつもりです。
+            ( to / tennis / am / tomorrow / going / I / play ) 
+             \visibe<2->{I am going to play tennis tomorrow.}
 
 【課題】
-ソース：    Where is he going to meet his friends?
-When is she going to visit her grandparents?
-What time are we oing to start the meeting?
-How long are they going to study tonight?
-
-
-
-
+ソース：   I will not eat sushi for dinner.
+           She will not watch TV tonight.
+           They will not buy a new car.
+           It will not rain tomorrow.
 
 
 ## default regeon をアメリカ東海岸に
