@@ -1,0 +1,263 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{circledsteps}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- I must get up early tomorrow. ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+
+\section{must}
+
+\subsection{mustの意味}
+\begin{frame}[plain]\frametitle{わたしは〜しなければならない}
+ \Large\setlength{\fboxrule}{1pt}
+
+\visible<1->{%
+I \textcolor{Green}{\bfseries study} math every day.}
+\hspace{20pt}\visible<2->{{\footnotesize study: 勉強する　math: 数学}}
+\hfill{}\visible<3->{現在の習慣}
+
+\vspace{10pt}
+
+\visible<4->{I \alt<1-4>{\myAnch{aux1}{white}{will}}{\myAnch{AUX1}{Orange}{will}}%
+\textcolor{Green}{\bfseries study} math tonight.}%
+\hspace{20pt}\visible<5->{{\footnotesize tonight: 今晩}}
+\hfill{}\visible<6->{未来のこと}
+
+\vspace{10pt}
+
+\visible<7->{I \alt<1-7>{\myAnch{aux2}{white}{must}}{\myAnch{AUX2}{Orange}{must}}  \textcolor{Green}{\bfseries study} math hard.}\hfill\visible<8->{義務}
+
+
+\vfill
+
+\visible<9->{%
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}\small
+ \item   「わたしは〜しなければならない」$\longrightarrow${\,\,\,}I must $+$ 動詞($=\text{そのままの形}$)
+ \end{itemize}
+     \end{exampleblock}
+}
+
+\visible<8->{%
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[thick,BurntOrange, ->] (aux1.south) -- (aux2.north) ;
+\end{tikzpicture}%
+}
+
+\visible<9->{\small willやmustのように動詞と組み合わせて使用することで、$+\alpha$(プラスアルファ)の意味を付け加える語を\textcolor{BurntOrange}{助動詞}といいます。}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+あたえられた日本文の意味になるようカッコ内の語句を並べ替えましょう。
+\begin{enumerate}
+ \item 私は宿題を終わらせなければならない。
+(to / finish / my homework / I / must)\\
+\visible<2->{I must finish my homework.}
+ \item 私は部屋を掃除しなければなりません。
+(my room / I / must / clean)\\
+\visible<3->{I must clean my room.}
+ \item 私は早く寝なければなりません。
+(to / bed / I / must / go / early)\\
+\visible<4->{I must go to bed early.}
+ \item 私はこの本を読まなければなりません。
+(must / this / I / read / book)\\
+\visible<5->{I must read this book.}
+ \item 私はじゅうぶんな睡眠をとらなければなりません。\\
+(enough sleep / get / must / I)\hfill{\footnotesize enough sleep: じゅうぶんな睡眠}\\
+\visible<6->{I must get enough sleep.}
+\end{enumerate}
+
+\end{frame}
+
+
+\subsection{mustに続く動詞の形}
+ \begin{frame}[plain]\frametitle{Heの場合}
+ \Large\setlength{\fboxrule}{1pt}
+
+\visible<1->{%
+He \textcolor{Green}{\bfseries study}\textcolor{BurntOrange}{s} math every day.}
+\hspace{20pt}\visible<3->{{\footnotesize \textcolor{BurntOrange}{三人称単数現在の`s'}}}
+\hfill{}\visible<2->{{\small 現在の習慣}}
+
+\vspace{10pt}
+
+\visible<4->{He \alt<1-4>{\myAnch{aux1}{white}{will}}{\myAnch{AUX1}{Orange}{will}}%
+\textcolor{Green}{\bfseries study} math tonight.}%
+\hspace{20pt}\visible<5->{{\footnotesize tonight: 今晩}}
+\hfill{}\visible<6->{{\small 未来のこと}}
+
+\vspace{10pt}
+
+\visible<7->{He \alt<1-7>{\myAnch{aux2}{white}{must}}{\myAnch{AUX2}{Orange}{must}}  \textcolor{Green}{\bfseries study} math hard.}\hfill\visible<8->{義務}
+
+
+\vfill
+
+\visible<9->{%
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}\small
+ \item   主語がなんであっても$\longrightarrow${\,\,\,}$\text{S}+\text{must}+\text{動詞(}=\text{そのままの形}$)\\
+\mbox{}\hfill{}*He must studys.とはいわない\hspace{1\zw}\mbox{}
+ \end{itemize}
+     \end{exampleblock}
+}
+
+\end{frame}
+
+\subsection{must not}
+
+\begin{frame}[plain]{must not}
+ 
+\Large
+
+\visible<1->{You \textcolor{NavyBlue}{\bfseries must} \textcolor{ForestGreen}{\bfseries be} quiet in the library.}
+\visible<2->{{ \small 図書館では静かにしなければいけない。}}
+
+\vspace{-10pt}
+\mbox{}\hfill{}\visible<3->{{\small (義務)}}
+
+\visible<4->{You \textcolor{NavyBlue}{\bfseries must} \textcolor{Maroon}{\bfseries not} \textcolor{ForestGreen}{\bfseries eat} in the library.}
+\visible<5->{{ \small 図書館ではものを食べてはいけない。(禁止)}}
+
+\vspace{-10pt}
+
+\visible<6->{\phantom{You }($=$\textcolor{NavyBlue}{\bfseries must}\textcolor{Maroon}{\bfseries n't})}
+
+\vfill
+
+\begin{exampleblock}<7->{Topics for Today}
+\begin{itemize}\small
+ \item must は「義務」(〜しなければならない)を表す
+ \item must not($=\text{mustn't}$) は「禁止」(〜してはならない)を表す
+ \end{itemize}
+     \end{exampleblock}
+
+\end{frame}
+
+
+\begin{frame}<1-4>[plain]{Exercises}
+ 
+あたえられた日本語の意味になるように、(~~~~~~)に適当な語を補いましょう。
+
+
+\begin{enumerate}
+ \item 寝る前にコーヒーを飲んではいけない。\\
+You \alt<1>{(~~~~~~~~~~~~) (~~~~~~~~~~~~)}{(~~must~~) (~~not~~)} drink coffee before bed.
+ \item 暗くなってから泳いではいけません。 You \alt<1-2>{(~~~~~~~~~~)}{(~~mustn't~~~)} swim after dark.
+ \item 図書館で走ってはいけません。 You \alt<1-3>{(~~~~~~~~~~) (~~~~~~~~~~)}{(~~mustn't~~) (~~run~~)}  in the library.
+\end{enumerate}
+\end{frame}
+
+
+
+\begin{frame}[plain]{まとめ}
+ \Large
+
+\begin{exampleblock}{Topics for Today}
+\small
+\begin{itemize}
+ \item<2->  must は「義務」(〜しなければならない)を表す
+ \item<3->  must not($=\text{mustn't}$) は「禁止」(〜してはならない)を表す
+ \item<4->  must / must not($=\text{mustn't}$)に続く動詞は原形($=\text{そのままの形}$)
+\end{itemize}
+
+\end{exampleblock}
+
+\vfill
+
+\visible<5->{{\small willやmustのように動詞と組み合わせて使用することで、$+\alpha$(プラスアルファ)の意味を付け加える語を\textcolor{BurntOrange}{助動詞}といいます。}}
+
+\end{frame}
+
+
+\end{document}
