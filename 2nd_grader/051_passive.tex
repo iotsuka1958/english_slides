@@ -1,0 +1,342 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{circledsteps}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{booktabs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- I have to do my homework. ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{受け身}
+
+\subsection{受け身とは}
+
+\begin{frame}[plain]{受け身とは}
+ \Large
+
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item 先生は彼女をほめました。
+	\item 彼女は先生にほめられました。
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item ジョンはジェニファーを愛しています。
+	\item ジェニファーはジョンに愛されています。
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item 牛乳からチーズを作ります。
+	\item チーズは牛乳から作られます。
+       \end{enumerate}
+\end{enumerate}
+
+\begin{exampleblock}{Topic for Today}
+\pause
+\begin{itemize}\small
+ \item 受け身とは「〜される」の意味を表します
+\end{itemize}
+     \end{exampleblock}
+
+\end{frame}
+
+\subsection{be $+$ 過去分詞}
+\begin{frame}[plain]{be $+$ 過去分詞}
+ \Large
+\begin{enumerate}
+ \item They speak English.\hfill{}{\small 彼らは英語を話す。}
+ \item They spoke English.\hspace{1\zw}{{\small 過去形}}\hfill{\small 彼らは英語を話した。}
+ \item English \textcolor{Maroon}{\bfseries is} \textcolor{NavyBlue}{\bfseries spoken} there.\hspace{1\zw}{{\small 過去分詞}}\hfill{\small そこでは英語が話されている。}
+\end{enumerate}
+
+\begin{center}
+ 
+{\small%
+\begin{tabular}{lll}
+{\small 原形}&{\small 過去形}&{\small 過去分詞}\\\hline
+speak&spoke&spoken
+\end{tabular}%
+}
+\end{center}
+
+\vfill
+
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}\small
+ \item `be動詞$+$ 過去分詞' $\longrightarrow$\,\,\,\,受け身(〜される)
+ \item 「過去分詞」は「受け身」の意味を表します
+\end{itemize}
+     \end{exampleblock}
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+ 次の各文の意味を考えましょう。
+
+\begin{enumerate}
+ \item The picture was painted by her.\hfill{}(painted: paintの過去分詞)
+ \item The car is washed every Sunday.\hfill{}(washed: washの過去分詞)
+ \item The computer is used by students.\hfill{}(used: useの過去分詞)
+ \item The cat is loved by the family.\hfill{}(loved: loveの過去分詞)
+ \item The house was built ten years ago.\hfill{}(built: buildの過去分詞)
+ \item The toy was made in Canada.\hfill{}(made: makeの過去分詞)
+ \item The book is read by many people.\hfill{}(read: readの過去分詞)
+\end{enumerate}
+
+\pause
+
+これらの動詞の過去分詞は、過去形と同じです
+
+\vspace{-5pt}
+
+過去形がしっかり身についていればだじょうぶ
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+ 次の各文の意味を考えましょう。
+
+ \begin{enumerate}
+\item English is spoken in many countries.\hfill{}(spoken: speakの過去分詞)
+\item The photo was taken by my friend.\hfill{}(taken: takeの過去分詞　by: 〜によって)
+\item The window was broken by the ball.\hfill{} (broken: breakの過去分詞)
+\item The cake was eaten by the family.\hfill{}(eaten: eatの過去分詞)
+\item The movie was seen by many people.\hfill{}(seen: seeの過去分詞)
+\item The letter was written by my father.\hfill{}(written: writeの過去分詞)
+\item She is known as a great singer.\hfill{}(known: knowの過去分詞　as： 〜として)
+\end{enumerate}
+
+\pause
+
+これらの動詞は、過去形と過去分詞がちがいます
+
+\end{frame}
+
+\begin{frame}[plain]{過去形 $\neq$ 過去分詞}
+ 過去形と過去分詞が異なる動詞の表をつくりましょう。
+
+\begin{center}
+ 
+\rowcolors{2}{NavyBlue!50}{yellow!50}
+\begin{tabular}{lll}\toprule
+{\small 原形}&{\small 過去形}&{\small 過去分詞}\\\midrule
+\visible<1->{speak}&\visible<2->{spoke}&\visible<3->{spoken}\\
+\visible<1->{take}&\visible<4->{took}&\visible<5->{taken}\\
+\visible<1->{break}&\visible<6->{broke}&\visible<7->{broken}\\
+\visible<1->{eat}&\visible<8->{ate}&\visible<9->{eaten}\\
+\visible<1->{see}&\visible<10->{saw}&\visible<11->{seen}\\
+\visible<1->{write}&\visible<12->{wrote}&\visible<13->{written}\\
+\visible<1->{know}&\visible<14->{knew}&\visible<15->{known}\\\bottomrule
+\end{tabular}%
+\end{center}
+
+\end{frame}
+
+\begin{frame}<1-7>[plain]{Exercises}
+
+あたえられた日本文の意味になるよう、下の枠から動詞を選び適当な形にして(~~~~~~~~~~)に補いましょう。
+
+\begin{enumerate}
+ \item The song is \alt<1>{(~~\phantom{loved}~~)}{(~~loved~~)} by many people.その歌は多くの人から愛されている。
+ \item The vase was \alt<1-2>{(~~\phantom{broken}~~)}{(~~broken~~)} by the cat. 花瓶がネコにこわされた。
+ \item The photo was \alt<1-3>{(~~\phantom{taken}~~)}{(~~taken~~)} by my mother.その写真をとったのは私の母です。
+ \item Spanish is \alt<1-4>{(~~\phantom{spoken}~~)}{(~~spoken~~)} in Mexico.メキシコではスペイン語が話されている。
+ \item Sushi is \alt<1-5>{(~~\phantom{eaten}~~)}{(~~eaten~~)} in the United States.アメリカではすしが食べられている。
+ \item The book was \alt<1-6>{(~~\phantom{written}~~)}{(~~written~~)} by Hemingway. \\その本はヘミングウェイによって書かれた。
+\end{enumerate}
+
+\begin{tcolorbox}\centering
+ eat~~~~~~~~~~love~~~~~~~~~~write~~~~~~~~~~speak~~~~~~~~~~break~~~~~~~~~~take
+\end{tcolorbox}
+\end{frame}
+
+
+\subsection{受け身の否定}
+\begin{frame}[plain]{受け身の否定}
+\Large
+
+\visible<1->{Spanish \textcolor{NavyBlue}{\bfseries is spoken} in the country}\hfill\visible<2->{{\small country: 国}}
+
+\visible<3->{Spanish \textcolor{NavyBlue}{\bfseries is} \textcolor{Maroon}{\bfseries not} \textcolor{NavyBlue}{\bfseries spoken} in the country.} 
+
+\vfill
+
+\begin{exampleblock}{Topic for Today}
+\begin{itemize}\small
+ \item 「受け身」の否定 $\longrightarrow$\,\,\,\,`be動詞$+$ \textcolor{Maroon}{not} $+$ 過去分詞'
+\end{itemize}
+     \end{exampleblock}
+
+\end{frame}
+
+
+
+\subsection{受け身の疑問文}
+\begin{frame}[plain]{受け身の疑問文のつくり方}
+\Large
+
+\visible<1->{English \alt<1-3>{\myAnch{be1}{white}{is}}{\myAnch{BE1}{orange}{is}} spoken there.}\hfill\visible<2->{{\small there: そこでは}}
+
+\vspace{15pt}
+
+\visible<3->{\alt<1-3>{\myAnch{be2}{white}{Is}}{\myAnch{BE2}{orange}{Is}} English spoken there?} 
+
+\visible<4->{%
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[thick,orange,->] (be1.south) to[out=-90, in=90] (be2.north);
+\end{tikzpicture}
+}
+
+\begin{exampleblock}<5->{Topics for Today}\small
+受け身の疑問文のつくり方
+\begin{itemize}
+ \item<3->  be動詞を先頭にする
+ \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
+\end{itemize}
+      \end{exampleblock}
+
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+ 
+日本文を参考にして(~~~~~~~~)の語を並べかえ、英文を完成させましょう。
+ただし先頭に来る単語は大文字で始めてください。
+
+
+
+\begin{enumerate}
+ \item 家は毎日掃除されますか。
+( cleaned / the house / is ) every day?\\
+\visible<2->{Is the house cleaned every day?}
+ \item その写真はハワイで撮られましたか。
+( the picture / taken /  was ) in Hawaii?\\
+\visible<3->{Was the picture taken in Hawaii?}
+ \item チーズは牛乳から作られますか。
+( cheese / made / from / milk / is ) ?\\
+\visible<4->{Is cheese made from milk?}
+ \item 彼は良い歌手として知られていましたか。\\
+( he / known /  was ) as a good singer?\\
+\visible<5->{Was he known as a good singer?}
+\end{enumerate}
+
+\end{frame}
+
+\section{まとめ}
+\begin{frame}[plain]{要点}
+ 
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}\small
+ \item `be動詞$+$ 過去分詞' $\longrightarrow$\,\,\,\,受け身(〜される)
+ \item 「過去分詞」は「受け身」の意味を表します
+        \begin{itemize}
+	 \item 過去形と過去分詞が同じことが多い\\
+\mbox{}\hfill{}(例: paint--painted--painted, love--loved--loved, make--made--made)
+	 \item でも、異なることもある\\
+\mbox{}\hfill{}(例: eat--ate--eaten, write--wrote--written, see--saw--seen, break--broke--broken)
+	\end{itemize}
+ \item 「受け身」の否定文と疑問文の作り方は、be動詞を用いた普通の文と同じです
+\end{itemize}
+     \end{exampleblock}
+\end{frame}
+
+
+
+
+
+\end{document}
+
+
+\begin{frame}[plain]{受け身とは}
+ \Large
+
+He makes cheese from milk.\hfill{}{\small 彼は牛乳からチーズを作る。}
+
+They made cheese from milk.\hfill{}{\small 彼は牛乳からチーズを作った。}
+
+Cheese is made from milk.\hfill{\small チーズは牛乳から作られる。}
+
+\end{frame}
+
