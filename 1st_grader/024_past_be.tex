@@ -1,0 +1,342 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{circledsteps}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{booktabs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- I was busy yesterday. ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{be動詞の過去形}
+
+\subsection{be動詞の現在形（復習）}
+
+\begin{frame}[plain]{be動詞の現在形（復習）}
+
+次の英文の(~~~~~~~~)内から正しいものを選び○で囲みましょう。
+
+\begin{enumerate}
+ \item I ( \alt<2->{\Circled[outer color=orange]{am}}{am} / are  / is ) hungry.
+ \item You ( am / \alt<3->{\Circled[outer color=orange]{are}}{are} / is ) very kind.
+ \item She ( am / are / \alt<4->{\Circled[outer color=orange]{is}}{is} ) from Australia.
+ \item Tom ( am / are / \alt<5->{\Circled[outer color=orange]{is}}{is} ) busy today.
+ \item The flowers（ am / is / \alt<6->{\Circled[outer color=orange]{are}}{are} ) beautiful.
+\end{enumerate}
+
+
+
+\begin{exampleblock}{Topic for Today}
+\pause
+\begin{itemize}\small
+ \item be動詞の現在形は主語によって使い分けがあります
+\end{itemize}
+     \end{exampleblock}
+
+\end{frame}
+
+
+
+\begin{frame}[plain]\frametitle{be動詞の現在形（復習）}
+
+\begin{block}{現在形のbe動詞の使い分け}
+
+{\Large
+\begin{numcases}{\text{　}}
+ \text{\mbox{}\,\,{}Iではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{am}\\
+ \text{\mbox{}\,\,{}Youではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}\\
+ \text{\mbox{}\,\,{}1つ、1人}&$\longrightarrow$\,\,\,\,\,\,{}\text{is}\\
+ \text{\mbox{}\,\,{}2つ、2人以上}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}
+\end{numcases}
+}
+\end{block}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{使い分けを図にすると}
+ \centering
+\begin{tikzpicture}
+% 補助グリッドを描画
+%\draw[step=1cm, gray!20, very thin] (-6,-2) grid (6,6);
+% ノードの定義と配置
+\node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be動詞};\pause
+\node[circle, draw=black, fill=pink!30,minimum size=15mm, line width=1pt] (B) at (-6,0) {\LARGE am};\pause
+\node[circle, draw=black, fill=blue!30, minimum size=15mm, line width=1pt] (C) at (0,5) {\LARGE are};\pause
+\node[circle, draw=black, fill=green!30, minimum size=15mm, line width=1pt] (D) at (6,0) {\LARGE is};\pause
+
+% ノード間の線の描画
+\draw[-latex, line width=1.5pt] (A) -- node[above] {Iのとき} (B);\pause
+\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {Youのとき}  node[sloped, below] {複数形なら} (C);\pause
+\draw[-latex, line width=1.5pt] (A) -- node[above] {単数形なら} node[below] {} (D);
+\end{tikzpicture}
+\end{frame}
+
+
+\begin{frame}[plain]{be動詞の過去形}
+
+\begin{tabular}{ll}
+\multicolumn{1}{c}{現在形}&\multicolumn{1}{c}{過去系}\\
+\visible<1->{I am busy now.}&       \visible<2->{I \textcolor{Maroon}{\bfseries was} busy yesterday.}\\
+\visible<1->{You are busy now.}&    \visible<3->{You \textcolor{NavyBlue}{\bfseries were} busy yesterday.}\\
+\visible<1->{He is busy now.}&      \visible<4->{He \textcolor{Maroon}{\bfseries was} busy yesterday.}\\
+\visible<1->{She is bus nowy.}&     \visible<5->{She \textcolor{Maroon}{\bfseries was} busy yesterday.}\\
+\visible<1->{They are busy now.}&   \visible<6->{They \textcolor{NavyBlue}{\bfseries were} busy yesterday.}\\
+\visible<1->{We are busy now.}&     \visible<7->{We \textcolor{NavyBlue}{\bfseries were} busy yesterday}.
+\end{tabular}
+
+現在形は3つ(am, are, is)ありましたが、過去形は2つ(was, were)だけです
+
+
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{be動詞の過去形の使い分け}
+
+\begin{block}{使い分け}
+
+{
+\setcounter{equation}{0}
+\begin{numcases}{\text{　}}
+ \text{\mbox{}\,\,{}Iではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{was}\\
+ \text{\mbox{}\,\,{}Youではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{were}\\
+ \text{\mbox{}\,\,{}1つ、1人}&$\longrightarrow$\,\,\,\,\,\,{}\text{was}\\
+ \text{\mbox{}\,\,{}2つ、2人以上}&$\longrightarrow$\,\,\,\,\,\,{}\text{were}
+\end{numcases}
+}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{過去形の使い分けを図にすると}
+ \centering
+\begin{tikzpicture}
+% 補助グリッドを描画
+%\draw[step=1cm, gray!20, very thin] (-6,-2) grid (6,6);
+% ノードの定義と配置
+\node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be動詞};\pause
+\node[circle, draw=black, fill=Maroon!30,minimum size=20mm, line width=1pt] (B) at (-6,0) {\LARGE was};\pause
+%\node[circle, draw=black, fill=blue!30, minimum size=15mm, line width=1pt] (C) at (0,5) {\LARGE are};\pause
+\node[circle, draw=black, fill=NavyBlue!30, minimum size=20mm, line width=1pt] (D) at (6,0) {\LARGE were};\pause
+
+% ノード間の線の描画
+\draw[-latex, line width=1.5pt] (A) -- node[above] {Iのとき} node[below] {単数形なら}(B);\pause
+%\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {Youのとき}  node[sloped, below] {複数形なら} (C);\pause
+\draw[-latex, line width=1.5pt] (A) -- node[above] {Youのとき} node[below] {複数形なら} (D);
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+ 
+次の英文の(~~~~~~~~)内から正しいものを選び○で囲みましょう。
+
+\begin{enumerate}
+ \item I ( am/ is /are / \alt<2->{\Circled[outer color=orange]{was}}{was} / were ) hungry yesterday.
+ \item They ( am / is / are / was / \alt<3->{\Circled[outer color=orange]{were}}{were} ) busy yesterday.
+ \item She  ( am/ is /are / \alt<4->{\Circled[outer color=orange]{was}}{was} / were ) tired last night.\hfill{}{\small tired: 疲れている}
+ \item Tom ( am / \alt<5->{\Circled[outer color=orange]{is}}{is} / are / was / were ) busy today.
+ \item They（ am / is / are / was / \alt<6->{\Circled[outer color=orange]{were}}{were} ) at home then.\\
+\mbox{}\hfill{}{\small at home: 在宅して　then: そのとき}
+\end{enumerate}
+
+\end{frame}
+
+
+\section{否定文}
+\subsection{I was not hungry.}
+\begin{frame}[plain]\frametitle{was / wereの否定}
+\Large
+
+\begin{enumerate}
+ \item \begin{enumerate}\Large
+	\item \visible<1->{I \textcolor{NavyBlue}{\bfseries was} hungry yesterday.}
+	\item \visible<2->{I \textcolor{NavyBlue}{\bfseries was} \textcolor{Maroon}{\bfseries not} hungry yesterday.}
+       \end{enumerate}
+ \item \begin{enumerate}\Large
+	\item \visible<1->{They \textcolor{NavyBlue}{\bfseries were} tired last night.}
+	\item \visible<3->{They \textcolor{NavyBlue}{\bfseries were} \textcolor{Maroon}{\bfseries not} tired last night.}
+       \end{enumerate}
+\end{enumerate}
+
+
+\visible<4->{\begin{exampleblock}{Topics for Today}
+\small
+\begin{itemize}
+ \item \visible<5->{否定文にするには、be動詞の直後にnotを置きます}
+ \item \visible<6->{縮めて was not $\rightarrow$\,\,\,\textcolor{orange}{wasn't} /  were not $\rightarrow$ weren't}
+\end{itemize}
+      \end{exampleblock}}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください。 
+
+\begin{enumerate}
+ \item 私は昨日お腹が空いていませんでした。
+( not / was / I / hungry )\\
+\visible<2->{I was not hungry yesterday.}
+ \item 
+彼らは昨晩忙しくなかった。
+( not / they / busy / were ) last night.\\
+\visible<3->{They were not busy last night.}
+ \item 
+彼女は疲れていませんでした。
+( not / she / was / tired )\\
+\visible<4->{She was not tired.}
+ \item 
+あなたは当時家にいませんでした。
+( you / at / home / not / were ) then.\\
+\visible<5->{You were not at home then.}
+\end{enumerate}
+
+\end{frame}
+
+
+\section{疑問文}
+\subsection{Were you hungry?}
+\begin{frame}[plain]\frametitle{was / wereの疑問文}
+\Large
+
+\begin{enumerate}
+ \item \begin{enumerate}\Large
+	\item \visible<1->{You \textcolor{NavyBlue}{\bfseries were} hungry.}
+	\item \visible<2->{\textcolor{NavyBlue}{\bfseries Were} you hungry?}
+       \end{enumerate}
+ \item \begin{enumerate}\Large
+	\item \visible<1->{She \textcolor{NavyBlue}{\bfseries was} tired last night.}
+	\item \visible<3->{\textcolor{NavyBlue}{\bfseries Was} she tired last night?}
+       \end{enumerate}
+\end{enumerate}
+
+\visible<4->{\begin{exampleblock}{Topics for Today}
+\small
+\begin{itemize}
+ \item \visible<5->{疑問文にするには、be動詞を先頭に置きます}
+ \item \visible<6->{現在形のときと同じです}
+\end{itemize}
+      \end{exampleblock}}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください。 
+ \begin{enumerate}
+	    \item あなたは昨日お腹が空いていましたか？
+( you / were / hungry ) yesterday?\\
+\visible<2->{Were you hungry yesterday?}
+    \item 彼らは昨晩忙しかったですか？
+( they / busy / were ) last night?\\
+\visible<3->{Were they busy last night?}
+	    \item 彼女は昨日疲れていましたか？
+( she / tired / was ) yesterday?\\
+\visible<4->{Was she tired yesterday?}
+	    \item あなたは当時家にいましたか？
+( you / at / home / were ) then?\\
+\visible<5->{Were you at home then?}
+
+	  
+ \end{enumerate}
+\end{frame}
+
+
+\begin{frame}<1-17>[plain]\frametitle{Exercises}
+例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。
+\mbox{}\hfill\myaudio{./audio/009_answer_be_07.mp3}
+
+
+\begin{tabular}{rlcll}
+\visible<1->{例}& \visible<1->{Were you busy?}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I was.}&\visible<4->{(2) No, I wasn't.}\\
+\visible<1->{1}&\visible<1->{Was she tired lat night?}&\visible<5->{$\rightarrow$}&\visible<6->{(1) Yes, she was.}&\visible<7->{(2) No, she wasn't.}\\
+\visible<1->{2}&\visible<1->{Were you at home then?}&\visible<8->{$\rightarrow$}& \visible<9->{(1) Yes, I was.}&\visible<10->{(2) No, I wasn't.}\\
+\visible<1->{3}&\visible<1->{Was Peter in Japan then?}&\visible<11->{$\rightarrow$}&\visible<12->{(1) Yes, he was.}&\visible<13->{(2) No, he wasn't.}\\
+\visible<1->{4}&\visible<1->{Was it rainy yesterday?}&\visible<14->{$\rightarrow$}&\visible<15->{(1) Yes, it was.}&\visible<16->{(2) No, it wasn't.}\\
+\end{tabular}
+
+\end{frame}
+
+\end{document}
