@@ -231,14 +231,14 @@ be動詞$\left\{\begin{tabular}[c]{l}
 %\draw[step=1cm, gray!20, very thin] (-6,-2) grid (6,6);
 % ノードの定義と配置
 \node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be動詞};\pause
-5\node[circle, draw=black, fill=pink!30,minimum size=15mm, line width=1pt] (B) at (-6,0) {\LARGE am};\pause
+\node[circle, draw=black, fill=pink!30,minimum size=15mm, line width=1pt] (B) at (-6,0) {\LARGE am};\pause
 \node[circle, draw=black, fill=blue!30, minimum size=15mm, line width=1pt] (C) at (0,5) {\LARGE are};\pause
 \node[circle, draw=black, fill=green!30, minimum size=15mm, line width=1pt] (D) at (6,0) {\LARGE is};\pause
 
 % ノード間の線の描画
 \draw[-latex, line width=1.5pt] (A) -- node[above] {Iのとき} (B);\pause
-\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {Youのとき}  node[sloped, below] {複数形なら} (C);\pause
-\draw[-latex, line width=1.5pt] (A) -- node[above] {単数形なら} node[below] {} (D);
+\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {Youのとき}  node[sloped, below] {複数なら} (C);\pause
+\draw[-latex, line width=1.5pt] (A) -- node[above] {1つ、1人なら} node[below] {} (D);
 \end{tikzpicture}
 \end{frame}
 
