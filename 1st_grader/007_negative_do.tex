@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
@@ -22,6 +22,7 @@
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
 \usepackage{tcolorbox}
+\usepackage{circledsteps}
 \usepackage{tikzpeople}
 \usepackage{xcolor}
 \usepackage{amsmath}
@@ -233,24 +234,25 @@ heart-eyes}\,\,\,{\tiny\mfCoffeeBean}\mfJavaBold{}}}&\onslide<2->{I like coffee.
 カッコ内から適当なものを選んでください。また、その文の意味を考えましょう。
 
 \begin{enumerate}
- \item I ( am not / do not / not ) a baseball fan.\hspace{10pt}{\footnotesize fan:}{\tiny ファン}
- \item He ( is not / do not / does not ) from New Zealand.\hspace{10pt}{\footnotesize New Zealand:}{\tiny  ニュージーランド}
- \item They ( are not / do not / does not ) speak French.\hspace{10pt}{\footnotesize French:} {\tiny フランス語}
- \item I ( am not / do not / not ) have a dog.
- \item Naomi ( is not / do not / does not ) play tennis on Sundays.\hspace{10pt}{\footnotesize on Sundays:} \makebox[0pt][l]{\tiny 日曜日には}
+ \item I ( \alt<2->{\Circled[outer color=BurntOrange]{am not}}{am not} / do not / not ) a baseball fan.\hspace{10pt}{\footnotesize fan:}{\tiny ファン}
+ \item He ( \alt<3->{\Circled[outer color=BurntOrange]{is not}}{is not}  / do not  / does not ) from New Zealand.\hspace{10pt}{\footnotesize New Zealand:}{\tiny  ニュージーランド}
+ \item They ( are not / \alt<4->{\Circled[outer color=BurntOrange]{do not}}{do not}  / does not ) speak French.\hspace{10pt}{\footnotesize French:} {\tiny フランス語}
+ \item I ( am not / \alt<5->{\Circled[outer color=BurntOrange]{do not}}{do not} / not ) have a dog.
+ \item Naomi ( is not / do not / \alt<6->{\Circled[outer color=BurntOrange]{does not}}{does not}  ) play tennis on Sundays.\hspace{10pt}{\footnotesize on Sundays:} \makebox[0pt][l]{\tiny 日曜日には}
 \end{enumerate}
 
-\vspace{-100pt}
 
-\begin{tikzpicture}
-\draw[transparent,white] (0,0) grid[step=0.5] (5,5);
-\draw[orange,thick] (1.2,4.4) rectangle (2.5, 4.9);
-\draw[orange,thick] (1.5,3.8) rectangle (2.6, 4.3);
-\draw[orange,thick] (3.5,3.1) rectangle (4.7, 3.6);
-\draw[orange,thick] (2.8,2.4) rectangle (4.1, 2.9);
-\draw[orange,thick] (5.1,1.8) rectangle (6.7, 2.3);
+%\vspace{-100pt}
 
-\end{tikzpicture}
+%\begin{tikzpicture}
+%\draw[transparent,white] (0,0) grid[step=0.5] (5,5);
+%\draw[orange,thick] (1.2,4.4) rectangle (2.5, 4.9);
+%\draw[orange,thick] (1.5,3.8) rectangle (2.6, 4.3);
+%\draw[orange,thick] (3.5,3.1) rectangle (4.7, 3.6);
+%\draw[orange,thick] (2.8,2.4) rectangle (4.1, 2.9);
+%\draw[orange,thick] (5.1,1.8) rectangle (6.7, 2.3);
+%\end{tikzpicture}
+
 \end{frame}
 
 

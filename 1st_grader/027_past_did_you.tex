@@ -1,0 +1,232 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{circledsteps}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{booktabs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- Did you eat sushi last night? ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{一般動詞の過去形の疑問文}
+\subsection{一般動詞の現在形の疑問文(復習)}
+ 
+\begin{frame}<1-10>[plain]\frametitle{Exercises}
+
+つぎの文を疑問文にしましょう。
+
+ \begin{enumerate}
+  \item<1-> You like flowers.\hspace{59.7pt}
+        \onslide<5->{$\longrightarrow$\,\,\,\,\, Do you like flowers?\hfill\scalebox{.75}{\bcfleur\bcfleur}}
+  \item<1-> They live in Boston.\hspace{47.5pt}%
+        \onslide<6->{$\longrightarrow$\,\,\,\,\, Do they live in Boston?\hfill\scalebox{.25}{\worldflag{US}}}
+  \item<1-> She teaches science.\hspace{42pt}%
+        \onslide<7->{$\longrightarrow$\,\,\,\,\, Does she teach science?\hfill\scalebox{1.75}{\twemoji{woman scientist}}}
+  \item<1-> He has  a car.\hspace{80.5pt}%
+        \onslide<8->{$\longrightarrow$\,\,\,\,\, Does he have a car?\hfill\faCar}
+  \item<1-> Our teacher walks to school.
+        \onslide<9->{$\longrightarrow$\,\,\,\,\, Does our teacher walk to school? \hfill\scalebox{.67}{\PHpedestrian}\,\,\scalebox{1.5}{\twemoji{school}}}
+ \end{enumerate}
+
+\begin{exampleblock}<2->{Topics for Today}
+\begin{itemize}\small
+ \item<3->   先頭に `Do'を置く\pause
+ \item<4->   主語が三人称単数のときは`Does'
+\end{itemize}
+\end{exampleblock}
+\vspace{-10pt}
+% Embed the sound file
+\onslide<10>{%
+\mbox{}\hfill\myaudio{./audio/008_question_be_05.mp3}
+}
+\end{frame}
+
+
+
+\subsection{一般動詞の過去形の疑問文のつくり方}
+\begin{frame}[plain]{過去形の疑問文}
+ \Large
+
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item  \visible<1->{They play tennis after school. $\rightarrow$} \visible<2->{\myEmph[3-]{Maroon}{Do} they play tennis after school?}
+	\item  \visible<1->{She plays tennis after school. $\rightarrow$} \visible<4->{\myEmph[5-]{ForestGreen}{Does} she play tennis after school?}\\
+\mbox{}\hfill\visible<6->{\footnotesize 現在形の疑問文は、主語によって\textcolor{Maroon}{\bfseries Do}と\textcolor{ForestGreen}{\bfseries Does}を使い分け}
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item  \visible<7->{They played tennis last week. $\rightarrow$} \visible<8->{\myEmph[9-]{NavyBlue}{Did} they play tennis last week?}
+	\item  \visible<7->{She played tennis last week. $\rightarrow$} \visible<10->{\myEmph[11-]{NavyBlue}{Did} she play tennis last week?}\\
+\mbox{}\hfill\visible<12->{\footnotesize 過去形の疑問文は主語がなんであっても\textcolor{NavyBlue}{\bfseries $\text{Did} + \text{S} + \text{動詞の原形} \ldots ?$}}
+       \end{enumerate}
+\end{enumerate}
+
+\visible<13->{%
+\begin{exampleblock}{Topics for Today}
+\small
+一般動詞の過去形の疑問文
+\begin{itemize}
+ \item  \textcolor{NavyBlue}{\bfseries $\text{Did} + \text{S} + \text{動詞の原形} \ldots ?$}
+ \item  主語がなんであっても同じです
+\end{itemize}
+      \end{exampleblock}
+}
+
+\end{frame}
+
+
+\subsection{疑問文への答え方}
+ \begin{frame}[plain]{疑問文への答え方}
+ \Large
+\pause
+
+Did  you study science yeaterday?
+
+\vspace{20pt}
+\pause
+
+\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}
+         \text{Yes, I did.}\\\pause
+         \text{No, I did not.}\\\pause
+         \text{(}= \text{No, I didn't.)}
+        \end{tabular}\right.$
+
+\pause
+
+\mbox{}\hfill{}{\small Noのときdid notを縮めてNo, I \textcolor{orange}{didn't}.ともいいます}
+
+\begin{exampleblock}{Topics for Today}
+\small
+疑問文への答え方
+\begin{itemize}
+ \item  \textcolor{NavyBlue}{\bfseries Yes, I did.} または\textcolor{NavyBlue}{\bfseries No, I did not($=\text{didn't}$)}
+ \item  主語がなんであっても同じです
+\end{itemize}
+      \end{exampleblock}
+
+\end{frame}
+
+
+
+\begin{frame}<1-10>[plain]\frametitle{Exercises}
+
+つぎの文を疑問文にしましょう。
+
+ \begin{enumerate}
+  \item<1-> You liked the movie.\hspace{59.7pt}
+        \onslide<5->{$\longrightarrow$\,\,\,\,\, Did you like the movie?\hfill\scalebox{.75}{\bcfleur\bcfleur}}
+  \item<1-> They lived in Boston.\hspace{62pt}%
+        \onslide<6->{$\longrightarrow$\,\,\,\,\, Did they live in Boston?\hfill\scalebox{.25}{\worldflag{US}}}
+  \item<1-> She wrote a letter to him.\hspace{42pt}%
+        \onslide<7->{$\longrightarrow$\,\,\,\,\, Did she write a letter to him?}
+  \item<1-> He had  a car two years ago.\hspace{30.5pt}%
+        \onslide<8->{$\longrightarrow$\,\,\,\,\, Did he have a car two years ago?\hfill\faCar}
+  \item<1-> Your father went to  Australia last year.\\
+ \mbox{}\hfill\onslide<9->{$\longrightarrow$\,\,\,\,\, Did your father go to Australia last year? }
+ \end{enumerate}
+
+\begin{exampleblock}{Topics for Today}
+\small
+一般動詞の過去形の疑問文
+\begin{itemize}
+ \item  \textcolor{NavyBlue}{\bfseries $\text{Did} + \text{S} + \text{動詞の原形} \ldots ?$}
+ \item  主語がなんであっても同じです
+\end{itemize}
+      \end{exampleblock}
+
+\vspace{-10pt}
+% Embed the sound file
+\onslide<10>{%
+\mbox{}\hfill\myaudio{./audio/008_question_be_05.mp3}
+}
+
+\end{frame}
+
+
+
+\end{document}

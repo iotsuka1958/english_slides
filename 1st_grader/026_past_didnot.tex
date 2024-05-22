@@ -1,0 +1,370 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{circledsteps}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{booktabs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- I didn't play tennis yesterday. ---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{一般動詞の過去形の否定}
+\subsection{一般動詞の現在形の否定(復習)}
+\begin{frame}<1-6>[plain]{一般動詞の現在形の否定文(復習)}
+ 
+つぎの文を否定文にしましょう。
+
+\begin{tabular}{rlcl}
+1&\visible<1->{I live in Paris.}&\visible<1->{$\longrightarrow$}& \visible<2->{I do not($= \text{don't}$) live in Paris.}\\
+2&\visible<1->{You live  in Paris.}& \visible<1->{$\longrightarrow$}& \visible<3->{You do not($= \text{don't}$) live in Paris.}\\
+3&\visible<1->{They live in Paris.}&\visible<1->{$\longrightarrow$}& \visible<4->{They do not($= \text{don't}$) live in Paris.}\\
+4&\visible<1->{He lives in Paris.}&\visible<1->{$\longrightarrow$}& \visible<5->{He does not($= \text{doesn't}$) live in Paris.}
+\end{tabular}
+
+\visible<6->{%
+\begin{exampleblock}{Topics for Today}
+一般動詞の現在形
+\begin{itemize}
+ \item  一般動詞の否定は\textcolor{Maroon}{\bfseries do not\,($=\text{don't)} + \text{動詞の原形}$}
+ \item  主語が3人称単数のときは\textcolor{ForestGreen}{\bfseries does not\,($=\text{doesn't)} + \text{動詞の原形}$}
+\end{itemize}
+      \end{exampleblock}
+}
+
+\end{frame}
+
+\subsection{一般動詞の過去形の否定文のつくり方}
+\begin{frame}[plain]{過去形の否定文}
+ \Large
+
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item  \visible<1->{I live in Boston. $\rightarrow$} \visible<2->{I \myEmph[3-]{Maroon}{do not($=$ don't)} live in Boston.}
+	\item  \visible<1->{He lives in Boston. $\rightarrow$} \visible<4->{He \myEmph[5-]{ForestGreen}{does not($=$ doesn't)} live in Boston.}\\
+\mbox{}\hfill\visible<6->{\footnotesize 現在形の否定文は、主語によって\textcolor{Maroon}{\bfseries do not\,($=$ don't)}と\textcolor{ForestGreen}{\bfseries does not\,($=$ don't)}を使い分け}
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item  \visible<7->{I lived in Boston. $\rightarrow$} \visible<8->{I \myEmph[9-]{NavyBlue}{did not($=$ didn't)} live in Boston.}
+	\item  \visible<7->{He lived in Boston. $\rightarrow$} \visible<10->{He \myEmph[11-]{NavyBlue}{did not($=$ didn't)} live in Boston.}\\
+\mbox{}\hfill\visible<12->{\footnotesize 過去形の否定文は主語がなんであっても\textcolor{NavyBlue}{\bfseries did not\,($=$ didn't)}}
+       \end{enumerate}
+\end{enumerate}
+
+\visible<13->{%
+\begin{exampleblock}{Topics for Today}
+\small
+一般動詞の過去形
+\begin{itemize}
+ \item  一般動詞の否定は\textcolor{NavyBlue}{\bfseries did not\,($=\text{didn't)} + \text{動詞の原形}$}
+ \item  主語がなんであっても同じです
+\end{itemize}
+      \end{exampleblock}
+}
+
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+ 
+つぎの各文を否定文にしましょう。
+
+\begin{enumerate}
+ \item \visible<1->{We listened to the radio after dinner.}\\
+\visible<2->{$\rightarrow$\,We didn't\,($=$ did not) listen to the radio after dinner.}
+ \item \visible<1->{I played the piano last night.}\\
+\visible<3->{$\rightarrow$\,I didn't\,($=$ did not) play the piano last night.}
+ \item \visible<1->{He cooked this morning.}\\
+\visible<4->{$\rightarrow$\,He didn't\,($=$ did not) cook this morning.}
+ \item \visible<1->{She walked to work every day.}\\
+\visible<5->{$\rightarrow$\,She didn't\,($=$ did not) walk to work every day.}
+ \item \visible<1->{They lived in London two years ago.}\\
+\visible<6->{$\rightarrow$\,They didn't\,($=$ did not) live in London two years ago.}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+ 
+つぎの各文を否定文にしましょう。
+
+\begin{enumerate}
+ \item \visible<1->{I studied math last night.}\hfill{$2x+1=5$}\\
+\visible<2->{$\rightarrow$\,I didn't\,($=$ did not) study math last night.}
+ \item \visible<1->{The baby cried on the bus yesterday.}\\
+\visible<3->{$\rightarrow$\,The baby didn't\,($=$ did not) cry on the bus yesterday.}
+ \item \visible<1->{The train stopped at every station two years ago.}\\
+\visible<4->{$\rightarrow$\,The bus didn't\,($=$ did not) stop at every station two years ago.}
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}[plain]{--edで終わるが、ちょっぴり注意が必要な動詞}
+
+
+\begin{center}
+ 
+\rowcolors{2}{NavyBlue!50}{yellow!50}
+\begin{tabular}{lll}\toprule
+{\small 原形}&{\small (意味)}&{\small 過去形}\\\midrule
+\visible<1->{study}&\visible<1->{{\small (勉強する)}}&\visible<2->{studied}\\
+\visible<1->{cry}&\visible<1->{{\small (泣く)}}&\visible<2->{cried}\\
+\visible<1->{try}&\visible<1->{{\small(試みる)}}&\visible<2->{tried}\\
+\visible<1->{carry}&\visible<1->{{\small (運ぶ)}}&\visible<2->{carried}\\
+\visible<1->{stop}&\visible<1->{{\small (止まる/止める)}}&\visible<3->{stopped}\\
+\end{tabular}%
+\end{center}
+ 
+\visible<4>{%
+\begin{exampleblock}{Topics for Today}\small
+\begin{itemize}
+ \item 最後のyをiに変えてedをつける動詞があります(結果的に--iedとなります)
+ \item stopの過去形はpを重ねてedをつけます
+\end{itemize}
+\end{exampleblock}
+}
+ \end{frame}
+
+\begin{frame}<1-6>[plain]{Exercises}
+ 次の各文を否定文にします。(~~~~~~~~)に適当な語を補いましょう。
+
+\begin{columns}
+\begin{column}{.6\textwidth}
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item He went to London two years ago.
+	\item He didn't~~(\alt<1-2>{~~\phantom{go}~~}{~~go~~}) to London two years ago.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item She came to the party last night.
+	\item She didn't~~(\alt<1-3>{~~\phantom{come}~~}{~~come~~}) to the party last night.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item She ate bread this morning.
+	\item She didn't~~(\alt<1-4>{~~\phantom{eat}~~}{~~eat~~}) bread this morning.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item They had a meeting this afternoon.
+	\item They didn't~~(\alt<1-5>{~~\phantom{have}~~}{~~have~~}) a meeting this afternoon.
+       \end{enumerate}
+\end{enumerate}
+\end{column}
+\begin{column}{.35\textwidth}
+\visible<2->{\rowcolors{2}{NavyBlue!50}{yellow!50}
+\begin{tabular}{lll}\toprule
+{\small 原形}&{\small (意味)}&{\small 過去形}\\\midrule
+{go}&{{\small (行く)}}&{went}\\
+{come}&{{\small (来る)}}&{came}\\
+{eat}&{{\small(食べる)}}&{ate}\\
+{have}&{{\small (持つ)}}&{had}\\
+\bottomrule
+\end{tabular}}%
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}<1-6>[plain]{Exercises}
+ 次の各文を否定文にします。(~~~~~~~~)に適当な語を補いましょう。
+
+\begin{columns}
+\begin{column}{.6\textwidth}
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item He made a cake for her yesterday.
+	\item He didn't~~(\alt<1-2>{~~\phantom{make}~~}{~~make~~}) a cake for her birthday.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item We saw a great movie last week.
+	\item We didn't~~(\alt<1-3>{~~\phantom{see}~~}{~~see~~}) a great movie last week.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item She got a new car last month.
+	\item She didn't~~(\alt<1-4>{~~\phantom{get}~~}{~~get~~}) a new car last month.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item He spoke English then.
+	\item He didn't~~(\alt<1-5>{~~\phantom{speak}~~}{~~speak~~}) English then.
+       \end{enumerate}
+\end{enumerate}
+\end{column}
+\begin{column}{.35\textwidth}
+\visible<2->
+{\rowcolors{2}{NavyBlue!50}{yellow!50}
+\begin{tabular}{lll}\toprule
+{\small 原形}&{\small (意味)}&{\small 過去形}\\\midrule
+{make}&{{\small (作る)}}&{made}\\
+{see}&{{\small (見る)}}&{saw}\\
+{get}&{{\small (手に入れる)}}&{got}\\
+{speak}&{{\small(話す)}}&{spoke}\\
+%{take}&{{\small (取る)}}&{took}\\
+%{write}&{{\small (書く)}}&{wrote}\\
+\bottomrule
+\end{tabular}}%
+
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}<1-6>[plain]{Exercises}
+ 次の各文を否定文にします。(~~~~~~~~)に適当な語を補いましょう。
+
+\begin{columns}
+\begin{column}{.6\textwidth}
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item I took a picture of my cat yesterday.
+	\item I didn't~~(\alt<1-2>{~~\phantom{take}~~}{~~take~~}) a picture of my cat yesterday.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item I wrote a letter to him last night.
+	\item I didn't~~(\alt<1-3>{~~\phantom{write}~~}{~~write~~}) a letter to him last night.
+       \end{enumerate}
+\end{enumerate}
+\end{column}
+\begin{column}{.35\textwidth}
+\visible<2->
+{\rowcolors{2}{NavyBlue!50}{yellow!50}
+\begin{tabular}{lll}\toprule
+{\small 原形}&{\small (意味)}&{\small 過去形}\\\midrule
+{take}&{{\small (取る)}}&{took}\\
+{write}&{{\small (書く)}}&{wrote}\\
+\bottomrule
+\end{tabular}}%
+
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[plain]{不規則動詞の表}
+ 
+\begin{columns}
+\begin{column}{.45\textwidth}
+\raggedleft
+\rowcolors{2}{NavyBlue!50}{yellow!50}
+\begin{tabular}{lll}\toprule
+{\small 原形}&{\small (意味)}&{\small 過去形}\\\midrule
+\visible<1->{go}&\visible<2->{{\small (行く)}}&\visible<3->{went}\\
+\visible<1->{come}&\visible<4->{{\small (来る)}}&\visible<5->{came}\\
+\visible<1->{eat}&\visible<6->{{\small(食べる)}}&\visible<7->{ate}\\
+\visible<1->{have}&\visible<8->{{\small (持つ)}}&\visible<9->{had}\\
+\visible<1->{make}&\visible<10->{{\small (作る)}}&\visible<11->{made}\\
+\bottomrule
+\end{tabular}%
+\end{column}
+\begin{column}{.45\textwidth}
+\raggedright
+\rowcolors{2}{NavyBlue!50}{yellow!50}
+\begin{tabular}{lll}\toprule
+{\small 原形}&{\small (意味)}&{\small 過去形}\\\midrule
+\visible<1->{see}&\visible<12->{{\small (見る)}}&\visible<13->{saw}\\
+\visible<1->{gete}&\visible<14->{{\small (来る)}}&\visible<15->{came}\\
+\visible<1->{speak}&\visible<16->{{\small(食べる)}}&\visible<17->{ate}\\
+\visible<1->{take}&\visible<18->{{\small (持つ)}}&\visible<19->{had}\\
+\visible<1->{write}&\visible<20->{{\small (作る)}}&\visible<21->{made}\\
+\bottomrule
+\end{tabular}%
+\end{column}
+\end{columns}
+\end{frame}
+
+\subsection{まとめ}
+\begin{frame}[plain]{まとめ}
+ \begin{exampleblock}{Topics for Today}
+\small
+一般動詞の過去形の否定
+\begin{itemize}
+ \item  一般動詞の否定は\textcolor{NavyBlue}{\bfseries did not\,($=\text{didn't)} + \text{動詞の原形}$}
+ \item  主語がなんであっても同じです
+\end{itemize}
+      \end{exampleblock}
+\end{frame}
+
+\end{document}
+
