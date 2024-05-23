@@ -1,0 +1,279 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{pifont}
+\usepackage{phaistos}
+\usepackage{worldflags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
+\usepackage{circledsteps}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{chronology}
+\usepackage{signchart}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}--- I have lived in London for ten years. ---}
+  \author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{現在完了}
+\subsection{現在完了とは}
+
+\begin{frame}[plain]{現在完了とは}
+ 
+
+\begin{enumerate}
+ \item \visible<1->{I \textcolor{ForestGreen}{\bfseries live} in London now. {\small わたしはいまロンドンに住んでいます。(現在形)}}
+\signchart[width=10]{,,,,,,,,,,{\textcolor{ForestGreen}{live}}}{,,,}
+ \item \visible<2->{I \textcolor{Maroon}{\bfseries lived} in London five years ago.{\small わたしは5年前ロンドンに住んでいた。(過去形)}}
+\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{lived}},,,,,}{,,,}
+
+ \item I \textcolor{NavyBlue}{\bfseries have lived} in London for eight years.
+
+\signchart[width=10,height=.5]{,,8年前,,,,{\textcolor{NavyBlue}{have lived}},,,,今}{,,,}
+\end{enumerate}
+
+\vspace*{-20pt}
+
+\begin{tikzpicture}[overlay]
+ %\draw[gray!50] (0,0) grid (12,5);
+ \fill[ForestGreen!70,opacity=.5] (11.57,3.75) circle [radius=.25];
+ \fill[Maroon!70,opacity=.5] (7.4,2.05) circle [radius=.25];
+ \draw[NavyBlue!70,line width=6pt,opacity=.7] (4.88,0.3) -- (11.55,0.3);
+\end{tikzpicture}
+
+\begin{exampleblock}{Topic for Today}
+\small
+\begin{itemize}
+ \item  $\text{現在完了(}=\textcolor{NavyBlue}{\text{have} + \text{過去分詞\,)}}$%
+は「過去と現在にまたがる表現」です
+\end{itemize}
+      \end{exampleblock}
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+ 次の各組の2文の意味の違いについて考えましょう。
+
+\begin{enumerate}
+ \item $\left\{\begin{tabular}{rl}
+(A)& Jane \textcolor{Maroon}{\bfseries stayed} in London two years ago.\hspace{9\zw}{\small stay: 滞在する}\\
+(B)& Jane \textcolor{NavyBlue}{\bfseries has stayed} in London for six years.
+\end{tabular}
+\right.$
+
+ \item $\left\{\begin{tabular}{rl}
+(A)& I \textcolor{Maroon}{\bfseries watched} the movie two years ago.\\
+(B)& I \textcolor{NavyBlue}{\bfseries have watched} the movie three times.
+\end{tabular}
+\right.$
+
+ \item $\left\{\begin{tabular}{rl}
+(A)&Bob \textcolor{Maroon}{\bfseries lost} his bag.\hspace{4\zw}{\small lose(失くす)の過去形、過去分詞はともにlost}\\
+(B)&Bob \textcolor{NavyBlue}{\bfseries has lost} his bag.
+\end{tabular}
+\right.$
+
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+ 
+\begin{enumerate}
+ \item $\left\{\begin{tabular}{rl}
+(A)& Jane \textcolor{Maroon}{\bfseries stayed} in London two years ago.\hspace{7\zw}{\small stay: 滞在する}\\
+(B)& Jane \textcolor{NavyBlue}{\bfseries has stayed} in London for six years.
+\end{tabular}
+\right.$
+\end{enumerate}
+
+\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{stayed}},,今}{,,,}
+\signchart[width=10,height=.5]{,6年前,,,{\textcolor{NavyBlue}{has stayed}},,,今}{,,,}
+
+\begin{tikzpicture}[overlay]
+ %\draw[gray!50] (0,0) grid (12,5);
+ %\fill[ForestGreen!70,opacity=.5] (11.57,3.75) circle [radius=.25];
+ \fill[Maroon!70,opacity=.5] (8.675,2.66) circle [radius=.25];
+ \draw[NavyBlue!70,line width=6pt,opacity=.7] (4.2,1.21) -- (10.9,1.21);
+\end{tikzpicture}
+
+過去のある時から現在までの「継続」を表しています
+\end{frame}
+
+
+\begin{frame}[plain]{Exercises}
+
+\begin{enumerate}\setcounter{enumi}{1}
+ \item $\left\{\begin{tabular}{rl}
+(A)& I \textcolor{Maroon}{\bfseries watched} the movie two years ago.\hspace{9\zw}{\small movie: 映画}\\
+(B)& I \textcolor{NavyBlue}{\bfseries have watched} the movie three times.
+\end{tabular}
+\right.$
+\end{enumerate}
+
+\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{watched}},,今}{,,,}
+\signchart[width=10,height=.5]{1回目,,2回目,,{\textcolor{NavyBlue}{have watched}},,3回目,}{,,,}
+
+\begin{tikzpicture}[overlay]
+%\draw[gray!50] (0,0) grid (12,5);
+ %\fill[ForestGreen!70,opacity=.5] (11.57,3.75) circle [radius=.25];
+ \fill[Maroon!90,opacity=.75] (8.675,2.66) circle [radius=.25];
+ \fill[NavyBlue!90,opacity=.75] (3.1,1.21) circle [radius=.25];
+\fill[NavyBlue!90,opacity=.75] (5.35,1.21) circle [radius=.25];
+\fill[NavyBlue!90,opacity=.75] (9.78,1.21) circle [radius=.25];
+%\node[fill=NavyBlue!90,opacity=.75] at (10.88,1.21) {　};
+\node[] at (10.89,1.21) {\LARGE \textcolor{NavyBlue}{x }};
+\node[] at (10.9,.4) {\scriptsize \begin{tabular}{c}
+				   これまでに\\
+				 3回見た\\
+				  ことがある\end{tabular}};
+% \draw[NavyBlue!70,line width=6pt,opacity=.7] (4.2,1.21) -- (10.9,1.21);
+\end{tikzpicture}
+
+過去から現在までの「経験」を表しています
+\end{frame}
+
+\begin{frame}[plain]{Exercises}
+ 
+\begin{enumerate}\setcounter{enumi}{2}
+ \item $\left\{\begin{tabular}{rl}
+(A)& Bob \textcolor{Maroon}{\bfseries lost} his bag.\hspace{7\zw}{\scriptsize lost: lose\,(失くす)の過去形}\\
+(B)& Bob \textcolor{NavyBlue}{\bfseries has lost} his bag.\hspace{5\zw}{\scriptsize lost: lose\,(失くす)の過去分詞}
+\end{tabular}
+\right.$
+\end{enumerate}
+
+\signchart[width=10,height=.5]{,{\textcolor{Maroon}{lost}},,,,,,今}{,,,}
+
+\vspace{20pt}
+
+\signchart[width=10,height=.5]{,,,,{\textcolor{NavyBlue}{has lost}},,,}{,,,}
+
+\begin{tikzpicture}[overlay]
+ %\draw[gray!50] (0,0) grid (12,5);
+ %\fill[ForestGreen!70,opacity=.5] (11.57,3.75) circle [radius=.25];
+ \fill[Maroon!70,opacity=.9] (4.25,3.64) circle [radius=.25];
+ \fill[NavyBlue!70,opacity=.9] (4.25,1.2) circle [radius=.25];
+ \draw[NavyBlue!70,line width=6pt,opacity=.7] (4.2,1.21) -- (10.9,1.21);
+
+\node[] at (4.25,2.9) {\scriptsize \begin{tabular}{c}
+				   $\uparrow$\\
+				   なくした\end{tabular}};
+
+\node[] at (11.6,2.9) {\scriptsize $\left(\begin{tabular}{@{}l@{}}
+				   今は\\
+				 みつかったかも\end{tabular}\right)$};
+
+\node[] at (4.25,.41) {\scriptsize \begin{tabular}{c}
+				   $\uparrow$\\
+				   なくした\end{tabular}};
+
+\node[] at (10.9,.4) {\scriptsize \begin{tabular}{c}
+				   $\uparrow$\\
+				   今も\\
+				 ない\end{tabular}};
+\end{tikzpicture}
+
+過去に起こした動作の現在での「結果」を表しています
+\end{frame}
+
+\begin{frame}[plain]{まとめ}
+
+\begin{enumerate}
+ \item Jane has stayed in London for six years.
+ \item I have watched the movie three times.
+ \item Bob has lost his bag.
+\end{enumerate}
+
+
+
+ \begin{exampleblock}{Topic for Today}
+\small
+\begin{itemize}
+ \item  $\text{現在完了(}=\textcolor{NavyBlue}{\text{have} + \text{過去分詞\,)}}$%
+は「過去と現在にまたがる表現」です
+\end{itemize}
+      \end{exampleblock}
+\end{frame}
+
+\end{document}
