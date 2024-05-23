@@ -104,25 +104,25 @@
 
 \begin{enumerate}
  \item \visible<1->{I \textcolor{ForestGreen}{\bfseries live} in London now. {\small わたしはいまロンドンに住んでいます。(現在形)}}
-\signchart[width=10]{,,,,,,,,,,{\textcolor{ForestGreen}{live}}}{,,,}
- \item \visible<2->{I \textcolor{Maroon}{\bfseries lived} in London five years ago.{\small わたしは5年前ロンドンに住んでいた。(過去形)}}
-\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{lived}},,,,,}{,,,}
+\visible<2->{\signchart[width=10]{,,,,,,,,,,{\textcolor{ForestGreen}{live}}}{,,,}}
+ \item \visible<3->{I \textcolor{Maroon}{\bfseries lived} in London five years ago.{\small わたしは5年前ロンドンに住んでいた。(過去形)}}
+\visible<4->{\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{lived}},,,,,}{,,,}}
 
- \item I \textcolor{NavyBlue}{\bfseries have lived} in London for eight years.
+ \item \visible<5->{I \textcolor{NavyBlue}{\bfseries have lived} in London for eight years.}
 
-\signchart[width=10,height=.5]{,,8年前,,,,{\textcolor{NavyBlue}{have lived}},,,,今}{,,,}
+\visible<6->{\signchart[width=10,height=.5]{,,8年前,,,,{\textcolor{NavyBlue}{have lived}},,,,今}{,,,}}
 \end{enumerate}
 
 \vspace*{-20pt}
 
 \begin{tikzpicture}[overlay]
  %\draw[gray!50] (0,0) grid (12,5);
- \fill[ForestGreen!70,opacity=.5] (11.57,3.75) circle [radius=.25];
- \fill[Maroon!70,opacity=.5] (7.4,2.05) circle [radius=.25];
- \draw[NavyBlue!70,line width=6pt,opacity=.7] (4.88,0.3) -- (11.55,0.3);
+ \visible<2->{\fill[ForestGreen!70,opacity=.5] (11.57,3.75) circle [radius=.25];}
+\visible<4-> {\fill[Maroon!70,opacity=.5] (7.4,2.05) circle [radius=.25];}
+\visible<6->{ \draw[NavyBlue!70,line width=6pt,opacity=.7] (4.88,0.3) -- (11.55,0.3);}
 \end{tikzpicture}
 
-\begin{exampleblock}{Topic for Today}
+\begin{exampleblock}<7->{Topic for Today}
 \small
 \begin{itemize}
  \item  $\text{現在完了(}=\textcolor{NavyBlue}{\text{have} + \text{過去分詞\,)}}$%
@@ -159,102 +159,102 @@
 
 \begin{frame}[plain]{Exercises}
  
-\begin{enumerate}
+\visible<1->{\begin{enumerate}
  \item $\left\{\begin{tabular}{rl}
 (A)& Jane \textcolor{Maroon}{\bfseries stayed} in London two years ago.\hspace{7\zw}{\small stay: 滞在する}\\
 (B)& Jane \textcolor{NavyBlue}{\bfseries has stayed} in London for six years.
 \end{tabular}
 \right.$
-\end{enumerate}
+\end{enumerate}}
 
-\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{stayed}},,今}{,,,}
-\signchart[width=10,height=.5]{,6年前,,,{\textcolor{NavyBlue}{has stayed}},,,今}{,,,}
+\visible<2->{\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{stayed}},,今}{,,,}}
+\visible<3->{\signchart[width=10,height=.5]{,6年前,,,{\textcolor{NavyBlue}{has stayed}},,,今}{,,,}}
 
 \begin{tikzpicture}[overlay]
  %\draw[gray!50] (0,0) grid (12,5);
  %\fill[ForestGreen!70,opacity=.5] (11.57,3.75) circle [radius=.25];
- \fill[Maroon!70,opacity=.5] (8.675,2.66) circle [radius=.25];
- \draw[NavyBlue!70,line width=6pt,opacity=.7] (4.2,1.21) -- (10.9,1.21);
+\visible<2->{ \fill[Maroon!70,opacity=.5] (8.675,2.66) circle [radius=.25];}
+\visible<3->{ \draw[NavyBlue!70,line width=6pt,opacity=.7] (4.2,1.21) -- (10.9,1.21);}
 \end{tikzpicture}
 
-過去のある時から現在までの「継続」を表しています
+\visible<4->{過去のある時から現在までの「継続」を表しています}
 \end{frame}
 
 
 \begin{frame}[plain]{Exercises}
 
-\begin{enumerate}\setcounter{enumi}{1}
+\visible<1->{\begin{enumerate}\setcounter{enumi}{1}
  \item $\left\{\begin{tabular}{rl}
 (A)& I \textcolor{Maroon}{\bfseries watched} the movie two years ago.\hspace{9\zw}{\small movie: 映画}\\
 (B)& I \textcolor{NavyBlue}{\bfseries have watched} the movie three times.
 \end{tabular}
 \right.$
-\end{enumerate}
+\end{enumerate}}
 
-\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{watched}},,今}{,,,}
-\signchart[width=10,height=.5]{1回目,,2回目,,{\textcolor{NavyBlue}{have watched}},,3回目,}{,,,}
+\visible<2->{\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{watched}},,今}{,,},}
+\visible<3->{\signchart[width=10,height=.5]{1回目,,2回目,,{\textcolor{NavyBlue}{have watched}},,3回目,}{,,,}}
 
 \begin{tikzpicture}[overlay]
 %\draw[gray!50] (0,0) grid (12,5);
  %\fill[ForestGreen!70,opacity=.5] (11.57,3.75) circle [radius=.25];
- \fill[Maroon!90,opacity=.75] (8.675,2.66) circle [radius=.25];
- \fill[NavyBlue!90,opacity=.75] (3.1,1.21) circle [radius=.25];
+\visible<2->{ \fill[Maroon!90,opacity=.75] (8.675,3.8) circle [radius=.25];}
+\visible<3->{\fill[NavyBlue!90,opacity=.75] (3.1,1.21) circle [radius=.25];
 \fill[NavyBlue!90,opacity=.75] (5.35,1.21) circle [radius=.25];
-\fill[NavyBlue!90,opacity=.75] (9.78,1.21) circle [radius=.25];
+\fill[NavyBlue!90,opacity=.75] (9.78,1.21) circle [radius=.25];}
 %\node[fill=NavyBlue!90,opacity=.75] at (10.88,1.21) {　};
-\node[] at (10.89,1.21) {\LARGE \textcolor{NavyBlue}{x }};
+\visible<4->{\node[] at (10.89,1.21) {\LARGE \textcolor{NavyBlue}{x }};
 \node[] at (10.9,.4) {\scriptsize \begin{tabular}{c}
 				   これまでに\\
 				 3回見た\\
-				  ことがある\end{tabular}};
+				  ことがある\end{tabular}};}
 % \draw[NavyBlue!70,line width=6pt,opacity=.7] (4.2,1.21) -- (10.9,1.21);
 \end{tikzpicture}
 
-過去から現在までの「経験」を表しています
+\visible<5->{過去から現在までの「経験」を表しています}
 \end{frame}
 
 \begin{frame}[plain]{Exercises}
  
-\begin{enumerate}\setcounter{enumi}{2}
+\visible<1->{\begin{enumerate}\setcounter{enumi}{2}
  \item $\left\{\begin{tabular}{rl}
 (A)& Bob \textcolor{Maroon}{\bfseries lost} his bag.\hspace{7\zw}{\scriptsize lost: lose\,(失くす)の過去形}\\
 (B)& Bob \textcolor{NavyBlue}{\bfseries has lost} his bag.\hspace{5\zw}{\scriptsize lost: lose\,(失くす)の過去分詞}
 \end{tabular}
 \right.$
-\end{enumerate}
+\end{enumerate}}
 
-\signchart[width=10,height=.5]{,{\textcolor{Maroon}{lost}},,,,,,今}{,,,}
+\visible<2->{\signchart[width=10,height=.5]{,{\textcolor{Maroon}{lost}},,,,,,今}{,,,}}
 
 \vspace{20pt}
 
-\signchart[width=10,height=.5]{,,,,{\textcolor{NavyBlue}{has lost}},,,}{,,,}
+\visible<5->{\signchart[width=10,height=.5]{,,,,{\textcolor{NavyBlue}{has lost}},,,}{,,,}}
 
 \begin{tikzpicture}[overlay]
  %\draw[gray!50] (0,0) grid (12,5);
  %\fill[ForestGreen!70,opacity=.5] (11.57,3.75) circle [radius=.25];
- \fill[Maroon!70,opacity=.9] (4.25,3.64) circle [radius=.25];
- \fill[NavyBlue!70,opacity=.9] (4.25,1.2) circle [radius=.25];
- \draw[NavyBlue!70,line width=6pt,opacity=.7] (4.2,1.21) -- (10.9,1.21);
+\visible<3->{ \fill[Maroon!70,opacity=.9] (4.25,3.64) circle [radius=.25];}
+\visible<5->{\fill[NavyBlue!70,opacity=.9] (4.25,1.2) circle [radius=.25];
+\draw[NavyBlue!70,line width=6pt,opacity=.7] (4.2,1.21) -- (10.9,1.21);}
 
-\node[] at (4.25,2.9) {\scriptsize \begin{tabular}{c}
+\visible<3->{\node[] at (4.25,2.9) {\scriptsize \begin{tabular}{c}
 				   $\uparrow$\\
-				   なくした\end{tabular}};
+				   なくした\end{tabular}};}
 
-\node[] at (11.6,2.9) {\scriptsize $\left(\begin{tabular}{@{}l@{}}
+\visible<4->{\node[] at (11.6,2.9) {\scriptsize $\left(\begin{tabular}{@{}l@{}}
 				   今は\\
-				 みつかったかも\end{tabular}\right)$};
+				 みつかったかも\end{tabular}\right)$};}
 
-\node[] at (4.25,.41) {\scriptsize \begin{tabular}{c}
+\visible<6->{\node[] at (4.25,.41) {\scriptsize \begin{tabular}{c}
 				   $\uparrow$\\
-				   なくした\end{tabular}};
+				   なくした\end{tabular}};}
 
-\node[] at (10.9,.4) {\scriptsize \begin{tabular}{c}
+\visible<7->{\node[] at (10.9,.4) {\scriptsize \begin{tabular}{c}
 				   $\uparrow$\\
 				   今も\\
-				 ない\end{tabular}};
+				 ない\end{tabular}};}
 \end{tikzpicture}
 
-過去に起こした動作の現在での「結果」を表しています
+\visible<8->{過去に起こした動作の現在での「結果」を表しています}
 \end{frame}
 
 \begin{frame}[plain]{まとめ}
