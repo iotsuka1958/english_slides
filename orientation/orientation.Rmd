@@ -1,0 +1,478 @@
+---
+title: "orientation"
+author: ""
+date: "2024"
+output:
+  beamer_presentation:
+    theme: metropolis
+    latex_engine: lualatex
+    keep_tex: true
+    includes:
+      in_header: header.tex
+    fig_caption: true
+    incremental: true
+classoption: 
+  - "aspectratio=169"
+  - "xcolor=dvipsnames"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(
+  dev = "cairo_pdf",
+  dev.args = list(family = "Haranoaji")
+)
+```
+
+
+```{r include=FALSE}
+library(tidyverse)
+library(readxl)
+library(viridis)
+library(gt)
+library(ragg)
+library(ggthemes)
+library(bayestestR)
+library(here)
+library(gghighlight)
+library(reticulate)
+library(sf)
+library(rnaturalearth)
+library(janitor)
+theme_set(theme_few(base_family="IPAexGothic"))
+```
+
+
+# はじめに
+
+## 自己紹介
+\Large
+
+大塚一朗(Otsuka Ichiro)です
+
+\pause
+
+- 千葉LOTTE Marinesを応援しています
+- ミステリーがだいすきです
+- 音楽はBachとThe Beach Boysをよく聴きます
+- プログラミングもすきですが、しろうとのレベル
+
+\pause
+
+いっしょに英語の勉強を\textcolor{Orange}{\bfseries 楽しく}していきましょう
+
+## この時間は
+
+\Huge
+
+\centering
+English is fun.
+
+
+## Hello, World!
+\Large
+
+Hello, World!
+
+```{r eval=TRUE, include=FALSE}
+ne_world <- rnaturalearth::ne_countries(scale = 10, returnclass = "sf")
+my_english <- read_csv("my_english.csv")
+#read_csv("/home/ichiro/Documents/work_files/english_slides/orientation/my_english.csv")
+ne_world <- ne_world |> left_join(my_english) |> 
+  mutate(english_spoken = replace_na(english_spoken,FALSE)) |> 
+  mutate(chinese_spoken = replace_na(chinese_spoken,FALSE))
+```
+
+
+```{r eval=TRUE}
+ne_world |> ggplot() + geom_sf()
+```
+
+## Japan is here
+\Large
+
+\textcolor{orange}{\bfseries Japan} is here.
+
+```{r eval=TRUE}
+ne_world |> mutate(is_japan = if_else(iso_a3 == "JPN", "Japan", "Other")) |> 
+  ggplot() + geom_sf(aes(fill=is_japan) ) +
+  scale_fill_manual(values = c("Japan" = "orange", "Other" = "white"),guide="none") 
+  
+```
+
+
+## 世界のことば
+
+```{r eval = TRUE, echo = FALSE, languages}
+base_data <- tribble(
+  ~language, ~speakers, ~n,
+  #---------|----------|----
+  "English","native",380,
+  "English","non_native",1080,
+  "Chinese","native",940,
+  "Chinese","non_native",199,
+  "Hindi", "native",345,  
+  "Hindi", "non_native",265,
+  "Spanish","native",485,
+  "Spanish","non_native",74,
+)
+
+# 因子レベルの順序を指定
+base_data$speakers <- factor(base_data$speakers, levels = c("non_native", "native"))
+
+# native スピーカー数で言語をソートする
+language_order <- base_data %>%
+  filter(speakers == "native") %>%
+#  arrange(desc(n)) %>%
+  arrange(n) |> 
+  pull(language)
+
+# 言語の因子レベルを設定
+base_data$language <- factor(base_data$language, levels = language_order)
+```
+
+\Large
+
+日本では日本語
+
+世界にはどんなことばがありますか
+
+## 日本語以外のことばをあげてみよう
+
+\Large
+
+
+- 日本語
+- 英語
+- 中国語
+- 韓国語
+- フランス語
+- ドイツ語
+- スペイン語
+- アラビア語 \ldots
+
+\pause
+
+ほかにもたくさんあります
+
+
+## Quiz
+\Large
+ところで世界にはいくつのことばがあるの？
+
+\pause
+
+\vfill
+
+\centering
+\begin{tabular}{lr}
+(A) &7\\\pause
+(B) &70\\\pause
+(C) &700\\\pause
+(D) &7,000
+\end{tabular}
+
+\vfill
+
+## Answer
+
+\Huge
+\vfill
+
+\centering
+7,164
+
+\vfill
+
+\raggedleft
+\scriptsize
+https://www.ethnologue.com/insights/how-many-languages/による
+
+
+## びっくり
+
+\Large
+
+  \begin{columns}
+    \begin{column}{0.475\textwidth}
+      ええー、そんなにあるの
+    \end{column}
+    \begin{column}{0.475\textwidth}
+      \IfFileExists{surprised.png}{\includegraphics[width=.6\textwidth]{surprised.png}}{\relax}
+            {\tiny Designed by Wannapik}
+      \end{column}
+  \end{columns}
+
+## そのうちのひとつ
+
+\Large
+
+ということは
+
+
+日本語は\Huge \phantom{0}$\frac{1}{7,164}$\phantom{0}\Large ということですね
+
+
+
+## globalな社会
+\Large
+
+外国語を身につけて、世界の人々と交流するのがだいじ
+
+\pause
+
+経済的にも文化的にもだいじなことですね
+
+## じゃあ何語の勉強をしようかしら
+\Large
+
+さきほど、
+日本語は\Huge\phantom{0}$\frac{1}{7,164}$\phantom{0}\Large といいました
+
+\vfill
+\pause
+
+でもそれをいったら、\pause
+英語もフランス語もドイツ語も\pause
+スペイン語もアラビア語もヒンディー語も\pause
+中国語も韓国語も、\pause
+みーんな\Huge\phantom{0}$\frac{1}{7,164}$\phantom{0}\Large ということです
+
+
+## さて、どうしたらいいでしょうか
+\Large
+
+どのことばも7,164あることばのひとつ、\pause
+つまり\Huge\phantom{0}$\frac{1}{7,164}$\phantom{0}
+
+\Large
+\pause
+とはいっても、
+それぞれのことばを話している人の数も同じということになるでしょうか
+
+\pause
+
+そのことばを話す人の数がおおいことばもあれば、
+話す人があまりいないことばもあるはずです。
+
+## 何語を勉強しましょうか
+\Large
+
+外国語を勉強するなら、
+そのことばを話す人の数がおおい、
+そういうことばを勉強するのがいいのではないか
+
+## Quiz
+\Large
+
+さあ、ここでもうひとつの問題です。
+つぎの4つの言語で、母語として話す人の数がおおいい順に
+並べると、どうなるでしょうか
+
+\pause
+
+- 中国語(Chinese)
+- スペイン語(Spanish)
+- 英語(English)
+- ヒンディー語(Hindi)
+
+
+## グラフにしてみます
+
+```{r}
+base_data |> 
+  ggplot() + geom_col(aes(language, n, fill=speakers)) +
+#  theme_few() + scale_fill_few("Light") +
+ scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "white"),guide="none") +
+  coord_flip() +
+  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)")
+```
+
+## 母語として話す人の数がおおいことば
+
+\raggedleft
+(単位: 100万人)
+
+\vfill
+
+\Large
+\centering
+
+```{r}
+base_data |> filter(speakers == "native") |>
+  pivot_wider(names_from=speakers, values_from=n) |>
+  arrange(desc(native)) |> 
+  rename("ことば" = language, "母語としての話者" = native) |> 
+    knitr::kable(
+    digits = 0,
+    format.args = list(
+      big.mark = ",",
+      scientific = FALSE
+    ),
+    format = "latex", booktabs = TRUE
+  )
+```
+
+\vfill
+
+\raggedleft
+\scriptsize
+https://www.ethnologue.com/insights/most-spoken-language/による
+
+## 母語として話す人だけ？
+
+\Large
+
+母語はAということばだけれど、Bということばを話す人がいます
+
+## 母語ではない人
+
+\Large
+
+母語ではないけれど、そのことばを話す人をあわせると、
+どうなるでしょうか
+
+## 母語として話す人の数はこうですが
+
+```{r}
+base_data |> 
+  ggplot() + geom_col(aes(language, n, fill=speakers)) +
+#  theme_few() + scale_fill_few("Light") +
+ scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "white"),guide="none") +
+  coord_flip() +
+  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)")
+```
+
+## 母語ではないが話す人を合わせるとこうなります
+
+```{r}
+base_data |> 
+  ggplot() + geom_col(aes(language, n, fill=speakers)) +
+#  theme_few() + scale_fill_few("Light") +
+ scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "#f39800"),guide="none") +
+  coord_flip() +
+  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)")
+```
+
+## つまり
+
+\raggedleft
+(単位: 100万人)
+
+\vfill
+
+\Large
+
+```{r}
+base_data |> pivot_wider(names_from=speakers, values_from=n) |>
+  janitor::adorn_totals(where = "col") |> 
+  rename("ことば" = language, "母語としての話者" = native, "母語でない話者" = "non_native")  |> 
+  knitr::kable(
+    digits = 0,
+    format.args = list(
+      big.mark = ",",
+      scientific = FALSE
+    ),
+    format = "latex", booktabs = TRUE
+  )
+```
+
+
+\vfill
+
+\scriptsize
+https://www.ethnologue.com/insights/most-spoken-language/による
+
+
+## 話す人の数でいうと
+
+
+世界には7,164のことばがありますが、\pause
+話す人の数でいうと
+
+中国語と英語とがベスト2\pause
+
+この2つでいうと、中国語が圧倒的におおい
+
+
+
+## 空間的にはどうかしら
+
+そのことばを話す人が世界のどこに住んでいるか見てみましょう。
+
+
+## Chinese
+
+```{r}
+ne_world |> 
+     ggplot() + 
+     geom_sf(aes(fill = chinese_spoken)) +
+     scale_fill_manual(values = c("TRUE" = "#f39800", "FALSE" = "white"), guide="none") +
+    labs(title="中国語")
+```
+
+## English
+
+```{r}
+ne_world |> 
+     ggplot() + 
+     geom_sf(aes(fill = english_spoken)) +
+     scale_fill_manual(values = c("TRUE" = "#0068b7", "FALSE" = "white"),guide="none") +
+    labs(title="英語")
+```
+
+
+## つまり
+\Large
+
+中国語を話す人は中国に集中しています\pause
+
+いっぽう、英語は広く世界で話されています
+
+## 英語
+\Large
+
+- 英語を話す人の数がいちばんおおい
+- 英語は広く世界中で話されている
+
+## 英語は世界の共通語
+\Large
+
+さまざまな分野で使われています
+
+- ビジネス
+- 医療
+- スポーツ
+- 芸術(文学・音楽) などなど
+
+## 英語を身につけると
+\Large
+
+楽しいことがたくさんあります\pause
+
+いっしょに楽しく英語の勉強をしましょう
+
+# 授業では
+
+## 授業について
+\Large
+
+\pause
+
+
+- スライドで進めます
+- 筆記用具・ノート
+- 予習は、必要ありません
+
+# お待ちしています！
+
+##
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+
