@@ -1,0 +1,668 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+  aspectratio=169,
+  xcolor=dvipsnames]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\usetheme[]{metropolis}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+%% PDFメタデータの文字化け防止
+% https://blog.miz-ar.info/2015/09/latex-hyperref-tips/
+% https://tex.stackexchange.com/questions/24445/hyperref-lualatex-and-unicode-bookmarks-issue-garbled-page-numbers-in-ar-for-l
+\hypersetup{%
+  pdfencoding=auto
+}
+
+%% Fonts
+\usefonttheme[onlymath]{serif}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+%\usepackage{arev}
+\usepackage[scale=1.0]{tgheros}  % San serif font
+\usepackage[scaled]{beramono}    % Monospace font
+
+%% Japanese font
+\usepackage{luatexja-otf}
+\usepackage[match,deluxe,expert,haranoaji,nfssonly]{luatexja-preset} % Notoフォント使用
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+
+%%
+\setbeamerfont{title}{size=\huge, series=\bfseries}
+\setbeamerfont{frametitle}{size=\Large, series=\bfseries}
+
+%% https://tex.stackexchange.com/questions/62202/change-background-colour-of-verbatim-environment
+\let\oldv\verbatim
+\let\oldendv\endverbatim
+\def\verbatim{\par\setbox0\vbox\bgroup\oldv}
+\def\endverbatim{\oldendv\egroup\fboxsep0pt \noindent\colorbox[gray]{0.95}{\usebox0}\par}
+
+%% https://stackoverflow.com/questions/38323331/code-chunk-font-size-in-beamer-with-knitr-and-latex
+%% change fontsize of R code
+\let\oldShaded\Shaded
+\let\endoldShaded\endShaded 
+\renewenvironment{Shaded}{\footnotesize\oldShaded}{\endoldShaded}
+
+\usepackage{listings}
+\lstset{%
+  frame = shadow,
+  backgroundcolor = {\color[gray]{.95}},
+  basicstyle = {\small\ttfamily},
+  breaklines = true,
+  upquote = true
+}
+%%%%%%%%%%%%%%%
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pxpgfmark} % remember picture を可能にする
+\usetikzlibrary{decorations,backgrounds,decorations.pathmorphing, shapes,positioning,fit,calc,spy}
+\newcommand*\myCrossedOut[2]{%
+  \tikz[baseline=(T.base)]
+    \node[draw=#1, ultra thick, shape=cross out, decorate,
+      inner sep=2pt, outer sep=0pt,
+      decoration={random steps, segment length=2pt, amplitude=0.4pt}]
+      (T) {#2};}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usetikzlibrary{decorations.text}     
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{softblue}{RGB}{87, 117, 144}
+\definecolor{gentlegreen}{RGB}{125, 158, 128}
+\definecolor{lightpurple}{RGB}{156, 134, 170}
+\definecolor{warmorange}{RGB}{202, 137, 98}
+\definecolor{gentlered}{RGB}{169, 105, 102}
+\definecolor{softred}{RGB}{169, 0, 0}
+\definecolor{darkred}{RGB}{207, 89, 89}      % ダークレッド
+\definecolor{brightorange}{RGB}{235, 116, 70}     % ブライトオレンジ
+\definecolor{lightorange}{RGB}{242, 150, 90}     % ライトオレンジ
+\definecolor{gold}{RGB}{255, 174, 66}     % ゴールド
+\definecolor{coral}{RGB}{247, 126, 101}    % コーラル
+\definecolor{mintgreen}{RGB}{124, 156, 124}  % ミントグリーン
+\definecolor{khaki}{RGB}{153, 141, 116}  % カーキ
+\definecolor{mocha}{RGB}{141, 124, 113}  % モカ
+\definecolor{slateblue}{RGB}{124, 123, 156}  % スレートブルー
+\definecolor{lightyellow}{RGB}{242, 207, 90}    % ライトイエロー
+\definecolor{yellowgold}{RGB}{235, 189, 70}    % イエローゴールド
+\definecolor{mediumyellow}{RGB}{224, 171, 46}    % メディアムイエロー
+\definecolor{darkyellow}{RGB}{217, 153, 25}    % ダークイエロー
+\definecolor{goldenyellow}{RGB}{204, 135, 15}    % ゴールデンイエロー
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={orientation},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{orientation}
+\author{}
+\date{\vspace{-2.5em}2024}
+
+\begin{document}
+\frame{\titlepage}
+
+\section{はじめに}\label{ux306fux3058ux3081ux306b}
+
+\begin{frame}{自己紹介}
+\phantomsection\label{ux81eaux5df1ux7d39ux4ecb}
+\Large
+
+大塚一朗(Otsuka Ichiro)です
+
+\pause
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  千葉LOTTE Marinesを応援しています
+\item
+  ミステリーがだいすきです
+\item
+  音楽はBachとThe Beach Boysをよく聴きます
+\item
+  プログラミングもすきですが、しろうとのレベル
+\end{itemize}
+
+\pause
+
+いっしょに英語の勉強を\textcolor{Orange}{\bfseries 楽しく}していきましょう
+\end{frame}
+
+\begin{frame}{この時間は}
+\phantomsection\label{ux3053ux306eux6642ux9593ux306f}
+\Huge
+
+\centering
+
+English is fun.
+\end{frame}
+
+\begin{frame}{Hello, World!}
+\phantomsection\label{hello-world}
+\Large
+
+Hello, World!
+
+\includegraphics{orientation_files/figure-beamer/unnamed-chunk-3-1.pdf}
+\end{frame}
+
+\begin{frame}{Japan is here}
+\phantomsection\label{japan-is-here}
+\Large
+
+\textcolor{orange}{\bfseries Japan} is here.
+
+\includegraphics{orientation_files/figure-beamer/unnamed-chunk-4-1.pdf}
+\end{frame}
+
+\begin{frame}{世界のことば}
+\phantomsection\label{ux4e16ux754cux306eux3053ux3068ux3070}
+\Large
+
+日本では日本語
+
+世界にはどんなことばがありますか
+\end{frame}
+
+\begin{frame}{日本語以外のことばをあげてみよう}
+\phantomsection\label{ux65e5ux672cux8a9eux4ee5ux5916ux306eux3053ux3068ux3070ux3092ux3042ux3052ux3066ux307fux3088ux3046}
+\Large
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  日本語
+\item
+  英語
+\item
+  中国語
+\item
+  韓国語
+\item
+  フランス語
+\item
+  ドイツ語
+\item
+  スペイン語
+\item
+  アラビア語 \ldots
+\end{itemize}
+
+\pause
+
+ほかにもたくさんあります
+\end{frame}
+
+\begin{frame}{Quiz}
+\phantomsection\label{quiz}
+\Large
+
+ところで世界にはいくつのことばがあるの？
+
+\pause
+
+\vfill
+
+\centering
+\begin{tabular}{lr}
+(A) &7\\\pause
+(B) &70\\\pause
+(C) &700\\\pause
+(D) &7,000
+\end{tabular}
+
+\vfill
+\end{frame}
+
+\begin{frame}{Answer}
+\phantomsection\label{answer}
+\Huge
+\vfill
+
+\centering
+7,164
+
+\vfill
+
+\raggedleft
+\scriptsize
+
+\url{https://www.ethnologue.com/insights/how-many-languages/による}
+\end{frame}
+
+\begin{frame}{びっくり}
+\phantomsection\label{ux3073ux3063ux304fux308a}
+\Large
+
+\begin{columns}
+    \begin{column}{0.475\textwidth}
+      ええー、そんなにあるの
+    \end{column}
+    \begin{column}{0.475\textwidth}
+      \IfFileExists{surprised.png}{\includegraphics[width=.6\textwidth]{surprised.png}}{\relax}
+            {\tiny Designed by Wannapik}
+      \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{そのうちのひとつ}
+\phantomsection\label{ux305dux306eux3046ux3061ux306eux3072ux3068ux3064}
+\Large
+
+ということは
+
+日本語は\Huge \phantom{0}\(\frac{1}{7,164}\)\phantom{0}\Large ということですね
+\end{frame}
+
+\begin{frame}{globalな社会}
+\phantomsection\label{globalux306aux793eux4f1a}
+\Large
+
+外国語を身につけて、世界の人々と交流するのがだいじ
+
+\pause
+
+経済的にも文化的にもだいじなことですね
+\end{frame}
+
+\begin{frame}{じゃあ何語の勉強をしようかしら}
+\phantomsection\label{ux3058ux3083ux3042ux4f55ux8a9eux306eux52c9ux5f37ux3092ux3057ux3088ux3046ux304bux3057ux3089}
+\Large
+
+さきほど、
+日本語は\Huge\phantom{0}\(\frac{1}{7,164}\)\phantom{0}\Large といいました
+
+\vfill
+\pause
+
+でもそれをいったら、\pause 英語もフランス語もドイツ語も\pause
+スペイン語もアラビア語もヒンディー語も\pause 中国語も韓国語も、\pause
+みーんな\Huge\phantom{0}\(\frac{1}{7,164}\)\phantom{0}\Large ということです
+\end{frame}
+
+\begin{frame}{さて、どうしたらいいでしょうか}
+\phantomsection\label{ux3055ux3066ux3069ux3046ux3057ux305fux3089ux3044ux3044ux3067ux3057ux3087ux3046ux304b}
+\Large
+
+どのことばも7,164あることばのひとつ、\pause
+つまり\Huge\phantom{0}\(\frac{1}{7,164}\)\phantom{0}
+
+\Large
+\pause
+
+とはいっても、
+それぞれのことばを話している人の数も同じということになるでしょうか
+
+\pause
+
+そのことばを話す人の数がおおいことばもあれば、
+話す人があまりいないことばもあるはずです。
+\end{frame}
+
+\begin{frame}{何語を勉強しましょうか}
+\phantomsection\label{ux4f55ux8a9eux3092ux52c9ux5f37ux3057ux307eux3057ux3087ux3046ux304b}
+\Large
+
+外国語を勉強するなら、 そのことばを話す人の数がおおい、
+そういうことばを勉強するのがいいのではないか
+\end{frame}
+
+\begin{frame}{Quiz}
+\phantomsection\label{quiz-1}
+\Large
+
+さあ、ここでもうひとつの問題です。
+つぎの4つの言語で、母語として話す人の数がおおいい順に
+並べると、どうなるでしょうか
+
+\pause
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  中国語(Chinese)
+\item
+  スペイン語(Spanish)
+\item
+  英語(English)
+\item
+  ヒンディー語(Hindi)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{グラフにしてみます}
+\phantomsection\label{ux30b0ux30e9ux30d5ux306bux3057ux3066ux307fux307eux3059}
+\includegraphics{orientation_files/figure-beamer/unnamed-chunk-5-1.pdf}
+\end{frame}
+
+\begin{frame}{母語として話す人の数がおおいことば}
+\phantomsection\label{ux6bcdux8a9eux3068ux3057ux3066ux8a71ux3059ux4ebaux306eux6570ux304cux304aux304aux3044ux3053ux3068ux3070}
+\raggedleft
+
+(単位: 100万人)
+
+\vfill
+
+\Large
+\centering
+
+\begin{tabular}{lr}
+\toprule
+ことば & 母語としての話者\\
+\midrule
+Chinese & 940\\
+Spanish & 485\\
+English & 380\\
+Hindi & 345\\
+\bottomrule
+\end{tabular}
+
+\vfill
+
+\raggedleft
+\scriptsize
+
+\url{https://www.ethnologue.com/insights/most-spoken-language/による}
+\end{frame}
+
+\begin{frame}{母語として話す人だけ？}
+\phantomsection\label{ux6bcdux8a9eux3068ux3057ux3066ux8a71ux3059ux4ebaux3060ux3051}
+\Large
+
+母語はAということばだけれど、Bということばを話す人がいます
+\end{frame}
+
+\begin{frame}{母語ではない人}
+\phantomsection\label{ux6bcdux8a9eux3067ux306fux306aux3044ux4eba}
+\Large
+
+母語ではないけれど、そのことばを話す人をあわせると、 どうなるでしょうか
+\end{frame}
+
+\begin{frame}{母語として話す人の数はこうですが}
+\phantomsection\label{ux6bcdux8a9eux3068ux3057ux3066ux8a71ux3059ux4ebaux306eux6570ux306fux3053ux3046ux3067ux3059ux304c}
+\includegraphics{orientation_files/figure-beamer/unnamed-chunk-7-1.pdf}
+\end{frame}
+
+\begin{frame}{母語ではないが話す人を合わせるとこうなります}
+\phantomsection\label{ux6bcdux8a9eux3067ux306fux306aux3044ux304cux8a71ux3059ux4ebaux3092ux5408ux308fux305bux308bux3068ux3053ux3046ux306aux308aux307eux3059}
+\includegraphics{orientation_files/figure-beamer/unnamed-chunk-8-1.pdf}
+\end{frame}
+
+\begin{frame}{つまり}
+\phantomsection\label{ux3064ux307eux308a}
+\raggedleft
+
+(単位: 100万人)
+
+\vfill
+
+\Large
+
+\begin{tabular}{lrrr}
+\toprule
+ことば & 母語としての話者 & 母語でない話者 & Total\\
+\midrule
+English & 380 & 1,080 & 1,460\\
+Chinese & 940 & 199 & 1,139\\
+Hindi & 345 & 265 & 610\\
+Spanish & 485 & 74 & 559\\
+\bottomrule
+\end{tabular}
+
+\vfill
+
+\scriptsize
+
+\url{https://www.ethnologue.com/insights/most-spoken-language/による}
+\end{frame}
+
+\begin{frame}{話す人の数でいうと}
+\phantomsection\label{ux8a71ux3059ux4ebaux306eux6570ux3067ux3044ux3046ux3068}
+世界には7,164のことばがありますが、\pause 話す人の数でいうと
+
+中国語と英語とがベスト2\pause
+
+この2つでいうと、中国語が圧倒的におおい
+\end{frame}
+
+\begin{frame}{空間的にはどうかしら}
+\phantomsection\label{ux7a7aux9593ux7684ux306bux306fux3069ux3046ux304bux3057ux3089}
+そのことばを話す人が世界のどこに住んでいるか見てみましょう。
+\end{frame}
+
+\begin{frame}{Chinese}
+\phantomsection\label{chinese}
+\includegraphics{orientation_files/figure-beamer/unnamed-chunk-10-1.pdf}
+\end{frame}
+
+\begin{frame}{English}
+\phantomsection\label{english}
+\includegraphics{orientation_files/figure-beamer/unnamed-chunk-11-1.pdf}
+\end{frame}
+
+\begin{frame}{つまり}
+\phantomsection\label{ux3064ux307eux308a-1}
+\Large
+
+中国語を話す人は中国に集中しています\pause
+
+いっぽう、英語は広く世界で話されています
+\end{frame}
+
+\begin{frame}{英語}
+\phantomsection\label{ux82f1ux8a9e}
+\Large
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  英語を話す人の数がいちばんおおい
+\item
+  英語は広く世界中で話されている
+\end{itemize}
+\end{frame}
+
+\begin{frame}{英語は世界の共通語}
+\phantomsection\label{ux82f1ux8a9eux306fux4e16ux754cux306eux5171ux901aux8a9e}
+\Large
+
+さまざまな分野で使われています
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  ビジネス
+\item
+  医療
+\item
+  スポーツ
+\item
+  芸術(文学・音楽) などなど
+\end{itemize}
+\end{frame}
+
+\begin{frame}{英語を身につけると}
+\phantomsection\label{ux82f1ux8a9eux3092ux8eabux306bux3064ux3051ux308bux3068}
+\Large
+
+楽しいことがたくさんあります\pause
+
+いっしょに楽しく英語の勉強をしましょう
+\end{frame}
+
+\section{授業では}\label{ux6388ux696dux3067ux306f}
+
+\begin{frame}{授業について}
+\phantomsection\label{ux6388ux696dux306bux3064ux3044ux3066}
+\Large
+
+\pause
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  スライドで進めます
+\item
+  筆記用具・ノート
+\item
+  予習は、必要ありません
+\end{itemize}
+\end{frame}
+
+\section{お待ちしています！}\label{ux304aux5f85ux3061ux3057ux3066ux3044ux307eux3059}
+
+\begin{frame}{}
+\phantomsection\label{section}
+\end{frame}
+
+\begin{frame}[fragile]{Slide with R Output}
+\phantomsection\label{slide-with-r-output}
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(cars)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+\end{verbatim}
+\end{frame}
+
+\end{document}
