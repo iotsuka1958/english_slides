@@ -1,8 +1,8 @@
 ---
-title: "Let's Study English Together"
+title: "English is fun."
 subtitle: "Alphabet"
-author: "Chiba Study Net"
-date: "`r Sys.Date()`"
+author: "エデュオプちば"
+date: "2024"
 output:
   ioslides_presentation:
     css: ../my_font.css
