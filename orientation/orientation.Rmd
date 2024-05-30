@@ -1,5 +1,6 @@
 ---
-title: "orientation"
+title: "English is fun"
+subtitle: "orientation"
 author: ""
 date: "2024"
 output:
@@ -14,6 +15,7 @@ output:
 classoption: 
   - "aspectratio=169"
   - "xcolor=dvipsnames"
+#  - "handout"
 ---
 
 ```{r setup, include=FALSE}
@@ -44,8 +46,6 @@ theme_set(theme_few(base_family="IPAexGothic"))
 ```
 
 
-# はじめに
-
 ## 自己紹介
 \Large
 
@@ -54,9 +54,14 @@ theme_set(theme_few(base_family="IPAexGothic"))
 \pause
 
 - 千葉LOTTE Marinesを応援しています
-- ミステリーがだいすきです
-- 音楽はBachとThe Beach Boysをよく聴きます
-- プログラミングもすきですが、しろうとのレベル
+- ミステリーが好きです
+    - 本
+    - 映画
+    - TVドラマ
+- 音楽はだいたいなんでも好きですが
+    - Bachと
+    - The Beach Boysをよく聴きます ← 首尾一貫していない
+- プログラミングはしろうとレベルですが、楽しい
 
 \pause
 
@@ -85,7 +90,7 @@ ne_world <- ne_world |> left_join(my_english) |>
 ```
 
 
-```{r eval=TRUE}
+```{r eval=TRUE, out.width="90%"}
 ne_world |> ggplot() + geom_sf()
 ```
 
@@ -94,7 +99,7 @@ ne_world |> ggplot() + geom_sf()
 
 \textcolor{orange}{\bfseries Japan} is here.
 
-```{r eval=TRUE}
+```{r eval=TRUE,out.width="90%"}
 ne_world |> mutate(is_japan = if_else(iso_a3 == "JPN", "Japan", "Other")) |> 
   ggplot() + geom_sf(aes(fill=is_japan) ) +
   scale_fill_manual(values = c("Japan" = "orange", "Other" = "white"),guide="none") 
@@ -110,8 +115,8 @@ base_data <- tribble(
   #---------|----------|----
   "English","native",380,
   "English","non_native",1080,
-  "Chinese","native",940,
-  "Chinese","non_native",199,
+  "Mandarin Chinese","native",940,
+  "Mandarin Chinese","non_native",199,
   "Hindi", "native",345,  
   "Hindi", "non_native",265,
   "Spanish","native",485,
@@ -135,6 +140,8 @@ base_data$language <- factor(base_data$language, levels = language_order)
 \Large
 
 日本では日本語
+
+\pause
 
 世界にはどんなことばがありますか
 
@@ -208,27 +215,10 @@ https://www.ethnologue.com/insights/how-many-languages/による
 
 \Large
 
-ということは
+ということは\pause
 
 
 日本語は\Huge \phantom{0}$\frac{1}{7,164}$\phantom{0}\Large ということですね
-
-
-
-## globalな社会
-\Large
-
-外国語を身につけて、世界の人々と交流するのがだいじ
-
-\pause
-
-経済的にも文化的にもだいじなことですね
-
-## じゃあ何語の勉強をしようかしら
-\Large
-
-さきほど、
-日本語は\Huge\phantom{0}$\frac{1}{7,164}$\phantom{0}\Large といいました
 
 \vfill
 \pause
@@ -239,8 +229,12 @@ https://www.ethnologue.com/insights/how-many-languages/による
 中国語も韓国語も、\pause
 みーんな\Huge\phantom{0}$\frac{1}{7,164}$\phantom{0}\Large ということです
 
+\vfill
+\pause
 
-## さて、どうしたらいいでしょうか
+どの言語が優れているとかいうようなことはまったくありません
+
+## そのことばを話す人の数
 \Large
 
 どのことばも7,164あることばのひとつ、\pause
@@ -256,40 +250,37 @@ https://www.ethnologue.com/insights/how-many-languages/による
 そのことばを話す人の数がおおいことばもあれば、
 話す人があまりいないことばもあるはずです。
 
-## 何語を勉強しましょうか
-\Large
-
-外国語を勉強するなら、
-そのことばを話す人の数がおおい、
-そういうことばを勉強するのがいいのではないか
 
 ## Quiz
 \Large
 
-さあ、ここでもうひとつの問題です。
-つぎの4つの言語で、母語として話す人の数がおおいい順に
-並べると、どうなるでしょうか
+では、ここでもうひとつの問題です。
+つぎの4つの言語で、話す人の数がおおい順に
+並べると、どうなるでしょうか\pause
+
+ただし生まれてはじめて身につけたことばを話す人とします。
 
 \pause
 
-- 中国語(Chinese)
+- 中国語(Mandarin Chinese)
 - スペイン語(Spanish)
 - 英語(English)
 - ヒンディー語(Hindi)
 
 
-## グラフにしてみます
+## 生まれて初めて身につけたことば
 
-```{r}
+```{r out.height="95%"}
 base_data |> 
   ggplot() + geom_col(aes(language, n, fill=speakers)) +
 #  theme_few() + scale_fill_few("Light") +
  scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "white"),guide="none") +
   coord_flip() +
-  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)")
+  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)",
+       caption="https://www.ethnologue.com/insights/most-spoken-language/より作成")
 ```
 
-## 母語として話す人の数がおおいことば
+## 第一言語として話す人の数がおおいことば
 
 \raggedleft
 (単位: 100万人)
@@ -303,7 +294,7 @@ base_data |>
 base_data |> filter(speakers == "native") |>
   pivot_wider(names_from=speakers, values_from=n) |>
   arrange(desc(native)) |> 
-  rename("ことば" = language, "母語としての話者" = native) |> 
+  rename("ことば" = language, "話者数" = native) |> 
     knitr::kable(
     digits = 0,
     format.args = list(
@@ -320,39 +311,45 @@ base_data |> filter(speakers == "native") |>
 \scriptsize
 https://www.ethnologue.com/insights/most-spoken-language/による
 
-## 母語として話す人だけ？
+## 複数のことばを話す人もいますよね
 
 \Large
 
-母語はAということばだけれど、Bということばを話す人がいます
+第一言語はAということばだけれど、
 
-## 母語ではない人
+そのほかにもBということばを話す人がいます
+
+
+## 第一言語ではないけど、そのことば話します
 
 \Large
 
-母語ではないけれど、そのことばを話す人をあわせると、
+第一言語ではないけれど、そのとばを話す人をあわせると、
 どうなるでしょうか
 
-## 母語として話す人の数はこうですが
+## 第一言語として話す人の数はこうでしたね
 
-```{r}
+```{r out.height="95%"}
 base_data |> 
   ggplot() + geom_col(aes(language, n, fill=speakers)) +
 #  theme_few() + scale_fill_few("Light") +
  scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "white"),guide="none") +
   coord_flip() +
-  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)")
+  labs(x="言語", y ="人数(100万人)",
+       title="言語別の話者数(100万人)",
+       caption="https://www.ethnologue.com/insights/most-spoken-language/より作成")
 ```
 
-## 母語ではないが話す人を合わせるとこうなります
+## 第一言語ではない人を合わせるとこうなります
 
-```{r}
+```{r out.height="95%"}
 base_data |> 
   ggplot() + geom_col(aes(language, n, fill=speakers)) +
 #  theme_few() + scale_fill_few("Light") +
  scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "#f39800"),guide="none") +
   coord_flip() +
-  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)")
+  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)",
+       caption="https://www.ethnologue.com/insights/most-spoken-language/より作成")
 ```
 
 ## つまり
@@ -367,7 +364,7 @@ base_data |>
 ```{r}
 base_data |> pivot_wider(names_from=speakers, values_from=n) |>
   janitor::adorn_totals(where = "col") |> 
-  rename("ことば" = language, "母語としての話者" = native, "母語でない話者" = "non_native")  |> 
+  rename("ことば" = language, "第一言語" = native, "それ以外" = "non_native")  |> 
   knitr::kable(
     digits = 0,
     format.args = list(
@@ -384,20 +381,31 @@ base_data |> pivot_wider(names_from=speakers, values_from=n) |>
 \scriptsize
 https://www.ethnologue.com/insights/most-spoken-language/による
 
+## 話す人を全部あわせると
+\Large
 
-## 話す人の数でいうと
+世界には7,164のことばがありますが、
+
+話す人をぜんぶあわせると\pause
+英語が3位から1位へ\pause
 
 
-世界には7,164のことばがありますが、\pause
-話す人の数でいうと
+英語が1位で中国語が2位\pause
 
-中国語と英語とがベスト2\pause
+\centering
+\vfill
 
-この2つでいうと、中国語が圧倒的におおい
-
+\begin{tabular}{lr}\toprule
+ことば&話者数\\
+\midrule
+英語&14億6000万人\\
+中国語　&11億3900万人\\
+\bottomrule
+\end{tabular}
 
 
 ## 空間的にはどうかしら
+\Large
 
 そのことばを話す人が世界のどこに住んでいるか見てみましょう。
 
@@ -430,10 +438,10 @@ ne_world |>
 
 いっぽう、英語は広く世界で話されています
 
-## 英語
+## わたしたちが学ぶ英語とは
 \Large
 
-- 英語を話す人の数がいちばんおおい
+- 英語は話す人の数がいちばんおおい
 - 英語は広く世界中で話されている
 
 ## 英語は世界の共通語
@@ -451,7 +459,16 @@ ne_world |>
 
 楽しいことがたくさんあります\pause
 
-いっしょに楽しく英語の勉強をしましょう
+いっしょに\textcolor{ForestGreen}{\bfseries 楽しく}英語の勉強をしましょう
+
+
+## 英語は楽しいぞ
+
+\Huge
+
+\centering
+English is fun.
+
 
 # 授業では
 
@@ -462,10 +479,16 @@ ne_world |>
 
 
 - スライドで進めます
+- 英語の音声に親しみましょう
+  - \href{./audio/listen.mp3}{Please listen carefully.}
+  - \href{./audio/repeat.mp3}{Please repeat after me.}
 - 筆記用具・ノート
 - 予習は、必要ありません
 
-# お待ちしています！
+
+# See you soon.
+
+
 
 ##
 

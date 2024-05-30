@@ -787,7 +787,7 @@ Can you cook pizza? <break time="3s"/>Yes, I can.<break time="3s"/> No, I cannot
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%
 012_can_10.mp3
-Can you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t.
+an you skate? <break time="3s"/> Yes, I can. <break time="3s"/> No, I can’t.
 Can you read English?<break time="3s"/>  Yes, I can.<break time="3s"/>  No, I can’t.
 Can they speak French?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.
 Can David and Bob sing well?<break time="3s"/>  Yes, they can.<break time="3s"/>  No, they can’t.
@@ -811,3 +811,24 @@ Can she drive a car?<break time="3s"/>  Yes, she can.<break time="3s"/> No, she 
 </prosody>
 </speak>
 
+
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Please listen carefully.</p>
+<p><lang xml:lang="ja-JP">今のように、Please listen carefully.とわたしがいったら、よく音声に耳をかたむけてください。<break time="2s"/>もう五回いいます。</lang></p>
+<p>Please listen carefully.</p><break time="3s"/>
+<p>Please listen carefully.</p><break time="3s"/>
+<p>Please listen carefully.</p><break time="3s"/>
+<p>Please listen carefully.</p><break time="3s"/>
+<p>Please listen carefully.</p><break time="3s"/>
+<p><lang xml:lang="ja-JP">わかりましたか。</lang></p><break time="5s"/>
+<p><lang xml:lang="ja-JP">つぎは、発音の練習です。</lang></p><break time="2s"/>
+<p>Please repeat after me.</p>
+<p><lang xml:lang="ja-JP">今のように、わたしが Please repeat after me.といったら、わたしに続いてみなさんが自分で声に出してリピートしてください。<break time="2s"/>もう五回いいます。</lang></p>
+<p>Please repeat after me.</p><break time="3s"/>
+<p>Please repeat after me.</p><break time="3s"/>
+<p>Please repeat after me.</p><break time="3s"/>
+<p>Please repeat after me.</p><break time="3s"/>
+<p>Please repeat after me.</p><break time="5s"/>
+</prosody>
+</speak>
