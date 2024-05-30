@@ -1,0 +1,10 @@
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Please repeat after me.</p><break time="3s"/>
+<p>Please repeat after me.</p><break time="3s"/>
+<p>Please repeat after me.</p><break time="3s"/>
+<p>Please repeat after me.</p><break time="3s"/>
+<p>Please repeat after me.</p><break time="5s"/>
+</prosody>
+</speak>
+

@@ -24,6 +24,15 @@
            She will not watch TV tonight.
            They will not buy a new car.
            It will not rain tomorrow.
+## テキストからmp3ファイルをAmazon Pollyで作成
+
+走り書き
+
+読み上げたい文章をテキストファイルで作成し、それにAmazon Pollyのタグを追加。そのファイルをzzzとすると
+```
+txt2mp3.py zzz
+```
+とする。
 
 
 ## default regeon をアメリカ東海岸に
