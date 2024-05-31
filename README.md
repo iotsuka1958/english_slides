@@ -57,12 +57,15 @@ ari::ari_narrate(
 ## pdfから静止画像を抽出
 
 ``` 
-pdftoppm -jpg hoge.pdf hoge
+pdftoppm -png wait.pdf hoge
 ```
 
 ## 静止画像から動画を作成
 ```
-ffmpeg -loop 1 -i input.png  -vcodec libx264 -pix_fmt yuv420p -t 3 -r 30 output.mp4
+ffmpeg -loop 1 -i input.png  -vcodec libx264 -pix_fmt yuv420p -t 20 -r 30 output.mp4
+#2で割り切れないとエラーがでたらつぎを試す
+ffmpeg -loop 1 -i input.png -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -vcodec libx264 -pix_fmt yuv420p -t 3 -r 30 output.mp4
+
 ```
 このコードは、FFmpegを使用して静止画（input.png）を動画ファイルに変換するためのコマンド。
 
@@ -72,7 +75,7 @@ ffmpeg -loop 1 -i input.png  -vcodec libx264 -pix_fmt yuv420p -t 3 -r 30 output.
 - `-i input.png` : 入力として `input.png` ファイルを指定。これは静止画のファイル
 - `-vcodec libx264` : 動画のビデオコーデックを libx264 に指定します。これはH.264形式のビデオコーデック
 - `-pix_fmt yuv420p` : 動画のピクセルフォーマットを yuv420p に指定します。これは一般的なピクセルフォーマットで、広くサポートされています。
-- `-t 3` : 出力動画の長さを3秒に指定。この場合、入力画像が3秒間表示される
+- `-t 20` : 出力動画の長さを20秒に指定。この場合、入力画像が20秒間表示される
 - `-r 30` : 出力動画のフレームレートを30fpsに指定。つまり、1秒あたり30枚のフレームが表示される
 - `output.mp4` : 出力ファイルの名前を指定
 
