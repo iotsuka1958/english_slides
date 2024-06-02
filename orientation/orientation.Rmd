@@ -45,24 +45,64 @@ library(janitor)
 theme_set(theme_few(base_family="IPAexGothic"))
 ```
 
-
-## 自己紹介
+##
+\thispagestyle{empty}
 \Large
 
-大塚一朗(Otsuka Ichiro)です
+\raggedright
+
+予定の時刻になったらはじまります
+
+\textbullet  音声を流しています
+
+\textbullet  聞こえていますか　
+
+\vfill
+
+\raggedleft
+
+The lesson will begin at the scheduled time.
+
+\vspace{-6pt}
+
+We are playing audio. 
+
+\vspace{-6pt}
+
+Can you hear it?
+
+
+##
+\thispagestyle{empty}
+\titlepage
+
+## きょうの予定
+\thispagestyle{empty}
+\LARGE
+
+\begin{tabular}{rl}
+1&安心して学ぶ場にするために\\
+2&授業の進め方や内容などついて
+\end{tabular}
+
+
+## 自己紹介
+\thispagestyle{empty}
+\Large
+
+\pause
+
+大塚一朗(Otsuka Ichiro)
 
 \pause
 
 - 千葉LOTTE Marinesを応援しています
-- ミステリーが好きです
-    - 本
-    - 映画
-    - TVドラマ
-- 音楽はだいたいなんでも好きですが
-    - Bachと
-    - The Beach Boysをよく聴きます ← 首尾一貫していない
-- プログラミングはしろうとレベルですが、楽しい
-
+- ミステリーが好き
+    - 本・ 映画・TVドラマ
+- 音楽はだいたいなんでも好き
+    - BachとThe Beach Boysをよく聴きます\pause  ← 首尾一貫していない
+- プログラミングが好き。しろうとレベルですが、楽しい
+- やっぱりネコが好き
 \pause
 
 いっしょに英語の勉強を\textcolor{Orange}{\bfseries 楽しく}していきましょう
@@ -73,6 +113,264 @@ theme_set(theme_few(base_family="IPAexGothic"))
 
 \centering
 English is fun.
+
+# みんなが安心して楽しく学べるように
+
+## 約束
+\LARGE
+みんなが\textcolor{Maroon}{安心して楽しく}学べるように
+
+\pause
+
+約束をしましょう
+
+## 約束
+
+\Large
+
+
+\begin{tabular}{ll}
+約束1& 個人情報は書き込みません\\\pause
+約束2& 他の人が傷つくような発言はしません\\\pause
+約束3& ログインに必要な情報は他の人には教えません\\\pause
+約束4& パスワードはたいせつに管理します\\\pause
+約束5& 教材や動画等は、許可なく録画・録音したり\\
+&      SNSなどにのせません
+\end{tabular}
+
+
+
+
+## 安心して学ぶための約束1
+\LARGE
+
+\pause 
+
+「個人情報」って、耳にしたことはありますか？
+
+\pause
+
+「個人情報」ってなんでしょうか？
+
+## 個人情報とは
+\LARGE
+
+生存する個人に関する情報で、
+
+特定の個人を識別できる情報
+
+\vfill
+\pause 
+
+うーん、わかったようなわからないような
+
+## 具体的には
+\LARGE
+
+個人情報って、具体的にはなんなの？
+
+## 具体的には
+
+\begin{tabular}
+{C{.175\textwidth}  <{\onslide<2->} C{.18\textwidth}  <{\onslide<3->} C{.27\textwidth}  <{\onslide<4->} C{.27\textwidth}  <{\onslide}}
+\noalign{\hrule height 1pt}
+氏名&顔写真&
+\begin{tabular}{@{}c@{}}
+住所\\
+{\scriptsize 氏名と組み合わせた場合}
+\end{tabular}&
+\begin{tabular}{@{}c@{}}
+生年月日\\
+{\scriptsize 氏名と組み合わせた場合}
+\end{tabular}\\
+\midrule
+\ruby{穂毛}{ほ|げ} ホゲ\ruby{雄}{お}&\includegraphics[width=.2\textwidth]{../images/mr_hogehoge.pdf}&
+\begin{tabular}{@{}c@{}}
+千葉県○○市○○町\\
+穂毛 ホゲ雄
+\end{tabular}&
+\begin{tabular}{@{}c@{}}
+2010年○月○日\\
+穂毛 ホゲ雄
+\end{tabular}\\
+\bottomrule
+\end{tabular}
+
+
+## 安心して学ぶための約束1
+\LARGE
+
+個人情報は書き込まないようにしましょう
+
+\pause
+
+\bigskip
+
+自分やともだちの名前、学校名なども書き込みません
+
+## 安心して学ぶための約束2
+\LARGE
+
+他の人が傷つくようなことはいいません
+
+## 安心して学ぶための約束3
+\LARGE
+
+ログインに必要な情報
+
+\pause
+\bigskip
+
+\raggedleft
+たいせつに管理しましょう
+
+## 安心して学ぶための約束4
+\LARGE
+
+パスワード
+
+\pause
+
+- 安全なパスワードにしましょう
+- 他の人には教えないようにしましょう
+- 自分で忘れないようにしましょう
+
+## 安心して学ぶための約束5
+\LARGE
+
+教材や動画等は許可なく録画・録音したり、
+
+SNSなどにのせないようにしましょう
+
+##
+
+\Large
+
+\begin{tabular}{ll}
+約束1& 個人情報は書き込みません\\
+約束2& 他の人が傷つくような発言はしません\\
+約束3& ログインに必要な情報は他の人には教えません\\
+約束4& パスワードはたいせつに管理します\\
+約束5& 教材や動画等は許可なく録画・録音したり\\
+&      SNSなどにのせません
+\end{tabular}
+
+\vfill
+
+これらの\textcolor{NavyBlue}{約束を守って}、
+\textcolor{Maroon}{安心して楽しく}勉強しましょう！
+
+
+# 授業について
+
+## 授業について
+\LARGE
+
+- 授業の進め方について
+- 基礎基本について
+- 準備するもの
+- 予習・復習について
+- 英語の音声について
+
+
+## 授業の進め方
+\LARGE
+
+スライドで進めていきます
+
+\pause
+\vfill
+
+\raggedleft
+誰かを\textcolor{Maroon}{指すことはありません}
+
+\pause
+
+安心して授業に参加してください
+
+## 授業の内容
+
+\LARGE
+
+\textcolor{Maroon}{基礎基本をだいじに}します
+
+\vfill
+
+\raggedleft
+やさしいことからはじめて着実に
+
+## 準備するもの
+\LARGE
+\begin{columns}
+\begin{column}{.25\textwidth}
+  \begin{itemize}
+    \item ノート
+    \item 筆記具
+  \end{itemize}
+\end{column}
+\begin{column}{.7\textwidth}
+\raggedleft
+\includegraphics[width=.95\textwidth]{../images/notebook.jpg}
+\end{column}
+\end{columns}
+\tiny
+\raggedleft
+"With your pen and notebook, you blow me away..." by lethaargic is licensed under CC BY 2.0.
+To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+## 予習・復習について
+\LARGE
+
+予習\pause
+→ 必要ありません
+
+\pause
+
+\bigskip
+
+復習\pause
+→ 効果的です
+
+\phantom{　　　　}余裕があればくらいの軽い気持ちで
+
+## 音声をだいじにしよう
+\LARGE
+
+ 英語の音声に親しみましょう
+
+  - \href{./audio/listen.mp3}{Please listen carefully.}
+  - \href{./audio/repeat.mp3}{Please repeat after me.}
+
+
+## 授業について(まとめ)
+\Large
+
+\begin{itemize}
+\item 授業の進め方
+\item 基礎基本をだいじに
+\item 筆記用具・ノート
+\item 予習・復習について
+\item 英語の音声に親しみましょう
+      \begin{itemize}
+         \item  \href{./audio/listen.mp3}{Please listen carefully.}
+         \item  href{./audio/repeat.mp3}{Please repeat after me.}
+      \end{itemize}
+\end{itemize}
+
+## きょうのまとめ
+\LARGE
+
+\begin{itemize}
+\item  安心して学ぶ場にするための約束
+\item  授業について
+\end{itemize}
+
+# See you next time.
+
+
+##
+
+
 
 
 ## Hello, World!
@@ -166,7 +464,7 @@ base_data$language <- factor(base_data$language, levels = language_order)
 
 ## Quiz
 \Large
-ところで世界にはいくつのことばがあるの？
+ところで、世界にはいくつくらいことばがあるの？
 
 \pause
 
@@ -258,7 +556,7 @@ https://www.ethnologue.com/insights/how-many-languages/による
 つぎの4つの言語で、話す人の数がおおい順に
 並べると、どうなるでしょうか\pause
 
-ただし生まれてはじめて身につけたことばを話す人とします。
+ただし生まれてはじめて身につけたことばという条件で
 
 \pause
 
@@ -317,14 +615,16 @@ https://www.ethnologue.com/insights/most-spoken-language/による
 
 第一言語はAということばだけれど、
 
-そのほかにもBということばを話す人がいます
+そのほかにも第二言語としてBということばを話す人がいます
 
 
 ## 第一言語ではないけど、そのことば話します
 
 \Large
 
-第一言語ではないけれど、そのとばを話す人をあわせると、
+第一言語ではないけれど、そのことばを話します
+
+そういう人をあわせると、
 どうなるでしょうか
 
 ## 第一言語として話す人の数はこうでしたね
@@ -387,10 +687,8 @@ https://www.ethnologue.com/insights/most-spoken-language/による
 世界には7,164のことばがありますが、
 
 話す人をぜんぶあわせると\pause
-英語が3位から1位へ\pause
-
-
-英語が1位で中国語が2位\pause
+英語を話す人がいちばんおおい\pause
+2位は中国語\pause
 
 \centering
 \vfill
@@ -407,7 +705,9 @@ https://www.ethnologue.com/insights/most-spoken-language/による
 ## 空間的にはどうかしら
 \Large
 
-そのことばを話す人が世界のどこに住んでいるか見てみましょう。
+中国語と英語を話す人が
+
+世界のどこに住んでいるか見てみましょう。
 
 
 ## Chinese
@@ -420,6 +720,10 @@ ne_world |>
     labs(title="中国語")
 ```
 
+## 中国語を話す人
+\Large
+中国語を話す人は中国に集中していますね
+
 ## English
 
 ```{r}
@@ -430,19 +734,27 @@ ne_world |>
     labs(title="英語")
 ```
 
+## English
+\Large
+
+英語を話す人は世界中にいます
 
 ## つまり
 \Large
 
-中国語を話す人は中国に集中しています\pause
+中国語を話す人は、中国に集中しています\pause
 
-いっぽう、英語は広く世界で話されています
+いっぽう、英語は広く世界中で話されています
 
 ## わたしたちが学ぶ英語とは
 \Large
 
-- 英語は話す人の数がいちばんおおい
-- 英語は広く世界中で話されている
+- 英語は話す人の数が\textcolor{ForestGreen}{いちばんおおい}
+- 英語は\textcolor{ForestGreen}{広く世界中で}話されている
+
+つまり\pause
+
+\textcolor{Maroon}{英語は世界の共通語}といっていいだろう
 
 ## 英語は世界の共通語
 \Large
@@ -457,36 +769,18 @@ ne_world |>
 ## 英語を身につけると
 \Large
 
-楽しいことがたくさんあります\pause
+\textcolor{Maroon}{\bfseries 楽しい}ことがたくさんあります\pause
 
-いっしょに\textcolor{ForestGreen}{\bfseries 楽しく}英語の勉強をしましょう
+いっしょに\textcolor{Maroon}{\bfseries 楽しく}英語の勉強をしましょう
 
 
-## 英語は楽しいぞ
+## 英語は楽しい
 
 \Huge
 
 \centering
 English is fun.
 
-
-# 授業では
-
-## 授業について
-\Large
-
-\pause
-
-
-- スライドで進めます
-- 英語の音声に親しみましょう
-  - \href{./audio/listen.mp3}{Please listen carefully.}
-  - \href{./audio/repeat.mp3}{Please repeat after me.}
-- 筆記用具・ノート
-- 予習は、必要ありません
-
-
-# See you soon.
 
 
 
@@ -497,5 +791,3 @@ English is fun.
 ```{r cars, echo = TRUE}
 summary(cars)
 ```
-
-

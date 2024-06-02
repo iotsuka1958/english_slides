@@ -215,6 +215,14 @@
 \definecolor{mediumyellow}{RGB}{224, 171, 46}    % メディアムイエロー
 \definecolor{darkyellow}{RGB}{217, 153, 25}    % ダークイエロー
 \definecolor{goldenyellow}{RGB}{204, 135, 15}    % ゴールデンイエロー
+%%%%%%%%%%%%%%%%%
+\usepackage{array}
+%% セルの内容を縦中央にそろえる
+% カスタム列指定子を定義
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+%%%%%%%%%%%%%%%%%
+\usepackage{pxrubrica}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -249,11 +257,59 @@
 
 \frame{\titlepage}{}
 
-\begin{frame}{自己紹介}
-\phantomsection\label{ux81eaux5df1ux7d39ux4ecb}
+\begin{frame}{}
+\phantomsection\label{section}
+\thispagestyle{empty}
 \Large
 
-大塚一朗(Otsuka Ichiro)です
+\raggedright
+
+予定の時刻になったらはじまります
+
+\textbullet  音声を流しています
+
+\textbullet  聞こえていますか　
+
+\vfill
+
+\raggedleft
+
+The lesson will begin at the scheduled time.
+
+\vspace{-6pt}
+
+We are playing audio.
+
+\vspace{-6pt}
+
+Can you hear it?
+\end{frame}
+
+\begin{frame}{}
+\phantomsection\label{section-1}
+\thispagestyle{empty}
+\titlepage
+\end{frame}
+
+\begin{frame}{きょうの予定}
+\phantomsection\label{ux304dux3087ux3046ux306eux4e88ux5b9a}
+\thispagestyle{empty}
+\LARGE
+
+\begin{tabular}{rl}
+1&安心して学ぶ場にするために\\
+2&授業の進め方や内容などついて
+\end{tabular}
+\end{frame}
+
+\begin{frame}{自己紹介}
+\phantomsection\label{ux81eaux5df1ux7d39ux4ecb}
+\thispagestyle{empty}
+\Large
+
+\pause
+
+大塚一朗(Otsuka Ichiro)
 
 \pause
 
@@ -262,32 +318,26 @@
 \item
   千葉LOTTE Marinesを応援しています
 \item
-  ミステリーが好きです
+  ミステリーが好き
 
   \begin{itemize}[<+->]
   \tightlist
   \item
-    本
-  \item
-    映画
-  \item
-    TVドラマ
+    本・ 映画・TVドラマ
   \end{itemize}
 \item
-  音楽はだいたいなんでも好きですが
+  音楽はだいたいなんでも好き
 
   \begin{itemize}[<+->]
   \tightlist
   \item
-    Bachと
-  \item
-    The Beach Boysをよく聴きます ← 首尾一貫していない
+    BachとThe Beach Boysをよく聴きます\pause  ← 首尾一貫していない
   \end{itemize}
 \item
-  プログラミングはしろうとレベルですが、楽しい
+  プログラミングが好き。しろうとレベルですが、楽しい
+\item
+  やっぱりネコが好き \pause
 \end{itemize}
-
-\pause
 
 いっしょに英語の勉強を\textcolor{Orange}{\bfseries 楽しく}していきましょう
 \end{frame}
@@ -299,6 +349,314 @@
 \centering
 
 English is fun.
+\end{frame}
+
+\section{みんなが安心して楽しく学べるように}\label{ux307fux3093ux306aux304cux5b89ux5fc3ux3057ux3066ux697dux3057ux304fux5b66ux3079ux308bux3088ux3046ux306b}
+
+\begin{frame}{約束}
+\phantomsection\label{ux7d04ux675f}
+\LARGE
+
+みんなが\textcolor{Maroon}{安心して楽しく}学べるように
+
+\pause
+
+約束をしましょう
+\end{frame}
+
+\begin{frame}{約束}
+\phantomsection\label{ux7d04ux675f-1}
+\Large
+
+\begin{tabular}{ll}
+約束1& 個人情報は書き込みません\\\pause
+約束2& 他の人が傷つくような発言はしません\\\pause
+約束3& ログインに必要な情報は他の人には教えません\\\pause
+約束4& パスワードはたいせつに管理します\\\pause
+約束5& 教材や動画等は、許可なく録画・録音したり\\
+&      SNSなどにのせません
+\end{tabular}
+\end{frame}
+
+\begin{frame}{安心して学ぶための約束1}
+\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f1}
+\LARGE
+
+\pause
+
+「個人情報」って、耳にしたことはありますか？
+
+\pause
+
+「個人情報」ってなんでしょうか？
+\end{frame}
+
+\begin{frame}{個人情報とは}
+\phantomsection\label{ux500bux4ebaux60c5ux5831ux3068ux306f}
+\LARGE
+
+生存する個人に関する情報で、
+
+特定の個人を識別できる情報
+
+\vfill
+\pause
+
+うーん、わかったようなわからないような
+\end{frame}
+
+\begin{frame}{具体的には}
+\phantomsection\label{ux5177ux4f53ux7684ux306bux306f}
+\LARGE
+
+個人情報って、具体的にはなんなの？
+\end{frame}
+
+\begin{frame}{具体的には}
+\phantomsection\label{ux5177ux4f53ux7684ux306bux306f-1}
+\begin{tabular}
+{C{.175\textwidth}  <{\onslide<2->} C{.18\textwidth}  <{\onslide<3->} C{.27\textwidth}  <{\onslide<4->} C{.27\textwidth}  <{\onslide}}
+\noalign{\hrule height 1pt}
+氏名&顔写真&
+\begin{tabular}{@{}c@{}}
+住所\\
+{\scriptsize 氏名と組み合わせた場合}
+\end{tabular}&
+\begin{tabular}{@{}c@{}}
+生年月日\\
+{\scriptsize 氏名と組み合わせた場合}
+\end{tabular}\\
+\midrule
+\ruby{穂毛}{ほ|げ} ホゲ\ruby{雄}{お}&\includegraphics[width=.2\textwidth]{../images/mr_hogehoge.pdf}&
+\begin{tabular}{@{}c@{}}
+千葉県○○市○○町\\
+穂毛 ホゲ雄
+\end{tabular}&
+\begin{tabular}{@{}c@{}}
+2010年○月○日\\
+穂毛 ホゲ雄
+\end{tabular}\\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+\begin{frame}{安心して学ぶための約束1}
+\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f1-1}
+\LARGE
+
+個人情報は書き込まないようにしましょう
+
+\pause
+
+\bigskip
+
+自分やともだちの名前、学校名なども書き込みません
+\end{frame}
+
+\begin{frame}{安心して学ぶための約束2}
+\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f2}
+\LARGE
+
+他の人が傷つくようなことはいいません
+\end{frame}
+
+\begin{frame}{安心して学ぶための約束3}
+\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f3}
+\LARGE
+
+ログインに必要な情報
+
+\pause
+\bigskip
+
+\raggedleft
+
+たいせつに管理しましょう
+\end{frame}
+
+\begin{frame}{安心して学ぶための約束4}
+\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f4}
+\LARGE
+
+パスワード
+
+\pause
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  安全なパスワードにしましょう
+\item
+  他の人には教えないようにしましょう
+\item
+  自分で忘れないようにしましょう
+\end{itemize}
+\end{frame}
+
+\begin{frame}{安心して学ぶための約束5}
+\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f5}
+\LARGE
+
+教材や動画等は許可なく録画・録音したり、
+
+SNSなどにのせないようにしましょう
+\end{frame}
+
+\begin{frame}{}
+\phantomsection\label{section-2}
+\Large
+
+\begin{tabular}{ll}
+約束1& 個人情報は書き込みません\\
+約束2& 他の人が傷つくような発言はしません\\
+約束3& ログインに必要な情報は他の人には教えません\\
+約束4& パスワードはたいせつに管理します\\
+約束5& 教材や動画等は許可なく録画・録音したり\\
+&      SNSなどにのせません
+\end{tabular}
+
+\vfill
+
+これらの\textcolor{NavyBlue}{約束を守って}、
+\textcolor{Maroon}{安心して楽しく}勉強しましょう！
+\end{frame}
+
+\section{授業について}\label{ux6388ux696dux306bux3064ux3044ux3066}
+
+\begin{frame}{授業について}
+\phantomsection\label{ux6388ux696dux306bux3064ux3044ux3066-1}
+\LARGE
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  授業の進め方について
+\item
+  基礎基本について
+\item
+  準備するもの
+\item
+  予習・復習について
+\item
+  英語の音声について
+\end{itemize}
+\end{frame}
+
+\begin{frame}{授業の進め方}
+\phantomsection\label{ux6388ux696dux306eux9032ux3081ux65b9}
+\LARGE
+
+スライドで進めていきます
+
+\pause
+\vfill
+
+\raggedleft
+
+誰かを\textcolor{Maroon}{指すことはありません}
+
+\pause
+
+安心して授業に参加してください
+\end{frame}
+
+\begin{frame}{授業の内容}
+\phantomsection\label{ux6388ux696dux306eux5185ux5bb9}
+\LARGE
+
+\textcolor{Maroon}{基礎基本をだいじに}します
+
+\vfill
+
+\raggedleft
+
+やさしいことからはじめて着実に
+\end{frame}
+
+\begin{frame}{準備するもの}
+\phantomsection\label{ux6e96ux5099ux3059ux308bux3082ux306e}
+\LARGE
+\begin{columns}
+\begin{column}{.25\textwidth}
+  \begin{itemize}
+    \item ノート
+    \item 筆記具
+  \end{itemize}
+\end{column}
+\begin{column}{.7\textwidth}
+\raggedleft
+\includegraphics[width=.95\textwidth]{../images/notebook.jpg}
+\end{column}
+\end{columns}
+\tiny
+\raggedleft
+
+``With your pen and notebook, you blow me away\ldots{}'' by lethaargic
+is licensed under CC BY 2.0. To view a copy of this license, visit
+\url{https://creativecommons.org/licenses/by/2.0/?ref=openverse}.
+\end{frame}
+
+\begin{frame}{予習・復習について}
+\phantomsection\label{ux4e88ux7fd2ux5fa9ux7fd2ux306bux3064ux3044ux3066}
+\LARGE
+
+予習\pause → 必要ありません
+
+\pause
+
+\bigskip
+
+復習\pause → 効果的です
+
+\phantom{　　　　}余裕があればくらいの軽い気持ちで
+\end{frame}
+
+\begin{frame}{音声をだいじにしよう}
+\phantomsection\label{ux97f3ux58f0ux3092ux3060ux3044ux3058ux306bux3057ux3088ux3046}
+\LARGE
+
+英語の音声に親しみましょう
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  \href{./audio/listen.mp3}{Please listen carefully.}
+\item
+  \href{./audio/repeat.mp3}{Please repeat after me.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{授業について(まとめ)}
+\phantomsection\label{ux6388ux696dux306bux3064ux3044ux3066ux307eux3068ux3081}
+\Large
+
+\begin{itemize}
+\item 授業の進め方
+\item 基礎基本をだいじに
+\item 筆記用具・ノート
+\item 予習・復習について
+\item 英語の音声に親しみましょう
+      \begin{itemize}
+         \item  \href{./audio/listen.mp3}{Please listen carefully.}
+         \item  href{./audio/repeat.mp3}{Please repeat after me.}
+      \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{きょうのまとめ}
+\phantomsection\label{ux304dux3087ux3046ux306eux307eux3068ux3081}
+\LARGE
+
+\begin{itemize}
+\item  安心して学ぶ場にするための約束
+\item  授業について
+\end{itemize}
+\end{frame}
+
+\section{See you next time.}\label{see-you-next-time.}
+
+\begin{frame}{}
+\phantomsection\label{section-3}
 \end{frame}
 
 \begin{frame}{Hello, World!}
@@ -363,7 +721,7 @@ Hello, World!
 \phantomsection\label{quiz}
 \Large
 
-ところで世界にはいくつのことばがあるの？
+ところで、世界にはいくつくらいことばがあるの？
 
 \pause
 
@@ -459,7 +817,7 @@ Hello, World!
 つぎの4つの言語で、話す人の数がおおい順に
 並べると、どうなるでしょうか\pause
 
-ただし生まれてはじめて身につけたことばを話す人とします。
+ただし生まれてはじめて身につけたことばという条件で
 
 \pause
 
@@ -517,15 +875,16 @@ Hindi & 345\\
 
 第一言語はAということばだけれど、
 
-そのほかにもBということばを話す人がいます
+そのほかにも第二言語としてBということばを話す人がいます
 \end{frame}
 
 \begin{frame}{第一言語ではないけど、そのことば話します}
 \phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3067ux306fux306aux3044ux3051ux3069ux305dux306eux3053ux3068ux3070ux8a71ux3057ux307eux3059}
 \Large
 
-第一言語ではないけれど、そのとばを話す人をあわせると、
-どうなるでしょうか
+第一言語ではないけれど、そのことばを話します
+
+そういう人をあわせると、 どうなるでしょうか
 \end{frame}
 
 \begin{frame}{第一言語として話す人の数はこうでしたね}
@@ -572,9 +931,8 @@ Spanish & 485 & 74 & 559\\
 
 世界には7,164のことばがありますが、
 
-話す人をぜんぶあわせると\pause 英語が3位から1位へ\pause
-
-英語が1位で中国語が2位\pause
+話す人をぜんぶあわせると\pause 英語を話す人がいちばんおおい\pause
+2位は中国語\pause
 
 \centering
 \vfill
@@ -592,7 +950,9 @@ Spanish & 485 & 74 & 559\\
 \phantomsection\label{ux7a7aux9593ux7684ux306bux306fux3069ux3046ux304bux3057ux3089}
 \Large
 
-そのことばを話す人が世界のどこに住んでいるか見てみましょう。
+中国語と英語を話す人が
+
+世界のどこに住んでいるか見てみましょう。
 \end{frame}
 
 \begin{frame}{Chinese}
@@ -600,18 +960,32 @@ Spanish & 485 & 74 & 559\\
 \includegraphics{orientation_files/figure-beamer/unnamed-chunk-10-1.pdf}
 \end{frame}
 
+\begin{frame}{中国語を話す人}
+\phantomsection\label{ux4e2dux56fdux8a9eux3092ux8a71ux3059ux4eba}
+\Large
+
+中国語を話す人は中国に集中していますね
+\end{frame}
+
 \begin{frame}{English}
 \phantomsection\label{english}
 \includegraphics{orientation_files/figure-beamer/unnamed-chunk-11-1.pdf}
+\end{frame}
+
+\begin{frame}{English}
+\phantomsection\label{english-1}
+\Large
+
+英語を話す人は世界中にいます
 \end{frame}
 
 \begin{frame}{つまり}
 \phantomsection\label{ux3064ux307eux308a-1}
 \Large
 
-中国語を話す人は中国に集中しています\pause
+中国語を話す人は、中国に集中しています\pause
 
-いっぽう、英語は広く世界で話されています
+いっぽう、英語は広く世界中で話されています
 \end{frame}
 
 \begin{frame}{わたしたちが学ぶ英語とは}
@@ -621,10 +995,14 @@ Spanish & 485 & 74 & 559\\
 \begin{itemize}[<+->]
 \tightlist
 \item
-  英語は話す人の数がいちばんおおい
+  英語は話す人の数が\textcolor{ForestGreen}{いちばんおおい}
 \item
-  英語は広く世界中で話されている
+  英語は\textcolor{ForestGreen}{広く世界中で}話されている
 \end{itemize}
+
+つまり\pause
+
+\textcolor{Maroon}{英語は世界の共通語}といっていいだろう
 \end{frame}
 
 \begin{frame}{英語は世界の共通語}
@@ -650,13 +1028,13 @@ Spanish & 485 & 74 & 559\\
 \phantomsection\label{ux82f1ux8a9eux3092ux8eabux306bux3064ux3051ux308bux3068}
 \Large
 
-楽しいことがたくさんあります\pause
+\textcolor{Maroon}{\bfseries 楽しい}ことがたくさんあります\pause
 
-いっしょに\textcolor{ForestGreen}{\bfseries 楽しく}英語の勉強をしましょう
+いっしょに\textcolor{Maroon}{\bfseries 楽しく}英語の勉強をしましょう
 \end{frame}
 
-\begin{frame}{英語は楽しいぞ}
-\phantomsection\label{ux82f1ux8a9eux306fux697dux3057ux3044ux305e}
+\begin{frame}{英語は楽しい}
+\phantomsection\label{ux82f1ux8a9eux306fux697dux3057ux3044}
 \Huge
 
 \centering
@@ -664,39 +1042,8 @@ Spanish & 485 & 74 & 559\\
 English is fun.
 \end{frame}
 
-\section{授業では}\label{ux6388ux696dux3067ux306f}
-
-\begin{frame}{授業について}
-\phantomsection\label{ux6388ux696dux306bux3064ux3044ux3066}
-\Large
-
-\pause
-
-\begin{itemize}[<+->]
-\tightlist
-\item
-  スライドで進めます
-\item
-  英語の音声に親しみましょう
-
-  \begin{itemize}[<+->]
-  \tightlist
-  \item
-    \href{./audio/listen.mp3}{Please listen carefully.}
-  \item
-    \href{./audio/repeat.mp3}{Please repeat after me.}
-  \end{itemize}
-\item
-  筆記用具・ノート
-\item
-  予習は、必要ありません
-\end{itemize}
-\end{frame}
-
-\section{See you soon.}\label{see-you-soon.}
-
 \begin{frame}{}
-\phantomsection\label{section}
+\phantomsection\label{section-4}
 \end{frame}
 
 \begin{frame}[fragile]{Slide with R Output}

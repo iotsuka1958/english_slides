@@ -78,3 +78,11 @@
 \definecolor{mediumyellow}{RGB}{224, 171, 46}    % メディアムイエロー
 \definecolor{darkyellow}{RGB}{217, 153, 25}    % ダークイエロー
 \definecolor{goldenyellow}{RGB}{204, 135, 15}    % ゴールデンイエロー
+%%%%%%%%%%%%%%%%%
+\usepackage{array}
+%% セルの内容を縦中央にそろえる
+% カスタム列指定子を定義
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+%%%%%%%%%%%%%%%%%
+\usepackage{pxrubrica}
