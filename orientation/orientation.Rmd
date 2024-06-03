@@ -100,7 +100,7 @@ Can you hear it?
 - ミステリーが好き
     - 本・ 映画・TVドラマ
 - 音楽はだいたいなんでも好き
-    - BachとThe Beach Boysをよく聴きます\pause  ← 首尾一貫していない
+    - BachとThe Beach Boysをよく聴きます  ← 首尾一貫していない
 - プログラミングが好き。しろうとレベルですが、楽しい
 - やっぱりネコが好き
 \pause
@@ -353,7 +353,7 @@ To view a copy of this license, visit https://creativecommons.org/licenses/by/2.
 \item 英語の音声に親しみましょう
       \begin{itemize}
          \item  \href{./audio/listen.mp3}{Please listen carefully.}
-         \item  href{./audio/repeat.mp3}{Please repeat after me.}
+         \item  \href{./audio/repeat.mp3}{Please repeat after me.}
       \end{itemize}
 \end{itemize}
 
