@@ -21,6 +21,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## アルファベット
 
+
 <span style="font-size:280%;">A B C D E F G H I J</span>
 
 <br>
@@ -30,7 +31,7 @@ knitr::opts_chunk$set(echo = FALSE)
 <br>
 
 <span style="font-size:280%;"> U V W X Y Z</span>
-<span style="font-size:144%;">　これは大文字です</span>
+<span style="font-size:140%;">　これは大文字です</span>
 
 <!--
 We're going to learn the pronunciation of the English alphabet now.
@@ -50,16 +51,16 @@ A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
 
 ## アルファベット
 
-<span style="font-size:280%;">$a$ $b$ $c$ $d$ $e$ $f$ $g$  $h$ $i$ $j$  </span>
+<span style="font-size:280%;"> a b c d e f g  h i j  </span>
 
 <br>
 
-<span style="font-size:280%;"> $k$ $l$ $m$ $n$ $o$ $p$ $q$ $r$ $s$ $t$ </hspan>
+<span style="font-size:280%;"> k l m n o p q r s t </hspan>
 
 <br>
 
-<span style="font-size:280%;">  $u$ $v$ $w$ $x$ $y$ $z$ </span>
-<span style="font-size:144%;">　これは小文字です</span>
+<span style="font-size:280%;">  u v w x y z </span>
+<span style="font-size:140%;">これは小文字です</span>
 
 <!--
 These are lowercase letters. Please listen carefully.
@@ -125,7 +126,7 @@ These are lowercase letters. Please listen carefully.
 
 <center>
 <span style="font-size:1600%;">G</span>
-<span style="font-size:1200%;">$g$</span>
+<span style="font-size:1200%;">g</span>
 </center>
 
 <!--- The next alphabet is G. Please listen carefully.  G. G. G. G. G. -->
@@ -200,7 +201,7 @@ These are lowercase letters. Please listen carefully.
 <span style="font-size:1600%;">o</span>
 </center>
 
-<!--- The next alphabet is O. Please listen carefully.  O. O. O. O. ~.-->
+<!--- The next alphabet is O. Please listen carefully.  O. O. O. O. O. -->
 
 ---
 
@@ -245,7 +246,7 @@ These are lowercase letters. Please listen carefully.
 <span style="font-size:1600%;">t</span>
 </center>
 
-<!--- The next alphabet is T. Please listen carefully. T. T. T. T. T.-->
+<!--- The next alphabet is T. Please listen carefully. T. T. T. T. T. -->
 
 ---
 

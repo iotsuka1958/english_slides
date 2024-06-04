@@ -87,8 +87,13 @@ Can you hear it?
 
 ## きょうの予定
 \thispagestyle{empty}
-\Large
+\LARGE
 
+英語ってどんなことばなの
+
+\bigskip
+
+\Large
 \begin{tabular}{rl}
 1&世界のことば\\
 2&世界にはどんなことばがありますか\\

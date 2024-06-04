@@ -88,9 +88,41 @@
 %% TEXT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\begin{frame}[plain]
-  \titlepage
+
+\begin{frame}{}
+\phantomsection\label{section}
+\thispagestyle{empty}
+\Large
+
+\raggedright
+
+予定の時刻になったらはじまります
+
+\textbullet  音声を流しています
+
+\textbullet  聞こえていますか　
+
+\vfill
+
+\raggedleft
+
+The lesson will begin at the scheduled time.
+
+\vspace{-6pt}
+
+We are playing audio.
+
+\vspace{-6pt}
+
+Can you hear it?
 \end{frame}
+
+\begin{frame}
+\phantomsection\label{section-1}
+\thispagestyle{empty}
+\titlepage
+\end{frame}
+
 
 \section*{授業の流れ}
 \begin{frame}[plain]
@@ -100,17 +132,119 @@
 
 \section{alphabet}
 \subsection{alphabet}
+\begin{frame}[plain]{アルファベット}
+\Large
+
+
+日本語は\pause
+
+\begin{itemize}
+ \item ひらがな・カタカナ
+ \item 漢字
+\end{itemize}
+
+\pause
+いっぽう英語は\pause
+\begin{itemize}
+ \item アルファベットは26種類
+ \item 大文字と小文字があります
+\end{itemize}
+
+\pause
+ということは、ぜんぶで
+$26\times2=52$
+
+
+\end{frame}
+
+
+
+\begin{frame}[plain]{アルファベット}
+\Huge
+\begin{rmfamily}\bfseries
+\setbeamercovered{transparent}
+\begin{tabular}{cccccccccc}
+\onslide<2,28->{A}&
+\onslide<3,28->{B}&
+\onslide<4,28->{C}&
+\onslide<5,28->{D}&
+\onslide<6,28->{E}&
+\onslide<7,28->{F}&
+\onslide<8,28->{G}&
+\onslide<9,28->{H}&
+\onslide<10,28->{I}&
+\onslide<11,28->{J} \\
+\onslide<12,28->{K}&
+\onslide<13,28->{L}&
+\onslide<14,28->{M}&
+\onslide<15,28->{N}&
+\onslide<16,28->{O}&
+\onslide<17,28->{P}&
+\onslide<18,28->{Q}&
+\onslide<19,28->{R}&
+\onslide<20,28->{S}&
+\onslide<21,28->{T}\\
+\onslide<22,28->{U}&
+\onslide<23,28->{V}&
+\onslide<24,28->{W}&
+\onslide<25,28->{X}&
+\onslide<26,28->{Y}&
+\onslide<27,28->{Z}&
+ & & &  \\
+\end{tabular}
+\end{rmfamily}
+
+
+ \begin{exampleblock}<29->{Topics for Today}
+\small
+\begin{itemize}
+ \item  アルファベットは26文字です
+\item 何度も練習しましょう
+\end{itemize}
+      \end{exampleblock}
+
+\mbox{}\hfill\visible{\myaudio{./audio/001_alphabet_01.mp3}}
+\end{frame}
+
 
 \begin{frame}[plain]{アルファベット}
 \Huge
 
+\begin{rmfamily}\bfseries
+\setbeamercovered{transparent}
 \begin{tabular}{cccccccccc}
- A& B& C& D& E& F& G& H& I& J\\
- K& L& M& N& O& P& Q& R& S& T\\
- U& V& W& X& Y& Z& & & &  \\
+\onslide<2,28->{a}&
+\onslide<3,28->{b}&
+\onslide<4,28->{c}&
+\onslide<5,28->{d}&
+\onslide<6,28->{e}&
+\onslide<7,28->{f}&
+\onslide<8,28->{g}&
+\onslide<9,28->{h}&
+\onslide<10,28->{i}&
+\onslide<11,28->{j} \\
+\onslide<12,28->{k}&
+\onslide<13,28->{l}&
+\onslide<14,28->{m}&
+\onslide<15,28->{n}&
+\onslide<16,28->{o}&
+\onslide<17,28->{p}&
+\onslide<18,28->{q}&
+\onslide<19,28->{r}&
+\onslide<20,28->{s}&
+\onslide<21,28->{t}\\
+\onslide<22,28->{u}&
+\onslide<23,28->{v}&
+\onslide<24,28->{w}&
+\onslide<25,28->{x}&
+\onslide<26,28->{y}&
+\onslide<27,28->{z}&
+ & & &  \\
 \end{tabular}
+\end{rmfamily}
 
- \begin{exampleblock}{Topics for Today}
+
+ \begin{exampleblock}<29->{Topics for Today}
 \small
 \begin{itemize}
  \item  アルファベットは26文字です
@@ -120,21 +254,5 @@
 \end{frame}
 
 
-\begin{frame}[plain]{アルファベット}
-\Huge
 
-\begin{tabular}{cccccccccc}
- a& b& c& d& e& f& g& h& i& j\\
- k& l& m& n& o& p& q& r& s& t\\
- u& v& w& x& y& z& & & &  \\
-\end{tabular}
-
- \begin{exampleblock}{Topics for Today}
-\small
-\begin{itemize}
- \item  アルファベットは26文字です
-\item 何度も練習しましょう
-\end{itemize}
-      \end{exampleblock}
-\end{frame}
 \end{document}
