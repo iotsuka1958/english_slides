@@ -1,0 +1,531 @@
+---
+title: "English is fun"
+#subtitle: "orientation"
+author: ""
+date: "2024"
+output:
+  beamer_presentation:
+    theme: metropolis
+    latex_engine: lualatex
+    keep_tex: true
+    includes:
+      in_header: header.tex
+    fig_caption: true
+    incremental: true
+classoption: 
+  - "aspectratio=169"
+  - "xcolor=dvipsnames"
+#  - "handout"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(
+  dev = "cairo_pdf",
+  dev.args = list(family = "Haranoaji")
+)
+```
+
+
+```{r include=FALSE}
+library(tidyverse)
+library(readxl)
+library(viridis)
+library(gt)
+library(ragg)
+library(ggthemes)
+library(bayestestR)
+library(here)
+library(gghighlight)
+library(reticulate)
+library(sf)
+library(rnaturalearth)
+library(janitor)
+theme_set(theme_few(base_family="IPAexGothic"))
+```
+
+##
+\thispagestyle{empty}
+\Large
+
+\raggedright
+
+予定の時刻になったらはじまります
+
+\textbullet  音声を流しています
+
+\textbullet  聞こえていますか　
+
+\vfill
+
+\raggedleft
+
+The lesson will begin at the scheduled time.
+
+\vspace{-6pt}
+
+We are playing audio. 
+
+\vspace{-6pt}
+
+Can you hear it?
+
+
+##
+\thispagestyle{empty}
+\titlepage
+
+## 前回の復習
+\thispagestyle{empty}
+\LARGE
+
+\begin{tabular}{rl}
+1&安心して学ぶ場にするために\\
+2&授業の進め方や内容など
+\end{tabular}
+
+## きょうの予定
+\thispagestyle{empty}
+\Large
+
+\begin{tabular}{rl}
+1&世界のことば\\
+2&世界にはどんなことばがありますか\\
+3&世界にはいくつのことばがあるの\\
+4&そのことばを話す人はどこに住んでいるの\\
+5&わたしたちが学ぶ英語とは
+\end{tabular}
+
+
+## 世界のことば
+
+
+\Large
+
+Hello, World!
+
+```{r eval=TRUE, include=FALSE}
+ne_world <- rnaturalearth::ne_countries(scale = 10, returnclass = "sf")
+my_english <- read_csv("my_english.csv")
+#read_csv("/home/ichiro/Documents/work_files/english_slides/orientation/my_english.csv")
+ne_world <- ne_world |> left_join(my_english) |> 
+  mutate(english_spoken = replace_na(english_spoken,FALSE)) |> 
+  mutate(chinese_spoken = replace_na(chinese_spoken,FALSE))
+```
+
+
+```{r eval=TRUE, out.width="90%"}
+ne_world |> ggplot() + geom_sf()
+```
+
+## Japan is here
+\Large
+
+\textcolor{orange}{\bfseries Japan} is here.
+
+```{r eval=TRUE,out.width="90%"}
+ne_world |> mutate(is_japan = if_else(iso_a3 == "JPN", "Japan", "Other")) |> 
+  ggplot() + geom_sf(aes(fill=is_japan) ) +
+  scale_fill_manual(values = c("Japan" = "orange", "Other" = "white"),guide="none") 
+  
+```
+
+
+## 世界のことば
+
+```{r eval = TRUE, echo = FALSE, languages}
+base_data <- tribble(
+  ~language, ~speakers, ~n,
+  #---------|----------|----
+  "English","native",380,
+  "English","non_native",1080,
+  "Mandarin Chinese","native",940,
+  "Mandarin Chinese","non_native",199,
+  "Hindi", "native",345,  
+  "Hindi", "non_native",265,
+  "Spanish","native",485,
+  "Spanish","non_native",74,
+)
+
+# 因子レベルの順序を指定
+base_data$speakers <- factor(base_data$speakers, levels = c("non_native", "native"))
+
+# native スピーカー数で言語をソートする
+language_order <- base_data %>%
+  filter(speakers == "native") %>%
+#  arrange(desc(n)) %>%
+  arrange(n) |> 
+  pull(language)
+
+# 言語の因子レベルを設定
+base_data$language <- factor(base_data$language, levels = language_order)
+```
+
+\Large
+
+日本では日本語
+
+\pause
+
+Quiz: 世界にはどんなことばがありますか
+
+## 日本語以外のことばをあげてみよう
+
+\Large
+
+
+- 日本語
+- 英語
+- 中国語
+- 韓国語
+- フランス語
+- ドイツ語
+- スペイン語
+- アラビア語 \ldots
+
+\pause
+
+ほかにもたくさんあります
+
+## 世界にはいくつのことばがあるの
+
+
+\Large
+Quiz: ところで、世界にはいくつくらいことばがあるの？
+
+\pause
+
+\vfill
+
+\centering
+\begin{tabular}{lr}
+(A) &7\\\pause
+(B) &70\\\pause
+(C) &700\\\pause
+(D) &7,000
+\end{tabular}
+
+\vfill
+
+## Answer
+
+\Huge
+\vfill
+
+\centering
+7,164
+
+\vfill
+
+\raggedleft
+\scriptsize
+https://www.ethnologue.com/insights/how-many-languages/による
+
+
+## びっくり
+
+\Large
+
+  \begin{columns}
+    \begin{column}{0.475\textwidth}
+      ええー、そんなにあるの
+    \end{column}
+    \begin{column}{0.475\textwidth}
+      \IfFileExists{surprised.png}{\includegraphics[width=.6\textwidth]{surprised.png}}{\relax}
+            {\tiny Designed by Wannapik}
+      \end{column}
+  \end{columns}
+
+## そのうちのひとつ
+
+\Large
+
+ということは\pause
+
+
+日本語は\Huge \phantom{0}$\frac{1}{7,164}$\phantom{0}\Large ということですね
+
+\vfill
+\pause
+
+でもそれをいったら、\pause
+英語もフランス語もドイツ語も\pause
+スペイン語もアラビア語もヒンディー語も\pause
+中国語も韓国語も、\pause
+みーんな\Huge\phantom{0}$\frac{1}{7,164}$\phantom{0}\Large ということです
+
+\vfill
+\pause
+
+どの言語が優れているとかいうようなことはまったくありません
+
+## どのことばを話す人がおおいの
+
+
+\Large
+
+どのことばも7,164あることばのひとつ、\pause
+つまり\Huge\phantom{0}$\frac{1}{7,164}$\phantom{0}
+
+\Large
+\pause
+とはいっても、
+それぞれのことばを話している人の数も同じということになるでしょうか
+
+\pause
+
+そのことばを話す人の数がおおいことばもあれば、
+話す人があまりいないことばもあるはずです。
+
+## Quiz
+\Large
+
+では、ここでもうひとつの問題です。
+つぎの4つの言語で、話す人の数がおおい順に
+並べると、どうなるでしょうか\pause
+
+ただし生まれてはじめて身につけたことばという条件で
+
+\pause
+
+- 中国語(Mandarin Chinese)
+- スペイン語(Spanish)
+- 英語(English)
+- ヒンディー語(Hindi)
+
+
+## 生まれて初めて身につけたことば
+
+```{r out.height="95%"}
+base_data |> 
+  ggplot() + geom_col(aes(language, n, fill=speakers)) +
+#  theme_few() + scale_fill_few("Light") +
+ scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "white"),guide="none") +
+  coord_flip() +
+  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)",
+       caption="https://www.ethnologue.com/insights/most-spoken-language/より作成")
+```
+
+## 第一言語として話す人の数がおおいことば
+
+\raggedleft
+(単位: 100万人)
+
+\vfill
+
+\Large
+\centering
+
+```{r}
+base_data |> filter(speakers == "native") |>
+  pivot_wider(names_from=speakers, values_from=n) |>
+  arrange(desc(native)) |> 
+  rename("ことば" = language, "話者数" = native) |> 
+    knitr::kable(
+    digits = 0,
+    format.args = list(
+      big.mark = ",",
+      scientific = FALSE
+    ),
+    format = "latex", booktabs = TRUE
+  )
+```
+
+\vfill
+
+\raggedleft
+\scriptsize
+https://www.ethnologue.com/insights/most-spoken-language/による
+
+## 複数のことばを話す人もいますよね
+
+\Large
+
+第一言語はAということばだけれど、
+
+そのほかにも第二言語としてBということばを話す人がいます
+
+
+## 第一言語ではないけど、そのことば話します
+
+\Large
+
+第一言語ではないけれど、そのことばを話します
+
+そういう人をあわせると、
+どうなるでしょうか
+
+## 第一言語として話す人の数はこうでしたね
+
+```{r out.height="95%"}
+base_data |> 
+  ggplot() + geom_col(aes(language, n, fill=speakers)) +
+#  theme_few() + scale_fill_few("Light") +
+ scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "white"),guide="none") +
+  coord_flip() +
+  labs(x="言語", y ="人数(100万人)",
+       title="言語別の話者数(100万人)",
+       caption="https://www.ethnologue.com/insights/most-spoken-language/より作成")
+```
+
+## 第一言語ではない人を合わせるとこうなります
+
+```{r out.height="95%"}
+base_data |> 
+  ggplot() + geom_col(aes(language, n, fill=speakers)) +
+#  theme_few() + scale_fill_few("Light") +
+ scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "#f39800"),guide="none") +
+  coord_flip() +
+  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)",
+       caption="https://www.ethnologue.com/insights/most-spoken-language/より作成")
+```
+
+## あれあれ
+
+\Huge
+
+大逆転
+
+## つまり
+
+\raggedleft
+(単位: 100万人)
+
+\vfill
+
+\Large
+
+```{r}
+base_data |> pivot_wider(names_from=speakers, values_from=n) |>
+  janitor::adorn_totals(where = "col") |> 
+  rename("ことば" = language, "第一言語" = native, "それ以外" = "non_native")  |> 
+  knitr::kable(
+    digits = 0,
+    format.args = list(
+      big.mark = ",",
+      scientific = FALSE
+    ),
+    format = "latex", booktabs = TRUE
+  )
+```
+
+
+\vfill
+
+\scriptsize
+https://www.ethnologue.com/insights/most-spoken-language/による
+
+## 話す人を全部あわせると
+\Large
+
+世界には7,164のことばがありますが、
+
+話す人をぜんぶあわせると\pause
+\textcolor{Maroon}{英語を話す人がいちばんおおい}\pause
+
+2位は中国語\pause
+
+\centering
+\vfill
+
+\begin{tabular}{lr}\toprule
+ことば&話者数\\
+\midrule
+英語&14億6000万人\\
+中国語　&11億3900万人\\
+\bottomrule
+\end{tabular}
+
+## そのことばを話す人はどこに住んでいるの
+
+\Large
+
+中国語と英語を話す人が
+
+世界のどこに住んでいるか見てみましょう。
+
+
+## Chinese
+
+```{r}
+ne_world |> 
+     ggplot() + 
+     geom_sf(aes(fill = chinese_spoken)) +
+     scale_fill_manual(values = c("TRUE" = "#f39800", "FALSE" = "white"), guide="none") +
+    labs(title="中国語")
+```
+
+## 中国語を話す人
+\Large
+\textcolor{Maroon}{中国語}を話す人は\textcolor{Maroon}{中国に集中}していますね
+
+## English
+
+```{r}
+ne_world |> 
+     ggplot() + 
+     geom_sf(aes(fill = english_spoken)) +
+     scale_fill_manual(values = c("TRUE" = "#0068b7", "FALSE" = "white"),guide="none") +
+    labs(title="英語")
+```
+
+## English
+\Large
+
+\textcolor{NavyBlue}{英語}を話す人は\textcolor{NavyBlue}{世界中にいます}
+
+## つまり
+\Large
+
+\textcolor{Maroon}{中国語}を話す人は、\textcolor{Maroon}{中国に集中}しています\pause
+
+いっぽう、\textcolor{NavyBlue}{英語は広く世界中で話されています}
+
+## わたしたちが勉強する英語ってどんなことばなの
+
+\Large
+
+- 英語は話す人の数が\textcolor{NavyBlue}{いちばんおおい}
+- 英語は\textcolor{NavyBlue}{広く世界中で}話されている
+
+\pause
+つまり\pause
+
+\textcolor{NavyBlue}{英語は世界の共通語}といっていいだろう
+
+## 英語は世界の共通語
+\Large
+
+さまざまな分野で使われています
+
+- ビジネス
+- 医療
+- スポーツ
+- 芸術(文学・音楽) などなど
+
+## 英語を身につけると
+\Large
+
+\textcolor{Maroon}{\bfseries 楽しい}ことがたくさんあります\pause
+
+いっしょに\textcolor{Maroon}{\bfseries 楽しく}英語の勉強をしましょう
+
+
+## 
+
+\Huge
+
+\centering
+English is fun.
+
+
+# See you next time.
+
+##
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```

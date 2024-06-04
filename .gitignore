@@ -57,6 +57,7 @@ rsconnect/
 *.pdf
 *.jpg
 *.png
+*.odg
 *.aux
 *.log
 *.nav
