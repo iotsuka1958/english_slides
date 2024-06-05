@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
@@ -13,9 +13,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usepackage{xcolor}
+\usepackage{circledsteps}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{tikzpeople}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 音声リンク表示
 \newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
@@ -45,20 +59,42 @@
 \end{frame}
 
 \section{主語と動詞}
+
+\begin{frame}<1-5>[plain]{「主語」とは、「動詞」とは}
+\large
+
+「だれだれは〜する」
+
+\bigskip
+
+\begin{enumerate}
+ \item \alt<1>{\myAnch{s_1}{white}{わたしは}}{\myAnch{S_1}{Maroon}{わたしは}}英語を\alt<1>{\myAnch{v_1}{white}{話す}}{\myAnch{V_1}{NavyBlue}{話す}}。
+ \item \alt<1-2>{\myAnch{s_2}{white}{あなたは}}{\myAnch{S_2}{Maroon}{あなたは}}寿司を\alt<1-2>{\myAnch{v_2}{white}{食べる}}{\myAnch{V_2}{NavyBlue}{食べる}}。
+ \item \alt<1-3>{\myAnch{s_3}{white}{われわれは}}{\myAnch{S_3}{Maroon}{われわれは}}バスで職場に\alt<1-3>{\myAnch{v_3}{white}{行く}}{\myAnch{V_3}{NavyBlue}{行く}}。
+ \item 毎朝、\alt<1-4>{\myAnch{s_4}{white}{彼らは}}{\myAnch{S_4}{Maroon}{彼らは}}コーヒーを\alt<1-4>{\myAnch{v_4}{white}{飲む}}{\myAnch{V_4}{NavyBlue}{飲む}}。
+\end{enumerate}
+
+
+\mbox{}\hfill \myAnch{S}{Maroon}{主語}\myAnch{V}{NavyBlue}{動詞}
+
+ 
+\end{frame}
+
+
 \begin{frame}<1-34>[plain]\frametitle{Aは〜する.}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \textbf<14>{\color<14>{red}{I}} \textbf<15>{\color<15>{blue}{like}} music. \onslide*<2>{わたしは音楽が好きです。}\onslide*<28>{\footnotesize like: 好き、好む　music: 音楽}
-   \item<3-> \textbf<16>{\color<16>{red}{We}} \textbf<17>{\color<17>{blue}{go}} to school by bus. \onslide*<4>{われわれはバスで通学します。}\onslide*<29>{\footnotesize by bus: バスで}
-   \item<5-> \textbf<18>{\color<18>{red}{They}} \textbf<19>{\color<19>{blue}{speak}} English and Japanese. \onslide*<6>{彼らは英語と日本語を話す。}\onslide*<30>{\footnotesize speak: 話す}
-   \item<7-> \textbf<20>{\color<20>{red}{I}} \textbf<21>{\color<21>{blue}{drink}} coffee every morning. \onslide*<8>{わたしは毎朝コーヒーを飲みます。}\onslide*<31>{\footnotesize drink: 飲む　coffee: コーヒー　every morning: 毎朝}
-   \item<9-> \textbf<22>{\color<22>{red}{They}} \textbf<23>{\color<23>{blue}{study}} at the library. \onslide*<10>{彼らは図書館で勉強します。}\onslide*<32>{\footnotesize study: 勉強する　at the library: 図書館で}
-   \item<11-> \textbf<24>{\color<24>{red}{We}} \textbf<25>{\color<25>{blue}{eat}} bread for breakfast. \onslide*<12>{われわれは朝食にパンを食べる。}\onslide*<33>{\footnotesize eat: 食べる　bread: パン　for breakfast: 朝食に}
+   \item<1-> \textbf<14>{\color<14>{red}{I}} \textbf<15>{\color<15>{blue}{like}} music. \onslide*<2>{わたしは音楽が好きです。}\hfill\onslide*<28>{\footnotesize like: 好き、好む　music: 音楽}
+   \item<3-> \textbf<16>{\color<16>{red}{We}} \textbf<17>{\color<17>{blue}{go}} to work by bus. \onslide*<4>{われわれはバスで職場に行く。}\hfill\onslide*<29>{\footnotesize work: 職場　by bus: バスで}
+   \item<5-> \textbf<18>{\color<18>{red}{They}} \textbf<19>{\color<19>{blue}{speak}} English and Japanese. \onslide*<6>{彼らは英語と日本語を話す。}\hfill\onslide*<30>{\footnotesize speak: 話す}
+   \item<7-> \textbf<20>{\color<20>{red}{I}} \textbf<21>{\color<21>{blue}{drink}} coffee every morning. \onslide*<8>{わたしは毎朝コーヒーを飲みます。}\hfill\onslide*<31>{\footnotesize drink: 飲む　coffee: コーヒー　every morning: 毎朝}
+   \item<9-> \textbf<22>{\color<22>{red}{They}} \textbf<23>{\color<23>{blue}{study}} at the library. \onslide*<10>{彼らは図書館で勉強します。}\hfill\onslide*<32>{\footnotesize study: 勉強する　at the library: 図書館で}
+   \item<11-> \textbf<24>{\color<24>{red}{We}} \textbf<25>{\color<25>{blue}{eat}} bread for breakfast. \onslide*<12>{われわれは朝食にパンを食べる。}\hfill\onslide*<33>{\footnotesize eat: 食べる　bread: パン　for breakfast: 朝食に}
   \end{enumerate}
 
 \bigskip
 
-\begin{exampleblock}<27->{Topics for Today}
+\begin{exampleblock}<27->{Topic for Today}
   英文の骨格は主語と動詞です
      \end{exampleblock}
 
@@ -105,15 +141,19 @@ I speak Japanese.
      \end{exampleblock}
 \end{frame}
 
-\begin{frame}[plain]\frametitle{hoge}
- % \myEmph コマンドの定義
+\begin{frame}[plain]\frametitle{Exercises}
+日本語を参考にして、主語と動詞を指摘してください。
+\begin{enumerate}
+    \item \alt<2->{\Circled[outer color=orange]{They}}{They} read a book. 彼らは本を読みます。
+ \item \alt<2->{\Circled[outer color=orange]{I}}{I} play the piano. わたしはピアノを弾きます。
+    \item \alt<2->{\Circled[outer color=orange]{They}}{They} watch TV. 彼らはテレビを見ます。
+    \item \alt<2->{\Circled[outer color=orange]{We}}{We} study English. 私たちは英語を勉強します。
+ \item \alt<2->{\Circled[outer color=orange]{I}}{I} write a letter. 私は手紙を書きます。
+     \item \alt<2->{\Circled[outer color=orange]{Birds}}{Birds} sing. 鳥は歌います。
+    \item \alt<2->{\Circled[outer color=orange]{My parents}}{My parents} swim well. 私の両親は上手に泳ぎます。
+     \item \alt<2->{\Circled[outer color=orange]{The children}}{The children} play soccer. 子供たちはサッカーをします。
+\end{enumerate}
 
-
-hoge
-
-\textbf<1->{\color<2>{red}{oyoyo}} 
-\textbf<2>{\color<2>{red}{oyoyo}}
-\myEmph{1-2}{blue}{foobar}
 
 \end{frame}
 
