@@ -23,7 +23,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \myAnch{<名前>}{<色>}{<テキスト>}
 % 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
-% ノードとして出力する. 図には remeber picture 属性を付けている
+% ノードとして出力する. 図には remember picture 属性を付けている
 % ので外部から参照可能である.
 \newcommand*{\myAnch}[3]{%
   \tikz[remember picture,baseline=(#1.base)]
@@ -60,7 +60,7 @@
 
 \section{主語と動詞}
 
-\begin{frame}<1-5>[plain]{「主語」とは、「動詞」とは}
+\begin{frame}<1-9>[plain]{「主語」とは、「動詞」とは}
 \large
 
 「だれだれは〜する」
@@ -68,42 +68,44 @@
 \bigskip
 
 \begin{enumerate}
- \item \alt<1>{\myAnch{s_1}{white}{わたしは}}{\myAnch{S_1}{Maroon}{わたしは}}英語を\alt<1>{\myAnch{v_1}{white}{話す}}{\myAnch{V_1}{NavyBlue}{話す}}。
- \item \alt<1-2>{\myAnch{s_2}{white}{あなたは}}{\myAnch{S_2}{Maroon}{あなたは}}寿司を\alt<1-2>{\myAnch{v_2}{white}{食べる}}{\myAnch{V_2}{NavyBlue}{食べる}}。
- \item \alt<1-3>{\myAnch{s_3}{white}{われわれは}}{\myAnch{S_3}{Maroon}{われわれは}}バスで職場に\alt<1-3>{\myAnch{v_3}{white}{行く}}{\myAnch{V_3}{NavyBlue}{行く}}。
- \item 毎朝、\alt<1-4>{\myAnch{s_4}{white}{彼らは}}{\myAnch{S_4}{Maroon}{彼らは}}コーヒーを\alt<1-4>{\myAnch{v_4}{white}{飲む}}{\myAnch{V_4}{NavyBlue}{飲む}}。
+ \item \alt<1>{\myAnch{s_1}{white}{わたしは}}{\myAnch{S_1}{Maroon}{わたしは}}英語を\alt<1>{\myAnch{v_1}{white}{話す}}{\myAnch{V_1}{NavyBlue}{話す}}。%
+\hfill{}\visible<6->{hanas\textcolor{NavyBlue}{\bfseries u}}
+ \item \alt<1-2>{\myAnch{s_2}{white}{あなたは}}{\myAnch{S_2}{Maroon}{あなたは}}寿司を\alt<1-2>{\myAnch{v_2}{white}{食べる}}{\myAnch{V_2}{NavyBlue}{食べる}}。%
+\hfill{}\visible<7->{taber\textcolor{NavyBlue}{\bfseries u}}
+ \item \alt<1-3>{\myAnch{s_3}{white}{われわれは}}{\myAnch{S_3}{Maroon}{われわれは}}バスで職場に\alt<1-3>{\myAnch{v_3}{white}{行く}}{\myAnch{V_3}{NavyBlue}{行く}}。%
+\hfill{}\visible<8->{ik\textcolor{NavyBlue}{\bfseries u}}
+ \item 毎朝、\alt<1-4>{\myAnch{s_4}{white}{彼らは}}{\myAnch{S_4}{Maroon}{彼らは}}コーヒーを\alt<1-4>{\myAnch{v_4}{white}{飲む}}{\myAnch{V_4}{NavyBlue}{飲む}}。%
+\hfill{}\visible<9->{nom\textcolor{NavyBlue}{\bfseries u}}
+
 \end{enumerate}
 
 
 \mbox{}\hfill \myAnch{S}{Maroon}{主語}\myAnch{V}{NavyBlue}{動詞}
-
- 
 \end{frame}
 
 
-\begin{frame}<1-34>[plain]\frametitle{Aは〜する.}
+\begin{frame}<1-32>[plain]\frametitle{Aは〜する.}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \textbf<14>{\color<14>{red}{I}} \textbf<15>{\color<15>{blue}{like}} music. \onslide*<2>{わたしは音楽が好きです。}\hfill\onslide*<28>{\footnotesize like: 好き、好む　music: 音楽}
-   \item<3-> \textbf<16>{\color<16>{red}{We}} \textbf<17>{\color<17>{blue}{go}} to work by bus. \onslide*<4>{われわれはバスで職場に行く。}\hfill\onslide*<29>{\footnotesize work: 職場　by bus: バスで}
-   \item<5-> \textbf<18>{\color<18>{red}{They}} \textbf<19>{\color<19>{blue}{speak}} English and Japanese. \onslide*<6>{彼らは英語と日本語を話す。}\hfill\onslide*<30>{\footnotesize speak: 話す}
-   \item<7-> \textbf<20>{\color<20>{red}{I}} \textbf<21>{\color<21>{blue}{drink}} coffee every morning. \onslide*<8>{わたしは毎朝コーヒーを飲みます。}\hfill\onslide*<31>{\footnotesize drink: 飲む　coffee: コーヒー　every morning: 毎朝}
-   \item<9-> \textbf<22>{\color<22>{red}{They}} \textbf<23>{\color<23>{blue}{study}} at the library. \onslide*<10>{彼らは図書館で勉強します。}\hfill\onslide*<32>{\footnotesize study: 勉強する　at the library: 図書館で}
-   \item<11-> \textbf<24>{\color<24>{red}{We}} \textbf<25>{\color<25>{blue}{eat}} bread for breakfast. \onslide*<12>{われわれは朝食にパンを食べる。}\hfill\onslide*<33>{\footnotesize eat: 食べる　bread: パン　for breakfast: 朝食に}
+   \item<1-> \textbf<14->{\color<14->{Maroon}{I}} \textbf<15->{\color<15->{blue}{have}} a car. \onslide*<2-25>{わたしは車を持っている。}\hfill\onslide*<27->{\footnotesize have: 持つ　music: 音楽}
+   \item<3-> \textbf<16->{\color<16->{Maroon}{We}} \textbf<17->{\color<17->{blue}{go}} to work by bus. \onslide*<4-25>{われわれはバスで職場に行く。}\hfill\onslide*<28->{\footnotesize go: 行く　work: 職場　by bus: バスで}
+   \item<5-> \textbf<18->{\color<18->{Maroon}{They}} \textbf<19->{\color<19->{blue}{speak}} English and Japanese. \onslide*<6-25>{彼らは英語と日本語を話す。}\hfill\onslide*<29->{\footnotesize speak: 話す}
+   \item<7-> \textbf<20->{\color<20->{Maroon}{I}} \textbf<21->{\color<21->{blue}{drink}} coffee every morning. \onslide*<8-25>{わたしは毎朝コーヒーを飲みます。}\hfill\onslide*<30->{\footnotesize drink: 飲む　coffee: コーヒー　every morning: 毎朝}
+   \item<9-> \textbf<22->{\color<22->{Maroon}{They}} \textbf<23->{\color<23>{NavyBlue}{study}} at the library. \onslide*<10-25>{彼らは図書館で勉強します。}\hfill\onslide*<31->{\footnotesize study: 勉強する　at the library: 図書館で}
+   \item<11-> \textbf<24->{\color<24->{Maroon}{We}} \textbf<25->{\color<25->{blue}{eat}} bread for breakfast. \onslide*<12-25>{われわれは朝食にパンを食べる。}\hfill\onslide*<32->{\footnotesize eat: 食べる　bread: パン　for breakfast: 朝食に}
   \end{enumerate}
 
 \bigskip
 
-\begin{exampleblock}<27->{Topic for Today}
+\begin{exampleblock}<26->{Topic for Today}
   英文の骨格は主語と動詞です
      \end{exampleblock}
 
 
 % Embed the sound file
-\onslide<34>{%
-\myaudio{./audio/003_sv_01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+\onslide<1->{%
+\myaudio{./audio/003_sv_01.mp3}
 }
-
 \end{frame}
 
 \section{主語と動詞の順番}
@@ -117,7 +119,7 @@
 
 日本語をわたしは話します。\pause
 
-わたしは話します、日本語を。\pause
+日本語を話します、わたしは。\pause
 
 日本語を話します。
 \end{block}
@@ -144,14 +146,14 @@ I speak Japanese.
 \begin{frame}[plain]\frametitle{Exercises}
 日本語を参考にして、主語と動詞を指摘してください。
 \begin{enumerate}
-    \item \alt<2->{\Circled[outer color=orange]{They}}{They} read a book. 彼らは本を読みます。
- \item \alt<2->{\Circled[outer color=orange]{I}}{I} play the piano. わたしはピアノを弾きます。
-    \item \alt<2->{\Circled[outer color=orange]{They}}{They} watch TV. 彼らはテレビを見ます。
-    \item \alt<2->{\Circled[outer color=orange]{We}}{We} study English. 私たちは英語を勉強します。
- \item \alt<2->{\Circled[outer color=orange]{I}}{I} write a letter. 私は手紙を書きます。
-     \item \alt<2->{\Circled[outer color=orange]{Birds}}{Birds} sing. 鳥は歌います。
-    \item \alt<2->{\Circled[outer color=orange]{My parents}}{My parents} swim well. 私の両親は上手に泳ぎます。
-     \item \alt<2->{\Circled[outer color=orange]{The children}}{The children} play soccer. 子供たちはサッカーをします。
+    \item \alt<2->{\Circled[outer color=orange]{They}}{They} \alt<3->{\Circled[outer color=NavyBlue]{read}}{read} a book. 彼らは本を読みます。
+ \item \alt<4->{\Circled[outer color=orange]{I}}{I} \alt<5->{\Circled[outer color=NavyBlue]{play}}{play} the piano. わたしはピアノを弾きます。
+    \item \alt<6->{\Circled[outer color=orange]{They}}{They} \alt<7->{\Circled[outer color=NavyBlue]{watch}}{watch} TV. 彼らはテレビを見ます。
+    \item \alt<8->{\Circled[outer color=orange]{We}}{We} \alt<9->{\Circled[outer color=NavyBlue]{study}}{study} English. 私たちは英語を勉強します。
+ \item \alt<10->{\Circled[outer color=orange]{I}}{I} \alt<11->{\Circled[outer color=NavyBlue]{write}}{write} a letter. 私は手紙を書きます。
+     \item \alt<12->{\Circled[outer color=orange]{Birds}}{Birds} \alt<13->{\Circled[outer color=NavyBlue]{sing}}{sing}. 鳥は歌います。
+    \item \alt<14->{\Circled[outer color=orange]{Dogs}}{My parents} \alt<15->{\Circled[outer color=NavyBlue]{swim}}{swim} well. 犬は上手に泳ぎます。
+     \item \alt<16->{\Circled[outer color=orange]{They}}{They} \alt<17->{\Circled[outer color=NavyBlue]{like}}{like} music. 彼らは音楽が好きだ。
 \end{enumerate}
 
 
