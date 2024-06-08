@@ -64,6 +64,17 @@ A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
 
 <!--
 These are lowercase letters. Please listen carefully.
+
+A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
+
+Once more. 
+
+A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
+
+Please listen once more.
+
+A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
+
 -->
 
 ## 発音を聞きましょう<span style="font-size:60%;">(左が大文字、右が小文字です)</span>
@@ -74,7 +85,7 @@ These are lowercase letters. Please listen carefully.
 
 
 
-<!--Please listen carefully.  A. A. A. A. A.  -->
+<!--Please listen carefully. The first alphabet is A.  A. A. A. A. A.  -->
 
 
 ---
@@ -183,7 +194,7 @@ These are lowercase letters. Please listen carefully.
 <span style="font-size:1200%;">m</span>
 </center>
 
-<!--- The next alphabet is M. Please listen carefully.  M. M  M  M. M. -->
+<!--- The next alphabet is M. Please listen carefully.  M. M,  M,  M. M. -->
 
 ---
 
@@ -192,7 +203,7 @@ These are lowercase letters. Please listen carefully.
 <span style="font-size:1600%;">n</span>
 </center>
 
-<!--- The next alphabet isNE. Please listen carefully. N. N. N. N. N. -->
+<!--- The next alphabet is N. Please listen carefully. N. N. N. N. N. -->
 
 ---
 

@@ -23,6 +23,18 @@ Y.<break time="2s"/>Z.<break time="2s"/></p>
 </prosody>
 </speak>
 %%%%%%%%%%%%%%%%%%%%%
+001_alphabet_02.mp3<speak>
+
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone.</p>
+<p><lang xml:lang="ja-JP">聞こえたアルファベットを書いてください。はじめます。</lang></p><break time="3s"/>
+<p>E. <break time="3s"/> D. <break time="3s"/> U. <break time="3s"/>  O.<break time="3s"/>  P. <break time="2s"/> C.<break time="3s"/>  H.<break time="3s"/> I.<break time="3s"/> B. <break time="2s"/> A.<break time="3s"/>  </p>
+<p><lang xml:lang="ja-JP">もう一度くりかえします。</lang>Please listen carefully.</p><break time="3s"/>
+<p>E. <break time="3s"/> D. <break time="3s"/> U. <break time="3s"/>  O.<break time="3s"/>  P. <break time="2s"/> C.<break time="3s"/>  H.<break time="3s"/> I.<break time="3s"/> B. <break time="2s"/> A.<break time="3s"/>  </p>
+<p>Good job, everyone!</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%
 002_be_01.mp3
 「AはBだ」
 <speak>
