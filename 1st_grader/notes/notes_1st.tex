@@ -1,0 +1,214 @@
+\documentclass[12pt]{jlreq}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 欧文TTF/OTFフォントを利用するにはfontspec.styをロードする必要あり
+%% 和文TTF/OTFフォントを利用するにはluatexja-fontspec.styをロードする必要あり
+%% luatexja-fontspec.styはfontspec.styをないぶてきにロードする
+%% lualatex-ja-preset.sty は luatexja-fontspec.styをロードする
+%% つまり次の1行でluatexja-fontspec.sty, fontspec.styも自動的にロードされる
+\usepackage[no-math,deluxe,expert,haranoaji]{luatexja-preset}
+%%%%
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{pxrubrica}
+\usepackage[default]{fontsetup}
+%%%% tabular環境の改良版
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+%%%% ハイパーリンク
+%%%% hyperref.sty は preamble の最後で読み込む
+\usepackage{hyperref}
+\usepackage{xurl}
+\hypersetup{
+  bookmarks=true,
+  bookmarksnumbered=true,
+  pdfauthor={iotsuka1958}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{tcolorbox}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{luatexja-otf}
+\ltjsetparameter{jacharrange={-2}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{array}
+%%%%%%%%%%%%%%%%%%%%%%
+% カスタム列指定子を定義
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}\Large
+ アルファベットmanuscript
+\end{center}
+
+\bigskip
+
+\begin{tcolorbox}[title=いちばんはじめに]
+\begin{itemize}
+ \item usbメモリ:\url{/music.mp3}をMediaPlayerで開いて連続再生
+ \item usbメモリ:\url{/english_slidesfiles/1st_grade/001_alphabet.pdf}をadobe readerで開いてzoomで共有(サウンドを共有にチェック)
+ \item usbメモリ:\url{/english_slides/1st_grade/video/001_alphabet.mp4}をchromeのタブで開いておく
+\end{itemize}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[title=授業の直前に]
+\begin{itemize}
+ \item 流している音楽music.mp3を止める
+ \item zoomのマイク、カメラをON
+\end{itemize}
+\end{tcolorbox}
+
+\section{でだし}
+みなさん、こんにちは。
+
+エデュオプちばの英語の授業にようこそ。
+
+先週は、オリエンテーション、本格的な授業に入る前の準備期間ということで
+\begin{enumerate}
+ \item 安心して学ぶ場にするために
+ \item 授業の進め方や内容など
+ \item 英語ってどんなことばなの
+\end{enumerate}
+について、お話しました。
+
+
+\section{アルファベット}
+
+\subsection{でだし}
+きょうは3時間目です。
+
+きょうの予定はごらんのとおりです。
+
+アルファベットについて学習します。
+
+もう知っているという人が多いと思うのですが、
+聞き取りや発音の練習をします。
+
+リラックスして参加してください。それでははじめます。
+
+\begin{tcolorbox}[title=zoomの管理ボタンで]
+\begin{itemize}
+ \item カメラOFF
+\end{itemize}
+\end{tcolorbox}
+
+
+\subsection{アルファベットとは}
+
+さて、アルファベットという言葉は聞いたことがあるでしょう。
+
+では、あらたまって、
+「アルファベットとはなんでしょうか？」と聞かれたら、なんて答えればいいでしょうか。
+
+英語のアルファベットは、英語を書くために使用される文字のセットです。
+
+26種類あります。それぞれについて大文字と小文字があります。
+
+\subsection{英語のアルファベットの文字数}
+
+英語のアルファベットは、26種類で
+大文字と小文字を合わせると、$26\times{}2$あるいは$26+26$どちらでも同じことですが、
+合計52文字になりますね。
+
+\subsubsection{日本語との比較}
+
+ここで日本語について考えてみましょう。
+
+ひらがなとカタカナ、それぞれ46文字ですから、かなだけでも$46\times{}2=92\text{文字}$ですから、
+かなだけで英語のアルファベットよりも多いですね。
+
+さらに日本語の場合はひらがなカタカナだけではありませんね。
+漢字があります。
+漢字の数は、まさに膨大です。ある漢和辞典には5万字が収録されているということですが、
+まあ、わたしたちが日常的に使っている常用漢字は2,136文字です。
+
+そうするとひらがな、カタカナに常用漢字を足し算すると
+2,228文字となります。
+
+英語のアルファベットの文字数は、日本の文字体系と比較するとかなり少ないということがわかります。
+
+
+（スライドを進める。$English\colon{}52<2,228\colon{}Japanese$）。
+
+\subsection{52 $<$ 2,228}
+52文字をしっかりと身につけることで、英語の世界に飛び込んでいく準備がととのいます。
+
+では、さっそくアルファベットの練習です。
+
+\subsection{大文字}
+
+まず、大文字です。
+
+これからアルファベットの音に耳をよく傾けてもらい、
+そのあと実際に発音してもらいます。
+
+Please listen carefully.とPlease repeat after me.は覚えていますか。
+
+それでは始めます。
+
+(mp3を流す。2\,min42\,sec)
+
+では、続いて小文字です。
+
+\subsection{小文字}
+
+さきほどと同じ要領で練習しましょう。
+
+
+(mp3を流す。2\,min42\,sec)
+
+\subsection{mp4視聴}
+では、動画を視聴してもらいます。注意して聞いてください。
+
+\begin{tcolorbox}[title=zoomの管理ボタンで]
+\begin{itemize}
+ \item mp4のchromeタブを共有し、全画面にしてスタート。6\,min47\,sec)
+ \item (動画が終わったら)pdfの画面を共有(サウンド共有になっていることをチェック)する
+\end{itemize}
+ 
+\end{tcolorbox}
+
+\subsection{まとめ}
+
+\begin{itemize}
+ \item アルファベットは26種類です
+ \item 大文字と小文字があります
+       \begin{itemize}
+	\item 大文字小文字を区別できるようになろう
+        \item 大文字と小文字を書けるようになろう
+       \end{itemize}
+ \item 聞き取れるようになったら実際に発音してみよう
+\end{itemize}
+
+\subsubsection{大文字と小文字を正しく書くにはどうすればいいですか？}
+
+練習が重要です！アルファベットを定期的に大文字と小文字で書くことで、
+身につきます。
+
+\subsection{quiz}
+
+これからアルファベットを読みあげます。
+
+聞こえたアルファベットを順番に書いてください。
+
+ぜんぶで10文字です。
+
+音声は2回繰り返します。
+
+(mp3を流す。1\,min34\,sec)
+
+いかがでしたか。それでは答え合わせです。
+
+EDUOP CHIBA
+
+(時間が余っていたらもう1回mp3を流すことで調整)
+\subsection{終わり}
+
+それではきょうはこれで終わります。
+
+\end{document}
+n
