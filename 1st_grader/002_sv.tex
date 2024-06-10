@@ -17,6 +17,9 @@
 \usetikzlibrary{backgrounds}
 \usepackage{tcolorbox}
 \usepackage{tikzpeople}
+\usepackage{twemojis}
+\usepackage{tikzsymbols}
+\usepackage{utfsym}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -27,7 +30,7 @@
 % ので外部から参照可能である.
 \newcommand*{\myAnch}[3]{%
   \tikz[remember picture,baseline=(#1.base)]
-    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+    \node[draw,rectangle,line width=1pt,#2] (#1) {\normalcolor #3};
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -52,7 +55,7 @@
   \titlepage
 \end{frame}
 
-\section*{目次}
+\section*{授業の流れ}
 \begin{frame}[plain]
   \frametitle{授業の流れ}
   \tableofcontents
@@ -60,27 +63,63 @@
 
 \section{主語と動詞}
 
-\begin{frame}<1-9>[plain]{「主語」とは、「動詞」とは}
+
+
+
+\begin{frame}<1-6>[plain]{だれが何をしていますか}
 \large
 
-「だれだれは〜する」
+%\raggedleft
+\begin{columns}
+\begin{column}{.245\textwidth}
+\visible<2->{この写真では}%
 
 \bigskip
 
-\begin{enumerate}
- \item \alt<1>{\myAnch{s_1}{white}{わたしは}}{\myAnch{S_1}{Maroon}{わたしは}}英語を\alt<1>{\myAnch{v_1}{white}{話す}}{\myAnch{V_1}{NavyBlue}{話す}}。%
-\hfill{}\visible<6->{hanas\textcolor{NavyBlue}{\bfseries u}}
- \item \alt<1-2>{\myAnch{s_2}{white}{あなたは}}{\myAnch{S_2}{Maroon}{あなたは}}寿司を\alt<1-2>{\myAnch{v_2}{white}{食べる}}{\myAnch{V_2}{NavyBlue}{食べる}}。%
-\hfill{}\visible<7->{taber\textcolor{NavyBlue}{\bfseries u}}
- \item \alt<1-3>{\myAnch{s_3}{white}{われわれは}}{\myAnch{S_3}{Maroon}{われわれは}}バスで職場に\alt<1-3>{\myAnch{v_3}{white}{行く}}{\myAnch{V_3}{NavyBlue}{行く}}。%
-\hfill{}\visible<8->{ik\textcolor{NavyBlue}{\bfseries u}}
- \item 毎朝、\alt<1-4>{\myAnch{s_4}{white}{彼らは}}{\myAnch{S_4}{Maroon}{彼らは}}コーヒーを\alt<1-4>{\myAnch{v_4}{white}{飲む}}{\myAnch{V_4}{NavyBlue}{飲む}}。%
-\hfill{}\visible<9->{nom\textcolor{NavyBlue}{\bfseries u}}
+\visible<3->{ねこが}\\
+\visible<4->{ミルクを\\飲んでいる}
+\bigskip
 
-\end{enumerate}
+\bigskip
+
+\visible<5->{$\text{主語}=\text{ねこ}$}
+\visible<6->{$\text{動詞}=\text{飲んでいる}$}
+\end{column}
+\begin{column}{.74\textwidth}
+\includegraphics[width=.99\textwidth]{../images/cat_drinkimg_milk.jpg}
+\end{column}
+\end{columns}
+
+\tiny
+\raggedleft
+
+"Domestic cat drinkimg milk" by Kengee8 is licensed under CC BY-SA 4.0.\\
+ To view a copy of this license, 
+visit \url{https://creativecommons.org/licenses/by-sa/4.0/?ref=openverse}.
+\end{frame}
 
 
-\mbox{}\hfill \myAnch{S}{Maroon}{主語}\myAnch{V}{NavyBlue}{動詞}
+
+\begin{frame}<1-15>[plain]{「主語」とは、「動詞」とは}
+\large
+
+\visible<1->{\alt<1>{\myAnch{syugo}{white}{だれだれは}}{\myAnch{SYUGO}{Maroon}{だれだれは}}\alt<1>{\myAnch{doshi}{white}{〜する}}{\myAnch{DOSHI}{NavyBlue}{〜する}}}
+\bigskip
+
+\visible<3->{\begin{enumerate}
+ \item \alt<3>{\myAnch{s_1}{white}{わたしは}}{\myAnch{S_1}{Maroon}{わたしは}}英語を\alt<3-4>{\myAnch{v_1}{white}{話す}}{\myAnch{V_1}{NavyBlue}{話す}}。%
+\hfill{}\visible<12->{hanas\textcolor{NavyBlue}{\bfseries u}}
+ \item \alt<3-5>{\myAnch{s_2}{white}{あなたは}}{\myAnch{S_2}{Maroon}{あなたは}}寿司を\alt<3-6>{\myAnch{v_2}{white}{食べる}}{\myAnch{V_2}{NavyBlue}{食べる}}。%
+\scalebox{2}{\twemoji{sushi}}%
+\hfill{}\visible<13->{taber\textcolor{NavyBlue}{\bfseries u}}
+ \item \alt<3-7>{\myAnch{s_3}{white}{われわれは}}{\myAnch{S_3}{Maroon}{われわれは}}バスで職場に\alt<3-8>{\myAnch{v_3}{white}{行く}}{\myAnch{V_3}{NavyBlue}{行く}}。\usym{1F68C}%
+\hfill{}\visible<14->{ik\textcolor{NavyBlue}{\bfseries u}}
+ \item \mbox{}\hspace{5pt}毎朝、\alt<3-9>{\myAnch{s_4}{white}{彼らは}}{\myAnch{S_4}{Maroon}{彼らは}}コーヒーを\alt<3-10>{\myAnch{v_4}{white}{飲む}}{\myAnch{V_4}{NavyBlue}{飲む}}。\scalebox{1.6}{\Coffeecup}%
+\hfill{}\visible<15->{nom\textcolor{NavyBlue}{\bfseries u}}
+\end{enumerate}}
+
+
+\mbox{}\hfill \visible<1->{\myAnch{S}{Maroon}{主語}\myAnch{V}{NavyBlue}{動詞}}
 \end{frame}
 
 
@@ -146,17 +185,20 @@ I speak Japanese.
 \begin{frame}[plain]\frametitle{Exercises}
 日本語を参考にして、主語と動詞を指摘してください。
 \begin{enumerate}
-    \item \alt<2->{\Circled[outer color=orange]{They}}{They} \alt<3->{\Circled[outer color=NavyBlue]{read}}{read} a book. 彼らは本を読みます。
+    \item \alt<2->{\Circled[outer color=orange]{You}}{You} \alt<3->{\Circled[outer color=NavyBlue]{have}}{have} a nice car. あなたはいい車を持っている。
  \item \alt<4->{\Circled[outer color=orange]{I}}{I} \alt<5->{\Circled[outer color=NavyBlue]{play}}{play} the piano. わたしはピアノを弾きます。
     \item \alt<6->{\Circled[outer color=orange]{They}}{They} \alt<7->{\Circled[outer color=NavyBlue]{watch}}{watch} TV. 彼らはテレビを見ます。
     \item \alt<8->{\Circled[outer color=orange]{We}}{We} \alt<9->{\Circled[outer color=NavyBlue]{study}}{study} English. 私たちは英語を勉強します。
  \item \alt<10->{\Circled[outer color=orange]{I}}{I} \alt<11->{\Circled[outer color=NavyBlue]{write}}{write} a letter. 私は手紙を書きます。
      \item \alt<12->{\Circled[outer color=orange]{Birds}}{Birds} \alt<13->{\Circled[outer color=NavyBlue]{sing}}{sing}. 鳥は歌います。
-    \item \alt<14->{\Circled[outer color=orange]{Dogs}}{My parents} \alt<15->{\Circled[outer color=NavyBlue]{swim}}{swim} well. 犬は上手に泳ぎます。
+    \item \alt<14->{\Circled[outer color=orange]{Dogs}}{Dogs} \alt<15->{\Circled[outer color=NavyBlue]{swim}}{swim} well. 犬は上手に泳ぎます。
      \item \alt<16->{\Circled[outer color=orange]{They}}{They} \alt<17->{\Circled[outer color=NavyBlue]{like}}{like} music. 彼らは音楽が好きだ。
 \end{enumerate}
 
-
+% Embed the sound file
+\onslide<1->{%
+\myaudio{./audio/003_sv_02.mp3}
+}
 \end{frame}
 
 \end{document}

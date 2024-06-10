@@ -1,3 +1,8 @@
-E. <break time="3s"/> D. <break time="3s"/> U. <break time="3s"/>  O.<break time="3s"/>  P.
-<break time="3s"/>  C.<break time="3s"/>  H.<break time="3s"/> I.<break time="3s"/> B.
-<break time="3s"/>  A.<break time="3s"/> 
+They read a book. 
+I play the piano. 
+They watch TV. 
+We study English. 
+I write a letter. 
+Birds sing. 
+My parents swim well. 
+They like music. 
