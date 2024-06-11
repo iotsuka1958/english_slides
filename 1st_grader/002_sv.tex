@@ -41,6 +41,14 @@
 \newcommand{\myEmph}[3]{%
     \textbf<#1>{\color<#1>{#2}{#3}}%
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.\,\,{}---主語と動詞---}
 \author{}
@@ -66,7 +74,7 @@
 
 
 
-\begin{frame}<1-6>[plain]{だれが何をしていますか}
+\begin{frame}<1-6>[plain, label=cats]{だれが何をしていますか}
 \large
 
 %\raggedleft
@@ -119,19 +127,18 @@ visit \url{https://creativecommons.org/licenses/by-sa/4.0/?ref=openverse}.
 \end{enumerate}}
 
 
-\mbox{}\hfill \visible<1->{\myAnch{S}{Maroon}{主語}\myAnch{V}{NavyBlue}{動詞}}
-\end{frame}
+\mbox{}\hfill \visible<1->{\myAnch{S}{Maroon}{主語}\myAnch{V}{NavyBlue}{動詞}}\end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-32>[plain]\frametitle{Aは〜する.}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \textbf<14->{\color<14->{Maroon}{I}} \textbf<15->{\color<15->{blue}{have}} a car. \onslide*<2-25>{わたしは車を持っている。}\hfill\onslide*<27->{\footnotesize have: 持つ　music: 音楽}
-   \item<3-> \textbf<16->{\color<16->{Maroon}{We}} \textbf<17->{\color<17->{blue}{go}} to work by bus. \onslide*<4-25>{われわれはバスで職場に行く。}\hfill\onslide*<28->{\footnotesize go: 行く　work: 職場　by bus: バスで}
-   \item<5-> \textbf<18->{\color<18->{Maroon}{They}} \textbf<19->{\color<19->{blue}{speak}} English and Japanese. \onslide*<6-25>{彼らは英語と日本語を話す。}\hfill\onslide*<29->{\footnotesize speak: 話す}
-   \item<7-> \textbf<20->{\color<20->{Maroon}{I}} \textbf<21->{\color<21->{blue}{drink}} coffee every morning. \onslide*<8-25>{わたしは毎朝コーヒーを飲みます。}\hfill\onslide*<30->{\footnotesize drink: 飲む　coffee: コーヒー　every morning: 毎朝}
-   \item<9-> \textbf<22->{\color<22->{Maroon}{They}} \textbf<23->{\color<23>{NavyBlue}{study}} at the library. \onslide*<10-25>{彼らは図書館で勉強します。}\hfill\onslide*<31->{\footnotesize study: 勉強する　at the library: 図書館で}
-   \item<11-> \textbf<24->{\color<24->{Maroon}{We}} \textbf<25->{\color<25->{blue}{eat}} bread for breakfast. \onslide*<12-25>{われわれは朝食にパンを食べる。}\hfill\onslide*<32->{\footnotesize eat: 食べる　bread: パン　for breakfast: 朝食に}
+   \item<1-> \alt<14->{\Circled[outer color=Maroon]{I}}{I}  \alt<15->{\Circled[outer color=NavyBlue]{have}}{have} a car. \onslide*<2-25>{わたしは車を持っている。}\hfill\onslide*<27->{\footnotesize have: 持つ　music: 音楽}
+   \item<3->  \alt<16->{\Circled[outer color=Maroon]{We}}{We}  \alt<17->{\Circled[outer color=NavyBlue]{go}}{go} to work by bus. \onslide*<4-25>{われわれはバスで職場に行く。}\hfill\onslide*<28->{\footnotesize go: 行く　work: 職場　by bus: バスで}
+   \item<5->  \alt<18->{\Circled[outer color=Maroon]{They}}{They}  \alt<19->{\Circled[outer color=NavyBlue]{speak}}{speak} English and Japanese. \onslide*<6-25>{彼らは英語と日本語を話す。}\hfill\onslide*<29->{\footnotesize speak: 話す}
+   \item<7->  \alt<20->{\Circled[outer color=Maroon]{I}}{I}  \alt<21->{\Circled[outer color=NavyBlue]{drink}}{drink} coffee every morning. \onslide*<8-25>{わたしは毎朝コーヒーを飲みます。}\hfill\onslide*<30->{\footnotesize drink: 飲む　coffee: コーヒー　every morning: 毎朝}
+   \item<9->  \alt<22->{\Circled[outer color=Maroon]{They}}{They}  \alt<23->{\Circled[outer color=NavyBlue]{study}}{study} at the library. \onslide*<10-25>{彼らは図書館で勉強します。}\hfill\onslide*<31->{\footnotesize study: 勉強する　at the library: 図書館で}
+   \item<11->  \alt<24->{\Circled[outer color=Maroon]{We}}{We}  \alt<25->{\Circled[outer color=NavyBlue]{eat}}{eat} bread for breakfast. \onslide*<12-25>{われわれは朝食にパンを食べる。}\hfill\onslide*<32->{\footnotesize eat: 食べる　bread: パン　for breakfast: 朝食に}
   \end{enumerate}
 
 \bigskip
@@ -140,13 +147,16 @@ visit \url{https://creativecommons.org/licenses/by-sa/4.0/?ref=openverse}.
   英文の骨格は主語と動詞です
      \end{exampleblock}
 
-
 % Embed the sound file
 \onslide<1->{%
 \myaudio{./audio/003_sv_01.mp3}
+}%
+\hfill{}%
+\onslide<32->{%
+\myaudio{./audio/003_sv_02.mp3}
 }
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{主語と動詞の順番}
 \begin{frame}[plain]\frametitle{Aは〜する.}
  % \setbeamercovered{transparent}
@@ -154,20 +164,30 @@ visit \url{https://creativecommons.org/licenses/by-sa/4.0/?ref=openverse}.
 \begin{columns}
 \begin{column}[t]{.45\textwidth}
 \begin{block}{日本語}
-わたしは日本語を話します。\pause
+わたしは英語を話します。\pause
 
-日本語をわたしは話します。\pause
+英語をわたしは話します。\pause
 
-日本語を話します、わたしは。\pause
+英語を話します、わたしは。\pause
 
-日本語を話します。
+英語を話します。
 \end{block}
 \end{column}
 \pause
 \begin{column}[t]{.45\textwidth}
-\begin{block}{英語}
-I speak Japanese.
-\end{block}
+\begin{alertblock}{英語}
+I speak English.
+
+\mbox{}\hspace{75pt}*I English speak.
+
+\mbox{}\hspace{75pt}*Speak English I.
+
+\mbox{}\hspace{75pt}*Speak English.
+
+\scriptsize
+\mbox{}\hspace{75pt}%
+`*'は誤った文という記号　
+\end{alertblock}
 \end{column}
 \end{columns}
 
@@ -178,6 +198,7 @@ I speak Japanese.
 \begin{itemize}
  \item   英文の骨格は主語と動詞です
  \item   英語は語順がだいじです
+ \item   英文にはかならず主語が必要
 \end{itemize}
      \end{exampleblock}
 \end{frame}
@@ -185,20 +206,33 @@ I speak Japanese.
 \begin{frame}[plain]\frametitle{Exercises}
 日本語を参考にして、主語と動詞を指摘してください。
 \begin{enumerate}
-    \item \alt<2->{\Circled[outer color=orange]{You}}{You} \alt<3->{\Circled[outer color=NavyBlue]{have}}{have} a nice car. あなたはいい車を持っている。
- \item \alt<4->{\Circled[outer color=orange]{I}}{I} \alt<5->{\Circled[outer color=NavyBlue]{play}}{play} the piano. わたしはピアノを弾きます。
-    \item \alt<6->{\Circled[outer color=orange]{They}}{They} \alt<7->{\Circled[outer color=NavyBlue]{watch}}{watch} TV. 彼らはテレビを見ます。
-    \item \alt<8->{\Circled[outer color=orange]{We}}{We} \alt<9->{\Circled[outer color=NavyBlue]{study}}{study} English. 私たちは英語を勉強します。
- \item \alt<10->{\Circled[outer color=orange]{I}}{I} \alt<11->{\Circled[outer color=NavyBlue]{write}}{write} a letter. 私は手紙を書きます。
-     \item \alt<12->{\Circled[outer color=orange]{Birds}}{Birds} \alt<13->{\Circled[outer color=NavyBlue]{sing}}{sing}. 鳥は歌います。
-    \item \alt<14->{\Circled[outer color=orange]{Dogs}}{Dogs} \alt<15->{\Circled[outer color=NavyBlue]{swim}}{swim} well. 犬は上手に泳ぎます。
-     \item \alt<16->{\Circled[outer color=orange]{They}}{They} \alt<17->{\Circled[outer color=NavyBlue]{like}}{like} music. 彼らは音楽が好きだ。
+    \item \alt<2->{\Circled[outer color=Maroon]{You}}{You} \alt<3->{\Circled[outer color=NavyBlue]{have}}{have} a nice car. あなたはいい車を持っている。
+ \item \alt<4->{\Circled[outer color=Maroon]{I}}{I} \alt<5->{\Circled[outer color=NavyBlue]{play}}{play} the piano. わたしはピアノを弾きます。
+    \item \alt<6->{\Circled[outer color=Maroon]{They}}{They} \alt<7->{\Circled[outer color=NavyBlue]{watch}}{watch} TV. 彼らはテレビを見ます。
+    \item \alt<8->{\Circled[outer color=Maroon]{We}}{We} \alt<9->{\Circled[outer color=NavyBlue]{study}}{study} English. わたしたちは英語を勉強します。
+ \item \alt<10->{\Circled[outer color=Maroon]{I}}{I} \alt<11->{\Circled[outer color=NavyBlue]{write}}{write} a letter. わたしは手紙を書きます。
+     \item \alt<12->{\Circled[outer color=Maroon]{Birds}}{Birds} \alt<13->{\Circled[outer color=NavyBlue]{sing}}{sing}. 鳥は歌います。
+    \item \alt<14->{\Circled[outer color=Maroon]{Dogs}}{Dogs} \alt<15->{\Circled[outer color=NavyBlue]{swim}}{swim} well. 犬はじょうずに泳ぎます。
+     \item \alt<16->{\Circled[outer color=Maroon]{They}}{They} \alt<17->{\Circled[outer color=NavyBlue]{like}}{like} music. 彼らは音楽が好きです。
 \end{enumerate}
 
 % Embed the sound file
 \onslide<1->{%
-\myaudio{./audio/003_sv_02.mp3}
+\myaudio{./audio/003_sv_03.mp3}
 }
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+\Huge
+
+\centering
+
+English is fun.
+\end{frame}
+
+\section*{See you next time.}
+\begin{frame}{}
+\phantomsection
+\end{frame}
 \end{document}
