@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
@@ -14,14 +14,24 @@
 \usepackage{fontawesome}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
+\usepackage{circledsteps}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 音声リンク表示
 \newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{English is fun.\,\,{}---be動詞を学びます---}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.\,\,{}---be動詞---}
 \author{}
 \institute[]{}
 \date[]
@@ -41,9 +51,7 @@
 
 予定の時刻になったらはじまります
 
-\textbullet  音声を流しています
 
-\textbullet  聞こえていますか　
 
 \vfill
 
@@ -51,13 +59,6 @@
 
 The lesson will begin at the scheduled time.
 
-\vspace{-6pt}
-
-We are playing audio.
-
-\vspace{-6pt}
-
-Can you hear it?
 \end{frame}
 
 \begin{frame}
@@ -72,21 +73,30 @@ Can you hear it?
   \frametitle{授業の流れ}
   \tableofcontents
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{復習}
 
+\begin{frame}[plain]{復習}
+ \begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item   英文の骨格は主語と動詞です
+ \item   英語は語順がだいじです
+ \item   英文にはかならず主語が必要
+\end{itemize}
+     \end{exampleblock}
 
-
-
-
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{「AはBだ」という表現}
 \begin{frame}<1-27>[plain]\frametitle{「AはBだ」という表現}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> I \textbf<14-20>{\color<14-20>{red}{am}} a student. \onslide*<2>{わたしは生徒です。}\onslide*<14-20>{(I $=$ a student)}\onslide*<21-26>{\footnotesize 　a:１つの、1人の　student: 生徒、学生}
-   \item<3-> You \textbf<15-20>{\color<15-20>{red}{are}} my friend. \onslide*<4>{あなたはわたしのともだちです。}\onslide*<15-20>{(You $=$ my friend)}\onslide*<22-26>{\footnotesize 　my: わたしの　friend: ともだち}
-   \item<5-> He \textbf<16-20>{\color<16-20>{red}{is}} tall. \onslide*<6>{彼は背が高い。}\onslide*<16-20>{(He $=$ tall)}\onslide*<23-26>{\footnotesize 　tall: 背が高い}
-   \item<7-> She \textbf<17-20>{\color<17-20>{red}{is}} kind. \onslide*<8>{彼女は親切だ。}\onslide*<17-20>{(She $=$ kind)}\onslide*<24-26>{\footnotesize 　kind: 親切な}
-   \item<9-> The sky \textbf<18-20>{\color<18-20>{red}{is}} blue. \onslide*<10>{空は青い。}\onslide*<18-20>{(The sky $=$ blue)}\onslide*<25-26>{\footnotesize 　the sky: 空　blue: 青い}
-   \item<11-> They \textbf<19-20>{\color<19-20>{red}{are}} my classmates. \onslide*<12>{彼らはわたしのクラスメートです。}\onslide*<19-20>{(They $=$ my classmates)}\onslide*<26>{\footnotesize 　classmates: (2人以上の)クラスメート}
+   \item<1-> I \textbf<14-20>{\color<14-20>{Maroon}{am}} a student. \onslide*<2>{わたしは生徒です。}\onslide*<14-20>{(I $=$ a student)}\onslide*<21-26>{\footnotesize 　a student: (1人の)生徒、学生}
+   \item<1-> You \textbf<15-20>{\color<15-20>{Maroon}{are}} my friend. \onslide*<4>{あなたはわたしのともだちです。}\onslide*<15-20>{(You $=$ my friend)}\onslide*<22-26>{\footnotesize 　my: わたしの　friend: ともだち}
+   \item<1-> He \textbf<16-20>{\color<16-20>{Maroon}{is}} tall. \onslide*<6>{彼は背が高い。}\onslide*<16-20>{(He $=$ tall)}\onslide*<23-26>{\footnotesize 　tall: 背が高い}
+   \item<1-> She \textbf<17-20>{\color<17-20>{Maroon}{is}} kind. \onslide*<8>{彼女は親切だ。}\onslide*<17-20>{(She $=$ kind)}\onslide*<24-26>{\footnotesize 　kind: 親切な}
+   \item<1-> The sky \textbf<18-20>{\color<18-20>{Maroon}{is}} blue. \onslide*<10>{空は青い。}\onslide*<18-20>{(The sky $=$ blue)}\onslide*<25-26>{\footnotesize 　the sky: 空　blue: 青い}
+   \item<1-> They \textbf<19-20>{\color<19-20>{Maroon}{are}} my classmates. \onslide*<12>{彼らはわたしのクラスメートです。}\onslide*<19-20>{(They $=$ my classmates)}\onslide*<26>{\footnotesize 　classmates: (2人以上の)クラスメート}
   \end{enumerate}
 
 \bigskip
@@ -98,13 +108,13 @@ Can you hear it?
 \end{itemize}
 \end{exampleblock}
 
-
 % Embed the sound file
 \onslide<27>{%
-\myaudio{audio/002_be_01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
-
+\myaudio{audio/002_be_01.mp3}
 }
 \end{frame}
+
+
 
 \begin{frame}[plain]\frametitle{am, are, is --- みんな、なかまです}
  \centering
@@ -135,12 +145,12 @@ be動詞$\left\{\begin{tabular}[c]{l}
 \begin{frame}<1-20>[plain]\frametitle{I am 〜.}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \textbf{\color{red}{I am}} a student. \onslide*<2>{わたしは生徒です。}\onslide*<15-20>{\footnotesize 　student: 生徒、学生}
-   \item<3-> \textbf{\color{red}{I am}} tall. \onslide*<4>{わたしは背が高い。}\onslide*<16-20>{\footnotesize 　tall: 背が高い}
-   \item<5-> \textbf{\color{red}{I am}} 13 years old. \onslide*<6>{わたしは13歳です。}\onslide*<17-20>{\footnotesize 　〜 years old: 〜歳だ　〜には数字がはいります}
-   \item<7-> \textbf{\color{red}{I am}} John. \onslide*<8>{わたしはジョンです。}
-   \item<9-> \textbf{\color{red}{I am}} happy. \onslide*<10>{わたしは幸せです。}\onslide*<18-20>{\footnotesize 　happy: 幸せだ}
-   \item<11-> \textbf{\color{red}{I am}} from Tokyo. \onslide*<12>{わたしは東京の出身です。}\onslide*<19>{\footnotesize 　from 〜: 〜の出身だ}
+   \item<1-> \textbf{\color{Maroon}{I am}} a student. \onslide*<2>{わたしは生徒です。}\onslide*<15-20>{\footnotesize 　student: 生徒、学生}
+   \item<1-> \textbf{\color{Maroon}{I am}} tall. \onslide*<4>{わたしは背が高い。}\onslide*<16-20>{\footnotesize 　tall: 背が高い}
+   \item<1-> \textbf{\color{Maroon}{I am}} 13 years old. \onslide*<6>{わたしは13歳です。}\onslide*<17-20>{\footnotesize 　〜 years old: 〜歳だ　〜には数字がはいります}
+   \item<1-> \textbf{\color{Maroon}{I am}} John. \onslide*<8>{わたしはジョンです。}
+   \item<1-> \textbf{\color{Maroon}{I am}} happy. \onslide*<10>{わたしは幸せです。}\onslide*<18-20>{\footnotesize 　happy: 幸せだ}
+   \item<1-> \textbf{\color{Maroon}{I am}} from Tokyo. \onslide*<12>{わたしは東京の出身です。}\onslide*<19>{\footnotesize 　from 〜: 〜の出身だ}
   \end{enumerate}
 
 \bigskip
@@ -154,7 +164,7 @@ be動詞$\left\{\begin{tabular}[c]{l}
 
 % Embed the sound file
 \onslide<20>{%
-\myaudio{./audio/002_be_02.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+\myaudio{./audio/002_be_02.mp3}
 }
 
 \end{frame}
@@ -164,12 +174,12 @@ be動詞$\left\{\begin{tabular}[c]{l}
 \begin{frame}<1-21>[plain]\frametitle{You are 〜.}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \textbf{\color{red}{You are}} my friend. \onslide*<2>{あなたはわたしのともだちです。}\onslide*<15-20>{\footnotesize 　friend: ともだち、友人}
-   \item<3-> \textbf{\color{red}{You are}} very kind. \onslide*<4>{あなたはとても親切だ。}\onslide*<16-20>{\footnotesize 　kind: 親切だ}
-   \item<5-> \textbf{\color{red}{You are}} a good student. \onslide*<6>{あなたはいい生徒です。}\onslide*<17-20>{\footnotesize 　student: 生徒}
-   \item<7-> \textbf{\color{red}{You are}} good at baseball. \onslide*<8>{あなたは野球がうまい。}\onslide*<18-20>{\footnotesize 　good at 〜: 〜がうまい、得意だ}
-   \item<9-> \textbf{\color{red}{You are}} busy. \onslide*<10>{あなたは忙しい。}\onslide*<19-20>{\footnotesize 　happy: 幸せだ}
-   \item<11-> \textbf{\color{red}{You are}} from Chiba. \onslide*<12>{あなたは千葉の出身です。}\onslide*<20>{\footnotesize 　from 〜: 〜の出身だ}
+   \item<1-> \textbf{\color{Maroon}{You are}} my friend. \onslide*<2>{あなたはわたしのともだちです。}\onslide*<15-20>{\footnotesize 　friend: ともだち、友人}
+   \item<1-> \textbf{\color{Maroon}{You are}} very kind. \onslide*<4>{あなたはとても親切だ。}\onslide*<16-20>{\footnotesize 　kind: 親切だ}
+   \item<1-> \textbf{\color{Maroon}{You are}} a good student. \onslide*<6>{あなたはいい生徒です。}\onslide*<17-20>{\footnotesize 　student: 生徒}
+   \item<1-> \textbf{\color{Maroon}{You are}} good at baseball. \onslide*<8>{あなたは野球がうまい。}\onslide*<18-20>{\footnotesize 　good at 〜: 〜がうまい、得意だ}
+   \item<1-> \textbf{\color{Maroon}{You are}} busy. \onslide*<10>{あなたは忙しい。}\onslide*<19-20>{\footnotesize 　happy: 幸せだ}
+   \item<1-> \textbf{\color{Maroon}{You are}} from Chiba. \onslide*<12>{あなたは千葉の出身です。}\onslide*<20>{\footnotesize 　from 〜: 〜の出身だ}
   \end{enumerate}
 
 \bigskip
@@ -183,7 +193,7 @@ be動詞$\left\{\begin{tabular}[c]{l}
 
 % Embed the sound file
 \onslide<21>{%
-\myaudio{audio/002_be_03.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+\myaudio{audio/002_be_03.mp3}
 
 }
 
@@ -193,12 +203,12 @@ be動詞$\left\{\begin{tabular}[c]{l}
 \begin{frame}<1-21>[plain]\frametitle{I am, You are以外の場合(1)}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> This \textbf{\color{red}{is}} my pencil. \onslide*<2>{これはわたしの鉛筆です。}\onslide*<15-20>{\footnotesize this: これ　pencil: 鉛筆}
-   \item<3-> He \textbf{\color{red}{is}} my classmate. \onslide*<4>{彼はわたしのクラスメートです。}\onslide*<16-20>{\footnotesize 　　classmate: クラスメート、級友}
-   \item<5-> She \textbf{\color{red}{is}} a good singer. \onslide*<6>{彼女は歌がうまい。}\onslide*<17-20>{\footnotesize 　singer: 歌い手、歌手}
-   \item<7-> Your bike \textbf{\color{red}{is}} new. \onslide*<8>{あなたの自転車は新しい。}\onslide*<18-20>{\footnotesize 　bike: 自転車　new: 新しい}
-   \item<9-> George \textbf{\color{red}{is}} busy. \onslide*<10>{ジョージは忙しい。}\onslide*<19-20>{\footnotesize 　busy: 忙しい}
-   \item<11-> Jane \textbf{\color{red}{is}} from France. \onslide*<12>{ジェーンはフランスの出身です。}\onslide*<20>{\footnotesize 　from 〜: 〜の出身だ　France: フランス}
+   \item<1-> This \textbf{\color{Maroon}{is}} my pencil. \onslide*<2>{これはわたしの鉛筆です。}\hfill\onslide*<15-20>{\footnotesize this: これ　pencil: 鉛筆}
+   \item<1-> He \textbf{\color{Maroon}{is}} my classmate. \onslide*<4>{彼はわたしのクラスメートです。}\hfill\onslide*<16-20>{\footnotesize 　　classmate: クラスメート、級友}
+   \item<1-> She \textbf{\color{Maroon}{is}} a good singer. \onslide*<6>{彼女は歌がうまい。}\hfill\onslide*<17-20>{\footnotesize 　singer: 歌い手、歌手}
+   \item<1-> Your bike \textbf{\color{Maroon}{is}} new. \onslide*<8>{あなたの自転車は新しい。}\hfill\onslide*<18-20>{\footnotesize 　bike: 自転車　new: 新しい}
+   \item<1-> George \textbf{\color{Maroon}{is}} busy. \onslide*<10>{ジョージは忙しい。}\hfill\onslide*<19-20>{\footnotesize 　busy: 忙しい}
+   \item<1-> Jane \textbf{\color{Maroon}{is}} from France. \onslide*<12>{ジェーンはフランスの出身です。}\hfill\onslide*<20>{\footnotesize 　from 〜: 〜の出身だ　France: フランス}
   \end{enumerate}
 
 \bigskip
@@ -212,7 +222,7 @@ be動詞$\left\{\begin{tabular}[c]{l}
 
 % Embed the sound file
 \onslide<21>{%
-\myaudio{audio/002_be_04.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+\myaudio{audio/002_be_04.mp3}
 }
 
 \end{frame}
@@ -223,12 +233,12 @@ be動詞$\left\{\begin{tabular}[c]{l}
 \begin{frame}<1-21>[plain]\frametitle{I am, You are以外の場合(2)}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> These \textbf{\color{red}{are}} my pencils. \onslide*<2>{これらはわたしの鉛筆です。}\onslide*<15-20>{\footnotesize 　these: これら　pencil: 鉛筆}
-   \item<3-> They \textbf{\color{red}{are}} my classmates. \onslide*<4>{彼らはわたしのクラスメートです。}\onslide*<16-20>{\footnotesize 　they: 彼ら　classmate: クラスメート、級友}
-   \item<5-> They \textbf{\color{red}{are}} kind. \onslide*<6>{彼らは親切だ。}\onslide*<17-20>{\footnotesize 　kind: 親切な}
-   \item<7-> The flowers \textbf{\color{red}{are}} beautiful. \onslide*<8>{その花は美しい。}\onslide*<18-20>{\footnotesize 　flower: 花　beautifuk: 美しい}
-   \item<9-> We \textbf{\color{red}{are}} busy. \onslide*<10>{わたしたちは忙しい。}\onslide*<19-20>{\footnotesize 　we: わたしたち　busy: 忙しい}
-   \item<11-> Jane and George \textbf{\color{red}{are}} from France. \onslide*<12>{ジェーンとジョージはフランスの出身です。}\onslide*<20>{\footnotesize 　from 〜: 〜の出身だ　France: フランス}
+   \item<1-> These \textbf{\color{Maroon}{are}} my pencils. \onslide*<2>{これらはわたしの鉛筆です。}\hfill\onslide*<15-20>{\footnotesize 　these: これら　pencil: 鉛筆}
+   \item<1-> They \textbf{\color{Maroon}{are}} my classmates. \onslide*<4>{彼らはわたしのクラスメートです。}\hfill\onslide*<16-20>{\footnotesize 　they: 彼ら　classmate: クラスメート、級友}
+   \item<1-> They \textbf{\color{Maroon}{are}} kind. \onslide*<6>{彼らは親切だ。}\hfill\onslide*<17-20>{\footnotesize 　kind: 親切な}
+   \item<1-> The flowers \textbf{\color{Maroon}{are}} beautiful. \onslide*<8>{その花は美しい。}\hfill\onslide*<18-20>{\footnotesize 　flower: 花　beautifuk: 美しい}
+   \item<1-> We \textbf{\color{Maroon}{are}} busy. \onslide*<10>{わたしたちは忙しい。}\hfill\onslide*<19-20>{\footnotesize 　we: わたしたち　busy: 忙しい}
+   \item<1-> Jane and George \textbf{\color{Maroon}{are}} from France. \onslide*<12>{ジェーンとジョージはフランスの出身です。}\hfill\onslide*<20>{\footnotesize 　from 〜: 〜の出身だ　France: フランス}
   \end{enumerate}
 
 \bigskip
@@ -241,7 +251,7 @@ be動詞$\left\{\begin{tabular}[c]{l}
 
 % Embed the sound file
 \onslide<21>{%
-\myaudio{audio/002_be_05.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+\myaudio{audio/002_be_05.mp3}
 }
 \end{frame}
 
@@ -278,5 +288,20 @@ be動詞$\left\{\begin{tabular}[c]{l}
 \draw[-latex, line width=1.5pt] (A) -- node[above] {1つ、1人なら} node[below] {} (D);
 \end{tikzpicture}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ 
+次の英文の(~~~~~~~~)内から動詞の正しい形を選び、○で囲みましょう。
 
+\begin{enumerate}
+ \item John~~( am / \alt<2->{\Circled[outer color=orange]{is}}{is} / are )~~a baseball player.
+ \item You~~( \alt<3->{\Circled[outer color=orange]{are}}{are} / is / am )~~nice.
+ \item This~~( am / \alt<4->{\Circled[outer color=orange]{is}}{is} / are )~~my cup.
+ \item They~~( am / is / \alt<5->{\Circled[outer color=orange]{are}}{are})~~my parents.
+ \item We~~(am / \alt<6->{\Circled[outer color=orange]{are}}{are} / is )~~Japanese.
+\end{enumerate}
+
+\myaudio{audio/002_be_06.mp3}
+
+\end{frame}
 \end{document}

@@ -133,6 +133,27 @@ I am, you are以外2
 <p>Good job, everyone! That's all for our pronunciation practice.</p> 
 </speak>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+002_be_06.mp3
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. John is a baseball player. <break time="2s"/>John is a baseball player.<break time="3s"/></p>
+<p>Number 2. You are nice. <break time="2s"/>You are nice.<break time="3s"/></p>
+<p>Number 3. This is my cup. <break time="2s"/>This is my cup.<break time="3s"/></p>
+<p>Number 4. They are my parents. <break time="2s"/>They are my parents.<break time="3s"/></p>
+<p>Number 5. We are Japanese. <break time="2s"/>We are Japanese.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  John is a baseball player. <break time="5s"/>John is a baseball player.<break time="3s"/></p>
+<p>Number 2.  You are nice. <break time="5s"/>You are nice.<break time="3s"/></p>
+<p>Number 3.  This is my cup. <break time="5s"/>This is my cup.<break time="3s"/></p>
+<p>Number 4.  They are my parents. <break time="5s"/>They are my parents.<break time="3s"/></p>
+<p>Number 5.  We are Japanese. <break time="5s"/>We are Japanese.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</prosody>
+</speak>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 003_sv_01.mp3
 SV
 <speak>

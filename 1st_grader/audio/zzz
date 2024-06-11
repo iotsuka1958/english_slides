@@ -1,36 +1,19 @@
 <speak>
 <prosody volume="x-loud" rate="slow">
-<p>Hello everyone. Please listen carefully.</p>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
 <p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
-<p>have <break time="2s"/>have<break time="3s"/>have<break time="3s"/></p>
-<p>music<break time="2s"/>music<break time="3s"/>music<break time="3s"/></p>
-<p>go <break time="2s"/>go<break time="3s"/>go<break time="3s"/></p>
-<p>work <break time="2s"/>work<break time="3s"/>work<break time="3s"/></p>
-<p>by bus <break time="2s"/>by bus<break time="3s"/>by bus<break time="3s"/></p>
-<p>speak <break time="2s"/>speak<break time="3s"/>speak<break time="3s"/></p>
-<p>drink <break time="2s"/>drink<break time="3s"/>drink<break time="3s"/></p>
-<p>coffee <break time="2s"/>coffee<break time="3s"/>coffee<break time="3s"/></p>
-<p>every morning <break time="2s"/>every morning<break time="3s"/>every morning<break time="3s"/></p>
-<p>study <break time="2s"/>study<break time="3s"/>study<break time="3s"/></p>
-<p>at the library <break time="2s"/>at the library<break time="3s"/>at the library<break time="3s"/></p>
-<p>eat <break time="2s"/>eat<break time="3s"/>eat<break time="3s"/></p>
-<p>bread <break time="2s"/>bread<break time="3s"/>bread<break time="3s"/></p>
-<p>for breakfast <break time="2s"/>for breakfast<break time="3s"/>for breakfast<break time="3s"/></p>
+<p>Number 1. John is a baseball player. <break time="2s"/>John is a baseball player.<break time="3s"/></p>
+<p>Number 2. You are nice. <break time="2s"/>You are nice.<break time="3s"/></p>
+<p>Number 3. This is my cup. <break time="2s"/>This is my cup.<break time="3s"/></p>
+<p>Number 4. They are my parents. <break time="2s"/>They are my parents.<break time="3s"/></p>
+<p>Number 5. We are Japanese. <break time="2s"/>We are Japanese.<break time="3s"/></p>
 <p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
-<p>have <break time="2s"/>have<break time="3s"/>have<break time="3s"/></p>
-<p>music<break time="2s"/>music<break time="3s"/>music<break time="3s"/></p>
-<p>go <break time="2s"/>go<break time="3s"/>go<break time="3s"/></p>
-<p>work <break time="2s"/>work<break time="3s"/>work<break time="3s"/></p>
-<p>by bus <break time="2s"/>by bus<break time="3s"/>by bus<break time="3s"/></p>
-<p>speak <break time="2s"/>speak<break time="3s"/>speak<break time="3s"/></p>
-<p>drink <break time="2s"/>drink<break time="3s"/>drink<break time="3s"/></p>
-<p>coffee <break time="2s"/>coffee<break time="3s"/>coffee<break time="3s"/></p>
-<p>every morning <break time="2s"/>every morning<break time="3s"/>every morning<break time="3s"/></p>
-<p>study <break time="2s"/>study<break time="3s"/>study<break time="3s"/></p>
-<p>at the library <break time="2s"/>at the library<break time="3s"/>at the library<break time="3s"/></p>
-<p>eat <break time="2s"/>eat<break time="3s"/>eat<break time="3s"/></p>
-<p>bread <break time="2s"/>bread<break time="3s"/>bread<break time="3s"/></p>
-<p>for breakfast <break time="2s"/>for breakfast<break time="3s"/>for breakfast<break time="3s"/></p>
+<p>Number 1.  John is a baseball player. <break time="5s"/>John is a baseball player.<break time="3s"/></p>
+<p>Number 2.  You are nice. <break time="5s"/>You are nice.<break time="3s"/></p>
+<p>Number 3.  This is my cup. <break time="5s"/>This is my cup.<break time="3s"/></p>
+<p>Number 4.  They are my parents. <break time="5s"/>They are my parents.<break time="3s"/></p>
+<p>Number 5.  We are Japanese. <break time="5s"/>We are Japanese.<break time="3s"/></p>
 <p>Good job, everyone! That's all for our pronunciation practice.</p>
 </prosody>
 </speak>
+
