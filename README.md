@@ -1,5 +1,14 @@
 # english_slides
 
+
+## upload用のpdf作成方法
+
+オリジナルファイルからアップロード用に一部のページを抽出したpdfを作成する。
+pdftkをインストールしておくこと。
+```
+pdftk original.pdf cat 3-4 16-65 output ./upload_archive/upload.pdf
+```
+
 ## Chat-GPTのプロンプト
 
 あなたは英語のネイティブスピーカーで、外国人への英語教育の専門家です。
