@@ -63,6 +63,14 @@
         \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
     \fi
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 文末の上昇イントネーション記号 \myRisingPitch
 %% 通常のイントネーション \myDownwardPitch
@@ -117,7 +125,7 @@ We are playing audio.
 Can you hear it?
 \end{frame}
 
-\begin{frame}
+\begin{frame}[label=title]
 \phantomsection\label{section-1}
 \thispagestyle{empty}
 \titlepage
@@ -295,24 +303,70 @@ $\text{English: 52}<\text{2,228: Japanese}$
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{まとめ}
-\begin{frame}[plain]{まとめ}
+\begin{frame}[plain,label=matome]{まとめ}
   \begin{exampleblock}{Topics for Today}
 \small
+\pause
 \begin{itemize}
- \item アルファベットは26種類です
- \item 大文字と小文字があります
+ \item アルファベットは26種類です\pause
+ \item 大文字と小文字があります\pause
        \begin{itemize}
-	\item 大文字小文字を区別して書けるようになろう
-        \item 大文字を使うのは
+	\item 大文字小文字を区別して書けるようになろう\pause
+        \item 大文字を使うのは\pause
               \begin{itemize}
-	       \item 文の先頭
-	       \item 人名
-	       \item \textrm{I}(わたし)はいつでも
+	       \item 文の先頭\pause
+	       \item 人名\pause
+	       \item \textrm{I}\,\,(わたし)はいつでも\pause
 	      \end{itemize}
        \end{itemize}
  \item 聞き取れるようになったら実際に発音してみよう
 \end{itemize}
       \end{exampleblock}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe{title}
+\againframe{matome}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{アルファベットを書いてみよう}
+
+\Large
+
+ノートにアルファベットを書いてみよう。
+
+ \end{frame}
+\begin{frame}[plain]{アルファベットを書いてみよう}
+\LARGE
+
+まず大文字です。
+
+大文字をノートに書こう。
+
+\bigskip
+
+\begin{rmfamily}
+\begin{tabular}{p{.95\textwidth}}
+ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
+%小文字:& a b c d e f g h i j k l m n o p q r s t u v w x y z
+\end{tabular}
+\end{rmfamily}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,label=write_lower]{アルファベットを書いてみよう}
+\LARGE
+
+小文字をノートに書こう。
+
+\bigskip
+\begin{rmfamily}
+\begin{tabular}{p{.95\textwidth}}
+%ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+\end{tabular}
+\end{rmfamily}\pause
+
+\bigskip
+
+あ、でもその前に
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{まぎらわしいもの}
@@ -322,7 +376,8 @@ $\text{English: 52}<\text{2,228: Japanese}$
 \begin{column}{.3\textwidth}
 \end{column}
 \begin{column}{.35\textwidth}
-\begin{itemize}
+\setbeamercovered{transparent}
+\begin{itemize}[<+->]
  \item b{\LARGE と}d
  \item p{\LARGE と}q
  \item h{\LARGE と}n
@@ -333,21 +388,107 @@ $\text{English: 52}<\text{2,228: Japanese}$
 \begin{column}{.3\textwidth}
 \end{column}
 \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まぎらわしいもの}
+ 
+ \Huge
+\centering
+
+\scalebox{2}{%
+b{\large と}d%
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まぎらわしいもの}
+ 
+ \Huge
+\centering
+
+\scalebox{2}{%
+p{\large と}q%
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まぎらわしいもの}
+ 
+ \Huge
+\centering
+
+\scalebox{2}{%
+b{\large と}d{\large と}p{\large と}q%
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まぎらわしいもの}
+ 
+ \Huge
+\centering
+
+\scalebox{2}{%
+h{\large と}n%
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まぎらわしいもの}
+ 
+ \Huge
+\centering
+
+\scalebox{2}{%
+i{\large と}j%
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まぎらわしいもの}
+ 
+ \Huge
+\centering
+
+\scalebox{2}{%
+u{\large と}v%
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<1>{write_lower}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe{upper}
+\againframe{lower}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 1}
+ \Large
+\visible<1->{%
+これからアルファベットを読みあげます。
+
+聞こえたアルファベットを順番に小文字で書いてください。
+}
+\mbox{}\hfill\visible<1->{\myaudio{./audio/001_alphabet_011.mp3}}
+
+\begin{tabular}{rl}
+1&\visible<2->{apple}\\
+2&\visible<3->{bag}\\
+3&\visible<4->{cat}\\
+4& \visible<5->{dog}\\
+5&\visible<6->{egg}
+\end{tabular}
+
+\mbox{}\hfill\visible<1->{\myaudio{./audio/001_alphabet_012.mp3}}
 
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Quiz}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 2}
  \Large
 これからアルファベットを読みあげます。
 
-聞こえたアルファベットを順番に書いてください。
+聞こえたアルファベットを順番に大文字で書いてください。
 
 ぜんぶで10文字です。
 
 音声は2回繰り返します。
 
-\mbox{}\hfill\visible{\myaudio{./audio/001_alphabet_02.mp3}}
+
+\mbox{}\hfill{\myaudio{./audio/001_alphabet_02.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
