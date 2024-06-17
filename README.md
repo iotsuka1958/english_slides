@@ -1,17 +1,203 @@
 # english_slides
 
+## listen + repeat(通常の発音練習用)
+
+input.txt
+
+```
+This is a pen.
+I am a boy
+```
+
+のような感じ。
+
+```
+awk -f pronunciation_making.awk input.txt
+```
+
+pronunciation_making.awkの内容はつぎのとおり。
+```
+BEGIN {
+    print "<speak>"
+    print "    <p>"
+    print "        <s>"
+    print "            <prosody volume=\"soft\">"
+    print "                <lang xml:lang=\"ja-JP\">"
+    print "                    さあ、実際の音声によく耳をかたむけてください。"
+    print "                    <break time=\"1s\" />"
+    print "                    それぞれの英文を二回読みます。"
+    print "                    <break time=\"1s\" />"
+    print "                    はじめはうまく聞き取れなくても、心配する必要はありません。"
+    print "                    <break time=\"1s\" />"
+    print "                    だんだん慣れてきます。"
+    print "                    <break time=\"1s\" />"
+    print "                    それでは、始めます。"
+    print "                    <break time=\"1s\" />"
+    print "                </lang>"
+    print "            </prosody>"
+    print "        </s>"
+    print "    </p>"
+    print "</speak>"
+    print ""
+    print "<speak>"
+    print "    <p>"
+    print "        <s>"
+    print "            <prosody rate=\"slow\" volume=\"loud\">"
+    print "                Please listen carefully."
+    print "                <break time=\"1s\" />"
+}
+
+{
+    printf "                Number %d.\n", NR
+    printf "                <break time=\"1s\" />\n"
+    printf "                %s\n", $0
+    printf "                <break time=\"2s\" />\n"
+    printf "                %s\n", $0
+    printf "                <break time=\"3s\" />\n"
+}
+
+END {
+    print "            </prosody>"
+    print "        </s>"
+    print "    </p>"
+    print "</speak>"
+    print ""
+    print "<speak>"
+    print "    <p>"
+    print "        <s>"
+    print "            <prosody volume=\"soft\">"
+    print "                <lang xml:lang=\"ja-JP\">"
+    print "                    さあ、いかがでしたか。"
+    print "                    <break time=\"1s\" />"
+    print "                    こんどは、あとに続けて実際にリピートしてください"
+    print "                    <break time=\"1s\" />"
+    print "                </lang>"
+    print "            </prosody>"
+    print "        </s>"
+    print "    </p>"
+    print "</speak>"
+    print ""
+    print "<speak>"
+    print "    <p>"
+    print "        <s>"
+    print "            <prosody rate=\"slow\" volume=\"loud\">"
+    print "                Please repeat after me."
+    print "                <break time=\"1s\" />"
+    for (i = 1; i <= NR; i++) {
+        printf "                Number %d.\n", i
+        printf "                <break time=\"1s\" />\n"
+        printf "                %s\n", lines[i]
+        printf "                <break time=\"5s\" />\n"
+        printf "                %s\n", lines[i]
+        printf "                <break time=\"3s\" />\n"
+    }
+    print "                Good job, everyone!"
+    print "                <break time=\"1s\" />"
+        print "            </prosody>"
+    print "        </s>"
+    print "    </p>"
+    print "</speak>"
+}
+
+{
+    lines[NR] = $0
+}
+```
+
+これでssmlファイルができる。
+
+これを
+```
+ssml2mp3.py <input_ssml_file>
+```
+これでoutput.mp3(これは決め打ち)ができるので、適当にリネームすればいい。
+
+なお、ssml2mp3.py配下の通り。
+このスクリプトでは,
+<speak></speak>の中身を英語と日本語を混在させないこと。たとえばつぎみたいにする。
+こうすれば、日本語も英語もネイティブになる。
+```
+<speak>
+    <p>
+        <s>
+            <prosody rate="slow" volume="loud">
+            english only </speak.
+           </prosody>
+        </s>
+    </p>
+</speak>
+
+speak>
+    <p>
+        <s>
+            <prosody volume="soft">
+                <lang xml:lang="ja-JP">
+                    ここは日本語だけ
+                </lang>
+            </prosody>
+        </s>
+    </p>
+</speak>
+```
+#!/usr/bin/env python3
+import re
+import sys
+from contextlib import closing
+from pathlib import Path
+import boto3
+
+def text2speech(polly, text, f, voice):
+    """指定した声で読み上げる"""
+    result = polly.synthesize_speech(
+        Text=text,
+        OutputFormat="mp3",
+        VoiceId=voice,
+        TextType="ssml"  # SSML形式のテキストを指定
+    )
+    with closing(result["AudioStream"]) as stream:
+        f.write(stream.read())
+
+if len(sys.argv) != 2:
+    print("Usage: python3 script.py <input_ssml_file>")
+    sys.exit(1)
+
+input_file = sys.argv[1]
+
+try:
+    polly = boto3.client('polly')
+
+    # Lexiconを名前をつけて登録
+    LEXICON = "DBLexicon"
+    script_dir = Path(__file__).parent
+    lexicon_path = script_dir / "db-lexicon.xml"
+    data = lexicon_path.read_text(encoding="utf-8")
+    polly.put_lexicon(Name=LEXICON, Content=data)
+
+    # ファイルから問題文読み込み
+    p = Path(input_file)
+    text = p.read_text(encoding="utf-8")
+
+    with open("output.mp3", "wb") as f:
+        # 日本語と英語のセクションを分離するための正規表現パターン
+        sections = re.split(r'(<speak>.*?</speak>)', text, flags=re.DOTALL)
+
+        for section in sections:
+            if '<lang xml:lang="ja-JP">' in section:
+                text2speech(polly, section, f, "Takumi")
+            elif '<speak>' in section:
+                text2speech(polly, section, f, "Matthew")
+
+except Exception as e:
+    print(f"An error occurred: {e}")
+    sys.exit(1)
+
+```
+
 ## 発音練習用mp3作成(アルファベットクイズ)
 
 input_alphabe.txtを作っておく
 
-```
-apple
-bag
-cat
-...
-yellow
-zero
-```
+
 
 quiz_maiking.awk を作成してある
 
