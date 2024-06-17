@@ -97,33 +97,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-\begin{frame}{}
-\phantomsection\label{section}
-\thispagestyle{empty}
-\Large
-
-\raggedright
-
-予定の時刻になったらはじまります
-
-\textbullet  音声を流しています
-
-\textbullet  聞こえていますか　
-
-\vfill
-
-\raggedleft
-
-The lesson will begin at the scheduled time.
-
-\vspace{-6pt}
-
-We are playing audio.
-
-\vspace{-6pt}
-
-Can you hear it?
-\end{frame}
+%\begin{frame}{}
+%\phantomsection\label{section}
+%\thispagestyle{empty}
+%\Large
+%
+%\raggedright
+%
+%予定の時刻になったらはじまります
+%
+%\textbullet  音声を流しています
+%
+%\textbullet  聞こえていますか　
+%
+%\vfill
+%
+%\raggedleft
+%
+%The lesson will begin at the scheduled time.
+%
+%\vspace{-6pt}
+%
+%We are playing audio.
+%
+%\vspace{-6pt}
+%
+%Can you hear it?
+%\end{frame}
 
 \begin{frame}[label=title]
 \phantomsection\label{section-1}
@@ -154,7 +154,7 @@ Can you hear it?
 \begin{rmfamily}
 \begin{tabular}{lp{.8\textwidth}}
 大文字:& ABCDEFGHIJKLMNOPQRSTUVWXYZ\\\pause
-小文字:& a b c d e f g h i j k l m n o p q r s t u v w x y z
+小文字:& a b c d e f {\itshape g} h i j k l m n o p q r s t u v w x y z
 \end{tabular}
 
 \end{rmfamily}
@@ -206,7 +206,7 @@ $\text{English: 52}<\text{2,228: Japanese}$
 
 \visible<1->{\alt<2->{\textcolor{ForestGreen}{\textbf E}}{E}nglish is fun.}\hfill\visible<2->{文の先頭}
 
-\visible<3->{\alt<4->{\textcolor{ForestGreen}{\textbf M}}{M}y name is \alt<5->{\textcolor{Maroon}{\textbf G}}{G}eorge \alt<5->{\textcolor{Maroon}{\textbf S}}{S}miley.}\pause\hfill{}\visible<5->{人の名前}
+\visible<3->{\alt<4->{\textcolor{ForestGreen}{\textbf M}}{M}y name is \alt<5->{\textcolor{Maroon}{\textbf G}}{G}eorge \alt<5->{\textcolor{Maroon}{\textbf S}}{S}mith.}\pause\hfill{}\visible<5->{人の名前}
 
 \visible<6->{\alt<7->{\textcolor{ForestGreen}{\textbf C}}{C}an \alt<8->{\textcolor{BurntOrange}{\textbf I}}{I} help you?}\hfill\visible<8->{Iはいつでも}
 
@@ -275,7 +275,7 @@ $\text{English: 52}<\text{2,228: Japanese}$
 \onslide<5,28,32,55->{d}&
 \onslide<6,28,33,55->{e}&
 \onslide<7,28,34,55->{f}&
-\onslide<8,28,35,55->{g}&
+\onslide<8,28,35,55->{\itshape g}&
 \onslide<9,28,36,55->{h}&
 \onslide<10,28,37,55->{i}&
 \onslide<11,28,38,55->{j} \\
@@ -324,8 +324,8 @@ $\text{English: 52}<\text{2,228: Japanese}$
       \end{exampleblock}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe{title}
-\againframe{matome}
+%\againframe{title}
+%\againframe{matome}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{アルファベットを書いてみよう}
 
@@ -360,7 +360,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
 \begin{rmfamily}
 \begin{tabular}{p{.95\textwidth}}
 %ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
-a b c d e f g h i j k l m n o p q r s t u v w x y z
+a b c d e f {\itshape g} h i j k l m n o p q r s t u v w x y z
 \end{tabular}
 \end{rmfamily}\pause
 
@@ -452,8 +452,8 @@ u{\large と}v%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \againframe<1>{write_lower}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe{upper}
-\againframe{lower}
+%\againframe<1>{upper}
+%\againframe<1>{lower}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 1}
  \Large
@@ -473,7 +473,6 @@ u{\large と}v%
 \end{tabular}
 
 \mbox{}\hfill\visible<1->{\myaudio{./audio/001_alphabet_012.mp3}}
-
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -507,7 +506,7 @@ English is fun.
 \end{frame}
 
 \section*{See you next time.}
-\begin{frame}{}
-\phantomsection
-\end{frame}
+%\begin{frame}{}
+%\phantomsection
+%\end{frame}
 \end{document}

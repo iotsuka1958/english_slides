@@ -15,6 +15,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usepackage{circledsteps}
+\usepackage{twemojis}
+\usepackage{tikzlings}
+\usepackage{scsnowman}
+\usepackage{figchild}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -67,7 +71,40 @@ The lesson will begin at the scheduled time.
 \titlepage
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}
+ \large
+\visible<1->{%
+これからアルファベットを4つ順番に読みあげます。
+聞こえたアルファベットを順番に小文字で書いてください。すると単語になります。その意味を表す図を選んでください
+}
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_b.mp3}}
 
+\bigskip
+
+\centering
+\begin{tabular}{c@{　　　}c@{　　　}c@{　　　}c}
+\fcBike{.7}{Maroon}{1}&
+\scalebox{6}{\twemoji{doughnut}}&
+\scalebox{6}{\twemoji{sunflower}}&
+\scalebox{6}{\twemoji{book}}\\
+(a)&(b)&(c)&(d)
+\end{tabular}
+
+\bigskip
+
+\Huge
+
+\onslide<2->{b}%
+\onslide<3->{o}%
+\onslide<4->{o}%
+\onslide<5->{k}%
+
+\large
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_b.mp3}}
+
+
+\end{frame}
 \section*{授業の流れ}
 \begin{frame}[plain]
   \frametitle{授業の流れ}

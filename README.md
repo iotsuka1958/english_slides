@@ -1,5 +1,67 @@
 # english_slides
 
+## 発音練習用mp3作成(アルファベットクイズ)
+
+input_alphabe.txtを作っておく
+
+```
+apple
+bag
+cat
+...
+yellow
+zero
+```
+
+quiz_maiking.awk を作成してある
+
+```
+BEGIN {
+    FS = ""
+    RS = "\n"
+}
+
+{
+    letter_count = NF
+    
+    print "<speak>"
+    print "<prosody volume=\"x-loud\" rate=\"slow\">"
+    print "<p>Here is today's quiz. I will say " letter_count " letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time=\"3s\"/></p>"
+    
+    print "<p>"
+    for (i = 1; i <= NF; i++) {
+        printf "%s.<break time=\"2s\"/>\n", $i
+    }
+    print "</p>"
+
+    print "<p><lang xml:lang=\"ja-JP\">もう一度いいます。</lang>Please listen carefully and write them down.</p>"
+    
+    print "<p>"
+    for (i = 1; i <= NF; i++) {
+        printf "%s.<break time=\"2s\"/>\n", $i
+    }
+    print "</p>"
+    
+    print "<p>Good job, everyone! Let's check the answer.</p>"
+    print "</prosody>"
+    print "</speak>"
+    print "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+}
+```
+
+### 使い方
+
+
+```
+awk -f quiz_making.awk input.txt > quiz_manuscript.txt
+```
+
+quiz_manuscript.txtにSSMLのソースがはいっているので、
+使う部分を切り出してqqqというテンポラリファイルにいれてから
+```
+txt2mp3.py qqq
+```
+とすると、output.mp3（いまのところ、これは決め打ち)ができる。これを中身に合わせたファイル名にすればいい。
 
 ## upload用のpdf作成方法
 

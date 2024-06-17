@@ -19,7 +19,9 @@
 \usepackage{tikzpeople}
 \usepackage{twemojis}
 \usepackage{tikzsymbols}
-\usepackage{utfsym}
+\usepackage{utfsym}\usepackage{figchild}
+\usepackage{tikzlings}
+\usepackage{scsnowman}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -59,20 +61,87 @@
 %% TEXT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=title]
   \titlepage
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 1}
+ \large
+\visible<1->{%
+これからアルファベットを6つ順番に読みあげます。
+聞こえたアルファベットを順番に小文字で書いてください。すると単語になります。その意味を表す図を選んでください
+}
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_a.mp3}}
 
+\bigskip
+
+\centering
+\begin{tabular}{c@{　　　}c@{　　　}c@{　　　}c}
+\scalebox{.8}{\begin{tikzpicture}
+\bear
+\end{tikzpicture}%
+\begin{tikzpicture}
+ \cat[eye=green]
+\end{tikzpicture}}&
+\scsnowman[scale=5,eyes, mouth,
+nose, arms, hat=NavyBlue, muffler=Maroon,
+buttons, snow, broom]&
+\scalebox{6}{\twemoji{sushi}}&
+\scalebox{6}{\twemoji{lemon}}\\
+(a)&(b)&(c)&(d)
+\end{tabular}
+
+\bigskip
+
+\Huge
+
+\onslide<2->{a}%
+\onslide<3->{n}%
+\onslide<4->{i}%
+\onslide<5->{m}%
+\onslide<6->{a}%
+\onslide<7->{l}%
+
+\large
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_a.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{授業の流れ}
 \begin{frame}[plain]
   \frametitle{授業の流れ}
   \tableofcontents
 \end{frame}
 
+\section{復習(アルファベット)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{アルファベットのまとめ}
+\begin{frame}[plain,label=matome]{アルファベットのまとめ}
+  \begin{exampleblock}{Topics for Today}
+\small
+\pause
+\begin{itemize}
+ \item アルファベットは26種類です\pause
+ \item 大文字と小文字があります\pause
+       \begin{itemize}
+	\item 大文字小文字を区別して書けるようになろう\pause
+        \item 大文字を使うのは\pause
+              \begin{itemize}
+	       \item 文の先頭\pause
+	       \item 人名\pause
+	       \item \textrm{I}\,\,(わたし)はいつでも\pause
+	      \end{itemize}
+       \end{itemize}
+ \item 聞き取れるようになったら実際に発音してみよう
+\end{itemize}
+      \end{exampleblock}
+\end{frame}
+
+
+
 \section{主語と動詞}
-
-
-
 
 \begin{frame}<1-6>[plain, label=cats]{だれが何をしていますか}
 \large
@@ -80,7 +149,7 @@
 %\raggedleft
 \begin{columns}
 \begin{column}{.245\textwidth}
-\visible<2->{この写真では}%
+\visible<1->{この写真では}%
 
 \bigskip
 
@@ -130,7 +199,7 @@ visit \url{https://creativecommons.org/licenses/by-sa/4.0/?ref=openverse}.
 \mbox{}\hfill \visible<1->{\myAnch{S}{Maroon}{主語}\myAnch{V}{NavyBlue}{動詞}}\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}<1-32>[plain,label=example_1]\frametitle{Aは〜する.}
+\begin{frame}<1-32>[plain,label=example_1]\frametitle{だれだれは〜する.}
  % \setbeamercovered{transparent}
   \begin{enumerate}
    \item<1-> \alt<14->{\Circled[outer color=Maroon]{I}}{I}  \alt<15->{\Circled[outer color=NavyBlue]{have}}{have} a car. \onslide*<2-25>{わたしは車を持っている。}\hfill\onslide*<27->{\footnotesize have: 持つ　car: 車}
@@ -157,13 +226,13 @@ visit \url{https://creativecommons.org/licenses/by-sa/4.0/?ref=openverse}.
 }
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe{title}
-\againframe<6>{cats}
-\againframe<15>{what_is_sv}
-\againframe<13->{example_1}
+%\againframe{title}
+%\againframe<6>{cats}
+%\againframe<15>{what_is_sv}
+%\againframe<13->{example_1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{主語と動詞の順番}
-\begin{frame}[plain]\frametitle{Aは〜する.}
+\begin{frame}[plain]\frametitle{だれだれは〜する.}
  % \setbeamercovered{transparent}
 
 \begin{columns}
@@ -208,6 +277,21 @@ I speak English.\pause
      \end{exampleblock}
 \end{frame}
 
+
+\subsection{まとめ}
+\begin{frame}[plain]{まとめ}
+ \begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item   英文の骨格は主語と動詞です
+ \item   英語は語順がだいじです
+ \item   英文にはかならず主語が必要
+\end{itemize}
+     \end{exampleblock}
+\end{frame}
+
+
+
+
 \begin{frame}[plain]\frametitle{Exercises}
 日本語を参考にして、主語と動詞を指摘してください。
 \begin{enumerate}
@@ -237,7 +321,7 @@ English is fun.
 \end{frame}
 
 \section*{See you next time.}
-\begin{frame}{}
-\phantomsection
-\end{frame}
+%\begin{frame}{}
+%\phantomsection
+%\end{frame}
 \end{document}

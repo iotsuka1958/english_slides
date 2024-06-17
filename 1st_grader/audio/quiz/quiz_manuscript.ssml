@@ -1,0 +1,598 @@
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 6 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+a.<break time="2s"/>
+n.<break time="2s"/>
+i.<break time="2s"/>
+m.<break time="2s"/>
+a.<break time="2s"/>
+l.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+a.<break time="2s"/>
+n.<break time="2s"/>
+i.<break time="2s"/>
+m.<break time="2s"/>
+a.<break time="2s"/>
+l.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 4 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+b.<break time="2s"/>
+o.<break time="2s"/>
+o.<break time="2s"/>
+k.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+b.<break time="2s"/>
+o.<break time="2s"/>
+o.<break time="2s"/>
+k.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 5 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+c.<break time="2s"/>
+a.<break time="2s"/>
+n.<break time="2s"/>
+d.<break time="2s"/>
+y.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+c.<break time="2s"/>
+a.<break time="2s"/>
+n.<break time="2s"/>
+d.<break time="2s"/>
+y.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 7 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+d.<break time="2s"/>
+i.<break time="2s"/>
+a.<break time="2s"/>
+m.<break time="2s"/>
+o.<break time="2s"/>
+n.<break time="2s"/>
+d.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+d.<break time="2s"/>
+i.<break time="2s"/>
+a.<break time="2s"/>
+m.<break time="2s"/>
+o.<break time="2s"/>
+n.<break time="2s"/>
+d.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 5 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+e.<break time="2s"/>
+i.<break time="2s"/>
+g.<break time="2s"/>
+h.<break time="2s"/>
+t.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+e.<break time="2s"/>
+i.<break time="2s"/>
+g.<break time="2s"/>
+h.<break time="2s"/>
+t.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 4 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+f.<break time="2s"/>
+i.<break time="2s"/>
+s.<break time="2s"/>
+h.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+f.<break time="2s"/>
+i.<break time="2s"/>
+s.<break time="2s"/>
+h.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 5 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+g.<break time="2s"/>
+h.<break time="2s"/>
+o.<break time="2s"/>
+s.<break time="2s"/>
+t.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+g.<break time="2s"/>
+h.<break time="2s"/>
+o.<break time="2s"/>
+s.<break time="2s"/>
+t.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 5 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+h.<break time="2s"/>
+o.<break time="2s"/>
+r.<break time="2s"/>
+s.<break time="2s"/>
+e.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+h.<break time="2s"/>
+o.<break time="2s"/>
+r.<break time="2s"/>
+s.<break time="2s"/>
+e.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 3 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+i.<break time="2s"/>
+c.<break time="2s"/>
+e.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+i.<break time="2s"/>
+c.<break time="2s"/>
+e.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 6 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+j.<break time="2s"/>
+i.<break time="2s"/>
+g.<break time="2s"/>
+s.<break time="2s"/>
+a.<break time="2s"/>
+w.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+j.<break time="2s"/>
+i.<break time="2s"/>
+g.<break time="2s"/>
+s.<break time="2s"/>
+a.<break time="2s"/>
+w.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 3 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+k.<break time="2s"/>
+e.<break time="2s"/>
+y.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+k.<break time="2s"/>
+e.<break time="2s"/>
+y.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 5 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+l.<break time="2s"/>
+e.<break time="2s"/>
+m.<break time="2s"/>
+o.<break time="2s"/>
+n.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+l.<break time="2s"/>
+e.<break time="2s"/>
+m.<break time="2s"/>
+o.<break time="2s"/>
+n.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 4 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+m.<break time="2s"/>
+i.<break time="2s"/>
+l.<break time="2s"/>
+k.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+m.<break time="2s"/>
+i.<break time="2s"/>
+l.<break time="2s"/>
+k.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 8 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+n.<break time="2s"/>
+o.<break time="2s"/>
+t.<break time="2s"/>
+e.<break time="2s"/>
+b.<break time="2s"/>
+o.<break time="2s"/>
+o.<break time="2s"/>
+k.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+n.<break time="2s"/>
+o.<break time="2s"/>
+t.<break time="2s"/>
+e.<break time="2s"/>
+b.<break time="2s"/>
+o.<break time="2s"/>
+o.<break time="2s"/>
+k.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 5 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+o.<break time="2s"/>
+n.<break time="2s"/>
+i.<break time="2s"/>
+o.<break time="2s"/>
+n.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+o.<break time="2s"/>
+n.<break time="2s"/>
+i.<break time="2s"/>
+o.<break time="2s"/>
+n.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 5 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+p.<break time="2s"/>
+e.<break time="2s"/>
+a.<break time="2s"/>
+c.<break time="2s"/>
+h.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+p.<break time="2s"/>
+e.<break time="2s"/>
+a.<break time="2s"/>
+c.<break time="2s"/>
+h.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 5 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+q.<break time="2s"/>
+u.<break time="2s"/>
+e.<break time="2s"/>
+e.<break time="2s"/>
+n.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+q.<break time="2s"/>
+u.<break time="2s"/>
+e.<break time="2s"/>
+e.<break time="2s"/>
+n.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 7 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+r.<break time="2s"/>
+a.<break time="2s"/>
+i.<break time="2s"/>
+n.<break time="2s"/>
+b.<break time="2s"/>
+o.<break time="2s"/>
+w.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+r.<break time="2s"/>
+a.<break time="2s"/>
+i.<break time="2s"/>
+n.<break time="2s"/>
+b.<break time="2s"/>
+o.<break time="2s"/>
+w.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 10 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+s.<break time="2s"/>
+t.<break time="2s"/>
+r.<break time="2s"/>
+a.<break time="2s"/>
+w.<break time="2s"/>
+b.<break time="2s"/>
+e.<break time="2s"/>
+r.<break time="2s"/>
+r.<break time="2s"/>
+y.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+s.<break time="2s"/>
+t.<break time="2s"/>
+r.<break time="2s"/>
+a.<break time="2s"/>
+w.<break time="2s"/>
+b.<break time="2s"/>
+e.<break time="2s"/>
+r.<break time="2s"/>
+r.<break time="2s"/>
+y.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 5 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+t.<break time="2s"/>
+i.<break time="2s"/>
+g.<break time="2s"/>
+e.<break time="2s"/>
+r.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+t.<break time="2s"/>
+i.<break time="2s"/>
+g.<break time="2s"/>
+e.<break time="2s"/>
+r.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 8 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+u.<break time="2s"/>
+m.<break time="2s"/>
+b.<break time="2s"/>
+r.<break time="2s"/>
+e.<break time="2s"/>
+l.<break time="2s"/>
+l.<break time="2s"/>
+a.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+u.<break time="2s"/>
+m.<break time="2s"/>
+b.<break time="2s"/>
+r.<break time="2s"/>
+e.<break time="2s"/>
+l.<break time="2s"/>
+l.<break time="2s"/>
+a.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 9 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+v.<break time="2s"/>
+e.<break time="2s"/>
+g.<break time="2s"/>
+e.<break time="2s"/>
+t.<break time="2s"/>
+a.<break time="2s"/>
+b.<break time="2s"/>
+l.<break time="2s"/>
+e.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+v.<break time="2s"/>
+e.<break time="2s"/>
+g.<break time="2s"/>
+e.<break time="2s"/>
+t.<break time="2s"/>
+a.<break time="2s"/>
+b.<break time="2s"/>
+l.<break time="2s"/>
+e.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 5 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+w.<break time="2s"/>
+a.<break time="2s"/>
+t.<break time="2s"/>
+c.<break time="2s"/>
+h.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+w.<break time="2s"/>
+a.<break time="2s"/>
+t.<break time="2s"/>
+c.<break time="2s"/>
+h.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 4 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+x.<break time="2s"/>
+m.<break time="2s"/>
+a.<break time="2s"/>
+s.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+x.<break time="2s"/>
+m.<break time="2s"/>
+a.<break time="2s"/>
+s.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 6 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+y.<break time="2s"/>
+e.<break time="2s"/>
+l.<break time="2s"/>
+l.<break time="2s"/>
+o.<break time="2s"/>
+w.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+y.<break time="2s"/>
+e.<break time="2s"/>
+l.<break time="2s"/>
+l.<break time="2s"/>
+o.<break time="2s"/>
+w.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>Here is today's quiz. I will say 4 letters in a row. Please listen carefully and write them down. These letters will form a word. Please choose what that word represents.<break time="3s"/></p>
+<p>
+z.<break time="2s"/>
+e.<break time="2s"/>
+r.<break time="2s"/>
+o.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">もう一度いいます。</lang>Please listen carefully and write them down.</p>
+<p>
+z.<break time="2s"/>
+e.<break time="2s"/>
+r.<break time="2s"/>
+o.<break time="2s"/>
+</p>
+<p>Good job, everyone! Let's check the answer.</p>
+</prosody>
+</speak>
+

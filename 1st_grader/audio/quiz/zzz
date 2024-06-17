@@ -1,0 +1,17 @@
+<speak>
+<prosody volume="x-loud" rate="slow">
+<p>The answer is "zero". Please listen carefully.<break time="3s"/></p>
+<p>
+zero.<break time="2s"/>
+zero.<break time="2s"/>
+zero.<break time="2s"/>
+</p>
+<p><lang xml:lang="ja-JP">こんどは私に続けてリピートしてください。</lang>Please repeat after me.</p>
+<p>
+zero.<break time="3s"/>
+zero.<break time="3s"/>
+zero.<break time="3s"/>
+</p>
+<p>Good job, everyone!</p>
+</prosody>
+</speak>
