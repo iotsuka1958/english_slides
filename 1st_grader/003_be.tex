@@ -46,8 +46,8 @@
 \begin{document}
 
 
-\begin{frame}{}
-\phantomsection\label{section}
+\begin{frame}[label=waiting]{}
+%\phantomsection\label{section}
 \thispagestyle{empty}
 \Large
 
@@ -65,7 +65,7 @@ The lesson will begin at the scheduled time.
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[label=title]
 \phantomsection\label{section-1}
 \thispagestyle{empty}
 \titlepage
@@ -149,7 +149,7 @@ The lesson will begin at the scheduled time.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{be動詞とは}
-\begin{frame}<1-27>[plain]\frametitle{be動詞とは}
+\begin{frame}<1-27>[plain,label=what_is_be]\frametitle{be動詞とは}
  % \setbeamercovered{transparent}
   \begin{enumerate}
    \item<1-> I \textbf<14-20>{\color<14-20>{Maroon}{am}} a student. \onslide*<2>{わたしは生徒です。}\onslide*<14-20>{(I $=$ a student)}\hfill\onslide*<21-26>{\footnotesize 　a student: (1人の)生徒、学生}
@@ -174,9 +174,12 @@ The lesson will begin at the scheduled time.
 \myaudio{audio/002_be_01.mp3}
 }
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe{waiting}
+\againframe{title}
+\againframe{what_is_be}
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{am, are, is --- みんな、なかまです}
  \centering
 \begin{tikzpicture}
@@ -246,16 +249,29 @@ John Smithさんになったつもりで自己紹介文を作成してみよう�
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Answer}
- \Huge
+ \Large
 
 \begin{enumerate}
- \item I am\onslide*<2>{($=$I'm)} John Smith.
- \item I am\onslide*<2>{($=$I'm)} from Boston.
- \item I am\onslide*<2>{($=$I'm)} twelve years old.
+ \item \visible<1->{I am}\onslide*<4->{($=$I'm)} \visible<1->{John Smith.}
+ \item \visible<2->{I am}\onslide*<4->{($=$I'm)} \visible<2->{from Boston.}
+ \item \visible<3->{I am}\onslide*<4->{($=$I'm)} \visible<3->{twelve years old.}
 \end{enumerate}
 
-\onslide<1>{%
+\normalsize
+\onslide<1->{%
 \myaudio{audio/002_be_021.mp3}
+}
+
+\normalsize
+\begin{exampleblock}<5->{Tpics for Today}
+\begin{itemize}
+ \item   amはbe動詞
+ \item I am 〜.をひとつのパターンとして覚えよう
+ \item $\text{I am}=\text{I'm}$\hfill{}短縮形といいます　
+\end{itemize}
+     \end{exampleblock}
+\onslide<5->{%
+\myaudio{audio/002_be_022.mp3}
 }
 \end{frame}
 
@@ -286,9 +302,31 @@ John Smithさんになったつもりで自己紹介文を作成してみよう�
 \myaudio{audio/002_be_03.mp3}
 
 }
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-7>[plain]{Exercises}
+あたえられた日本語の意味になるよう(~~~~~~)に適当な語を補いましょう。
 
+\begin{enumerate}
+ \item あなたは親切だ。(\alt<1>{~~\phantom{You}~~}{~~\textcolor{Maroon}{You}~~})~~are kind.
+ \item あなたは背が高い。You~~(\alt<1-2>{~~\phantom{are}~~}{~~\textcolor{Maroon}{are}~~})~~tall.
+ \item あなたは親切だ。(\alt<1-3>{~~\phantom{You're}~~}{~~\textcolor{Maroon}{You're}~~})~~kind.
+ \item あなたは背が高い。(\alt<1-4>{~~\phantom{You're}~~}{~~\textcolor{Maroon}{You're}~~})~~tall.
+\end{enumerate}
+
+ \begin{exampleblock}<6->{Topics for Today}
+\begin{itemize}
+ \item areはbe動詞
+ \item You are 〜.をひとつのパターンとして覚えよう
+ \item $\text{You are}=\text{You're}$\hfill{}短縮形といいます　
+\end{itemize}
+     \end{exampleblock}
+
+% Embed the sound file
+\myaudio{audio/002_be_031.mp3}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{I am, You are以外の場合(1)}
 \begin{frame}<1-21>[plain]\frametitle{I am, You are以外の場合(1)}
  % \setbeamercovered{transparent}
