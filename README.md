@@ -112,7 +112,7 @@ ssml2mp3.py <input_ssml_file>
 ```
 これでoutput.mp3(これは決め打ち)ができるので、適当にリネームすればいい。
 
-なお、ssml2mp3.py配下の通り。
+なお、ssml2mp3.pyは以下の通り。
 このスクリプトでは,
 <speak></speak>の中身を英語と日本語を混在させないこと。たとえばつぎみたいにする。
 こうすれば、日本語も英語もネイティブになる。
@@ -121,13 +121,13 @@ ssml2mp3.py <input_ssml_file>
     <p>
         <s>
             <prosody rate="slow" volume="loud">
-            english only </speak.
+            english only.
            </prosody>
         </s>
     </p>
 </speak>
 
-speak>
+<speak>
     <p>
         <s>
             <prosody volume="soft">
