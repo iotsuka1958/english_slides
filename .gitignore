@@ -68,5 +68,6 @@ rsconnect/
 *.toc
 *.txt~
 *synctex.gz
+*old
 images/
 

@@ -19,6 +19,9 @@
 \usepackage{tikzlings}
 \usepackage{scsnowman}
 \usepackage{figchild}
+\usepackage{epsdice}
+\usepackage{utfsym}
+\usepackage{worldflags}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -34,6 +37,20 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AtBeginSection[%
+]{%
+  \begin{frame}[plain]\frametitle{授業の流れ}
+     \tableofcontents[currentsection]
+   \end{frame}%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.\,\,{}---be動詞---}
 \author{}
@@ -45,20 +62,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}[label=waiting]{}
-%%%%%%\phantomsection\label{section}
-%\thispagestyle{empty}
-%\Large
-%\raggedright
-%
-%予定の時刻になったらはじまります
-%
-%\vfill
-%
-%\raggedleft
-%
-%The lesson will begin at the scheduled time.
-%\end{frame}
+\begin{frame}[label=waiting]{}
+%%%%%\phantomsection\label{section}
+\thispagestyle{empty}
+\Large
+\raggedright
+
+予定の時刻になったらはじまります
+
+\vfill
+
+\raggedleft
+
+The lesson will begin at the scheduled time.
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[label=title]
 %\phantomsection\label{section-1}
@@ -281,7 +298,48 @@ be動詞$\left\{\begin{tabular}[c]{l}
 %  
 % \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section*{復習--I am--}
+\againframe{waiting}
+\againframe{title}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% E
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{quiz}
+\begin{frame}<1->[plain]{Quiz}
+ \large
+\visible<1->{%
+これからアルファベットを5つ順番に読みあげます。
+聞こえたアルファベットを順番に小文字で書いてください。すると、ある単語になります。
+その意味を表すものを選んでください
+}
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_e.mp3}}
+
+\bigskip
+
+\centering
+\begin{tabular}{c@{　　　}c@{　　　}c@{　　　}c}
+\scalebox{2.236}{\epsdice{4}}\,\,\raisebox{5pt}{\LARGE $+$}\,\,\scalebox{2.236}{\epsdice{6}}&
+\fcNumberNine{.1732}{NavyBlue}{1}&
+{\Huge $14-2\times{}3$}&
+\usymW{1F0C7}{1cm}
+
+\\
+(a)&(b)&(c)&(d)
+\end{tabular}
+
+\bigskip
+\Huge
+
+\onslide<2->{e}%
+\onslide<3->{i}%
+\onslide<4->{g}%
+\onslide<5->{h}%
+\onslide<6->{t}%
+
+\large
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_e.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{復習--I am--}
 %\againframe<20>{i_am}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
@@ -348,7 +406,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
  \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Answer}
+\begin{frame}<1-5>[plain]{Answer}
  \Large
 
 \begin{enumerate}
@@ -407,7 +465,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 }
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}<1-7>[plain]{Exercises}
+\begin{frame}<1-8>[plain]{Exercises}
 あたえられた日本語の意味になるよう(~~~~~~)に適当な語を補いましょう。
 
 \begin{enumerate}
@@ -418,10 +476,12 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 \end{enumerate}
 
  \begin{exampleblock}<6->{Topics for Today}
+\setbeamercovered{transparent}
 \begin{itemize}
- \item areはbe動詞
- \item You are 〜.をひとつのパターンとして覚えよう
- \item $\text{You are}=\text{You're}$\hfill{}短縮形といいます　
+ \item<6> areはbe動詞
+ \item<7> You are 〜.をひとつのパターンとして覚えよう
+ \item<8-> $\text{You are}=\text{You're}$\\
+\mbox{}\hfill{}短縮形といいます。 \colorbox[gray]{0.9}{~'~}をapostrophy\,(アポストロフィ)といいます\phantom{あ}
 \end{itemize}
      \end{exampleblock}
 
@@ -444,21 +504,54 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 
 \bigskip
 
-\begin{exampleblock}<14->{Topics for Today}
+\begin{exampleblock}<14->{Topic for Today}
 \begin{itemize}
- \item I, You 以外で1つ(This, That, The book \ldots{})、1人(He, She, George, Jane \ldots{})で始まるときはisを使います
+ \item I, You 以外で1つ(It, This, That, The book \ldots{})、1人(He, She, Jane, My father \ldots{})が主語のとき---主語が単数のとき---はisを使います
 \end{itemize}  
      \end{exampleblock}
 
 
 % Embed the sound file
-\onslide<21>{%
+\onslide<14->{%
 \myaudio{audio/002_be_04.mp3}
 }
-
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-6>[plain]{Exercises}
+ つぎの各2文が同じ意味になるよう空所に適当な語を補いましょう。
 
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item She is very kind.
+	\item \alt<1>{(~~\phantom{She's}~~)}{(~~\textcolor{BurntOrange}{\bfseries She's}~~)}\,\,very kind.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item He is from Australia.\hfill\scalebox{2.2}{\twemoji{globe showing Asia-Australia}}\,\,\scalebox{.4}{\worldflag{AU}}
+	\item \alt<1-2>{(~~\phantom{He's}~~)}{(~~\textcolor{BurntOrange}{\bfseries He's}~~)}\,\,from Australia.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item It is a great movie.\hfill\scalebox{2.2}{\twemoji{film projector}}
+	\item \alt<1-3>{(~~\phantom{It's}~~)}{(~~\textcolor{BurntOrange}{\bfseries It's}~~)}\,\,a great movie.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item That is her new car.\hfill\scalebox{2}{\faCar}
+	\item \alt<1-4>{(~~\phantom{That's}~~)}{(~~\textcolor{BurntOrange}{\bfseries That's}~~)}\,\,her new car.
+       \end{enumerate}
+\end{enumerate}
 
+\begin{exampleblock}<6->{Topic for Today ---短縮形---}
+\begin{itemize}
+ \item He is\,($=\text{He's}$)\,\,\,\,/\,\,\,She is\,($=\text{She's}$)\,\,\,\,/\,\,\,It is\,($=\text{It's}$)\,\,\,\,/\,\,\,That is\,($=\text{That's}$)
+\end{itemize}  
+     \end{exampleblock}
+
+\vspace*{-5pt}
+% Embed the sound file
+\onslide<6->{%
+\myaudio{audio/002_be_041.mp3}{\small それぞれ2行目の短縮形の練習です}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{I am, You are以外の場合(2)}
 
 \begin{frame}<1-21>[plain]\frametitle{I am, You are以外の場合(2)}
@@ -481,25 +574,56 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
      \end{exampleblock}
 
 % Embed the sound file
-\onslide<21>{%
+\onslide<14->{%
 \myaudio{audio/002_be_05.mp3}
 }
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-6>[plain]{Exercises}
+ つぎの各2文が同じ意味になるよう空所に適当な語を補いましょう。
+
+
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item We are best friends.
+	\item \alt<1>{(~~\phantom{We're}~~)}{(~~\textcolor{BurntOrange}{\bfseries We're}~~)}\,\,best friends
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item They are from Italy.
+	\item \alt<1-2>{(~~\phantom{They're}~~)}{(~~\textcolor{BurntOrange}{\bfseries They're}~~)}\,\,from Italy        \end{enumerate}
+\end{enumerate}
+
+\begin{exampleblock}<4->{Topic for Today ---短縮形---}
+\begin{itemize}
+ \item We are\,($=\text{We're}$)\,\,\,\,/\,\,\,They are\,($=\text{They're}$)
+\end{itemize}
+     \end{exampleblock}
+
+% Embed the sound file
+\onslide<4->{%
+\myaudio{audio/002_be_051.mp3}{\small それぞれ2行目の短縮形の練習です}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%
+
+
+
 
 \section{まとめ}
 \begin{frame}[plain]\frametitle{まとめ}
 
-\begin{block}{be動詞の使い分け}
+\begin{exampleblock}{be動詞---am, is, are---の使い分け}
 
 {\Large
 \begin{numcases}{\text{　}}
  \text{\mbox{}\,\,{}Iではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{am}\\
- \text{\mbox{}\,\,{}Youではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}\\
+ \text{\mbox{}\,\,{}Youではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}\\[5pt]
+ \text{I, You以外のとき}\\
  \text{\mbox{}\,\,{}1つ、1人}&$\longrightarrow$\,\,\,\,\,\,{}\text{is}\\
  \text{\mbox{}\,\,{}2つ、2人以上}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}
 \end{numcases}
 }
-\end{block}
+\end{exampleblock}
 \end{frame}
 
 \begin{frame}[plain]\frametitle{まとめ}
@@ -528,7 +652,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
  \item John~~( am / \alt<2->{\Circled[outer color=orange]{is}}{is} / are )~~a baseball player.
  \item You~~( \alt<3->{\Circled[outer color=orange]{are}}{are} / is / am )~~nice.
  \item This~~( am / \alt<4->{\Circled[outer color=orange]{is}}{is} / are )~~my cup.
- \item They~~( am / is / \alt<5->{\Circled[outer color=orange]{are}}{are})~~my parents.
+ \item They~~( am / is / \alt<5->{\Circled[outer color=orange]{are}}{are} )~~my parents.
  \item We~~(am / \alt<6->{\Circled[outer color=orange]{are}}{are} / is )~~Japanese.
 \end{enumerate}
 

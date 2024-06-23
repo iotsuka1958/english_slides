@@ -1,5 +1,38 @@
 # english_slides
 
+# ffmpegを利用してfoo.mp3とbar.mp3を5秒の空白を挟んで結合する方法
+
+以下の手順で実行できます。
+
+## 1. 5秒の空白音声ファイルを作成
+
+まず、5秒の空白音声ファイル（silent.mp3）を作成します。
+
+```bash
+ffmpeg -f lavfi -t 5 -i anullsrc=r=44100:cl=stereo -q:a 9 -acodec libmp3lame silent.mp3
+```
+
+## 入力ファイルリストを作成
+foo.mp3、silent.mp3、bar.mp3の順に結合するための入力ファイルリストを作成します。このリストを inputs.txt として保存します。
+
+inputs.txt の内容：
+
+```
+file 'foo.mp3'
+file 'silent.mp3'
+file 'bar.mp3'
+```
+
+## ファイルを結合
+ffmpegを使用して、これらのファイルを結合します。
+
+```
+ffmpeg -f concat -safe 0 -i inputs.txt -c copy output.mp3
+```
+
+
+
+# 音声ファイル作成
 ## listen + repeat(通常の発音練習用)
 
 input.txt
@@ -139,6 +172,10 @@ ssml2mp3.py <input_ssml_file>
     </p>
 </speak>
 ```
+
+pythonスクリプトあはつぎのとおり
+
+```
 #!/usr/bin/env python3
 import re
 import sys
@@ -190,7 +227,6 @@ try:
 except Exception as e:
     print(f"An error occurred: {e}")
     sys.exit(1)
-
 ```
 
 ## 発音練習用mp3作成(アルファベットクイズ)
@@ -381,29 +417,35 @@ gray_img_2 |> plot()
 ```
 
 ```
-# 画像ファイルを読み込み
+画像ファイルを読み込み
 path <- "./images/me_1.png"
 img <- load.image(path)
-# 白黒に
+
+ 白黒に
 gray_img <- img |> grayscale()
-# 2値化。画素値が 0.375 より大きければそのピクセルの画素値は 1 にし、0.375以下なら 0 にすることで、白黒画像が作れます。
+
+ 2値化。画素値が 0.375 より大きければそのピクセルの画素値は 1 にし、0.375以下なら 0 にすることで、白黒画像が作れます。
 gray_img[ gray_img > .375] =1
 gray_img[ gray_img <= .375] = 0
-# 思い切った線画にする（ただし黒地に白線）
+
+ 思い切った線画にする（ただし黒地に白線）
 nega_img <- gray_img |> isoblur(2) |> imgradient("xy") |> with(sqrt(x^2+y^2)) |> threshold() |> as.cimg() 
-# 画像を保存
+ 画像を保存
+
 imager::save.image(nega_img, "./images/nega_me.png")
 
-#保存した画像の白黒を逆転させるために
-#ターミナルで
+保存した画像の白黒を逆転させるためにターミナルで
+
  convert -negate nega_me.png posi_me.png
-# convertはimagemagickのコマンド
+
+ convertはimagemagickのコマンド
 ```
 
 ## another way
 
-```
+
 # アルファチャネル操作用の関数
+```
 applyAlpha = function( cimg, alpha, reverse = F ){
   if( class( alpha )[ 1 ] == "cimg" ){
     if( reverse ){
