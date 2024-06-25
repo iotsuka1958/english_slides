@@ -43,6 +43,13 @@
 \newcommand{\myEmph}[3]{%
     \textbf<#1>{\color<#1>{#2}{#3}}%
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AtBeginSection[%
+]{%
+  \begin{frame}[plain]\frametitle{授業の流れ}
+     \tableofcontents[currentsection]
+   \end{frame}%
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Change alert block colors
 %%% 1- Block title (background and text)

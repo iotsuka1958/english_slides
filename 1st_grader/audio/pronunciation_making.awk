@@ -24,7 +24,7 @@ BEGIN {
     print "    <p>"
     print "        <s>"
     print "            <prosody rate=\"slow\" volume=\"loud\">"
-    print "                Please listen carefully."
+    print "                Please listen carefully as I read the example sentences."
     print "                <break time=\"1s\" />"
 }
 
@@ -50,7 +50,7 @@ END {
     print "                <lang xml:lang=\"ja-JP\">"
     print "                    さあ、いかがでしたか。"
     print "                    <break time=\"1s\" />"
-    print "                    こんどは、あとに続けて実際にリピートしてください"
+    print "                    こんどは、あとに続けて、みなさんがリピートしてください"
     print "                    <break time=\"1s\" />"
     print "                </lang>"
     print "            </prosody>"

@@ -3,9 +3,9 @@
         <s>
             <prosody volume="soft">
                 <lang xml:lang="ja-JP">
-                    さあ、実際の音声によく耳をかたむけてください。
+                    さあ、三単元の音声に注意して、よくきいてください。。
                     <break time="1s" />
-                    それぞれの英文を二回読みます。
+                    はじめに動詞をそのまま発音して、つぎに三単元の発音をします。
                     <break time="1s" />
                     それでは、始めます。
                     <break time="1s" />
@@ -20,37 +20,77 @@
         <s>
             <prosody rate="slow" volume="loud">
                 Please listen carefully.
-                <break time="1s" />
-                Number 1.
-                <break time="1s" />
-                John is a baseball player.
                 <break time="2s" />
-                John is a baseball player.
+                Number 1.
+                <break time="2s" />
+                play. 
+                <break time="2s" />
+                plays.
+                <break time="2s" />
+                play. 
+                <break time="2s" />
+                plays.
                 <break time="3s" />
                 Number 2.
-                <break time="1s" />
-                You are nice.
                 <break time="2s" />
-                You are nice.
-                <break time="3s" />
+                drink.
+                <break time="2s" />
+                drinks.
+                <break time="2s" />
+                drink.
+                <break time="2s" />
+                drinks.
+               <break time="3s" />
                 Number 3.
-                <break time="1s" />
-                This is my cup.
                 <break time="2s" />
-                This is my cup.
+                go.
+                <break time="2s" />
+                goes.
+                <break time="2s" />
+                go.
+                <break time="2s" />
+                goes.
                 <break time="3s" />
                 Number 4.
-                <break time="1s" />
-                They are my parents.
                 <break time="2s" />
-                They are my parents.
-                <break time="3s" />
+                teach.
+                <break time="2s" />
+                teaches.
+                <break time="2s" />
+                teach.
+                <break time="2s" />
+                teaches.
+                 <break time="3s" />
                 Number 5.
-                <break time="1s" />
-                We are Japanese.
                 <break time="2s" />
-                We are Japanese.
+                wash.
+                <break time="2s" />
+                washes.
+                 <break time="2s" />
+                wash.
+                <break time="2s" />
+                washes.
                 <break time="3s" />
+                Number 6.
+                <break time="2s" />
+                watch.
+                <break time="2s" />
+                watches.
+                <break time="2s" />
+                watch.
+                <break time="2s" />
+                watches.
+               <break time="3s" />
+                Number 7.
+                <break time="2s" />
+                have.
+                <break time="2s" />
+                has.
+                <break time="2s" />
+                have.
+                <break time="2s" />
+                has.
+               <break time="3s" />
             </prosody>
         </s>
     </p>
@@ -63,7 +103,7 @@
                 <lang xml:lang="ja-JP">
                     さあ、いかがでしたか。
                     <break time="1s" />
-                    こんどは、あとに続けて実際にリピートしてください
+                    こんどは、あとに続けて、みなさんがリピートしてください
                     <break time="1s" />
                 </lang>
             </prosody>
@@ -78,34 +118,46 @@
                 Please repeat after me.
                 <break time="1s" />
                 Number 1.
-                <break time="1s" />
-                John is a baseball player.
+                <break time="2s" />
+                play. <break time="2s" /> plays.
                 <break time="5s" />
-                John is a baseball player.
+                play. <break time="2s" /> plays.
                 <break time="3s" />
                 Number 2.
                 <break time="1s" />
-                You are nice.
+                drink. <break time="2s" /> drinks.
                 <break time="5s" />
-                You are nice.
+                drink. <break time="2s" /> drinks.
                 <break time="3s" />
                 Number 3.
                 <break time="1s" />
-                This is my cup.
+                go. <break time="2s" /> goes
                 <break time="5s" />
-                This is my cup.
+                go. <break time="2s" /> goes
                 <break time="3s" />
                 Number 4.
                 <break time="1s" />
-                They are my parents.
+                teach. <break time="2s" /> teaches.
                 <break time="5s" />
-                They are my parents.
+                teach. <break time="2s" /> teaches.
                 <break time="3s" />
                 Number 5.
                 <break time="1s" />
-                We are Japanese.
+                wash. <break time="2s" />washes.
                 <break time="5s" />
-                We are Japanese.
+                wash. <break time="2s" />washes.
+                <break time="3s" />
+                Number 6.
+                <break time="1s" />
+                watch. <break time="2s" />watches.
+                <break time="5s" />
+                watch. <break time="2s" />watches.
+                <break time="3s" />
+                Number 7.
+                <break time="1s" />
+                have. <break time="2s" />has.
+                <break time="5s" />
+                have. <break time="2s" />has.
                 <break time="3s" />
                 Good job, everyone!
                 <break time="1s" />
@@ -113,4 +165,3 @@
         </s>
     </p>
 </speak>
-
