@@ -3,9 +3,9 @@
         <s>
             <prosody volume="soft">
                 <lang xml:lang="ja-JP">
-                    さあ、三単元の音声に注意して、よくきいてください。。
+                    さあ、実際の音声によく耳をかたむけてください。
                     <break time="1s" />
-                    はじめに動詞をそのまま発音して、つぎに三単元の発音をします。
+                    それぞれの英文を二回読みます。
                     <break time="1s" />
                     それでは、始めます。
                     <break time="1s" />
@@ -19,78 +19,44 @@
     <p>
         <s>
             <prosody rate="slow" volume="loud">
-                Please listen carefully.
-                <break time="2s" />
+                Please listen carefully as I read the example sentences.
+                <break time="1s" />
                 Number 1.
+                <break time="1s" />
+                This is my pencil.
                 <break time="2s" />
-                play. 
-                <break time="2s" />
-                plays.
-                <break time="2s" />
-                play. 
-                <break time="2s" />
-                plays.
+                This is my pencil.
                 <break time="3s" />
                 Number 2.
+                <break time="1s" />
+                He is my classmate.
                 <break time="2s" />
-                drink.
-                <break time="2s" />
-                drinks.
-                <break time="2s" />
-                drink.
-                <break time="2s" />
-                drinks.
-               <break time="3s" />
+                He is my classmate.
+                <break time="3s" />
                 Number 3.
+                <break time="1s" />
+                She is a good singer.
                 <break time="2s" />
-                go.
-                <break time="2s" />
-                goes.
-                <break time="2s" />
-                go.
-                <break time="2s" />
-                goes.
+                She is a good singer.
                 <break time="3s" />
                 Number 4.
+                <break time="1s" />
+                Your bike is new.
                 <break time="2s" />
-                teach.
-                <break time="2s" />
-                teaches.
-                <break time="2s" />
-                teach.
-                <break time="2s" />
-                teaches.
-                 <break time="3s" />
+                Your bike is new.
+                <break time="3s" />
                 Number 5.
+                <break time="1s" />
+                George is busy.
                 <break time="2s" />
-                wash.
-                <break time="2s" />
-                washes.
-                 <break time="2s" />
-                wash.
-                <break time="2s" />
-                washes.
+                George is busy.
                 <break time="3s" />
                 Number 6.
+                <break time="1s" />
+                Jane is from France.
                 <break time="2s" />
-                watch.
-                <break time="2s" />
-                watches.
-                <break time="2s" />
-                watch.
-                <break time="2s" />
-                watches.
-               <break time="3s" />
-                Number 7.
-                <break time="2s" />
-                have.
-                <break time="2s" />
-                has.
-                <break time="2s" />
-                have.
-                <break time="2s" />
-                has.
-               <break time="3s" />
+                Jane is from France.
+                <break time="3s" />
             </prosody>
         </s>
     </p>
@@ -118,46 +84,40 @@
                 Please repeat after me.
                 <break time="1s" />
                 Number 1.
-                <break time="2s" />
-                play. <break time="2s" /> plays.
+                <break time="1s" />
+                This is my pencil.
                 <break time="5s" />
-                play. <break time="2s" /> plays.
+                This is my pencil.
                 <break time="3s" />
                 Number 2.
                 <break time="1s" />
-                drink. <break time="2s" /> drinks.
+                He is my classmate.
                 <break time="5s" />
-                drink. <break time="2s" /> drinks.
+                He is my classmate.
                 <break time="3s" />
                 Number 3.
                 <break time="1s" />
-                go. <break time="2s" /> goes
+                She is a good singer.
                 <break time="5s" />
-                go. <break time="2s" /> goes
+                She is a good singer.
                 <break time="3s" />
                 Number 4.
                 <break time="1s" />
-                teach. <break time="2s" /> teaches.
+                Your bike is new.
                 <break time="5s" />
-                teach. <break time="2s" /> teaches.
+                Your bike is new.
                 <break time="3s" />
                 Number 5.
                 <break time="1s" />
-                wash. <break time="2s" />washes.
+                George is busy.
                 <break time="5s" />
-                wash. <break time="2s" />washes.
+                George is busy.
                 <break time="3s" />
                 Number 6.
                 <break time="1s" />
-                watch. <break time="2s" />watches.
+                Jane is from France.
                 <break time="5s" />
-                watch. <break time="2s" />watches.
-                <break time="3s" />
-                Number 7.
-                <break time="1s" />
-                have. <break time="2s" />has.
-                <break time="5s" />
-                have. <break time="2s" />has.
+                Jane is from France.
                 <break time="3s" />
                 Good job, everyone!
                 <break time="1s" />
@@ -165,3 +125,4 @@
         </s>
     </p>
 </speak>
+

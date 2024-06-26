@@ -1,7 +1,6 @@
-play. plays.
-drink. drinks.
-go. goes
-teach. teaches.
-wash. washes.
-watch. watches.
-have. has.
+This is my pencil.
+He is my classmate.
+She is a good singer.
+Your bike is new.
+George is busy.
+Jane is from France.
