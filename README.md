@@ -13,9 +13,9 @@ ffmpeg -f lavfi -t 5 -i anullsrc=r=44100:cl=stereo -q:a 9 -acodec libmp3lame sil
 ```
 
 ## 入力ファイルリストを作成
-foo.mp3、silent.mp3、bar.mp3の順に結合するための入力ファイルリストを作成します。このリストを inputs.txt として保存します。
+foo.mp3、silent.mp3、bar.mp3の順に結合するための入力ファイルリストを作成します。このリストを file_merge_list.txt として保存します。
 
-inputs.txt の内容：
+file_merge_list.txt の内容：
 
 ```
 file 'foo.mp3'
@@ -27,12 +27,30 @@ file 'bar.mp3'
 ffmpegを使用して、これらのファイルを結合します。
 
 ```
-ffmpeg -f concat -safe 0 -i inputs.txt -c copy output.mp3
+ffmpeg -f concat -safe 0 -i file_merge_list.txt -c copy output.mp3
 ```
 
 
 
 # 音声ファイル作成
+
+
+## bashのスクリプトファイルを作った
+
+file名はgenerate_mp3.shにした。
+```
+#!/usr/bin/basg
+
+awk -f pronunciation_making.awk inout.txt > zzz
+assml2mp3.py zzz
+rm zzz
+```
+
+これでinut.txtの各業に英語の例文を入れておいて
+`./generate_mp3.sh`
+とすればoutput.mp3ができあがる。このoutput.mp3のファイル名を適当に変えればOK
+
+
 ## listen + repeat(通常の発音練習用)
 
 input.txt
@@ -290,7 +308,7 @@ txt2mp3.py qqq
 オリジナルファイルからアップロード用に一部のページを抽出したpdfを作成する。
 pdftkをインストールしておくこと。
 ```
-pdftk original.pdf cat 3-4 16-65 output ./upload_archive/upload.pdf
+pdftk original.pdf cat 3-4 16-65 output ./upload_archive/2024-06-28/hogehoge.pdf
 ```
 
 ## Chat-GPTのプロンプト

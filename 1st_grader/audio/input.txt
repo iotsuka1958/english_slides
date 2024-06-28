@@ -1,6 +1,3 @@
-This is my pencil.
-He is my classmate.
-She is a good singer.
-Your bike is new.
-George is busy.
-Jane is from France.
+She is a student.
+She is not a student.
+She isn’t a student.
