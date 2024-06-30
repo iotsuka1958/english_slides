@@ -7,62 +7,6 @@
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{media9}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% さまざまなアイコン
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{fontawesome}
-\usepackage{figchild}
-\usepackage{twemojis}
-\usepackage{utfsym}
-\usepackage{bclogo}
-\usepackage{marvosym}
-\usepackage{fontmfizz}
-\usepackage{pifont}
-\usepackage{phaistos}
-\usepackage{worldflags}
-\usepackage{jigsaw}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{tikz}
-\usetikzlibrary{backgrounds}
-\usepackage{tcolorbox}
-\usepackage{tikzpeople}
-\usepackage{circledsteps}
-\usepackage{xcolor}
-\usepackage{amsmath}
-\usepackage{booktabs}
-\usepackage{chronology}
-\usepackage{signchart}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 場合分け
-\usepackage{cases}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \myAnch{<名前>}{<色>}{<テキスト>}
-% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
-% ノードとして出力する. 図には remeber picture 属性を付けている
-% ので外部から参照可能である.
-\newcommand*{\myAnch}[3]{%
-  \tikz[remember picture,baseline=(#1.base)]
-    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 音声リンク表示
-\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \myEmph コマンドの定義
-%\newcommand{\myEmph}[3]{%
-%    \textbf<#1>{\color<#1>{#2}{#3}}%
-%}
-\usepackage{xparse} % xparseパッケージの読み込み
-\NewDocumentCommand{\myEmph}{O{} m m}{%
-    \def\argOne{#1}%
-    \ifx\argOne\empty
-        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
-    \else
-        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
-    \fi
-}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Change alert block colors
 %%% 1- Block title (background and text)
@@ -72,21 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 文末の上昇イントネーション記号 \myRisingPitch
-%% 通常のイントネーション \myDownwardPitch
-%% https://note.com/dan_oyama/n/n8be58e8797b2
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\myRisingPitch}{
-\begin{tikzpicture}[scale=0.3,baseline=0.3]
-\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
-\end{tikzpicture}
-}
-\newcommand{\myDownwardPitch}{
-\begin{tikzpicture}[scale=0.3,baseline=0.3]
-\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
-\end{tikzpicture}
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.\,\,{}---ABCDEFG ... XYZ ---}
   \author{}
 \institute[]{}

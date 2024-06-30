@@ -7,42 +7,8 @@
 \setbeamertemplate{navigation symbols}{}
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% さまざまなアイコン
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{fontawesome}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{tikz}
-\usepackage{xcolor}
-\usepackage{circledsteps}
-\usetikzlibrary{backgrounds}
-\usepackage{tcolorbox}
-\usepackage{tikzpeople}
-\usepackage{twemojis}
-\usepackage{tikzsymbols}
-\usepackage{utfsym}\usepackage{figchild}
-\usepackage{tikzlings}
-\usepackage{scsnowman}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 場合分け
-\usepackage{cases}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \myAnch{<名前>}{<色>}{<テキスト>}
-% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
-% ノードとして出力する. 図には remember picture 属性を付けている
-% ので外部から参照可能である.
-\newcommand*{\myAnch}[3]{%
-  \tikz[remember picture,baseline=(#1.base)]
-    \node[draw,rectangle,line width=1pt,#2] (#1) {\normalcolor #3};
-}
+\input{myPreamble4Slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 音声リンク表示
-\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \myEmph コマンドの定義
-\newcommand{\myEmph}[3]{%
-    \textbf<#1>{\color<#1>{#2}{#3}}%
-}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \AtBeginSection[%
 ]{%
