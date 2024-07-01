@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
@@ -6,6 +6,15 @@
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{media9}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,7 +63,8 @@
     \fi
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{English is fun.\,\,{}---A Tale of Two cities---}
+\title{English is fun.}
+\subtitle{The Cat and the Mice}
 \author{}
 \institute[]{}
 \date[]
@@ -63,6 +73,23 @@
 %% TEXT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[label=waiting]{}
+%%%%%\phantomsection\label{section}
+\thispagestyle{empty}
+\Large
+\raggedright
+
+予定の時刻になったらはじまります
+
+\vfill
+
+\raggedleft
+
+The lesson will begin at the scheduled time.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
   \titlepage
 \end{frame}
@@ -72,9 +99,9 @@
   \frametitle{授業の流れ}
   \tableofcontents
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{単数と複数}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{ひとつとふたつ以上}
 \begin{columns}
 \begin{column}{.25\textwidth}
@@ -95,41 +122,40 @@ a book
 }}{naiyo}
 \end{column}\pause
 \begin{column}{.5\textwidth}\LARGE
-two book\myEmph[4]{orange}{s}
+two book\myEmph[4]{Maroon}{s}
 \end{column}
 
 \end{columns}
 \end{frame}
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{日本語とのちがい}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-10>[plain]\frametitle{日本語とのちがい}
 \begin{columns}
 \begin{column}[t]{.45\textwidth}
-\begin{block}{日本語}
+\begin{alertblock}{日本語}
 \onslide<2->{わたしは1冊の本を持っています。}
 
 \onslide<3->{わたしは2冊の本を持っています。}
 
 \onslide<4->{わたしは本を持っています。}
-\end{block}
+\end{alertblock}
 \end{column}
 \begin{column}[t]{.45\textwidth}
 \begin{block}{英語}
-\onslide<5->{I have \textcolor{orange}{a book.}}
+\onslide<5->{I have \textcolor{NavyBlue}{\bfseries a book.}}
 
-\onslide<6->{I have \textcolor{orange}{two books.}}
+\onslide<6->{I have \textcolor{NavyBlue}{\bfseries two books.}}
 
-\onslide<7->*{I have \textcolor{red!50}{book}.}\onslide<8>{\,\,{}$\longleftarrow$これは\textcolor{red}{だめ}}
+\onslide<7->*{I have \textcolor{Maroon}{\bfseries book}.}\onslide<8>{\,\,{}$\longleftarrow$これは\textcolor{Maroon}{だめ}}
 \end{block}
 \end{column}
 \end{columns}
 
 \begin{exampleblock}<9->{Topics for Today}
 \begin{itemize}
- \item<1->  \onslide<9,10>{\textcolor{orange}{単数形と複数形があります}}
- \item<2->  \onslide<10>{\textcolor{orange}{単数形を裸で使うことはできません}}
+ \item<1->  \onslide<9,10>{\textcolor{black}{単数形と複数形があります}}
+ \item<2->  \onslide<10>{\textcolor{black}{単数形を裸で使うことはできません}}
 \end{itemize}
       \end{exampleblock}
 
@@ -142,91 +168,96 @@ two book\myEmph[4]{orange}{s}
 \Large
 おしりに---sをつけます。
 
-a book $\longrightarrow$ book\textcolor{orange}{s}
+a book $\longrightarrow$ book\textcolor{Maroon}{s}
 
 \end{frame}
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Exercises}
 \begin{frame}[plain]\frametitle{Exercises}
 
-\fcDog{0.4}{black}{1}\pause a dog\hspace{20pt}%
+\fcDog{0.4}{black}{1}\pause {\large a dog}\hspace{30pt}%
 \pause
-\fcDog{0.4}{black}{1}\fcDog{0.4}{black}{1}\pause two dogs
-\pause
-
-\fcCat{0.4}{black}{1}\pause a cat\hspace{40pt}%
-\pause
-\fcCat{0.4}{black}{1}\fcCat{0.4}{black}{1}\fcCat{0.4}{black}{1} \pause three cats
-\pause
-
-\fcBirdB{0.4}{black}{1}\pause a bird\hspace{45pt}%
-\pause
-\fcBirdB{0.4}{black}{1}
-\fcBirdB{0.4}{black}{1}
-\fcBirdB{0.4}{black}{1}
-\fcBirdB{0.4}{black}{1} \pause four birds
-
-\end{frame}
-
-
-\begin{frame}[plain]\frametitle{Exercises(Continued)}
-
-\fcBookB{0.4}{black}{1}\pause a book\hspace{20pt}%
-\pause
-\fcBookB{0.4}{black}{1}\fcBookB{0.4}{black}{1}%
-\fcBookB{0.4}{black}{1}\fcBookB{0.4}{black}{1}%
-\fcBookB{0.4}{black}{1} \pause five books
+\fcDog{0.4}{black}{1}\fcDog{0.4}{black}{1}\pause {\large two dog\textcolor{Maroon}{\bfseries s}}
 \pause
 
 \bigskip
 
-\scalebox{.17}{\fcKey{0.4}{black}{2}}\,\,{}\pause a key\hspace{40pt}%
+\fcCat{0.4}{black}{1}\pause {\large a cat}\hspace{50pt}%
+\pause
+\fcCat{0.4}{black}{1}\fcCat{0.4}{black}{1}\fcCat{0.4}{black}{1} \pause {\large three cat\textcolor{Maroon}{\bfseries s}}
+\pause
+
+\bigskip
+
+\fcBirdB{0.4}{black}{1}\pause {\large a bird}\hspace{55pt}%
+\pause
+\fcBirdB{0.4}{black}{1}
+\fcBirdB{0.4}{black}{1}
+\fcBirdB{0.4}{black}{1}
+\fcBirdB{0.4}{black}{1} \pause {\large four bird\textcolor{Maroon}{\bfseries s}}
+
+\myaudio{./audio/005_singular_plural_01.mp3}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]\frametitle{Exercises(Continued)}
+
+\fcBookB{0.4}{black}{1}\pause {\large a book}\hspace{20pt}%
+\pause
+\fcBookB{0.4}{black}{1}\fcBookB{0.4}{black}{1}%
+\fcBookB{0.4}{black}{1}\fcBookB{0.4}{black}{1}%
+\fcBookB{0.4}{black}{1} \pause {\large five book\textcolor{Maroon}{\bfseries s}}
+\pause
+
+\bigskip
+
+\scalebox{.17}{\fcKey{0.4}{black}{2}}\,\,{}\pause {\large a key}\hspace{40pt}%
 \pause
 \scalebox{.17}{\fcKey{0.4}{black}{2}} \scalebox{.17}{\fcKey{0.4}{black}{2}} \scalebox{.17}{\fcKey{0.4}{black}{2}} \scalebox{.17}{\fcKey{0.4}{black}{2}} \scalebox{.17}{\fcKey{0.4}{black}{2}} \scalebox{.17}{\fcKey{0.4}{black}{2}}
 \pause
- six keys
+ {\large six key\textcolor{Maroon}{\bfseries s}}
 \pause
 
-\scalebox{.25}{\fcChairA{0.4}{black}{2}}\pause a chair\hspace{40pt}%
+\scalebox{.25}{\fcChairA{0.4}{black}{2}}\pause {\large a chair}\hspace{40pt}%
 \pause
 \scalebox{.25}{\fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2} \fcChairA{0.4}{black}{2}}
 \pause
- seven chairs
+ {\large seven chair\textcolor{Maroon}{\bfseries s}}
 \pause
 
-\scalebox{1}{\fcBike{0.4}{black}{1}}\pause a bike\hspace{30pt}%
+\scalebox{1}{\fcBike{0.4}{black}{1}}\pause {\large a bike}\hspace{30pt}%
 \pause
 \scalebox{1}{\begin{tabular}{@{}lllll}
 \fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}\\
  \fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}& \fcBike{0.4}{black}{1}
 	     \end{tabular}}
 \pause
-\mbox{}\hspace*{.8\textwidth} eight bikes
+
+\vspace*{-25pt}
+\mbox{}\hspace*{.6\textwidth} {\large eight bike\textcolor{Maroon}{\bfseries s}}
+
+\myaudio{./audio/005_singular_plural_02.mp3}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Exercises(Continued)}
 
-\usymW{2710}{1cm}\pause a pencil\hspace{20pt}%
+\usymW{2710}{1cm}\pause {\large a pencil}\hspace{20pt}%
 \pause
 \usymW{2710}{1cm}\usymW{2710}{1cm}\usymW{2710}{1cm}\usymW{2710}{1cm}\usymW{2710}{1cm}\hspace{15pt}
 \usymW{2710}{1cm}\usymW{2710}{1cm}\usymW{2710}{1cm}\usymW{2710}{1cm}\pause
 
-\mbox{}\hspace{.8\textwidth} nine pencils
+\mbox{}\hspace{.8\textwidth} {\large nine pencil\textcolor{Maroon}{\bfseries s}}
 \pause
 
-
-\bcfleur\,\,\,\,\pause a flower\hspace{45pt}%
+\bcfleur\,\,\,\,\pause {\large a flower}\hspace{45pt}%
 \pause
 \bcfleur\bcfleur\bcfleur\bcfleur\bcfleur\hspace{15pt}
 \bcfleur\bcfleur\bcfleur\bcfleur\bcfleur\hspace{10pt}
 \pause
-ten flowers
+{\large ten flower\textcolor{Maroon}{\bfseries s}}
+
+\myaudio{./audio/005_singular_plural_03.mp3}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Pronunciation}
 
 \begin{enumerate}
@@ -243,12 +274,11 @@ ten flowers
 
 % Embed the sound file
 \pause
-\myaudio{./audio/005_singular_plural_01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
-
+\mbox{}\hfill\myaudio{./audio/005_singular_plural_04.mp3}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{注意すべき複数形}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意すべき複数形}
 
 \scalebox{.5}{\fcBus{0.4}{black}{2}}\hspace{15pt}\pause {\LARGE a bus}
@@ -260,8 +290,10 @@ ten flowers
 
 \scalebox{.5}{\fcBus{0.4}{black}{2}\hspace{15pt}\fcBus{0.4}{black}{2}}\hspace{15pt}
 \pause {\LARGE two  bus\textcolor{orange}{es}}
-\end{frame}
 
+\myaudio{./audio/005_singular_plural_05.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意すべき複数形}
 \scalebox{.4}{\fcPotato{0.4}{black}{2}}\hspace{15pt}
 \pause
@@ -272,11 +304,13 @@ ten flowers
 
 \bigskip
 
-\scalebox{.4}{\fcPotato{0.4}{black}{2}\hspace{15pt}\fcPotato{0.4}{black}{2}}\hspace{15pt}
+\scalebox{.4}{\fcPotato{0.4}{black}{2}\fcPotato{0.4}{black}{2}\fcPotato{0.4}{black}{2}}\hspace{15pt}
 \pause
-{\LARGE two  potato\textcolor{orange}{es}}
-\end{frame}
+{\LARGE three  potato\textcolor{orange}{es}}
 
+\myaudio{./audio/005_singular_plural_06.mp3}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{注意すべき複数形}
 
 {\Large `s'ではなく\textcolor{orange}{`es'}をつける複数形があります}
@@ -288,32 +322,37 @@ ten flowers
 
 a bus \pause$\longrightarrow$ bus\textcolor{orange}{es}\pause
 
+a class \pause$\longrightarrow$ class\textcolor{orange}{es}\pause
+
+a box\pause $\longrightarrow$ box\textcolor{orange}{es}
+
 a potato \pause$\longrightarrow$ potato\textcolor{orange}{es}\pause
 
 a tomato \pause$\longrightarrow$ tomato\textcolor{orange}{es}\pause
 
-a class \pause$\longrightarrow$ class\textcolor{orange}{es}\pause
 
-a box\pause $\longrightarrow$ box\textcolor{orange}{es}
 \end{block}
-
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Pronunciation}
 
 \begin{enumerate}
  \item a bus~~~\pause{}/~~~buses\pause
- \item a potato~~~\pause{}/~~~potatoes\pause
- \item a tomato~~~\pause{}/~~~tomatoes\pause
  \item a class~~~~\pause{}/~~~classes\pause
  \item a box~~~\pause{}/~~~boxes
+ \item a potato~~~\pause{}/~~~potatoes\pause
+ \item a tomato~~~\pause{}/~~~tomatoes\pause
+
  \end{enumerate}
 \pause
-\myaudio{./audio/005_singular_plural_02.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+
+\bigskip
+
+\bigskip
+
+\mbox{}\hfill\myaudio{./audio/005_singular_plural_07.mp3}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意すべき複数形}
 \scalebox{5}{\ManFace}\hspace{15pt}
 \pause
@@ -327,8 +366,14 @@ a box\pause $\longrightarrow$ box\textcolor{orange}{es}
 \scalebox{5}{\ManFace\hspace{5pt}\ManFace\hspace{5pt}\ManFace}\hspace{15pt}
 \pause
 {\LARGE three  \textcolor{orange}{men}}
-\end{frame}
 
+\bigskip
+
+\bigskip
+
+\mbox{}\hfill\myaudio{./audio/005_singular_plural_08.mp3}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意すべき複数形}
 \scalebox{5}{\WomanFace}\pause\hspace{15pt} {\LARGE a woman}
 \pause
@@ -340,8 +385,14 @@ a box\pause $\longrightarrow$ box\textcolor{orange}{es}
 \scalebox{5}{\WomanFace \WomanFace \WomanFace \WomanFace} \hspace{25pt}
 \pause
 {\LARGE four  \textcolor{orange}{women}}
-\end{frame}
 
+\bigskip
+
+\bigskip
+
+\mbox{}\hfill\myaudio{./audio/005_singular_plural_09.mp3}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意すべき複数形}
 \scalebox{.7}{%
 \begin{tikzpicture}
@@ -351,7 +402,7 @@ anchor=south,pin={85:I am Jane. I am twelve.}] at (6.25cm,0) {};
 %anchor=south,,pin={105:I am Bob.}] at (5cm,0) {};
 \end{tikzpicture}
 }\pause
-\hspace{80pt}{\Large a child}
+\hspace{80pt}{\LARGE a child}
 \pause
 
 \bigskip
@@ -364,76 +415,46 @@ anchor=south] at (6.25cm,0) {};
 anchor=south,,pin={105:I am Bob. I am thirteen.}] at (5cm,0) {};
 \end{tikzpicture}
 }\pause
-\hspace{45pt}{\Large two \textcolor{orange}{children}}
+\hspace{45pt}{\LARGE two \textcolor{orange}{children}}
 
+\bigskip
+
+\bigskip
+
+\mbox{}\hfill\myaudio{./audio/005_singular_plural_10.mp3}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{注意すべき複数形}
+ \fcMouse{.4}{gray}{.3}\pause\hspace{190pt}{\LARGE a mouse}
 
+\bigskip
 
+\bigskip
+
+\fcMouse{.4}{gray}{.3}\fcMouse{.4}{gray}{.3}\fcMouse{.4}{gray}{.3}\fcMouse{.4}{gray}{.3}\pause\hspace{50pt}{\LARGE four \textcolor{Maroon}{\bfseries mice}}
+
+\bigskip
+
+\bigskip
+
+\mbox{}\hfill\myaudio{./audio/005_singular_plural_11.mp3}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Pronunciation}
 
 \begin{enumerate}
  \item a man~~~\pause{}/~~~men\pause
  \item a woman~~~\pause{}/~~~women\pause
- \item a child~~~\pause{}/~~~children
+ \item a child~~~\pause{}/~~~children\pause
+ \item a mouse~~~\pause{}/~~~mice
   \end{enumerate}
 \pause
-\myaudio{./audio/005_singular_plural_03.mp3}\,\,{}Listen carefully.(注意して聞いてください)
-\end{frame}
-
-
-
-\begin{frame}<1-9>[plain]\frametitle{Exercises}
-空所に適当な動詞を補ってください。なお、必要があれば、形を変えてください
-
- % \setbeamercovered{transparent}
-  \begin{enumerate}
-   \item George (\onslide<2,8,9>{\textcolor{orange}{~has~}}) two cats.
-{\footnotesize ジョージはネコを2匹飼っています。}
-   \item My mother (\onslide<3,8,9>{\textcolor{orange}{~teaches~}}) music.{\footnotesize 母は音楽を教えています。}
-   \item  She (\onslide<4,8,9>{\textcolor{orange}{~washes~}}) her car every Saturday.{\footnotesize 彼女は毎週土曜日に洗車します。}
-   \item Tom (\onslide<5,8,9>{\textcolor{orange}{~goes~}}) to church every Sunday.{\footnotesize トムは毎週日曜日に教会へ行きます。}
-   \item Jennifer (\onslide<6,8,9>{\textcolor{orange}{~watches~}}) television after supper.{\footnotesize ジェニファーは夕食後テレビをみます。}
-   \item He (\onslide<7,8,9>{\textcolor{orange}{~studies~}}) English every day.{\footnotesize 彼は毎日英語を勉強します。} \onslide<9>{\textcolor{orange}{studyの3単現はstdies}}
-  \end{enumerate}
-
-\begin{tcolorbox}[title=この中から選んでください]
-\centering
- watch,~~~~~~~~study,~~~~~~~~have,~~~~~~~~teach,~~~~~~~~go,~~~~~~~~wash
-\end{tcolorbox}
-
-% Embed the sound file
-\onslide<9>{%
-\myaudio{audio/004_verb_05.mp3}\,\,{}Listen carefully.(注意して聞いてください)
-
-}
-\end{frame}
-
-\begin{frame}<1-37>[plain,label=example]\frametitle{単数と複数}
- % \setbeamercovered{transparent}
-  \begin{enumerate}
-   \item<1-> \myEmph[14]{red}{I} \myEmph[15,27-29]{blue}{like} basketball. \onslide*<2>{わたしはバスケットボールが好きです。}\onslide*<31>{\footnotesize 　like: 好き、好む　basketball: バスケットボール}
-   \item<3-> \myEmph[16]{red}{We} \myEmph[17,27-29]{blue}{walk} to school. \onslide*<4>{われわれは歩いて学校へ行きます。}\onslide*<32>{\footnotesize 　walk: 歩く}
-   \item<5-> \myEmph[18]{red}{They} \myEmph[19,27-29]{blue}{speak} English in Australia. \onslide*<6>{オースタラリアでは英語が話されています。}\onslide*<33>{\footnotesize 　speak: 話す　Australia:オーストラリア}
-   \item<7-> \myEmph[20]{red}{I} \myEmph[21,27-29]{blue}{drink} tea every morning. \onslide*<8>{わたしは毎朝お茶を飲みます。}\onslide*<34>{\footnotesize 　drink: 飲む　tea: お茶　every morning: 毎朝}
-   \item<9-> \myEmph[22]{red}{They} \myEmph[23,27-29]{blue}{study} math every day. \onslide*<10>{彼らは毎日数学を勉強します。}\onslide*<35>{\footnotesize study: 勉強する　math: 数学　every day: 毎日}
-   \item<11-> \myEmph[24]{red}{I} \myEmph[25,27-29]{blue}{play} the guitar. \onslide*<12>{わたしはギターをひきます。}\onslide*<36>{\footnotesize 　play: (楽器などを)演奏する　guitar: ギター}
-  \end{enumerate}
 
 \bigskip
 
-\begin{exampleblock}<28->{Topics for Today}
-\begin{itemize}
- \item<1->  \myEmph[28]{orange}{be動詞以外を一般動詞といいます}
- \item<2-> \myEmph[29]{orange}{一般動詞の意味はいろいろです}
-\end{itemize}
-      \end{exampleblock}
+\bigskip
 
-
-% Embed the sound file
-\onslide<37>{%
-\myaudio{./audio/004_verb_01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
-}
-
+\mbox{}\hfill\myaudio{./audio/005_singular_plural_12.mp3}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%
 \end{document}

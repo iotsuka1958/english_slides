@@ -6,8 +6,8 @@ BEGIN {
     print "                <lang xml:lang=\"ja-JP\">"
     print "                    さあ、実際の音声によく耳をかたむけてください。"
     print "                    <break time=\"1s\" />"
-    print "                    それぞれの英文を二回読みます。"
-    print "                    <break time=\"1s\" />"
+    #print "                    それぞれの英文を二回読みます。"
+    #print "                    <break time=\"1s\" />"
     #print "                    はじめはうまく聞き取れなくても、心配する必要はありません。"
     #print "                    <break time=\"1s\" />"
     #print "                    だんだん慣れてきます。"
@@ -24,7 +24,7 @@ BEGIN {
     print "    <p>"
     print "        <s>"
     print "            <prosody rate=\"slow\" volume=\"loud\">"
-    print "                Please listen carefully as I read the example sentences."
+    print "                Please listen carefully."
     print "                <break time=\"1s\" />"
 }
 
