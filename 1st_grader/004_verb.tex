@@ -11,6 +11,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fontawesome}
 \usepackage{tipa}
+\usepackage{twemojis}
+\usepackage{figchild}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
@@ -57,15 +59,15 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\AtBeginSection[%
-%]{%
-%  \begin{frame}[plain]\frametitle{授業の流れ}
-%     \tableofcontents[currentsection]
-%   \end{frame}%
-%}
+\AtBeginSection[%
+]{%
+  \begin{frame}[plain]\frametitle{授業の流れ}
+     \tableofcontents[currentsection]
+   \end{frame}%
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
-\subtitle{I play The guitar, and she sings.}
+\subtitle{I play the guitar, and she sings.}
 \author{}
 \institute[]{}
 \date[]
@@ -94,13 +96,57 @@ The lesson will begin at the scheduled time.
 \begin{frame}[plain]
   \titlepage
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を赤に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Quiz
+}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% K
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}
+ \large
+\visible<1->{%
+これからアルファベットを3つ順番に読みあげます。
+聞こえたアルファベットを順番に小文字で書いてください。すると、ある単語になります。
+その意味を表すものを選んでください
+}
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_k.mp3}}
 
+\bigskip
+
+\centering
+\newfontfamily{\COE}{CountriesOfEurope}
+\begin{tabular}{c@{　　　}c@{　　　}c@{　　　}c}
+\scalebox{5}{\twemoji{palm tree}}&
+\scalebox{3}{\faCoffee}&
+%\scalebox{3.3}{{\COE \Italy}}&
+\fcKiteA{.1}{gray!80}{.2}&
+\fcKey{.1}{gray!80}{.2}%
+\\
+(a)&(b)&(c)&(d)
+\end{tabular}
+\bigskip
+\Huge
+
+\onslide<2->{k}%
+\onslide<3->{e}%
+\onslide<4->{y}%
+
+\large
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_k.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{授業の流れ}
 \begin{frame}[plain]
   \frametitle{授業の流れ}
   \tableofcontents
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{一般動詞とは}
 \begin{frame}<1-37>[plain,label=example]\frametitle{一般動詞って？}
  % \setbeamercovered{transparent}
@@ -222,7 +268,7 @@ eat（食べる）& drink（飲む）\pause\\
 \item[１人称] 話し手（自分）のこと\pause{}\,\,{} $\longrightarrow$ Iとweだけ\pause
 \item[２人称] 聞き手（相手）のこと\pause{}\,\,{} $\longrightarrow$ youだけ\pause
 \item[３人称] １人称、２人称以外\pause{}\hspace{15pt} $\longrightarrow$%
- \begin{tabular}[t]{@{}l}
+ \begin{tabular}[t]{@{\,\,}l}
 he\\\pause
 she\\\pause
 it\\\pause
@@ -372,15 +418,15 @@ live / go / speak / drink / eat
 \begin{frame}[plain]{注意するべき3単現}
  \begin{center}
  \rowcolors{2}{NavyBlue!50}{yellow!40}
-\begin{tabular}{lll}\toprule
-{\small 原形}&{\small 3単現}&{\small 発音}\\\midrule
-\visible<1->{play}&\visible<2->{{\small plays}}&\visible<9->{\textipa{/z/}}\\
-\visible<1->{drink}&\visible<3->{{\small drinks}}&\visible<10->{\textipa{/s/}}\\
-\visible<1->{go}&\visible<4->{{\small goes}}&\visible<11->{\textipa{/z/}}\\
-\visible<1->{teach}&\visible<5->{{\small teaches}}&\visible<12->{\textipa{/\textsci{}z/}}\\
-\visible<1->{wash}&\visible<6->{{\small washes}}&\visible<13->{\textipa{/\textsci{}z/}}\\
-\visible<1->{watch}&\visible<7->{{\small watches}}&\visible<14->{\textipa{/\textsci{}z/}}\\
-\visible<1->{have}&\visible<8->{{\small has}}&\visible<15->{/z/}\\
+\begin{tabular}{rlll}\toprule
+&{\small 原形}&{\small 3単現}&{\small 発音}\\\midrule
+1&\visible<1->{play}&\visible<2->{{\small plays}}&\visible<9->{\textipa{/z/}}\\
+2&\visible<1->{drink}&\visible<3->{{\small drinks}}&\visible<10->{\textipa{/s/}}\\
+3&\visible<1->{go}&\visible<4->{{\small goes}}&\visible<11->{\textipa{/z/}}\\
+4&\visible<1->{teach}&\visible<5->{{\small teaches}}&\visible<12->{\textipa{/\textsci{}z/}}\\
+5&\visible<1->{wash}&\visible<6->{{\small washes}}&\visible<13->{\textipa{/\textsci{}z/}}\\
+6&\visible<1->{watch}&\visible<7->{{\small watches}}&\visible<14->{\textipa{/\textsci{}z/}}\\
+7&\visible<1->{have}&\visible<8->{{\small has}}&\visible<15->{/z/}\\
 \bottomrule
 \end{tabular}%
 \end{center}
@@ -424,16 +470,16 @@ live / go / speak / drink / eat
 
  \begin{center}
  \rowcolors{2}{NavyBlue!50}{yellow!40}
-\begin{tabular}{lll}\toprule
-{\small 原形}&{\small 3単現}&{\small 発音}\\\midrule
-\visible<1->{play}&\visible<2->{{\small plays}}&\visible<10->{\textipa{/z/}}\\
-\visible<1->{drink}&\visible<3->{{\small drinks}}&\visible<11->{\textipa{/s/}}\\
-\visible<1->{go}&\visible<4->{{\small goes}}&\visible<12->{\textipa{/z/}}\\
-\visible<1->{teach}&\visible<5->{{\small teaches}}&\visible<13->{\textipa{/\textsci{}z/}}\\
-\visible<1->{wash}&\visible<6->{{\small washes}}&\visible<14->{\textipa{/\textsci{}z/}}\\
-\visible<1->{watch}&\visible<7->{{\small watches}}&\visible<15->{\textipa{/\textsci{}z/}}\\
-\visible<1->{have}&\visible<8->{{\small has}}&\visible<16->{/z/}\\
-\visible<17->{study}&\visible<17->{{\small studiess}}&\visible<17->{/z/}\\
+\begin{tabular}{rlll}\toprule
+&{\small 原形}&{\small 3単現}&{\small 発音}\\\midrule
+1&\visible<1->{play}&\visible<2->{{\small plays}}&\visible<10->{\textipa{/z/}}\\
+2&\visible<1->{drink}&\visible<3->{{\small drinks}}&\visible<11->{\textipa{/s/}}\\
+3&\visible<1->{go}&\visible<4->{{\small goes}}&\visible<12->{\textipa{/z/}}\\
+4&\visible<1->{teach}&\visible<5->{{\small teaches}}&\visible<13->{\textipa{/\textsci{}z/}}\\
+5&\visible<1->{wash}&\visible<6->{{\small washes}}&\visible<14->{\textipa{/\textsci{}z/}}\\
+6&\visible<1->{watch}&\visible<7->{{\small watches}}&\visible<15->{\textipa{/\textsci{}z/}}\\
+7&\visible<1->{have}&\visible<8->{{\small has}}&\visible<16->{/z/}\\
+8&\visible<17->{study}&\visible<17->{{\small studiess}}&\visible<17->{/z/}\\
 \bottomrule
 \end{tabular}%
 \end{center}
@@ -450,6 +496,5 @@ live / go / speak / drink / eat
 \againframe<3>{3tangen}
 \againframe<18>{hyo}
 \end{document}
-
 
 
