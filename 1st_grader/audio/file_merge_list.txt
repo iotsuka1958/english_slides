@@ -11,12 +11,10 @@ file 'silent.mp3'
 file '002_be_031.mp3'
 file 'silent.mp3'
 file '002_be_04.mp3'
-file `silent.mp3`
+file 'silent.mp3'
 file '002_be_041.mp3'
 file 'silent.mp3'
 file '002_be_05.mp3'
 file 'silent.mp3'
 file '002_be_051.mp3'
-file 'silent.mp3'
-file '002_be_06.mp3'
 
