@@ -1,0 +1,313 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\usetheme{metropolis}
+\metroset{block=fill}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{発音--母音と子音--}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[label=title]
+%\phantomsection\label{section-1}
+\thispagestyle{empty}
+\titlepage
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{母音と子音}
+\begin{frame}[plain]{母音と子音}
+\Large
+\begin{description}
+ \item[母音: ] \onslide<1->{日本語の「あ、い、う、え、お」に近い音} 
+ \item[子音: ] \onslide<2->{それ以外の音}
+\end{description}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{母音字と子音字}
+\Large
+\begin{description}
+ \item[母音字: ] \onslide<1->{アルファベットで「母音」をあらわす文字: }%
+               \onslide<2->{aeiou}
+ \item[子音字: ] \onslide<3->{残りのアルファベット}
+\end{description}
+
+\bigskip
+
+\Huge\centering
+\begin{tabular}{cccccccccc}
+\onslide<4->{\myEmph[5-]{BurntOrange}{a}}&
+\onslide<4->{b}&
+\onslide<4->{c}&
+\onslide<4->{d}&
+\onslide<4->{\myEmph[5-]{BurntOrange}{e}}&
+\onslide<4->{f}&
+\onslide<4->{g}&
+\onslide<4->{h}&
+\onslide<4->{\myEmph[5-]{BurntOrange}{i}}&
+\onslide<4->{j} \\
+\onslide<4->{k}&
+\onslide<4->{l}&
+\onslide<4->{m}&
+\onslide<4->{n}&
+\onslide<4->{\myEmph[5-]{BurntOrange}{o}}&
+\onslide<4->{p}&
+\onslide<4->{q}&
+\onslide<4->{r}&
+\onslide<4->{s}&
+\onslide<4->{t}\\
+\onslide<4->{\myEmph[5-]{BurntOrange}{u}}&
+\onslide<4->{v}&
+\onslide<4->{w}&
+\onslide<4->{x}&
+\onslide<4->{y}&
+\onslide<4->{z}&
+ & & &  \\
+\end{tabular}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{確認}
+ \Large
+\begin{description}[　　　　　　　　]
+ \item[母音・子音: ] 音 
+ \item[母音字・子音字: ] 文字 
+\end{description}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\centering
+  \textcolor{white}{\LARGE\bfseries 実際の単語で確認しよう}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{cat}
+\begin{columns}[t]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{column}<1->{.35\textwidth}
+  
+ \Huge\centering
+
+c\myEmph[2-]{BurntOrange}{a}t
+\end{column}
+%%%%%%%%%%%%%%%
+\begin{column}<3->{.55\textwidth}
+ \large
+ \begin{tabular}[t]{cccc}
+ \toprule
+\onslide<3->{綴}&\onslide<3->{字}&\onslide<3->{音}&\onslide<3->{発音記号}\\\midrule
+ \onslide<3->{c}&\onslide<4->{子音字}&\onslide<7->{子音} &\onslide<10->{\textipa{/k/}} \\
+ \myEmph[3-]{BurntOrange}{a}&\onslide<5->{母音字}& \onslide<8->{母音} &\onslide<11->{\textipa{/\ae /}}\\
+ \onslide<3->{t}&\onslide<6->{子音字}& \onslide<9->{子音} &\onslide<12->{\textipa{/t/}}\\
+ \bottomrule
+\end{tabular}
+\end{column}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{bed}
+\begin{columns}[t]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{column}<1->{.35\textwidth}
+  
+ \Huge\centering
+
+b\myEmph[2-]{BurntOrange}{e}d
+\end{column}
+%%%%%%%%%%%%%%%
+\begin{column}<3->{.55\textwidth}
+ \large
+ \begin{tabular}[t]{cccc}
+ \toprule
+\onslide<3->{綴}&\onslide<3->{字}&\onslide<3->{音}&\onslide<3->{発音記号}\\\midrule
+ \onslide<3->{b}&\onslide<4->{子音字}&\onslide<7->{子音} &\onslide<10->{\textipa{/b/}} \\
+ \myEmph[3-]{BurntOrange}{e}&\onslide<5->{母音字}& \onslide<8->{母音} &\onslide<11->{\textipa{/e/}}\\
+ \onslide<3->{d}&\onslide<6->{子音字}& \onslide<9->{子音} &\onslide<12->{\textipa{/d/}}\\
+ \bottomrule
+\end{tabular}
+\end{column}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{sit}
+\begin{columns}[t]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{column}<1->{.35\textwidth}
+  
+ \Huge\centering
+
+s\myEmph[2-]{BurntOrange}{i}t
+\end{column}
+%%%%%%%%%%%%%%%
+\begin{column}<3->{.55\textwidth}
+ \large
+ \begin{tabular}[t]{cccc}
+ \toprule
+\onslide<3->{綴}&\onslide<3->{字}&\onslide<3->{音}&\onslide<3->{発音記号}\\\midrule
+ \onslide<3->{s}&\onslide<4->{子音字}&\onslide<7->{子音} &\onslide<10->{\textipa{/s/}} \\
+ \myEmph[3-]{BurntOrange}{i}&\onslide<5->{母音字}& \onslide<8->{母音} &\onslide<11->{\textipa{/\textsci /}}\\
+ \onslide<3->{t}&\onslide<6->{子音字}& \onslide<9->{子音} &\onslide<12->{\textipa{/t/}}\\
+ \bottomrule
+\end{tabular}
+\end{column}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{}
+\begin{columns}[t]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{column}<1->{.35\textwidth}
+  
+ \Huge\centering
+
+d\myEmph[2-]{BurntOrange}{o}g
+\end{column}
+%%%%%%%%%%%%%%%
+\begin{column}<3->{.55\textwidth}
+ \large
+ \begin{tabular}[t]{cccc}
+ \toprule
+\onslide<3->{綴}&\onslide<3->{字}&\onslide<3->{音}&\onslide<3->{発音記号}\\\midrule
+ \onslide<3->{d}&\onslide<4->{子音字}&\onslide<7->{子音} &\onslide<10->{\textipa{/d/}} \\
+ \myEmph[3-]{BurntOrange}{o}&\onslide<5->{母音字}& \onslide<8->{母音} &\onslide<11->{\textipa{/\textscripta/}}\\
+ \onslide<3->{d}&\onslide<6->{子音字}& \onslide<9->{子音} &\onslide<12->{\textipa{/g/}}\\
+ \bottomrule
+\end{tabular}
+\end{column}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{}
+\begin{columns}[t]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{column}<1->{.35\textwidth}
+  
+ \Huge\centering
+
+b\myEmph[2-]{BurntOrange}{u}s
+\end{column}
+%%%%%%%%%%%%%%%
+\begin{column}<3->{.55\textwidth}
+ \large
+ \begin{tabular}[t]{cccc}
+ \toprule
+\onslide<3->{綴}&\onslide<3->{字}&\onslide<3->{音}&\onslide<3->{発音記号}\\\midrule
+ \onslide<3->{b}&\onslide<4->{子音字}&\onslide<7->{子音} &\onslide<10->{\textipa{/b/}} \\
+ \myEmph[3-]{BurntOrange}{u}&\onslide<5->{母音字}& \onslide<8->{母音} &\onslide<11->{\textipa{/\textturnv /}}\\
+ \onslide<3->{s}&\onslide<6->{子音字}& \onslide<9->{子音} &\onslide<12->{\textipa{/s/}}\\
+ \bottomrule
+\end{tabular}
+\end{column}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{発音練習}
+ \LARGE
+
+\begin{enumerate}
+ \item cat
+ \item bed
+ \item sit
+ \item dog
+ \item bus
+\end{enumerate}
+
+\myaudio{./audio/099_pronunciation_01.mp3}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{確認}
+\Large
+ \begin{enumerate}
+  \item 音について
+        \begin{enumerate}
+	 \item 母音とはなんですか
+	 \item 子音とはなんですか
+	\end{enumerate}
+  \item 文字について
+        \begin{enumerate}
+	 \item 母音字とはなんですか
+	 \item 子音字とはなんですか
+	\end{enumerate}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+\section{有声音と無声音}
+\begin{frame}[plain]{有声音と無声音}
+\Large
+ \begin{description}
+  \item[有声音: ] \onslide<1->{声帯がふるえる音}
+                  \onslide<3->{%
+                  \begin{itemize}
+		   \item すべての母音
+		   \item 一部の子音\hspace{25pt}\onslide<5->{{\small たとえば \textipa{/b/}\,\,\,\textipa{/d/}\,\,\,\textipa{/g/}\,\,\,\textipa{/v/}\,\,\,\textipa{/z/}}}
+		  \end{itemize}}
+  \item[無声音: ] \onslide<2->{声帯がふるえない音}
+                  \onslide<4->{%
+                  \begin{itemize}
+		   \item 一部の子音\hspace{25pt}\onslide<5->{{\small たとえば \textipa{/p/}\,\,\,\textipa{/t/}\,\,\,\textipa{/k/}\,\,\,\textipa{/f/}\,\,\,\textipa{/s/}}}
+		  \end{itemize}}
+ \end{description}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{有声音と無声音の区別法}
+ \large
+\begin{description}
+ \item[方法1：] 喉に手をあてる\,\,\,\,\,\,\,$\longrightarrow$ ふるえたら「有声音」
+ \item[方法2：] 耳を両手でふさぐ\,$\longrightarrow$ 反響したら「有声音」
+\end{description}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{有声音と無声音のペア}
+\Large 
+ \begin{enumerate}
+  \item \textipa{/b/}と\textipa{/p/}\hfill\makebox[40pt][l]{\underline{b}ig} / \makebox[40pt][l]{\underline{p}ig}\hspace{180pt}\mbox{}
+  \item  \textipa{/d/}と\textipa{/t/}\hfill\makebox[40pt][l]{ba\underline{d}} / \makebox[40pt][l]{ba\underline{t}}\hspace{180pt}\mbox{}
+  \item  \textipa{/g/}と\textipa{/k/}\hfill\makebox[40pt][l]{\underline{g}ap} / \makebox[40pt][l]{\underline{c}ap}\hspace{180pt}\mbox{}
+  \item  \textipa{/v/}と\textipa{/f/}\hfill\makebox[40pt][l]{\underline{v}ase} / \makebox[40pt][l]{\underline{f}ace}\hspace{180pt}\mbox{}
+  \item  \textipa{/z/}と\textipa{/s/}\hfill\makebox[40pt][l]{\underline{z}oo} / \makebox[40pt][l]{\underline{S}ue}\hspace{180pt}\mbox{}
+ \end{enumerate}
+
+\bigskip
+
+\normalsize
+\mbox{}\hfill\myaudio{./audio/099_pronunciation_02.mp3}
+
+\end{frame}
+\end{document}

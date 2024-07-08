@@ -1,6 +1,5 @@
-John is a baseball player.
-You are nice.
-This is my cup.
-They are my parents.
-We are Japanese.
-I am hungry.
+Big. <break time="2s"/> Pig.<break time="2s"/>Big.<break time="2s"/>Pig.
+Bad <break time="2s"/> Bat.<break time="2s"/>Bad.<break time="2s"/>Bat.
+Gap. <break time="2s"/> Cap.<break time="2s"/>Gap.<break time="2s"/>Cap.
+Vase. <break time="2s"/> Face.<break time="2s"/>Vase.<break time="2s"/>Face.
+Zoo. <break time="2s"/> Sue.<break time="2s"/>Zoo.<break time="2s"/>Suw.

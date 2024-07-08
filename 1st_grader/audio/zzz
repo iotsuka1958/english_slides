@@ -1,0 +1,114 @@
+<speak>
+    <p>
+        <s>
+            <prosody volume="soft">
+                <lang xml:lang="ja-JP">
+                    有声音と無声音の違いに注意して、よく耳をかたむけてください。
+                    <break time="1s" />
+                    それでは、始めます。
+                    <break time="1s" />
+                </lang>
+            </prosody>
+        </s>
+    </p>
+</speak>
+
+<speak>
+    <p>
+        <s>
+            <prosody rate="slow" volume="loud">
+                Please listen carefully.
+                <break time="1s" />
+                Number 1.
+                <break time="1s" />
+                Big. <break time="2s"/> Pig.<break time="2s"/>Big.<break time="2s"/>Pig.
+                <break time="2s" />
+                Big. <break time="2s"/> Pig.<break time="2s"/>Big.<break time="2s"/>Pig.
+                <break time="3s" />
+                Number 2.
+                <break time="1s" />
+                Bad <break time="2s"/> Bat.<break time="2s"/>Bad.<break time="2s"/>Bat.
+                <break time="2s" />
+                Bad <break time="2s"/> Bat.<break time="2s"/>Bad.<break time="2s"/>Bat.
+                <break time="3s" />
+                Number 3.
+                <break time="1s" />
+                Gap. <break time="2s"/> Cap.<break time="2s"/>Gap.<break time="2s"/>Cap.
+                <break time="2s" />
+                Gap. <break time="2s"/> Cap.<break time="2s"/>Gap.<break time="2s"/>Cap.
+                <break time="3s" />
+                Number 4.
+                <break time="1s" />
+                Vase. <break time="2s"/> Face.<break time="2s"/>Vase.<break time="2s"/>Face.
+                <break time="2s" />
+                Vase. <break time="2s"/> Face.<break time="2s"/>Vase.<break time="2s"/>Face.
+                <break time="3s" />
+                Number 5.
+                <break time="1s" />
+                Zoo. <break time="2s"/> Sue.<break time="2s"/>Zoo.<break time="2s"/>Suw.
+                <break time="2s" />
+                Zoo. <break time="2s"/> Sue.<break time="2s"/>Zoo.<break time="2s"/>Suw.
+                <break time="3s" />
+            </prosody>
+        </s>
+    </p>
+</speak>
+
+<speak>
+    <p>
+        <s>
+            <prosody volume="soft">
+                <lang xml:lang="ja-JP">
+                    さあ、いかがでしたか。
+                    <break time="1s" />
+                    こんどは、あとに続けて、みなさんがリピートしてください
+                    <break time="1s" />
+                </lang>
+            </prosody>
+        </s>
+    </p>
+</speak>
+
+<speak>
+    <p>
+        <s>
+            <prosody rate="slow" volume="loud">
+                Please repeat after me.
+                <break time="1s" />
+                Number 1.
+                <break time="1s" />
+                Big. <break time="2s"/> Pig.<break time="2s"/>Big.<break time="2s"/>Pig.
+                <break time="5s" />
+                Big. <break time="2s"/> Pig.<break time="2s"/>Big.<break time="2s"/>Pig.
+                <break time="3s" />
+                Number 2.
+                <break time="1s" />
+                Bad <break time="2s"/> Bat.<break time="2s"/>Bad.<break time="2s"/>Bat.
+                <break time="5s" />
+                Bad <break time="2s"/> Bat.<break time="2s"/>Bad.<break time="2s"/>Bat.
+                <break time="3s" />
+                Number 3.
+                <break time="1s" />
+                Gap. <break time="2s"/> Cap.<break time="2s"/>Gap.<break time="2s"/>Cap.
+                <break time="5s" />
+                Gap. <break time="2s"/> Cap.<break time="2s"/>Gap.<break time="2s"/>Cap.
+                <break time="3s" />
+                Number 4.
+                <break time="1s" />
+                Vase. <break time="2s"/> Face.<break time="2s"/>Vase.<break time="2s"/>Face.
+                <break time="5s" />
+                Vase. <break time="2s"/> Face.<break time="2s"/>Vase.<break time="2s"/>Face.
+                <break time="3s" />
+                Number 5.
+                <break time="1s" />
+                Zoo. <break time="2s"/> Sue.<break time="2s"/>Zoo.<break time="2s"/>Suw.
+                <break time="5s" />
+                Zoo. <break time="2s"/> Sue.<break time="2s"/>Zoo.<break time="2s"/>Suw.
+                <break time="3s" />
+                Good job, everyone!
+                <break time="1s" />
+            </prosody>
+        </s>
+    </p>
+</speak>
+
