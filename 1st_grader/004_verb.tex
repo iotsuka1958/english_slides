@@ -19,6 +19,7 @@
 \usepackage{tcolorbox}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{manfnt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{booktabs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -379,7 +380,7 @@ the cats\\\pause
 
 \section{3単現}
 \subsection{3単現のs}
-\begin{frame}<1-3>[plain,label=3tangen]\frametitle{3単現のs}
+\begin{frame}<1-5>[plain,label=3tangen]\frametitle{3単現のs}
 \Large
 
 \myEmph[2]{Maroon}{現在}のことを表す文では\\
@@ -399,9 +400,9 @@ She play\myAnch{T2}{Maroon}{s}\,{}the guitar.
 
 % ノード間を結ぶ矢印を別のTikZ環境で描く
 \begin{tikzpicture}[remember picture,overlay]
-\draw[->,Maroon,thick] (T1.south)to[out=-110,in=40](T2.north);
-\draw[->,Maroon,thick] (T1.south)to[out=-90,in=120](T3.north);
-\draw[->,Maroon,thick] (T1.south)to[out=-90,in=90](T4.north);
+\onslide<3->{\draw[->,Maroon,thick] (T1.south)to[out=-110,in=40](T2.north);}
+{\onslide<4->{\draw[->,Maroon,thick] (T1.south)to[out=-90,in=120](T3.north);}
+\onslide<5->\draw[->,Maroon,thick] (T1.south)to[out=-90,in=90](T4.north);}
 \end{tikzpicture}
 \end{frame}
 
@@ -427,9 +428,11 @@ live / go / speak / drink / eat
 \end{column}
 \end{columns}
 
+\bigskip
+
 % Embed the sound file
 \onslide<9>{%
-\myaudio{audio/004_verb_03.mp3}
+\mbox{}\hfill\myaudio{audio/004_verb_03.mp3}
 
 }
 \end{frame}
@@ -448,15 +451,15 @@ live / go / speak / drink / eat
 
 \begin{exampleblock}<13->{Topics for Today}
 \begin{itemize}
- \item<1-> \myEmph[13]{orange}{3単現の原則: ---s}
- \item<2-> \myEmph[14]{orange}{一部の動詞(go, teach, wash, watch\ldots{})の3単現: ---es}
- \item<3-> \myEmph[15]{orange}{haveの3単現は: has}
+ \item<1-> \myEmph[13]{Maroon}{3単現の原則: ---s}
+ \item<2-> \myEmph[14]{Maroon}{一部の動詞(go, teach, wash, watch\ldots{})の3単現: ---es}
+ \item<3-> \myEmph[15]{Maroon}{haveの3単現は: has}
 \end{itemize}
       \end{exampleblock}
 
 % Embed the sound file
 \onslide<16>{%
-\myaudio{audio/004_verb_04.mp3}
+\mbox{}\hfill\myaudio{audio/004_verb_04.mp3}
 }
 \end{frame}
 
@@ -478,7 +481,7 @@ live / go / speak / drink / eat
 
 % Embed the sound file
 \onslide<15>{%
-\myaudio{audio/004_verb_041.mp3}
+\mbox{}\hfill\myaudio{audio/004_verb_041.mp3}
 }
 \end{frame}
 
@@ -494,7 +497,7 @@ live / go / speak / drink / eat
    \item Tom (\onslide<5,8,9>{\textcolor{orange}{~goes~}}) to church every Sunday.{\footnotesize トムは毎週日曜日に教会へ行きます。}
    \item Jennifer (\onslide<6,8,9>{\textcolor{orange}{~watches~}}) television after supper.{\footnotesize ジェニファーは夕食後テレビをみます。}
    \item He (\onslide<7,8,9>{\textcolor{orange}{~studies~}}) English every day.{\footnotesize 彼は毎日英語を勉強します。} \\
-\mbox{}\hfill\onslide<9>{\textcolor{orange}{studyの3単現はstudies}}
+\mbox{}\hfill\onslide<9>{\dbend\textcolor{Maroon}{studyの3単現はstudies}}
   \end{enumerate}
 
 \begin{tcolorbox}[title=この中から選んでください]
@@ -502,9 +505,11 @@ live / go / speak / drink / eat
  watch~~~/~~~~study~~~~/~~~have~~~~/~~~teach~~~~/~~~go~~~~/~~~wash
 \end{tcolorbox}
 
+\vspace{-5pt}
+
 % Embed the sound file
 \onslide<9>{%
-\myaudio{audio/004_verb_05.mp3}
+\mbox{}\hfill\myaudio{audio/004_verb_05.mp3}
 }
 \end{frame}
 
