@@ -21,12 +21,21 @@
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{manfnt}
+\usepackage{array}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{booktabs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\dnote}[1]{%
+    \noindent % I guess this is intended...
+    \begin{tabular}{@{}m{0.13\textwidth}@{}m{0.87\textwidth}@{}}%
+        \huge\textdbend &#1%
+    \end{tabular}%
+    \par % ... and this too.
+}
+%%%%%%%%%%%%%%%%%%%%%%%%
 % \myAnch{<名前>}{<色>}{<テキスト>}
 % 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
 % ノードとして出力する. 図には remeber picture 属性を付けている
@@ -35,6 +44,7 @@
   \tikz[remember picture,baseline=(#1.base)]
     \node[draw,rectangle,#2,thick] (#1) {\normalcolor #3};
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 音声リンク表示
 \newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
@@ -515,15 +525,17 @@ Naomi drink\textcolor{Maroon}{\bfseries s} coffee.
 
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item George (\onslide<2,8,9>{\textcolor{orange}{~has~}}) two cats.
+   \item George (\onslide<2,9>{\textcolor{orange}{~has~}}) two cats.
 {\footnotesize ジョージはネコを2匹飼っています。}
-   \item My mother (\onslide<3,8,9>{\textcolor{orange}{~teaches~}}) music.{\footnotesize 母は音楽を教えています。}
-   \item  She (\onslide<4,8,9>{\textcolor{orange}{~washes~}}) her car every Saturday.{\footnotesize 彼女は毎週土曜日に洗車します。}
-   \item Tom (\onslide<5,8,9>{\textcolor{orange}{~goes~}}) to church every Sunday.{\footnotesize トムは毎週日曜日に教会へ行きます。}
-   \item Jennifer (\onslide<6,8,9>{\textcolor{orange}{~watches~}}) television after supper.{\footnotesize ジェニファーは夕食後テレビをみます。}
+   \item My mother (\onslide<3,9>{\textcolor{orange}{~teaches~}}) music.{\footnotesize 母は音楽を教えています。}
+   \item  She (\onslide<4,9>{\textcolor{orange}{~washes~}}) her car every Saturday.{\footnotesize 彼女は毎週土曜日に洗車します。}
+   \item Tom (\onslide<5,9>{\textcolor{orange}{~goes~}}) to church every Sunday.{\footnotesize トムは毎週日曜日に教会へ行きます。}
+   \item Jennifer (\onslide<6,9>{\textcolor{orange}{~watches~}}) television after supper.{\footnotesize ジェニファーは夕食後テレビをみます。}
    \item He (\onslide<7,8,9>{\textcolor{orange}{~studies~}}) English every day.{\footnotesize 彼は毎日英語を勉強します。} \\
-\mbox{}\hfill\onslide<9>{\dbend\textcolor{Maroon}{studyの3単現はstudies}}
+\mbox{}\hfill\onslide<8->{\scalebox{.25}{\includegraphics{./images/dbend.png}}\,\,\,\textcolor{Maroon}{studyの3単現はstudies}}
   \end{enumerate}
+
+
 
 \begin{tcolorbox}[title=この中から選んでください]
 \centering
@@ -537,7 +549,44 @@ Naomi drink\textcolor{Maroon}{\bfseries s} coffee.
 \mbox{}\hfill\myaudio{audio/004_verb_05.mp3}
 }
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Dangerous Bend}{危険な曲がり角}
 
+\dnote{ちょっとむずかしい事項ですという標識\par{}しっかり身につけると実力アップにつながります}
+
+\vspace{40pt}
+
+\small
+
+\raggedleft
+Dangerous Bendとは「危険な曲がり角」という意味
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[plain]{Dangerous Bend}
+%
+%\raggedleft
+%
+%\includegraphics[height=.9\textheight]{./images/Borne_Michelin_Virages.jpeg}
+%
+%\vspace*{-8pt}
+%\tiny
+%
+%``Borne Michelin Virages'' by Roulex45 is licensed under CC BY-SA 3.0. \\
+%To view a copy of this license, visit \url{https://creativecommons.org/licenses/by-sa/3.0/}.
+%  \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
+  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{./images/Borne_Michelin_Virages.jpeg}}
+  \begin{frame}[b]
+    \frametitle{}
+\tiny
+\raggedleft
+  \textcolor{white}{ ``Borne Michelin Virages'' by Roulex45 is licensed under CC BY-SA 3.0. }\\
+   \textcolor{white}{To view a copy of this license, visit \url{https://creativecommons.org/licenses/by-sa/3.0/}}.
+  \end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}<16-17>[plain,label=hyo]{注意するべき3単現}
 
