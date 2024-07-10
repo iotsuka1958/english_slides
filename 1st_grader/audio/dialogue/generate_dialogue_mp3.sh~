@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+awk -f dialogue2ssml.awk input_dialogue.txt > zzz
+ssml2dialogue.py zzz
+rm zzz

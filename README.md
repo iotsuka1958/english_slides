@@ -39,10 +39,12 @@ ffmpeg -f concat -safe 0 -i file_merge_list.txt -c copy output.mp3
 
 file名はgenerate_mp3.shにした。
 ```
-#!/usr/bin/basg
-
-awk -f pronunciation_making.awk inout.txt > zzz
-assml2mp3.py zzz
+#!/usr/bin/bash
+# 発音練習用英文をssml形式にして、一時ファイルzzzに格納
+awk -f pronunciation_making.awk input.txt > zzz
+# ssml形式のzzzをamazon POLLYでmp3化
+ssml2mp3.py zzz
+# 一時ファイルを削除
 rm zzz
 ```
 
@@ -191,7 +193,7 @@ ssml2mp3.py <input_ssml_file>
 </speak>
 ```
 
-pythonスクリプトあはつぎのとおり
+pythonスクリプトはつぎのとおり
 
 ```
 #!/usr/bin/env python3
