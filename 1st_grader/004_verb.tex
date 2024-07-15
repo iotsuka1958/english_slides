@@ -2,6 +2,7 @@
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+%\usetheme{moloch}
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
@@ -182,17 +183,6 @@ The lesson will begin at the scheduled time.
 }
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe{waiting}
-\againframe{title}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 背景色を黒に変更
-\setbeamercolor{background canvas}{bg=black}
-\begin{frame}
-\centering
-  \textcolor{white}{\Huge\bfseries Today's Quiz}
-\end{frame}
-\setbeamercolor{background canvas}{bg=}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{be動詞と一般動詞}
 \begin{frame}<1-10>[plain,label=point1]\frametitle{be動詞と一般動詞}
 
@@ -242,15 +232,13 @@ eat（食べる）& drink（飲む）\pause\\
 \end{frame}
 
 
-\begin{frame}[plain]\frametitle{be動詞と一般動詞}
+\begin{frame}[plain,label=figure]\frametitle{be動詞と一般動詞}
 \begin{tikzpicture}
 
 % グリッドを描画（5mm刻み）
 %\draw[step=1cm, gray!20, very thin] (-6,0) grid (6,5);
 
 \node[rectangle, rounded corners, draw=black, fill=white] (verb) at (-3,5) {動詞};
-
-
 
 % 左側のノード（be動詞）
 \node[circle, draw=black, line width=1pt, fill=yellow!30, minimum size=2cm] (be) at (-2.5,2.5) {be動詞{\footnotesize ($=$)}};
@@ -276,7 +264,63 @@ eat（食べる）& drink（飲む）\pause\\
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe{waiting}
+\againframe{title}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Quiz}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Q
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-6>[plain]{Quiz}
+ \large
+\visible<1->{%
+これからアルファベットを5つ順番に読みあげます。
+聞こえたアルファベットを順番に小文字で書いてください。すると、ある単語になります。
+その意味を表すものを選んでください
+}
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_q.mp3}}
 
+\bigskip
+
+\centering
+\newfontfamily{\COE}{CountriesOfEurope}
+\begin{tabular}{c@{　　　}c@{　　　}c@{　　　}c}
+\scalebox{6}{🃋}&
+\scalebox{6}{🂭}&
+\scalebox{6}{🂾}&
+%\scalebox{3.3}{{\COE \Italy}}&
+\scalebox{6}{🃏}
+\\
+(a)&(b)&(c)&(d)
+\end{tabular}
+
+\bigskip
+
+\Huge
+
+
+
+\onslide<2->{q}%
+\onslide<3->{u}%
+\onslide<4->{e}%
+\onslide<5->{e}%
+\onslide<6->{n}
+
+\large
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_q.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe{title}
+\againframe{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{わたし、あなた、それ以外}
 \subsection{人称とは}
 \begin{frame}[plain,label=ninsyo]\frametitle{人称}
@@ -449,68 +493,14 @@ live / go / speak / drink / eat
       \end{exampleblock}
 
 % Embed the sound file
-\onslide<13->{%
+%\onslide<13->{%
 \mbox{}\hfill\myaudio{audio/004_verb_04.mp3}
-}
+%}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe{waiting}
-\againframe{title}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 背景色を黒に変更
-\setbeamercolor{background canvas}{bg=black}
-\begin{frame}
-\centering
-  \textcolor{white}{\Huge\bfseries Today's Quiz}
-\end{frame}
-\setbeamercolor{background canvas}{bg=}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% P
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}<1-6>[plain]{Quiz}
- \large
-\visible<1->{%
-これからアルファベットを5つ順番に読みあげます。
-聞こえたアルファベットを順番に小文字で書いてください。すると、ある単語になります。
-その意味を表すものを選んでください
-}
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_o.mp3}}
-
-\bigskip
-
-\centering
-\newfontfamily{\COE}{CountriesOfEurope}
-\begin{tabular}{c@{　　　}c@{　　　}c@{　　　}c}
-\scalebox{5}{\twemoji{strawberry}}&
-\scalebox{5}{\twemoji{orange}}&
-%\scalebox{3.3}{{\COE \Italy}}&
-\scalebox{5}{\twemoji{banana}}&
-\scalebox{5}{\twemoji{peach}}
-\\
-(a)&(b)&(c)&(d)
-\end{tabular}
-
-\bigskip
-
-\Huge
-
-\onslide<2->{p}%
-\onslide<3->{e}%
-\onslide<4->{a}%
-\onslide<5->{c}%
-\onslide<6->{h}
-
-\large
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_p.mp3}}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe{title}
-\againframe<19>{exception}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{注意するべき3単現}
+\begin{frame}[plain,label=zzz]{注意するべき3単現}
  \begin{center}
  \rowcolors{2}{NavyBlue!50}{yellow!40}
 \begin{tabular}{rlll}\toprule
@@ -531,7 +521,23 @@ live / go / speak / drink / eat
 \mbox{}\hfill\myaudio{audio/004_verb_041.mp3}
 }
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe{waiting}
+\againframe{title}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Quiz}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe{title}
+\againframe<15>{zzz}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-9>[plain]\frametitle{Exercises}
 空所に適当な動詞を補ってください。なお、必要があれば、形を変えてください
 
@@ -557,7 +563,7 @@ live / go / speak / drink / eat
 \vspace{-5pt}
 
 % Embed the sound file
-\onslide<9>{%
+\onslide<1->{%
 \mbox{}\hfill\myaudio{audio/004_verb_05.mp3}
 }
 \end{frame}
@@ -621,7 +627,7 @@ Dangerous Bendとは「危険な曲がり角」という意味
 
 
 \vspace{-30pt}
-\visible<1-18>{studyを追加しよう $\longrightarrow$}
+\visible<1-18>{\dbend{}\,studyを追加しよう $\longrightarrow$}
 
 
 %% Embed the sound file
