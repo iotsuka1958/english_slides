@@ -17,12 +17,19 @@
 \usepackage{utfsym}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
-\usetikzlibrary{backgrounds}
+\usetikzlibrary{backgrounds,decorations.pathmorphing, shapes}
 \usepackage{tcolorbox}
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{manfnt}
 \usepackage{array}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*\myCrossedOut[2]{%
+  \tikz[baseline=(T.base)]
+    \node[draw=#1, thick, shape=cross out, decorate,
+      inner sep=2pt, outer sep=0pt,
+      decoration={random steps, segment length=2pt, amplitude=0.4pt}]
+      (T) {#2};}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{booktabs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -33,6 +40,14 @@
     \noindent % I guess this is intended...
     \begin{tabular}{@{}m{0.13\textwidth}@{}m{0.87\textwidth}@{}}%
         \huge\textdbend &#1%
+    \end{tabular}%
+    \par % ... and this too.
+}
+%%%
+\newcommand{\ddnote}[1]{%
+    \noindent % I guess this is intended...
+    \begin{tabular}{@{}m{0.2\textwidth}@{}m{0.8\textwidth}@{}}%
+        \huge\textdbend\,\textdbend &#1%
     \end{tabular}%
     \par % ... and this too.
 }
@@ -279,7 +294,7 @@ eat（食べる）& drink（飲む）\pause\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Q
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}<1-6>[plain]{Quiz}
+\begin{frame}<1-6>[plain,label=queen]{Quiz}
  \large
 \visible<1->{%
 これからアルファベットを5つ順番に読みあげます。
@@ -317,6 +332,18 @@ eat（食べる）& drink（飲む）\pause\\
 \large
 \mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_q.mp3}}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
+  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{./images/playing_cards.jpg}}
+  \begin{frame}[t]
+    \frametitle{}
+\tiny
+\raggedleft
+  \textcolor{white}{``poker'' by shoobydooby is licensed under CC BY 2.0. To view a copy of this license,}\\
+   \textcolor{white}{visit \url{https://creativecommons.org/licenses/by/2.0/?ref=openverse}.}
+  \end{frame}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \againframe{title}
 \againframe{figure}
@@ -487,8 +514,8 @@ live / go / speak / drink / eat
  \item<1-> \myEmph[13]{Maroon}{3単現の原則：\,\,---s}\\
 \mbox{}\hspace{70pt}\onslide<14->{{\scriptsize 例えば}{\small drinks, eats, likes, lives, plays, speaks, walks\ldots{}\,\,{\scriptsize $\leftarrow$覚える必要なし}}}
  \item<2-> \onslide<15->{\myEmph[15]{Maroon}{一部の動詞：\,\,---es}}\\
-\mbox{}\hspace{70pt}\onslide<16->{{\small go, teach, wash, watch}\,\,{\small $\leftarrow$覚えよう}}
- \item<3-> \onslide<17->{\myEmph[17]{Maroon}{haveの3単現：\,\, has}\hspace{20pt}}\onslide<18->{\small $\longleftarrow$\, havesではない！}
+\mbox{}\hspace{70pt}\onslide<16->{{\small goes, teaches, washes, watches}\,\,{\small $\leftarrow$覚えよう！}}
+ \item<3-> \onslide<17->{\myEmph[17]{Maroon}{haveの3単現：\,\, has}\hspace{20pt}}\onslide<18->{\small $\longleftarrow$\, これも覚えよう！\myCrossedOut{Maroon}{haves}}
 \end{itemize}
       \end{exampleblock}
 
@@ -534,6 +561,18 @@ live / go / speak / drink / eat
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe{queen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
+  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{./images/playing_cards.jpg}}
+  \begin{frame}[t]
+    \frametitle{}
+\tiny
+\raggedleft
+  \textcolor{white}{``poker'' by shoobydooby is licensed under CC BY 2.0. To view a copy of this license,}\\
+   \textcolor{white}{visit \url{https://creativecommons.org/licenses/by/2.0/?ref=openverse}.}
+  \end{frame}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \againframe{title}
 \againframe<15>{zzz}
@@ -549,8 +588,8 @@ live / go / speak / drink / eat
    \item  She (\onslide<4,9>{\textcolor{orange}{~washes~}}) her car every Saturday.{\footnotesize 彼女は毎週土曜日に洗車します。}
    \item Tom (\onslide<5,9>{\textcolor{orange}{~goes~}}) to church every Sunday.{\footnotesize トムは毎週日曜日に教会へ行きます。}
    \item Jennifer (\onslide<6,9>{\textcolor{orange}{~watches~}}) television after supper.{\footnotesize ジェニファーは夕食後テレビをみます。}
-   \item He (\onslide<7,8,9>{\textcolor{orange}{~studies~}}) English every day.{\footnotesize 彼は毎日英語を勉強します。} \\
-\mbox{}\hfill\onslide<8->{\scalebox{.25}{\includegraphics{./images/dbend.png}}\,\,\,\textcolor{Maroon}{studyの3単現はstudies}}
+   \item He (\onslide<7,8,9>{\textcolor{orange}{~studies~}}) English every day.{\footnotesize 彼は毎日英語を勉強します。} \onslide<7->{\myCrossedOut{Maroon}{studys}}\\
+\mbox{}\hfill\onslide<8->{\scalebox{.25}{\includegraphics{./images/dbend.png}}\,\,\,\textcolor{Maroon}{study}の3単現は\textcolor{Maroon}{studies}}
   \end{enumerate}
 
 
@@ -570,7 +609,12 @@ live / go / speak / drink / eat
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Dangerous Bend}{危険な曲がり角}
 
-\dnote{ちょっとむずかしい事項ですという標識\par{}しっかり身につけると実力アップにつながります}
+\dnote{ちょっとむずかしい事項ですという標識\par{}でも、しっかり身につけると実力アップにつながります}
+
+\bigskip
+
+\ddnote{かなりむずかしい事項ですという標識\par{}いまはまだ理解できなくてもだいじょうぶ}
+
 
 \vspace{40pt}
 
@@ -626,8 +670,8 @@ Dangerous Bendとは「危険な曲がり角」という意味
 \end{center}
 
 
-\vspace{-30pt}
-\visible<1-18>{\dbend{}\,studyを追加しよう $\longrightarrow$}
+\vspace{-40pt}
+\visible<1-18>{\raisebox{\height}{\dbend}\,studyを追加しよう$\longrightarrow$}
 
 
 %% Embed the sound file

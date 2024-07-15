@@ -24,7 +24,7 @@
 \usepackage{manfnt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
-\usetikzlibrary{calc,patterns,decorations.pathmorphing,backgrounds}
+\usetikzlibrary{calc,patterns,decorations.pathmorphing,backgrounds,shapes}
 \usepackage{tcolorbox}
 \usepackage{tikzpeople}
 \usepackage{circledsteps}
@@ -33,6 +33,16 @@
 \usepackage{booktabs}
 \usepackage{chronology}
 \usepackage{signchart}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% テキストにバツ印を付けて出力するための命令 \myCrossedOut を定義
+%% https://zrbabbler.hatenablog.com/entry/20150120/1421760816
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*\myCrossedOut[2]{%
+  \tikz[baseline=(T.base)]
+    \node[draw=#1, thick, shape=cross out, decorate,
+      inner sep=2pt, outer sep=0pt,
+      decoration={random steps, segment length=2pt, amplitude=0.4pt}]
+      (T) {#2};}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
