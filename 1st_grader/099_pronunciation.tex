@@ -3,7 +3,6 @@
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
 \usetheme{metropolis}
-\usetheme{metropolis}
 \metroset{block=fill}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{navigation symbols}{}
@@ -19,6 +18,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AtBeginSection[%
+]{%
+  \begin{frame}[plain]\frametitle{授業の流れ}
+     \tableofcontents[currentsection]
+   \end{frame}%
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{発音--母音と子音--}
@@ -242,11 +248,11 @@ b\myEmph[2-]{BurntOrange}{u}s
  \LARGE
 
 \begin{enumerate}
- \item cat
- \item bed
- \item sit
- \item dog
- \item bus
+ \item cat\hfill\makebox[30pt][l]{\textipa{/k\ae t/}}\hspace{300pt}\mbox{}
+ \item bed\hfill\makebox[30pt][l]{\textipa{/bed/}}\hspace{300pt}\mbox{}
+ \item sit\hfill\makebox[30pt][l]{\textipa{/s\textsci t/}}\hspace{300pt}\mbox{}
+ \item dog\hfill\makebox[30pt][l]{\textipa{/d\textscripta g/}}\hspace{300pt}\mbox{}
+ \item bus\hfill\makebox[30pt][l]{\textipa{/b\textturnv s/}}\hspace{300pt}\mbox{}
 \end{enumerate}
 
 \myaudio{./audio/099_pronunciation_01.mp3}
