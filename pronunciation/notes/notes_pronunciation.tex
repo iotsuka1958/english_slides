@@ -1,0 +1,21 @@
+\DocumentMetadata{lang=ja-JP}
+\documentclass[book,jafontscale=0.9247]{jlreq}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 欧文TTF/OTFフォントを利用するにはfontspec.styをロードする必要あり
+%% 和文TTF/OTFフォントを利用するにはluatexja-fontspec.styをロードする必要あり
+%% luatexja-fontspec.styはfontspec.styをないぶてきにロードする
+%% lualatex-ja-preset.sty は luatexja-fontspec.styをロードする
+%% つまり次の1行でluatexja-fontspec.sty, fontspec.styも自動的にロードされる
+\usepackage[no-math,deluxe,expert,haranoaji]{luatexja-preset}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\textipa{/\ae /}
+\textipa{/\textturnv /}
+\textipa{/\textopeno /}
+
+\end{document}
