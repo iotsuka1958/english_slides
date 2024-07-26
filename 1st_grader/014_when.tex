@@ -5,73 +5,10 @@
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{media9}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% さまざまなアイコン
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{fontawesome}
-\usepackage{figchild}
-\usepackage{twemojis}
-\usepackage{utfsym}
-\usepackage{bclogo}
-\usepackage{marvosym}
-\usepackage{fontmfizz}
-\usepackage{pifont}
-\usepackage{phaistos}
-\usepackage{worldflags}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{tikz}
-\usetikzlibrary{backgrounds}
-\usepackage{tcolorbox}
-\usepackage{tikzpeople}
-\usepackage{xcolor}
-\usepackage{amsmath}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 場合分け
-\usepackage{cases}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \myAnch{<名前>}{<色>}{<テキスト>}
-% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
-% ノードとして出力する. 図には remeber picture 属性を付けている
-% ので外部から参照可能である.
-\newcommand*{\myAnch}[3]{%
-  \tikz[remember picture,baseline=(#1.base)]
-    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 音声リンク表示
-\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \myEmph コマンドの定義
-%\newcommand{\myEmph}[3]{%
-%    \textbf<#1>{\color<#1>{#2}{#3}}%
-%}
-\usepackage{xparse} % xparseパッケージの読み込み
-\NewDocumentCommand{\myEmph}{O{} m m}{%
-    \def\argOne{#1}%
-    \ifx\argOne\empty
-        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
-    \else
-        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
-    \fi
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 文末の上昇イントネーション記号 \myRisingPitch
-%% 通常のイントネーション \myDownwardPitch
-%% https://note.com/dan_oyama/n/n8be58e8797b2
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\myRisingPitch}{
-\begin{tikzpicture}[scale=0.3,baseline=0.3]
-\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
-\end{tikzpicture}
-}
-\newcommand{\myDownwardPitch}{
-\begin{tikzpicture}[scale=0.3,baseline=0.3]
-\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
-\end{tikzpicture}
-}
+\input{myPreamble4Slide.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.\,\,{}--- When do you play baseball? ---}
 \author{}
@@ -92,12 +29,10 @@
   \tableofcontents
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{When}
-
 \subsection{When is your birthday?: be動詞のとき}
-\begin{frame}[plain]{When is your birthday?}
- \Large
+\begin{frame}[plain]{When is your birthday?} \Large
 
 be動詞のとき
 
@@ -141,7 +76,7 @@ be動詞のとき
 \mbox{}\hfill\myaudio{./audio/014_when_01.mp3}
 }
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{When do you play tennis?: 一般動詞のとき}
 \begin{frame}[plain]\frametitle{When do you play tennis?}
 \Large
@@ -179,9 +114,11 @@ Do you play tennis \alt<5->{\myAnch{FOCUS2}{orange}{on Sundays}}{\myAnch{focus2}
 \mbox{}\hfill\myaudio{./audio/014_when_02.mp3}
 }
 \end{frame}
+%%%%%%%%%%%%%%%%%%
+
 
 \subsection{Exercises}
-\begin{frame}[plain]{Exercises}
+\begin{frame}[plain]{Exercises 1}
 つぎの文の意味を考えましょう。
 
 \begin{tabular}{rll}
@@ -196,7 +133,7 @@ Do you play tennis \alt<5->{\myAnch{FOCUS2}{orange}{on Sundays}}{\myAnch{focus2}
 }
 \end{frame}
 
-\begin{frame}[plain]{Exercises}
+\begin{frame}[plain]{Exercises 2}
  次の質問に対する答えとしてもっとも適切なものを，下のア～ウの中から選びましょう。
 
 \begin{enumerate}
@@ -219,7 +156,7 @@ Do you play tennis \alt<5->{\myAnch{FOCUS2}{orange}{on Sundays}}{\myAnch{focus2}
 \end{frame}
 
 
-\begin{frame}[plain]{Exercises}
+\begin{frame}[plain]{Exercises 3}
  (~~~~~~~~) 内の語句を並べかえ、AとBの対話を完成させましょう。なお、先頭の語は大文字で始めてください。
 
 \begin{enumerate}
@@ -239,5 +176,15 @@ Do you play tennis \alt<5->{\myAnch{FOCUS2}{orange}{on Sundays}}{\myAnch{focus2}
 \visible<6->{%
 \mbox{}\hfill\myaudio{./audio/014_when_05.mp3}
 }
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ}
+ \begin{block}{When ～?}
+\begin{description}[　　　　]
+ \item[be動詞] When is ～?
+ \item[一般動詞] When do you ～? / When does he ～?
+\end{description}
+  
+ \end{block}
 \end{frame}
 \end{document}
