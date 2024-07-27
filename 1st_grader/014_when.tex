@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
@@ -36,21 +36,22 @@
 
 be動詞のとき
 
-\mbox{}\hspace{57pt}Your birthday is August 7.
+\mbox{}\hspace{55pt}Your birthday is  \alt<3->{\myAnch{FOCUS}{orange}{August 7}}{\myAnch{focus}{white}{August 7}}.
 
 \pause
 
 
 \vspace{7pt}
 
-\mbox{}\hspace{55pt}Is your birthday \alt<3->{\myAnch{FOCUS}{orange}{August 7}}{\myAnch{focus}{white}{August 7}}?%
-\hspace{20pt}{\normalsize YesまたはNoで答える疑問文}
+\mbox{}\hfill{}cf. \myEmph[6-]{Maroon}{Is your birthday} August 7?%
 
-\vspace{7pt}
+\vspace{-5pt}
+
+\hfill{\small YesまたはNoで答える疑問文}
 
 \pause
 
-\visible<4->{\myAnch{wh}{orange}{When} is your birthday \myAnch{question}{orange}{?}}
+\visible<4->{\myAnch{wh}{orange}{When} \myEmph[6-]{Maroon}{is your birthday} \myAnch{question}{orange}{?}}
 \visible<6->{\scalebox{1.4}{\myDownwardPitch}}
 
 \pause
@@ -59,7 +60,7 @@ be動詞のとき
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->, thick, orange] (focus.south) to[out=-165, in=30] (wh.north);
+\draw[->, thick, orange] (focus.south) to[out=-90, in=90] (wh.north);
 \end{tikzpicture}
 }
 
@@ -84,24 +85,27 @@ be動詞のとき
 
 \pause
 
-\mbox{}\hspace{75pt}%
-You play tennis on Sundays.
+\mbox{}\hspace{55pt}%
+You play tennis \alt<4->{\myAnch{FOCUS2}{orange}{on Sundays}}{\myAnch{focus2}{white}{on Sundays}}.
 
 \pause
 
-\mbox{}\hspace{55pt}%
-Do you play tennis \alt<5->{\myAnch{FOCUS2}{orange}{on Sundays}}{\myAnch{focus2}{white}{on Sundays}}?
-\hspace{10pt}\visible<4->{{\normalsize Yes/Noで答える疑問文}}
+\mbox{}\hfill%
+{\small cf. \myEmph[6-]{Maroon}{Do you play} tennis on Sundays?}
 
-\visible<6->{\myAnch{WH2}{orange}{When} do you play tennis?}
+\vspace{-5pt}
 
-\visible<7->{%
+\hfill\visible<3->{{\small Yes/Noで答える疑問文}}
+
+\visible<5->{\myAnch{WH2}{orange}{When} \myEmph[6-]{Maroon}{do you play} tennis\myAnch{question2}{orange}{?}}
+
+\visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (focus2.south) to[out=-165, in=15] (WH2.north east);
+ \draw[thick, orange, ->] (focus2.south) to[out=-90, in=90] (WH2.north);
 \end{tikzpicture}
 }
 
-\visible<8->{%
+\visible<7->{%
 \begin{exampleblock}{Topics for Today}
 \pause
 \begin{itemize}\small

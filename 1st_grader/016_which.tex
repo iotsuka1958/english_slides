@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
@@ -7,73 +7,10 @@
 \setbeamertemplate{navigation symbols}{}
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{media9}
+\input{myPreamble4Slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% さまざまなアイコン
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{fontawesome}
-\usepackage{figchild}
-\usepackage{twemojis}
-\usepackage{utfsym}
-\usepackage{bclogo}
-\usepackage{marvosym}
-\usepackage{fontmfizz}
-\usepackage{pifont}
-\usepackage{phaistos}
-\usepackage{worldflags}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{tikz}
-\usetikzlibrary{backgrounds}
-\usepackage{tcolorbox}
-\usepackage{tikzpeople}
-\usepackage{xcolor}
-\usepackage{amsmath}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 場合分け
-\usepackage{cases}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \myAnch{<名前>}{<色>}{<テキスト>}
-% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
-% ノードとして出力する. 図には remeber picture 属性を付けている
-% ので外部から参照可能である.
-\newcommand*{\myAnch}[3]{%
-  \tikz[remember picture,baseline=(#1.base)]
-    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 音声リンク表示
-\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \myEmph コマンドの定義
-%\newcommand{\myEmph}[3]{%
-%    \textbf<#1>{\color<#1>{#2}{#3}}%
-%}
-\usepackage{xparse} % xparseパッケージの読み込み
-\NewDocumentCommand{\myEmph}{O{} m m}{%
-    \def\argOne{#1}%
-    \ifx\argOne\empty
-        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
-    \else
-        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
-    \fi
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 文末の上昇イントネーション記号 \myRisingPitch
-%% 通常のイントネーション \myDownwardPitch
-%% https://note.com/dan_oyama/n/n8be58e8797b2
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\myRisingPitch}{
-\begin{tikzpicture}[scale=0.3,baseline=0.3]
-\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
-\end{tikzpicture}
-}
-\newcommand{\myDownwardPitch}{
-\begin{tikzpicture}[scale=0.3,baseline=0.3]
-\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
-\end{tikzpicture}
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{English is fun.\,\,{}--- Where does Jane live? ---}
+\title{English is fun.}
+\subtitle{Which is your favorite color?}
 \author{}
 \institute[]{}
 \date[]
@@ -82,11 +19,6 @@
 %% TEXT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
-\begin{frame}[plain]
- oyoyo
-\end{frame}
-
 \begin{frame}[plain]
   \titlepage
 \end{frame}
@@ -102,27 +34,25 @@
 
 \section{Which}
 
-\subsection{Which is your favorite color?: be動詞のとき}
-\begin{frame}[plain]{Which is your favorite color?}
+\subsection{Which is your favorite season?: be動詞のとき}
+\begin{frame}[plain]{Which is your favorite season?}
  \Large
 
 be動詞のとき
 
-\mbox{}\hspace{57pt}Your favorite color is pink.\hspace{50pt}{\small favorite: お気に入りの}
-
+Your favorite season is \alt<4->{\myAnch{FOCUS}{orange}{spring}}{\myAnch{focus}{white}{spring}}.\hfill{\small favorite: お気に入りの}
 \pause
 
 
-\vspace{7pt}
+\hfill{}\myEmph[6-]{Maroon}{Is your favorite season} spring?\pause%
 
-\mbox{}\hspace{55pt}Is your favorite color \alt<3->{\myAnch{FOCUS}{orange}{pink}}{\myAnch{focus}{white}{pink}}?%
-\hspace{20pt}{\normalsize YesまたはNoで答える疑問文}
+\hfill{\normalsize YesまたはNoで答える疑問文}
 
 \vspace{7pt}
 
 \pause
 
-\visible<4->{\myAnch{wh}{orange}{Which} is your favorite color \myAnch{question}{orange}{?}}
+\visible<5->{\myAnch{wh}{orange}{Which} \myEmph[6-]{Maroon}{is your favorite season} \myAnch{question}{orange}{?}}
 \visible<6->{\scalebox{1.4}{\myDownwardPitch}}
 
 \pause
@@ -130,7 +60,7 @@ be動詞のとき
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->, thick, orange] (focus.south) to[out=-165, in=30] (wh.north);
+\draw[->, thick, orange] (focus.south) to[out=-90, in=90] (wh.north);
 \end{tikzpicture}
 }
 
@@ -152,7 +82,7 @@ be動詞のとき
 \Large
  
 \begin{enumerate}
-\visible<1->{ \item Which is your favorite color?} \hfill\visible<2->{{\small どれ}}
+\visible<1->{ \item Which is your favorite season?} \hfill\visible<2->{{\small (四季のうち)どれ}}
 \visible<3->{ \item \textcolor{orange}{\bfseries Which} is your favorite color, \colorbox{pink}{pink}  \textcolor{orange}{\bfseries or} \colorbox{blue!50}{blue} ?}\hfill\visible<4->{{\small AとBのどちら}}
 \end{enumerate}
 
@@ -194,21 +124,20 @@ be動詞のとき
 
 \pause
 
-\mbox{}\hspace{75pt}%
-You like summer.
+\mbox{}\hspace{60pt}You like  \alt<5->{\myAnch{FOCUS2}{orange}{summer}}{\myAnch{focus2}{white}{summer}}.\pause
 
+\mbox{}\hfill%
+\myEmph[6-]{Maroon}{Do you like} summer?
 
-\pause
+\vspace{-5pt}
 
-\mbox{}\hspace{55pt}%
-Do you like \alt<5->{\myAnch{FOCUS2}{orange}{summer}}{\myAnch{focus2}{white}{summer}}?
-\hspace{10pt}\visible<4->{{\normalsize Yes/Noで答える疑問文}}
+\mbox{}\hfill{}\visible<4->{{\small Yes/Noで答える疑問文}}
 
-\visible<6->{\myAnch{WH2}{orange}{Which} do you like, spring \textcolor{orange}{\bfseries or} summer?}\hfill\visible<7->{{\small AとBのどちら}}
+\visible<6->{\myAnch{WH2}{orange}{Which} \myEmph[6-]{Maroon}{do you like}, spring \textcolor{orange}{\bfseries or} summer?}\hfill\visible<7->{{\small AとBのどちら}}
 
 \visible<8->{%
 \begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (focus2.south) to[out=-165, in=15] (WH2.north east);
+ \draw[thick, orange, ->] (focus2.south) to[out=-90, in=90] (WH2.north);
 \end{tikzpicture}
 }
 
@@ -263,7 +192,7 @@ Do you like \alt<5->{\myAnch{FOCUS2}{orange}{summer}}{\myAnch{focus2}{white}{sum
 \begin{frame}[plain]{$\text{Which} + \text{名詞}$}
 \begin{enumerate}
  \visible<1->{\item \myAnch{pron}{orange}{Which} do you like, tea or coffee?}
- \visible<2->{\item \myAnch{adj}{orange}{which\raisebox{5pt}{$\curvearrowright$}drink} do you like, tea or coffee?}\\ {\small どちらの飲みもの}
+ \visible<2->{\item \myAnch{adj}{orange}{which\raisebox{5pt}{$\curvearrowright$}drink} do you like, tea or coffee?\\ {\small どちらの飲みもの}}
 \end{enumerate}
 
 \visible<3->{%
