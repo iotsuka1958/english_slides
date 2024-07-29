@@ -1,0 +1,155 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{What is this?}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{What 〜?}
+\subsection{What is this?}
+\begin{frame}[plain]{Whhat is this?} \Large
+
+be動詞のとき
+
+\mbox{}\hspace{55pt}This is \alt<3->{\myAnch{FOCUS}{orange}{a laptop}}{\myAnch{focus}{white}{a laptop}}.
+
+\pause
+
+
+\vspace{7pt}
+
+\mbox{}\hfill{}cf. \myEmph[6-]{Maroon}{Is this} a laptop?%
+
+\vspace{-5pt}
+
+\hfill{\small YesまたはNoで答える疑問文}
+
+\pause
+
+\visible<4->{\myAnch{wh}{orange}{What} \myEmph[6-]{Maroon}{is this} \myAnch{question}{orange}{?}}
+\visible<6->{\scalebox{1.4}{\myDownwardPitch}}
+
+\pause
+
+%\mbox{}\hspace{30pt}\myAnch{txt1}{white}{\small 先頭にWho}
+
+\visible<5->{%
+\begin{tikzpicture}[remember picture, overlay]
+\draw[->, thick, orange] (focus.south) to[out=-90, in=90] (wh.north);
+\end{tikzpicture}
+}
+
+\visible<7->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item 「〜は何ですか」と聞くとき$\longrightarrow$\,\,\,What is 〜?
+ \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
+\end{itemize}
+     \end{exampleblock}
+}
+\visible<8->{%
+\mbox{}\hfill\myaudio{./audio/014_when_01.mp3}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{What do you 〜?}
+\begin{frame}[plain]\frametitle{What do you want for dinner?}
+\Large
+一般動詞のとき
+
+\pause
+
+\mbox{}\hspace{55pt}%
+You want \alt<4->{\myAnch{FOCUS2}{orange}{pizza}}{\myAnch{focus2}{white}{pizza }} for dinner.
+
+\pause
+
+\mbox{}\hfill%
+{\small cf. \myEmph[6-]{Maroon}{Do you want} pizza for dinner?}
+
+\vspace{-5pt}
+
+\hfill\visible<3->{{\small Yes/Noで答える疑問文}}
+
+\visible<5->{\myAnch{WH2}{orange}{What} \myEmph[6-]{Maroon}{do you want} for dinner\myAnch{question2}{orange}{?}}
+
+\visible<5->{%
+\begin{tikzpicture}[remember picture, overlay]
+ \draw[thick, orange, ->] (focus2.south) to[out=-90, in=90] (WH2.north);
+\end{tikzpicture}
+}
+
+\visible<7->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item `What'を先頭に置いて、疑問文のかたちを続ける\,\,What do you  〜? / What does he 〜?
+ \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
+\end{itemize}
+     \end{exampleblock}
+}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exeicises}
+ 
+
+(~~~~~) 内の語句を並べかえ、対話を完成させましょう。なお、先頭に来る語は大文字ではじめてください
+\begin{enumerate}
+ \item ( his name / is / what )? --- His name is John.\\
+\visible<2->{What is his name?}
+ \item ( is / this box / what / in) ? --- A new computer is in it.\\
+\visible<3->{{What is in this box?}}
+ \item (morning / you / drink / do / what / every ) ? --- I drink milk.\\
+\visible<4->{What do  you drink every morning?}
+ \item ( does / study / what / she ) every day? --- She studies English .\\
+\visible<5->{What does she study every day?}\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{$\text{Which} + \text{名詞}$}
+\begin{enumerate}
+ \visible<1->{\item \myAnch{adj}{orange}{What\raisebox{5pt}{$\curvearrowright$}time} is it?\hfill{}{\small cf. It is ten forty.}\\
+ {\small 何時}}
+ \visible<2->{\item \myAnch{adj}{orange}{What\raisebox{5pt}{$\curvearrowright$}sport} do you like?\\ {\small 何のスポーツ}}
+\end{enumerate}
+
+\visible<3->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item \fbox{$\text{What} + \text{名詞}$}\,\,がひとかたまりになって「何の〜」の意味で使うことがあります
+ \item \fbox{$\text{What} + \text{名詞}$}\,\,も文の先頭にきます
+\end{itemize}
+     \end{exampleblock}
+}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+\end{document}
