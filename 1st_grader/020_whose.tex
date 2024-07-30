@@ -1,0 +1,161 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{Whose bag is this?}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{所有代名詞}
+ 
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item Her hair is blonde and my hair is black.
+	\item Her hair is blonde and \myEmph{Maroon}{mine} is black. ($\text{mine} = \text{my hair}$)
+       \end{enumerate}
+ \item Is this bike \myEmph{Maroon}{yours} or \myEmph{Maroon}{his}? ($\text{yours} = \text{your bike}$, $\text{his} = \text{his bike}$)
+ \item The dog is not \myEmph{Maroon}{ours}. ($\text{ours} = \text{our dog}$)
+\end{enumerate}
+
+\visible<2->{%
+\begin{exampleblock}{Topic for Today}
+\pause
+\begin{itemize}\small
+ \item 同じ名詞の繰り返しを避けてmine(わたしのもの)、yours(あなたのもの)などということがあります
+\end{itemize}
+     \end{exampleblock}
+}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{〜のもの(所有代名詞)}
+ 
+ \begin{center}
+ \rowcolors{1}{NavyBlue!50}{yellow!40}
+\begin{tabular}{lll}\toprule
+1人称&I&mine\\
+&we&ours\\
+2人称&you&yours\\
+3人称&he&his\\
+&she&hers\\
+&they&theirs\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{所有代名詞}
+\begin{frame}[plain]{Jennifer's}
+ 
+\begin{enumerate}
+ \item This car is \myEmph{Maroon}{Jennifer's}.
+ \item These books are \myEmph{Maroon}{my uncle's}.
+\end{enumerate}
+
+\visible<2->{%
+\begin{exampleblock}{Topic for Today}
+\pause
+\begin{itemize}\small
+ \item 「ジェニファーのもの」「私のおじのもの」などの場合は、
+\Circled[fill color=white]{\,名詞 's\,}\,とします
+\end{itemize}
+     \end{exampleblock}
+}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+(~~~~~~~~)内の語を「〜のもの」を表すように変えてください
+ \begin{enumerate}
+  \item Is this cup ( you ) ?\hfill\makebox[40pt][l]{yours}\hspace{180pt}\mbox{}
+  \item This dictionary is ( she )\hfill\makebox[40pt][l]{hers}\hspace{180pt}\mbox{}
+  \item Is this car ( your mother ) ?\hfill\makebox[40pt][l]{your mother's}\hspace{180pt}\mbox{}
+  \item These cats are ( Billy ).\hfill\makebox[40pt][l]{Billy's}\hspace{180pt}\mbox{}
+ \end{enumerate}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Whose 〜?}
+\subsection{Whose bag is this?}
+\begin{frame}[plain]{Whhat is this?} \Large
+
+be動詞のとき
+
+\mbox{}\hspace{55pt}This is \alt<3->{\myAnch{FOCUS}{orange}{her bag}}{\myAnch{focus}{white}{her bag}}.
+
+\pause
+
+
+\vspace{7pt}
+
+\mbox{}\hfill{}cf. \myEmph[6-]{Maroon}{Is this} her bag?%
+
+\vspace{-5pt}
+
+\hfill{\small YesまたはNoで答える疑問文}
+
+\pause
+
+\visible<4->{\myAnch{wh}{orange}{Whose bag} \myEmph[6-]{Maroon}{is this} \myAnch{question}{orange}{?}}
+\visible<6->{\scalebox{1.4}{\myDownwardPitch}}
+
+\pause
+
+%\mbox{}\hspace{30pt}\myAnch{txt1}{white}{\small 先頭にWho}
+
+\visible<5->{%
+\begin{tikzpicture}[remember picture, overlay]
+\draw[->, thick, orange] (focus.south) to[out=-90, in=90] (wh.north);
+\end{tikzpicture}
+}
+
+\visible<7->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item 「〜はだれのですか」と聞くとき$\longrightarrow$\,\,\,Whose 〜?
+ \item  \fbox{$\text{Whose} + \text{名詞}$}\,\,がひとかたまりで先頭にきます
+\end{itemize}
+     \end{exampleblock}
+}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+
+対話になるよう(~~~~~~~~)内の語を並べ替えましょう。先頭に来る後は大文字で始めてください
+ \begin{enumerate}
+  \item ( this / is / whose bike ) ? --- It's John's.
+  \item ( are / whose keys / these ) ? --- They are hers. 
+  \item ( cat / whose / it / is ) ? --- It's my children's.
+  \item ( the table / cell phone / on / whose / is ) ? --- It's mine.
+ \end{enumerate}
+\end{frame}
+\end{document}
+wget --timestamping --recursive --no-parent --no-check-certificate --wait=1      https://www.nier.go.jp/24chousakekkahoukoku/
