@@ -1,0 +1,179 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{She was }
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{過去進行形}
+
+\subsection{過去進行形とは}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{過去進行形}
+ \begin{enumerate}
+ \item \visible<1->{She \textcolor{ForestGreen}{\bfseries is sleeping} now. {\small 彼女はいま眠っています。\hfill{}(現在進行形)}}
+\visible<2->{\signchart[width=10]{,,{\textcolor{ForestGreen}{いま}}}{,,,}}
+ \item \visible<3->{She \textcolor{Maroon}{\bfseries was playing} tennis two hours ago.{\small 彼女は2時間前テニスをしていた。\\\mbox{}\hfill{}(過去進行形)}}
+\visible<4->{\signchart[width=10,height=.5]{{\textcolor{Maroon}{2時間前}},,}{,,,}}
+\end{enumerate}
+
+
+
+\begin{tikzpicture}[overlay]
+ %\draw[gray!50] (0,0) grid (12,5);
+ \visible<2->{\draw[ForestGreen!70,line width=6pt,opacity=.5] (9.2,2.95) --(10.6,2.95);}
+\visible<4->{ \draw[Maroon!70,line width=6pt,opacity=.7] (4.2,.9) -- (5.6,.9);}
+\end{tikzpicture}
+
+\visible<5->{{\small 
+\mbox{}\hfill{%
+}$\left\{\begin{tabular}[c]{l}
+         was\\
+         were
+       \end{tabular}\right\} + \text{--ing}$
+}
+}
+
+
+\vspace{10pt}
+
+\visible<5->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item 現在進行形(〜している)$\longrightarrow$今この瞬間に起こっていること
+ \item 過去進行形(〜していた)$\longrightarrow$過去のある時点で起こっていること
+
+\end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises 1}
+1は正しい方を選びましょう。2〜４は日本語の意味になるよう(~~~~~)内の語句を並べ替えましょう。先頭に来る語は大文字で書き始めてください
+ \begin{enumerate}
+  \item Bob ( is studying / \alt<2->{\Circled[outer color = BurntOrange]{ was studying }}{was studying} ) English last night.
+  \item ( is / she / sleeping ) now.彼女はいま眠っています。\\
+\visible<3->{She is sleeping now.}
+  \item ( I / waiting / was ) for the train then.私はそのとき電車を待っていました。\\
+	\visible<4->{I was waiting for the train then.}
+  \item ( eating / dinner / was / with  / I  / my family ) at that time.\\
+\mbox{}\hfill{}私はそのとき家族と夕飯を食べていました。\\
+\visible<5->{I was eating dinner with my family at that time.}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises 2}
+適当な動詞を(~~~~~)内に補い、英文を完成させましょう。必要に応じて適当な形に変えてください
+
+\begin{columns}[t]
+\begin{column}{.75\textwidth}
+ \begin{enumerate}
+  \item He was (~\alt<2->{playing}{\phantom{playing}}~) soccer at that time.
+  \item She was  (~\alt<3->{making}{\phantom{making}}~) a delicious dinner for us then.
+  \item I was  (~\alt<4->{writing}{\phantom{writing}}~) a letter to my friend at that time.
+  \item They were  (~\alt<5->{swimming}{\phantom{swimming}}~) in the pool then.
+  \item The dog was  (~\alt<6->{running}{\phantom{running}}~) in the yard at that time. 
+ \end{enumerate} 
+\end{column} 
+\begin{column}{.225\textwidth}
+次の中から選んでください
+ \begin{tcolorbox}
+  swim\\
+  run\\
+  make\\
+  write\\
+  play
+ \end{tcolorbox}
+\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{--ingのつくりかた}
+ 
+\begin{center}
+% \rowcolors{2}{NavyBlue!50}{yellow!40}
+\begin{tblr}{
+  colspec = {l l l l}, % 列の仕様
+  row{5-6} = {bg=yellow!50}, % 1行目の背景色を黄色に設定
+  row{7-8} = {bg=NavyBlue!40} % 3行目の背景色を薄い灰色に設定
+}
+\toprule
+&{\small 原形}&{\small --ing}\\\midrule
+1&\visible<1->{eat}&\visible<2->{{\small eating}}&\\
+2&\visible<1->{play}&\visible<3->{{\small playing}}&\\
+3&\visible<1->{go}&\visible<4->{{\small going}}&\\
+4&\visible<1->{make}&\visible<5->{{\small making}}&\visible<5->{eをとって--ing}\\
+5&\visible<1->{write}&\visible<6->{{\small writing}}&\\
+6&\visible<1->{swim}&\visible<7->{{\small swimming}}&\visible<7->{子音字を重ねて--ing}\\
+7&\visible<1->{run}&\visible<8->{{\small running}}&\\
+\bottomrule
+\end{tblr}%
+\end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{過去進行形の否定}
+ \begin{enumerate}
+  \item \begin{enumerate}
+	 \item<1-> Bob was hungry.
+	 \item<2-> Bob was \myEmph[2-]{Maroon}{not} hungry.
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item<3-> Jane \myEmph[3-]{NavyBlue}{was waiting} for the train then.
+	 \item<4-> Jane \myEmph[3-]{NavyBlue}{was} \myEmph[4-]{Maroon}{not} \myEmph[3-]{NavyBlue}{waiting} for the train then.
+	\end{enumerate}
+
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{過去進行形の疑問文}
+  \begin{enumerate}
+  \item \begin{enumerate}
+	 \item<1-> Bob was hungry.
+	 \item<2-> Was Bob hungry?
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item<3-> Jane \myEmph[3-]{NavyBlue}{was waiting} for the train then.
+	 \item<4-> \myEmph[3-]{NavyBlue}{Was} Jane \myEmph[3-]{NavyBlue}{waiting} for the train then?
+	\end{enumerate}
+
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
