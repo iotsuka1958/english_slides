@@ -1,0 +1,114 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{She was }
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{when}
+\subsection{when}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{～するとき}
+\Large
+ \begin{enumerate}
+  \item I \myAnch{a_1}{white}{\myEmph[2-]{NavyBlue}{was watching}} television \alt<2->{\myAnch{b_1}{Maroon}{then}}{\myAnch{B_1}{white}{then}}.%
+\hfill{}\visible<2->{then{\small (副詞)}}
+  \item I \myAnch{a_2}{white}{\myEmph[3-]{NavyBlue}{was watching}} television  \alt<3->{\myAnch{b_2}{Maroon}{at that time}}{\myAnch{B_2}{white}{at that time}}.
+  \item I \myAnch{a_3}{white}{\myEmph[4-]{NavyBlue}{was watching}} television   \alt<4->{\myAnch{b_3}{Maroon}{when he came}}{\myAnch{B_3}{white}{when he came}}.
+\end{enumerate}
+
+\visible<2->%
+{\begin{tikzpicture}[remember picture, overlay]
+ \visible<2->{\draw[thick, Maroon, ->] (B_1.north west) to[out=170, in=10] (a_1.north);} 
+ \visible<3->{\draw[thick, Maroon, ->] (B_2.north west) to[out=170, in=10] (a_2.north);} 
+ \visible<4->{\draw[thick, Maroon, ->] (B_3.north west) to[out=170, in=10] (a_3.north);} 
+\end{tikzpicture}}
+
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item   \Circled[fill color = white]{ when S $+$ V }\,は「～するとき」という意味
+ \item   \Circled[fill color = white]{ when S $+$ V }\,は全体で「副詞」の役割
+\end{itemize}
+     \end{exampleblock}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう、(~~~~~)内の語句を並べ替えましょう
+
+\begin{enumerate}
+ \item 若いころ母テニスがうまかった。\\
+       My mother was a good tennis player ( was / she / when / young ).\\
+       \visible<2->{\textcolor{lightgray}{My mother was a good tennis player} when she was young.}
+ \item わたしが見かけたとき、彼は妹といっしょだった。\\
+       He was with his sister ( him / saw / when / I ). \\
+       \visible<3->{\textcolor{lightgray}{He was with his sister} when I saw him.}
+ \item  彼女は14歳のとき、京都にいました。\\
+	She ( was / was / Kyoto / she / fourteen / when / in ).\\
+       \visible<4->{\textcolor{lightgray}{She} was in Kyoto when she was fourteen.}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{when S + Vの位置}
+ \begin{enumerate}
+  \item \begin{enumerate}
+	 \item The door  \myAnch{x_1}{white}{\myEmph[2-]{NavyBlue}{opened}} \alt<2->{\myAnch{y_1}{Maroon}{suddenly}}{\myAnch{Y_1}{white}{suddenly}}.
+	 \item  \alt<3->{\myAnch{y_2}{Maroon}{Suddenly}}{\myAnch{Y_2}{white}{Suddenly}},\,\, the door  \myAnch{x_2}{white}{\myEmph[3-]{NavyBlue}{opened}}.
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item I \myAnch{x_3}{white}{\myEmph[3-]{NavyBlue}{was reading}} a book \alt<4->{\myAnch{y_3}{Maroon}{at that time}}{\myAnch{Y_3}{white}{at that time}}.
+	 \item \alt<5->{\myAnch{y_4}{Maroon}{At that time}}{\myAnch{Y_4}{white}{At that time}},\,\, I \myAnch{x_4}{white}{\myEmph[4-]{NavyBlue}{was reading}} a book.
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item I \myAnch{x_5}{white}{\myEmph[5-]{NavyBlue}{was sleeping}}
+\alt<6->{\myAnch{y_5}{Maroon}{when he came}}{\myAnch{Y_5}{white}{when he came}}.
+	 \item \alt<7->{\myAnch{y_6}{Maroon}{When he came}}{\myAnch{Y_6}{white}{When he came}},\,\, I \myAnch{x_6}{white}{\myEmph[6-]{NavyBlue}{was sleeping}}.
+	\end{enumerate}
+ \end{enumerate}
+
+\visible<2->%
+{\begin{tikzpicture}[remember picture, overlay]
+ \visible<2->{\draw[thick, Maroon, ->] (Y_1.north west) to[out=170, in=10] (x_1.north);} 
+ \visible<3->{\draw[thick, Maroon, ->] (Y_2.north east) to[out=5, in=175] (x_2.north);} 
+ \visible<4->{\draw[thick, Maroon, ->] (Y_3.north west) to[out=170, in=10] (x_3.north);}
+ \visible<5->{\draw[thick, Maroon, ->] (Y_4.north east) to[out=5, in=175] (x_4.north);}  
+ \visible<6->{\draw[thick, Maroon, ->] (Y_5.north west) to[out=170, in=10] (x_5.north);}
+ \visible<7->{\draw[thick, Maroon, ->] (Y_6.north east) to[out=5, in=175] (x_6.north);}  
+\end{tikzpicture}}
+
+\end{frame}
+\end{document}
