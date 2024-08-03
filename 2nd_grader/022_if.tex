@@ -1,0 +1,84 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{You will succeed if you work hard.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{when}
+\subsection{when}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{もし～なら}
+\Large
+ \begin{enumerate}
+  \item You \myAnch{x_1}{white}{\myEmph[2-]{NavyBlue}{will succeed}} \alt<2->{\myAnch{y_1}{Maroon}{if you work hard}}{\myAnch{Y_1}{white}{if you work hard}}.
+\item  \alt<3->{\myAnch{y_2}{Maroon}{If you work hard}}{\myAnch{Y_2}{white}{If you work hard}},\,\, you  \myAnch{x_2}{white}{\myEmph[3-]{NavyBlue}{will succeed}}.
+\end{enumerate}
+
+\visible<2->%
+{\begin{tikzpicture}[remember picture, overlay]
+ \visible<2->{\draw[thick, Maroon, ->] (Y_1.north west) to[out=170, in=10] (x_1.north);} 
+ \visible<3->{\draw[thick, Maroon, ->] (Y_2.north east) to[out=5, in=175] (x_2.north);} 
+\end{tikzpicture}}
+
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item   \Circled[fill color = white]{ if S $+$ V }\,は「もし～なら」という意味
+ \item   \Circled[fill color = white]{ if S $+$ V }\,は全体で「副詞」の役割
+ \item   \Circled[fill color = white]{ if S $+$ V }\,は、前にも後ろにも位置します
+\end{itemize}
+     \end{exampleblock}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Exercises}
+日本語の意味になるよう、(~~~~~)内の語句を並べ替えましょう。
+先頭の語句は大文字ではじめてください
+ \begin{enumerate}
+  \item ( you / water / if / drink ), you will feel better.{\small 水を飲めば、気持ちよくなりますよ。}\\
+	\visible<2->{If you drink water, \textcolor{lightgray}{you will feel better.}}
+  \item (soccer / you / play / if ), you will have fun.{\small サッカーをすれば、楽しいですよ。}\\
+	\visible<3->{If you play soccer, \textcolor{lightgray}{you will have fun.}}
+  \item (books / if / read / you ), you will learn a lot.{\small 本を読めば、おおくのことを学べる。}\\
+	\visible<4->{If you read books, \textcolor{lightgray}{you will learn a lot.}}
+  \item We will watch a movie ( rains / it / if ).{\small 雨だったら、映画を見ます。}\\
+	\visible<5->{\textcolor{lightgray}{We will watch a movie} if it rains.}
+  \item We ( will be  / smile / if / happy / you ). {\small あなたが笑うと、わたしたちは幸福だ。}\\
+	\visible<6->{\textcolor{lightgray}{We} will be happy if you smile.}
+ \end{enumerate}
+\end{frame}
+\end{document}
