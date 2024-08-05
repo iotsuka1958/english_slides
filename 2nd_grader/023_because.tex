@@ -1,0 +1,91 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{She was happy because she passed the exam.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{理由}
+\subsection{because S $+$ V}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{理由をあらわす表現}
+\Large
+ \begin{enumerate}
+  \item She  \myAnch{x_1}{white}{\myEmph[2-]{NavyBlue}{smiled}} \alt<2->{\myAnch{y_1}{Maroon}{because his joke was funny}}{\myAnch{Y_1}{white}{because his joke was funny}}.
+\item  \alt<3->{\myAnch{y_2}{Maroon}{Because his joke was funny}}{\myAnch{Y_2}{white}{Becuase his joke was funny}},\,\, she  \myAnch{x_2}{white}{\myEmph[3-]{NavyBlue}{smiled}}.
+\end{enumerate}
+
+\visible<2->%
+{\begin{tikzpicture}[remember picture, overlay]
+ \visible<2->{\draw[thick, Maroon, ->] (Y_1.north west) to[out=170, in=10] (x_1.north);} 
+ \visible<3->{\draw[thick, Maroon, ->] (Y_2.north east) to[out=5, in=175] (x_2.north);} 
+\end{tikzpicture}}
+
+\visible<4->{%
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}
+ \item   \visible<4->{\Circled[fill color = white]{ because S $+$ V }\,は「～なので」という意味で理由を表す}
+ \item   \visible<5->{\Circled[fill color = white]{ because S $+$ V }\,は全体で「副詞」の役割}
+ \item   \visible<6->{\Circled[fill color = white]{ because S $+$ V }\,は、前にも後ろにも位置します}
+	 \begin{enumerate}
+	  \item S $+$ V\,\,\Circled[fill color = white]{ because S $+$ V }
+	  \item \Circled[fill color = white]{ Because S $+$ V },\,\,S $+$ V
+	 \end{enumerate}
+\end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Exercises}
+日本語の意味になるよう、(~~~~~)内の語句を並べ替えましょう。
+%先頭の語句は大文字ではじめてください
+ \begin{enumerate}
+  \item 雨が降っていたので、わたしは家にいた。\hfill{\scriptsize stay: とどまる}\\
+	I stayed home ( was / because / raining / it ).\\
+	\visible<2->{\textcolor{lightgray}{I stayed home} because it was raining.}\hfill \visible<3->{S $+$ V\,\,\Circled[fill color = yellow!50]{ because S $+$ V }}
+  \item 試験に受かったので、彼女は幸せだった。\hfill{\scriptsize exam: 試験}\\
+	She was happy ( the exam / because / passed / she ).\\
+	\visible<4->{\textcolor{lightgray}{She was happy} because she passed the exam.} \hfill \visible<5->{S $+$ V\,\,\Circled[fill color = yellow!50]{ because S $+$ V }}
+ \item 眠かったので、彼女は早く寝た。\hfill{\scriptsize sleepy: 眠い　go to bed: 寝る}\\
+Because ( sleepy / went / was / she / she ) to bed early.\\
+	\visible<6->{\textcolor{lightgray}{Because} she was sleepy, she went \textcolor{lightgray}{to bed early.}}\hfill \visible<7->{\Circled[fill color = yellow!50]{ Because S $+$ V }, S $+$ V}
+  \item 昼食を食べなかったので、彼ははらぺこだった。\hfill{\scriptsize: hungry: おなかがすいた}\\
+Because (he / he / was / eat / hungry / lunch / didn't )\\
+	\visible<6->{\textcolor{lightgray}{Because} he didn't eat lunch, he was hungry.}\hfill \visible<7->{\Circled[fill color = yellow!50]{ Because S $+$ V }, S $+$ V}
+
+ \end{enumerate}
+\end{frame}
+\end{document}
