@@ -1,0 +1,145 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{Small cats jump quickly.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{品詞}
+\subsection{品詞とは}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{品詞}
+\large 
+\begin{description}
+ \item<2->[名詞] 人やモノの名前を表す語\hfill\visible<3->{child, cat, desk, Tokyo \ldots}
+ \item<4->[動詞] 動作や状態を表す語\hfill\visible<5->{run, eat, study, have, be \ldots{}}
+ \item<6->[形容詞] 名詞をくわしく説明する語\hfill\visible<7->{big, new, happy, good \ldots}
+ \item<8->[副詞] 動詞や形容詞などをくわしく説明する語\hfill\visible<9->{quickly, here, then\ldots}
+\end{description}
+
+\vfill
+
+\mbox{}\hfill\visible<10->{ほかにもありますが、きょうはこれだけとりあげます}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+それぞれの英文の単語の品詞がなにかかんがえましょう
+
+\begin{columns}[t]
+\begin{column}{.7\textwidth}
+  \begin{enumerate}
+  \item Small cats jump quickly.\\
+	\visible<2->{{\small \Circled{ 形 }\hspace{12pt}\Circled{ 名 } \Circled{ 動 }\hspace{12pt}\Circled{ 副 }}}
+  \item Tall trees grow slowly.\\
+	\visible<3->{{\small \Circled{ 形 } \Circled{ 名 }\hspace{8pt}\Circled{ 動 }\hspace{10pt}\Circled{ 副 }}}
+  \item Big dogs bark loudly.\\
+	\visible<4->{{\small \Circled{ 形 } \Circled{ 名 } \Circled{ 動 }\hspace{10pt}\Circled{ 副 }}}
+  \item George had very old coins.\\
+	\visible<5->{{\small \Circled{ 名 }\hspace{18pt}\Circled{ 動 } \Circled{ 副 } \Circled{ 形 }} \Circled{ 名 }}
+  \item Jennifer was very happy then.\\
+	\visible<6->{{\small \Circled{ 名 }\hspace{22pt}\Circled{ 動 } \Circled{ 副 }\hspace{8pt}\Circled{ 形 }\hspace{10pt}\Circled{ 副 }}}
+ \end{enumerate}
+\end{column}
+\begin{column}{.25\textwidth}
+ \begin{tcolorbox}
+  \begin{tabular}{cl}
+    \Circled{ 名 }&名詞\\
+    \Circled{ 動 }&動詞\\
+    \Circled{ 形 }&形容詞\\
+    \Circled{ 副 }&副詞
+  \end{tabular}
+ \end{tcolorbox}
+\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{その他の品詞}
+ \begin{description}
+  \item[冠詞]  名詞の前に置く\hfill{}a / an, theだけ
+  \item[代名詞] 名詞の代わりに使う語\hfill{}he, she, it, this, that, these, those \dots
+  \item[助動詞] 動詞の意味を補う語\hfill{}can, will, must \ldots 
+ \end{description}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{冠詞}
+\Large
+ \begin{enumerate}
+  \item $\text{a / an} + \text{単数形の名詞}$
+	\begin{enumerate}
+	 \item a book\hfill\textipa{/\textschwa /}
+	 \item an apple\hfill\textipa{/\textschwa n/}
+	\end{enumerate}
+  \item $\text{the} + \text{名詞}$\hspace{10pt}{\small (単数形・複数形どちらもあり)}
+	\begin{enumerate}
+	 \item the book / the books\hfill\textipa{/\dh\textschwa/}
+	 \item the apple / the apples\hfill\textipa{/\dh i/}
+	\end{enumerate}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{代名詞}
+\Large
+ \begin{enumerate} 
+  \item \begin{enumerate}
+	 \item<1-> Dave is my classmate. Dave likes basketball.
+	 \item<2-> Dave is my classmate. \myEmph[2-]{Maroon}{He} likes basketball.
+	\end{enumerate}  \item \begin{enumerate}
+	 \item<3-> I ate an apple. The apple was delicious.
+	 \item<4-> I ate an apple. \myEmph[4-]{Maroon}{It} was delicious.
+	\end{enumerate}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{助動詞}
+ \Large
+
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item I play the guitar.
+	\item I will play the guitar tomorrow.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item You play the guitar.
+	\item You must play teh guitar.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item He plays the guitar.
+	\item He can play the guitar.
+       \end{enumerate}
+\end{enumerate}
+\end{frame}
+\end{document}
+
