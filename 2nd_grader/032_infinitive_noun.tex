@@ -1,0 +1,88 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{I want a computer.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{名詞的用法}
+\subsection{名詞的用法}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{～すること}
+\large 
+
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item<1-> I like \fbox{~~~X~~~}\,.
+	\item<2-> I like cookies.
+	\item<3-> I like \alt<4->{\fbox{to make cookies}}{to make cookies}\,.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item<5-> He likes cookies.
+	\item<6-> He likes \alt<7->{\fbox{to make cookies}}{to make cookies}\,.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item<8-> She liked cookies.
+	\item<9-> She liked \alt<10->{\fbox{to make cookies}}{to make cookies}\,.
+       \end{enumerate} 
+\end{enumerate}
+
+\visible<11->{%
+\begin{exampleblock}{Topics for Today ---名詞的用法---}
+\begin{itemize}\small
+ \item<11->   \Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$\,} が「～すること」という意味を表し、名詞のはたらきをすることがある
+ \item<12-> 主語と組み合わせる動詞\,(\,I like \ldots{}, He likes \ldots{}, She liked \ldots\,)とはちがって、\\
+いつでも\,\Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$\,}\\
+ \end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+つぎの英文を読みましょう
+
+Every summer, Jane and her friends planned\footnote{plan: 計画する} fun activities\footnote{fun activities: 楽しい活動}.
+Jane {\bfseries wanted to visit} many countries.
+Tom {\bfseries liked to draw} pictures of the places they visited\footnote{the places they visited: 訪れた場所}.
+Mary {\bfseries began to pack}\footnote{pack: つめる} her bags early..
+John started {\bfseries to read} travel books\footnote{travel books: 旅行の本}.
+They were so excited\footnote{excited: わくわくして}.
+They {\bfseries decided to save}\footnote{save: 節約する} money for their trip.
+During their trip, they {\bfseries needed to try} new foods.
+After the trip, they { \bfseries continued}\footnote{continue: 続ける} {\bfseries to talk} about their memories.
+\end{frame}
+\end{document}

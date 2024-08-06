@@ -52,7 +52,7 @@
 
 \vfill
 
-\mbox{}\hfill\visible<10->{ほかにもありますが、きょうはこれだけとりあげます}
+\mbox{}\hfill\visible<10->{ほかにもありますが、まずはこれをしっかり理解しましょう}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
@@ -89,20 +89,23 @@
 \begin{frame}[plain]{その他の品詞}
  \begin{description}
   \item[冠詞]  名詞の前に置く\hfill{}a / an, theだけ
-  \item[代名詞] 名詞の代わりに使う語\hfill{}he, she, it, this, that, these, those \dots
+  \item[代名詞] 名詞の代わりに使う語\hfill{}I, we, you he, she, it, they, this, that \dots
   \item[助動詞] 動詞の意味を補う語\hfill{}can, will, must \ldots 
  \end{description}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{冠詞}
 \Large
+
+冠詞: a / an , the
+
  \begin{enumerate}
-  \item $\text{a / an} + \text{単数形の名詞}$
+  \item $\text{a / an} + \text{単数形の名詞}$\,(1つの～)
 	\begin{enumerate}
 	 \item a book\hfill\textipa{/\textschwa /}
 	 \item an apple\hfill\textipa{/\textschwa n/}
 	\end{enumerate}
-  \item $\text{the} + \text{名詞}$\hspace{10pt}{\small (単数形・複数形どちらもあり)}
+  \item $\text{the} + \text{名詞}$\,(その～)\hspace{10pt}{\small (単数形・複数形どちらにもつく)}
 	\begin{enumerate}
 	 \item the book / the books\hfill\textipa{/\dh\textschwa/}
 	 \item the apple / the apples\hfill\textipa{/\dh i/}
@@ -112,34 +115,59 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{代名詞}
 \Large
+
+代名詞: 名詞の代わりに使う語
+
  \begin{enumerate} 
   \item \begin{enumerate}
-	 \item<1-> Dave is my classmate. Dave likes basketball.
-	 \item<2-> Dave is my classmate. \myEmph[2-]{Maroon}{He} likes basketball.
+	 \item<1-> Dave is my classmate.\hspace{5pt} Dave likes basketball.\\
+	      \mbox{}
+	 \item<2-> \myAnch{X}{white}{Dave}is my classmate.\hspace{10pt}\myAnch{x}{Maroon}{He} likes basketball.\\
+	      \mbox{}
 	\end{enumerate}  \item \begin{enumerate}
-	 \item<3-> I ate an apple. The apple was delicious.
-	 \item<4-> I ate an apple. \myEmph[4-]{Maroon}{It} was delicious.
+	 \item<4-> I ate an apple.\hspace{5pt} The apple was delicious.%
+	      \hfill{\scriptsize delisious: おいしい}\\
+	      \mbox{}
+	 \item<5-> I ate \myAnch{Y}{white}{an apple.}\hspace{10pt} \myAnch{y}{Maroon}{It} was delicious.
 	\end{enumerate}
  \end{enumerate}
+
+\begin{tikzpicture}[remember picture, overlay]
+% Calculate intermediate points
+  \coordinate (X1) at ($(X) + (0,15pt)$); % 10pt above X
+  \coordinate (x1) at ($(x) + (0,15pt)$); % 10pt above x
+  % Draw the arrow with right angles
+  \visible<3->{\draw[<-,Maroon] (X) -- (X1) -- (x1) -- (x);}
+%%%%%%%%%%%
+% Calculate intermediate points
+  \coordinate (Y1) at ($(Y) + (0,15pt)$); % 10pt above Y
+  \coordinate (y1) at ($(y) + (0,15pt)$); % 10pt above y
+  % Draw the arrow with right angles
+  \visible<6->{\draw[<-,Maroon] (Y) -- (Y1) -- (y1) -- (y);}
+\end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{助動詞}
  \Large
 
+助動詞: 動詞の意味を補う
+
 \begin{enumerate}
  \item \begin{enumerate}
 	\item I play the guitar.
-	\item I will play the guitar tomorrow.
+	\item I \myEmph[2-]{Maroon}{will} play the guitar tomorrow.
        \end{enumerate}
  \item \begin{enumerate}
 	\item You play the guitar.
-	\item You must play teh guitar.
+	\item You \myEmph[3-]{Maroon}{must} play the guitar.
        \end{enumerate}
  \item \begin{enumerate}
 	\item He plays the guitar.
-	\item He can play the guitar.
+	\item He \myEmph[4-]{Maroon}{can} play the guitar.
        \end{enumerate}
 \end{enumerate}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}
 
