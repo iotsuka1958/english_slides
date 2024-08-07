@@ -1,0 +1,111 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{I want a computer.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{名詞的用法}
+\subsection{名詞的用法}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{形容詞的用法}
+ \begin{enumerate}
+  \item \begin{enumerate}
+	 \item<1-> He doesn't have time to read books.\\
+	       \mbox{}
+	 \item<2-> He doesn't have \myAnch{a1}{white}{\myEmph[3-]{NavyBlue}{time}} \myAnch{b1}{Maroon}{to read books}.\visible<3->{本を読む時間}
+ 	\end{enumerate}
+  \item \begin{enumerate}
+	 \item<4-> I want something to drink.\\
+	       \mbox{}
+	 \item<5-> I want \myAnch{a2}{white}{\myEmph[6-]{NavyBlue}{something}} \myAnch{b2}{Maroon}{to drink}.\visible<6->{なにか飲むもの}
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item<7-> I need someone to help me.\\
+	       \mbox{}
+	 \item<8-> I need \myAnch{a3}{white}{\myEmph[9-]{NavyBlue}{someone}} \myAnch{b3}{Maroon}{to help me}.\visible<9->{私を助けてくれるだれか}
+	\end{enumerate}
+ \end{enumerate}
+
+\begin{tikzpicture}[remember picture, overlay]
+% Calculate intermediate points
+  \coordinate (A1) at ($(a1) + (0,15pt)$); % 10pt above a1
+  \coordinate (B1) at ($(b1) + (0,15pt)$); % 10pt above b1
+  % Draw the arrow with right angles
+  \visible<3->{\draw[<-,Maroon] (a1) -- (A1) -- (B1) -- (b1);}
+%%%%%%%%%%%
+% Calculate intermediate points
+  \coordinate (A2) at ($(a2) + (0,15pt)$); % 10pt above a2
+  \coordinate (B2) at ($(b2) + (0,15pt)$); % 10pt above b2
+  % Draw the arrow with right angles
+  \visible<6->{\draw[<-,Maroon] (a2) -- (A2) -- (B2) -- (b2);}
+%%%%%%%%%%%
+% Calculate intermediate points
+  \coordinate (A3) at ($(a3) + (0,15pt)$); % 10pt above a2
+  \coordinate (B3) at ($(b3) + (0,15pt)$); % 10pt above b2
+  % Draw the arrow with right angles
+  \visible<9->{\draw[<-,Maroon] (a3) -- (A3) -- (B3) -- (b3);}
+\end{tikzpicture}
+
+\visible<10->{%
+\begin{exampleblock}{Topic for Today ---形容詞的用法---}
+\begin{itemize}\small
+ \item \Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$\,} が、名詞を後ろから修飾することがある
+ \end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+意味がとおるように(~~~~~)内の語句を並べ替えましょう
+ \begin{enumerate}
+  \item<1->{He has ( help / many friends / to ) him.}\\
+       \visible<2->{\textcolor{lightgray}{He has} many friends to help \textcolor{lightgray}{him}.}
+  \item<1-> She has a lot of ( to / do / things ) today.\\
+	\visible<3->{\textcolor{lightgray}{She has a lot of} things to do \textcolor{lightgray}{today}.}
+  \item<1-> I am hungry. I ( eat / want something / to )\\
+	\visible<4->{\textcolor{lightgray}{I am hungry. I} want something to eat}.
+  \item<1-> There are ( places / see / many / to ) in New York.\\
+	\visible<5->{\textcolor{lightgray}{There are} many places to see \textcolor{lightgray}{in New York}.}
+  \item<1-> They have ( a plan / to / to / go ) Boston.\\
+	\visible<6->{\textcolor{lightgray}{They have} a plan to go to \textcolor{lightgray}{Boston}.}
+
+
+ \end{enumerate} 
+\end{frame}
+\end{document}
+
