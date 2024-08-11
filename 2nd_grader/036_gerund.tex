@@ -1,0 +1,129 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{Sleeping is necessary to us.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{動名詞}
+\subsection{主語}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{～すること}
+ \large
+
+
+\begin{enumerate}
+ \item<1-> Exercise is good for your health.\hfill{\scriptsize execise: 運動　health: 健康}
+ \item<2-> \alt<3->{\fbox{To eat vegetables}}{To eat vegetables} is good for your health.\hfill\visible<4->{\scriptsize 不定詞の名詞適用法}
+ \item<5-> \alt<6->{\fbox{Eating vegetables}}{Eating vegetables} is good for your health.\hfill\visible<7->{{\scriptsize \fbox{Eating vegetables} $=$ S}}
+ \item<8-> His dream is \alt<9->{\fbox{becoming a doctor}}{becoming a doctor}.\hfill\visible<10->{{\scriptsize His dream $=$ \fbox{becoming a doctor}}}
+\end{enumerate}
+
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}\small
+ \item<11->   \Circled[fill color= white]{\,\,--ing\,\,} が「～すること」という意味を表し、名詞のはたらきをすることがある
+ \item<12-> \Circled[fill color= white]{\,\,--ing\,\,}\,が、
+      \begin{itemize}
+       \item 文全体の主語になったり
+       \item be動詞の直後にきたりすることがあります
+      \end{itemize}
+ \item <13-> この \Circled[fill color= white]{\,\,--ing\,\,}\,を「動名詞」といいます
+ \end{itemize}
+     \end{exampleblock}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本文の意味になるように(~~~~~)内の語句を並べ替えましょう
+ \begin{enumerate}
+  \item 走ることは健康にいい。\\
+	( your health / is / good / running / for ).\\
+	\visible<2->{Running is good for your health.}
+  \item 川で泳ぐことは楽しい。\\
+	(the river / fun / swimming / is / in ).\\
+	\visible<3->{Swimming in the river is fun.}
+  \item 私のお気に入りの趣味は読書です。\\
+	My ( reading / hobby / is / favorite ).\\
+	\visible<4->{My favorite hobby is reading.}
+  \item 彼女の仕事はバスを運転することだ。
+	Her ( driving / job / a bus / is ).\\
+	\visible<5->{Her job is driving a bus.}
+
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+つぎの2文の意味を考えましょう\dbend
+
+ \begin{enumerate}
+  \item Her job was driving a bus.
+  \item She was driving a bus at that time.
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{V $+$ --ing}
+ \begin{enumerate}
+  \item He started his business two years ago.\hfill{\scriptsize business: 商売}
+  \item He started to laugh.\hfill{\scriptsize laugh: 笑う}
+  \item He started laughing.
+
+\begin{exampleblock}{Topic for Today}
+\begin{itemize}\small
+ \item \Circled[fill color= white]{\,\,--ing\,\,}\,\,が、「〜すること」の意味で
+      \begin{itemize}
+       \item 一般動詞の直後にくることがあります
+      \end{itemize}
+ \end{itemize}
+     \end{exampleblock}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ \begin{enumerate}
+  \item \begin{enumerate}
+	 \item She likes music.
+	 \item She likes to play the piano.
+	 \item She likes playing the piano.      
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item They began the lesson.
+	 \item They began to study Spanish.
+	 \item They began studying Spanish.
+	\end{enumerate}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
