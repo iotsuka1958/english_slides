@@ -1,0 +1,78 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{Open the door.
+}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{命令文}
+\subsection{〜しなさい}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{～しなさい}
+ \large
+
+
+\begin{enumerate}
+ \item<2-> be動詞のとき
+       \begin{enumerate}
+	\item<3-> \myEmph[3-]{Maroon}{Be} quiet.  
+	\item<4-> \myEmph[4-]{Maroon}{Be} careful.
+	\item<5-> \myEmph[5-]{Maroon}{Be} nice to others.
+       \end{enumerate}
+\item<6-> 一般動詞のとき
+      \begin{enumerate}
+	\item<7-> \myEmph[7-]{NavyBlue}{Come} here.
+	\item<8-> \myEmph[8-]{NavyBlue}{Stand} up.
+	\item<9-> \myEmph[9-]{NavyBlue}{Have} a good day.
+      \end{enumerate}
+
+
+\end{enumerate}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ \begin{enumerate}
+  \item （１）( Standing / Stands / Stand ) up.
+（２）Please ( coming / comes / come ) to me.
+（３）( Am / Be / Is ) careful.
+（４）( Looking / Looks / Look ) at the blackboard. （注）blackboard 黒板
+（５）( Cleaning / Cleans / Clean ) your room right now. （
+
+ \end{enumerate}
+\end{frame}\end{document}
