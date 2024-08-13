@@ -1,3 +1,9 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # english_slides
 
 # ffmpegを利用してfoo.mp3とbar.mp3を5秒の空白を挟んで結合する方法
@@ -8,37 +14,38 @@
 
 まず、5秒の空白音声ファイル（silent.mp3）を作成します。
 
-```bash
+``` bash
 ffmpeg -f lavfi -t 5 -i anullsrc=r=44100:cl=stereo -q:a 9 -acodec libmp3lame silent.mp3
 ```
 
 ## 入力ファイルリストを作成
-foo.mp3、silent.mp3、bar.mp3の順に結合するための入力ファイルリストを作成します。このリストを file_merge_list.txt として保存します。
+
+foo.mp3、silent.mp3、bar.mp3の順に結合するための入力ファイルリストを作成します。このリストを
+file_merge_list.txt として保存します。
 
 file_merge_list.txt の内容：
 
-```
+```         
 file 'foo.mp3'
 file 'silent.mp3'
 file 'bar.mp3'
 ```
 
 ## ファイルを結合
+
 ffmpegを使用して、これらのファイルを結合します。
 
-```
+```         
 ffmpeg -f concat -safe 0 -i file_merge_list.txt -c copy output.mp3
 ```
 
-
-
 # 音声ファイル作成
-
 
 ## bashのスクリプトファイルを作った
 
 file名はgenerate_mp3.shにした。
-```
+
+```         
 #!/usr/bin/bash
 # 発音練習用英文をssml形式にして、一時ファイルzzzに格納
 awk -f pronunciation_making.awk input.txt > zzz
@@ -48,28 +55,27 @@ ssml2mp3.py zzz
 rm zzz
 ```
 
-これでinut.txtの各業に英語の例文を入れておいて
-`./generate_mp3.sh`
+これでinut.txtの各業に英語の例文を入れておいて `./generate_mp3.sh`
 とすればoutput.mp3ができあがる。このoutput.mp3のファイル名を適当に変えればOK
-
 
 ## listen + repeat(通常の発音練習用)
 
 input.txt
 
-```
+```         
 This is a pen.
 I am a boy
 ```
 
 のような感じ。
 
-```
+```         
 awk -f pronunciation_making.awk input.txt
 ```
 
 pronunciation_making.awkの内容はつぎのとおり。
-```
+
+```         
 BEGIN {
     print "<speak>"
     print "    <p>"
@@ -160,16 +166,18 @@ END {
 これでssmlファイルができる。
 
 これを
-```
+
+```         
 ssml2mp3.py <input_ssml_file>
 ```
+
 これでoutput.mp3(これは決め打ち)ができるので、適当にリネームすればいい。
 
-なお、ssml2mp3.pyは以下の通り。
-このスクリプトでは,
+なお、ssml2mp3.pyは以下の通り。 このスクリプトでは,
 <speak></speak>の中身を英語と日本語を混在させないこと。たとえばつぎみたいにする。
 こうすれば、日本語も英語もネイティブになる。
-```
+
+```         
 <speak>
     <p>
         <s>
@@ -195,7 +203,7 @@ ssml2mp3.py <input_ssml_file>
 
 pythonスクリプトはつぎのとおり
 
-```
+```         
 #!/usr/bin/env python3
 import re
 import sys
@@ -253,11 +261,9 @@ except Exception as e:
 
 input_alphabe.txtを作っておく
 
-
-
 quiz_maiking.awk を作成してある
 
-```
+```         
 BEGIN {
     FS = ""
     RS = "\n"
@@ -293,23 +299,25 @@ BEGIN {
 
 ### 使い方
 
-
-```
+```         
 awk -f quiz_making.awk input.txt > quiz_manuscript.txt
 ```
 
 quiz_manuscript.txtにSSMLのソースがはいっているので、
 使う部分を切り出してqqqというテンポラリファイルにいれてから
-```
+
+```         
 txt2mp3.py qqq
 ```
+
 とすると、output.mp3（いまのところ、これは決め打ち)ができる。これを中身に合わせたファイル名にすればいい。
 
 ## upload用のpdf作成方法
 
 オリジナルファイルからアップロード用に一部のページを抽出したpdfを作成する。
 pdftkをインストールしておくこと。
-```
+
+```         
 pdftk original.pdf cat 3-4 16-65 output ./upload_archive/2024-06-28/hogehoge.pdf
 ```
 
@@ -318,43 +326,41 @@ pdftk original.pdf cat 3-4 16-65 output ./upload_archive/2024-06-28/hogehoge.pdf
 あなたは英語のネイティブスピーカーで、外国人への英語教育の専門家です。
 いま、日本の中学生対象に練習問題を作成しています。
 以下の【例】のように「ソース」から問題を作成します。「課題」の「ソース」をもとにして「問題」を作成してください。
-問題は
-・ソースの和訳
+問題は ・ソースの和訳
 ・ソースの語句をランダムに並べ替えて、スラッシュで区切って()でくくった部分
 ・ソースの英文を{}で括って、さらに先頭に\visible<2->を追加した部分
 から成り立たせます。
 
 ソースが2行以上に渡るときは、その各行に対して問題を作成してください。
 
-【例】
-ソース：     I am going to play tennis tomorrow.
-問題：       わたしは明日テニスをするつもりです。
-            ( to / tennis / am / tomorrow / going / I / play ) 
-             \visibe<2->{I am going to play tennis tomorrow.}
+【例】 ソース： I am going to play tennis tomorrow. 問題：
+わたしは明日テニスをするつもりです。 ( to / tennis / am / tomorrow /
+going / I / play ) \visibe<2->{I am going to play tennis tomorrow.}
 
-【課題】
-ソース：   I will not eat sushi for dinner.
-           She will not watch TV tonight.
-           They will not buy a new car.
-           It will not rain tomorrow.
-## テキストからmp3ファイルをAmazon Pollyで作成
+【課題】 ソース： I will not eat sushi for dinner. She will not watch TV
+tonight. They will not buy a new car. It will not rain tomorrow. \##
+テキストからmp3ファイルをAmazon Pollyで作成
 
 走り書き
 
-読み上げたい文章をテキストファイルで作成し、それにAmazon Pollyのタグを追加。そのファイルをzzzとすると
-```
+読み上げたい文章をテキストファイルで作成し、それにAmazon
+Pollyのタグを追加。そのファイルをzzzとすると
+
+```         
 txt2mp3.py zzz
 ```
+
 とする。
 
-
 ## default regeon をアメリカ東海岸に
-```
+
+```         
 Sys.setenv(AWS_DEFAULT_REGION="us-east-1")
 ```
 
 ## Rmdから音声付きの動画を作成
-```
+
+```         
 library(ari)
 ari::ari_narrate(
   script = "1st_grader/001_alphabet.Rmd",
@@ -369,64 +375,81 @@ ari::ari_narrate(
 
 ## pdfから静止画像を抽出
 
-``` 
+```         
 pdftoppm -jpg hoge.pdf hoge
 ```
 
 ## 静止画像から動画を作成
-```
+
+```         
 ffmpeg -loop 1 -i input.png  -vcodec libx264 -pix_fmt yuv420p -t 3 -r 30 output.mp4
 ```
+
 このコードは、FFmpegを使用して静止画（input.png）を動画ファイルに変換するためのコマンド。
 
 具体的には、
 
-- `-loop 1` : 入力画像を1回繰り返し処理するように指定。これにより、入力画像がループして表示される
-- `-i input.png` : 入力として `input.png` ファイルを指定。これは静止画のファイル
-- `-vcodec libx264` : 動画のビデオコーデックを libx264 に指定します。これはH.264形式のビデオコーデック
-- `-pix_fmt yuv420p` : 動画のピクセルフォーマットを yuv420p に指定します。これは一般的なピクセルフォーマットで、広くサポートされています。
-- `-t 3` : 出力動画の長さを3秒に指定。この場合、入力画像が3秒間表示される
-- `-r 30` : 出力動画のフレームレートを30fpsに指定。つまり、1秒あたり30枚のフレームが表示される
-- `output.mp4` : 出力ファイルの名前を指定
+-   `-loop 1` :
+    入力画像を1回繰り返し処理するように指定。これにより、入力画像がループして表示される
+-   `-i input.png` : 入力として `input.png`
+    ファイルを指定。これは静止画のファイル
+-   `-vcodec libx264` : 動画のビデオコーデックを libx264
+    に指定します。これはH.264形式のビデオコーデック
+-   `-pix_fmt yuv420p` : 動画のピクセルフォーマットを yuv420p
+    に指定します。これは一般的なピクセルフォーマットで、広くサポートされています。
+-   `-t 3` :
+    出力動画の長さを3秒に指定。この場合、入力画像が3秒間表示される
+-   `-r 30` :
+    出力動画のフレームレートを30fpsに指定。つまり、1秒あたり30枚のフレームが表示される
+-   `output.mp4` : 出力ファイルの名前を指定
 
-したがって、このコマンドは、`input.png` ファイルを1つのフレームとして持つ動画ファイルを作成し、その長さを3秒、フレームレートを30fpsに設定。出力ファイルを `output.mp4` として保存
+したがって、このコマンドは、`input.png`
+ファイルを1つのフレームとして持つ動画ファイルを作成し、その長さを3秒、フレームレートを30fpsに設定。出力ファイルを
+`output.mp4` として保存
 
 ## 動画に音声を追加
-```
+
+```         
 ffmpeg -i video.mp4 -i video.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 output.mp4
 ```
+
 このコードは、FFmpegを使用してビデオファイルとオーディオファイルを結合し、新しいビデオファイルを作成するためのコマンド。
 
 具体的には、：
 
-- `-i video.mp4` : 入力として `video.mp4` ファイルを指定。これはビデオファイル。
-- `-i video.mp3` : 入力として `video.mp3` ファイルを指定。これはオーディオファイル。
-- `-c:v copy` : ビデオストリームをコピーすることを指定。つまり、元のビデオファイルのビデオデータはそのままで、再エンコードされません
-- `-c:a aac` : オーディオストリームをAAC形式でエンコードすることを指定
-- `-map 0:v:0` : 元のビデオファイルから最初のビデオストリームを選択。
-- `-map 1:a:0` : 第2の入力ファイルから最初のオーディオストリームを選択
-- `output.mp4` : 出力ファイルの名前を指定。この場合、新しいビデオファイルの名前は `output.mp4` 
+-   `-i video.mp4` : 入力として `video.mp4`
+    ファイルを指定。これはビデオファイル。
+-   `-i video.mp3` : 入力として `video.mp3`
+    ファイルを指定。これはオーディオファイル。
+-   `-c:v copy` :
+    ビデオストリームをコピーすることを指定。つまり、元のビデオファイルのビデオデータはそのままで、再エンコードされません
+-   `-c:a aac` : オーディオストリームをAAC形式でエンコードすることを指定
+-   `-map 0:v:0` : 元のビデオファイルから最初のビデオストリームを選択。
+-   `-map 1:a:0` : 第2の入力ファイルから最初のオーディオストリームを選択
+-   `output.mp4` :
+    出力ファイルの名前を指定。この場合、新しいビデオファイルの名前は
+    `output.mp4`
 
-したがって、このコマンドは `video.mp4` ファイルのビデオストリームと `video.mp3` ファイルのオーディオストリームを結合し、新しいビデオファイル `output.mp4` を作成。
-
-
+したがって、このコマンドは `video.mp4` ファイルのビデオストリームと
+`video.mp3` ファイルのオーディオストリームを結合し、新しいビデオファイル
+`output.mp4` を作成。
 
 # imager
 
 imagerパッケージを用いて、写真から線画を作成する手順
-```
+
+```         
 library(imager)
 ```
 
-```
+```         
 img_1 <- load.image("./images/me_1.png")
 plot(img_1)
 
 gray_img_1 <- img_1 |> grayscale()
-
 ```
 
-```
+```         
 img_2 <- load.image("./images/me_2.png")
 plot(img_2)
 
@@ -436,7 +459,7 @@ gray_img_2[ gray_img_2 <= .45] = 0
 gray_img_2 |> plot()
 ```
 
-```
+```         
 画像ファイルを読み込み
 path <- "./images/me_1.png"
 img <- load.image(path)
@@ -463,9 +486,9 @@ imager::save.image(nega_img, "./images/nega_me.png")
 
 ## another way
 
-
 # アルファチャネル操作用の関数
-```
+
+```         
 applyAlpha = function( cimg, alpha, reverse = F ){
   if( class( alpha )[ 1 ] == "cimg" ){
     if( reverse ){

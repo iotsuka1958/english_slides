@@ -1,0 +1,132 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{Open the door.
+}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{感嘆文}
+\subsection{なんて～でしょう}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{なんて～でしょう}
+
+\begin{columns}[t]
+%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{column}{.47\textwidth}  
+ \begin{enumerate}
+  \item<1-> This is \myAnch{a1}{NavyBlue}{a beautiful flower}.\\
+       \mbox{}
+  \item<2-> \myAnch{a2}{NavyBlue}{\myEmph[2-]{Maroon}{What} a beautiful flower} this is!
+  \item<3-> What a beautiful flower!
+ \end{enumerate}
+ \end{column}
+%%%%%%%%%%%%%%%%%%%%%%
+ \begin{column}{.48\textwidth}  
+ \begin{enumerate}
+  \item<5-> They have \myAnch{b1}{NavyBlue}{nice cars}.\\
+       \mbox{}
+  \item<6-> \myAnch{b2}{NavyBlue}{\myEmph[2-]{Maroon}{What} nice cars} they have!
+  \item<7-> What nice cars!
+ \end{enumerate}
+ \end{column}
+%%%%%%%%%%%%%%%%%%%%%%%
+\end{columns}
+ 
+
+\begin{tikzpicture}[remember picture, overlay]
+\visible<2->{\draw[->, thick, NavyBlue] (a1.south) to[out=-90, in=90] (a2.north);}
+\visible<6->{\draw[->, thick, NavyBlue] (b1.south) to[out=-90, in=90] (b2.north);}
+\end{tikzpicture}
+
+
+\visible<4->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item<4-> 「なんと～な\ldots{}でしょう」というとき$\longrightarrow$\,\,\,%
+\Circled[fill color = white]{ What\,\,(a)\,\,形容詞 $+$ 名詞 } $+$ S $+$ V !
+ \item<4->   文末に`!'をつける
+\end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{なんて～でしょう}
+
+\begin{columns}[t]
+%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{column}{.47\textwidth}  
+ \begin{enumerate}
+  \item<1-> This flower is \myAnch{c1}{NavyBlue}{beautiful}.\\
+       \mbox{}
+  \item<2-> \myAnch{c2}{NavyBlue}{\myEmph[2-]{Maroon}{How} beautiful} this flower is!
+  \item<3-> How beautiful!
+ \end{enumerate}
+ \end{column}
+%%%%%%%%%%%%%%%%%%%%%%
+ \begin{column}{.48\textwidth}  
+ \begin{enumerate}
+  \item<5-> She runs \myAnch{d1}{NavyBlue}{fast}.\\
+       \mbox{}
+  \item<6-> \myAnch{d2}{NavyBlue}{\myEmph[2-]{Maroon}{How} fast} she runs!
+  \item<7-> How fast!
+ \end{enumerate}
+ \end{column}
+%%%%%%%%%%%%%%%%%%%%%%%
+\end{columns}
+ 
+
+\begin{tikzpicture}[remember picture, overlay]
+\visible<2->{\draw[->, thick, NavyBlue] (c1.south) to[out=-90, in=90] (c2.north);}
+\visible<6->{\draw[->, thick, NavyBlue] (d1.south) to[out=-90, in=90] (d2.north);}
+\end{tikzpicture}
+
+
+\visible<4->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\small
+ \item<4-> 「なんと～な\ldots{}でしょう」というとき$\longrightarrow$\,\,\,%
+\Circled[fill color = white]{ What\,\,(a)\,\,形容詞 $+$ 名詞 } $+$ S $+$ V !
+ \item<4->   文末に`!'をつける
+\end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+\end{document}
