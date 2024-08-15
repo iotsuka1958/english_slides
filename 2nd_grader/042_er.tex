@@ -1,0 +1,130 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{Open the door.
+}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{比較級}
+\subsection{AはBよりも〜だ}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{--er than}
+ \large
+
+\begin{enumerate}
+ \item<1-> The Nile River is long\only<2->{\myEmph[2-]{Maroon}{er than} the Amazon River}.
+ \item<1-> Rabbits are small\only<3->{\myEmph[3-]{Maroon}{er than} foxes}.
+ \item<1-> Jennifer is tall\only<4->{\myEmph[4-]{Maroon}{er than} Emily}.
+ \item<1-> Peter is young\only<5->{\myEmph[5-]{Maroon}{er than} George}.
+ \item<1-> Peter swims fast\only<6->{\myEmph[6-]{Maroon}{er than} George}.
+\end{enumerate}
+
+\visible<7->{%
+\begin{exampleblock}{Topic for Today}
+\begin{itemize}\small
+ \item 「AはBより～だ」\\
+\mbox{}\hspace{120pt} $\text{A\,\,\,\,\,\ldots\,\,\,\,\,\,\,}+%
+\Circled[fill color=white]{\,\,\,\,\,\left\{\begin{array}{l}
+            形容詞\\
+            副詞
+         \end{array}\right\} + \text{\myEmph[5-]{Maroon}{er}\,\,\,\,}} \text{\myEmph[5-]{Maroon}{\,\,\,\,\,than}}\,\,\,\,\,\text{B}$
+ \item \Circled[fill color=white]{$\,\,\,\,\,\left\{\begin{array}{l}
+            形容詞\\
+            副詞
+         \end{array}\right\} + \text{\myEmph[5-]{Maroon}{er}\,\,\,\,}$}%
+\,\,\,のことを「比較級」といいます\hfill{\scriptsize (もとの形は「原級」)}
+ \end{itemize}
+
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{比較級のつくりかた}
+\centering
+  \begin{tblr}{colspec={ll},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1,Z} = { 0.08em },
+hline{2} = { 0.05em },
+row{odd}={gray9},
+row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
+}
+原級&比較級\\
+long&\visible<2->{longer}\\
+small&\visible<3->{smaller}\\
+tall&\visible<4->{taller}\\
+young&\visible<5->{younger}\\
+old&\visible<6->{older}\\
+high&\visible<7->{higher}\\
+cold&\visible<8->{colder}\\
+cheap&\visible<9->{cheaper}\\
+fast&\visible<10->{faster}\\
+   \end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう空所に適当な語を選択肢から選んで補いましょう。\\必要に応じて変化させてください。
+
+\begin{columns}[t]
+ \begin{column}{.78\textwidth}
+   \begin{enumerate}
+  \item このコンピューターはあれよりも安い。\\
+	This computer is (~~\alt<2->{\myEmph[2-]{BurntOrange}{cheaper}}{\phantom{cheaper}}~~) than that one. 
+    \item クマは犬よりも強い。\\
+	Bears are (~~\alt<3->{\myEmph[3-]{BurntOrange}{stronger}}{\phantom{stronger}}~~) than dogs. 
+    \item ワシは小鳥よりも高く飛ぶ。\\
+	Eagles fly (~~\alt<4->{\myEmph[4-]{BurntOrange}{higher}}{\phantom{higher}}~~) than that little birds. 
+    \item ジェーンはボブよりも若い。\\
+	Jane is (~~\alt<5->{\myEmph[5-]{BurntOrange}{younger}}{\phantom{younger}}~~) than Bob. 
+    \item ジョージはポールよりフランス語をけんめいに勉強した。\\
+	George studied French (~~\alt<6->{\myEmph[6-]{BurntOrange}{harder}}{\phantom{harder}}~~) than Paul. 
+ \end{enumerate}
+ \end{column}
+%%%%%%%%%%%%%%
+\begin{column}{.2\textwidth}
+ \begin{tcolorbox}
+  young\\
+  high\\
+  strong\\
+  hard\\
+  cheap
+ \end{tcolorbox}
+\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}

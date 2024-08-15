@@ -1,0 +1,134 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{John is as tall as his father.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{同じくらい～}
+\subsection{as ～ as \ldots{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{as ～ as \ldots{}}
+ \Large
+
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item<1-> John is \myEmph[1-]{NavyBlue}{tall}.
+	\item<2-> John is \myEmph[2-]{Maroon}{as} \myEmph[2-]{NavyBlue}{tall} \myEmph[2-]{Maroon}{as} his brother.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item<3-> Jennifer runs \myEmph[3-]{NavyBlue}{fast}. 
+	\item<4-> Jennifer runs \myEmph[4-]{Maroon}{as} \myEmph[4-]{NavyBlue}{fast} \myEmph[4-]{Maroon}{as} Emily.
+       \end{enumerate}
+\end{enumerate}
+
+\vfill
+
+\visible<5->{%
+\begin{exampleblock}{Topic for Today}
+\begin{itemize}\small
+ \item AとBの程度が同じときは\\
+\mbox{}\hspace{120pt} $\text{A\,\,\,\,\,\ldots\,\,\,\,\,\myEmph[5-]{Maroon}{as}\,\,}+\left\{\begin{array}{l}
+	    形容詞\\
+	    副詞
+	 \end{array}\right\} + \text{\myEmph[5-]{Maroon}{as}\,\,\,\,\,B}$
+ \end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう(~~~~~~)内の語句を並べ替えましょう。なお $[ +1 ]$とある場合は不足している1語を補ってください。$[ -1 ]$とある場合は余計な1語が含まれています。
+
+ \begin{enumerate}
+  \item その国ではバスケットボールは野球と同じくらい人気がある。\hfill{\scriptsize popular: 人気がある}\\
+	Basketball is ( popular / as / as ) baseball in the country.\hfill{\scriptsize country: 国}\\
+	\hspace{80pt}\visible<2->{\myEmph[2-]{BurntOrange}{as popular as}}
+  \item ジョージはジョンと同じくらい有名だ。\hfill{\scriptsize famous: 有名な}\\
+	George ( famous / as / is / as ) John.\\
+	\hspace*{55pt}\visible<3->{\myEmph[3-]{BurntOrange}{is as famous as}}
+  \item ゴリラは象と同じくらいの速さで走る。\\
+	Gorillas ( run / is / fast / as / as ) elephants. $[-1]$\\
+	\hspace{65pt}\visible<4->{\myEmph[4-]{BurntOrange}{run as fast as}　✕ is}
+  \item ジェームズはエリックと同じくらいギターをじょうずに弾いた。\\
+	James played the guitar ( as / well ) Eric. $[+1]$\\
+	\hspace{125pt}\visible<5->{\myEmph[5-]{BurntOrange}{as well as}}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{not as ～ as}
+ \begin{enumerate}
+  \item<1-> Tokyo Tower is \myEmph[1-]{Maroon}{not} \myEmph[1-]{NavyBlue}{as} high \myEmph[1-]{NavyBlue}{as} Tokyo Sky Tree.\hfill{\scriptsize high: 高い}
+  \item<2-> Tokyo Tower is \myEmph[2-]{Maroon}{not} \myEmph[2-]{NavyBlue}{so} high \myEmph[2-]{NavyBlue}{as} Tokyo Sky Tree.
+ \end{enumerate}
+
+\vfill
+
+\visible<3->{%
+\begin{exampleblock}{Topic for Today}
+\begin{itemize}\small
+ \item $\text{A\,\,\,\,\,\ldots\,\,\,\,\,\myEmph[5-]{Maroon}{not as}\,\,}+\left\{\begin{array}{l}
+	    形容詞\\
+	    副詞
+	 \end{array}\right\} + \text{\myEmph[5-]{Maroon}{as}\,\,\,\,\,B}$%
+\,\,$\Longrightarrow$\,\,「AはBほど～でない」の意味
+ \item 最初のasがsoになることがある\\
+\hspace{100pt}%
+$\text{A\,\,\,\,\,\ldots\,\,\,\,\,\myEmph[5-]{Maroon}{not so}\,\,}+\left\{\begin{array}{l}
+	    形容詞\\
+	    副詞
+	 \end{array}\right\} + \text{\myEmph[5-]{Maroon}{as}\,\,\,\,\,B}$%
+
+ \end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ \begin{enumerate}
+  \item わたしはピーターほど忙しくありません。\\
+	I am ( busy / as / as / not )  Peter. \\
+	\hspace{45pt}\visible<2->{\myEmph[2-]{BurntOrange}{not as busy as}}
+  \item その映画はその本ほどおもしろくない。\hfill{\scriptsize interesting: おもしろい}\\
+	The movie is ( as / so / not / interesting ) the book.\\
+	\hspace{75pt}\visible<3->{\myEmph[3-]{BurntOrange}{not so interesting as}}
+  \item 彼女はジェームズほどピアノの演奏がうまくない。\\
+	She does not play the piano ( as / as / well ) James.\\
+	\hspace{160pt}\visible<3->{\myEmph[3-]{BurntOrange}{as well as}}
+ \end{enumerate}
+\end{frame}
+\end{document}
