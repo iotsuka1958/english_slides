@@ -1,0 +1,219 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{Mt. Everest is the highest in the world.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{最上級}
+\subsection{もっとも〜だ}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{--est}
+ \large
+
+\begin{enumerate}
+ \item<1-> The Nile River is \only<2->{\myEmph[2-]{Maroon}{the}} long\only<2->{\myEmph[2-]{Maroon}{est} in the world}.
+ \item<1-> Mt. Fuji is \only<3->{\myEmph[3-]{Maroon}{the}} high\only<3->{\myEmph[3-]{Maroon}{est} in Japan}.
+ \item<1-> Jennifer is \only<4->{\myEmph[4-]{Maroon}{the}} tall\only<4->{\myEmph[4-]{Maroon}{est} in her school}.
+ \item<1-> Peter is \only<5->{\myEmph[5-]{Maroon}{the}} young\only<5->{\myEmph[5-]{Maroon}{est} of the three brothers}.
+ \item<1-> George swims \only<6->{\myEmph[6-]{Maroon}{the}} fast\only<6->{\myEmph[6-]{Maroon}{est} of all the students}.
+\end{enumerate}
+
+\visible<7->{%
+\begin{exampleblock}{Topics for Today}
+\begin{itemize}\small
+ \item 「もっとも〜だ」は\,\,\,\,\,$\text{the} +%
+\Circled[fill color=white]{\,\,\,\,\,\left\{\begin{array}{l}
+            形容詞\\
+            副詞
+         \end{array}\right\} + \text{\myEmph[5-]{Maroon}{est}\,\,\,\,}}$
+\,\,\,\,\,で表します。「最上級」といいます
+ \item \fcolorbox{white}{white}{the $+$ 最上級}のあとには\,\,$\left\{
+\begin{array}{l}
+ \text{in} + \text{範囲を表す語}\\
+ \text{of} + \text{複数}
+\end{array}
+\right\}$が続くことがあります
+ \end{itemize}
+
+     \end{exampleblock}
+}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう空所に適当な語を選択肢から選んで補いましょう。\\必要に応じて変化させてください。
+
+\begin{columns}[t]
+ \begin{column}{.78\textwidth}
+   \begin{enumerate}
+  \item 私の祖父は家族で最年長です。\\
+	My grandfather is the (~~\alt<2->{\myEmph[2-]{BurntOrange}{oldest}}{\phantom{oldest}}~~) in my family. 
+    \item この教室は学校のなかでいちばん小さいです。\\
+	This classroom is the (~~\alt<3->{\myEmph[3-]{BurntOrange}{smallest}}{\phantom{smallest}}~~) in our school. 
+    \item このバッグはその店でいちばん安いです。\\
+	The bag is the (~~\alt<4->{\myEmph[4-]{BurntOrange}{cheapest}}{\phantom{cheapest}}~~) in the store.
+    \item エミリーが5人の生徒のなかでいちばん高くジャンプした。\\
+	Emily jumped the (~~\alt<5->{\myEmph[5-]{BurntOrange}{highest}}{\phantom{highest}}~~) of the five students.
+
+\end{enumerate}
+
+ \end{column}
+%%%%%%%%%%%%%%
+\begin{column}{.2\textwidth}
+ \begin{tcolorbox}
+  old\\
+  high\\
+  small\\
+  big\\
+  cheap
+ \end{tcolorbox}
+\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{frame}[plain]{Exercises}
+日本語の意味になるよう(~~~~~~)に適語を補いましょう
+  \begin{enumerate}
+   \item ナイル川は世界でいちばん長い。\\
+	 The Nile River is (~~\alt<2->{the}{\phantom{the}}~~) (~~\alt<2->{longest}{\phantom{longest}}~~) (~~\alt<2->{in}{\phantom{in}}~~) the world.
+   \item ジェニファーは学校でいちばん背が高い。\\
+	 Jennifer is (~~\alt<3->{the}{\phantom{the}}~~) (~~\alt<3->{tallest}{\phantom{tallest}}~~) (~~\alt<2->{in}{\phantom{in}}~~) her school.
+   \item ボブは3人の生徒の中でいちばんはやく走った。\\
+	 Bob ran the (~~\alt<4->{fastest}{\phantom{fastest}}~~) (~~\alt<4->{of}{\phantom{of}}~~) the three students.
+   \item ピーターはすべてのメンバーの中で最年少だった。\\
+	 Peter was  (~~\alt<5->{the}{\phantom{the}}~~) (~~\alt<5->{youngest}{\phantom{youngest}}~~) (~~\alt<5->{of}{\phantom{in}}~~) all the members.
+  \end{enumerate}
+ \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{最上級のつくり方}
+ \begin{enumerate}
+  \item<1-> The park is \only<2->{\myEmph[2-]{Maroon}{the}} \alt<2->{larg\myEmph[2-]{Maroon}{est} in the city}{large}.
+  \item<1-> The question is \only<3->{\myEmph[3-]{Maroon}{the}} \alt<3->{eas\myEmph[3-]{Maroon}{iest} of all}{easy}.
+  \item<1-> The box was \only<4->{\myEmph[4-]{Maroon}{the}} \alt<4->{heav\myEmph[3-]{Maroon}{iest} of all}{heavy}.
+  \item<1-> John is \only<5->{\myEmph[5-]{Maroon}{the}} \alt<5->{bus\myEmph[2-]{Maroon}{iest} in the hospital}{busy}.
+  \item<1-> Jennifer got up \only<6->{\myEmph[6-]{Maroon}{the}} \alt<6->{earl\myEmph[2-]{Maroon}{iest} in her family}{early}.
+  \item<1-> My dog is \only<7->{\myEmph[7-]{Maroon}{the}} \alt<7->{bi\myEmph[2-]{Maroon}{ggest} in our neighborhood}{big}.
+ \end{enumerate}
+
+\visible<8->{%
+\begin{exampleblock}{Topics for Today}
+{\small 原則は語尾に--est。
+ただし}
+\begin{itemize}\small
+ \item 最後がeのときは--stだけつける\\\hfill{}large -- largest, wide -- widest, nice --nicest, fine --finest　
+ \item 最後のyをiにして--estをつけるもの\\\hfill{}easy -- easiest, heavy -- heaviest, busy -- busiest, happy -- happiest, early -- earliest　
+ \item 最後の文字を重ねて --erをつけるもの\hfill{}hot -- hottest, big -- biggest　
+
+ \end{itemize}
+     \end{exampleblock}
+}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{比較級のつくりかた}
+
+\begin{columns}
+%%%%%%%%%%%%%%%%%%
+\begin{column}[T]{.3\textwidth}
+最後がeのとき
+
+\bigskip
+
+   \begin{tblr}{colspec={ll},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1,Z} = { 0.08em },
+hline{2} = { 0.05em },
+row{odd}={gray9},
+row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
+}
+原級&最上級\\
+large&\visible<2->{largest}\\
+wide&\visible<3->{widest}\\
+nice&\visible<4->{nicest}\\
+fine&\visible<5->{finest}\\
+   \end{tblr}
+\end{column}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{column}[T]{.3\textwidth}
+最後がyのとき
+
+\bigskip
+
+  \begin{tblr}{colspec={ll},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1,Z} = { 0.08em },
+hline{2} = { 0.05em },
+row{odd}={gray9},
+row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
+}
+原級&最上級\\
+easy&\visible<6->{easiest}\\
+heavy&\visible<7->{heaviest}\\
+busy&\visible<8->{busiest}\\
+happy&\visible<9->{happiest}\\
+early&\visible<10->{earliest}\\
+   \end{tblr}
+\end{column}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{column}[T]{.3\textwidth}
+最後の文字を重ねるもの
+
+\bigskip
+
+   \begin{tblr}{colspec={ll},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1,Z} = { 0.08em },
+hline{2} = { 0.05em },
+row{odd}={gray9},
+row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
+}
+原級&最上級\\
+hot&\visible<11->{hottest}\\
+big&\visible<12->{biggest}
+   \end{tblr}
+\end{column}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{columns}
+
+\vfill
+
+\hfill\visible<13->{微妙な差異はありますが、語尾が--estであることにかわりありませんね}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
