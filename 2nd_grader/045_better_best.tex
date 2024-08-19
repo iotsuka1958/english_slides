@@ -1,0 +1,154 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{Billy is the best pianist.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{不規則変化する比較級・最上級}
+\subsection{better / best}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{better / best}
+ \begin{enumerate}
+  \item \begin{enumerate}
+	 \item<1-> Billy plays the piano \myEmph[1-]{Maroon}{well}.
+	 \item<2-> Billy plays the piano \myEmph[2-]{Maroon}{better} than John.
+	 \item<3-> Billy plays the piano \myEmph[3-]{Maroon}{the best} in his school.
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item<4-> Janis is a \myEmph[4-]{Maroon}{good} singer.
+	 \item<5-> Janis is a \myEmph[5-]{Maroon}{better} singer than Linda.
+	 \item<6-> Janis is \myEmph[6-]{Maroon}{the best} singer of all. 
+
+	\end{enumerate}
+ \end{enumerate}
+
+\visible<7->{%
+\begin{exampleblock}{Topics for Today}
+副詞well（じょうずに）と形容詞good（よい）は不規則な変化をします
+\begin{itemize}\small
+ \item well --- better --- best
+ \item good --- better --- beste
+ \end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+\begin{enumerate}
+ \item ジャニスはリンダよりも歌うのがうまい。\\
+       Janis sings (~~\alt<2->{\textcolor{BurntOrange}{better}}{\phantom{better}}~~) than Linda.\\
+       $=$\,\,Janis is a  (~~\alt<3->{\textcolor{BurntOrange}{better}}{\phantom{better}}~~)  (~~\alt<3->{\textcolor{BurntOrange}{singer}}{\phantom{singer}}~~) than Linda.
+ \item ダイアナはみんなのなかでもっともピアノがうまい。\\
+       Diana plays the piano the (~~\alt<4->{\textcolor{BurntOrange}{best}}{\phantom{best}}~~) of all.\\
+       $=$\,\,Diana is (~~\alt<5->{\textcolor{BurntOrange}{the}}{\phantom{the}}~~)  (~~\alt<5->{\textcolor{BurntOrange}{best}}{\phantom{best}}~~) pianist of all.
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{many --- more --- most}
+ \begin{enumerate}
+  \item \begin{enumerate}
+	 \item<1-> Bob has \myEmph[1-]{Maroon}{many} books.\hfill{\scriptsize book:数えられる名詞}
+	 \item<2-> Bob has \myEmph[2-]{Maroon}{more} than John.
+	 \item<3-> Bob has \myEmph[3-]{Maroon}{the most} books in his class.
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item<4-> Janis drank \myEmph[4-]{Maroon}{much} tea.\hfill{\scriptsize tea: 数えられない名詞}
+	 \item<5-> Janis drank \myEmph[5-]{Maroon}{more} tea than Linda.
+	 \item<6-> Janis drank \myEmph[6-]{Maroon}{the most} tea of all. 
+
+	\end{enumerate}
+ \end{enumerate}
+
+\visible<7->{%
+\begin{exampleblock}{Topics for Today}
+形容詞many（多数の形容詞much（多量の）は不規則な変化をします
+\begin{itemize}\small
+ \item many --- more --- more
+ \item much --- more --- most
+ \end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+1.1と1.2は正しいほうを選びましょう。2.1～は空所に適語を補ってください
+ \begin{enumerate}
+  \item \begin{enumerate}
+	 \item<1-> Paul ate ( \alt<2->{\Circled[outer color = BurntOrange]{many}}{ many } / much ) hotdogs.
+	 \item<1-> Paul drank ( many / \alt<3->{\Circled[outer color = BurntOrange]{much}}{ much }) water.
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item<1-> ポールはジョンよりたくさんのホットドッグを食べた。\\
+	       Paul ate (~~\alt<4->{\myEmph[4-]{BurntOrange}{more}}{\phantom{many}}~~) hotdogs (~~\alt{\myEmph[4-]{BurntOrange}{than}}{\phantom{than}}~~) John.
+	 \item<1-> ポールはジョンよりたくさんのコーヒーを飲んだ。\\
+	       Paul drank (~~\alt<5->{\myEmph[5-]{BurntOrange}{more}}{\phantom{many}}~~) coffee (~~\alt<5->{\myEmph[5-]{BurntOrange}{than}}{\phantom{than}}~~) John.
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item<1-> ポールがもっともおおくのホットドッグを食べた。\\
+	       Paul ate (~~\alt<6->{\myEmph[6-]{BurntOrange}{the}}{\phantom{the}}~~) (~~\alt<6->{\myEmph[6-]{BurntOrange}{most}}{\phantom{most}}~~) hotdogs.
+	 \item<1-> ポールいちばん大量のコーヒーを飲んだ。\\
+	       Paul drank (~~\alt<7->{\myEmph[7-]{BurntOrange}{the}}{\phantom{the}}~~) (~~\alt<7->{\myEmph[7-]{BurntOrange}{most}}{\phantom{most}}~~) coffee.
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item<1-> ポールはジョン同数のホットドッグを食べた。\\
+	       Paul ate (~~\alt<8->{\myEmph[8-]{BurntOrange}{as}}{\phantom{as}}~~) (~~\alt<8->{\myEmph[8-]{BurntOrange}{many}}{\phantom{many}}~~) hotdogs as John.
+	 \item<1-> ポールはジョンと同量のコーヒーを飲んだ。\\
+	       Paul drank (~~\alt<9->{\myEmph[9-]{BurntOrange}{as}}{\phantom{as}}~~) (~~\alt<9->{\myEmph[9-]{BurntOrange}{much}}{\phantom{much}}~~) coffee as John.
+	\end{enumerate}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{不規則な比較級・最上級}
+\centering
+  \begin{tblr}{colspec={lll},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1,Z} = { 0.08em },
+hline{2} = { 0.05em },
+row{odd}={gray9},
+row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
+}
+原級&比較級&最上級\\
+good&\visible<2->{better}&\visible<3->{best}\\
+well&\visible<4->{better beautiful}&\visible<5->{best}\\
+many&\visible<6->{more}&\visible<7->{most}\\
+much&\visible<8->{more}&\visible<9->{most}\\
+   \end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+

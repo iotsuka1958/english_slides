@@ -1,0 +1,166 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{Health is more important than money.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{more, most}
+\subsection{more ---, most ---}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{more ---, most ---}
+\begin{enumerate}
+ \item<1-> \begin{enumerate}
+	\item<1-> Jennifer is tall\myEmph[1-]{Maroon}{er} than Emily.
+	\item<1-> The river is wid\myEmph[1-]{Maroon}{er} than a mile near here.
+	\item<1-> Tokyo is busi\myEmph[1-]{Maroon}{er} than my city.
+	\item<1-> Whales are bigg\myEmph[1-]{Maroon}{er} than dolphines.
+       \end{enumerate}
+ \item<2-> \begin{enumerate}
+	\item<2-> Health is important.
+	\item<3-> \only<4->{*}\visible<3->{Health is important\myEmph[3-]{Maroon}{er} than money.}\hfill\visible<4->{importanterとはいわない}
+	\item<5-> Health is \myEmph[5-]{Maroon}{more} important than money.
+	\item<6-> Health is \myEmph[6-]{Maroon}{the most} important.\hfill\visible<6->{importantestとはいわない}
+       \end{enumerate}
+\end{enumerate}
+
+\visible<7->{%
+\begin{exampleblock}{Topics for Today}
+\begin{description}[第2のパターン]\small
+ \item<7->[\textcolor{black}{原則:}] ---er, ---est%
+	    \hfill{}\makebox[200pt][l]{tall, wide, busy, big \ldots}
+ \item<8->[\textcolor{black}{第2のパターン:}]  more ---,\,\,\,\,\,\,most ---
+	    \hfill{}\makebox[200pt][l]{important, beautiful, difficult, interesting \ldots}\\
+	    \mbox{}\hspace{120pt}\visible<9->{\Circled[fill color = white]{\small \,\,比較的長い単語は第2のパターン\,\,}}
+
+
+ \end{description}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+選択肢の中の語を用いて日本語の意味になるようにしましょう
+\begin{columns}[t]
+ \begin{column}{.75\textwidth}
+   \begin{enumerate}
+  \item 理科は数学よりもわたしにはむずかしい。\\
+	Science is (~~\alt<2->{more difficult}{\phantom{more difficult}}~~) than math for me.
+  \item 私の庭は春にもっとも美しい。\\
+	My garden is (~~\alt<3->{the most beautiful}{\phantom{the most beautiful}}~~) in spring.
+  \item 多くの国でコーヒーはお茶よりも人気がある。\\
+	Coffee is (~~\alt<4->{more popular}{\phantom{more popular}}~~) than tea in many countries.
+  \item ダイアモンドは真珠よりも高価だ。\\
+	A diamond is (~~\alt<5->{more expensive}{\phantom{more expensive}}~~) than a pearl.
+  \item モナリザはもっとも有名な絵画だ。\\
+	The Mona Lisa is (~~\alt<6->{the most famous}{\phantom{the most famous}}~~) painting.
+ \end{enumerate}
+ \end{column}
+\begin{column}{.2\textwidth}
+\begin{tcolorbox}
+ expensive\\
+beautiful\\
+famous\\
+difficult\\
+popular
+\end{tcolorbox}
+\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{比較級のつくりかた}
+\centering
+  \begin{tblr}{colspec={lll},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1,Z} = { 0.08em },
+hline{2} = { 0.05em },
+row{odd}={gray9},
+row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
+}
+原級&比較級&最上級\\
+difficult&\visible<2->{more difficult}&\visible<3->{most difficult}\\
+beautiful&\visible<4->{more beautiful}&\visible<5->{most beautiful}\\
+popular&\visible<6->{more popular}&\visible<7->{most popular}\\
+expensive&\visible<8->{more expensive}&\visible<9->{most expensive}\\
+famous&\visible<10->{more famous}&\visible<11->{most famous}\\
+important&\visible<12->{more important}&\visible<13->{most important}\\
+useful&\visible<14->{more useful}&\visible<15->{most useful}\\
+interesting&\visible<16->{more interesting}&\visible<17->{most interesting}\\
+   \end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{--ly}
+ \begin{enumerate}
+  \item \begin{enumerate}
+	 \item Bob spoke \myEmph[1-]{Maroon}{more} slow\myEmph[1-]{Maroon}{ly} than Jane.
+	 \item Jane spoke \myEmph[1-]{Maroon}{more} quick\myEmph[1-]{Maroon}{ly} than Bob.
+	 \item Please speak \myEmph[1-]{Maroon}{more} quiet\myEmph[1-]{Maroon}{ly}.
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item<2-> Jennifer got up \myEmph[2-]{Maroon}{earlier} than Emily.%
+	      \hfill\visible<3->{more earlyとはいわない}
+	 \item<4-> Jennifer got up the \myEmph[4-]{Maroon}{earliest} of all.%
+	      \hfill\visible<5->{most earlyとはいわない}
+	\end{enumerate}
+ \end{enumerate}
+\visible<6->{%
+\begin{exampleblock}{Topics for Today}
+ \begin{itemize}
+  \item<7-> --lyで終わる副詞の比較級はmore ---, most ---
+  \item<8-> ただしearlyはearlier, earliest
+ \end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう(~~~~~~)内の語を並べ替えましょう。なお $[ +1 ]$とある場合は不足している1語を補ってください。$[ -1 ]$とある場合は余計な1語が含まれています。
+
+ \begin{enumerate}
+  \item 彼は静かに話しました。\\
+	He ( quiet / quietly / spoke ) . $[-1]$\\
+	He \textcolor{BurntOrange}{spoke quietly} .\,\,\,(✕\,quiet)
+  \item もっと静かに話してください。\\
+	Please ( quietly / speak ) . $[+1]$\\
+	Please \textcolor{BurntOrange}{speak more quietly}.
+  \item 彼女は3人のなかでもっとも早く起きた。\\
+	She got up ( most / earliest / the ) . $[-1]$\\
+	She got up \textcolor{BurntOrange}{the earliest} of the three.\,\,\,(✕\,most)
+
+ \end{enumerate}
+\end{frame}
+\end{document}
