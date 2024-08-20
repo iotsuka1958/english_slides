@@ -1,0 +1,146 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{}
+\subsection{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{frame}[plain]{形容詞 名詞}
+ \begin{enumerate}
+  \item a big dog / big dogs
+  \item a cute cat / cute cats
+  \item a small box / small boxes
+  \item an expensive car / expensive cars\hfill{\scriptsize expensive: 高価な}
+  \item an interesting book / interesting books\hfill{\scriptsize interesting: おもしろい}
+  \item an important question / important questions\hfill{\scriptsize important: 重要な}
+ \end{enumerate}
+
+\visible<2->{%
+\begin{exampleblock}{Topic for Today}
+名詞を修飾することばを「形容詞」といいます
+\begin{itemize}\small
+ \item 形容詞は名詞の前に置きます
+ \item \fbox{\,$\text{(冠詞)}+\text{形容詞}+\text{名詞}$\,\,}\,\,\,は意味のかたまりになります
+ \end{itemize}
+     \end{exampleblock}
+}
+ \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{冠詞 ---ing 名詞}
+ \begin{enumerate}
+	 \item I looked at \fbox{the cat}.\hfill{\scriptsize {\fbox{$\text{冠詞}+\text{名詞}$}}}
+	 \item I looked at \fbox{the cute cat}.\hfill{\scriptsize {\fbox{$\text{冠詞}+\text{形容詞}+\text{名詞}$}}}
+	 \item I looked at \fbox{the sleeping cat}.\hfill{\scriptsize {\fbox{$\text{冠詞}+\text{\,\,---ing\,\,}+\text{名詞}$}}}
+ \end{enumerate}
+
+\visible<2->{%
+\begin{exampleblock}{Topic for Today}
+\Circled[fill color = white]{\,\,---ing\,\,}\,\,が名詞を修飾することがあります%
+\hfill{\scriptsize つまり「形容詞」の役目をしています}
+
+\begin{itemize}\small
+ \item この\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,は「～している」という意味
+ \item この\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,を「現在分詞」といいます
+ \end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう(~~~~~~)の語を並べ替えましょう。先頭に来る語は大文字で始めてください
+ \begin{enumerate}
+  \item あなたは歌っている女性を知っていますか。\\
+	( you / singing / the / woman / do / know ) ?\\
+	\visible<2->{Do you know the singing woman?}
+  \item 沸騰しているお湯は熱い。
+	( hot / is / water / boiling ) .\hfill{\scriptsize boil: 沸騰する}\\
+	\visible<3->{Boiling water is hot.}
+  \item あの眠っているネコはかわいい。
+	That ( is / cat / sleeping ) cute.\\
+	\visible<4->{That sleeping cat is cute.}
+  \item 昇っている太陽が美しかった。
+	( sun / was / rising  / the ) beautiful.\hfill{\scriptsize rise: 昇る}\\
+	\visible<5->{The rising sun was beautiful.}
+  \item 飛んでいる鳥を見てください。
+	( at / birds / the / look / flying ) .\\
+	\visible<6->{Look at the flying birds.}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{名詞 ---ing \ldots}
+ \begin{enumerate} 
+  \item<1-> The girl is Jane.\hfill{}{\scriptsize The girl($=\text{S}$)\,\,\,\,is($=\text{V}$)}
+  \item<3-> The girl in the yard is Jane.%
+	\hfill{}\visible<4->{\scriptsize The girl $\longleftarrow$\,\fbox{\,in the yard\,}}
+  \item<5-> The girl playing in the yard is Jane.%
+	\hfill{}\visible<6->{\scriptsize The girl $\longleftarrow$\,\fbox{\,playing in the yard\,}}
+ \end{enumerate}
+
+\visible<7->{%
+\begin{exampleblock}{Topic for Today}
+\Circled[fill color = white]{\,\,---ing\,\,}\,\,がほかの語句を伴うときは、
+後ろから前の名詞を修飾します%
+
+\begin{itemize}\small
+ \item \Circled[fill color = white]{\,\,---ing\,\,}\,\, $\longrightarrow \text{\,\,名詞}$\hfill{\scriptsize the sleeping cat}
+ \item $\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,---ing\,\,+\text{\,\,ほかの語句\,\,}}\hfill{\scriptsize the cat sleeping in the sun}
+ \end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう(~~~~~~)の語を並べ替えましょう
+ \begin{enumerate}
+  \item 英語を話している少年たちを見なさい。\\
+	Look ( English / the boys / speaking / at ) .\\
+	\visible<2->{Look at the boys speaking English.}
+  \item 海で泳いでいる男性はわたしの父です。\\
+	The ( swimming / my / is / man / in / the sea ) father.\\
+	\visible<3->{The man swimming in the sea is my father.}
+  \item その部屋で読書している少年はスペンサーです。\\
+	The ( the room / a book / boy / is / in / reading ) Spencer.\\
+	\visible<4->{The boy reading a book in the room is Spencer.}
+  \item 犬と走っている少女を知っていますか。\\
+	Do ( the girl / a dog / know / with / running  / you ) ?\\
+	\visible<5->{Do you know the girl running with a dog?}
+ \end{enumerate}
+\end{frame}
+\end{document}
