@@ -1,0 +1,240 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{I know a girl who speaks Spanish.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{関係代名詞}
+\subsection{who}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{人 $\leftarrow$ \fbox{who ＋V ...}}
+ \begin{enumerate}
+  \item<1-> I know the girl.\hfill{\scriptsize the girl}
+  \item<2-> I know the girl in the room.%
+        \hfill{}\visible<3->{\scriptsize the girl $\longleftarrow$\,\fbox{\,in the room\,}}
+  \item<4-> I know the girl playing in the room.%
+        \hfill{}\visible<5->{\scriptsize the girl $\longleftarrow$\,\fbox{\,playing in the room\,}}
+  \item<6-> I know the girl who speaks two languages.%
+        \hfill{}\visible<7->{\scriptsize the girl $\longleftarrow$\,\fbox{\,who speaks two languages\,}}
+ \end{enumerate}
+
+\visible<8->{%
+\begin{exampleblock}{Topic for Today}
+「人」について、後ろから詳しく説明するときwhoをつかいます
+
+\begin{itemize}\small
+ \item このwhoを「関係代名詞」といいます
+ \item whoには動詞が続きます
+ \item $\text{人\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,who\,\,+\text{\,\,V\,\,}+\text{\,\,\ldots\,\,\,}}\hfill{\scriptsize the girl who speaks two languages}
+ \end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{図解}
+ \begin{enumerate}
+  \item<1-> I know \myAnch{a1}{NavyBlue}{\bfseries the girl}.
+  \item<2-> \myAnch{a2}{NavyBlue}{The girl} speaks two languages.\\[10pt]
+	\hspace{6pt}\visible<3->{\myAnch{a3}{white}{\Circled[fill color = white]{who}}}
+  \item<4-> I know \myAnch{a4}{Maroon}{\bfseries the girl} \myAnch{a5}{black}{\Circled[fill color = white]{\,\,who\,\,} speaks two languages}.
+ \end{enumerate}
+
+\begin{tikzpicture}[remember picture, overlay]
+\visible<3->{\draw[->, thick, NavyBlue] (a2.south) to (a3.north);}
+\coordinate (A5) at ($(a5) - (0,20pt)$); % 10pt below a1
+\coordinate (A4) at ($(a4) - (0,20pt)$); % 10pt below a1
+%\visible<5->{\draw[->, thick, orange] (a5.south) to (a4.north);}
+ % Draw the arrow with right angles
+ \visible<5->{\draw[->,black,thick] (a5) -- (A5) -- (A4) -- (a4);}
+\end{tikzpicture}
+
+\visible<8->{%
+\begin{exampleblock}{Topics for Today}
+関係代名詞のwhoは後ろから前の「人」について詳しく説明します
+
+\begin{enumerate}\small
+ \item 2つの文で、同じ「人」を指している語句を見つけます
+ \item 2つめを\,\,\Circled[fill color = white]{\,\,who\,\,}\,\,にして、1つめの後ろにつなげてまとめます
+ \end{enumerate}
+
+\hfill{\small 修飾される側の名詞{(\scriptsize ここではthe girl)}を「先行詞」といいます}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+\fbox{　　}\,\,で囲まれた語を関係代名詞whoにかえて各2文を1文にまとめましょう
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item I know {\bfseries the man}.
+	\item \fbox{The man} came from Hawaii.
+	\item \visible<2->{$\text{1.1}+\text{1.2}\rightarrow$\,\,\,I know the man who came from hawaii.}
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item I met {\bfseries the teacher}.
+	\item \fbox{The teacher} lived near my house.
+	\item \visible<3->{$\text{2.1}+\text{2.2}\rightarrow$\,\,\,I met the teacher who lived near my house.}
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item {\bfseries The woman} is my mother.
+	\item \fbox{The woman} can speak English well.
+	\item \visible<4->{$\text{3.1}+\text{3.2}\rightarrow$\,\,\,The woman who can speak English well is my mother.}
+       \end{enumerate}
+\end{enumerate} 
+
+\fbox{　　}\,\,で囲まれた語をwhoにかえて太字の語の後ろにつなげます
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう(~~~~~~)の語句を並べ替えましょう
+ \begin{enumerate}
+  \item わたしはテニスがとてもじょうずな少女を知っています。\\
+	I ( a girl / tennis / who / know / plays ) very well.\\
+	\visible<2->{I know a girl who plays tennis very well.}
+  \item 彼には京都に住んでいるともだちがいます。\\
+	He ( lives / has / who / in / lives / a friend ) Kyoto.\\
+	\visible<3->{He has a friend who lives in Kyoto.}
+  \item 公園で走っている男性はわたしの父親です。\\
+	The man { running / in / who / the park / is } is my father.\\
+	\visible<4->{The man who is running in the park is my father.}
+  \item この詩を書いた少女はジェニファーだ。\\
+	The ( who / this poem / wrote / girl ) is Jennifer.\\
+	\visible<5->{The girl who wrote this poem is Jennifer.}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{もの $\leftarrow$ \fbox{which ＋V ...}}
+ \begin{enumerate}
+  \item<1-> We went to the restaurant.\hfill{\scriptsize the restaurant}
+  \item<2-> We went to the restaurant near the beach.%
+        \hfill{}\visible<3->{\scriptsize the restaurant $\longleftarrow$\,\fbox{\,near the beach\,}}
+  \item<4-> We went to the restaurant overlooking the beach.\hfill{\scriptsize overlook: 見下ろす}\\%
+        \hfill{}\visible<5->{\scriptsize the restaurant $\longleftarrow$\,\fbox{\,overlooking the beach\,}}
+  \item<6-> We went to the restaurant which was famous for seafood.\\%
+        \hfill{}\visible<7->{\scriptsize the restaurant $\longleftarrow$\,\fbox{\,which was famous for seafood\,}}
+ \end{enumerate}
+
+\visible<8->{%
+\begin{exampleblock}{Topics for Today}
+「もの」について、後ろから詳しく説明するときwhichをつかいます
+
+\begin{itemize}\small
+ \item このwhichは「関係代名詞」です
+ %\item whoには動詞が続きます
+ \item $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,which\,\,+\text{\,\,V\,\,}+\text{\,\,\ldots\,\,\,}}\hfill{\scriptsize the restaurant which is famous for seafood}
+ \end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{図解}
+ \begin{enumerate}
+  \item<1-> She works for \myAnch{a1}{NavyBlue}{\bfseries the factory}.
+  \item<2-> \myAnch{a2}{NavyBlue}{The factory} makes computers.\\[10pt]
+	\hspace{7pt}\visible<3->{\myAnch{a3}{white}{\Circled[fill color = white]{\,\,which\,\,}}}
+  \item<4-> She works for \myAnch{a4}{Maroon}{\bfseries the factory} \myAnch{a5}{black}{\Circled[fill color = white]{\,\,which\,\,} makes computers}.
+ \end{enumerate}
+
+\begin{tikzpicture}[remember picture, overlay]
+\visible<3->{\draw[->, thick, NavyBlue] (a2.south) to (a3.north);}
+\coordinate (A5) at ($(a5) - (0,20pt)$); % 10pt below a1
+\coordinate (A4) at ($(a4) - (0,20pt)$); % 10pt below a1
+%\visible<5->{\draw[->, thick, orange] (a5.south) to (a4.north);}
+ % Draw the arrow with right angles
+ \visible<5->{\draw[->,black,thick] (a5) -- (A5) -- (A4) -- (a4);}
+\end{tikzpicture}
+
+\visible<8->{%
+\begin{exampleblock}{Topics for Today}
+ 関係代名詞のwhichは後ろから前の「もの」について詳しく説明します
+
+\begin{enumerate}\small
+ \item 2つの文で、同じ「もの」を指している語句を見つけます
+ \item 2つめを\,\,\Circled[fill color = white]{\,\,which\,\,}\,\,にして、1つめの後ろにつなげてまとめます
+ \end{enumerate}
+
+\hfill{\small 修飾される側の名詞{(\scriptsize ここではthe factory)}を「先行詞」といいます}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+\fbox{　　}\,\,で囲まれた語を関係代名詞whichにかえて各2文を1文にまとめましょう
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item This is {\bfseries the road}.
+	\item \fbox{The road} leads to Rome.
+	\item \visible<2->{$\text{1.1}+\text{1.2}\rightarrow$\,\,\,This is the road which leads to Rome.}
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item She bought {\bfseries the house}.
+	\item \fbox{The house} had a big garden.
+	\item \visible<3->{$\text{2.1}+\text{2.2}\rightarrow$\,\,\,She bought the house which had a big garden}
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item {\bfseries The book} is interesting.
+	\item \fbox{The book} was written 20 years ago.
+	\item \visible<4->{$\text{3.1}+\text{3.2}\rightarrow$\,\,\,The book which was written 20 years ago is interesting.}
+       \end{enumerate}
+\end{enumerate} 
+
+\fbox{　　}\,\,で囲まれた語をwhichにかえて太字の語の後ろにつなげます
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう(~~~~~~)の語句を並べ替えましょう
+ \begin{enumerate}
+  \item 彼女は賞を獲得した本を読んだ。%
+	\hfill{\scriptsize win the prize: 賞を獲得する}\\
+	She ( the book / won / read / which ) the prize.\hfill{\scriptsize won: win(勝つ)の過去形}\\
+	\visible<2->{She read the book which won the prize.}%
+  \item 赤い屋根の家が見えますか。%
+	\hfill{\scriptsize roof: 屋根}\\
+	Can ( a house / you / a red roof / has / see) ?\\
+	\visible<3->{Can you see a house which has a red roof?}
+  \item その庭に立っている木はとても高い。\\
+	The tree ( the garden / stands / which / in / is ) very tall.\\
+	\visible<4->{The tree which stands in the garden is very tall.}
+  \item カナダで話されていることばは英語とフランス語です。%
+	\hfill{\scriptsize language: ことば、言語}\\
+	The languages ( Canada / languages /  are /  spoken /  which /  in ) are English and French\\
+	\visible<5->{The languages which are spoken in Canada are English and French.} \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
