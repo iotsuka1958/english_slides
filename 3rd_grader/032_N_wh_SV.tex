@@ -1,0 +1,209 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{The book which I read was interesting.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{関係代名詞}
+\subsection{which}
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{もの $\leftarrow$ \fbox{which S  + V ...}}
+\begin{enumerate}
+ \item<1->  \begin{enumerate}
+	 \item<1-> We went to the restaurant which was famous for seafood.\\
+	       \hfill\visible<2->{\scriptsize the restaurant $\longleftarrow$ \,\,\fbox{which was famous for seafood}}
+	 \item<1-> She works for the factory which makes computers.\\
+	       \hfill\visible<3->{\scriptsize the factory $\longleftarrow$ \fbox{\,\,which makes computers\,\,}}
+	\end{enumerate}
+ \item<4->  \begin{enumerate}
+	 \item<4-> I ate the cake which Bob made.%
+	       \hfill{}\visible<5->{{\scriptsize the cake $\longleftarrow$\,\fbox{\,which Bob made\,}}}
+	 \item<4-> The book which I read yesterday was interesting.\\%
+	\hfill{}\visible<6->{\scriptsize the book $\longleftarrow$\,\fbox{\,which I read yesterday\,}}
+	\end{enumerate}
+\end{enumerate}
+
+\visible<8->{%
+\begin{exampleblock}{Topics for Today}
+「もの」について、後ろから詳しく説明するときwhichをつかいます
+
+\begin{enumerate}\small
+ \item $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,which\,\,\,$+$\,\,\,\,V\,\text{\,\,\ldots\,\,\,}}
+ \item $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,which\,\,\,\,S\,\,$+$\,\,V\,\,\text{\,\,\ldots\,\,\,}}
+ \end{enumerate}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{もの $\leftarrow$ \fbox{which S ＋ V ...}}
+
+ \begin{enumerate}
+  \item<1-> I ate \myAnch{a1}{Maroon}{\bfseries the cake}.
+  \item<2-> Bob made \myAnch{a2}{NavyBlue}{the cake}.\\[10pt]
+	\hspace{15pt}\visible<3->{\myAnch{a3}{white}{\Circled[fill color = white]{\,\,which\,\,}}Bob made}
+  \item<4-> I ate \myAnch{a4}{Maroon}{\bfseries the cake} \myAnch{a5}{black}{\Circled[fill color = white]{\,\,which\,\,} Bob made}.
+ \end{enumerate}
+
+\begin{tikzpicture}[remember picture, overlay]
+\visible<3->{\draw[->, thick, NavyBlue] (a2.south) to[out=-120, in = 60] (a3.north);}
+\coordinate (A5) at ($(a5) - (0,20pt)$); % 10pt below a1
+\coordinate (A4) at ($(a4) - (0,20pt)$); % 10pt below a1
+%\visible<5->{\draw[->, thick, orange] (a5.south) to (a4.north);}
+ % Draw the arrow with right angles
+ \visible<5->{\draw[->,black,thick] (a5) -- (A5) -- (A4) -- (a4);}
+\end{tikzpicture}
+
+\visible<8->{%
+\begin{exampleblock}{Topics for Today}
+ 関係代名詞のwhichは後ろから前の「もの」について詳しく説明します
+
+\begin{enumerate}\small
+ \item 2つの文で、同じ「もの」を指している語句を見つけます
+ \item 2つめを\,\,\Circled[fill color = white]{\,\,which\,\,}\,\,にして、先頭に移動させます
+ \item 1つめの直後につなげます
+ \end{enumerate}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{もの $\leftarrow$ \fbox{which S ＋ V ...}}
+
+ \begin{enumerate}
+  \item<1-> \myAnch{a1}{Maroon}{\bfseries The book} was interesting.
+  \item<2-> I read \myAnch{a2}{NavyBlue}{the book} yesterday.\\[10pt]
+	\visible<3->{\myAnch{a3}{white}{\Circled[fill color = white]{\,\,which\,\,}}I read yesterday}
+  \item<4-> \myAnch{a4}{Maroon}{\bfseries The book} \myAnch{a5}{black}{\Circled[fill color = white]{\,\,which\,\,} I read yesterday} was interesting.
+ \end{enumerate}
+
+\begin{tikzpicture}[remember picture, overlay]
+\visible<3->{\draw[->, thick, NavyBlue] (a2.south) to (a3.north);}
+\coordinate (A5) at ($(a5) - (0,20pt)$); % 10pt below a1
+\coordinate (A4) at ($(a4) - (0,20pt)$); % 10pt below a1
+%\visible<5->{\draw[->, thick, orange] (a5.south) to (a4.north);}
+ % Draw the arrow with right angles
+ \visible<5->{\draw[->,black,thick] (a5) -- (A5) -- (A4) -- (a4);}
+\end{tikzpicture}
+
+\visible<8->{%
+\begin{exampleblock}{Topics for Today}
+ 関係代名詞のwhichは後ろから前の「もの」について詳しく説明します
+
+\begin{enumerate}\small
+ \item 2つの文で、同じ「もの」を指している語句を見つけます
+ \item 2つめを\,\,\Circled[fill color = white]{\,\,which\,\,}\,\,にして、先頭に移動させます
+ \item 1つめの直後につなげます
+ \end{enumerate}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+\fbox{　　}\,\,で囲まれた語を関係代名詞whichにかえて各2文を1文にまとめましょう
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item She bought {\bfseries the house}.
+	\item She liked \fbox{the house}.
+	\item \visible<2->{$\text{1.1}+\text{1.2}\rightarrow$\,\,\,She bought the house which she liked.}
+       \end{enumerate} \item \begin{enumerate}
+	\item {\bfseries The cake} was delicious.
+	\item Helen made \fbox{the cake}.
+	\item \visible<3->{$\text{2.1}+\text{2.2}\rightarrow$\,\,\,The cake which Helen made was delicious.}
+       \end{enumerate}
+
+ \item \begin{enumerate}
+	\item {\bfseries The book} was interesting.
+	\item David read \fbox{the book} last night.
+	\item \visible<4->{$\text{3.1}+\text{3.2}\rightarrow$\,\,\,The book which David read last night was interesting.}
+       \end{enumerate}
+\end{enumerate} 
+
+\hfill\fbox{　　}\,\,で囲まれた語をwhichにかえて太字の語の後ろにつなげます
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう(~~~~~~)の語句を並べ替えましょう
+ \begin{enumerate}
+  \item これはその有名な画家が書いた手紙です。%
+	\hfill{\scriptsize painter: 画家}\\
+	This is ( the famous painter / a letter / wrote / which ) .\\
+	\visible<2->{This is a letter which the famous painter wrote.}
+  \item 私の母がイタリアで撮影した写真を見てください。\\
+	Please ( took / look / in / at / which / my mother / the pictures ) Italy.\\
+	\visible<3->{Please look at the pictures which my mother took in Italy.}
+  \item 彼らが歌った歌はとても美しかった。\\
+	The song ( very beautiful / they / was / which / sang ) .\\
+	\visible<4->{The song which they sang was very beautiful.}
+  \item われわれが見た映画は長かった。\\
+	The movie ( we / was / saw / which / long ) .\\
+	\visible<5->{The movie which we saw was long. }
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{人 $\leftarrow$ \fbox{whom S + V ...}}
+\begin{enumerate}
+ \item<1->  \begin{enumerate}
+	 \item<1-> I know a girl who plays tennis well.\\
+	       \hfill\visible<2->{\scriptsize a girl $\longleftarrow$ \,\,\fbox{who plays tennis well}}
+	 \item<1-> The girl who wrote this poem is Jennifer.\\
+	       \hfill\visible<3->{\scriptsize The girl $\longleftarrow$ \fbox{\,\,who wrote this poem\,\,}}
+	\end{enumerate}
+ \item<4->  \begin{enumerate}
+	 \item<4-> I ate the cake which Bob made.%
+	       \hfill{}\visible<5->{{\scriptsize the cake $\longleftarrow$\,\fbox{\,which Bob made\,}}}
+	 \item<4-> The book which I read yesterday was interesting.\\%
+	\hfill{}\visible<6->{\scriptsize the book $\longleftarrow$\,\fbox{\,which I read yesterday\,}}
+	\end{enumerate}
+\end{enumerate}
+
+\visible<8->{%
+\begin{exampleblock}{Topics for Today}
+「もの」について、後ろから詳しく説明するときwhichをつかいます
+
+\begin{enumerate}\small
+ \item $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,which\,\,\,$+$\,\,\,\,V\,\text{\,\,\ldots\,\,\,}}
+ \item $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,which\,\,\,\,S\,\,$+$\,\,V\,\,\text{\,\,\ldots\,\,\,}}
+ \end{enumerate}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
