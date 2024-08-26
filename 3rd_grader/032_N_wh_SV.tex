@@ -76,7 +76,7 @@
  \begin{enumerate}
   \item<1-> I ate \myAnch{a1}{Maroon}{\bfseries the cake}.
   \item<2-> Bob made \myAnch{a2}{NavyBlue}{the cake}.\\[10pt]
-	\hspace{15pt}\visible<3->{\myAnch{a3}{white}{\Circled[fill color = white]{\,\,which\,\,}}Bob made}
+	\hspace{0pt}\visible<3->{\myAnch{a3}{white}{\Circled[fill color = white]{\,\,which\,\,}}Bob made}
   \item<4-> I ate \myAnch{a4}{Maroon}{\bfseries the cake} \myAnch{a5}{black}{\Circled[fill color = white]{\,\,which\,\,} Bob made}.
  \end{enumerate}
 
@@ -154,7 +154,7 @@
        \end{enumerate}
 \end{enumerate} 
 
-\hfill\fbox{　　}\,\,で囲まれた語をwhichにかえて太字の語の後ろにつなげます
+\hfill\fbox{　　}\,\,で囲まれた語をwhichにかえて先頭に移動させ、太字の語の後ろにつなげます
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
@@ -177,7 +177,7 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{人 $\leftarrow$ \fbox{whom S + V ...}}
+\begin{frame}[plain]{人 $\leftarrow$ \fbox{who S + V ...}}
 \begin{enumerate}
  \item<1->  \begin{enumerate}
 	 \item<1-> I know a girl who plays tennis well.\\
@@ -186,24 +186,265 @@
 	       \hfill\visible<3->{\scriptsize The girl $\longleftarrow$ \fbox{\,\,who wrote this poem\,\,}}
 	\end{enumerate}
  \item<4->  \begin{enumerate}
-	 \item<4-> I ate the cake which Bob made.%
-	       \hfill{}\visible<5->{{\scriptsize the cake $\longleftarrow$\,\fbox{\,which Bob made\,}}}
-	 \item<4-> The book which I read yesterday was interesting.\\%
-	\hfill{}\visible<6->{\scriptsize the book $\longleftarrow$\,\fbox{\,which I read yesterday\,}}
+	 \item<4-> She is a singer who they like.%
+	       \hfill{}\visible<5->{{\scriptsize a singer $\longleftarrow$\,\fbox{\,who they like\,}}}
+	 \item<4-> The girl who we saw yesterday is Jennifer.\\%
+	\hfill{}\visible<6->{\scriptsize the girl $\longleftarrow$\,\fbox{\,who we saw yesterday\,}}
 	\end{enumerate}
 \end{enumerate}
 
 \visible<8->{%
 \begin{exampleblock}{Topics for Today}
-「もの」について、後ろから詳しく説明するときwhichをつかいます
+「人」について、後ろから詳しく説明するときwhoをつかいます
 
 \begin{enumerate}\small
- \item $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,which\,\,\,$+$\,\,\,\,V\,\text{\,\,\ldots\,\,\,}}
- \item $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,which\,\,\,\,S\,\,$+$\,\,V\,\,\text{\,\,\ldots\,\,\,}}
+ \item $\text{人\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,who\,\,\,$+$\,\,\,\,V\,\text{\,\,\ldots\,\,\,}}
+ \item $\text{人\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,who\,\,\,\,S\,\,$+$\,\,V\,\,\text{\,\,\ldots\,\,\,}}
  \end{enumerate}
      \end{exampleblock}
 }
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{人 $\leftarrow$ \fbox{who S ＋ V ...}}
 
+ \begin{enumerate}
+  \item<1-> She is \myAnch{a1}{Maroon}{\bfseries a singer}.
+  \item<2-> They like \myAnch{a2}{NavyBlue}{the singer}.\\[10pt]
+	\hspace{0pt}\visible<3->{\myAnch{a3}{white}{\Circled[fill color = white]{\,\,who\,\,}}they like}
+  \item<4-> She is \myAnch{a4}{Maroon}{\bfseries a singer} \myAnch{a5}{black}{\Circled[fill color = white]{\,\,who\,\,} they like}.
+ \end{enumerate}
+
+\begin{tikzpicture}[remember picture, overlay]
+\visible<3->{\draw[->, thick, NavyBlue] (a2.south) to (a3.north);}
+\coordinate (A5) at ($(a5) - (0,20pt)$); % 10pt below a1
+\coordinate (A4) at ($(a4) - (0,20pt)$); % 10pt below a1
+%\visible<5->{\draw[->, thick, orange] (a5.south) to (a4.north);}
+ % Draw the arrow with right angles
+ \visible<5->{\draw[->,black,thick] (a5) -- (A5) -- (A4) -- (a4);}
+\end{tikzpicture}
+
+\visible<8->{%
+\begin{exampleblock}{Topics for Today}
+ 関係代名詞のwhoは後ろから前の「人」について詳しく説明します
+
+\begin{enumerate}\small
+ \item 2つの文で、同じ「人」を指している語句を見つけます
+ \item 2つめを\,\,\Circled[fill color = white]{\,\,who\,\,}\,\,にして、先頭に移動させます
+ \item 1つめの直後につなげます
+ \end{enumerate}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{人 $\leftarrow$ \fbox{who S ＋ V ...}}
+
+ \begin{enumerate}
+  \item<1-> \myAnch{a1}{Maroon}{\bfseries The girl} is Jennifer.
+  \item<2-> We saw \myAnch{a2}{NavyBlue}{the girl} yesterday.\\[10pt]
+	\hspace{0pt}\visible<3->{\myAnch{a3}{white}{\Circled[fill color = white]{\,\,who\,\,}}we saw yesterday}
+  \item<4-> \myAnch{a4}{Maroon}{\bfseries The girl} \myAnch{a5}{black}{\Circled[fill color = white]{\,\,who\,\,} we saw yesterday} is Jennifer.
+ \end{enumerate}
+
+\begin{tikzpicture}[remember picture, overlay]
+\visible<3->{\draw[->, thick, NavyBlue] (a2.south) to (a3.north);}
+\coordinate (A5) at ($(a5) - (0,20pt)$); % 10pt below a1
+\coordinate (A4) at ($(a4) - (0,20pt)$); % 10pt below a1
+%\visible<5->{\draw[->, thick, orange] (a5.south) to (a4.north);}
+ % Draw the arrow with right angles
+ \visible<5->{\draw[->,black,thick] (a5) -- (A5) -- (A4) -- (a4);}
+\end{tikzpicture}
+
+\visible<8->{%
+\begin{exampleblock}{Topics for Today}
+ 関係代名詞のwhoは後ろから前の「人」について詳しく説明します
+
+\begin{enumerate}\small
+ \item 2つの文で、同じ「人」を指している語句を見つけます
+ \item 2つめを\,\,\Circled[fill color = white]{\,\,who\,\,}\,\,にして、先頭に移動させます
+ \item 1つめの直後につなげます
+ \end{enumerate}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+\fbox{　　}\,\,で囲まれた語を関係代名詞whoにかえて各2文を1文にまとめましょう
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item She is {\bfseries the girl}.
+	\item They helped \fbox{the girl}.
+	\item \visible<2->{$\text{1.1}+\text{1.2}\rightarrow$\,\,\,She is the girl who they helped.}
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item {\bfseries The teacher} is my uncle.
+	\item You met \fbox{the teacher}.
+	\item \visible<3->{$\text{2.1}+\text{2.2}\rightarrow$\,\,\,The teacher who you met is my uncle.}
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item {\bfseries The boy} is very kind.
+	\item Jane likes \fbox{the boy}.
+	\item \visible<4->{$\text{3.1}+\text{3.2}\rightarrow$\,\,\,The boy who she likes is very kind.}
+       \end{enumerate}
+\end{enumerate} 
+
+\hfill\fbox{　　}\,\,で囲まれた語をwhoにかえて先頭に移動させて、太字の語の後ろにつなげます
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう(~~~~~~)の語句を並べ替えましょう
+\begin{enumerate}
+ \item わたしが公園で見かけた男の子はボブです。\\
+       The boy ( the park / I / in / saw / who ) is Bob.\\
+       \visible<2->{The boy who I saw in the park is Bob.}
+ \item 彼女はわたしたちが大好きな先生だ。\\
+       She is ( love / who / we / the teacher ) .\\
+       \visible<3->{She is a teacher who we love.}
+ \item わたしたちがロンドンで会った少年たちのことをおぼえていますか\\
+       Do you remember ( we / who / met / the boys ) in London ?\\
+       \visible<4->{Do you remember the boys who we met in London?}
+ \item わたしの知らない人が話しかけてきた。\\
+       The man ( know / who / didn't / I ) spoke to me.\\
+       \visible<5->{The man who I didn't know spoke to me.}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{関係代名詞のthat}
+ \begin{enumerate}
+  \item<1-> あなたが昨日あったのはわたしの妹です。
+       \begin{enumerate}
+	\item<1-> The girl (~~~~~~~) you saw yesterday is my sister.
+	\item<2->  The girl \myEmph[2-]{Maroon}{who} you saw yesterday is my sister.
+	\item<5->  The girl \myEmph[4-]{Maroon}{that} you saw yesterday is my sister.
+	\end{enumerate}
+  \item<1-> 彼が歌った歌はうつくしかった。
+	\begin{enumerate}
+	 \item<1-> The song (~~~~~~) he sang was beautiful.
+	 \item<3-> The song \myEmph[3-]{Maroon}{which} he sang was beautiful.
+	 \item<6-> The song \myEmph[3-]{Maroon}{that} he sang was beautiful.
+       \end{enumerate}
+ \end{enumerate}
+
+\visible<4->{%
+\begin{exampleblock}{Topics for Today}
+\small
+ 
+\begin{enumerate}\small
+ \item<4->  $\text{人\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,who\,\,S\,\,$+$\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}
+ \item<4->  $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,which\,\,S\,\,$+$\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}
+ \item<7->  $\text{人・もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,that\,\,S\,\,$+$\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}
+ \end{enumerate}
+
+\hfill\visible<7->{関係代名詞のthatは先行詞が「人」でも「もの」でも使えます　}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,label=ichiran]{人・もの $\leftarrow$ \fbox{that\,\,S＋V ...}}
+ \begin{enumerate}
+  \item The book \alt<2->{{\bfseries that}}{{\bfseries which}} I read yesterday was interesting.
+  \item I ate the cake \alt<2->{{\bfseries that}}{{\bfseries which}} Bob made.
+ % \item She bought the house which she liked.
+  %\item The cake which Helen made was delicious.
+  \item This is a letter \alt<2->{{\bfseries that}}{{\bfseries which}} the famous painter wrote.
+  \item Please look at the pictures \alt<2->{{\bfseries that}}{{\bfseries which}} my mother took in Italy.
+  \item The song \alt<2->{{\bfseries that}}{{\bfseries which}} they sang was very beautiful.
+  \item The movie \alt<2->{{\bfseries that}}{{\bfseries which}} we saw was long.
+%  \item The girl who we saw yesterday is Jennifer.
+  \item She is a singer \alt<2->{{\bfseries that}}{{\bfseries who}} they like.
+  \item She is the girl \alt<2->{{\bfseries that}}{{\bfseries who}} they helped.
+  \item The teacher \alt<2->{{\bfseries that}}{{\bfseries who}} you met is my uncle.
+ % \item The boy who she likes is very kind.
+  \item The boy \alt<2->{{\bfseries that}}{{\bfseries who}} I saw in the park is Bob.
+ % \item She is a teacher who we love.
+  \item Do you remember the boys \alt<2->{{\bfseries that}}{{\bfseries who}} we met in London?
+  \item The man \alt<2->{{\bfseries that}}{{\bfseries who}} I didn't know spoke to me.
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{目的格の関係代名詞}
+
+\dbend%\,\,\dbend
+
+\bigskip
+
+\begin{enumerate}
+ \item<1-> I ate the cake. Bob made the cake.
+       \begin{enumerate}
+	\item<2-> 2つめの文のthe cakeはmadeの目的語であることを確認しましょう
+	\item<3-> 2つめの文のthe cakeをwhichにかえて1つの文にしてください
+       \end{enumerate}
+ \item<4-> I ate the cake which Bob made.
+       \begin{enumerate}
+	\item<5-> 動詞madeの目的語はなんでしょう
+	\item<6-> the cakeをwhichにして1つの文にまとめたのが、この文です
+	\item<7-> このwhichは動詞madeの目的語ということになります
+       \end{enumerate}
+\end{enumerate}
+
+\visible<8->{%
+\begin{exampleblock}{Topic for Today}
+\small
+ 直後に\,\,\Circled[fill color = white]{\,\,$\text{S}+\text{V}\,\,$}\,\,が続くwho, which, thatを「\kenten{目的格}の関係代名詞」といいます
+
+\hfill{}Cf. 直後に動詞が続くwho, which, thatを「\kenten{主格}の関係代名詞」といいましたね
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\againframe{ichiran}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-3>[plain]{名詞 $\leftarrow$ \fbox{\,\,S\,＋\,V ...}}
+ \begin{enumerate}
+  \item The book \temporal<2>{{\bfseries which}}{{\bfseries that}}{} I read yesterday was interesting.
+  \item I ate the cake \temporal<2>{{\bfseries which}}{{\bfseries that}}{} Bob made.
+ % \item She bought the house which she liked.
+  %\item The cake which Helen made was delicious.
+  \item This is a letter \temporal<2>{{\bfseries which}}{{\bfseries that}}{} the famous painter wrote.
+  \item Please look at the pictures \temporal<2>{{\bfseries which}}{{\bfseries that}}{} my mother took in Italy.
+  \item The song \temporal<2>{{\bfseries which}}{{\bfseries that}}{} they sang was very beautiful.
+  \item The movie \temporal<2>{{\bfseries which}}{{\bfseries that}}{} we saw was long.
+%  \item The girl who we saw yesterday is Jennifer.
+  \item She is a singer \temporal<2>{{\bfseries who}}{{\bfseries that}}{} they like.
+  \item She is the girl \temporal<2>{{\bfseries who}}{{\bfseries that}}{} they helped.
+  \item The teacher \temporal<2>{{\bfseries who}}{{\bfseries that}}{} you met is my uncle.
+ % \item The boy who she likes is very kind.
+  \item The boy \temporal<2>{{\bfseries who}}{{\bfseries that}}{} I saw in the park is Bob.
+ % \item She is a teacher who we love.
+  \item Do you remember the boys \temporal<2>{{\bfseries who}}{{\bfseries that}}{} we met in London?
+  \item The man \temporal<2>{{\bfseries who}}{{\bfseries that}}{} I didn't know spoke to me.
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{関係代名詞の省略}
+ 
+\visible<1->{%
+\begin{block}{関係代名詞の省略}
+\small
+ 「目的格の関係代名詞」は省略されることがあります
+\begin{enumerate}\small
+ \item<4->  $\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,{\scriptsize 目的格の関係代名詞}\,\,\,\,S\,\,$+$\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}
+ \item<4->  省略すると\\
+\phantom{省略すると}$\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,S\,\,$+$\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}\\
+ということ
+ \end{enumerate}
+
+
+     \end{block}
+}
+
+\visible<1->{%
+\begin{block}{ということは}
+\small
+名詞の直後に\,\,\Circled[fill color = white]{\,\,S\,\,$+$\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}\,\,が続いたときは、
+\begin{itemize}
+ \item 関係代名詞の省略
+
+ \item 後ろから\,\,\Circled[fill color = white]{\,\,S\,\,$+$\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}\,\,が前の名詞を修飾します
+\end{itemize}
+
+     \end{block}
+}
+\end{frame}
 \end{document}
