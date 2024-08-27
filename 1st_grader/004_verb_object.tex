@@ -1,0 +1,132 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{I ate chocolate chip cookies.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{目的語}
+\subsection{目的語}
+%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]\frametitle{目的語}
+
+\begin{enumerate}\small
+     \item \alt<2->{\Circled[outer color=Maroon]{Birds}}{Birds} \alt<3->{\Circled[outer color=NavyBlue]{sing}}{sing}. 鳥は歌います。\hfill\visible<27->{SV}
+    \item \alt<4->{\Circled[outer color=Maroon]{Dogs}}{Dogs} \alt<5->{\Circled[outer color=NavyBlue]{swim}}{swim}. 犬は泳ぎます。\hfill\visible<28->{SV}
+    \item \alt<6->{\Circled[outer color=Maroon]{You}}{You} \alt<7->{\Circled[outer color=NavyBlue]{have}}{have} \alt<20->{\fbox{a nice car}}{a nice car}. あなたはいい車を持っている。\hfill\visible<29->{SVO}
+ \item \alt<8->{\Circled[outer color=Maroon]{I}}{I} \alt<9->{\Circled[outer color=NavyBlue]{play}}{play} \alt<21->{\fbox{the piano}}{the piano}. わたしはピアノを弾きます。\hfill\visible<30->{SVO}
+    \item \alt<10->{\Circled[outer color=Maroon]{They}}{They} \alt<11->{\Circled[outer color=NavyBlue]{watch}}{watch} \alt<22->{\fbox{TV}}{TV}.  彼らはテレビを見ます。\hfill\visible<31->{SVO}
+    \item \alt<12->{\Circled[outer color=Maroon]{We}}{We} \alt<13->{\Circled[outer color=NavyBlue]{study}}{study} \alt<23->{\fbox{English}}{English}. わたしたちは英語を勉強します。\hfill\visible<32->{SVO}
+ \item \alt<14->{\Circled[outer color=Maroon]{I}}{I} \alt<15->{\Circled[outer color=NavyBlue]{write}}{write} \alt<24->{\fbox{a letter}}{a nice letter}. わたしは手紙を書きます。\hfill\visible<33->{SVO}
+     \item \alt<16->{\Circled[outer color=Maroon]{They}}{They} \alt<17->{\Circled[outer color=NavyBlue]{like}}{like} \alt<25->{\fbox{music}}{music}.  彼らは音楽が好きです。\hfill\visible<34->{SVO}
+\end{enumerate}
+
+\begin{columns}[t]
+\begin{column}{.55\textwidth}
+ \begin{exampleblock}<18->{Topics for Today}
+\begin{itemize}
+ \visible<18->{\item 英文の骨格は\kenten{主語}と\kenten{動詞}でしたね}
+ \visible<19->{\item 「～を」に当たる語を\kenten{目的語}といいます}
+\end{itemize}
+ \end{exampleblock}
+\end{column} 
+\begin{column}{.44\textwidth}
+ \begin{block}<26->{新しい記号を覚えましょう}
+%   \textbullet\,\,新しい記号を覚えましょう
+       \begin{description}
+	\item[主語：] S\hfill{subjectの頭文字} 
+	\item[動詞：] V\hfill{verbの頭文字}
+	\item[目的語：] O \hfill{objectの頭文字}
+       \end{description}
+      \end{block}
+\end{column} 
+\end{columns}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-23>[plain,label=is_verb]\frametitle{Exercises}
+つぎの各文の\Circled[outer color=Maroon]{主語}と\Circled[outer color=NavyBlue]{動詞}を確認しましょう。また、目的語がある場合は、目的語を\fbox{　　}\,で囲んでください。さらに各文の意味を確認しましょう
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item<1-> \alt<2->{\Circled[outer color=Maroon]{Birds}}{Birds} \alt<2->{\Circled[outer color=NavyBlue]{sing}}{sing}.\hfill\visible<14->{SV}
+   \item<1-> \alt<3->{\Circled[outer color=Maroon]{Birds}}{Birds} \alt<3->{\Circled[outer color=NavyBlue]{sing}}{sing} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{in the morning}}{in the morning}.\hfill\visible<15->{SV}
+   \item<1-> \alt<4->{\Circled[outer color=Maroon]{He}}{He} \alt<4->{\Circled[outer color=NavyBlue]{swims}}{swims} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{well}}{well}.\hfill\visible<16->{SV}
+   \item<1-> \alt<5->{\Circled[outer color=Maroon]{They}}{They} \alt<5->{\Circled[outer color=NavyBlue]{swim}}{swim} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{in the river}}{in the river}.\hfill\visible<17->{SV}
+   \item<1-> \alt<6->{\Circled[outer color=Maroon]{George}}{George} \alt<6->{\Circled[outer color=NavyBlue]{speaks}}{speaks} \alt<10->{\fbox{English}}{English}.\hfill\visible<18->{SVO}
+   \item<1-> \alt<7->{\Circled[outer color=Maroon]{Janis}}{Janis} \alt<7->{\Circled[outer color=NavyBlue]{speaks}}{speaks} \alt<11->{\fbox{French}}{French} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{well}}{well}.\hfill\visible<19->{SVO}
+   \item<1-> \alt<8->{\Circled[outer color=Maroon]{I}}{I} \alt<8->{\Circled[outer color=NavyBlue]{drink}}{drink} \alt<12->{\fbox{tea}}{tea} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{every morning}}{every morning}.\hfill\visible<20->{SVO}
+   \item<1-> \alt<9->{\Circled[outer color=Maroon]{Jimmy}}{Jimmy} \alt<9->{\Circled[outer color=NavyBlue]{plays}}{plays} \alt<13->{\fbox{the guitar}}{the guitar} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{in his room}}{in his room}.\hfill\visible<21->{SVO}
+  \end{enumerate}
+
+\hfill\visible<23->{%
+\Circled[fill color = gray, outer color=gray, inner color=white]{　　}\,の語句は、文に$+\alpha$の意味をつけくわえています
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{副詞}
+\begin{frame}[plain]{副詞}
+ \begin{enumerate}
+  \item Dogs swim  \alt<2->{\Circled[fill color=gray, outer color=gray, inner color=white]{\bfseries well}}{well}.
+  \item She speaks \alt<2->{\Circled[fill color=gray, outer color=gray, inner color=white]{\bfseries fast}}{fast}.
+  \item He eats lunch \alt<2->{\Circled[fill color=gray, outer color=gray, inner color=white]{\bfseries slowly}}{slowly}.
+  \item I finish my homework \alt<2->{\Circled[fill color=gray, outer color=gray, inner color=white]{\bfseries today}}{today}.
+  \item I call my friend \alt<2->{\Circled[fill color=gray, outer color=gray, inner color=white]{\bfseries now}}{now}.
+  \item She plays the piano \alt<2->{\Circled[fill color=gray, outer color=gray, inner color=white]{\bfseries here}}{here}.
+  \item We play tennis \alt<2->{\Circled[fill color=gray, outer color=gray, inner color=white]{\bfseries there}}{there}. \end{enumerate}
+
+\visible<3->{%
+\begin{exampleblock}{Topics for Today}
+\Circled[fill color = gray, outer color=gray, inner color=white]{\,\,副詞\,\,}\,は、文に$+\alpha$の意味をつけくわえます
+\begin{description}
+ \item[様態：] well, fast, slowly \ldots
+ \item[とき：] today, now \ldots
+ \item[場所：] here, there \ldots
+\end{description}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\fbox{$\text{前置詞}+\text{名詞}$}}
+ \begin{enumerate}
+  \item in
+  \item on
+  \item after
+  \item before
+ \end{enumerate}
+\end{frame}
+\end{document}
