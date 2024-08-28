@@ -1,0 +1,203 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{David is a singer. He is famous.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{代名詞}
+\subsection{代名詞とは}
+%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]\frametitle{代名詞}
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item<1-> \myEmph[1-]{Maroon}{Billy} is a singer. \myEmph[1-]{Maroon}{Billy} sings well. I like \myEmph[1-]{Maroon}{Billy}.
+	\item<2-> \myEmph[1-]{Maroon}{Billy} is a singer. \Circled{\,He\,} sings well. I like \Circled{\,him\,}.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item<1-> \myEmph[1-]{Maroon}{Diana} is a pianist. \myEmph[1-]{Maroon}{Diana} plays the piano well. I like \myEmph[1-]{Maroon}{Diana}.
+	\item<3-> \myEmph[1-]{Maroon}{Diana} is a pianist. \Circled{\,She\,} plays the piano well. I like \Circled{\,her\,}. 
+       \end{enumerate}
+\end{enumerate}
+
+\visible<4->{%
+\begin{exampleblock}{Topics for Today}
+he / him , she / her などを\kenten{代名詞}といいます%
+\hfill{}\kenten{名詞}の\kenten{代}わりということですね
+\begin{itemize}
+ \item he, she(～は)\,$\longrightarrow$\,主語になります\hfill\makebox[30pt][l]{\kenten{主格}の代名詞}\hspace{80pt}\mbox{}
+ \item him, her(～を)\,$\longrightarrow$\,目的語になります\hfill\makebox[30pt][l]{\kenten{目的格}の代名詞}\hspace{80pt}\mbox{}
+\end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{その他の代名詞}
+ 
+\begin{tblr}{%
+colspec={X[.6]X[.8]X[.8]X[.8]XX[.8]X[.8]},
+row{4} = {bg = yellow!50},
+cell{4}{1} = {bg = white},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1} = {2-7}{ 0.08em },
+hline{Z} = { 0.08em },
+cell{1}{2} = {r =1, c = 3}{halign = c},%
+cell{1}{5} = {r =1, c = 3}{halign = c},%
+cell{5}{5} = {bg = NavyBlue!30},%
+cell{6}{5} = {bg = NavyBlue!30},%
+cell{7}{5} = {bg = NavyBlue!30},
+cell{7}{2} = {bg = Maroon!20},%
+cell{7}{3} = {bg = Maroon!20},%
+cell{7}{4} = {bg = Maroon!20},%
+cell{5}{6} = {r =3, c = 1}{halign = l, valign = m, bg = NavyBlue!30},%
+cell{5}{7} = {r =3, c = 1}{halign = l, valign = m, bg = NavyBlue!30},
+%cell{1}{3} = {r = 1, c = 5}{bg = gray6, fg = white, font = { \bfseries\sffamily\gtfamily }, cmd = {} },
+%row{1} = { halign = c, bg = gray6, fg = white, font = { \bfseries\sffamily\gtfamily }, cmd = {} },
+hline{3} = {1-7}{ 0.04em },
+}
+ &単数&&&複数&& \\
+ & &主格 &目的格 & &主格 &目的格 \\
+1人称&私 & I&me &私たち &we &us \\
+2人称&あなた & you&you &あなたたち &you &you \\
+3人称&彼 & he& him&彼ら &they & them\\
+ &彼女 & she& her&彼女たち & &\\
+ &それ & it& it&それら & & \\
+
+\end{tblr}
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ \begin{enumerate}
+  \item 彼女は英語を話します。 ( \alt<2->{\Circled{She}}{She} / Her ) speaks English.
+  \item 彼は川で泳ぐ。 (  \alt<3->{\Circled{He}}{He} / Him ) swims in the river.
+  \item わたしは彼女のことを知っています。I know ( she /  \alt<4->{\Circled{her}}{her} ).
+  \item 彼女は彼が好きです。 She likes ( he /  \alt<5->{\Circled{him}}{him} ).
+  \item わたしには彼らが必要だ。 I need ( they /  \alt<6->{\Circled{them}}{them} ).
+  \item 彼はわたしたちといっしょにテニスをする。He plays tennis with ( we /  \alt<7->{\Circled{us}}{us} ).
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{所有格}
+ \begin{enumerate}
+  \item This is my car.
+  \item *This is my a car.
+  \item *This is a my car.
+ \end{enumerate}
+
+\visible<2->{%
+\begin{exampleblock}{Topics for Today}
+myはIが変化したかたちで「わたしの～」の意味です
+\begin{itemize}
+ \item myを\kenten{所有格}の代名詞といいます
+ \item my a bookとかa my bookとはいいません%\hfill{}my booksはOKです
+\end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{所有格}
+ 
+\begin{tblr}{%
+colspec={X[.6]X[.8]X[.8]X[.8]XX[.8]X[.8]},
+row{4} = {bg = yellow!50},
+cell{4}{1} = {bg = white},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1} = {2-7}{ 0.08em },
+hline{Z} = { 0.08em },
+cell{1}{2} = {r =1, c = 3}{halign = c},%
+cell{1}{5} = {r =1, c = 3}{halign = c},%
+cell{5}{5} = {bg = NavyBlue!30},%
+cell{6}{5} = {bg = NavyBlue!30},%
+cell{7}{5} = {bg = NavyBlue!30},
+cell{7}{2} = {bg = Maroon!20},%
+cell{7}{3} = {bg = Maroon!20},%
+cell{7}{4} = {bg = Maroon!20},%
+cell{5}{6} = {r =3, c = 1}{halign = l, valign = m, bg = NavyBlue!30},%
+cell{5}{7} = {r =3, c = 1}{halign = l, valign = m, bg = NavyBlue!30},
+%cell{1}{3} = {r = 1, c = 5}{bg = gray6, fg = white, font = { \bfseries\sffamily\gtfamily }, cmd = {} },
+%row{1} = { halign = c, bg = gray6, fg = white, font = { \bfseries\sffamily\gtfamily }, cmd = {} },
+hline{3} = {1-7}{ 0.04em },
+}
+ &単数&&&複数&& \\
+ & &主格 &所有格 & &主格 &所有格 \\
+1人称&私 & I&my &私たち &we &our \\
+2人称&あなた & you&your &あなたたち &you &your \\
+3人称&彼 & he& his&彼ら &they & their\\
+ &彼女 & she& her&彼女たち & &\\
+ &それ & it& its&それら & & \\
+
+\end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{一覧表}
+ 
+\begin{tblr}{%
+colspec={XXXXXXX},
+row{4} = {bg = yellow!50},
+cell{4}{1} = {bg = white},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1} = {2-7}{ 0.08em },
+hline{Z} = { 0.08em },
+cell{1}{2} = {r =1, c = 3}{halign = c},%
+cell{1}{5} = {r =1, c = 3}{halign = c},%
+%cell{5}{5} = {bg = NavyBlue!30},%
+%cell{6}{5} = {bg = NavyBlue!30},%
+%cell{7}{5} = {bg = NavyBlue!30},
+cell{7}{2} = {bg = Maroon!20},%
+cell{7}{3} = {bg = Maroon!20},%
+cell{7}{4} = {bg = Maroon!20},%
+cell{5}{5} = {r =3, c = 1}{halign = l, valign = m, bg = NavyBlue!30},%
+cell{5}{6} = {r =3, c = 1}{halign = l, valign = m, bg = NavyBlue!30},%
+cell{5}{7} = {r =3, c = 1}{halign = l, valign = m, bg = NavyBlue!30},
+%cell{1}{3} = {r = 1, c = 5}{bg = gray6, fg = white, font = { \bfseries\sffamily\gtfamily }, cmd = {} },
+%row{1} = { halign = c, bg = gray6, fg = white, font = { \bfseries\sffamily\gtfamily }, cmd = {} },
+hline{3} = {1-7}{ 0.04em },
+}
+ &単数&&&複数&& \\
+ & 主格 &所有格 &目的格 &主格 &所有格&目的格 \\
+1人称&I&my &me &we &our&us \\
+2人称& you&your &you&you &your&you \\
+3人称&he& his&him &they & their&them\\
+ & she& her&her & &&\\
+ &it& its&it & && \\
+
+\end{tblr}
+\end{frame}
+\end{document}
