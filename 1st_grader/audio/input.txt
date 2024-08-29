@@ -1,3 +1,11 @@
+Birds sing.
+Dogs swim.
+You have a nice car.
+I play the piano.
+They watch TV.
+We study English.
+I write a letter.
+They like music.
 Play. <break time="2s"/> Plays.<break time="2s"/>
 Drink. <break time="2s"/> Drinks.<break time="2s"/>
 Go. <break time="2s"/> Goes.<break time="2s"/>
