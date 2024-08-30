@@ -21,6 +21,9 @@
 \usepackage{pifont}
 \usepackage{phaistos}
 \usepackage{worldflags}
+\usepackage{tabularray}
+\usepackage{booktabs}
+%\input{myPreamble4Slide.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
@@ -175,10 +178,32 @@ Our cat is \alt<5->{(\,\,sleeping\,\,)}{(\phantom{\,\,sleeping\,\,})} on the bed
 \mbox{}\hfill\myaudio{./audio/021_is_ing_intro_03.mp3}
 }
 \end{frame}
-
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{--ingのつくりかた}
+ 
+\begin{center}
+% \rowcolors{2}{NavyBlue!50}{yellow!40}
+%\begin{tblr}{
+ % colspec = {l l l l}, % 列の仕様
+ % row{5-6} = {bg=yellow!50}, % 1行目の背景色を黄色に設定
+ % row{7-8} = {bg=NavyBlue!40} % 3行目の背景色を薄い灰色に設定
+%}
+\begin{tabular}{llll}
+ \toprule
+&{\small 原形}&{\small --ing}\\\midrule
+1&\visible<1->{eat}&\visible<2->{{\small eating}}&\visible<2->{{語尾に---ingをつけるだけ(原則)}}\\
+2&\visible<1->{play}&\visible<3->{{\small playing}}&\\
+3&\visible<1->{go}&\visible<4->{{\small going}}&\\
+\rowcolor{yellow!40}4&\visible<1->{make}&\visible<5->{{\small making}}&\visible<5->{eをとって--ing}\\
+\rowcolor{yellow!40}5&\visible<1->{write}&\visible<6->{{\small writing}}&\\
+\rowcolor{NavyBlue!40}6&\visible<1->{swim}&\visible<7->{{\small swimming}}&\visible<7->{子音字を重ねて--ing}\\
+\rowcolor{NavyBlue!40}7&\visible<1->{run}&\visible<8->{{\small running}}&\\
+\bottomrule
+\end{tabular}
+%\end{tblr}%
+\end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 つぎの文の意味を考えましょう。
 
