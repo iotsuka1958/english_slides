@@ -680,8 +680,24 @@ She ate bread this morning.<break time="2s"/> She didn’t eat bread this mornin
 They had a meeting this afternoon.<break time="2s"/> They didn’t have a meeting this afternoon.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_07.mp3
+He made a cake for her yesterday.<break time="2s"/> He didn't make a cake for her birthday.
+1 We saw a great movie last week.<break time="2s"/> We didn't  see  a great movie last week.
+1 She got a new car last month.<break time="2s"/> She didn't  get  a new car last month.
+He spoke English then.<break time="2s"/> He didn't  speak  English then.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_08.mp3
+I took a picture of my cat yesterday.<break time="2s"/>I didn’t ( take ) a picture of my cat yesterday.
+I wrote a letter to him last night.<break time="2s"/>I didn’t ( write ) a letter to him last night.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_09.mp3
+go<break time="2s"/>went
+come<break time="2s"/>came
+eat<break time="2s"/>ate
+have<break time="2s"/>had
+make<break time="2s"/>made
+see<break time="2s"/>saw
+get<break time="2s"/>got
+speak<break time="2s"/>spoke
+take<break time="2s"/>took
+write<break time="2s"/>wrote
 
