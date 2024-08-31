@@ -1,10 +1,6 @@
-go<break time="2s"/>went
-come<break time="2s"/>came
-eat<break time="2s"/>ate
-have<break time="2s"/>had
-make<break time="2s"/>made
-see<break time="2s"/>saw
-get<break time="2s"/>got
-speak<break time="2s"/>spoke
-take<break time="2s"/>took
-write<break time="2s"/>wrote
+How lucky!
+How pretty!
+What a pretty dress!
+How big!
+What a big house!
+What beautiful fowers!
