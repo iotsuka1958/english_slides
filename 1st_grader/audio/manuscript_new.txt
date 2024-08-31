@@ -99,39 +99,39 @@ Our teacher walks to school. <break time="2s"/> Does our teacher walk to school?
 Do you like sushi?
 Yes, I do.
 No, I do not.
-No, I don’t.
+No, I don't.
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 011_answer_do_02.mp3
 Does he walk to school?
 Yes, he does.
 No, he does not.
-No, he doesn’t.
+No, he doesn't.
 Does she speak Japanese?
 Yes, she does.
 No, she does not.
-No, she doesn’t.
+No, she doesn't.
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 011_answer_do_03.mp3
 Does John have a bike?
 Yes, he does.
 No, he does not.
-No, he doesn’t.
+No, he doesn't.
 Does Emily teach math?
 Yes, she does.
 No, she does not.
-No, she doesn’t.
+No, she doesn't.
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 011_answer_do_04.mp3
 Do they sing well??
 Yes, they do.
 No, they do not.
-No, they don’t.
+No, they don't.
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 011_answer_do_05.mp3
 Do George and Peter go to school together?
 Yes, they do.
 No, they do not.
-No, they don’t.
+No, they don't.
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 011_answer_do_06.mp3
 Do they eat Chinese food?<break time="5s"/>Yes, they do.<break time="5s"/>No, they do not.
@@ -141,11 +141,11 @@ Does George like tea?<break time="5s"/>Yes, he does.<break time="5s"/>No, he doe
 Do John and Paul play the guitar?<break time="5s"/>Yes, they do.<break time="5s"/>No, they do not.
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 011_answer_do_07.mp3
-Hi, I’m Jennifer. I live in London and I’m in junior high school. My parents don’t eat meat, but they really like fish. I also enjoy sushi. We often go to Japanese restaurants.
+Hi, I'm Jennifer. I live in London and I'm in junior high school. My parents don't eat meat, but they really like fish. I also enjoy sushi. We often go to Japanese restaurants.
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 011_answer_do_08.mp3
 Does Jennifer go to junior high school?<break time="5s"/>Yes, she does.
-Do her parents eat meat?<break time="5s"/>No, they don’t.
+Do her parents eat meat?<break time="5s"/>No, they don't.
 Does she like sushi?<break time="5s"/>Yes, she does.
 Do her parents go to Japanese resaurants?<break time="5s"/>Yes, they do.
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -187,12 +187,12 @@ When does the meeting begin?
 %%%%%%%%%%%%%%%%%%%%%%%%%
 014_when_04.mp3
 When do you usually1 practice basketball? <break time="2s"/> On Saturdays.
-When is St. Valentine’s Day? <break time="2s"/>  It’s February fourteenth.
+When is St. Valentine's Day? <break time="2s"/>  It's February fourteenth.
 When does the school year start in Japan? <break time="2s"/>In April.
 %%%%%%%%%%%%%%%%%%%%%%%%%
 014_when_05.mp3
-When is Children’s Day? <break time="2s"/> It’s May fifth.
-When is your father’s birthday? <break time="2s"/> It’s July second.
+When is Children's Day? <break time="2s"/> It's May fifth.
+When is your father's birthday? <break time="2s"/> It's July second.
 When does Mr. Brown come to school? <break time="2s"/> Around seven.
 When does your brother play the violin? <break time="2s"/> After dinner.
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -213,11 +213,11 @@ Where do they go for vacation?
 Where does the cat sleep?
 %%%%%%%%%%%%%%%%%%%%%%%%%
 015_where_04.mp3
-Where is Mr. Brown from? <break time="2s"/> He’s from the USA.
+Where is Mr. Brown from? <break time="2s"/> He's from the USA.
 Where does Naomi live? <break time="2s"/> She lives in Narita.
 Where does this bus go? <break time="2s"/> It goes to Chiba Station.
 Where does Tom study? <break time="2s"/> He studies in the library.
-Where is Mary now? <break time="2s"/> She’s in the kitchen now.
+Where is Mary now? <break time="2s"/> She's in the kitchen now.
 %%%%%%%%%%%%%%%%%%%%%%%%
 016_which_01.mp3
 Your favorite season is spring.
@@ -229,7 +229,7 @@ Which is your favorite season?
 Which is your favorite color, pink or blue?
 %%%%%%%%%%%%%%%%%%%%%%%%
 016_which_03.mp3
-Which is Ken’s bag?
+Which is Ken's bag?
 Which is your pencil?
 Which is your favorite drink, tea or coffee?
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -337,7 +337,7 @@ What sport do you like?<break time="2s"/>I like baseball.
 What movies do you watch?<break time="2s"/> I watch action movies.
 What books do you read?<break time="2s"/> I read mystery novels.
 What hobbies do you have?<break time="2s"/> I have hobbies like painting and reading.
-What day is it today?<break time="2s"/> It’s Saturday.<break time="4s"/> What day of the week is it today?
+What day is it today?<break time="2s"/> It's Saturday.<break time="4s"/> What day of the week is it today?
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 020_whose_01.mp3
 Her hair is blonde and my hair is black. <break time="2s"/>Her hair is blonde and mine is black.
@@ -345,14 +345,14 @@ Is this bike yours or his?
 The dog is not ours.
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 020_whose_02.mp3
-This car is Jennifer’s.
-These books are my uncle’s.
+This car is Jennifer's.
+These books are my uncle's.
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 020_whose_03.mp3
 Is this cup yours?
 This dictionary is hers.
-Is this car your mother’s?
-These cats are Billy’s.
+Is this car your mother's?
+These cats are Billy's.
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 020_whose_04.mp3
 This is her bag.
@@ -391,18 +391,18 @@ They are swimming in the pool now.
 The dog is running in the yard now.
 %%%%%%%%%%%%%%%%%%%%%%%%
 022_is_ing_negative_01.mp3
-His mother is a teacher.<break time="2s"/>His mother is not a teacher.<break time="2s"/> His mother isn’t a teacher.
-The room is clean.<break time="2s"/>The room is not clean.<break time="2s"/>The room isn’t clean.
-You are busy.<break time="2s"/>You are not busy.<break time="2s"/>You aren’t busy.
-They are students.<break time="2s"/>They are not students.<break time="2s"/>They aren’t students.
+His mother is a teacher.<break time="2s"/>His mother is not a teacher.<break time="2s"/> His mother isn't a teacher.
+The room is clean.<break time="2s"/>The room is not clean.<break time="2s"/>The room isn't clean.
+You are busy.<break time="2s"/>You are not busy.<break time="2s"/>You aren't busy.
+They are students.<break time="2s"/>They are not students.<break time="2s"/>They aren't students.
 I am a doctor.<break time="2s"/>I am not a doctor.
  %%%%%%%%%%%%%%%%%%%%%%%%
 022_is_ing_negative_02.mp3
 I am not reading a book now.
 She is not singing a song now.
 We are not doing homework now.
-Our cat isn’t sleeping on the bed now.
-We aren’t studying math now.
+Our cat isn't sleeping on the bed now.
+We aren't studying math now.
 %%%%%%%%%%%%%%%%%%%%%%%%
 022_is_ing_negative_03.mp3
 John is not playing soccer now.
@@ -427,8 +427,8 @@ Are you listening to music now?
 Are George and Eric singing in the hall now?.
 %%%%%%%%%%%%%%%%%%%%%%%%
 023_is_ing_question_04.mp3
-Is he busy?<break time="2s"/>Yes, he is.<break time="2s"/>No, he is not.<break time="2s"/>No, he’s not.<break time="2s"/>No, he isn’t.
-Is he studying?<break time="2s"/>Yes, he is.<break time="2s"/>No, he is not.<break time="2s"/>No, he’s not.<break time="2s"/>No, he isn’t.
+Is he busy?<break time="2s"/>Yes, he is.<break time="2s"/>No, he is not.<break time="2s"/>No, he's not.<break time="2s"/>No, he isn't.
+Is he studying?<break time="2s"/>Yes, he is.<break time="2s"/>No, he is not.<break time="2s"/>No, he's not.<break time="2s"/>No, he isn't.
 %%%%%%%%%%%%%%%%%%%%%%%%
 023_is_ing_question_05.mp3
 Are they studying in the library?<break time="2s"/>Yes, they are.<break time="2s"/>No, they are not.
@@ -484,14 +484,14 @@ Who is playing the guitar?
 Who is watching TV?
 Who is sitting over there?
 %%%%%%%%%%%%%%%%%%%%%%%
-024_past_be_01.pdf
+024_past_be_01.mp3
 I am hungry.
 You are very kind.
 She is from Australia.
 Tom is busy today.
 The flowers are beautiful.
 %%%%%%%%%%%%%%%%%%%%%%%
-024_past_be_02.pdf
+024_past_be_02.mp3
 I am busy now.<break time="2s"/>I was busy yesterday.
 You are busy now.<break time="2s"/>You were busy yesterday.
 He is busy now.<break time="2s"/>He was busy yesterday.
@@ -499,45 +499,46 @@ She is bus nowy.<break time="2s"/>She was busy yesterday.
 They are busy now.<break time="2s"/>They were busy yesterday.
 We are busy now.We were busy yesterday.
 %%%%%%%%%%%%%%%%%%%%%%%
-024_past_be_03.pdf
+024_past_be_03.mp3
 I was hungry yesterday.
 They were busy yesterday.
 She was tired last night.
 Tom was busy today.
 They were at home then.
 %%%%%%%%%%%%%%%%%%%%%%%
-024_past_be_04.pdf
+024_past_be_04.mp3
 I was hungry yesterday.<break time="2s"/>I was not hungry yesterday.
 They were tired last night.<break time="2s"/>They were not tired last night.
 %%%%%%%%%%%%%%%%%%%%%%%
-024_past_be_05.pdf
+024_past_be_05.mp3
 I was not hungry yesterday.
 They were not busy last night.
 She was not tired.
 You were not at home then.
 %%%%%%%%%%%%%%%%%%%%%%%
-024_past_be_06.pdf
+024_past_be_06.mp3
 You were hungry.<break time="2s"/>Were you hungry?
 She was tired last night.<break time="2s"/>Was she tired last night?
 %%%%%%%%%%%%%%%%%%%%%%%
-024_past_be_07.pdf
+024_past_be_07.mp3
 Were you hungry yesterday?
 Were they busy last night?
 Was she tired yesterday?
 Were you at home then?
 %%%%%%%%%%%%%%%%%%%%%%%
-024_past_be_08.pdf
-Was she tired lat night?.<break time="2s"/>Yes, she was.<break time="2s"/>No, she wasn’t.
-Were you at home then?.<break time="2s"/>Yes, I was.<break time="2s"/>No, I wasn’t.
-Was Peter in Japan then?.<break time="2s"/>Yes, he was.<break time="2s"/>No, he wasn’t.
-Was it rainy yesterday?.<break time="2s"/>Yes, it was.<break time="2s"/>No, it wasn’t.
+024_past_be_08.mp3
+Was she tired lat night?.<break time="2s"/>Yes, she was.<break time="2s"/>No, she wasn't.
+Were you at home then?.<break time="2s"/>Yes, I was.<break time="2s"/>No, I wasn't.
+Was Peter in Japan then?.<break time="2s"/>Yes, he was.<break time="2s"/>No, he wasn't.
+Was it rainy yesterday?.<break time="2s"/>Yes, it was.<break time="2s"/>No, it wasn't.
 %%%%%%%%%%%%%%%%%%%%%%
 025_past_do_01.mp3
 I play tennis every day. <break time="2s"/> I played tennis every day.
 We play tennis every day.<break time="2s"/>  We played tennis every day.
 You play tennis every day. <break time="2s"/>You played tennis every day.
 He plays tennis every day. <break time="2s"/>He played tennis every day.
-They play tennis every day. <break time="2s"/>They played tennis every day.%%%%%%%%%%%%%%%%%%%%%%
+They play tennis every day. <break time="2s"/>They played tennis every day.
+%%%%%%%%%%%%%%%%%%%%%%
 025_past_do_02.mp3
 We listen to the radio after dinner. <break time="2s"/> We listened to the radio after dinner.
 I play the piano every day. <break time="2s"/> I played the piano last night.
@@ -641,30 +642,30 @@ I took a picture of my cat yesterday.
 I wrote a letter to him last night.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_01.mp3
-I live in Paris.<break time="2s"/>I do not live in Paris.<break time="2s"/>I don’t live in Paris.
-You live in Paris.<break time="2s"/>You do not live in Paris.<break time="2s"/>You don’t live in Paris.
-They live in Paris.<break time="2s"/>They do not live in Paris.<break time="2s"/>They don’t live in Paris.
-He lives in Paris.<break time="2s"/>He does not live in Paris.<break time="2s"/>He doesn’t live in Paris.
+I live in Paris.<break time="2s"/>I do not live in Paris.<break time="2s"/>I don't live in Paris.
+You live in Paris.<break time="2s"/>You do not live in Paris.<break time="2s"/>You don't live in Paris.
+They live in Paris.<break time="2s"/>They do not live in Paris.<break time="2s"/>They don't live in Paris.
+He lives in Paris.<break time="2s"/>He does not live in Paris.<break time="2s"/>He doesn't live in Paris.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_02a.mp3
-I live in Boston. <break time="2s"/> I do not live in Boston. <break time="2s"/> I don’t live in Boston.
-He lives in Boston.<break time="2s"/>  He does not live in Boston.<break time="2s"/>  He doesn’t live in Boston.
+I live in Boston. <break time="2s"/> I do not live in Boston. <break time="2s"/> I don't live in Boston.
+He lives in Boston.<break time="2s"/>  He does not live in Boston.<break time="2s"/>  He doesn't live in Boston.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_02b.mp3
-I lived in Boston.<break time="2s"/> I did not live in Boston.<break time="2s"/> I didn’t live in Boston.
-He lived in Boston.<break time="2s"/> He did not live in Boston.<break time="2s"/> He didn’t live in Boston.
+I lived in Boston.<break time="2s"/> I did not live in Boston.<break time="2s"/> I didn't live in Boston.
+He lived in Boston.<break time="2s"/> He did not live in Boston.<break time="2s"/> He didn't live in Boston.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_03.mp3
-We listened to the radio after dinner.<break time="2s"/>We didn’t listen to the radio after dinner.<break time="2s"/>We did not listen to the radio after dinner.
-I played the piano last night.<break time="2s"/>I didn’t play the piano last night.<break time="2s"/>I did not play the piano last night.
-He cooked this morning.<break time="2s"/>He didn’t cook this morning.<break time="2s"/>He did not cook this morning.
-She walked to work every day.<break time="2s"/>She didn’t walk to work every day.<break time="2s"/>She did not walk to work every day.
-They lived in London two years ago.<break time="2s"/>They didn’t live in London two years ago.<break time="2s"/>They did not live in London two years ago.
+We listened to the radio after dinner.<break time="2s"/>We didn't listen to the radio after dinner.<break time="2s"/>We did not listen to the radio after dinner.
+I played the piano last night.<break time="2s"/>I didn't play the piano last night.<break time="2s"/>I did not play the piano last night.
+He cooked this morning.<break time="2s"/>He didn't cook this morning.<break time="2s"/>He did not cook this morning.
+She walked to work every day.<break time="2s"/>She didn't walk to work every day.<break time="2s"/>She did not walk to work every day.
+They lived in London two years ago.<break time="2s"/>They didn't live in London two years ago.<break time="2s"/>They did not live in London two years ago.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_04.mp3
-I studied math last night.<break time="2s"/>I didn’t study math last night.<break time="2s"/>I did not study math last night.
-The baby cried on the bus yesterday.<break time="2s"/>The baby didn’t cry on the bus yesterday.<break time="2s"/>The baby did not cry on the bus yesterday.
-The train stopped at every station two years ago.<break time="2s"/>The bus didn’ stop at every station two years ago.<break time="2s"/>The bus did not stop at every station two years ago.
+I studied math last night.<break time="2s"/>I didn't study math last night.<break time="2s"/>I did not study math last night.
+The baby cried on the bus yesterday.<break time="2s"/>The baby didn't cry on the bus yesterday.<break time="2s"/>The baby did not cry on the bus yesterday.
+The train stopped at every station two years ago.<break time="2s"/>The bus didn't stop at every station two years ago.<break time="2s"/>The bus did not stop at every station two years ago.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_05.mp3
 study<break time="2s"/>studied
@@ -674,10 +675,10 @@ carry<break time="2s"/>carried
 stop<break time="2s"/>stopped
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_06.mp3
-He went to London two years ago.<break time="2s"/> He didn’t go to London two years ago.
-She came to the party last night.<break time="2s"/> She didn’t come to the party last night.
-She ate bread this morning.<break time="2s"/> She didn’t eat bread this morning.
-They had a meeting this afternoon.<break time="2s"/> They didn’t have a meeting this afternoon.
+He went to London two years ago.<break time="2s"/> He didn't go to London two years ago.
+She came to the party last night.<break time="2s"/> She didn't come to the party last night.
+She ate bread this morning.<break time="2s"/> She didn't eat bread this morning.
+They had a meeting this afternoon.<break time="2s"/> They didn't have a meeting this afternoon.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_07.mp3
 He made a cake for her yesterday.<break time="2s"/> He didn't make a cake for her birthday.
@@ -686,8 +687,8 @@ He made a cake for her yesterday.<break time="2s"/> He didn't make a cake for he
 He spoke English then.<break time="2s"/> He didn't  speak  English then.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_08.mp3
-I took a picture of my cat yesterday.<break time="2s"/>I didn’t ( take ) a picture of my cat yesterday.
-I wrote a letter to him last night.<break time="2s"/>I didn’t ( write ) a letter to him last night.
+I took a picture of my cat yesterday.<break time="2s"/>I didn't ( take ) a picture of my cat yesterday.
+I wrote a letter to him last night.<break time="2s"/>I didn't ( write ) a letter to him last night.
 %%%%%%%%%%%%%%%%%%%%%%
 026_past_didnot_09.mp3
 go<break time="2s"/>went
@@ -700,4 +701,122 @@ get<break time="2s"/>got
 speak<break time="2s"/>spoke
 take<break time="2s"/>took
 write<break time="2s"/>wrote
-
+%%%%%%%%%%%%%%%%%%%%%%%%
+027_past_did_you_01.mp3
+You like flowers.<break time="2s"/>Do you like flowers?
+They live in Boston.<break time="2s"/>Do they live in Boston?
+She teaches science.<break time="2s"/>Does she teach science?
+He has a car.<break time="2s"/>Does he have a car?
+Our teacher walks to school.<break time="2s"/>Does our teacher walk to school?
+%%%%%%%%%%%%%%%%%%%%%%%%
+027_past_did_you_02.mp3
+They play tennis after school.<break time="2s"/>Do they play tennis after school?<break time="2s"/>She plays tennis after school.<break time="2s"/>  Does she play tennis after school?
+They played tennis last week.<break time="2s"/>Did they play tennis last week?<break time="2s"/>She played tennis last week.<break time="2s"/> Did she play tennis last week?
+%%%%%%%%%%%%%%%%%%%%%%%%
+027_past_did_you_03.mp3
+Did you study science yeaterday?
+Yes, I did.
+No, I did not.
+No, I didn't.
+%%%%%%%%%%%%%%%%%%%%%%%%
+027_past_did_you_04.mp3
+You liked the movie.<break time="2s"/>Did you like the movie?
+They lived in Boston.<break time="2s"/>Did they live in Boston?
+She wrote a letter to him.<break time="2s"/>Did she write a letter to him?
+He had a car two years ago.<break time="2s"/>Did he have a car two years ago? �
+Your father went to Australia last year.<break time="2s"/> Did your father go to Australia last year?
+%%%%%%%%%%%%%%%%%%%%%%%%
+032_imperative_01.mp3
+Come here.
+Stand up.
+Have a good day.
+%%%%%%%%%%%%%%%%%%%%%%%%
+032_imperative_02.mp3
+Be quiet.
+Be careful.
+Be nice to others.
+%%%%%%%%%%%%%%%%%%%%%%%%
+032_imperative_03.mp3
+Stand  up, please.please.
+Please come here. <break time="2s"/>Come here, please.
+Be careful.
+Look at the blackboard.
+Clean your room right now.
+%%%%%%%%%%%%%%%%%%%%%%%%
+032_imperative_04.mp3
+Please write your name.
+Don't run here, please.
+Begin the game.
+Be kind to old people.
+%%%%%%%%%%%%%%%%%%%%%%%%
+032_imperative_05.mp3
+Run.<break time="3s"/>Don't run.
+Be quiet.<break time="3s"/>Don't be noisy.
+%%%%%%%%%%%%%%%%%%%%%%%%
+032_imperative_06.mp3
+Don't use your cell phone here.
+Don't be late.
+Please don't run. <break time="3s"/>Don't run, please.
+%%%%%%%%%%%%%%%%%%%%%%%%
+032_imperative_07.mp3
+Let's dance.
+Let's begin.
+Let's eat lunch.
+Let's go to the park.
+Let's play basketball after school.
+%%%%%%%%%%%%%%%%%%%%%%%%
+032_imperative_08.mp3
+Hi, Jane. Do you like sports?
+Not really, but I enjoy reading. How about you?
+I like tennis. It’s my favorite sport. Let's play tennis this weekend!
+That sounds fun, but I also want to read a new book. Let's read together after playing.
+Great idea! Let's meet at the park at 10 in the morning.
+Perfect! I'll bring the book.
+%%%%%%%%%%%%%%%%%%%%%%%%
+033_exclamatory_01.mp3
+This is a beautiful flower.
+What a beautiful flower this is!
+What a beautiful flower!
+They have nice cars.
+What nice cars they have!
+What nice cars!
+%%%%%%%%%%%%%%%%%%%%%%%%
+033_exclamatory_02.mp3
+Wha  a big house!
+What an interesting movie this is!
+What a big dog you have!
+%%%%%%%%%%%%%%%%%%%%%%%%
+033_exclamatory_03.mp3
+This flower is beautiful .
+How beautiful this flower is!
+How beautiful!
+She runs fast.
+How fast she runs!
+How fast!
+%%%%%%%%%%%%%%%%%%%%%%%%
+033_exclamatory_04.mp3
+How kind you are!
+How lucky we are!
+How beautiful that mountain is!
+How fast she speaks!
+%%%%%%%%%%%%%%%%%%%%%%%%
+033_exclamatory_05.mp3
+What a cute cat this is!
+How intereting this book is!
+What an old bike he has!
+%%%%%%%%%%%%%%%%%%%%%%%%
+033_exclamatory_06.mp3
+How lucky!
+How pretty!
+What a pretty dress!
+How big!
+What a big house!
+What beautiful fowers!
+%%%%%%%%%%%%%%%%%%%%%%%%
+033_exclamatory_07.mp3(対話dialogue)
+Look at this picture.
+Wow, a beautiful mountain.
+You see, it’s not a mountain, but a rock.
+A rock? What a big rock!
+Yes, and it changes its color through a day.
+ How strange!  But I want to see it someday.

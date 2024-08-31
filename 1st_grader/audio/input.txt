@@ -1,16 +1,10 @@
-Birds sing.
-Dogs swim.
-You have a nice car.
-I play the piano.
-They watch TV.
-We study English.
-I write a letter.
-They like music.
-Play. <break time="2s"/> Plays.<break time="2s"/>
-Drink. <break time="2s"/> Drinks.<break time="2s"/>
-Go. <break time="2s"/> Goes.<break time="2s"/>
-Teach. <break time="2s"/> Teaches.<break time="2s"/>
-wash. <break time="2s"/> Washes.<break time="2s"/>
-Watch. <break time="2s"/> Watches.<break time="2s"/>
-Have. <break time="2s"/> Has.<break time="2s"/>
-Study. <break time="2s"/> Studies.<break time="2s"/>
+go<break time="2s"/>went
+come<break time="2s"/>came
+eat<break time="2s"/>ate
+have<break time="2s"/>had
+make<break time="2s"/>made
+see<break time="2s"/>saw
+get<break time="2s"/>got
+speak<break time="2s"/>spoke
+take<break time="2s"/>took
+write<break time="2s"/>wrote
