@@ -27,7 +27,7 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
-\subtitle{発音--母音と子音--}
+\subtitle{発音--母音と子音・有声音と無声音--}
 \author{}
 \institute[]{}
 \date[]
@@ -42,6 +42,52 @@
 \thispagestyle{empty}
 \titlepage
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+\IfFileExists{./images/heatmap.pdf}{%
+ \includegraphics[width=\textwidth]{./images/heatmap.pdf}
+ }{\relax}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% T
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Today's Quiz}
+ \large
+\visible<1->{%
+これからアルファベットを5つ順番に読みあげます。
+聞こえたアルファベットを順番に小文字で書いてください。すると、ある単語になります。
+その意味を表すものを選んでください
+}
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_t.mp3}}
+
+\bigskip
+
+\centering
+
+\begin{tabular}{c@{　　　}c@{　　　}c@{　　　}c}
+\scalebox{6}{\twemoji{zebra}}&
+\scalebox{6}{\twemoji{tiger face}}&
+\scalebox{6}{\twemoji{lion}}&
+\scalebox{6}{\twemoji{T-Rex}}
+\\
+(a)&(b)&(c)&(d)
+\end{tabular}
+
+
+\bigskip
+
+\Huge
+
+\onslide<2->{t}%
+\onslide<3->{i}%
+\onslide<4->{g}%
+\onslide<5->{e}%
+\onslide<6->{r}%
+
+
+\large
+\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_t.mp3}}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{授業の流れ}
 \begin{frame}[plain]
@@ -50,56 +96,58 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{母音と子音}
+\subsection{母音と子音}
 \begin{frame}[plain]{母音と子音}
 \Large
 \begin{description}
- \item[母音: ] \onslide<1->{日本語の「あ、い、う、え、お」に近い音} 
- \item[子音: ] \onslide<2->{それ以外の音}
+ \item[母音: ] \onslide<2->{日本語の「あ、い、う、え、お」に近い音} 
+ \item[子音: ] \onslide<3->{それ以外の音}
 \end{description}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{母音字と子音字}
 \Large
 \begin{description}
- \item[母音字: ] \onslide<1->{アルファベットで「母音」をあらわす文字: }%
-               \onslide<2->{aeiou}
- \item[子音字: ] \onslide<3->{残りのアルファベット}
+ \item[母音字: ] \onslide<2->{アルファベットで「母音」をあらわす文字: }%
+               \onslide<3->{aeiou}
+ \item[子音字: ] \onslide<4->{残りのアルファベット}
 \end{description}
 
 \bigskip
 
 \Huge\centering
 \begin{tabular}{cccccccccc}
-\onslide<4->{\myEmph[5-]{BurntOrange}{a}}&
-\onslide<4->{b}&
-\onslide<4->{c}&
-\onslide<4->{d}&
-\onslide<4->{\myEmph[5-]{BurntOrange}{e}}&
-\onslide<4->{f}&
-\onslide<4->{g}&
-\onslide<4->{h}&
-\onslide<4->{\myEmph[5-]{BurntOrange}{i}}&
-\onslide<4->{j} \\
-\onslide<4->{k}&
-\onslide<4->{l}&
-\onslide<4->{m}&
-\onslide<4->{n}&
-\onslide<4->{\myEmph[5-]{BurntOrange}{o}}&
-\onslide<4->{p}&
-\onslide<4->{q}&
-\onslide<4->{r}&
-\onslide<4->{s}&
-\onslide<4->{t}\\
-\onslide<4->{\myEmph[5-]{BurntOrange}{u}}&
-\onslide<4->{v}&
-\onslide<4->{w}&
-\onslide<4->{x}&
-\onslide<4->{y}&
-\onslide<4->{z}&
+\onslide<5->{\myEmph[6-]{BurntOrange}{a}}&
+\onslide<5->{b}&
+\onslide<5->{c}&
+\onslide<5->{d}&
+\onslide<5->{\myEmph[6-]{BurntOrange}{e}}&
+\onslide<5->{f}&
+\onslide<5->{g}&
+\onslide<5->{h}&
+\onslide<5->{\myEmph[6-]{BurntOrange}{i}}&
+\onslide<5->{j} \\
+\onslide<5->{k}&
+\onslide<5->{l}&
+\onslide<5->{m}&
+\onslide<5->{n}&
+\onslide<5->{\myEmph[6-]{BurntOrange}{o}}&
+\onslide<5->{p}&
+\onslide<5->{q}&
+\onslide<5->{r}&
+\onslide<5->{s}&
+\onslide<5->{t}\\
+\onslide<5->{\myEmph[6-]{BurntOrange}{u}}&
+\onslide<5->{v}&
+\onslide<5->{w}&
+\onslide<5->{x}&
+\onslide<5->{y}&
+\onslide<5->{z}&
  & & &  \\
 \end{tabular}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{母音字と子音字}
 \begin{frame}[plain]{確認}
  \Large
 \begin{description}[　　　　　　　　]
@@ -261,15 +309,15 @@ b\myEmph[2-]{BurntOrange}{u}s
 \begin{frame}[plain]{確認}
 \Large
  \begin{enumerate}
-  \item 音
+  \item<1-> 音
         \begin{enumerate}
-	 \item 母音とはなんですか
-	 \item 子音とはなんですか
+	 \item<2-> 母音とはなんですか\hfill\visible<4->{日本語の「あいうえお」に近い音}
+	 \item<3-> 子音とはなんですか\hfill\visible<5->{母音以外の音}
 	\end{enumerate}
   \item 文字
         \begin{enumerate}
-	 \item 母音字とはなんですか
-	 \item 子音字とはなんですか
+	 \item<6-> 母音字とはなんですか\hfill\visible<7->{アルファベットで「母音」をあらわす文字: aeiou}
+	 \item<6-> 子音字とはなんですか\hfill\visible<8->{残りのアルファベット}
 	\end{enumerate}
  \end{enumerate}
 \end{frame}
