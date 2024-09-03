@@ -1,0 +1,213 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+001_there_is_01.mp3
+1. There ( are ) three high schools in our city.
+2. There ( is ) a new computer on the desk.
+3. There ( are ) two boys in the park.
+4. There ( is ) a cat by the tree now.
+5. There ( is ) a station near my house.
+<speak>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. There are three high schools in our city. <break time="2s"/>There are three high schools in our city.<break time="3s"/></p>
+<p>Number 2. There is a new computer on the desk. <break time="2s"/>There is a new computer on the desk.<break time="3s"/></p>
+<p>Number 3. There are two boys in the park. <break time="2s"/>There are two boys in the park.<break time="3s"/></p>
+<p>Number 4. There is a cat by the tree now. <break time="2s"/>There is a cat by the tree now.<break time="3s"/></p>
+<p>Number 5. There is a station near my house. <break time="2s"/>There is a station near my house.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  There are three high schools in our city. <break time="5s"/>There are three high schools in our city.<break time="3s"/></p>
+<p>Number 2.  There is a new computer on the desk. <break time="5s"/>There is a new computer on the desk.<break time="3s"/></p>
+<p>Number 3.  There are two boys in the park. <break time="5s"/>There are two boys in the park.<break time="3s"/></p>
+<p>Number 4.  There is a cat by the tree now. <break time="5s"/>There is a cat by the tree now.<break time="3s"/></p>
+<p>Number 5.  There is a station near my house. <break time="5s"/>There is a station near my house.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+%%%%%%%%%%%%%%%
+001_there_is_02.mp3
+1. There was a cat in the garden yesterday.
+2. There was a river behind the house.
+3. There were two big trees in the park.
+4. There were three pictures on the wall.
+<speak>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1.  There was a cat in the garden yesterday. <break time="2s"/> There was a cat in the garden yesterday.<break time="3s"/></p>
+<p>Number 2.  There was a river behind the house. <break time="2s"/> There was a river behind the house.<break time="3s"/></p>
+<p>Number 3.  There were two big trees in the park. <break time="2s"/> There were two big trees in the park.<break time="3s"/></p>
+<p>Number 4.  There were three pictures on the wall. <break time="2s"/> There were three pictures on the wall.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.   There was a cat in the garden yesterday. <break time="5s"/> There was a cat in the garden yesterday.<break time="3s"/></p>
+<p>Number 2.   There was a river behind the house. <break time="5s"/> There was a river behind the house.<break time="3s"/></p>
+<p>Number 3.   There were two big trees in the park. <break time="5s"/> There were two big trees in the park.<break time="3s"/></p>
+<p>Number 4.   There were three pictures on the wall. <break time="5s"/> There were three pictures on the wall.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+%%%%%%%%%%%%%%%%%%
+001_there_is_003.mp3
+<speak>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. There is not a pen on the table. <break time="2s"/>There is not a pen on the table.<break time="3s"/></p>
+<p>Number 2. There was not a cat in the garden yesterday. <break time="2s"/>There was not a cat in the garden yesterday.<break time="3s"/></p>
+<p>Number 3. There are not many cars on the road today. <break time="2s"/>There are not many cars on the road today.<break time="3s"/></p>
+<p>Number 4. There were not many clouds in the sky yesterday. <break time="2s"/>There were not many clouds in the sky yesterday.<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  There is not a pen on the table. <break time="5s"/>There is not a pen on the table.<break time="3s"/></p>
+<p>Number 2.  There was not a cat in the garden yesterday. <break time="5s"/>There was not a cat in the garden yesterday.<break time="3s"/></p>
+<p>Number 3.  There are not many cars on the road today. <break time="5s"/>There are not many cars on the road today.<break time="3s"/></p>
+<p>Number 4.  There were not many clouds in the sky yesterday. <break time="5s"/>There were not many clouds in the sky yesterday.<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%
+<speak>
+<p>Hello everyone. Please listen carefully as I read the example sentences.</p>
+<p><lang xml:lang="ja-JP">さあ、実際の音声によく耳をかたむけてください。それでは、始めます。</lang>Please listen carefully.</p>
+<p>Number 1. There are two American students in our class. <break time="2s"/>There are two American students in our class.<break time="3s"/></p>
+<p>Number 2. There was a church on the corner five years ago. <break time="2s"/>There was a church on the corner five years ago.<break time="3s"/></p>
+<p>Number 3. Is there a hospital near here? <break time="2s"/>Is there a hospital near here?<break time="3s"/></p>
+<p><lang xml:lang="ja-JP">さあ、いかがでしたか。こんどは、わたしのあとに続けて実際にリピートしてください。</lang>Please repeat after me.</p>
+<p>Number 1.  There are two American students in our class. <break time="5s"/>There are two American students in our class.<break time="3s"/></p>
+<p>Number 2.  There was a church on the corner five years ago. <break time="5s"/>There was a church on the corner five years ago.<break time="3s"/></p>
+<p>Number 3.  Is there a hospital near here? <break time="5s"/>Is there a hospital near here?<break time="3s"/></p>
+<p>Good job, everyone! That's all for our pronunciation practice.</p>
+</speak>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+005_was_ing_intro_01.mp3
+She is sleeping now.
+She was playing tennis two hours ago.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+005_was_ing_intro_02.mp3
+Bob was studying English last night.
+She is sleeping now.
+I was waiting for the train then.
+I was eating dinner with my family at that time.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+005_was_ing_intro_03.mp3
+He was playing soccer at that time.
+She was making a delicious dinner for us then.
+I was writing a letter to my friend at that time.
+They were swimming in the pool then.
+The dog was running in the yard at that time.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+005_was_ing_intro_04.mp3
+eat<break time="2s"/> eating
+play<break time="2s"/> playing
+go<break time="2s"/> going
+make<break time="2s"/> making
+write<break time="2s"/> writing
+swim<break time="2s"/> swimming
+run<break time="2s"/> running
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+005_was_ing_intro_05.mp3
+Bob was hungry.<break time="3s"/> Bob was not hungry.
+Jane was waiting for the train then.<break time="3s"/> Jane was not waiting for the train then.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+005_was_ing_intro_06.mp3
+Bob was hungry.<break time="3s"/>Was Bob hungry?
+Jane was waiting for the train then.<break time="3s"/>Was Jane waiting for the train then?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+005_was_ing_intro_07.mp3
+Bob was playing the violin this morning.<break time="3s"/>Bob was not playing the violin this morning.
+We were studying science at that time.<break time="3s"/>We were not studying science at that time.
+ He was walking in the park then.<break time="3s"/>Was he walking in the park then?<break time="3s"/>Yes, he was.<break time="2s"/>No, he was not.<break time="2s"/>No, he wasn't.
+4. She was swimming in the pool.<break time="3s"/>Was she seimming in the pool? <break time="3s"/>Yes, she was. <break time="2s"/> No, she was not.<break time="2s"/>No, she wasn't.
+5. The cats were sleeping then.<break time="3s"/>Were the cats sleeping then? <break time="3s"/> Yes, they were.<break time="2s"/> No, they were not.<break time="2s"/>No, they weren't.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+005_was_ing_intro_08.mp3
+What was she doing at that time?<break time="3s"/> She was doing homework.
+Where was he running?<break time="3s"/> In the park.
+Who was watching television?<break time="3s"/> John was.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+005_was_ing_intro_09.mp3
+What were you doing alast night?<break time="3s"/> I was studying history.
+What was your brother doing then? <break time="3s"/> He was cleaning his room.
+Who was playing the guitar? <break time="3s"/>Paul was.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_01.mp3
+I played tennis yesterday.
+I play tennis after school.
+I am going to play tennis tomorrow.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_02.mp3
+I am going to watch TV tonight.
+We are going to have a party this weekend.
+My father is going to visit Australia next month.
+They are going to climb the montain this summer.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_03.mp3
+ His mother is a teacher.<break time="3s"/> His mother is not a teacher.<break time="3s"/>  His mother isn't a teacher.
+The room is clean.<break time="3s"/> The room is not clean.<break time="3s"/>  The room isn't clean.
+You are busy.<break time="3s"/> You are not busy. <break time="3s"/> You aren't busy.
+They are students.<break time="3s"/> They are not students.<break time="3s"/>  They aren't students.
+I am a doctor.<break time="3s"/> I am not a doctor.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_04.mp3
+They are going to play tennis after school.
+They are not going to play tennis after school.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_05.mp3
+I am not going to cook dinner tonight.
+She is not going to visit her friend tomorrow.
+We are not going to go to the park today.
+They are not going to have a party this Friday.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_06.mp3
+They are going to visit France this summer.
+Are they going to visit France this summer?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_07.mp3
+Are you going to play tennis tomorrow?
+Are they going to watch a movie tonight?
+Is Bob going to read the book?
+Are  Bob and Jane going to have a party this weekend?
+Is she going to write a letter?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_08.mp3
+Is he going to study?.<break time="3s"/>Yes, he is..<break time="2s"/>No, he is not..<break time="2s"/>No, he's not..<break time="2s"/>No, he isn't.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_09.mp3
+Is she going to read the book?<break time="3s"/> Yes, she is.<break time="3s"/> No, she isn't.
+Is he going to cook dinner tonight?<break time="3s"/>Yes, he is<break time="3s"/>No, he isn't.
+Are they going to swim in the pool?<break time="3s"/> Yes, they are. <break time="3s"/>No, they aren't.
+Are you going to buy a new car?<break time="3s"/> Yes, I am.<break time="3s"/> No, I'm not.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_10.mp3
+You are going to buy a car.
+Are you going to buy a car?
+What are you going to buy?
+What are you going to study?
+What are you going to eat?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_11.mp3
+What is he going to eat for lunch?
+What is she going to read next?
+What are you going to buy at the store?
+What are you going to study for the exam?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_12.mp3
+What are you going to do?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_13.mp3
+What are you going to do?
+What is she going? to do
+What is he going to do?
+What are they going to do?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_14.mp3
+What are you going to do?<break time="3s"/> I am going to study math.
+What is he going to do?<break time="3s"/> He is going to cook dinner.
+What are they going to do?<break time="3s"/> They are going to swim in the river.
+What is she going to do?<break time="3s"/> She is going to run in the park.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_15.mp3
+Where is she going to play soccer?
+When are you going to start your homework?
+What time are you going to wake up tomorrow?
+How long is he going to stay in Tokyo?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+011_be_going_to_16.mp3
+Where is he going to meet his friends?
+When is she going to visit her grandparents?
+What time are youe going to start the meeting?
+How long are they going to study tonight?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
