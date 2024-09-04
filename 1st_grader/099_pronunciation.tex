@@ -43,51 +43,51 @@
 \titlepage
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]
-\IfFileExists{./images/heatmap.pdf}{%
- \includegraphics[width=\textwidth]{./images/heatmap.pdf}
- }{\relax}
-\end{frame}
+%\begin{frame}[plain]
+%\IfFileExists{./images/heatmap.pdf}{%
+% \includegraphics[width=\textwidth]{./images/heatmap.pdf}
+% }{\relax}
+%\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% T
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Today's Quiz}
- \large
-\visible<1->{%
-これからアルファベットを5つ順番に読みあげます。
-聞こえたアルファベットを順番に小文字で書いてください。すると、ある単語になります。
-その意味を表すものを選んでください
-}
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_t.mp3}}
-
-\bigskip
-
-\centering
-
-\begin{tabular}{c@{　　　}c@{　　　}c@{　　　}c}
-\scalebox{6}{\twemoji{zebra}}&
-\scalebox{6}{\twemoji{tiger face}}&
-\scalebox{6}{\twemoji{lion}}&
-\scalebox{6}{\twemoji{T-Rex}}
-\\
-(a)&(b)&(c)&(d)
-\end{tabular}
-
-
-\bigskip
-
-\Huge
-
-\onslide<2->{t}%
-\onslide<3->{i}%
-\onslide<4->{g}%
-\onslide<5->{e}%
-\onslide<6->{r}%
-
-
-\large
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_t.mp3}}
-\end{frame}
+%\begin{frame}[plain]{Today's Quiz}
+% \large
+%\visible<1->{%
+%これからアルファベットを5つ順番に読みあげます。
+%聞こえたアルファベットを順番に小文字で書いてください。すると、ある単語になります。
+%その意味を表すものを選んでください
+%}
+%\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_t.mp3}}
+%
+%\bigskip
+%
+%\centering
+%
+%\begin{tabular}{c@{　　　}c@{　　　}c@{　　　}c}
+%\scalebox{6}{\twemoji{zebra}}&
+%\scalebox{6}{\twemoji{tiger face}}&
+%\scalebox{6}{\twemoji{lion}}&
+%\scalebox{6}{\twemoji{T-Rex}}
+%\\
+%(a)&(b)&(c)&(d)
+%\end{tabular}
+%
+%
+%\bigskip
+%
+%\Huge
+%
+%\onslide<2->{t}%
+%\onslide<3->{i}%
+%\onslide<4->{g}%
+%\onslide<5->{e}%
+%\onslide<6->{r}%
+%
+%
+%\large
+%\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_t.mp3}}
+%\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{授業の流れ}
 \begin{frame}[plain]
@@ -368,5 +368,29 @@ b\myEmph[2-]{BurntOrange}{u}s
 \normalsize
 \mbox{}\hfill\myaudio{./audio/099_pronunciation_02.mp3}
 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ}
+ \begin{block}{この単元で学んだこと}
+  \begin{enumerate}
+  \item<1-> 母音と子音
+        \begin{enumerate}
+	 \item<2-> 母音とはなんですか\hfill\visible<4->{日本語の「あいうえお」に近い音}
+	 \item<3-> 子音とはなんですか\hfill\visible<5->{母音以外の音}
+	\end{enumerate}
+  \item 母音字と子音字
+        \begin{enumerate}
+	 \item<6-> 母音字とはなんですか\hfill\visible<7->{アルファベットで「母音」をあらわす文字: aeiou}
+	 \item<6-> 子音字とはなんですか\hfill\visible<8->{残りのアルファベット}
+	\end{enumerate}
+   \item 有声音と無声音
+        \begin{enumerate}
+	 \item<9-> 有声音はなんですか\hfill\visible<10->{声帯がふるえる音}
+	 \item<9-> 無声音とはなんですか\hfill\visible<11->{声帯がふるえない音}
+	 \item<9-> 有声音と無声音の見わけ方\hfill\visible<12->{喉に手を当てる / 両耳をふさぐ}
+	\end{enumerate}
+
+ \end{enumerate}    
+ \end{block}
 \end{frame}
 \end{document}

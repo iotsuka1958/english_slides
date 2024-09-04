@@ -1,0 +1,3 @@
+file '099_pronunciation_01.mp3'
+file 'silent.mp3'
+file '099_pronunciation_02.mp3'
