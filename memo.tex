@@ -1,0 +1,1682 @@
+\documentclass[book,jafontscale=0.9247]{jlreq}
+%\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 欧文TTF/OTFフォントを利用するにはfontspec.styをロードする必要あり
+%% 和文TTF/OTFフォントを利用するにはluatexja-fontspec.styをロードする必要あり
+%% luatexja-fontspec.styはfontspec.styをないぶてきにロードする
+%% lualatex-ja-preset.sty は luatexja-fontspec.styをロードする
+%% つまり次の1行でluatexja-fontspec.sty, fontspec.styも自動的にロードされる
+\usepackage[no-math,deluxe,expert,yu-win10]{luatexja-preset}
+%%%%
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{pxrubrica}
+\usepackage[default]{fontsetup}
+%%%% tabular環境の改良版
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+%%%% ハイパーリンク
+%%%% hyperref.sty は preamble の最後で読み込む
+\usepackage{hyperref}
+\usepackage{xurl}
+\hypersetup{
+  bookmarks=true,
+  bookmarksnumbered=true,
+  pdfauthor={iotsuka1958}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{tcolorbox}
+\newtcolorbox[auto counter, number within=section]{pabox}[2][]{%
+colback=yellow!5,fonttitle=\bfseries,
+title=Question~\thetcbcounter: #2,#1}
+\tcbuselibrary{skins,breakable}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{enumitem}%%[label=\textbf{\arabic*}]
+\usepackage{ascmac}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{luatexja-otf}
+\ltjsetparameter{jacharrange={-2}}
+%%%%%%%%%%
+\usepackage{longtable}
+\usepackage{datetime}
+\usepackage{marvosym,utfsym,circledsteps}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\rotatebox{0}{%
+%\makebox(75mm,75mm)[c]{% 枠を書くときは \framebox にする
+\framebox(75mm,75mm)[c]{% 枠を書くときは \framebox にする
+\small\gtfamily\bfseries%
+\begin{minipage}[t]{70mm}
+\textsf{マイク/カメラ
+ON}\hspace{20pt}\,\scalebox{1.7320508}{\ComputerMouse}
+
+\smallskip
+
+みなさん、こんにちは。
+%\textsf{EduOp}ちばの英語の授業にようこそ
+音声は届いていますか
+
+さて、みなさん、いかがおすごしですか。
+きょうはかなり暑くなっています。
+こまめな水分補給や休憩をしてください。
+
+それでは、気を楽にして、
+参加してください。
+
+
+
+\smallskip
+
+\textsf{カメラ OFF}\hspace{10pt}\scalebox{1.7320508}{\ComputerMouse}
+
+\end{minipage}
+}}
+
+\bigskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\rotatebox{0}{%
+%\framebox(75mm,75mm)[c]{% 枠を書くときは \framebox にする
+\makebox(75mm,75mm)[c]{% 枠を書くときは \framebox にする
+\small\gtfamily\bfseries%
+\begin{minipage}[t]{70mm}
+
+
+
+\begin{itemize}
+ \item 母音と子音
+ \item 有声音と無声音
+\end{itemize}
+について学習しました。
+
+
+\bigskip
+
+ひさしぶりの授業ということで、
+正直なところ、「疲れたー」という人もいるのではないでしょうか。
+
+おたがい、健康に留意して、\\日々を楽しく過ごしていきましょう
+
+\bigskip
+
+That's all for today.
+Have a good day.\\
+みなさん、ごきげんよう
+
+\bigskip
+
+\,\textsf{録画停止}\hspace{20pt}\,\,\,\raisebox{2pt}{\rotatebox{90}{\usym{1F57D}}}\,\,$\rightarrow$\,\,{\Circled{\scriptsize\textgt{
+通話を終了し全員を退出させる　}}}
+
+
+\end{minipage}
+}}
+
+%%%%%%%%%%%%%%
+\newpage
+
+きょうは授業に入る前に確認したいことがあります。
+
+みなさんがえでゅおぷちばの授業に参加するときは、
+Google classroomの各教科のペーから、Meetの参加ボタンをクリックまたはタップしてはいっているとおもいます。
+
+このMeetの青いボタンがある教科のページのいちばんうえに、
+「授業」というタブがあるとおもいます。
+いまそのページがみられる人はみてください。
+
+この各教科の最初のページ、Meetの青いボタンがあるページです。
+このページの一番上に、
+左から順番に「ストリーム」「授業」「めんばー」「採点」というタブがあるとおもいます。
+
+この「授業」というタブを選んでもらうと、2024-09-05のように日付ごとに
+セクションにわかれています。
+いまできる人は204-09-05というところを開いてみてください。
+そうすると、
+英語の場合は、
+その日の授業で何をやったかということとあわせて、授業で用いたスライドや音声ファイルがのっています。
+
+また、見逃した人があとでみられるように授業の動画ものっています。
+
+もう知っているよとか、もう利用しているという人もいるとおもいますが、
+あらたに参加してくれた人でもし知らなかった人は、この授業というタブのところを、
+毎日確認する習慣をつけるようにお願いしいます。
+
+教科によっては、授業で使うプリントをあらかじめ掲載しています。
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\scriptsize
+\begin{longtblr}[caption={Enflish Slides}]{
+  width = { 0.95\linewidth },
+  colspec= {l},
+  row{2-5,8-12,15,36-37,40} = {bg = yellow!50},
+  rowhead=1,
+  hline{1,Z} = { 0.08em }, % 表の最上と最下に太さ 0.08em の横罫線
+  hline{2} = { 0.05em } % 表の1行目の下の横罫線
+}
+files\\
+\url{./1st_grader/001_alphabet.tex}\\
+\url{./1st_grader/002_sv.tex}\\
+\url{./1st_grader/003_be.tex}\\
+\url{./1st_grader/004_verb.tex}\\
+\url{./1st_grader/004_verb_object.tex}\\
+\url{./1st_grader/005_pronoun.tex}\\
+\url{./1st_grader/005_singular_plural.tex}\\
+\url{./1st_grader/006_negative_be.tex}\\
+\url{./1st_grader/007_negative_do.tex}\\
+\url{./1st_grader/008_question_be.tex}\\
+\url{./1st_grader/009_answer_be.tex}\\
+\url{./1st_grader/010_question_do.tex}\\
+\url{./1st_grader/011_answer_do.tex}\\
+\url{./1st_grader/012_can.tex}\\
+\url{./1st_grader/013_who.tex}\\
+\url{./1st_grader/014_when.tex}\\
+\url{./1st_grader/015_where.tex}\\
+\url{./1st_grader/016_which.tex}\\
+\url{./1st_grader/017_how.tex}\\
+\url{./1st_grader/018_why.tex}\\
+\url{./1st_grader/019_what.tex}\\
+\url{./1st_grader/020_whose.tex}\\
+\url{./1st_grader/021_is_ing_intro.tex}\\
+\url{./1st_grader/022_is_ing_negative.tex}\\
+\url{./1st_grader/023_is_ing_question.tex}\\
+\url{./1st_grader/024_past_be.tex}\\
+\url{./1st_grader/025_past_do.tex}\\
+\url{./1st_grader/026_past_didnot.tex}\\
+\url{./1st_grader/027_past_did_you.tex}\\
+\url{./1st_grader/032_imperative.tex}\\
+\url{./1st_grader/033_exclamatory.tex}\\
+\\
+\url{./1st_grader/099_pronunciation.tex}\\
+\\
+\url{./1st_grader/999quiz.tex}\\
+\url{./1st_grader/999quiz_full_vesion.tex}\\
+\\
+\\
+%\url{./1st_grader/myPreamble4Slide.tex}\\
+%\url{./1st_grader/notes/notes_1st.tex}\\
+%\url{./1st_grader/notes/notes_quiz.tex}\\
+\url{./2nd_grader/001_there_is.tex}\\
+\url{./2nd_grader/005_was_ing_intro.tex}\\
+\url{./2nd_grader/011_be_going_to.tex}\\
+\url{./2nd_grader/012_will.tex}\\
+\url{./2nd_grader/013_must.tex}\\
+\url{./2nd_grader/014_have_to.tex}\\
+\url{./2nd_grader/020_part_of_speech.tex}\\
+\url{./2nd_grader/021_when.tex}\\
+\url{./2nd_grader/022_if.tex}\\
+\url{./2nd_grader/023_because.tex}\\
+\url{./2nd_grader/031_infinitive_intro.tex}\\
+\url{./2nd_grader/032_infinitive_noun.tex}\\
+\url{./2nd_grader/033_infinitive_adj.tex}\\
+\url{./2nd_grader/034_infinitive_adv.tex}\\
+\url{./2nd_grader/035_wh_to_do.tex}\\
+\url{./2nd_grader/036_gerund.tex}\\
+\url{./2nd_grader/041_as_as.tex}\\
+\url{./2nd_grader/042_er.tex}\\
+\url{./2nd_grader/043_est.tex}\\
+\url{./2nd_grader/044_more_most.tex}\\
+\url{./2nd_grader/045_better_best.tex}\\
+\url{./2nd_grader/051_passive.tex}\\
+\\
+\\
+\url{./3rd_grader/011_have_pp_intro.tex}\\
+\url{./3rd_grader/012_have_pp_keizoku.tex}\\
+\url{./3rd_grader/013_have_pp_keiken.tex}\\
+\url{./3rd_grader/014_have_pp_kekka.tex}\\
+\url{./3rd_grader/021_N_ing.tex}\\
+\url{./3rd_grader/022_N_pp.tex}\\
+\url{./3rd_grader/031_N_wh_V.tex}\\
+\url{./3rd_grader/032_N_wh_SV.tex}\\
+%\url{./beamer_template/template.tex}\\
+%\url{./header.tex}\\
+%\url{./opening/wait.tex}\\
+%\url{./orientation/header.tex}\\
+%\url{./orientation/note.tex}\\
+%\url{./orientation/note_2.tex}\\
+\\
+\\
+\url{./orientation/orientation.tex}\\
+\url{./orientation/orientation_2.tex}\\
+%\url{./orientation/tmp-pdfcrop-98683.tex}\\
+\\
+\url{./pronunciation/notes/notes_pronunciation.tex}\\
+\url{./pronunciation/vowel.tex}\\
+\url{./pronunciation_consonant.tex}\\
+\\
+\url{./3rd_grader/041_mood_intro.tex}\\
+\url{./3rd_grader/042_mood_i_wish.tex}\\
+\url{./3rd_grader/043_mood_if_i_were.tex}\\
+\url{./3rd_grader/044_mood_if_i_had.tex}\\
+\\
+\\
+\\
+\url{sv_svc_svo.tex}\\
+\url{svoo.tex}\\
+\url{svoc.tex}\\
+\\
+\url{v_that}\\
+\url{indirect_questions.tex}\\
+\\
+\url{want_to_etc.tex}\\
+\url{it_for_to.tex}
+\end{longtblr}
+\normalsize
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%
+\newpage
+\mbox{}\hfill\mmddyyyydate\today \xxivtime
+
+\bigskip
+
+プログラミング教育の講座で来庁した市野敬介(NPO企業教育研究会)氏から提供された資料を供覧します。
+
+IBMと提携した企業教育研究会主催の「高校生向けIT学習教室」に係る資料です。
+
+
+
+%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{center}
+\rotatebox{90}{\scalebox{1.4}{\includegraphics{./heatmap-crop.pdf}}}
+\end{center}
+%%%%%%%%%%%%%%%%%%%
+%\newpage\scriptsize\enlargethispage{20mm}
+%\begingroup
+%\fontsize{12.0pt}{14.4pt}\selectfont
+%\begin{longtable}{lrrrrrrrr}
+%\toprule
+%都道府県 & 小\_国語 & 順位\_sk & 小\_算数 & 順位\_ss & 中\_国語 & 順位\_ck & 中\_数学 & 順位\_cs \\ 
+%\midrule\addlinespace[2.5pt]
+%北海道 & 66.77 & 36 & 60.58 & 42 & 57.56 & 23 & 51.04 & 29 \\ 
+%青森 & 69.66 & 5 & 64.37 & 10 & 56.50 & 37 & 50.39 & 33 \\ 
+%岩手 & 68.94 & 11 & 59.41 & 46 & 57.22 & 27 & 48.17 & 45 \\ 
+%宮城 & 66.13 & 41 & 59.49 & 44 & 57.43 & 25 & 51.12 & 28 \\ 
+%秋田 & 72.81 & 1 & 65.18 & 5 & 60.14 & 5 & 52.62 & 17 \\ 
+%山形 & 65.92 & 42 & 59.42 & 45 & 57.53 & 24 & 50.98 & 31 \\ 
+%福島 & 66.49 & 39 & 59.50 & 43 & 57.29 & 26 & 48.35 & 43 \\ 
+%茨城 & 67.46 & 24 & 62.30 & 28 & 58.75 & 13 & 51.31 & 27 \\ 
+%栃木 & 68.15 & 16 & 62.33 & 27 & 58.70 & 14 & 52.73 & 13 \\ 
+%群馬 & 67.35 & 25 & 61.55 & 38 & 59.00 & 10 & 52.65 & 15 \\ 
+%埼玉 & 69.06 & 9 & 63.77 & 15 & 59.12 & 8 & 53.46 & 11 \\ 
+%千葉 & 67.04 & 34 & 63.21 & 21 & 56.88 & 32 & 51.02 & 30 \\ 
+%東京 & 70.22 & 4 & 68.10 & 1 & 60.94 & 2 & 56.93 & 2 \\ 
+%神奈川 & 66.87 & 35 & 64.01 & 12 & 58.87 & 11 & 54.30 & 9 \\ 
+%新潟 & 67.50 & 23 & 61.06 & 40 & 56.77 & 34 & 49.52 & 40 \\ 
+%富山 & 68.79 & 12 & 63.97 & 13 & 60.33 & 3 & 56.09 & 4 \\ 
+%石川 & 71.67 & 2 & 66.73 & 4 & 62.03 & 1 & 57.46 & 1 \\ 
+%福井 & 70.99 & 3 & 67.43 & 2 & 60.24 & 4 & 56.54 & 3 \\ 
+%山梨 & 67.56 & 22 & 62.14 & 31 & 58.24 & 16 & 51.47 & 24 \\ 
+%長野 & 67.08 & 33 & 62.20 & 30 & 58.18 & 17 & 51.43 & 25 \\ 
+%岐阜 & 65.11 & 47 & 61.41 & 39 & 59.65 & 6 & 54.41 & 8 \\ 
+%静岡 & 67.19 & 27 & 61.60 & 37 & 59.04 & 9 & 55.32 & 5 \\ 
+%愛知 & 65.21 & 46 & 63.74 & 17 & 58.47 & 15 & 54.90 & 6 \\ 
+%三重 & 67.13 & 31 & 62.27 & 29 & 56.96 & 31 & 52.67 & 14 \\ 
+%滋賀 & 65.28 & 45 & 61.67 & 35 & 55.79 & 43 & 50.51 & 32 \\ 
+%京都 & 69.64 & 6 & 66.82 & 3 & 59.24 & 7 & 52.53 & 18 \\ 
+%大阪 & 65.89 & 43 & 62.56 & 24 & 57.08 & 29 & 51.38 & 26 \\ 
+%兵庫 & 67.63 & 20 & 64.94 & 7 & 57.76 & 20 & 54.73 & 7 \\ 
+%奈良 & 66.58 & 37 & 63.35 & 19 & 56.03 & 40 & 51.59 & 21 \\ 
+%和歌山 & 67.83 & 19 & 64.03 & 11 & 54.72 & 45 & 49.56 & 39 \\ 
+%鳥取 & 67.98 & 17 & 62.88 & 23 & 56.59 & 35 & 50.18 & 35 \\ 
+%島根 & 66.54 & 38 & 60.68 & 41 & 56.54 & 36 & 48.91 & 42 \\ 
+%岡山 & 67.90 & 18 & 61.86 & 33 & 58.77 & 12 & 52.62 & 16 \\ 
+%広島 & 69.34 & 8 & 63.96 & 14 & 58.04 & 18 & 51.57 & 22 \\ 
+%山口 & 68.30 & 15 & 63.63 & 18 & 57.81 & 19 & 52.29 & 19 \\ 
+%徳島 & 67.61 & 21 & 65.00 & 6 & 57.20 & 28 & 53.87 & 10 \\ 
+%香川 & 67.14 & 30 & 64.46 & 9 & 56.84 & 33 & 53.07 & 12 \\ 
+%愛媛 & 67.32 & 26 & 64.47 & 8 & 56.42 & 38 & 52.27 & 20 \\ 
+%高知 & 68.46 & 14 & 63.26 & 20 & 55.96 & 42 & 49.89 & 37 \\ 
+%福岡 & 69.04 & 10 & 63.75 & 16 & 57.74 & 21 & 51.50 & 23 \\ 
+%佐賀 & 65.83 & 44 & 61.63 & 36 & 54.72 & 44 & 47.78 & 46 \\ 
+%長崎 & 67.14 & 29 & 61.74 & 34 & 56.19 & 39 & 49.34 & 41 \\ 
+%熊本 & 67.09 & 32 & 62.09 & 32 & 57.03 & 30 & 49.60 & 38 \\ 
+%大分 & 69.38 & 7 & 62.99 & 22 & 57.59 & 22 & 50.35 & 34 \\ 
+%宮崎 & 67.17 & 28 & 62.50 & 25 & 54.26 & 46 & 48.32 & 44 \\ 
+%鹿児島 & 68.69 & 13 & 62.49 & 26 & 56.02 & 41 & 50.04 & 36 \\ 
+%沖縄 & 66.37 & 40 & 58.08 & 47 & 53.26 & 47 & 43.25 & 47 \\ 
+%\bottomrule
+%\end{longtable}
+%\endgroup
+%
+%%%%%%%%%%%%%%%%%%%%%
+\newpage\normalsize
+
+\mbox{}\hfill\mmddyyyydate\today \xxivtime
+
+\noindent{\gtfamily\large 全国学力・学習状況の結果について}
+
+\bigskip
+
+令和6年度の全国学力・学習状況調査の結果が発表されました。
+例年のとおり、都道府県別平均正答率は整数に丸められています。%\footnote{何年か前の説明では、都道府県の過度な競争をあおらないためとされていました。}。
+
+ただし、国立教育政策研究所のサイト(\url{https://www.nier.go.jp/24chousakekkahoukoku/})では、
+各都道府県ごとに、各教科とも、正答数ごとの児童生徒の数値が公表されています。
+このファイルをひろってくれば各都道府県の正答率を任意の精度で求めることができます。
+
+ということで、公立学校を対象として、実際に小数点以下まで求めてみました。
+さまざまな資源を投入した調査の結果は今後の教育政策に有効に活用することが重要であり、
+「過度な競争を避ける」ことを大前提としたうえで、できるだけオープンにすべきだと考えています。
+
+\bigskip
+
+\bigskip
+
+ちなみに千葉県教育委員会はwebサイトで、今回の結果について以下のようにまとめています。
+\begin{tcolorbox}
+本県の平均正答率は、小学校においては、国語・算数とも全国平均と比較して同等の状況、中学校においては、国語・数学とも全国平均と比較して1ポイント程度低い状況です
+
+\url{}https://www.pref.chiba.lg.jp/kyouiku/shidou/press/2021/zenkokugakute/r3gakutesokuhou.html
+\end{tcolorbox}
+
+\bigskip
+
+いささかのんきだといわれてもしかたないのではないか。
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage\enlargethispage{20mm}
+
+\vspace*{-15mm}
+
+{\gtfamily\Large 全国学力・学習状況調査結果(2024年) ---政令市を含む公立学校---}
+
+\scriptsize
+\begin{longtblr}{
+colspec = {lrrrrrrrr},
+row{13} = {bg = yellow!50}
+}
+\toprule
+都道府県 & 小\_国 & 順位 & 小\_算 & 順位 & 中\_国 & 順位 & 中\_数 & 順位 \\ 
+\midrule\addlinespace[2.5pt]
+北海道 & 66.7742 & 36 & 60.5832 & 42 & 57.5615 & 23 & 51.0428 & 29 \\ 
+青森 & 69.6634 & 5 & 64.3700 & 10 & 56.4964 & 37 & 50.3871 & 33 \\ 
+岩手 & 68.9444 & 11 & 59.4129 & 46 & 57.2227 & 27 & 48.1718 & 45 \\ 
+宮城 & 66.1253 & 41 & 59.4852 & 44 & 57.4315 & 25 & 51.1202 & 28 \\ 
+秋田 & 72.8079 & 1 & 65.1792 & 5 & 60.1359 & 5 & 52.6228 & 17 \\ 
+山形 & 65.9162 & 42 & 59.4201 & 45 & 57.5277 & 24 & 50.9781 & 31 \\ 
+福島 & 66.4865 & 39 & 59.5005 & 43 & 57.2865 & 26 & 48.3526 & 43 \\ 
+茨城 & 67.4641 & 24 & 62.3007 & 28 & 58.7541 & 13 & 51.3127 & 27 \\ 
+栃木 & 68.1500 & 16 & 62.3264 & 27 & 58.6980 & 14 & 52.7277 & 13 \\ 
+群馬 & 67.3486 & 25 & 61.5469 & 38 & 59.0003 & 10 & 52.6472 & 15 \\ 
+埼玉 & 69.0597 & 9 & 63.7725 & 15 & 59.1198 & 8 & 53.4605 & 11 \\ 
+千葉 & 67.0400 & 34 & 63.2102 & 21 & 56.8789 & 32 & 51.0159 & 30 \\ 
+東京 & 70.2185 & 4 & 68.0985 & 1 & 60.9364 & 2 & 56.9305 & 2 \\ 
+神奈川 & 66.8693 & 35 & 64.0079 & 12 & 58.8667 & 11 & 54.2963 & 9 \\ 
+新潟 & 67.4963 & 23 & 61.0644 & 40 & 56.7663 & 34 & 49.5200 & 40 \\ 
+富山 & 68.7895 & 12 & 63.9706 & 13 & 60.3322 & 3 & 56.0891 & 4 \\ 
+石川 & 71.6662 & 2 & 66.7277 & 4 & 62.0304 & 1 & 57.4621 & 1 \\ 
+福井 & 70.9899 & 3 & 67.4276 & 2 & 60.2392 & 4 & 56.5425 & 3 \\ 
+山梨 & 67.5589 & 22 & 62.1399 & 31 & 58.2355 & 16 & 51.4683 & 24 \\ 
+長野 & 67.0846 & 33 & 62.2030 & 30 & 58.1763 & 17 & 51.4293 & 25 \\ 
+岐阜 & 65.1091 & 47 & 61.4114 & 39 & 59.6534 & 6 & 54.4060 & 8 \\ 
+静岡 & 67.1909 & 27 & 61.5967 & 37 & 59.0383 & 9 & 55.3238 & 5 \\ 
+愛知 & 65.2087 & 46 & 63.7400 & 17 & 58.4746 & 15 & 54.8955 & 6 \\ 
+三重 & 67.1306 & 31 & 62.2726 & 29 & 56.9648 & 31 & 52.6677 & 14 \\ 
+滋賀 & 65.2807 & 45 & 61.6663 & 35 & 55.7892 & 43 & 50.5141 & 32 \\ 
+京都 & 69.6432 & 6 & 66.8192 & 3 & 59.2379 & 7 & 52.5341 & 18 \\ 
+大阪 & 65.8904 & 43 & 62.5561 & 24 & 57.0822 & 29 & 51.3776 & 26 \\ 
+兵庫 & 67.6311 & 20 & 64.9399 & 7 & 57.7579 & 20 & 54.7341 & 7 \\ 
+奈良 & 66.5806 & 37 & 63.3549 & 19 & 56.0331 & 40 & 51.5946 & 21 \\ 
+和歌山 & 67.8302 & 19 & 64.0319 & 11 & 54.7174 & 45 & 49.5595 & 39 \\ 
+鳥取 & 67.9788 & 17 & 62.8773 & 23 & 56.5923 & 35 & 50.1799 & 35 \\ 
+島根 & 66.5405 & 38 & 60.6750 & 41 & 56.5392 & 36 & 48.9124 & 42 \\ 
+岡山 & 67.8984 & 18 & 61.8560 & 33 & 58.7685 & 12 & 52.6242 & 16 \\ 
+広島 & 69.3387 & 8 & 63.9648 & 14 & 58.0366 & 18 & 51.5658 & 22 \\ 
+山口 & 68.2960 & 15 & 63.6306 & 18 & 57.8074 & 19 & 52.2897 & 19 \\ 
+徳島 & 67.6105 & 21 & 65.0007 & 6 & 57.1981 & 28 & 53.8717 & 10 \\ 
+香川 & 67.1430 & 30 & 64.4554 & 9 & 56.8415 & 33 & 53.0731 & 12 \\ 
+愛媛 & 67.3179 & 26 & 64.4658 & 8 & 56.4188 & 38 & 52.2689 & 20 \\ 
+高知 & 68.4588 & 14 & 63.2620 & 20 & 55.9613 & 42 & 49.8935 & 37 \\ 
+福岡 & 69.0414 & 10 & 63.7471 & 16 & 57.7385 & 21 & 51.4995 & 23 \\ 
+佐賀 & 65.8262 & 44 & 61.6258 & 36 & 54.7229 & 44 & 47.7794 & 46 \\ 
+長崎 & 67.1431 & 29 & 61.7360 & 34 & 56.1913 & 39 & 49.3399 & 41 \\ 
+熊本 & 67.0863 & 32 & 62.0873 & 32 & 57.0349 & 30 & 49.5991 & 38 \\ 
+大分 & 69.3812 & 7 & 62.9933 & 22 & 57.5944 & 22 & 50.3514 & 34 \\ 
+宮崎 & 67.1671 & 28 & 62.4959 & 25 & 54.2560 & 46 & 48.3236 & 44 \\ 
+鹿児島 & 68.6851 & 13 & 62.4851 & 26 & 56.0184 & 41 & 50.0434 & 36 \\ 
+沖縄 & 66.3690 & 40 & 58.0789 & 47 & 53.2553 & 47 & 43.2518 & 47 \\
+\midrule
+全国平均&67.65662&&63.40519&&58.06014&&52.54769\\
+\bottomrule
+\end{longtblr}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\newpage\thispagestyle{empty}
+
+\begin{center}
+\LARGE 
+「千葉教育」について
+\end{center}
+
+
+
+\begin{itembox}[l]{編集部からの依頼内容}
+
+\setlength{\parindent}{1\zw}
+例年、ICT教育について毎号2ページを割当がある。
+\bigskip
+
+{\gtfamily 情報活用支援班で
+\begin{itemize}
+ \item 先進自治体・先進校の紹介
+ \item 執筆候補となる有識者等の推薦
+\end{itemize}
+について協力することとなっている。
+
+
+小学校、中学校、高等学校、特別支援学校などの学校種と地域性を考慮して、候補を選定する。
+班員に適切な候補を挙げてもらうとよい。
+}。
+\end{itembox}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage\large
+
+\begin{center}
+事務引継書
+\end{center}
+
+\bigskip
+\bigskip
+
+\begin{flushright}
+令和6年4月1日
+\end{flushright}
+
+\bigskip
+\bigskip
+
+\noindent\mbox{}\hspace{1\zw}千葉県総合教育センター所長\hspace{1\zw}様
+
+\bigskip
+\bigskip
+\bigskip
+
+\begin{flushright}
+\begin{tabular}{ll@{}}
+前任者職氏名&研究指導主事 大塚一朗\\
+後任者職氏名&
+\end{tabular}
+\end{flushright}
+
+\bigskip
+\bigskip
+\bigskip
+
+次のとおり事務引継をしました。
+
+\bigskip
+\bigskip
+\bigskip
+
+\begin{tabular}{rlp{18\zw}}
+1&事務の概要&
+\begin{tabular}[t]{@{}rl}
+(1)&ICT教育の研修に関すること
+\end{tabular}
+\\[25pt]
+2&懸案事項&なし\\[25pt]
+3&危機管理に関する事項　　&
+\begin{tabular}[t]{@{}rl}
+(1)&個人情報の管理に関すること\\
+(2)&情報セキュリティに関すること
+\end{tabular}
+\\[30pt]
+4&簿冊名&行政文書分類表のとおり\\[25pt]
+5&その他必要な事項&なし
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage\normalsize
+
+\begin{flushright}
+令和6年3月8日
+\end{flushright}
+
+\bigskip
+
+\bigskip
+
+\begin{flushleft}
+東京大学文学部学生支援チーム学部担当者　様
+\end{flushleft}
+
+\bigskip
+
+
+\bigskip
+
+\begin{center}\Large
+成績証明書交付願
+\end{center}
+
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\begin{tabular}{rll}
+1&氏名：&\ruby{大}{オオ}\ruby{塚}{ツカ} \ruby{一}{イチ}\ruby{朗}{ロウ}\\
+2&生年月日：&昭和33年7月19日\\
+3&郵便番号：&260--0021\\
+&現住所：&千葉市中央区新宿二丁目7番5号DC. FORT千葉中央1410号\\
+&電話番号：&080--3739--0216\\
+4&昼間の連絡先\\
+&電話番号：&080--3739--0216\\
+& E-mailアドレス：&smiley.at.circus@gmail.com\\
+5&入学年月：&昭和52年4月入学\\
+&文学部への進学年月：&昭和54年4月文学部進学\\
+&卒業年月：&昭和58年3月卒業\\
+6&所属専修課程：&英語学英米文学専修課程\\
+7&学生証番号：&覚えていません\\
+8&使用目的：&千葉県への講師登録のため\\
+9&提出先：&千葉県教育委員会\\
+10&証明書の種類と必要枚数：&和文成績証明書（後期課程）1枚
+\end{tabular}
+
+%%%%%%%%%%%
+\newpage
+
+\fbox{%
+\begin{minipage}{.5\textwidth}
+〒113--0033\\
+東京都文京区本郷7--3--1\\
+東京大学文学部学生支援チーム学部担当者様
+\end{minipage}
+}
+
+\fbox{%
+\begin{minipage}{.75\textwidth}
+〒260--0021\\
+千葉市中央区新宿二丁目7番5号DC. FORT千葉中央1410号\\
+大塚 一朗　行
+\end{minipage}
+}
+
+\fbox{%
+\begin{minipage}{.75\textwidth}
+〒260--0021\\
+千葉市中央区新宿二丁目7番5号DC. FORT千葉中央1410号\\
+大塚 一朗
+\end{minipage}
+}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\includegraphics[width=.5\textwidth]{QR_github.png}
+\url{https://ohno.github.io/github-qr/}
+%%%%%%%%%%%%%%%
+\newpage
+
+\begin{flushleft}
+千葉東税務署確定申告担当者　様
+\end{flushleft}
+
+
+\bigskip
+
+
+お世話になります。
+
+このたび、別添のとおり、確定申告書類を提出します。
+
+併せて、ひとつ御連絡します。
+
+このたび、納付にあたって「国税クレジットカードお支払サイト」を利用しました。
+
+本来、申告納税額が9,600円のところ、誤って15,100円をクレジットカード納付してしまいました。
+その結果、5,500円多く納入していることとなります。
+
+還付等の手続きでお手数をおかけすることとなり、申し訳ございません。
+
+具体的に、当方で手続きすることがあれば御教示ください。
+
+\bigskip
+
+\begin{flushright}
+千葉市中央区新宿2--7--5\\
+DC. FORT千葉中央1410\\
+大塚一朗\\
+TEL: 080.3739.0216
+\end{flushright}
+
+
+\if0
+\vfill
+
+\paragraph{■誤った経緯} \mbox{}
+
+普通徴収にて支払済みの介護保険料53,250円を社会保険料に計上するのを忘れて計算して
+15,100円を納入したもの。
+
+その後、上記介護保険料を計上し、精査したところ納入すべき額が9,600円と判明した。
+\fi      
+
+%%%%%%%%%%%%%%%
+\newpage
+\paragraph{様式5 \,\,請求者のマイナンバーがわかるものの写し} \mbox{}
+
+\bigskip
+
+\includegraphics[width=.667\textwidth]{my_number_02-crop.pdf}
+
+
+\vspace*{20mm}
+
+\paragraph{様式6 \,\,請求者の本人確認書類の写し} \mbox{}
+
+\bigskip
+
+
+\includegraphics[width=.667\textwidth]{my_number_01-crop.pdf}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\begin{minipage}{40mm}
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=yellow!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=blue!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=pink!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=olive!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[black] (0,0) circle (1.45cm);
+    % テキストの配置
+    \node[text=white] at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+\end{minipage}
+%%%%%%%%%%%%%%
+\begin{minipage}{40mm}
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=yellow!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=blue!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=pink!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=olive!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[black] (0,0) circle (1.45cm);
+    % テキストの配置
+    \node[text=white] at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+%%%%%%%%%%%%%%
+\end{minipage}
+%%%%
+\begin{minipage}{40mm}
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=yellow!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=blue!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=pink!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[fill=olive!30] (0,0) circle (1.45cm);
+    \draw (0,0) circle (1.45cm);
+    % テキストの配置
+    \node at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+
+\setlength{\fboxsep}{10pt}\framebox{%
+\reflectbox{%
+\begin{tikzpicture}
+    % 円の描画と塗りつぶし
+    \fill[black] (0,0) circle (1.45cm);
+    % テキストの配置
+    \node[text=white] at (0,0) {{\scalebox{2.5}{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}}};
+\end{tikzpicture}%
+}%
+}
+\end{minipage}
+%%%%%%%%%%%%%%
+
+%{\fontspec{TeXGyreAdventor-Bold} iotsuka}
+
+%{\fontspec{TeXGyreBonum-Bold} iotsuka}
+
+\scalebox{6}{%
+{\fontspec{TeXGyreChorus-MediumItalic} iotsuka}
+}
+
+
+
+%{\fontspec{TeXGyreCursor-Bold} iotsuka}
+
+%{\fontspec{TeXGyreHeros-Bold} iotsuka}
+
+%{\fontspec{TeXGyrePagella-Bold} iotsuka}
+
+%{\fontspec{TeXGyrePagellaMath-Regular} iotsuka}
+
+%{\fontspec{TeXGyreSchola-Bold} iotsuka}
+
+%{\fontspec{TeXGyreTermesX Bold} iotsuka}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\setlength{\fboxsep}{20pt}\framebox{%
+\reflectbox{\includegraphics{tom_jerry01.png}}
+}
+
+\bigskip
+
+\setlength{\fboxsep}{20pt}\framebox{%
+\reflectbox{\includegraphics{tom_jerry02.png}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\setlength{\fboxsep}{20pt}\framebox{%
+\reflectbox{\includegraphics{chanpachi01.png}}
+}
+
+\bigskip
+
+\setlength{\fboxsep}{20pt}\framebox{%
+\reflectbox{\includegraphics{chanpachi02.png}}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+竈門禰󠄀豆子
+🀇🀏🀐🀘🀙🀡🀀🀁🀂🀃🀆🀅🀄︎
+𠮟る \UTF{53F1}
+\UTF{9127}
+
+\UTF{20B9F}
+土屋さん / 圡屋さん / 𡈽屋さん
+
+Ελληνικά
+
+{\jfontspec{Batang} A quick brown fox jumps over the lazy dog.\UTF{c544}아뇨하세요}
+
+- 森鷗外と内田百閒が髙島屋の近くの𠮷野家で牛丼を食べました
+
+\UTF{6589}\UTF{E0100}\UTF{2665f}\UTF{658e}\UTF{9f4b}\UTF{9f4a}\UTF{9f50}
+
+⚔ 藤 \UTF{7c50}\UTF{7c58}\UTF{4568}\UTF{8542}\UTF{8645} いろんなサイトウさん）
+
+- Julius Cæsarは\UTF{0152}sop の寓話を読んだかな（合字）
+
+- Стравинский «Жар-птица»（キリル文字）
+
+- {\fontspec{Courier New} ألف ليلة وليلة（アラビア語）}
+
+- 아뇨하세요 아뇨하세요（ハングル）\UTF{c544}
+%\uc544\ub1e8\ud558\uc138\uc694
+
+-  𐏃O𐎥E（楔形文字）
+
+- \UTF{2603}ア\UTF{3099}れー
+
+　\UTF{1f0cf}\UTF{1f0a1}\UTF{1F0BE}　\UTF{1F005}\UTF{1F004}\UTF{1f017}
+
+
+%%%%%%%%%%%%%%%
+\newpage
+
+
+\newtcolorbox{faqbox}[1]{%
+  enhanced,
+  arc=0mm,
+  colframe=black,
+  colback=white,
+  colbacktitle=black,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title=#1,
+  before={\vspace{25pt}\par\parindent=0pt}, % ボックス前のスペースを広く
+  after={\vspace{10pt}\par} % ボックス後のスペースを追加
+}
+
+\begin{center}\Large
+スライドについて
+\end{center}
+
+
+
+\begin{faqbox}{Q1: 背景色と文字色について}
+  スライドの地の色と文字の色はどのように選ぶべきですか？
+\end{faqbox}
+
+\textbf{A1:}
+\begin{itemize}
+  \item 暗い部屋では、黒っぽい背景に白っぽい文字が見やすいです
+  \item 明るい部屋では、白い背景に黒文字が適しています
+%  \item ただし、テレビカメラは純白の背景を好まないため、注意が必要です。
+\end{itemize}
+
+\begin{faqbox}{Q2: フォントについて}
+  どのフォントが最適ですか？
+\end{faqbox}
+
+\textbf{A2:}
+\begin{itemize}
+  \item スライドで使用するフォントは、ゴシック系のフォントが一般的です。小さい部屋では太字の明朝体も使用できます
+  \item Windowsを使用する場合は、メイリオなどのフォントが適しています
+  \item Macを使用する場合は、ヒラギノ角ゴシックなどがおすすめです
+  \item PowerPointのデフォルトは游ゴシックですが、遠くから見る場合は細いかもしれません
+  \item 公的な場や学術系のプレゼンテーションでは、ポップ体の使用は避けるべきです。個人的な場合は好みに従うことができますが、品のあるプレゼンテーションには不向きです\footnote{{\jfontspec{HGSoeiKakupoptai} こういうフォントは公的な場では不向きということです。}}
+\end{itemize}
+
+\begin{faqbox}{Q3: スライド作成時のヒントについて}
+  スライドの作成時に注意すべきポイントは何ですか？
+\end{faqbox}
+
+\textbf{A3:}
+\begin{itemize}
+  \item スライドにプレゼンターの話す内容をそのまま書き込まないでください。聞き手は声を聞く前に黙読してしまい、退屈になります
+  \item 「文章 $<$ 箇条書き $<$ 図」の順で情報が伝わりやすいです。図を使用して、話を支えましょう
+  \item 箇条書きを使用する場合、それを読み上げるのではなく、別の言葉で説明を行いましょう
+  \item アニメーションは過度に使わず、聞き手の内容理解に直接寄与する場合に限り使用しましょう
+\end{itemize}
+
+\begin{faqbox}{Q4: 配布資料について}
+  配布資料についてどのように扱えば良いですか？
+\end{faqbox}
+
+\textbf{A4:}
+\begin{itemize}
+  \item スライドと同じ紙を最初に配布すると、聞き手はスライドを見ず、プレゼンターの話を聞かないで、紙を読んでしまいがちです
+  \item スライドと同じ配布資料を提供する場合は、最初に渡さないで、最後に渡すことを検討しましょう
+  \item 資料を配布するのであれば、スライドそのままではなく、別のつくりにするほうが有効です。別のつくりであれば、最初に渡してもだいじょうぶです
+\end{itemize}
+
+\begin{faqbox}{Q5: 最後のスライドについて}
+  最後のスライドに何を表示すべきですか？
+\end{faqbox}
+
+\textbf{A5:}
+\begin{itemize}
+  \item 「ご清聴ありがとうございました」という形式的な情報のないスライドは避けましょう
+  \item 最後のスライドは、プレゼンテーションのまとめとし、聞き手に印象を与えやすくしましょう
+\end{itemize}
+
+\begin{faqbox}{Q6: その他}
+  その他のヒントはありますか？
+\end{faqbox}
+
+\textbf{A6:}
+\begin{itemize}
+  \item 他人の良いプレゼンテーションを視ることが有効です。例えばTED（https://www.ted.com）をおすすめします
+  \item 図書としては、「ノンデザイナーズ・デザインブック(マイナビ出版)」、「プレゼンテーションzen(ピアソン桐原)」はとてもためになります
+\end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{abstract}
+uplatexからlualatexへの移行を考えます。
+あわせてドキュメントクラスをjsarticleからjlreqにします。
+
+いろいろとひっかか
+りそうなところがありそうなので、
+メモしておきます。
+\end{abstract}
+
+\begin{enumerate}%[label=\textbf{例\arabic*}]
+\item oyoyo
+\item piyopiyo
+\end{enumerate}
+
+\section{editor}
+
+\subsection{emacs}
+
+\section{Fonts}
+
+\subsection{欧文フォント}
+A quick brown fox jumps over the lazy dog. 0123
+
+\subsubsection{Variou fonts}
+
+{\fontspec{TeXGyreAdventor-Regular} A quick brown fox jumps over the lazy dog.}
+
+{\fontspec{TeXGyreBonum-Regular} A quick brown fox jumps over the lazy dog.}
+
+{\fontspec{TeXGyreChorus-MediumItalic} A quick brown fox jumps over the lazy dog.}
+
+{\fontspec{TeXGyreCursor-Regular} A quick brown fox jumps over the lazy dog.}
+
+{\fontspec{TeXGyreHeros-Regular} A quick brown fox jumps over the lazy dog.}
+
+{\fontspec{TeXGyrePagella-Regular} A quick brown fox jumps over the lazy dog.}
+
+{\fontspec{TeXGyrePagellaMath-Regular} The quick brown fox jumps over the lazy dog.}
+
+{\fontspec{TeXGyreSchola-Regular} A quick brown fox jumps over the lazy dog.}
+
+{\fontspec{TeXGyreTermes-Regular} A quick brown fox jumps over the lazy dog.}
+
+
+\subsubsection{series}
+{The quick brown fox jumps over the lazy dog.}
+
+{\bfseries The quick brown fox jumps over the lazy dog.}
+
+{\sffamily The quick brown fox jumps over the lazy dog.}
+
+{\bfseries\sffamily The quick brown fox jumps over the lazy dog.}
+
+
+
+\subsection{和文フォント}
+
+
+
+
+{\jfontspec{ud digi kyokasho n-r} UD教科書体N--R：これはどんな字体かな123}
+{\fontspec{ud digi kyokasho n-r} 123}
+
+{\jfontspec{HaranoAjiMincho-Regular} \ruby{原}{はら}の味明朝：これはどんな字体かな123}
+{\fontspec{HaranoAjiMincho-Regular} 123}
+
+{\jfontspec{MSMincho} MS明朝：これはどんな字体かな123}
+{\fontspec{MSMincho} 123}
+
+{\jfontspec{YuMincho-Regular} \ruby{游明朝}{ゆう|みん|ちょう}：これはどんな字体かな123}
+{\fontspec{YuMincho-Regular} 123}
+
+{\jfontspec{IPAexMincho} IPA明朝：これはどんな字体かな123}
+{\fontspec{IPAexMincho} 123}
+
+{\jfontspec{HaranoAjiGothic-Regular} 原の味ゴシック：これはどんな字体かな123}
+{\fontspec{HaranoAjiGothic-Regular} 123}
+
+{\jfontspec{MS Gothic} MSゴシック：これはどんな字体かな123}
+{\fontspec{MS Gothic} 123}
+
+{\jfontspec{YuGothic-Regular} 游ゴシック：これはどんな字体かな123}
+{\fontspec{YuGothic-Regular} 123}
+
+{\jfontspec{IPAexGothic} IPAゴシック：これはどんな字体かな123}
+{\fontspec{IPAexGothic} 123}
+
+{\jfontspec{MEIRYO} メイリオ：これはどんな字体かな123}
+{\fontspec{MEIRYO} 123}
+
+{\gtfamily あいうABC123}
+
+{\gtfamily\bfseries あいうABC123}
+
+{\sffamily あいうABC123}
+
+{\sffamily\bfseries あいうABC123}
+
+123ABC
+
+{\sffamily 123ABC}
+
+{\bfseries\sffamily 123ABC}
+
+{\bfseries 123ABC}
+
+{\rmfamily 123ABC}{\ttfamily 123ABC}{\itshape 12BC3ABC}{\scshape abc}
+\textsc{abc}
+\textsc{Small Capital}
+
+\emph{123ABC}
+
+fiction
+
+{\fontspec{Iwona-Regular} Piyopiyoこのように和文フォントは変わりません}
+
+{\fontspec{TeXGyreChorus-MediumItalic} これは Zapf Chancery フォントで書かれた文です。}
+
+%%%%%%%%%%%%%%%
+\section{unicode}
+
+¿But aren't Kafka's Schloß and Æsop's Œuvres
+often naïve vis-à-vis the dæmonic phœnix's official rôle
+in fluffy soufflés?
+
+竈門禰豆子
+
+\subsection{下の横棒が長い「吉」}
+
+\UTF{2603}
+
+Unicodeでどちらも直接入力できます。
+
+Unicode番号で指定するなら、
+吉は\texttt{\textbackslash{}UTF\symbol{123}5409\symbol{125}}、
+\UTF{20BB7}は\texttt{\backslash{}UTF\{{}20BB7\}{}}。
+
+CID番号で指定するなら、
+吉は\texttt{\textbackslash{}CID\symbol{123}1634\symbol{125}}、
+\UTF{20BB7}は\texttt{\textbackslash{}CID\symbol{123}13706\symbol{125}}。
+
+
+\symbol{64}\symbol{"40}\UTF{40}\CID{33}@\texttt{@}\verb|@|
+
+ABCDEFGH
+
+{\fontspec{Times New Roman} ABCDEFGH}
+
+ＡＢＣＤＥＦＧＨ
+
+\CID{790}\CID{791}\CID{792}\CID{793}\CID{794}\CID{795}\CID{796}\CID{797}
+
+
+\CID{34}\CID{35}\CID{36}\CID{37}\CID{38}\CID{39}\CID{40}\CID{41}
+
+
+\UTF{41}\UTF{42}\UTF{43}\UTF{44}\UTF{45}\UTF{46}\UTF{47}\UTF{48}
+
+\symbol{64}\symbol{"40}あ\texttt{@}\verb|@|
+\bigskip
+
+\begin{tblr}{
+    hline{1,Z} = { 0.08em },
+    hline{2} = { 0.04em },
+    colspec = {lll}
+  }
+入力方法&出力&メモ\\
+Unicodeで入力します&ﾘBﾟｷ&ただしエディタ上は化けています\\
+\texttt{\backslash{}UTF\{{}20BB7\}{}}&\UTF{20BB7}&Unicode番号で指定\\
+\texttt{\backslash{}symbol{\{}"20BB7\}{}}&\symbol{"20BB7}&これでもいける
+ \\
+\texttt{\backslash{}CID\{{}13706\}{}}&\CID{13706}&CID番号で指定
+\end{tblr}
+
+\bigskip
+
+\mbox{}
+
+\subsection{葛}
+
+「葛」も「\CID{1481}{}」もUnicode番号はU$+$845B。
+でもCID番号は別々に振られてます。
+
+
+\bigskip
+
+\begin{tblr}{
+    hline{1,Z} = { 0.08em },
+    hline{2} = { 0.04em },
+    colspec = {lll}
+  }
+入力方法&出力&メモ\\
+Unicodeで入力します&葛&エディタ上で化けません\\
+\texttt{\backslash{}UTF\{{}845B\}{}}&\UTF{845B}&Unicode番号で指定すると
+ こっち\\
+\texttt{\backslash{}symbol{\{}"845B\}{}}&\symbol{"845B}&\\
+\texttt{葛\backslash{}symbol{\{}"E0101\}{}}&葛
+ \symbol{"E0101}&\texttt{\backslash{}UTF\{{}845B\}{}}にIVS\footnote{Ide
+ ographic Variation Sequence/Selector}という枝番をつけてもいける\\
+\texttt{葛\backslash{}symbol{\{}"E0100\}{}}&葛\symbol{"E0100}&枝番を変え
+ るとこうなる\\
+\texttt{\backslash{}CID\{{}7652\}{}}&\CID{7652}&CID番号で指定& \\
+\texttt{\backslash{}CID\{{}1481\}{}}&\CID{1481}&CID番号で指定& \\
+\end{tblr}
+
+
+
+
+
+
+
+
+
+
+
+Location: Москва, Ц 
+ентральный административный округ,
+ Москва, ЦФО, РФ 
+
+
+
+
+\section{url}
+
+\url{https://qiita.com/nozma/items/21c56c7319e4fefceb79}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{表}
+
+\subsection{普通の表}
+
+
+\begin{tblr}{
+    width = { 0.85\linewidth },
+%    hline{1,Z} = { 0.08em },
+%    hline{3} = { 0.05em },
+%    hline{2} = {3-4}{ 0.04em },
+%    vline{4} = { dashed },
+    colspec = { clX[1,l]X[1,l] },
+    column{1} = { valign = h, font = {\sffamily} },
+    row{even} = { bg = blue8 },
+    % column{1} = { bg = {} },
+    row{1,2} = { halign = c, font = {\bfseries\sffamily}, bg = gray6, fg = white },
+    cell{1}{1} = { r = 2, c = 1 }{ halign = c, valign = m }, % 島嶼
+    cell{1}{2} = { r = 2, c = 1 }{ halign = c, valign = m }, % 地方
+    cell{1}{3} = { r = 1, c = 2 }{ halign = c }, % 都道府県
+    cell{4}{1} = { r = 5, c = 1 }{ halign = c} % 本州
+  }
+  島嶼   & 地方               & 都道府県                 & 都道府県                                         \\
+  島嶼   & 地方               & 政令指定都市あり         & 政令指定都市なし                                 \\
+  北海道 & 北海道地方         & 北海道                   &                                                  \\
+  本州   & 東北地方           & 宮城県                   & 青森県、岩手県、秋田県、山形県、福島県           \\
+  本州   & 関東地方           & 埼玉県、千葉県、神奈川県 & 茨城県、栃木県、群馬県、東京都                   \\
+  本州   & 中部地方           & 新潟県、静岡県、愛知県   & 富山県、石川県、福井県、山梨県、長野県、岐阜県   \\
+  本州   & 近畿地方           & 京都府、大阪府、兵庫県   & 三重県、滋賀県、奈良県、和歌山県                 \\
+  本州   & 中国地方           & 岡山県、広島県           & 鳥取県、島根県、山口県                           \\
+  四国   & 四国地方           &                          & 徳島県、香川県、愛媛県、高知県                   \\
+  九州   & {九州・\\沖縄地方} & 福岡県、熊本県           & 佐賀県、長崎県、大分県、宮崎県、鹿児島県、沖縄県
+\end{tblr}
+
+
+\newpage
+
+
+\setcounter{page}{1}
+%\subsection*{令和5年度桜号}
+\DefTblrTemplate{contfoot-text}{normal}{次ページに続く}
+\SetTblrTemplate{contfoot-text}{normal}
+\DefTblrTemplate{conthead-text}{normal}{（続き）}
+\SetTblrTemplate{conthead-text}{normal}
+%%%%%%%%%%%%
+\begin{longtblr}[caption={「千葉教育」令和5年度桜号}]{
+  width = { 0.95\linewidth },
+  colspec= {lX},
+  rowhead=1,
+  hline{1,Z} = { 0.08em }, % 表の最上と最下に太さ 0.08em の横罫線
+  hline{2} = { 0.05em } % 表の1行目の下の横罫線
+}
+箇所&意見\\
+目次&p.38の「発信！特別支援教育」のタイトルが「\kenten{発}\kenten{達}障害教育における\ldots{}」となっているが、実際のページでは「\kenten{知}\kenten{的}障害教育における\ldots{}」となっている\\
+p.7右段下から3行目&「チーム学校を創りの方策は」とあるが、日本語として破綻していないか\\
+p.8右段4行目から&「9年間を見通した教育課程を編成しているわけではない」とあるが、このように公言してだいじょうぶなのか（大きなお世話だが、この執筆者、地元で怒られないか心配）\\
+p.8右段11行目から&名称は「小中一貫」だが、実際の形態は「小中連携教育」ということになる---とあって、とても正直だとはおもうが、ひとごとながらやはり心配\\
+p.10右段下あたり&「生徒\kenten{他}」とあるが、この「他」に違和感。「生徒」ではいけないのか。「他」を付した理由がよくわからない\\
+p.13右段まんなかあたり&「校長\kenten{先生}」とあるが、職名に重ねて「先生」は違和感（まあ気持ちはわかるけれど）\\
+p.19左段下から5行目あたり&「おいしかった」\ldots{}「美味しかった」とある（前半は子供の発言で後半は地の文だから、説明はつくけれど）\\
+p.21右段下から5行目あたり&「保育の問題は、外からは見えない苦労がたくさんある」とあるが、まあわからなくもないが主語と述語がねじれている\\
+p.22の2人目の報告&ぱっと読むと、「長期研修の研究報告」とはおもえない\\
+p.31右段下から9行目&「AI」はとちゅうで行分割しないのが通常\\
+同じ個所&引用先について、社名としては「東洋経済新報社」、雑誌名としては「週刊東洋経済」、「AI時代の子育ての教科書」は2023年11月14日号の特集の名称---ということを踏まえ整理したいところ。とはいえ、執筆者との調整を考えると、まあそのままでもいいとはおもう \\
+p.33右段まんなかあたり&「8月には」とあるが、後々のことを考えると「何年の8月か」明記しておいたほうがよくないか\\
+p.35&「理数教育拠点校のポスター」というキャプションが、ここだけ上についている\\
+p.38&「発信！特別支援教育」のタイトルが「\kenten{知}\kenten{的}障害教育における\ldots{}」となっているが、
+目次では「\kenten{発}\kenten{達}障害教育における\ldots{}」となっている（再掲）\\
+p.38左段まんなかあたり&
+（以下、授業改善アシストという。）とあるが、（以下、\kenten[f]{「}授業改善アシスト\kenten[f]{」}という。）と表記するのが通常ではないか\\
+p.39&このページはやけにルビを振った個所がめだつ。例えば、「\ruby{郷土愛}{きょう|ど|あい}]、「\ruby{寄贈}{き|ぞう}」、「\ruby{特異的}{とく|い|てき}」などにルビが必要か
+\end{longtblr}
+
+\newpage
+
+\begin{tblr}{|X[2,l]|X[3,l]|X[1,r]|X[r]|}
+\hline
+Alpha & Beta & Gamma & Delta \\
+\hline
+\end{tblr}
+
+
+\begin{longtblr}[caption={piyopiyo}]{colspec={lX},rowhead=1}
+\toprule
+箇所&意見\\
+\midrule
+p.1目次&
+【連載・県立{学}校の今】とあるが、
+実際のページでは【連載・県立{高}校の今】となっている\\
+\addlinespace
+p.8左段の第2段落&
+「{あ}り方」と「{在}り方」が混在\\
+\addlinespace
+p.9左段第1段落&
+「アンケートを募った」とあるが、違和感。「意見を募る」とはいうが、「アンケートを募る」とはいわないのではないか。一般には「アンケートを実施する」ないし「アンケートを取る」ではないか\\
+\addlinespace
+p.10左段5行目&
+「濫觴」は、さすがに難解すぎないか。せめて「{濫觴}{らんしょう}」とルビはふるべき\\
+\addlinespace
+p.11右段20行目以降&
+人事に関する話が続く。教職員の任用に関する教育委員会への意見具申は学校運営協議会の役割のひとつではあるが、機微な話題なので生涯学習課、教育総務課、教職員課はいやがるのではないか\\
+p.12左段第3段落&
+「次世代の教育環境や人材育成を俯瞰した先進的なビジョンを持つことが重要」とあるが、「俯瞰した」に違和感。「教育環境を俯瞰する」「人材育成を俯瞰する」とはいわないのではいか。「次世代の教育環境や人材育成に対する先進的な展望を持つことが重要」くらいでいい\\
+\addlinespace
+p.12右段18行目&
+「役目を果たしている」とあるが、「誰が役目を果たしているのか」、主語がよくわからない\\
+\addlinespace
+p.12右段27行目&
+「次代を支える職業人」とあるが、内容的にそれでいいのか。たしかに職業人にも「ベテラン職業人」と「次代を支える職業人」がいるだろうが、この文脈では違和感がある。これだと「ベテラン職業人」は招へいできないことになるがそれでいいのか。ここは「地域を支える職業人」とすべきではないか\\
+\addlinespace
+p.14左段13行目&
+「私は{この}「松戸でいちばんいい学校をめざして」という言葉が大好きである」とある。画像にある表現を受けて「この」といっているのだろうが、読者はとまどうとおもう\\
+\addlinespace
+p.14右段16行目&
+「家庭科教諭の先生」はくどい\\
+\addlinespace
+p.16左段6行目&
+「触させる」とあるが、「触{れ}させる」ではないか\\
+\addlinespace
+p20--1
+上段の第2段落&
+「用務員」という表現がでてくる。日常的には「用務員」が使われているかもしれないが、紙においては「学校技能員」としなくていいか\\
+\addlinespace
+p20--2
+4行目&
+「言い放たれた」という表現がでてくるが、少し乱暴な響きがあります。そう発言した子供が悪いような印象につながる\\
+\addlinespace
+p.24いちばん上&
+「数投運動」って、専門用語??\\
+\addlinespace
+p.29右段の下から4行目&
+改段落であるなら1字下げが必要\\
+\bottomrule
+\end{longtblr}
+
+
+\newpage
+
+\tikzset{terminal/.style={
+                      % The shape:
+                      rounded rectangle,
+                      minimum size=6mm,
+                      % The rest
+                      very thick,draw=black!50,
+                      top color=white,bottom color=black!20,
+                      font=\ttfamily}}
+
+\usetikzlibrary {calc,positioning,shapes.misc}
+\begin{tikzpicture}[node distance=5mm,
+                    text height=1.5ex,text depth=.25ex]
+  \node (dot)   [terminal]                {.};
+  \node (digit) [terminal,right=of dot]   {digit};
+  \node (E)     [terminal,right=of digit] {E};
+
+  \draw [help lines] let \p1 = (dot.base),
+                         \p2 = (digit.base),
+                         \p3 = (E.base)
+                     in (-.5,\y1) -- (.5,\y1)
+                        (.7,\y2) -- (2.25,\y2)
+                        (2.4,\y3) -- (3.5,\y3);
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}[auto,>=latex, thick, scale=.5]
+\node (P) {$P$};
+\node (B) [right of=P] {$B$};
+\node (A) [below of=P] {$A$};
+\node (C) [below of=B] {$C$};
+\node (P1) [node distance=1.4cm, left of=P, above of=P] {$\hat{P}$};
+\draw[->] (P) to node {$f$} (B);
+\draw[->] (P) to node [swap] {$g$} (A);
+\draw[->] (A) to node [swap] {$f$} (C);
+\draw[->] (B) to node {$g$} (C);
+\draw[->, bend right] (P1) to node [swap] {$\hat{g}$} (A);
+\draw[->, bend left] (P1) to node {$\hat{f}$} (B);
+\draw[->, dashed] (P1) to node {$k$} (P);
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[>=latex, thick, scale=2]
+\node (P) {$P$};
+\node (B) [right of=P] {$B$};
+\node (A) [below of=P] {$A$};
+\node (C) [below of=B] {$C$};
+\node (P1) [node distance=1.4cm, left of=P, above of=P] {$\hat{P}$};
+\draw[->] (P) to node {$f$} (B);
+\draw[->] (P) to node [swap] {$g$} (A);
+\draw[->] (A) to node [swap] {$f$} (C);
+\draw[->] (B) to node {$g$} (C);
+\draw[->, bend right] (P1) to node [swap] {$\hat{g}$} (A);
+\draw[->, bend left] (P1) to node {$\hat{f}$} (B);
+\draw[->, dashed] (P1) to node {$k$} (P);
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=.5]
+\draw[very thick] (0,0) circle (2cm);%時計の外周
+\foreach \angle / \label in 
+  {0/3, 30/2, 60/1, 90/12, 120/11, 150/10, 180/9, 210/8, 240/7, 270/6, 300/5, 330/4} 
+  { 
+   \draw (\angle:1.8cm) -- (\angle:2cm); 
+   \node at (\angle:1.5cm) {\textsf{\label}}; 
+  } 
+\foreach \angle in {0,90,180,270} 
+   \draw[thick] (\angle:1.7cm) -- (\angle:2cm); 
+\draw[line width=3pt, cap=round] (0,0) -- (145:0.8cm);%短針
+\draw[line width=3pt, cap=round] (0,0) -- (30:1.2cm);%長針
+\end{tikzpicture}%
+
+\begin{tikzpicture}
+\draw[very thick] (0,0) circle (2cm);%時計の外周
+\foreach \angle / \label in 
+  {0/3, 30/2, 60/1, 90/12, 120/11, 150/10, 180/9, 210/8, 240/7, 270/6, 300/5, 330/4} 
+  { 
+   \draw (\angle:1.8cm) -- (\angle:2cm); 
+   \node at (\angle:1.5cm) {\textsf{\label}}; 
+  } 
+\foreach \angle in {0,90,180,270} 
+   \draw[thick] (\angle:1.7cm) -- (\angle:2cm); 
+\draw[line width=3pt, cap=round] (0,0) -- (145:0.8cm);%短針
+\draw[line width=3pt, cap=round] (0,0) -- (30:1.2cm);%長針
+\end{tikzpicture}%
+
+%%%%%%%%%%%%%%
+\newpage
+ \setcounter{page}{1}
+ \addtocounter{footnote}{-4}
+\begin{abstract}
+切り分けのために、
+pdf\_page\_splitter.shとファイル名変更のためのscript.awkを作成しました。
+（というのはおおげさで、それぞれ数行程度のかんたんなものです。）
+
+
+おおもとのpdfファイルができあがっているという前提です。
+
+大まかな使いかたは以下のとおりです。
+\end{abstract}
+
+\section*{切り分け}
+
+
+高校の情報が格納されているhighschool.pdf\footnote{おおもとのファイル名は半角英数字だけにしておくほうが無難です。}というファイルがあるとします。
+
+このファイルは121ページあり、それぞれのページに各高校の情報が格納されています。
+
+highschool.pdfがあるフォルダからコマンドプロンプトを開いて
+\begin{screen}
+\begin{verbatim}
+pdf_page_splitter.sh highschool.pdf
+\end{verbatim}
+\end{screen}
+とします。
+
+これで、おおもとのpdfファイルから拡張子`.pdf'をとりのぞいたhighschoolというフォルダが自動的に作成されます。
+そしてそのフォルダ中に各ページを切り分けた121個の
+pdfファイルが自動的に作成されます。
+
+各ファイルは、順番に
+highschool\_001.pdf,
+highschool\_002.pdf,
+highschool\_003.pdf, \ldots
+highschool\_121.pdf
+となります。
+
+命名規則は
+\begin{quote}
+`おおもとのファイル名'\_3桁の数字.pdf
+\end{quote}
+です\footnote{%
+もともとのファイル名がkashiwa.pdfであれば、
+kashiwaというフォルダにkashiwa\_001.pdf, kashiwa\_002.pdfみたいになるわけです。}。
+
+
+\section*{ファイル名変更}
+ファイル名に具体的な学校名をいれたいのであれば
+\begin{screen}
+\begin{verbatim}
+hishschool_001,千葉
+highschool_002,千葉女子
+highschool_003,千葉東
+highschool_004,千葉商業\hspace{10pt}以下省略
+\end{verbatim}
+\end{screen}
+というファイルbase\_data.csvを作成します。
+
+つぎに
+\begin{screen}
+\begin{verbatim}
+awk -f script.awk base_data.csv | nkf -s > rename.sh
+rename.sh
+\end{verbatim}
+\end{screen}
+とすれば、ファイル名が学校名になったpdfがページ数の数だけできます。
+
+具体的には、千葉.pdf, 千葉女子.pdf, 千葉東.pdf, 千葉商業.pdf\ldots{}みたいに121個のファイル名が書き換えられます。
+
+
+なお、ファイル名を学校名にするのはいいとして、001千葉.pdfのように数字を振っておくほうがソートするときなど、後々の使い勝手はいいとおもう。その場合は先ほどのcsvファイルに数字をいれておけばいい。
+ただし、どういう数字を使うかは要検討。
+
+
+\section*{スクリプトの中身}
+
+\begin{tcolorbox}[title=pdf\_page\_splitter.sh]
+\begin{verbatim}
+#!/bin/bash
+for x in *.pdf; do
+    output=${x%.pdf}
+    mkdir -p "./${output}"
+    pdfseparate "$x" "./${output}/${output}_%03d.pdf"
+done
+\end{verbatim}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=script.awk]
+\begin{verbatim}
+BEGIN {
+    FS = ","
+    print "#!/bin/bash"
+}
+{
+    printf("mv ./%s.pdf ./%s.pdf \n", $1, $2)
+}
+\end{verbatim}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=rename.sh（これはscript.awkから自動的にできあがるもの）]
+\begin{verbatim}
+#!/bin/bash
+mv ./highschool_001.pdf ./千葉.pdf 
+mv ./highschool_002.pdf ./千葉女子q.pdf 
+mv ./highschool_003.pdf ./千葉東.pdf 
+mv ./highschool_004.pdf ./千葉商業.pdf \end{verbatim}
+\end{tcolorbox}
+
+\end{document}
