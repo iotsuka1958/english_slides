@@ -375,20 +375,24 @@ She is singing a song now.
 We are doing homework now.
 Our cat is sleeping on the bed now.
 %%%%%%%%%%%%%%%%%%%%%%%%
-021_is_ing_intro_03.mp3
+021_is_ing_intro_03.mp3óvèCê≥
 eat<break time="2s"/> eating
 play<break time="2s"/> playing
 go<break time="2s"/> going
+read<break time="2s"/> reading
 make<break time="2s"/> making
 write<break time="2s"/> writing
+use<break time="2s"/> using
 swim<break time="2s"/> swimming
 run<break time="2s"/> running
 %%%%%%%%%%%%%%%%%%%%%%%%
-021_is_ing_intro_04.mp3
-She is making a delicious dinner for us.
-I am writing a letter to my friend.
-They are swimming in the pool now.
-The dog is running in the yard now.
+021_is_ing_intro_04.mp3óvèCê≥
+She is ( washing ) her car now.
+They are ( studying ) Spanish now.
+He is ( make ) a delicious dinner for us.
+I am ( write ) a letter to my friend.
+They are ( swim ) in the pool now.
+The dog is ( run ) in the yard now.
 %%%%%%%%%%%%%%%%%%%%%%%%
 022_is_ing_negative_01.mp3
 His mother is a teacher.<break time="2s"/>His mother is not a teacher.<break time="2s"/> His mother isn't a teacher.
