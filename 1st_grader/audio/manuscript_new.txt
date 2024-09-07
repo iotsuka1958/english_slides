@@ -375,7 +375,7 @@ She is singing a song now.
 We are doing homework now.
 Our cat is sleeping on the bed now.
 %%%%%%%%%%%%%%%%%%%%%%%%
-021_is_ing_intro_03.mp3�v�C��
+021_is_ing_intro_03.mp3要修正、修正後のmp3に差し替えること
 eat<break time="2s"/> eating
 play<break time="2s"/> playing
 go<break time="2s"/> going
@@ -386,13 +386,13 @@ use<break time="2s"/> using
 swim<break time="2s"/> swimming
 run<break time="2s"/> running
 %%%%%%%%%%%%%%%%%%%%%%%%
-021_is_ing_intro_04.mp3�v�C��
-She is ( washing ) her car now.
-They are ( studying ) Spanish now.
-He is ( make ) a delicious dinner for us.
-I am ( write ) a letter to my friend.
-They are ( swim ) in the pool now.
-The dog is ( run ) in the yard now.
+021_is_ing_intro_04.mp3要修正、修正後のmp3に差し替えること
+She is washing her car now.
+They are studying Spanish now.
+He is make a delicious dinner for us.
+I am write a letter to my friend.
+They are swim in the pool now.
+The dog is run in the yard now.
 %%%%%%%%%%%%%%%%%%%%%%%%
 022_is_ing_negative_01.mp3
 His mother is a teacher.<break time="2s"/>His mother is not a teacher.<break time="2s"/> His mother isn't a teacher.
@@ -817,10 +817,10 @@ How big!
 What a big house!
 What beautiful fowers!
 %%%%%%%%%%%%%%%%%%%%%%%%
-033_exclamatory_07.mp3(対話dialogue)
+033_exclamatory_07.mp3(対話cdialogue)
 Look at this picture.
 Wow, a beautiful mountain.
-You see, it’s not a mountain, but a rock.
+You see, it's not a mountain, but a rock.
 A rock? What a big rock!
 Yes, and it changes its color through a day.
  How strange!  But I want to see it someday.
