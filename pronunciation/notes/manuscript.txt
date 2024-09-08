@@ -1,0 +1,96 @@
+発音練習用の音声ファイルの元データ
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/\ae }
+cat
+bag
+hat
+apple
+animal
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/\textscripta /}
+hot
+to
+dog
+box
+wash
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/\textturnv /}
+love
+bus
+come
+cut
+but
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/i:/}
+see
+eat
+key
+these
+feel
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/\textsci /}
+fish
+sit
+big
+it
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/u:/}
+two
+blue
+moon
+cool
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/\textupsilon /}
+book
+good
+foot
+look
+cook
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/e/}
+bed
+red
+head
+tennis
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/\teextschwa /}
+about
+ago
+Canada
+banana
+lemon
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/a\textsci /}
+I
+my
+sky
+rice
+ice
+kind
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{e\textsci //}
+cake
+day
+say
+face
+eight
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/\textopeno\textsci /
+boy
+toy
+enjoy
+coin
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/a\textupsilon /}
+now
+cow
+how
+out
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textipa{/o\textupsilon /}
+go
+show
+no
+open
+boat
+
