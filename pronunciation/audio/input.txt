@@ -1,3 +1,5 @@
-There are two American students in our class.
-There was a church on the corner five years ago.
-Is there a hospital near here?
+cat
+cap
+bag
+man
+jam
