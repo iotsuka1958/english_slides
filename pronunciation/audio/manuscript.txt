@@ -1,0 +1,23 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\taxtipa{/\ae /} vowel_ae_01.mp3
+cat<break time="2s"/>cat
+cap<break time="2s"/>cap
+hat<break time="2s"/>hat
+bag<break time="2s"/>bag
+man<break time="2s"/>man
+map<break time="2s"/>map
+hand<break time="2s"/>hand
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\taxtipa{/\ae /} vowel_ae_02.mp3
+The cat sits on the mat.
+Dad eats a jam sandwich.
+The man likes his black cap.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\taxtipa{/ /} vowel_a_01.mp3
+hot
+dog
+top
+box
+bodi
+wash
+want
