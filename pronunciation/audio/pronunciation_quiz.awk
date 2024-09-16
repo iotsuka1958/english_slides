@@ -6,7 +6,7 @@ BEGIN {
     print "                <lang xml:lang=\"ja-JP\">"
     print "                    これから単語を聞いてもらいます。"
     print "                    <break time=\"1s\" />"
-    print "                    今回、学習した発音記号で示した音声が含まれていたらマル、含まれていなければバツと答えてください。"
+    print "                    今回、学習した発音記号で示した音声が含まれていたらT、含まれていなければFと答えてください。"
     print "                    <break time=\"1s\" />"
     #print "                    はじめはうまく聞き取れなくても、心配する必要はありません。"
     #print "                    <break time=\"1s\" />"
