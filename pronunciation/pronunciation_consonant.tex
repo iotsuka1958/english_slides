@@ -18,6 +18,7 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide}
+\usepackage{lua-ul}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{Pronunciation---consonant---}
@@ -52,11 +53,10 @@
 
 \large
 
- 無声音 \textipa{/p/}\hspace{20pt}pig
-
- 有声音 \textipa{/b/}\hspace{20pt}big
-
-
+\begin{enumerate}
+ \item 無声音 \textipa{/p/}\hspace{20pt}\underLine{p}ig,\hspace{1\zw}cu\underLine{p},\hspace{1\zw}\underLine{p}a\underLine{p}er
+ \item  有声音 \textipa{/b/}\hspace{20pt}\underLine{b}ig,\hspace{1\zw}jo\underLine{b},\hspace{1\zw}num\underLine{b}er
+\end{enumerate}
 
 \vspace*{20pt}
 
@@ -68,13 +68,13 @@
  \item 一気に唇を離して空気をいきおいよく口の外へ出す
 \end{itemize}
 
-
+\hfill\myaudio{./audio/consonant_p_b_01.mp3}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/p/}の音を含む英単語}
+ {\small \textipa{/p/}の音を含む英単語}\hfill\myaudio{./audio/consonant_p_b_02.mp3}
 
 \begin{enumerate}
  \item\textcolor{NavyBlue}{\bfseries p}ig%
@@ -99,7 +99,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/b/}の音を含む英単語}
+{\small \textipa{/b/}の音を含む英単語}\hfill\myaudio{./audio/consonant_p_b_03.mp3}
 
 \begin{enumerate}
  \item\textcolor{NavyBlue}{\bfseries b}ig%
@@ -146,11 +146,11 @@
 
 \large
 
- 無声音 \textipa{/t/}\hspace{20pt}bat
+\begin{enumerate}
+ \item  無声音 \textipa{/t/}\hspace{20pt}\underLine{t}able,\hspace{1\zw}mee\underLine{t},\hspace{1\zw}\underLine{t}oma\underLine{t}o
+ \item  有声音 \textipa{/d/}\hspace{18pt}\underLine{d}ance,\hspace{1\zw}ba\underLine{d},\hspace{1\zw}\underLine{d}iamon\underLine{d}
 
- 有声音 \textipa{/d/}\hspace{20pt}bad
-
-
+\end{enumerate}
 
 \vspace*{20pt}
 
@@ -160,13 +160,15 @@
 \begin{itemize}
  \item 舌の先を上の歯茎にしっかりとつける
  \item そのあとに舌の先を離して、いきおいよく息を口から外へ出す
- 
-\end{itemize}
+ \end{itemize}
+
+\hfill\myaudio{./audio/consonant_t_d_01.mp3}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/t/}の音を含む英単語}
+{\small \textipa{/t/}の音を含む英単語}\hfill\myaudio{./audio/consonant_t_d_02.mp3}
+
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries t}op
@@ -197,7 +199,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/d/}の音を含む英単語}
+{\small \textipa{/d/}の音を含む英単語}\hfill\myaudio{./audio/consonant_t_d_03.mp3}
+
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries d}o
@@ -244,14 +247,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{破裂音\textipa{/k/}と\textipa{/g/}}
 
-
-
 \large
 
+\begin{enumerate}
+ \item  無声音 \textipa{/k/}\hspace{20pt}\underLine{k}ind,\hspace{1\zw}\underLine{c}ool,\hspace{1\zw}spea\underLine{k}
+ \item  有声音 \textipa{/g/}\hspace{20pt}\underLine{g}ood,\hspace{1\zw}ba\underLine{g},\hspace{1\zw}\underLine{g}irl
+\end{enumerate}
 
- 無声音 \textipa{/k/}\hspace{20pt}kind
-
- 有声音 \textipa{/g/}\hspace{20pt}good
 
 \vspace*{20pt}
 
@@ -261,13 +263,15 @@
 \begin{itemize}
  \item 舌の奥をを口の奥にあてて
  \item そのあとに舌を離して、いきおいよく息を口から外へ出す
- 
 \end{itemize}
+
+\hfill\myaudio{./audio/consonant_k_g_01.mp3}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/k/}の音を含む英単語}
+{\small \textipa{/k/}の音を含む英単語}\hfill\myaudio{./audio/consonant_k_g_02.mp3}
+
 
 \begin{enumerate}
 \item \textcolor{NavyBlue}{\bfseries c}ut
@@ -296,7 +300,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/g/}の音を含む英単語}
+{\small \textipa{/g/}の音を含む英単語}\hfill\myaudio{./audio/consonant_k_g_03.mp3}
+
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries g}o
@@ -343,14 +348,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
  \begin{frame}[plain]{摩擦音\textipa{/f/と\textipa{/v/}}}
 
-
-
 \large
 
+\begin{enumerate}
+ \item  無声音 \textipa{/f/}\hspace{22pt}\underLine{f}ace,\hspace{1\zw}\underLine{f}amily,\hspace{1\zw}li\underLine{f}e
+ \item  有声音 \textipa{/v/}\hspace{20pt}\underLine{v}egetable,\hspace{1\zw}\underLine{v}oice,\hspace{1\zw}lo\underLine{v}e
+\end{enumerate}
 
- 無声音 \textipa{/f/}\hspace{20pt}face
-
- 有声音 \textipa{/v/}\hspace{20pt}vase
 
 \vspace*{20pt}
 
@@ -361,13 +365,15 @@
  \item 上唇をもちあげて前歯を出す
  \item 前歯を下唇の内側に上に軽くあてる
  \item 息を強く出す
- 
 \end{itemize}
+
+\hfill\myaudio{./audio/consonant_f_v_01.mp3}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/f/}の音を含む英単語}
+{\small \textipa{/f/}の音を含む英単語}\hfill\myaudio{./audio/consonant_f_v_02.mp3}
+
 
 \begin{enumerate}
 \item \textcolor{NavyBlue}{\bfseries f}ace
@@ -396,7 +402,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/v/}の音を含む英単語}
+{\small \textipa{/v/}の音を含む英単語}\hfill\myaudio{./audio/consonant_f_v_03.mp3}
+
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries v}ase
@@ -445,9 +452,10 @@
 
 \large
 
- 無声音 \textipa{/s/}\hspace{20pt}see
-
- 有声音 \textipa{/z/}\hspace{20pt}zero
+\begin{enumerate}
+ \item  無声音 \textipa{/s/}\hspace{20pt}\underLine{s}leep,\hspace{1\zw}\underLine{s}ky,\hspace{1\zw}ri\underLine{c}e
+ \item  有声音 \textipa{/z/}\hspace{20pt}\underLine{z}ero,\hspace{1\zw}vi\underLine{s}it,\hspace{1\zw}ea\underLine{s}y
+\end{enumerate}
 
 \vspace*{20pt}
 
@@ -459,11 +467,13 @@
  \item その隙間から息を出す
  
 \end{itemize}
+\hfill\myaudio{./audio/consonant_s_z_01.mp3}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/s/}の音を含む英単語}
+{\small \textipa{/s/}の音を含む英単語}\hfill\myaudio{./audio/consonant_s_z_02.mp3}
+
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries s}it
@@ -490,7 +500,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/v/}の音を含む英単語}
+{\small \textipa{/v/}の音を含む英単語}\hfill\myaudio{./audio/consonant_s_z_03.mp3}
+
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries z}ero
@@ -535,9 +546,10 @@
 
 \large
 
- 無声音 \textipa{/T/}\hspace{20pt}Thank you.
-
- 有声音 \textipa{/D/}\hspace{20pt}that
+\begin{enumerate}
+ \item  無声音 \textipa{/T/}\hspace{20pt}\underLine{Th}ank you.\hspace{1\zw}\underLine{th}irty\hspace{1\zw}mou\underLine{th}
+ \item  有声音 \textipa{/D/}\hspace{20pt}\underLine{th}at\hspace{1\zw}\underLine{th}ese\hspace{1\zw}wi\underLine{th}
+\end{enumerate}
 
 \vspace*{20pt}
 
@@ -549,11 +561,14 @@
  \item その隙間から息を出す
  
 \end{itemize}
+\hfill\myaudio{./audio/consonant_T_D_01.mp3}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/T/}の音を含む英単語}
+{\small \textipa{/T/}の音を含む英単語}\hfill\myaudio{./audio/consonant_T_D_02.mp3}
+
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries th}ree
@@ -580,7 +595,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/D/}の音を含む英単語}
+{\small \textipa{/D/}の音を含む英単語}\hfill\myaudio{./audio/consonant_T_D_03.mp3}
+
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries th}is

@@ -4,7 +4,7 @@ BEGIN {
     print "        <s>"
     print "            <prosody volume=\"soft\">"
     print "                <lang xml:lang=\"ja-JP\">"
-    print "                    さあ、実際の音声によく耳をかたむけてください。"
+    print "                    さあ、発音記号であらわされる音に注意して、耳をかたむけてください。"
     print "                    <break time=\"1s\" />"
     #print "                    それぞれの英文を二回読みます。"
     #print "                    <break time=\"1s\" />"
