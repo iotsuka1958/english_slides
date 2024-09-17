@@ -1,27 +1,259 @@
 発音練習用の音声ファイルの元データ
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \textipa{/\ae }
-cat
-bag
-hat
-apple
-animal
+%%%%%%%%%%%%%%%%%%%%%%%%%
+vowel_ae_01.mp3
+cat<break time="3s"/>cat
+cap<break time="3s"/>cap
+hat<break time="3s"/>hat
+bag<break time="3s"/>bag
+man<break time="3s"/>man
+map<break time="3s"/>map
+hand<break time="3s"/>hand
 %%%%%%%%%%%%%%%%%%%%%%%%
-\textipa{/\textscripta /}
-hot
-to
-dog
-box
-wash
+vowel_ae_02.mp3
+The cat sits on the mat.
+Dad eats a jam sandwich.
+The man likes his black cap.
 %%%%%%%%%%%%%%%%%%%%%%%%
-\textipa{/\textturnv /}
-love
-bus
-come
-cut
-but
+vowel_ae_03.mp3
+bag<break time="3s"/>bag
+man<break time="3s"/>man
+cut<break time="3s"/>cut
+boy<break time="3s"/>boy
+apple<break time="3s"/>apple
 %%%%%%%%%%%%%%%%%%%%%%%%
-\textipa{/i:/}
+vowel_ae_04.mp3
+cap<break time="3s"/>cap
+cup<break time="3s"/>cup
+cat<break time="3s"/>cat
+desk<break time="3s"/>desk
+animal<break time="3s"/>animal
+%%%%%%%%%%%%%%%%%%%%%%%
+vowel_ae_05.mp3
+map<break time="3s"/>map
+hand<break time="3s"/>hand
+come<break time="3s"/>come
+mother<break time="3s"/>mother
+happy<break time="3s"/>happy
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+vowel_textscripta_01.mp3
+hot<break time="3s"/>hot
+dog<break time="3s"/>dog
+top<break time="3s"/>top
+not<break time="3s"/>not
+box<break time="3s"/>box
+body<break time="3s"/>body
+wash<break time="3s"/>wash
+want<break time="3s"/>want
+%%%%%%%%%%%%%%%%%%%%%%%%
+vowel_textscripta_02.mp3
+Tom likes hot dogs.
+Mom has a job at the shop.
+Bob makes hot soup in a pot.
+%%%%%%%%%%%%%%%%%%%%%%%%
+vowel_textscripta_03.mp3
+hot<break time="3s"/>hot
+not<break time="3s"/>not
+hat<break time="3s"/>hat
+God<break time="3s"/>God
+map<break time="3s"/>map
+%%%%%%%%%%%%%%%%%%%%%%%%
+vowel_textscripta_04.mp3
+black<break time="3s"/>black
+box<break time="3s"/>box
+top<break time="3s"/>top
+mother<break time="3s"/>mother
+pot<break time="3s"/>pot
+%%%%%%%%%%%%%%%%%%%%%%%%
+vowel_textscripta_05.mp3
+job<break time="3s"/>job
+map<break time="3s"/>map
+shop<break time="3s"/>shop
+hand<break time="3s"/>hand
+wash<break time="3s"/>wash
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+vowel_textturnv_01.mp3
+fun<break time="3s"/>fun
+cut<break time="3s"/>cut
+bus<break time="3s"/>bus
+lucky<break time="3s"/>lucky
+uncle<break time="3s"/>uncle
+love<break time="3s"/>love
+come<break time="3s"/>come
+money<break time="3s"/>money
+%%%%%%%%%%%%%%%%%%%%%%%
+vowel_textturnv_02.mp3
+My mother loves the summer sun.
+My brother jumps and runs in the sun.
+The cup is under the umbrella.
+%%%%%%%%%%%%%%%%%%%%%%%
+vowel_textturnv_03.mp3
+bag<break time="3s"/>bag
+cut<break time="3s"/>cut
+mother<break time="3s"/>mother
+dog<break time="3s"/>dog
+umbrella<break time="3s"/>umbrella
+%%%%%%%%%%%%%%%%%%%%%%%
+vowel_textturnv_04.mp3
+brother<break time="3s"/>brother
+father<break time="3s"/>father
+under<break time="3s"/>under
+summer<break time="3s"/>summer
+family<break time="3s"/>family
+%%%%%%%%%%%%%%%%%%%%%%%
+vowel_textturnv_05.mp3
+money<break time="3s"/>money
+hot<break time="3s"/>hot
+come<break time="3s"/>come
+cake<break time="3s"/>cake
+lucky<break time="3s"/>lucky
+%%%%%%%%%%%%%%%%%%%%%%
+%%% \textipa{/i:/}
+%%%%%%%%%%%%%%%%%%%%%
+vowel_long_i_01.mp3
+he<break time="3s"/>he
+tea<break time="3s"/>tea
+she<break time="3s"/>she
+sea<break time="3s"/>sea
+team<break time="3s"/>team
+tree<break time="3s"/>tree
+green<break time="3s"/>green
+people<break time="3s"/>people
+%%%%%%%%%%%%%%%%%%%%%
+vowel_long_i_02.mp3
+The teacher sees three green trees.
+We meet at the beach every week.
+She eats sweet peaches.
+%%%%%%%%%%%%%%%%%%%%%
+vowel_long_i_03.mp3
+speak<break time="3s"/>speak
+week<break time="3s"/>week
+English<break time="3s"/>English
+it<break time="3s"/>it
+clean<break time="3s"/>clean
+%%%%%%%%%%%%%%%%%%%%%
+vowel_long_i_04.mp3
+people<break time="3s"/>people
+ski<break time="3s"/>ski
+river<break time="3s"/>river
+big<break time="3s"/>big
+Read.<break time="3s"/>Read.
+%%%%%%%%%%%%%%%%%%%%%
+vowel_long_i_05.mp3
+fish<break time="3s"/>finish
+peach<break time="3s"/>peach
+green<break time="3s"/>green
+dinner<break time="3s"/>dinner
+teacher<break time="3s"/>teacher
+%%%%%%%%%%%%%%%%%%%%%
+%% \textipa{/I/}
+%%%%%%%%%%%%%%%%%%%%%
+vowel_short_i_01.mp3
+big<break time="3s"/>big
+fish<break time="3s"/>fish
+river<break time="3s"/>river
+drink<break time="3s"/>drink
+music<break time="3s"/>music
+kitchen<break time="3s"/>kitchen
+picture<break time="3s"/>picture
+winter<break time="3s"/>winter
+%%%%%%%%%%%%%%%%%%%%%
+vowel_short_i_21.mp3
+The big ship is in the river.
+My sister sits and sings in the big kitchen.
+The kids visit the city in spring and winter.
+%%%%%%%%%%%%%%%%%%%%%
+vowel_short_i_03.mp3
+river<break time="3s"/>river
+spring<break time="3s"/>spring
+beach<break time="3s"/>beach
+eat<break time="3s"/>eat
+picture<break time="3s"/picture>
+%%%%%%%%%%%%%%%%%%%%%
+vowel_short_i_04.mp3
+blue<break time="3s"/>blue
+sister<break time="3s"/>sister
+winter<break time="3s"/>winter
+green<break time="3s"/>green
+picture<break time="3s"/>picture
+%%%%%%%%%%%%%%%%%%%%%
+vowel_short_i_05.mp3
+ship<break time="3s"/>ship
+visit<break time="3s"/>visit
+tree<break time="3s"/>tree
+Read.<break time="3s"/>Read.
+kitchen<break time="3s"/>kitchen
+%%%%%%%%%%%%%%%%%%%%
+%% \textipa{/u:/}
+%%%%%%%%%%%%%%%%%%%%%
+vowel_long_u_01.mp3
+cool<break time="3s"/>cool
+food<break time="3s"/>food
+room<break time="3s"/>room
+moon<break time="3s"/>moon
+two<break time="3s"/>two
+blue<break time="3s"/>blue
+soup<break time="3s"/>soup
+group<break time="3s"/>group
+%%%%%%%%%%%%%%%%%%%%%
+vowel_long_u_02.mp3
+The moon is blue and cool.
+She eats noodles and drinks juice.
+The room is full of blue shoes.
+%%%%%%%%%%%%%%%%%%%%%
+vowel_long_u_03.mp3
+food<break time="3s"/>food
+two<break time="3s"/>two
+cook<break time="3s"/>cook
+book<break time="3s"/>book
+soup<break time="3s"/>soup
+%%%%%%%%%%%%%%%%%%%%%
+vowel_long_u_04.mp3
+push<break time="3s"/>push
+moon<break time="3s"/>moon
+group<break time="3s"/>group
+sugar<break time="3s"/>sugar
+afternoon<break time="3s"/>afternoon
+%%%%%%%%%%%%%%%%%%%%%
+vowel_long_u_05.mp3
+blue<break time="3s"/>blue
+school<break time="3s"/>school
+good<break time="3s"/>good
+look<break time="3s"/>look
+shoes<break time="3s"/>shoes
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%% \textipa{/U/}
+%%%%%%%%%%%%%%%%%%%%%
+vowel_short_u_01.mp3
+
+%%%%%%%%%%%%%%%%%%%%%
+vowel_short_u_02.mp3
+
+%%%%%%%%%%%%%%%%%%%%%
+vowel_short_u_03.mp3
+
+%%%%%%%%%%%%%%%%%%%%%
+vowel_short_u_04.mp3
+
+%%%%%%%%%%%%%%%%%%%%%
+vowel_short_u_05.mp3
+
+
+
+
+
+
+
+
+
 see
 eat
 key
