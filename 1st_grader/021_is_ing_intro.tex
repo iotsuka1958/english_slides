@@ -192,7 +192,7 @@ Our cat is \alt<5->{(\,\,\textcolor{Maroon}{\bfseries sleeping}\,\,)}{(\phantom{
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{現在進行形の作り方}
-\begin{frame}[plain]{--ingのつくりかた}
+\begin{frame}[plain,label=how2makeIng]{--ingのつくりかた}
  
 \begin{center}
 % \rowcolors{2}{NavyBlue!50}{yellow!40}
@@ -221,7 +221,7 @@ Our cat is \alt<5->{(\,\,\textcolor{Maroon}{\bfseries sleeping}\,\,)}{(\phantom{
 
 \vspace{-13pt}
 
-\hfill{\scriptsize \dbend\,\,\dbend\,\,最後の1文字を重ねるのは\,\,\Circled{\,\,$\text{短い母音}+\text{子音字}$\,\,}\,\,で終わる動詞のときです}%
+\hfill\visible<15->{\scriptsize \dbend\,\,\dbend\,\,最後の1文字を重ねるのは\,\,\Circled{\,\,$\text{短い母音}+\text{子音字}$\,\,}\,\,で終わる動詞のときです}%
 \mbox{}\hfill\myaudio{./audio/021_is_ing_intro_03.mp3}
 
 \end{frame}
@@ -244,16 +244,23 @@ Our cat is \alt<5->{(\,\,\textcolor{Maroon}{\bfseries sleeping}\,\,)}{(\phantom{
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{動作と状態}
+\large
  \begin{enumerate}
-  \item<1-> He \myEmph[1-]{Maroon}{plays} the piano. (動作)\visible<4->{$\rightarrow$\,\,He is playing the piano.}
-  \item<2-> He \myEmph[2-]{NavyBlue}{knows} Helen. (状態)\visible<5->{$\rightarrow$*He is knowing Helen.}
+  \item<1-> He \myEmph[1-]{Maroon}{plays} the piano. (動作)\hspace{20pt}\visible<4->{$\rightarrow$\,\,He \myEmph[4-]{Maroon}{is playing} the piano.}
+  \item<2-> He \myEmph[2-]{NavyBlue}{knows} Helen. (状態)\hspace{34pt}\visible<5->{$\rightarrow$\,\,*He \myEmph[5-]{NavyBlue}{is knowing} Helen.}\\
+\hfill\visible<5->{{\scriptsize *: 「まちがった英文です」という記号}}
  \end{enumerate}
 
-\begin{block}<3->{「状態」をあらわす動詞}
+\begin{block}<3->{「動作」をあらわす動詞と「状態」をあらわす動詞}
 \begin{itemize}
- \visible<3->{\item 「状態」をあらわす動詞の例： know, have, likeなど}
+ \visible<3->{\item 「動作」をあらわす動詞の例： eat, drink, run, walk, playなど}
+ \visible<3->{\item 「状態」をあらわす動詞の例： know, like, haveなど}
  \visible<6->{\item \dbend\,\,「状態」を表す動詞は進行形にしません\\
-\mbox{}}
+\mbox{}\hfill{\scriptsize \dbend{}: 「ちょっと難しいが、しっかり理解すると実力アップ」という記号}\\\mbox{}}
+\begin{itemize}
+ \item<7-> I like tea. (* I am liking tea.)
+ \item<8-> He has a car. (*He is having a car.)
+\end{itemize}
 
 \end{itemize}
 
@@ -280,13 +287,14 @@ Our cat is \alt<5->{(\,\,\textcolor{Maroon}{\bfseries sleeping}\,\,)}{(\phantom{
 \begin{block}<3->{まとめ2}
 \visible<4->{「動作」を表す動詞と「状態」をあらわす動詞があります}
 \begin{itemize}
- \visible<5->{\item ほとんどは「動作」をあらわす動詞\hfill{}eat, drink, study, run, walk \ldots}
- \visible<6->{\item 「状態」を表す動詞はknow, have, like \ldots}\\
+ \visible<5->{\item ほとんどは「動作」をあらわす動詞\hfill{}eat, drink,  run, walk, play \ldots}
+ \visible<6->{\item 「状態」を表す動詞\hfill{}know, like, have \ldots}\\
 \hfill{}\visible<7->{$\longrightarrow$\,\,「状態」をあらわす動詞は「現在進行形」になりません}\\
 \hfill\visible<8->{{I know Tom.}}\\%
 \hfill\visible<8->{{*I am knowing Tom.}}%
 \end{itemize}
  \end{block}
-
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<15>{how2makeIng}
 \end{document}

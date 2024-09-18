@@ -1,0 +1,9 @@
+title:
+現在進行形
+
+files:
+現在進行形の基本について学習しました。
+
+20240918.pdf: 授業で用いたスライド（音声ははいっていません）
+pronunciation_20240918.pdf: Today's Pronunciationスライド
+pronunciation_20240918.mp3: Today's Pronunciation音声ファイル
