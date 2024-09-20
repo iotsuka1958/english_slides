@@ -1,0 +1,41 @@
+<speak>
+    <p>
+        <s>
+            <prosody rate="slow" volume="loud">
+                Hello, everybody!
+                <break time="1s" />
+                How are you today?
+                <break time="2s" />
+                Are you ready to start?
+                <break time="3s" />
+		By the way, can you hear me? If you can hear me, please give me a thumbs up.
+                <break time="4s" />
+                Great, thanks.
+                <break time="1s" />
+                O.K., let's begin today's lesson.
+            </prosody>
+        </s>
+    </p>
+</speak>
+
+<speak>
+    <p>
+        <s>
+            <prosody volume="soft">
+                <lang xml:lang="ja-JP">
+                    みなさん、こんにちは。
+                    <break time="1s" />
+                    ごきげんはいかがですか？
+                    <break time="2s" />
+		    ところで、きょう、ちゃんと音声は届いていますか？
+		    <break time="5s" />
+		    リアクション、ありがとうございます。
+		    <break time="1s" />
+		    聞こえているようで、安心しました。
+		    <break time="1s" />
+		    きょうも、気を楽にして、リラックスして授業に参加してください。
+                </lang>
+            </prosody>
+        </s>
+    </p>
+</speak>

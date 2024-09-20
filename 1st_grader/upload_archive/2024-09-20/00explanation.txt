@@ -1,6 +1,6 @@
-title:
+title:代名詞3
 
-contents:～について学習しました
+contents:代名詞（主格・目的格）の一覧表を完成させました。
 
 yyyymmdd.pdf: 授業で用いたスライド（音声ははいっていません）
 yyyymmdd.mp3: 授業の発音練習用音声ファイル
