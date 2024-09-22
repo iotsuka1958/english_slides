@@ -21,6 +21,22 @@
 <speak>
     <p>
         <s>
+            <prosody rate="slow" volume="loud">
+                <break time="2s" />
+                That's all for today.
+                <break time="2s" />
+                See you next time.
+                <break time="2s" />
+		Have a good day!
+            </prosody>
+        </s>
+    </p>
+</speak>
+
+
+<speak>
+    <p>
+        <s>
             <prosody volume="soft">
                 <lang xml:lang="ja-JP">
                     みなさん、こんにちは。

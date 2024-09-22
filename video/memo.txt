@@ -1,0 +1,37 @@
+ファイルリスト作成: concat.txt というテキストファイルを作成し、以下の内容を記述します。
+
+plaintext
+Copy code
+file 'title.mp4'
+file 'opening.mp4'
+これにより、結合するファイルを指定します。
+
+FFmpegコマンド実行: 以下のコマンドを使用して、title.mp4 と opening.mp4 を結合し、title_opening.mp4 を作成します。
+
+bash
+Copy code
+ffmpeg -f concat -safe 0 -i concat.txt -c copy title_opening.mp4
+
+とやったが、2つ目のファイルの音声がうまくひろえていなかった。
+
+--------------------------
+いいろいろやっていたら次のエラーメッセージがあったので
+後述の方法でやったらなんとかうまくいった(ChatGPTに教えてもらった）)
+
+エラーメッセージ「Non-monotonous DTS in output stream」は、タイムスタンプ（DTS: Decoding Time Stamp）が正しくないために発生しています。この問題は、異なるフレームレートや不整合なタイムスタンプを持つ動画を結合する際によく起こります。
+
+このエラーを回避するためには、次の手順を試すことができます。
+
+方法1: タイムスタンプをリセットする
+タイムスタンプをリセットしてから再エンコードすることで、このエラーを回避できます。以下のコマンドを使って、タイムスタンプを修正します。
+
+
+ffmpeg -i title.mp4 -i opening.mp4 -filter_complex "[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1[v][a]" -map "[v]" -map "[a]" -c:v libx264 -c:a aac -strict experimental title_opening.mp4
+
+
+-filter_complex "[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1[v][a]": 2つの動画をタイムスタンプをリセットしながら結合します。
+n=2: 結合する動画の数が2つであることを指定します。
+v=1: 映像ストリームが1つだけ出力されるようにします。
+a=1: 音声ストリームが1つだけ出力されるようにします。
+-map "[v]" -map "[a]": 結合後の映像と音声をマッピングします。
+-c:v libx264 -c:a aac: ビデオをH.264、音声をAACに再エンコードします。
