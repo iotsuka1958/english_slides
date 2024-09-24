@@ -15,16 +15,10 @@
 %%%% tabular環境の改良版
 \usepackage{tabularray}
 \UseTblrLibrary{booktabs}
-%%%% ハイパーリンク
-%%%% hyperref.sty は preamble の最後で読み込む
-\usepackage{hyperref}
-\usepackage{xurl}
-\hypersetup{
-  bookmarks=true,
-  bookmarksnumbered=true,
-  pdfauthor={iotsuka1958}
-}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[at]{easylist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 \usepackage{tcolorbox}
@@ -44,6 +38,15 @@ title=Question~\thetcbcounter: #2,#1}
 \usepackage{marvosym,utfsym,circledsteps}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagestyle{empty}
+%%%% ハイパーリンク
+%%%% hyperref.sty は preamble の最後で読み込む
+\usepackage{hyperref}
+\usepackage{xurl}
+\hypersetup{
+  bookmarks=true,
+  bookmarksnumbered=true,
+  pdfauthor={iotsuka1958}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -58,22 +61,23 @@ ON}\hspace{20pt}\,\scalebox{1.7320508}{\ComputerMouse}
 
 \bigskip
 
-Hello, everybody! How are you today?
-Are you ready to start?
 みなさん、こんにちは。
 お元気ですか。
-2024--09--20金曜日。
+2024--09--24火曜日。
 
 %\textsf{EduOp}ちばの英語の授業にようこそ
 さて音声は届いていますか
 
 \bigskip
 
-きょう、千葉県は熱中症警戒アラートが発表されています。
-適切に冷房を使用するとともに、
-こまめな水分補給と休憩をお願いします。
+きょうは、少し秋めいてきましたね。
+みなさん連休はいかがおすごしでしたか。
 
 \bigskip
+
+ひとつ連絡事項があります。
+あす09--25水曜日ですが、エデュオプちばの授業は月曜日の日課になります。
+詳しくは掲示板をご覧ください。
 
 それでは、きょうも気を楽に、リラックスして、
 参加してください。
@@ -96,15 +100,13 @@ Let's start today's lesson!
 \small\gtfamily\bfseries%
 \begin{minipage}[t]{70mm}
 
-
-この単元では
+きょうは
 
 \begin{itemize}
- \item （2・3年生）---ing形のつくり方
-% \item （1年生）代名詞
+ \item （2・3年生）---ing形のつくり方(最後の1文字を重ねるとき)と練習問題
+ \item （1年生）代名詞（練習問題・所有格）
 \end{itemize}
 について学習しました。
-
 
 \bigskip
 
@@ -119,10 +121,41 @@ Have a good day.\\
 
 \,\textsf{録画停止}\hspace{20pt}\,\,\,\raisebox{2pt}{\rotatebox{90}{\usym{1F57D}}}\,\,$\rightarrow$\,\,{\Circled{\scriptsize\textgt{
 通話を終了し全員を退出させる　}}}
-
-
 \end{minipage}
 }}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{minipage}[t]{70mm}
+\begin{easylist}[checklist]
+@ CHECKLIST
+@@ はじめ
+@@@ 画面共有OFF
+@@@ マイクOFF・
+@@@ ビデオOFF
+@@@ 録画
+@@ 終わり
+@@@ マイクOFF
+@@@ 録画停止
+@@@ 全員を退出
+\end{easylist}
+\end{minipage}
+
+
+\newpage
+
+
+
+\textsf{授業の最後は}
+
+\begin{itemize}\gtfamily
+ \item マイク・カメラを切る
+ \item 録画をとめる
+ \item 通話を終了し全員を退出させる
+\end{itemize}
+
+\end{document}
 
 %%%%%%%%%%%%%%
 \newpage
