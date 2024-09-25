@@ -1,0 +1,79 @@
+---
+title: "basic_data"
+author: "iotsuka"
+date: "2024-09-25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(gt)
+```
+```{r}
+data <- read_csv("./basic_data.csv")
+```
+```{r}
+data |> filter(slide == FALSE) |> select(path, file_name)
+```
+
+```{r}
+slides_done_table <- data |> 
+  filter(slide == TRUE) |> 
+  select(path, file_name) |> 
+  gt() |> 
+  tab_header(
+    title = "slides done",
+    subtitle = c("as of", as.character(Sys.time()))
+  )
+
+slides_undone_table <- data |> 
+  filter(slide == FALSE) |> 
+  select(path, file_name) |> 
+  gt() |> 
+  tab_header(
+    title = "slides to be done",
+    subtitle = c("as of", as.character(Sys.time()))
+  )
+```
+
+
+```{r}
+slides_done_table |> gtsave("slides_done.html") # htmlファイル作成
+slides_undone_table |> gtsave("slides_undone.html") # htmlファイル作成
+```
+
+## 進捗管理
+
+
+```{r}
+work_log  <-  read_csv("./work_log.csv")
+```
+```{r}
+work_log |> 
+  pivot_longer(-file_with_path,
+               names_to = c("grade", ".value"),
+               names_sep = "_")
+```
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for exampl
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

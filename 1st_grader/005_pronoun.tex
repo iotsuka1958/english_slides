@@ -161,23 +161,27 @@ hline{3} = {1-7}{ 0.04em },
 \begin{frame}[plain]{所有格}
  \begin{enumerate}
   \item<1-> This is \myEmph[1-]{black}{my} car. That is \myEmph[1-]{black}{your} bike.
-  \item<3-> *This is my a car.
-  \item<3-> *This is a my car.
+  \item<4-> *This is my a car.
+  \item<4-> *This is a my car.\hfill{\scriptsize * 「まちがった英文です」という記号}
  \end{enumerate}
 
 \visible<2->{%
 \begin{exampleblock}{Topics for Today}
-myはIが変化したかたちで「わたしの～」の意味。
+myはIが変化したかたちで「わたしの～」の意味
+
 yourはyouが変化したかたちで「あなたの～」の意味です
 \begin{itemize}
  \item<2-> myやyourを\kenten{所有格}の代名詞といいます
- \item<4-> my a carとかa my carとはいいません%\hfill{}my booksはOKです
+ \item<3-> \Circled[fill color=white]{\,\,所有格 $+$ 名詞\,\,}\,がセットになります
+ \item[]<5-> \mbox{}\hfill\dbend\,\,my a carとかa my carとはいいません\hspace{.5\zw}\mbox{}\\
+\mbox{}
+%\hfill{}my booksはOKです
 \end{itemize}
      \end{exampleblock}
 }
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain,label=ichiran]{一覧表}
+\begin{frame}<1-11>[plain,label=ichiran]{代名詞の一覧表}
  
 \begin{tblr}{%
 colspec={XXXXXXX},
@@ -214,8 +218,24 @@ hline{3} = {1-7}{ 0.04em },
 3人称&\onslide<2->{he}& \onslide<7->{his}&\onslide<2->{him} &\onslide<2->{they} & \onslide<10->{their}&\onslide<2->{them}\\
  & \onslide<2->{she}& \onslide<8->{her}&\onslide<2->{her} & &&\\
  &\onslide<2->{it}& \onslide<9->{its}&\onslide<2->{it} & && \\
-
 \end{tblr}
+
+\bigskip
+
+\only<3>{This is \Circled{my book}.}
+\hspace*{230pt}\only<4>{He is \Circled{our father}.}
+
+\only<5,6>{\Circled{Your cat} is cute.}
+
+\only<7>{\Circled{His bike} is new.}
+
+\only<8>{This is \Circled{her car}.}
+
+\only<9>{The robot moves \Circled{its arm}.\hspace{10pt}cf.\,\,\,Tom moves \Circled{his arm}.\hfill{}arm: 腕}
+
+\hspace*{230pt}\only<10>{\Circled{Their house} is big.}
+
+\onslide<11>{なんども口ずさんで覚えよう！}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
@@ -310,5 +330,5 @@ hline{3} = {1-7}{ 0.04em },
      \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe<10>{ichiran}
+\againframe<11>{ichiran}
 \end{document}
