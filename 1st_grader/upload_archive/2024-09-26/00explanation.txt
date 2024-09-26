@@ -1,8 +1,14 @@
 title:
-
+代名詞5
 
 files:
-を学習しました。
+所有格の代名詞について学習しました。
+yyyymmdd.pdf: 授業で用いたスライド（音声ははいっていません）
+pronunciation_yyyymmdd.pdf: Today's Pronunciationスライド
+pronunciation_yyyymmdd.mp3: Today's Pronunciation音声ファイル
 
-20240925.pdf: 授業で用いたスライド（音声ははいっていません）
-20240925.mp3: 発音練習音声ファイル
+ファイル名の`yyyymmdd'のところは西暦4桁月2桁日2桁の数字がはいります
+例:
+2024年9月19日の授業であれば、
+20240919.pdf
+のことです
