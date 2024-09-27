@@ -1,9 +1,9 @@
-title:
+title:代名詞6
 
-contents:～について学習しました
+contents:
+代名詞の練習問題を解きました
 
 yyyymmdd.pdf: 授業で用いたスライド（音声ははいっていません）
-yyyymmdd.mp3: 授業の発音練習用音声ファイル
 pronunciation_yyyymmdd.pdf: Today's Pronunciationスライド
 pronunciation_yyyymmdd.mp3: Today's Pronunciation音声ファイル
 
