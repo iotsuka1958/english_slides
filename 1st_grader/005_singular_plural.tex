@@ -35,6 +35,7 @@
 \usepackage{tikzpeople}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{manfnt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -132,32 +133,39 @@ two book\myEmph[4]{Maroon}{s}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{日本語とのちがい}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}<1-10>[plain]\frametitle{日本語とのちがい}
+\begin{frame}<1-13>[plain]\frametitle{日本語とのちがい}
 \begin{columns}
-\begin{column}[t]{.45\textwidth}
+\begin{column}[t]{.55\textwidth}
 \begin{alertblock}{日本語}
 \onslide<2->{わたしは1冊の本を持っています。}
 
 \onslide<3->{わたしは2冊の本を持っています。}
 
-\onslide<4->{わたしは本を持っています。}
+\onslide<4->{わたしはたくさんの本を持っています。}
+
+\onslide<5->{わたしは本を持っています。}
 \end{alertblock}
 \end{column}
-\begin{column}[t]{.45\textwidth}
+\begin{column}[t]{.4\textwidth}
 \begin{block}{英語}
-\onslide<5->{I have \textcolor{NavyBlue}{\bfseries a book.}}
+\onslide<6->{I have \textcolor{NavyBlue}{\bfseries a book.}}
 
-\onslide<6->{I have \textcolor{NavyBlue}{\bfseries two books.}}
+\onslide<7->{I have \textcolor{NavyBlue}{\bfseries two books.}}
 
-\onslide<7->*{I have \textcolor{Maroon}{\bfseries book}.}\onslide<8>{\,\,{}$\longleftarrow$これは\textcolor{Maroon}{だめ}}
+\onslide<8->{I have \textcolor{NavyBlue}{\bfseries many books.}}
+
+\onslide<9->{*I have \textcolor{Maroon}{\bfseries book}.}\onslide<9->{\,\,{}$\longleftarrow$これは\textcolor{Maroon}{だめ}}
+
+\onslide<10->{I have \textcolor{NavyBlue}{\bfseries books}.}\onslide<10->{\,\,{}$\longleftarrow$これは\textcolor{NavyBlue}{\bfseries OK}}
 \end{block}
 \end{column}
 \end{columns}
 
-\begin{exampleblock}<9->{Topics for Today}
+\begin{exampleblock}<11->{Topics for Today}
 \begin{itemize}
- \item<1->  \onslide<9,10>{\textcolor{black}{単数形と複数形があります}}
- \item<2->  \onslide<10>{\textcolor{black}{単数形を裸で使うことはできません}}
+ \item<12->  {\textcolor{black}{単数形と複数形があります}}
+ \item<13->  {\textcolor{black}{単数形を裸で使うことはできません\,\,\dbend}}\\
+\mbox{}
 \end{itemize}
       \end{exampleblock}
 
@@ -168,9 +176,9 @@ two book\myEmph[4]{Maroon}{s}
 \begin{frame}[plain]\frametitle{複数形のつくり方}
  
 \Large
-おしりに---sをつけます。
+おしりに---sをつけます
 
-a book $\longrightarrow$ book\textcolor{Maroon}{s}
+a book $\longrightarrow$ book\textcolor{Maroon}{\bfseries s}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -264,27 +272,29 @@ a book $\longrightarrow$ book\textcolor{Maroon}{s}
 
 \begin{enumerate}
  \item a dog~~~/~~~two dogs%
-\hfill\makebox[40pt][l]{\textipa{/z/}}\hspace{180pt}\mbox{}
+\hfill\makebox[40pt][l]{\onslide<2->{\textipa{/z/}}}\hspace{180pt}\mbox{}
  \item a cat~~~/~~~three cats%
-\hfill\makebox[40pt][l]{\textipa{/s/}}\hspace{180pt}\mbox{}
+\hfill\makebox[40pt][l]{\onslide<3->{\textipa{/s/}}}\hspace{180pt}\mbox{}
  \item a bird~~~~/~~~four birds%
-\hfill\makebox[40pt][l]{\textipa{/z/}}\hspace{180pt}\mbox{}
+\hfill\makebox[40pt][l]{\onslide<4->{\textipa{/z/}}}\hspace{180pt}\mbox{}
  \item a book~~~/~~~five books%
-\hfill\makebox[40pt][l]{\textipa{/s/}}\hspace{180pt}\mbox{}
+\hfill\makebox[40pt][l]{\onslide<5->{\textipa{/s/}}}\hspace{180pt}\mbox{}
  \item a key~~~/~~~six keys%
-\hfill\makebox[40pt][l]{\textipa{/z/}}\hspace{180pt}\mbox{}
+\hfill\makebox[40pt][l]{\onslide<6->{\textipa{/z/}}}\hspace{180pt}\mbox{}
  \item a chair~~~/~~~seven chairs%
-\hfill\makebox[40pt][l]{\textipa{/z/}}\hspace{180pt}\mbox{}
+\hfill\makebox[40pt][l]{\onslide<7->{\textipa{/z/}}}\hspace{180pt}\mbox{}
  \item a bike~~~/~~~eight bikes%
-\hfill\makebox[40pt][l]{\textipa{/s/}}\hspace{180pt}\mbox{}
+\hfill\makebox[40pt][l]{\onslide<8->{\textipa{/s/}}}\hspace{180pt}\mbox{}
  \item a pencil~~~~/~~~nine pencils%
-\hfill\makebox[40pt][l]{\textipa{/z/}}\hspace{180pt}\mbox{}
+\hfill\makebox[40pt][l]{\onslide<9->{\textipa{/z/}}}\hspace{180pt}\mbox{}
  \item a flower~~~/~~~ten flowers%
-\hfill\makebox[40pt][l]{\textipa{/z/}}\hspace{180pt}\mbox{}
+\hfill\makebox[40pt][l]{\onslide<10->{\textipa{/z/}}}\hspace{180pt}\mbox{}
 \end{enumerate}
 
+\onslide<11->{単語の最後の音に注目しよう}
+
+
 % Embed the sound file
-\pause
 \mbox{}\hfill\myaudio{./audio/005_singular_plural_04.mp3}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -300,9 +310,9 @@ a book $\longrightarrow$ book\textcolor{Maroon}{s}
 \bigskip
 
 \scalebox{.5}{\fcBus{0.4}{black}{2}\hspace{15pt}\fcBus{0.4}{black}{2}}\hspace{15pt}
-\pause {\LARGE two  bus\textcolor{orange}{es}}
+\pause {\LARGE two  bus\textcolor{orange}{\bfseries es}}\hspace{15pt}{\Large \textipa{/iz/}}
 
-\myaudio{./audio/005_singular_plural_05.mp3}\,\,{}Listen carefully.(注意して聞いてください)
+\myaudio{./audio/005_singular_plural_05.mp3}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意すべき複数形}
@@ -317,7 +327,7 @@ a book $\longrightarrow$ book\textcolor{Maroon}{s}
 
 \scalebox{.4}{\fcPotato{0.4}{black}{2}\fcPotato{0.4}{black}{2}\fcPotato{0.4}{black}{2}}\hspace{15pt}
 \pause
-{\LARGE three  potato\textcolor{orange}{es}}
+{\LARGE three  potato\textcolor{orange}{\bfseries es}}\hspace{10pt}{\Large \textipa{/z/}}
 
 \myaudio{./audio/005_singular_plural_06.mp3}
 \end{frame}
@@ -353,11 +363,14 @@ a tomato \pause$\longrightarrow$ tomato\textcolor{orange}{es}\pause
 \begin{frame}[plain]\frametitle{Pronunciation}
 
 \begin{enumerate}
- \item a bus~~~\pause{}/~~~buses\pause
- \item a class~~~~\pause{}/~~~classes\pause
- \item a box~~~\pause{}/~~~boxes\pause
- \item a potato~~~\pause{}/~~~potatoes\pause
- \item a tomato~~~\pause{}/~~~tomatoes
+ \item a bus~~~\pause{}/~~~buses\pause%
+\hfill\makebox[40pt][l]{\onslide<11->{\textipa{/Iz/}}}\hspace{180pt}\mbox{} \item a class~~~~\pause{}/~~~classes\pause%
+\hfill\makebox[40pt][l]{\onslide<12->{\textipa{/Iz/}}}\hspace{180pt}\mbox{}
+ \item a box~~~\pause{}/~~~boxes\pause%
+\hfill\makebox[40pt][l]{\onslide<13->{\textipa{/Iz/}}}\hspace{180pt}\mbox{}
+ \item a potato~~~\pause{}/~~~potatoes\pause%
+\hfill\makebox[40pt][l]{\onslide<14->{\textipa{/z/}}}\hspace{180pt}\mbox{} \item a tomato~~~\pause{}/~~~tomatoes%
+\hfill\makebox[40pt][l]{\onslide<15->{\textipa{/z/}}}\hspace{180pt}\mbox{}
 
  \end{enumerate}
 
@@ -372,7 +385,7 @@ a tomato \pause$\longrightarrow$ tomato\textcolor{orange}{es}\pause
 \begin{frame}[plain]{注意すべき複数形}
 \scalebox{5}{\ManFace}\hspace{15pt}
 \pause
-{\LARGE a man}
+{\LARGE a man}\pause\hspace{15pt}{\Large \textipa{/m\'\ae n/}}
 \pause
 
 \bigskip
@@ -381,7 +394,7 @@ a tomato \pause$\longrightarrow$ tomato\textcolor{orange}{es}\pause
 
 \scalebox{5}{\ManFace\hspace{5pt}\ManFace\hspace{5pt}\ManFace}\hspace{15pt}
 \pause
-{\LARGE three  \textcolor{orange}{men}}
+{\LARGE three  \textcolor{orange}{\bfseries men}}\pause\hspace{15pt}{\Large \textipa{/m\'en/}}
 
 \bigskip
 
@@ -391,7 +404,8 @@ a tomato \pause$\longrightarrow$ tomato\textcolor{orange}{es}\pause
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意すべき複数形}
-\scalebox{5}{\WomanFace}\pause\hspace{15pt} {\LARGE a woman}
+\scalebox{5}{\WomanFace}\pause\hspace{15pt} {\LARGE a woman}%
+\pause\hspace{15pt}{\Large \textipa{/w\'Um\textschwa n/}}
 \pause
 
 \bigskip
@@ -400,7 +414,8 @@ a tomato \pause$\longrightarrow$ tomato\textcolor{orange}{es}\pause
 
 \scalebox{5}{\WomanFace \WomanFace \WomanFace \WomanFace} \hspace{25pt}
 \pause
-{\LARGE four  \textcolor{orange}{women}}
+{\LARGE four  \textcolor{orange}{\bfseries women}}%
+\pause\hspace{15pt}{\Large \textipa{/w\'ImIn/}}
 
 \bigskip
 
@@ -418,7 +433,8 @@ anchor=south,pin={85:I am Jane. I am twelve.}] at (6.25cm,0) {};
 %anchor=south,,pin={105:I am Bob.}] at (5cm,0) {};
 \end{tikzpicture}
 }\pause
-\hspace{80pt}{\LARGE a child}
+\hspace{80pt}{\LARGE a child}%
+\pause\hspace{15pt}{\Large \textipa{/tS\'aIld/}}
 \pause
 
 \bigskip
@@ -431,7 +447,9 @@ anchor=south] at (6.25cm,0) {};
 anchor=south,,pin={105:I am Bob. I am thirteen.}] at (5cm,0) {};
 \end{tikzpicture}
 }\pause
-\hspace{45pt}{\LARGE two \textcolor{orange}{children}}
+\hspace{45pt}{\LARGE two \textcolor{orange}{\bfseries children}}%
+\pause\hspace{15pt}{\Large \textipa{/tS\'Ildr\textschwa n/}}
+
 
 \bigskip
 
@@ -441,13 +459,17 @@ anchor=south,,pin={105:I am Bob. I am thirteen.}] at (5cm,0) {};
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意すべき複数形}
- \fcMouse{.4}{gray}{.3}\pause\hspace{190pt}{\LARGE a mouse}
+ \fcMouse{.4}{gray}{.3}\pause\hspace{190pt}{\LARGE a mouse}%
+\pause\hspace{15pt}{\Large \textipa{/m\'aUs/}}
+
 
 \bigskip
 
 \bigskip
 
-\fcMouse{.4}{gray}{.3}\fcMouse{.4}{gray}{.3}\fcMouse{.4}{gray}{.3}\fcMouse{.4}{gray}{.3}\pause\hspace{50pt}{\LARGE four \textcolor{Maroon}{\bfseries mice}}
+\fcMouse{.4}{gray}{.3}\fcMouse{.4}{gray}{.3}\fcMouse{.4}{gray}{.3}\fcMouse{.4}{gray}{.3}\pause\hspace{50pt}{\LARGE four \textcolor{BurntOrange}{\bfseries mice}}%
+\pause\hspace{15pt}{\Large \textipa{/m\'aIs/}}
+
 
 \bigskip
 

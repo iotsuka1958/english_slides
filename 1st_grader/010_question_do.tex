@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
@@ -21,6 +21,7 @@
 \usepackage{pifont}
 \usepackage{phaistos}
 \usepackage{worldflags}
+\usepackage{manfnt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
@@ -99,13 +100,13 @@
 \begin{frame}[plain]{わたしは〜しますか？}
  \Large
 
-\mbox{}\hspace{35pt}I have  enough time. \pause
+1.\,\,\,\mbox{}\hspace{35pt}I have  enough time. \pause
 \hspace{80pt}{\footnotesize enough: じゅうぶんな}\pause\hspace{-170pt}\raisebox{-5pt}{\scalebox{1.4}{\myDownwardPitch}}
 \pause
 
 \vspace{15pt}
 
-\myAnch{do}{orange}{Do} I have enough time \myAnch{question}{orange}{?}
+2.\,\,\,\myAnch{do}{orange}{Do} I have enough time \myAnch{question}{orange}{?}
 \pause
 \scalebox{1.4}{\myRisingPitch}
 
@@ -130,13 +131,13 @@
 \begin{frame}[plain]{あなたは〜しますか？}
  \Large
 
-\mbox{}\hspace{35pt}You play the guitar. \pause
+1.\,\,\,\mbox{}\hspace{35pt}You play the guitar. \pause
 \hspace{80pt}{\footnotesize guitar: ギター}\pause\hspace{-140pt}\raisebox{-5pt}{\scalebox{1.4}{\myDownwardPitch}}
 \pause
 
 \vspace{15pt}
 
-\myAnch{do}{orange}{Do} you play the guitar \myAnch{question}{orange}{?}
+2.\,\,\,\myAnch{do}{orange}{Do} you play the guitar \myAnch{question}{orange}{?}
 \pause
 \scalebox{1.4}{\myRisingPitch}
 
@@ -193,9 +194,9 @@
 \begin{frame}[plain]\frametitle{要点}
 \Large
 \begin{tabular}{rlcl}
- 1& I have enough time.\pause{} &$\rightarrow$ &\myEmph[7,9-]{orange}{Do} I have enough time\myEmph[7,10-]{orange}{?}\pause{} \\
- 2& You play the guitar.\pause{}&$\rightarrow$ &\myEmph[7,9-]{orange}{Do} you play the guitar\myEmph[7,10-]{orange}{?}\pause{} \\
- 3& They speak French.\pause{}&$\rightarrow$ &\myEmph[7,9-]{orange}{Do} they speak French\myEmph[7,10-]{orange}{?}\pause
+ 1& I have enough time.\pause{} &$\rightarrow$ &\myEmph[7,9-]{Maroon}{Do} I have enough time\myEmph[7,10-]{Maroon}{?}\pause{} \\
+ 2& You play the guitar.\pause{}&$\rightarrow$ &\myEmph[7,9-]{Maroon}{Do} you play the guitar\myEmph[7,10-]{Maroon}{?}\pause{} \\
+ 3& They speak French.\pause{}&$\rightarrow$ &\myEmph[7,9-]{Maroon}{Do} they speak French\myEmph[7,10-]{Maroon}{?}\pause
 \end{tabular}
 \pause
 
@@ -205,7 +206,8 @@
 \pause
 \begin{itemize}\small
  \item   先頭に `Do'を置く\pause
- \item   文末に`?'をつける（イントネーションは\myRisingPitch{}）
+ \item   文末に`?'をつける（イントネーションは\myRisingPitch{}）\pause\\
+         \mbox{}\hspace{80pt}$\text{S}+\text{V\,\ldots\,.}\rightarrow\text{Do}+\text{S}+\text{V}$\,\ldots\,? 
 \end{itemize}
      \end{exampleblock}
 
@@ -229,20 +231,20 @@
 \pause
 
 
-\mbox{}\hspace{50pt}\alt<2-3>{You}{He} sing\only<5->{\myAnch{T1}{orange}{s}} well. \only<4>{\ding{55}}
+1.\,\,\,\mbox{}\hspace{50pt}\alt<2-3>{You}{He} sing\only<5->{\myAnch{T1}{orange}{s}} well. \only<4>{\ding{55}}
 \hspace{85pt}\visible<3->{{\footnotesize well: じょうずに}}
 \hspace{-150pt}%
 \visible<7->{\raisebox{-5pt}{\scalebox{1.4}{\myDownwardPitch}}}
 
-\hspace{100pt}%
+\hspace{120pt}%
 \visible<6->{%
 \myAnch{T2}{orange}{\small 三単現の`s'}
 }
 
-\vspace{30pt}
+\vspace{10pt}
 
 \onslide<8->{%
-\myAnch{does}{orange}{Does} he sing well \myAnch{question}{orange}{?}
+2.\,\,\,\myAnch{does}{orange}{Does} he sing well \myAnch{question}{orange}{?}
 }
 \onslide<9->{%
 \scalebox{1.4}{\myRisingPitch}
@@ -253,7 +255,7 @@
 \small
 \begin{tabular}[t]{@{}l}
 先頭にDoes(Do\,\,\ding{55})\\
-(Does he sing\textcolor{red}{s}\,\,\ding{55})
+(*Does he sing\textcolor{red}{s} well?\,\,\dbend)
 \end{tabular}
 }
 \hspace{60pt}\myAnch{txt2}{white}{\small 文末に`?'}
@@ -263,6 +265,16 @@
 \draw[->, thick, orange] (txt2.west) to[out=180, in=-45] (question.south);
 \end{tikzpicture}
 }
+
+\begin{exampleblock}<11->{Topics for Today}
+{\small 主語が3人称単数のとき}
+\pause
+\begin{itemize}\small
+ \item<12->   先頭に `Does'を置く\pause
+ \item<13->   文末に`?'をつける（イントネーションは\myRisingPitch{}）\pause\\
+         \mbox{}\hspace{80pt}$\text{S}+\text{V\,\ldots\,.}\longrightarrow\text{Does}+\text{S}+\text{V($=$原形)}$\,\ldots\,? 
+\end{itemize}
+     \end{exampleblock}
 
 \onslide<11->{%
 \mbox{}\hfill\myaudio{./audio/010_question_do_05.mp3}
