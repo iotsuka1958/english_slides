@@ -54,12 +54,21 @@ slides_undone_table |> gtsave("slides_undone.html") # htmlファイル作成
 work_log  <-  read_csv("./work_log.csv")
 ```
 ```{r}
-work_log |> 
+task_progress_table <- work_log |> 
   pivot_longer(-file_with_path,
                names_to = c("grade", ".value"),
-               names_sep = "_")
+               names_sep = "_") |> 
+  filter(!is.na(date))|> 
+  gt() |> 
+  tab_header(
+    title = "task_progress",
+    subtitle = c("as of", as.character(Sys.time()))
+  )
 ```
 
+```{r}
+task_progress_table |> gtsave("task_progress.html") # htmlファイル作成
+```
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
