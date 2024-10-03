@@ -5,6 +5,7 @@
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{media9}
@@ -28,6 +29,7 @@
 \usepackage{circledsteps}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -73,7 +75,8 @@
 \end{tikzpicture}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{English is fun.\,\,{}--- Is she studying? ---}
+\title{English is fun.}
+\subtitle{Is she tired? Is she studying?}
 \author{}
 \institute[]{}
 \date[]
@@ -97,9 +100,10 @@
 
 
 
-\section{be動詞の疑問文}
+\section{疑問文}
 
 %\subsection{復習}
+\subsection{be動詞の疑問文}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{be動詞の疑問文}
  \Large
@@ -122,7 +126,6 @@
 \node at (0.5,0.25) {\scalebox{2}{\myRisingPitch}};
 \pause
 \node at (2,-1) {{\scriptsize \textbullet\,\,?と最後のイントネーションに注意}};
-\pause
 % Embed the sound file
 \node at (7,-1.5) {\myaudio{./audio/008_question_be_02.mp3}};
 \end{tikzpicture}
@@ -149,7 +152,8 @@
 \begin{exampleblock}<2->{Topics for Today}
 be動詞の疑問文のつくり方
 \begin{itemize}
- \item<3->  be動詞を先頭にする（主語はその後ろにきます）
+ \item<3->  be動詞が先頭（主語はその後ろ）\\
+\hfill\Circled[fill color = white]{\,\,$\text{S}+\text{be動詞}\,\,$}\,\,$\rightarrow$\,\,\Circled[fill color = white]{\,\,$\text{be動詞}+\text{S}\,\,$}\,\,? 
  \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
 \end{itemize}
       \end{exampleblock}
@@ -162,8 +166,8 @@ be動詞の疑問文のつくり方
 \end{frame}
 
 
-\section{現在進行形の疑問文}
-\subsection{現在進行形の疑問文のつくり方}
+\subsection{現在進行形の疑問文}
+%\subsection{現在進行形の疑問文のつくり方}
 \begin{frame}[plain]{現在進行形の疑問文}
 \Large
 
@@ -212,7 +216,7 @@ be動詞の疑問文のつくり方
 \visible<4->{$\longrightarrow$\,\,\,Is John sleeping now?}
 \end{enumerate}
 
-\mbox{}\hfill\visible<5>{\myaudio{./audio/023_is_ing_question_02.mp3}}
+\mbox{}\hfill{\myaudio{./audio/023_is_ing_question_02.mp3}}
 \end{frame}
 
 
@@ -222,8 +226,8 @@ be動詞の疑問文のつくり方
 
 \begin{enumerate}
  \item ( Do / Does / \alt<2->{\Circled[outer color=orange]{Is}}{Is} / is ) she reading a book?.\hspace{10pt}\raisebox{0pt}{\bcbook}
- \item ( Do / Does / \alt<3->{\Circled[outer color=orange]{Are}}{Are} / is ) you waiting for the bus?\hspace{10pt}\scalebox{2.5}{\twemoji{bus stop}\twemoji{bus}}
- \item Are you ( \alt<4->{\Circled[outer color=orange]{listening}}{listening} / listen / playing ) to music now?
+ \item ( Do / Does / \alt<3->{\Circled[outer color=orange]{Are}}{Are} / is ) you waiting for the bus?\hspace{10pt}\scalebox{2.5}{\twemoji{bus stop}\twemoji{bus}}\hfill{\scriptsize wait for ～: ～を待つ}
+ \item Are you ( \alt<4->{\Circled[outer color=orange]{listening}}{listening} / listen / playing ) to music now?\hfill{\scriptsize listen to ～: ～を聞く}
   \item ( Do / Does / \alt<5->{\Circled[outer color=orange]{Are}}{Are} / Is ) George and Eric singing in the hall now?\hspace{10pt}\raisebox{-5pt}{\rotatebox{0}{\scalebox{2.5}{\twemoji{musical notes}}}}
 \end{enumerate}
 \pause
@@ -231,12 +235,12 @@ be動詞の疑問文のつくり方
 \vfill
 
 
-\mbox{}\hfill\visible{\myaudio{./audio/023_is_ing_question_03.mp3}}
+\mbox{}\hfill{\myaudio{./audio/023_is_ing_question_03.mp3}}
 
 
 \end{frame}
 
-\subsection{疑問文への答え方}
+\section{疑問文への答え方}
 \begin{frame}[plain]{疑問文への答え方}
 
 \Large
@@ -251,9 +255,9 @@ be動詞の疑問文のつくり方
 \visible<3->{
 \mbox{}\hfill$\left\{\begin{tabular}{l}
          \text{Yes, he is.}\\
-         \visible<4->{\text{No, he is not.}}\\
-         \visible<5->{\text{(}= \text{No, he's not.)}}\\
-         \visible<6->{\text{(}= \text{No, he isn't.)}}
+         \visible<4->{\text{No, \textcolor<5>{Maroon}{\textbf<5>{he}} \textcolor<5,6>{Maroon}{\textbf<5,6>{is}} \textcolor<6>{Maroon}{\textbf<6>{not}}.}}\\
+         \visible<5->{\text{(}= \text{No, \textcolor<5>{Maroon}{\textbf<5>{he's}} not.)}}\\
+         \visible<6->{\text{(}= \text{No, he \textcolor<6>{Maroon}{\textbf<6>{isn't}}.)}}
         \end{tabular}\right.$
 }
 \end{column}
@@ -265,9 +269,9 @@ be動詞の疑問文のつくり方
 \visible<9->{%
 \mbox{}\hfill$\left\{\begin{tabular}{l}
          \text{Yes, he is.}\\
-         \visible<10->{\text{No, he is not.}}\\
-         \visible<11->{\text{(}= \text{No, he's not.)}}\\
-         \visible<12->{\text{(}= \text{No, he isn't.)}}
+         \visible<10->{\text{No, \textcolor<11>{Maroon}{\textbf<11>{he}} \textcolor<11,12>{Maroon}{\textbf<11,12>{is}} \textcolor<12>{Maroon}{\textbf<12>{not}}.}}\\
+         \visible<11->{\text{(}= \text{No, \textcolor<11>{Maroon}{\textbf<11>{he's}} not.)}}\\
+         \visible<12->{\text{(}= \text{No, he \textcolor<12>{Maroon}{\textbf<12>{isn't}}.)}}
         \end{tabular}\right.$
 }
 \end{column}
@@ -283,17 +287,22 @@ be動詞の疑問文のつくり方
 \vspace{25pt}
 
 \visible<14->{%
-\begin{exampleblock}{Topic for Today\,\,\,{\textcolor{black}{\mdseries ---現在進行形の疑問文への答え方---}}}
+\begin{exampleblock}{Topics for Today\,\,\,}
 \small
 
 \begin{itemize}
- \item  be動詞の疑問文への答え方と同じ
+ \item 「be動詞の疑問文」への答え方と「現在進行形の疑問文」への答え方は同じ
+ \item 「いいえ」のときは\kenten{短縮形}が使われることがあります
+         \begin{enumerate}
+	  \item \Circled[fill color = white]{\,\,$\text{S}+\text{be動詞}$\,\,}\,\,がまとまる場合\hfill{}{\scriptsize I'm not, You're not, She's not, It's not,  They're not}
+	  \item \Circled[fill color = white]{\,\,$\text{be動詞}+\text{not}$\,\,}\,\,がまとまる場合\hfill{}{\scriptsize aren't, isn't\,\,(でもamn'tはない)}
+	 \end{enumerate}
 \end{itemize}
       \end{exampleblock}
 }
-\vspace{-5pt}
+\vspace{-15pt}
 
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_question_04.mp3}}
+\mbox{}\hfill{\scriptsize \myaudio{./audio/023_is_ing_question_04.mp3}}
 \end{frame}
 
 
