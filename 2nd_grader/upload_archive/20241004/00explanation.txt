@@ -1,0 +1,15 @@
+・be動詞の否定と現在進行形の否定の総まとめをしました。
+・be動詞の疑問文の作り方を学習しました
+
+yyyymmdd.pdf: 授業で用いたスライド（音声ははいっていません）
+yyyymmdd.mp3: 授業の発音練習用音声ファイル
+pronunciation_yyyymmdd.pdf: Today's Pronunciationスライド
+pronunciation_yyyymmdd.mp3: Today's Pronunciation音声ファイル
+
+
+ファイル名の`yyyymmdd'のところは西暦4桁月2桁日2桁の数字がはいります
+例:
+2024年9月19日に授業であれば、
+20240919.pdf
+のことです
+

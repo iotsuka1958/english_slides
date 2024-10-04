@@ -1,9 +1,3 @@
-file '005_pronoun_1.mp3
+file '005_singular_plural_01.mp3
 file 'silent.mp3'
-file '005_pronoun_2.mp3
-file 'silent.mp3'
-file '005_pronoun_3.mp3
-file 'silent.mp3'
-file '005_pronoun_4.mp3
-file 'silent.mp3'
-file '005_pronoun_5.mp3
+file '005_singular_plural_02.mp3
