@@ -70,6 +70,32 @@ task_progress_table <- work_log |>
 task_progress_table |> gtsave("task_progress.html") # htmlファイル作成
 ```
 
+
+## classroom 投稿の状況
+
+google clasroom への教材のアップロード状況の整理をしておこう。
+
+
+
+```{r}
+classroom <- read_csv("./classroom.csv")
+```
+
+```{r}
+classroom_table <- classroom |>  pivot_longer(-date,
+               names_to = c("grade", ".value"),
+               names_sep = "_") |> 
+  filter(!is.na(topic))|> 
+  gt() |> 
+  tab_header(
+    title = "classroom",
+    subtitle = c("as of", as.character(Sys.time()))
+  )
+```
+
+```{r}
+classroom_table |> gtsave("classroom.html") # htmlファイル作成
+```
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:

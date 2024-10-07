@@ -9,13 +9,21 @@
 \usepackage[no-math,deluxe,expert,yu-win10]{luatexja-preset}
 %%%%
 \usepackage{graphicx}
-\usepackage{xcolor}
+\usepackage[svgnames,table]{xcolor}
 \usepackage{pxrubrica}
 \usepackage[default]{fontsetup}
 %%%% tabular環境の改良版
 \usepackage{tabularray}
 \UseTblrLibrary{booktabs}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define custom pastel colors
+\definecolor{customLightBlue}{RGB}{173, 216, 230}
+\definecolor{customLightCyan}{RGB}{224, 255, 255}
+\definecolor{customLightGreen}{RGB}{144, 238, 144}
+\definecolor{customLightYellow}{RGB}{255, 255, 224}
+\definecolor{customLightPink}{RGB}{255, 182, 193}
+\definecolor{customLightGray}{RGB}{211, 211, 211}
+\definecolor{customLavender}{RGB}{230, 230, 250}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[at]{easylist}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -155,7 +163,6 @@ Have a good day.\\
  \item 通話を終了し全員を退出させる
 \end{itemize}
 
-\end{document}
 
 %%%%%%%%%%%%%%
 \newpage
@@ -197,7 +204,63 @@ Google classroomの各教科のペーから、Meetの参加ボタンをクリッ
 毎日確認する習慣をつけるようにお願いしいます。
 
 教科によっては、授業で使うプリントをあらかじめ掲載しています。
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{center}
+ \Large Essential Emacs Keyboard Shortcuts
+\end{center}
 
+
+
+\begin{center}\small
+\begin{tblr}{
+  colspec={lll},
+}
+\SetRow{bg=customLightBlue} \textbf{Category} & \textbf{Shortcut} \\
+\SetRow{bg=customLightCyan} \textbf{Cursor Movement} 
+  & C--f& Move forward one character \\
+\SetRow{bg=customLightCyan} & C--b& Move backward one character \\
+\SetRow{bg=customLightCyan} & C--n& Move to the next line \\
+\SetRow{bg=customLightCyan} & C--p& Move to the previous line \\
+\SetRow{bg=customLightCyan} & M--f& Move forward one word \\
+\SetRow{bg=customLightCyan} & M--b& Move backward one word \\
+\SetRow{bg=customLightCyan} & C--a& Move to the beginning of the line \\
+\SetRow{bg=customLightCyan} & C--e& Move to the end of the line \\
+\SetRow{bg=customLightCyan} & M--<& Move to the beginning of the buffer \\
+\SetRow{bg=customLightCyan} & M-->:& Move to the end of the buffer \\
+\SetRow{bg=customLightGreen} \textbf{Text Editing} 
+  & C--d& Delete the character at the cursor \\
+\SetRow{bg=customLightGreen} & C--h& Delete the backward character \\
+\SetRow{bg=customLightGreen} & C--k& Kill (cut) to the end of the line \\
+\SetRow{bg=customLightGreen} & M--d& Kill the next word \\
+\SetRow{bg=customLightGreen} & M--Del& Kill the previous word \\
+\SetRow{bg=customLightGreen} & C--w& Kill the selected region \\
+\SetRow{bg=customLightGreen} & M--w& Copy the selected region \\
+\SetRow{bg=customLightGreen} & C--y& Paste (yank) \\
+\SetRow{bg=customLightGreen} & C--/ or C-x u& Undo \\
+\SetRow{bg=customLightYellow} \textbf{Search and Replace} 
+  & C--s& Search forward\\
+\SetRow{bg=customLightYellow} & C--r& Search backward \\
+\SetRow{bg=customLightYellow} & M--\%& Query replace \\
+\SetRow{bg=customLightPink} \textbf{Redo, Undo} 
+  & C--/& Undo \\
+\SetRow{bg=customLightPink} & M--\_& Redo \\
+\SetRow{bg=customLightGray} \textbf{File Operations} 
+  & C--x C--f& Open file \\
+\SetRow{bg=customLightGray} & C--x C--s& Save file \\
+\SetRow{bg=customLightGray} & C--x C--w& Save as \\
+\SetRow{bg=customLightGray} & C--x k& Close file \\
+\SetRow{bg=customLavender} \textbf{Others} 
+  & C--x C--c& Quit Emacs \\
+\SetRow{bg=customLavender} & M--x& Execute command \\
+\SetRow{bg=customLavender} & C--x o& Switch windows \\
+\SetRow{bg=customLavender} & C--m o& Enter \\
+\SetRow{bg=customLavender} & C--g& Cancel command \\
+\end{tblr}%
+ \end{center}
+
+
+\end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
