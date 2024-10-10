@@ -1,5 +1,3 @@
-She is eating breakfast now.
-He knows the answer.
-We have two cats.
-They are playing baseball now.
-She loves you.
+I like coffee
+I do not like coffee.
+I don't like coffee.
