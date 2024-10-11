@@ -1,3 +1,2 @@
-I like coffee
-I do not like coffee.
-I don't like coffee.
+Is he busy?<break time="3s" />Yes, he is.<break time="3s" />No, he is not.<break time="3s" />No, he’s not.<break time="3s" />No, he isn’t.
+Is he studying?<break time="3s" />Yes, he is.<break time="3s" />No, he is not.<break time="3s" />No, he’s not.<break time="3s" />No, he isn’t.
