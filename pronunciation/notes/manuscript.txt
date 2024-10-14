@@ -161,7 +161,7 @@ kitchen<break time="3s"/>kitchen
 picture<break time="3s"/>picture
 winter<break time="3s"/>winter
 %%%%%%%%%%%%%%%%%%%%%
-vowel_short_i_21.mp3
+vowel_short_i_02.mp3
 The big ship is in the river.
 My sister sits and sings in the big kitchen.
 The kids visit the city in spring and winter.
@@ -171,7 +171,7 @@ river<break time="3s"/>river
 spring<break time="3s"/>spring
 beach<break time="3s"/>beach
 eat<break time="3s"/>eat
-picture<break time="3s"/picture>
+picture<break time="3s"/>picture
 %%%%%%%%%%%%%%%%%%%%%
 vowel_short_i_04.mp3
 blue<break time="3s"/>blue
@@ -228,14 +228,14 @@ shoes<break time="3s"/>shoes
 %% \textipa{/U/}
 %%%%%%%%%%%%%%%%%%%%%
 vowel_short_u_01.mp3
-book
-cook
-foot
-look
-good
-woman
-push
-sugar
+book<break time="3s"/>book
+cook<break time="3s"/>cook
+foot<break time="3s"/>foot
+look<break time="3s"/>look
+good<break time="3s"/>good
+woman<break time="3s"/>woman
+push<break time="3s"/>push
+sugar<break time="3s"/>sugar
 %%%%%%%%%%%%%%%%%%%%%
 vowel_short_u_02.mp3
 The woman looks at the book.

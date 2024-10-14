@@ -1,5 +1,5 @@
-cat
-cap
-bag
-man
-jam
+group
+put
+push
+cool
+wood
