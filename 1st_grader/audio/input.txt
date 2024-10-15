@@ -1,2 +1,4 @@
-Is he busy?<break time="3s" />Yes, he is.<break time="3s" />No, he is not.<break time="3s" />No, he’s not.<break time="3s" />No, he isn’t.
-Is he studying?<break time="3s" />Yes, he is.<break time="3s" />No, he is not.<break time="3s" />No, he’s not.<break time="3s" />No, he isn’t.
+I play soccer after school.<break time="2s"/>I do not play soccer after school.<break time="2s"/>I don’t play soccer after school.
+You study math at night.<break time="2s"/>You do not study math at night.<break time="2s"/>You don’t study math at night.
+We eat meat at home.<break time="2s"/> We do not eat meat at home.<break time="2s"/> We don’t eat meat at home.
+They like horror movies.<break time="2s"/> They do not like horror movies.<break time="2s"/> They don’t like horror movies.
