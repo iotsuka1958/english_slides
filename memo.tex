@@ -15,6 +15,8 @@
 %%%% tabular環境の改良版
 \usepackage{tabularray}
 \UseTblrLibrary{booktabs}
+\let\textipa\relax
+\usepackage{tipa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Define custom pastel colors
 \definecolor{customLightBlue}{RGB}{173, 216, 230}
@@ -58,7 +60,44 @@ title=Question~\thetcbcounter: #2,#1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{アメリカ英語の母音}
 
+\section{アメリカ英語の母音}
+
+\subsection{短母音}
+
+\begin{itemize}
+    \item \textipa{/I/}: bit \textipa{/bIt/}, sit \textipa{/sIt/}, fish \textipa{/fIS/}
+    \item \textipa{/E/}: bet \textipa{/bEt/}, set \textipa{/sEt/}, bed \textipa{/bEd/}
+    \item \textipa{/\ae/}: bat \textipa{/b\ae t/}, cat \textipa{/k\ae t/}, hat \textipa{/h\ae t/}
+    \item \textipa{/A/}: hot \textipa{/hAt/}, cop \textipa{/kAp/}, box \textipa{/bAks/}
+    \item \textipa{/U/}: put \textipa{/pUt/}, book \textipa{/bUk/}, good \textipa{/gUd/}
+    \item \textipa{/\textturnv/}: but \textipa{/b\textturnv t/}, cup \textipa{/k\textturnv p/}, love \textipa{/l\textturnv v/}
+    \item \textipa{/@/}: about \textipa{/@baUt/}, pencil \textipa{/pEns@l/}, famous \textipa{/feIm@s/}
+\end{itemize}
+
+\subsection{長母音}
+
+\begin{itemize}
+    \item \textipa{/i:/}: beat \textipa{/bi:t/}, see \textipa{/si:/}, feet \textipa{/fi:t/}
+    \item \textipa{/u:/}: boot \textipa{/bu:t/}, food \textipa{/fu:d/}, moon \textipa{/mu:n/}
+    \item \textipa{/A:/}: father \textipa{/fA:D@r/}, car \textipa{/kA:r/}, park \textipa{/pA:rk/}
+    \item \textipa{/O:/}: caught \textipa{/kO:t/}, law \textipa{/lO:/}, bought \textipa{/bO:t/}
+    \item \textipa{/\textrhookschwa :/}: bird \textipa{/b\textrhookschwa :d/}, word \textipa{/w\textrhookschwa :d/}, learn \textipa{/l\textrhookschwa :n/}
+\end{itemize}
+
+\subsection{二重母音}
+
+\begin{itemize}
+    \item \textipa{/eI/}: say \textipa{/seI/}, make \textipa{/meIk/}, day \textipa{/deI/}
+    \item \textipa{/aI/}: my \textipa{/maI/}, like \textipa{/laIk/}, time \textipa{/taIm/}
+    \item \textipa{/OI/}: boy \textipa{/bOI/}, toy \textipa{/tOI/}, voice \textipa{/vOIs/}
+    \item \textipa{/aU/}: now \textipa{/naU/}, house \textipa{/haUs/}, down \textipa{/daUn/}
+    \item \textipa{/oU/}: go \textipa{/goU/}, home \textipa{/hoUm/}, know \textipa{/noU/}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \rotatebox{0}{%
 \makebox(75mm,75mm)[c]{% 枠を書くときは \framebox にする
 %\framebox(75mm,75mm)[c]{% 枠を書くときは \framebox にする

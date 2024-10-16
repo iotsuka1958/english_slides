@@ -6,6 +6,14 @@ editor_options:
 
 # english_slides
 
+
+# ffmpegを利用してmp3から不要な個所を取り除く方法
+
+
+
+
+
+
 # ffmpegを利用してfoo.mp3とbar.mp3を5秒の空白を挟んで結合する方法
 
 以下の手順で実行できます。
