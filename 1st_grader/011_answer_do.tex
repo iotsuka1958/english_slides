@@ -1,1 +1,414 @@
-\documentclass[aspectratio=169]{beamer}\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}\renewcommand{\kanjifamilydefault}{\gtdefault}\renewcommand{\emph}[1]{{\upshape\bfseries #1}}\usetheme{metropolis}\metroset{block=fill}\setbeamertemplate{navigation symbols}{}\usecolortheme[rgb={0.7,0.2,0.2}]{structure}%%%%%%%%%%%%%%%%%%%%%%%%%%%\usepackage{media9}%%%%%%%%%%%%%%%%%%%%%%%%%%%%% さまざまなアイコン%%%%%%%%%%%%%%%%%%%%%%%%%%%\usepackage{fontawesome}\usepackage{figchild}\usepackage{twemojis}\usepackage{utfsym}\usepackage{bclogo}\usepackage{marvosym}\usepackage{fontmfizz}\usepackage{circledsteps}%%%%%%%%%%%%%%%%%%%%%%%%%%%\usepackage{tikz}\usetikzlibrary{backgrounds}\usepackage{tcolorbox}\usepackage{myascolorbox} %ascolorbox.sty(https://github.com/yasunari/ascolorbox)をlualatexで使えるようにzw2箇所を\zwに改変したもの\usepackage{tikzpeople}\usepackage[dvipsnames]{xcolor}\usepackage{amsmath}%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 場合分け\usepackage{cases}%%%%%%%%%%%%%%%%%%%%%%%%%%%% \myAnch{<名前>}{<色>}{<テキスト>}% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの% ノードとして出力する. 図には remeber picture 属性を付けている% ので外部から参照可能である.\newcommand*{\myAnch}[3]{%  \tikz[remember picture,baseline=(#1.base)]    \node[draw,rectangle,#2] (#1) {\normalcolor #3};}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 音声リンク表示\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}%%%%%%%%%%%%%%%%%%%%%%%%%%%% \myEmph コマンドの定義%\newcommand{\myEmph}[3]{%%    \textbf<#1>{\color<#1>{#2}{#3}}%%}\usepackage{xparse} % xparseパッケージの読み込み\NewDocumentCommand{\myEmph}{O{} m m}{%    \def\argOne{#1}%    \ifx\argOne\empty        \textbf{\color{#2}{#3}}% オプション引数が省略された場合    \else        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合    \fi}%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 文末の上昇イントネーション記号 \myRisingPitch%% 通常のイントネーション \myDownwardPitch%% https://note.com/dan_oyama/n/n8be58e8797b2%%%%%%%%%%%%%%%%%%%%%%%%%%%\newcommand{\myRisingPitch}{\begin{tikzpicture}[scale=0.3,baseline=0.3]\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);\end{tikzpicture}}\newcommand{\myDownwardPitch}{\begin{tikzpicture}[scale=0.3,baseline=0.3]\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);\end{tikzpicture}}%%%%%%%%%%%%%%%%%%%%%%%%%%%\title{English is fun.}\subtitle{Do you like sushi? --- Yes, I do. / No, I don't.}\author{}\institute[]{}\date[]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXT%%%%%%%%%%%%%%%%%%%%%%%%%%%%\begin{document}\begin{frame}[plain]  \titlepage\end{frame}\section*{授業の流れ}\begin{frame}[plain]  \frametitle{授業の流れ}  \tableofcontents\end{frame}\section{一般動詞の疑問文}\subsection{一般動詞の疑問文}\begin{frame}[plain]{一般動詞の疑問文のつくり方}\begin{tabular}{rlcl} 1& {I have enough time.} &$\rightarrow$ &\onslide<2->{Do I have enough time?} \\ 2& {You play the guitar.}&$\rightarrow$ &\onslide<3->{Do you play the guitar?} \\ 3& {They speak French.}&$\rightarrow$ &\onslide<4->{Do they speak French?}\\ 4& {He sings well.}&$\rightarrow$ &\onslide<5->{Does he sing well?}\hspace{5pt}\onslide<6->{(*Does he sings well?)}\end{tabular}\begin{exampleblock}<7->{Topics for Today}\begin{itemize} \item   先頭にDoまたはDoes（DoesをもちいるのはSが3人称単数のとき）\\	 \Circled[fill color = white]{\,\,Do\,\,}\,$+$\,S\,$+$\,V{\scriptsize ($=$\,原形)} \ldots\,\,\,?\\	 \Circled[fill color = white]{\,\,Does\,\,}\,$+$\,S\,$+$\,V{\scriptsize ($=$\,原形)} \ldots\,\,\,?% \item   文末に`?'をつける\end{itemize}     \end{exampleblock}\end{frame}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\begin{frame}<1-10>[plain]\frametitle{Exercises}つぎの文を疑問文にしましょう。 \begin{enumerate}  \item<1-> You like flowers.\hspace{59.7pt}        \onslide<2->{$\longrightarrow$\,\,\,\,\, Do you like flowers?\hfill\scalebox{.75}{\bcfleur\bcfleur}}  \item<1-> They live in Boston.\hspace{47.5pt}%        \onslide<3->{$\longrightarrow$\,\,\,\,\, Do they live in Boston?}  \item<1-> She teaches science.\hspace{42pt}%        \onslide<4->{$\longrightarrow$\,\,\,\,\, Does she teach science?\hfill\scalebox{1.75}{\twemoji{woman scientist}}}  \item<5-> He has  a car.\hspace{80.5pt}%        \onslide<6->{$\longrightarrow$\,\,\,\,\, Does he have a car?\hfill\faCar}  \item<7-> Our teacher walks to school.        \onslide<8->{$\longrightarrow$\,\,\,\,\, Does our teacher walk to school? } \end{enumerate}\begin{exampleblock}<9->{Topics for Today}\begin{itemize} \item   先頭にDoまたはDoes（DoesをもちいるのはSが3人称単数のとき）\\	 \Circled[fill color = white]{\,\,Do\,\,}\,$+$\,S\,$+$\,V{\scriptsize ($=$\,原形)} \ldots\,\,\,?\\	 \Circled[fill color = white]{\,\,Does\,\,}\,$+$\,S\,$+$\,V{\scriptsize ($=$\,原形)} \ldots\,\,\,?% \item   文末に`?'をつける\end{itemize}     \end{exampleblock}\vspace{-10pt}% Embed the sound file\onslide<10>{%\mbox{}\hfill\myaudio{./audio/010_question_do_06.mp3}}\end{frame}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\section{疑問文への答え方}\subsection{Do you 〜 ? と聞かれたら} \begin{frame}[plain]{Do you 〜 ? と聞かれたら} \Large\pauseDo you like sushi?\hfill\twemoji{sushi}\vspace{20pt}\pause\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}         \text{Yes, I do.}\\\pause         \text{No, I do not.}\\\pause         \text{(}= \text{No, I don't.)}        \end{tabular}\right.$\pause\mbox{}\hfill{}{\small Noのときdo notを縮めてNo, I \textcolor{orange}{don't}.ともいいます}\pause\mbox{}\hfill\myaudio{./audio/011_answer_do_01.mp3}\end{frame}\subsection{Does he 〜 ?  / Does she 〜 ? と聞かれたら}\begin{frame}[plain]{Does he  〜 ? / Does she 〜 ? と聞かれたら} \Large\begin{columns}[t]\begin{column}{.475\textwidth}Does he walk to school?\vspace{20pt}\pause\mbox{}\hspace{40pt}$\left\{\begin{tabular}{l}         \text{Yes, he does.}\\\pause         \text{No, he does not.}\\\pause         \text{(}= \text{No, he doesn't.)}\\       \end{tabular}\right.$\pause\vspace{10pt}{\small Noのとき\\[-5pt]does notを縮めてNo, he \textcolor{orange}{doesn't.}}\end{column}\pause\begin{column}{.475\textwidth}Does she speak Japanese?\vspace{20pt}\pause\mbox{}\hspace{40pt}$\left\{\begin{tabular}{l}         \text{Yes, she does.}\\\pause         \text{No, she does not.}\\\pause           \text{(}= \text{No, she doesn't.)}       \end{tabular}\right.$\pause\vspace{20pt}\mbox{}\hfill\myaudio{./audio/011_answer_do_02.mp3}\,\,{}\end{column}\end{columns}\end{frame}\subsection{Does John 〜 ?  / Does Emily 〜 ? と聞かれたら}\begin{frame}[plain]{Does John  〜 ? / Does Emily 〜 ? と聞かれたら} \Large\pause\begin{columns}[t]\begin{column}{.49\textwidth}Does \myAnch{john}{orange}{John} have a bike?\pause\vspace{20pt}\mbox{}\hfill$\left\{\begin{tabular}{l}         Yes, \myAnch{he1}{orange}{he} does.\\\pause         No, \myAnch{he2}{orange}{he} does not.\\\pause         \text{(}= \text{No, he doesn't.)}        \end{tabular}\right.$\pause%\mbox{}\hfill{}{\footnotesize }\begin{tikzpicture}[remember picture,overlay] \draw[->,thick,orange] (john.south) to[out=-30,in=160] (he1.north west); \draw[->,thick,orange] (john.south) to[out=-110, in=155] (he2.west);\end{tikzpicture}\end{column}\pause\begin{column}{.49\textwidth}Does \myAnch{emily}{orange}{Emily} teach math?\pause\vspace{20pt}\mbox{}\hfill$\left\{\begin{tabular}{l}         Yes, \myAnch{she1}{orange}{she} does.\\\pause         No, \myAnch{she2}{orange}{she} does not.\\\pause          \text{(}= \text{No, she doesn't.)}        \end{tabular}\right.$\begin{tikzpicture}[remember picture,overlay] \draw[->,thick,orange] (emily.south) to[out=-30,in=160] (she1.north west); \draw[->,thick,orange] (emily.south) to[out=-165, in=165] (she2.west);\end{tikzpicture}\pause\vspace{20pt}\mbox{}\hfill\myaudio{./audio/011_answer_do_03.mp3}\end{column}\end{columns}\pause{\small 答えるときは、名前そのものではなくheやsheを使います}\end{frame} \subsection{Do they 〜 ? と聞かれたら}\begin{frame}[plain]{Do they 〜 ? と聞かれたら} \Large\pauseDo they sing well??\pause\vspace{10pt}\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}ls         Yes, they do.\\\pause         No, they do not.\\\pause          \text{(}= \text{No, they don't.)}        \end{tabular}\right.$\vspace{10pt}\mbox{}\hfill{}{\small Noのときdo notを縮めてNo, they \textcolor{orange}{don't.}}\vspace{20pt}\mbox{}\hfill\myaudio{./audio/011_answer_do_04.mp3}\,\,{}\end{frame}\begin{frame}[plain]{Do A and B 〜 ? と聞かれたら} \LargeDo \myAnch{s1}{orange}{George and Peter} go to school together?\mbox{}\hfill{\footnotesize together: いっしょに}\pause\vspace{10pt}\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}         Yes, \myAnch{they4}{orange}{they} do.\\\pause         No, \myAnch{they5}{orange}{they} do not.\\\pause         \text{(}= \text{No, they don't.)}       \end{tabular}\right.$\begin{tikzpicture}[remember picture,overlay] \draw[->,thick,orange] (s1.south) to[out=-30,in=160] (they4.north west); \draw[->,thick,orange] (s1.south) to[out=-90, in=165] (they5.north west);\end{tikzpicture}\mbox{}\hfill\myaudio{./audio/011_question_do_05.mp3}\,\,{}\pause{\small 答えるときは、名前そのものではなくtheyを使います}\end{frame}\begin{frame}<1-20>[plain]\frametitle{Exercises}例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。\mbox{}\hfill\myaudio{./audio/011_answer_do_06.mp3}\begin{tabular}{rlcll}\visible<1->{例}& \visible<1->{Do you have pets?}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I do.}&\visible<4->{(2) No, I do not.}\\\visible<1->{1}&\visible<1->{Do they eat Chinese food?}&\visible<5->{$\rightarrow$}&\visible<6->{(1) Yes, they do.}&\visible<7->{(2) No, they do not.}\\\visible<1->{2}&\visible<1->{Does she teache music?}&\visible<8->{$\rightarrow$}& \visible<9->{(1) Yes, she does.}&\visible<10->{(2) No, she does not.}\\\visible<1->{3}&\visible<1->{Does Peter live in Japan?}&\visible<11->{$\rightarrow$}&\visible<12->{(1) Yes, he does.}&\visible<13->{(2) No, he does not.}\\\visible<1->{4}&\visible<1->{Does George like tea?}&\visible<14->{$\rightarrow$}&\visible<15->{(1) Yes, he does.}&\visible<16->{(2) No, he does not.}\\\visible<1->{5}&\visible<1->{Do John and Paul play the guitar?}&\visible<17->{$\rightarrow$}&\visible<18->{(1) Yes, they do.}&\visible<19->{(2) No, they do not.}\end{tabular}\begin{exampleblock}{Topics for Today}\small\begin{itemize} \item Yes, S $+ \left\{\begin{array}{l}                  \text{do}\\                \text{does}\end{array}\right\}$\,\,.\hspace{20pt}No, S $+ \left\{\begin{array}{l}                  \text{do not($=$ don't)}\\                \text{does not($=$ doesn't)}\end{array}\right\}$\,\,.\end{itemize}      \end{exampleblock}\end{frame}\begin{frame}[plain,t]\frametitle{Exercises}%\begin{ascolorbox3}{Susanの自己紹介を読んで、問に答えましょう}[orange][coltitle=orange!50!black]\begin{tcolorbox}[colframe=ForestGreen,  colback=ForestGreen!10!white,  colbacktitle=ForestGreen!40!white,  coltitle=black, %fonttitle=\bfseries,  title=次の英文を読んで、問に答えましょう。]\parindent=15pt\noindent{}Hi, I'm Jennifer. I live in London and I'm in junior high school. My parents don't eat meat, but they really like fish. I also enjoy sushi. We often go to Japanese restaurants.\mbox{}\hfill\myaudio{./audio/011_answer_do_07.mp3}\end{tcolorbox}%\end{ascolorbox3}\pause\begin{tabular}{rll}1&\visible<2->{Does Jennifer go to junior high school?}&\visible<3->{Yes, she does.}\\2&\visible<2->{Do her parents eat meat?}&\visible<4->{No, they don't.}\\3&\visible<2->{Does she like sushi?}&\visible<5->{Yes, she does.}\\4&\visible<2->{Do her parents go to Japanese restaurants?\hspace{20pt}\mbox{}}&\visible<6->{Yes, they do.}\end{tabular}\pause\mbox{}\hfill\myaudio{./audio/011_answer_do_08.mp3}\hspace{15pt}\mbox{}\end{frame}\end{document}
+\documentclass[aspectratio=169]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% さまざまなアイコン
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontawesome}
+\usepackage{figchild}
+\usepackage{twemojis}
+\usepackage{utfsym}
+\usepackage{bclogo}
+\usepackage{marvosym}
+\usepackage{fontmfizz}
+\usepackage{circledsteps}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{tcolorbox}
+\usepackage{myascolorbox} %ascolorbox.sty(https://github.com/yasunari/ascolorbox)をlualatexで使えるようにzw2箇所を\zwに改変したもの
+\usepackage{tikzpeople}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 場合分け
+\usepackage{cases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myAnch{<名前>}{<色>}{<テキスト>}
+% 指定のテキストを指定の色の四角枠で囲み, 指定の名前をもつTikZの
+% ノードとして出力する. 図には remeber picture 属性を付けている
+% ので外部から参照可能である.
+\newcommand*{\myAnch}[3]{%
+  \tikz[remember picture,baseline=(#1.base)]
+    \node[draw,rectangle,#2] (#1) {\normalcolor #3};
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 音声リンク表示
+\newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myEmph コマンドの定義
+%\newcommand{\myEmph}[3]{%
+%    \textbf<#1>{\color<#1>{#2}{#3}}%
+%}
+\usepackage{xparse} % xparseパッケージの読み込み
+\NewDocumentCommand{\myEmph}{O{} m m}{%
+    \def\argOne{#1}%
+    \ifx\argOne\empty
+        \textbf{\color{#2}{#3}}% オプション引数が省略された場合
+    \else
+        \textbf<#1>{\color<#1>{#2}{#3}}% オプション引数が指定された場合
+    \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 文末の上昇イントネーション記号 \myRisingPitch
+%% 通常のイントネーション \myDownwardPitch
+%% https://note.com/dan_oyama/n/n8be58e8797b2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\myRisingPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,0) to[bend right=45] (1,1);
+\end{tikzpicture}
+}
+\newcommand{\myDownwardPitch}{
+\begin{tikzpicture}[scale=0.3,baseline=0.3]
+\draw[->,>=stealth] (0,1) to[bend left=45] (1,0);
+\end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{Do you like sushi? --- Yes, I do. / No, I don't.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+
+\section{一般動詞の疑問文}
+\subsection{一般動詞の疑問文}
+\begin{frame}[plain]{一般動詞の疑問文のつくり方}
+
+\begin{tabular}{rlcl}
+ 1& {I have enough time.} &$\rightarrow$ &\onslide<2->{Do I have enough time?} \\
+ 2& {You play the guitar.}&$\rightarrow$ &\onslide<3->{Do you play the guitar?} \\
+ 3& {They speak French.}&$\rightarrow$ &\onslide<4->{Do they speak French?}\\
+ 4& {He sings well.}&$\rightarrow$ &\onslide<5->{Does he sing well?}\hspace{5pt}\onslide<6->{(*Does he sings well?)}
+\end{tabular}
+
+
+\begin{exampleblock}<7->{Topics for Today}
+\begin{itemize}
+ \item   先頭にDoまたはDoes（DoesをもちいるのはSが3人称単数のとき）\\
+	 \Circled[fill color = white]{\,\,Do\,\,}\,$+$\,S\,$+$\,V{\scriptsize ($=$\,原形)} \ldots\,\,\,?\\
+	 \Circled[fill color = white]{\,\,Does\,\,}\,$+$\,S\,$+$\,V{\scriptsize ($=$\,原形)} \ldots\,\,\,?
+% \item   文末に`?'をつける
+\end{itemize}
+     \end{exampleblock}
+\end{frame}
+%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+\begin{frame}<1-10>[plain]\frametitle{Exercises}
+
+つぎの文を疑問文にしましょう。
+
+ \begin{enumerate}
+  \item<1-> You like flowers.\hspace{59.7pt}
+        \onslide<2->{$\longrightarrow$\,\,\,\,\, Do you like flowers?\hfill\scalebox{.75}{\bcfleur\bcfleur}}
+  \item<1-> They live in Boston.\hspace{47.5pt}%
+        \onslide<3->{$\longrightarrow$\,\,\,\,\, Do they live in Boston?}
+  \item<1-> She teaches science.\hspace{42pt}%
+        \onslide<4->{$\longrightarrow$\,\,\,\,\, Does she teach science?\hfill\scalebox{1.75}{\twemoji{woman scientist}}}
+  \item<5-> He has  a car.\hspace{80.5pt}%
+        \onslide<6->{$\longrightarrow$\,\,\,\,\, Does he have a car?\hfill\faCar}
+  \item<7-> Our teacher walks to school.
+        \onslide<8->{$\longrightarrow$\,\,\,\,\, Does our teacher walk to school? }
+ \end{enumerate}
+
+\begin{exampleblock}<9->{Topics for Today}
+\begin{itemize}
+ \item   先頭にDoまたはDoes（DoesをもちいるのはSが3人称単数のとき）\\
+	 \Circled[fill color = white]{\,\,Do\,\,}\,$+$\,S\,$+$\,V{\scriptsize ($=$\,原形)} \ldots\,\,\,?\\
+	 \Circled[fill color = white]{\,\,Does\,\,}\,$+$\,S\,$+$\,V{\scriptsize ($=$\,原形)} \ldots\,\,\,?
+% \item   文末に`?'をつける
+\end{itemize}
+     \end{exampleblock}
+
+\vspace{-10pt}
+% Embed the sound file
+\onslide<10>{%
+\mbox{}\hfill\myaudio{./audio/010_question_do_06.mp3}
+}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%
+
+\section{疑問文への答え方}
+\subsection{Do you 〜 ? と聞かれたら}
+ \begin{frame}[plain]{Do you 〜 ? と聞かれたら}
+ \Large
+\pause
+
+Do you like sushi?\hfill\twemoji{sushi}
+
+\vspace{20pt}
+\pause
+
+\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}
+         \text{Yes, I do.}\\\pause
+         \text{No, I do not.}\\\pause
+         \text{(}= \text{No, I don't.)}
+        \end{tabular}\right.$
+
+\pause
+
+\mbox{}\hfill{}{\small Noのときdo notを縮めてNo, I \textcolor{orange}{don't}.ともいいます}
+
+\pause
+\mbox{}\hfill\myaudio{./audio/011_answer_do_01.mp3}
+\end{frame}
+
+\subsection{Does he 〜 ?  / Does she 〜 ? と聞かれたら}
+
+\begin{frame}[plain]{Does he  〜 ? / Does she 〜 ? と聞かれたら}
+ \Large
+
+
+\begin{columns}[t]
+\begin{column}{.475\textwidth}
+Does he walk to school?
+
+\vspace{20pt}
+
+\pause
+
+\mbox{}\hspace{40pt}$\left\{\begin{tabular}{l}
+         \text{Yes, he does.}\\\pause
+         \text{No, he does not.}\\\pause
+         \text{(}= \text{No, he doesn't.)}\\
+       \end{tabular}\right.$
+
+\pause
+
+\vspace{10pt}
+
+{\small Noのとき\\[-5pt]does notを縮めてNo, he \textcolor{orange}{doesn't.}}
+
+\end{column}
+\pause
+\begin{column}{.475\textwidth}
+Does she speak Japanese?
+
+\vspace{20pt}
+
+\pause
+
+\mbox{}\hspace{40pt}$\left\{\begin{tabular}{l}
+         \text{Yes, she does.}\\\pause
+         \text{No, she does not.}\\\pause
+           \text{(}= \text{No, she doesn't.)}
+       \end{tabular}\right.$
+
+
+\pause
+
+\vspace{20pt}
+\mbox{}\hfill\myaudio{./audio/011_answer_do_02.mp3}\,\,{}
+
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\subsection{Does John 〜 ?  / Does Emily 〜 ? と聞かれたら}
+\begin{frame}[plain]{Does John  〜 ? / Does Emily 〜 ? と聞かれたら}
+ \Large
+
+\pause
+\begin{columns}[t]
+\begin{column}{.49\textwidth}
+Does \myAnch{john}{orange}{John} have a bike?
+
+
+\pause
+
+\vspace{20pt}
+
+\mbox{}\hfill$\left\{\begin{tabular}{l}
+         Yes, \myAnch{he1}{orange}{he} does.\\\pause
+         No, \myAnch{he2}{orange}{he} does not.\\\pause
+         \text{(}= \text{No, he doesn't.)}
+        \end{tabular}\right.$
+
+\pause
+
+%\mbox{}\hfill{}{\footnotesize }
+
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[->,thick,orange] (john.south) to[out=-30,in=160] (he1.north west);
+ \draw[->,thick,orange] (john.south) to[out=-110, in=155] (he2.west);
+\end{tikzpicture}
+
+\end{column}
+\pause
+\begin{column}{.49\textwidth}
+Does \myAnch{emily}{orange}{Emily} teach math?
+
+\pause
+
+\vspace{20pt}
+
+\mbox{}\hfill$\left\{\begin{tabular}{l}
+         Yes, \myAnch{she1}{orange}{she} does.\\\pause
+         No, \myAnch{she2}{orange}{she} does not.\\\pause
+          \text{(}= \text{No, she doesn't.)}
+        \end{tabular}\right.$
+
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[->,thick,orange] (emily.south) to[out=-30,in=160] (she1.north west);
+ \draw[->,thick,orange] (emily.south) to[out=-165, in=165] (she2.west);
+\end{tikzpicture}
+
+\pause
+
+\vspace{20pt}
+
+\mbox{}\hfill\myaudio{./audio/011_answer_do_03.mp3}
+\end{column}
+\end{columns}
+
+\pause
+
+{\small 答えるときは、名前そのものではなくheやsheを使います}
+\end{frame}
+
+ \subsection{Do they 〜 ? と聞かれたら}
+\begin{frame}[plain]{Do they 〜 ? と聞かれたら}
+ \Large
+
+
+\pause
+
+Do they sing well??
+
+\pause
+
+\vspace{10pt}
+
+\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}ls
+         Yes, they do.\\\pause
+         No, they do not.\\\pause
+          \text{(}= \text{No, they don't.)}
+        \end{tabular}\right.$
+\vspace{10pt}
+
+\mbox{}\hfill{}{\small Noのときdo notを縮めてNo, they \textcolor{orange}{don't.}}
+
+\vspace{20pt}
+
+\mbox{}\hfill\myaudio{./audio/011_answer_do_04.mp3}\,\,{}
+\end{frame}
+
+
+
+\begin{frame}[plain]{Do A and B 〜 ? と聞かれたら}
+ \Large
+
+Do \myAnch{s1}{orange}{George and Peter} go to school together?
+
+\mbox{}\hfill{\footnotesize together: いっしょに}
+
+\pause
+
+\vspace{10pt}
+
+\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}
+         Yes, \myAnch{they4}{orange}{they} do.\\\pause
+         No, \myAnch{they5}{orange}{they} do not.\\\pause
+         \text{(}= \text{No, they don't.)}
+       \end{tabular}\right.$
+
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[->,thick,orange] (s1.south) to[out=-30,in=160] (they4.north west);
+ \draw[->,thick,orange] (s1.south) to[out=-90, in=165] (they5.north west);
+\end{tikzpicture}
+
+\mbox{}\hfill\myaudio{./audio/011_question_do_05.mp3}\,\,{}
+
+\pause
+
+{\small 答えるときは、名前そのものではなくtheyを使います}
+
+\end{frame}
+
+
+\begin{frame}<1-20>[plain]\frametitle{Exercises}
+例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。
+\mbox{}\hfill\myaudio{./audio/011_answer_do_06.mp3}
+
+
+\begin{tabular}{rlcll}
+\visible<1->{例}& \visible<1->{Do you have pets?}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I do.}&\visible<4->{(2) No, I do not.}\\
+\visible<1->{1}&\visible<1->{Do they eat Chinese food?}&\visible<5->{$\rightarrow$}&\visible<6->{(1) Yes, they do.}&\visible<7->{(2) No, they do not.}\\
+\visible<1->{2}&\visible<1->{Does she teache music?}&\visible<8->{$\rightarrow$}& \visible<9->{(1) Yes, she does.}&\visible<10->{(2) No, she does not.}\\
+\visible<1->{3}&\visible<1->{Does Peter live in Japan?}&\visible<11->{$\rightarrow$}&\visible<12->{(1) Yes, he does.}&\visible<13->{(2) No, he does not.}\\
+\visible<1->{4}&\visible<1->{Does George like tea?}&\visible<14->{$\rightarrow$}&\visible<15->{(1) Yes, he does.}&\visible<16->{(2) No, he does not.}\\
+\visible<1->{5}&\visible<1->{Do John and Paul play the guitar?}&\visible<17->{$\rightarrow$}&\visible<18->{(1) Yes, they do.}&\visible<19->{(2) No, they do not.}
+\end{tabular}
+
+\begin{exampleblock}{Topics for Today}
+\small
+\begin{itemize}
+ \item Yes, S $+ \left\{\begin{array}{l}
+                  \text{do}\\
+                \text{does}\end{array}\right\}$\,\,.
+\hspace{20pt}
+No, S $+ \left\{\begin{array}{l}
+                  \text{do not($=$ don't)}\\
+                \text{does not($=$ doesn't)}\end{array}\right\}$\,\,.
+\end{itemize}
+      \end{exampleblock}
+\end{frame}
+
+\begin{frame}[plain,t]\frametitle{Exercises}
+%\begin{ascolorbox3}{Susanの自己紹介を読んで、問に答えましょう}[orange][coltitle=orange!50!black]
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+  title=次の英文を読んで、問に答えましょう。]
+\parindent=15pt
+
+\noindent{}
+Hi, I'm Jennifer. I live in London and I'm in junior high school. My parents don't eat meat, but they really like fish. I also enjoy sushi. We often go to Japanese restaurants.
+\mbox{}\hfill\myaudio{./audio/011_answer_do_07.mp3}
+\end{tcolorbox}
+%\end{ascolorbox3}
+
+\pause
+\begin{tabular}{rll}
+1&\visible<2->{Does Jennifer go to junior high school?}&\visible<3->{Yes, she does.}\\
+2&\visible<2->{Do her parents eat meat?}&\visible<4->{No, they don't.}\\
+3&\visible<2->{Does she like sushi?}&\visible<5->{Yes, she does.}\\
+4&\visible<2->{Do her parents go to Japanese restaurants?\hspace{20pt}\mbox{}}&\visible<6->{Yes, they do.}
+\end{tabular}
+
+\pause
+
+\mbox{}\hfill\myaudio{./audio/011_answer_do_08.mp3}\hspace{15pt}\mbox{}
+
+\end{frame}
+
+
+
+\end{document}
