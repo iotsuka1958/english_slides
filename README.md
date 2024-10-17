@@ -9,9 +9,27 @@ editor_options:
 
 # ffmpegを利用してmp3から不要な個所を取り除く方法
 
+```{bash}
+# 0秒から210秒までを抽出
+ffmpeg -i hoge.mp3 -ss 0 -to 210 -c copy part1.mp3
 
+# 215秒から318秒までを抽出
+ffmpeg -i hoge.mp3 -ss 215 -to 318 -c copy part2.mp3
 
+# 328秒以降を抽出
+ffmpeg -i hoge.mp3 -ss 328 -c copy part3.mp3
+```
 
+```{bash}
+# 結合リストを作成
+echo "file 'part1.mp3'" > filelist.txt
+echo "file 'part2.mp3'" >> filelist.txt
+echo "file 'part3.mp3'" >> filelist.txt
+```
+
+# 結合コマンド
+ffmpeg -f concat -safe 0 -i filelist.txt -c copy output.mp3
+```
 
 
 # ffmpegを利用してfoo.mp3とbar.mp3を5秒の空白を挟んで結合する方法

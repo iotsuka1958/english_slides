@@ -1,4 +1,4 @@
-I play soccer after school.<break time="2s"/>I do not play soccer after school.<break time="2s"/>I don’t play soccer after school.
-You study math at night.<break time="2s"/>You do not study math at night.<break time="2s"/>You don’t study math at night.
-We eat meat at home.<break time="2s"/> We do not eat meat at home.<break time="2s"/> We don’t eat meat at home.
-They like horror movies.<break time="2s"/> They do not like horror movies.<break time="2s"/> They don’t like horror movies.
+I have enough time.<break time="3s"/>Do I have enough time?
+You play the guitar.<break time="3s"/>Do you play the guitar?
+They speak French.<break time="3s"/>Do they speak French?
+He sings well.<break time="3s"/>Does he sing well?
