@@ -1,4 +1,2 @@
-I have enough time.<break time="3s"/>Do I have enough time?
-You play the guitar.<break time="3s"/>Do you play the guitar?
-They speak French.<break time="3s"/>Do they speak French?
-He sings well.<break time="3s"/>Does he sing well?
+A man.<break time="3s"/>A man.
+Three men.<break time="3s"/>Three men.
