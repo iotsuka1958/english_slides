@@ -58,7 +58,8 @@ task_progress_table <- work_log |>
   pivot_longer(-file_with_path,
                names_to = c("grade", ".value"),
                names_sep = "_") |> 
-  filter(!is.na(date))|> 
+#  filter(!is.na(date))|> 
+  arrange(date) |> 
   gt() |> 
   tab_header(
     title = "task_progress",
@@ -85,9 +86,10 @@ classroom <- read_csv("./classroom.csv")
 classroom_table <- classroom |>  pivot_longer(-date,
                names_to = c("grade", ".value"),
                names_sep = "_") |> 
-  filter(!is.na(topic))|> 
+  filter(!is.na(topic)) |> 
+  arrange(date) |> 
   gt() |> 
-  tab_header(
+  tab_header( 
     title = "classroom",
     subtitle = c("as of", as.character(Sys.time()))
   )
