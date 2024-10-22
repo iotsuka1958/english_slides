@@ -1,2 +1,6 @@
-A man.<break time="3s"/>A man.
-Three men.<break time="3s"/>Three men.
+I am busy now.<break time="3s"/>I was busy yesterday.
+We are busy now.<break time="3s"/>We were busy yesterday.
+You are busy now.<break time="3s"/>You were busy yesterday.
+He is busy now.<break time="3s"/>He was busy yesterday.
+She is busy now.<break time="3s"/>She was busy yesterday.
+They are busy now.<break time="3s"/>They were busy yesterday.

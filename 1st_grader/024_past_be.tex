@@ -5,6 +5,7 @@
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{media9}
@@ -30,6 +31,7 @@
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{booktabs}
+\usepackage{tipa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -95,9 +97,8 @@
   \tableofcontents
 \end{frame}
 
-\section{be動詞の過去形}
 
-\subsection{be動詞の現在形（復習）}
+\section{be動詞の現在形（復習）}
 
 \begin{frame}[plain]{be動詞の現在形（復習）}
 
@@ -128,12 +129,13 @@
 
 \begin{block}{現在形のbe動詞の使い分け}
 
-{\Large
-\begin{numcases}{\text{　}}
- \text{\mbox{}\,\,{}Iではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{am}\\
- \text{\mbox{}\,\,{}Youではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}\\
- \text{\mbox{}\,\,{}1つ、1人}&$\longrightarrow$\,\,\,\,\,\,{}\text{is}\\
- \text{\mbox{}\,\,{}2つ、2人以上}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}
+{\large
+
+\begin{numcases}{\text{主語が\,\,\,\,}}
+ \text{\mbox{}\,\,{}I}&$\longrightarrow$\,\,\,\,\,\,{}\text{am}\\
+ \text{\mbox{}\,\,{}you}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}\\
+ \text{\mbox{}\,\,{}単数(1つ、1人)}&$\longrightarrow$\,\,\,\,\,\,{}\text{is}\\
+ \text{\mbox{}\,\,{}複数(2つ、2人以上)}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}
 \end{numcases}
 }
 \end{block}
@@ -152,21 +154,22 @@
 
 % ノード間の線の描画
 \draw[-latex, line width=1.5pt] (A) -- node[above] {Iのとき} (B);\pause
-\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {Youのとき}  node[sloped, below] {複数形なら} (C);\pause
-\draw[-latex, line width=1.5pt] (A) -- node[above] {単数形なら} node[below] {} (D);
+\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {youのとき}  node[sloped, below] {複数なら} (C);\pause
+\draw[-latex, line width=1.5pt] (A) -- node[above] {単数なら} node[below] {} (D);
 \end{tikzpicture}
 \end{frame}
 
-
+\section{be動詞の過去形}
+\subsection{過去形(wasとwere)の使い分け}
 \begin{frame}[plain]{be動詞の過去形}
 
 \begin{tabular}{rll}
 &\multicolumn{1}{c}{現在形}&\multicolumn{1}{c}{過去形}\\
-1&\visible<1->{I am busy now.}&       \visible<2->{I \textcolor{Maroon}{\bfseries was} busy yesterday.}\\
+1&\visible<1->{I am busy now.\hspace{30pt}{\scriptsize busy \textipa{/b\'Izi/} 忙しい\hspace*{20pt}\mbox{}}}&       \visible<2->{I \textcolor{Maroon}{\bfseries was} busy yesterday.}\\
 2&\visible<1->{We are busy now.}&     \visible<3->{We \textcolor{NavyBlue}{\bfseries were} busy yesterday}.\\
 3&\visible<1->{You are busy now.}&    \visible<4->{You \textcolor{NavyBlue}{\bfseries were} busy yesterday.}\\
 4&\visible<1->{He is busy now.}&      \visible<5->{He \textcolor{Maroon}{\bfseries was} busy yesterday.}\\
-5&\visible<1->{She is bus nowy.}&     \visible<6->{She \textcolor{Maroon}{\bfseries was} busy yesterday.}\\
+5&\visible<1->{She is busy now.}&     \visible<6->{She \textcolor{Maroon}{\bfseries was} busy yesterday.}\\
 6&\visible<1->{They are busy now.}&   \visible<7->{They \textcolor{NavyBlue}{\bfseries were} busy yesterday.}
 \end{tabular}
 
@@ -183,11 +186,11 @@
 
 {
 \setcounter{equation}{0}
-\begin{numcases}{\text{　}}
- \text{\mbox{}\,\,{}Iではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{was}\\
- \text{\mbox{}\,\,{}Youではじまる}&$\longrightarrow$\,\,\,\,\,\,{}\text{were}\\
- \text{\mbox{}\,\,{}1つ、1人}&$\longrightarrow$\,\,\,\,\,\,{}\text{was}\\
- \text{\mbox{}\,\,{}2つ、2人以上}&$\longrightarrow$\,\,\,\,\,\,{}\text{were}
+\begin{numcases}{\text{主語が\,\,\,\,}}
+ \text{\mbox{}\,\,{}I}&$\longrightarrow$\,\,\,\,\,\,{}\text{was}\\
+ \text{\mbox{}\,\,{}you}&$\longrightarrow$\,\,\,\,\,\,{}\text{were}\\
+ \text{\mbox{}\,\,{}単数(1つ、1人)}&$\longrightarrow$\,\,\,\,\,\,{}\text{was}\\
+ \text{\mbox{}\,\,{}複数(2つ、2人以上)}&$\longrightarrow$\,\,\,\,\,\,{}\text{were}
 \end{numcases}
 }
 \end{block}
@@ -206,9 +209,9 @@
 \node[circle, draw=black, fill=NavyBlue!30, minimum size=20mm, line width=1pt] (D) at (6,0) {\LARGE were};\pause
 
 % ノード間の線の描画
-\draw[-latex, line width=1.5pt] (A) -- node[above] {Iのとき} node[below] {単数形なら}(B);\pause
+\draw[-latex, line width=1.5pt] (A) -- node[above] {Iのとき} node[below] {単数なら}(B);\pause
 %\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {Youのとき}  node[sloped, below] {複数形なら} (C);\pause
-\draw[-latex, line width=1.5pt] (A) -- node[above] {Youのとき} node[below] {複数形なら} (D);
+\draw[-latex, line width=1.5pt] (A) -- node[above] {youのとき} node[below] {複数なら} (D);
 \end{tikzpicture}
 \end{frame}
 
@@ -219,7 +222,7 @@
 \begin{enumerate}
  \item I ( am/ is /are / \alt<2->{\Circled[outer color=orange]{was}}{was} / were ) hungry yesterday.
  \item They ( am / is / are / was / \alt<3->{\Circled[outer color=orange]{were}}{were} ) busy yesterday.
- \item She  ( am/ is /are / \alt<4->{\Circled[outer color=orange]{was}}{was} / were ) tired last night.\hfill{}{\small tired: 疲れている}
+ \item She  ( am/ is /are / \alt<4->{\Circled[outer color=orange]{was}}{was} / were ) tired last night.\hfill{}{\small tired \textipa{/t\'aI\textrhookschwa d/} 疲れている}
  \item Tom ( am / \alt<5->{\Circled[outer color=orange]{is}}{is} / are / were ) busy today.
  \item They（ am / is / are / was / \alt<6->{\Circled[outer color=orange]{were}}{were} ) at home then.\\
 \mbox{}\hfill{}{\small at home: 在宅して　then: そのとき}
@@ -231,7 +234,7 @@
 
 
 \section{否定文}
-\subsection{I was not hungry.}
+\subsection{否定文のつくり方}
 \begin{frame}[plain]\frametitle{was / wereの否定}
 \Large
 
@@ -287,7 +290,7 @@
 
 
 \section{疑問文}
-\subsection{Were you hungry?}
+\subsection{疑問文のつくり方}
 \begin{frame}[plain]\frametitle{was / wereの疑問文}
 \Large
 
@@ -314,7 +317,7 @@
 
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください。 
  \begin{enumerate}
@@ -336,8 +339,9 @@
 
 \end{frame}
 
-
-\begin{frame}<1-17>[plain]\frametitle{Exercises}
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{疑問文への答え方}
+\begin{frame}<1-17>[plain]\frametitle{疑問文への答え方}
 例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。
 \mbox{}\hfill\myaudio{./audio/024_past_be_08z.mp3}
 
@@ -350,7 +354,7 @@
 \visible<1->{4}&\visible<1->{Was it rainy yesterday?}&\visible<14->{$\rightarrow$}&\visible<15->{(1) Yes, it was.}&\visible<16->{(2) No, it wasn't.}
 \end{tabular}
 
-\begin{exampleblock}{Topics for Today}
+\begin{exampleblock}<4->{Topics for Today}
 \small
 \begin{itemize}
  \item Yes, S $+ \left\{\begin{array}{l}

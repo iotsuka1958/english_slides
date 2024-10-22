@@ -3,7 +3,7 @@ file_with_path,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,g2_s
 ./orientation/orientation_2.tex,2024-06-07,2024-06-07,2024-06-07,1,1,1,done,done,done,999,999,999
 ./1st_grader/999quiz_full_vesion.tex,2024-06-18,2024-06-18,2024-06-18,26,26,26,done,done,done,999,999,999
 ./1st_grader/099_pronunciation.tex,2024-09-03,2024-07-18,2024-07-18,3,4,4,done,done,done,999,999,999
-./pronunciation/pronunciation_consonant.tex,2024-09-18,2024-09-18,2024-09-18,17,17,17,now,now,now,/f/ /v/,/f/ /v/,/f/ /v/
+./pronunciation/pronunciation_consonant.tex,2024-09-18,2024-09-18,2024-09-18,18,18,18,now,now,now,/f/ /v/,/f/ /v/,/f/ /v/
 ./pronunciation/pronunciation_vowel.tex,,,,,,,,,,,,
 ./1st_grader/001_alphabet.tex,2024-06-14,,,2,,,done,,,999,,
 ./1st_grader/002_sv.tex,2024-06-18,2024-06-13,2024-06-13,4,2,2,done,done,done,999,999,999
@@ -11,13 +11,13 @@ file_with_path,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,g2_s
 ./1st_grader/004_verb.tex,2024-07-11,2024-07-04,2024-07-04,6,9,9,done,done,done,999,999,999
 ./1st_grader/004_verb_object.tex,2024-09-05,2024-09-05,2024-09-05,5,5,5,done,done,done,999,999,999
 ./1st_grader/005_pronoun.tex,2024-09-18,,,8,,,done,,,999,,
-./1st_grader/005_singular_plural.tex,2024-10-03,,,9,,,now,,,slide174,,
+./1st_grader/005_singular_plural.tex,2024-10-03,,,10,,,done,,,999,,
 ./1st_grader/006_negative_be.tex,,,,,,,,,,,,
 ./1st_grader/007_negative_do.tex,,2024-10-11,2024-10-11,,3,3,,done,done,,999,999
 ./1st_grader/008_question_be.tex,,,,,,,,,,,,
 ./1st_grader/009_answer_be.tex,,,,,,,,,,,,
 ./1st_grader/010_question_do.tex,,,,,,,,,,,,
-./1st_grader/011_answer_do.tex,,2024-10-16,2024-10-16,,2,2,,now,now,,slide22,slide22
+./1st_grader/011_answer_do.tex,,2024-10-16,2024-10-16,,3,3,,now,now,,slide52,slide52
 ./1st_grader/012_can.tex,,,,,,,,,,,,
 ./1st_grader/013_who.tex,,,,,,,,,,,,
 ./1st_grader/014_when.tex,,,,,,,,,,,,
