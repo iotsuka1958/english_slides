@@ -53,6 +53,8 @@ slides_undone_table |> gtsave("slides_undone.html") # htmlファイル作成
 ```{r}
 work_log  <-  read_csv("./work_log.csv")
 ```
+### 全体
+
 ```{r}
 task_progress_table <- work_log |> 
   pivot_longer(-file_with_path,
@@ -69,6 +71,66 @@ task_progress_table <- work_log |>
 
 ```{r}
 task_progress_table |> gtsave("task_progress.html") # htmlファイル作成
+```
+
+### 1年生
+
+```{r}
+task_progress_table_1st <- work_log |> 
+  pivot_longer(-file_with_path,
+               names_to = c("grade", ".value"),
+               names_sep = "_") |> 
+  filter(grade == "g1")|> 
+  arrange(date) |> 
+  gt() |> 
+  tab_header(
+    title = "task_progress_1st_grader",
+    subtitle = c("as of", as.character(Sys.time()))
+  )
+```
+
+```{r}
+task_progress_table_1st |> gtsave("task_progress_1st.html") # htmlファイル作成
+```
+
+### 2年生
+
+```{r}
+task_progress_table_2nd <- work_log |> 
+  pivot_longer(-file_with_path,
+               names_to = c("grade", ".value"),
+               names_sep = "_") |> 
+  filter(grade == "g2")|> 
+  arrange(date) |> 
+  gt() |> 
+  tab_header(
+    title = "task_progress_2nd_grader",
+    subtitle = c("as of", as.character(Sys.time()))
+  )
+```
+
+```{r}
+task_progress_table_2nd |> gtsave("task_progress_2nd.html") # htmlファイル作成
+```
+
+### 3年生
+
+```{r}
+task_progress_table_3rd <- work_log |> 
+  pivot_longer(-file_with_path,
+               names_to = c("grade", ".value"),
+               names_sep = "_") |> 
+  filter(grade == "g3")|> 
+  arrange(date) |> 
+  gt() |> 
+  tab_header(
+    title = "task_progress_3rd_grader",
+    subtitle = c("as of", as.character(Sys.time()))
+  )
+```
+
+```{r}
+task_progress_table_3rd |> gtsave("task_progress_3rd.html") # htmlファイル作成
 ```
 
 

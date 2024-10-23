@@ -307,13 +307,13 @@ Does \myAnch{emily}{orange}{Emily} teach math?
 
 \pause
 
-Do they sing well??
+Do they sing well?
 
 \pause
 
 \vspace{10pt}
 
-\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}ls
+\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}
          Yes, they do.\\\pause
          No, they do not.\\\pause
           \text{(}= \text{No, they don't.)}
@@ -334,31 +334,29 @@ Do they sing well??
 
 Do \myAnch{s1}{orange}{George and Peter} go to school together?
 
-\mbox{}\hfill{\footnotesize together: いっしょに}
-
-\pause
+\mbox{}\hfill{\footnotesize together \textipa{/t@g\'eD\textrhookschwa /} いっしょに}
 
 \vspace{10pt}
 
-\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}
-         Yes, \myAnch{they4}{orange}{they} do.\\\pause
-         No, \myAnch{they5}{orange}{they} do not.\\\pause
-         \text{(}= \text{No, they don't.)}
-       \end{tabular}\right.$
+\mbox{}\hspace{100pt}%
+\visible<2->{$\left\{\begin{tabular}{l}
+         \visible<2->{Yes, \myAnch{they4}{orange}{they} do.}\\
+         \visible<3->{No, \myAnch{they5}{orange}{they} do not.}\\
+         \visible<6->{\text{(}= \text{No, they don't.)}}
+       \end{tabular}\right.$}
 
-\begin{tikzpicture}[remember picture,overlay]
+\visible<4->{\begin{tikzpicture}[remember picture,overlay]
  \draw[->,thick,orange] (s1.south) to[out=-30,in=160] (they4.north west);
  \draw[->,thick,orange] (s1.south) to[out=-90, in=165] (they5.north west);
-\end{tikzpicture}
+\end{tikzpicture}}
 
-\mbox{}\hfill\myaudio{./audio/011_question_do_05.mp3}\,\,{}
+\mbox{}\hfill\myaudio{./audio/011_answer_do_05.mp3}\,\,{}
 
-\pause
 
-{\small 答えるときは、名前そのものではなくtheyを使います}
+\visible<5->{{\small 答えるときは、名前そのものではなくtheyを使います}}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}<1-20>[plain]\frametitle{Exercises}
 例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう
@@ -382,8 +380,8 @@ Do \myAnch{s1}{orange}{George and Peter} go to school together?
                 \text{does}\end{array}\right\}$\,\,.
 \hspace{20pt}
 No, S $+ \left\{\begin{array}{l}
-                  \text{do not($=$ don't)}\\
-                \text{does not($=$ doesn't)}\end{array}\right\}$\,\,.
+                  \text{do not ($=$ don't)}\\
+                \text{does not ($=$ doesn't)}\end{array}\right\}$\,\,.
 \end{itemize}
       \end{exampleblock}
 \end{frame}
@@ -399,7 +397,8 @@ No, S $+ \left\{\begin{array}{l}
 
 \noindent{}
 Hi, I'm Jennifer. I live in London and I'm in junior high school. My parents don't eat meat, but they really like fish. I also enjoy sushi. We often go to Japanese restaurants.
-\mbox{}\hfill\myaudio{./audio/011_answer_do_07.mp3}
+\mbox{}\hfill\myaudio{./audio/011_answer_do_07.mp3}\\
+\mbox{}\hfill{\scriptsize meat: 肉\hspace{10pt}often\,\textipa{/O:f(t)n/}: よく、しばしば\hspace{10pt}restaurant: レストラン}
 \end{tcolorbox}
 %\end{ascolorbox3}
 
@@ -411,7 +410,7 @@ Hi, I'm Jennifer. I live in London and I'm in junior high school. My parents don
 4&\visible<2->{Do her parents go to Japanese restaurants?\hspace{20pt}\mbox{}}&\visible<6->{Yes, they do.}
 \end{tabular}
 
-\pause
+\visible<4->{\hfill{\scriptsize もちろんNo, they do not.も正解です}}
 
 \mbox{}\hfill\myaudio{./audio/011_answer_do_08.mp3}\hspace{15pt}\mbox{}
 
