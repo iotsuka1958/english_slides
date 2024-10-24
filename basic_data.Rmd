@@ -138,7 +138,7 @@ task_progress_table_3rd |> gtsave("task_progress_3rd.html") # htmlファイル�
 
 google clasroom への教材のアップロード状況の整理をしておこう。
 
-
+### 全体
 
 ```{r}
 classroom <- read_csv("./classroom.csv")
@@ -160,6 +160,81 @@ classroom_table <- classroom |>  pivot_longer(-date,
 ```{r}
 classroom_table |> gtsave("classroom.html") # htmlファイル作成
 ```
+
+
+### 1年生
+
+
+```{r}
+classroom_table_1st <- classroom |>  pivot_longer(-date,
+               names_to = c("grade", ".value"),
+               names_sep = "_") |> 
+  filter(grade == "g1") |> 
+  filter(!is.na(topic)) |> 
+  arrange(date) |> 
+  gt() |> 
+  tab_header( 
+    title = "classroom_1st_grader",
+    subtitle = c("as of", as.character(Sys.time()))
+  )
+```
+
+```{r}
+classroom_table_1st |> gtsave("classroom_1st.html") # htmlファイル作成
+```
+
+### 2年生
+
+
+```{r}
+classroom_table_2nd <- classroom |>  pivot_longer(-date,
+               names_to = c("grade", ".value"),
+               names_sep = "_") |> 
+  filter(grade == "g2") |> 
+  filter(!is.na(topic)) |> 
+  arrange(date) |> 
+  gt() |> 
+  tab_header( 
+    title = "classroom_2nd_grader",
+    subtitle = c("as of", as.character(Sys.time()))
+  )
+```
+
+```{r}
+classroom_table_2nd |> gtsave("classroom_2nd.html") # htmlファイル作成
+```
+
+### 3年生
+
+
+```{r}
+classroom_table_3rd <- classroom |>  pivot_longer(-date,
+               names_to = c("grade", ".value"),
+               names_sep = "_") |> 
+  filter(grade == "g3") |> 
+  filter(!is.na(topic)) |> 
+  arrange(date) |> 
+  gt() |> 
+  tab_header( 
+    title = "classroom_3rd_grader",
+    subtitle = c("as of", as.character(Sys.time()))
+  )
+```
+
+```{r}
+classroom_table_3rd |> gtsave("classroom_3rd.html") # htmlファイル作成
+```
+
+
+
+
+
+
+
+
+
+
+
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
