@@ -1,0 +1,7 @@
+file '007_negative_do_00.mp3'
+file 'silent.mp3'
+file '007_negative_do_01.mp3'
+file 'silent.mp3'
+file '007_negative_do_02.mp3'
+file 'silent.mp3'
+file '007_negative_do_03.mp3'
