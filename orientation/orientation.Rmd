@@ -82,7 +82,7 @@ Can you hear it?
 
 \begin{tabular}{rl}
 1&安心して学ぶ場にするために\\
-2&授業の進め方や内容などついて
+2&授業の進め方や内容などについて
 \end{tabular}
 
 
