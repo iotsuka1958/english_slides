@@ -22,13 +22,13 @@ ffmpeg -i hoge.mp3 -ss 328 -c copy part3.mp3
 
 ```{bash}
 # 結合リストを作成
-echo "file 'part1.mp3'" > filelist.txt
-echo "file 'part2.mp3'" >> filelist.txt
-echo "file 'part3.mp3'" >> filelist.txt
+echo "file 'part1.mp3'" > file_merge_list.txt
+echo "file 'part2.mp3'" >> file_merge_list.txt
+echo "file 'part3.mp3'" >> file_merge_list.txt
 ```
 
 # 結合コマンド
-ffmpeg -f concat -safe 0 -i filelist.txt -c copy output.mp3
+ffmpeg -f concat -safe 0 -i file_merge_list.txt -c copy output.mp3
 ```
 
 

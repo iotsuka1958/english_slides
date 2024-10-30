@@ -499,15 +499,15 @@ The flowers are beautiful.
 I am busy now.<break time="2s"/>I was busy yesterday.
 You are busy now.<break time="2s"/>You were busy yesterday.
 He is busy now.<break time="2s"/>He was busy yesterday.
-She is bus nowy.<break time="2s"/>She was busy yesterday.
+She is bus now.<break time="2s"/>She was busy yesterday.
 They are busy now.<break time="2s"/>They were busy yesterday.
-We are busy now.We were busy yesterday.
+We are busy now.We <break time="2s"/>were busy yesterday.
 %%%%%%%%%%%%%%%%%%%%%%%
 024_past_be_03.mp3
 I was hungry yesterday.
 They were busy yesterday.
 She was tired last night.
-Tom was busy today.
+Tom is busy today.
 They were at home then.
 %%%%%%%%%%%%%%%%%%%%%%%
 024_past_be_04.mp3
