@@ -1,0 +1,130 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{I wish I had a lot of money.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{仮定法}
+\subsection{仮定法とは}
+\begin{frame}[plain]{仮定法とは}
+ \large
+
+\begin{enumerate}
+ \item<1-> I don't have a lot of money.
+ \item<2-> I wish I \myEmph[2-]{Maroon}{had} a lot of money.\hfill\visible<3->{{\scriptsize お金がたくさんあったらいいのになあ}}
+\end{enumerate}
+
+\vfill
+
+\begin{block}<4->{Topics for Today}
+\small
+
+\begin{itemize}
+ \item \kenten{現在}の\kenten{事実}の\kenten{反対}のことをあらわすときは、
+現在のことでも\kenten{過去形}を使います
+ \item これを「仮定法過去」といいます
+\end{itemize}
+\end{block}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{もうひとつ}
+ \begin{enumerate}
+  \item<1-> If I \myEmph[1-]{NavyBlue}{am} hungry, I  eat a sandwich.%
+\hfill\visible<2->{{\scriptsize おなかがすいたときは、いつもサンドイッチを食べます}}
+  \item<3-> If I \myEmph[3-]{Maroon}{were} hungry, I would eat the sandwich.%
+\hfill\visible<4->{{\scriptsize 空腹ならば、そのサンドイッチを食べるのですが}}\\
+\hfill\visible<4->{{\scriptsize (いまはおなかがすいていない)}}
+ \end{enumerate}
+
+\vfill
+
+\begin{block}<5->{be動詞の仮定法過去}
+\small
+
+\begin{itemize}
+ \item be動詞の仮定法過去は、主語にかかわらずwereをもちいます
+\end{itemize}
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ つぎの英文がどういう意味か、考えましょう
+
+
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item If I have money, I will buy the book. 
+	\item If I \myEmph[2-]{Maroon}{had} money, I would buy the book.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item If you have time, you can watch television.
+	\item If you \myEmph[2-]{Maroon}{had} time, you could watch television.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item I hope it will be fine tomorrow.
+	\item I wish it \myEmph[2-]{Maroon}{were} fine today.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item I am sorry I don't have a car.
+	\item I wish I \myEmph[2-]{Maroon}{had} a car.
+       \end{enumerate}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ}
+ \begin{block}{仮定法過去}
+\small
+
+\begin{itemize}
+ \item \kenten{現在}の\kenten{事実}の\kenten{反対}のことをあらわすときは、
+現在のことでも\kenten{過去形}を使います\\
+\hfill{}$\longrightarrow$ これを「仮定法過去」といいます\\
+\hfill{}I wish I {\bfseries had} a lot of money.{\scriptsize たくさんお金があればいいのに}\\
+\hfill{}If I {\bfseries had} a lot of money, I would buy a big house.
+\hfill{\scriptsize たくさんお金があったら大きな家を買うのに}\\
+\hfill{\scriptsize （現実には、たくさんお金を持っていない）}
+ \item be動詞の仮定法過去は、主語にかかわらずwereをもちいます\\
+\hfill{}I wish I {\bfseries were} rich.{\scriptsize お金持ちだったらいいのに}\\
+\hfill{}If I {\bfseries were} rich, I would buy a big house.{\scriptsize お金持ちだったら大きな家を買うのに}\\
+\hfill{\scriptsize （現実には、私は金持ちではない）}
+\end{itemize}
+\end{block}
+\end{frame}
+\end{document}
