@@ -68,9 +68,8 @@ file_with_path,path,file_name,slide,reading_manuscript
 ./3rd_grader/031_N_wh_V.tex,./3rd_grader/,031_N_wh_V.tex,TRUE,FALSE
 ./3rd_grader/032_N_wh_SV.tex,./3rd_grader/,032_N_wh_SV.tex,TRUE,FALSE
 ./3rd_grader/041_mood_intro.tex,./3rd_grader/,041_mood_intro.tex,TRUE,FALSE
-./3rd_grader/042_mood_i_wish.tex,./3rd_grader/,042_mood_i_wish.tex,FALSE,FALSE
-./3rd_grader/043_mood_if_i_were.tex,./3rd_grader/,043_mood_if_i_were.tex,FALSE,FALSE
-./3rd_grader/044_mood_if_i_had.tex,./3rd_grader/,044_mood_if_i_had.tex,FALSE,FALSE
+./3rd_grader/042_mood_i_wish.tex,./3rd_grader/,042_mood_i_wish.tex,TRUE,FALSE
+./3rd_grader/043_mood_if.tex,./3rd_grader/,043_mood_if.tex,FALSE,FALSE
 ./3rd_grader/051_svc.tex,./3rd_grader/,051_svc.tex,FALSE,FALSE
 ./3rd_grader/052_svoo.tex,./3rd_grader/,052_svoo.tex,FALSE,FALSE
 ./3rd_grader/053_svoc.tex,./3rd_grader/,053_svoc.tex,FALSE,FALSE

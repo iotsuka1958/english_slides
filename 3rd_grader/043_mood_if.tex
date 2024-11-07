@@ -1,0 +1,128 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{If I had a lot of money, I would buy a big house.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{If S $+$ 仮定法過去($=$ V)}
+
+\begin{frame}[plain]{If S $+$ 仮定法過去($=$ V)}
+ \large
+\begin{enumerate} 
+ \item I wish I \textcolor{Maroon}{\bfseries had} money.\hfill{\scriptsize お金があったらいいのに}
+ \item If I \textcolor{Maroon}{\bfseries had} money, I would buy the cake.\hfill{\scriptsize お金があったらそのケーキを買うのに}
+ \item If I \textcolor{NavyBlue}{\bfseries have} money, I will buy the cake.\hfill{\scriptsize お金があったらそのケーキを買います}
+\end{enumerate}
+
+
+\begin{block}{If S $+$ 仮定法過去($=$ V)}
+\small
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item ifと仮定法過去を組み合わせることがあります\par
+If $\text{S}_{1} +$ \myAnch{mood1}{white}{仮定法過去}($= \text{V}_{1}$) \ldots \hspace{2pt},\hspace{10pt}
+ $\text{S}_{2}\,+$ \Circled[fill color = white]{\,\,$\left\{ \begin{array}{l}
+\text{would} \\
+\text{could}
+\end{array}\right\} + \text{原形}$\,\,}\,($=\text{V}_{2}$) \ldots\hspace{2pt} .\\[10pt]
+\hfill{}\myAnch{mood2}{white}{現在の事実の反対}を表しています
+\end{itemize}
+
+\hfill{\scriptsize would, couldはそれぞれwill, canの過去形です}
+ 
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[thick,orange,->] (mood2.west) to[out=200, in=-45] (mood1.south east);
+\end{tikzpicture}
+
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ 日本文の意味になるように、適切なものを選びましょう
+
+\begin{enumerate}
+ \item 1,000円あったら、チーズバーガーとフライドポテトを買うのに（残念なことに手持ちがない）\\
+If I ( get / have / \alt<2->{\Circled{had}}{had} ) 1,000 yen, I would buy a cheeseburger and fries.
+ \item もしわたしがあなたなら、毎日朝食を食べますよ\\
+If I ( am / are / \alt<3->{\Circled{were}}{were} ) you, I would eat breakfast every day. 
+ \item もしわたしがあなたなら、早く寝ますよ\\
+If I were you, I ( \alt<4->{\Circled{would}}{would} / will ) go to bed early.
+\item もしわたしが魚だったら、じょうずに泳げるのに\\
+If I were a fish, I ( can /  \alt<5->{\Circled{could}}{could} ) swim well.
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本文の意味になるよう(~~~~~~~~)内の語句を並べ替えましょう
+ \begin{enumerate}
+  \item わたしがあなたなら、その本を読みますよ\\
+If ( read / you / I / I / the book / were / would  ).\\
+\visible<2->{If I were you, I would read the book.}
+  \item たくさんお金があったら、大きな家を買うのになあ\\
+If ( house / a /would / had / buy / money / I / I / large / a lot of ).\\
+\visible<3->{If I had a lot of money, I would buy a large house.}
+  \item きょう晴れていたら、外で遊べるのになあ\hfill{\scriptsize outdoors: 屋外で}\\
+If ( sunny / I / it / play outdoors / were / could / today ).\\
+\visible<4->{If it were sunny today, I could play outdoors.}
+
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ}
+ \begin{block}{If S $+$ 仮定法過去($=$ V)}
+\small
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item ifと仮定法過去を組み合わせることがあります\par
+
+If $\text{S}_{1} +$ \myAnch{mood1}{white}{仮定法過去}($= \text{V}_{1}$) \ldots\,\,\,,\hspace{10pt}
+ $\text{S}_{2}\,+$ \Circled[fill color = white]{\,\,$\left\{ \begin{array}{l}
+\text{would} \\
+\text{could}
+\end{array}\right\} + \text{原形}$\,\,}\,($=\text{V}_{2}$) \ldots\,\,\,.\\[10pt]
+\hfill{}\myAnch{mood2}{white}{現在の事実の反対}を表しています
+\end{itemize}
+
+\hfill{\scriptsize would, couldはそれぞれwill, canの過去形です}
+ 
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[thick,orange,->] (mood2.west) to[out=200, in=-45] (mood1.south east);
+\end{tikzpicture}
+
+\end{block}
+\end{frame}
+\end{document}
