@@ -1,0 +1,99 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{It is important for you to go there.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{It is \ldots\,\, to--- .}
+\large
+ \begin{enumerate}
+  \item<1->  Science is important. 
+  \item<2->  \alt<3->{{\setlength{\fboxrule}{1pt}\fcolorbox{black}{yellow!20}{To study science}}}{To study science}\,\only<3->{($=$S)} is\only<3->{($=$V)} important.
+  \item<4-> \myAnch{a1}{Maroon}{It}\,is important\,\,\,\,\myAnch{a2}{Maroon}{to study science.}
+ \end{enumerate}
+
+\begin{tikzpicture}[remember picture, overlay]
+%\visible<3->{\draw[->, thick, NavyBlue] (a1.south) to (a2.north);}
+\coordinate (A1) at ($(a1) - (0,20pt)$); % 10pt below a1
+\coordinate (A2) at ($(a2) - (0,20pt)$); % 10pt below a2
+%\visible<5->{\draw[->, thick, orange] (a5.south) to (a4.north);}
+ % Draw the arrow with right angles
+ \visible<5->{\draw[->,Maroon,thick] (a1) -- (A1) -- (A2) -- (a2);}
+\end{tikzpicture}
+
+\begin{block}<6->{hoge}\small
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item 主語が長くなるのを避けるために\\
+\mbox{}\hspace{30pt}{\setlength{\fboxrule}{1pt}\fcolorbox{black}{yellow!20}{\bfseries To--- \hspace{30pt}\mbox{}}}\,\,\,is\,\,\ldots\,. を\,\,\,
+{\bfseries It} is \ldots\,\,\,{\setlength{\fboxrule}{1pt}\fcolorbox{Maroon}{white}{\bfseries to--- \hspace{30pt}\mbox{}}}\,.\,
+とすることがあります
+ \item このitは形式上の主語です\hfill{\scriptsize このitを\kenten{形式主語}と呼びます}
+ \item 実質的な主語は\,{\setlength{\fboxrule}{1pt}\fcolorbox{Maroon}{white}{\bfseries to---\hspace{30pt}\mbox{}}} のところです
+\end{itemize}
+
+\end{block}
+\end{frame}
+
+\begin{frame}[plain]{It is \ldots\,\, for ～ to--- .}
+ \large
+
+\begin{enumerate}
+ \item {\bfseries It} is important {\bfseries to} study math.
+ \item {\bfseries It} is important {\bfseries for} kids {\bfseries to} study math.\hfill{\scriptsize kid \textipa{/k\'Id/} こども}.
+\end{enumerate}
+
+\begin{block}{to不定詞の意味上の主語}\small
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item to不定詞が表す動作をだれがするのかを示すときはfor ～をto不定詞の前に置きます
+ \item It is \ldots\,\, for ～ to--\,\,で「～が---するのは\ldots\,\,だ」の意味になります
+\end{itemize}
+ 
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ あたえられた日本語の意味になるよう(~~~~~~~~)内の語句を並べかえましょう。ただし先頭の単語は大文字ではじめてください
+
+\begin{enumerate}
+ \item こどもがその川で泳ぐのは危険です\\
+It is dangerous for children to swim in the river.
+ \item 
+\end{enumerate}
+\end{frame}
+\end{document}
