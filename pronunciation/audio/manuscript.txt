@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\taxtipa{/S/ /Z/} consonant_textesh_01.mp3
+\taxtipa{/S/ /Z/} consonant_textesh_textyogh_01.mp3
 shop<break time="2s"/station<break time="2s"/>push
 Asia<break time="2s"/>television<break time="2s"/>usually
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\taxtipa{/S/ /Z/} consonant_textesh_02.mp3
+\taxtipa{/S/ /Z/} consonant_textesh_textyogh_02.mp3
 she<break time="2s"/>she
 ship<break time="2s"/>ship
 sheep<break time="2s"/>sheep
@@ -13,7 +13,7 @@ wash<break time="2s"/>wash
 station<break time="2s"/>stataion
 ocean<break time="2s"/>ocean
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\taxtipa{/S/ /Z/} consonant_textesh_03.mp3
+\taxtipa{/S/ /Z/} consonant_textesh_textyogh_03.mp3
 Asia<break time="2s"/>Asia
 television<break time="2s"/>television
 usually<break time="2s"/>usually
@@ -22,25 +22,25 @@ measure<break time="2s"/>measure
 pleasure<break time="2s"/>pleasure
 treasure<break time="2s"/>treasure
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\taxtipa{/S/ /Z/} consonant_textesh_04.mp3
+\taxtipa{/S/ /Z/} consonant_textesh_textyogh_04.mp3
 she
 sea
 ship
 sick
 machine
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\taxtipa{/S/ /Z/} consonant_textesh_05.mp3
+\taxtipa{/S/ /Z/} consonant_textesh_textyogh_05.mp3
 television
 Asia
 shop
 easy
 usually
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\taxtipa{/tS/ /dZ/} consonant_ts_dz_01.mp3
+\taxtipa{/tS/ /dZ/} consonant_ttextesh_dtextyogh_01.mp3
 change<break time="2s"/>touch<break time="2s"/>catch
 jump<break time="2s"/>enjoy<break time="2s"/>bridge
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\taxtipa{/tS/ /dZ/} consonant_ts_dz_02.mp3
+\taxtipa{/tS/ /dZ/} consonant_ttextesh_dtextyogh_02.mp3
 change<break time="2s"/>change
 check<break time="2s"/>check
 cheap<break time="2s"/>cheap
@@ -50,7 +50,7 @@ future<break time="2s"/>future
 lunch<break time="2s"/>lunch
 touch<break time="2s"/>touch
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\taxtipa{/tS/ /dZ/} consonant_ts_dz_03.mp3
+\taxtipa{/tS/ /dZ/} consonant_ttextesh_dtextyogh_03.mp3
 juice<break time="2s"/>juice
 jump<break time="2s"/>jump
 joke<break time="2s"/>joke
@@ -60,14 +60,14 @@ bridge<break time="2s"/>bridge
 badge<break time="2s"/>badge
 judge<break time="2s"/>judge
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\taxtipa{/tS/ /dZ/} consonant_ts_dz_03.mp3
+\taxtipa{/tS/ /dZ/} consonant_ttextesh_dtextyogh_04.mp3
 change<break time="2s"/>change
 party<break time="2s"/>party
 lunch<break time="2s"/>lunch
 tea<break time="2s"/>tea
 cheese<break time="2s"/>cheese
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\taxtipa{/tS/ /dZ/} consonant_ts_dz_03.mp3
+\taxtipa{/tS/ /dZ/} consonant_ttextesh_dtextyogh_05.mp3
 judge<break time="2s"/>judge
 television<break time="2s"/>television
 bridge<break time="2s"/>bridge
