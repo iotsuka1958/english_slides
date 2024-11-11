@@ -32,6 +32,7 @@
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{tipa}
+\usepackage{manfnt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -238,12 +239,12 @@ She play\myAnch{T2}{orange}{s} \,\,{}the guitar.
 \end{column}
 \end{columns}
 
-\begin{exampleblock}<3->{Topics for Today}\small
-\begin{itemize}
+\begin{block}<3->{Topics for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]
  \item 一般動詞の過去形は、主語にかかわらず同じ
  \item 多くの動詞は、原形にedをつけることで過去形になります
 \end{itemize}
-\end{exampleblock}
+\end{block}
 
 \hfill\myaudio{./audio/025_past_do_01.mp3}
 \end{frame}
@@ -272,12 +273,12 @@ She play\myAnch{T2}{orange}{s} \,\,{}the guitar.
        \end{enumerate}
 \end{enumerate}
 
-\begin{exampleblock}<5->{Topics for Today}\small
-\begin{itemize}
+\begin{block}<5->{Topics for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]
  \item 一般動詞の過去形は、主語にかかわらず同じ
  \item 多くの動詞は、原形にedをつけることで過去形になります
 \end{itemize}
-\end{exampleblock}
+\end{block}
 \hfill\myaudio{./audio/025_past_do_02.mp3}
 
 \end{frame}
@@ -288,33 +289,35 @@ She play\myAnch{T2}{orange}{s} \,\,{}the guitar.
 \begin{center}
  
 \rowcolors{2}{NavyBlue!50}{yellow!50}
-\begin{tabular}{lll}\toprule
-{\small 原形}&{\small (意味)}&{\small 過去形}\\\midrule
-\visible<1->{listen}&\visible<2->{{\small (聴く)}}&\visible<3->{listened}\\
-\visible<1->{play}&\visible<4->{{\small (演奏する、競技をする)}}&\visible<5->{played}\\
-\visible<1->{cook}&\visible<6->{{\small(調理する)}}&\visible<7->{cooked}\\
-\visible<1->{walk}&\visible<8->{{\small (歩く)}}&\visible<9->{walked}\\
-\visible<1->{watch}&\visible<10->{{\small (見る)}}&\visible<11->{watched}\\
-\visible<1->{enjoy}&\visible<12->{{\small (楽しむ)}}&\visible<13->{enjoyed}\\
-\visible<1->{learn}&\visible<14->{{\small (学ぶ)}}&\visible<15->{learned}\\\bottomrule
+\begin{tabular}{llll}\toprule
+{\small 原形}&{\small (意味)}&{\small 過去形}&\visible<17->{{\small 発音}}\\\midrule
+\visible<1->{listen}&\visible<2->{{\small (聞く)}}&\visible<3->{listened}&\visible<17->{\textipa{/d/}}\\
+\visible<1->{play}&\visible<4->{{\small (演奏する、競技をする)}}&\visible<5->{played}&\visible<17->{\textipa{/d/}}\\
+\visible<1->{cook}&\visible<6->{{\small(調理する)}}&\visible<7->{cooked}&\visible<17->{\textipa{/t/}}\\
+\visible<1->{walk}&\visible<8->{{\small (歩く)}}&\visible<9->{walked}&\visible<17->{\textipa{/t/}}\\
+\visible<1->{watch}&\visible<10->{{\small (見る)}}&\visible<11->{watched}&\visible<17->{\textipa{/t/}}\\
+\visible<1->{enjoy}&\visible<12->{{\small (楽しむ)}}&\visible<13->{enjoyed}&\visible<17->{\textipa{/d/}}\\
+\visible<1->{learn}&\visible<14->{{\small (学ぶ)}}&\visible<15->{learned}&\visible<17->{\textipa{/d/}}\\\bottomrule
 \end{tabular}%
 \end{center}
 
-\visible<15->{多くの動詞が--edをつけると過去形になります}
+\visible<16->{\scriptsize 多くの動詞が--edをつけると過去形になります}
+
+\visible<18->{\scriptsize 動詞の最後の音が有声音なら\textipa{/d/}、無声音なら\textipa{/t/}\,\dbend}
 
 \hfill\myaudio{./audio/025_past_do_03.mp3}
 
 \end{frame}
 
 \begin{frame}[plain]{Exercises}
-つぎの(~~~~~~~~~~)に下の枠から適当な動詞を選び補いましょう。必要に応じて、動詞の形は変化させてください。 
+日本語の意味になるよう(~~~~~~~~~~)に下の枠から適当な動詞を選び補いましょう。必要に応じて、動詞の形は変化させてください 
 
 \begin{enumerate}
-	\item We~~(\visible<3->{~~listened~~}) to the radio \myEmph[2-]{NavyBlue}{last night}.         
- \item I~~(\visible<5->{~~played~~}) the piano \myEmph[4-]{NavyBlue}{yesterday}.
-	\item He~~(\visible<7->{~~cooked~~}) \myEmph[6-]{NavyBlue}{yesterday}.
-	\item She~~(\visible<9->{~~walked~~}) to work \myEmph[8-]{NavyBlue}{last week}.\hfill{}{\small work: 職場}
-	\item They~~(\visible<11->{~~watched~~}) TV \myEmph[10-]{NavyBlue}{last night}.
+	\item We~~(\visible<3->{~~listened~~}) to the radio \myEmph[2-]{NavyBlue}{last night}. {\scriptsize わたしたちは昨晩ラジオを聞いた}        
+ \item I~~(\visible<5->{~~played~~}) the piano \myEmph[4-]{NavyBlue}{yesterday}.{\scriptsize わたしは昨日ピアノを弾いた}
+	\item He~~(\visible<7->{~~cooked~~}) \myEmph[6-]{NavyBlue}{yesterday}.{\scriptsize 彼はきのう料理した}
+	\item She~~(\visible<9->{~~walked~~}) to work \myEmph[8-]{NavyBlue}{last week}.{\scriptsize 先週彼女は職場に歩いて行った}
+	\item They~~(\visible<11->{~~watched~~}) TV \myEmph[10-]{NavyBlue}{last night}.{\scriptsize 彼らは昨晩テレビを見た}
 \end{enumerate}
 
 \begin{tcolorbox}[title=この中から選んでください]
