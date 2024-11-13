@@ -1,5 +1,8 @@
-judge<break time="2s"/>judge
-television<break time="2s"/>television
-bridge<break time="2s"/>bridge
-visit<break time="2s"/>visit
-juice<break time="2s"/>juice
+three
+third
+thirteen
+thousand
+thing
+think
+mouth
+bath
