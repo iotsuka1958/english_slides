@@ -202,6 +202,8 @@ ssml2mp3.py <input_ssml_file>
 なお、ssml2mp3.pyは以下の通り。 このスクリプトでは,
 <speak></speak>の中身を英語と日本語を混在させないこと。たとえばつぎみたいにする。
 こうすれば、日本語も英語もネイティブになる。
+ここを参考にして少しいじった。
+https://slides.takanory.net/slides/20240417pythonkansai/#/
 
 ```         
 <speak>

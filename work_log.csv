@@ -3,7 +3,7 @@ file_with_path,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,g2_s
 ./orientation/orientation_2.tex,2024-06-07,2024-06-07,2024-06-07,1,1,1,done,done,done,999,999,999
 ./1st_grader/999quiz_full_vesion.tex,2024-06-18,2024-06-18,2024-06-18,26,26,26,done,done,done,999,999,999
 ./1st_grader/099_pronunciation.tex,2024-09-03,2024-07-18,2024-07-18,3,4,4,done,done,done,999,999,999
-./pronunciation/pronunciation_consonant.tex,2024-09-18,2024-09-18,2024-09-18,27,27,27,in progress,in progress,in progress,th,th,th
+./pronunciation/pronunciation_consonant.tex,2024-09-18,2024-09-18,2024-09-18,29,29,29,in progress,in progress,in progress,th,th,th
 ./pronunciation/pronunciation_vowel.tex,,,,,,,,,,,,
 ./1st_grader/001_alphabet.tex,2024-06-14,,,2,,,done,,,999,,
 ./1st_grader/002_sv.tex,2024-06-18,2024-06-13,2024-06-13,4,2,2,done,done,done,999,999,999
@@ -15,8 +15,8 @@ file_with_path,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,g2_s
 ./1st_grader/006_negative_be.tex,2024-10-23,,,2,,,done,,,999,,
 ./1st_grader/007_negative_do.tex,2024-10-24,2024-10-11,2024-10-11,3,3,3,done,done,done,999,999,999
 ./1st_grader/008_question_be.tex,2024-10-30,,,2,,,done,,,999,,
-./1st_grader/009_answer_be.tex,2024-10-31,,,4,,,in progress,,,slide91,,
-./1st_grader/010_question_do.tex,,,,,,,,,,,,
+./1st_grader/009_answer_be.tex,2024-10-31,,,4,,,done,,,999,,
+./1st_grader/010_question_do.tex,2024-11-14,,,2,,,in progress,,,slide51,,
 ./1st_grader/011_answer_do.tex,,2024-10-16,2024-10-16,,6,6,,done,done,,999,999
 ./1st_grader/012_can.tex,,,,,,,,,,,,
 ./1st_grader/013_who.tex,,,,,,,,,,,,
@@ -31,7 +31,7 @@ file_with_path,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,g2_s
 ./1st_grader/022_is_ing_negative.tex,,2024-10-01,2024-10-01,,3,3,,done,done,,999,999
 ./1st_grader/023_is_ing_question.tex,,2024-10-04,2024-10-04,,5,5,,done,done,,slide75,slide75
 ./1st_grader/024_past_be.tex,,2024-10-25,2024-10-25,,4,4,,done,done,,999,999
-./1st_grader/025_past_do.tex,,2024-11-01,2024-11-01,,3,3,,in progress,in progress,,slide55,slide64
+./1st_grader/025_past_do.tex,,2024-11-01,2024-11-01,,5,5,,in progress,in progress,,slide109,slide108
 ./1st_grader/026_past_didnot.tex,,,,,,,,,,,,
 ./1st_grader/027_past_did_you.tex,,,,,,,,,,,,
 ./1st_grader/032_imperative.tex,,,,,,,,,,,,

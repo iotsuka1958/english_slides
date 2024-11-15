@@ -1,1 +1,3 @@
-Hi, I’m Susan, and I’m from New York.<break time = "3s"/>Nice to meet you!<break time = "3s"/>Look at this picture.<break time = "3s"/>It’s my family.<break time = "3s"/>Dad, George, is a dentist, and Mom, Helen, teaches.<break time = "3s"/>I have a fifteen-year-old brother, Kevin, and our sweet dog, Brownie.<break time = "3s"/>I am really happy to meet you.<break time = "3s"/>Thank you!<break time = "3s"/>
+I study math every day.<break time = "4s"/>I studied math.
+Babies cry.<break time = "4s"/>The baby cried on the bus.
+The train stops at every station.<break time = "4s"/>The train stopped at every station.
