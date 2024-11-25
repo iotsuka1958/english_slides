@@ -1,0 +1,166 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{gotham}
+   \gothamset{
+      numbering= framenumber,
+      % tocframe template= gotham simple,
+      parttocframe default=off,
+      sectiontocframe default=off,
+      subsectiontocframe default=off,
+   }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide}
+\usepackage{lua-ul}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Today's Pronunciation}
+\subtitle{Pronunciation of Japanese Character `ん'}
+\date[]{\today}
+\author{iotsuka}
+\institute{Eduop ちば}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\gothamset{background=dark}
+\maketitle
+
+   \begin{frame}[toc]{Table of contents}%
+      \tableofcontents%[hideallsubsections]
+   \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\gothamset{background=light}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{`ん'をローマ字で書くと}
+\begin{frame}[plain]{`ん'をローマ字で書くと}
+
+\Huge n
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\gothamset{background=light}
+\section{`ん'を含む単語を発音してみよう}
+\subsection{発音できますか}
+\begin{frame}[plain]{発音できますか}
+ \begin{itemize}
+  \item あ\Circled{ん}ドーナツ
+  \item せ\Circled{ん}べい
+  \item と\Circled{ん}かつ
+  \item こ\Circled{ん}にゃく
+  \item パ\Circled{ン}
+ \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{どのように発音していますか}
+\begin{frame}[plain]{この`ん'は}\Huge
+\begin{columns}
+ \begin{column}{.4\textwidth}
+ あ\Circled{ん}ドーナツ
+ \end{column}
+\begin{column}{.55\textwidth}
+\IfFileExists{../images/doughnuts.jpg}{%
+\includegraphics[width=.99\textwidth]{../images/doughnuts.jpg}
+\raggedleft
+{\tiny ``fánk / doughnut / gogoşi'' by debreczeniemoke is licensed under CC BY 2.0.}}{\relax}
+\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{この`ん'は}\Huge
+\begin{columns}
+ \begin{column}{.3\textwidth}
+ せ\Circled{ん}べい
+ \end{column}
+\begin{column}{.6\textwidth}
+\IfFileExists{../images/senbei.jpg}{%
+\includegraphics[width=.99\textwidth]{../images/senbei.jpg}
+\raggedleft
+{\tiny ``Japanese Senbeis’’ by DryPot is licensed under CC BY 2.5.}}{\relax}
+\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{この`ん'は}\Huge
+
+\begin{columns}
+ \begin{column}{.3\textwidth}
+ と\Circled{ん}かつ
+ \end{column}
+\begin{column}{.6\textwidth}
+\IfFileExists{../images/tonkatsu.jpg}{%
+\includegraphics[width=.99\textwidth]{../images/tonkatsu.jpg}
+\raggedleft
+{\tiny ``Kurobuta Tonkatsu 黒豚とんかつ定食'' by jetalone is licensed under CC BY 2.0.}}{\relax}
+\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{この`ん'は}\Huge\begin{columns}
+ \begin{column}{.4\textwidth}
+ こ\Circled{ん}にゃく
+ \end{column}
+\begin{column}{.575\textwidth}
+\IfFileExists{../images/konnyaku.jpg}{%
+\includegraphics[width=\textwidth]{../images/konnyaku.jpg}
+\raggedleft
+{\tiny ``Konnyaku'' by preetamrai is licensed under CC BY 2.0.}}{\relax}
+\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{この`ん'は}\Huge
+
+\begin{columns}
+ \begin{column}{.3\textwidth}
+ パ\Circled{ン}
+ \end{column}
+\begin{column}{.6\textwidth}
+\IfFileExists{../images/bread.jpg}{%
+\includegraphics[width=.99\textwidth]{../images/bread.jpg}
+\raggedleft
+{\tiny ``Bread'' by karenandbrademerson is licensed under CC BY 2.0.}}{\relax}
+\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+下線部の発音が`あ\Circled{ん}ドーナツ'の\Circled{ん}と同じなのはどれですか
+
+\begin{enumerate}
+ \item あ\underLine{ん}まん
+ \item て\underLine{ん}どん（天丼）
+ \item て\underLine{ん}ぷら（天ぷら）
+
+\end{enumerate}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+下線部の発音が`せ\Circled{ん}べい'の\Circled{ん}と同じなのはどれですか
+
+\begin{enumerate}
+ \item ちゃ\underLine{ん}ぽん
+ \item みたらしだ\underLine{ん}ご（音楽）
+ \item あ\underLine{ん}にんどうふ（杏仁豆腐）
+
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+下線部の発音が`と\Circled{ん}かつ'の\Circled{ん}と同じなのはどれですか
+
+\begin{enumerate}
+ \item さ\underLine{ん}ま
+ \item あ\underLine{ん}ころもち（あんころ餅）
+ \item め\underLine{ん}ちかつ（メンチカツ）
+
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

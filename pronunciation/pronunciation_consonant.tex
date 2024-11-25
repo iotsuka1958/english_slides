@@ -23,6 +23,12 @@
 \usepackage{soup}
 \usepackage{circledsteps}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\newcommand*{\themonth}{\two@digits\month}
+\newcommand*{\theday}{\two@digits\day}
+\makeatother
+\newcommand{\mytoday}{{\the\year}--{\themonth}--{\theday}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{Pronunciation---consonant---}
 \author{}
@@ -45,7 +51,9 @@
 \vfill
 
 \raggedleft
- \textcolor{white}{\LARGE\bfseries 2024--11--22}
+% \textcolor{white}{\LARGE\bfseries 2024--11--26}
+% \textcolor{white}{\LARGE\bfseries \today}
+ \textcolor{white}{\LARGE\bfseries \mytoday}
 
 \vfill
 \vfill
@@ -76,7 +84,8 @@
 \vfill
 \vfill
 \raggedleft
- \textcolor{white}{\Large\bfseries 2024--11--22}
+% \textcolor{white}{\Large\bfseries 2024--11--26}
+ \textcolor{white}{\Large\bfseries \mytoday}
 
 
 
@@ -1062,14 +1071,10 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 \hfill\makebox[80pt][l]{\textipa{/pl\'e\textcolor{BurntOrange}{Z}\textrhookschwa /}}\hspace{150pt}\mbox{}
 \item trea\textcolor{NavyBlue}{\bfseries s}ure
 \hfill\makebox[80pt][l]{\textipa{/tr\'e\textcolor{BurntOrange}{Z}\textrhookschwa /}}\hspace{150pt}\mbox{}
-
-
 % \item bir\textcolor{NavyBlue}{\bfseries d}
 %\hfill\makebox[80pt][l]{\textipa{/b\'\textrhookschwa :\textcolor{BurntOrange}{d}/}}\hspace{150pt}\mbox{}
 \end{enumerate}
 
-\hyperlink{tips}{\beamerreturnbutton{Back to Tips}}
-\hypertarget{ex}{}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1085,6 +1090,9 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
  \end{enumerate}
 
 \hfill\myaudio{./audio/consonant_textesh_textyogh_04.mp3}
+
+\hyperlink{tips}{\beamerreturnbutton{Back to Tips}}
+\hypertarget{ex}{}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
