@@ -1,3 +1,4 @@
-I study math every day.<break time = "4s"/>I studied math.
-Babies cry.<break time = "4s"/>The baby cried on the bus.
-The train stops at every station.<break time = "4s"/>The train stopped at every station.
+He made a cake for her yesterday.<break time = "4s"/>He didn't make a cake for her yesterday.
+We saw a great movie last week.<break time = "4s"/>We didn't see a great movie last week.
+She got a new car last month.<break time = "4s"/>She didn't get a new car last month.
+He spoke English then.<break time = "4s"/>He didn't speak English then.

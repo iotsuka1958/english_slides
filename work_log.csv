@@ -3,7 +3,7 @@ file_with_path,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,g2_s
 ./orientation/orientation_2.tex,2024-06-07,2024-06-07,2024-06-07,1,1,1,done,done,done,999,999,999
 ./1st_grader/999quiz_full_vesion.tex,2024-06-18,2024-06-18,2024-06-18,26,26,26,done,done,done,999,999,999
 ./1st_grader/099_pronunciation.tex,2024-09-03,2024-07-18,2024-07-18,3,4,4,done,done,done,999,999,999
-./pronunciation/pronunciation_consonant.tex,2024-09-18,2024-09-18,2024-09-18,36,36,36,in progress,in progress,in progress,tS dZ,tS dZ,tS dZ
+./pronunciation/pronunciation_consonant.tex,2024-09-18,2024-09-18,2024-09-18,37,37,37,in progress,in progress,in progress,tS dZ,tS dZ,tS dZ
 ./pronunciation/pronunciation_vowel.tex,,,,,,,,,,,,
 ./1st_grader/001_alphabet.tex,2024-06-14,,,2,,,done,,,999,,
 ./1st_grader/002_sv.tex,2024-06-18,2024-06-13,2024-06-13,4,2,2,done,done,done,999,999,999
@@ -27,13 +27,13 @@ file_with_path,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,g2_s
 ./1st_grader/018_why.tex,,,,,,,,,,,,
 ./1st_grader/019_what.tex,,,,,,,,,,,,
 ./1st_grader/020_whose.tex,,,,,,,,,,,,
-./1st_grader/021_is_ing_intro.tex,2024-11-26,2024-09-18,2024-09-18,3,6,6,in progress,done,done,slide44,999,999
+./1st_grader/021_is_ing_intro.tex,2024-11-26,2024-09-18,2024-09-18,4,6,6,in progress,done,done,slide54,999,999
 ./1st_grader/022_is_ing_negative.tex,,2024-10-01,2024-10-01,,3,3,,done,done,,999,999
 ./1st_grader/023_is_ing_question.tex,,2024-10-04,2024-10-04,,5,5,,done,done,,slide75,slide75
 ./1st_grader/024_past_be.tex,,2024-10-25,2024-10-25,,4,4,,done,done,,999,999
 ./1st_grader/025_past_do.tex,,2024-11-01,2024-11-01,,10,10,,done,done,,999,999
-./1st_grader/026_past_didnot.tex,,2024-11-26,2024-11-26,,3,3,,in progress,in progress,,slide43,slide43
-./1st_grader/027_past_did_you.tex,,,,,,,,,,,,
+./1st_grader/026_past_didnot.tex,,2024-11-26,2024-11-26,,4,4,,in progress,done,,slide53,999
+./1st_grader/027_past_did_you.tex,,2024-12-03,20241203,,1,1,,in progress,in progress,,,
 ./1st_grader/032_imperative.tex,,,,,,,,,,,,
 ./1st_grader/033_exclamatory.tex,,,,,,,,,,,,
 ./2nd_grader/001_there_is.tex,,,,,,,,,,,,
