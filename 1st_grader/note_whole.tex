@@ -1,3 +1,6 @@
+%%%%%%%handoutオプションだとエラーになるTeXソースがある
+%%%%%%%さてどうしたあものか
+%%%%%%%handoutオプションをつけないと印刷するには枚数が増えすぎる
 \documentclass[jafontscale=0.9247,dvipsnames,book,twoside]{jlreq}
 \usepackage{geometry,notebeamer}
 \geometry{margin = .75in}
@@ -37,6 +40,14 @@
   pages = -, lefthead = 1st\_grader/004\_verb, righthead = Page~\thepage
 ] { 004_verb_handout.pdf }
 
+
+\chapter{目的語}
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = 1st\_grader/004\_verb\_object, righthead = Page~\thepage
+] { 004_verb_object_handout.pdf }
+
+
 \chapter{代名詞}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
@@ -46,7 +57,7 @@
 \chapter{単数と複数}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/005\_singukar\_plural, righthead = Page~\thepage
+  pages = -, lefthead = 1st\_grader/005\_singular\_plural, righthead = Page~\thepage
 ] { 005_singular_plural_handout.pdf }
 
 \chapter{否定文}
@@ -86,6 +97,23 @@
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
   pages = -, lefthead = 1st\_grader/011\_answer\_do, righthead = Page~\thepage
 ] { 011_answer_do_handout.pdf }
+
+
+\chapter{現在進行形}
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = 021\_is\_ing\_intro, righthead = Page~\thepage
+] {021_is_ing_intro_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = 022\_is\_ing\_negative, righthead = Page~\thepage
+] {022_is_ing_negative_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = 023\_is\_ing\_question, righthead = Page~\thepage
+] {023_is_ing_question.pdf }
 
 \chapter{過去形}
 

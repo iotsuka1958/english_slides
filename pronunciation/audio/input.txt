@@ -1,8 +1,5 @@
-three
-third
-thirteen
-thousand
-thing
-think
-mouth
-bath
+cars<break time="3s"/> cars
+cards<break time="3s"/> cards
+cards<break time="3s"/> cards
+cars<break time="3s"/> cars
+cards<break time="3s"/> cards
