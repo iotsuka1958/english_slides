@@ -1,4 +1,2 @@
-He made a cake for her yesterday.<break time = "4s"/>He didn't make a cake for her yesterday.
-We saw a great movie last week.<break time = "4s"/>We didn't see a great movie last week.
-She got a new car last month.<break time = "4s"/>She didn't get a new car last month.
-He spoke English then.<break time = "4s"/>He didn't speak English then.
+You are happy.
+Are you happy?
