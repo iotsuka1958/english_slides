@@ -1,10 +1,11 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{media9}
@@ -29,6 +30,8 @@
 \usepackage{circledsteps}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{pxrubrica}
+\usepackage{tipa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -74,7 +77,8 @@
 \end{tikzpicture}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{English is fun.\,\,{}--- I can play the guitar. ---}
+\title{English is fun.}
+\subtitle{I can play the guitar. She can sing well.}
 \author{}
 \institute[]{}
 \date[]
@@ -97,47 +101,37 @@
 \section{can}
 
 \subsection{〜できる}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{〜できる}
  \Large
 
-I play the guitar every day. \pause
-\hspace{80pt}{\footnotesize every day: 毎日}
-
-\pause
-
-\vspace{15pt}
-
-I \textcolor{orange}{can} play the guitar.
-
-\pause
+\begin{enumerate}
+ \item I play the guitar every day. \hfill{\scriptsize every day: 毎日}\pause
+ \item I \textcolor{Maroon}{\bfseries can} {\bfseries play} the guitar.\pause
+\end{enumerate}
 
 \vfill
 
 \begin{exampleblock}{Topics for Today}
-\pause
-\begin{itemize}\small
- \item   「〜することができる」$\longrightarrow${\,\,\,}can $+$ 動詞
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   {\bfseries can} $+$ 原形$\longrightarrow${\,\,\,}「〜することができる」
+ \item \textipa{/k@n/ /k\'\ae n/}
  \end{itemize}
      \end{exampleblock}
 
-\pause
-
-\mbox{}\hfill\visible{\myaudio{./audio/012_can_01.mp3}}
+\mbox{}\hfill\visible{\myaudio{./audio/012_can_01.mp3}} 
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{〜できる}
 
-つぎの英文の意味を考えましょう。
-
 \begin{enumerate}
- \item I can play the guitar.
- \item We can speak English.
- \item You can sing very well.
- \item He can swim.
- \item She can read French.
- \item They can dance very well.
+ \item I \textcolor{Maroon}{\bfseries can} {\bfseries play} the guitar.
+ \item We \textcolor{Maroon}{\bfseries can} {\bfseries speak} English.
+ \item You \textcolor{Maroon}{\bfseries can} {\bfseries sing} very well.
+ \item He \textcolor{Maroon}{\bfseries can} {\bfseries swim}.
+ \item She \textcolor{Maroon}{\bfseries can} {\bfseries read} French.
+ \item They \textcolor{Maroon}{\bfseries can} {\bfseries dance} very well.
 \end{enumerate}
 
 \pause
@@ -145,9 +139,10 @@ I \textcolor{orange}{can} play the guitar.
 \vfill
 
 \begin{exampleblock}{Topics for Today}
-\pause
-\begin{itemize}\small
- \item   主語がなんであってもcan $+$ 動詞
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   {\bfseries can} $+$ 原形$\longrightarrow${\,\,\,}「〜することができる」
+ \item   主語がなんであっても同じ\\
+\hfill{\scriptsize canのように動詞と組み合わせて動詞の意味を補足する語を\kenten{助動詞}といいます}
  \end{itemize}
      \end{exampleblock}
 
@@ -177,57 +172,48 @@ I \textcolor{orange}{can} play the guitar.
 }
 
 \end{frame}
-
-\subsection{〜できない}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{canの否定}
 \begin{frame}[plain]{〜できない}
   \Large
 
-I can use a computer. \pause
-\hspace{80pt}{\footnotesize use: 使う　computer: コンピューター}
-
-\pause
-
-\vspace{15pt}
-
-I \textcolor{orange}{cannot} use a computer.\pause
-
-I \textcolor{orange}{can't} use a computer.
-
-
+\begin{enumerate}
+ \item I {\bfseries can} use a computer. \hfill{\scriptsize use: 使う　computer: コンピューター\hspace{10pt}\textipa{/k@n/}}
+ \item I \textcolor{orange}{\bfseries cannot} use a computer.\hfill{\scriptsize \textipa{/k\'\ae nAt/}}
+ \item I \textcolor{orange}{\bfseries can't} use a computer.\hfill{\scriptsize \textipa{/k\'\ae nt/}}
+\end{enumerate}
 
 \pause
 
 \vfill
 
-\begin{exampleblock}{Topics for Today}
+\begin{exampleblock}{Topic for Today}
 \pause
-\begin{itemize}\small
- \item   「〜することができない」$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{cannot}\\\text{can't}\end{tabular}\right\} + \text{動詞}$
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   「〜することができない」$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{\bfseries cannot}\\\text{\bfseries can't}\end{tabular}\right\} + \text{原形}$
  \end{itemize}
      \end{exampleblock}
 
-\pause
-
 \mbox{}\hfill{}\myaudio{./audio/012_can_04.mp3}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{〜できる、できない}
  
 
 \begin{enumerate}
- \item I can skate very well, but I cannot ski.
- \item Suzan can drive a car, but she can't ride a bicycle.
- \item We can speak French, but we cannot speak Japanese.
- \item They can sing very well, but they can't play the piano.
+ \item I {\bfseries can} skate very well, but I {\bfseries cannot} ski.
+ \item Suzan {\bfseries can} drive a car, but she {\bfseries can't} ride a bicycle.
+ \item We {\bfseries can} speak French, but we {\bfseries cannot} speak Japanese.
+ \item They {\bfseries can} sing very well, but they {\bfseries can't} play the piano.
 \end{enumerate}
 \vfill
 
 \pause
 
 \begin{exampleblock}{Topics for Today}
-\begin{itemize}\small
- \item  「〜できる」$\longrightarrow$\,\,\, can $+$ 動詞\hfill{}「〜できない」$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{cannot}\\\text{can't}\end{tabular}\right\} + \text{動詞}$　\pause
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item  「〜できる」$\longrightarrow$\,\,\, {\bfseries can} $+$ 原形\hfill{\scriptsize \textipa{/k@n/}}
+ \item 「〜できない」$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{\bfseries cannot}\\\text{\bfseries can't}\end{tabular}\right\} + \text{原形}$\hfill{\scriptsize \textipa{/k\'\ae nAt/} \textipa{/k\'\ae nt/}}\pause
  \item 主語がなんであっても同じ
  \end{itemize}
      \end{exampleblock}
@@ -236,9 +222,7 @@ I \textcolor{orange}{can't} use a computer.
 
 \mbox{}\hfill\visible<4>{\myaudio{./audio/012_can_05.mp3}}
 \end{frame}
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-6>[plain]\frametitle{Exercises}
 
 日本文を参考にして(~~~~~~~~)の語を並べかえ、英文を完成させましょう。
@@ -246,15 +230,15 @@ I \textcolor{orange}{can't} use a computer.
 \begin{enumerate}
 
  \item You ( can / the piano / play ) very well.
-\hspace{2\zw}\begin{minipage}{15\zw}あなたはとてもじょうずにピアノを弾くことができます。\end{minipage}
+\hspace{2\zw}\begin{minipage}[t]{15\zw}{\scriptsize あなたはとてもじょうずにピアノを弾くことができます。}\end{minipage}
 \\
 \visible<2->{$\longrightarrow$\,\,\,You can play the piano very well.}
- \item  ( run / Naomi / can ) fast.\hspace{8.75\zw}ナオミは速く走ることができます。\\
+ \item  ( run / Naomi / can ) fast.\hspace{8.75\zw}{\scriptsize ナオミは速く走ることができます。}\\
 \visible<3->{$\longrightarrow$\,\,\,Naomi can run fast.}
  \item ( French / can't / I / speak ).\hspace{7.5\zw}%
-わたしはフランス語を話せません。\\
+{\scriptsize わたしはフランス語を話せません。}\\
 \visible<4->{$\longrightarrow$\,\,\,I can't speak French.}
- \item He ( a bicycle / ride / cannot ).\hspace{6.2\zw}彼は自転車に乗れません。\\
+ \item He ( a bicycle / ride / cannot ).\hspace{6.2\zw}{\scriptsize 彼は自転車に乗れません。}\\
 \visible<5->{$\longrightarrow$\,\,\,He cannot ride a bicycle.}
 \end{enumerate}
 
@@ -262,9 +246,10 @@ I \textcolor{orange}{can't} use a computer.
 
 \mbox{}\hfill\visible<6>{\myaudio{./audio/012_can_06.mp3}}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{canの疑問文}
 
-
-\subsection{〜できますか}
+\subsection{canの疑問文のつくり方}
 \begin{frame}[plain,t]{〜できますか？}
  \Large
 
@@ -291,20 +276,18 @@ I \textcolor{orange}{can't} use a computer.
 
 \vfill
 
-\begin{exampleblock}<7->{Topics for Today}
+\begin{exampleblock}<7->{Topic for Today}
 \visible<8->{%
-\begin{itemize}\small
- \item   「〜することができますか？」$\longrightarrow${\,\,\,}$\text{Can} + \text{主語} + \text{動詞}$ \ldots{}\,\,?
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   「〜することができますか？」\\
+\hspace{100pt}$\longrightarrow${\,\,\,}$\text{\bfseries Can} + \text{S} + \text{原形}$ \ldots{}\,\,? \textipa{/k\'\ae n/}
  \end{itemize}
 }
      \end{exampleblock}
 
  \mbox{}\hfill\visible<9->{\myaudio{./audio/012_can_07.mp3}}
 \end{frame}
-
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-5>[plain]\frametitle{Exercises}
 
 日本文を参考にして(~~~~~~~~)の語を並べかえ、英文を完成させましょう。
@@ -317,7 +300,8 @@ I \textcolor{orange}{can't} use a computer.
 \visible<2->{$\longrightarrow$\,\,\,Can you sing this English song?}
  \item ( you / cook / can / pizza ) ?
 \hspace{5.3\zw}あなたはピザをつくれますか。\raisebox{5pt}{\rotatebox{-45}{\scalebox{2.5}{\twemoji{pizza}}}}\\
-\visible<3->{$\longrightarrow$\,\,\,Can you cook pizza?}
+\visible<3->{$\longrightarrow$\,\,\,Can you cook pizza?}%
+\hfill{\scriptsize pizza \textipa{/p\'\i:ts@/}}
  \item ( a car / John / drive / can ) ?\hspace{4.8\zw}%
 ジョンは車の運転ができますか。\raisebox{0pt}{\rotatebox{0}{\scalebox{2.5}{\twemoji{oncoming automobile}}}}\\
 \visible<4->{$\longrightarrow$\,\,\,Can John drive a car?}
@@ -327,8 +311,8 @@ I \textcolor{orange}{can't} use a computer.
 
 \mbox{}\hfill\visible<5>{\myaudio{./audio/012_can_08.mp3}}
 \end{frame}
-
-\subsection{Can you 〜? と聞かれたら}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{canの疑問文への答え方}
 \begin{frame}[plain]{Can you 〜? と聞かれたら}
  \Large
 
@@ -367,6 +351,27 @@ Can you cook pizza?
 \mbox{}\hfill\visible<17->{\myaudio{./audio/012_can_10.mp3}}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{助動詞canのまとめ}
+\begin{frame}[plain]{要点}
+ 
+\begin{block}{助動詞can \textipa{/k@n/} \textipa{/k\'\ae n/}}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item {\bfseries can} $+$ 原形%
+\hfill{}I {\bfseries can} play the guitar. \textipa{/k@n/}
 
+ \item 否定文のつくり方: $\left\{\begin{tabular}{l}\text{\bfseries cannot}\\\text{\bfseries can't}\end{tabular}\right\} + \text{原形}$\hfill{ }%
+\hfill{}{\normalsize He {\bfseries cannot} play the guitar.}\textipa{/k\'\ae nAt/}\\[-5pt]
+\hfill{}{\normalsize He {\bfseries can't} play the guitar.}\textipa{/k\'\ae nt/}\\[10pt]
+
+ \item 疑問文のつくり方: {\bfseries Can} $+$ S $+$ 原形 \ldots\,\,?
+\hfill{}{\normalsize {\bfseries Can} she sing well?\textipa{/k\'\ae n/}}\\
+\hfill{}Yes, she {\bfseries can}. \textipa{/k\'\ae n/}\\
+\hfill{}No, she {\bfseries cannot}.\textipa{/k\'\ae nAt/}\\
+\hfill{}($=$ No, she {\bfseries can't}.\textipa{/k\'\ae nt/})
+\end{itemize}
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 

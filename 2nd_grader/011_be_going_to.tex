@@ -29,6 +29,8 @@
 \usepackage{circledsteps}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{pxrubrica}
+\usepackage{tipa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -107,14 +109,18 @@
 \begin{enumerate}
  \item<1-> I played tennis yesterday.\hfill{}{\small 過去のこと}
  \item<2-> I play tennis after school.\hfill{}{\small 現在のこと}
- \item<3-> I \alt<1-3>{\myAnch{aux1}{white}{am going to}}{\myAnch{AUX1}{Orange}{am going to}} play tennis tomorrow.%
-\hfill\visible<4->{するつもりです}
+ \item<3-> I \textcolor{Maroon}{\bfseries am going to} {\bfseries play} tennis tomorrow.%
+\hfill\visible<4->{{\kenten{未来}のこと}}
 \end{enumerate}
+
+\vfill
 
 \begin{exampleblock}<5->{Topic for Today}
 \small
-$\text{be}+\text{going to}+\text{原形}$は「計画」や「予定」など未来のことを
-表します。
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item \Circled[fill color=white]{\,$\text{be going to}+\text{原形}$\,}\,は「計画」や「予定」など\kenten{未来}のことを表します\\
+\hfill{}「～するつもりだ」
+\end{itemize}
 \end{exampleblock}
 \hfill\myaudio{./audio/011_be_going_to_01.mp3}
 \end{frame}
@@ -134,7 +140,7 @@ We ( going / are / this weekend / a party / have / to )\\
  \item わたしの父は来月オーストラリアを訪れる予定です。\\
 My father ( going / is / visit / to / next / Australia / month )\\
 \visible<4->{My father is going to visit Australia next month. }
- \item 彼らは今年の夏に山に登るつもりです。\\
+ \item 彼らは今年の夏にその山に登るつもりです。\hfill{\scriptsize climb \textipa{/kl\'aIm/} 登る}\\
 They ( to / going / climb / the mountain / this / are / summer )\\
 \visible<5->{They are going to climb the mountain this summer.}
 \end{enumerate}
@@ -174,13 +180,12 @@ They ( to / going / climb / the mountain / this / are / summer )\\
 \end{frame}
 
 
-\begin{frame}[plain]\frametitle{復習}
-%
-       \begin{exampleblock}{Topics for Today}
-\begin{itemize}
+\begin{frame}[plain]\frametitle{復習}%
+       \begin{exampleblock}{be動詞の否定}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item  be動詞の否定は、$\text{be動詞} + \text{not}$
  \item  縮めて aren't($=\text{are not}$)、isn't($=\text{is not}$) ということもあります\\
-\mbox{}\hfill{}これを「短縮形」といいます
+\mbox{}\hfill{}短縮形
 % \item  She\textcolor{orange}{'s not} ということもあります
 \end{itemize}
       \end{exampleblock}
@@ -191,18 +196,19 @@ They ( to / going / climb / the mountain / this / are / summer )\\
 \begin{frame}[plain]{be going to--の否定}
 \Large
 
-\visible<1->{They \myAnch{aux1}{orange}{are going to} \textcolor{OliveGreen}{play} tennis after school.}\hfill\visible<2->{{\small after school:放課後に}}
+\visible<1->{They \myAnch{aux1}{Maroon}{{\bfseries are going to}} \textcolor{OliveGreen}{\bfseries play} tennis after school.}\hfill\visible<2->{{\scriptsize after school:放課後に}}
 
-\visible<3->{They \myAnch{aux2}{orange}{are} \textcolor{orange}{not}\,\, \myAnch{aux3}{orange}{going to} \textcolor{OliveGreen}{play} tennis after school.} 
+\visible<3->{They \myAnch{aux2}{Maroon}{\bfseries are} \textcolor{Maroon}{\bfseries not}\,\, \myAnch{aux3}{Maroon}{\bfseries going to} \textcolor{OliveGreen}{\bfseries play} tennis after school.} 
 
-\begin{exampleblock}<4->{Topic for Today}
-be going to--の否定文のつくり方
-\begin{itemize}\small
- \item  be動詞$\left\{\begin{tabular}{l}
+\begin{exampleblock}<4->{Topic for Today}\small
+\Circled[fill color=white]{\,be going to $+$原形\,}\,の否定文のつくり方
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item  $\left\{\begin{tabular}{l}
 		       am\\
                        are\\
                        is
-		      \end{tabular}\right\}$の後ろにnotをいれる
+		      \end{tabular}\right\} \text{\textcolor{Maroon}{\bfseries not} going to 原形}$\\
+\hfill{\scriptsize be動詞の否定文のつくり方と同じです}
 \end{itemize}
       \end{exampleblock}
 \hfill\myaudio{./audio/011_be_going_to_04.mp3}
@@ -215,16 +221,16 @@ be going to--の否定文のつくり方
 \begin{enumerate}
  \item わたしは今夜夕食を作るつもりはありません。\\
 I ( dinner / am / not / going / to / cook ) tonight.\\
-\visible<2->{I am not going to cook dinner tonight.}
+\hfill\visible<2->{I am not going to cook dinner tonight.}
  \item 彼女は明日友達を訪ねるつもりはありません。\\
 She ( going / visit / her friend / is / not / to ) tomorrow.\\
-\visible<3->{She is not going to visit her friend tomorrow.}
+\hfill\visible<3->{She is not going to visit her friend tomorrow.}
  \item わたしたちは今日公園に行くつもりはありません。\\
 We ( going / the park / to / not / are / go to) today.\\
-\visible<4->{We are not going to go to the park today.}
+\hfill\visible<4->{We are not going to go to the park today.}
  \item 彼らは今週の金曜日にパーティーを開くつもりはありません。\\
 They ( going / not / a party / to / are / have ) this Friday.\\
-\visible<5->{They are not going to have a party this Friday.}
+\hfill\visible<5->{They are not going to have a party this Friday.}
 \end{enumerate}
 \hfill\myaudio{./audio/011_be_going_to_05.mp3}
 \end{frame}
@@ -234,11 +240,11 @@ They ( going / not / a party / to / are / have ) this Friday.\\
 \begin{frame}[plain]{be going to--の疑問文}
 \Large
 
-\visible<1->{They \fbox{\alt<1-3>{\myAnch{be1}{white}{are}}{\myAnch{BE1}{orange}{are}} \alt<1-3>{\myAnch{going1}{white}{going to}}{\myAnch{GOING1}{orange}{going to}}} visit France this summer.}\hfill\visible<2->{{\small visit:訪問する}}
+\visible<1->{They \fbox{\alt<1-3>{\myAnch{be1}{white}{\bfseries are}}{\myAnch{BE1}{orange}{\bfseries are}} \alt<1-3>{\myAnch{going1}{white}{\bfseries going to}}{\myAnch{GOING1}{orange}{\bfseries going to}}} {\bfseries visit} France this summer.}\hfill\visible<2->{{\scriptsize visit:訪問する}}
 
 \vspace{15pt}
 
-\visible<3->{\alt<1-3>{\myAnch{be2}{white}{Are}}{\myAnch{BE2}{orange}{Are}} they \alt<1-3>{\myAnch{going2}{white}{going to}}{\myAnch{GOING2}{orange}{going to}} visit France this summer?} 
+\visible<3->{\alt<1-3>{\myAnch{be2}{white}{\bfseries Are}}{\myAnch{BE2}{orange}{\bfseries Are}} they \alt<1-3>{\myAnch{going2}{white}{\bfseries going to}}{\myAnch{GOING2}{orange}{\bfseries going to}} {\bfseries visit} France this summer?} 
 
 \visible<4->{%
 \begin{tikzpicture}[remember picture,overlay]
@@ -247,14 +253,19 @@ They ( going / not / a party / to / are / have ) this Friday.\\
 \end{tikzpicture}
 }
 
-\begin{exampleblock}<5->{Topics for Today}
-be going to--の疑問文のつくり方
-\begin{itemize}
- \item<3->  be動詞を先頭にする(be going to--のbeだけを前に)
- \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
+\begin{exampleblock}<5->{Topics for Today}\small
+\Circled[fill color=white]{\,be going to $+$原形\,}\,の疑問文のつくり方
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item<3->  be動詞を先頭にする\hspace{10pt}\Circled[fill color=white]{\,be going to $+$原形\,}\,のbeだけを前に\\
+\hspace{20pt} $\left\{\begin{tabular}{l}
+		       Am\\
+                       Are\\
+                       Is
+		      \end{tabular}\right\} + \text{S} + \text{going to 原形\,\ldots\,?}$
+ \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch\hfill\myaudio{./audio/011_be_going_to_06.mp3}
+
 \end{itemize}
       \end{exampleblock}
-\hfill\myaudio{./audio/011_be_going_to_06.mp3}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -320,13 +331,13 @@ be going to--の疑問文のつくり方
                            {\footnotesize (同じ)}
 			  \end{tabular}}\hfill\mbox{}}
 
-\vspace{25pt}
+\vspace{45pt}
 
 \visible<8->{%
-\begin{exampleblock}{Topic for Today\,\,\,{\textcolor{black}{\mdseries ---be going to--の疑問文への答え方---}}}
+\begin{exampleblock}{Topic for Today}
 \small
 
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item  be動詞の疑問文への答え方と同じ
 \end{itemize}
       \end{exampleblock}
@@ -354,7 +365,26 @@ be going to--の疑問文のつくり方
 \hfill\myaudio{./audio/011_be_going_to_09.mp3}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
+\begin{frame}[plain]{要点}
+ 
+\begin{block}{\Circled[fill color=white]{\,be going to $+$ 原形\,}}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item 未来のこと(～するつもり)%
+\hfill{She {\bfseries is going to} climb the mountain.}
+ \item 否定文のつくり方: be動詞の直後にnot
+\hfill{}{She {\bfseries is} \Circled[fill color=white]{\,not\,} {\bfseries going to} climb the mountain.}
+ \item 疑問文のつくり方: be動詞を先頭に
+\hfill{}{{\bfseries Is} she {\bfseries going to} climb the mountain?}\\
+\hfill{}Yes, she is.\\
+\hfill{}No, She is not.\\
+\hfill{}($=$ No, she's not.)\\
+\hfill{}($=$ No, she isn't.)
+\end{itemize}
+\end{block}
+\hfill{{\scriptsize 否定文のつくり方・疑問文のつくり方・疑問文への答え方--みんなbe動詞の時と同じ}}
+\end{frame}
 
 %\subsection{What are you --ing?}
 \begin{frame}[plain]{What are you --ing?}
