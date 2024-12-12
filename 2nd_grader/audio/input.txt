@@ -1,4 +1,5 @@
-Is she going to read the book?<break time="3s"/> Yes, she is.<break time="3s"/>No, she isn’t.
-Is he going to cook dinner tonight?<break time="3s"/>Yes, he is.<break time="3s"/>No, he isn’t.
-Are they going to swim in the pool?<break time="3s"/>Yes, they are.<break time="3s"/>No, they aren’t.
-Are you going to buy a new car?<break time="3s"/>Yes, I am.<break time="3s"/>No, I’m not.
+He was  playing soccer at that time.
+She was making a delicious dinner for us then.
+I was writing a letter to my friend at that time.
+They were swimming in the pool then.<break time="4s"/> They were playing in the pool then.
+The dog was running in the yard at that time.<break time="4s"/> The dog was playing in the yard at that time.

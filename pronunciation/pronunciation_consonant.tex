@@ -42,7 +42,8 @@
 %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 背景色をグレイに変更
-\setbeamercolor{background canvas}{bg=gray}
+%\setbeamercolor{background canvas}{bg=gray}
+\setbeamercolor{background canvas}{bg=black}
 \begin{frame}
 %\centering
 \raggedleft
@@ -61,6 +62,43 @@
 
 \raggedleft
 \textcolor{white}{\large The lesson will begin at the scheduled time.}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+%%% youtube
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色をグレイに変更
+%\setbeamercolor{background canvas}{bg=gray}
+\setbeamercolor{background canvas}{bg=black}
+
+\begin{frame}
+%\centering
+\raggedleft
+  \textcolor{white}{\Huge\bfseries \textcolor{yellow}{E}nglish is fun.}
+
+\vfill
+
+\vfill
+
+\raggedleft
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{H}ello, everybody!}
+
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{H}ow are you today?}
+
+\raggedleft
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{A}re you ready to start?}
+
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{L}et's begin today's lesson.}
+
+\vfill
+
+\raggedleft
+% \textcolor{white}{\LARGE\bfseries 2024--11--26}
+% \textcolor{white}{\LARGE\bfseries \today}
+ \textcolor{white}{\Large \bfseries \mytoday}
+
+\hyperlink{today}{\beamergotobutton{Today's Pronunciation}}
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,31 +125,42 @@
 % \textcolor{white}{\Large\bfseries 2024--11--26}
  \textcolor{white}{\Large\bfseries \mytoday}
 
-
-
-
-\hypertarget{top_page}{}
+%\hypertarget{top_page}{}
 \hyperlink{today}{\beamergotobutton{Today's Pronunciation}}
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{20241203}
+\begin{frame}[plain]{20241211}
  \Large
 \centering
 \pause
 \vfill
-きょう$20241203$は素数\pause{}ではない！\pause
+きょう$20241211$は素数\pause{}です！\pause
 
-$20241203=17\times{}61\times{}131\times{}149$\pause
+%$20241203=17\times{}61\times{}131\times{}149$\pause
 
-ざんねん\pause
+%ざんねん\pause
 
-今週もリラックスしていきましょう
+%今週もリラックスしていきましょう
 \vfill
 \raggedleft
 \hyperlink{today}{\beamergotobutton{Today's Pronunciation}}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
+  \usebackgroundtemplate{\includegraphics[width=.625\paperwidth]{./images/fireworks.jpg}}
+  \begin{frame}[b]
+    \frametitle{}
+\tiny
+\raggedright
+  \textcolor{white}{ ``Fireworks'' by bayasaa is licensed under CC BY 2.0. }\\
+   \textcolor{white}{To view a copy of this license,}\\
+   \textcolor{white}{visit \url{https://creativecommons.org/licenses/by/2.0/?ref=openverse}.}
+\hfill\hyperlink{today}{\beamergotobutton{Today's Pronunciation}}
+  \end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{素数(a prime number)}
 \Large
 
@@ -1324,8 +1373,9 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
  \item si\textcolor{NavyBlue}{\bfseries ts}
 \hfill\makebox[80pt][l]{\textipa{/s\'I\textcolor{BurntOrange}{ts}/}}\hspace{150pt}\mbox{}
 \end{enumerate}
-\hyperlink{tips}{\beamerreturnbutton{Back to Tips}}
-\hypertarget{ex}{}
+
+\hfill{}{\scriptsize century, percent}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1353,11 +1403,22 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
  \item stan\textcolor{NavyBlue}{\bfseries ds}
 \hfill\makebox[80pt][l]{\textipa{/st\'\ae n\textcolor{BurntOrange}{dz}/}}\hspace{150pt}\mbox{}
 \end{enumerate}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{\textipa{/z/}と\textipa{/dz/}を区別しよう1}
 \Large
+
+\textipa{/s/} $\rightarrow$ \textipa{/z/}\hspace{95pt}\pause{}mu\underline{s}ic\hspace{10pt}play\underline{s}
+
+\pause
+
+\textipa{/ts/} $\rightarrow$ \textipa{/dz/}\hspace{80pt}\pause{}bir\underline{ds}\hspace{10pt}ki\underline{ds}
+
+\vfill
+
+\pause
 
  \begin{enumerate}
   \item cars \textipa{/k\'A\textrhookschwa \textcolor{Maroon}{z}/}\hfill{\scriptsize car \textipa{/k\'A\textrhookschwa /}の複数形}
@@ -1366,6 +1427,8 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
  \end{enumerate}
 
 \hfill\myaudio{./audio/consonant_ts_dz_04.mp3}
+
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}\large
@@ -1402,12 +1465,17 @@ carsまたはcardsを発音していきます。どちらを発音したか聞�
  \visible<6->{\draw[thick, olive, ->] (q5.east) to[out=0, in=180] (a1.west);}
 \end{tikzpicture}
 
-\hfill\myaudio{./audio/consonant_ts_dz_05.mp3}
+\hypertarget{ex}{}
+\hyperlink{tips}{\beamerreturnbutton{Back to Tips}}\hfill\myaudio{./audio/consonant_ts_dz_05.mp3}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{\textipa{/z/}と\textipa{/dz/}を区別しよう2}
 \Large
+
+\textipa{/s/} $\rightarrow$ \textipa{/z/}
+
+\textipa{/ts/} $\rightarrow$ \textipa{/dz/}
 
  \begin{enumerate}
   \item rose \textipa{/r\'oU\textcolor{Maroon}{z}/}
