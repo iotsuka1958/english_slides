@@ -1,4 +1,7 @@
 file '012_can_01.mp3'
 file 'silent.mp3'
 file '012_can_02.mp3'
-
+file 'silent.mp3'
+file '012_can_03.mp3'
+file 'silent.mp3'
+file '012_can_04.mp3'
