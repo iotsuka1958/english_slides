@@ -21,6 +21,9 @@
 \usepackage{pxrubrica}
 \usepackage{soup}
 \usepackage{circledsteps}
+\usepackage{tikzducks}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{ducks}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter
 \newcommand*{\themonth}{\two@digits\month}
@@ -1442,8 +1445,6 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
  \item \textipa{/ts dz/}
 \end{enumerate}
 
-\hypertarget{ex}{}
-%\hyperlink{tips}{\beamerreturnbutton{Back to Tips}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}\large
@@ -1487,19 +1488,74 @@ carsまたはcardsを発音していきます。どちらを発音したか聞�
 \begin{frame}[plain]{\textipa{/z/}と\textipa{/dz/}を区別しよう2}
 \Large
 
+\hfill\begin{tikzpicture}
+ \duck[crazyhair=brown!60!black, glasses, eyebrow,
+    signpost=\textipa{/dz/}, speech=\textipa{/z/}, laughing,
+    jacket=orange, lapel, buttons, water];
+\end{tikzpicture}
+
 \textipa{/s/} $\rightarrow$ \textipa{/z/}
 
 \textipa{/ts/} $\rightarrow$ \textipa{/dz/}
 
  \begin{enumerate}
-  \item rose \textipa{/r\'oU\textcolor{Maroon}{z}/}
+  \item rose \textipa{/r\'oU\textcolor{Maroon}{z}/}\hfill{\scriptsize rose: ばら}
   \item roads \textipa{/r\'oU\textcolor{BurntOrange}{dz}/}\hfill{\scriptsize road  \textipa{/r\'oUd/}の複数形} 
 
  \end{enumerate}
 
 \hfill\myaudio{./audio/consonant_ts_dz_06.mp3}
+
+\hypertarget{ex}{}
+%\hyperlink{tips}{\beamerreturnbutton{Back to Tips}}
 \end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+
+rose（ばら）またはroads（道路の複数形）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}[T]{.4\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{\Large rose}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{\Large roads}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{\Large rose}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{\Large roads}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{\Large roads}&\myAnch{q5}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}[T]{.55\textwidth}
+    \begin{tabular}{ll}
+     \myAnch{a1}{white}{\textbullet}& 道路 \\\\
+     \myAnch{a2}{white}{\textbullet}& \raisebox{-.5\height}{\scalebox{.15}{\includegraphics{./images/rose.jpg}}}\\
+     &\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\raggedleft
+{\tiny ``Flowers \& Roses'' by SoulRiser is licensed under CC BY-SA 2.0. To view a copy of this license,}\\[-5pt]
+{\tiny visit \url{https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse}.}
+
+
+\begin{tikzpicture}[remember picture, overlay]
+ \visible<2->{\draw[ultra thick, orange, ->] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[ultra thick, olive, ->] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[ultra thick, orange, ->] (q3.east) to[out=0, in=180] (a2.west);}
+ \visible<5->{\draw[ultra thick, olive, ->] (q4.east) to[out=0, in=180] (a1.west);}
+ \visible<6->{\draw[ultra thick, olive, ->] (q5.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\vspace{-15pt}
+
+\hfill{\scriptsize \myaudio{./audio/consonant_ts_dz_07.mp3}}
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{soup}
 \centering
@@ -1515,5 +1571,11 @@ carsまたはcardsを発音していきます。どちらを発音したか聞�
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\begin{frame}[plain]{tikz practice}
+ \begin{tikzpicture}
+\duck[laughing];
+\draw[gray,thin,dotted] (-3,-3) grid (3,3);
+\draw (0,0) pic[duck/laughing] {duck};
+  \end{tikzpicture}
+\end{frame}
 \end{document}
