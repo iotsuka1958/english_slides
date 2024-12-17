@@ -13,10 +13,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide}
 \usepackage{lua-ul}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\newcommand*{\themonth}{\two@digits\month}
+\newcommand*{\theday}{\two@digits\day}
+\makeatother
+\newcommand{\mytoday}{{\the\year}--{\themonth}--{\theday}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Today's Pronunciation}
 \subtitle{Pronunciation of Japanese Character `ん'}
-\date[]{\today}
+\date[]{\mytoday}
 \author{iotsuka}
 \institute{Eduop ちば}
 
@@ -61,6 +68,8 @@
 \begin{columns}
  \begin{column}{.4\textwidth}
  あ\Circled{ん}ドーナツ
+
+\hspace{18pt}\visible<2->{\textipa{/n/}}
  \end{column}
 \begin{column}{.55\textwidth}
 \IfFileExists{../images/doughnuts.jpg}{%
@@ -75,6 +84,8 @@
 \begin{columns}
  \begin{column}{.3\textwidth}
  せ\Circled{ん}べい
+
+\hspace{16pt}\visible<2->{\textipa{/m/}}
  \end{column}
 \begin{column}{.6\textwidth}
 \IfFileExists{../images/senbei.jpg}{%
@@ -90,6 +101,8 @@
 \begin{columns}
  \begin{column}{.3\textwidth}
  と\Circled{ん}かつ
+
+\hspace{18pt}\visible<2->{\textipa{/\ng /}}
  \end{column}
 \begin{column}{.6\textwidth}
 \IfFileExists{../images/tonkatsu.jpg}{%
@@ -103,6 +116,8 @@
 \begin{frame}[plain]{この`ん'は}\Huge\begin{columns}
  \begin{column}{.4\textwidth}
  こ\Circled{ん}にゃく
+
+\hspace{18pt}\textipa{/\textltailn /}
  \end{column}
 \begin{column}{.575\textwidth}
 \IfFileExists{../images/konnyaku.jpg}{%
@@ -118,6 +133,8 @@
 \begin{columns}
  \begin{column}{.3\textwidth}
  パ\Circled{ン}
+
+\hspace{18pt}\textipa{/\textscn/}
  \end{column}
 \begin{column}{.6\textwidth}
 \IfFileExists{../images/bread.jpg}{%
@@ -145,7 +162,7 @@
 
 \begin{enumerate}
  \item ちゃ\underLine{ん}ぽん
- \item みたらしだ\underLine{ん}ご（音楽）
+ \item みたらしだ\underLine{ん}ご
  \item あ\underLine{ん}にんどうふ（杏仁豆腐）
 
 \end{enumerate}
