@@ -29,6 +29,8 @@
 \usepackage{circledsteps}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{pxrubrica}
+\usepackage{tipa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -107,29 +109,34 @@
 \begin{enumerate}
  \item<1-> I played tennis yesterday.\hfill{}{\small 過去のこと}
  \item<2-> I play tennis tomorrow.\hfill{}{\small 現在のこと}
- \item<3-> I \alt<1-3>{\myAnch{aux1}{white}{am going to}}{\myAnch{AUX1}{Orange}{am going to}} play tennis tomorrow.\hfill{\small 未来のこと}%
- \item<4-> I  \alt<1-3>{\myAnch{aux1}{white}{will}}{\myAnch{AUX1}{Orange}{will}} play tennis tomorrow.
+ \item<3-> I \alt<1-2>{\myAnch{aux1}{white}{am going to}}{\myAnch{AUX1}{Orange}{\bfseries am going to}} play tennis tomorrow.\hfill{\small 未来のこと}%
+ \item<4-> I  \alt<1-3>{\myAnch{aux1}{white}{will}}{\myAnch{AUX1}{Orange}{\bfseries will}} play tennis tomorrow.
 
 \end{enumerate}
 
-\begin{exampleblock}<5->{Topic for Today}
+\begin{exampleblock}<5->{Topics for Today}
 \small
-$\text{will}+\text{原形}$も未来のことを表します。
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item \Circled[fill color=white]{\,$\text{\bfseries will}+\text{原形}$\,}\,も\kenten{未来}のことを表します
+ \item \textipa{/w\'Il/}
+\end{itemize}
 \end{exampleblock}
+
+\mbox{}\hfill{\myaudio{./audio/012_will_01.mp3}} 
 \end{frame}
 
 
 \begin{frame}[plain]\frametitle{Exercises}
 
-つぎの英文の意味を考えましょう。
+つぎの英文の意味を考えましょう
 
 \begin{enumerate}
- \item I will play baseball tomorrow.
- \item We will have a party on Saturday.
- \item You will be a good singer.
- \item He will drive to the airport.
- \item She will call him later.
- \item They will clean the room.
+ \item I {\bfseries will} play baseball tomorrow.
+ \item We  {\bfseries will} have a party on Saturday.
+ \item You {\bfseries will} be a good singer.\hfill{\scriptsize singer \textipa{/s\'i\ng \textrhookschwa/} 歌手}
+ \item He {\bfseries will} drive to the airport.\hfill{\scriptsize airport \textipa{/\'e\textrhookschwa p\`O\textrhookschwa t/} 空港}
+ \item She {\bfseries will} call him later.\hfill{\scriptsize call \textipa{/k\'O:l/} 電話する\hspace{8pt}later \textipa{/l\'eIt\textrhookschwa /} 後で}
+ \item They {\bfseries will} clean the room.\hfill{\scriptsize clean \textipa{/kl\'\i:n/} 掃除する}
 \end{enumerate}
 
 \pause
@@ -137,26 +144,29 @@ $\text{will}+\text{原形}$も未来のことを表します。
 \vfill
 
 \begin{exampleblock}{Topics for Today}
-\pause
-\begin{itemize}\small
- \item   主語がなんであってもwill $+$ 動詞($=\text{そのままの形}$)
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   主語がなんであっても\,\Circled[fill color=white]{\,$\text{\bfseries will}+\text{原形}$\,}
+ \item {\bfseries will}のように動詞と組み合わせて動詞の意味を補足する語を\kenten{助動詞}といいます
  \end{itemize}
      \end{exampleblock}
-\end{frame}
 
+\mbox{}\hfill{\myaudio{./audio/012_will_02.mp3}} 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[plain]{Exercises}
 
-次の英文の(~~~~~~~~)内から動詞の正しい形を選び、○で囲みましょう。 
+次の英文の(~~~~~~~~)内から動詞の正しい形を選び、○で囲みましょう
 
 \begin{enumerate}
  \item I will ( \alt<2->{\Circled[outer color=orange]{~~study~~}}{~~study~~}  /~~studies~~/~~studied~~) English at home.
  \item He will ( \alt<3->{\Circled[outer color=orange]{~~play~~}}{~~play~~} /~~plays~~/~~is playing~~) baseball tomorrow.
- \item They always (  \alt<4->{\Circled[outer color=orange]{~~read~~}}{~~read~~} /~~reads~~/~~reading~~) books in the library after school.
- \item She will (~~is~~/~~are~~/ \alt<5->{\Circled[outer color=orange]{~~be~~}}{~~be~~} ) free this month.
+ \item They always (  \alt<4->{\Circled[outer color=orange]{~~read~~}}{~~read~~} /~~reads~~/~~reading~~) books in the library after school.\\
+\hfill{\scriptsize always \textipa{/\'OlweIz/} いつも\hspace{8pt}library \textipa{/l\'aIbreri/} 図書館}
+ \item She will (~~is~~/~~are~~/ \alt<5->{\Circled[outer color=orange]{~~be~~}}{~~be~~} ) free this month.\hfill{\scriptsize free \textipa{/fr\'\i:/} 暇で}
  \item He will (~~am~~/~~is~~/ \alt<6->{\Circled[outer color=orange]{~~be~~}}{~~be~~} ) fourteen years old next month.
 \end{enumerate}
-
+\mbox{}\hfill{\myaudio{./audio/012_will_03.mp3}} 
 \end{frame}
 
 \subsection{will not}
@@ -175,12 +185,14 @@ I \textcolor{Orange}{\bfseries won't}  \myEmph[5-]{OliveGreen}{go} to the party 
 
 \pause
 
-\begin{exampleblock}{Topic for Today}
+\begin{exampleblock}{Topics for Today}
 
-\begin{itemize}\small
- \item   willの否定$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{will not}\\\text{won't}\end{tabular}\right\} + \text{動詞(=\text{そのままの形})}$
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   {\bfseries will}の否定$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{{\bfseries will not}}\\\text{{\bfseries won't}}\end{tabular}\right\} + \text{原形}$
+ \item {\bfseries will not} \textipa{/w\'Il n\'At/}\hspace{25pt}{\bfseries won't} \textipa{/w\'oUnt/}
  \end{itemize}
      \end{exampleblock}
+\mbox{}\hfill{\myaudio{./audio/012_will_04.mp3}} 
 \end{frame}
 
 \begin{frame}[plain]{Exercises}
@@ -199,6 +211,7 @@ She~~( watch / will / not / TV )~~tonight.\\
 It~~( be / rainy / not / will )~~tomorrow.\\
 \visible<5->{It will not be rainy tomorrow.}
 \end{enumerate}
+\mbox{}\hfill\myaudio{./audio/012_will_05.mp3}
 \end{frame}
 
 \begin{frame}[plain]{willの疑問文}
@@ -230,8 +243,9 @@ It~~( be / rainy / not / will )~~tomorrow.\\
  \end{itemize}
 }
      \end{exampleblock}
+\mbox{}\hfill\myaudio{./audio/012_will_06.mp3}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 
 \begin{enumerate}
@@ -248,8 +262,9 @@ It~~( be / rainy / not / will )~~tomorrow.\\
  ( will / busy  / you / be ) tomorrow?  \\
  \visible<5->{Will you be busy tomorrow?}
 \end{enumerate}
+\mbox{}\hfill\myaudio{./audio/012_will_07.mp3}
  \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Will you 〜? と聞かれたら}
 \begin{frame}[plain]{Will you 〜? と聞かれたら}
@@ -266,8 +281,9 @@ Will you be busy tomorrow?
          \text{(}= \text{No, I won't.)}
         \end{tabular}\right.$
 
+\mbox{}\hfill\myaudio{./audio/012_will_08.mp3}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{willとbe going to--}
 \begin{frame}[plain]{willとbe going to--}
@@ -296,6 +312,8 @@ B:& I \textcolor{OliveGreen}{\bfseries will} make pancakes.
 \end{tabular}\right.%
 }$
 \hfill{}\visible<6->{{\small 今やると決めたこと}}
+
+\mbox{}\hfill\myaudio{./audio/012_will_09.mp3}
 \end{frame}
 
 \end{document}

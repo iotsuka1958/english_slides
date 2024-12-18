@@ -1,5 +1,2 @@
-He was  playing soccer at that time.
-She was making a delicious dinner for us then.
-I was writing a letter to my friend at that time.
-They were swimming in the pool then.<break time="4s"/> They were playing in the pool then.
-The dog was running in the yard at that time.<break time="4s"/> The dog was playing in the yard at that time.
+What’s your plan for tomorrow?<break time="4s"/>I am going to meet her.
+I am hungry.<break time="4s"/>I will make pancakes.
