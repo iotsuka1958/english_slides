@@ -1,5 +1,4 @@
-rose<break time="3s"/> rose
-roads<break time="3s"/> roads
-rose<break time="3s"/> rose
-rose<break time="3s"/> rose
-roads<break time="3s"/> roads
+rose<break time="3s"/>rose
+cards<break time="3s"/>cards
+cars<break time="3s"/>cars
+roads<break time="3s"/>roads

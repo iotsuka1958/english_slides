@@ -24,6 +24,7 @@
 \usepackage{tikzducks}
 \usetikzlibrary{decorations.pathmorphing}
 \usetikzlibrary{ducks}
+\usepackage{scsnowman}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter
 \newcommand*{\themonth}{\two@digits\month}
@@ -132,24 +133,23 @@
 %\end{frame}
 %\setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{20241217}
+\begin{frame}[plain]{20241219}
  \Large
 \centering
 \pause
 \vfill
-きょう$20241217$は素数\pause{}じゃない！\pause
+きょう$20241219$は素数\pause{}じゃない！\pause
 
-$20{,}241{,}217=29\times{}697{,}973$\pause
+$20{,}241{,}219=3\times{}23\times{}293{,}351$\pause
 
 ざんねん\pause
 
-今週で一区切り。リラックスしていきましょう
+リラックスしていきましょう
 \vfill
 \raggedleft
 \hyperlink{today}{\beamergotobutton{Today's Pronunciation}}
 \end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {
   \usebackgroundtemplate{\includegraphics[width=.625\paperwidth]{./images/fireworks.jpg}}
   \begin{frame}[b]
@@ -1507,8 +1507,6 @@ carsまたはcardsを発音していきます。どちらを発音したか聞�
 
 \hfill\myaudio{./audio/consonant_ts_dz_06.mp3}
 
-\hypertarget{ex}{}
-%\hyperlink{tips}{\beamerreturnbutton{Back to Tips}}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -1558,6 +1556,90 @@ rose（ばら）またはroads（道路の複数形）を発音していきま�
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 3}\large
+
+rose（ばらの単数形）、roads（道路の複数形）、cars(自動車の複数形)またはcards（カードの複数形）を順不同で発音していきます。どれを発音したのか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}[T]{.4\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{\Large rose}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{\Large cards}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{\Large cars}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{\Large roads}&\myAnch{q4}{white}{\textbullet} \\
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}[T]{.55\textwidth}
+    \begin{tabular}{ll}
+     \myAnch{a1}{white}{\textbullet}& 道路の複数形 \\
+     \myAnch{a2}{white}{\textbullet}& カードの複数形\\
+     \myAnch{a3}{white}{\textbullet}& 自動車の複数形 \\
+     \myAnch{a4}{white}{\textbullet}& ばらの単数形\\
+     &\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+
+\begin{tikzpicture}[remember picture, overlay]
+ \visible<2->{\draw[ultra thick, orange, ->] (q1.east) to[out=0, in=180] (a4.west);}
+ \visible<3->{\draw[ultra thick, olive, ->] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[ultra thick, NavyBlue, ->] (q3.east) to[out=0, in=180] (a3.west);}
+ \visible<5->{\draw[ultra thick, Maroon, ->] (q4.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\vspace{-15pt}
+
+\hfill{\scriptsize \myaudio{./audio/consonant_ts_dz_08.mp3}}
+
+\hypertarget{ex}{}
+%\hyperlink{tips}{\beamerreturnbutton{Back to Tips}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{ところで}
+ \Large
+\centering
+\pause
+\vfill
+今年、最後の素数の日は\pause{}20241229です\pause
+
+来年、最初の素数の日は\pause{}20250101です\pause
+
+\vfill
+
+
+\raggedleft
+\scsnowman[scale=5,hat=Maroon,snow,arms,buttons,note,muffler=NavyBlue]
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+%%% youtube
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色をグレイに変更
+%\setbeamercolor{background canvas}{bg=gray}
+\setbeamercolor{background canvas}{bg=black}
+
+\begin{frame}
+\raggedleft
+ \textcolor{white}{\Huge\bfseries \textcolor{yellow}{T}hank you for joining us this year.}
+
+ \textcolor{white}{\Huge\bfseries \textcolor{red}{E}njoy your winter holiday!}
+
+ \textcolor{white}{\Huge\bfseries \textcolor{Green}{S}ee you next year.}
+
+\vfill
+
+\textcolor{white}{\scsnowman[scale=6,hat=red,muffler=Green,snow,arms,buttons=yellow,note]}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{soup}
 \centering
 	\begin{minipage}{2.5in}
