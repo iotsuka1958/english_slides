@@ -1,4 +1,4 @@
-\documentclass[12pt,book,jafontscale=0.9247]{jlreq}
+\documentclass[12pt,jafontscale=0.9247]{jlreq}
 %\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 欧文TTF/OTFフォントを利用するにはfontspec.styをロードする必要あり
@@ -17,6 +17,7 @@
 \UseTblrLibrary{booktabs}
 \let\textipa\relax
 \usepackage{tipa}
+\usepackage{enumitem}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Define custom pastel colors
 \definecolor{customLightBlue}{RGB}{173, 216, 230}
@@ -30,6 +31,7 @@
 \usepackage[at]{easylist}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
+\usepackage{tikzducks}
 \usetikzlibrary{arrows}
 \usepackage{tcolorbox}
 \newtcolorbox[auto counter, number within=section]{pabox}[2][]{%
@@ -60,7 +62,56 @@ title=Question~\thetcbcounter: #2,#1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\enlargethispage{1.2in}
 
+\section{ffmpegをもちいて動画を切り出す}
+
+\mbox{}\hfill{\begin{tikzpicture}
+  \duck[santa,scale=.8]
+\end{tikzpicture}}
+
+\vspace{-40pt}
+
+\subsection{準備}
+
+ffmpeg\footnote{\url{https://github.com/BtbN/FFmpeg-Builds/releases}で最終版のwin64版\url{ffmpeg-master-latest-win64-gpl.zip}ダウンロードして解凍します。するとffmpegというフォルダができます。任意の場所に移動しておきます。}をインストールして、実行ファイルのあるディレクトリにpath\footnote{実行ファイルがあるのはffmpeg/binというディレクトリ。}を通しておきます。
+
+\subsection{書式}
+
+切り出し作業は、windows\footnote{もちろんmacでもlinuxでもできます。}のcmdでおこないます。
+カレントディレクトリに元の動画ファイルがあるという前提です。
+
+cmdで以下のコマンドを打ちます。
+わたしの環境ではほぼ一瞬で変換されました\footnote{再エンコードしないように指定することで高速化されます。再エンコードすると、マシンの性能にもよりますが、かなりの時間がかかります。}。
+
+\begin{tcolorbox}[title=書式]\footnotesize
+\verb|ffmpeg -i 元の動画ファイル名 -ss hh:mm:ss -to hh:mm:ss -c copy 出力後の動画ファイル名|
+\end{tcolorbox}
+
+\begin{description}[labelwidth=11em]
+ \item[-i 元の動画ファイル名] 入力ファイルとして「元の動画ファイル名」を指定
+ \item[-ss hh:mm:ss] 切り出しの開始時間を指定
+ \item[-to hh:mm:ss] 切り出しの終了時間を指定
+ \item[-c copy] 映像と音声を再エンコードせずにコピー
+ \item[出力後の動画ファイル名] 「出力ファイル名」を指定
+\end{description}
+
+
+\subsection{例}
+
+以下の例は\verb|original.mp4|という動画の4分20秒のところから44分40秒のところまでを切り出して、
+\verb|output.mp4|というファイル名で出力しています。
+
+
+\begin{tcolorbox}\small
+\verb|ffmpeg -i original.mp4 -ss 00:04:20 -to 00:44:40 -c copy output.mp4|
+\end{tcolorbox}
+
+動画ごとに切り出し開始と終了の時間を確認したうえで、
+バッチファイルを作成して複数の動画ファイルを一気に変換するのが現実的でしょう。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \begin{itemize}
  \item 前時に参加していると限らないことから、前時の内容を当然のこととして進めるのではなく、ある程度さかのぼった説明をする
  \item 前時に参加していた生徒にとってはまだるっこしい部分が出てくる。また進度に影響が
