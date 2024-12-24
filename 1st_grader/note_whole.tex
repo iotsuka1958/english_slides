@@ -4,23 +4,30 @@
 \documentclass[jafontscale=0.9247,dvipsnames,book,twoside]{jlreq}
 \usepackage{geometry,notebeamer}
 \geometry{margin = .75in}
-\ModifyHeading{chapter}{label_format={Chapter~\thechapter}}
+%\ModifyHeading{chapter}{label_format={Chapter~\thechapter}}
+\usepackage{url}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \tableofcontents 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \chapter{Orientation}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = orientation 1, righthead = Page~\thepage
+  pages = -, lefthead = \url{orientation/orientation_1}, righthead = Page~\thepage
 ] { ../orientation/orientation_handout.pdf }
 
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = orientation 2, righthead = Page~\thepage
+  pages = -, lefthead = \url{orientation/orientation_2}, righthead = Page~\thepage
 ] { ../orientation/orientation_2.pdf }
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Alphabet}
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1st_grader/alphabet}, righthead = Page~\thepage
+] { 001_alphabet_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{主語と動詞}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
@@ -31,88 +38,88 @@
 \addcontentsline{toc}{section}{3.1\hspace{25pt}be動詞}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/003\_be, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/003_be}, righthead = Page~\thepage
 ] { 003_be_handout.pdf }
 
 \addcontentsline{toc}{section}{3.2\hspace{25pt}一般動詞}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/004\_verb, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/004_verb}, righthead = Page~\thepage
 ] { 004_verb_handout.pdf }
 
 
 \chapter{目的語}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/004\_verb\_object, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/004_verb_object}, righthead = Page~\thepage
 ] { 004_verb_object_handout.pdf }
 
 
 \chapter{代名詞}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/005\_pronoun, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/005_pronoun}, righthead = Page~\thepage
 ] { 005_pronoun_handout.pdf }
 
 \chapter{単数と複数}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/005\_singular\_plural, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/005_singular_plural}, righthead = Page~\thepage
 ] { 005_singular_plural_handout.pdf }
 
 \chapter{否定文}
 \addcontentsline{toc}{section}{6.1\hspace{25pt}be動詞の否定}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/006\_negative\_be, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/006_negative_be}, righthead = Page~\thepage
 ] { 006_negative_be_handout.pdf }
 
 \addcontentsline{toc}{section}{6.2\hspace{25pt}一般動詞の否定}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/007\_negative\_do, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/007_negative_do}, righthead = Page~\thepage
 ] { 007_negative_do_handout.pdf }
 
 \chapter{疑問文}
 \addcontentsline{toc}{section}{7.1\hspace{25pt}be動詞の疑問文}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\\grader/008\_question\_be, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/008_question_be}, righthead = Page~\thepage
 ] { 008_question_be_handout.pdf }
 
 \addcontentsline{toc}{section}{7.2\hspace{25pt}be動詞の疑問文への答え方}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/009\_answer\_be, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/009_answer_be}, righthead = Page~\thepage
 ] { 009_answer_be_handout.pdf }
 
 \addcontentsline{toc}{section}{7.3\hspace{25pt}一般動詞の疑問文}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/010\_question\_do, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/010_question_do}, righthead = Page~\thepage
 ] { 010_question_do_handout.pdf }
 
 \addcontentsline{toc}{section}{7.4\hspace{25pt}一般動詞の疑問文への答え方}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/011\_answer\_do, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/011_answer_do}, righthead = Page~\thepage
 ] { 011_answer_do_handout.pdf }
 
 
 \chapter{現在進行形}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 021\_is\_ing\_intro, righthead = Page~\thepage
+  pages = -, lefthead = \url{021_is_ing_intro}, righthead = Page~\thepage
 ] {021_is_ing_intro_handout.pdf }
 
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 022\_is\_ing\_negative, righthead = Page~\thepage
+  pages = -, lefthead = \url{022_is_ing_negative}, righthead = Page~\thepage
 ] {022_is_ing_negative_handout.pdf }
 
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 023\_is\_ing\_question, righthead = Page~\thepage
+  pages = -, lefthead = \url{023_is_ing_question}, righthead = Page~\thepage
 ] {023_is_ing_question.pdf }
 
 \chapter{過去形}
@@ -120,50 +127,307 @@
 \addcontentsline{toc}{section}{8.1\hspace{15pt}be動詞の過去形}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\\grader/024\_past\_be, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/024_past_be}, righthead = Page~\thepage
 ] { 024_past_be_handout.pdf }
 
 \addcontentsline{toc}{section}{8.2\hspace{25pt}一般動詞の過去形}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/025\_past\_do, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/025_past_do}, righthead = Page~\thepage
 ] { 025_past_do_handout.pdf }
 
 \addcontentsline{toc}{section}{8.3\hspace{25pt}一般動詞の過去形の否定}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/026\_past\_didnot, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/026_past_didnot}, righthead = Page~\thepage
 ] { 026_past_didnot_handout.pdf }
 
 \addcontentsline{toc}{section}{8.4\hspace{25pt}一般動詞の過去形の疑問文}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 1st\_grader/027\_past\_did\_you, righthead = Page~\thepage
+  pages = -, lefthead = \url{1st_grader/027_past_did_you}, righthead = Page~\thepage
 ] { 027_past_did_you_handout.pdf }
 
 \chapter{過去進行形}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 2nd\_grader/005\_was\_ing\_intro, righthead = Page~\thepage
+  pages = -, lefthead = \url{2nd_grader/005_was_ing_intro}, righthead = Page~\thepage
 ] { ../2nd_grader/005_was_ing_intro_handout.pdf }
 
 \chapter{未来を表す表現}
 \addcontentsline{toc}{section}{10.1\hspace{25pt}be going to--}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 2nd\_grader/011\_be\_going\_to, righthead = Page~\thepage
+  pages = -, lefthead = \url{2nd_grader/011_be_going_to}, righthead = Page~\thepage
 ] { ../2nd_grader/011_be_going_to_handout.pdf }
 
 \addcontentsline{toc}{section}{10.2\hspace{25pt}will}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = 2nd\_grader/012\_will, righthead = Page~\thepage
+  pages = -, lefthead = \url{2nd_grader/012_will}, righthead = Page~\thepage
 ] { ../2nd_grader/012_will_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{現在完了}
 
-\chapter{助動詞}
-\addcontentsline{toc}{section}{10.2\hspace{25pt}will}
 \includebeamer
 [ color = Gray, ratio= .57, lines = 32, nup = 5,
-  pages = -, lefthead = /012\_can, righthead = Page~\thepage
+  pages = -, lefthead = \url{3rd_grader/011_have_pp_intro}, righthead = Page~\thepage
+] { ../3rd_grader/011_have_pp_intro_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{3rd_grader/012_have_pp_keizoku}, righthead = Page~\thepage
+] { ../3rd_grader/012_have_pp_keizoku_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{3rd_grader/013_have_pp_keiken}, righthead = Page~\thepage
+] { ../3rd_grader/013_have_pp_keiken_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{3rd_grader/014_have_pp_kekka}, righthead = Page~\thepage
+] { ../3rd_grader/014_have_pp_kekka_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{命令文・感嘆文}
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1st_grader/032_imperative}, righthead = Page~\thepage
+] { ../1st_grader/032_imperative_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1st_grader/033_exclamator}, righthead = Page~\thepage
+] { ../1st_grader/033_exclamatory_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{There is 名詞}
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/001_there_is}, righthead = Page~\thepage
+] { ../2nd_grader/001_there_is_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{品詞}
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/020_part_of_speech}, righthead = Page~\thepage
+] { ../2nd_grader/020_part_of_speech_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{助動詞}
+\addcontentsline{toc}{section}{10.1\hspace{25pt}can}
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1st_grader/012_can}, righthead = Page~\thepage
 ] { ./012_can_handout.pdf }
+
+\addcontentsline{toc}{section}{10.2\hspace{25pt}must}
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/013_must}, righthead = Page~\thepage
+] { ../2nd_grader/013_must_handout.pdf }
+
+\addcontentsline{toc}{section}{10.3\hspace{25pt}have to}
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/014_have_to}, righthead = Page~\thepage
+] { ../2nd_grader/014_have_to_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{従属接続詞}
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/021_when}, righthead = Page~\thepage
+] { ../2nd_grader/021_when_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/022_if}, righthead = Page~\thepage
+] { ../2nd_grader/022_if_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/023_because}, righthead = Page~\thepage
+] { ../2nd_grader/023_because_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{疑問詞}
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1std_grader/013_who}, righthead = Page~\thepage
+] { ../1st_grader/013_who_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1std_grader/014_when}, righthead = Page~\thepage
+] { ../1st_grader/014_when_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1std_grader/015_where}, righthead = Page~\thepage
+] { ../1st_grader/015_where_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1std_grader/016_which}, righthead = Page~\thepage
+] { ../1st_grader/016_which_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1std_grader/017_how}, righthead = Page~\thepage
+] { ../1st_grader/017_how_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1std_grader/018_why}, righthead = Page~\thepage
+] { ../1st_grader/018_why_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1std_grader/019_what}, righthead = Page~\thepage
+] { ../1st_grader/019_what_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1std_grader/020_whose}, righthead = Page~\thepage
+] { ../1st_grader/020_whose_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{準動詞1（To不定詞）}
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/031_infinitive_intro}, righthead = Page~\thepage
+] { ../2nd_grader/031_infinitive_intro_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/032_infinitive_noun}, righthead = Page~\thepage
+] { ../2nd_grader/032_infinitive_noun_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/033_infinitive_adj}, righthead = Page~\thepage
+] { ../2nd_grader/033_infinitive_adj_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/034_infinitive_adv}, righthead = Page~\thepage
+] { ../2nd_grader/034_infinitive_adv_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/035_wh_to_do}, righthead = Page~\thepage
+] { ../2nd_grader/035_wh_to_do_handout.pdf }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{準動詞2（動名詞）}
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/036_gerund}, righthead = Page~\thepage
+] { ../2nd_grader/036_gerund_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{準動詞3（分詞）}
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{3rd_grader/021_N_ing}, righthead = Page~\thepage
+] { ../3rd_grader/021_N_ing_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{3rd_grader/022_N_pp}, righthead = Page~\thepage
+] { ../3rd_grader/022_N_pp_handout.pdf }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{比較}
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/041_as_as}, righthead = Page~\thepage
+] { ../2nd_grader/041_as_as_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/042_er}, righthead = Page~\thepage
+] { ../2nd_grader/042_er_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/043_est}, righthead = Page~\thepage
+] { ../2nd_grader/043_est_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/044_more_most}, righthead = Page~\thepage
+] { ../2nd_grader/044_more_most_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/045_better_best}, righthead = Page~\thepage
+] { ../2nd_grader/045_better_best_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{態}
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{2nd_grader/051_passive}, righthead = Page~\thepage
+] { ../2nd_grader/051_passive_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{関係代名詞}
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{3rd_grader/031_N_wh_V}, righthead = Page~\thepage
+] { ../3rd_grader/031_N_wh_V_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{3rd_grader/032_N_wh_SV}, righthead = Page~\thepage
+] { ../3rd_grader/032_N_wh_SV_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{仮定法}
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{3rd_grader/041_mood_intro}, righthead = Page~\thepage
+] { ../3rd_grader/041_mood_intro_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{3rd_grader/042_mood_i_wish}, righthead = Page~\thepage
+] { ../3rd_grader/042_mood_i_wish_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{3rd_grader/043_mood_if}, righthead = Page~\thepage
+] { ../3rd_grader/043_mood_if_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\chapter{Pronunciation}
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1st_grader/099_pronunciation}, righthead = Page~\thepage
+] { 099_pronunciation_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{pronunciation/pronunciation_consonant}, righthead = Page~\thepage
+] { ../pronunciation/pronunciation_consonant_handout.pdf }
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{pronunciation/pronunciation_vowel}, righthead = Page~\thepage
+] { ../pronunciation/pronunciation_vowel_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{アルファベット聞き取りクイズ}
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{1st_grader/999quiz_handout}, righthead = Page~\thepage
+] { 999quiz_handout.pdf }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{日本語の`ん'}
+
+\includebeamer
+[ color = Gray, ratio= .57, lines = 32, nup = 5,
+  pages = -, lefthead = \url{pronunciation/pronunciation_japanese}, righthead = Page~\thepage
+] { ../pronunciation/pronunciation_japanese_handout.pdf }
 \end{document}
