@@ -1,4 +1,6 @@
-rose<break time="3s"/>rose
-cards<break time="3s"/>cards
-cars<break time="3s"/>cars
-roads<break time="3s"/>roads
+ten<break time="3s"/>ten
+long<break time="3s"/>long
+time<break time="3s"/>time
+sing<break time="3s"/>sing
+pen<break time="3s"/>pen
+come<break time="3s"/>come
