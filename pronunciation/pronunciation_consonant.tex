@@ -151,7 +151,9 @@ $20{,}241{,}219=3\times{}23\times{}293{,}351$\pause
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {
-  \usebackgroundtemplate{\includegraphics[width=.625\paperwidth]{./images/fireworks.jpg}}
+\IfFileExists{./images/fireworls.jpg}{%
+  \usebackgroundtemplate{\includegraphics[width=.625\paperwidth]{./images/fireworks.jpg}}%
+}{\relax}
   \begin{frame}[b]
     \frametitle{}
 \tiny
@@ -1526,7 +1528,7 @@ rose（ばら）またはroads（道路の複数形）を発音していきま�
    \begin{column}[T]{.55\textwidth}
     \begin{tabular}{ll}
      \myAnch{a1}{white}{\textbullet}& 道路 \\\\
-     \myAnch{a2}{white}{\textbullet}& \raisebox{-.5\height}{\scalebox{.15}{\includegraphics{./images/rose.jpg}}}\\
+     \myAnch{a2}{white}{\textbullet}& \IfFileExists{./images/rose.jpg}{\raisebox{-.5\height}{\scalebox{.15}{\includegraphics{./images/rose.jpg}}}}{ばら}\\
      &\\
     \end{tabular}
    \end{column}
@@ -1860,6 +1862,90 @@ win（勝つ）とwing（つばさ）を発音していきます。どちらを�
 
 \hfill\myaudio{./audio/consonant_m_n_ng_06.mp3}
 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% /l/ /r/
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}\pause
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Huge\bfseries \textipa{/l/}, \textipa{/r/}}
+
+
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/l/}\,\,\,\textipa{/r/}}
+
+\large
+
+\begin{enumerate}
+ \item  \textipa{/l/}\hspace{20pt}\underLine{l}ook\hspace{1\zw}\underLine{l}ight\hspace{1\zw}\underLine{l}ong\hspace{1\zw}\underLine{l}ake\hspace{1\zw}\underLine{l}ate
+ \item  \textipa{/r/}\hspace{20pt}\underLine{r}ight\hspace{1\zw}\underLine{r}oad\hspace{1\zw}\underLine{r}ain\hspace{1\zw}\underLine{r}oom\hspace{1\zw}\underLine{r}ead
+\end{enumerate}
+
+\vspace*{20pt}
+
+\normalsize
+ポイント
+
+\begin{description}
+ \item[\textipa{/l/}] 舌先を上の前歯の後ろにベタっとつけます
+ \item[\textipa{/r/}] 舌を口の中で少し浮かせる（歯に触れない）
+\end{description}
+\hfill\myaudio{./audio/consonant_r_l_01.mp3}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{実際の単語で確認しよう \textipa{/l/}}
+\LARGE
+\hfill{\scriptsize \myaudio{./audio/consonant_r_l_02.mp3}}
+
+\begin{enumerate}
+ \item \textcolor{NavyBlue}{\bfseries l}ike%
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{l}\'aIk/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries l}ight
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{l}\'aIt/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries l}ive
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{l}\'Iv/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries l}emon
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{l}\'em@n/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries l}ake
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{l}\'eIk/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries l}ook
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{l}\'Uk/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries l}unch
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{l}\'\textturnv ntS/}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{実際の単語で確認しよう \textipa{/r/}}
+\LARGE
+\hfill{\scriptsize \myaudio{./audio/consonant_r_l_03.mp3}}
+
+\begin{enumerate}
+ \item \textcolor{NavyBlue}{\bfseries r}ead%
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{r}\'\i:d/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries r}ight
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{r}\'aIt/}}\hspace{150pt}\mbox{}
+ \item w\textcolor{NavyBlue}{\bfseries r}ong
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{r}\'ON/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries r}oom
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{r}\'u:m/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries r}ain
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{r}\'eIn/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries r}ed
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{r}\'ed/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries r}iver
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{r}\'\i v\textrhookschwa /}}\hspace{150pt}\mbox{}
+\end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%
