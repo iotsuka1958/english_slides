@@ -1773,11 +1773,12 @@ some（いくつかの）とsun（太陽）を発音していきます。どち�
  \end{columns}
 
 \begin{tikzpicture}[remember picture, overlay]
- \visible<2->{\draw[ultra thick, orange, ->] (q1.east) to[out=0, in=180] (a2.west);}
- \visible<3->{\draw[ultra thick, olive, ->] (q2.east) to[out=0, in=180] (a1.west);}
- \visible<4->{\draw[ultra thick, olive, ->] (q3.east) to[out=0, in=180] (a1.west);}
- \visible<5->{\draw[ultra thick, orange, ->] (q4.east) to[out=0, in=180] (a2.west);}
- \visible<6->{\draw[ultra thick, olive, ->] (q5.east) to[out=0, in=180] (a1.west);}
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge,orange] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge,olive] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge,olive] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge,orange] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge,olive] (q5.east) to[out=0, in=180] (a1.west);}
 \end{tikzpicture}
 
 \hfill\myaudio{./audio/consonant_m_n_ng_04.mp3}
@@ -1811,11 +1812,12 @@ win（勝つ）とwing（つばさ）を発音していきます。どちらを�
  \end{columns}
 
 \begin{tikzpicture}[remember picture, overlay]
- \visible<2->{\draw[ultra thick, Maroon, ->] (q1.east) to[out=0, in=180] (a1.west);}
- \visible<3->{\draw[ultra thick, NavyBlue, ->] (q2.east) to[out=0, in=180] (a2.west);}
- \visible<4->{\draw[ultra thick, Maroon, ->] (q3.east) to[out=0, in=180] (a1.west);}
- \visible<5->{\draw[ultra thick, Maroon, ->] (q4.east) to[out=0, in=180] (a1.west);}
- \visible<6->{\draw[ultra thick, NavyBlue, ->] (q5.east) to[out=0, in=180] (a2.west);}
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge,Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge,NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge,Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge,Maroon] (q4.east) to[out=0, in=180] (a1.west);}
+ \visible<6->{\draw[hoge,NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
 \end{tikzpicture}
 
 \hfill\myaudio{./audio/consonant_m_n_ng_05.mp3}
@@ -1852,12 +1854,13 @@ win（勝つ）とwing（つばさ）を発音していきます。どちらを�
  \end{columns}
 
 \begin{tikzpicture}[remember picture, overlay]
- \visible<2->{\draw[ultra thick, NavyBlue, ->] (q1.east) to[out=0, in=180] (a2.west);}
- \visible<3->{\draw[ultra thick, Maroon, ->] (q2.east) to[out=0, in=180] (a3.west);}
- \visible<4->{\draw[ultra thick, olive, ->] (q3.east) to[out=0, in=180] (a1.west);}
- \visible<5->{\draw[ultra thick, Maroon, ->] (q4.east) to[out=0, in=180] (a3.west);}
- \visible<6->{\draw[ultra thick, NavyBlue, ->] (q5.east) to[out=0, in=180] (a2.west);}
- \visible<7->{\draw[ultra thick, olive, ->] (q6.east) to[out=0, in=180] (a1.west);}
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge,NavyBlue] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, Maroon] (q2.east) to[out=0, in=180] (a3.west);}
+ \visible<4->{\draw[hoge, olive] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a3.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, olive] (q6.east) to[out=0, in=180] (a1.west);}
 \end{tikzpicture}
 
 \hfill\myaudio{./audio/consonant_m_n_ng_06.mp3}
@@ -1947,6 +1950,135 @@ win（勝つ）とwing（つばさ）を発音していきます。どちらを�
 \hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{r}\'\i v\textrhookschwa /}}\hspace{150pt}\mbox{}
 \end{enumerate}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/l/}と\textipa{/r/}を区別しよう1}
+\Large
+
+\textipa{/l/}
+
+\pause
+
+\textipa{/r/}
+
+\vfill
+
+\pause
+
+ \begin{enumerate}
+  \item light
+  \item right
+
+ \end{enumerate}
+
+\hfill\myaudio{./audio/consonant_l_r_04.mp3}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 1}\large
+
+light（光）またはright（右）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}[T]{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{\Large right}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{\Large light}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{\Large right}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{\Large light}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{\Large light}&\myAnch{q5}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}[T]{.5\textwidth}
+    \begin{tabular}{ll}
+     \myAnch{a1}{white}{\textbullet}& light \\\\
+     \myAnch{a2}{white}{\textbullet}& right\\
+     &\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge,orange] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge,olive] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge,orange] (q3.east) to[out=0, in=180] (a2.west);}
+ \visible<5->{\draw[hoge,olive] (q4.east) to[out=0, in=180] (a1.west);}
+ \visible<6->{\draw[hoge, olive] (q5.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\vspace{-15pt}
+
+\hfill{\scriptsize \myaudio{./audio/consonant_l_r_05.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/l/}と\textipa{/r/}を区別しよう2}
+\Large
+
+\textipa{/l/}
+
+\pause
+
+\textipa{/r/}
+
+\vfill
+
+\pause
+
+ \begin{enumerate}
+  \item long
+  \item wrong
+
+ \end{enumerate}
+
+\hfill\myaudio{./audio/consonant_l_r_06.mp3}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 2}\large
+
+longまたはwrongを発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{long}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{wrong}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{wrong}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{long}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{wrong}&\myAnch{q5}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{ll}
+     \myAnch{a1}{white}{\textbullet}& wrong\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& long \\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge, NavyBlue] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill\myaudio{./audio/consonant_l_r_07.mp3}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%
