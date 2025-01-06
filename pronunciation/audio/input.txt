@@ -1,6 +1,2 @@
-ten<break time="3s"/>ten
-long<break time="3s"/>long
-time<break time="3s"/>time
-sing<break time="3s"/>sing
-pen<break time="3s"/>pen
-come<break time="3s"/>come
+ear<break time="3s"/>ear<break time="3s"/>ear
+yearbreak time="3s"/>year<break time="3s"/>year

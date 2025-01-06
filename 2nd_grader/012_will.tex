@@ -31,6 +31,7 @@
 \usepackage{amsmath}
 \usepackage{pxrubrica}
 \usepackage{tipa}
+\usepackage{manfnt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -265,7 +266,7 @@ It~~( be / rainy / not / will )~~tomorrow.\\
 \begin{exampleblock}<7->{Topic for Today}
 \visible<8->{%
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item   {\bfseries will}の疑問文」$\longrightarrow${\,\,\,}$\text{{\bfseries Will}} + \text{主語} + \text{原形}$ \ldots{}\,\,?
+ \item   {\bfseries will}の疑問文 $\longrightarrow${\,\,\,}$\text{{\bfseries Will}} + \text{主語} + \text{原形}$ \ldots{}\,\,?
  \end{itemize}
 }
      \end{exampleblock}
@@ -310,18 +311,35 @@ Will you be busy tomorrow?
 
 \mbox{}\hfill\myaudio{./audio/012_will_08.mp3}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{willとbe going to--}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
+\subsection{要点}
+\begin{frame}[plain]{まとめ}
+ \begin{exampleblock}{will}
+\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item \Circled[fill color=white]{\,$\text{\bfseries will}+\text{原形}$\,}\,は\kenten{未来}のことを表します\hfill{\bfseries will} \textipa{/w\'Il/}
+ \item   助動詞{\bfseries will}も短縮形があります\hfill{}I will $\rightarrow$ I'll\\
+\mbox{}\hfill{}You will $\rightarrow$ You'll\\
+\mbox{}\hfill{}He will $\rightarrow$ He'll \ldots
+ \item   {\bfseries will}の否定$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{{\bfseries will not}}\\\text{{\bfseries won't}}\end{tabular}\right\} + \text{原形}$\hfill{\bfseries will not} \textipa{/w\'Il n\'At/}\hspace{15pt}{\bfseries won't} \textipa{/w\'oUnt/}
+ \item   {\bfseries will}の疑問文 $\longrightarrow${\,\,\,}$\text{{\bfseries Will}} + \text{主語} + \text{原形}$ \ldots{}\,\,?
+
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{ところでwillとbe going to--}
 \begin{frame}[plain]{willとbe going to--}
  \Large
 
 \visible<1->{will / be going to--}%
-\hfill{}\visible<2->{どちらも未来のことを表します}
+\hfill{}\visible<3->{{\small どちらも\kenten{未来}のことを表します}}
 
 \vfill
 
-\visible<3->{%
+\visible<2->{%
 $\left\{
 \begin{tabular}{@{}rl}
 A:& What's your plan for tomorrow?\\
@@ -340,7 +358,7 @@ B:& I \textcolor{OliveGreen}{\bfseries will} make pancakes.
 }$
 \hfill{}\visible<6->{{\small 今やると決めたこと}}
 
-\mbox{}\hfill\myaudio{./audio/012_will_09.mp3}
+\visible<7>{\dbend\dbend}\hfill\myaudio{./audio/012_will_09.mp3}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%
 \end{document}
