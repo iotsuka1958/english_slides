@@ -19,7 +19,8 @@
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{English is fun.\,\,{}--- Who is that man? ---}
+\title{English is fun.}
+\subtitle{Who is that man?}
 \author{}
 \institute[]{}
 \date[]
@@ -40,50 +41,55 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Who}
 %%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Who $+$ be動詞 \ldots ?}
 \begin{frame}[plain]{Who is at the door?}
 \Large
 
- \mbox{}\hspace{0pt}\alt<5->{\myAnch{FOCUS_2}{orange}{Someone}}{\myAnch{focus_2}{white}{Someone}} is at the door.
-\pause
-\hfill{}cf. \pause%
-Is someone at the door?\pause
+ \mbox{}\hspace{0pt}\alt<2->{\myAnch{FOCUS_2}{orange}{Someone}}{\myAnch{focus_2}{white}{Someone}} is at the door.
+%\pause
+%\hfill{}cf. \pause%
+%Is someone at the door?\pause
 
-\mbox{}\hfill{\normalsize YesまたはNoで答える疑問文}
+%\mbox{}\hfill{\normalsize YesまたはNoで答える疑問文}
 
 \vspace{7pt}
 
 \pause
 
-\visible<6->{\myAnch{wh_2}{orange}{Who} is at the door \myAnch{question_2}{orange}{?}}
-\visible<7->{\scalebox{1.4}{\myDownwardPitch}}
+\visible<3->{\myAnch{wh_2}{orange}{Who} is at the door \myAnch{question_2}{orange}{?}}
+\visible<3->{\scalebox{1.4}{\myDownwardPitch}}
 
-\visible<5->{%
+\hfill{}\visible<3->{{\scriptsize cf. Is Paul at the door?\scalebox{1.14}{\myRisingPitch}}}
+
+
+
+
+\visible<4->{%
 \begin{tikzpicture}[remember picture, overlay]
 \draw[->, thick, orange] (focus_2.south) to[out=-90, in=90] (wh_2.north);
 \end{tikzpicture}
 }
 
-\visible<7->{%
+\visible<4->{%
 \begin{exampleblock}{Topics for Today}
-\pause
-\begin{itemize}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「だれ」と聞くとき$\longrightarrow$\,\,\,Who%
 \pause\hfill{}\kenten{疑問詞}といいます
  \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
 \end{itemize}
      \end{exampleblock}
 }
-\visible<8->{%
+%
 \mbox{}\hfill\myaudio{./audio/013_who_01.mp3}
-}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 日本語の意味になるよう語を並べ替えてください。
-文の先頭に来る語は大文字で書きはじめましょう。
+文の先頭に来る語は大文字で書きはじめましょう\mbox{}\hfill\myaudio{./audio/013_who_02.mp3}
 
  \begin{enumerate}
-  \item  $[$ the / is / who / in / kitchen $]$ ? キッチンにいるのは誰ですか？\\\visible<2->{Who is in the kitchen?}
+  \item  $[$ the / is / who / in / kitchen $]$ ? 誰がキッチンにいるのですか？\\\visible<2->{Who is in the kitchen?}
   \item  $[$ who / hungry / is $]$ ? 空腹なのは誰ですか？\\\visible<3->{Who is hungry?}
   \item  $[$ best / your / who / friend / is $]$ ? あなたの親友は誰ですか？\\
 \visible<4->{Who is your best friend?}
@@ -91,15 +97,14 @@ Is someone at the door?\pause
 \visible<5->{Who are you?}
 \end{enumerate}
 
-\begin{block}<5->{Who is \ldots{}?}
- \begin{itemize}
-  \item Who is \ldots{}?\,\, Who are \ldots{}?\hfill{}$\longrightarrow\text{Who} + \text{be動詞}$(～はだれですか)\hfill\myaudio{./audio/013_who_02.mp3}
-
+\begin{block}<5->{Who $+$ be動詞 \ldots ?}
+ \begin{itemize}\setbeamertemplate{items}[square]
+  \item Who is \ldots{}?\,\, Who are \ldots{}?\hfill{}「～はだれですか」
  \end{itemize}
 \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Who teaches music?}
+\subsection{Who $+$ 一般動詞 \ldots ?}
 \begin{frame}[plain]{Who teaches music?}
  \Large
 
@@ -129,7 +134,7 @@ Is someone at the door?\pause
 \visible<5->{%
 \begin{exampleblock}{Topic for Today}
 \pause
-\begin{itemize}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item Who $+\,\,\text{一般動詞}$ \ldots\,?%
 % \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
 \end{itemize}
@@ -143,7 +148,7 @@ Is someone at the door?\pause
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 日本語の意味になるよう語を並べ替えてください。
-文の先頭に来る語は大文字で書きはじめましょう。
+文の先頭に来る語は大文字で書きはじめましょう
 
 \begin{enumerate}
  \item $[$ the / plays / piano / who  $]$ ?\,\, だれがピアノを弾きますか\\
@@ -157,11 +162,12 @@ Is someone at the door?\pause
 \mbox{}\hfill\myaudio{./audio/013_who_04.mp3}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
 \begin{frame}[plain]{まとめ}
  
 \begin{block}{Topics for Today}
 \pause
-\begin{itemize}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「だれ」と聞くとき$\longrightarrow$\,\,\,疑問詞のwhoをもちいます
         \begin{enumerate}
 	 \item $\text{Who}+\text{be動詞\ldots ?}$
@@ -171,6 +177,6 @@ Is someone at the door?\pause
  \item イントネーションは下降調\,\myDownwardPitch{}\,\,
 \end{itemize}
      \end{block}
-
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

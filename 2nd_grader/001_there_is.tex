@@ -5,6 +5,7 @@
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{media9}
@@ -17,6 +18,7 @@
 \usepackage{utfsym}
 \usepackage{bclogo}
 \usepackage{marvosym}
+\usepackage{tipa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
@@ -71,7 +73,8 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{English is fun.\,\,{}---There is a book on the table.---}
+\title{English is fun.}
+\subtitle{There is a book on the table.}
 \author{}
 \institute[]{}
 \date[]
@@ -93,33 +96,38 @@
 \section{〜がある}
 
 \begin{frame}[plain]\frametitle{〜がある}
-\begin{columns}
-\begin{column}{.45\textwidth}
+\begin{columns}[T]
+\begin{column}{.4\textwidth}
 \IfFileExists{./images/one_book.jpg}{%
 \rotatebox{0}{\includegraphics[width=.8\textwidth]{./images/one_book.jpg}
-}}{naiyo}
+}}{テーブルの上に1冊の本がある}
 \end{column}\pause
-\begin{column}{.5\textwidth}\LARGE
+\begin{column}{.55\textwidth}\LARGE
 There is a book on the table.
+
+\hfill{\small there \textipa{/D\'e\textrhookschwa /}}
 \end{column}
 \end{columns}
+\vfill
+\mbox{}\hfill\myaudio{./audio/001_there_is_01.mp3}
 
 \end{frame}
-
-
+%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{〜がある}
 \begin{columns}
-\begin{column}{.45\textwidth}
+\begin{column}{.3\textwidth}
 \IfFileExists{./images/six_books.jpg}{%
 \rotatebox{0}{\includegraphics[width=1.1\textwidth]{./images/six_books.jpg}
-}}{naiyo}
+}}{テーブルの上に6冊の本がある}
 \end{column}\pause
-\begin{column}{.5\textwidth}\LARGE
+\begin{column}{.65\textwidth}\LARGE
 There are six books on the table.
 \end{column}
 \end{columns}
+\vfill
+\mbox{}\hfill\myaudio{./audio/001_there_is_02.mp3}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%
 \subsection{There is X($=$単数) + 場所}
 \begin{frame}[plain]\frametitle{There is a book on the table.}
  \Large
@@ -155,8 +163,7 @@ $\left\{\begin{array}{l}
 \end{tikzpicture}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%
 \subsection{There is X($=$複数) + 場所}
 \begin{frame}[plain]\frametitle{There are two books on the table.}
  \Large
@@ -185,19 +192,16 @@ $\left\{\begin{array}{l}
 %\text{in the box \ldots}
 %	 \end{array} \right.$}
 
-
-
-
 \begin{tikzpicture}[remember picture, overlay]
  \draw[thick,->] (subject.west) to[out=180,in=-90]node[midway,sloped,below] {\footnotesize \myEmph[3]{orange}{複数形}} (hako1.south);
 % \draw[thick,->] (place.north west) to[out=125,in=-45] (hako2.south east);
 \end{tikzpicture}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%
 \subsection{Exercises}
 \begin{frame}<1-15>[plain]\frametitle{Exercises}
-\onslide*<1->{空所にisまたはareを補い、正しい英文にしましょう。あわせて、全体の意味を考えましょう。}
+\onslide*<1->{空所にisまたはareを補い、正しい英文にしましょう。あわせて、全体の意味を考えましょう\hfill\myaudio{./audio/001_there_is_03.mp3}}
  % \setbeamercovered{transparent}
   \begin{enumerate}
    \item<2-> There (\onslide<3->{\myEmph[3]{orange}{~are~}}) three high schools in our city.
@@ -210,19 +214,13 @@ $\left\{\begin{array}{l}
 
 \begin{exampleblock}<12->{Topics for Today}
 \begin{itemize}
- \item<13-> There is \myEmph[11]{orange}{単数形}.
- \item<14-> There are \myEmph[12]{orange}{複数形}.
+ \item<13-> There is \myEmph[11]{orange}{単数形} $+$ 場所を表す表現
+ \item<14-> There are \myEmph[12]{orange}{複数形} $+$ 場所を表す表現
 \end{itemize}
 \end{exampleblock}
 
-\vspace*{-15pt}
-% Embed the sound file
-\onslide<15>{%
-\myaudio{audio/001_there_is_01.mp3}\,\,{}Listen carefully.(注意して聞いてください)
-
-}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{There was(were) X ...}
 \begin{frame}[plain]{〜があった}
 
@@ -237,16 +235,14 @@ $\left\{\begin{array}{l}
 \begin{exampleblock}{Topics for Today}
 過去のことをあらわすとき
 \begin{itemize}
- \item There \textcolor{orange}{was 単数形}.\pause
- \item There \textcolor{orange}{were 複数形}.
+ \item There \textcolor{orange}{was 単数形} $+$ 場所を表す表現\pause
+ \item There \textcolor{orange}{were 複数形} $+$ 場所を表す表現
 \end{itemize}
 \end{exampleblock}
-\pause
-\myaudio{audio/001_there_is_02.mp3}\,\,{}Listen carefully.(注意して聞いてください
 
-
+\hfill\myaudio{./audio/001_there_is_04.mp3}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%
 \section{There is(are, was, were) not X ...}
 \begin{frame}[plain]{〜がない}
 
@@ -262,22 +258,21 @@ $\left\{\begin{array}{l}
 「〜がない（なかった）」
 \begin{itemize}
  \item There $\left\{\begin{array}{l}\text{is}\\\text{was}\end{array}
-\right\}$ \textcolor{orange}{not} 単数形.\hspace{40pt}\pause
+\right\}$ \textcolor{orange}{not} 単数形 \ldots\hspace{40pt}\pause
 There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
-\right\}$ \textcolor{orange}{not} 複数形.
+\right\}$ \textcolor{orange}{not} 複数形 \ldots
 \end{itemize}
 \end{exampleblock}
 
-\pause
-% Embed the sound file
-\myaudio{audio/001_there_is_03.mp3}\,\,{}Listen carefully.(注意して聞いてください\end{frame}
+\hfill\myaudio{./audio/001_there_is_05.mp3}
+\end{frame}
 
 \section{Is there X ...?}
 \subsection{〜がありますか}
 \begin{frame}[plain]{〜がありますか？}
  \Large
 
-疑問文のつくり方
+疑問文のつくり方\hfill{\scriptsize \myaudio{./audio/001_there_is_06.mp3}}
 \vspace{20pt}
 
 \myAnch{there-1}{orange}{There} \myAnch{is-1}{olive}{is} a book on the table.
@@ -309,12 +304,11 @@ There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
  \item Were there many people at the concert last night?
 \end{enumerate}
 
-\pause
-\myaudio{audio/001_there_is_04.mp3}\,\,{}Listen carefully.(注意して聞いてください\end{frame}
-
-
+\hfill\myaudio{./audio/001_there_is_07.mp3}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Exercises}
-各文を疑問文にしてください。\pause
+各文を疑問文にしてください\hfill\myaudio{./audio/001_there_is_08.mp3}\pause
 
   \begin{enumerate}
    \item There is a cat in the garden.\\
@@ -334,16 +328,14 @@ There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
 
 % Embed the sound file
 
-\myaudio{audio/001_there_is_05.mp3}\,\,{}Listen carefully.(注意して聞いてください)
-
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{疑問文への答え方}
  \begin{frame}[plain]{Yer, there is. / No, there isn't.}
  \Large
 
-疑問文にたいする答え方
+疑問文にたいする答え方\hfill\myaudio{./audio/001_there_is_09.mp3}
 \vspace{10pt}
 
 \pause
@@ -361,12 +353,11 @@ $\left\{\begin{array}{l}
 
 \mbox{}\hfill{}{\small No, there isn't. はNo, there is not.ともいいます}
 \end{frame}
-
-
+%%%%%%%%%%%%%%
  \begin{frame}[plain]{Yer, there was. / No, there wasn't.}
  \Large
 
-疑問文にたいする答え方
+疑問文にたいする答え方\hfill\myaudio{./audio/001_there_is_10.mp3}
 \vspace{10pt}
 
 \pause
@@ -383,11 +374,11 @@ $\left\{\begin{array}{l}
 
 \mbox{}\hfill{}{\small No, there wasn't. はNo, there was not.ともいいます}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%
  \begin{frame}[plain]{Yer, there ares. / No, there aren't.}
  \Large
 
-疑問文にたいする答え方
+疑問文にたいする答え方\hfill\myaudio{./audio/001_there_is_11.mp3}
 \vspace{10pt}
 
 \pause
@@ -405,11 +396,11 @@ $\left\{\begin{array}{l}
 
 \mbox{}\hfill{}{\small No, there aren't. はNo, there are not.ともいいます}
 \end{frame}
-
+%%%%%%%%%%%%%%%%
  \begin{frame}[plain]{Yer, there were. / No, there weren't.}
  \Large
 
-疑問文にたいする答え方
+疑問文にたいする答え方\hfill\myaudio{./audio/001_there_is_12.mp3}
 \vspace{10pt}
 
 \pause
@@ -427,10 +418,9 @@ $\left\{\begin{array}{l}
 
 \mbox{}\hfill{}{\small No, there weren't. はNo, there were not.ともいいます}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Exercises}
-(~~~~~~)内の語句を並べ替えて、日本文と同じ内容を表す英文を作成してください。なお、先頭の単語は大文字で始めてください。\pause
+(~~~~~~)内の語句を並べ替えて、日本文と同じ内容を表す英文を作成してください。なお、先頭の単語は大文字で始めてください\pause
 
   \begin{enumerate}
    \item わたしたちのクラスには,
@@ -456,8 +446,6 @@ $\left\{\begin{array}{l}
 
 % Embed the sound file
 
-\myaudio{audio/001_there_is_06.mp3}\,\,{}Listen carefully.(注意して聞いてください)
-
-
+\hfill\myaudio{./audio/001_there_is_13.mp3}
 \end{frame}
 \end{document}

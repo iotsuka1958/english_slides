@@ -1,4 +1,2 @@
-I can cook.
-He cannot play the guitar.<break time="4s"/>He can't play the guitar.
-Can she sing well?
-Yes, she can.<break time="3s"/>No, she cannot.<break time="3s"/>No, she can't.
+Someone is at the door.
+Who is at the door?
