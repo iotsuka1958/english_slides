@@ -23,23 +23,25 @@ library(gt)
 data <- read_csv("./basic_data.csv")
 ```
 ```{r}
-data |> filter(slide == FALSE) |> select(path, file_name)
+data |>
+  filter(slide == FALSE) |>
+  select(path, file_name)
 ```
 
 ```{r}
-slides_done_table <- data |> 
-  filter(slide == TRUE) |> 
-  select(path, file_name) |> 
-  gt() |> 
+slides_done_table <- data |>
+  filter(slide == TRUE) |>
+  select(path, file_name, mp3) |>
+  gt() |>
   tab_header(
     title = "slides done",
     subtitle = c("as of", as.character(Sys.time()))
   )
 
-slides_undone_table <- data |> 
-  filter(slide == FALSE) |> 
-  select(path, file_name) |> 
-  gt() |> 
+slides_undone_table <- data |>
+  filter(slide == FALSE) |>
+  select(path, file_name) |>
+  gt() |>
   tab_header(
     title = "slides to be done",
     subtitle = c("as of", as.character(Sys.time()))
@@ -56,18 +58,19 @@ slides_undone_table |> gtsave("slides_undone.html") # htmlファイル作成
 
 
 ```{r}
-work_log  <-  read_csv("./work_log.csv")
+work_log <- read_csv("./work_log.csv")
 ```
 ### 全体
 
 ```{r}
-task_progress_table <- work_log |> 
-  pivot_longer(-file_with_path,
-               names_to = c("grade", ".value"),
-               names_sep = "_") |> 
-#  filter(!is.na(date))|> 
-  arrange(date) |> 
-  gt() |> 
+task_progress_table <- work_log |>
+  pivot_longer(-c(file_with_path, mp3),
+    names_to = c("grade", ".value"),
+    names_sep = "_"
+  ) |>
+  #  filter(!is.na(date))|>
+  arrange(date) |>
+  gt() |>
   tab_header(
     title = "task_progress",
     subtitle = c("as of", as.character(Sys.time()))
@@ -81,13 +84,14 @@ task_progress_table |> gtsave("task_progress.html") # htmlファイル作成
 ### 1年生
 
 ```{r}
-task_progress_table_1st <- work_log |> 
-  pivot_longer(-file_with_path,
-               names_to = c("grade", ".value"),
-               names_sep = "_") |> 
-  filter(grade == "g1")|> 
-  arrange(date) |> 
-  gt() |> 
+task_progress_table_1st <- work_log |>
+  pivot_longer(-c(file_with_path, mp3),
+    names_to = c("grade", ".value"),
+    names_sep = "_"
+  ) |>
+  filter(grade == "g1") |>
+  arrange(date) |>
+  gt() |>
   tab_header(
     title = "task_progress_1st_grader",
     subtitle = c("as of", as.character(Sys.time()))
@@ -101,13 +105,14 @@ task_progress_table_1st |> gtsave("task_progress_1st.html") # htmlファイル�
 ### 2年生
 
 ```{r}
-task_progress_table_2nd <- work_log |> 
-  pivot_longer(-file_with_path,
-               names_to = c("grade", ".value"),
-               names_sep = "_") |> 
-  filter(grade == "g2")|> 
-  arrange(date) |> 
-  gt() |> 
+task_progress_table_2nd <- work_log |>
+  pivot_longer(-c(file_with_path, mp3),
+    names_to = c("grade", ".value"),
+    names_sep = "_"
+  ) |>
+  filter(grade == "g2") |>
+  arrange(date) |>
+  gt() |>
   tab_header(
     title = "task_progress_2nd_grader",
     subtitle = c("as of", as.character(Sys.time()))
@@ -121,13 +126,14 @@ task_progress_table_2nd |> gtsave("task_progress_2nd.html") # htmlファイル�
 ### 3年生
 
 ```{r}
-task_progress_table_3rd <- work_log |> 
-  pivot_longer(-file_with_path,
-               names_to = c("grade", ".value"),
-               names_sep = "_") |> 
-  filter(grade == "g3")|> 
-  arrange(date) |> 
-  gt() |> 
+task_progress_table_3rd <- work_log |>
+  pivot_longer(-c(file_with_path, mp3),
+    names_to = c("grade", ".value"),
+    names_sep = "_"
+  ) |>
+  filter(grade == "g3") |>
+  arrange(date) |>
+  gt() |>
   tab_header(
     title = "task_progress_3rd_grader",
     subtitle = c("as of", as.character(Sys.time()))
@@ -150,13 +156,15 @@ classroom <- read_csv("./classroom.csv")
 ```
 
 ```{r}
-classroom_table <- classroom |>  pivot_longer(-date,
-               names_to = c("grade", ".value"),
-               names_sep = "_") |> 
-  filter(!is.na(topic)) |> 
-  arrange(date) |> 
-  gt() |> 
-  tab_header( 
+classroom_table <- classroom |>
+  pivot_longer(-date,
+    names_to = c("grade", ".value"),
+    names_sep = "_"
+  ) |>
+  filter(!is.na(topic)) |>
+  arrange(date) |>
+  gt() |>
+  tab_header(
     title = "classroom",
     subtitle = c("as of", as.character(Sys.time()))
   )
@@ -171,14 +179,16 @@ classroom_table |> gtsave("classroom.html") # htmlファイル作成
 
 
 ```{r}
-classroom_table_1st <- classroom |>  pivot_longer(-date,
-               names_to = c("grade", ".value"),
-               names_sep = "_") |> 
-  filter(grade == "g1") |> 
-  filter(!is.na(topic)) |> 
-  arrange(date) |> 
-  gt() |> 
-  tab_header( 
+classroom_table_1st <- classroom |>
+  pivot_longer(-date,
+    names_to = c("grade", ".value"),
+    names_sep = "_"
+  ) |>
+  filter(grade == "g1") |>
+  filter(!is.na(topic)) |>
+  arrange(date) |>
+  gt() |>
+  tab_header(
     title = "classroom_1st_grader",
     subtitle = c("as of", as.character(Sys.time()))
   )
@@ -192,14 +202,16 @@ classroom_table_1st |> gtsave("classroom_1st.html") # htmlファイル作成
 
 
 ```{r}
-classroom_table_2nd <- classroom |>  pivot_longer(-date,
-               names_to = c("grade", ".value"),
-               names_sep = "_") |> 
-  filter(grade == "g2") |> 
-  filter(!is.na(topic)) |> 
-  arrange(date) |> 
-  gt() |> 
-  tab_header( 
+classroom_table_2nd <- classroom |>
+  pivot_longer(-date,
+    names_to = c("grade", ".value"),
+    names_sep = "_"
+  ) |>
+  filter(grade == "g2") |>
+  filter(!is.na(topic)) |>
+  arrange(date) |>
+  gt() |>
+  tab_header(
     title = "classroom_2nd_grader",
     subtitle = c("as of", as.character(Sys.time()))
   )
@@ -213,14 +225,16 @@ classroom_table_2nd |> gtsave("classroom_2nd.html") # htmlファイル作成
 
 
 ```{r}
-classroom_table_3rd <- classroom |>  pivot_longer(-date,
-               names_to = c("grade", ".value"),
-               names_sep = "_") |> 
-  filter(grade == "g3") |> 
-  filter(!is.na(topic)) |> 
-  arrange(date) |> 
-  gt() |> 
-  tab_header( 
+classroom_table_3rd <- classroom |>
+  pivot_longer(-date,
+    names_to = c("grade", ".value"),
+    names_sep = "_"
+  ) |>
+  filter(grade == "g3") |>
+  filter(!is.na(topic)) |>
+  arrange(date) |>
+  gt() |>
+  tab_header(
     title = "classroom_3rd_grader",
     subtitle = c("as of", as.character(Sys.time()))
   )

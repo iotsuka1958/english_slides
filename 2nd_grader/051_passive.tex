@@ -5,6 +5,7 @@
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{media9}
@@ -102,23 +103,22 @@
  \Large
 
 \begin{enumerate}
- \item \begin{enumerate}
-	\item 先生は彼女をほめました。
-	\item 彼女は先生にほめられました。
+ \item<1-> \begin{enumerate}
+	\item<1-> 先生は彼女をほめました。
+	\item<2-> 彼女は先生にほめられました。
        \end{enumerate}
- \item \begin{enumerate}
-	\item ジョンはジェニファーを愛しています。
-	\item ジェニファーはジョンに愛されています。
+ \item<3-> \begin{enumerate}
+	\item<3-> ジョンはジェニファーを愛しています。
+	\item<4-> ジェニファーはジョンに愛されています。
        \end{enumerate}
- \item \begin{enumerate}
-	\item 牛乳からチーズを作ります。
-	\item チーズは牛乳から作られます。
+ \item<5-> \begin{enumerate}
+	\item<5-> 牛乳からチーズを作ります。
+	\item<6-> チーズは牛乳から作られます。
        \end{enumerate}
 \end{enumerate}
 
-\begin{exampleblock}{Topic for Today}
-\pause
-\begin{itemize}\small
+\begin{exampleblock}<7->{Topic for Today}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item 受け身とは「〜される」の意味を表します
 \end{itemize}
      \end{exampleblock}
@@ -129,28 +129,28 @@
 \begin{frame}[plain]{be $+$ 過去分詞}
  \Large
 \begin{enumerate}
- \item They speak English.\hfill{}{\small 彼らは英語を話す。}
- \item They spoke English.\hspace{1\zw}{{\small 過去形}}\hfill{\small 彼らは英語を話した。}
- \item English \textcolor{Maroon}{\bfseries is} \textcolor{NavyBlue}{\bfseries spoken} there.\hspace{1\zw}{{\small 過去分詞}}\hfill{\small そこでは英語が話されている。}
+ \item<1-> They speak English.\hfill{}{\small 彼らは英語を話す。}
+ \item<2-> They spoke English.\hspace{1\zw}{{\small 過去形}}\hfill{\small 彼らは英語を話した。}
+ \item<3-> English \textcolor{Maroon}{\bfseries is} \textcolor{NavyBlue}{\bfseries spoken} there.\hspace{1\zw}{{\small 過去分詞}}\hfill{\small そこでは英語が話されている。}
 \end{enumerate}
 
 \begin{center}
  
-{\small%
+\visible<4->{{\small%
 \begin{tabular}{lll}
 {\small 原形}&{\small 過去形}&{\small 過去分詞}\\\hline
 speak&spoke&spoken
 \end{tabular}%
-}
+}}
 \end{center}
 
 \vfill
 
 \hfill\myaudio{./audio/051_passive_01.mp3}
-\begin{exampleblock}{Topics for Today}
-\begin{itemize}\small
- \item `be動詞$+$ 過去分詞' $\longrightarrow$\,\,\,\,受け身(〜される)
+\begin{exampleblock}<5->{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「過去分詞」は「受け身」の意味を表します
+ \item `be動詞$+$ 過去分詞' $\longrightarrow$\,\,\,\,受け身(〜される)
 \end{itemize}
      \end{exampleblock}
 \end{frame}
@@ -252,7 +252,7 @@ speak&spoke&spoken
 \hfill\myaudio{./audio/051_passive_06.mp3}
 
 \begin{exampleblock}{Topic for Today}
-\begin{itemize}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「受け身」の否定 $\longrightarrow$\,\,\,\,`be動詞$+$ \textcolor{Maroon}{not} $+$ 過去分詞'
 \end{itemize}
      \end{exampleblock}
@@ -279,7 +279,7 @@ speak&spoke&spoken
 
 \begin{exampleblock}<5->{Topics for Today}\small
 受け身の疑問文のつくり方
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item<3->  be動詞を先頭にする
  \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
 \end{itemize}
@@ -316,7 +316,7 @@ speak&spoke&spoken
 \begin{frame}[plain]{要点}
  
 \begin{exampleblock}{Topics for Today}
-\begin{itemize}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item `be動詞$+$ 過去分詞' $\longrightarrow$\,\,\,\,受け身(〜される)
  \item 「過去分詞」は「受け身」の意味を表します
         \begin{itemize}
