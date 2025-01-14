@@ -5,6 +5,7 @@
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{media9}
@@ -29,6 +30,7 @@
 \usepackage{circledsteps}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{tipa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -74,7 +76,8 @@
 \end{tikzpicture}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{English is fun.\,\,{}--- I must get up early tomorrow. ---}
+\title{English is fun.}
+\subtitle{I must get up early tomorrow.}
 \author{}
 \institute[]{}
 \date[]
@@ -103,14 +106,14 @@
 \visible<1->{%
 I \textcolor{Green}{\bfseries study} math every day.}
 \hspace{20pt}\visible<2->{{\footnotesize study: 勉強する　math: 数学}}
-\hfill{}\visible<3->{現在の習慣}
+\hfill{}\visible<3->{{\small 現在の習慣}}
 
 \vspace{10pt}
 
 \visible<4->{I \alt<1-4>{\myAnch{aux1}{white}{will}}{\myAnch{AUX1}{Orange}{will}}%
 \textcolor{Green}{\bfseries study} math tonight.}%
 \hspace{20pt}\visible<5->{{\footnotesize tonight: 今晩}}
-\hfill{}\visible<6->{未来のこと}
+\hfill{}\visible<6->{{\small 未来のこと}}
 
 \vspace{10pt}
 
@@ -121,8 +124,8 @@ I \textcolor{Green}{\bfseries study} math every day.}
 
 \visible<9->{%
 \begin{exampleblock}{Topics for Today}
-\begin{itemize}\small
- \item   「わたしは〜しなければならない」$\longrightarrow${\,\,\,}I must $+$ 動詞($=\text{そのままの形}$)
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   「わたしは〜しなければならない」$\longrightarrow${\,\,\,}I must $+$ 原形\mbox{}\hfill{\myaudio{./audio/013_must_01.mp3}}
  \end{itemize}
      \end{exampleblock}
 }
@@ -135,10 +138,9 @@ I \textcolor{Green}{\bfseries study} math every day.}
 
 \visible<9->{\small willやmustのように動詞と組み合わせて使用することで、$+\alpha$(プラスアルファ)の意味を付け加える語を\textcolor{BurntOrange}{助動詞}といいます。}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-あたえられた日本文の意味になるようカッコ内の語句を並べ替えましょう。
+あたえられた日本文の意味になるようカッコ内の語句を並べ替えましょう\hfill{\myaudio{./audio/013_must_02.mp3}}
 \begin{enumerate}
  \item 私は宿題を終わらせなければならない。
 (to / finish / my homework / I / must)\\
@@ -156,46 +158,44 @@ I \textcolor{Green}{\bfseries study} math every day.}
 (enough sleep / get / must / I)\hfill{\footnotesize enough sleep: じゅうぶんな睡眠}\\
 \visible<6->{I must get enough sleep.}
 \end{enumerate}
-
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{mustに続く動詞の形}
  \begin{frame}[plain]\frametitle{Heの場合}
  \Large\setlength{\fboxrule}{1pt}
 
 \visible<1->{%
-He \textcolor{Green}{\bfseries study}\textcolor{BurntOrange}{s} math every day.}
+He \textcolor{Green}{\bfseries play}\textcolor{BurntOrange}{s} the guitar every day.}
 \hspace{20pt}\visible<3->{{\footnotesize \textcolor{BurntOrange}{三人称単数現在の`s'}}}
 \hfill{}\visible<2->{{\small 現在の習慣}}
 
 \vspace{10pt}
 
 \visible<4->{He \alt<1-4>{\myAnch{aux1}{white}{will}}{\myAnch{AUX1}{Orange}{will}}%
-\textcolor{Green}{\bfseries study} math tonight.}%
+\textcolor{Green}{\bfseries play} the guitar tonight.}%
 \hspace{20pt}\visible<5->{{\footnotesize tonight: 今晩}}
 \hfill{}\visible<6->{{\small 未来のこと}}
 
 \vspace{10pt}
 
-\visible<7->{He \alt<1-7>{\myAnch{aux2}{white}{must}}{\myAnch{AUX2}{Orange}{must}}  \textcolor{Green}{\bfseries study} math hard.}\hfill\visible<8->{義務}
+\visible<7->{He \alt<1-7>{\myAnch{aux2}{white}{must}}{\myAnch{AUX2}{Orange}{must}}  \textcolor{Green}{\bfseries play} the guitar.}\hfill\visible<8->{義務}
 
+\hfill{\myaudio{./audio/013_must_03.mp3}}
 
 \vfill
 
 \visible<9->{%
 \begin{exampleblock}{Topics for Today}
-\begin{itemize}\small
- \item   主語がなんであっても$\longrightarrow${\,\,\,}$\text{S}+\text{must}+\text{動詞(}=\text{そのままの形}$)\\
-\mbox{}\hfill{}*He must studys.とはいわない\hspace{1\zw}\mbox{}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   主語がなんであっても$\longrightarrow${\,\,\,}$\text{S}+\text{must}+\text{原形}$\\
+\mbox{}\hfill{}*He must plays \ldots とはいわない\hspace{1\zw}\mbox{}
  \end{itemize}
      \end{exampleblock}
 }
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{must not}
-
 \begin{frame}[plain]{must not}
  
 \Large
@@ -209,25 +209,27 @@ He \textcolor{Green}{\bfseries study}\textcolor{BurntOrange}{s} math every day.}
 \visible<4->{You \textcolor{NavyBlue}{\bfseries must} \textcolor{Maroon}{\bfseries not} \textcolor{ForestGreen}{\bfseries eat} in the library.}
 \visible<5->{{ \small 図書館ではものを食べてはいけない。(禁止)}}
 
-\vspace{-10pt}
+%\vspace{-10pt}
 
-\visible<6->{\phantom{You }($=$\textcolor{NavyBlue}{\bfseries must}\textcolor{Maroon}{\bfseries n't})}
+\visible<6->{You \textcolor{NavyBlue}{\bfseries must}\textcolor{Maroon}{\bfseries n't} eat in the library.}\hfill\textipa{/m\'\textturnv snt/}
+
+\hfill{{\scriptsize \myaudio{./audio/013_must_04.mp3}}}
 
 \vfill
 
 \begin{exampleblock}<7->{Topics for Today}
-\begin{itemize}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item must は「義務」(〜しなければならない)を表す
  \item must not($=\text{mustn't}$) は「禁止」(〜してはならない)を表す
  \end{itemize}
      \end{exampleblock}
 
 \end{frame}
-
-
+%%%%%%%%%%%%
 \begin{frame}<1-4>[plain]{Exercises}
  
-あたえられた日本語の意味になるように、(~~~~~~)に適当な語を補いましょう。
+あたえられた日本語の意味になるように、(~~~~~~)に適当な語を補いましょう
+\hfill{\myaudio{./audio/013_must_05.mp3}}
 
 
 \begin{enumerate}
@@ -245,7 +247,7 @@ You \alt<1>{(~~~~~~~~~~~~) (~~~~~~~~~~~~)}{(~~must~~) (~~not~~)} drink coffee be
 
 \begin{exampleblock}{Topics for Today}
 \small
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item<2->  must は「義務」(〜しなければならない)を表す
  \item<3->  must not($=\text{mustn't}$) は「禁止」(〜してはならない)を表す
  \item<4->  must / must not($=\text{mustn't}$)に続く動詞は原形($=\text{そのままの形}$)

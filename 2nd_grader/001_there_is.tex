@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
@@ -209,7 +209,7 @@ $\left\{\begin{array}{l}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%
 \subsection{Exercises}
-\begin{frame}<1-15>[plain]\frametitle{Exercises}
+\begin{frame}[plain]\frametitle{Exercises}
 \onslide*<1->{空所にisまたはareを補い、正しい英文にしましょう。あわせて、全体の意味を考えましょう\hfill\myaudio{./audio/001_there_is_03.mp3}}
  % \setbeamercovered{transparent}
   \begin{enumerate}
@@ -221,10 +221,10 @@ $\left\{\begin{array}{l}
   \end{enumerate}
 
 
-\begin{exampleblock}<12->{Topics for Today}
+\begin{exampleblock}{Topics for Today}
 \begin{itemize}
- \item<13-> There \myEmph[13]{orange}{is 単数形} $+$ 場所を表す表現
- \item<14-> There \myEmph[14]{orange}{are複数形} $+$ 場所を表す表現
+ \item There \myEmph[13]{orange}{is 単数形} $+$ 場所を表す表現
+ \item There \myEmph[14]{orange}{are複数形} $+$ 場所を表す表現
 \end{itemize}
 \end{exampleblock}
 
@@ -233,19 +233,19 @@ $\left\{\begin{array}{l}
 \section{There was(were) X ...}
 \begin{frame}[plain]{〜があった}
 
+ノートに写して意味を考えましょう
 \begin{enumerate}
- \item There was a cat in the garden yesterday.\pause
- \item There was a river behind the house.\pause
- \item There were two big trees in the park.\pause
+ \item There was a cat in the garden yesterday.
+ \item There was a river behind the house.
+ \item There were two big trees in the park.
  \item There were three pictures on the wall.
 \end{enumerate}
 
-\pause
 \begin{exampleblock}{Topics for Today}
 過去のことをあらわすとき
 \begin{itemize}
- \item There \textcolor{orange}{was 単数形} $+$ 場所を表す表現\pause
- \item There \textcolor{orange}{were 複数形} $+$ 場所を表す表現
+ \item There \textcolor{Maroon}{was 単数形} $+$ 場所を表す表現
+ \item There \textcolor{Maroon}{were 複数形} $+$ 場所を表す表現
 \end{itemize}
 \end{exampleblock}
 
@@ -253,23 +253,25 @@ $\left\{\begin{array}{l}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \section{There is(are, was, were) not X ...}
-\begin{frame}[plain]{〜がない}
+\begin{frame}[plain]{〜がない、～がなかった}
 
-\begin{enumerate}[<+->]
+ノートに写して意味を考えましょう
+
+\begin{enumerate}
  \item There is not a pen on the table.
  \item There was not a cat in the garden yesterday.
  \item There are not many cars on the road today.
  \item There were not many clouds in the sky yesterday.
 \end{enumerate}
 
-\pause 
-\begin{exampleblock}<5->{Topics for Today}
+
+\begin{exampleblock}{Topics for Today}
 「〜がない（なかった）」
 \begin{itemize}
  \item There $\left\{\begin{array}{l}\text{is}\\\text{was}\end{array}
-\right\}$ \textcolor{orange}{not} 単数形 \ldots\hspace{40pt}\pause
+\right\}$ \textcolor{Maroon}{not} 単数形 \ldots\hspace{40pt}
 There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
-\right\}$ \textcolor{orange}{not} 複数形 \ldots
+\right\}$ \textcolor{Maroon}{not} 複数形 \ldots
 \end{itemize}
 \end{exampleblock}
 
@@ -293,7 +295,7 @@ There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
  \draw[thick, orange, ->] (there-1.south) to[out=-90, in=90] (there-2.north); \pause
  \draw[thick, olive, ->] (is-1.south) to[out=-90, in=90] (is-2.north);
 \pause
-\node at (-6.5,-1) {逆にするだけ};
+\node at (-6.5,-1) {be動詞ではじめる};
 \pause
 \node at (0.5,0.25) {\scalebox{2}{\myRisingPitch}};
 \pause
@@ -301,12 +303,12 @@ There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
 \end{tikzpicture}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%
  \subsection{Exercises}
 \begin{frame}[plain]{Exercises}
 
-つぎの文の意味を考えましょう\pause
-\begin{enumerate}[<+->]
+つぎの文の意味を考えましょう
+\begin{enumerate}
  \item Is there a good restaurant in your town?
  \item Are there many students in your class?
  \item Was there a message for me?
@@ -317,34 +319,25 @@ There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Exercises}
-各文を疑問文にしてください\hfill\myaudio{./audio/001_there_is_08.mp3}\pause
+各文を疑問文にしてください\hfill\myaudio{./audio/001_there_is_08.mp3}
 
   \begin{enumerate}
    \item There is a cat in the garden.\\
-         \pause
-         $\longrightarrow$ Is there a cat in the garden?\pause
+                  \visible<2->{$\longrightarrow$ Is there a cat in the garden?}
    \item There are many flowers on the table.\\
-         \pause
-         $\longrightarrow$ Are there many flowers on the table?\pause
+                  \visible<3->{$\longrightarrow$ Are there many flowers on the table?}
    \item There was a dog under the table.\\
-         \pause
-         $\longrightarrow$ Was there a dog under the table?\pause
+                  \visible<4->{$\longrightarrow$ Was there a dog under the table?}
    \item There were many people at the party.\\
-         \pause
-         $\longrightarrow$ Were there many people at the party?\pause
+                  \visible<5->{$\longrightarrow$ Were there many people at the party?}
   \end{enumerate}
-
-
-% Embed the sound file
-
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{疑問文への答え方}
  \begin{frame}[plain]{Yer, there is. / No, there isn't.}
  \Large
 
-疑問文にたいする答え方\hfill\myaudio{./audio/001_there_is_09.mp3}
+疑問文にたいする答え方（現在形）\hfill\myaudio{./audio/001_there_is_09.mp3}
 \vspace{10pt}
 
 \pause
@@ -366,7 +359,7 @@ $\left\{\begin{array}{l}
  \begin{frame}[plain]{Yer, there was. / No, there wasn't.}
  \Large
 
-疑問文にたいする答え方\hfill\myaudio{./audio/001_there_is_10.mp3}
+疑問文にたいする答え方（過去形）\hfill\myaudio{./audio/001_there_is_10.mp3}
 \vspace{10pt}
 
 \pause
@@ -384,7 +377,7 @@ $\left\{\begin{array}{l}
 \mbox{}\hfill{}{\small No, there wasn't. はNo, there was not.ともいいます}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
- \begin{frame}[plain]{Yer, there ares. / No, there aren't.}
+ \begin{frame}[plain]{Yer, there are. / No, there aren't.}
  \Large
 
 疑問文にたいする答え方\hfill\myaudio{./audio/001_there_is_11.mp3}
@@ -434,27 +427,22 @@ $\left\{\begin{array}{l}
   \begin{enumerate}
    \item わたしたちのクラスには,
 アメリカ人の生徒が二人います。\\
-         \pause
          ( are / two American students / there ) in our class.\\
-         \pause
-         \onslide<4->{There are two American students in our class.}
+         \onslide<2->{There are two American students in our class.}
          \pause
    \item ５年前は、その角に教会がありました。\\
-         \pause
          ( a church / was / there ) on the corner five years ago.\\
-         \pause
-         \onslide<7->{There was a church on the corner five years ago.}
+         \onslide<3->{There was a church on the corner five years ago.}
          \pause
    \item この近くに病院はありますか。\\
-         \pause
          ( a hospital / is / there ) near here?\\
-         \pause
-         \onslide<10>{Is there a hospital near here?}
+         \onslide<4->{Is there a hospital near here?}
   \end{enumerate}
-
-
-% Embed the sound file
-
 \hfill\myaudio{./audio/001_there_is_13.mp3}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
+\begin{frame}[plain]{要点}
+ 
 \end{frame}
 \end{document}

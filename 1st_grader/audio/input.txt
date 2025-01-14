@@ -1,3 +1,3 @@
-Who plays the piano?
-Who cooks dinner?
-Who lives in the house?
+When do you usually practice basketball?<break time="3s"/>On Saturdays.
+When is St. Valentine’s Day?<break time="3s"/>It’s February 14th.
+When does the school year start in Japan?<break time="3s"/>In April.
