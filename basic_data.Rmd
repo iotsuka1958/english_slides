@@ -74,7 +74,8 @@ task_progress_table <- work_log |>
   tab_header(
     title = "task_progress",
     subtitle = c("as of", as.character(Sys.time()))
-  )
+  ) |>
+  sub_missing(columns = everything(), missing_text = "-")
 ```
 
 ```{r}
@@ -95,7 +96,8 @@ task_progress_table_1st <- work_log |>
   tab_header(
     title = "task_progress_1st_grader",
     subtitle = c("as of", as.character(Sys.time()))
-  )
+  ) |>
+  sub_missing(columns = everything(), missing_text = "-")
 ```
 
 ```{r}
@@ -116,7 +118,8 @@ task_progress_table_2nd <- work_log |>
   tab_header(
     title = "task_progress_2nd_grader",
     subtitle = c("as of", as.character(Sys.time()))
-  )
+  ) |>
+  sub_missing(columns = everything(), missing_text = "-")
 ```
 
 ```{r}
@@ -137,7 +140,8 @@ task_progress_table_3rd <- work_log |>
   tab_header(
     title = "task_progress_3rd_grader",
     subtitle = c("as of", as.character(Sys.time()))
-  )
+  ) |>
+  sub_missing(columns = everything(), missing_text = "-")
 ```
 
 ```{r}
@@ -191,7 +195,17 @@ classroom_table_1st <- classroom |>
   tab_header(
     title = "classroom_1st_grader",
     subtitle = c("as of", as.character(Sys.time()))
-  )
+  ) |>
+  cols_label(
+    "grade" = "--",
+    "lessonsLeft" = md("2do"),
+    "lessonTopic" = "contents",
+    "lessonPdf" = md("slide<br>_pdf"),
+    "lessonMp3" = md("slide<br>_mp3"),
+    "pronPdf" = md("pron<br>_pdf"),
+    "pronMp3" = md("pron<br>_mp3")
+  ) |>
+  sub_missing(columns = everything(), missing_text = "-")
 ```
 
 ```{r}
@@ -214,7 +228,17 @@ classroom_table_2nd <- classroom |>
   tab_header(
     title = "classroom_2nd_grader",
     subtitle = c("as of", as.character(Sys.time()))
-  )
+  ) |>
+  cols_label(
+    "grade" = "--",
+    "lessonsLeft" = md("2do"),
+    "lessonTopic" = "contents",
+    "lessonPdf" = md("slide<br>_pdf"),
+    "lessonMp3" = md("slide<br>_mp3"),
+    "pronPdf" = md("pron<br>_pdf"),
+    "pronMp3" = md("pron<br>_mp3")
+  ) |>
+  sub_missing(columns = everything(), missing_text = "-")
 ```
 
 ```{r}
@@ -237,7 +261,17 @@ classroom_table_3rd <- classroom |>
   tab_header(
     title = "classroom_3rd_grader",
     subtitle = c("as of", as.character(Sys.time()))
-  )
+  ) |>
+  cols_label(
+    "grade" = "--",
+    "lessonsLeft" = md("2do"),
+    "lessonTopic" = "contents",
+    "lessonPdf" = md("slide<br>_pdf"),
+    "lessonMp3" = md("slide<br>_mp3"),
+    "pronPdf" = md("pron<br>_pdf"),
+    "pronMp3" = md("pron<br>_mp3")
+  ) |>
+  sub_missing(columns = everything(), missing_text = "-")
 ```
 
 ```{r}
