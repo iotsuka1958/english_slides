@@ -5,6 +5,7 @@
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{media9}
@@ -29,6 +30,7 @@
 \usepackage{circledsteps}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{tipa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -74,7 +76,8 @@
 \end{tikzpicture}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{English is fun.\,\,{}--- I have to do my homework. ---}
+\title{English is fun.}
+\subtitle{I have to do my homework.}
 \author{}
 \institute[]{}
 \date[]
@@ -93,45 +96,46 @@
   \tableofcontents
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{have to--}
-
 \subsection{have to--(しなければならない」)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{have to --(しなければならない」)}
  \Large
 
-\visible<1->{I \alt<1-2>{\myAnch{aux1}{white}{must}}{\myAnch{AUX1}{Orange}{must}}  \textcolor{Green}{study} science.}
-\hspace{80pt}\visible<2->{{\footnotesize science: 理科、科学}}
+\visible<1->{I \alt<1-2>{\myAnch{aux1}{white}{\bfseries must}}{\myAnch{AUX1}{Orange}{\bfseries must}}  \textcolor{Green}{study} science.}
+\hspace{80pt}\visible<2->{{\footnotesize science \textipa{/s\'aI@ns/}: 理科、科学}}
 
 
 \vspace{15pt}
 
-\visible<4->{I \alt<1-4>{\myAnch{aux2}{white}{have to}}{\myAnch{AUX2}{Orange}{have to}}  \textcolor{Green}{study} science.}
+\visible<4->{I \alt<1-4>{\myAnch{aux2}{white}{\bfseries have to}}{\myAnch{AUX2}{Orange}{\bfseries have to}}  \textcolor{Green}{study} science.}
 
-
+%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_01.mp3}}
 
 \vfill
 
-\begin{exampleblock}<6->{Topics for Today}
-\begin{itemize}\small
- \item   「〜しなければならない」はmustのほかに\\
-{\,\,\,}\fcolorbox{BurntOrange}{white}{have to $+$ 動詞($=\text{動詞の原形}$)}
+\begin{exampleblock}<6->{Topics for Today}\small
+「〜しなければならない」
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item  {\bfseries must}  $+$ 動詞の原形
+ \item \fcolorbox{BurntOrange}{white}{\bfseries have to}  $+$ 動詞の原形
  \end{itemize}
      \end{exampleblock}
 
 \visible<5->{\begin{tikzpicture}[remember picture,overlay] 
- \draw[thick,BurntOrange,->] (aux1.south) -- (aux2.north);
+ \draw[thick,BurntOrange,->] (aux1.south) to[out=-90, in=90] (aux2.north);
 \end{tikzpicture}}
 
-
-\visible<7->
-{mustとhave to--ってどうちがうの？}
+\hfill\visible<7->
+{\small {mustとhave toってどうちがうの？}}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください。
+あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_02.mp3}}
 \begin{enumerate}
  \item わたしは部屋を掃除しなければなりません。\\
 (clean / have / I / to / my room)
@@ -147,9 +151,9 @@
 \visible<5->{They have to wear uniforms.}
 \end{enumerate} 
 \end{frame}
-
-\begin{frame}<1-13>[plain]{主語が三人称単数のとき}
- \Large
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-13>[plain]{haveの三単現}
+ \large
 
 \begin{tabular}{ll}
 \visible<1->{I have a cat.}&\visible<7->{一人称}\\
@@ -168,10 +172,9 @@
      \end{exampleblock}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-13>[plain]{have to--:主語が三人称単数のとき}
- \Large
+ \large
 
 \begin{tabular}{ll}
 \visible<1->{I have to study English.}&\visible<7->{一人称}\\
@@ -181,6 +184,7 @@
 \visible<1->{\alt<1-4>{He}{\textcolor{BurntOrange}{\bfseries He}} \alt<1-4>{(~~~~~~) (~~~~~~)}{\textcolor{Green}{\bfseries has to}} study English.}&\visible<11->{三人称単数}\\
 \visible<1->{\alt<1-5>{She}{\textcolor{BurntOrange}{\bfseries She}} \alt<1-5>{(~~~~~~) (~~~~~~)}{\textcolor{Green}{\bfseries has to}}  study English.}&\visible<12->{三人称単数}\end{tabular}
 
+\hfill{\scriptsize \myaudio{./audio/014_have_to_03.mp3}}
 \begin{exampleblock}<13->{主語が三人称単数のとき}
 \begin{itemize}\small
  \item   have to(しなければならない)は、主語が\textcolor{BurntOrange}{三人称単数}のときは\textcolor{Green}{\bfseries has to}になります
@@ -188,10 +192,10 @@
      \end{exampleblock}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください。
+あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_04.mp3}}
  \begin{enumerate}
   \item 彼はこの本を読まなければならない。
 (read / this / to / has / he / book)\\
@@ -207,8 +211,7 @@ Betty and Jack  ( clean /  have / the house / to )\\
 \visible<2->{Betty and Jack have to clean the house.}
  \end{enumerate}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{have to--の疑問文}
 \begin{frame}[plain]{have to--の疑問文}
  \Large
@@ -234,17 +237,18 @@ Betty and Jack  ( clean /  have / the house / to )\\
 \draw[->, thick, orange] (txt2.west) to[out=180, in=-90] (question.south);
 \end{tikzpicture}
 
-\begin{exampleblock}{don't have to--}
+%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_05.mp3}}
+\begin{exampleblock}{Today's Topic}
 \begin{itemize}\small
  \item   You have to--の疑問文「〜しなければいけませんか」\\
 \mbox{}\hfill{}$\text{Do you have to} + \text{動詞の原形}$\ldots{}\,\,\,?　　 \end{itemize}
      \end{exampleblock}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{要点}
-\Large
+\large
 \begin{tabular}{rlcl}
  1& I have to clean the room.\pause{} &$\rightarrow$ &\myEmph[7,9-]{orange}{Do} I \myEmph[7,9-]{orange}{have to} clean the room\myEmph[7,10-]{orange}{?}\pause{} \\
  2& You have to study tonight.\pause{}&$\rightarrow$ &\myEmph[7,9-]{orange}{Do} you \myEmph[7,9-]{orange}{have to} study tonight\myEmph[7,10-]{orange}{?}\pause{} \\
@@ -253,7 +257,8 @@ Betty and Jack  ( clean /  have / the house / to )\\
 \pause
 
 \vfill
-
+%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_06.mp3}}
 \begin{exampleblock}{Topics for Today}
 \pause
 \begin{itemize}\small
@@ -261,15 +266,12 @@ Betty and Jack  ( clean /  have / the house / to )\\
  \item   文末に`?'をつける（イントネーションは\myRisingPitch{}）
 \end{itemize}
      \end{exampleblock}
-
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{主語が三人称単数のとき}
- \Large
+ \large
 
 \pause
-
 
 \mbox{}\hspace{50pt}\alt<2-3>{You}{He} \alt<1-4>{have to}{\myAnch{T1}{orange}{has to}} study hard. \only<4>{\ding{55}}
 \hspace{85pt}\visible<3->{{\footnotesize hard: 懸命に}}
@@ -281,7 +283,7 @@ Betty and Jack  ( clean /  have / the house / to )\\
 \myAnch{T2}{orange}{\small 三人称単数のとき}
 }
 
-\vspace{30pt}
+\vspace{20pt}
 
 \onslide<8->{%
 \myAnch{does}{orange}{Does} he \fcolorbox{orange}{white}{have to} study hard\myAnch{question}{orange}{?}
@@ -306,6 +308,7 @@ Betty and Jack  ( clean /  have / the house / to )\\
 \end{tikzpicture}
 }
 
+\hfill{\scriptsize \myaudio{./audio/014_have_to_07.mp3}}
 \begin{exampleblock}<11>{Topics for Today}
 \pause
 \begin{itemize}\small
@@ -318,15 +321,16 @@ Betty and Jack  ( clean /  have / the house / to )\\
 
 \begin{frame}<1-10>[plain]\frametitle{Exercises}
 
-つぎの文を疑問文にしましょう。
+つぎの文を疑問文にしましょう%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_08.mp3}}
 
  \begin{enumerate}
   \item<1-> You have to finish your homework.\\
         \onslide<5->{$\longrightarrow$\,\,\,\,\, Do you have to finish your homework?\hfill\scalebox{.75}{\bcfleur\bcfleur}}
   \item<1-> They have to go to Boston.\hspace{37.5pt}%
         \onslide<6->{$\longrightarrow$\,\,\,\,\, Do they have to go to Boston?\hfill\scalebox{.25}{\worldflag{US}}}
-  \item<1-> She has to wake up early tomorrow.\hspace{12pt}%
-        \onslide<7->{$\longrightarrow$\,\,\,\,\, Does she have to wake up early?}
+  \item<1-> She has to wake up early tomorrow.\\%
+        \onslide<7->{$\longrightarrow$\,\,\,\,\, Does she have to wake up early tomorrow?}
   \item<1-> He has to drive to the station.\hspace{12pt}%
         \onslide<8->{$\longrightarrow$\,\,\,\,\, Does he have to drive to the station?\hfill\faCar}
   \item<1-> Your mother has to walk to school.\\
@@ -339,10 +343,8 @@ Betty and Jack  ( clean /  have / the house / to )\\
  \item<4->   主語が三人称単数のときは`Does'
 \end{itemize}
 \end{exampleblock}
-
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{疑問文への答え方}
 \subsection{Do you have to 〜 ? と聞かれたら}
  \begin{frame}[plain]{Do you have to〜 ? と聞かれたら}
@@ -362,10 +364,11 @@ Do you have to go home now?
 
 \pause
 
-\mbox{}\hfill{}{\small Noのときdo notを縮めてNo, I \textcolor{orange}{don't}.ともいいます}
+\mbox{}\hfill{}{\small Noのときdo notを縮めてNo, I \textcolor{orange}{don't}.ともいいます}%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_09.mp3}}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Does he  have to 〜 ? と聞かれたら}
  \begin{frame}[plain]{Does he have to〜 ? と聞かれたら}
  \Large
@@ -384,13 +387,13 @@ Does he  have to get up early tomorrow?
 
 \pause
 
-\mbox{}\hfill{}{\small Noのときdo notを縮めてNo, he \textcolor{orange}{doesn't}.ともいいます}
-
+\mbox{}\hfill{}{\small Noのときdo notを縮めてNo, he \textcolor{orange}{doesn't}.ともいいます}%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_10.mp3}}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。
+例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_11.mp3}}
 
 \begin{tabular}{@{}r@{\,\,\,\,}l@{\,\,\,\,}c@{\,\,\,\,}l@{\,\,\,}l}
 \visible<1->{例}& \visible<1->{Do you have to study every day?}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I do.}&\visible<4->{(2) No, I don't.}\\
@@ -402,10 +405,9 @@ Does he  have to get up early tomorrow?
 \end{tabular}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{have to--の否定文}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{have to--の否定文}
  \Large
 
@@ -419,6 +421,8 @@ Does he  have to get up early tomorrow?
 \visible<3->{\fbox{きょう終わらせなければならない}\,というわけではない}\\
 \visible<4->{$\longrightarrow$\,\,「終わらせなくてもいい」}
 
+%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_12.mp3}}
 \begin{exampleblock}{don't have to--}
 \begin{itemize}\small
  \item   don't have to--は、「〜しなくてもいい」、「〜する必要はない」
@@ -426,9 +430,10 @@ Does he  have to get up early tomorrow?
      \end{exampleblock}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
- 次の各組の2文の意味の違いについて考えましょう。
+ 次の各組の2文の意味の違いについて考えましょう%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_13.mp3}}
 
 \begin{enumerate}
  \item $\left\{\begin{tabular}{rl}
@@ -455,8 +460,7 @@ $\left\{\begin{tabular}{rl}
 
 {\small alone: ひとりで　perfect: 完璧な}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{don't have toとmust not}
 \Large
  
@@ -467,7 +471,8 @@ $\left\{\begin{tabular}{rl}
 \hfill\visible<4->{{\small 図書館でものを食べてはいけない。}}
 
 \vfill
-
+%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_14.mp3}}
 \begin{exampleblock}{don't have to--}
 \begin{itemize}\small
  \item   don't have to--は、「〜しなくてもいい」、「〜する必要はない」
@@ -479,7 +484,8 @@ $\left\{\begin{tabular}{rl}
 
 \begin{frame}[plain]{Exercises}
  
-つぎの2文が、それぞれどんな場面で使われるか想像してみましょう。
+つぎの2文が、それぞれどんな場面で使われるか想像してみましょう%
+\hfill{\scriptsize \myaudio{./audio/014_have_to_15.mp3}}
 
 
 \begin{enumerate}
