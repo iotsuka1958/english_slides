@@ -135,6 +135,7 @@
 %\end{frame}
 %\setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%
+\iffalse
 \begin{frame}[plain]{20250107}
  \Large
 \centering
@@ -151,13 +152,15 @@ $20{,}250{,}107=137\times{}147{,}811$\pause
 \raggedleft
 \hyperlink{today}{\beamergotobutton{Today's Pronunciation}}
 \end{frame}
+\fi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=gray}
 {
-\IfFileExists{./images/fireworls.jpg}{%
+\IfFileExists{./images/fireworks.jpg}{%
   \usebackgroundtemplate{\includegraphics[width=.625\paperwidth]{./images/fireworks.jpg}}%
 }{\relax}
   \begin{frame}[b]
-    \frametitle{}
+    \frametitle{きょう20250121は素数！}
 \tiny
 \raggedright
   \textcolor{white}{ ``Fireworks'' by bayasaa is licensed under CC BY 2.0. }\\
@@ -166,6 +169,7 @@ $20{,}250{,}107=137\times{}147{,}811$\pause
 \hfill\hyperlink{today}{\beamergotobutton{Today's Pronunciation}}
   \end{frame}
 }
+\setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{素数(a prime number)}
 \Large
@@ -1752,7 +1756,7 @@ speech=\scalebox{0.4}{
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 1}\large
 
-some（いくつかの）とsun（太陽）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+some（いくつかの）とsun（太陽）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう\hfill{\scriptsize some books（何冊かの本）}
 
 \bigskip
 
@@ -1769,9 +1773,9 @@ some（いくつかの）とsun（太陽）を発音していきます。どち�
 %%%%%%%%%%%
    \begin{column}{.45\textwidth}
     \begin{tabular}{ll}
-     \myAnch{a1}{white}{\textbullet}& some\\
+     \myAnch{a1}{white}{\textbullet}& some \textipa{/s\'\textturnv m/}\\
      &\\
-     \myAnch{a2}{white}{\textbullet}& sun \\
+     \myAnch{a2}{white}{\textbullet}& sun \textipa{/s\'\textturnv n/}\\
     \end{tabular}
    \end{column}
  \end{columns}
@@ -1785,7 +1789,9 @@ some（いくつかの）とsun（太陽）を発音していきます。どち�
  \visible<6->{\draw[hoge,olive] (q5.east) to[out=0, in=180] (a1.west);}
 \end{tikzpicture}
 
-\hfill\myaudio{./audio/consonant_m_n_ng_04.mp3}
+\hfill{}\visible<7->{{\scriptsize ところでsun（太陽）とson（息子）は同じ発音です}}
+
+\hfill{\scriptsize \myaudio{./audio/consonant_m_n_ng_04.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
