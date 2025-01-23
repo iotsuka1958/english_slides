@@ -1,3 +1,4 @@
-When do you usually practice basketball?<break time="3s"/>On Saturdays.
-When is St. Valentine’s Day?<break time="3s"/>It’s February 14th.
-When does the school year start in Japan?<break time="3s"/>In April.
+Which does he need, a pen or a pencil?
+Which does she eat for breakfast, cereal or toast?
+Which do you like, English or math?
+Which do they speak, English or Spanish?

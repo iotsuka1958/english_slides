@@ -11,7 +11,7 @@
 \input{myPreamble4Slide.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
-\subtitle{}
+\subtitle{How are you?}
 \author{}
 \institute[]{}
 \date[]
@@ -34,11 +34,11 @@
 \section{How}
 \subsection{How are you?: be動詞のとき}
 \begin{frame}[plain]{How is 〜?}
-\Large
+\large
 
 be動詞のとき
 
-\mbox{}\hspace{50pt}Your farther is  \alt<3->{\myAnch{FOCUS}{orange}{fine}}{\myAnch{focus}{white}{fine}}.
+\mbox{}\hspace{50pt}Your father is  \alt<3->{\myAnch{FOCUS}{orange}{fine}}{\myAnch{focus}{white}{fine}}.
 
 \pause
 
@@ -58,14 +58,16 @@ be動詞のとき
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->, thick, orange] (focus.south) to[out=-90, in=90] (wh.north);
+\draw[->, line width=3pt,opacity=.5, orange] (focus.south) to[out=-90, in=90] (wh.north);
 \end{tikzpicture}
 }
 \visible<7->{%
 \begin{exampleblock}{Topics for Today}
 \pause
-\begin{itemize}\small
- \item 「〜はどうですか」と聞くとき$\longrightarrow$\,\,\,How is 〜?
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item 「〜はどうですか」と聞くとき
+（Howの後ろは疑問文の語順）\\
+$\longrightarrow$\,\,\,How is 〜?
  \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
 \end{itemize}
      \end{exampleblock}
@@ -75,7 +77,7 @@ be動詞のとき
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{How are 〜?}
-\Large
+\large
 
 be動詞のとき
 
@@ -99,14 +101,15 @@ be動詞のとき
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->, thick, orange] (focus_2.south) to[out=-90, in=90] (wh_2.north);
+\draw[->, line width=3pt,opacity=.5, orange] (focus_2.south) to[out=-90, in=90] (wh_2.north);
 \end{tikzpicture}
 }
 \visible<7->{%
-\begin{exampleblock}{Topics for Today}
-\pause
-\begin{itemize}\small
- \item 「〜はどうですか」と聞くとき$\longrightarrow$\,\,\,How is 〜? / How are 〜?(Howの後ろは疑問文のかたち)
+\begin{exampleblock}{Topics for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item 「〜はどうですか」と聞くとき
+（Howの後ろは疑問文の語順）\\
+$\longrightarrow$\,\,\,How is 〜? / How are 〜?
  \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
 \hfill\myaudio{./audio/-17_how_02.mp3}%
 \end{itemize}
@@ -118,26 +121,28 @@ be動詞のとき
  日本語の意味になるように、語句を並べ替えましょう。先頭にくる語は大文字で書き始めてください
 \begin{enumerate}
  \item ( is / mother / how / your )
-あなたのお母さんはどうですか？\\
+あなたのお母さんはいかがですか？\\
 \visible<2->{How is your mother?}\\
+\visible<3->{--- She is very well, thank you.おかげさまでとても元気です}\\
  \item  ( how / you / are )お元気ですか？\\ 
-\visible<3->{How are you?}
+\visible<4->{How are you?}
+\visible<5->{--- Good.元気ですよ}\\
  \item ( is / in / how / the weather / Boston )
 ボストンの天気はどうですか？\\
-\visible<4->{How is the weather in Boston?}
-\visible<5->{---\begin{tabular}[t]{l@{\,\,\,}ll}
+\visible<6->{How is the weather in Boston?}
+\visible<7->{---\begin{tabular}[t]{l@{\,\,\,}ll}
 	      It's& sunny. &(晴れ) \\
-                  & cloudy.&(曇り)\\
-                  & rainy.&(雨)\\
-                  & snowy.&(雪)
+                  & \visible<8->{cloudy.}&\visible<8->{(曇り)}\\
+                  & \visible<9->{rainy.}&\visible<9->{(雨)}\\
+                  & \visible<10->{snowy.}&\visible<10->{(雪)}
 	     \end{tabular}}
 \end{enumerate}
-\hfill\myaudio{./audio/017_how_03.mp3}
+\hfill{\scriptsize \myaudio{./audio/017_how_03.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{How does she go to work?: 一般動詞のとき}
 \begin{frame}[plain]\frametitle{How does she go to work?}
-\Large
+\large
 一般動詞のとき
 
 \pause
@@ -158,14 +163,14 @@ She goes to work \alt<4->{\myAnch{FOCUS_3}{orange}{by bus}}{\myAnch{focus_3}{whi
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (focus_3.south) to[out=-90, in=90] (WH_3.north);
+ \draw[ line width=3pt,opacity=.5,orange, ->] (focus_3.south) to[out=-90, in=90] (WH_3.north);
 \end{tikzpicture}
 }
 
 \visible<7->{%
 \begin{exampleblock}{Topics for Today}
 \pause
-\begin{itemize}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item `How'を先頭に置いて、疑問文のかたちを続ける\,\,How do you  〜? / How does she 〜? 
  \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
 \end{itemize}
