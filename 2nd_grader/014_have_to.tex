@@ -31,6 +31,7 @@
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{tipa}
+\usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -109,7 +110,8 @@
 
 \vspace{15pt}
 
-\visible<4->{I \alt<1-4>{\myAnch{aux2}{white}{\bfseries have to}}{\myAnch{AUX2}{Orange}{\bfseries have to}}  \textcolor{Green}{study} science.}
+\visible<4->{I \alt<1-4>{\myAnch{aux2}{white}{\bfseries have to}}{\myAnch{AUX2}{Orange}{\bfseries have to}}  \textcolor{Green}{study} science.}%
+\hspace{80pt}\visible<5->{{\scriptsize\textipa{/h\'\ae ft@/}}}
 
 %
 \hfill{\scriptsize \myaudio{./audio/014_have_to_01.mp3}}
@@ -138,16 +140,16 @@
 \hfill{\scriptsize \myaudio{./audio/014_have_to_02.mp3}}
 \begin{enumerate}
  \item わたしは部屋を掃除しなければなりません。\\
-(clean / have / I / to / my room)
+( clean / have / I / to / my room )
 \visible<2->{I have to clean my room.}
  \item わたしたちは彼を助けなければなりません。\\
-(help / him / to / we / have)
+( help / him / to / we / have )
 \visible<3->{We have to help him.}
  \item あなたは両親の言うことを聞かなければなりません。\\
-(listen / your parents / to / to /have / you)
+( listen / your parents / to / to /have / you )
 \visible<4->{You have to listen to your parents.}
  \item 彼らは制服を着なければなりません。\\
-(uniforms / wear / to / they / have)
+( uniforms / wear / to / they / have )
 \visible<5->{They have to wear uniforms.}
 \end{enumerate} 
 \end{frame}
@@ -166,8 +168,8 @@
 
 
 \begin{exampleblock}<13->{復習}
-\begin{itemize}\small
- \item   have(持っている)は、主語が\textcolor{BurntOrange}{三人称単数}のときは\textcolor{Green}{\bfseries has}になります
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   have(持っている)は、主語が\textcolor{BurntOrange}{三人称単数}のときは\textcolor{Green}{\bfseries has}になります（いわゆる\kenten{三単現}）
  \end{itemize}
      \end{exampleblock}
 
@@ -186,8 +188,9 @@
 
 \hfill{\scriptsize \myaudio{./audio/014_have_to_03.mp3}}
 \begin{exampleblock}<13->{主語が三人称単数のとき}
-\begin{itemize}\small
- \item   have to(しなければならない)は、主語が\textcolor{BurntOrange}{三人称単数}のときは\textcolor{Green}{\bfseries has to}になります
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   {\bfseries have to}(しなければならない)は、主語が\textcolor{BurntOrange}{三人称単数}のときは\textcolor{Green}{\bfseries has to}になります
+ \item {\bfseries have to} \textipa{/h\'\ae ft@/}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,{\bfseries has to} \textipa{/h\'\ae st@/}
  \end{itemize}
      \end{exampleblock}
 
@@ -197,16 +200,16 @@
 あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください%
 \hfill{\scriptsize \myaudio{./audio/014_have_to_04.mp3}}
  \begin{enumerate}
-  \item 彼はこの本を読まなければならない。
-(read / this / to / has / he / book)\\
+  \item {\small 彼はこの本を読まなければならない。}
+( read / this / to / has / he / book )\\
 \visible<2->{He has to read this book.}
-  \item 彼女はレポートを書かなければならない。
-(write / a report / has / she / to)\\
+  \item {\small 彼女はレポートを書かなければならない。}
+( write / a report / has / she / to )\\
 \visible<2->{She has to write a report.}
-  \item ベンは歯医者に行かなければならない。
-Ben (the dentist / to / to /has / go )\\
+  \item {\small ベンは歯医者に行かなければならない。}
+Ben ( the dentist / to / to / has / go )\\
 \visible<2->{Ben has to go to the dentist.}  
-\item ベティとジャックは家を掃除しなければならない。\\
+\item {\small ベティとジャックは家を掃除しなければならない。}\\
 Betty and Jack  ( clean /  have / the house / to )\\
 \visible<2->{Betty and Jack have to clean the house.}
  \end{enumerate}
@@ -214,22 +217,22 @@ Betty and Jack  ( clean /  have / the house / to )\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{have to--の疑問文}
 \begin{frame}[plain]{have to--の疑問文}
- \Large
+ \large
 
-\mbox{}\hspace{35pt}You have to study tonight. \pause
-\hspace{80pt}{\footnotesize tonight: 今晩}\pause\hspace{-140pt}\raisebox{-5pt}{\scalebox{1.4}{\myDownwardPitch}}
+\mbox{}\hspace{35pt}You {\bfseries have to} study tonight. \pause
+\hspace{80pt}{\scriptsize tonight: 今晩}\pause\hspace{-140pt}\raisebox{-5pt}{\scalebox{1.4}{\myDownwardPitch}}
 \pause
 
 \vspace{15pt}
 
-\myAnch{do}{orange}{Do} you have to study tonight \myAnch{question}{orange}{?}
+\myAnch{do}{orange}{\bfseries Do} you {\bfseries have to} study tonight \myAnch{question}{orange}{?}
 \pause
 \scalebox{1.4}{\myRisingPitch}
 
 \pause
 
-\mbox{}\hspace{50pt}\myAnch{txt1}{white}{先頭にDo}
-\hspace{80pt}\myAnch{txt2}{white}{文末に`?'}
+\mbox{}\hspace{50pt}\myAnch{txt1}{white}{\small 先頭にDo}
+\hspace{80pt}\myAnch{txt2}{white}{\small 文末に`?'}
 
 
 \begin{tikzpicture}[remember picture, overlay]
@@ -240,9 +243,9 @@ Betty and Jack  ( clean /  have / the house / to )\\
 %
 \hfill{\scriptsize \myaudio{./audio/014_have_to_05.mp3}}
 \begin{exampleblock}{Today's Topic}
-\begin{itemize}\small
- \item   You have to--の疑問文「〜しなければいけませんか」\\
-\mbox{}\hfill{}$\text{Do you have to} + \text{動詞の原形}$\ldots{}\,\,\,?　　 \end{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   You {\bfseries have to}--の疑問文「〜しなければいけませんか」\\
+\mbox{}\hfill{}$\text{{\bfseries Do} you {\bfseries have to}} + \text{動詞の原形}$\ldots{}\,\,\,?　　 \end{itemize}
      \end{exampleblock}
 
 \end{frame}
@@ -261,8 +264,8 @@ Betty and Jack  ( clean /  have / the house / to )\\
 \hfill{\scriptsize \myaudio{./audio/014_have_to_06.mp3}}
 \begin{exampleblock}{Topics for Today}
 \pause
-\begin{itemize}\small
- \item   主語が一人称、二人称、三人称複数のとき$\text{Do} + \text{S} + \text{have to} + \text{動詞の原形}$\,\,\ldots{}\,\,\,?\pause
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   主語が一人称、二人称、三人称複数のとき$\text{\bfseries Do} + \text{S} + \text{\bfseries have to} + \text{動詞の原形}$\,\,\ldots{}\,\,\,?\pause
  \item   文末に`?'をつける（イントネーションは\myRisingPitch{}）
 \end{itemize}
      \end{exampleblock}
@@ -273,9 +276,9 @@ Betty and Jack  ( clean /  have / the house / to )\\
 
 \pause
 
-\mbox{}\hspace{50pt}\alt<2-3>{You}{He} \alt<1-4>{have to}{\myAnch{T1}{orange}{has to}} study hard. \only<4>{\ding{55}}
+\mbox{}\hspace{50pt}\alt<2-3>{You}{He} \alt<1-4>{have to}{\myAnch{T1}{orange}{\bfseries has to}} study hard. \only<4>{\ding{55}}
 \hspace{85pt}\visible<3->{{\footnotesize hard: 懸命に}}
-\hspace{-150pt}%
+\hspace{-145pt}%
 \visible<7->{\raisebox{-5pt}{\scalebox{1.4}{\myDownwardPitch}}}
 
 \hspace{100pt}%
@@ -286,7 +289,7 @@ Betty and Jack  ( clean /  have / the house / to )\\
 \vspace{20pt}
 
 \onslide<8->{%
-\myAnch{does}{orange}{Does} he \fcolorbox{orange}{white}{have to} study hard\myAnch{question}{orange}{?}
+\myAnch{does}{orange}{\bfseries Does} he \fcolorbox{orange}{white}{\bfseries have to} study hard\myAnch{question}{orange}{?}
 }
 \onslide<9->{%
 \scalebox{1.4}{\myRisingPitch}
@@ -311,14 +314,13 @@ Betty and Jack  ( clean /  have / the house / to )\\
 \hfill{\scriptsize \myaudio{./audio/014_have_to_07.mp3}}
 \begin{exampleblock}<11>{Topics for Today}
 \pause
-\begin{itemize}\small
- \item   主語が三人称単数のとき$\text{Does} + \text{S} + \text{have to} + \text{動詞の原形}$\,\,\ldots{}\,\,\,?\pause
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   主語が三人称単数のとき$\text{\bfseries Does} + \text{S} + \text{\bfseries have to} + \text{動詞の原形}$\,\,\ldots{}\,\,\,?\pause
  \item   文末に`?'をつける（イントネーションは\myRisingPitch{}）
 \end{itemize}
      \end{exampleblock}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-10>[plain]\frametitle{Exercises}
 
 つぎの文を疑問文にしましょう%
@@ -338,9 +340,9 @@ Betty and Jack  ( clean /  have / the house / to )\\
  \end{enumerate}
 
 \begin{exampleblock}<2->{Topics for Today}
-\begin{itemize}\small
- \item<3->   主語が一人称、二人称、三人称複数のときは$\text{Do} + \text{S} + \text{have to} + \text{動詞の原形}$\pause
- \item<4->   主語が三人称単数のときは`Does'
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item<3->   主語が一人称、二人称、三人称複数のときは\hfill$\text{\bfseries Do} + \text{S} + \text{\bfseries have to} + \text{動詞の原形}$\pause
+ \item<4->   主語が三人称単数のときは\hfill$\text{\bfseries Does} + \text{S} + \text{\bfseries have to} + \text{動詞の原形}$
 \end{itemize}
 \end{exampleblock}
 \end{frame}
@@ -387,7 +389,7 @@ Does he  have to get up early tomorrow?
 
 \pause
 
-\mbox{}\hfill{}{\small Noのときdo notを縮めてNo, he \textcolor{orange}{doesn't}.ともいいます}%
+\mbox{}\hfill{}{\small Noのときdoes notを縮めてNo, he \textcolor{orange}{doesn't}.ともいいます}%
 \hfill{\scriptsize \myaudio{./audio/014_have_to_10.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -396,11 +398,12 @@ Does he  have to get up early tomorrow?
 \hfill{\scriptsize \myaudio{./audio/014_have_to_11.mp3}}
 
 \begin{tabular}{@{}r@{\,\,\,\,}l@{\,\,\,\,}c@{\,\,\,\,}l@{\,\,\,}l}
-\visible<1->{例}& \visible<1->{Do you have to study every day?}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I do.}&\visible<4->{(2) No, I don't.}\\
+\visible<1->{\scriptsize 例}& \visible<1->{Do you have to study every day?}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I do.}&\visible<4->{(2) No, I don't.}\\[10pt]
 \visible<1->{1}&\visible<1->{Does she have to read the book?\hspace{10pt}\raisebox{0pt}{\bcbook}}&\visible<5->{$\rightarrow$}&\visible<6->{(1) Yes, she does.}&\visible<7->{(2) No, she doesn't.}\\
 \visible<1->{2}&\visible<1->{Does he have to cook dinner tonight?}&\visible<8->{$\rightarrow$}& \visible<9->{(1) Yes, he does.}&%
 \visible<10->{(2) No, he doesn't.}\\
 \visible<1->{3}&\visible<1->{Do they have to follow the rules?}&\visible<11->{$\rightarrow$}&\visible<12->{(1) Yes, they do.}&\visible<13->{(2) No, they don't.}\\
+\multicolumn{2}{r}{{\scriptsize follow：従う、守る}}
 %\visible<1->{4}&\visible<1->{Are you going to buy a new car?\hspace{10pt}\raisebox{-5pt}{\scalebox{2.5}{\twemoji{automobile}}}}&\visible<14->{$\rightarrow$}&\visible<15->{(1) Yes, I am.}&\visible<16->{(2) No, I'm not.}
 \end{tabular}
 
@@ -411,21 +414,22 @@ Does he  have to get up early tomorrow?
 \begin{frame}[plain]{have to--の否定文}
  \Large
 
-\visible<1->{You \fcolorbox{BurntOrange}{white}{have to} finish it today.}
+\visible<1->{You \fcolorbox{BurntOrange}{white}{\bfseries have to} finish it today.\hfill{\scriptsize finish \textipa{/f\'InIS/} 終える}}
 
 \vspace{8pt}
 
-\visible<2->{You \textcolor{BrickRed}{{\bfseries don't}} \fcolorbox{BurntOrange}{white}{have to} finish it today.}
+\visible<2->{You \textcolor{BrickRed}{{\bfseries don't}} \fcolorbox{BurntOrange}{white}{\bfseries have to} finish it today.}
 
 
-\visible<3->{\fbox{きょう終わらせなければならない}\,というわけではない}\\
-\visible<4->{$\longrightarrow$\,\,「終わらせなくてもいい」}
+\visible<3->{{\small \fbox{きょう終わらせなければならない}\,というわけではない}}\\
+\hspace{120pt}\visible<4->{{\small $\longrightarrow$\,\,「終わらせる必要はない」}}
 
 %
 \hfill{\scriptsize \myaudio{./audio/014_have_to_12.mp3}}
-\begin{exampleblock}{don't have to--}
-\begin{itemize}\small
- \item   don't have to--は、「〜しなくてもいい」、「〜する必要はない」
+\begin{exampleblock}<5->{don't have to--}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   {\bfseries don't have to} $+$ 動詞の原形\hspace{20pt}「〜する必要はない」\\
+\hfill{}{\scriptsize もちろん三人称単数が主語なら{\bfseries doesn't have to} $+$ 動詞の原形}
  \end{itemize}
      \end{exampleblock}
 
@@ -470,18 +474,19 @@ $\left\{\begin{tabular}{rl}
 \visible<3->{You \textcolor{Maroon}{\bfseries must not} eat in the library}%
 \hfill\visible<4->{{\small 図書館でものを食べてはいけない。}}
 
+\visible<5->{You \textcolor{Maroon}{\bfseries mustn't} eat in the library}%
 \vfill
 %
 \hfill{\scriptsize \myaudio{./audio/014_have_to_14.mp3}}
-\begin{exampleblock}{don't have to--}
-\begin{itemize}\small
- \item   don't have to--は、「〜しなくてもいい」、「〜する必要はない」
- \item   must not-は、「〜してはいけない」(禁止)
+\begin{exampleblock}<6->{don't have to--}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   {\bfseries don't have to}：「〜しなくてもいい」、「〜する必要はない」
+ \item   {\bfseries must not}：「〜してはいけない」(禁止)
  \end{itemize}
      \end{exampleblock}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
  
 つぎの2文が、それぞれどんな場面で使われるか想像してみましょう%
@@ -489,11 +494,40 @@ $\left\{\begin{tabular}{rl}
 
 
 \begin{enumerate}
- \item You don't have to eat it.
- \item You must not eat it.
+ \item You {\bfseries don't have to} eat it.
+ \item You {\bfseries must not} eat it.
 \end{enumerate}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
+\begin{frame}[plain]{まとめ}
+ \begin{exampleblock}{基本}\small
+「〜しなければならない」（義務）\hfill{}cf. must
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item \fcolorbox{BurntOrange}{white}{\bfseries have to}  $+$ 動詞の原形%
+\hfill{}{\scriptsize \textipa{/h\'\ae ft@/}}\\
+{\scriptsize 主語が\textcolor{BurntOrange}{三人称単数}のときは\textcolor{Green}{\bfseries has to}}\hfill{}{\scriptsize \textipa{/h\'\ae st@/}}
+ \end{itemize}
+     \end{exampleblock}
 
+\begin{exampleblock}{疑問文}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   $\text{\bfseries Do} + \text{S} + \text{\bfseries have to} + \text{動詞の原形}$ \ldots\,\,\,?\,\,\,/\,\,\,$\text{\bfseries Does} + \text{S} + \text{\bfseries have to} + \text{動詞の原形}$ \ldots\,\,\,?
+ \item 答え方
+\begin{itemize}
+ \item 「はい」のとき\hfill{}\makebox[10em][l]{\bfseries Yes, S $ + \text{\,do / does.}$}\hspace{120pt}\mbox{}
+ \item 「いいえ」のとき\hfill{}\makebox[100pt][l]{\bfseries No, S $ + \text{\,don't($=$do not) / doesn't($=$ does not).}$}\hspace{120pt}\mbox{}
+\end{itemize}
+\end{itemize}
+\end{exampleblock}
+
+\begin{exampleblock}{don't have to--}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   {\bfseries don't have to / doesn't have to}：「〜しなくてもいい」、「〜する必要はない」
+ \item   {\bfseries must not}($=$ {\bfseries mustn't})：「〜してはいけない」(禁止)
+ \end{itemize}
+     \end{exampleblock}
+\end{frame}
 
 
 \end{document}
