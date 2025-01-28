@@ -91,11 +91,15 @@ task_progress_table_1st <- work_log |>
     names_sep = "_"
   ) |>
   filter(grade == "g1") |>
+  filter(!is.na(date)) |>
   arrange(date) |>
   gt() |>
   tab_header(
     title = "task_progress_1st_grader",
     subtitle = c("as of", as.character(Sys.time()))
+  ) |>
+  cols_label(
+    "grade" = "--"
   ) |>
   sub_missing(columns = everything(), missing_text = "-")
 ```
@@ -114,10 +118,14 @@ task_progress_table_2nd <- work_log |>
   ) |>
   filter(grade == "g2") |>
   arrange(date) |>
+  filter(!is.na(date)) |>
   gt() |>
   tab_header(
     title = "task_progress_2nd_grader",
     subtitle = c("as of", as.character(Sys.time()))
+  ) |>
+  cols_label(
+    "grade" = "--"
   ) |>
   sub_missing(columns = everything(), missing_text = "-")
 ```
@@ -136,10 +144,14 @@ task_progress_table_3rd <- work_log |>
   ) |>
   filter(grade == "g3") |>
   arrange(date) |>
+  filter(!is.na(date)) |>
   gt() |>
   tab_header(
     title = "task_progress_3rd_grader",
     subtitle = c("as of", as.character(Sys.time()))
+  ) |>
+  cols_label(
+    "grade" = "--"
   ) |>
   sub_missing(columns = everything(), missing_text = "-")
 ```

@@ -3,9 +3,9 @@ file_with_path,mp3,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,
 ./orientation/orientation_2.tex,,2024-06-07,2024-06-07,2024-06-07,1,1,1,done,done,done,999,999,999
 ./1st_grader/999quiz_full_vesion.tex,TRUE,2024-06-18,2024-06-18,2024-06-18,26,26,26,done,done,done,999,999,999
 ./1st_grader/099_pronunciation.tex,TRUE,2024-09-03,2024-07-18,2024-07-18,3,4,4,done,done,done,999,999,999
-./pronunciation/pronunciation_consonant.tex,TRUE,2024-09-18,2024-09-18,2024-09-18,1,1,1,in progress,in progress,in progress,l_r,l_r,l_r
+./pronunciation/pronunciation_consonant.tex,TRUE,2024-09-18,2024-09-18,2024-09-18,2,2,2,in progress,in progress,in progress,l_r,l_r,l_r
 ./pronunciation/pronunciation_vowel.tex,TRUE,,,,,,,,,,,,
-./pronunciation/pronunciation_japanese.tex,,2025-01-07,2025-01-07,2025-01-07,4,4,4,done,done,done,ん,ん,ん
+./pronunciation/pronunciation_japanese.tex,,2025-01-07,2025-01-07,2025-01-07,4,4,4,done,done,done,999,999,999
 ./1st_grader/001_alphabet.tex,TRUE,2024-06-14,,,2,,,done,,,999,,
 ./1st_grader/002_sv.tex,TRUE,2024-06-18,2024-06-13,2024-06-13,4,2,2,done,done,done,999,999,999
 ./1st_grader/003_be.tex,TRUE,2024-06-26,2024-06-18,2024-06-18,9,9,9,done,done,done,999,999,999
@@ -19,7 +19,7 @@ file_with_path,mp3,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,
 ./1st_grader/009_answer_be.tex,TRUE,2024-10-31,,,4,,,done,,,999,,
 ./1st_grader/010_question_do.tex,TRUE,2024-11-14,,,3,,,done,,,999,,
 ./1st_grader/011_answer_do.tex,TRUE,2024-11-19,2024-10-16,2024-10-16,4,6,6,done,done,done,999,999,999
-./1st_grader/012_can.tex,TRUE,2024-12-12,2025-01-22,,6,3,,done,in progress,,999,slide27,
+./1st_grader/012_can.tex,TRUE,2024-12-12,2025-01-22,,6,4,,done,in progress,,999,slide44,
 ./1st_grader/013_who.tex,TRUE,2025-01-08,,,2,,,done,,,999,,
 ./1st_grader/014_when.tex,TRUE,2025-01-09,,,4,,,done,,,999,,
 ./1st_grader/015_where.tex,TRUE,2025-01-15,,,3,,,done,,,999,,
