@@ -1,2 +1,5 @@
-Her job was driving a bus.
-She was driving a bus at that time.
+The elephant is the largest animal in the zoo.<break time="4s"/>The elephant is the biggest animal in the zoo.
+Monday is the busiest day at the store.
+Dave got up the earliest of all the members.
+The desert is the hottest place on Earth.
+Fall is the happiest season for me.

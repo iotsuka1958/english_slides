@@ -1,4 +1,6 @@
-Dave bought a new car made in Germany.
-They enjoyed the meal cooked by Helen.
-This is a famous picture taken by Pattie.
-She read an interesting book written in English.
+a big dog <break time="2s"/> big dogs
+a cute cat <break time="2s"/> cute cats
+a small box <break time="2s"/> small boxes
+an expensive car <break time="2s"/> expensive cars
+an interesting book <break time="2s"/> interesting books
+an important question <break time="2s"/> important questions
