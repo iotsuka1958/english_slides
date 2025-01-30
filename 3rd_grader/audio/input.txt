@@ -1,6 +1,2 @@
-a big dog <break time="2s"/> big dogs
-a cute cat <break time="2s"/> cute cats
-a small box <break time="2s"/> small boxes
-an expensive car <break time="2s"/> expensive cars
-an interesting book <break time="2s"/> interesting books
-an important question <break time="2s"/> important questions
+The man is my father.<break time="3s"/>The singing man is my father.<break time="4s"/>The man singing over there is my father.
+Look at the window.<break time="3s"/>Look at the broken window.<break time="4s"/>Look at the window broken in the storm last night.

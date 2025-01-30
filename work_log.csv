@@ -3,7 +3,7 @@ file_with_path,mp3,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,
 ./orientation/orientation_2.tex,,2024-06-07,2024-06-07,2024-06-07,1,1,1,done,done,done,999,999,999
 ./1st_grader/999quiz_full_vesion.tex,TRUE,2024-06-18,2024-06-18,2024-06-18,26,26,26,done,done,done,999,999,999
 ./1st_grader/099_pronunciation.tex,TRUE,2024-09-03,2024-07-18,2024-07-18,3,4,4,done,done,done,999,999,999
-./pronunciation/pronunciation_consonant.tex,TRUE,2024-09-18,2024-09-18,2024-09-18,3,3,3,in progress,in progress,in progress,l_r,l_r,l_r
+./pronunciation/pronunciation_consonant.tex,TRUE,2024-09-18,2024-09-18,2024-09-18,4,4,4,in progress,in progress,in progress,l_r,l_r,l_r
 ./pronunciation/pronunciation_vowel.tex,TRUE,,,,,,,,,,,,
 ./pronunciation/pronunciation_japanese.tex,,2025-01-07,2025-01-07,2025-01-07,4,4,4,done,done,done,999,999,999
 ./1st_grader/001_alphabet.tex,TRUE,2024-06-14,,,2,,,done,,,999,,
@@ -24,7 +24,7 @@ file_with_path,mp3,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,
 ./1st_grader/014_when.tex,TRUE,2025-01-09,,,4,,,done,,,999,,
 ./1st_grader/015_where.tex,TRUE,2025-01-15,,,3,,,done,,,999,,
 ./1st_grader/016_which.tex,TRUE,2025-01-22,,,4,,,done,,,999,,
-./1st_grader/017_how.tex,TRUE,2025-01-28,,,2,,,in progress,,,slide30,,
+./1st_grader/017_how.tex,TRUE,2025-01-28,,,3,,,in progress,,,slide44,,
 ./1st_grader/018_why.tex,TRUE,,,,,,,,,,,,
 ./1st_grader/019_what.tex,TRUE,,,,,,,,,,,,
 ./1st_grader/020_whose.tex,TRUE,,,,,,,,,,,,
@@ -41,7 +41,7 @@ file_with_path,mp3,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,
 ./2nd_grader/005_was_ing_intro.tex,TRUE,,2024-12-05,2024-12-05,,5,4,,done,done,,slide57,slide57
 ./2nd_grader/011_be_going_to.tex,TRUE,,2024-12-12,2024-12-12,,5,4,,done,done,,slide62,slide62
 ./2nd_grader/012_will.tex,TRUE,,2024-12-19,2024-12-19,,5,5,,done,done,,999,999
-./2nd_grader/013_must.tex,TRUE,,,,,,,,,,,,
+./2nd_grader/013_must.tex,TRUE,,2025-01-30,,,1,,,in progress,,,slide28,
 ./2nd_grader/014_have_to.tex,TRUE,,,,,,,,,,,,
 ./2nd_grader/020_part_of_speech.tex,TRUE,,,,,,,,,,,,
 ./2nd_grader/021_when.tex,TRUE,,,,,,,,,,,,
@@ -53,17 +53,17 @@ file_with_path,mp3,g1_date,g2_date,g3_date,g1_times,g2_times,g3_times,g1_status,
 ./2nd_grader/034_infinitive_adv.tex,TRUE,,,,,,,,,,,,
 ./2nd_grader/035_wh_to_do.tex,TRUE,,,,,,,,,,,,
 ./2nd_grader/036_gerund.tex,TRUE,,,,,,,,,,,,
-./2nd_grader/041_as_as.tex,,,,,,,,,,,,,
-./2nd_grader/042_er.tex,,,,,,,,,,,,,
-./2nd_grader/043_est.tex,,,,,,,,,,,,,
-./2nd_grader/044_more_most.tex,,,,,,,,,,,,,
+./2nd_grader/041_as_as.tex,TRUE,,,,,,,,,,,,
+./2nd_grader/042_er.tex,TRUE,,,,,,,,,,,,
+./2nd_grader/043_est.tex,TRUE,,,,,,,,,,,,
+./2nd_grader/044_more_most.tex,TRUE,,,,,,,,,,,,
 ./2nd_grader/045_better_best.tex,,,,,,,,,,,,,
 ./2nd_grader/051_passive.tex,TRUE,,,2025-01-14,,,8,,,done,,,999
 ./3rd_grader/011_have_pp_intro.tex,TRUE,,,,,,,,,,,,
 ./3rd_grader/012_have_pp_keizoku.tex,TRUE,,,,,,,,,,,,
 ./3rd_grader/013_have_pp_keiken.tex,TRUE,,,,,,,,,,,,
 ./3rd_grader/014_have_pp_kekka.tex,TRUE,,,,,,,,,,,,
-./3rd_grader/021_N_ing.tex,TRUE,,,2025-01-29,,,1,,,in progress,,,slide13
+./3rd_grader/021_N_ing.tex,TRUE,,,2025-01-29,,,2,,,in progress,,,slide24
 ./3rd_grader/022_N_pp.tex,TRUE,,,,,,,,,,,,
 ./3rd_grader/031_N_wh_V.tex,,,,,,,,,,,,,
 ./3rd_grader/032_N_wh_SV.tex,,,,,,,,,,,,,
