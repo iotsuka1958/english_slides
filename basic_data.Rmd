@@ -15,6 +15,11 @@ library(janitor)
 library(gt)
 ```
 
+To Do
+
+work_log.csvとbasic_data.csvの双方にmp3列があるので、work_log.csvのmp3列を削除して、mp3の情報はbasic_data.csvだけに格納すること
+それに伴い、以下の進捗管理に係るコードを修正すること
+具体的には、work_log.csvのmp3列を削除したうえで、たとえば1年進捗状況の2行目と9行目を修正すること（進捗状況の表にmp3の情報は不要との判断）
 
 ## 進捗状況等の管理
 
@@ -93,6 +98,7 @@ task_progress_table_1st <- work_log |>
   filter(grade == "g1") |>
   filter(!is.na(date)) |>
   arrange(date) |>
+  select(-mp3) |>
   gt() |>
   tab_header(
     title = "task_progress_1st_grader",
@@ -119,6 +125,7 @@ task_progress_table_2nd <- work_log |>
   filter(grade == "g2") |>
   arrange(date) |>
   filter(!is.na(date)) |>
+  select(-mp3) |>
   gt() |>
   tab_header(
     title = "task_progress_2nd_grader",

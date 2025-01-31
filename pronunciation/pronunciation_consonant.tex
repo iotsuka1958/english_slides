@@ -2155,6 +2155,48 @@ speech=\scalebox{0.4}{
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 2}\large
+
+earまたはyearを発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{ear}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{year}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{ear}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{year}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{year}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{ear}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{ll}
+     \myAnch{a1}{white}{\textbullet}& ear \textipa{/\'I\textrhookschwa /}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& year \textipa{/j\'I\textrhookschwa /}\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\scriptsize \myaudio{./audio/consonant_j_03.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%

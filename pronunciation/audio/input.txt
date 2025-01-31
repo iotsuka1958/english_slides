@@ -1,5 +1,6 @@
-win<break time="2s"/>win
-wing<break time="2s"/>wing
-win<break time="2s"/>win
-win<break time="2s"/>win
-wing<break time="2s"/>wing
+ear<break time="3s"/>ear
+year<break time="3s"/>year
+ear<break time="3s"/>ear
+year<break time="3s"/>year
+year<break time="3s"/>year
+ear<break time="3s"/>ear

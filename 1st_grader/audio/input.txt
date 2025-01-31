@@ -1,3 +1,3 @@
-How do you feel about the movie?<break time="4s"/>It is great.
-How do you spend the winter vacation?<break time="4s"/>I usually visit my grandmother.
-How does he go to the park?<break time="4s"/>He goes there on foot.
+She likes jazz for some reason .
+Does she like jazz for some reason?
+Why does she like jazz?

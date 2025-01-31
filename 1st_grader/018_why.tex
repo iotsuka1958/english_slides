@@ -33,13 +33,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Why}
 \subsection{Why is she happy?}
-\begin{frame}[plain]{Why is she happy?} \Large
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{なぜ} \Large
 
 \mbox{}\hspace{42pt} She is happy \alt<3->{\myAnch{FOCUS}{orange}{for some reason}}{\myAnch{focus}{white}{for some reason}}.
 \hfill{\scriptsize for some reason: なんらかの理由で}
 
 \pause
-
 
 \vspace{7pt}
 
@@ -56,25 +56,65 @@
 
 \pause
 
-%\mbox{}\hspace{30pt}\myAnch{txt1}{white}{\small 先頭にWho}
-
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->, thick, orange] (focus.south) to[out=-90, in=90] (wh.north);
+\draw[->, line width=3pt,opacity=.5, orange] (focus.south) to[out=-90, in=90]  node[sloped,above,text=black,font=\tiny,pos=.667]{先頭へ} (wh.north);
 \end{tikzpicture}
 }
 
 \visible<7->{%
 \begin{exampleblock}{Topics for Today}
 \pause
-\begin{itemize}\small
- \item 「なぜ」と聞くとき$\longrightarrow$\,\,\,Why
- \item Whyの後は疑問文の語順
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item 「なぜ」と聞くとき$\longrightarrow$\,\,\,疑問詞{\bfseries why} \textipa{/w\'aI/}\hfill{\scriptsize \myaudio{./audio/018_why_01.mp3}}
+ \item {\bfseries Why}は文の先頭
+ \item {\bfseries Why}の後は疑問文の語順
  \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
 \end{itemize}
      \end{exampleblock}
 }
-\hfill\myaudio{./audio/018_why_01.mp3}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{なぜ} \Large
+
+\mbox{}\hspace{42pt} She likes jazz \alt<3->{\myAnch{FOCUS}{orange}{for some reason}}{\myAnch{focus}{white}{for some reason}}.
+\hfill{\scriptsize for some reason: なんらかの理由で}
+
+\pause
+
+\vspace{7pt}
+
+\mbox{}\hfill{}{\small cf. \myEmph[7-]{Maroon}{Does  she like} jazz for some reason?}%
+
+\vspace{-5pt}
+
+\hfill{\small YesまたはNoで答える疑問文}
+
+\pause
+
+\visible<4->{\myAnch{wh}{orange}{Why} \myEmph[7-]{Maroon}{does she like} jazz \myAnch{question}{orange}{?}}
+\visible<6->{\scalebox{1.4}{\myDownwardPitch}}
+
+\pause
+
+\visible<5->{%
+\begin{tikzpicture}[remember picture, overlay]
+\draw[->, line width=3pt,opacity=.5, orange] (focus.south) to[out=-90, in=90]  node[sloped,above,text=black,font=\tiny,pos=.667]{先頭へ} (wh.north);
+\end{tikzpicture}
+}
+
+\visible<7->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item 「なぜ」と聞くとき$\longrightarrow$\,\,\,疑問詞{\bfseries why} \textipa{/w\'aI/}\hfill{\scriptsize \myaudio{./audio/018_why_01b.mp3}}
+ \item {\bfseries Why}は文の先頭
+ \item {\bfseries Why}の後は疑問文の語順
+ \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
+\end{itemize}
+     \end{exampleblock}
+}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -97,8 +137,9 @@
 \begin{frame}[plain]{Whyで聞かれたときの答え方}
  \begin{enumerate}
   \item \myEmph[3-]{Maroon}{Why} is he sad? --- \myEmph[3-]{Maroon}{Because} \myEmph[3-]{NavyBlue}{it is} rainy.
-  \item \myEmph[3-]{Maroon}{Why} do you like pasta? --- \myEmph[3-]{Maroon}{Because} \myEmph[3-]{NavyBlue}{it is} delicious.
-  \item \myEmph[3-]{Maroon}{Why} do you study English. --- \myEmph[3-]{Maroon}{Because} \myEmph[3-]{NavyBlue}{I like} English songs.
+  \item \myEmph[3-]{Maroon}{Why} do you like pasta? --- \myEmph[3-]{Maroon}{Because} \myEmph[3-]{NavyBlue}{it is} delicious.%
+\hfill{\scriptsize delicious \textipa{/dIl\'IS@s/} おいしい}
+  \item \myEmph[3-]{Maroon}{Why} do you study English? --- \myEmph[3-]{Maroon}{Because} \myEmph[3-]{NavyBlue}{I like} English songs.
  \end{enumerate}
 
 \visible<2->{%
@@ -111,6 +152,6 @@
      \end{exampleblock}
 }
 
-\hfill\myaudio{./audio/018_why_03.mp3}
+\hfill{\scriptsize \myaudio{./audio/018_why_03.mp3}}
 \end{frame}
 \end{document}
