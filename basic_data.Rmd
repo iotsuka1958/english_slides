@@ -15,11 +15,9 @@ library(janitor)
 library(gt)
 ```
 
-To Do
+## To Do
 
-work_log.csvとbasic_data.csvの双方にmp3列があるので、work_log.csvのmp3列を削除して、mp3の情報はbasic_data.csvだけに格納すること
-それに伴い、以下の進捗管理に係るコードを修正すること
-具体的には、work_log.csvのmp3列を削除したうえで、たとえば1年進捗状況の2行目と9行目を修正すること（進捗状況の表にmp3の情報は不要との判断）
+- 新年度への対応をとりいれること
 
 ## 進捗状況等の管理
 
@@ -41,7 +39,8 @@ slides_done_table <- data |>
   tab_header(
     title = "slides done",
     subtitle = c("as of", as.character(Sys.time()))
-  )
+  ) |>
+  sub_missing(columns = everything(), missing_text = "-")
 
 slides_undone_table <- data |>
   filter(slide == FALSE) |>
@@ -50,12 +49,14 @@ slides_undone_table <- data |>
   tab_header(
     title = "slides to be done",
     subtitle = c("as of", as.character(Sys.time()))
-  )
+  ) |>
+  sub_missing(columns = everything(), missing_text = "-")
 ```
 
 
 ```{r}
 slides_done_table |> gtsave("slides_done.html") # htmlファイル作成
+# slides_done_table |> gtsave("slides_done.tex") # htmlファイル作成
 slides_undone_table |> gtsave("slides_undone.html") # htmlファイル作成
 ```
 
@@ -69,7 +70,7 @@ work_log <- read_csv("./work_log.csv")
 
 ```{r}
 task_progress_table <- work_log |>
-  pivot_longer(-c(file_with_path, mp3),
+  pivot_longer(-file_with_path,
     names_to = c("grade", ".value"),
     names_sep = "_"
   ) |>
@@ -91,14 +92,13 @@ task_progress_table |> gtsave("task_progress.html") # htmlファイル作成
 
 ```{r}
 task_progress_table_1st <- work_log |>
-  pivot_longer(-c(file_with_path, mp3),
+  pivot_longer(-file_with_path,
     names_to = c("grade", ".value"),
     names_sep = "_"
   ) |>
   filter(grade == "g1") |>
   filter(!is.na(date)) |>
   arrange(date) |>
-  select(-mp3) |>
   gt() |>
   tab_header(
     title = "task_progress_1st_grader",
@@ -118,14 +118,13 @@ task_progress_table_1st |> gtsave("task_progress_1st.html") # htmlファイル�
 
 ```{r}
 task_progress_table_2nd <- work_log |>
-  pivot_longer(-c(file_with_path, mp3),
+  pivot_longer(-file_with_path,
     names_to = c("grade", ".value"),
     names_sep = "_"
   ) |>
   filter(grade == "g2") |>
   arrange(date) |>
   filter(!is.na(date)) |>
-  select(-mp3) |>
   gt() |>
   tab_header(
     title = "task_progress_2nd_grader",
@@ -145,7 +144,7 @@ task_progress_table_2nd |> gtsave("task_progress_2nd.html") # htmlファイル�
 
 ```{r}
 task_progress_table_3rd <- work_log |>
-  pivot_longer(-c(file_with_path, mp3),
+  pivot_longer(-file_with_path,
     names_to = c("grade", ".value"),
     names_sep = "_"
   ) |>

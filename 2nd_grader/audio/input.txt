@@ -1,3 +1,4 @@
-He spoke quietly.
-Please speak more quietly.
-She got up the earliest of the three.
+good<break time="2s"/>better<break time="2s"/>best
+well<break time="2s"/>better<break time="2s"/>best
+many<break time="2s"/>more<break time="2s"/>most
+much<break time="2s"/>more<break time="2s"/>most

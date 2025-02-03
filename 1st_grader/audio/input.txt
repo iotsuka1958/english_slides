@@ -1,3 +1,4 @@
-She likes jazz for some reason .
-Does she like jazz for some reason?
+Why is she happy?
 Why does she like jazz?
+Why is he sad.<break time="3s"/>Because it is rainy.
+Why do you study English?<break time="3s"/>Because i like English songs.

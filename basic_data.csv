@@ -5,7 +5,8 @@ file_with_path,path,file_name,slide,mp3,reading_manuscript
 ./1st_grader/999quiz_full_vesion.tex,./1st_grader/,999quiz_full_vesion.tex,TRUE,TRUE,TRUE
 ./1st_grader/099_pronunciation.tex,./1st_grader/,099_pronunciation.tex,TRUE,TRUE,TRUE
 ./pronunciation/pronunciation_consonant.tex,./pronunciation/,pronunciation_consonant.tex,TRUE,TRUE,TRUE
-./pronunciation/pronunciation_vowel.tex,./pronunciation/,pronunciation_vowel.tex,FALSE,TRUE,FALSE
+./pronunciation/pronunciation_vowel.tex,./pronunciation/,pronunciation_vowel.tex,TRUE,TRUE,FALSE
+./pronunciation/pronunciation_japanesel.tex,./pronunciation/,pronunciation_japanese.tex,TRUE,TRUE,FALSE
 ./1st_grader/001_alphabet.tex,./1st_grader/,001_alphabet.tex,TRUE,TRUE,TRUE
 ./1st_grader/002_sv.tex,./1st_grader/,002_sv.tex,TRUE,TRUE,TRUE
 ./1st_grader/003_be.tex,./1st_grader/,003_be.tex,TRUE,TRUE,TRUE
@@ -57,7 +58,7 @@ file_with_path,path,file_name,slide,mp3,reading_manuscript
 ./2nd_grader/042_er.tex,./2nd_grader/,042_er.tex,TRUE,TRUE,FALSE
 ./2nd_grader/043_est.tex,./2nd_grader/,043_est.tex,TRUE,TRUE,FALSE
 ./2nd_grader/044_more_most.tex,./2nd_grader/,044_more_most.tex,TRUE,TRUE,FALSE
-./2nd_grader/045_better_best.tex,./2nd_grader/,045_better_best.tex,TRUE,,FALSE
+./2nd_grader/045_better_best.tex,./2nd_grader/,045_better_best.tex,TRUE,TRUE,FALSE
 ./2nd_grader/051_passive.tex,./2nd_grader/,051_passive.tex,TRUE,TRUE,FALSE
 ./3rd_grader/011_have_pp_intro.tex,./3rd_grader/,011_have_pp_intro.tex,TRUE,TRUE,FALSE
 ./3rd_grader/012_have_pp_keizoku.tex,./3rd_grader/,012_have_pp_keizoku.tex,TRUE,TRUE,FALSE

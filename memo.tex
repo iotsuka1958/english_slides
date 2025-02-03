@@ -1,5 +1,5 @@
-\documentclass[12pt,jafontscale=0.9247]{jlreq}
-%\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
+%\documentclass[12pt,jafontscale=0.9247]{jlreq}
+\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 欧文TTF/OTFフォントを利用するにはfontspec.styをロードする必要あり
 %% 和文TTF/OTFフォントを利用するにはluatexja-fontspec.styをロードする必要あり
@@ -69,6 +69,99 @@ title=Question~\thetcbcounter: #2,#1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+ English Slides
+\end{center}
+
+\scriptsize
+\begin{longtblr}[caption={English Slides}]{
+  width = { 0.95\linewidth },
+  colspec= {lll},
+%  row{2-5,8-12,15,36-37,40} = {bg = yellow!50},
+  rowhead=1,
+  hline{1,Z} = { 0.08em }, % 表の最上と最下に太さ 0.08em の横罫線
+  hline{2} = { 0.05em } % 表の1行目の下の横罫線
+}
+path & file\_name & mp3 \\ 
+./orientation/ & orientation.tex & - \\ 
+./orientation/ & orientation\_2.tex & - \\ 
+./1st\_grader/ & 999quiz.tex & TRUE \\ 
+./1st\_grader/ & 999quiz\_full\_vesion.tex & TRUE \\ 
+./1st\_grader/ & 099\_pronunciation.tex & TRUE \\ 
+./pronunciation/ & pronunciation\_consonant.tex & TRUE \\ 
+./pronunciation/ & pronunciation\_vowel.tex & TRUE \\ 
+./pronunciation/ & pronunciation\_japanese.tex & TRUE \\ 
+./1st\_grader/ & 001\_alphabet.tex & TRUE \\ 
+./1st\_grader/ & 002\_sv.tex & TRUE \\ 
+./1st\_grader/ & 003\_be.tex & TRUE \\ 
+./1st\_grader/ & 004\_verb.tex & TRUE \\ 
+./1st\_grader/ & 004\_verb\_object.tex & TRUE \\ 
+./1st\_grader/ & 005\_pronoun.tex & TRUE \\ 
+./1st\_grader/ & 005\_singular\_plural.tex & TRUE \\ 
+./1st\_grader/ & 006\_negative\_be.tex & TRUE \\ 
+./1st\_grader/ & 007\_negative\_do.tex & TRUE \\ 
+./1st\_grader/ & 008\_question\_be.tex & TRUE \\ 
+./1st\_grader/ & 009\_answer\_be.tex & TRUE \\ 
+./1st\_grader/ & 010\_question\_do.tex & TRUE \\ 
+./1st\_grader/ & 011\_answer\_do.tex & TRUE \\ 
+./1st\_grader/ & 012\_can.tex & TRUE \\ 
+./1st\_grader/ & 013\_who.tex & TRUE \\ 
+./1st\_grader/ & 014\_when.tex & TRUE \\ 
+./1st\_grader/ & 015\_where.tex & TRUE \\ 
+./1st\_grader/ & 016\_which.tex & TRUE \\ 
+./1st\_grader/ & 017\_how.tex & TRUE \\ 
+./1st\_grader/ & 018\_why.tex & TRUE \\ 
+./1st\_grader/ & 019\_what.tex & TRUE \\ 
+./1st\_grader/ & 020\_whose.tex & TRUE \\ 
+./1st\_grader/ & 021\_is\_ing\_intro.tex & TRUE \\ 
+./1st\_grader/ & 022\_is\_ing\_negative.tex & TRUE \\ 
+./1st\_grader/ & 023\_is\_ing\_question.tex & TRUE \\ 
+./1st\_grader/ & 024\_past\_be.tex & TRUE \\ 
+./1st\_grader/ & 025\_past\_do.tex & TRUE \\ 
+./1st\_grader/ & 026\_past\_didnot.tex & TRUE \\ 
+./1st\_grader/ & 027\_past\_did\_you.tex & TRUE \\ 
+./1st\_grader/ & 032\_imperative.tex & TRUE \\ 
+./1st\_grader/ & 033\_exclamatory.tex & TRUE \\ 
+./2nd\_grader/ & 001\_there\_is.tex & TRUE \\ 
+./2nd\_grader/ & 005\_was\_ing\_intro.tex & TRUE \\ 
+./2nd\_grader/ & 011\_be\_going\_to.tex & TRUE \\ 
+./2nd\_grader/ & 012\_will.tex & TRUE \\ 
+./2nd\_grader/ & 013\_must.tex & TRUE \\ 
+./2nd\_grader/ & 014\_have\_to.tex & TRUE \\ 
+./2nd\_grader/ & 020\_part\_of\_speech.tex & TRUE \\ 
+./2nd\_grader/ & 021\_when.tex & TRUE \\ 
+./2nd\_grader/ & 022\_if.tex & TRUE \\ 
+./2nd\_grader/ & 023\_because.tex & TRUE \\ 
+./2nd\_grader/ & 031\_infinitive\_intro.tex & TRUE \\ 
+./2nd\_grader/ & 032\_infinitive\_noun.tex & TRUE \\ 
+./2nd\_grader/ & 033\_infinitive\_adj.tex & TRUE \\ 
+./2nd\_grader/ & 034\_infinitive\_adv.tex & TRUE \\ 
+./2nd\_grader/ & 035\_wh\_to\_do.tex & TRUE \\ 
+./2nd\_grader/ & 036\_gerund.tex & TRUE \\ 
+./2nd\_grader/ & 041\_as\_as.tex & TRUE \\ 
+./2nd\_grader/ & 042\_er.tex & TRUE \\ 
+./2nd\_grader/ & 043\_est.tex & TRUE \\ 
+./2nd\_grader/ & 044\_more\_most.tex & TRUE \\ 
+./2nd\_grader/ & 045\_better\_best.tex & TRUE \\ 
+./2nd\_grader/ & 051\_passive.tex & TRUE \\ 
+./3rd\_grader/ & 011\_have\_pp\_intro.tex & TRUE \\ 
+./3rd\_grader/ & 012\_have\_pp\_keizoku.tex & TRUE \\ 
+./3rd\_grader/ & 013\_have\_pp\_keiken.tex & TRUE \\ 
+./3rd\_grader/ & 014\_have\_pp\_kekka.tex & TRUE \\ 
+./3rd\_grader/ & 021\_N\_ing.tex & TRUE \\ 
+./3rd\_grader/ & 022\_N\_pp.tex & TRUE \\ 
+./3rd\_grader/ & 031\_N\_wh\_V.tex & - \\ 
+./3rd\_grader/ & 032\_N\_wh\_SV.tex & - \\ 
+./3rd\_grader/ & 041\_mood\_intro.tex & TRUE \\ 
+./3rd\_grader/ & 042\_mood\_i\_wish.tex & TRUE \\ 
+./3rd\_grader/ & 043\_mood\_if.tex & TRUE \\ 
+\end{longtblr}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 hoge
 \begin{tikzpicture}
 
@@ -99,7 +192,7 @@ fuga
 
 \clip (0.08,0.08) rectangle (1.78,2.6);
 
-\node at (0.93,1.35) {\includegraphics[width=1.7cm]{MonaLisa}};
+%\node at (0.93,1.35) {\includegraphics[width=1.7cm]{MonaLisa}};
 
 %\duck[
 %  longhair=haircol,
