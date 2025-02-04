@@ -1,6 +1,5 @@
-ear<break time="3s"/>ear
-year<break time="3s"/>year
-ear<break time="3s"/>ear
-year<break time="3s"/>year
-year<break time="3s"/>year
-ear<break time="3s"/>ear
+long<break time="3s"/>long
+wrong<break time="3s"/>wrong
+wrong<break time="3s"/>wrong
+long<break time="3s"/>long
+wrong<break time="3s"/>wrong
