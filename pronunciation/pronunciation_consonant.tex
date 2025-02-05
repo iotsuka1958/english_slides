@@ -2039,7 +2039,6 @@ light（光）またはright（右）を発音していきます。どちらを�
 
  \end{enumerate}
 \hfill{\scriptsize \myaudio{./audio/consonant_l_r_06.mp3}}
-\hypertarget{tips}{}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 2}\large
@@ -2078,6 +2077,66 @@ longまたはwrongを発音していきます。どちらを発音したか聞�
 \end{tikzpicture}
 
 \hfill\myaudio{./audio/consonant_l_r_07.mp3}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/l/}と\textipa{/r/}を区別しよう3}
+\hypertarget{tips}{}
+
+\begin{description}
+ \item[\textipa{/l/}] 舌先を上の前歯の後ろにベタっとつけます
+ \item[\textipa{/r/}] 舌を口の中で少し浮かせる（舌はどこにも触れない）\\
+	    「ダ」と何度も$\rightarrow$舌をそり返す$\rightarrow$舌を少し離す%
+	    $\rightarrow$唇を丸めて突き出す\end{description}
+
+\Large 
+
+ \begin{enumerate}
+  \item lead\hfill\textipa{/l\'\i:d/}\hspace{250pt}\mbox{}
+  \item read\hfill\textipa{/r\'\i:d/}\hspace{250pt}\mbox{}
+
+ \end{enumerate}
+\hfill{\scriptsize \myaudio{./audio/consonant_l_r_08.mp3}}
+\hypertarget{tips}{}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 3}\large
+
+leadまたはreadを発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{read}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{lead}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{lead}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{read}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{lead}&\myAnch{q5}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{ll}
+     \myAnch{a1}{white}{\textbullet}& lead\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& read \\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge, NavyBlue] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill\myaudio{./audio/consonant_l_r_09.mp3}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%

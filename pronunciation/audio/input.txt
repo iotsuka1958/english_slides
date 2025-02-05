@@ -1,5 +1,2 @@
-long<break time="3s"/>long
-wrong<break time="3s"/>wrong
-wrong<break time="3s"/>wrong
-long<break time="3s"/>long
-wrong<break time="3s"/>wrong
+lead<break time="3s"/>lead<break time="3s"/>lead
+read<break time="3s"/>read<break time="3s"/>read
