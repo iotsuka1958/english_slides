@@ -1,5 +1,5 @@
-%\documentclass[12pt,jafontscale=0.9247]{jlreq}
-\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
+\documentclass[12pt,jafontscale=0.9247]{jlreq}
+%\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 欧文TTF/OTFフォントを利用するにはfontspec.styをロードする必要あり
 %% 和文TTF/OTFフォントを利用するにはluatexja-fontspec.styをロードする必要あり
@@ -69,6 +69,19 @@ title=Question~\thetcbcounter: #2,#1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{enumerate}\setcounter{enumi}{1}
+ \item $\left\{\begin{tabular}{rl}
+		(A)& I \textcolor{Maroon}{\bfseries watched} the movie two years ago.\hspace{9\zw}{\scriptsize movie \textipa{/m\'u:vi/} 映画}\\
+(B)& I \textcolor{NavyBlue}{\bfseries have watched} the movie three times.
+\end{tabular}
+\right.$
+\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \begin{center}
  English Slides
 \end{center}

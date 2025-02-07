@@ -35,15 +35,18 @@
 \begin{frame}[plain]{所有代名詞}
  
 \begin{enumerate}
- \item \begin{enumerate}
-	\item Her hair is blonde and my hair is black.
-	\item Her hair is blonde and \myEmph{Maroon}{mine} is black. ($\text{mine} = \text{my hair}$)
+ \item<1-> \begin{enumerate}
+	\item<1-> Her hair is blond and my hair is black.%
+\hfill{}{\scriptsize blond \textipa{/bl\'And/} 金髪の}
+	\item<2-> Her hair is blond and \myEmph{Maroon}{mine} is black. \visible<3->{($\text{mine} = \text{my hair}$)}
        \end{enumerate}
- \item Is this bike \myEmph{Maroon}{yours} or \myEmph{Maroon}{his}? ($\text{yours} = \text{your bike}$, $\text{his} = \text{his bike}$)
- \item The dog is not \myEmph{Maroon}{ours}. ($\text{ours} = \text{our dog}$)
+ \item<4-> Is this bike \myEmph{Maroon}{yours} or \myEmph{Maroon}{his}? \visible<5-> {($\text{yours} = \text{your bike}$, $\text{his} = \text{his bike}$)}
+ \item<6-> The dog is not \myEmph{Maroon}{ours}. \visible<7->{($\text{ours} = \text{our dog}$)}
 \end{enumerate}
 
-\visible<2->{%
+\vfill
+
+\visible<8->{%
 \begin{exampleblock}{Topic for Today}
 \pause
 \begin{itemize}\setbeamertemplate{items}[square]\small
@@ -60,16 +63,19 @@
  
  \begin{center}
  \rowcolors{1}{NavyBlue!50}{yellow!40}
-\begin{tabular}{lll}\toprule
-1人称&I&mine\\
-&we&ours\\
-2人称&you&yours\\
-3人称&he&his\\
-&she&hers\\
-&they&theirs\\
+\begin{tabular}{llll}\toprule
+\rowcolor{white}&主格&所有格&所有代名詞\\\midrule
+1人称&I&my&\visible<2->{mine}\\
+&we&our&\visible<3->{ours}\\
+2人称&you&your&\visible<4->{yours}\\
+3人称&he&his&\visible<5->{his}\\
+&she&her&\visible<6->{hers}\\
+&they&their&\visible<7->{theirs}\\
 \bottomrule
 \end{tabular}
 \end{center}
+
+\hfill{}\visible<8->{mine以外はすべてsで終わっていますね}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Jennifer's}
@@ -82,9 +88,9 @@
 \visible<2->{%
 \begin{exampleblock}{Topic for Today}
 \pause
-\begin{itemize}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「ジェニファーのもの」「私のおじのもの」などの場合は、
-\Circled[fill color=white]{\,名詞 's\,}\,とします
+\Circled[fill color=white]{\,\,名詞 's\,\,}\,とします
 \end{itemize}
      \end{exampleblock}
 }
@@ -96,10 +102,10 @@
 \begin{frame}[plain]{Exercises}
 (~~~~~~~~)内の語を「〜のもの」を表すように変えてください
  \begin{enumerate}
-  \item Is this cup ( you ) ?\hfill\makebox[40pt][l]{yours}\hspace{180pt}\mbox{}
-  \item This dictionary is ( she )\hfill\makebox[40pt][l]{hers}\hspace{180pt}\mbox{}
-  \item Is this car ( your mother ) ?\hfill\makebox[40pt][l]{your mother's}\hspace{180pt}\mbox{}
-  \item These cats are ( Billy ).\hfill\makebox[40pt][l]{Billy's}\hspace{180pt}\mbox{}
+  \item Is this cup ( you ) ?\hfill\visible<2->{\makebox[40pt][l]{yours}\hspace{180pt}\mbox{}}
+  \item This dictionary is ( she )\hfill\visible<3->{\makebox[40pt][l]{hers}\hspace{180pt}\mbox{}}
+  \item Is this car ( your mother ) ?\hfill\visible<4->{\makebox[40pt][l]{your mother's}\hspace{180pt}\mbox{}}
+  \item These cats are ( Billy ).\hfill\visible<5->{\makebox[40pt][l]{Billy's}\hspace{180pt}\mbox{}}
  \end{enumerate}
 
 \hfill{\scriptsize \myaudio{./audio/020_whose_03.mp3}}
@@ -108,11 +114,10 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Whose 〜?}
+\section{whose \textipa{/h\'u:z/}}
 \subsection{Whose bag is this?}
-\begin{frame}[plain]{Whhat is this?} \Large
-
-be動詞のとき
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{だれの} \Large
 
 \mbox{}\hspace{55pt}This is \alt<3->{\myAnch{FOCUS}{orange}{her bag}}{\myAnch{focus}{white}{her bag}}.
 
@@ -138,7 +143,7 @@ be動詞のとき
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->, thick, orange] (focus.south) to[out=-90, in=90] (wh.north);
+\draw[->,line width=3pt, opacity=.5, orange] (focus.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.667]{先頭へ} (wh.north);
 \end{tikzpicture}
 }
 
@@ -147,12 +152,58 @@ be動詞のとき
 \pause
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「〜はだれのですか」と聞くとき$\longrightarrow$\,\,\,Whose 〜?
- \item  \fbox{$\text{Whose} + \text{名詞}$}\,\,がひとかたまりで先頭にきます
+ \item  \fcolorbox{black}{white}{$\text{Whose} + \text{名詞}$}\,\,がひとかたまりで先頭にきます（後ろは疑問文の語順）
 \end{itemize}
      \end{exampleblock}
 }
 \vspace{-10pt}
 \hfill{\scriptsize \myaudio{./audio/020_whose_04.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{だれの} \Large
+
+\mbox{}\hspace{55pt}I like \alt<3->{\myAnch{FOCUS}{orange}{Spielberg's movies}}{\myAnch{focus}{white}{Spielberg's movies}}.%
+\hfill{}{\scriptsize Spielberg 米国の映画監督}
+
+\pause
+
+
+\vspace{7pt}
+
+\mbox{}\hfill{}cf. \myEmph[6-]{Maroon}{Do you like} Spielberg's movies?%
+
+\vspace{-5pt}
+
+\hfill{\small YesまたはNoで答える疑問文}
+
+\pause
+
+\visible<4->{\myAnch{wh}{orange}{Whose movies} \myEmph[6-]{Maroon}{do you like} \myAnch{question}{orange}{?}}
+\visible<6->{\scalebox{1.4}{\myDownwardPitch}}
+
+\pause
+
+%\mbox{}\hspace{30pt}\myAnch{txt1}{white}{\small 先頭にWho}
+
+\visible<5->{%
+\begin{tikzpicture}[remember picture, overlay]
+\draw[->,line width=3pt, opacity=.5, orange] (focus.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.667]{先頭へ} (wh.north);
+\end{tikzpicture}
+}
+
+\visible<7->{%
+\begin{exampleblock}{Topics for Today}
+\pause
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item 「〜はだれのですか」と聞くとき$\longrightarrow$\,\,\,Whose 〜?
+ \item  \fcolorbox{black}{white}{$\text{Whose} + \text{名詞}$}\,\,がひとかたまりで先頭にきます（後ろは疑問文の語順）
+\end{itemize}
+     \end{exampleblock}
+}
+\vspace{-10pt}
+\hfill{\scriptsize \myaudio{./audio/020_whose_04b.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
