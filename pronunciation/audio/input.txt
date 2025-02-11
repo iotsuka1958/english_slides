@@ -1,2 +1,8 @@
-lead<break time="3s"/>lead<break time="3s"/>lead
-read<break time="3s"/>read<break time="3s"/>read
+how<break time="3s"/>how<break time="3s"/>how
+hard<break time="3s"/>hard<break time="3s"/>hard
+happy<break time="3s"/>happy<break time="3s"/>happy
+head<break time="3s"/>head<break time="3s"/>head
+help<break time="3s"/>help<break time="3s"/>help
+horse<break time="3s"/>horse<break time="3s"/>horse
+he<break time="3s"/>he<break time="3s"/>he
+who<break time="3s"/>who<break time="3s"/>who
