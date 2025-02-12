@@ -5,6 +5,7 @@
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Change alert block colors
@@ -16,9 +17,10 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
-\subtitle{Small cats jump quickly.}
+\subtitle{The quick brown fox jumps over the lazy dog.}
 \author{}
 \institute[]{}
 \date[]
@@ -45,9 +47,12 @@
 \large 
 \begin{description}
  \item<2->[名詞] 人やモノの名前を表す語\hfill\visible<3->{child, cat, desk, Tokyo \ldots}
- \item<4->[動詞] 動作や状態を表す語\hfill\visible<5->{run, eat, study, have, be \ldots{}}
- \item<6->[形容詞] 名詞をくわしく説明する語\hfill\visible<7->{big, new, happy, good \ldots}
- \item<8->[副詞] 動詞や形容詞などをくわしく説明する語\hfill\visible<9->{quickly, here, then\ldots}
+  \item<4->[代名詞] 名詞の代わりに使う語\hfill\visible<5->{I, we, you he, she, it, they, this, that \ldots}
+ \item<6->[動詞] 動作や状態を表す語\hfill\visible<7->{run, eat, study, have, be \ldots{}}
+ \item<8->[形容詞] 名詞をくわしく説明する語\hfill\visible<9->{big, new, happy, good \ldots}
+ \item<10->[副詞] 動詞や形容詞などをくわしく説明する語\hfill\visible<11->{quickly, here, then\ldots}
+ \item<12->[前置詞] 名詞や代名詞と組み合わせて$+\alpha$の意味をくわえる\\
+\hfill\visible<13->{in, on, under, with, from, to \ldots}
 \end{description}
 
 \vfill
@@ -86,35 +91,7 @@
 \end{column}
 \end{columns}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{その他の品詞}
- \begin{description}
-  \item[冠詞]  名詞の前に置く\hfill{}a / an, theだけ
-  \item[代名詞] 名詞の代わりに使う語\hfill{}I, we, you he, she, it, they, this, that \dots
-  \item[助動詞] 動詞の意味を補う語\hfill{}can, will, must \ldots 
- \end{description}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{冠詞}
-\Large
-
-冠詞: a / an , the
-
- \begin{enumerate}
-  \item $\text{a / an} + \text{単数形の名詞}$\,(1つの～)
-	\begin{enumerate}
-	 \item a book\hfill\textipa{/\textschwa /}
-	 \item an apple\hfill\textipa{/\textschwa n/}
-	\end{enumerate}
-  \item $\text{the} + \text{名詞}$\,(その～)\hspace{10pt}{\small (単数形・複数形どちらにもつく)}
-	\begin{enumerate}
-	 \item the book / the books\hfill\textipa{/\dh\textschwa/}
-	 \item the apple / the apples\hfill\textipa{/\dh i/}
-	\end{enumerate}
- \end{enumerate}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/020_part_of_speech_02.mp3}}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{代名詞}
 \Large
 
@@ -150,6 +127,62 @@
 \mbox{}\hfill{\scriptsize \myaudio{./audio/020_part_of_speech_03.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{前置詞}
+\hfill\myaudio{../1st_grader/audio/004_verb_object_4.mp3}
+ \begin{enumerate}
+  \item<1-> He plays tennis.
+  \item<2-> He plays tennis \Circled[fill color = gray, outer color=gray, inner color=white]{\,\,with his friends\,\,}.%
+\hfill{\scriptsize with: ～といっしょに}
+  \item<3-> He plays tennis \Circled[fill color = gray, outer color=gray, inner color=white]{\,\,in the park\,\,}.%
+\hfill{\scriptsize in: ～の中で}
+  \item<4-> He plays tennis \Circled[fill color = gray, outer color=gray, inner color=white]{\,\,after school\,\,}.%
+\hfill{\scriptsize after: ～の後に}
+  \item<5-> He plays tennis \Circled[fill color = gray, outer color=gray, inner color=white]{\,\,with his friends\,\,} \Circled[fill color = gray, outer color=gray, inner color=white]{\,\,in the park\,\,} \Circled[fill color = gray, outer color=gray, inner color=white]{\,\,after school\,\,}.
+
+ \end{enumerate}
+
+\visible<6->{%
+\begin{exampleblock}{Topics for Today}\small
+with, in, after などを\kenten{前置詞}といいます%
+\hfill{}「（代）名詞の\kenten{前}に\kenten{置}く\kenten{詞}」
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item<7-> 裏返していうと「前置詞の\kenten{後}にはかならず（代）\kenten{名詞}がくる」ということです
+ \item<8-> \Circled[fill color = gray, outer color=gray, inner color=white]{\,\,$\text{前置詞}+\text{（代）名詞}$\,\,}\,は、文に$+\alpha$の意味をつけくわえます\\
+ \hfill\visible<9->{{\scriptsize 前置詞はいろいろあります。ちょっとずつ覚えましょう}}
+\end{itemize}
+     \end{exampleblock}
+}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{その他}
+ \begin{description}
+  \item[冠詞]  名詞の前に置く\hfill{}a / an, theだけ
+  \item[助動詞] 動詞の意味を補う語\hfill{}can, will, must \ldots 
+ \end{description}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{冠詞}
+\Large
+
+冠詞: a / an , the
+
+ \begin{enumerate}
+  \item $\text{a / an} + \text{単数形の名詞}$\,(1つの～)
+	\begin{enumerate}
+	 \item a book\hfill\textipa{/\textschwa /}
+	 \item an apple\hfill\textipa{/\textschwa n/}
+	\end{enumerate}
+  \item $\text{the} + \text{名詞}$\,(その～)\hspace{10pt}{\small (単数形・複数形どちらにもつく)}
+	\begin{enumerate}
+	 \item the book / the books\hfill\textipa{/\dh\textschwa/}
+	 \item the apple / the apples\hfill\textipa{/\dh i/}
+	\end{enumerate}
+ \end{enumerate}
+\mbox{}\hfill{\scriptsize \myaudio{./audio/020_part_of_speech_02.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{助動詞}
  \Large
 

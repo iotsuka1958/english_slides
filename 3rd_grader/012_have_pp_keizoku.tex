@@ -225,7 +225,7 @@ I have \alt<1-6>{(~~\phantom{known}~~)}{(~~known~~)} him \alt<1-7>{(~~\phantom{s
 \end{enumerate}
 
 \begin{exampleblock}<9->{Topics for Today}\small
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item \visible<10->{for 〜は期間を表します。for two days, for three months, for a long time \ldots}
  \item \visible<11->{since 〜は起点を表します。since yesterday, since 2000, since  I was a child \ldots}
 
@@ -256,7 +256,7 @@ I have \alt<1-6>{(~~\phantom{known}~~)}{(~~known~~)} him \alt<1-7>{(~~\phantom{s
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{否定文}
+\section{否定文}
 \begin{frame}[plain]{否定文}
  \Large
 
@@ -267,7 +267,7 @@ I have \alt<1-6>{(~~\phantom{known}~~)}{(~~known~~)} him \alt<1-7>{(~~\phantom{s
 
 \visible<3->{%
 \begin{exampleblock}{Topics for Today}\small
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item  \visible<3->{現在完了の否定は、$\text{have} + \text{not} + \text{過去分詞}$\\
 \mbox{}\hspace{9\zw}%
 \visible<4->{主語が三人称単数のときは$\text{has} + \text{not} + \text{過去分詞}$}}
@@ -279,8 +279,7 @@ I have \alt<1-6>{(~~\phantom{known}~~)}{(~~known~~)} him \alt<1-7>{(~~\phantom{s
 \mbox{}\hfill\myaudio{./audio/012_have_pp_keizoku_07.mp3}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{疑問文と答え方}
+\section{疑問文と答え方}
 \begin{frame}[plain]{疑問文と答え方}
  \Large
 
@@ -301,29 +300,29 @@ No, I have not($=$ haven't)
 	\end{tabular}\right\}$}
 
 \begin{tikzpicture}[remember picture,overlay]
-\visible<3->{\draw[NavyBlue, line width=2pt,->] (aux1.south) to[out=-90,in=90] (aux2.north);}
+\visible<3->{\draw[NavyBlue, line width=3pt,opacity=.5,->] (aux1.south) to[out=-90,in=90] (aux2.north);}
 \end{tikzpicture}
 
 \vfill
 
 \begin{exampleblock}<5->{Topics for Today}\small
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item \visible<6->{現在完了の疑問文は、$\text{Have} + \text{S} + \text{過去分詞\ldots\,?}$}\\
 \mbox{}\hspace{0\zw}%
-\visible<7->{主語が三人称単数のときは$\text{Has} + \text{S} + \text{過去分詞\ldots{\,?}}$}
+\hfill\visible<7->{\scriptsize 主語が三人称単数のときは$\text{Has} + \text{S} + \text{過去分詞\ldots{\,?}}$}
  \item \visible<8->{答え方はYes, S $+$ have.またはNo, S $+$ have not($=$haven't).}\\
-\visible<9->{主語が三人称単数のときはYes, S $+$ has.またはNo, S $+$ has not($=$hasn't).}
+\hfill\visible<9->{\scriptsize 主語が三人称単数のときはYes, S $+$ has.またはNo, S $+$ has not($=$hasn't).}
 \end{itemize}
       \end{exampleblock}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
  
-あたえられた日本語の意味になるよう、(~~~~~~~~) 内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください\mbox{}\hfill\myaudio{./audio/012_have_pp_keizoku_09.mp3}
+あたえられた日本語の意味になるよう、(~~~~~~~~) 内の語句を並べ替えましょう。なお、先頭の語は大文字ではじめてください\mbox{}\hfill\myaudio{./audio/012_have_pp_keizoku_09.mp3}
 
 
 \begin{enumerate}
- \item わたしたちは長い間ジョンにあっていません。\\
+ \item わたしたちは昨年からジョンにあっていません。\\
 We  ~( not / seen / have ) John since last year.\\
 \visible<2->{We have not seen John since last year.}
  \item  私は長いあいだ寿司を食べていません。\scalebox{3}{\twemoji{sushi}}\\
@@ -335,44 +334,41 @@ I ~~( eaten /  have / not )~~sushi~~( long / a / fot /time ).\\
 \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{How long have you 〜?}
+\section{How long have you 〜?}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{How long have you 〜?}
 
-\mbox{}\hspace{80pt}\visible<1->{You \myAnch{has1}{NavyBlue}{have} stayed in Paris for two weeks.}
+\visible<1->{You have stayed in Paris \myAnch{long1}{Maroon}{for two weeks}.}
  
 \vspace{10pt}
 
-\mbox{}\phantom{~~How long~~}\visible<2->{\myAnch{has2}{NavyBlue}{Have} you stayed in Paris \myAnch{long1}{Maroon}{for two weeks}?}
+\hfill\visible<2->{cf. Have you stayed in Paris for two weeks?}
 
 \vspace{10pt}
 
-\visible<4->{\myAnch{long2}{Maroon}{How long} have you stayed in Paris?}%
+\visible<4->{\myAnch{long2}{Maroon}{\bfseries How long} have you stayed in Paris?}%
 \hfill\visible<6->{{\small どれくらいの期間}}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<3->{\draw[NavyBlue,->,line width=2pt] (has1.south) to[out=-90,in=90] (has2.north);}
- \visible<5->{\draw[Maroon,->,line width=2pt] (long1.south) to[out=-165,in=20] (long2.north);}
+ \visible<5->{\draw[Maroon,->,line width=3pt,opacity=.5] (long1.south) to[out=-90,in=90] node[sloped,above,text=black,font=\tiny,pos=.667]{先頭へ} (long2.north);}
 \end{tikzpicture}
 
 \begin{exampleblock}<7->{Topics for Today}\small
-\begin{itemize}
-
+\begin{itemize}\setbeamertemplate{items}[square]
  \item \visible<8->{$\text{How long have} + \text{S} + \text{過去分詞 \ldots ?}$は「継続している期間」をたずねる表現}\\
-\mbox{}\hfill\visible<9->{「どのくらいのあいだ(期間)〜ですか」　　　}
- \item \visible<10->{主語が三人称単数のときは$\text{How long has} + \text{S} + \text{過去分詞 \ldots ?}$}
+\mbox{}\hfill\visible<9->{「どのくらいのあいだ(期間)〜ですか」}\\
+\hfill{\scriptsize 主語が三人称単数のときは$\text{How long has} + \text{S} + \text{過去分詞 \ldots ?}$}
+ \item How longの後ろは疑問文の語順
 
 \end{itemize}
       \end{exampleblock}
 \mbox{}\hfill\myaudio{./audio/012_have_pp_keizoku_10.mp3}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
- 
 
-あたえられた日本語の意味になるよう、(~~~~~~~~) 内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください\mbox{}\hfill\myaudio{./audio/012_have_pp_keizoku_11.mp3}
-
+あたえられた日本語の意味になるよう、(~~~~~~~~) 内の語句を並べ替えましょう。なお、先頭の語は大文字ではじめてください\mbox{}\hfill\myaudio{./audio/012_have_pp_keizoku_11.mp3}
 
 \vspace{-5pt}
 
@@ -391,15 +387,14 @@ I ~~( eaten /  have / not )~~sushi~~( long / a / fot /time ).\\
 \visible<5->{How long have you known Jennifer?}
 \end{enumerate}
 \end{frame}
-
-\subsection{まとめ}
+%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
 \begin{frame}<1-12>[plain]{まとめ}
 
  \begin{exampleblock}<1->{Topics for Today \textcolor{black}{\mdseries --「継続」を表す現在完了--}}
 \small
 
-
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item[]<2-> 基本: $\text{現在完了(}=\textcolor{NavyBlue}{\text{\bfseries have} + \text{\bfseries 過去分詞\,})}$は「過去と現在にまたがる表現」
 
  \item \visible<3->{「継続」を表す用法があります}
