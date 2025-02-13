@@ -45,6 +45,14 @@
   \tikz[remember picture,baseline=(#1.base)]
     \node[draw,rectangle,#2] (#1) {\normalcolor #3};
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\dnote}[1]{%
+    \noindent % I guess this is intended...
+    \begin{tabular}{@{}m{0.13\textwidth}@{}m{0.87\textwidth}@{}}%
+        \huge\textdbend &#1%
+    \end{tabular}%
+    \par % ... and this too.
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 音声リンク表示
 \newcommand{\myaudio}[1]{\href{#1}{\faVolumeUp}}
@@ -506,6 +514,12 @@ $\left\{\begin{tabular}{rl}
  \item You {\bfseries don't have to} eat it.
  \item You {\bfseries must not} eat it.
 \end{enumerate}
+
+\vfill
+
+\pause
+
+\dnote{have to--- とmustは\kenten{義務}（～しなければならない）をあらわすという点でおなじです。いっぽう、don't have to---（～しなくてもいい）とmust not（～してはいけない）はまったく異なる意味ですから、しっかり区別することがだいじです}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
