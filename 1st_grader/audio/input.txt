@@ -1,5 +1,4 @@
-Is this bike yours or his?
-This car is Jennifer’s.
-These books are my mother’s.
-Whose bag is this?
-Whose movies do you like?
+Whose bag is this?<break time="4s"/>It’s Bob’s.
+Whose keys are these?<break time="4s"/>They are hers.
+Whose cat is it?<break time="4s"/>It’s my children’s.
+Whose cell phone is this?<break time="4s"/>It’s mine.

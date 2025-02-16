@@ -1,2 +1,2 @@
-break<break time="2s"/>broke<break time="2s"/>broken<break time="2s"/>He broke the window.<break time="4s"/>The window was broken by him..
-Look at the window.<break time="4s"/>Look at the old window.<break time="4s"/>Look at the broken window.
+I have not seen you for a long time.
+I haven't seen you for a long time.

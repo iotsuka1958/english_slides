@@ -4,6 +4,7 @@
 \documentclass[jafontscale=0.9247,dvipsnames,book,twoside]{jlreq}
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \usepackage{geometry,notebeamer}
+\usepackage{datetime}
 \geometry{margin = .75in}
 %\ModifyHeading{chapter}{label_format={Chapter~\thechapter}}
 \usepackage{url}
@@ -15,6 +16,36 @@
 ]{hyperref}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\begin{flushright}\tiny
+\xxivtime/\mdyyyydate\today\\
+\texttt{/\jobname}\\
+Ver. 3.141592
+\end{flushright}
+
+
+%\maketitle
+\mbox{}\vfill
+\noindent{\bfseries\LARGE \mbox{}\hfill{}}\\[5pt]
+\noindent{\bfseries\LARGE \mbox{}\hfill{}Slides for English Lessons}
+
+\noindent\rule{\textwidth}{7pt}
+
+\vfill
+\vfill
+\vfill
+
+\vfill
+
+\mbox{}\hfill{}{\Large%
+\mbox{}\hfill{}iotsuka\\[10pt]
+%\mbox{}\hfill{}令和3年7月}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
 \tableofcontents 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
