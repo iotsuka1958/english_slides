@@ -17,6 +17,7 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{I was watching television when he came.}
@@ -135,19 +136,23 @@
 つぎの英文を、同じ意味になるようにWhenではじめて書き換えましょう%
 \mbox{}\hfill{\scriptsize \myaudio{./audio/021_when_04.mp3}}
 \begin{enumerate}
- \item I was five when my brother was born.\\
+ \item I was five when my brother was born.%
+\hfill{}{\scriptsize be born: 生まれる}\\
        $\longrightarrow$\, When \visible<2->{my brother was born, I was five.}
  \item He was with his sister when I saw him.\\
        $\longrightarrow$\, When \visible<3->{I saw him, he was with his sister.}
- \item She was studying when I called her.\\
+ \item She was studying when I called her.%
+\hfill{}{\scriptsize call: 電話する}\\
        $\longrightarrow$\, When \visible<4->{I called her, she was studying.}
 \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
 \begin{frame}[plain]{まとめ}
-\begin{exampleblock}{Topics for Today}
-\begin{itemize}
+\begin{block}{Topics for Today}
+
+when \textipa{/w\'en/}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item   \visible{\Circled[fill color = white]{ when s $+$ v }\,は「〜が～するとき」という意味}
  \item   \visible{\Circled[fill color = white]{ when s $+$ v }\,は全体で「副詞」の役割}
  \item   \visible{\Circled[fill color = white]{ when s $+$ v }\,は、前にも後ろにも位置します}
@@ -156,6 +161,49 @@
 	  \item \Circled[fill color = white]{ When s $+$ v },\,\,{\bfseries S $+$ V}
 .	 \end{enumerate}
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-2>[plain,label=conjunction]{もうひとつ}
+ 
+\begin{enumerate}
+ \item I was sleeping {\bfseries then}
+ \item I was sleeping \fcolorbox{black}{yellow!50}{when he came}.%
+\hfill{}{\bfseries S $+$ V}\,\,\,\fbox{when s$+$v}
+ \item \fcolorbox{black}{yellow!50}{When he came}, I was sleeping.%
+\hfill{}\fbox{When s$+$v}\,,\,\,{\bfseries S $+$ V}
+\end{enumerate}
+
+\bigskip
+
+\pause
+{\bfseries when}という単語は2組の\Circled{主語と動詞の組合せ}をつないでいることになりますね
+
+\hfill{}{\bfseries when}のようなことばを\kenten{接続詞}といいます
+
+
+\vfill
+
+\pause
+\textdbend ところでI was sleepingとhe cameは対等の関係ではありません\\
+\hspace{15pt}どちらが文の中心となる主語と動詞だとおもいますか
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,label=basic]{品詞}
+ 
+\begin{description}
+ \item[名詞] 人、動物、植物やモノの名前を表す語\hfill{\small child, cat, flower, desk \ldots}
+  \item[代名詞] 名詞の代わりに使う語\hfill{\small I, we, you he, she, it, they, this, that \ldots}
+ \item[動詞] 動作や状態を表す語\hfill{\small run, see, speak, eat, study, have, be \ldots{}}
+ \item[形容詞] 名詞をくわしく説明する語\hfill{\small big, new, happy, good \ldots}
+ \item[副詞] 動詞や形容詞などをくわしく説明する語\hfill{\small quickly, here, then\ldots}
+ \item[前置詞] 名詞や代名詞と組み合わせて$+\alpha$の意味をくわえる\\
+\hfill{\small in, on, under, with, before, after, from, to \ldots}
+ \item<2>[接続詞] {\bfseries when}のように2組の\Circled{主語と動詞の組合せ}を接続する
+\end{description}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<3>[plain]{conjunction}
 \end{document}
