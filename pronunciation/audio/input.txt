@@ -1,9 +1,6 @@
-people<break time="3s"/>people
-table<break time="3s"/>table
-apple<break time="3s"/>apple
-uncle<break time="3s"/>uncle
-beautiful<break time="3s"/>beautiful
-hospital<break time="3s"/>hospital
-little<break time="3s"/>little
-girl<break time="3s"/>girl
-small<break time="3s"/>small
+three<break time="3s"/>three<break time="3s"/>three
+free<break time="3s"/>free<break time="3s"/>free
+free<break time="3s"/>free<break time="3s"/>free
+three<break time="3s"/>three<break time="3s"/>three
+free<break time="3s"/>free<break time="3s"/>free
+three<break time="3s"/>three<break time="3s"/>three
