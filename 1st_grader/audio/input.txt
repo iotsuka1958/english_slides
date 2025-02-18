@@ -1,4 +1,4 @@
-Whose bag is this?<break time="4s"/>It’s Bob’s.
-Whose keys are these?<break time="4s"/>They are hers.
-Whose cat is it?<break time="4s"/>It’s my children’s.
-Whose cell phone is this?<break time="4s"/>It’s mine.
+Whose jacket do you wear?
+Whose bike do you ride?
+Whose car does she use?
+Whose songs do you like?
