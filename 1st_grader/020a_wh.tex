@@ -1,0 +1,129 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{いつだれがどこでなにをどんなふうにどうして?}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{疑問詞}
+ 
+
+\begin{tblr}{
+  width = { 1\linewidth },
+  hline{1,Z} = { 0.08em },
+  hline{2} = { 0.05em },
+  colspec = { X[1,l]X[2,l]X[1,l]X[4,l] },
+  row{odd} = { gray9 },
+  row{1} = { halign = c, bg = gray6, fg = white},
+}
+ 疑問詞&意味&発音&例文\\
+who&だれ&\textipa{/h\'u:/}&Who teaches music?\\
+whose&だれの&\textipa{/h\'u:z/}&Whose songs do you like?\\
+how&どのように\par{}どれくらい&\textipa{/h\'aU/}&How does she go to work?\par{}How long is the river?\\
+when&いつ&\textipa{/w\'en/}&When does the meeting begin?\\
+where&どこで&\textipa{/w\'e\textrhookschwa /}&Where do they live?\\
+why&なぜ&\textipa{/w\'aI/}&Why do you like jazz?\\
+what&なに&\textipa{/w\'At/}&What do you drink every morning?\\
+which&どちら、どれ&\textipa{/w\'ItS/}&Which do you like, pizza or pasta?\\
+\end{tblr}
+
+\hfill{\scriptsize \myaudio{./audio/020a_wh_01.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{doがあったりなかったり}
+ \begin{enumerate}
+  \item<1-> \begin{enumerate}
+	 \item<1-> \myAnch{focus_1}{Maroon}{She} teaches music.\\
+\mbox{}\\
+\mbox{}
+	 \item<2-> \myAnch{wh_1}{Maroon}{Who} teaches music?
+	\end{enumerate}
+  \item<3-> \begin{enumerate}
+	 \item<3-> She teaches \myAnch{focus_2}{NavyBlue}{music}.\\
+\mbox{}\\
+\mbox{}
+	 \item<4-> \myAnch{wh_2}{NavyBlue}{What} does she teach?
+	\end{enumerate}
+ \end{enumerate}
+
+\begin{tikzpicture}[remember picture, overlay]
+\visible<2->{\draw[->, line width=3pt,opacity=.5, Maroon] (focus_1.south) to[out=-90, in=90]  node[sloped,above,text=black,font=\tiny,pos=.667]{} (wh_1.north);}
+\visible<4->{\draw[->, line width=3pt,opacity=.5, NavyBlue] (focus_2.south) to[out=-90, in=60]  node[sloped,above,text=black,font=\tiny,pos=.667]{先頭へ} (wh_2.north);}
+\end{tikzpicture}
+
+
+\begin{block}{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item もともと先頭にあったとき$\rightarrow$疑問詞にするだけ
+ \item もともと先頭になかったとき$\rightarrow$疑問詞にしてから
+       \begin{itemize}
+	\item その疑問詞を先頭に置く
+	\item さらに、そのあとはdo(does) $+$ S $+$ 原形
+       \end{itemize}
+\end{itemize}
+ 
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+\textdbend\textdbend つぎの各文の意味をかんがえましょう
+
+\begin{enumerate}
+ \item \begin{enumerate}
+		  \item Who loves you?\hfill{}cf. She loves you.
+		  \item Who do you love?\hfill{}cf. You love Pat. 
+		 \end{enumerate}
+ \item \begin{enumerate}
+	\item Carelessness causes accidents.\hfill{\scriptsize cause \textipa{/k\'O:z/} 引き起こす}
+	\item What causes accidents?\hfill{\scriptsize carelessness \textipa{/k\'e\textrhookschwa l@sn@s/} 不注意}
+	\item What do you eat for breakfast?
+       \end{enumerate}
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+\end{document}
