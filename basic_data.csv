@@ -29,6 +29,7 @@ file_with_path,path,file_name,slide,mp3,reading_manuscript
 ./1st_grader/018_why.tex,./1st_grader/,018_why.tex,TRUE,TRUE,FALSE
 ./1st_grader/019_what.tex,./1st_grader/,019_what.tex,TRUE,TRUE,FALSE
 ./1st_grader/020_whose.tex,./1st_grader/,020_whose.tex,TRUE,TRUE,FALSE
+./1st_grader/020a_wh.tex,./1st_grader/,020a_wh.tex,TRUE,TRUE,FALSE
 ./1st_grader/021_is_ing_intro.tex,./1st_grader/,021_is_ing_intro.tex,TRUE,TRUE,TRUE
 ./1st_grader/022_is_ing_negative.tex,./1st_grader/,022_is_ing_negative.tex,TRUE,TRUE,FALSE
 ./1st_grader/023_is_ing_question.tex,./1st_grader/,023_is_ing_question.tex,TRUE,TRUE,FALSE
