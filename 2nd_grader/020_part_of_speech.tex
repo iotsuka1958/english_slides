@@ -18,6 +18,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
+\usepackage{pangram}
+\PangramSetup{
+sizes={7pt,8pt,9pt,10pt,11pt,12pt,13pt,14pt,15pt,16pt},
+tagfont=\color{gray}\ttfamily\footnotesize,}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{The quick brown fox jumps over the lazy dog.}
@@ -206,5 +210,9 @@ with, in, after などを\kenten{前置詞}といいます%
 \mbox{}\hfill{\scriptsize \myaudio{./audio/020_part_of_speech_04.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{pangram}
+ \pangram
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 

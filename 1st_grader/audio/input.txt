@@ -1,9 +1,3 @@
-Who teaches music?
-Whose songs do you like?
-How does she go to work?
-How long is the river?
-When does the meeting begin?
-Where do they live?
-Why do you like jazz?
-What do you drink every morning?
-Which do you like, pizza or pasta?
+Who loves you?<break time="3s"/>Who do you love?
+Carelessness causes accidents.<break time="3s"/>What causes accidents?
+You eat bread for breakfast.<break time="3s"/>What do you eat for breakfast?
