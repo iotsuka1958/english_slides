@@ -1,6 +1,6 @@
-three<break time="3s"/>three<break time="3s"/>three
-free<break time="3s"/>free<break time="3s"/>free
-free<break time="3s"/>free<break time="3s"/>free
-three<break time="3s"/>three<break time="3s"/>three
-free<break time="3s"/>free<break time="3s"/>free
-three<break time="3s"/>three<break time="3s"/>three
+he<break time="3s"/>he<break time="3s"/>he
+hit<break time="3s"/>hit<break time="3s"/>hit
+heat<break time="3s"/>heat<break time="3s"/>heat
+who<break time="3s"/>who<break time="3s"/>who
+whose<break time="3s"/>whose<break time="3s"/>whose
+hook<break time="3s"/>hook<break time="3s"/>hook
