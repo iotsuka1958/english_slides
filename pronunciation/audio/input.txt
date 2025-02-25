@@ -1,6 +1,9 @@
-he<break time="3s"/>he<break time="3s"/>he
-hit<break time="3s"/>hit<break time="3s"/>hit
-heat<break time="3s"/>heat<break time="3s"/>heat
-who<break time="3s"/>who<break time="3s"/>who
-whose<break time="3s"/>whose<break time="3s"/>whose
-hook<break time="3s"/>hook<break time="3s"/>hook
+week<break time="3s"/>week
+winter<break time="3s"/>winter
+watch<break time="3s"/>watch
+wait<break time="3s"/>wait
+one<break time="3s"/>one
+swim<break time="3s"/>swim
+sweet<break time="3s"/>sweet
+question<break time="3s"/>question
+woman<break time="3s"/>woman
