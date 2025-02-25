@@ -1,5 +1,5 @@
-\documentclass[12pt,jafontscale=0.9247]{jlreq}
-%\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
+%\documentclass[12pt,jafontscale=0.9247]{jlreq}
+\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 欧文TTF/OTFフォントを利用するにはfontspec.styをロードする必要あり
 %% 和文TTF/OTFフォントを利用するにはluatexja-fontspec.styをロードする必要あり
@@ -69,7 +69,7 @@ title=Question~\thetcbcounter: #2,#1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\iffalse
 \begin{enumerate}\setcounter{enumi}{1}
  \item $\left\{\begin{tabular}{rl}
 		(A)& I \textcolor{Maroon}{\bfseries watched} the movie two years ago.\hspace{9\zw}{\scriptsize movie \textipa{/m\'u:vi/} 映画}\\
@@ -77,7 +77,7 @@ title=Question~\thetcbcounter: #2,#1}
 \end{tabular}
 \right.$
 \end{enumerate}
-
+\fi
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -126,6 +126,7 @@ path & file\_name & mp3 \\
 ./1st\_grader/ & 018\_why.tex & TRUE \\ 
 ./1st\_grader/ & 019\_what.tex & TRUE \\ 
 ./1st\_grader/ & 020\_whose.tex & TRUE \\ 
+./1st\_grader/ & 020a\_who.tex & TRUE \\ 
 ./1st\_grader/ & 021\_is\_ing\_intro.tex & TRUE \\ 
 ./1st\_grader/ & 022\_is\_ing\_negative.tex & TRUE \\ 
 ./1st\_grader/ & 023\_is\_ing\_question.tex & TRUE \\ 
@@ -733,6 +734,7 @@ files\\
 \url{./1st_grader/018_why.tex}\\
 \url{./1st_grader/019_what.tex}\\
 \url{./1st_grader/020_whose.tex}\\
+\url{./1st_grader/020a_wh.tex}\\
 \url{./1st_grader/021_is_ing_intro.tex}\\
 \url{./1st_grader/022_is_ing_negative.tex}\\
 \url{./1st_grader/023_is_ing_question.tex}\\
