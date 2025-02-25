@@ -94,21 +94,21 @@
 2025-01-23,31,31,26,which2,can2,受け身6,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
 2025-01-24,30,30,25,which3,can3,受け身7,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
 2025-01-28,29,29,24,which4・how1,can4,受け身8,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-01-29,28,28,23,how2,can5,N_ing1,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-01-30,27,27,22,how3,must1,N_ing2,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-01-31,26,26,21,how4,must2・have to1,N_ing3,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-02-04,25,25,20,how5・why1,have to2,N_pp1,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-02-05,24,24,19,why2,have to3,N_pp2,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-02-06,23,23,18,why3・what1,have to4,have_pp_intro1,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-02-07,22,22,17,what2,have to5,have_pp_intro2,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-02-12,21,21,16,what3,have to6,have_pp_intro3・have_pp_keizoku1,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-02-13,20,20,15,what4・所有代名詞1,have to7・品詞1,have_pp_keizoku2,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-02-14,19,19,14,所有代名詞2・whose1,品詞2,have_pp_keizoku3,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-01-29,28,28,23,how2,can5,名詞を修飾するing1,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-01-30,27,27,22,how3,must1,名詞を修飾するing2,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-01-31,26,26,21,how4,must2・have to1,名詞を修飾するing3,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-02-04,25,25,20,how5・why1,have to2,名詞を修飾するpp1,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-02-05,24,24,19,why2,have to3,名詞を修飾するpp2,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-02-06,23,23,18,why3・what1,have to4,現在完了形の基礎1,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-02-07,22,22,17,what2,have to5,現在完了形の基礎2,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-02-12,21,21,16,what3,have to6,現在完了形の基礎3・継続1,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-02-13,20,20,15,what4・所有代名詞1,have to7・品詞1,現在完了形—継続2,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-02-14,19,19,14,所有代名詞2・whose1,品詞2,現在完了形—継続3,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
 2025-02-18,18,18,,whose2,品詞3,,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,,,,,
 2025-02-19,17,17,,whose3,品詞4,,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,,,,,
-2025-02-20,16,16,13,whose4・疑問詞まとめ1,接続詞when1,have_pp_keizoku4,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-02-21,15,15,12,疑問詞まとめ2,接続詞when2,have_pp_keizoku5,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
-2025-02-25,14,14,11,,,,,,,,,,,,,,,,,,
+2025-02-20,16,16,13,whose4・疑問詞まとめ1,接続詞when1,現在完了形—継続4,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-02-21,15,15,12,疑問詞まとめ2,接続詞when2,現在完了形—継続5,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
+2025-02-25,14,14,11,疑問詞まとめ3,接続詞when3,現在完了形—継続6・経験1,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote,posted,remote,remote,remote,remote
 2025-02-26,13,13,10,,,,,,,,,,,,,,,,,,
 2025-02-27,12,12,9,,,,,,,,,,,,,,,,,,
 2025-02-28,11,11,8,,,,,,,,,,,,,,,,,,
