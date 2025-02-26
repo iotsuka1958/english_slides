@@ -1,10 +1,2 @@
-look<break time="3s"/>look
-light<break time="3s"/>light
-long<break time="3s"/>long
-lake<break time="3s"/>lake
-late<break time="3s"/>late
-beautiful<break time="3s"/>beautiful
-girl<break time="3s"/>girl
-people<break time="3s"/>people
-table<break time="3s"/>table
-apple<break time="3s"/>apple
+time<break time="3s"/>time<break time="3s"/>time
+pie<break time="3s"/>pie<break time="3s"/>pie
