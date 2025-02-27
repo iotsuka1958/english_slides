@@ -1,2 +1,9 @@
-time<break time="3s"/>time<break time="3s"/>time
-pie<break time="3s"/>pie<break time="3s"/>pie
+all<break time="3s"/>all
+ball<break time="3s"/>ball
+call<break time="3s"/>call
+well<break time="3s"/>well
+bell<break time="3s"/>bell
+cool<break time="3s"/>cool
+cold<break time="3s"/>cold
+simple<break time="3s"/>simple
+animal<break time="3s"/>animal
