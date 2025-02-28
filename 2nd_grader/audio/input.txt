@@ -1,1 +1,2 @@
-The quick brown fox jumps over the lazy dog.
+She has a cat.<break time="3s"/>The cat is black.
+I ate an apple.<break time="3s"/>The apple was delicious.
