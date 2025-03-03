@@ -22,6 +22,7 @@
 \PangramSetup{
 sizes={7pt,8pt,9pt,10pt,11pt,12pt,13pt,14pt,15pt,16pt},
 tagfont=\color{gray}\ttfamily\footnotesize,}
+\NewPangramClass{IRO}{\input{iroha.txt}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{The quick brown fox jumps over the lazy dog.}
@@ -232,14 +233,36 @@ with, in, after などを\kenten{前置詞}といいます%
 %\mbox{}\hfill{\scriptsize \myaudio{./audio/020_part_of_speech_04.mp3}}
 %\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{pangram}
- \pangram
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{???}
 \Large
- The qui\myEmph[4-]{Maroon}{c}k \myEmph[3-]{Maroon}{b}rown fox jumps over the l\myEmph[2-]{Maroon}{a}zy \myEmph[5-]{Maroon}{d}og. 
+ The qui\myEmph[5-]{Maroon}{c}k \myEmph[4-]{Maroon}{b}rown fox jumps over the l\myEmph[3-]{Maroon}{a}zy \myEmph[6-]{Maroon}{d}og. 
 
+\visible<2->{
+\small \Circled{ 冠 }\hspace{12pt}
+\small \Circled{ 形 }\hspace{17pt}
+\small \Circled{ 形 }\hspace{16pt}
+\small \Circled{ 名 }\hspace{12pt}
+\small \Circled{ 動 }\hspace{14pt}
+\small \Circled{ 前 }\hspace{8pt}
+\small \Circled{ 冠 }\hspace{5pt}
+\small \Circled{ 形 }\hspace{7pt}
+\small \Circled{ 名 }
+
+}
+\vfill
+
+\visible<7->{上の英文から\\小文字のアルファベットをaから順番にさがしてみよう}
+
+\visible<8->{すべての文字を使用した文$\rightarrow$パングラム}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{フォントのサンプル}
+ \pangram
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{日本語のパングラム}
+\pause
+ \pangram[textclass=IRO,font=\fontspec{Latin Modern Mono}]  % いろは歌設定
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
