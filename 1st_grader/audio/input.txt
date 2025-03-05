@@ -1,3 +1,5 @@
-Who loves you?<break time="3s"/>Who do you love?
-Carelessness causes accidents.<break time="3s"/>What causes accidents?
-You eat bread for breakfast.<break time="3s"/>What do you eat for breakfast?
+Stand up, please.
+Please come here.<break time="3s"/>Come here, please.
+Be careful.
+Look at the blackboard.
+Clean your room right now.
