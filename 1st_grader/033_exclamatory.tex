@@ -50,6 +50,7 @@
  \begin{column}{.47\textwidth}  
  \begin{enumerate}
   \item<1-> This is \myAnch{a1}{NavyBlue}{a beautiful flower}.\\
+       \mbox{}\\
        \mbox{}
   \item<2-> \myAnch{a2}{NavyBlue}{\myEmph[2-]{Maroon}{What} a beautiful flower} this is!
   \item<3-> What a beautiful flower!
@@ -58,31 +59,30 @@
 %%%%%%%%%%%%%%%%%%%%%%
  \begin{column}{.48\textwidth}  
  \begin{enumerate}\setcounter{enumi}{3}
-  \item<5-> They have \myAnch{b1}{NavyBlue}{nice cars}.\\
+  \item<4-> They have \myAnch{b1}{NavyBlue}{nice cars}.\\
+       \mbox{}\\
        \mbox{}
-  \item<6-> \myAnch{b2}{NavyBlue}{\myEmph[2-]{Maroon}{What} nice cars} they have!
-  \item<7-> What nice cars!
+  \item<5-> \myAnch{b2}{NavyBlue}{\myEmph[2-]{Maroon}{What} nice cars} they have!
+  \item<6-> What nice cars!
  \end{enumerate}
  \end{column}
 %%%%%%%%%%%%%%%%%%%%%%%
 \end{columns}
- 
 
 \begin{tikzpicture}[remember picture, overlay]
-\visible<2->{\draw[->, thick, NavyBlue] (a1.south) to[out=-90, in=90] (a2.north);}
-\visible<6->{\draw[->, thick, NavyBlue] (b1.south) to[out=-90, in=90] (b2.north);}
+\visible<2->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (a1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Whatつけて} node[sloped,below,text=black,font=\tiny,pos=.25]{先頭へ} (a2.north);}
+ \visible<5->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (b1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Whatつけて} node[sloped,below,text=black,font=\tiny,pos=.4]{先頭へ}(b2.north);}
 \end{tikzpicture}
 
-
-\visible<4->{%
-\begin{exampleblock}{Topics for Today}
+\visible<7->{%
+\begin{block}{Topics for Today}
 \pause
-\begin{itemize}\small
- \item<4-> 「なんと～な\ldots{}でしょう」というとき$\longrightarrow$\,\,\,%
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item 「なんと～な\ldots{}でしょう」というとき$\longrightarrow$\,\,\,%
 \Circled[fill color = white]{ What\,\,(a)\,\,形容詞 $+$ 名詞 } $+$ S $+$ V !
- \item<4->   文末に`!'をつける
+ \item   文末に`!'をつける
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
 }
 \hfill\myaudio{./audio/033_exclamatory_01.mp3}
 \end{frame}
@@ -108,6 +108,7 @@
  \begin{column}{.47\textwidth}  
  \begin{enumerate}
   \item<1-> This flower is \myAnch{c1}{NavyBlue}{beautiful}.\\
+       \mbox{}\\
        \mbox{}
   \item<2-> \myAnch{c2}{NavyBlue}{\myEmph[2-]{Maroon}{How} beautiful} this flower is!
   \item<3-> How beautiful!
@@ -117,6 +118,7 @@
  \begin{column}{.48\textwidth}  
  \begin{enumerate}\setcounter{enumi}{3}
   \item<4-> She runs \myAnch{d1}{NavyBlue}{fast}.\\
+       \mbox{}\\
        \mbox{}
   \item<5-> \myAnch{d2}{NavyBlue}{\myEmph[2-]{Maroon}{How} fast} she runs!
   \item<6-> How fast!
@@ -127,24 +129,24 @@
  
 
 \begin{tikzpicture}[remember picture, overlay]
-\visible<2->{\draw[->, thick, NavyBlue] (c1.south) to[out=-90, in=90] (c2.north);}
-\visible<5->{\draw[->, thick, NavyBlue] (d1.south) to[out=-90, in=90] (d2.north);}
+\visible<2->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (c1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Howつけて} node[sloped,below,text=black,font=\tiny,pos=.4]{先頭へ} (c2.north);}
+\visible<5->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (d1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Howつけて} node[sloped,below,text=black,font=\tiny,pos=.4]{先頭へ}(d2.north);}
 \end{tikzpicture}
 
 
 \visible<7->{%
-\begin{exampleblock}{Topics for Today}
+\begin{block}{Topics for Today}
 \pause
-\begin{itemize}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item<7-> 「なんて～でしょう」というとき$\longrightarrow$\,\,\,%
 \Circled[fill color = white]{\,\,\,How 
-      $\left\{\begin{array}{l}
+      $\left\{\begin{tabular}{l}
        形容詞\\
        副詞
-      \end{array}\right\}$\,\,\,\,\,}\,\,\,$+$ S $+$ V !
+      \end{tabular}\right\}$\,\,\,\,\,}\,\,\,$+$ S $+$ V !
  \item<7->   文末に`!'をつける
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
 }
 \hfill\myaudio{./audio/033_exclamatory_03.mp3}
 
@@ -239,6 +241,11 @@ A, B\,\,2人の対話がなりたつように、(~~~~~~~~)に適する文を選�
  \end{columns}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{What a day!}
+ \Huge\centering
+
+なんて日だ！
+\end{frame}
 \end{document}
 
 

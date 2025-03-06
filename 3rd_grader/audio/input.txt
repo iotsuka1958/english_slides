@@ -1,5 +1,4 @@
-I have seen the picture before.
-I have never eaten Mexican food.
-Have you ever eaten sushi?
-How many times have you seen the movie?
-once<break time="2s"/>twice<break time="2s"/>three times<break time="2s"/>many times
+Has she eaten breakfast yet?
+He has not eaten lunch yet.
+I have just finished my homework.
+The meeting has already started.
