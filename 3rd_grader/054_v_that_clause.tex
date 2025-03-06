@@ -1,0 +1,97 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{I know that she is kind.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{that \textipa{/D\'\ae t/}}
+\subsection{when}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{S $+$ V \fbox{that s $+$ v}}
+\Large
+\begin{enumerate}
+ \item I know George.\hfill{\scriptsize Georgeは目的語(O)}
+ \item I know the fact.\hfill{\scriptsize fact \textipa{/f\'\ae kt/} 事実}
+ \item I know \fbox{that she is kind}.\hfill{}{\small \textbf{S} $+$ \textbf{V} \fbox{that s $+$ v}($=$O)}
+
+\end{enumerate}
+\mbox{}\hfill{\scriptsize \myaudio{./audio/054_that_clause_01.mp3}}
+
+\begin{block}{Topics for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   \Circled[fill color = white]{ that  $+$ v }\,は「〜ということ」という意味
+ \item   \Circled[fill color = white]{ that s $+$ v }\,は全体で「名詞」の役割
+ \item  \textbf{that}の品詞は\kenten{接続詞}です
+\end{itemize}
+     \end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+次の文の（　　）に当てはまる単語を入れましょう
+ \begin{enumerate}
+  \item We know  ( \visible<2->{that} ) the Earth is round.
+  \item I think ( \visible<3->{that} ) he is kind.
+  \item She believes ( \visible<4->{that }) he will succeed.
+ \item They hope ( \visible<5->{that }) it will be sunny tomorrow.
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるように、次の単語を並べ替えて英文を作りましょう。
+先頭に来る語は大文字ではじめてください
+
+\begin{enumerate}
+ \item わたしが幸せなのを知っていますよね。
+( happy / I / that / am / you / know )\\
+\visible<2->{You know that I am happy.}
+ \item 彼女はやってくるとわたしはおもいます。\\
+( she / will / that / come / I / think )\\
+\visible<3->{I think that she will come.}
+ \item 彼は親切だと彼女はいった。
+( was / he / that / kind / said / she )\\
+\visible<4->{She said that he was kind.}
+ \item 彼らが試合に勝つことをわたしたちは期待しています。\\
+( hope / win / we / that / the / game / they )\\
+\visible<5->{We hope that they will win the game.}
+\end{enumerate}
+
+\end{frame}
+\end{document}
