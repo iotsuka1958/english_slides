@@ -1,4 +1,3 @@
-Has she eaten breakfast yet?
-He has not eaten lunch yet.
-I have just finished my homework.
-The meeting has already started.
+I know the girl.
+The girl speaks two languages.
+I know the girl who speaks two languages.
