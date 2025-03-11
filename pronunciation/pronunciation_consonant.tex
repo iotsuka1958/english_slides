@@ -2649,6 +2649,48 @@ freeまたはthreeを発音していきます。どちらを発音したか聞�
 \hfill\myaudio{./audio/consonant_free_three_01.mp3}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+
+sheまたはsea(see / Cと同じ)を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{sea}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{she}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{sea}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{she}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{she}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{sea}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& sea / see / C &\textipa{/s\'\i:/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& she &\textipa{/S\'\i:/}\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\scriptsize \myaudio{./audio/consonant_sea_she_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{英語の子音}
 \pause
@@ -2697,21 +2739,23 @@ freeまたはthreeを発音していきます。どちらを発音したか聞�
 \end{frame}
 %%%%%%%%%%%%%%%%%
 \hypertarget{tips}{}
-\againframe{slide_p_b}
+\againframe[plain]{slide_p_b}
 %%%%%%%%%%%%%%%%%
-\againframe{slide_t_d}
+\againframe[plain]{slide_t_d}
 %%%%%%%%%%%%%%%%%
-\againframe{slide_k_g}
+\againframe[plain]{slide_k_g}
 %%%%%%%%%%%%%%%%%
-\againframe{slide_f_v}
+\againframe[plain]{slide_f_v}
+%%%%%%%%%%%%%%%%%%
+\againframe[plain]{slide_s_z}
 %%%%%%%%%%%%%%%%
-\againframe{slide_Th}
+\againframe[plain]{slide_Th}
 %%%%%%%%%%%%%%%
-\againframe{slide_textesh_textyogh}
+\againframe[plain]{slide_textesh_textyogh}
 %%%%%%%%%%%%%%%%%
-\againframe{slide_ttextesh_dtextyogh}
+\againframe[plain]{slide_ttextesh_dtextyogh}
 %%%%%%%%%%%%%%%%
-\againframe{slide_ts_dz}
+\againframe[plain]{slide_ts_dz}
 %%%%%%%%%%%%%%%%
 \begin{frame}[plain]{ところで}
  \Large
