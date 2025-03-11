@@ -1,5 +1,5 @@
-%\documentclass[12pt,jafontscale=0.9247]{jlreq}
-\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
+\documentclass[12pt,jafontscale=0.9247]{jlreq}
+%\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 欧文TTF/OTFフォントを利用するにはfontspec.styをロードする必要あり
 %% 和文TTF/OTFフォントを利用するにはluatexja-fontspec.styをロードする必要あり
@@ -67,6 +67,9 @@ title=Question~\thetcbcounter: #2,#1}
   pdfauthor={iotsuka1958}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{litetable, twemojis}
+\usepackage[mono = false]{libertine}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iffalse
@@ -78,7 +81,34 @@ title=Question~\thetcbcounter: #2,#1}
 \right.$
 \end{enumerate}
 \fi
-
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\weeklist [ format = \bfseries \scshape, sep = \textbar ]
+{
+\texttwemoji{1f312} Mon -> 1, \texttwemoji{1f525} Tue -> 1,
+\texttwemoji{1f30a} Wed -> 1, \texttwemoji{1f332} Thu -> 1,
+\texttwemoji{1fa99} Fri -> 1
+}
+\timelist [ numformat = \ttfamily \bfseries, timeformat = \ttfamily ]
+{
+08:05 -> 08:50, 08:55 -> 09:40, 10:20 -> 11:00, 11:00 -> 11:20,
+11:20 -> 12:00, 12:00 -> 13:00, 13:00 -> 13:40, 13:40 -> 14:00,
+14:00 -> 14:40, 18:30 -> 19:15, 19:20 -> 20:05, 20:10 -> 20:55
+}
+\begin{litetable} [ MidnightBlue, sem = SEM 1 ] { Course Schedule }
+\newday
+\course [ subject = interface3, comment = \TeX{} Live 2025,
+lecture = The \LaTeX{} Project, DarkBlue ] {4} {5}
+\newday
+\course [ subject = expl3, lecture = The \LaTeX{} Project ] {8} {8}
+\newday
+\course [ subject = Keep on \TeX ing, lecture = Donald E. Knuth,
+location = Stanford University, Purple ] {10} {11}
+\newday
+\course [ subject = Ti\textit k\/Z, lecture = \textsc{pgf},
+Crimson, comment = Version 3.1.10 ] {3} {5}
+\more { Programme Duration: 09 / 2021 -- 07 / 2025 }
+\end{litetable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
