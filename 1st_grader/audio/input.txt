@@ -1,5 +1,3 @@
-Let’s be quiet.
-Let’s be careful.
-Let’s be happy.
-Let’s be friends.
-Let’s be one.
+You have a nice car.<break time="3s"/>What a nice car you have!
+Your cat is cute.<break time="3s"/>How cute your cat is!
+She speaks fast.<break time="3s"/>How fast she speaks!

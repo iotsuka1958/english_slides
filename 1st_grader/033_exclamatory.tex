@@ -52,36 +52,37 @@
   \item<1-> This is \myAnch{a1}{NavyBlue}{a beautiful flower}.\\
        \mbox{}\\
        \mbox{}
-  \item<2-> \myAnch{a2}{NavyBlue}{\myEmph[2-]{Maroon}{What} a beautiful flower} this is!
-  \item<3-> What a beautiful flower!
+  \item<3-> \myAnch{a2}{NavyBlue}{\myEmph[2-]{Maroon}{What} a beautiful flower} this is!
+  \item<4-> What a beautiful flower!
  \end{enumerate}
  \end{column}
 %%%%%%%%%%%%%%%%%%%%%%
  \begin{column}{.48\textwidth}  
  \begin{enumerate}\setcounter{enumi}{3}
-  \item<4-> They have \myAnch{b1}{NavyBlue}{nice cars}.\\
+  \item<5-> They have \myAnch{b1}{NavyBlue}{nice cars}.\\
        \mbox{}\\
        \mbox{}
-  \item<5-> \myAnch{b2}{NavyBlue}{\myEmph[2-]{Maroon}{What} nice cars} they have!
-  \item<6-> What nice cars!
+  \item<7-> \myAnch{b2}{NavyBlue}{\myEmph[2-]{Maroon}{What} nice cars} they have!
+  \item<8-> What nice cars!
  \end{enumerate}
  \end{column}
 %%%%%%%%%%%%%%%%%%%%%%%
 \end{columns}
 
 \begin{tikzpicture}[remember picture, overlay]
-\visible<2->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (a1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Whatつけて} node[sloped,below,text=black,font=\tiny,pos=.25]{先頭へ} (a2.north);}
- \visible<5->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (b1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Whatつけて} node[sloped,below,text=black,font=\tiny,pos=.4]{先頭へ}(b2.north);}
+\visible<2->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (a1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Whatつけて} node[sloped,below,text=black,font=\tiny,pos=.4]{先頭へ} (a2.170);}
+ \visible<6->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (b1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Whatつけて} node[sloped,below,text=black,font=\tiny,pos=.4]{先頭へ}(b2.160);}
 \end{tikzpicture}
 
-\visible<7->{%
+\visible<9->{%
 \begin{block}{Topics for Today}
 \pause
 \textbf{What} \textipa{/w\'At/} を用いた感嘆文
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「なんと～な\ldots{}でしょう」というとき$\longrightarrow$\,\,\,%
 \Circled[fill color = white]{ What\,\,(a)\,\,形容詞 $+$ 名詞 } $+$ S $+$ V !
- \item   文末に`!'をつける\hfill{\scriptsize ! 感嘆符(exclamation point)}
+ \item   文末に`!'をつける\hfill{\scriptsize ! $=$ 感嘆符(exclamation point)}
+ \item 動詞はbe動詞のときも一般動詞のときもあります
  \item S$+$Vが省かれることもあります
 \end{itemize}
      \end{block}
@@ -92,11 +93,11 @@
 \begin{frame}[plain]{Exercises}
 日本語の意味になるよう空所に適当な単語を補いましょう
  \begin{enumerate}
-  \item うわあ、大きな家。\\
+  \item うわあ、大きな家。\hfill{\scriptsize cf. This is a big house.}\\
 	(~~\alt<2->{What}{\phantom{What}}~~) a big house!
-  \item なんておもしろい映画なんだ。\\
-	(~~\alt<3->{What}{\phantom{What}}~~) (~~~\alt<3->{an}{\phantom{an}}~~~) interesting movie this is!\hfill{\scriptsize interesting: おもしろい}
-  \item うわあ、なんて大きな犬を飼っているんでしょう。\\
+  \item なんておもしろい映画なんだ。\hfill{\scriptsize cf. This is an interesting movie.}\\
+	(~~\alt<3->{What}{\phantom{What}}~~) (~~~\alt<3->{an}{\phantom{an}}~~~) interesting movie this is!\hfill{\scriptsize interesting \textipa{/\'Intr@stIN/} おもしろい}
+  \item うわあ、なんて大きな犬を飼っているんでしょう。\hfill{\scriptsize cf. You have a big dog.}\\
 	(~~\alt<4->{What}{\phantom{What}}~~) (~~~~\alt<4->{a}{\phantom{a}}~~~~) big (~~\alt<4->{dog}{\phantom{dog}}~~) you have!
  \end{enumerate}
 \hfill{\scriptsize \myaudio{./audio/033_exclamatory_02.mp3}}
@@ -114,18 +115,18 @@
   \item<1-> This flower is \myAnch{c1}{NavyBlue}{beautiful}.\\
        \mbox{}\\
        \mbox{}
-  \item<2-> \myAnch{c2}{NavyBlue}{\myEmph[2-]{Maroon}{How} beautiful} this flower is!
-  \item<3-> How beautiful!
+  \item<3-> \myAnch{c2}{NavyBlue}{\myEmph[2-]{Maroon}{How} beautiful} this flower is!
+  \item<4-> How beautiful!
  \end{enumerate}
  \end{column}
 %%%%%%%%%%%%%%%%%%%%%%
  \begin{column}{.48\textwidth}  
  \begin{enumerate}\setcounter{enumi}{3}
-  \item<4-> She runs \myAnch{d1}{NavyBlue}{fast}.\\
+  \item<5-> She runs \myAnch{d1}{NavyBlue}{fast}.\\
        \mbox{}\\
        \mbox{}
-  \item<5-> \myAnch{d2}{NavyBlue}{\myEmph[2-]{Maroon}{How} fast} she runs!
-  \item<6-> How fast!
+  \item<7-> \myAnch{d2}{NavyBlue}{\myEmph[2-]{Maroon}{How} fast} she runs!
+  \item<8-> How fast!
  \end{enumerate}
  \end{column}
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -133,12 +134,12 @@
  
 
 \begin{tikzpicture}[remember picture, overlay]
-\visible<2->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (c1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Howつけて} node[sloped,below,text=black,font=\tiny,pos=.4]{先頭へ} (c2.north);}
-\visible<5->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (d1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Howつけて} node[sloped,below,text=black,font=\tiny,pos=.4]{先頭へ}(d2.north);}
+\visible<2->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (c1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Howつけて} node[sloped,below,text=black,font=\tiny,pos=.4]{先頭へ} (c2.160);}
+\visible<6->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (d1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Howつけて} node[sloped,below,text=black,font=\tiny,pos=.4]{先頭へ}(d2.135);}
 \end{tikzpicture}
 
 
-\visible<7->{%
+\visible<8->{%
 \begin{block}{Topics for Today}
 \pause
 \textbf{How} \textipa{/h\'aU/} を用いた感嘆文
@@ -149,7 +150,8 @@
        形容詞\\
        副詞
       \end{tabular}\right\}$\,\,\,\,\,}\,\,\,$+$ S $+$ V !
- \item 文末に`!'をつける\hfill{\scriptsize ! 感嘆符(exclamation point)}
+ \item 文末に`!'をつける\hfill{\scriptsize ! $=$ 感嘆符(exclamation point)}
+ \item 動詞はbe動詞のときも一般動詞のときもあります
  \item S$+$Vが省かれることもあります
 \end{itemize}
      \end{block}
@@ -162,33 +164,59 @@
 日本語の意味になるよう(~~~~~~)内の単語を並べ替えましょう。先頭に来る語は大文字で始めてください\hfill{\scriptsize \myaudio{./audio/033_exclamatory_04.mp3}}
 
  \begin{enumerate}
-  \item あなたはなんて親切なんでしょう。\\
+  \item あなたはなんて親切なんでしょう。\hfill{\scriptsize cf. You are kind.}\\
 	( are / how / you / kind ) !\\
 	\visible<2->{How kind you are!}
-  \item わたしたちはなんて幸運なんでしょう。\\
+  \item わたしたちはなんて幸運なんでしょう。\hfill{\scriptsize cf. We are lucky.}\\
 	( lucky / are / how / we ) !\\
 	\visible<3->{How lucky we are!}
-  \item あの山はなんてきれいなのでしょう。\\
+  \item あの山はなんてきれいなのでしょう。\hfill{\scriptsize cf. That mountain is beautiful.}\\
 	( is / that / beautiful / mountain / how ) !\\
 	\visible<4->{How beautiful that mountain is!}
-  \item 彼女はなんて早口なんでしょう。\\
+  \item 彼女はなんて早口なんでしょう。\hfill{\scriptsize cf. She speaks fast.}\\
 	( speaks / fast / how / she ) !\\
 	\visible<5->{How fast she speaks!}
  \end{enumerate}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{WhatとHowのどっちを使えばいいの？}
+ \begin{enumerate}
+  \item<1-> \begin{enumerate}
+	 \item<1-> You have \fbox{a nice car}.
+	 \item<2-> \fbox{\textbf{What} a nice car} you have!
+	\end{enumerate}
+  \item<3-> \begin{enumerate}
+	 \item<3-> Your cat is \fbox{cute}.
+	 \item<4-> \fbox{\textbf{How} cute} your cat is!
+	\end{enumerate}
+  \item<5-> \begin{enumerate}
+	 \item<5-> She speaks \fbox{fast}.
+	 \item<6-> \fbox{\textbf{How} fast} she speaks!
+	\end{enumerate}
+ \end{enumerate}
+
+\begin{block}<7->{Today's Point}\small
+注目しているところに名詞があるかどうかで決まります
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item 名詞があれば　$\longrightarrow$ What \ldots !
+ \item 名詞がなければ$\longrightarrow How$ \ldots !
+\end{itemize}
+\end{block}
+\hfill{\scriptsize \myaudio{./audio/033_exclamatory_04b.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 日本語の意味になるよう(~~~~~~)内の語句を並べ替えましょう。先頭に来る語は大文字で書き始めてください。なお $[ +1 ]$とある場合は不足している1語を補ってください。$[ -1 ]$とある場合は余計な1語が含まれています\hfill{\scriptsize \myaudio{./audio/033_exclamatory_05.mp3}}
  \
  \begin{enumerate}
-  \item これはなんてかわいい猫なんでしょう。\\
+  \item これはなんてかわいい猫なんでしょう。\hfill{\scriptsize cf. This is a cute cat.}\\
 	( cat / this / a / is / cute / what ) !\\
 	\visible<2->{What a cute cat this is!}
-  \item この本はなんておもしろいのでしょう。\\
+  \item この本はなんておもしろいのでしょう。\hfill{\scriptsize cf. This book is interesting.}\\
 	( this / how / book / is / intereting / an ) $[ -1 ]$\\
 	\visible<3->{How intereting this book is! (✕ an)}
-  \item 彼はなんて古い自転車を持っているんだろう。\\
+  \item 彼はなんて古い自転車を持っているんだろう。\hfill{\scriptsize cf. He has an old bike.}\\
 	( bike / has / what / old / he ) ! $[ +1 ]$\\
 	\visible<4->{What an old bike he has!}
  \end{enumerate}
