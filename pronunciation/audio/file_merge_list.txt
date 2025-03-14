@@ -1,3 +1,3 @@
-file 'consonant_k_g_01.mp3'
+file 'consonant_textesh_textyogh_01.mp3'
 file 'silent.mp3'
-file 'consonant_f_v_01.mp3'
+file 'consonant_ts_dz_01.mp3'
