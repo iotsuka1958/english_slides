@@ -18,6 +18,7 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide}
+\usepackage{vowel}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{Pronunciation---vowel---}
@@ -846,4 +847,35 @@
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{図解}
+\centering
+\scalebox{1.4}{%
+\begin{tikzpicture}
+%\draw[color=gray] (-2,-2) grid (2,2);
+ \node (table)
+    {\begin{vowel}
+    \putcvowel[l]{i:}{1}
+    \putcvowel[l]{e}{2}
+    \putcvowel[l]{\textepsilon}{3}
+    \putcvowel[l]{\textscripta}{5}
+    \putcvowel[r]{\textturnv}{12}
+    \putcvowel[r]{\textopeno}{6}
+    %\putcvowel[r]{o}{7}
+    \putcvowel[r]{u:}{8}
+    \putcvowel{\textschwa}{11}
+    \putcvowel{\textsci}{13}
+    \putcvowel{\textupsilon}{14}
+    \putcvowel{\ae}{16}
+    \end{vowel}
+};
+\draw[<->, line width=3pt, color=Maroon!50,opacity=.75] (-2,-1.5) -- node[below,font=\scriptsize]{舌が高くなる位置} (2,-1.5);
+\draw[<->, line width=3pt, color=NavyBlue!50,opacity=.75] (-2.5,-1.5) -- node[above,font=\scriptsize,sloped]{開口度}(-2.5,1.7);
+\node at (-2,-2) {\scriptsize 前};
+\node at (2,-2) {\scriptsize 後};
+\node at (-3,1.6) {\scriptsize 小};
+\node at (-3,-1.25) {\scriptsize 大};
+\end{tikzpicture}
+}
+
+\end{frame}
 \end{document}

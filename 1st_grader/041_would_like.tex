@@ -19,6 +19,11 @@
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% リエゾン
+\newcommand{\liaison}[1][black]{% 引数1を受け取る。デフォルト値はblack
+  \tikz[baseline=0pt] \draw[draw=#1,line width=.6pt] (0,0) to[bend right=20] (0.2,0);%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{お茶をいかがですか}
 \author{}
@@ -41,20 +46,20 @@
 %\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{ほしい}
+\begin{frame}[plain]{～がほしい}
 \large
  \begin{enumerate}
-  \item \textbf{I want} some tea.
-  \item \textbf{I would like} some tea.
-  \item {\bfseries I'd like} some tea.
+  \item<1-> \textbf{I want} some tea.
+  \item<2-> \textbf{I would like} some tea.
+  \item<3-> {\bfseries I'd like} some tea.
  \end{enumerate}
 
-\begin{block}{Topics for Today}\small
-\textbf{I would like}は\textbf{I want}のていねいな表現です
+\begin{block}<4->{Topics for Today}\small
+\textbf{I would like} $+$ 名詞\,\ldots\,\,.\,\,は\textbf{I want} $+$ 名詞\,\ldots\,\,.\,\,のていねいな表現です
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \textbf{I want} $+$ 名詞
- \item \textbf{I would like} $+$ 名詞
- \item \textbf{I'd like} $+$ 名詞
+ \item \textbf{I want} $+$ 名詞\,\ldots\,\,.
+ \item \textbf{I would like} $+$ 名詞\,\ldots\,\,.
+ \item \textbf{I'd like} $+$ 名詞\,\ldots\,\,.
        \end{itemize}
 \end{block}
 
@@ -65,14 +70,14 @@
 次の英文をI would likeまたはI'd likeをもちいて、 ていねいな表現にしてみましょう
  \begin{enumerate}
   \item I want some water.\\
-\visible<2->{$\longrightarrow$ I would like some water.}\\
-\visible<3->{$\longrightarrow$ I'd like some water.}
+\visible<2->{$\longrightarrow$ \textbf{I would like} some water.}\\
+\visible<3->{$\longrightarrow$ \textbf{I'd like} some water.}
   \item I want a sandwich.\hfill{\scriptsize sandwich \textipa{/s\'\ae n(d)wItS/}}\\
-\visible<4->{$\longrightarrow$ I would like a sandwich.}\\
-\visible<5->{$\longrightarrow$ I'd like a sandwich.}
+\visible<4->{$\longrightarrow$ \textbf{I would like} a sandwich.}\\
+\visible<5->{$\longrightarrow$ \textbf{I'd like} a sandwich.}
   \item I want some flowers for my birthday.\\
-\visible<6->{$\longrightarrow$ I would like some flowers for my birthday.}\\
-\visible<7->{$\longrightarrow$ I'd like some flowers for my birthday.}
+\visible<6->{$\longrightarrow$ \textbf{I would like} some flowers for my birthday.}\\
+\visible<7->{$\longrightarrow$ \textbf{I'd like} some flowers for my birthday.}
  \end{enumerate}
 
 \hfill{\scriptsize \myaudio{./audio/041_would_like_02.mp3}}
@@ -83,17 +88,19 @@
 \begin{frame}[plain]{～したい}
 \large
  \begin{enumerate}
-  \item \textbf{I want to} eat a hamburger.\hfill{\scriptsize hamburger \textipa{/h\'\ae mb\textrhookschwa :g\textrhookschwa/}}
-  \item \textbf{I would like to} eat hamburger.
-  \item {\bfseries I'd like to} eat hamburger.
+  \item<1-> \textbf{I want to} eat a hamburger.\hfill{\scriptsize hamburger \textipa{/h\'\ae mb\textrhookschwa :g\textrhookschwa/}}
+  \item<2-> \textbf{I would like to} eat a hamburger.
+  \item<3-> {\bfseries I'd like to} eat a hamburger.
  \end{enumerate}
 
-\begin{block}{Topics for Today}\small
-\textbf{would like to} $+$ 原形は\textbf{want to} $+$原形のていねいな表現です
+\begin{block}<4->{Topics for Today}\small
+\textbf{I want to} $+$ 原形\,\,は「～したい」という意味
+
+\textbf{I would like to} $+$ 原形\,\ldots\,\,.\,\,は\textbf{I want to} $+$原形\,\ldots\,\,.\,\,のていねいな表現です
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \textbf{I want to} $+$ 原形
- \item \textbf{I would like to} $+$ 原形
- \item \textbf{I'd like to} $+$ 原形
+ \item \textbf{I want to} $+$ 原形\,\ldots\,\,.
+ \item \textbf{I would like to} $+$ 原形\,\ldots\,\,.
+ \item \textbf{I'd like to} $+$ 原形\,\ldots\,\,.
        \end{itemize}
 \end{block}
 
@@ -105,14 +112,14 @@
 次の英文をI would likeまたはI'd likeをもちいて、 ていねいな表現にしてみましょう
  \begin{enumerate}
   \item I want to visit London.\hfill{\scriptsize London \textipa{/l\'\textturnv nd@n/}}\\
-\visible<2->{$\longrightarrow$ I would like to visit London.}\\
-\visible<3->{$\longrightarrow$ I'd like to visit London.}
+\visible<2->{$\longrightarrow$ \textbf{I would like to} visit London.}\\
+\visible<3->{$\longrightarrow$ \textbf{I'd like to} visit London.}
   \item I want to read a book.\\
-\visible<4->{$\longrightarrow$ I would like to read a book.}\\
-\visible<5->{$\longrightarrow$ I'd like to read a book.}
+\visible<4->{$\longrightarrow$ \textbf{I would like to} read a book.}\\
+\visible<5->{$\longrightarrow$ \textbf{I'd like to} read a book.}
   \item I want to play tennis.\\
-\visible<6->{$\longrightarrow$ I would like to play tennis.}\\
-\visible<7->{$\longrightarrow$ I'd like to play tennis.}
+\visible<6->{$\longrightarrow$ \textbf{I would like to} play tennis.}\\
+\visible<7->{$\longrightarrow$ \textbf{I'd like to} play tennis.}
  \end{enumerate}
 \hfill{\scriptsize \myaudio{./audio/041_would_like_04.mp3}}
 
@@ -121,14 +128,17 @@
 \begin{frame}[plain]{～がほしいですか、～はいかがですか}
 \large
  \begin{enumerate}
-  \item \textbf{Do you want} some coffee?
-  \item \textbf{Would you like} some coffee? 
+  \item<1-> \textbf{Do you want} some coffee?\hfill{\scriptsize cf. I want some coffee.}
+  \item<2-> \textbf{Would you like} some coffee? \hfill{\scriptsize cf. I would like some coffee.}
  \end{enumerate}
 
-\begin{block}{Topics for Today}\small
-\textbf{Would you like \ldots ?}は\textbf{Do you want \ldots ?}のていねいな表現です
+\bigskip
+
+\begin{block}<3->{Topics for Today}\small
+\textbf{Would you like \ldots\,?}\,\,は\textbf{Do you want \ldots\,?}\,\,のていねいな表現です
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \textbf{Would you like} $+$ 名詞 \ldots ?
+ \item \textbf{Do you want} $+$ 名詞 \ldots\,?
+ \item \textbf{Would you like} $+$ 名詞 \ldots\,?
        \end{itemize}
 \end{block}
 \hfill{\scriptsize \myaudio{./audio/041_would_like_05.mp3}}
@@ -139,11 +149,11 @@
 次の英文を would you likeをもちいて、 ていねいな表現にしてみましょう
  \begin{enumerate}
   \item Do you want a pizza?\\
-\visible<2->{$\longrightarrow$ Would you like a pizza?}\\
+\visible<2->{$\longrightarrow$ \textbf{Would you like} a pizza?}\\
   \item Do you want some juice?\\
-\visible<3->{$\longrightarrow$ Would you like some juice?}\\
+\visible<3->{$\longrightarrow$ \textbf{Would you like} some juice?}\\
   \item What do you want for dinner?\\
-\visible<4->{$\longrightarrow$ What would you like for dinner?}\\
+\visible<4->{$\longrightarrow$ What \textbf{would you like} for dinner?}\\
  \end{enumerate}
 
 \hfill{\scriptsize \myaudio{./audio/041_would_like_06.mp3}}
@@ -151,10 +161,10 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{～したいですか？}
+\begin{frame}[plain]{～したいですか、～しませんか}
 \large
  \begin{enumerate}
-  \item \textbf{Do you want to} watch amovie?
+  \item \textbf{Do you want to} watch a movie?
   \item \textbf{Would you like to} watch a movie?
  \end{enumerate}
 
@@ -174,54 +184,99 @@
 
  \begin{enumerate}
   \item わたしたちといっしょに動物園に行きたいですか。（行きませんか）\\
-( go / like / us / you / to / to / with / would / the zoo ) ?\\
-\visible<2->{Would you like to go to the zoo with us?}
+( go / like / you / to / to / with / would / the zoo ) us?\\
+\visible<2->{\textbf{Would you like to} go to the zoo with us?}
   \item あなたはなにをお飲みになりますか。\\
 ( like / drink / you / to / would / what ) ?\\
-\visible<3->{What would you like to drink?}
+\visible<3->{What \textbf{would you like to} drink?}
   \item パーティーにきたいですか。（きませんか）\\
 ( you / the party / come / like / to / would ) ? [$+1$]\\
-\visible<4->{Would you like to come to the party?}
+\visible<4->{\textbf{Would you like to}} \visible<5->{come to the party?}
 \end{enumerate}
 \hfill{\scriptsize \myaudio{./audio/041_would_like_08.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{まとめ}
- \begin{block}{Topics for Today}\small
-\textbf{I would like} $+$ 名詞\,\,は\,\,\textbf{I want} $+$ 名詞\,\,のていねいな表現です
+ \begin{block}{～がほしい}\small
+\textbf{I would like} $+$ 名詞\,\ldots\,\,.\,\,は\,\,\textbf{I want} $+$ 名詞\,\ldots\,\,.\,\,のていねいな表現です
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \textbf{I want} $+$ 名詞
- \item \textbf{I would like} $+$ 名詞
- \item \textbf{I'd like} $+$ 名詞
+ \item \textbf{I want} $+$ 名詞\,\ldots\,\,.\hfill{\scriptsize \textbf{I want} some tea.}
+ \item \textbf{I would like} $+$ 名詞\,\ldots\,\,.\hfill{\scriptsize \textbf{I would like} some tea.}
+ \item \textbf{I'd like} $+$ 名詞\,\ldots\,\,.\hfill{\scriptsize \textbf{I'd like} some tea.}
        \end{itemize}
 \end{block}
 
-\begin{block}{Topics for Today}\small
-\textbf{would like to} $+$ 原形\,\,は\,\,\textbf{want to} $+$原形\,\,のていねいな表現です
+\begin{block}{～したい}\small
+\textbf{I would like to} $+$ 原形\,\ldots\,\,.\,\,は\,\,\textbf{I want to} $+$原形\,\ldots\,\,.\,\,のていねいな表現です
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \textbf{I want to} $+$ 原形
- \item \textbf{I would like to} $+$ 原形
- \item \textbf{I'd like to} $+$ 原形
+ \item \textbf{I want to} $+$ 原形\,\ldots\,\,.\hfill{\scriptsize \textbf{I want to} have some tea.}
+ \item \textbf{I would like to} $+$ 原形\,\ldots\,\,.\hfill{\scriptsize \textbf{I would like to} have some tea.}
+ \item \textbf{I'd like to} $+$ 原形\,\ldots\,\,.\hfill{\scriptsize \textbf{I'd like to} have some tea.}
        \end{itemize}
 \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{まとめ}
-\begin{block}{Topics for Today}\small
-\textbf{Would you like} $+$ 名詞\,\,?\,\,は\,\,\textbf{Do you want} $+$ 名詞\,\,?\,\,のていねいな表現です
+\begin{block}{～がほしいですか、～はいかがですか}\small
+\textbf{Would you like} $+$ 名詞\,\ldots\,\,?\,\,は\,\,\textbf{Do you want} $+$ 名詞\,\ldots\,\,?\,\,のていねいな表現です
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \textbf{Would you like} $+$ 名詞 \ldots\,?
+ \item \textbf{Do you want} $+$ 名詞 \ldots\,?\hfill{\scriptsize \textbf{Do you want} some tea?}
+ \item \textbf{Would you like} $+$ 名詞 \ldots\,?\hfill{\scriptsize \textbf{Would you like} some tea?}
        \end{itemize}
 \end{block}
 
-\begin{block}{Topics for Today}\small
+\begin{block}{～したいですか、～しませんか}\small
 \textbf{Would you like to} $+$ 原形\,\ldots\,?\,\,は\,\,\textbf{Do you want to} $+$原形\,\ldots\,?\,\,のていねいな表現です
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \textbf{Do you want to} $+$ 原形\,\ldots\,?
- \item \textbf{Would you like to} $+$ 原形\,\ldots\,?
+ \item \textbf{Do you want to} $+$ 原形\,\ldots\,?\hfill{\scriptsize \textbf{Do you want to} eat lunch together?}
+ \item \textbf{Would you like to} $+$ 原形\,\ldots\,?\hfill{\scriptsize \textbf{Would you like to} eat lunch together?}
        \end{itemize}
 \end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{ところで}
+ \begin{enumerate}
+  \item<1-> I want \fbox{\,\,\,\,\,\,\,\,\,\,{$x$}\,\,\,\,\,\,\,\,\,\,}\,\,.
+  \item<2-> I want some cookies.\hfill{\scriptsize $X = \text{some cookies}$}
+  \item<3-> I want to make some cookies.\hfill{\scriptsize $X = \text{to make some cookies}$}
+ \end{enumerate}
+
+\vfill
+
+\begin{block}<4->{}
+ 
+\textdbend \textdbend
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item wantには名詞が続く場合と\,\,\Circled[fill color = white]{\,\,to$+$原形\,\,}\,\,が続く場合があります
+ \item would likeも同じです
+\end{itemize}
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{want toの発音}
+ \begin{enumerate}
+  \item I \textbf{want to} see you.
+  \item I \textbf{want to} play soccer.
+  \item I \textbf{want to} go to the park.
+  \item I \textbf{want to} read this book.
+  \item I \textbf{want to} drink some water.
+ \end{enumerate}
+
+ \begin{block}{want to}\small
+%want\tikz[baseline] \draw[line width=.7pt, color=Maroon] (0,0) .. controls (0.1,-0.08) and (0.3,-0.08) .. (0.4,0);to
+
+
+want\liaison[Maroon]to
+
+  \begin{itemize}\setbeamertemplate{items}[square]\small
+   \item \textipa{/wAn@/}と発音されることがあります
+  \end{itemize}
+ \end{block}
+
+
+\hfill{\scriptsize \myaudio{./audio/041_would_like_09.mp3}}
+
 \end{frame}
 \end{document}

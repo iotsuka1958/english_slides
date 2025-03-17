@@ -1,3 +1,5 @@
-You have a nice car.<break time="3s"/>What a nice car you have!
-Your cat is cute.<break time="3s"/>How cute your cat is!
-She speaks fast.<break time="3s"/>How fast she speaks!
+I wanna see you.
+I wanna play soccer.
+I wanna go to the park.
+I wanna read this book.
+I wanna drink some water.
