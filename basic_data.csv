@@ -39,7 +39,8 @@ file_with_path,path,file_name,slide,mp3,reading_manuscript
 ./1st_grader/027_past_did_you.tex,./1st_grader/,027_past_did_you.tex,TRUE,TRUE,FALSE
 ./1st_grader/032_imperative.tex,./1st_grader/,032_imperative.tex,TRUE,TRUE,FALSE
 ./1st_grader/033_exclamatory.tex,./1st_grader/,033_exclamatory.tex,TRUE,TRUE,FALSE
-./1st_grader/041_would_like.tex,./1st_grader/,041_would_like.tex,FALSE,FALSE,FALSE
+./1st_grader/041_would_like.tex,./1st_grader/,041_would_like.tex,TRUE,FALSE,FALSE
+./1st_grader/042_can_you.tex,./1st_grader/,042_can_you.tex,FALSE,FALSE,FALSE
 ./1st_grader/051_number.tex,./1st_grader/,051_number.tex,FALSE,FALSE,FALSE
 ./1st_grader/052_month.tex,./1st_grader/,052_month.tex,FALSE,FALSE,FALSE
 ./1st_grader/053_week.tex,./1st_grader/,053_week.tex,FALSE,FALSE,FALSE
