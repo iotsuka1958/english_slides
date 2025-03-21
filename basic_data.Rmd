@@ -169,7 +169,7 @@ task_progress_table_3rd |> gtsave("task_progress_3rd.html") # htmlファイル�
 
 ## classroom 投稿の状況
 
-google clasroom への教材のアップロード状況の整理をしておこう。
+google classroom への教材のアップロード状況の整理をしておこう。
 
 ### 全体
 
