@@ -1,0 +1,187 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+\UseTblrLibrary{counter}%%%%tabularrayとpauseが衝突することを回避する
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{I wish I had a lot of money.}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{1, 2, 3 \ldots}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{1, 2, 3 \ldots\,18, 19, 20}
+\small
+ \hfill\begin{tblr}{
+  colspec = {rll}, 
+%  column{1} = {fg=red},    % 第1列の文字を赤に
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+ row{odd} = {bg=azure8},
+ row{1} = { bg=azure3, fg=white},
+%  hline{1,2,Z} = {1pt},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+ baseline=t
+}
+  number  & \\
+  1 & one & \textipa{/w\'\textturnv n/}\\
+  2 & two & \textipa{/t\'u:/}\\ 
+  3 & three & \textipa{/Tr\'\i:/}\\
+  4 & four & \textipa{/f\'O\textrhookschwa /}\\
+  5 & five & \textipa{/f\'aIv/}\\
+  6 & six & \textipa{/s\'Iks/}\\
+  7 & seven & \textipa{/s\'evn/}\\
+  8 & eight & \textipa{/\'eIt/}\\
+  9 & nine & \textipa{/n\'aIn/}\\
+  10 & ten & \textipa{/t\'en/}\\
+\end{tblr}
+\hfill%
+\pause
+ \begin{tblr}{
+  colspec = {rl}, 
+%  column{1} = {fg=red},    % 第1列の文字を赤に
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+ row{odd} = {bg=azure8},
+ row{1} = { bg=azure3, fg=white},
+%  hline{1,2,Z} = {1pt},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+ baseline=t
+}
+  number  & \\
+  11 & eleven& \textipa{/Il\'evn/} \\
+  12 & twelve & \textipa{/tw\'elv/}\\ 
+  13 & thirteen & \textipa{/T\textrhookschwa :t\'\i:n/}\\
+  14 & fourteen & \textipa{/f\'O\textrhookschwa t\'\i:n/}\\
+  15 & fifteen & \textipa{/fIft\'\i:n/}\\
+  16 & sixteen & \textipa{/sIkst\'\i:n/}\\
+  17 & seventeen & \textipa{/sevnt\'\i:n/}\\
+  18 & eighteen & \textipa{/eIt\'\i:n/}\\
+  19 & nineteen & \textipa{/naInt\'\i:n/}\\
+  20 & twenty & \textipa{/tw\'enti/}\\
+
+\end{tblr}\hfill{\scriptsize \myaudio{./audio/001_number_01.mp3}} 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{20, 21, 22 \ldots\,28, 29}
+\small
+ \hfill\begin{tblr}{
+  colspec = {rll}, 
+%  column{1} = {fg=red},    % 第1列の文字を赤に
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+ row{odd} = {bg=azure8},
+ row{1} = { bg=azure3, fg=white},
+%  hline{1,2,Z} = {1pt},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+ baseline=t,
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+  number  & \\
+  20 & twenty & \textipa{/tw\'enti/}\\
+  21 & twenty-one & \textipa{/tw\'enti w\'\textturnv n/}\\
+  22 & twenty-two & \textipa{/tw\'enti t\'u:/}\\ 
+  23 & twenty-three & \textipa{/tw\'enti Tr\'\i:/}\\
+  24 & twenty-four & \textipa{/tw\'enti f\'O\textrhookschwa /}\\
+  25 & twenty-five & \textipa{/tw\'enti f\'aIv/}\\
+  26 & twenty-six & \textipa{/tw\'enti s\'Iks/}\\
+  27 & twenty-seven & \textipa{/tw\'enti s\'evn/}\\
+  28 & twenty-eight & \textipa{/tw\'enti \'eIt/}\\
+  29 & twenty-nine & \textipa{/tw\'enti n\'aIn/}\\
+%  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\
+\end{tblr}
+\hfill{\scriptsize \myaudio{./audio/001_number_02.mp3}} 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{30, 31, 32 \ldots\,38, 39}
+\small
+ \hfill\begin{tblr}{
+  colspec = {rll}, 
+%  column{1} = {fg=red},    % 第1列の文字を赤に
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+ row{odd} = {bg=azure8},
+ row{1} = { bg=azure3, fg=white},
+%  hline{1,2,Z} = {1pt},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+ baseline=t,
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+  number  & \\
+  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\
+  31 & thirty-one & \textipa{/T\'\textrhookschwa :ti w\'\textturnv n/}\\
+  32 & thirty-two & \textipa{/T\'\textrhookschwa :ti t\'u:/}\\ 
+  33 & thirty-three & \textipa{/T\'\textrhookschwa :ti Tr\'\i:/}\\
+  34 & thirty-four & \textipa{/T\'\textrhookschwa :ti f\'O\textrhookschwa /}\\
+  35 & thirty-five & \textipa{/T\'\textrhookschwa :ti f\'aIv/}\\
+  36 & thirty-six & \textipa{/T\'\textrhookschwa :ti s\'Iks/}\\
+  37 & thirty-seven & \textipa{/T\'\textrhookschwa :ti s\'evn/}\\
+  38 & thirty-eight & \textipa{/T\'\textrhookschwa :ti \'eIt/}\\
+  39 & thirty-nine & \textipa{/T\'\textrhookschwa :ti n\'aIn/}\\
+%  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\
+\end{tblr}
+\hfill{\scriptsize \myaudio{./audio/001_number_03.mp3}} 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{10, 20, 30, \ldots\,80, 90, 100}
+\small
+ \hfill\begin{tblr}{
+  colspec = {rll}, 
+%  column{1} = {fg=red},    % 第1列の文字を赤に
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+ row{odd} = {bg=azure8},
+ row{1} = { bg=azure3, fg=white},
+%  hline{1,2,Z} = {1pt},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+ baseline=t,
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+  number  & \\
+  10 & ten & \textipa{/t\'en/}\\
+  20 & twenty & \textipa{/tw\'enti/}\\
+  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\ 
+  40 & forty & \textipa{/f\'O\textrhookschwa :ti/}\\
+  50 & fifty & \textipa{/f\'Ifti/}\\
+  60 & sixty & \textipa{/s\'Iksti/}\\
+  70 & seventy & \textipa{/s\'evnti/}\\
+  80 & eighty & \textipa{/\'eIti/}\\
+  90 & ninety & \textipa{/n\'aInti/}\\
+  100 & one hundred & \textipa{/w\'\textturnv n h\'\textturnv ndr@d/}\\
+%  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\
+\end{tblr}
+\hfill{\scriptsize \myaudio{./audio/001_number_03.mp3}} 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

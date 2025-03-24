@@ -41,9 +41,6 @@ file_with_path,path,file_name,slide,mp3,reading_manuscript
 ./1st_grader/033_exclamatory.tex,./1st_grader/,033_exclamatory.tex,TRUE,TRUE,FALSE
 ./1st_grader/041_would_like.tex,./1st_grader/,041_would_like.tex,TRUE,FALSE,FALSE
 ./1st_grader/042_can_you.tex,./1st_grader/,042_can_you.tex,FALSE,FALSE,FALSE
-./1st_grader/051_number.tex,./1st_grader/,051_number.tex,FALSE,FALSE,FALSE
-./1st_grader/052_month.tex,./1st_grader/,052_month.tex,FALSE,FALSE,FALSE
-./1st_grader/053_week.tex,./1st_grader/,053_week.tex,FALSE,FALSE,FALSE
 ./2nd_grader/001_there_is.tex,./2nd_grader/,001_there_is.tex,TRUE,TRUE,FALSE
 ./2nd_grader/005_was_ing_intro.tex,./2nd_grader/,005_was_ing_intro.tex,TRUE,TRUE,FALSE
 ./2nd_grader/011_be_going_to.tex,./2nd_grader/,011_be_going_to.tex,TRUE,TRUE,FALSE
@@ -84,3 +81,8 @@ file_with_path,path,file_name,slide,mp3,reading_manuscript
 ./3rd_grader/055_indirect_question.tex,./3rd_grader/,055_indirect_question.tex,FALSE,FALSE,FALSE
 ./3rd_grader/061_want_to_etc.tex,./3rd_grader/,061_want_to_etc.tex,FALSE,FALSE,FALSE
 ./3rd_grader/062_it_for_to.tex,./3rd_grader/,062_it_for_to.tex,FALSE,FALSE,FALSE
+./misc/001_number.tex,./misc/,001_number.tex,FALSE,FALSE,FALSE
+./misc/002_day_month_season.tex,./misc/,002_day_month_season.tex,FALSE,FALSE,FALSE
+./misc/003_weather.tex,./misc/,003_weather.tex,FALSE,FALSE,FALSE
+./misc/004_direction.tex,./misc/,004_direction.tex,FALSE,FALSE,FALSE
+./misc/005_phone.tex,./misc/,005_phone.tex,FALSE,FALSE,FALSE
