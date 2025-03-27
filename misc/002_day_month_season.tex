@@ -1,0 +1,146 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+\UseTblrLibrary{counter}%%%%tabularrayとpauseが衝突することを回避する
+\usepackage{lmodern}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{曜日、月、季節}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{曜日}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{曜日}
+\centering
+\begin{tblr}{
+  colspec = {rll}, 
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+ row{odd} = {bg=azure8},
+ row{1} = { bg=azure3, fg=white},
+ row{2} = {fg=Maroon!80},    % 第2列の文字を赤に
+ row{Z} = {fg=azure3},
+ hline{Z} = {0.08em},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+ baseline=t,
+ cell{1}{3} = {halign=r}
+}
+    & & {\scriptsize \myaudio{./audio/002_day_month_season_01.mp3}}\\
+  日 & Sunday & \textipa{/s\'\textturnv nd\`eI/}\\
+  月 & Monday & \textipa{/m\'\textturnv nd\`eI/}\\
+  火 & Tuesday & \textipa{/t(j)\'u:zd\`eI/}\\ 
+  水 & Wednesday & \textipa{/w\'enzd\`eI/}\\
+  木 & Thursday & \textipa{/T\'\textrhookschwa :zd\`eI/}\\
+  金 & Friday & \textipa{/fr\'aId\`eI/}\\
+  土 & Saturday & \textipa{/s\'\ae t\textrhookschwa d\`eI/}\\
+\end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{month \textipa{/m\'\textturnv nT/}　　　season \textipa{/s\'\i:zn/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+\begin{frame}[plain]
+\small
+
+\begin{columns}
+\begin{column}{.55\linewidth}
+\begin{tblr}{
+  colspec = {rlll}, 
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+ row{1} = { bg=azure3, fg=white},
+ row{2-3,13} = {bg=azure8},
+ row{4-6} = {bg=SpringGreen!60},    
+ row{7-9} = {bg=Goldenrod!60},    
+ row{10-12} = {bg=Maroon!60!black!80, fg=white},
+ column{4} = {bg=white},    
+% row{Z} = {fg=azure3},
+% hline{Z} = {0.08em},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+ baseline=t,
+ cell{1}{3} = {halign=r},
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+    & month& {\scriptsize \textipa{/m\'\textturnv nT/}\hspace{15pt}\myaudio{./audio/002_day_month_season_02a.mp3}}\\
+  1月 & January & \textipa{/dZ\'\ae nju\`eri/}&\myAnch{fuyu1}{white}{}\\
+  2月 & February & \textipa{/f\'eb(r)ueri/}\\
+  3月 & March & \textipa{/m\'A\textrhookschwa tS/}\\ 
+  4月 & April & \textipa{/\'eIpr@l/}&\myAnch{haru}{white}{}\\
+  5月 & May & \textipa{/m\'eI/}\\
+  6月 & June & \textipa{/dZ\'u:n/}\\
+  7月 & July & \textipa{/dZUl\'aI/}&\myAnch{natsu}{white}{}\\
+  8月 & August & \textipa{/\'O:g@st/}\\ 
+  9月 & September & \textipa{/sept\'emb\textrhookschwa /}\\
+  10月 & October & \textipa{/Akt\'oUb@/}&\myAnch{aki}{white}{}\\
+  11月 & November & \textipa{/nouv\'emb@/}\\
+  12月 & December & \textipa{/dIs\'emb@/}&\myAnch{fuyu2}{white}{}\\
+\end{tblr}
+\end{column}
+\begin{column}<14->{.4\linewidth}
+\begin{tblr}{
+  colspec = {lll}, 
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+row{1} = { bg=azure3, fg=white},
+ row{5} = {bg=azure8},
+ row{2} = {bg=SpringGreen!60},    
+ row{3} = {bg=Goldenrod!60},    
+ row{4} = {bg=Maroon!60!black!80, fg=white},
+column{1} = {bg=white},
+  baseline=t,
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+    & season& {\scriptsize \textipa{/s\'\i:zn/}\hspace{27pt}\myaudio{./audio/002_day_month_season_02b.mp3}}\\
+ \myAnch{spring}{white}{}&spring&\textipa{/spr\'IN/}\\
+ \myAnch{summer}{white}{}&summer&\textipa{/s\'\textturnv m\textrhookschwa /}\\
+ \myAnch{fall}{white}{}&fall / autumn&\textipa{/f\'O:l/} \textipa{/\'O:t@m/}\\
+ \myAnch{winter}{white}{}&winter&\textipa{/w\'Int\textrhookschwa/}\\\
+\end{tblr}
+\end{column}
+\end{columns}
+
+
+\begin{tikzpicture}[remember picture,overlay]
+ \onslide<15->{\draw[<-,line width=3pt,SpringGreen,opacity=.75] (haru.east) -- (spring.west);}
+ \onslide<16->{\draw[<-,line width=3pt,Goldenrod,opacity=.75] (natsu.east) -- (summer.west);}
+ {\onslide<17->\draw[<-,line width=3pt,Maroon,opacity=.75] (aki.east) -- (fall.west);}
+ \onslide<18->{\draw[<-,line width=3pt,azure3,opacity=.75] (fuyu1.east) to[out=0,in=180] (winter.west);}
+ \onslide<18->{\draw[<-,line width=3pt,azure3,opacity=.75] (fuyu2.315) to[out=0,in=200] (winter.west);}
+\end{tikzpicture}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+\end{document}
