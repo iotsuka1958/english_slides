@@ -143,4 +143,48 @@ column{1} = {bg=white},
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamercolor{background canvas}{bg=}
+\begin{frame}[plain]{date}
+\centering
+ \begin{tblr}{
+%  colspec = {Q[r,1.1cm]Q[r,1.1cm]Q[r,1.1cm]Q[r,1.1cm]Q[r,1.1cm]Q[r,1cm]Q[r,1.1cm]}, % 
+  colspec = {X[r]X[r]X[r]X[r]X[r]X[r]X[r]}, % 
+  column{1} = {fg=red},          % 第1列の文字を赤に
+  column{7} = {fg=blue},         % 第7列の文字を青に
+  hline{1,2,Z} = {.08em},          % \toprule, \midrule, \bottomrule
+  hline{3,4,5,6} = {0.05em}           % 追加した midrule
+}
+  Sun  & Mon & Tue & Wed & Thu & Fri & Sat \\
+  \parbox[r]{\linewidth}{\raggedleft 1\\ \tiny first\\\mbox{}} &
+\parbox[r]{\linewidth}{\raggedleft 2\\ \tiny second\\\mbox{}} &
+\parbox[r]{\linewidth}{\raggedleft 3\\ \tiny third\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 4\\ \tiny fourth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 5\\ \tiny fifth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 6\\ \tiny sixth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 7\\ \tiny seventh\\\mbox{}}  \\
+\parbox[r]{\linewidth}{\raggedleft 8\\ \tiny eighth\\\mbox{}}&
+\parbox[r]{\linewidth}{\raggedleft 9\\ \tiny ninth\\\mbox{}} &
+\parbox[r]{\linewidth}{\raggedleft 10\\ \tiny tenth\\\mbox{}}& 
+\parbox[r]{\linewidth}{\raggedleft 11\\ \tiny eleventh\\\mbox{}}   &
+\parbox[r]{\linewidth}{\raggedleft 12\\ \tiny twelfth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 13\\ \tiny thirteenth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 14\\ \tiny fourteenth\\\mbox{}}  \\
+\parbox[r]{\linewidth}{\raggedleft 15\\ \tiny fifteenth\\\mbox{}} &
+\parbox[r]{\linewidth}{\raggedleft 16\\ \tiny sixteenth\\\mbox{}} &
+\parbox[r]{\linewidth}{\raggedleft 17\\ \tiny seventeenth\\\mbox{}}  & 
+\parbox[r]{\linewidth}{\raggedleft 18\\ \tiny eighteenth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 19\\ \tiny nineteenth\\\mbox{}}  & 
+\parbox[r]{\linewidth}{\raggedleft 20\\ \tiny twentieth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 21\\ \tiny twenty-\\first}  \\
+\parbox[r]{\linewidth}{\raggedleft 22\\ \tiny twenty-\\second} &
+\parbox[r]{\linewidth}{\raggedleft 23\\ \tiny twenty-\\third} &
+\parbox[r]{\linewidth}{\raggedleft 24\\ \tiny twenty-\\fourth}  & 
+\parbox[r]{\linewidth}{\raggedleft 25\\ \tiny twenty-\\fifth}  &
+\parbox[r]{\linewidth}{\raggedleft 26\\ \tiny twenty-\\sixth}  & 
+\parbox[r]{\linewidth}{\raggedleft 27\\ \tiny twenty-\\seventh}  &
+\parbox[r]{\linewidth}{\raggedleft 28\\ \tiny twenty-\\eighth}  \\
+\parbox[r]{\linewidth}{\raggedleft 29\\ \tiny twenty-\\ninth}  &
+\parbox[r]{\linewidth}{\raggedleft 30\\ \tiny thirtieth\\\mbox{}}  &
+\end{tblr}
+
+\end{frame}
 \end{document}
