@@ -1,0 +1,64 @@
+\documentclass[12pt,jafontscale=0.9247]{jlreq}
+%\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 欧文TTF/OTFフォントを利用するにはfontspec.styをロードする必要あり
+%% 和文TTF/OTFフォントを利用するにはluatexja-fontspec.styをロードする必要あり
+%% luatexja-fontspec.styはfontspec.styをないぶてきにロードする
+%% lualatex-ja-preset.sty は luatexja-fontspec.styをロードする
+%% つまり次の1行でluatexja-fontspec.sty, fontspec.styも自動的にロードされる
+\usepackage[no-math,deluxe,expert,yu-win10]{luatexja-preset}
+%%%%
+\usepackage{graphicx}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{pxrubrica}
+\usepackage[default]{fontsetup}
+%%%% tabular環境の改良版
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+\let\textipa\relax
+\usepackage{tipa}
+\usepackage{enumitem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{schedule}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+\CellHeight{.9in}
+\CellWidth{1.1in}
+\TimeRange{8:00-17:00}
+\SubUnits{20}
+\BeginOn{Monday}
+\TextSize{\scriptsize\bfseries}
+\FiveDay
+\TwentyFourHour
+\NewAppointment{firstgrade}{YellowGreen!50}{black}
+\NewAppointment{secondgrade}{CornflowerBlue!50}{black}
+\NewAppointment{thirdgrade}{RedOrange!50}{black}
+\NewAppointment{meeting}{red}{white}
+\NewAppointment{workshop}{green}{blue}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{schedule}[Eduop Chiba, 2025]
+\firstgrade{1st grade}{}{T}{14:00-14:40}
+\firstgrade{1st grade}{}{W}{13:00-13:40}
+\firstgrade{1st grade}{}{Th}{11:20-12:00}
+\firstgrade{1st grade}{}{F}{10:20-11:00}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\secondgrade{2nd grade}{}{T}{10:20-11:00}
+\secondgrade{2nd grade}{}{W}{11:20-12:00}
+\secondgrade{2nd grade}{}{Th}{10:20-11:00}
+\secondgrade{2nd grade}{}{F}{13:00-13:40}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thirdgrade{3rd grade}{}{T}{13:00-13:40}
+\thirdgrade{3rd grade}{}{W}{10:20-11:00}
+\thirdgrade{3rd grade}{}{Th}{14:00-14:40}
+\thirdgrade{3rd grade}{}{F}{14:00-14:40}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\class{043.274.6001}{\scalebox{.95}{\tiny i.ootsk5@eduop-chiba.jp}}{F}{16:40-17:00}
+%%\class{Moral Philosophy}{HOB2 233}{T}{10:20-11:00}
+%\class{Math Logic}{EIC 128}{T,Th}{11:00-12:20}
+%\class{Critical Reasoning}{SSL 290}{M,W,F}{13:00-13:50}
+%\meeting{Departmental Meeting}{HOB2 233}{W}{12:00-12:50}
+%\class{Office Hours}{HOB2 210}{W,F}{14:00-14:50}
+\end{schedule}
+\end{document}

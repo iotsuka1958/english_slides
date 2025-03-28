@@ -20,6 +20,7 @@
 \usepackage{pxrubrica}
 \UseTblrLibrary{counter}%%%%tabularrayとpauseが衝突することを回避する
 \usepackage{lmodern}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{I wish I had a lot of money.}
@@ -452,18 +453,26 @@
  \Huge
 
 \[
- \pi \approx 3.14
+ \pi \tikzmark{target_approx}\approx \tikzmark{target_pi}{3.14}
 \]
 
-\hfill{}three point one four
+\bigskip
 
+\hfill{}\tikzmark{pi}\visible<3->{three point one four}
 \bigskip
 
 \bigskip
 
-\scriptsize
+\bigskip
 
-\hfill{}$\approx$は「ほぼ等しい」という記号
+\small
+
+\hfill{}\tikzmark{approx}\visible<2->{$\approx$は「ほぼ等しい」という記号}\hspace{7pt}\mbox{}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,line width=.8pt] ([xshift=14pt, yshift=-5pt] pic cs:target_pi) to[out=-90,in=130] ([xshift=-4pt, yshift=6pt] pic cs:pi);}
+ \visible<2->{\draw[<-] ([xshift=14pt, yshift=-5pt]pic cs:target_approx) to[out=-120, in=190] ([xshift=-3pt, yshift=3pt]pic cs:approx);}
+\end{tikzpicture}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
