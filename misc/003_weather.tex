@@ -1,0 +1,119 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+\UseTblrLibrary{counter}%%%%tabularrayとpauseが衝突することを回避する
+\usepackage{lmodern}
+\usetikzlibrary{tikzmark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{天気について話そう}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+\end{frame}
+
+\section{いろいろな天気}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{天気をあらわすさまざまな表現}
+
+
+\begin{enumerate}
+ \item How is the weather today?
+ \item \begin{enumerate}
+	\item It is fine today.
+	\item It is sunny today.
+       \end{enumerate}
+ \item It is cloudy today.
+ \item \begin{enumerate}
+	\item It is raniy today.
+	\item It is raining today.
+       \end{enumerate}
+ \item \begin{enumerate}
+	\item It is snowy today.
+	\item It is snowing today.
+       \end{enumerate}
+\end{enumerate}
+
+\begin{block}{Today's Points}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item It is 形容詞
+ \item It 一般動詞
+\end{itemize}
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+
+並べ替えとか穴埋めとか
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+\small
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+  title=2人の会話を読んで、問に答えましょう\hfill{\scriptsize \myaudio{./audio/003_weather_03.mp3}}]
+\begin{tabular}{rp{.9\textwidth}}
+George:& Hi, Jane! How is the weather today?\\
+Jane:& Hi, George! It's sun\tikzmark{clue1}ny today. I love sunny days.\\
+George:& Yeah, me too!  Do you want to go to the pa\tikzmark{clue2}rk with me?\\
+Jane:& That sounds great! But the forecast says it might be cloudy later.\\
+George:& Okay, no problem. We can still go. If it gets cloudy, we can have \tikzmark{clue3}coffee inside.\\
+Jane:& Sounds good!\\
+George:& I hope it doesn't rain.\\
+Jane:& Don't worry, it won't rain today. It might be win\tikzmark{clue4}dy later, though.\\
+George:& All right, I'll bring a jacket. Let's go!
+\end{tabular}
+\end{tcolorbox}
+
+\vspace{-3pt}
+
+\begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
+ \item<2-> 今の天気はどうですか\tikzmark{q1}\hfill\visible<4->{晴れ}
+ \item<2-> GeorgeとJaneはどこに出かけるつもりですか\tikzmark{q2}\hfill\visible<6->{公園}
+ \item<2-> 曇ってきたら2人はどうするつもりですか\tikzmark{q3}\hfill\visible<8->{屋内でコーヒーを飲む}
+ \item<2-> なぜGeorgeは上着を持っていくのでしょうか\tikzmark{q4}\hfill\visible<10->{風が強くなるかもしれないから}
+\end{enumerate}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-] ([yshift=-2pt]pic cs:clue3) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-] ([yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
