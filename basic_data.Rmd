@@ -183,7 +183,8 @@ classroom_table <- classroom |>
     names_to = c("grade", ".value"),
     names_sep = "_"
   ) |>
-  filter(!is.na(topic)) |>
+  filter(!is.na(topic)) |> # topicがNAの行を削除
+  filter(grade != "g4") |> # g4の行を削除)
   arrange(date) |>
   gt() |>
   tab_header(
@@ -208,6 +209,7 @@ classroom_table_1st <- classroom |>
   ) |>
   filter(grade == "g1") |>
   filter(!is.na(topic)) |>
+  filter(date > ymd("2025-03-01")) |> # 2025年3月1日以降のデータを抽出)
   arrange(date) |>
   gt() |>
   tab_header(
@@ -241,6 +243,7 @@ classroom_table_2nd <- classroom |>
   ) |>
   filter(grade == "g2") |>
   filter(!is.na(topic)) |>
+  filter(date > ymd("2025-03-01")) |> # 2025年3月1日以降のデータを抽出
   arrange(date) |>
   gt() |>
   tab_header(
@@ -274,6 +277,7 @@ classroom_table_3rd <- classroom |>
   ) |>
   filter(grade == "g3") |>
   filter(!is.na(topic)) |>
+  filter(date > ymd("2025-03-01")) |> # 2025年3月1日以降のデータを抽出
   arrange(date) |>
   gt() |>
   tab_header(

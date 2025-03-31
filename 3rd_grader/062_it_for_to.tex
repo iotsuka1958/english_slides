@@ -18,6 +18,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{It is important for you to go there.}
@@ -40,10 +41,11 @@
   \tableofcontents
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
+\section{It is \ldots\,\, to--- .}
 \begin{frame}[plain]{It is \ldots\,\, to--- .}
 \large
  \begin{enumerate}
-  \item<1->  Science is important.\hfill{\scriptsize important \textipa{/Imp\'O\textrhookschwa t@nt/} 重要な }
+  \item<1->  Science is important.\hfill{\scriptsize important \textipa{/Imp\'O\textrhookschwa tnt/} 重要な }
   \item<2->  \alt<3->{{\setlength{\fboxrule}{1pt}\fcolorbox{black}{yellow!20}{To study science}}}{To study science}\,\only<3->{($=$S)} is\only<3->{($=$V)} important.
   \item<4-> \myAnch{a1}{Maroon}{It}\,is important\,\,\,\,\myAnch{a2}{Maroon}{to study science.}
  \end{enumerate}
@@ -57,7 +59,7 @@
  \visible<5->{\draw[->,Maroon,thick] (a1) -- (A1) -- (A2) -- (a2);}
 \end{tikzpicture}
 
-\begin{block}<6->{hoge}\small
+\begin{block}<6->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
  \item 主語が長くなるのを避けるために\\
 \mbox{}\hspace{30pt}{\setlength{\fboxrule}{1pt}\fcolorbox{black}{yellow!20}{\bfseries To--- \hspace{30pt}\mbox{}}}\,\,\,is\,\,\ldots\,. を\,\,\,
@@ -69,27 +71,47 @@
 \end{block}
 \mbox{}\hfill{\scriptsize \myaudio{./audio/062_it_for_to_01.mp3}}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+日本語の意味になるよう(~~~~~~)の語を並べ替えましょう。先頭に来る語は大文字で始めてください\mbox{}\hfill{\scriptsize \myaudio{./audio/062_it_for_to_02.mp3}}
+ \begin{enumerate}
+  \item  {\small 数学を勉強するのは重要です}
+(to / study / is / math / important / it ).\\
+\visible<2->{It is important to study math.}
+  \item  {\small 自転車に乗るのはかんたんですよ}
+( easy / is / it / a bike / ride / to ).\\
+\visible<3->{It is easy to ride a bike.}
+  \item  {\small ひとりで泳ぐのは危ない}( dangerous / swim / alone / is /  it / to ).\\
+\visible<4->{It is dangerous to swim alone.}
+  \item  {\small 友人に話しかけるのは楽しい}( to / friends / fun / is / it / talk / to ).\\
+\visible<5->{It is fun to talk to friends.}
+  \item  {\small 新しい言語を学ぶのは難しい}( new /it / to / is / a / learn / difficult / language ).\\
+\visible<6->{It is difficult to learn a new language.}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{It is \ldots\,\, for ～ to--- .}
 \begin{frame}[plain]{It is \ldots\,\, for ～ to--- .}
  \large
 
 \begin{enumerate}
- \item {\bfseries It} is important {\bfseries to} study math.\hfill{\scriptsize important \textipa{/Imp\'O\textrhookschwa t@nt/} 重要な}
+ \item {\bfseries It} is important {\bfseries to} study math.\hfill{\scriptsize important \textipa{/Imp\'O\textrhookschwa tnt/} 重要な}
  \item {\bfseries It} is important {\bfseries for} kids {\bfseries to} study math.\hfill{\scriptsize kid \textipa{/k\'Id/} こども}.
 \end{enumerate}
 
 \begin{block}{to不定詞の意味上の主語}\small
 \begin{itemize}\setbeamertemplate{items}[square]
  \item to不定詞が表す動作をだれがするのかを示すときはfor ～をto不定詞の前に置きます
- \item It is \ldots\,\, for ～ to--\,\,で「～が---するのは\ldots\,\,だ」の意味になります
+ \item It is \ldots\,\, for ～ to--\,\,で「～が---するのは\ldots\,\,だ」、
+「---するのは～にとって\ldots\,\,だ」という意味になります
 \end{itemize}
 \end{block}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/062_it_for_to_02.mp3}}
+\mbox{}\hfill{\scriptsize \myaudio{./audio/062_it_for_to_03.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
  あたえられた日本語の意味になるよう(~~~~~~~~)内の語句を並べかえましょう。ただし先頭の単語は大文字ではじめてください%
-\mbox{}\hfill{\scriptsize \myaudio{./audio/062_it_for_to_03.mp3}}
+\mbox{}\hfill{\scriptsize \myaudio{./audio/062_it_for_to_04.mp3}}
 
 \begin{enumerate}
  \item こどもがその川で泳ぐのは危険です\hfill{\scriptsize dangerous \textipa{/d\'eIndZ(@)r@s/} 危険な}\\
@@ -98,10 +120,74 @@ It is dangerous for children to swim in the river.
  \item 彼がそこに行くことは不可能だ\hfill{\scriptsize impossible \textipa{/imp\'As@bl/} 不可能な}\\
 It ( impossible / to / for / go / him / is ) there.\\
 It is impossible for him to go there.
- \item 彼女がその問題を解くのはむずかしい\hfill{\scriptsize difficult \textipa{/d\'IfIk(@)lt/} 難しい}\\
+ \item その問題を解くのは彼女にはむずかしい\hfill{\scriptsize difficult \textipa{/d\'IfIk@lt/} 難しい}\\
 ( difficult / her / it / to / is / solve / for ) the problem.\\
 It is difficult for her to solve the problem.
 
 \end{enumerate}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+\scriptsize
+次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\scriptsize \myaudio{./audio/062_it_for_to_05.mp3}}
+
+\vspace{-3pt}
+\small
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+before upper={\setlength{\parindent}{1.5em}},
+  title=A Cat's Workout（ねこのトレーニング）]
+It was important for my cat to exer\tikzmark{clue1}cise\footnotemark{}. She was very lazy. It was difficult for her to run, so she only walked to her food bowl. It was easy for her to sleep all day, but it was not good for her health.
+
+One day, I bought a t\tikzmark{clue2}oy mouse. It was fun for her to chase\footnotemark{} it! Now, she ru\tikzmark{clue3}ns around the house every day. It is good for her to move more. But sometimes, it is dangerous for me to walk because she jum\tikzmark{clue4}ps in front of \footnotemark{} my feet!
+\end{tcolorbox}
+
+\vspace{-3pt}
+
+\begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
+ \item<2-> ねこはなぜ運動しなかったのですか\tikzmark{q1}\hfill\visible<4->{なまけものだったから}
+ \item<2-> 飼い主はねこの運動のために何をしましたか\tikzmark{q2}\hfill\visible<6->{おもちゃのねずみを買った}
+ \item<2-> ねこにどんな変化がありましたか\tikzmark{q3}\hfill\visible<8->{家の中を走り回るようになった}
+ \item<2-> 飼い主にとって歩くのが危険なのはなぜですか\tikzmark{q4}\hfill\visible<10->{ねこが足元に飛び出してくること}
+\end{enumerate}
+
+\vspace{-15pt}
+
+\footnotetext[1]{\scriptsize exercise：運動する}
+\footnotetext[2]{\scriptsize chase：追いかける}
+\footnotetext[3]{\scriptsize in front of \ldots{}の前に}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-] ([yshift=-2pt]pic cs:clue3) to[in=0,out=-140] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-] ([yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
+\begin{frame}[plain]{まとめ}
+ \begin{block}{Topics for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item 主語が長くなるのを避けるために\\
+\mbox{}\hspace{30pt}{\setlength{\fboxrule}{1pt}\fcolorbox{black}{yellow!20}{\bfseries To--- \hspace{30pt}\mbox{}}}\,\,\,is\,\,\ldots\,. を\,\,\,
+{\bfseries It} is \ldots\,\,\,{\setlength{\fboxrule}{1pt}\fcolorbox{Maroon}{white}{\bfseries to--- \hspace{30pt}\mbox{}}}\,.\,
+とすることがあります
+ \item このitは形式上の主語です\hfill{\scriptsize このitを\kenten{形式主語}と呼びます}
+ \item 実質的な主語は\,{\setlength{\fboxrule}{1pt}\fcolorbox{Maroon}{white}{\bfseries to---\hspace{30pt}\mbox{}}} のところです
+\end{itemize}
+\end{block}
+
+\begin{block}{to不定詞の意味上の主語}\small
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item to不定詞が表す動作をだれがするのかを示すときはfor ～をto不定詞の前に置きます
+ \item It is \ldots\,\, for ～ to--\,\,で「～が---するのは\ldots\,\,だ」、
+「---するのは～にとって\ldots\,\,だ」という意味になります
+\end{itemize}
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
