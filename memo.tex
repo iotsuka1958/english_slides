@@ -18,6 +18,7 @@
 \let\textipa\relax
 \usepackage{tipa}
 \usepackage{enumitem}
+\usepackage{multirow}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Define custom pastel colors
 \definecolor{customLightBlue}{RGB}{173, 216, 230}
@@ -69,9 +70,70 @@ title=Question~\thetcbcounter: #2,#1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{litetable, twemojis}
 \usepackage[mono = false]{libertine}
+\usepackage{ulem}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+
+\noindent{}様式1\hfill\mbox{}
+
+
+\mbox{}\hfill{\bfseries 公務に使用する自家用自動車等登録・取消申請書}\hfill\mbox{}
+
+\mbox{}\hfill{}令和7年4月1日
+
+\bigskip
+
+千葉県立千葉中学校長　様
+
+\bigskip
+
+\mbox{}\hfill\begin{tabular}{ll}
+	      職&臨時的任用講師 \\
+              指名&大塚一朗 \\
+	     \end{tabular}
+
+\bigskip
+
+公務に使用する自家用自動車等の登録について、
+職員の自家用自動車等の公務使用に関する取扱要綱第5条第1項の規定により、
+下記のとおり申請します。
+
+\mbox{}\hfill{}記\hfill\mbox{}
+
+\bigskip
+
+\begin{tabular}{|l|l|l|}\hline
+ \multicolumn{2}{|l|}{登録・取消の別} & 登録　　　　　\sout{取消}\\\hline
+ \multicolumn{2}{|l|}{申請者の免許取得年月日　　　} & \\\hline
+ \multicolumn{2}{|l|}{申請者の免許有効期限} & 令和7年7月19日\\\hline
+ \multicolumn{2}{|l|}{車種・車両番号} & \\\hline
+ \multicolumn{2}{|l|}{型式・排気量} & \\\hline
+ \multicolumn{2}{|l|}{所有者氏名} & 本人\\\hline
+ \multicolumn{2}{|l|}{自動車検査証有効期間} & \\\hline
+ \multicolumn{2}{|l|}{自賠責保険有効期間} & \\\hline
+ \multirow{4}{1.1\zw}{任\\[-4pt]意\\[-4pt]保\\[-4pt]険\\[-4pt]等}& 
+\multirow{2}{*}{加入内容}& 対人 無制限　　　　　　　対物 1,000万円　　　　\\\cline{3-3}
+ & & その他\\\cline{2-3}
+ & 有効期間& 令和7年11月27日\\\cline{2-3}
+ & 保険会社名& \\\hline
+ \multicolumn{2}{|l|}{乗用車ヘルメットの所持} & 有・無\\\hline
+
+\end{tabular}
+
+\bigskip
+
+備考
+\begin{enumerate}
+ \item この申請書には、申請者の運転免許証、自動車検査証、自賠責保険証明所及び
+任意保険の証書等、記載内容を証する書類の各写しを添付すること
+ \item 登録の対象が250cc以下の自動二輪車又は原動機付自転車の場合は、自動車検査証有効期間の欄は記載不要であること
+ \item 登録の対象が自転車の場合は、車種・車両番号の欄に「自転車」と記載の上、
+任意保険等の欄に自転車損害賠償保険等の内容を、乗車用ヘルメットの所持の欄に所持の有無を記載すること
+ \item 取消の場合は、車種・車両番号の欄のみを記載すること
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iffalse
 \begin{enumerate}\setcounter{enumi}{1}
  \item $\left\{\begin{tabular}{rl}
