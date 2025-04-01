@@ -19,7 +19,7 @@
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 \UseTblrLibrary{counter}%%%%tabularrayとpauseが衝突することを回避する
-\usepackage{lmodern}
+%\usepackage{lmodern}
 \usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,34 +49,41 @@
 \begin{frame}[plain]{天気をあらわすさまざまな表現}
 
 
-\begin{enumerate}
+\begin{enumerate}[<+->]
  \item How is the weather today?
- \item \begin{enumerate}
-	\item It is fine today.
-	\item It is sunny today.
-       \end{enumerate}
- \item It is cloudy today.
- \item \begin{enumerate}
-	\item It is raniy today.
-	\item It is raining today.
-       \end{enumerate}
- \item \begin{enumerate}
-	\item It is snowy today.
-	\item It is snowing today.
-       \end{enumerate}
+ \item It is fine today.\hfill{\scriptsize fine \textipa{/f\'aIn/} \Circled{ 形 } 晴れた}
+\item It is sunny today.\hfill{\scriptsize sunny \textipa{/s\'\textturnv ni/} \Circled{ 形 } 晴れた}
+ \item It is cloudy today.\hfill{\scriptsize cloudy \textipa{/kr\'aUdi/} \Circled{ 形 } 曇った}
+ \item It is rainy today.\hfill{\scriptsize rainy \textipa{/r\'eIni/} \Circled{ 形 } 雨の}
+\item It is raining today.\hfill{\scriptsize rain \textipa{/r\'eIn/} \Circled{ 動 } 雨が降る}
+  \item  It is snowy today.\hfill{\scriptsize snowy \textipa{/sn\'oUi/} \Circled{ 形 } 雪の}
+\item It is snowing today.\hfill{\scriptsize snow \textipa{/sn\'oU/} \Circled{ 動 } 雪が降る}
 \end{enumerate}
 
-\begin{block}{Today's Points}
+\begin{block}<9->{Today's Points}\small
+天気を表すときはItを主語にします
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item It is 形容詞
  \item It 一般動詞
 \end{itemize}
 \end{block}
+\hfill{\scriptsize \myaudio{./audio/003_weather_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 
-並べ替えとか穴埋めとか
+日本語の意味になるよう空所に適当な語を補いましょう%
+\hfill{\scriptsize \myaudio{./audio/003_weather_02.mp3}}
+
+\begin{enumerate}
+ \item (~~\visible<2->{How}~~) was the weather yesterday?\hspace{2\zw}昨日の天気はどうでしたか
+ \item (~~~\visible<2->{It}~~~) is hot in (~~\visible<2->{August}~~).\hspace{2\zw}8月は暑い
+ \item (~~~\visible<3->{It's}~~~) cold in winter.\hspace{2\zw}冬は寒い
+ \item It (~~\visible<4->{snowed}~~) yesterday.\hspace{2\zw}昨日は雪でした
+ \item It (~~\visible<5->{rains}~~) a lot in  (~~\visible<5->{June}~~).\hspace{2\zw}6月はたくさん雨が降る\hfill{\scriptsize a lot \textipa{/@ l\'At/}} とても
+ \item (~~~\visible<6->{It}~~~) is windy  (~~\visible<6->{today}~~).\hspace{2\zw}今日は風が強い%
+\hfill{\scriptsize windy \textipa{/w\'Indi/} 風の強い}
+\end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
@@ -86,7 +93,7 @@
   colbacktitle=ForestGreen!40!white,
   coltitle=black, %fonttitle=\bfseries,
   title=2人の会話を読んで、問に答えましょう\hfill{\scriptsize \myaudio{./audio/003_weather_03.mp3}}]
-\begin{tabular}{rp{.9\textwidth}}
+\begin{tabular}{rp{.88\textwidth}}
 George:& Hi, Jane! How is the weather today?\\
 Jane:& Hi, George! It's sun\tikzmark{clue1}ny today. I love sunny days.\\
 George:& Yeah, me too!  Do you want to go to the pa\tikzmark{clue2}rk with me?\\
@@ -99,7 +106,7 @@ George:& All right, I'll bring a jacket. Let's go!
 \end{tabular}
 \end{tcolorbox}
 
-\vspace{-3pt}
+\vspace{-6pt}
 
 \begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
  \item<2-> 今の天気はどうですか\tikzmark{q1}\hfill\visible<4->{晴れ}
@@ -116,4 +123,30 @@ George:& All right, I'll bring a jacket. Let's go!
 \end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ}
+\raggedright
+How is the weather today?
+
+\centering
+ \begin{tblr}{colspec={lQ[4cm]Q[4cm]},
+hline{Z} = { 0.08em },
+%hline{2} = { 0.0em},
+ row{odd} = {bg=azure8},
+ row{1} = { bg=azure3, fg=white}
+}
+   & \textbf{形容詞} & \textbf{動詞} \\
+  晴れ  & sunny, fine &  \\
+  曇り  & cloudy & \\
+  雨    & rainy & rain \\
+  雪    & snowy & snow \\
+  風    & windy &  \\
+  暑い  & hot &  \\
+  暖かい  & warm &  \\
+  涼しい  & cool &  \\
+  寒い  & cold &  \\
+ % 湿気  & humid, muggy, sticky & \\
+ % 霧    & foggy, misty &  \\
+  %雷    & stormy, thundery & thunder, lightning strikes \\
+\end{tblr}
+\end{frame}
 \end{document}

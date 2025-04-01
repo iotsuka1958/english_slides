@@ -1,13 +1,6 @@
-month
-January
-February
-March
-April
-May
-June
-July
-August
-September
-October
-November
-December
+How was the weather yesterday?
+It is hot in August.
+It's cold in winter.
+It snowed yesterday.
+It rains a lot in June.
+It is windy today.
