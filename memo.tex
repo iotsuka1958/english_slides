@@ -19,6 +19,7 @@
 \usepackage{tipa}
 \usepackage{enumitem}
 \usepackage{multirow}
+\usepackage{lmodern}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Define custom pastel colors
 \definecolor{customLightBlue}{RGB}{173, 216, 230}
@@ -71,9 +72,207 @@ title=Question~\thetcbcounter: #2,#1}
 \usepackage{litetable, twemojis}
 \usepackage[mono = false]{libertine}
 \usepackage{ulem}
+\usetikzlibrary{calendar,positioning}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tikz \calendar[dates=2025-01-01 to 2025-12-last,week list,
+                month label above centered];
+%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-01-01 to 2025-01-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (between=2025-01-01 and 2025-01-03) [red]
+    if (equals=2025-01-13) [red];
+\hspace{10pt}
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-02-01 to 2025-02-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (equals=2025-02-11) [red]
+    if (equals=2025-02-24) [red];
+\hspace{10pt}
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-03-01 to 2025-03-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (equals=2025-03-20) [red];
+%%%%%%%%%%%%%
+
+\bigskip
+
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-04-01 to 2025-04-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (equals=2025-04-29) [red];
+\hspace{10pt}
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-05-01 to 2025-05-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (between=2025-05-03 and 2025-05-06) [red]
+    if (equals=2025-02-24) [red];
+\hspace{10pt}
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-06-01 to 2025-06-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue];
+%%%%%%%%%%%%%
+
+\bigskip
+
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-07-01 to 2025-07-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (equals=2025-07-21) [red];
+\hspace{10pt}
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-08-01 to 2025-08-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (between=2025-08-18 and 2025-08-29) [yellow]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (equals=2025-08-11) [red];
+\hspace{10pt}
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-09-01 to 2025-09-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (equals=2025-09-15) [red]
+    if (equals=2025-09-23) [red];
+%%%%%%%%%%%%%
+
+\bigskip
+
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-010-01 to 2025-10-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (equals=2025-10-13) [red];
+\hspace{10pt}
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-11-01 to 2025-11-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (equals=2025-11-03) [red]
+    if (equals=2025-11-24) [red]
+    if (between=2025-11-04 and 2025-11-07) [yellow];
+\hspace{10pt}
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2025-12-01 to 2025-12-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (between=2025-12-29 and 2025-12-last) [red];
+%%%%%%%%%%%%%%
+
+\bigskip
+
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2026-01-01 to 2026-01-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (between=2026-01-01 and 2026-01-03) [red]
+    if (equals=2025-01-12) [red];
+\hspace{10pt}
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2026-02-01 to 2026-02-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (equals=2026-02-11) [red]
+    if (equals=2026-02-23) [red];
+\hspace{10pt}
+\tikz[baseline=0pt]
+  \calendar
+    [dates=2026-03-01 to 2026-03-last,week list,
+     month label above centered,
+    month text=\%mt \%y0]
+    if (Sunday) [red]
+    if (Saturday) [blue]
+    if (equals=2026-03-20) [red];
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{itemize}
+ \item オンライン授業の経験もない
+ \item 中学生を相手にするのもはじめて
+ \item そもそも授業自体が30年ぶりくらい
+\end{itemize}
+
+いってみれば三重苦というか、まったくベースがない状態でのスタート
+
+テクニカルな事項についてはずぶの素人であり、
+とにかく手取り足取りで教えていただいた、というか全面的に支えていただきました
+
+授業の中身については、これは教える側の基礎的な学力といいいますかそもそもの素養や教養が問われるところであるが、
+急にどうにかなるものではないので、一種の開き直り
+
+授業のスタイル的には、まわりのみなさんはいろいろと創意工夫をしながら展開したものと
+承知しているが、
+自分はスライド、あ、これただのpdfですが、これでたんたんと進めた。まあいってみれば芸がない感じかとおもうのですが、
+長丁場であり自分で持続できるやり方でやるしかないかなと。
+ということでホワイトボードとか書画カメラは使用しなかった。
+こちらについては数学の佐藤啓之さんから詳しいガイダンスがあるでしょう。
+スライドはただのpdfファイル
+
+\begin{itemize}
+ \item 前時に参加していると限らないことから、前時の内容を当然のこととして進めるのではなく、ある程度さかのぼった説明をする
+ \item 前時に参加していた生徒にとってはまだるっこしい部分が出てくる。また進度に影響が
+ \item 40分授業ということで、生徒の集中力が途切れがちの印象。発達段階や不登校であることを考慮したとき、40分という時間が妥当なのか疑問
+ \item 区切りがあるので、毎回40分と機械的に固定するのがいいとはおもえない
+ \item 授業の焦点をどこにあわせればいいのか。生徒の学力レベルの把握が困難
+ \item インタラクティブを意識し、クイズやゲーム形式、かんたんな作業を取り入れるようしている
+ \item 双方向性を意識し、チャットでの回答やリアクションスタンプを活用しているが、反応するのは特定の生徒に偏る印象
+ \item 予習はしなくていいといっている。復習は可能ならしましょう。宿題はださない
+ \item 教材、スライドの準備がきわめて煩瑣・事務量がはんぱではない（通常の教室での授業、対面での授業の比ではない）しかも週12コマすべて異なる内容のスライドの準備
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \thispagestyle{empty}
 
 \noindent{}様式1\hfill\mbox{}
