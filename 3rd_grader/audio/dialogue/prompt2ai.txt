@@ -1,0 +1,35 @@
+input.txtというテキストファイルがあります。内容は以下のとおりです
+---
+FOO
+BAR
+---
+
+このinput.txtから次の出力を求めます.
+input.txtの奇数行と偶数行による出力の差は
+偶数業に対しては、<lang xml:lang="en-Us">という1行がしゅつりょくに加わることだけです。
+
+---
+<speak>
+    <p>
+        <s>
+            <prosody rate="slow" volume="loud">
+            FOO.
+           </prosody>
+        </s>
+    </p>
+</speak>
+
+<speak>
+    <p>
+        <s>
+            <prosody rate="slow" volume="loud">
+                <lang xml:lang="en-US">
+                    BAR
+                </lang>
+            </prosody>
+        </s>
+    </p>
+</speak>
+---
+
+input.txt を入力ファイルとして上記出力を得るためのawkスクリプトを作成してください

@@ -18,6 +18,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{I know that she is kind.}
@@ -43,55 +44,171 @@
 \end{frame}
 
 \section{that \textipa{/D\'\ae t/}}
-\subsection{when}
+\subsection{接続詞that}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{S $+$ V \fbox{that s $+$ v}}
-\Large
+\large
 \begin{enumerate}
  \item I know George.\hfill{\scriptsize Georgeは目的語(O)}
  \item I know the fact.\hfill{\scriptsize fact \textipa{/f\'\ae kt/} 事実}
- \item I know \fbox{that she is kind}.\hfill{}{\small \textbf{S} $+$ \textbf{V} \fbox{that s $+$ v}($=$O)}
+ \item I know \fbox{\textbf{that} she is kind}.\hfill{}{\small {S} $+$ {V}\,\,\,\fbox{\textbf{that} s $+$ v}\,\,($=$O)}
 
 \end{enumerate}
 \mbox{}\hfill{\scriptsize \myaudio{./audio/054_that_clause_01.mp3}}
 
 \begin{block}{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item   \Circled[fill color = white]{ that  $+$ v }\,は「〜ということ」という意味
- \item   \Circled[fill color = white]{ that s $+$ v }\,は全体で「名詞」の役割
- \item  \textbf{that}の品詞は\kenten{接続詞}です
+ \item   \Circled[fill color = white]{ \textbf{that}  s $+$ v }\,は「〜ということ」という意味
+ \item   \Circled[fill color = white]{ \textbf{that} s $+$ v }\,は全体で「名詞」の役割
+ \item  S $+$ V \Circled[fill color=white]{\,\tikzmark{that}\textbf{that} s $+$ v\,}
+\\
+\mbox{}\hfill{\scriptsize \tikzmark{teigi}このthatは\kenten{接続詞}です}
 \end{itemize}
      \end{block}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible{\draw[<-] ([xshift=8pt,yshift=-4pt]pic cs:that) |- ([xshift=-2pt, yshift=2pt] pic cs:teigi);}
+\end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
-次の文の（　　）に当てはまる単語を入れましょう
+\begin{frame}[plain]{Exercises}\small
+日本語の意味になるよう空所に適語を入れましょう%
+\mbox{}\hfill{\scriptsize \myaudio{./audio/054_that_clause_02.mp3}}
+
  \begin{enumerate}
-  \item We know  ( \visible<2->{that} ) the Earth is round.
-  \item I think ( \visible<3->{that} ) he is kind.
-  \item She believes ( \visible<4->{that }) he will succeed.
- \item They hope ( \visible<5->{that }) it will be sunny tomorrow.
+  \item We know  ( \visible<2->{that} ) the Earth is round.%
+	\hfill{\scriptsize Earth \textipa{/\'\textrhookschwa :T/} 地球}\\
+	地球が丸いことをわれわれは知っている。
+  \item I think ( \visible<3->{that} ) he is kind.\\
+	彼は親切だとわたしはおもう。
+  \item She believes ( \visible<4->{that} ) he will succeed.%
+	\hfill{\scriptsize succeed \textipa{/s@ks\'\i:d/} 成功する}\\
+	彼は成功すると彼女は信じている。
+ \item They hope ( \visible<5->{that} ) it will be sunny tomorrow.\\
+       彼らは明日晴れることを望んでいる。
+ \item Do you know ( \visible<6->{that} ) the Earth moves around the Sun?%
+       \hfill{\scriptsize move \textipa{/m\'u:v/} 動く}\\
+       \hfill{\scriptsize around \textipa{/@r\'aUnd/} \Circled{\,前\,}\,～の周りをぐるっと回って}\\
+       地球が太陽の周りをまわっていることを知っていますか。
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
-日本語の意味になるように、次の単語を並べ替えて英文を作りましょう。
-先頭に来る語は大文字ではじめてください
+\begin{frame}[plain]{Exercises}\small
+日本語の意味になるように、カッコ内の語を並べ替えて英文を作りましょう。
+先頭に来る語は大文字ではじめてください%
+\mbox{}\hfill{\scriptsize \myaudio{./audio/054_that_clause_03.mp3}}
+
+
+\vspace{-5pt}
 
 \begin{enumerate}
  \item わたしが幸せなのを知っていますよね。
 ( happy / I / that / am / you / know )\\
 \visible<2->{You know that I am happy.}
- \item 彼女はやってくるとわたしはおもいます。\\
+ \item 彼女はやってくるとわたしはおもいます。
 ( she / will / that / come / I / think )\\
 \visible<3->{I think that she will come.}
  \item 彼は親切だと彼女はいった。
 ( was / he / that / kind / said / she )\\
 \visible<4->{She said that he was kind.}
  \item 彼らが試合に勝つことをわたしたちは期待しています。\\
-( hope / win / we / that / the / game / they )\\
+( hope / win / we / that / will / the / game / they )\\
 \visible<5->{We hope that they will win the game.}
+ \item 1は素数({\scriptsize a prime number})でないことを知っていますか。\\
+( you / that / do / know / 1 is / a prime number / not  ) ?\\
+\visible<6->{Do you know that 1 is not a prime number?}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ \scriptsize
+次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\scriptsize \myaudio{./audio/054_that_clause_04.mp3}}
+
+\vspace{-3pt}
+\small
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+before upper={\setlength{\parindent}{1.5em}},
+  title={The Earth, the Sun, and the Moon}]
+The Earth goes around the Sun. It takes one year to do this. The Moon goes around the Earth. It takes one month. The Sun looks like it moves, but the Earth moves, so we have day and night. When your country faces the Sun, it is day. When your country does not face the Sun, it is night.
+
+We know that the Moon does not have its own light. It looks bright because it gets light from the Sun. The Moon looks different on different days. This is called the Moon’s shape or face. The Earth, the Sun, and the Moon are always moving, so we see many changes in the sky.
+\end{tcolorbox}
+
+\vspace{-3pt}
+
+\begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
+ \item<2-> ねこはなぜ運動しなかったのですか\tikzmark{q1}\hfill\visible<4->{なまけものだったから}
+ \item<2-> 飼い主はねこの運動のために何をしましたか\tikzmark{q2}\hfill\visible<6->{おもちゃのねずみを買った}
+ \item<2-> ねこにどんな変化がありましたか\tikzmark{q3}\hfill\visible<8->{家の中を走り回るようになった}
+ \item<2-> 飼い主にとって歩くのが危険なのはなぜですか\tikzmark{q4}\hfill\visible<10->{ねこが足元に飛び出してくること}
 \end{enumerate}
 
+\vspace{-15pt}
+
+\footnotetext[1]{\scriptsize exercise：運動する}
+\footnotetext[2]{\scriptsize chase：追いかける}
+\footnotetext[3]{\scriptsize in front of \ldots{}の前に}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-] ([yshift=-2pt]pic cs:clue3) to[in=0,out=-140] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-] ([yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{接続詞thatの省略}
+\begin{frame}<1-2>[plain]{接続詞thatの省略}
+ 
+\begin{enumerate}
+ \item We know \only<1>{\textbf{that}} the Earth is round.
+ \item I think \only<1>{\textbf{that}} he is kind.
+ \item She believes \only<1>{\textbf{that}} he will succeed.
+ \item They hope \only<1>{\textbf{that}} it will be sunny tomorrow.
+ \item Do you know \only<1>{\textbf{that}} the Earth moves around the Sun?
+ \item You know \only<1>{\textbf{that}} I am happy.
+ \item I think \only<1>{\textbf{that}} she will come.
+ \item She said \only<1>{\textbf{that}} he was kind.
+ \item We hope \only<1>{\textbf{that}} they will win the game.
+ \item Do you know \only<1>{\textbf{that}} 1 is not a prime number?
+\end{enumerate}
+
+\begin{block}<2->{Topics for Today}\small
+ 接続詞の\textbf{that}は省略されることがあります\mbox{}\hfill{\scriptsize \myaudio{./audio/054_that_clause_05.mp3}}
+
+
+\hspace{120pt}S $+$ V \Circled[fill color=white]{\,\textbf{that} s $+$ v\,} $\longrightarrow$ S $+$ V \Circled[fill color=white]{\,s $+$ v\,}
+
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
+\begin{frame}[plain]
+ 
+\begin{block}{S $+$ V \fbox{that s $+$ v}}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item   \Circled[fill color = white]{ \textbf{that}  s $+$ v }\,は「〜ということ」という意味
+ \item   \Circled[fill color = white]{ \textbf{that} s $+$ v }\,は全体で「名詞」の役割
+ \item  S $+$ V \Circled[fill color=white]{\,\tikzmark{that}\textbf{that} s $+$ v\,}
+\\
+\mbox{}\hfill{\scriptsize \tikzmark{teigi}このthatは\kenten{接続詞}です}
+\end{itemize}
+     \end{block}
+
+\begin{block}<2->{接続詞thatの省略}\small
+ 接続詞の\textbf{that}は省略されることがあります
+
+
+\hspace{120pt}S $+$ V \Circled[fill color=white]{\,\textbf{that} s $+$ v\,} $\longrightarrow$ S $+$ V \Circled[fill color=white]{\,s $+$ v\,}
+
+\end{block}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible{\draw[<-] ([xshift=8pt,yshift=-4pt]pic cs:that) |- ([xshift=-2pt, yshift=2pt] pic cs:teigi);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%
 \end{document}

@@ -47,22 +47,22 @@
 \subsection{that}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{S $+$ V \fbox{that s $+$ v}}
-\Large
+\large
 \begin{enumerate}
- \item I know George.\hfill{\scriptsize Georgeは目的語(O)}
- \item I know the fact.\hfill{\scriptsize fact \textipa{/f\'\ae kt/} 事実}
- \item I know \fbox{that she is kind}.\hfill{}{\small \textbf{S} $+$ \textbf{V} \fbox{that s $+$ v}($=$O)}
- \item I know she is kind.
+ \item<1-> I know George.\hfill{\scriptsize Georgeは目的語(O)}
+ \item<2-> I know the fact.\hfill{\scriptsize fact \textipa{/f\'\ae kt/} 事実}
+ \item<3-> I know \fbox{that she is kind}.\hfill{}{\small \textbf{S} $+$ \textbf{V}\,\,\fbox{that s $+$ v}\,($=$O)}
+ \item<4-> I know she is kind.
 
 \end{enumerate}
 \mbox{}\hfill{\scriptsize \myaudio{./audio/055_indirect_question_01.mp3}}
 
-\begin{block}{Topics for Today}\small
+\begin{block}<5->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item   \Circled[fill color = white]{ that  $+$ v }\,は「〜ということ」という意味
+ \item   \Circled[fill color = white]{ that  s $+$ v }\,は「〜ということ」という意味
  \item   \Circled[fill color = white]{ that s $+$ v }\,は全体で「名詞」の役割
  \item  \textbf{that}の品詞は\kenten{接続詞}です
- \item 接続詞のthatは省略されることもあります
+ \item 接続詞の\textbf{that}は省略されることもあります
 \end{itemize}
      \end{block}
 \end{frame}
@@ -78,16 +78,21 @@
   \item \begin{enumerate}
 	 \item<4-> Where does she live?
 	 \item<5-> I know \visible<6->{\fbox{where she lives}.}
-	 \item<7-> *I know where does she live.
+	 \item<7-> *I know where does she live.\hfill{\scriptsize *は、まちがった英文につける記号}
 	\end{enumerate}
  \end{enumerate}
 
 \begin{block}<8->{Topics for Today}\small
  \begin{itemize}\setbeamertemplate{items}[square]
-  \item 疑問詞ではじまる疑問文をほかの文と組み合わせることができます\\
-\mbox{}\hfill{\scriptsize これを\kenten{間接疑問文}といいます}
-  \item このとき\Circled[fill color=white]{ 疑問詞 S $+$ V }となります
+  \item 疑問詞ではじまる疑問文をほかの文(I knowなど)と組み合わせることができます\\
+  \item このときI know \Circled[fill color=white]{ 疑問詞\tikzmark{indirect} S $+$ V \ldots\,\,}\,\,となります\\
+\mbox{}\hfill{\scriptsize \tikzmark{teigi}これを\kenten{間接疑問文}といいます}  \item 間接疑問文ではdo, does, didを使いません
  \end{itemize}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<8->{\draw[<-] ([xshift=2pt,yshift=-4pt]pic cs:indirect) |- ([xshift=-2pt, yshift=2pt] pic cs:teigi);}
+\end{tikzpicture}
+
 \end{block}
 \mbox{}\hfill{\scriptsize \myaudio{./audio/055_indirect_question_02.mp3}}
 \end{frame}
@@ -96,12 +101,12 @@
 \begin{frame}[plain]{be動詞のとき}
  \begin{enumerate}
   \item<1-> Where is the station?
-  \item<2-> I know \visible<3->{where the station is.}
-  \item *I know where is the station.
+  \item<2-> I know \visible<3->{\fbox{where the station is}.}
+  \item<4-> *I know where is the station.
  \end{enumerate}
 
-\begin{block}{Topics for Today}\small
-\begin{itemize}
+\begin{block}<5->{Topics for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item be動詞が使われている疑問文も間接疑問文になります
  \item 語順は\Circled[fill color=white]{ 疑問詞 S $+$ V }となります
 \end{itemize}
@@ -129,23 +134,25 @@
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
+\begin{frame}[plain]{Exercises}\small
 
 {\small 日本語の意味になるようカッコ内の語句を並べかえましょう。
 文頭の語は大文字で始めてください}%
 \mbox{}\hfill{\scriptsize \myaudio{./audio/055_indirect_question_05.mp3}}
 
  \begin{enumerate}
-  \item わたしはなぜ彼女が怒っているか理解している。\\( why / I / she / is / understand / angry ). %
-\hfill{}I understand why she is angry.
-  \item 彼がゆうべどこへ行ったかかご存じですか。\\( where / know / do / went / he / you ) last night? \\
-Do you know where she went last night?
-  \item わたしは彼らがいつパリへ行くか知らない。\\
+  \item {わたしはなぜ彼女が怒っているか理解している。}\\
+( why / I / she / is / understand / angry ). \\
+\visible<2->{I understand why she is angry.}
+  \item {彼がゆうべどこへ行ったかかご存じですか。}\\
+( where / know / do / went / he / you ) last night? \\
+\visible<3->{Do you know where he went last night?}
+  \item {わたしは彼らがいつパリへ行くか知らない。}\\
 ( know / they / go / I / to / don't / when / will ) Paris. \\
-I don't know when she will go to Paris.
-  \item 誕生日に何がほしいか教えてください。\\
+\visible<4->{I don't know when they will go to Paris.}
+  \item {誕生日に何がほしいか教えてください。}\\
 ( your / you / me / want / tell / birthday / for / what ) \\
-Tell me what you want for your birthday.
+\visible<5->{Tell me what you want for your birthday.}
 
  \end{enumerate}
 \end{frame}
@@ -168,16 +175,23 @@ Lily laughed. ``Now I understand why it looks familiar. I saw one on TV!''
 Later, their teacher asked, ``Can you tell me which ani\tikzmark{clue5}mal you liked best?''
 Tom grinned. ``The capybara! It looks just like my gran\tikzmark{clue4}dpa!''
 \end{tcolorbox}
-{\scriptsize 英文の内容とあっていればT,あっていなければFと答えましょう}
+\visible<2->{\scriptsize 英文の内容とあっていればT、あっていなければFと答えましょう}
 \vspace{-3pt}
 \begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
- \item<2-> Tom and Lily went to the zoo.\tikzmark{q1}\hfill\visible<4->{T}
- \item<2-> Lily immediately remembered the name of the animal.\tikzmark{q2}\hfill\visible<6->{F}
- \item<2-> The animal they saw was a kangaroo.\tikzmark{q3}\hfill\visible<8->{F}
- \item<2-> Tom thought the capybara looked like his grandfather.\tikzmark{q4}\hfill\visible<10->{T}
- \item<2-> Their teacher asked about their favorite food.\tikzmark{q5}\hfill\visible<12->{F}
-
+ \item<2-> TomとLilyは動物園にいった\tikzmark{q1}\hfill\visible<4->{T}
+ \item<2-> Lilyは見た動物の名前をすぐにおもいだした\tikzmark{q2}\hfill\visible<6->{F}
+ \item<2-> ふたりが見た動物はカンガルーだった\tikzmark{q3}\hfill\visible<8->{F}
+ \item<2-> Tomはカピバラがおじいさんに似ているとおもった\tikzmark{q4}\hfill\visible<10->{T}
+ \item<2-> 先生はお気に入りの食べ物についてたずねた\tikzmark{q5}\hfill\visible<12->{F}
 \end{enumerate}
+% 以下は選択肢を英語にしたもの
+%\begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
+% \item<2-> Tom and Lily went to the zoo.\tikzmark{q1}\hfill\visible<4->{T}
+% \item<2-> Lily immediately remembered the name of the animal.\tikzmark{q2}\hfill\visible<6->{F}
+% \item<2-> The animal they saw was a kangaroo.\tikzmark{q3}\hfill\visible<8->{F}
+% \item<2-> Tom thought the capybara looked like his grandfather.\tikzmark{q4}\hfill\visible<10->{T}
+% \item<2-> Their teacher asked about their favorite food.\tikzmark{q5}\hfill\visible<12->{F}
+%\end{enumerate}
 
 \begin{tikzpicture}[remember picture,overlay]
  \visible<3->{\draw[<-] ([yshift=-2pt]pic cs:clue1) to ([xshift=2pt, yshift=2pt] pic cs:q1);}
@@ -188,34 +202,77 @@ Tom grinned. ``The capybara! It looks just like my gran\tikzmark{clue4}dpa!''
 \end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{ここに注意}
-\begin{frame}[plain]{間接疑問文}
- \begin{enumerate}
-  \item \begin{enumerate}
-	 \item<1-> She was born in Tokyo.
-	 \item<2-> I know \visible<3->{that she was born in Tokyo.} 
-	 \item<4-> I know she was born in Tokyo.
-	\end{enumerate}
-  \item \begin{enumerate}
-	 \item<5-> Where was she born?
-	 \item<6-> I know \visible<7->{where she was born.}
-	 \item<8-> *I know that where she was born.
-	\end{enumerate}
+\section{まとめ}
 
+\begin{frame}[plain]
+ 
+\begin{columns}[t]
+%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{column}{.45\textwidth}  
+\begin{enumerate}
+ \item Where does he live?
+ \item I know where he lives.
+ \item[2'.] *I know where does he live.
+\end{enumerate}
+ \end{column}
+%%%%%%%%%%%%%%%%%%%%%%
+ \begin{column}{.45\textwidth}  
+ \begin{enumerate}\setcounter{enumi}{2}
+  \item What is this?
+   \item Do you know what this is?
+  \item[4'.] *Do you know what is this?
  \end{enumerate}
+ \end{column}
+%%%%%%%%%%%%%%%%%%%%%%%
+\end{columns}
 
+\begin{block}<2->{間接疑問文}\small
+ \begin{itemize}\setbeamertemplate{items}[square]
+  \item 疑問詞ではじまる疑問文をほかの文(I knowなど)と組み合わせることができます\\
+  \item このときI know \Circled[fill color=white]{ 疑問詞\tikzmark{indirect} S $+$ V \ldots\,\,}\,\,となります\\
+\mbox{}\hfill{\scriptsize \tikzmark{teigi}これを\kenten{間接疑問文}といいます}  \item 間接疑問文ではdo, does, didを使いません
+ \end{itemize}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<2->{\draw[<-] ([xshift=2pt,yshift=-4pt]pic cs:indirect) |- ([xshift=-2pt, yshift=2pt] pic cs:teigi);}
+\end{tikzpicture}
+\end{block}
 \mbox{}\hfill{\scriptsize \myaudio{./audio/055_indirect_question_07.mp3}}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{まとめ}
-\begin{frame}[plain]{まとめ}
- \begin{block}{Topics for Today}\small
- \begin{itemize}\setbeamertemplate{items}[square]
-  \item 疑問詞ではじまる疑問文をほかの文と組み合わせることができます\\
-\mbox{}\hfill{\scriptsize これを\kenten{間接疑問文}といいます}
-  \item このとき\Circled[fill color=white]{ 疑問詞 S $+$ V }となります
- \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ \begin{enumerate}
+  \item \begin{enumerate}
+	 \item<1-> She was born in Tokyo.%
+\mbox{}\hfill{\scriptsize \myaudio{./audio/055_indirect_question_08.mp3}}
+
+	 \item<2-> I know \visible<3->{\textbf<3->{that} she was born in Tokyo.} 
+	 \item<4-> I know she was born in Tokyo.
+	\end{enumerate}
+  \item \begin{enumerate}
+	 \item<5-> \textbf<5->{Where} was she born?
+	 \item<6-> I know \visible<7->{\textbf<7->{where} she was born.}
+%	 \item<8-> *I know that where she was born.
+	\end{enumerate}
+ \end{enumerate}
+
+
+\begin{block}<8->{Topics for Today}\small
+I knowなどにほかの文を続けるとき、続ける文が
+ \begin{enumerate}
+  \item ふつうの文(She was born in Tokyo.)のとき
+         \begin{itemize}\setbeamertemplate{items}[circle]
+	   \item I know \textbf{that} she was born in Tokyo.のように\kenten{接続詞}\textbf{that}をもちいます
+	  \item I know she was born in Tokyo.のように\textbf{that}が\kenten{省略}されることもあります
+	  \end{itemize}
+  \item \kenten{疑問詞}をもちいた疑問文(\textbf{Where} was she born?)のときは
+        \begin{itemize}\setbeamertemplate{items}[circle]
+	 \item I know where she was born.のように\,\,\Circled[fill color = white]{\,疑問詞 S $+$ V\,}\,\,を続けます
+	 \item *I know where was she born.はまちがいです
+	 \item *I know that where she was born.はまちがいです
+	\end{itemize}
+ \end{enumerate}
 \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
