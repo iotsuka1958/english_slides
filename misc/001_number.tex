@@ -23,7 +23,7 @@
 \usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
-\subtitle{I wish I had a lot of money.}
+\subtitle{数字}
 \author{}
 \institute[]{}
 \date[]
@@ -476,4 +476,50 @@
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+\scriptsize
+
+\vspace{-3pt}
+\small
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+before upper={\setlength{\parindent}{1.25em}},
+  title=次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\scriptsize \myaudio{./audio/062_it_for_to_05.mp3}}
+]
+
+March 14 is called Pi\tikzmark{clue1} Day in the U.S. Why? Because, in numbers, March 14 is written as 3/14, and the number pi ($\pi$) begins with 3.14. We use pi to find the length\footnotemark{} around a circle.
+
+Some people eat pie on March 14. Why? Because ``pie'' sou\tikzmark{clue2}nds just like ``pi.''
+At some schools, students learn about cir\tikzmark{clue3}cles and pi, and eat sweet pie. It is a fun day to enjoy math.
+
+How many digits\footnotemark{} are there in pi? It has many! 3.141592\ldots\,\, It goes on \tikzmark{clue4}and on\footnotemark{}!
+
+\end{tcolorbox}
+
+\vspace{-5pt}
+
+\begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
+ \item<2-> アメリカで3月14日を円周率の日と呼ぶのはなぜですか\tikzmark{q1}\hfill\visible<4->{円周率の最初の3桁は3.14だから}
+ \item<2-> アメリカで3月14日にパイを食べるのはなぜですか\tikzmark{q2}\hfill\visible<6->{パイの発音は円周率$\pi$の発音と同じだから}
+ \item<2-> 3月14日にアメリカの生徒は平行四辺形について学習しますか\tikzmark{q3}\hfill\visible<8->{いいえ（円と円周率について学習する）}
+ \item<2-> $\pi$の桁数は有限ですか\tikzmark{q4}\hfill\visible<10->{いいえ（無限に続く）}
+\end{enumerate}
+
+\vspace*{-15pt}
+
+\footnotetext[1]{\scriptsize length：長さ}
+\footnotetext[2]{\scriptsize digit：数字}
+\footnotetext[3]{\scriptsize go on：続く}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue3) to[in=30,out=-70] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to[out=-120, in=0] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

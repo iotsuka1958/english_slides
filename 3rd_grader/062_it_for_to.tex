@@ -163,10 +163,10 @@ One day, I bought a t\tikzmark{clue2}oy mouse. It was fun for her to chase\footn
 \footnotetext[3]{\scriptsize in front of \ldots{}の前に}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<3->{\draw[<-] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
- \visible<5->{\draw[<-] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
- \visible<7->{\draw[<-] ([yshift=-2pt]pic cs:clue3) to[in=0,out=-140] ([xshift=2pt, yshift=2pt] pic cs:q3);}
- \visible<9->{\draw[<-] ([yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+ \visible<3->{\draw[<-,opacity=0.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=0.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,opacity=0.4,line width=2pt] ([yshift=-2pt]pic cs:clue3) to[in=0,out=-140] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=0.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
 \end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

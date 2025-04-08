@@ -1,0 +1,6 @@
+Excuse me, Betty.<break time="2s"/> How can I get to the station?
+Oh, it’s not far from here.<break time="2s"/>  Go straight and turn right at the bank.
+Okay. <break time="1s"/> Then?
+Then walk past the post office.<break time="2s"/>  The station is on your right.
+I see.<break time="1s"/>  Thank you!
+You’re welcome!

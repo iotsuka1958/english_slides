@@ -77,10 +77,10 @@ file_with_path,path,file_name,slide,mp3,reading_manuscript
 ./3rd_grader/051_svc.tex,./3rd_grader/,051_svc.tex,FALSE,FALSE,FALSE
 ./3rd_grader/052_svoo.tex,./3rd_grader/,052_svoo.tex,FALSE,FALSE,FALSE
 ./3rd_grader/053_svoc.tex,./3rd_grader/,053_svoc.tex,FALSE,FALSE,FALSE
-./3rd_grader/054_v_that_clause.tex,./3rd_grader/,054_v_that_clause.tex,TRUE,FALSE,FALSE
-./3rd_grader/055_indirect_question.tex,./3rd_grader/,055_indirect_question.tex,FALSE,FALSE,FALSE
+./3rd_grader/054_v_that_clause.tex,./3rd_grader/,054_v_that_clause.tex,TRUE,TRUE,FALSE
+./3rd_grader/055_indirect_question.tex,./3rd_grader/,055_indirect_question.tex,TRUE,TRUE,FALSE
 ./3rd_grader/061_want_to_etc.tex,./3rd_grader/,061_want_to_etc.tex,FALSE,FALSE,FALSE
-./3rd_grader/062_it_for_to.tex,./3rd_grader/,062_it_for_to.tex,TRUE,FALSE,FALSE
+./3rd_grader/062_it_for_to.tex,./3rd_grader/,062_it_for_to.tex,TRUE,TRUE,FALSE
 ,./misc/,001_number.tex,TRUE,FALSE,FALSE
 ,./misc/,002_day_month_season.tex,TRUE,FALSE,FALSE
 ,./misc/,003_weather.tex,TRUE,FALSE,FALSE

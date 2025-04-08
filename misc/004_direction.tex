@@ -62,51 +62,55 @@
                                  \end{tblr}\right\}$ ?
 \end{enumerate}
 
+\hfill{\scriptsize \myaudio{./audio/004_direction_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{道案内の表現}
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{道案内の表現}
  \begin{enumerate}
-  \item Go straight.まっすぐ行ってください
-  \item Turn left. 左に曲がってください
-  \item It's on your right. 右側にあります
-  \item It's next to the supermarket.スーパーの隣です
-  \item It's across from the park.公園の向かいです
+  \item \textbf{Go straight}.{\small まっすぐ行ってください}
+  \item \textbf{Turn left}. {\small 左に曲がってください}
+  \item It's \textbf{on your righ}t. {\small 右側にあります}
+  \item It's \textbf{next to} the supermarket.{\small スーパーの隣です}
+  \item It's \textbf{across from} the park.{\small 公園の向かいです}
  \end{enumerate}
+
+\hfill{\scriptsize \myaudio{./audio/004_direction_02.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Exercises}
 \begin{frame}[plain]{Exercises}
 \small
 \begin{tcolorbox}[colframe=ForestGreen,
   colback=ForestGreen!10!white,
   colbacktitle=ForestGreen!40!white,
   coltitle=black, %fonttitle=\bfseries,
-  title=2人の会話を読んで、問に答えましょう\hfill{\scriptsize \myaudio{./audio/003_weather_03.mp3}}]
+  title=2人の会話を読んで、問に答えましょう\hfill{\scriptsize \myaudio{./audio/004_direction_03.mp3}}]
 \begin{tabular}{rp{.9\textwidth}}
-Ja\tikzmark{clue2}ck:& Excuse me, Betty. How can I get to the station?\\
-Betty:& Oh, it's not\tikzmark{clue1} far from here. Go straight and turn right at the ba\tikzmark{clue3}nk.\\
+Jack:& Excuse me, Betty. How can I get to the\tikzmark{clue2} station?\\
+Betty:& Oh, it's not\tikzmark{clue1} far from here. Go straight and turn right\tikzmark{clue3} at the bank.\\
 Jack:& Okay. Then?\\
 Betty:& Then walk past the post off\tikzmark{clue4}ice. The station is on your right.\\
 Jack:&I see. Thank you!\\
 Betty:&You're welcome!
 \end{tabular}
 \end{tcolorbox}
-会話の内容とあっていればT,あっていなければFと答えましょう
+{\small 会話の内容とあっていればT,あっていなければFと答えましょう}
 \vspace{-3pt}
 \begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
  \item<2-> 駅はかなり遠いところに位置している\tikzmark{q1}\hfill\visible<4->{F}
  \item<2-> Bettyは駅までの道を知りたがっている\tikzmark{q2}\hfill\visible<6->{F}
- \item<2-> 右にまがるのは郵便局のある街角だ\tikzmark{q3}\hfill\visible<8->{F}
+ \item<2-> 右にまがるのは銀行のある街角だ\tikzmark{q3}\hfill\visible<8->{T}
  \item<2-> 駅は郵便局を過ぎて右側にある\tikzmark{q4}\hfill\visible<10->{T}
 
 \end{enumerate}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<3->{\draw[<-] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
- \visible<5->{\draw[<-] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
- \visible<7->{\draw[<-] ([yshift=-2pt]pic cs:clue3) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q3);}
- \visible<9->{\draw[<-] ([yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+ \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([xshift=10pt,yshift=-1pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue3) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
 \end{tikzpicture}
 \end{frame}
 \end{document}
