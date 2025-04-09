@@ -69,8 +69,8 @@ file_with_path,path,file_name,slide,mp3,reading_manuscript
 ./3rd_grader/014_have_pp_kekka.tex,./3rd_grader/,014_have_pp_kekka.tex,TRUE,TRUE,FALSE
 ./3rd_grader/021_N_ing.tex,./3rd_grader/,021_N_ing.tex,TRUE,TRUE,FALSE
 ./3rd_grader/022_N_pp.tex,./3rd_grader/,022_N_pp.tex,TRUE,TRUE,FALSE
-./3rd_grader/031_N_wh_V.tex,./3rd_grader/,031_N_wh_V.tex,TRUE,FALSE,FALSE
-./3rd_grader/032_N_wh_SV.tex,./3rd_grader/,032_N_wh_SV.tex,TRUE,FALSE,FALSE
+./3rd_grader/031_N_wh_V.tex,./3rd_grader/,031_N_wh_V.tex,TRUE,TRUE,FALSE
+./3rd_grader/032_N_wh_SV.tex,./3rd_grader/,032_N_wh_SV.tex,TRUE,TRUE,FALSE
 ./3rd_grader/041_mood_intro.tex,./3rd_grader/,041_mood_intro.tex,TRUE,TRUE,FALSE
 ./3rd_grader/042_mood_i_wish.tex,./3rd_grader/,042_mood_i_wish.tex,TRUE,TRUE,FALSE
 ./3rd_grader/043_mood_if.tex,./3rd_grader/,043_mood_if.tex,TRUE,TRUE,FALSE
@@ -81,8 +81,8 @@ file_with_path,path,file_name,slide,mp3,reading_manuscript
 ./3rd_grader/055_indirect_question.tex,./3rd_grader/,055_indirect_question.tex,TRUE,TRUE,FALSE
 ./3rd_grader/061_want_to_etc.tex,./3rd_grader/,061_want_to_etc.tex,FALSE,FALSE,FALSE
 ./3rd_grader/062_it_for_to.tex,./3rd_grader/,062_it_for_to.tex,TRUE,TRUE,FALSE
-,./misc/,001_number.tex,TRUE,FALSE,FALSE
-,./misc/,002_day_month_season.tex,TRUE,FALSE,FALSE
-,./misc/,003_weather.tex,TRUE,FALSE,FALSE
-,./misc/,004_direction.tex,TRUE,FALSE,FALSE
+,./misc/,001_number.tex,TRUE,TRUE,FALSE
+,./misc/,002_day_month_season.tex,TRUE,TRUE,FALSE
+,./misc/,003_weather.tex,TRUE,TRUE,FALSE
+,./misc/,004_direction.tex,TRUE,TRUE,FALSE
 ,./misc/,005_phone.tex,FALSE,FALSE,FALSE
