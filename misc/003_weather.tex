@@ -116,10 +116,10 @@ George:& All right, I'll bring a jacket. Let's go!
 \end{enumerate}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<3->{\draw[<-] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
- \visible<5->{\draw[<-] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
- \visible<7->{\draw[<-] ([yshift=-2pt]pic cs:clue3) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q3);}
- \visible<9->{\draw[<-] ([yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+ \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,line width=2pt, opacity=.4] ([yshift=-2pt]pic cs:clue3) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
 \end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

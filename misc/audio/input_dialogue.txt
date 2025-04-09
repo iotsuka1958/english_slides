@@ -1,9 +1,1 @@
-Hi Jane, how is the weather today?
-Hi George! It’s sunny today. I love sunny days.
-Yeah, me too! Do you want to go to the park with me?
-That sounds great! But the forecast says it might be cloudy later.
-Okay, no problem. We can still go. If it gets cloudy, we can have coffee inside.
-Sounds good!
-I hope it doesn’t rain.
-Don’t worry, it won’t rain today. It might be windy later, though.
-Alright, I’ll bring a jacket. Let’s go!
+March fourteen is called Pi Day in the US. <break time="1s"/>Why?  <break time="1s"/>Because, in numbers, March fourteenth is written as March fourteenth,  <break time="1s"/>and the number pi  begins with three point one four.  <break time="1s"/>We use pi to find the length around a circle.  <break time="1s"/>Some people eat pie on March fourteenth.  <break time="1s"/>Why? Because pie sounds just like pi.  <break time="1s"/>At some schools, students learn about circles and pi, and eat sweet pie.  <break time="1s"/>It is a fun day to enjoy math.  <break time="1s"/>How many digits are there in pi?  <break time="1s"/>It has many!  <break time="1s"/>three point one four one five nine two <break time="1s"/>It goes on and on!
