@@ -19,6 +19,8 @@
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 \usetikzlibrary{tikzmark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\UseTblrLibrary{counter} %% added this line
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{I will give you some flowers.}
@@ -59,14 +61,15 @@
 \hfill\tikzmark{BB}{\scriptsize 直接目的語}
  \item<5-> \begin{tblr}{
          colspec=llll,
+         row{odd} = {bg=azure8},
          row{1} = {bg=azure3, fg=white},
-         row{2} = {bg=white},
+         row{even} = {bg=white},
          baseline=c,
          hline{1,Z} = {0.08em},
          hline{2} = {0.05em}
-}
+ }
 原形&過去形&過去分詞&ing\\
-give \textipa{/g\'Iv/}&gave \textipa{/g\'aIv/}&given \textipa{/g\'Ivn/}&giving \textipa{/g\'IvIN/}
+{give \textipa{/g\'Iv/}}&{gave \textipa{/g\'eIv/}}&{given \textipa{/g\'Ivn/}}&{giving \textipa{/g\'IvIN/}}
        \end{tblr}
 \end{itemize}
 \end{block}
@@ -96,26 +99,28 @@ give \textipa{/g\'Iv/}&gave \textipa{/g\'aIv/}&given \textipa{/g\'Ivn/}&giving \
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
-\section{giveのなかまたち}
-\begin{frame}[plain]{giveのなかまたち}\large
+\section{giveのなかまたち1}
+\begin{frame}[plain]{giveのなかまたち1}\large
  \begin{enumerate}
   \item<1-> I will \textbf{give} you a present.%
        \hfill{\scriptsize present \textipa{/pr\'eznt/} 贈り物}
   \item<2-> I will \textbf{send} you a present.
-  \item<3-> I will \textbf{show }you the picture.%
+  \item<3-> I will \textbf{show} you the picture.%
        \hfill{\scriptsize picture \textipa{/p\'IktS\textrhookschwa /} 絵、写真}
-  \item<4-> i will \textbf{tell} you a secret.%
+  \item<4-> I will \textbf{write} you a letter.
+  \item<5-> i will \textbf{tell} you a secret.%
        \hfill{\scriptsize secret \textipa{/s\'\i:kl@t/} 秘密}
-  \item<5-> I will \textbf{teach} you history.%
+  \item<6-> I will \textbf{teach} you history.%
        \hfill{\scriptsize history \textipa{/h\'Istri/} 歴史}
 
  \end{enumerate}
 
-\begin{block}<6->{Topics for Today\hfill{\scriptsize \myaudio{./audio/052_svoo_03.mp3}}}\small
+\begin{block}<7->{S $+$ V $+$ O $+$ O\hfill{\scriptsize \myaudio{./audio/052_svoo_03.mp3}}}\small
 $\left\{ \begin{tabular}{l}
 %	  give\\
 	  send\\
 	  show\\
+	  write\\
 	  tell\\
 	  teach\\
 	 \end{tabular}\right\} + \tikzmark{a}\text{\Circled[fill color=white]{\,人\,}} + \tikzmark{b}\text{\Circled[fill color=white]{\,もの・こと\,}}$
@@ -125,10 +130,187 @@ $\left\{ \begin{tabular}{l}
 \end{block}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<6->{\draw[<-] ([xshift=9pt,yshift=-4pt]pic cs:a) |- ([xshift=-2pt, yshift=2pt] pic cs:A);}
- \visible<6->{\draw[<-] ([xshift=24pt,yshift=-4pt]pic cs:b) |- ([xshift=-2pt, yshift=2pt] pic cs:B);}
+ \visible<7->{\draw[<-] ([xshift=9pt,yshift=-4pt]pic cs:a) |- ([xshift=-2pt, yshift=2pt] pic cs:A);}
+ \visible<7->{\draw[<-] ([xshift=24pt,yshift=-4pt]pic cs:b) |- ([xshift=-2pt, yshift=2pt] pic cs:B);}
 \end{tikzpicture}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{一覧表}
+  \begin{tblr}{
+         colspec=llll,
+         row{odd} = {bg=azure8},
+         row{1} = {bg=azure3, fg=white},
+         row{even} = {bg=white},
+         row{2} = {bg=white},
+         baseline=c,
+         hline{1,Z} = {0.08em},
+         hline{2} = {0.05em},
+         cells={cmd=\onslide<\arabic{colnum}->} %列ごとに順次表示%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+原形&過去形&過去分詞&ing\\
+give \textipa{/g\'Iv/}&gave \textipa{/g\'eIv/}&given \textipa{/g\'Ivn/}&giving \textipa{/g\'IvIN/}\\
+send \textipa{/s\'end/}&sent \textipa{/s\'ent/}&sent \textipa{/s\'ent/}&sending \textipa{/s\'endiN/}\\
+show \textipa{/S\'oU/}&showed \textipa{/S\'oUd/}&shown \textipa{/S\'oUn/}&showing \textipa{/S\'oUiN/}\\
+write \textipa{/r\'aIt/}&wrote \textipa{/r\'oUt/}&written \textipa{/r\'Itn/}&writing \textipa{/r\'aItiN/}\\
+tell \textipa{/t\'el/}&told \textipa{/t\'oUld/}&told \textipa{/t\'oUld/}&telling \textipa{/t\'eliN/}\\
+teach \textipa{/t\'\i:tS/}&taught \textipa{/t\'O:t/}&taught \textipa{/t\'O:t/}& teaching \textipa{/t\'\i:tSiN/}
+       \end{tblr}
 
+\hfill{\scriptsize \myaudio{./audio/052_svoo_04.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}{}
+
+{\small 日本語の意味になるようカッコ内の語句を並べかえましょう}
+ \hfill{\scriptsize \myaudio{./audio/052_svoo_05.mp3}}
+
+
+\begin{enumerate}
+ \item {\small 私にその写真を見せてください。}  Please ( picture / me  / the / show ). \\
+       \visible<2->{Please show me the picture.}
+ \item {\small 彼女は先月彼に手紙を送りました。}
+She ( a / him / month / sent / letter / last )\\
+\visible<3->{She sent him a letter last month.}
+ \item {\small 私は彼に手紙を毎週書きます。} I ( week / him / a / write / letter / every )\\
+\visible<4->{I write hime a letter every week}.
+ \item {\small 父は毎晩わたしにおもしろい話をしてくれます。}\\
+My ( me / story / tells / night / interesting / an / every / father )\\
+\visible<5->{My father tells me an interesting story every night.}
+ \item {\small きのうJanisは彼らに新しい歌を教えた}。\\
+Janis ( yesterday / a / taught / song / them / new )\\
+\visible<6->{Janis taught them a new song yesterday.}
+\end{enumerate}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{giveのなかまたち2}
+\begin{frame}[plain]{giveのなかまたち2}\large
+\begin{enumerate}
+ \item<1-> I will \textbf{buy} you chocolate.%
+\hfill{\scriptsize chocolate \textipa{/tS\'Akl@t/} チョコレート}
+ \item<2-> I will \textbf{make} her a chair.
+ \item<3-> I will \textbf{cook} them lunch.
+\end{enumerate}
+
+
+\begin{block}<4->{これもS $+$ V $+$ O $+$ O}\small
+
+$\left\{ \begin{tabular}{l}
+%	  give\\
+	  buy\\
+	  make\\
+	  cook\\
+	 \end{tabular}\right\} + \tikzmark{aaa}\text{\Circled[fill color=white]{\,人\,}} + \tikzmark{bbb}\text{\Circled[fill color=white]{\,もの\,}}$
+
+\hfill\tikzmark{AAA}{\scriptsize 間接目的語}\\
+\hfill\tikzmark{BBB}{\scriptsize 直接目的語}
+\end{block}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<4->{\draw[<-] ([xshift=9pt,yshift=-4pt]pic cs:aaa) |- ([xshift=-2pt, yshift=2pt] pic cs:AAA);}
+ \visible<4->{\draw[<-] ([xshift=12pt,yshift=-4pt]pic cs:bbb) |- ([xshift=-2pt, yshift=2pt] pic cs:BBB);}
+\end{tikzpicture}
+
+\hfill{\scriptsize \myaudio{./audio/052_svoo_06.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{一覧表}
+  \begin{tblr}{
+         colspec=llll,
+         row{odd} = {bg=azure8},
+         row{1} = {bg=azure3, fg=white},
+         row{even} = {bg=white},
+         row{2} = {bg=white},
+         baseline=c,
+         hline{1,Z} = {0.08em},
+         hline{2} = {0.05em},
+         cells={cmd=\onslide<\arabic{colnum}->} %列ごとに順次表示%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+原形&過去形&過去分詞&ing\\
+buy \textipa{/b\'aI/}&bought \textipa{/b\'O:t/}&bought \textipa{/b\'O:t/}&buying \textipa{/b\'aIIN/}\\
+make \textipa{/m\'eIk/}&made \textipa{/m\'eId/}&made \textipa{/m\'eId/}&making \textipa{/m\'eIkiN/}\\
+cook \textipa{/k\'Uk/}&cooked \textipa{/k\'Ukt/}&cooked \textipa{/k\'Ukt/}&cooking \textipa{/k\'UkiN/}\\
+       \end{tblr}
+
+\hfill{\scriptsize \myaudio{./audio/052_svoo_07.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+
+{\small 日本語の意味になるようカッコ内の語句を並べかえましょう。先頭の語は大文字で始めてください}
+ \hfill{\scriptsize \myaudio{./audio/052_svoo_08.mp3}}
+\begin{enumerate}
+ \item {\small 彼は昨日、私たちにおいしい食事を作ってくれました。}\\
+       ( us / he / a delicious meal / cooked ) yesterday.\\
+       \visible<2->{He cooked us a delicious meal yesterday.}
+ \item {\small 彼女はわたしに素敵な時計を買ってくれました。}\\
+       ( watch / bought / nice / me / a / she ).\\
+       \visible<3->{She bought me a nice watch.}
+ \item {\small わたしは明日彼らにケーキを作ります。}\\
+( will / tomorrow / them / I / a cake / make ).\\
+       \visible<4->{I will make them a cake tomorrow.}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
+\begin{frame}[plain]{まとめ}
+
+\begin{block}{S $+$ V $+$ O $+$ O}\small
+ \textbf{give}（与える）は目的語を2つとります
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item \textbf{give} $+$ \tikzmark{aa}\Circled[fill color = white]{\,人\,} $+$ \tikzmark{bb}\Circled[fill color = white]{\,もの\,}\hspace{20pt}「\ldots{}に～をあげる」\\
+\hfill\tikzmark{AA}{\scriptsize 間接目的語　　　　　}\\
+\hfill\tikzmark{BB}{\scriptsize 直接目的語}
+ \item giveのなかまたち\\
+$\left\{ \begin{tabular}{l}
+%	  give\\
+	  send\\
+	  show\\
+	  write\\
+	  tell\\
+	  teach\\
+	  buy\\
+	  make\\
+	  cook\\
+	 \end{tabular}\right\} + \tikzmark{aaa}\text{\Circled[fill color=white]{\,人\,}} + \tikzmark{bbb}\text{\Circled[fill color=white]{\,もの\,}}$
+\end{itemize}
+\end{block}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible{\draw[<-] ([xshift=9pt,yshift=-4pt]pic cs:aa) |- ([xshift=-2pt, yshift=2pt] pic cs:AA);}
+ \visible{\draw[<-] ([xshift=14pt,yshift=-4pt]pic cs:bb) |- ([xshift=-2pt, yshift=2pt] pic cs:BB);}
+ \visible{\draw[<-] ([xshift=9pt,yshift=-4pt]pic cs:aaa) -- ([xshift=9pt,yshift=-14pt]pic cs:aaa)-- ([xshift=9pt,yshift=-14pt]pic cs:aaa) -| ([xshift=12pt, yshift=-2pt] pic cs:AA);}
+ \visible{\draw[<-] ([xshift=28pt,yshift=4pt]pic cs:bbb) -| ([xshift=12pt, yshift=-2pt] pic cs:BB);}
+\end{tikzpicture}
+ 
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{一覧表}
+ 
+\begin{tblr}{
+         colspec=llll,
+         row{odd} = {bg=azure8},
+         row{1} = {bg=azure3, fg=white},
+         row{even} = {bg=white},
+         row{2} = {bg=white},
+         baseline=c,
+         hline{1,Z} = {0.08em},
+         hline{2} = {0.05em},
+         cells={cmd=\onslide<\arabic{rownum}->} %列ごとに順次表示%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+原形&過去形&過去分詞&ing\\
+give \textipa{/g\'Iv/}&gave \textipa{/g\'eIv/}&given \textipa{/g\'Ivn/}&giving \textipa{/g\'IvIN/}\\
+send \textipa{/s\'end/}&sent \textipa{/s\'ent/}&sent \textipa{/s\'ent/}&sending \textipa{/s\'endiN/}\\
+show \textipa{/S\'oU/}&showed \textipa{/S\'oUd/}&shown \textipa{/S\'oUn/}&showing \textipa{/S\'oUiN/}\\
+write \textipa{/r\'aIt/}&wrote \textipa{/r\'oUt/}&written \textipa{/r\'Itn/}&writing \textipa{/r\'aItiN/}\\
+tell \textipa{/t\'el/}&told \textipa{/t\'oUld/}&told \textipa{/t\'oUld/}&telling \textipa{/t\'eliN/}\\
+teach \textipa{/t\'\i:tS/}&taught \textipa{/t\'O:t/}&taught \textipa{/t\'O:t/}& teaching \textipa{/t\'\i:tSiN/}\\
+buy \textipa{/b\'aI/}&bought \textipa{/b\'O:t/}&bought \textipa{/b\'O:t/}&buying \textipa{/b\'aIIN/}\\
+make \textipa{/m\'eIk/}&made \textipa{/m\'eId/}&made \textipa{/m\'eId/}&making \textipa{/m\'eIkiN/}\\
+cook \textipa{/k\'Uk/}&cooked \textipa{/k\'Ukt/}&cooked \textipa{/k\'Ukt/}&cooking \textipa{/k\'UkiN/}\\
+       \end{tblr}
+\end{frame}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
