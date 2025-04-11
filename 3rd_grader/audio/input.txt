@@ -1,10 +1,9 @@
-We know the Earth is round.
-I think he is kind.
-She believes he will succeed.
-They hope it will be sunny tomorrow.
-Do you know the Earth moves around the Sun?
-You know I am happy.
-I think she will come.
-She said he was kind.
-We hope they will win the game.
-Do you know one is not a prime number?
+give<break time="0.5s"/>gave<break time="0.5s"/>given<break time="0.5s"/>giving
+send<break time="0.5s"/>sent<break time="0.5s"/>sent<break time="0.5s"/>sending
+show<break time="0.5s"/>showed<break time="0.5s"/>shown<break time="0.5s"/>showing
+write<break time="0.5s"/>wrote<break time="0.5s"/>written<break time="0.5s"/>writing
+tell<break time="0.5s"/>told<break time="0.5s"/>told<break time="0.5s"/>telling
+teach<break time="0.5s"/>taught<break time="0.5s"/>taught<break time="0.5s"/>teaching
+buy<break time="0.5s"/>bought<break time="0.5s"/>bought<break time="0.5s"/>buying
+make<break time="0.5s"/>made<break time="0.5s"/>made<break time="0.5s"/>making
+cook<break time="0.5s"/>cooked<break time="0.5s"/>cooked<break time="0.5s"/>cooking

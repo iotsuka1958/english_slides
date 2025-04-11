@@ -56,9 +56,9 @@
 \begin{block}<4->{Topics for Today}\small
  \textbf{give}（与える）は目的語を2つとります
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \textbf{give} $+$ \tikzmark{aa}\Circled[fill color = white]{\,人\,} $+$ \tikzmark{bb}\Circled[fill color = white]{\,もの\,}\hspace{20pt}「\ldots{}に～をあげる」\\
-\hfill\tikzmark{AA}{\scriptsize 間接目的語}\\
-\hfill\tikzmark{BB}{\scriptsize 直接目的語}
+ \item \textbf{give} $+$ \tikzmark{x}\Circled[fill color = white]{\,人\,} $+$ \tikzmark{y}\Circled[fill color = white]{\,もの\,}\hspace{20pt}「\ldots{}に～をあげる」\\
+\hfill\tikzmark{X}{\scriptsize 間接目的語}\\
+\hfill\tikzmark{Y}{\scriptsize 直接目的語}
  \item<5-> \begin{tblr}{
          colspec=llll,
          row{odd} = {bg=azure8},
@@ -75,8 +75,8 @@
 \end{block}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<4->{\draw[<-] ([xshift=9pt,yshift=-4pt]pic cs:aa) |- ([xshift=-2pt, yshift=2pt] pic cs:AA);}
- \visible<4->{\draw[<-] ([xshift=14pt,yshift=-4pt]pic cs:bb) |- ([xshift=-2pt, yshift=2pt] pic cs:BB);}
+ \visible<4->{\draw[<-] ([xshift=9pt,yshift=-4pt]pic cs:x) |- ([xshift=-2pt, yshift=2pt] pic cs:X);}
+ \visible<4->{\draw[<-] ([xshift=14pt,yshift=-4pt]pic cs:y) |- ([xshift=-2pt, yshift=2pt] pic cs:Y);}
 \end{tikzpicture}
 \hfill{\scriptsize \myaudio{./audio/052_svoo_01.mp3}}
 \end{frame}
@@ -200,15 +200,15 @@ $\left\{ \begin{tabular}{l}
 	  buy\\
 	  make\\
 	  cook\\
-	 \end{tabular}\right\} + \tikzmark{aaa}\text{\Circled[fill color=white]{\,人\,}} + \tikzmark{bbb}\text{\Circled[fill color=white]{\,もの\,}}$
+	 \end{tabular}\right\} + \tikzmark{c}\text{\Circled[fill color=white]{\,人\,}} + \tikzmark{d}\text{\Circled[fill color=white]{\,もの\,}}$
 
-\hfill\tikzmark{AAA}{\scriptsize 間接目的語}\\
-\hfill\tikzmark{BBB}{\scriptsize 直接目的語}
+\hfill\tikzmark{C}{\scriptsize 間接目的語}\\
+\hfill\tikzmark{D}{\scriptsize 直接目的語}
 \end{block}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<4->{\draw[<-] ([xshift=9pt,yshift=-4pt]pic cs:aaa) |- ([xshift=-2pt, yshift=2pt] pic cs:AAA);}
- \visible<4->{\draw[<-] ([xshift=12pt,yshift=-4pt]pic cs:bbb) |- ([xshift=-2pt, yshift=2pt] pic cs:BBB);}
+ \visible<4->{\draw[<-] ([xshift=9pt,yshift=-4pt]pic cs:c) |- ([xshift=-2pt, yshift=2pt] pic cs:C);}
+ \visible<4->{\draw[<-] ([xshift=12pt,yshift=-4pt]pic cs:d) |- ([xshift=-2pt, yshift=2pt] pic cs:D);}
 \end{tikzpicture}
 
 \hfill{\scriptsize \myaudio{./audio/052_svoo_06.mp3}}
@@ -253,6 +253,47 @@ cook \textipa{/k\'Uk/}&cooked \textipa{/k\'Ukt/}&cooked \textipa{/k\'Ukt/}&cooki
 \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[plain]{Exercises}
+\small
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+  before upper={\setlength{\parindent}{1.5em}},
+  title=英文を読んで、問に答えましょう\hfill{\scriptsize \myaudio{./audio/052_svoo_09.mp3}}
+]
+Betty loved\tikzmark{clue1} science. She wanted to help the Earth.
+For her school project, she made a simple water filter.
+She made clean water from a dirty bottle and gave it to her classmates.
+Everyone was surprised\footnote{\scriptsize surprised おどろいた}. 
+Her teacher said, ``You showed us a great idea!''
+Betty smiled.
+
+The next day, her tea\tikzmark{clue2}cher gave Betty a science award\footnote{\scriptsize award 賞}.
+She was surprised and happy.
+``I want to teach people how to make\footnote{\scriptsize how to make ～のつくり方} clean\tikzmark{clue3} water easily.''
+Science gave her not only knowledge, but a big\tikzmark{clue4} dream, too.
+\end{tcolorbox}
+
+\vspace{-5pt}
+
+\begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
+ \item<2-> Bettyは理科が好きですか、それともきらいですか\tikzmark{q1}\hfill\visible<4->{とても好き}
+ \item<2-> だれがBettyに賞をあげましたか\tikzmark{q2}\hfill\visible<6->{彼女の先生}
+ \item<2-> Bettyは人々に何を教えてあげたいとおもっていますか\tikzmark{q3}\hfill\visible<8->{かんたんにきれいな水をつくる方法}
+ \item<2-> 理科はBettyに知識以外に何をあたえてくれましたか\tikzmark{q4}\hfill\visible<10->{おおきな夢}
+
+\end{enumerate}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,opacity=0.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=0.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend right] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,opacity=0.4,line width=2pt] ([yshift=-2pt]pic cs:clue3) to ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=0.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
 \begin{frame}[plain]{まとめ}
 
@@ -273,7 +314,7 @@ $\left\{ \begin{tabular}{l}
 	  buy\\
 	  make\\
 	  cook\\
-	 \end{tabular}\right\} + \tikzmark{aaa}\text{\Circled[fill color=white]{\,人\,}} + \tikzmark{bbb}\text{\Circled[fill color=white]{\,もの\,}}$
+	 \end{tabular}\right\} + \tikzmark{aaa}\text{\Circled[fill color=white]{\,人\,}} + \tikzmark{bbb}\text{\Circled[fill color=white]{\,もの・こと\,}}$
 \end{itemize}
 \end{block}
 
@@ -281,7 +322,7 @@ $\left\{ \begin{tabular}{l}
  \visible{\draw[<-] ([xshift=9pt,yshift=-4pt]pic cs:aa) |- ([xshift=-2pt, yshift=2pt] pic cs:AA);}
  \visible{\draw[<-] ([xshift=14pt,yshift=-4pt]pic cs:bb) |- ([xshift=-2pt, yshift=2pt] pic cs:BB);}
  \visible{\draw[<-] ([xshift=9pt,yshift=-4pt]pic cs:aaa) -- ([xshift=9pt,yshift=-14pt]pic cs:aaa)-- ([xshift=9pt,yshift=-14pt]pic cs:aaa) -| ([xshift=12pt, yshift=-2pt] pic cs:AA);}
- \visible{\draw[<-] ([xshift=28pt,yshift=4pt]pic cs:bbb) -| ([xshift=12pt, yshift=-2pt] pic cs:BB);}
+ \visible{\draw[<-] ([xshift=56pt,yshift=4pt]pic cs:bbb) -| ([xshift=12pt, yshift=-2pt] pic cs:BB);}
 \end{tikzpicture}
  
 
@@ -295,7 +336,7 @@ $\left\{ \begin{tabular}{l}
          row{1} = {bg=azure3, fg=white},
          row{even} = {bg=white},
          row{2} = {bg=white},
-         baseline=c,
+         baseline=t,
          hline{1,Z} = {0.08em},
          hline{2} = {0.05em},
          cells={cmd=\onslide<\arabic{rownum}->} %列ごとに順次表示%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
@@ -311,6 +352,7 @@ buy \textipa{/b\'aI/}&bought \textipa{/b\'O:t/}&bought \textipa{/b\'O:t/}&buying
 make \textipa{/m\'eIk/}&made \textipa{/m\'eId/}&made \textipa{/m\'eId/}&making \textipa{/m\'eIkiN/}\\
 cook \textipa{/k\'Uk/}&cooked \textipa{/k\'Ukt/}&cooked \textipa{/k\'Ukt/}&cooking \textipa{/k\'UkiN/}\\
        \end{tblr}
+\hfill{\scriptsize \myaudio{./audio/052_svoo_10.mp3}}
 \end{frame}
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
