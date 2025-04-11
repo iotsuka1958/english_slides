@@ -3,7 +3,7 @@
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
 \usetheme{metropolis}
-\usetheme{metropolis}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \metroset{block=fill}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{navigation symbols}{}
@@ -30,20 +30,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[label=waiting]{}
-%%%%%\phantomsection\label{section}
-\thispagestyle{empty}
-\Large
-\raggedright
-
-予定の時刻になったらはじまります
-
-\vfill
-
-\raggedleft
-
-The lesson will begin at the scheduled time.
-\end{frame}
+%\begin{frame}[label=waiting]{}
+%%%%%%\phantomsection\label{section}
+%\thispagestyle{empty}
+%\Large
+%\raggedright
+%
+%予定の時刻になったらはじまります
+%
+%\vfill
+%
+%\raggedleft
+%
+%The lesson will begin at the scheduled time.
+%\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[label=title]
 %\phantomsection\label{section-1}
@@ -108,8 +108,8 @@ The lesson will begin at the scheduled time.
 
 \bigskip
 
-\begin{exampleblock}<20->{Topics for Today}
-\begin{itemize}
+\begin{exampleblock}<20->{Topics for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]
  \item am, are, isはイコール($=$)の意味
  \item まとめてbe動詞といいます
 \end{itemize}
@@ -161,8 +161,8 @@ be動詞$\left\{\begin{tabular}[c]{l}
 
 \bigskip
 
-\begin{exampleblock}<14->{Topics for Today}
-\begin{itemize}
+\begin{exampleblock}<14->{Topics for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]
  \item   amはbe動詞
  \item I am 〜.をひとつのパターンとして覚えよう
 \end{itemize}
@@ -170,7 +170,7 @@ be動詞$\left\{\begin{tabular}[c]{l}
 
 % Embed the sound file
 \onslide<20>{%
-\myaudio{./audio/002_be_02.mp3}
+{\scriptsize \myaudio{./audio/002_be_02.mp3}}
 }
 
 \end{frame}
@@ -231,7 +231,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
  \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}<1-7>[plain,label=im]{Answer}
+\begin{frame}<1-8>[plain,label=im]{Answer}
  \Large
 
 \begin{enumerate}
@@ -242,17 +242,17 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 
 \normalsize
 \onslide<1->{%
-\myaudio{audio/002_be_021.mp3}
+{\scriptsize \myaudio{audio/002_be_021.mp3}}
 }%
 \hfill{}%
 \onslide<5->{%
-\myaudio{audio/002_be_022.mp3}
+{\scriptsize \myaudio{audio/002_be_022.mp3}}
 }
 
 \normalsize
 \begin{exampleblock}<5->{Topics for Today}
 \setbeamercovered{transparent}
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item<5,8>   amはbe動詞
  \item<6,8> I am 〜.をひとつのパターンとして覚えよう
  \item<7,8> $\text{I am}=\text{I'm}$\\
@@ -277,7 +277,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 \bigskip
 
 \begin{exampleblock}<14->{Topics for Today}
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item areはbe動詞
  \item You are 〜.をひとつのパターンとして覚えよう
 \end{itemize}
@@ -285,12 +285,11 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 
 % Embed the sound file
 \onslide<14->{%
-\myaudio{audio/002_be_03.mp3}
-
+{\scriptsize \myaudio{audio/002_be_03.mp3}}
 }
 \end{frame}
-
-\begin{frame}<1-8>[plain]{Exercises}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-9>[plain]{Exercises}
 あたえられた日本語の意味になるよう(~~~~~~)に適当な1語を補いましょう。
 
 \begin{enumerate}
@@ -300,18 +299,18 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
  \item あなたは背が高い。(\alt<1-4>{~~\phantom{You're}~~}{~~\textcolor{Maroon}{You're}~~})~~tall.
 \end{enumerate}
 
- \begin{exampleblock}<6->{Topics for Today}
+ \begin{exampleblock}<6->{Topics for Today}\small
 \setbeamercovered{transparent}
-\begin{itemize}
- \item<6> areはbe動詞
- \item<7> You are 〜.をひとつのパターンとして覚えよう
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item<6,9> areはbe動詞
+ \item<7,9> You are 〜.をひとつのパターンとして覚えよう
  \item<8-> $\text{You are}=\text{You're}$\\
 \mbox{}\hfill{}短縮形といいます。 \colorbox[gray]{0.9}{~'~}をapostrophy\,(アポストロフィ)といいます\phantom{あ}
 \end{itemize}
      \end{exampleblock}
 
 % Embed the sound file
-\myaudio{audio/002_be_031.mp3}
+{\scriptsize \myaudio{audio/002_be_031.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\againframe{waiting}
@@ -354,15 +353,15 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 
 \bigskip
 
-\begin{exampleblock}<14->{Topic for Today}
-\begin{itemize}
+\begin{exampleblock}<14->{Topic for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]
  \item I, You 以外で1つ(It, This, That, The book \ldots{})、1人(He, She, Jane, My father \ldots{})が主語のとき---主語が単数のとき---はisを使います
 \end{itemize}  
      \end{exampleblock}
 
 % Embed the sound file
 \onslide<14->{%
-\myaudio{audio/002_be_04.mp3}
+{\scriptsize \myaudio{audio/002_be_04.mp3}}
 }
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -436,53 +435,53 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 %\section{復習}
 %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe{waiting}
-\againframe{title}
+%\againframe{waiting}
+%\againframe{title}
 \section*{Today's Quiz}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% N
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}<1-9>[plain]{Quiz}
- \large
-\visible<1->{%
-これからアルファベットを8つ順番に読みあげます。
-聞こえたアルファベットを順番に小文字で書いてください。すると、ある単語になります。
-その意味を表すものを選んでください
-}
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_n.mp3}}
-
-\bigskip
-
-\centering
-\newfontfamily{\COE}{CountriesOfEurope}
-\begin{tabular}{c@{　　　}c@{　　　}c@{　　　}c}
-\scalebox{4}{\usym{2700}}&
-\scalebox{5}{\twemoji{glass of milk}}&
-%\scalebox{3.3}{{\COE \Italy}}&
-\scalebox{5}{\twemoji{pen}}&
-\scalebox{5}{\twemoji{notebook with decorative cover}}
-\\
-(a)&(b)&(c)&(d)
-\end{tabular}
-
-\bigskip
-
-\Huge
-
-
-
-\onslide<2->{n}%
-\onslide<3->{o}%
-\onslide<4->{t}%
-\onslide<5->{e}%
-\onslide<6->{b}%
-\onslide<7->{o}%
-\onslide<8->{o}%
-\onslide<9->{k}%
-
-\large
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_n.mp3}}
-\end{frame}
+%\begin{frame}<1-9>[plain]{Quiz}
+% \large
+%\visible<1->{%
+%これからアルファベットを8つ順番に読みあげます。
+%聞こえたアルファベットを順番に小文字で書いてください。すると、ある単語になります。
+%その意味を表すものを選んでください
+%}
+%\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_n.mp3}}
+%
+%\bigskip
+%
+%\centering
+%\newfontfamily{\COE}{CountriesOfEurope}
+%\begin{tabular}{c@{　　　}c@{　　　}c@{　　　}c}
+%\scalebox{4}{\usym{2700}}&
+%\scalebox{5}{\twemoji{glass of milk}}&
+%%\scalebox{3.3}{{\COE \Italy}}&
+%\scalebox{5}{\twemoji{pen}}&
+%\scalebox{5}{\twemoji{notebook with decorative cover}}
+%\\
+%(a)&(b)&(c)&(d)
+%\end{tabular}
+%
+%\bigskip
+%
+%\Huge
+%
+%
+%
+%\onslide<2->{n}%
+%\onslide<3->{o}%
+%\onslide<4->{t}%
+%\onslide<5->{e}%
+%\onslide<6->{b}%
+%\onslide<7->{o}%
+%\onslide<8->{o}%
+%\onslide<9->{k}%
+%
+%\large
+%\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_n.mp3}}
+%\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{復習}
 \begin{frame}[plain]{復習}

@@ -6,6 +6,7 @@
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Change alert block colors
@@ -18,7 +19,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{English is fun.\,\,{}---ABCDEFG ... XYZ ---}
+\title{English is fun.}
+\subtitle{ABCDEFG \ldots\,\,XYZ}
   \author{}
 \institute[]{}
 \date[]
@@ -91,12 +93,12 @@
 \end{rmfamily}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{文字の数}
 \Large
 
 英語\pause
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item アルファベットは26種類\pause
  \item 大文字と小文字があります
 \end{itemize}
@@ -110,7 +112,7 @@ $26\times{}2=52$
 
 いっぽう日本語は\pause
 
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item ひらがな・カタカナ\pause\mbox{}\hfill{}$46\times{}2=92$\pause
  \item 漢字\pause\mbox{}\hfill{}常用漢字は2,136
 \end{itemize}
@@ -141,11 +143,8 @@ $\text{English: 52}<\text{2,228: Japanese}$
 
 \visible<6->{\alt<7->{\textcolor{ForestGreen}{\textbf C}}{C}an \alt<8->{\textcolor{BurntOrange}{\textbf I}}{I} help you?}\hfill\visible<8->{Iはいつでも}
 
-
 \end{rmfamily}
-
 \end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{動画視聴}
 \LARGE
@@ -189,7 +188,7 @@ $\text{English: 52}<\text{2,228: Japanese}$
 \end{tabular}
 \end{rmfamily}
 
-\mbox{}\hfill{}\myaudio{./audio/001_alphabet_01.mp3}
+\mbox{}\hfill{}{\scriptsize \myaudio{./audio/001_alphabet_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\againframe{upper}
@@ -230,7 +229,7 @@ $\text{English: 52}<\text{2,228: Japanese}$
 \end{tabular}
 \end{rmfamily}
 
-\mbox{}\hfill{}\myaudio{./audio/001_alphabet_01.mp3}
+\mbox{}\hfill{}{\scriptsize \myaudio{./audio/001_alphabet_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{まとめ}
@@ -238,7 +237,7 @@ $\text{English: 52}<\text{2,228: Japanese}$
   \begin{exampleblock}{Topics for Today}
 \small
 \pause
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item アルファベットは26種類です\pause
  \item 大文字と小文字があります\pause
        \begin{itemize}
@@ -387,13 +386,15 @@ u{\large と}v%
 %\againframe<1>{lower}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 1}
- \Large
+ \large
 \visible<1->{%
 これからアルファベットを読みあげます。
 
 聞こえたアルファベットを順番に小文字で書いてください。
 }
-\mbox{}\hfill\visible<1->{\myaudio{./audio/001_alphabet_011.mp3}}
+\mbox{}\hfill\visible<1->{{\scriptsize \myaudio{./audio/001_alphabet_011.mp3}}}
+
+\bigskip
 
 \begin{tabular}{rl}
 1&\visible<2->{apple}\\
@@ -403,12 +404,12 @@ u{\large と}v%
 5&\visible<6->{egg}
 \end{tabular}
 
-\mbox{}\hfill\visible<1->{\myaudio{./audio/001_alphabet_012.mp3}}
+\mbox{}\hfill\visible<1->{{\scriptsize \myaudio{./audio/001_alphabet_012.mp3}}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 2}
- \Large
+ \large
 これからアルファベットを読みあげます。
 
 聞こえたアルファベットを順番に大文字で書いてください。
@@ -418,14 +419,15 @@ u{\large と}v%
 音声は2回繰り返します。
 
 
-\mbox{}\hfill{\myaudio{./audio/001_alphabet_02.mp3}}
+\mbox{}\hfill{\scriptsize {\myaudio{./audio/001_alphabet_02.mp3}}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Answer}
  \Huge
  \centering
-EDUOP CHIBA
+E\pause{}D\pause{}U\pause{}O\pause{}P\pause{}\,\,
+C\pause{}H\pause{}I\pause{}B\pause{}A
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{}
