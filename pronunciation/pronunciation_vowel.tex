@@ -19,6 +19,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide}
 \usepackage{vowel}
+\usepackage{lua-ul}
+\usepackage{pxrubrica}
+\usepackage{tikzducks}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{ducks}
+\usepackage{scsnowman}
+\usepackage{tikzlings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\newcommand*{\themonth}{\two@digits\month}
+\newcommand*{\theday}{\two@digits\day}
+\makeatother
+\newcommand{\mytoday}{{\the\year}--{\themonth}--{\theday}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{Pronunciation---vowel---}
@@ -31,9 +44,219 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色をグレイに変更
+%\setbeamercolor{background canvas}{bg=gray}
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+%\centering
+\raggedleft
+  \textcolor{white}{\Huge\bfseries English is fun.}
+
+\vfill
+
+\raggedleft
+% \textcolor{white}{\LARGE\bfseries 2024--11--26}
+% \textcolor{white}{\LARGE\bfseries \today}
+ \textcolor{white}{\LARGE\bfseries \mytoday}
+
+\vfill
+\vfill
+\vfill
+
+\raggedleft
+\textcolor{white}{\large The lesson will begin at the scheduled time.}
+
+%\textcolor{white}{\large 可能なら、鏡を用意してください}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+%%% youtube
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色をグレイに変更
+%\setbeamercolor{background canvas}{bg=gray}
+\setbeamercolor{background canvas}{bg=black}
+
+\begin{frame}
+%\centering
+\raggedleft
+  \textcolor{white}{\Huge\bfseries \textcolor{yellow}{E}nglish is fun.}
+
+\vfill
+
+\vfill
+
+\raggedleft
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{H}ello, everybody!}
+
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{H}ow are you today?}
+
+\raggedleft
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{A}re you ready to start?}
+
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{L}et's begin today's lesson.}
+
+\vfill
+
+\raggedleft
+% \textcolor{white}{\LARGE\bfseries 2024--11--26}
+% \textcolor{white}{\LARGE\bfseries \today}
+ \textcolor{white}{\Large \bfseries \mytoday}
+
+\hyperlink{today}{\beamergotobutton{Today's Pronunciation}}%%todayにジャンプ
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{授業の進め方}\large
+
+\pause
+\begin{enumerate}
+ \item<2-> スライドで進めていきます
+ \item<3-> だれかを指名することはありません
+\end{enumerate}
+
+\bigskip
+
+\hfill{}\visible<4->{安心して授業に参加してください！
+\begin{tikzpicture}
+\duck[laughing,bowtie,
+strawhat=brown!50!white,
+ribbon=black,
+think={\scriptsize Enjoy!},
+bubblecolour=white!50!pink]
+\end{tikzpicture}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{だいじなこと}\large
+\pause
+
+基礎基本をたいせつにしよう！
+
+\pause
+
+\hfill{}やさしいことからはじめて着実に
+\begin{tikzpicture}
+\duck[signpost=\scalebox{0.25}{
+\parbox{2.5cm}{\color{black}
+Slow but steady wins the race.}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black
+]
+\end{tikzpicture} 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{準備するもの}
+\pause
+ \begin{itemize}\setbeamertemplate{items}[square]
+  \item<2-> ノート
+  \item<3-> 筆記具(黒以外に2色あるとなおいい)
+ \end{itemize}
+
+
+\hfill%
+{\begin{tikzpicture}
+\duck[squareglasses=blue!50!black,
+speech={\scriptsize \twemoji{spiral notepad}\,{$+$}\,\usymW{2710}{.37cm}},
+laughing
+]
+\end{tikzpicture}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{予習復習}\large
+ \begin{itemize}\setbeamertemplate{items}[square]
+  \item<1-> 予習\visible<2->{$\longrightarrow$\,必要}\visible<3->{ありません} 
+  \item<4-> 復習\visible<5->{$\longrightarrow$\,効果的！} 
+ \end{itemize}
+
+\hfill%
+\visible<6->{\begin{tikzpicture}
+\duck[tshirt,
+jacket=gray,
+bowtie,
+crazyhair,
+speech={\tiny できる範囲で},
+laughing,
+signpost=\scalebox{0.4}{
+\parbox{2cm}{
+気楽に\\
+気が\\向いたら}},
+]
+\end{tikzpicture}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{音声をだいじにしよう}\large
+
+英語の音声に親しみましょう
+
+\begin{enumerate}
+ \item<2-> Please listen carefully.\hfill{\scriptsize \myaudio{./audio/listen.mp3}}
+ \item<3-> Please repeat after me.\hfill{\scriptsize \myaudio{./audio/repeat.mp3}}
+\end{enumerate}
+ 
+\hfill%
+\begin{tikzpicture}
+\duck[signpost=\scalebox{0.4}{
+\parbox{2cm}{\color{black}
+\centering よく使う\\ 指示です}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+sombrero=orange!70!yellow,
+sombreroa=green!70!blue,
+sombrerob=red,
+sombreroc=blue,
+glasses,
+icecream=brown,
+flavoura=green!50!brown,
+flavourb=white,
+flavourc=red,
+speech={\tiny \parbox{2cm}{\centering Lsten carefully.\\Repeat after me.}}]\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{授業について（まとめ）}
+ \begin{itemize}\setbeamertemplate{items}[square]
+  \item 授業の進め方
+	\begin{itemize}\setbeamertemplate{items}[circle]
+	 \item スライド
+	 \item 指名はありません
+	\end{itemize}
+  \item 基礎基本をだいじに
+  \item 筆記具・ノート
+	\begin{itemize}\setbeamertemplate{items}[circle]
+	 \item 筆記具は黒以外に2色あるとなおいい
+	\end{itemize}
+  \item 復習
+	\begin{itemize}\setbeamertemplate{items}[circle]
+	 \item 効果的
+	 \item でも、余裕があればくらいの気持ちで
+	\end{itemize}
+  \item 英語の音声に親しみましょう
+	\begin{itemize}\setbeamertemplate{items}[circle]
+	 \item Please listen carefully. 
+	 \item Please repeat after me.
+	\end{itemize}
+ \end{itemize}
+
+
+\vspace{-2.5cm}
+
+\hfill\begin{tikzpicture}
+\bear[
+scale=.75,
+signpost={\scriptsize よろしく},
+signcolour= brown!50!black,
+signback=green!40!black
+]
+\end{tikzpicture}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
+\hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}\pause
 

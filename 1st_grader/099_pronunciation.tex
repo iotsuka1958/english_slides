@@ -6,6 +6,7 @@
 \metroset{block=fill}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Change alert block colors
@@ -324,17 +325,17 @@ b\myEmph[2-]{BurntOrange}{u}s
 %%%%%%%%%%%%%%%%%%%
 \section{有声音と無声音}
 \begin{frame}[plain]{有声音と無声音}
-\Large
+\large
  \begin{description}
   \item[有声音: ] \onslide<1->{声帯がふるえる音}
                   \onslide<3->{%
-                  \begin{itemize}\large
+                  \begin{itemize}\setbeamertemplate{items}[circle]\small
 		   \item \onslide<3->{すべての母音}
 		   \item \onslide<4->{一部の子音}\hspace{25pt}\onslide<5->{{\small たとえば \textipa{/b/}\,\,\,\textipa{/d/}\,\,\,\textipa{/g/}\,\,\,\textipa{/v/}\,\,\,\textipa{/z/}}}
 		  \end{itemize}}
   \item[無声音: ] \onslide<2->{声帯がふるえない音}
                   \onslide<6->{%
-                  \begin{itemize}\large
+                  \begin{itemize}\setbeamertemplate{items}[circle]\small
 		   \item 一部の子音\hspace{25pt}\onslide<7->{{\small たとえば \textipa{/p/}\,\,\,\textipa{/t/}\,\,\,\textipa{/k/}\,\,\,\textipa{/f/}\,\,\,\textipa{/s/}}}
 		  \end{itemize}}
  \end{description}
