@@ -1,7 +1,8 @@
 file_with_path,path,file_name,slide,mp3,reading_manuscript
 ./orientation/orientation.tex,./orientation/,orientation.tex,TRUE,,TRUE
 ./orientation/orientation_2.tex,./orientation/,orientation_2.tex,TRUE,,TRUE
-./1st_grader/999quiz.tex,./1st_grader/,999quiz.tex,TRUE,TRUE,TRUE
+./orientation/orientation_another.tex,./orientation/,orientation_another.tex,TRUE,TRUE,
+,./1st_grader/,999quiz.tex,TRUE,TRUE,TRUE
 ./1st_grader/999quiz_full_vesion.tex,./1st_grader/,999quiz_full_vesion.tex,TRUE,TRUE,TRUE
 ./1st_grader/099_pronunciation.tex,./1st_grader/,099_pronunciation.tex,TRUE,TRUE,TRUE
 ./pronunciation/pronunciation_consonant.tex,./pronunciation/,pronunciation_consonant.tex,TRUE,TRUE,TRUE
