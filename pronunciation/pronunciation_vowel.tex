@@ -269,17 +269,31 @@ signback=green!40!black
 \begin{frame}[plain]{\textipa{/\ae /}}
 
 \Huge
- \textipa{/\ae /}
-
-\vspace*{20pt}
+ \textipa{/\ae /}%
 
 \normalsize
-ポイント
+ポイント%
+\hfill\begin{tikzpicture}
+\duck[tshirt,
+tophat=blue!20!black,
+jacket=gray,
+bowtie,
+speech={\tiny 長めに},
+laughing,
+signpost={\textipa{/\ae /}},
+]
+\duck[xshift=90pt, scale=.3, yshift=150pt]
+\duck[xshift=60pt, scale=.3, yshift=100pt]
+\duck[body=gray!50!white, head=gray!50!white,
+xshift=80pt, scale=.3, yshift=50pt]
+\end{tikzpicture}
 
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[circle]
  \item 「エ」の口をして「ア」
  \item 唇を左右に広げる
 \end{itemize}
+
+
 
 \hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}%%ex(練習問題)にジャンプ
 \end{frame}
