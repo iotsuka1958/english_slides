@@ -42,6 +42,7 @@
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{tipa}
+\usepackage{tabularray}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -124,7 +125,7 @@
 
 \hfill{\scriptsize \myaudio{./audio/024_past_be_01.mp3}}
 
-\begin{block}{Topic for Today}
+\begin{block}{Topics for Today}
 \pause
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item be動詞は $=$ の意味です
@@ -133,9 +134,7 @@
      \end{block}
 
 \end{frame}
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{be動詞の現在形（復習）}
 
 \begin{block}{現在形のbe動詞の使い分け}
@@ -225,7 +224,26 @@
 \draw[-latex, line width=1.5pt] (A) -- node[above] {youのとき} node[below] {複数なら} (D);
 \end{tikzpicture}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{be動詞の現在形と過去形}
+\Large
+ \centering
+\begin{tblr}{
+  colspec={lll},
+ row{odd} = {bg=azure8},
+  row{1}={font=\bfseries, bg=azure3, fg=white},
+  hline{Z} = {0.08em},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+}
+主語 & 現在形 & 過去形 \\
+I & am & was \\
+you & are & were \\
+単数(1人、1つ) & is & was \\
+複数（2人、2つ以上） & are & were \\
+\end{tblr}
 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
  
 次の英文の(~~~~~~~~)内から正しいものを選び○で囲みましょう
@@ -246,51 +264,63 @@
 
 \section{否定文}
 \subsection{否定文のつくり方}
-\begin{frame}[plain]\frametitle{was / wereの否定}
-\Large
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1>[plain,label=negative]\frametitle{was / wereの否定}
+\large
 
 \begin{enumerate}
- \item \begin{enumerate}\Large
+ \item \begin{enumerate}\large
 	\item \visible<1->{I \textcolor{NavyBlue}{\bfseries was} hungry yesterday.\hfill{\scriptsize hungry\,\textipa{/h\'2Ngri/}\,空腹の}}
 	\item \visible<2->{I \textcolor{NavyBlue}{\bfseries was} \textcolor{Maroon}{\bfseries not} hungry yesterday.}
        \end{enumerate}
- \item \begin{enumerate}\Large
-	\item \visible<1->{They \textcolor{NavyBlue}{\bfseries were} tired last night.\hfill{}{\scriptsize tired\,\textipa{/t\'aI\textrhookschwa d/}\,疲れて}}
+ \item \begin{enumerate}\large
+	\item \visible<1->{They \textcolor{NavyBlue}{\bfseries were} tired last night.\hfill{}{\scriptsize tired\,\textipa{/t\'aI\textrhookschwa d/}\,疲れて\hspace{10pt}last \textipa{/l\'\ae st/} 最後の}}
 	\item \visible<3->{They \textcolor{NavyBlue}{\bfseries were} \textcolor{Maroon}{\bfseries not} tired last night.}
        \end{enumerate}
 \end{enumerate}
 
+\bigskip
 
 \visible<4->{\begin{block}{否定文のつくり方}
 \small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item \visible<5->{否定文にするには、be動詞の直後に\,\Circled[fill color = white]{\,\,not\,\,}\,を置きます(現在形のときと同じですね)}
- \item \visible<6->{縮めて was not $\rightarrow$\,\,\,\textcolor{BurntOrange}{\bfseries wasn't} /  were not $\rightarrow$ \textcolor{BurntOrange}{\bfseries weren't}}
+ \item \visible<5->{否定文にするには、be動詞の直後に\,\Circled[fill color = white]{\,\,\textbf{not}\,\,}\,を置きます{\scriptsize (現在形のときと同じですね)}}
+ \item \visible<6->{縮めて was not $\rightarrow$\,\,\,\textcolor{BurntOrange}{\bfseries wasn't} /  were not $\rightarrow$ \textcolor{BurntOrange}{\bfseries weren't}}\\%
+\hfill\visible<7->{\scriptsize {\kenten{短縮形}といいます}}
 \end{itemize}
       \end{block}}
 
 \hfill{\scriptsize \myaudio{./audio/024_past_be_04.mp3}}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{否定を表す語}
+ \Large
 
+否定を表す語：\pause {\LARGE\bfseries not}\hspace{20pt}\textipa{/n\'At/}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe[plain]{negative}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[plain]{Exercises}
-あたえられた日本語の意味になるよう、カッコ内の語を並べ替えましょう。なお、先頭の語は大文字で始めてください
+
+{\small あたえられた日本語の意味になるよう、カッコ内の語を並べ替えましょう。なお、先頭の語は大文字で始めてください}
 
 \begin{enumerate}
- \item 私は昨日お腹が空いていませんでした。
+ \item {\small 私は昨日お腹が空いていませんでした。}
 ( not / was / I / hungry ) yesterday.\\
 \visible<2->{I was not hungry yesterday.}
  \item 
-彼らは昨晩忙しくなかった。
+{\small 彼らは昨晩忙しくなかった。}
 ( not / they / busy / were ) last night.\\
 \visible<3->{They were not busy last night.}
  \item 
-彼女は疲れていませんでした。
+{\small 彼女は疲れていませんでした。}
 ( not / she / was / tired ) .\\
 \visible<4->{She was not tired.}
  \item 
-あなたは当時家にいませんでした。
+{\small あなたは当時家にいませんでした。}
 ( you / not / home / at / were ) then.\\
 \visible<5->{You were not at home then.}\hfill{\scriptsize at home: 在宅して}
 \end{enumerate}
@@ -339,18 +369,19 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください 
+
+{\small あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。なお、先頭の語は大文字で始めてください}
  \begin{enumerate}
-	    \item あなたは昨日お腹が空いていましたか？
+    \item {\small あなたは昨日お腹が空いていましたか？}
 ( you / were / hungry ) yesterday?\\
 \visible<2->{Were you hungry yesterday?}
-    \item 彼らは昨晩忙しかったですか？
+    \item {\small 彼らは昨晩忙しかったですか？}
 ( they / busy / were ) last night?\\
 \visible<3->{Were they busy last night?}
-	    \item 彼女は昨日疲れていましたか？
+    \item {\small 彼女は昨日疲れていましたか？}
 ( she / tired / was ) yesterday?\\
 \visible<4->{Was she tired yesterday?}
-	    \item あなたは当時家にいましたか？
+    \item {\small あなたは当時家にいましたか？}
 ( you / at / home / were ) then?\\
 \visible<5->{Were you at home then?}
 
@@ -362,7 +393,8 @@
 %%%%%%%%%%%%%%%%%%%%%
 \subsection{疑問文への答え方}
 \begin{frame}<1-16>[plain]\frametitle{疑問文への答え方}
-例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう
+
+{\small 例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう}
 \mbox{}\hfill{\scriptsize \myaudio{./audio/024_past_be_08z.mp3}}
 
 
