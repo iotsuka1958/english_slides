@@ -1,2 +1,7 @@
-She has a cat.<break time="3s"/>The cat is black.
-I ate an apple.<break time="3s"/>The apple was delicious.
+paint<break time="1s"/> painted<break time="1s"/> painted
+wash<break time="1s"/> washed<break time="1s"/> washed
+use<break time="1s"/> used<break time="1s"/> used
+love<break time="1s"/> loved<break time="1s"/> loved
+build<break time="1s"/> built<break time="1s"/> built
+make<break time="1s"/> made<break time="1s"/> made
+reed <break time="1s"/> red<break time="1s"/> red

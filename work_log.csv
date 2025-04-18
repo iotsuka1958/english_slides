@@ -5,7 +5,7 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./1st_grader/999quiz_full_vesion.tex,,2024-06-18,2024-06-18,2024-06-18,,26,26,26,,done,done,done,,999,999,999
 ./1st_grader/099_pronunciation.tex,,2024-09-03,2024-07-18,2024-07-18,,1,1,3,,done,done,done,,999,999,999
 ./pronunciation/pronunciation_consonant.tex,,2024-09-18,2024-09-18,2024-09-18,,1,1,1,,done,done,done,,999,999,999
-./pronunciation/pronunciation_vowel.tex,,2025-04-16,2025-04-16,,,2,2,,,,,,,ae,ae,
+./pronunciation/pronunciation_vowel.tex,,2025-04-16,2025-04-16,,,3,3,,,,,,,ae,ae,
 ./pronunciation/pronunciation_japanese.tex,,2025-01-07,2025-01-07,2025-01-07,,4,4,4,,done,done,done,,999,999,999
 ./1st_grader/001_alphabet.tex,,2024-06-14,,,,2,,,,done,,,,999,,
 ./1st_grader/002_sv.tex,,2024-06-18,2024-06-13,2024-06-13,,4,2,2,,done,done,done,,999,999,999
@@ -33,7 +33,7 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./1st_grader/021_is_ing_intro.tex,,2024-11-26,2024-09-18,2024-09-18,,6,6,6,,done,done,done,,999,999,999
 ./1st_grader/022_is_ing_negative.tex,,2024-12-04,2024-10-01,2024-10-01,,3,3,3,,done,done,done,,999,999,999
 ./1st_grader/023_is_ing_question.tex,,2024-12-06,2024-10-04,2024-10-04,,4,5,5,,done,done,done,,slide78,slide75,slide75
-./1st_grader/024_past_be.tex,,2025-04-16,2024-10-25,2024-10-25,,2,4,4,,,done,done,,slide35,999,999
+./1st_grader/024_past_be.tex,,2025-04-16,2024-10-25,2024-10-25,,3,4,4,,,done,done,,slide51,999,999
 ./1st_grader/025_past_do.tex,,,2024-11-01,2024-11-01,,,10,10,,,done,done,,,999,999
 ./1st_grader/026_past_didnot.tex,,,2024-11-26,2024-11-26,,,5,4,,,done,done,,,999,999
 ./1st_grader/027_past_did_you.tex,,,2024-12-03,2024-12-03,,,3,3,,,done,done,,,999,999
@@ -64,7 +64,7 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./2nd_grader/043_est.tex,,,,,,,,,,,,,,,,
 ./2nd_grader/044_more_most.tex,,,,,,,,,,,,,,,,
 ./2nd_grader/045_better_best.tex,,,,,,,,,,,,,,,,
-./2nd_grader/051_passive.tex,,,2025-04-16,2025-01-14,,,2,8,,,,done,,,slide18,999
+./2nd_grader/051_passive.tex,,,2025-04-16,2025-01-14,,,3,8,,,,done,,,slide24,999
 ./3rd_grader/011_have_pp_intro.tex,,,,2025-02-06,,,,3,,,,done,,,,999
 ./3rd_grader/012_have_pp_keizoku.tex,,,,2025-02-12,,,,6,,,,done,,,,999
 ./3rd_grader/013_have_pp_keiken.tex,,,,2025-02-25,,,,4,,,,done,,,,999
