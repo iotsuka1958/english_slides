@@ -42,7 +42,7 @@ library(reticulate)
 library(sf)
 library(rnaturalearth)
 library(janitor)
-theme_set(theme_few(base_family="IPAexGothic"))
+theme_set(theme_few(base_family = "IPAexGothic"))
 ```
 
 ##
@@ -76,7 +76,10 @@ Can you hear it?
 \thispagestyle{empty}
 \titlepage
 
-## 前回の復習
+##
+\section{これまで}
+
+## これまで
 \thispagestyle{empty}
 \LARGE
 
@@ -102,6 +105,9 @@ Can you hear it?
 5&わたしたちが学ぶ英語とは
 \end{tabular}
 
+##
+
+\section{世界のことば}
 
 ## 世界のことば
 
@@ -113,15 +119,17 @@ Hello, World!
 ```{r eval=TRUE, include=FALSE}
 ne_world <- rnaturalearth::ne_countries(scale = 10, returnclass = "sf")
 my_english <- read_csv("my_english.csv")
-#read_csv("/home/ichiro/Documents/work_files/english_slides/orientation/my_english.csv")
-ne_world <- ne_world |> left_join(my_english) |> 
-  mutate(english_spoken = replace_na(english_spoken,FALSE)) |> 
-  mutate(chinese_spoken = replace_na(chinese_spoken,FALSE))
+# read_csv("/home/ichiro/Documents/work_files/english_slides/orientation/my_english.csv")
+ne_world <- ne_world |>
+  left_join(my_english) |>
+  mutate(english_spoken = replace_na(english_spoken, FALSE)) |>
+  mutate(chinese_spoken = replace_na(chinese_spoken, FALSE))
 ```
 
 
 ```{r eval=TRUE, out.width="90%"}
-ne_world |> ggplot() + geom_sf()
+ne_world |> ggplot() +
+  geom_sf()
 ```
 
 ## Japan is here
@@ -130,27 +138,31 @@ ne_world |> ggplot() + geom_sf()
 \textcolor{orange}{\bfseries Japan} is here.
 
 ```{r eval=TRUE,out.width="90%"}
-ne_world |> mutate(is_japan = if_else(iso_a3 == "JPN", "Japan", "Other")) |> 
-  ggplot() + geom_sf(aes(fill=is_japan) ) +
-  scale_fill_manual(values = c("Japan" = "orange", "Other" = "white"),guide="none") 
-  
+ne_world |>
+  mutate(is_japan = if_else(iso_a3 == "JPN", "Japan", "Other")) |>
+  ggplot() +
+  geom_sf(aes(fill = is_japan)) +
+  scale_fill_manual(values = c("Japan" = "orange", "Other" = "white"), guide = "none")
 ```
 
+##
 
-## 世界のことば
+\section{どんなことばがあるだろう}
+
+## どんなことばがあるだろう
 
 ```{r eval = TRUE, echo = FALSE, languages}
 base_data <- tribble(
   ~language, ~speakers, ~n,
   #---------|----------|----
-  "English","native",380,
-  "English","non_native",1080,
-  "Mandarin Chinese","native",940,
-  "Mandarin Chinese","non_native",199,
-  "Hindi", "native",345,  
-  "Hindi", "non_native",265,
-  "Spanish","native",485,
-  "Spanish","non_native",74,
+  "English", "native", 390,
+  "English", "non_native", 1528 - 390,
+  "Mandarin Chinese", "native", 990,
+  "Mandarin Chinese", "non_native", 1184 - 990,
+  "Hindi", "native", 345,
+  "Hindi", "non_native", 609 - 345,
+  "Spanish", "native", 484,
+  "Spanish", "non_native", 558 - 484,
 )
 
 # 因子レベルの順序を指定
@@ -159,8 +171,8 @@ base_data$speakers <- factor(base_data$speakers, levels = c("non_native", "nativ
 # native スピーカー数で言語をソートする
 language_order <- base_data %>%
   filter(speakers == "native") %>%
-#  arrange(desc(n)) %>%
-  arrange(n) |> 
+  #  arrange(desc(n)) %>%
+  arrange(n) |>
   pull(language)
 
 # 言語の因子レベルを設定
@@ -193,6 +205,10 @@ Quiz: 世界にはどんなことばがありますか
 
 ほかにもたくさんあります
 
+##
+
+\section{世界にはいくつのことばがあるの}
+
 ## 世界にはいくつのことばがあるの
 
 
@@ -219,7 +235,7 @@ Quiz: ところで、世界にはいくつくらいことばがあるの？
 \vfill
 
 \centering
-7,164
+7,159
 
 \vfill
 
@@ -249,7 +265,7 @@ https://www.ethnologue.com/insights/how-many-languages/による
 ということは\pause
 
 
-日本語は\Huge \phantom{0}$\frac{1}{7,164}$\phantom{0}\Large ということですね
+日本語は\Huge \phantom{0}$\frac{1}{7,159}$\phantom{0}\Large ということですね
 
 \vfill
 \pause
@@ -258,20 +274,24 @@ https://www.ethnologue.com/insights/how-many-languages/による
 英語もフランス語もドイツ語も\pause
 スペイン語もアラビア語もヒンディー語も\pause
 中国語も韓国語も、\pause
-みーんな\Huge\phantom{0}$\frac{1}{7,164}$\phantom{0}\Large ということです
+みーんな\Huge\phantom{0}$\frac{1}{7,159}$\phantom{0}\Large ということです
 
 \vfill
 \pause
 
 どの言語が優れているとかいうようなことはまったくありません
 
+##
+
+\section{どのことばを話す人がおおいの}
+
 ## どのことばを話す人がおおいの
 
 
 \Large
 
-どのことばも7,164あることばのひとつ、\pause
-つまり\Huge\phantom{0}$\frac{1}{7,164}$\phantom{0}
+どのことばも7,159あることばのひとつ、\pause
+つまり\Huge\phantom{0}$\frac{1}{7,159}$\phantom{0}
 
 \Large
 \pause
@@ -281,7 +301,7 @@ https://www.ethnologue.com/insights/how-many-languages/による
 \pause
 
 そのことばを話す人の数がおおいことばもあれば、
-話す人があまりいないことばもあるはずです。
+話す人があまりいないことばもあるはずです
 
 ## Quiz
 \Large
@@ -300,17 +320,7 @@ https://www.ethnologue.com/insights/how-many-languages/による
 - ヒンディー語(Hindi)
 
 
-## 生まれて初めて身につけたことば
 
-```{r out.height="95%"}
-base_data |> 
-  ggplot() + geom_col(aes(language, n, fill=speakers)) +
-#  theme_few() + scale_fill_few("Light") +
- scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "white"),guide="none") +
-  coord_flip() +
-  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)",
-       caption="https://www.ethnologue.com/insights/most-spoken-language/より作成")
-```
 
 ## 第一言語として話す人の数がおおいことば
 
@@ -323,11 +333,12 @@ base_data |>
 \centering
 
 ```{r}
-base_data |> filter(speakers == "native") |>
-  pivot_wider(names_from=speakers, values_from=n) |>
-  arrange(desc(native)) |> 
-  rename("ことば" = language, "話者数" = native) |> 
-    knitr::kable(
+base_data |>
+  filter(speakers == "native") |>
+  pivot_wider(names_from = speakers, values_from = n) |>
+  arrange(desc(native)) |>
+  rename("ことば" = language, "話者数" = native) |>
+  knitr::kable(
     digits = 0,
     format.args = list(
       big.mark = ",",
@@ -343,9 +354,27 @@ base_data |> filter(speakers == "native") |>
 \scriptsize
 https://www.ethnologue.com/insights/most-spoken-language/による
 
+## 生まれて初めて身につけたことば
+
+```{r out.height="95%"}
+base_data |>
+  ggplot() +
+  geom_col(aes(language, n, fill = speakers)) +
+  #  theme_few() + scale_fill_few("Light") +
+  scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "white"), guide = "none") +
+  coord_flip() +
+  labs(
+    x = "言語", y = "人数(100万人)", title = "言語別の話者数(100万人)",
+    caption = "https://www.ethnologue.com/insights/most-spoken-language/より作成"
+  ) +
+  theme(text = element_text(family="Meiryo UI"))
+```
+
 ## 複数のことばを話す人もいますよね
 
 \Large
+
+ところで
 
 第一言語はAということばだけれど、
 
@@ -364,33 +393,41 @@ https://www.ethnologue.com/insights/most-spoken-language/による
 ## 第一言語として話す人の数はこうでしたね
 
 ```{r out.height="95%"}
-base_data |> 
-  ggplot() + geom_col(aes(language, n, fill=speakers)) +
-#  theme_few() + scale_fill_few("Light") +
- scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "white"),guide="none") +
+base_data |>
+  ggplot() +
+  geom_col(aes(language, n, fill = speakers)) +
+  #  theme_few() + scale_fill_few("Light") +
+  scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "white"), guide = "none") +
   coord_flip() +
-  labs(x="言語", y ="人数(100万人)",
-       title="言語別の話者数(100万人)",
-       caption="https://www.ethnologue.com/insights/most-spoken-language/より作成")
+  labs(
+    x = "言語", y = "人数(100万人)",
+    title = "言語別の話者数(100万人)",
+    caption = "https://www.ethnologue.com/insights/most-spoken-language/より作成"
+  ) +
+  theme(text = element_text(family="Meiryo UI"))
 ```
 
 ## 第一言語ではない人を合わせるとこうなります
 
 ```{r out.height="95%"}
-base_data |> 
-  ggplot() + geom_col(aes(language, n, fill=speakers)) +
-#  theme_few() + scale_fill_few("Light") +
- scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "#f39800"),guide="none") +
+base_data |>
+  ggplot() +
+  geom_col(aes(language, n, fill = speakers)) +
+  #  theme_few() + scale_fill_few("Light") +
+  scale_fill_manual(values = c("native" = "#0068b7", "non_native" = "#f39800"), guide = "none") +
   coord_flip() +
-  labs(x="言語", y ="人数(100万人)",title="言語別の話者数(100万人)",
-       caption="https://www.ethnologue.com/insights/most-spoken-language/より作成")
+  labs(
+    x = "言語", y = "人数(100万人)", title = "言語別の話者数(100万人)",
+    caption = "https://www.ethnologue.com/insights/most-spoken-language/より作成"
+  ) +
+  theme(text = element_text(family="Meiryo UI"))
 ```
 
 ## あれあれ
 
 \Huge
 
-大逆転
+大逆転！
 
 ## つまり
 
@@ -402,9 +439,10 @@ base_data |>
 \Large
 
 ```{r}
-base_data |> pivot_wider(names_from=speakers, values_from=n) |>
-  janitor::adorn_totals(where = "col") |> 
-  rename("ことば" = language, "第一言語" = native, "それ以外" = "non_native")  |> 
+base_data |>
+  pivot_wider(names_from = speakers, values_from = n) |>
+  janitor::adorn_totals(where = "col") |>
+  rename("ことば" = language, "第一言語" = native, "それ以外" = "non_native") |>
   knitr::kable(
     digits = 0,
     format.args = list(
@@ -424,23 +462,27 @@ https://www.ethnologue.com/insights/most-spoken-language/による
 ## 話す人を全部あわせると
 \Large
 
-世界には7,164のことばがありますが、
+世界には7,159のことばがありますが、
 
-話す人をぜんぶあわせると\pause
-\textcolor{Maroon}{英語を話す人がいちばんおおい}\pause
+ぜんぶあわせると\pause
+話す人がいちばんおおいのは\textcolor{Maroon}{英語}\pause
 
-2位は中国語\pause
+\hfill{}中国語は2位\pause
 
-\centering
 \vfill
+
+\raggedleft
 
 \begin{tabular}{lr}\toprule
 ことば&話者数\\
 \midrule
-英語&14億6000万人\\
-中国語　&11億3900万人\\
+英語&15億2,800万人\\
+中国語　&11億8,400万人\\
 \bottomrule
 \end{tabular}
+
+##
+\section{話者の空間的分布}
 
 ## そのことばを話す人はどこに住んでいるの
 
@@ -448,17 +490,18 @@ https://www.ethnologue.com/insights/most-spoken-language/による
 
 中国語と英語を話す人が
 
-世界のどこに住んでいるか見てみましょう。
+世界のどこに住んでいるか見てみましょう
 
 
 ## Chinese
 
 ```{r}
-ne_world |> 
-     ggplot() + 
-     geom_sf(aes(fill = chinese_spoken)) +
-     scale_fill_manual(values = c("TRUE" = "#f39800", "FALSE" = "white"), guide="none") +
-    labs(title="中国語")
+ne_world |>
+  ggplot() +
+  geom_sf(aes(fill = chinese_spoken)) +
+  scale_fill_manual(values = c("TRUE" = "#f39800", "FALSE" = "white"), guide = "none") +
+  labs(title = "中国語") +
+  theme(text = element_text(family="Meiryo UI"))
 ```
 
 ## 中国語を話す人
@@ -468,11 +511,12 @@ ne_world |>
 ## English
 
 ```{r}
-ne_world |> 
-     ggplot() + 
-     geom_sf(aes(fill = english_spoken)) +
-     scale_fill_manual(values = c("TRUE" = "#0068b7", "FALSE" = "white"),guide="none") +
-    labs(title="英語")
+ne_world |>
+  ggplot() +
+  geom_sf(aes(fill = english_spoken)) +
+  scale_fill_manual(values = c("TRUE" = "#0068b7", "FALSE" = "white"), guide = "none") +
+  labs(title = "英語") +
+  theme(text = element_text(family="Meiryo UI"))
 ```
 
 ## English
@@ -487,6 +531,10 @@ ne_world |>
 
 いっぽう、\textcolor{NavyBlue}{英語は広く世界中で話されています}
 
+## 
+
+\section{わたしたちが学ぶ英語とは}
+
 ## わたしたちが勉強する英語ってどんなことばなの
 
 \Large
@@ -497,7 +545,7 @@ ne_world |>
 \pause
 つまり\pause
 
-\textcolor{NavyBlue}{英語は世界の共通語}といっていいだろう
+\textcolor{NavyBlue}{英語は世界の共通語}といっていいでしょう
 
 ## 英語は世界の共通語
 \Large

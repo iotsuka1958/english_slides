@@ -18,6 +18,8 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide}
+\usetikzlibrary{tikzmark}
+\usepackage{tikzducks}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{ABCDEFG \ldots\,\,XYZ}
@@ -87,10 +89,19 @@
 \begin{rmfamily}
 \begin{tabular}{lp{.8\textwidth}}
 大文字:& ABCDEFGHIJKLMNOPQRSTUVWXYZ\\\pause
-小文字:& a b c d e f {\itshape g} h i j k l m n o p q r s t u v w x y z
+小文字:& a b c d e f \rotatebox{12.5}{{\itshape g}} h i j k l m n o p q r s t u v w x y z
 \end{tabular}
 
 \end{rmfamily}
+
+\hfill\begin{tikzpicture}
+ \duck[laughing,bowtie,
+strawhat=brown!50!white,
+ribbon=black,
+think={\scriptsize Alphabet!},
+bubblecolour=white!50!pink]
+\end{tikzpicture}
+
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -127,9 +138,29 @@ $26\times{}2=52$
  \Huge
 
 $\text{English: 52}<\text{2,228: Japanese}$
+
+\vfill
+\normalsize
+
+\raggedleft
+\begin{tikzpicture}
+\duck[tshirt,
+jacket=gray,
+bowtie,
+crazyhair,
+speech={\tiny よかった},
+laughing,
+signpost=\scalebox{0.4}{
+\parbox{2cm}{
+英語は\\
+文字が\\少ない！}},
+]
+\end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \againframe<6>{what_is_alphabet}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{大文字と小文字の使いわけ}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{大文字と小文字の使いわけ}
 
@@ -137,13 +168,26 @@ $\text{English: 52}<\text{2,228: Japanese}$
  \Large
 \begin{rmfamily}
 
-\visible<1->{\alt<2->{\textcolor{ForestGreen}{\textbf E}}{E}nglish is fun.}\hfill\visible<2->{文の先頭}
+\visible<1->{\alt<2->{\textcolor{NavyBlue}{\textbf S}}{S}he is very kind.}\hfill\visible<2->{{\small 文の先頭}}
 
-\visible<3->{\alt<4->{\textcolor{ForestGreen}{\textbf M}}{M}y name is \alt<5->{\textcolor{Maroon}{\textbf G}}{G}eorge \alt<5->{\textcolor{Maroon}{\textbf S}}{S}mith.}\pause\hfill{}\visible<5->{人の名前}
+\visible<3->{\alt<4->{\textcolor{NavyBlue}{\textbf C}}{C}an \alt<5->{\textcolor{BurntOrange}{\textbf I}}{I} help you?}\hfill\visible<5->{{\small Iはいつでも}}
 
-\visible<6->{\alt<7->{\textcolor{ForestGreen}{\textbf C}}{C}an \alt<8->{\textcolor{BurntOrange}{\textbf I}}{I} help you?}\hfill\visible<8->{Iはいつでも}
+\visible<6->{\alt<7->{\textcolor{NavyBlue}{\textbf M}}{M}y name is \alt<8->{\textcolor{Maroon}{\textbf G}}{G}eorge \alt<8->{\textcolor{Maroon}{\textbf S}}{S}mith.}\pause\hfill{}\visible<8->{{\small 人の名前}}
+
+\visible<9->{\alt<10->{\textcolor{NavyBlue}{\textbf H}}{H}e lives in \alt<11->{\textcolor{Maroon}{\textbf B}}{B}oston, \alt<11->{\textcolor{Maroon}{\textbf M}}{M}assachusetts.}\pause\hfill{}\visible<11->{{\small 地名}}
+
 
 \end{rmfamily}
+
+\begin{block}<12->{Topics for Today}\small
+つぎのときは大文字をつかいすまj
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item 文の先頭
+ \item I（わたしは）
+ \item 人の名前、地名
+\end{itemize}
+ \end{block}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{動画視聴}
@@ -205,7 +249,7 @@ $\text{English: 52}<\text{2,228: Japanese}$
 \onslide<5,28,32,55->{d}&
 \onslide<6,28,33,55->{e}&
 \onslide<7,28,34,55->{f}&
-\onslide<8,28,35,55->{\itshape g}&
+\onslide<8,28,35,55->{\rotatebox{12.5}{\itshape g}}&
 \onslide<9,28,36,55->{h}&
 \onslide<10,28,37,55->{i}&
 \onslide<11,28,38,55->{j} \\
@@ -234,7 +278,7 @@ $\text{English: 52}<\text{2,228: Japanese}$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{まとめ}
 \begin{frame}[plain,label=matome]{まとめ}
-  \begin{exampleblock}{Topics for Today}
+  \begin{block}{Topics for Today}
 \small
 \pause
 \begin{itemize}\setbeamertemplate{items}[square]
@@ -245,31 +289,32 @@ $\text{English: 52}<\text{2,228: Japanese}$
         \item 大文字を使うのは\pause
               \begin{itemize}
 	       \item 文の先頭\pause
-	       \item 人名\pause
 	       \item \textrm{I}\,\,(わたし)はいつでも\pause
+	       \item 人名、地名\pause
 	      \end{itemize}
        \end{itemize}
  \item 聞き取れるようになったら実際に発音してみよう
 \end{itemize}
-      \end{exampleblock}
+      \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\againframe{title}
 %\againframe{matome}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{演習}
 \begin{frame}[plain]{アルファベットを書いてみよう}
 
 \Large
 
-ノートにアルファベットを書いてみよう。
+ノートにアルファベットを書いてみよう
 
  \end{frame}
 \begin{frame}[plain]{アルファベットを書いてみよう}
-\LARGE
+\Large
 
-まず大文字です。
+まず大文字
 
-大文字をノートに書こう。
+大文字をノートに書こう
 
 \bigskip
 
@@ -282,15 +327,15 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=write_lower]{アルファベットを書いてみよう}
-\LARGE
+\Large
 
-小文字をノートに書こう。
+小文字をノートに書こう
 
 \bigskip
 \begin{rmfamily}
 \begin{tabular}{p{.95\textwidth}}
 %ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
-a b c d e f {\itshape g} h i j k l m n o p q r s t u v w x y z
+a b c d e f \rotatebox{12.5}{{\itshape g}} h i j k l m n o p q r s t u v w x y z
 \end{tabular}
 \end{rmfamily}\pause
 
@@ -328,6 +373,21 @@ a b c d e f {\itshape g} h i j k l m n o p q r s t u v w x y z
 \scalebox{2}{%
 b{\large と}d%
 }
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まぎらわしいもの}
+ 
+ \Huge
+\centering
+
+\scalebox{2}{%
+\tikzmark{left_eye}bcd\tikzmark{right_eye}%
+}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \draw[fill=black] ([xshift=16pt,yshift=10pt]pic cs:left_eye) circle (.1);
+ \draw[fill=black] ([xshift=25pt,yshift=10pt]pic cs:right_eye) circle (.1);
+\end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{まぎらわしいもの}

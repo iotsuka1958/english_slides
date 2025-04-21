@@ -184,7 +184,7 @@ English is fun.
 {\scriptsize 氏名と組み合わせた場合}
 \end{tabular}\\
 \midrule
-\ruby{穂毛}{ほ|げ} ホゲ\ruby{雄}{お}&\includegraphics[width=.2\textwidth]{../images/mr_hogehoge.pdf}&
+\ruby{穂毛}{ほ|げ} ホゲ\ruby{雄}{お}&\includegraphics[width=.2\textwidth]{../images/iotsuka2025.jpg}&
 \begin{tabular}{@{}c@{}}
 千葉県○○市○○町\\
 穂毛 ホゲ雄

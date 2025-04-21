@@ -2,7 +2,7 @@
 title: "English is fun."
 subtitle: "Alphabet"
 author: "エデュオプちば"
-date: "2024"
+date: "2025"
 output:
   ioslides_presentation:
     css: ../my_font.css
@@ -31,7 +31,7 @@ knitr::opts_chunk$set(echo = FALSE)
 <br>
 
 <span style="font-size:280%;"> U V W X Y Z</span>
-<span style="font-size:140%;">　これは大文字です</span>
+<span style="font-size:140%;">これは大文字です</span>
 
 <!--
 We're going to learn the pronunciation of the English alphabet now.
@@ -314,7 +314,7 @@ A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. S. T. U. V. W. X. Y. Z.
 
 <!--- The last alphabet is Z. Please listen carefully.   Z. Z. Z. Z. Z.  -->
 
-## もう一度 A から Z まで続けて発音します
+## もう一度AからZまで続けて発音します
 
 <span style="font-size:280%;">A B C D E F G H I J</span>
 
