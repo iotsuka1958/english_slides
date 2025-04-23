@@ -76,7 +76,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 文末の上昇イントネーション記号 \myRisingPitch
 %% 通常のイントネーション \myDownwardPitch
-%% https://note.com/dan_oyama/n/n8be58e8797b2
+%% https://note.com/darcledn_oyama/n/n8be58e8797b2
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\myRisingPitch}{
 \begin{tikzpicture}[scale=0.3,baseline=0.3]
@@ -124,7 +124,7 @@
  \item The flowers（ am / is / \alt<6->{\Circled[outer color=orange]{are}}{are} ) beautiful.
 \end{enumerate}
 
-\hfill{\scriptsize \myaudio{./audio/024_past_be_01.mp3}}
+\hfill{\tiny 0222}{\scriptsize \myaudio{./audio/024_past_be_01.mp3}}
 
 \begin{block}{Topics for Today}
 \pause
@@ -186,7 +186,7 @@
 
 \onslide<8->{現在形は3つ(am, are, is)ありましたが、過去形は2つ(was, were)だけです}
 
-\hfill{\scriptsize \myaudio{./audio/024_past_be_02.mp3}}
+\hfill{\tiny 0419}{\scriptsize \myaudio{./audio/024_past_be_02.mp3}}
 
 \end{frame}
 
@@ -258,7 +258,7 @@ you & are & were \\
        \mbox{}\hfill{}{\scriptsize at home: 在宅して　then: そのとき}
 \end{enumerate}
 
-\hfill{\scriptsize \myaudio{./audio/024_past_be_03.mp3}}
+\hfill{\tiny 0206}{\scriptsize \myaudio{./audio/024_past_be_03.mp3}}
 
 \end{frame}
 
@@ -284,13 +284,14 @@ you & are & were \\
 \visible<4->{\begin{block}{否定文のつくり方}
 \small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item \visible<5->{否定文にするには、be動詞の直後に\,\Circled[fill color = white]{\,\,\textbf{not}\,\,}\,を置きます{\scriptsize (現在形のときと同じですね)}}
+ \item \visible<5->{否定文にするには、be動詞の直後に\,\Circled[fill color = white]{\,\,\textbf{not}\,\,}\,を置きます\\
+\hfill{\scriptsize 現在形のときと同じです}}
  \item \visible<6->{縮めて was not $\rightarrow$\,\,\,\textcolor{BurntOrange}{\bfseries wasn't} /  were not $\rightarrow$ \textcolor{BurntOrange}{\bfseries weren't}}\\%
 \hfill\visible<7->{\scriptsize {\kenten{短縮形}といいます}}
 \end{itemize}
       \end{block}}
 
-\hfill{\scriptsize \myaudio{./audio/024_past_be_04.mp3}}
+\hfill{\tiny 0144}\,{\scriptsize \myaudio{./audio/024_past_be_04.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -339,8 +340,7 @@ laughing
 \visible<5->{You were not at home then.}\hfill{\scriptsize at home: 在宅して}
 \end{enumerate}
 
-\hfill{\scriptsize \myaudio{./audio/024_past_be_05.mp3}}
-
+\hfill{\tiny 0204}\,{\scriptsize \myaudio{./audio/024_past_be_05.mp3}}
 \end{frame}
 
 
@@ -349,38 +349,68 @@ laughing
 \begin{frame}[plain]\frametitle{was / wereの疑問文}
 \Large
 
+\begin{columns}
+\begin{column}{.6\textwidth}
 \begin{enumerate}
  \item \begin{enumerate}\large
-	\item \visible<1->{You \tikzmark{were}\textcolor{NavyBlue}{\bfseries were} hungry.}\\[-5pt]
+	\item \visible<1->{You \tikzmark{were}\textcolor{NavyBlue}{\bfseries were} hungry.}\\[5pt]
 \mbox{}
 	\item \visible<2->{\tikzmark{q_were}\textcolor{NavyBlue}{\bfseries Were} you hungry?}
        \end{enumerate}
  \item \begin{enumerate}\large
-	\item \visible<1->{She \tikzmark{was}\textcolor{NavyBlue}{\bfseries was} tired last night.}\\[-5pt]
+	\item \visible<1->{She \tikzmark{was}\textcolor{NavyBlue}{\bfseries was} tired last night.}\\[5pt]
 \mbox{}
 	\item \visible<3->{\tikzmark{q_was}\textcolor{NavyBlue}{\bfseries Was} she tired last night?}
        \end{enumerate}
 \end{enumerate}
+\end{column}
+%%%%%%%%%%%%%
+\begin{column}<2->{.35\textwidth}
+\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}
+前に\\出すだけ}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+speech={\tiny 語順がだいじ}
+]
+\end{tikzpicture} 
+\end{column}
+\end{columns}
+
+\bigskip
 
 \visible<4->{\begin{block}{疑問文のつくり方}
 \small
 \setbeamertemplate{items}[square]
 \begin{itemize}
- \item \visible<5->{疑問文にするには、be動詞を先頭に置きます}
- \item \visible<6->{現在形のときと同じです}
+ \item \visible<5->{疑問文にするには、be動詞を先頭に置きます}\\
+\hfill\visible<6->{{\scriptsize 現在形のときと同じです}}
+ \item<7-> \Circled[fill color=white]{\,S $+$ V\,}\,が\,\Circled[fill color=white]{\,V $+$ S\,}\,と順番が変わります\\
+\hfill{{\scriptsize \kenten{倒置}といいます}}
 \end{itemize}
       \end{block}}
 
-\hfill{\scriptsize \myaudio{./audio/024_past_be_06.mp3}}
+\vspace*{-20pt}
+
+\hfill{\tiny 0137}\,{\scriptsize \myaudio{./audio/024_past_be_06.mp3}}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<2->{\draw[->,opacity=0.4,line width=2pt] ([xshift=8pt,yshift=-2pt]pic cs:were) to[bend right] ([xshift=10pt, yshift=8pt] pic cs:q_were);}
- \visible<3->{\draw[->,opacity=0.4,line width=2pt] ([xshift=8pt,yshift=-2pt]pic cs:was) to[bend right] ([xshift=10pt, yshift=8pt] pic cs:q_was);}
+ \visible<2->{\draw[->,opacity=0.6,line width=2pt] ([xshift=8pt,yshift=-2pt]pic cs:were) to[bend right] node[sloped,above,text=black,font=\tiny,pos=.6]{前に} ([xshift=10pt, yshift=8pt] pic cs:q_were);}
+ \visible<3->{\draw[->,opacity=0.6,line width=2pt] ([xshift=8pt,yshift=-2pt]pic cs:was) to[bend right] node[sloped,above,text=black,font=\tiny,pos=.6]{前に} ([xshift=10pt, yshift=8pt] pic cs:q_was);}
 \end{tikzpicture}
-
-
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{記号}
+ 
+       \begin{description}
+	\item[主語：] S\hfill{subjectの頭文字} 
+	\item[動詞：] V\hfill{verbの頭文字}
+%	\item[目的語：] O \hfill{objectの頭文字}
+       \end{description}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 
@@ -400,7 +430,7 @@ laughing
 \visible<5->{Were you at home then?}
 
  \end{enumerate}
-\hfill{\scriptsize \myaudio{./audio/024_past_be_07.mp3}}
+\hfill{\tiny 0157}\,{\scriptsize \myaudio{./audio/024_past_be_07.mp3}}
 
 \end{frame}
 
@@ -408,9 +438,8 @@ laughing
 \subsection{疑問文への答え方}
 \begin{frame}<1-16>[plain]\frametitle{疑問文への答え方}
 
-{\small 例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/024_past_be_08z.mp3}}
-
+{\small 例にならい、質問に対する答えを「はい」と「いいえ」の2通りつくりましょう}
+\mbox{}\hfill{\tiny 0339}\,{\scriptsize \myaudio{./audio/024_past_be_08z.mp3}}
 
 \begin{tabular}{rlcll}
 \visible<1->{例}& \visible<1->{Were you busy?}& \visible<2->{$\rightarrow$}&\visible<2->{(1) Yes, I was.}&\visible<2->{(2) No, I wasn't.}\\
@@ -427,7 +456,7 @@ laughing
  \item Yes, S $+ \left\{\begin{array}{l}
 		  \text{was}\\
 		\text{were}\end{array}\right\}$\,\,.
-\hspace{20pt}
+\hspace{40pt}
 No, S $+ \left\{\begin{array}{l}
 		  \text{was not($=$ wasn't)}\\
 		\text{were not($=$ weren't)}\end{array}\right\}$\,\,.
@@ -446,15 +475,16 @@ No, S $+ \left\{\begin{array}{l}
 \begin{numcases}{\text{主語できまります\,\,\,\,}}
  \text{\mbox{}\,\,{}I}&$\longrightarrow$\,\,\,\,\,\,{}\text{was}\\
  \text{\mbox{}\,\,{}you}&$\longrightarrow$\,\,\,\,\,\,{}\text{were}\\
- \text{\mbox{}\,\,{}単数(1つ、1人)}&$\longrightarrow$\,\,\,\,\,\,{}\text{was}\\
- \text{\mbox{}\,\,{}複数(2つ、2人以上)}&$\longrightarrow$\,\,\,\,\,\,{}\text{were}
+ \text{\mbox{}\,\,{}単数(1人、1つ)}&$\longrightarrow$\,\,\,\,\,\,{}\text{was}\\
+ \text{\mbox{}\,\,{}複数(2人以上、2つ)}&$\longrightarrow$\,\,\,\,\,\,{}\text{were}
 \end{numcases}
 }
 \end{block}
 
 \pause
 
-現在形と過去形をあわせてみましょう
+現在形と過去形の使い分けを1つの表にまとめてみます
+
 \hfill\begin{tblr}{
   colspec={lll},
  row{odd} = {bg=azure8},
@@ -479,11 +509,11 @@ you & are & were \\
 \small
 \setbeamertemplate{items}[square]
 \begin{itemize}
- \item 否定文にするには、be動詞の直後に\,\,\Circled[fill color = white]{\,\,not\,\,}\,\,を置きます\hfill{\scriptsize (現在形のときと同じです)}\\
-\hfill{}She \textbf{was not} tired.
+ \item 否定文にするには、be動詞の直後に\,\,\Circled[fill color = white]{\,\,not\,\,}\,\,を置きます\hfill{\scriptsize 現在形のときと同じです}\\
+\hfill{}I \textbf{was not} tired.  / You \textbf{were not} hungry.
  \item 縮めて was not $\rightarrow$\,\,\,\textcolor{Maroon}{\bfseries wasn't}\,\,\,\,\,\,/\,\,\,\,\,\,were not $\rightarrow$ \textcolor{Maroon}{\bfseries weren't}%
-\hfill{\scriptsize （\kenten{短縮形}といいます）}\\
-\hfill{}He \textbf{wasn't} busy.
+\hfill{\scriptsize \kenten{短縮形}といいます}\\
+\hfill{}I \textbf{wasn't} busy. / They \textbf{weren't} at home.
 \end{itemize}
       \end{block}
 
@@ -491,7 +521,7 @@ you & are & were \\
 \begin{block}<2->{疑問文のつくり方・疑問文への答え方}
 \small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item 疑問文にするには、be動詞を先頭に置きます\hfill{\scriptsize (現在形のときと同じです)}\\
+ \item 疑問文にするには、be動詞を先頭に置きます\hfill{\scriptsize 現在形のときと同じです}\\
 \hfill{}{\bfseries Were} you hungry?
  \item 疑問文への答え方
 %KY\setbeamertemplate{items}[square]
