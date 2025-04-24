@@ -28,6 +28,7 @@
 \usetikzlibrary{tikzmark}
 \usepackage{tcolorbox}
 \usepackage{tikzpeople}
+\usepackage{tikzducks}
 \usepackage{circledsteps}
 \usepackage{xcolor}
 \usepackage{amsmath}
@@ -282,6 +283,27 @@ speak&spoke&spoken
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{受け身の否定}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{否定を表す語}
+ \Large
+
+否定を表す語：\pause {\LARGE\bfseries not}\hspace{20pt}\textipa{/n\'At/}
+
+
+\hfill\begin{tikzpicture}
+\duck[tshirt=black,
+stripes={\stripes[color=white]},
+football,
+speech={\tiny 口を縦に全開},
+bubblecolour=cyan!20!white,
+think={ア},
+laughing
+]
+\end{tikzpicture}
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{受け身の否定}
 \large
 
@@ -309,20 +331,34 @@ speak&spoke&spoken
 
 \vspace{15pt}
 
-\visible<3->{\alt<1-3>{\myAnch{be2}{white}{Is}}{\myAnch{BE2}{orange}{Is}} English spoken there?} 
+\visible<3->{\alt<1-3>{\myAnch{be2}{white}{Is}}{\myAnch{BE2}{orange}{Is}} English spoken there?}%
+\hfill%
+\visible<5->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}
+前に\\出すだけ}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+speech={\tiny 語順がだいじ}
+]
+\end{tikzpicture}}  
 
 \visible<4->{%
 \begin{tikzpicture}[remember picture,overlay]
- \draw[thick,orange,->] (be1.south) to[out=-90, in=90] (be2.north);
+ \draw[thick,orange,->,line width=2pt,opacity=.5] (be1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.4]{be動詞を前に} (be2.north);
 \end{tikzpicture}
 }
 
+\vspace{-20pt}
+
 \hfill{\tiny 0111}\,{\scriptsize \myaudio{./audio/051_passive_07.mp3}}
 
-\begin{exampleblock}<5->{Topics for Today}\small
+\begin{exampleblock}<6->{Topics for Today}\small
 受け身の疑問文のつくり方
 \begin{itemize}\setbeamertemplate{items}[square]
- \item<3->  be動詞を先頭にする
+ \item<3->  be動詞を先頭へ\hfill{\scriptsize ふつうのbe動詞の文と同じ(He is kind.\,$\rightarrow$\,Is he kind?)}
  \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
 \end{itemize}
       \end{exampleblock}
@@ -354,7 +390,7 @@ Is English spoken in the country?
 ただし先頭に来る単語は大文字で始めてください}\hfill{\tiny 0200}\,{\scriptsize \myaudio{./audio/051_passive_08.mp3}}
 
 \begin{enumerate}
- \item {\small 家は毎日掃除されますか}。
+ \item {\small 家は毎日掃除されますか。}
 ( cleaned / the house / is ) every day?\\
 \visible<2->{Is the house cleaned every day?}
  \item {\small その写真はハワイで撮られましたか。}

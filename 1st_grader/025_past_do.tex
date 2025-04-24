@@ -33,6 +33,7 @@
 \usepackage{booktabs}
 \usepackage{tipa}
 \usepackage{manfnt}
+\usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -93,24 +94,23 @@
 \end{frame}
 
 \section*{授業の流れ}
-\begin{frame}[plain]
+\begin{frame}[plain]\small
   \frametitle{授業の流れ}
   \tableofcontents
 \end{frame}
 
 
-\section{一般動詞の現在形（復習）}
+\section{復習}
 
-
-\begin{frame}[plain]\frametitle{be動詞と一般動詞}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{be動詞と一般動詞}
+\begin{frame}[plain]\frametitle{be動詞と一般動詞（復習）}
 \begin{tikzpicture}
 
 % グリッドを描画（5mm刻み）
 %\draw[step=1cm, gray!20, very thin] (-6,0) grid (6,5);
 
 \node[rectangle, rounded corners, draw=black, fill=white] (verb) at (-3,5) {動詞};
-
-
 
 % 左側のノード（be動詞）
 \node[circle, draw=black, line width=1pt, fill=yellow!30, minimum size=2cm] (be) at (-2.5,2.5) {be動詞{\footnotesize ($=$)}};
@@ -133,55 +133,47 @@
 
 \end{tikzpicture}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{人称}
+\begin{frame}[plain,label=ninsyo]\frametitle{人称（復習）}
 
-
-\begin{frame}<1-9>[plain]\frametitle{Exercises}
-つぎの空所に適当な動詞を選んで補って、現在のことを表す英文をつくってください。なお、必要があれば、形を変えてください
-
-\begin{columns}
-\begin{column}{.5\textwidth}
- % \setbeamercovered{transparent}
-  \begin{enumerate}
-   \item I (\onslide<2,8,9>{\textcolor{orange}{\bfseries ~have~}}) two cats.
-   \item We (\onslide<3,8,9>{\textcolor{orange}{\bfseries ~go~}}) to school by bus.
-   \item  She (\onslide<4,8,9>{\textcolor{orange}{\bfseries ~drinks~}}) coffee every morning.
-   \item Tom (\onslide<5,8,9>{\textcolor{orange}{\bfseries ~eats~}}) bread for breakfast.
-   \item Jennifer (\onslide<6,8,9>{\textcolor{orange}{\bfseries ~lives~}}) in Boston.
-   \item They (\onslide<7,8,9>{\textcolor{orange}{\bfseries ~speak~}}) English.
-  \end{enumerate}
-\end{column}
-\begin{column}{.45\textwidth}
-\begin{tcolorbox}[title=この中から選んでください]
-live, go, have, speak, drink, eat
-\end{tcolorbox}
-\end{column}
-\end{columns}
-
-% Embed the sound file
-\onslide<9>{%
-\myaudio{./audio/004_verb_03.mp3}\,\,{}Listen carefully.
-
-}
+\begin{block}{人称とは}
+\begin{description}
+\item[１人称] 話し手（自分）のこと\pause{}\,\,{} $\longrightarrow$ Iとweだけ\pause
+\item[２人称] 聞き手（相手）のこと\pause{}\,\,{} $\longrightarrow$ youだけ\pause
+\item[３人称] １人称、２人称以外\pause{}\hspace{15pt} $\longrightarrow$%
+ \begin{tabular}[t]{@{\,\,}l}
+he\\\pause
+she\\\pause
+it\\\pause
+they\\\pause
+the teacher\\\pause
+this pencil\\\pause
+the cats\\\pause
+\ldots
+ \end{tabular}
+\end{description}
+\end{block}
 \end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}[plain]{一般動詞の現在形（復習）}
-%\begin{enumerate}
-%   \item<1-> \myEmph[9,17]{Maroon}{I} \myEmph[9,17]{NavyBlue}{like} music. \onslide*<2>{\footnotesize 　like: 好き、好む　music: 音楽}
-%   \item<3-> \myEmph[10,17]{Maroon}{We} \myEmph[10,17]{NavyBlue}{like} music.
-%   \item<4-> \myEmph[11,17]{Maroon}{You} \myEmph[11,17]{NavyBlue}{like} music.
-%   \item<5-> \myEmph[12,18]{Maroon}{He} \myEmph[12,18]{NavyBlue}{likes} music.
-%   \item<6-> \myEmph[13,18]{Maroon}{She} \myEmph[13,18]{NavyBlue}{likes} music.
-%   \item<7-> \myEmph[14,18]{Maroon}{Paul} \myEmph[14,18]{NavyBlue}{likes} music.
-%   \item<8-> \myEmph[15,19]{Maroon}{They} \myEmph[15,19]{NavyBlue}{like} music.
-%  \end{enumerate}
-%\begin{exampleblock}<17->{Topics for Today}
-%\begin{itemize}
-% \item<1-> \myEmph[17]{Maroon}{主語が1人称、2人称のとき、動詞はそのまま}
-% \item<2-> \myEmph[18]{Maroon}{主語が3人称で単数のとき、---sとなります}\myEmph[19]{Maroon}{(複数ならそのままです)}
-%\end{itemize}
-%      \end{exampleblock}
-%\end{frame}
+\subsection{一般動詞の現在形}
+\begin{frame}[plain]{一般動詞の現在形（復習）}
+\begin{enumerate}
+   \item<1-> \myEmph[9,17]{Maroon}{I} \myEmph[9,17]{NavyBlue}{like} music. \onslide*<2>{\footnotesize 　like: 好き、好む　music: 音楽}
+   \item<3-> \myEmph[10,17]{Maroon}{We} \myEmph[10,17]{NavyBlue}{like} music.
+   \item<4-> \myEmph[11,17]{Maroon}{You} \myEmph[11,17]{NavyBlue}{like} music.
+   \item<5-> \myEmph[12,18]{Maroon}{He} \myEmph[12,18]{NavyBlue}{likes} music.
+   \item<6-> \myEmph[13,18]{Maroon}{She} \myEmph[13,18]{NavyBlue}{likes} music.
+   \item<7-> \myEmph[14,18]{Maroon}{Paul} \myEmph[14,18]{NavyBlue}{likes} music.
+   \item<8-> \myEmph[15,19]{Maroon}{They} \myEmph[15,19]{NavyBlue}{like} music.
+  \end{enumerate}
+\begin{exampleblock}<17->{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item<1-> \myEmph[17]{Maroon}{主語が1人称、2人称のとき、動詞はそのまま}
+ \item<2-> \myEmph[18]{Maroon}{主語が3人称で単数のとき、---sとなります}\myEmph[19]{Maroon}{(複数ならそのままです)}
+\end{itemize}
+      \end{exampleblock}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}<1-3>[plain]\frametitle{3単現のs}
@@ -201,10 +193,43 @@ She play\myAnch{T2}{orange}{s} \,\,{}the guitar.
 \draw[->,orange] (T1.south)to[out=-120,in=-30](T2.south);
 \end{tikzpicture}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-10>[plain]\frametitle{Exercises}
+{\small つぎの空所に適当な動詞を選んで補い、\kenten{現在}のことを表す英文をつくってください。なお、必要があれば、形を変えてください}
 
+\begin{columns}
+\begin{column}{.5\textwidth}
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item I (\onslide<2,8,9->{\textcolor{orange}{\bfseries ~have~}}) two cats.
+   \item We (\onslide<3,8,9->{\textcolor{orange}{\bfseries ~go~}}) to school by bus.
+   \item  She (\onslide<4,8,9->{\textcolor{orange}{\bfseries ~drinks~}}) coffee every morning.
+   \item Tom (\onslide<5,8,9->{\textcolor{orange}{\bfseries ~eats~}}) bread for breakfast.
+   \item Jennifer (\onslide<6,8,9->{\textcolor{orange}{\bfseries ~lives~}}) in Boston.
+   \item They (\onslide<7,8,9->{\textcolor{orange}{\bfseries ~speak~}}) English.
+  \end{enumerate}
+\end{column}
+\begin{column}{.45\textwidth}
+\begin{tcolorbox}[title={\small この中から選んでください}]
+live, go, have, speak, drink, eat
+\end{tcolorbox}
+\end{column}
+\end{columns}
+
+\vfill
+
+\only<4,8,9->{{\small 3\,\,}}\only<5,8,9>{{\small 4\,\,}}\visible<4,5,8,9>{{\small \textcolor{orange}{\bfseries has}も正解です}}
+
+\visible<10->{{\scriptsize \textdbend}\,\,{\small \textbf{have}は\textbf{eat}, \textbf{drink}の意味で使うことがあります}}
+
+% Embed the sound file
+\hfill{\tiny 0224}\,\,{\scriptsize \myaudio{./audio/004_verb_03.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{一般動詞の過去形}
 
 \subsection{過去形とは}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{一般動詞の過去形}
  \Large
 
@@ -248,9 +273,10 @@ She play\myAnch{T2}{orange}{s} \,\,{}the guitar.
 
 \hfill\myaudio{./audio/025_past_do_01.mp3}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{過去形のつくり方}
-\subsubsection{基本 --ed}
+\subsubsection{基本}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{過去形のつくり方--- 基本 ---}
  
 \begin{enumerate}
@@ -282,7 +308,7 @@ She play\myAnch{T2}{orange}{s} \,\,{}the guitar.
 \hfill\myaudio{./audio/025_past_do_02.mp3}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{edをつける過去形}
  原形にedをつけて過去形をつくる動詞の表を完成させましょう。
 
@@ -308,7 +334,7 @@ She play\myAnch{T2}{orange}{s} \,\,{}the guitar.
 \hfill\myaudio{./audio/025_past_do_03.mp3}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 日本語の意味になるよう(~~~~~~~~~~)に下の枠から適当な動詞を選び補いましょう。必要に応じて、動詞の形は変化させてください 
 
@@ -327,9 +353,8 @@ cook~~~~~/~~~~~listen~~~~~/~~~~~play~~~~~/~~~~~watch~~~~~/~~~~~walk
 \hfill\myaudio{./audio/025_past_do_04.mp3}
 
 \end{frame}
-
-
-\subsubsection{過去形のつくり方-- eで終わる動詞 --}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%subsubsection{過去形のつくり方-- eで終わる動詞 --}
 \begin{frame}[plain]{過去形のつくり方--- eで終わる動詞 ---}
  
 \begin{enumerate}
@@ -359,8 +384,7 @@ cook~~~~~/~~~~~listen~~~~~/~~~~~play~~~~~/~~~~~watch~~~~~/~~~~~walk
 \hfill\myaudio{./audio/025_past_do_05.mp3}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{--eで終わる動詞の過去形}
  --eで終わる動詞の表を完成させましょう。
 
@@ -388,8 +412,7 @@ cook~~~~~/~~~~~listen~~~~~/~~~~~play~~~~~/~~~~~watch~~~~~/~~~~~walk
 \hfill\myaudio{./audio/025_past_do_06.mp3}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 つぎの(~~~~~~~~~~)に下の枠から適当な動詞を選び、過去形にして補いましょう。 
 
@@ -406,9 +429,8 @@ use~~~~~/~~~~~love~~~~~/~~~~~live
 \end{tcolorbox}
 \hfill\myaudio{./audio/025_past_do_07.mp3}
 \end{frame}
-
-
-\subsubsection{--edで終わるが、ちょっぴり注意が必要な動詞}
+%%%%%%%%%%%%%%%%%%%%%%%
+%subsubsection{--edで終わるが、ちょっぴり注意が必要な動詞}
 \begin{frame}[plain]{--edで終わるが、ちょっぴり注意が必要な動詞}
  \pause
 \begin{enumerate}
@@ -458,8 +480,7 @@ use~~~~~/~~~~~love~~~~~/~~~~~live
 \hfill\myaudio{./audio/025_past_do_09.mp3}
 
  \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 つぎの(~~~~~~~~~~)に下の枠から適当な動詞を選び、過去形にして補いましょう。 
 
@@ -505,11 +526,8 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \end{block}
 \end{frame}
 
-
-
-%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{不規則動詞}
+\subsubsection{不規則動詞}
 \begin{frame}<1-11>[plain]{不規則動詞}
  次の各文の意味を考えましょう
 
@@ -523,8 +541,7 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \hfill\myaudio{./audio/025_past_do_11.mp3}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-11>[plain]{不規則動詞}
  次の各文の意味を考えましょう
 
@@ -538,7 +555,7 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \hfill\myaudio{./audio/025_past_do_12.mp3}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{不規則動詞の表1}
 
 \dbend
@@ -561,8 +578,7 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \hfill\myaudio{./audio/025_past_do_13.mp3}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{不規則動詞の表2}
 
 \dbend
@@ -584,8 +600,7 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \hfill\myaudio{./audio/025_past_do_14.mp3}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<21>[plain,label=tableofirregularverb]{不規則動詞の表(1$+$2)}
  
 \dbend
@@ -619,10 +634,8 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \end{column}
 \end{columns}
 
-
-
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。ただし動詞は適当な形にしてください。なお、先頭の語は大文字で始めてください
 
@@ -644,11 +657,9 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \hfill\myaudio{./audio/025_past_do_15.mp3}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。ただし動詞は適当な形にしてください。なお、先頭の語は大文字で始めてください
-
 
 \begin{enumerate}
  \item きのう彼は彼女のためにケーキを作った。\\
@@ -665,8 +676,7 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \hfill\myaudio{./audio/025_past_do_16.mp3}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。ただし動詞は適当な形にしてください。なお、先頭の語は大文字で始めてください
 
@@ -686,7 +696,7 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{一般動詞の過去形のまとめ}
+\section{まとめ}
 \begin{frame}[plain]{一般動詞の過去形のまとめ}
  \begin{alertblock}{過去のことは過去形で表します}\small
 \pause
@@ -710,7 +720,6 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
        \end{enumerate}\pause
  \item go, come, eat, have, makeなど不規則な変化をする動詞もあります(不規則動詞)
 \end{enumerate}
-
 
 \end{alertblock}
 
