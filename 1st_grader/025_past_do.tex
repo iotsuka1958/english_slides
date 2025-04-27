@@ -180,7 +180,7 @@ the cats\\\pause
 \Large
 
 \myEmph[2]{orange}{現在}を表す文では、
-主語が\myEmph[2]{orange}{3人称}で\myEmph[2]{orange}{単数}のとき\\動詞の最後に\myEmph[2]{orange}{--s}をつけます
+主語が\myEmph[2]{orange}{3人称}で\myEmph[2]{orange}{単数}のとき\\動詞の最後に\,\myEmph[2]{orange}{\Circled{\,s\,}}\,をつけます
 
 \pause
 
@@ -190,7 +190,7 @@ She play\myAnch{T2}{orange}{s} \,\,{}the guitar.
 
 % ノード間を結ぶ矢印を別のTikZ環境で描く
 \begin{tikzpicture}[remember picture,overlay]
-\draw[->,orange] (T1.south)to[out=-120,in=-30](T2.south);
+\draw[->,orange,line width=2pt,opacity=.5] (T1.south)to[out=-120,in=-30](T2.south east);
 \end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -218,7 +218,7 @@ live, go, have, speak, drink, eat
 
 \vfill
 
-\only<4,8,9->{{\small 3\,\,}}\only<5,8,9>{{\small 4\,\,}}\visible<4,5,8,9>{{\small \textcolor{orange}{\bfseries has}も正解です}}
+\only<4,8,9->{{\small 3\,\,}}\only<5,8,9->{{\small 4\,\,}}\visible<4,5,8,9>{{\small \textcolor{orange}{\bfseries has}も正解です}}
 
 \visible<10->{{\scriptsize \textdbend}\,\,{\small \textbf{have}は\textbf{eat}, \textbf{drink}の意味で使うことがあります}}
 
