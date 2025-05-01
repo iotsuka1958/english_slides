@@ -17,6 +17,7 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{I like to play the piano. I want to be a pianist.}
@@ -41,21 +42,27 @@
   \tableofcontents
 \end{frame}
 
-\section{不定詞}
-\subsection{不定詞とは}
+\section{to不定詞}
+\subsection{to不定詞とは}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{おさらい}
 \Large
 
-Small cats jump quickly.\\
-	\visible<2->{{\small \Circled{ 形 }\hspace{25pt}\Circled{ 名 }\hspace{15pt}\Circled{ 動 }\hspace{24pt}\Circled{ 副 }}}
+\begin{enumerate}
+ \item<1-> Small cats\only<2->{(=S)} jump\only<2->{(=V)} quickly.%
+      \hfill{\small この英文の主語と述語動詞はなに？}
+ \item<3-> Small cats jump quickly.%
+      \hfill{\small この英文4つの単語の品詞はなに？}\\
+	\visible<4->{{\small \Circled{ 形 }\hspace{25pt}\Circled{ 名 }\hspace{15pt}\Circled{ 動 }\hspace{24pt}\Circled{ 副 }}}
+\end{enumerate}
+
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{不定詞とは}
+\begin{frame}[plain]{to不定詞とは}
 \large
 \visible<2->{動詞とは本来、主語と組み合わせて使うもの
-\mbox{}\hfill{}\myEmph[2-]{Maroon}{I} \myEmph[2-]{Maroon}{play} the piano and \myEmph[2-]{Maroon}{she} \myEmph[2-]{Maroon}{sings}.}
+\mbox{}\hfill{}\myEmph[2-]{NavyBlue}{I} \myEmph[2-]{Maroon}{play} the piano and \myEmph[2-]{NavyBlue}{she} \myEmph[2-]{Maroon}{sings}.}
 
 \visible<3->{だが、特別に
 
@@ -71,22 +78,22 @@ Small cats jump quickly.\\
 
 \visible<3->%
 {\begin{tikzpicture}[remember picture, overlay]
- \visible<3->{\draw[thick, Maroon, ->] (v.east) to[out=0, in=180] (n.west);} 
- \visible<3->{\draw[thick, Maroon, ->] (v.east) to[out=0, in=180] (adj.west);} 
- \visible<3->{\draw[thick, Maroon, ->] (v.east) to[out=0, in=180] (adv.west);} 
+ \visible<3->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (n.west);} 
+ \visible<3->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (adj.west);} 
+ \visible<3->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (adv.west);} 
 \end{tikzpicture}}
 
 \vspace{-5pt}
 
 \mbox{}\hfill%
-\visible<8->{\begin{minipage}{.35\textwidth}
-\visible<9->{不定詞}：\Circled[fill color = white]{\,$\text{to} + \text{動詞の原形}$\,}
+\visible<8->{\begin{minipage}{.4\textwidth}
+\visible<9->{to不定詞}：\Circled[fill color = white]{\,$\text{to} + \text{動詞の原形}$\,}
 \end{minipage}}
 
-\hfill{\scriptsize \myaudio{./audio/031_infinitive_intro_01.mp3}}
+\hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/031_infinitive_intro_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{不定詞}
+\begin{frame}[plain]{to不定詞}
 \large 
 
 \begin{enumerate}
@@ -106,13 +113,16 @@ Small cats jump quickly.\\
 \end{enumerate}
 
 \visible<11->{%
-\begin{exampleblock}{Topics for Today ---名詞的用法---}
-\begin{itemize}\small
- \item<11-> 主語と組み合わせる動詞\,(\,I like \ldots{}, He likes \ldots{}, She liked \ldots\,)とはちがって、\\
-いつでも\,\Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$\,}\\
+\begin{block}{Topics for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item <11-> 主語と組み合わせる動詞\,(\,I {\bfseries like} \ldots{}, He {\bfseries likes} \ldots{}, She {\bfseries liked} \ldots\,)を特に\kenten{述語動詞}といいます\\
+\hfill{}\visible<12->{{\scriptsize 述語動詞は主語や時制に応じて変化します cf.\,\,like, likes, liked}}
+ \item<13-> 述語動詞とはちがってto不定詞は変化しません\\
+\hfill{}いつでも\,\Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$\,}\\
+\hfill{\scriptsize \textdbend to不定詞のtoは\kenten{述語動詞ではない}という目印}
  \end{itemize}
-     \end{exampleblock}
+     \end{block}
 }
-\mbox{}\hfill{\scriptsize \myaudio{./audio/031_infinitive_intro_02.mp3}}
+\mbox{}\hfill{\tiny 0300}\,{\scriptsize \myaudio{./audio/031_infinitive_intro_02.mp3}}
 \end{frame}
 \end{document}

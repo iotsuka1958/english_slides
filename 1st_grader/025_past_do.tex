@@ -27,6 +27,7 @@
 \usetikzlibrary{backgrounds}
 \usepackage{tcolorbox}
 \usepackage{tikzpeople}
+\usepackage{tikzducks}
 \usepackage{circledsteps}
 \usepackage{xcolor}
 \usepackage{amsmath}
@@ -34,6 +35,13 @@
 \usepackage{tipa}
 \usepackage{manfnt}
 \usepackage{pxrubrica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*\myCrossedOut[2]{%
+  \tikz[baseline=(T.base)]
+    \node[draw=#1, thick, shape=cross out, decorate,
+      inner sep=2pt, outer sep=0pt,
+      decoration={random steps, segment length=2pt, amplitude=0.4pt}]
+      (T) {#2};}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -231,7 +239,7 @@ live, go, have, speak, drink, eat
 \subsection{過去形とは}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{一般動詞の過去形}
- \Large
+ \large
 
 \begin{columns}
 \begin{column}<1->{.48\textwidth}
@@ -264,6 +272,8 @@ live, go, have, speak, drink, eat
 \end{column}
 \end{columns}
 
+\vfill
+
 \begin{block}<3->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
  \item 一般動詞の過去形は、主語にかかわらず同じ
@@ -271,7 +281,7 @@ live, go, have, speak, drink, eat
 \end{itemize}
 \end{block}
 
-\hfill\myaudio{./audio/025_past_do_01.mp3}
+\hfill{\tiny 0351}\,{\scriptsize \myaudio{./audio/025_past_do_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{過去形のつくり方}
@@ -305,36 +315,59 @@ live, go, have, speak, drink, eat
  \item 多くの動詞は、原形にedをつけることで過去形になります
 \end{itemize}
 \end{block}
-\hfill\myaudio{./audio/025_past_do_02.mp3}
+\hfill{\tiny 0324}\,{\scriptsize \myaudio{./audio/025_past_do_02.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{edをつける過去形}
- 原形にedをつけて過去形をつくる動詞の表を完成させましょう。
+\begin{frame}<-17>[plain,label=ed]{edをつける過去形}
+ {\small 原形にedをつけて過去形をつくる動詞の表を完成させましょう}
 
 \begin{center}
  
-\rowcolors{2}{NavyBlue!50}{yellow!50}
+\rowcolors{2}{NavyBlue!20}{yellow!50}
 \begin{tabular}{llll}\toprule
 {\small 原形}&{\small (意味)}&{\small 過去形}&\visible<17->{{\small 発音}}\\\midrule
-\visible<1->{listen}&\visible<2->{{\small (聞く)}}&\visible<3->{listened}&\visible<17->{\textipa{/d/}}\\
-\visible<1->{play}&\visible<4->{{\small (演奏する、競技をする)}}&\visible<5->{played}&\visible<17->{\textipa{/d/}}\\
-\visible<1->{cook}&\visible<6->{{\small(調理する)}}&\visible<7->{cooked}&\visible<17->{\textipa{/t/}}\\
-\visible<1->{walk}&\visible<8->{{\small (歩く)}}&\visible<9->{walked}&\visible<17->{\textipa{/t/}}\\
-\visible<1->{watch}&\visible<10->{{\small (見る)}}&\visible<11->{watched}&\visible<17->{\textipa{/t/}}\\
-\visible<1->{enjoy}&\visible<12->{{\small (楽しむ)}}&\visible<13->{enjoyed}&\visible<17->{\textipa{/d/}}\\
-\visible<1->{learn}&\visible<14->{{\small (学ぶ)}}&\visible<15->{learned}&\visible<17->{\textipa{/d/}}\\\bottomrule
+\visible<1->{listen}&\visible<2->{{\small (聞く)}}&\visible<3->{liste\myEmph[19-]{Maroon}{n}ed}&\visible<17->{\textipa{/d/}}\\
+\visible<1->{play}&\visible<4->{{\small (演奏する、競技をする)}}&\visible<5->{pl\myEmph[19-]{Maroon}{ay}ed}&\visible<17->{\textipa{/d/}}\\
+\visible<1->{cook}&\visible<6->{{\small(調理する)}}&\visible<7->{coo\myEmph[20-]{ForestGreen}{k}ed}&\visible<17->{\textipa{/t/}}\\
+\visible<1->{walk}&\visible<8->{{\small (歩く)}}&\visible<9->{wal\myEmph[20-]{ForestGreen}{k}ed}&\visible<17->{\textipa{/t/}}\\
+\visible<1->{watch}&\visible<10->{{\small (見る)}}&\visible<11->{wa\myEmph[20-]{ForestGreen}{tch}ed}&\visible<17->{\textipa{/t/}}\\
+\visible<1->{enjoy}&\visible<12->{{\small (楽しむ)}}&\visible<13->{enj\myEmph[19-]{Maroon}{oy}ed}&\visible<17->{\textipa{/d/}}\\
+\visible<1->{learn}&\visible<14->{{\small (学ぶ)}}&\visible<15->{lear\myEmph[19-]{Maroon}{n}ed}&\visible<17->{\textipa{/d/}}\\\bottomrule
 \end{tabular}%
 \end{center}
 
-\visible<16->{\scriptsize 多くの動詞が--edをつけると過去形になります}
+\visible<16->{{\scriptsize 多くの動詞は、原形に--edをつけると過去形になります}}
 
-\visible<18->{\scriptsize 動詞の最後の音が有声音なら\textipa{/d/}、無声音なら\textipa{/t/}\,\dbend}
+\vspace{-5pt}
 
-\hfill\myaudio{./audio/025_past_do_03.mp3}
+\visible<18->{{\scriptsize 動詞の原形の最後の音が有声音なら\textipa{/d/}、無声音なら\textipa{/t/}\,\dbend}}
+
+\vspace{-15pt}
+
+\hfill{\tiny 0406}\,{\scriptsize \myaudio{./audio/025_past_do_03.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{有声音と無声音}
+\large
+ \begin{description}
+  \item[有声音: ] \onslide<1->{声帯がふるえる音}
+                  \onslide<3->{%
+                  \begin{itemize}\setbeamertemplate{items}[circle]\small
+		   \item \onslide<3->{すべての母音}
+		   \item \onslide<4->{一部の子音}\hspace{25pt}\onslide<5->{{\small たとえば \textipa{/b/}\,\,\,\textipa{/d/}\,\,\,\textipa{/g/}\,\,\,\textipa{/v/}\,\,\,\textipa{/z/}}}
+		  \end{itemize}}
+  \item[無声音: ] \onslide<2->{声帯がふるえない音}
+                  \onslide<6->{%
+                  \begin{itemize}\setbeamertemplate{items}[circle]\small
+		   \item 一部の子音\hspace{25pt}\onslide<7->{{\small たとえば \textipa{/p/}\,\,\,\textipa{/t/}\,\,\,\textipa{/k/}\,\,\,\textipa{/f/}\,\,\,\textipa{/s/}}}
+		  \end{itemize}}
+ \end{description}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<17->[plain]{ed}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 日本語の意味になるよう(~~~~~~~~~~)に下の枠から適当な動詞を選び補いましょう。必要に応じて、動詞の形は変化させてください 
 
@@ -350,12 +383,12 @@ live, go, have, speak, drink, eat
 \centering
 cook~~~~~/~~~~~listen~~~~~/~~~~~play~~~~~/~~~~~watch~~~~~/~~~~~walk
 \end{tcolorbox}
-\hfill\myaudio{./audio/025_past_do_04.mp3}
+\hfill{\tiny 0230}\,{\scriptsize \myaudio{./audio/025_past_do_04.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %subsubsection{過去形のつくり方-- eで終わる動詞 --}
-\begin{frame}[plain]{過去形のつくり方--- eで終わる動詞 ---}
+\begin{frame}[plain,t]{過去形のつくり方 --- eで終わる動詞 ---}
  
 \begin{enumerate}
  \item \begin{enumerate}
@@ -370,23 +403,46 @@ cook~~~~~/~~~~~listen~~~~~/~~~~~play~~~~~/~~~~~watch~~~~~/~~~~~walk
 	\item I  \textcolor{ForestGreen}{\bfseries like}\textcolor{Maroon}{\bfseries d} tennis.\pause
        \end{enumerate}
  \item \begin{enumerate}
-	\item I use my phone every day.\pause
+	\item I use my phone every day.%
+\hfill{\scriptsize phone \textipa{/f\'oUn/} 電話}
+\pause
 	\item I  \textcolor{ForestGreen}{\bfseries use}\textcolor{Maroon}{\bfseries d} the map.\hfill{{{\scriptsize map \textipa{/m\'\ae p/} 地図}}}\pause
        \end{enumerate}
 \end{enumerate}
 
-\begin{exampleblock}{Topic for Today}\small
+\begin{block}{Topic for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item --eで終わる動詞は、原形にdだけつけます(結果的に--edで終わります)
+ \item --eで終わる動詞は、原形にdだけつけます\\
+\hfill{}{\scriptsize 結果的に--edで終わります}
 \end{itemize}
-\end{exampleblock}
+\end{block}
 
-\hfill\myaudio{./audio/025_past_do_05.mp3}
+\hfill{\tiny 0253}\,{\scriptsize \myaudio{./audio/025_past_do_05.mp3}}
+
+\vspace{-.85\textheight}
+
+\hfill
+\pause
+{\begin{tikzpicture}
+\duck[tshirt,
+jacket=gray,
+bowtie,
+cap=Maroon,
+%crazyhair,
+speech={\tiny dだけつける},
+laughing,
+signpost=\scalebox{0.45}{
+\parbox{1.7cm}{
+結果的に\\
+\textbf{ed}}},
+]
+\end{tikzpicture}}
+
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{--eで終わる動詞の過去形}
- --eで終わる動詞の表を完成させましょう。
+ --eで終わる動詞の表を完成させましょう
 
 \begin{center}
  
@@ -409,55 +465,65 @@ cook~~~~~/~~~~~listen~~~~~/~~~~~play~~~~~/~~~~~watch~~~~~/~~~~~walk
 \visible<17->{{\scriptsize 動詞の最後の音が有声音なら\textipa{/d/}、無声音なら\textipa{/t/}}}
 
 %\visible<19->{{\scriptsize ただし\textipa{/d/}または\textipa{/t/}のときは、\textipa{/Id/}となります}}%
-\hfill\myaudio{./audio/025_past_do_06.mp3}
+\hfill{\tiny 0246}\,{\scriptsize \myaudio{./audio/025_past_do_06.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-つぎの(~~~~~~~~~~)に下の枠から適当な動詞を選び、過去形にして補いましょう。 
+
+{\small つぎの(~~~~~~~~~~)に下の枠から適当な動詞を選び、過去形にして補いましょう}
 
 \begin{enumerate}
-	\item We~~(\visible<2->{~~lived~~}) in London two years ago.  2年前私たちはロンドンに住んでいた。       
- \item She~~(\visible<3->{~~loved~~}) her cat.彼女は飼い猫を愛していた。
-	\item He~~(\visible<4->{~~used~~}) the map.彼は地図を使った。
+	\item We~~(\visible<2->{~~lived~~}) in London two years ago.  {\small 2年前私たちはロンドンに住んでいた。}\\%
+\hfill{\scriptsize London \textipa{/l\'\textturnv nd@n/}}    
+ \item She~~(\visible<3->{~~loved~~}) her cat.{\small 彼女は飼い猫を愛していた}。
+	\item He~~(\visible<4->{~~used~~}) the map.{\small 彼は地図を使った。}
 %	\item I~~(\visible<5->{~~liked~~}) tennis.私はテニスが好きだった。
 \end{enumerate}
+
+\bigskip
 
 \begin{tcolorbox}[title=この中から選んでください]
 \centering
 use~~~~~/~~~~~love~~~~~/~~~~~live
 \end{tcolorbox}
-\hfill\myaudio{./audio/025_past_do_07.mp3}
+\hfill{\tiny 0136}\,{\scriptsize\myaudio{./audio/025_past_do_07.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
 %subsubsection{--edで終わるが、ちょっぴり注意が必要な動詞}
 \begin{frame}[plain]{--edで終わるが、ちょっぴり注意が必要な動詞}
- \pause
 \begin{enumerate}
  \item \begin{enumerate}
-	\item I stud\textcolor{ForestGreen}{\bfseries y} math every day.\pause
-	\item I stud\textcolor{Maroon}{\bfseries ied} math.\hfill{}{{\scriptsize cf. studyの3単現: studies}}\pause
+	\item<1-> I stud\textcolor{ForestGreen}{\bfseries y} math every day.
+	\item<2-> I stud\textcolor{Maroon}{\bfseries ied} math.\hfill{}{{\scriptsize cf. studyの3単現: studies}}
        \end{enumerate}
- \item \begin{enumerate}
-	\item Babies cr\textcolor{ForestGreen}{\bfseries y}.\hfill{}{{\scriptsize  babies: baby(赤ちゃん)の複数形}}\pause
-	\item The baby cr\textcolor{Maroon}{\bfseries ied} on the bus.\pause
+ \item<1-> \begin{enumerate}
+	\item<1-> Babies cr\textcolor{ForestGreen}{\bfseries y}.\hfill{}{{\scriptsize  babies: baby(赤ちゃん)の複数形}}
+	\item<3-> The baby cr\textcolor{Maroon}{\bfseries ied} on the bus.
        \end{enumerate}
- \item \begin{enumerate}
-	\item The train stops at every station.\hfill{}{{\scriptsize train: 列車}}\pause
-	\item The train sto\textcolor{NavyBlue}{\bfseries pp}\textcolor{Maroon}{\bfseries ed} at every station.\hfill{}{{\scriptsize every $+$ 単数形: すべての～ \textipa{/\'evri/}}}\pause
+ \item<1-> \begin{enumerate}
+	\item<1-> The train stops at every station.\hfill{}{{\scriptsize every $+$ 単数形: すべての～ \textipa{/\'evri/}}}
+%\hfill{}{{\scriptsize train: 列車}}
+	\item<4-> The train sto\textcolor{NavyBlue}{\bfseries pp}\textcolor{Maroon}{\bfseries ed} at every station.
        \end{enumerate}
 \end{enumerate}
 
-\begin{exampleblock}{Topics for Today}\small
+\begin{block}<5->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item 最後のyをiに変えてedをつける動詞があります(結果的に--iedとなります)\pause
- \item stopの過去形はpを重ねてedをつけます
+ \item studyとcryは最後のyをiに変えてedをつけます(結果的に--iedとなります)\\%
+       \hfill{}{\scriptsize study\,$\rightarrow$\, studied\,\myCrossedOut{Maroon!50}{studyed}}\\
+       \hfill{}{\scriptsize cry\,$\rightarrow$\, cried\,\myCrossedOut{Maroon!50}{cryed}}
+ \item stopの過去形はpを重ねてedをつけます\\
+       \hfill{}{\scriptsize stop\,$\rightarrow$\,stopped\,\myCrossedOut{Maroon!50}{stoped}}
 \end{itemize}
-\end{exampleblock}
-\hfill\myaudio{./audio/025_past_do_08.mp3}
+\end{block}
+
+\vspace{-10pt}
+
+\hfill{\tiny 0247}\,{\scriptsize \myaudio{./audio/025_past_do_08.mp3}}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{--edで終わるが、ちょっぴり注意が必要な動詞}
 つぎの動詞の表を完成させましょう
 
@@ -477,7 +543,7 @@ use~~~~~/~~~~~love~~~~~/~~~~~live
 \visible<12->{{\scriptsize これらの動詞もすべて--edで終わっていることに注意}}
 
 \visible<14->{{\scriptsize 動詞の最後の音が有声音なら\textipa{/d/}、無声音なら\textipa{/t/}}}
-\hfill\myaudio{./audio/025_past_do_09.mp3}
+\hfill{\tiny 0304}\,{\scriptsize \myaudio{./audio/025_past_do_09.mp3}}
 
  \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -494,7 +560,7 @@ use~~~~~/~~~~~love~~~~~/~~~~~live
 \centering
 cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \end{tcolorbox}
-\hfill\myaudio{./audio/025_past_do_10.mp3}
+\hfill{\tiny 0148}\,{\scriptsize \myaudio{./audio/025_past_do_10.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -516,16 +582,15 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \begin{block}<4->{yで終わる動詞の過去形}\small
  \begin{enumerate}
   \item<5-> \Circled[fill color = white]{子音字} $+$ y $\longrightarrow$ yをiに変えてedをつける%
-\hfill{}stu\Circled{d}y $\rightarrow$ stud\textcolor{NavyBlue}{\bfseries ied}\\
-\hfill{}c\Circled{r}y $\rightarrow$ cr\textcolor{NavyBlue}{\bfseries ied}\\
-\hfill{}t\Circled{r}y $\rightarrow$ tr\textcolor{NavyBlue}{\bfseries ied}\\
-\hfill{}car\Circled{r}y $\rightarrow$ carr\textcolor{NavyBlue}{\bfseries ied}
-  \item<6-> \Circled[fill color = white]{母音字} $+$ y $\longrightarrow$ edをつける\hfill{}pl\Circled{a}y $\rightarrow$ play\textcolor{Maroon}{\bfseries ed}\\
-\hfill{}enj\Circled{o}y $\rightarrow$ enjoy\textcolor{Maroon}{\bfseries ed}
+\hfill{}stu\Circled[fill color=white]{d}y $\rightarrow$ stud\textcolor{NavyBlue}{\bfseries ied}\\
+\hfill{}c\Circled[fill color=white]{r}y $\rightarrow$ cr\textcolor{NavyBlue}{\bfseries ied}\\
+\hfill{}t\Circled[fill color=white]{r}y $\rightarrow$ tr\textcolor{NavyBlue}{\bfseries ied}\\
+\hfill{}car\Circled[fill color=white]{r}y $\rightarrow$ carr\textcolor{NavyBlue}{\bfseries ied}
+  \item<6-> \Circled[fill color = white]{母音字} $+$ y $\longrightarrow$ edをつける\hfill{}pl\Circled[fill color=white]{a}y $\rightarrow$ play\textcolor{Maroon}{\bfseries ed}\\
+\hfill{}enj\Circled[fill color=white]{o}y $\rightarrow$ enjoy\textcolor{Maroon}{\bfseries ed}
  \end{enumerate}
 \end{block}
 \end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{不規則動詞}
 \begin{frame}<1-11>[plain]{不規則動詞}
@@ -538,7 +603,7 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
   \item They \alt<1-8>{had}{\textcolor{Maroon}{\bfseries had}} a meeting \alt<1-7>{this afternoon}{\textcolor{NavyBlue}{\bfseries this afternoon}}.\hfill{}{\small \textbf{had}: haveの過去形\textipa{/h\'\ae d/}}
   \item He \myEmph[11-]{Maroon}{made} a cake for her \myEmph[10-]{NavyBlue}{yesterday}. \hfill{}{\small \textbf{made}: makeの過去形\textipa{/m\'eId/}}
 \end{enumerate}
-\hfill\myaudio{./audio/025_past_do_11.mp3}
+\hfill{\tiny 0231}\,{\scriptsize \myaudio{./audio/025_past_do_11.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -552,7 +617,7 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
   \item I \myEmph[9-]{Maroon}{took} a picture of my cat  \myEmph[8-]{NavyBlue}{yesterday}.\hfill{}{\small \textbf{took}: takeの過去形\textipa{/t\'Uk/}}
   \item I \myEmph[11-]{Maroon}{wrote} a letter to him  \myEmph[10-]{NavyBlue}{last night}.\hfill{}{\small \textbf{wrote}: writeの過去形\textipa{/r\'oUt/}}
 \end{enumerate}
-\hfill\myaudio{./audio/025_past_do_12.mp3}
+\hfill{\tiny 0236}\,{\scriptsize \myaudio{./audio/025_past_do_12.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -575,8 +640,8 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \end{center}
 
 {{\scriptsize これらの動詞は不規則な変化をします}}
-\hfill\myaudio{./audio/025_past_do_13.mp3}
-
+\hfill{\tiny 0300}\,{\scriptsize \myaudio{./audio/025_past_do_13.mp3}
+}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{不規則動詞の表2}
@@ -597,7 +662,7 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \end{center}
 
 {{\scriptsize これらの動詞は不規則な変化をします}}
-\hfill\myaudio{./audio/025_past_do_14.mp3}
+\hfill{\tiny 0300}\,{\scriptsize \myaudio{./audio/025_past_do_14.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -654,7 +719,7 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 ( have / they / a meeting )~~this afternoon.\\
 \visible<5->{They had a meeting this afternoon.}
 \end{enumerate}
-\hfill\myaudio{./audio/025_past_do_15.mp3}
+\hfill{\tiny 0206}\,{\scriptsize \myaudio{./audio/025_past_do_15.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -673,7 +738,7 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \visible<4->{She got a new car last month.}
 
 \end{enumerate}
-\hfill\myaudio{./audio/025_past_do_16.mp3}
+\hfill{\tiny 0144}\,{\scriptsize \myaudio{./audio/025_past_do_16.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -692,36 +757,36 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 ( a / to / write / I / letter / him ) last night.\\
 \visible<4->{I wrote a letter to him last night.}
 \end{enumerate}
-\hfill\myaudio{./audio/025_past_do_17.mp3}
+\hfill{\tiny 0141}\,{\scriptsize \myaudio{./audio/025_past_do_17.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
 \begin{frame}[plain]{一般動詞の過去形のまとめ}
- \begin{alertblock}{過去のことは過去形で表します}\small
+ \begin{block}{過去のことは過去形で表します}\small
 \pause
 \begin{enumerate}
  \item 一般動詞の過去形は主語がなんであっても同じ\hfill{}{\scriptsize cf. be動詞の過去形 / 一般動詞の現在形}\pause
  \item 過去形のつくり方の原則$\longrightarrow$ 原形にedをつける\\\pause
 でも、つぎの動詞に注意\pause
        \begin{enumerate}
-	\item --eで終わる動詞はdだけつける\hfill{}lik\Circled{e} $\rightarrow$ like\textcolor{OliveGreen}{\bfseries d} / lov\Circled{e} $\rightarrow$ love\textcolor{OliveGreen}{\bfseries d}\pause
+	\item --eで終わる動詞はdだけつける\hfill{}lik\Circled[fill color=white]{e} $\rightarrow$ like\textcolor{OliveGreen}{\bfseries d} / lov\Circled[fill color=white]{e} $\rightarrow$ love\textcolor{OliveGreen}{\bfseries d}\pause
 	\item --yで終わる動詞\pause
-\begin{itemize}
-	         \item \Circled[fill color = white]{子音字} $+$ y $\longrightarrow$ yをiに変えてedをつける%
-\hfill{}stu\Circled{d}y $\rightarrow$ stud\textcolor{NavyBlue}{\bfseries ied}\\
-\hfill{}c\Circled{r}y $\rightarrow$ cr\textcolor{NavyBlue}{\bfseries ied}\\
-\hfill{}t\Circled{r}y $\rightarrow$ tr\textcolor{NavyBlue}{\bfseries ied}\\
-\hfill{}car\Circled{r}y $\rightarrow$ carr\textcolor{NavyBlue}{\bfseries ied}\pause
-  \item \Circled[fill color = white]{母音字} $+$ y $\longrightarrow$ edをつける\hfill{}pl\Circled{a}y $\rightarrow$ play\textcolor{Maroon}{\bfseries ed}\\
-\hfill{}enj\Circled{o}y $\rightarrow$ enjoy\textcolor{Maroon}{\bfseries ed}\pause
+\begin{itemize}\setbeamertemplate{items}[circle]
+	         \item \Circled[fill color = white]{\,子音字\,} $+$ y $\longrightarrow$ yをiに変えてedをつける%
+\hfill{}stu\Circled[fill color=white]{d}y $\rightarrow$ stud\textcolor{NavyBlue}{\bfseries ied}\\
+\hfill{}c\Circled[fill color=white]{r}y $\rightarrow$ cr\textcolor{NavyBlue}{\bfseries ied}\\
+\hfill{}t\Circled[fill color=white]{r}y $\rightarrow$ tr\textcolor{NavyBlue}{\bfseries ied}\\
+\hfill{}car\Circled[fill color=white]{r}y $\rightarrow$ carr\textcolor{NavyBlue}{\bfseries ied}\pause
+  \item \Circled[fill color = white]{\,母音字\,} $+$ y $\longrightarrow$ edをつける\hfill{}pl\Circled[fill color=white]{a}y $\rightarrow$ play\textcolor{Maroon}{\bfseries ed}\\
+\hfill{}enj\Circled[fill color=white]{o}y $\rightarrow$ enjoy\textcolor{Maroon}{\bfseries ed}\pause
 	      \end{itemize}
-	\item stopは最後のｐを重ねてed\,\,\,\,\,stop $\longrightarrow$ stopped
+	\item stopは最後のｐを重ねてed\hfill{}stop $\longrightarrow$ sto\textcolor{BurntOrange}{\bfseries pped}
        \end{enumerate}\pause
  \item go, come, eat, have, makeなど不規則な変化をする動詞もあります(不規則動詞)
 \end{enumerate}
 
-\end{alertblock}
+\end{block}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
