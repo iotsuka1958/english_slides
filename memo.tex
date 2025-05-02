@@ -74,6 +74,25 @@ title=Question~\thetcbcounter: #2,#1}
 \usepackage[mono = false]{libertine}
 \usepackage{ulem}
 \usetikzlibrary{calendar,positioning}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\makeatletter
+%\newcommand*{\themonth}{\two@digits\month}
+%\newcommand*{\theday}{\two@digits\day}
+%\makeatother
+%\newcommand{\mytoday}{{\the\year}年{\themonth}月{\theday}日}
+\newcommand{\mytoday}{{\the\year}年{\the\month}月{\the\day}日}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{datetime2}
+\usepackage{datetime2-calc}
+\makeatletter
+\newcommand{\DOWjpn}{%
+	\DTMcomputedayofweekindex{\@dtm@currentyear-\@dtm@currentmonth-\@dtm@currentday}{\DOWindex}%
+	\ifcase\DOWindex 月\or 火\or 水\or 木\or 金\or 土\or 日\fi%
+}
+\newcommand{\DTMjpn}{%
+	\@dtm@currentyear/\@dtm@currentmonth/\@dtm@currentday(\DOWjpn)%
+}
+\makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,32 +104,27 @@ Hello! みなさんこんにちは。
 お元気でいらっしゃいますか?
 ごきげんいかがでしょう。
 
-2025年5月1日、木曜日
-午後2時をまわったところです。
+\mytoday{}（\DOWjpn{}曜日）
+午後1時をまわったところです。
 
 あ、この授業は千葉市の幕張からお送りしていますが、
 音声はちゃんと届いていますか？
 
 
-事務的な連絡をひとつお伝えします。
-きょう5月1日木曜日は、ダンス、ヨガの授業があります。
-
-時間は15:00--15:40です。
-
-クラスは「エデュオプちば中学校」から参加してください
 
 %英語の授業は千葉市の幕張地区からお送りしています。
 きょうの幕張地区ですが、
-とても気持ちのいい陽気です。
+朝からどんよりとしていましたが、今はもう雨が降っています。
+ここ何日か気持ちのいい陽気でしたが、
+今日はさえない感じです。
 みなさんのお住まいの地域はいかがでしょうか。
+雨の降っているところもあるかもしれません。
 
-気がついてみるときょうから5月。
-世間的にはゴールデンウィークということになっていますが、
-わたしとしてはいまひとつピンとこないなあというのが正直なところです。
 
-連休のはざまで気分がのらないなという人もいるとおもいます。
-あまり無理をしないで、
-ご自身のペースでやっていただければいいとおもいます。
+
+明日からは4連休ということをたよりにしたいとおもいます。
+それではあまり無理をしないで、
+ご自身のペースでやってください。
 気負わず、肩の力を抜いて、
 リラックスして参加してください
 
