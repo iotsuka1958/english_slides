@@ -88,6 +88,13 @@
 \end{tikzpicture}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\newcommand*{\themonth}{\two@digits\month}
+\newcommand*{\theday}{\two@digits\day}
+\makeatother
+\newcommand{\mytoday}{{\the\year}--{\themonth}--{\theday}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.\,\,{}--- I have lost my bag. ---}
   \author{}
 \institute[]{}
@@ -97,16 +104,91 @@
 %% TEXT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+%\centering
+\raggedleft
+  \textcolor{white}{\Huge\bfseries English is fun.}
+
+\vfill
+
+\raggedleft
+% \textcolor{white}{\LARGE\bfseries 2024--11--26}
+% \textcolor{white}{\LARGE\bfseries \today}
+ \textcolor{white}{\LARGE\bfseries \mytoday}
+
+\vfill
+\vfill
+\vfill
+
+\raggedleft
+\textcolor{white}{\large The lesson will begin at the scheduled time.}
+
+%\textcolor{white}{\large 可能なら、鏡を用意してください}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+%%% youtube
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色をグレイに変更
+%\setbeamercolor{background canvas}{bg=gray}
+\setbeamercolor{background canvas}{bg=black}
+
+\begin{frame}
+%\centering
+\raggedleft
+  \textcolor{white}{\Huge\bfseries \textcolor{yellow}{E}nglish is fun.}
+
+\vfill
+
+\vfill
+
+\raggedleft
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{H}ello, everybody!}
+
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{H}ow are you today?}
+
+\raggedleft
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{A}re you ready to start?}
+
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{L}et's begin today's lesson.}
+
+\vfill
+
+\raggedleft
+% \textcolor{white}{\LARGE\bfseries 2024--11--26}
+% \textcolor{white}{\LARGE\bfseries \today}
+ \textcolor{white}{\Large \bfseries \mytoday}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ \centering
+
+\Huge
+
+\textcolor{white}{\textbf{Catch the Alphabet!}}
+
+\raggedleft
+\hyperlink{today_a}{\beamergotobutton{Today's Mission}}%%todayにジャンプ
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% A
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_a}{}
+
  \large
-\visible<1->{%
+{\small %
 これからアルファベットを6つ順番に読みあげます。
 聞こえたアルファベットを順番に小文字で書いてください。すると単語になります。その意味を表す図を選んでください
 }
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_a.mp3}}
+\mbox{}\hfill{\tiny 0100}\,{\scriptsize \myaudio{./audio/quiz/quiz_a.mp3}}
 
 \bigskip
 
@@ -137,18 +219,20 @@ buttons, snow, broom]&
 \onslide<7->{l}%
 
 \large
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_a.mp3}}
+\mbox{}\hfill{\tiny 0038}\,{\scriptsize \myaudio{./audio/quiz/answer_a.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% B
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_b}{}
+
  \large
-\visible<1->{%
+{\small%
 これからアルファベットを4つ順番に読みあげます。
 聞こえたアルファベットを順番に小文字で書いてください。すると、ある単語になります。その意味を表す図を選んでください
 }
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_b.mp3}}
+\mbox{}\hfill{\tiny 0048}\,{\scriptsize \myaudio{./audio/quiz/quiz_b.mp3}}
 
 \bigskip
 
@@ -171,18 +255,20 @@ buttons, snow, broom]&
 \onslide<5->{k}%
 
 \large
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_b.mp3}}
+\mbox{}\hfill{\tiny 0037}\,{\scriptsize \myaudio{./audio/quiz/answer_b.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% C
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_c}{}
+
  \large
-\visible<1->{%
+{\small%
 これからアルファベットを5つ順番に読みあげます。
 聞こえたアルファベットを順番に小文字で書いてください。すると、ある単語になります。その意味を表す図を選んでください
 }
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/quiz_c.mp3}}
+\mbox{}\hfill{\tiny 0054}{\scriptsize \myaudio{./audio/quiz/quiz_c.mp3}}
 
 \bigskip
 
@@ -206,7 +292,7 @@ buttons, snow, broom]&
 \onslide<6->{y}%
 
 \large
-\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_c.mp3}}
+\mbox{}\hfill{\tiny 0038}\,{\scriptsize \myaudio{./audio/quiz/answer_c.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{frame}[plain]{candy}
@@ -224,6 +310,8 @@ buttons, snow, broom]&
 %% D
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_d}{}
+
  \large
 \visible<1->{%
 これからアルファベットを7つ順番に読みあげます。
@@ -272,6 +360,8 @@ buttons, snow, broom]&
 %% E
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_e}{}
+
  \large
 \visible<1->{%
 これからアルファベットを5つ順番に読みあげます。
@@ -309,6 +399,8 @@ buttons, snow, broom]&
 % F
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_f}{}
+
  \large
 \visible<1->{%
 これからアルファベットを4つ順番に読みあげます。
@@ -363,6 +455,8 @@ buttons, snow, broom]&
 %% G
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_g}{}
+
  \large
 \visible<1->{%
 これからアルファベットを5つ順番に読みあげます。
@@ -401,6 +495,8 @@ buttons, snow, broom]&
 %% H
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_h}{}
+
  \large
 \visible<1->{%
 これからアルファベットを5つ順番に読みあげます。
@@ -439,6 +535,8 @@ buttons, snow, broom]&
 %% I
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=quiz_i]{Quiz}
+\hypertarget{today_i}{}
+
  \large
 \visible<1->{%
 これからアルファベットを3つ順番に読みあげます。
@@ -474,6 +572,8 @@ buttons, snow, broom]&
 %% J
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_j}{}
+
  \large
 \visible<1->{%
 これからアルファベットを6つ順番に読みあげます。
@@ -521,6 +621,8 @@ width=6cm,height=4cm
 %% K
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_k}{}
+
  \large
 \visible<1->{%
 これからアルファベットを3つ順番に読みあげます。
@@ -556,6 +658,8 @@ width=6cm,height=4cm
 %% L
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_l}{}
+
  \large
 \visible<1->{%
 これからアルファベットを5つ順番に読みあげます。
@@ -593,6 +697,8 @@ width=6cm,height=4cm
 %% M
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_m}{}
+
  \large
 \visible<1->{%
 これからアルファベットを4つ順番に読みあげます。
@@ -629,6 +735,8 @@ width=6cm,height=4cm
 %% N
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_n}{}
+
  \large
 \visible<1->{%
 これからアルファベットを4つ順番に読みあげます。
@@ -673,6 +781,8 @@ width=6cm,height=4cm
 %% O
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_o}{}
+
  \large
 \visible<1->{%
 これからアルファベットを5つ順番に読みあげます。
@@ -714,6 +824,8 @@ width=6cm,height=4cm
 %% P
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_p}{}
+
  \large
 \visible<1->{%
 これからアルファベットを5つ順番に読みあげます。
@@ -755,6 +867,8 @@ width=6cm,height=4cm
 %% Q
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_q}{}
+
  \large
 \visible<1->{%
 これからアルファベットを5つ順番に読みあげます。
@@ -796,6 +910,8 @@ width=6cm,height=4cm
 %% R
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_r}{}
+
  \large
 \visible<1->{%
 これからアルファベットを7つ順番に読みあげます。
@@ -850,6 +966,8 @@ width=6cm,height=4cm
 %% S
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_s}{}
+
  \large
 \visible<1->{%
 これからアルファベットを10個、順番に読みあげます。
@@ -906,6 +1024,8 @@ width=6cm,height=4cm
 %% T
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_t}{}
+
  \large
 \visible<1->{%
 これからアルファベットを5つ順番に読みあげます。
@@ -946,6 +1066,8 @@ width=6cm,height=4cm
 %% U
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_u}{}
+
  \large
 \visible<1->{%
 これからアルファベットを8つ順番に読みあげます。
@@ -988,6 +1110,8 @@ width=6cm,height=4cm
 %% V
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_v}{}
+
  \large
 \visible<1->{%
 これからアルファベットを9つ順番に読みあげます。
@@ -1030,8 +1154,9 @@ width=6cm,height=4cm
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% W
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_w}{}
+
  \large
 \visible<1->{%
 これからアルファベットを5つ順番に読みあげます。
@@ -1072,6 +1197,8 @@ width=6cm,height=4cm
 %% X
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_x}{}
+
  \large
 \visible<1->{%
 これからアルファベットを4つ順番に読みあげます。
@@ -1124,6 +1251,8 @@ width=6cm,height=4cm
 %% Y
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_y}{}
+
  \large
 \visible<1->{%
 これからアルファベットを6つ順番に読みあげます。
@@ -1186,6 +1315,8 @@ width=6cm,height=4cm
 %% Z
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}
+\hypertarget{today_z}{}
+
  \large
 \visible<1->{%
 これからアルファベットを4つ順番に読みあげます。
@@ -1220,4 +1351,5 @@ width=6cm,height=4cm
 \large
 \mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_z.mp3}}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
