@@ -1,6 +1,6 @@
-sea<break time="3s"/>sea
-she<break time="3s"/>she
-sea<break time="3s"/>sea
-she<break time="3s"/>she
-she<break time="3s"/>she
-sea<break time="3s"/>sea
+America<break time="3s"/>America
+hot<break time="3s"/>hot
+chocolate<break time="3s"/>chocolate
+desk<break time="3s"/>desk
+breakfast<break time="3s"/>breakfast
+
