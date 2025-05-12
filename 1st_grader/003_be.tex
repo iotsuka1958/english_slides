@@ -18,6 +18,7 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{be動詞---am, are, is---}
@@ -95,7 +96,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{be動詞とは}
-\begin{frame}<20-27>[plain,label=what_is_be]\frametitle{be動詞とは}
+\begin{frame}[plain,label=what_is_be]\frametitle{be動詞とは}
  % \setbeamercovered{transparent}
   \begin{enumerate}
    \item<1-> I \textbf<14-20>{\color<14-20>{Maroon}{am}} a student. \onslide*<2>{わたしは生徒です。}\onslide*<14-20>{(I $=$ a student)}\hfill\onslide*<21-26>{\footnotesize 　a student: (1人の)生徒、学生}
@@ -108,17 +109,18 @@
 
 \bigskip
 
-\begin{exampleblock}<20->{Topics for Today}\small
+\begin{block}<20->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item am, are, isはイコール($=$)の意味
- \item まとめてbe動詞といいます
+ \item \textbf{am, are, is}
+\begin{itemize}\setbeamertemplate{items}[circle]
+ \item まとめて\,\Circled[fill color=white]{\,be動詞\,}\,といいます
+ \item イコール($=$)の意味
 \end{itemize}
-\end{exampleblock}
+\end{itemize}
+\end{block}
 
 % Embed the sound file
-\onslide<27>{%
-\myaudio{audio/002_be_01.mp3}
-}
+\hfill{\tiny 0251}\,{\scriptsize \myaudio{audio/002_be_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{am, are, is --- みんな、なかまです}
@@ -127,18 +129,17 @@
 % 補助グリッドを描画
 %\draw[step=1cm, gray!20, very thin] (-6,-2) grid (6,6);
 % ノードの定義と配置
-
-5\node[circle, draw=black, fill=pink!30,minimum size=15mm, line width=1pt] (B) at (-5,0) {\LARGE am};\pause
-\node[circle, draw=black, fill=blue!30, minimum size=15mm, line width=1pt] (C) at (0,5) {\LARGE are};\pause
-\node[circle, draw=black, fill=green!30, minimum size=15mm, line width=1pt] (D) at (5,0) {\LARGE is};\pause
-\node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be動詞};\pause
+\visible<1->{\node[circle, draw=black, fill=pink!30,minimum size=15mm, line width=1pt] (B) at (-5,0) {\LARGE am};}
+\visible<2->{\node[circle, draw=black, fill=blue!30, minimum size=15mm, line width=1pt] (C) at (0,5) {\LARGE are};}
+\visible<3->{\node[circle, draw=black, fill=green!30, minimum size=15mm, line width=1pt] (D) at (5,0) {\LARGE is};}
+\visible<4->{\node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be};}
 % ノード間の線の描画
-\draw[-latex, line width=1.5pt] (A) -- node[above] {} (B);\pause
-xdraw[-latex, line width=1.5pt] (A) -- node[sloped, above] {} node[sloped, below] {} (C);\pause
-\draw[-latex, line width=1.5pt] (A) -- node[above] {} (D);
+\visible<5->{\draw[-latex, line width=1.5pt] (A) -- node[above] {} (B);}
+\visible<5->{\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {} node[sloped, below] {} (C);}
+\visible<5->{\draw[-latex, line width=1.5pt] (A) -- node[above] {} (D);}
 \end{tikzpicture}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{be動詞、どれ使う？}
  \centering\Large
 
@@ -153,7 +154,7 @@ be動詞$\left\{\begin{tabular}[c]{l}
   \begin{enumerate}
    \item<1-> \textbf{\color{Maroon}{I am}} a student. \onslide*<2>{わたしは生徒です。}\hfill\onslide*<15-20>{\footnotesize 　student: 生徒、学生}
    \item<1-> \textbf{\color{Maroon}{I am}} tall. \onslide*<4>{わたしは背が高い。}\hfill\onslide*<16-20>{\footnotesize 　tall: 背が高い}
-   \item<1-> \textbf{\color{Maroon}{I am}} 13 years old. \onslide*<6>{わたしは13歳です。}\hfill\onslide*<17-20>{\footnotesize 　〜 years old: 〜歳だ　〜には数字がはいります}
+   \item<1-> \textbf{\color{Maroon}{I am}} 13 years old. \onslide*<6>{わたしは13歳です。}\hfill\onslide*<17-20>{\footnotesize 　〜 years old: 〜歳だ　（〜には数字がはいります）}
    \item<1-> \textbf{\color{Maroon}{I am}} John. \onslide*<8>{わたしはジョンです。}
    \item<1-> \textbf{\color{Maroon}{I am}} happy. \onslide*<10>{わたしは幸せです。}\hfill\onslide*<18-20>{\footnotesize 　happy: 幸せだ}
    \item<1-> \textbf{\color{Maroon}{I am}} from Tokyo. \onslide*<12>{わたしは東京の出身です。}\hfill\onslide*<19-20>{\footnotesize 　from 〜: 〜の出身だ}
@@ -161,25 +162,34 @@ be動詞$\left\{\begin{tabular}[c]{l}
 
 \bigskip
 
-\begin{exampleblock}<14->{Topics for Today}\small
+\begin{block}<14->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item   amはbe動詞
- \item I am 〜.をひとつのパターンとして覚えよう
+ \item 主語がIのときbe動詞は\textbf{am}をつかいます
+ \item \textbf{I am} 〜.をひとつのパターンとして覚えよう
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
 
 % Embed the sound file
-\onslide<20>{%
-{\scriptsize \myaudio{./audio/002_be_02.mp3}}
-}
+\hfill{\tiny 0250}\,{\scriptsize \myaudio{./audio/002_be_02.mp3}}
+
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
+\begin{frame}[plain,t]{Exercises}
+
+\begin{tcolorbox}[colframe=black,
+  colback=Yellow!10!white,
+  colbacktitle=Yellow!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+  title=自己紹介]
 John Smithさんは、
 Boston出身で年齢は12歳です。
 
 John Smithさんになったつもりで自己紹介文を作成してみよう。
+\end{tcolorbox}
+
+
+\bigskip
 
 \begin{enumerate}
  \item わたしはJohn Smithです。
@@ -189,6 +199,8 @@ John Smithさんになったつもりで自己紹介文を作成してみよう�
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Coffee Break}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Boston}
 
 \raggedleft
@@ -241,24 +253,26 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 \end{enumerate}
 
 \normalsize
-\onslide<1->{%
-{\scriptsize \myaudio{audio/002_be_021.mp3}}
-}%
+{\tiny 0137}\,{\scriptsize \myaudio{audio/002_be_021.mp3}}
 \hfill{}%
-\onslide<5->{%
-{\scriptsize \myaudio{audio/002_be_022.mp3}}
-}
+{\tiny 0136}\,{\scriptsize \myaudio{audio/002_be_022.mp3}}
+
 
 \normalsize
-\begin{exampleblock}<5->{Topics for Today}
+\begin{block}<5->{Topics for Today}\small
 \setbeamercovered{transparent}
 \begin{itemize}\setbeamertemplate{items}[square]
- \item<5,8>   amはbe動詞
- \item<6,8> I am 〜.をひとつのパターンとして覚えよう
- \item<7,8> $\text{I am}=\text{I'm}$\\
-\mbox{}\hfill{}短縮形といいます。 \colorbox[gray]{0.9}{~'~}をapostrophy\,(アポストロフィ)といいます\phantom{あ}
+ \item  主語がIのときbe動詞は\textbf{am}をつかいます
+ \item  \textbf{I am} 〜.をひとつのパターンとして覚えよう
+ \item<6-> \textbf{I am $=$ I'm}\tikzmark{target1}\\
+\mbox{}\hfill{}\tikzmark{pointer1}%
+\visible<7->{{\scriptsize 短縮形といいます。 \Circled[fill color=white]{~'~}\,をapostrophy\,(アポストロフィ)といいます\phantom{あ}}}
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<7->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:target1) to[out=-15, in=180] ([xshift=-2pt, yshift=2pt] pic cs:pointer1);}
+\end{tikzpicture}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -276,41 +290,47 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 
 \bigskip
 
-\begin{exampleblock}<14->{Topics for Today}
+\begin{block}<14->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item areはbe動詞
- \item You are 〜.をひとつのパターンとして覚えよう
+ \item 主語がyouのときbe動詞は\textbf{are}をつかいます
+ \item \textbf{You are} 〜.をひとつのパターンとして覚えよう
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
 
 % Embed the sound file
-\onslide<14->{%
-{\scriptsize \myaudio{audio/002_be_03.mp3}}
-}
+\hfill{\tiny 0245}\,{\scriptsize \myaudio{audio/002_be_03.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-9>[plain]{Exercises}
-あたえられた日本語の意味になるよう(~~~~~~)に適当な1語を補いましょう。
+
+{\small あたえられた日本語の意味になるよう(~~~~~~)に適当な1語を補いましょう}
 
 \begin{enumerate}
- \item あなたは親切だ。(\alt<1>{~~\phantom{You}~~}{~~\textcolor{Maroon}{You}~~})~~are kind.
- \item あなたは背が高い。You~~(\alt<1-2>{~~\phantom{are}~~}{~~\textcolor{Maroon}{are}~~})~~tall.
- \item あなたは親切だ。(\alt<1-3>{~~\phantom{You're}~~}{~~\textcolor{Maroon}{You're}~~})~~kind.
- \item あなたは背が高い。(\alt<1-4>{~~\phantom{You're}~~}{~~\textcolor{Maroon}{You're}~~})~~tall.
+ \item {\small あなたは親切だ}。(\alt<1>{~~\phantom{You}~~}{~~\textcolor{Maroon}{You}~~})~~are kind.
+ \item {\small あなたは背が高い。}You~~(\alt<1-2>{~~\phantom{are}~~}{~~\textcolor{Maroon}{are}~~})~~tall.
+ \item {\small あなたは親切だ。}(\alt<1-3>{~~\phantom{You're}~~}{~~\textcolor{Maroon}{You're}~~})~~kind.
+ \item {\small あなたは背が高い。}(\alt<1-4>{~~\phantom{You're}~~}{~~\textcolor{Maroon}{You're}~~})~~tall.
 \end{enumerate}
 
- \begin{exampleblock}<6->{Topics for Today}\small
+ \begin{block}<6->{Topics for Today}\small
 \setbeamercovered{transparent}
 \begin{itemize}\setbeamertemplate{items}[square]
- \item<6,9> areはbe動詞
- \item<7,9> You are 〜.をひとつのパターンとして覚えよう
- \item<8-> $\text{You are}=\text{You're}$\\
-\mbox{}\hfill{}短縮形といいます。 \colorbox[gray]{0.9}{~'~}をapostrophy\,(アポストロフィ)といいます\phantom{あ}
+ \item<6,9> 主語がyouのときbe動詞は\textbf{are}をつかいます
+ \item<7,9> \textbf{You are} 〜.をひとつのパターンとして覚えよう
+ \item<8-> \textbf{You are} $=$ \textbf{You're}\tikzmark{target2} \\
+\mbox{}\hfill{}{\scriptsize \tikzmark{pointer2}短縮形といいます。 \Circled[fill color=white]{~'~}\,をapostrophy\,(アポストロフィ)といいます\phantom{あ}}
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
 
 % Embed the sound file
-{\scriptsize \myaudio{audio/002_be_031.mp3}}
+\hfill{\tiny 0158}\,{\scriptsize \myaudio{audio/002_be_031.mp3}}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:target2) to[out=-15, in=180] ([xshift=-2pt, yshift=2pt] pic cs:pointer2);}
+\end{tikzpicture}
+
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\againframe{waiting}
@@ -353,22 +373,23 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 
 \bigskip
 
-\begin{exampleblock}<14->{Topic for Today}\small
+\begin{block}<14->{主語がIまたはYou以外のとき1}\small
+主語が単数のときはisを使います
 \begin{itemize}\setbeamertemplate{items}[square]
- \item I, You 以外で1つ(It, This, That, The book \ldots{})、1人(He, She, Jane, My father \ldots{})が主語のとき---主語が単数のとき---はisを使います
+ \item 1つ(It, This, That, The book \ldots{})
+ \item 1人(He, She, Jane, My father \ldots{})
 \end{itemize}  
-     \end{exampleblock}
+     \end{block}
 
 % Embed the sound file
-\onslide<14->{%
-{\scriptsize \myaudio{audio/002_be_04.mp3}}
-}
+\hfill{\tiny 0248}\,{\scriptsize \myaudio{audio/002_be_04.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \againframe<14-21>{recap_1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-6>[plain]{Exercises}
- つぎの各2文が同じ意味になるよう空所に適当な語を補いましょう。
+ つぎの各2文が同じ意味になるよう空所に適当な語を補いましょう
 
 \begin{enumerate}
  \item \begin{enumerate}
@@ -389,17 +410,17 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
        \end{enumerate}
 \end{enumerate}
 
-\begin{exampleblock}<6->{Topic for Today ---短縮形---}
-\begin{itemize}
+\begin{block}<6->{短縮形}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item He is\,($=\text{He's}$)\,\,\,\,/\,\,\,She is\,($=\text{She's}$)\,\,\,\,/\,\,\,It is\,($=\text{It's}$)\,\,\,\,/\,\,\,That is\,($=\text{That's}$)
 \end{itemize}  
-     \end{exampleblock}
+     \end{block}
 
 \vspace*{-5pt}
 % Embed the sound file
-\onslide<6->{%
-\myaudio{audio/002_be_041.mp3}{\small それぞれ2行目の短縮形の練習です}
-}
+
+\hfill{\tiny 0200}\,{\scriptsize \myaudio{audio/002_be_041.mp3}}{\scriptsize それぞれ2行目の短縮形の練習です}
+
 \end{frame}
 
 \section{I am, You are以外の場合(2)}
@@ -417,16 +438,17 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 
 \bigskip
 
-\begin{exampleblock}<14->{Topic for Today}
-\begin{itemize}
- \item   I, You 以外で複数(2つ以上)のモノや人が主語のとき\,\,---\,主語が複数のとき\,---\,\,はareを使います
+\begin{block}<14->{主語がIまたはYou以外のとき2}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item   複数 (2 つ以上) のモノや人が主語のとき — 主語が複数のとき — は
+are を使います
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
 
 % Embed the sound file
-\onslide<14->{%
-\myaudio{audio/002_be_05.mp3}
-}
+
+\hfill{\tiny 0248}\,{\scriptsize \myaudio{audio/002_be_05.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\againframe{waiting}
@@ -437,7 +459,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\againframe{waiting}
 %\againframe{title}
-\section*{Today's Quiz}
+%\section*{Today's Quiz}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% N
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -483,18 +505,18 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 %\mbox{}\hfill\visible<1->{\myaudio{./audio/quiz/answer_n.mp3}}
 %\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{復習}
-\begin{frame}[plain]{復習}
-
-\begin{block}{areのまとめ}
-\begin{itemize}
- \item   I, You 以外で複数(2つ以上)のモノや人が主語のとき\,\,---\,主語が複数のとき\,---\,\,はareを使います
-%% \item We are\,($=\text{We're}$)\,\,\,\,/\,\,\,They are\,($=\text{They're}$)
-\end{itemize}  
-     \end{block}
-
-
-\end{frame}
+%\section{まとめ}
+%\begin{frame}[plain]{復習}
+%
+%\begin{block}{areのまとめ}
+%\begin{itemize}
+% \item   I, You 以外で複数(2つ以上)のモノや人が主語のとき\,\,---\,主語が複数のとき\,---\,\,はareを使います
+%%% \item We are\,($=\text{We're}$)\,\,\,\,/\,\,\,They are\,($=\text{They're}$)
+%\end{itemize}  
+%     \end{block}
+%
+%
+%\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-4>[plain]{Exercises}
  つぎの各2文が同じ意味になるよう空所に適当な語を補いましょう。
@@ -509,23 +531,24 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 	\item \alt<1-2>{(~~\phantom{They're}~~)}{(~~\textcolor{BurntOrange}{\bfseries They're}~~)}\,\,from Italy        \end{enumerate}
 \end{enumerate}
 
-\begin{exampleblock}<4->{Topic for Today ---短縮形---}
-\begin{itemize}
+\begin{block}<4->{Topic for Today ---短縮形---}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item We are\,($=\text{We're}$)\,\,\,\,/\,\,\,They are\,($=\text{They're}$)
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
 
 % Embed the sound file
-\onslide<4->{%
-\myaudio{audio/002_be_051.mp3}{\small それぞれ2行目の短縮形の練習です}
-}
+
+\hfill{\tiny 0135}\,{\scriptsize \myaudio{audio/002_be_051.mp3}}\\
+\hfill{\scriptsize それぞれ2行目の短縮形の練習です}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{areを使う場合}
 
 \begin{block}{areのまとめ}
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item   I, You 以外で複数(2つ以上)のモノや人が主語のとき\,\,---\,主語が複数のとき\,---\,\,はareを使います
  \item We are\,($=\text{We're}$)\,\,\,\,/\,\,\,They are\,($=\text{They're}$)
 \end{itemize}  
@@ -537,9 +560,9 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 \section{まとめ}
 \begin{frame}[plain]\frametitle{まとめ}
 
-\begin{exampleblock}{be動詞---am, is, are---の使い分け}
+\begin{block}{be動詞---am, is, are---の使い分け}
 
-{\Large
+{\large
 \begin{numcases}{\text{　}}
  \text{\mbox{}\,\,{}Iが主語}&$\longrightarrow$\,\,\,\,\,\,{}\text{am}\\
  \text{\mbox{}\,\,{}Youが主語}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}\\[5pt]
@@ -548,7 +571,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
  \text{\mbox{}\,\,{}複数(2つ、2人以上)}&$\longrightarrow$\,\,\,\,\,\,{}\text{are}\tag{3.2}
 \end{numcases}
 }
-\end{exampleblock}
+\end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{短縮形}
@@ -600,7 +623,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
  \item I~~( \alt<7->{\Circled[outer color=orange]{am}}{am} / is / are )~~hungry.
 \end{enumerate}
 
-\mbox{}\hfill\myaudio{audio/002_be_06.mp3}
+\mbox{}\hfill{\tiny 0239}{\scriptsize \myaudio{audio/002_be_06.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
