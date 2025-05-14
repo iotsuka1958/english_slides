@@ -1,7 +1,3 @@
-paint<break time="1s"/> painted<break time="1s"/> painted
-wash<break time="1s"/> washed<break time="1s"/> washed
-use<break time="1s"/> used<break time="1s"/> used
-love<break time="1s"/> loved<break time="1s"/> loved
-build<break time="1s"/> built<break time="1s"/> built
-make<break time="1s"/> made<break time="1s"/> made
-reed <break time="1s"/> red<break time="1s"/> red
+To play tennis is fun.
+The plan was to climb Mt. Fuji.
+He began to write a letter.
