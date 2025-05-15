@@ -35,6 +35,9 @@
 \usepackage{tipa}
 \usepackage{manfnt}
 \usepackage{pxrubrica}
+\usepackage{tabularray}
+%\UseTblrLibrary{booktabs} % for \toprule, \midrule, \bottomrulex
+\UseTblrLibrary{counter}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand*\myCrossedOut[2]{%
   \tikz[baseline=(T.base)]
@@ -570,34 +573,110 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{ここに気をつけよう}
+\begin{frame}<1-5>[plain,label=ied]{ここに気をつけよう}
  
-\dbend\,\,\,\,\,yで終わる動詞のときは
+\dbend\,\,\,\,\,yで終わる動詞のとき
 
 \begin{enumerate}
  \item<1-> \begin{enumerate}
 	\item<1-> I study math every day.
 	\item<2-> I studied math last night.
+	\item<3-> study / studied\hspace{20pt} cry / cried\hspace{20pt} try / tried\hspace{20pt} carry / carried
        \end{enumerate}
- \item<1-> \begin{enumerate}
-	\item<1-> I play tennis on Sundays.
-	\item<3-> I played tennis yesterday.
+ \item<4-> \begin{enumerate}
+	\item<4-> I play tennis on Sundays.
+	\item<5-> I played tennis yesterday.\hfill\myCrossedOut{Maroon!50}{plaied}
        \end{enumerate}
 \end{enumerate}
 
-\begin{block}<4->{yで終わる動詞の過去形}\small
+\begin{block}<6->{yで終わる動詞の過去形}\small
  \begin{enumerate}
-  \item<5-> \Circled[fill color = white]{子音字} $+$ y $\longrightarrow$ yをiに変えてedをつける%
+  \item<7-> \Circled[fill color = white]{\,子音字\,} $+$ y $\longrightarrow$ yをiに変えてedをつける%
 \hfill{}stu\Circled[fill color=white]{d}y $\rightarrow$ stud\textcolor{NavyBlue}{\bfseries ied}\\
 \hfill{}c\Circled[fill color=white]{r}y $\rightarrow$ cr\textcolor{NavyBlue}{\bfseries ied}\\
 \hfill{}t\Circled[fill color=white]{r}y $\rightarrow$ tr\textcolor{NavyBlue}{\bfseries ied}\\
 \hfill{}car\Circled[fill color=white]{r}y $\rightarrow$ carr\textcolor{NavyBlue}{\bfseries ied}
-  \item<6-> \Circled[fill color = white]{母音字} $+$ y $\longrightarrow$ edをつける\hfill{}pl\Circled[fill color=white]{a}y $\rightarrow$ play\textcolor{Maroon}{\bfseries ed}\\
+  \item<8-> \Circled[fill color = white]{\,母音字\,} $+$ y $\longrightarrow$ edをつける\hfill{}pl\Circled[fill color=white]{a}y $\rightarrow$ play\textcolor{Maroon}{\bfseries ed}\\
 \hfill{}enj\Circled[fill color=white]{o}y $\rightarrow$ enjoy\textcolor{Maroon}{\bfseries ed}
  \end{enumerate}
 \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{母音字と子音字}
+\Large
+\begin{description}
+ \item[母音字: ] \onslide<2->{アルファベットで「母音」をあらわす文字: }%
+               \onslide<3->{aeiou}
+ \item[子音字: ] \onslide<4->{残りのアルファベット}
+\end{description}
+
+\bigskip
+
+\Huge\centering
+\begin{tabular}{cccccccccc}
+\onslide<5->{\myEmph[6-]{BurntOrange}{a}}&
+\onslide<5->{b}&
+\onslide<5->{c}&
+\onslide<5->{d}&
+\onslide<5->{\myEmph[6-]{BurntOrange}{e}}&
+\onslide<5->{f}&
+\onslide<5->{g}&
+\onslide<5->{h}&
+\onslide<5->{\myEmph[6-]{BurntOrange}{i}}&
+\onslide<5->{j} \\
+\onslide<5->{k}&
+\onslide<5->{l}&
+\onslide<5->{m}&
+\onslide<5->{n}&
+\onslide<5->{\myEmph[6-]{BurntOrange}{o}}&
+\onslide<5->{p}&
+\onslide<5->{q}&
+\onslide<5->{r}&
+\onslide<5->{s}&
+\onslide<5->{t}\\
+\onslide<5->{\myEmph[6-]{BurntOrange}{u}}&
+\onslide<5->{v}&
+\onslide<5->{w}&
+\onslide<5->{x}&
+\onslide<5->{y}&
+\onslide<5->{z}&
+ & & &  \\
+\end{tabular}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<6-8>[plain]{ied}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{おさらい}
+
+\begin{tblr}{
+  colspec={llll},
+  row{1} = {font=\bfseries},
+  hline{1,Z}={0.08em},
+  hline{2}={0.05em},
+  row{5-6}={bg=Yellow!50},
+  row{7-8}={bg=NavyBlue!30},
+  row{9}={bg=Maroon!20},
+  cells={cmd=\onslide<\arabic{rownum}->}
+}
+     & つくり方                 & 原形   & 過去形     \\
+原則 & edをつける              & listen & listened   \\
+     &                          & play   & played     \\
+     &                          & watch  & watched    \\
+最後がeなら & dだけ               & live   & lived      \\
+         &                       & love   & loved      \\
+最後が子音字$+$yなら & yをiに変えてed & study  & studied    \\
+         &                       & cry    & cried      \\
+その他 & stopは最後のpを重ねてed & stop   & stopped    \\
+\end{tblr}
+
+\hfill\textdbend\,\,細かく見るといろいろありますが、でも語尾はみんな\textbf{ed}!
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{不規則動詞}
 \subsubsection{不規則動詞}
 \begin{frame}<1-11>[plain]{不規則動詞}
  次の各文の意味を考えましょう
@@ -731,7 +810,8 @@ cry (泣く)~~~~~/~~~~~stop (止まる)~~~~~/~~~~~study (勉強する)
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。ただし動詞は適当な形にしてください。なお、先頭の語は大文字で始めてください
+
+{\small あたえられた日本語の意味になるよう、カッコ内の語句を並べ替えましょう。ただし動詞は適当な形にしてください。なお、先頭の語は大文字で始めてください}
 
 \begin{enumerate}
  \item きのう彼は彼女のためにケーキを作った。\\
