@@ -18,6 +18,8 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{She studied hard to pass the exam.}
@@ -68,6 +70,7 @@
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item \Circled[fill color= yellow!50]{\,$\text{to} + \text{動詞の原形}$\,} が、
 「〜するために」の意味で副詞としてはたらくことがある
+ \item \kenten{目的}を表します
  \end{itemize}
      \end{block}
 }
@@ -87,14 +90,15 @@
 \visible<2->{%
 \begin{block}{Topic for Today ---副詞的用法---}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 目的をあらわすto不定詞は、文の最後にも先頭にもくる
+ \item \kenten{目的}をあらわすto不定詞は、文の最後にも先頭にもきます
        \begin{itemize}\setbeamertemplate{items}[circle]\small
 \setlength{\itemsep}{5pt} % 項目間
 	\item $\text{
 S} + \text{V}\,\,\,\,$\Circled[fill color= yellow!40]{\,$\text{to} + \text{動詞の原形}$\,}.%
 \hfill{\scriptsize The door opened \textbf{suddenly}.}
 	\item \Circled[fill color= yellow!30]{\,$\text{To} + \text{動詞の原形}$\,},\,\, $\text{S} + \text{V}$.%
-\hfill{\scriptsize \textbf{Suddenly}, the door opened.}
+\hfill{\scriptsize \textbf{Suddenly}, the door opened.}\\
+\hfill{\scriptsize suddenly \textipa{/s\'\textturnv dnli/ 突然}}
        \end{itemize}
  \end{itemize}
      \end{block}
@@ -150,5 +154,67 @@ S} + \text{V}\,\,\,\,$\Circled[fill color= yellow!40]{\,$\text{to} + \text{動�
 \end{minipage}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{to不定詞のまとめ}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{to不定詞とは}
+\small
+\visible<2->{{\small 動詞とは本来、主語と組み合わせて使うもの}
+\mbox{}\hfill{}\myEmph[2-]{NavyBlue}{I} \myEmph[2-]{Maroon}{play}\tikzmark{play} the piano and \myEmph[2-]{NavyBlue}{she} \myEmph[2-]{Maroon}{sings}\tikzmark{sings}.}
+
+\visible<3->{
+\hfill{\scriptsize 主語と組み合わせる動詞を特に\Circled{述語動詞}\tikzmark{predicate}といいます}
+}
+
+\visible<5->{{\small だが、特別に}
+
+
+\myAnch{v}{white}{動詞}}%
+\hspace{30pt}%
+\begin{tabular}{ll}
+ \visible<5->{\myAnch{n}{white}{名詞のはたらき}: }&\visible<6->{\fbox{To get up early} is important.}\\
+ \visible<5->{\myAnch{adj}{white}{形容詞のはたらき}: }&\visible<7->{I want something \fbox{to drink}.}\\
+ \visible<5->{\myAnch{adv}{white}{副詞のはたらき}: }&\visible<8->{She studied hard \fbox{to pass the exam}}.
+\end{tabular}
+
+\visible<5->%
+{\begin{tikzpicture}[remember picture, overlay]
+ \visible<5->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (n.west);}
+ \visible<5->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (adj.west);} 
+ \visible<5->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (adv.west);} 
+\end{tikzpicture}}
+
+\vspace{-5pt}
+
+\mbox{}\hfill%
+\visible<9->{%
+\begin{minipage}{.26\textwidth}\scriptsize 
+to不定詞：\Circled[fill color = white]{\,$\text{to} + \text{動詞の原形}$\,}
+\end{minipage}
+}
+
+\hspace{50pt}{\small toは\kenten{述語動詞ではない}という目印！}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<4->{\draw[Stealth-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:play) to[out=-30,in=160] ([xshift=-16pt, yshift=10pt] pic cs:predicate);}
+ \visible<4->{\draw[Stealth-,opacity=.4,line width=2pt] ([xshift=-25pt,yshift=-1pt]pic cs:sings) to ([xshift=-16pt, yshift=10pt] pic cs:predicate);}
+\end{tikzpicture}
+
+\vspace*{-50pt}
+
+\scalebox{.5}{\begin{tikzpicture}
+\duck[
+signpost=\textcolor{black}{to},
+%signpost=\scalebox{0.5}{
+%\parbox{.5cm}{\color{black}
+%to}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black
+]
+\end{tikzpicture}} 
+\hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/031_infinitive_intro_01.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 
