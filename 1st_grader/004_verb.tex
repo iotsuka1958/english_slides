@@ -6,6 +6,7 @@
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% さまざまなアイコン
@@ -146,18 +147,18 @@ The lesson will begin at the scheduled time.
 
 \bigskip
 
-\begin{exampleblock}<28->{Topics for Today}
-\begin{itemize}
+\begin{block}<28->{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item<1->  \myEmph[28]{Maroon}{be動詞以外を一般動詞といいます}
  \item<2-> \myEmph[29]{Maroon}{一般動詞の意味はいろいろです}
 \end{itemize}
-      \end{exampleblock}
+      \end{block}
 
 
 % Embed the sound file
-\onslide<28->{%
-\myaudio{./audio/004_verb_01.mp3}\,\,{}
-}
+
+\hfill{\tiny 0253}\,\scriptsize \myaudio{./audio/004_verb_01.mp3}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{be動詞と一般動詞}

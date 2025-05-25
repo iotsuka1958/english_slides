@@ -495,22 +495,26 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{areを使う場合}
-
-\begin{block}{areのまとめ}
-\begin{itemize}\setbeamertemplate{items}[square]
- \item   I, You 以外で複数(2つ以上)のモノや人が主語のとき\,\,---\,主語が複数のとき\,---\,\,はareを使います
- \item We are\,($=\text{We're}$)\,\,\,\,/\,\,\,They are\,($=\text{They're}$)
-\end{itemize}  
-     \end{block}
-
-
-\end{frame}
+%\begin{frame}[plain]{areを使う場合}
+%
+%\begin{block}{areのまとめ}
+%\begin{itemize}\setbeamertemplate{items}[square]
+% \item   I, You 以外で複数(2つ以上)のモノや人が主語のとき\,\,---\,主語が複数のとき\,---\,\,はareを使います
+% \item We are\,($=\text{We're}$)\,\,\,\,/\,\,\,They are\,($=\text{They're}$)
+%\end{itemize}  
+%     \end{block}
+%
+%
+%\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{まとめ}
+\section{be動詞のまとめ}
 \begin{frame}[plain]\frametitle{まとめ}
 
-\begin{block}{be動詞---am, is, are---の使い分け}
+be動詞---am, are, is---は主語に応じて使い分けがあります
+
+\bigskip
+
+\begin{block}{be動詞の使い分け}
 
 {\large
 \begin{numcases}{\text{　}}
@@ -524,21 +528,23 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]\frametitle{まとめ}
+\begin{frame}[plain]\frametitle{be動詞}
  \centering
 \begin{tikzpicture}
 % 補助グリッドを描画
 %\draw[step=1cm, gray!20, very thin] (-6,-2) grid (6,6);
 % ノードの定義と配置
-\node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be動詞};\pause
-\node[circle, draw=black, fill=pink!30,minimum size=15mm, line width=1pt] (B) at (-6,0) {\LARGE am};\pause
-\node[circle, draw=black, fill=blue!30, minimum size=15mm, line width=1pt] (C) at (0,5) {\LARGE are};\pause
-\node[circle, draw=black, fill=green!30, minimum size=15mm, line width=1pt] (D) at (6,0) {\LARGE is};\pause
+\visible<1->{\node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be動詞};}
+\visible<2->{\node[circle, draw=black, fill=pink!30,minimum size=15mm, line width=1pt] (B) at (-6,0) {\LARGE am};}
+\visible<3->{\node[circle, draw=black, fill=blue!30, minimum size=15mm, line width=1pt] (C) at (0,5) {\LARGE are};}
+\visible<4->{\node[circle, draw=black, fill=green!30, minimum size=15mm, line width=1pt] (D) at (6,0) {\LARGE is};}
 
 % ノード間の線の描画
-\draw[-latex, line width=1.5pt] (A) -- node[above] {主語がI} (B);\pause
-\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {主語がYou}  node[sloped, below] {主語が複数} (C);\pause
-\draw[-latex, line width=1.5pt] (A) -- node[above] {主語が単数} node[below] {} (D);
+\visible<5->{\draw[-latex, line width=1.5pt] (A) -- node[above] {主語がI} (B);}
+%\visible<6->{\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {主語がYou}  node[sloped, below] {{\textcolor{Maroon}{主語が複数}}} (C);}
+\visible<6->{\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {主語がYou}  node[sloped, below] {} (C);}
+\visible<7->{\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {主語がYou}  node[sloped, below] {{\textcolor{Maroon}{主語が複数}}} (C);}
+\visible<8->{\draw[-latex, line width=1.5pt] (A) -- node[above] {\textcolor{Maroon}{主語が単数}} node[below] {} (D);}
 \end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
