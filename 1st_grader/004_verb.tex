@@ -24,6 +24,7 @@
 \usepackage{amsmath}
 \usepackage{manfnt}
 \usepackage{array}
+\usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand*\myCrossedOut[2]{%
   \tikz[baseline=(T.base)]
@@ -106,20 +107,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[label=waiting]{}
-\thispagestyle{empty}
-\Large
-\raggedright
-
-予定の時刻になったらはじまります
-
-\vfill
-
-\raggedleft
-
-The lesson will begin at the scheduled time.
-\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[label=title]
 %\phantomsection\label{section-1}
@@ -134,23 +121,23 @@ The lesson will begin at the scheduled time.
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{一般動詞とは}
-\begin{frame}<1-37>[plain,label=is_verb]\frametitle{一般動詞って？}
+\begin{frame}[plain,label=is_verb]\frametitle{一般動詞って？}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \myEmph[14]{Maroon}{I} \myEmph[15,27-29]{NavyBlue}{like} basketball. \onslide*<2>{わたしはバスケットボールが好きです。}\hfill\onslide*<31>{\footnotesize 　like: 好き、好む　basketball: バスケットボール}
-   \item<3-> \myEmph[16]{Maroon}{We} \myEmph[17,27-29]{NavyBlue}{walk} to work. \onslide*<4>{われわれは歩いて職場へ行きます。}\hfill\onslide*<32>{\footnotesize 　walk: 歩く}
-   \item<5-> \myEmph[18]{Maroon}{They} \myEmph[19,27-29]{NavyBlue}{speak} English in Australia. \onslide*<6>{オーストラリアでは英語が話されています。}\hfill\onslide*<33>{\footnotesize 　speak: 話す　Australia:オーストラリア}
-   \item<7-> \myEmph[20]{Maroon}{I} \myEmph[21,27-29]{NavyBlue}{drink} tea every morning. \onslide*<8>{わたしは毎朝お茶を飲みます。}\hfill\onslide*<34>{\footnotesize 　drink: 飲む　tea: お茶　every morning: 毎朝}
-   \item<9-> \myEmph[22]{Maroon}{They} \myEmph[23,27-29]{NavyBlue}{study} math every day. \onslide*<10>{彼らは毎日数学を勉強します。}\hfill\onslide*<35>{\footnotesize study: 勉強する　math: 数学　every day: 毎日}
-   \item<11-> \myEmph[24]{Maroon}{I} \myEmph[25,27-29]{NavyBlue}{play} the guitar. \onslide*<12>{わたしはギターをひきます。}\hfill\onslide*<36>{\footnotesize 　play: (楽器などを)演奏する　guitar: ギター}
+   \item<1-> \myEmph[14-]{Maroon}{I} \myEmph[14-]{NavyBlue}{like} basketball. \onslide*<2-12>{{\small わたしはバスケットボールが好きです。}}\hfill\onslide*<22->{\footnotesize 　like: 好き、好む　basketball: バスケットボール}
+   \item<3-> \myEmph[15-]{Maroon}{We} \myEmph[15-]{NavyBlue}{walk} to work. \onslide*<4-12>{{\small われわれは歩いて職場へ行きます。}}\hfill\onslide*<23->{\footnotesize 　walk: 歩く}
+   \item<5-> \myEmph[16-]{Maroon}{They} \myEmph[16-]{NavyBlue}{speak} English in Australia. \onslide*<6-12>{{\small オーストラリアでは英語が話されています。}}\hfill\onslide*<24->{\footnotesize 　speak: 話す　Australia:オーストラリア}
+   \item<7-> \myEmph[17-]{Maroon}{I} \myEmph[17-]{NavyBlue}{drink} tea every morning. \onslide*<8-12>{{\small わたしは毎朝お茶を飲みます。}}\hfill\onslide*<25->{\footnotesize 　drink: 飲む　tea: お茶　every morning: 毎朝}
+   \item<9-> \myEmph[18-]{Maroon}{They} \myEmph[18-]{NavyBlue}{study} math every day. \onslide*<10-12>{{\small 彼らは毎日数学を勉強します。}}\hfill\onslide*<26->{\footnotesize study: 勉強する　math: 数学　every day: 毎日}
+   \item<11-> \myEmph[19-]{Maroon}{I} \myEmph[19-]{NavyBlue}{play} the guitar. \onslide*<12>{{\small わたしはギターをひきます。}}\hfill\onslide*<27->{\footnotesize 　play: (楽器などを)演奏する　guitar: ギター}
   \end{enumerate}
 
 \bigskip
 
-\begin{block}<28->{Topics for Today}
+\begin{block}<21->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]
- \item<1->  \myEmph[28]{Maroon}{be動詞以外を一般動詞といいます}
- \item<2-> \myEmph[29]{Maroon}{一般動詞の意味はいろいろです}
+ \item  {be動詞以外を\kenten{一般動詞}といいます}
+ \item<28-> {一般動詞の意味はいろいろです}
 \end{itemize}
       \end{block}
 
@@ -162,11 +149,12 @@ The lesson will begin at the scheduled time.
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{be動詞と一般動詞}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-10>[plain,label=point1]\frametitle{be動詞と一般動詞}
 
 \begin{columns}
 \begin{column}[t]{.38\textwidth}
-\begin{block}{be動詞}
+\begin{exampleblock}{be動詞}
 be動詞
 {\footnotesize
 $
@@ -178,8 +166,8 @@ $
 \end{array}\right\}
 $
 }
-は$=$の意味
-\end{block}
+は$=$の働き
+\end{exampleblock}
 \end{column}
 \pause
 \begin{column}[t]{.52\textwidth}
@@ -190,7 +178,7 @@ have（持っている）&like（好き）\pause\\
 speak（話す）&study（勉強する）\pause\\
 eat（食べる）& drink（飲む）\pause\\
 \multicolumn{2}{l}{play（遊ぶ、演奏する）\pause}\\
-\multicolumn{2}{l}{ほかにもいろいろあります}\\
+\multicolumn{2}{r}{ほかにもいろいろあります}\\
 \end{tabular}
 \end{alertblock}
 \end{column}
@@ -199,17 +187,16 @@ eat（食べる）& drink（飲む）\pause\\
 
 \bigskip
 \pause
-\begin{exampleblock}{Topics for Today}
+\begin{block}{Topics for Today}
 \setbeamercolor{alerted text}{fg=Maroon} 
-\begin{itemize}[<+- |alert@+>]
+\begin{itemize}[<+- |alert@+>]\setbeamertemplate{items}[square]
  \item  be動詞以外を一般動詞といいます
  \item 一般動詞はたくさんあります。意味はいろいろです
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=figure]\frametitle{be動詞と一般動詞}
 \begin{tikzpicture}
 
@@ -265,52 +252,50 @@ the cats\\\pause
 \end{alertblock}
 \end{frame}
 
-\begin{frame}<1-29>[plain,t]\frametitle{Exercises}
-\onslide*<1->{つぎの文の主語は何人称ですか？}
+\begin{frame}[plain,t]\frametitle{Exercises}
+\onslide*<1->{つぎの文の主語は何人称ですか？}\hfill{\tiny 0253}\,{\scriptsize \myaudio{audio/004_verb_02.mp3}}
+
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \myEmph[17]{Maroon}{I} am a student. \onslide*<2>{わたしは生徒です。}\hfill\onslide*<23-28>{\footnotesize 　a:１つの　student: 生徒、学生}
-   \item<3-> \myEmph[18]{Maroon}{You} play the guitar very well. \onslide*<4>{あなたはギターをとても上手にひく。}\hfill\onslide*<24-28>{\footnotesize 　guitar: ギター　very well: とてもじょうずに}
-  \item<5-> \myEmph[19]{Maroon}{We} drink coffee every morning. \onslide*<6>{われわれは毎朝コーヒーを飲みます。}\hfill\onslide*<25-28>{\footnotesize drink: 飲む　coffee: コーヒー　every morning: 毎朝}
-    \item<7-> \myEmph[20]{Maroon}{They} go to school by bus. \onslide*<8>{彼らはバスで通学します。}\hfill\onslide*<26-28>{\footnotesize 　by bus: バスで}
-   \item<9-> \myEmph[21]{Maroon}{The sky} is blue. \onslide*<10>{空は青い。}\hfill\onslide*<27-28>{\footnotesize 　the sky: 空　blue: 青い}
-   \item<11-> \myEmph[22]{Maroon}{Birds} sing in the morning. \onslide*<12>{鳥は朝歌います。}\hfill\onslide*<28>{\footnotesize 　bird: 鳥　sing: 歌う}
+   \item<1-> \myEmph[2,8]{Maroon}{I} am a student. \onslide*<2-10>{{\small わたしは生徒です。}}\hfill\onslide*<11->{\scriptsize 　a:１つの　student: 生徒、学生}
+   \item<1-> \myEmph[3,9]{Maroon}{You} play the guitar very well. \onslide*<3-10>{{\small あなたはギターをとても上手にひく。}}\hfill\onslide*<12->{\scriptsize 　guitar: ギター　very well: とてもじょうずに}
+  \item<1-> \myEmph[4,8]{Maroon}{We} drink coffee every morning. \onslide*<4-10>{{\small われわれは毎朝コーヒーを飲みます。}}\hfill\onslide*<13->{\scriptsize drink: 飲む　coffee: コーヒー　every morning: 毎朝}
+    \item<1-> \myEmph[5,10]{Maroon}{They} go to the park by bus. \onslide*<5-10>{{\small 彼らはバスで公園に行く}。}\hfill\onslide*<14->{\scriptsize 　by bus: バスで}
+   \item<1-> \myEmph[6,10]{Maroon}{The sky} is blue. \onslide*<6-10>{{\small 空は青い。}}\hfill\onslide*<15->{\scriptsize 　the sky: 空　blue: 青い}
+   \item<1-> \myEmph[7,10]{Maroon}{Birds} sing in the morning. \onslide*<7-10>{{\small 鳥は朝歌います。}}\hfill\onslide*<16->{\scriptsize 　bird: 鳥　sing: 歌う}
   \end{enumerate}
 
 
-\begin{exampleblock}<14->{Topics for Today}
-\begin{itemize}
- \item<14-> \myEmph[14]{Maroon}{1人称はIとweだけ}
- \item<15-> \myEmph[15]{Maroon}{2人称はyouだけ}
- \item<16->  \myEmph[16]{Maroon}{それ以外はぜんぶ3人称です}
+\begin{block}<8->{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item<8-> {1人称はIとweだけ}
+ \item<9-> {2人称はyouだけ}
+ \item<10-> {それ以外はぜんぶ3人称です}
 \end{itemize}
-\end{exampleblock}
+\end{block}
 
-\vspace*{-15pt}
-% Embed the sound file
-\onslide<14->{%
-\myaudio{audio/004_verb_02.mp3}
-}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{主語によって動詞のかたちが定まる}
 \begin{frame}<1-20>[plain]\frametitle{主語によって動詞のかたちが定まる}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \myEmph[9,17]{Maroon}{I} \myEmph[9,17]{NavyBlue}{like} music. \onslide*<2>{\footnotesize 　like: 好き、好む　music: 音楽}
-   \item<3-> \myEmph[10,17]{Maroon}{We} \myEmph[10,17]{NavyBlue}{like} music.
-   \item<4-> \myEmph[11,17]{Maroon}{You} \myEmph[11,17]{NavyBlue}{like} music.
-   \item<5-> \myEmph[12,18]{Maroon}{He} \myEmph[12,18]{NavyBlue}{likes} music.
-   \item<6-> \myEmph[13,18]{Maroon}{She} \myEmph[13,18]{NavyBlue}{likes} music.
-   \item<7-> \myEmph[14,18]{Maroon}{Paul} \myEmph[14,18]{NavyBlue}{likes} music.
-   \item<8-> \myEmph[15,19]{Maroon}{They} \myEmph[15,19]{NavyBlue}{like} music.
+   \item<1-> \myEmph[2-]{Maroon}{I} \myEmph[2-]{NavyBlue}{like} music. \hfill\onslide*<2->{\scriptsize 　like: 好き、好む　music: 音楽}
+   \item<1-> \myEmph[3-]{Maroon}{We} \myEmph[3-]{NavyBlue}{like} music.
+   \item<1-> \myEmph[4-]{Maroon}{You} \myEmph[4-]{NavyBlue}{like} music.
+   \item<1-> \myEmph[5-]{Maroon}{He} \myEmph[5-]{NavyBlue}{likes} music.
+   \item<1-> \myEmph[6-]{Maroon}{She} \myEmph[6-]{NavyBlue}{likes} music.
+   \item<1-> \myEmph[7-]{Maroon}{Paul} \myEmph[7-]{NavyBlue}{likes} music.
+   \item<1-> \myEmph[8-]{Maroon}{They} \myEmph[8-]{NavyBlue}{like} music.
   \end{enumerate}
-\begin{exampleblock}<17->{Topics for Today}
-\begin{itemize}
- \item<1-> \myEmph[17]{Maroon}{主語が1人称、2人称のとき、動詞はそのまま}
- \item<2-> \myEmph[18]{Maroon}{主語が3人称で単数のとき、---sとなります}\myEmph[19]{Maroon}{(複数ならそのままです)}
+\begin{block}<9->{Topics for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item {主語が1人称、2人称のとき、動詞はそのまま}
+ \item {主語が3人称で単数のとき、---sとなります}
+ \item {主語が3人称で複数のとき、そのまま}
 \end{itemize}
-      \end{exampleblock}
+      \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{3単現}
@@ -340,20 +325,6 @@ She play\myAnch{T2}{Maroon}{s}\,{}the guitar.
 \onslide<5->\draw[->,Maroon,thick] (T1.south)to[out=-90,in=90](T4.north);}
 \end{tikzpicture}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{
-  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{./images/berry.jpg}}
-  \begin{frame}[b]
-    \frametitle{}
-\tiny
-
-\raggedleft
-  \textcolor{white}{``Strawberries''by Hades2k is licensed under CC BY-SA 2.0.}\\
-   \textcolor{white}{To view a copy of this license, visit \url{https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse}.}
-  \end{frame}
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe{title}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-9>[plain,label=ex]\frametitle{Exercises}
 つぎの空所に適当な動詞を選んで補って、現在のことを表す英文をつくってください。なお、必要があれば、形を変えてください
@@ -363,7 +334,7 @@ She play\myAnch{T2}{Maroon}{s}\,{}the guitar.
  % \setbeamercovered{transparent}
   \begin{enumerate}
 %  \item I~~(\onslide<2,8,9>{\textcolor{orange}{~have~}})~~two cats.
-   \item We~~(\onslide<2,8,9>{\textcolor{orange}{~go~}})~~to school by bus.
+   \item We~~(\onslide<2,8,9>{\textcolor{orange}{~go~}})~~to the park by bus.
    \item  She~~(\onslide<3,8,9>{\textcolor{orange}{~drinks~}})~~coffee every morning.
    \item Tom~~(\onslide<4,8,9>{\textcolor{orange}{~eats~}})~~bread for breakfast.
    \item Jennifer~~(\onslide<5,8,9>{\textcolor{orange}{~lives~}})~~in Boston.
@@ -380,47 +351,45 @@ live / go / speak / drink / eat
 \bigskip
 
 % Embed the sound file
-\onslide<9>{%
-\mbox{}\hfill\myaudio{audio/004_verb_03.mp3}
+\mbox{}\hfill{\tiny 0228}\,{\scriptsize \myaudio{audio/004_verb_03.mp3}}
 
-}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{s以外の3単現}
-\begin{frame}<1-19>[plain,label=exception]\frametitle{s以外の3単現}
+\begin{frame}[plain,label=exception]\frametitle{s以外の3単現}
 
   \begin{enumerate}
    \item<1-> She \myEmph[2,13,14]{Maroon}{drinks} coffee every morning. \hspace{10pt}\onslide<2,19>{(drink \textcolor{Maroon}{$+$ s })}
-   \item<3-> He \myEmph[3,15,16]{Maroon}{goes} to school by bus. \hspace{10pt}\onslide<4,19>{(go \textcolor{Maroon}{ $+$ es })}
+   \item<3-> He \myEmph[3,15,16]{Maroon}{goes} to the station by bus. \hspace{10pt}\onslide<4,19>{(go \textcolor{Maroon}{ $+$ es })}
   \item<5-> John \myEmph[5,15,16]{Maroon}{teaches} math. \hspace{10pt}\onslide<6,19>{(teach \textcolor{Maroon}{ $+$ es })}
     \item<7-> My father \myEmph[7,15,16]{Maroon}{washes} his car every Sunday. \hspace{10pt}\onslide<8,19>{(wash \textcolor{Maroon}{ $+$ es })}
    \item<9-> Jane \myEmph[9,15,16]{Maroon}{watches} television after supper. \hspace{10pt}\onslide<10,19>{(watch \textcolor{Maroon}{ $+$ es })}
    \item<11-> She \myEmph[11,17,18]{Maroon}{has} two cats. \hspace{10pt}\onslide<12,19>{(haveの3単現は\textcolor{Maroon}{has)}}
   \end{enumerate}
 
+\vspace{-3pt}
+
 \setbeamercovered{transparent}
-\begin{exampleblock}<13->{Topics for Today}
-\begin{itemize}
+\begin{block}<13->{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item<1-> \myEmph[13]{Maroon}{3単現の原則：\,\,---s}\\
 \mbox{}\hspace{70pt}\onslide<14->{{\scriptsize 例えば}{\small drinks, eats, likes, lives, plays, speaks, walks\ldots{}\,\,{\scriptsize $\leftarrow$覚える必要なし}}}
  \item<2-> \onslide<15->{\myEmph[15]{Maroon}{一部の動詞：\,\,---es}}\\
 \mbox{}\hspace{70pt}\onslide<16->{{\small goes, teaches, washes, watches}\,\,{\small $\leftarrow$覚えよう！}}
  \item<3-> \onslide<17->{\myEmph[17]{Maroon}{haveの3単現：\,\, has}\hspace{20pt}}\onslide<18->{\small $\longleftarrow$\, これも覚えよう！\myCrossedOut{Maroon}{haves}}
 \end{itemize}
-      \end{exampleblock}
+      \end{block}
 
-% Embed the sound file
-%\onslide<13->{%
-\mbox{}\hfill\myaudio{audio/004_verb_04.mp3}
-%}
+\vspace{-15pt}
+
+\mbox{}\hfill{\tiny 0300}\,{\scriptsize \myaudio{audio/004_verb_04.mp3}}
+
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe{waiting}
-\againframe{title}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe<19>{exception}
+%\againframe<19>{exception}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意するべき3単現}
  \begin{center}
@@ -438,16 +407,16 @@ live / go / speak / drink / eat
 \end{tabular}%
 \end{center}
 
-% Embed the sound file
-\onslide<15->{%
-\mbox{}\hfill\myaudio{audio/004_verb_041.mp3}
-}
+
+\mbox{}\hfill{\tiny 0422}\,{\scriptsize \myaudio{audio/004_verb_041.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-9>[plain,label=zzz]\frametitle{Exercises}
-空所に適当な動詞を補ってください。なお、必要があれば、形を変えてください
+
+{\small 空所に適当な動詞を補いましょう。なお、必要があれば、形を変えてください}
 
  % \setbeamercovered{transparent}
   \begin{enumerate}
@@ -461,7 +430,7 @@ live / go / speak / drink / eat
 \mbox{}\hfill\onslide<8->{\scalebox{.25}{\includegraphics{./images/dbend.png}}\,\,\,\textcolor{Maroon}{study}の3単現は\textcolor{Maroon}{studies}}
   \end{enumerate}
 
-
+\vspace*{-10pt}
 
 \begin{tcolorbox}[title=この中から選んでください]
 \centering
@@ -470,10 +439,9 @@ live / go / speak / drink / eat
 
 \vspace{-5pt}
 
-% Embed the sound file
-\onslide<1->{%
-\mbox{}\hfill\myaudio{audio/004_verb_05.mp3}
-}
+
+\mbox{}\hfill\tiny {0306}\,{\scriptsize \myaudio{audio/004_verb_05.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Dangerous Bend}{危険な曲がり角}
@@ -530,17 +498,16 @@ Dangerous Bendとは「危険な曲がり角」という意味
 \visible<1-18>{\raisebox{\height}{\dbend}\,studyを追加しよう$\longrightarrow$}
 
 
-%% Embed the sound file
-\onslide<18->{%
-\mbox{}\hfill\myaudio{audio/004_verb_06.mp3}
-}
+
+\mbox{}\hfill{\tiny 0541}\,{\scriptsize \myaudio{audio/004_verb_06.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
-\againframe<11>{point1}
-\againframe<13>{ninsyo}
-\againframe<5>{3tangen}
-\againframe<19>{hyo}
+\againframe<11>[plain]{point1}
+\againframe<13>[plain]{ninsyo}
+\againframe<5>[plain]{3tangen}
+\againframe<19>[plain]{hyo}
 \end{document}
 
 

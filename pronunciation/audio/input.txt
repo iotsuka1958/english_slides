@@ -1,4 +1,5 @@
-cat<break time="3s"/>cap<break time="3s"/>hat
-hot<break time="3s"/>not<break time="3s"/>shop
-cup<break time="3s"/>cut<break time="3s"/>nut
-about<break time="3s"/>again<break time="3s"/>banana
+America<break time="3s"/>America
+hot<break time="3s"/>hot
+chocolate<break time="3s"/>chocolate
+desk<break time="3s"/>desk
+breakfast<break time="3s"/>breakfast
