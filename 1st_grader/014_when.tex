@@ -33,8 +33,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{when \textipa{/w\'en/}}
 \subsection{When is your birthday?: be動詞のとき}
-\begin{frame}[plain]{When is your birthday?} \Large
-
+\begin{frame}[plain]{～はいつ？}
 be動詞のとき
 
 \mbox{}\hspace{55pt}Your birthday is  \alt<3->{\myAnch{FOCUS}{orange}{August 7th}}{\myAnch{focus}{white}{August 7th}}.%
@@ -62,7 +61,7 @@ be動詞のとき
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->, line width = 3pt, opacity = .5, orange] (focus.south) to[out=-90, in=90] (wh.north);
+\draw[->, line width = 3pt, opacity = .5, orange] (focus.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Whenに置き換えて先頭へ} node[sloped,below,text=black,font=\tiny,pos=.4]{その後は疑問文の語順} (wh.north);
 \end{tikzpicture}
 }
 \vspace{-10pt}
@@ -72,19 +71,18 @@ be動詞のとき
 \pause
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 疑問詞{\bfseries when}（いつ？）を先頭に置く\hfill\textipa{/w\'en/}
- \item When is 〜?「〜はいつ」
+% \item When is 〜?「〜はいつ」
  \item {\bfseries When}の後ろは、YesまたはNoで答える疑問文の語順と同じ
  \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）%
 \hfill{\tiny 0138}\,{\scriptsize \myaudio{./audio/014_when_01.mp3}}
 \end{itemize}
      \end{block}
 }
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{When do you play tennis?: 一般動詞のとき}
 \begin{frame}[plain]\frametitle{When do you play tennis?}
-\Large
+%\Large
 一般動詞のとき
 
 \pause
@@ -105,7 +103,7 @@ You play tennis \alt<4->{\myAnch{FOCUS2}{orange}{on Sundays}}{\myAnch{focus2}{wh
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
- \draw[line width = 3pt, opacity = .5, orange, ->] (focus2.south) to[out=-90, in=90] (WH2.north);
+ \draw[line width = 3pt, opacity = .5, orange, ->] (focus2.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Whenに置き換えて先頭へ} node[sloped,below,text=black,font=\tiny,pos=.4]{その後は疑問文の語順}(WH2.north);
 \end{tikzpicture}
 }
 
@@ -117,7 +115,8 @@ You play tennis \alt<4->{\myAnch{FOCUS2}{orange}{on Sundays}}{\myAnch{focus2}{wh
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 疑問詞{\bfseries When}を先頭に置く
  \item {\bfseries When}の後ろはYes/Noで答える疑問文の語順と同じ\hfill{}When do you 原形 \ldots ?\\
-\hfill{}When does she 原形 \ldots ?
+\hfill{}When does she 原形 \ldots ?\\
+\hfill{}When did they 原形 \ldots ?
  \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）\\
 \hfill{\tiny 0137}\,{\scriptsize \myaudio{./audio/014_when_02.mp3}}
 \end{itemize}
@@ -185,6 +184,107 @@ You play tennis \alt<4->{\myAnch{FOCUS2}{orange}{on Sundays}}{\myAnch{focus2}{wh
 \mbox{}\hfill{\tiny 0256}\,{\scriptsize \myaudio{./audio/014_when_05.mp3}}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{曜日}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{曜日}
+\centering
+\begin{tblr}{
+  colspec = {rll}, 
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+ row{odd} = {bg=azure8},
+ row{1} = { bg=azure3, fg=white},
+ row{2} = {fg=Maroon!80},    % 第2列の文字を赤に
+ row{Z} = {fg=azure3},
+ hline{Z} = {0.08em},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+ baseline=t,
+ cell{1}{3} = {halign=r}
+}
+ & & {\scriptsize \myaudio{../misc/audio/002_day_month_season_01.mp3}}\\
+  日 & Sunday & \textipa{/s\'\textturnv nd\`eI/}\\
+  月 & Monday & \textipa{/m\'\textturnv nd\`eI/}\\
+  火 & Tuesday & \textipa{/t(j)\'u:zd\`eI/}\\ 
+  水 & Wednesday & \textipa{/w\'enzd\`eI/}\\
+  木 & Thursday & \textipa{/T\'\textrhookschwa :zd\`eI/}\\
+  金 & Friday & \textipa{/fr\'aId\`eI/}\\
+  土 & Saturday & \textipa{/s\'\ae t\textrhookschwa d\`eI/}\\
+\end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{month \textipa{/m\'\textturnv nT/}　　　season \textipa{/s\'\i:zn/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+\small
+
+\begin{columns}
+\begin{column}{.55\linewidth}
+\begin{tblr}{
+  colspec = {rlll}, 
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+ row{1} = { bg=azure3, fg=white},
+ row{2-3,13} = {bg=azure8},
+ row{4-6} = {bg=SpringGreen!60},    
+ row{7-9} = {bg=Goldenrod!60},    
+ row{10-12} = {bg=Maroon!60!black!80, fg=white},
+ column{4} = {bg=white},    
+% row{Z} = {fg=azure3},
+% hline{Z} = {0.08em},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+ baseline=t,
+ cell{1}{3} = {halign=r},
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+    & month& {\scriptsize \textipa{/m\'\textturnv nT/}\hspace{15pt}\myaudio{../misc/audio/002_day_month_season_02a.mp3}}\\
+  1月 & January & \textipa{/dZ\'\ae nju\`eri/}&\myAnch{fuyu1}{white}{}\\
+  2月 & February & \textipa{/f\'eb(r)u\`eri/}\\
+  3月 & March & \textipa{/m\'A\textrhookschwa tS/}\\ 
+  4月 & April & \textipa{/\'eIpr@l/}&\myAnch{haru}{white}{}\\
+  5月 & May & \textipa{/m\'eI/}\\
+  6月 & June & \textipa{/dZ\'u:n/}\\
+  7月 & July & \textipa{/dZUl\'aI/}&\myAnch{natsu}{white}{}\\
+  8月 & August & \textipa{/\'O:g@st/}\\ 
+  9月 & September & \textipa{/sept\'emb\textrhookschwa /}\\
+  10月 & October & \textipa{/Akt\'oUb\textrhookschwa /}&\myAnch{aki}{white}{}\\
+  11月 & November & \textipa{/nouv\'emb\textrhookschwa /}\\
+  12月 & December & \textipa{/dIs\'emb\textrhookschwa /}&\myAnch{fuyu2}{white}{}\\
+\end{tblr}
+\end{column}
+\begin{column}<14->{.4\linewidth}
+\begin{tblr}{
+  colspec = {lll}, 
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+row{1} = { bg=azure3, fg=white},
+ row{5} = {bg=azure8},
+ row{2} = {bg=SpringGreen!60},    
+ row{3} = {bg=Goldenrod!60},    
+ row{4} = {bg=Maroon!60!black!80, fg=white},
+column{1} = {bg=white},
+  baseline=t,
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+    & season& {\scriptsize \textipa{/s\'\i:zn/}\hspace{27pt}\myaudio{../misc/audio/002_day_month_season_02b.mp3}}\\
+ \myAnch{spring}{white}{}&spring&\textipa{/spr\'IN/}\\
+ \myAnch{summer}{white}{}&summer&\textipa{/s\'\textturnv m\textrhookschwa /}\\
+ \myAnch{fall}{white}{}&fall / autumn&\textipa{/f\'O:l/} \textipa{/\'O:t@m/}\\
+ \myAnch{winter}{white}{}&winter&\textipa{/w\'Int\textrhookschwa/}\\\
+\end{tblr}
+\end{column}
+\end{columns}
+
+
+\begin{tikzpicture}[remember picture,overlay]
+ \onslide<15->{\draw[<-,line width=3pt,SpringGreen,opacity=.75] (haru.east) -- (spring.west);}
+ \onslide<16->{\draw[<-,line width=3pt,Goldenrod,opacity=.75] (natsu.east) -- (summer.west);}
+ {\onslide<17->\draw[<-,line width=3pt,Maroon,opacity=.75] (aki.east) -- (fall.west);}
+ \onslide<18->{\draw[<-,line width=3pt,azure3,opacity=.75] (fuyu1.east) to[out=0,in=180] (winter.west);}
+ \onslide<18->{\draw[<-,line width=3pt,azure3,opacity=.75] (fuyu2.315) to[out=0,in=200] (winter.west);}
+\end{tikzpicture}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{疑問詞when \textipa{/w\'en/} のまとめ}
 \begin{frame}[plain]{まとめ}
