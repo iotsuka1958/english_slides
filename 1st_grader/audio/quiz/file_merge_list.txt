@@ -1,3 +1,3 @@
-file 'quiz_k.mp3'
+file 'quiz_l.mp3'
 file 'silent.mp3'
-file 'answer_k.mp3'
+file 'answer_l.mp3'
