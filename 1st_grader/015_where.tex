@@ -35,11 +35,11 @@
 
 \subsection{Where is your key?: be動詞のとき}
 \begin{frame}[plain]{Where is your key?}
- \Large
+ %\Large
 
 be動詞のとき
 
-\mbox{}\hspace{10pt}Your key is  \alt<4->{\myAnch{FOCUS}{orange}{on the desk}}{\myAnch{focus}{white}{on the desk}}.
+\mbox{}\hspace{40pt}Your key is  \alt<4->{\myAnch{FOCUS}{orange}{on the desk}}{\myAnch{focus}{white}{on the desk}}.
 \pause
 \hfill{}cf. \myEmph[6-]{Maroon}{Is your key} on the desk?\pause%
 
@@ -47,9 +47,7 @@ be動詞のとき
 
 \vspace{7pt}
 
-\pause
-
-\visible<5->{\myAnch{wh}{orange}{Where} \myEmph[6-]{Maroon}{is your key} \myAnch{question}{orange}{?}}
+\visible<5->{\myAnch{wh}{orange}{Where} \myEmph[6-]{Maroon}{is your key} ?}%\myAnch{question}{orange}{?}}
 \visible<7->{\scalebox{1.4}{\myDownwardPitch}}
 
 \pause
@@ -58,61 +56,60 @@ be動詞のとき
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->, thick, orange] (focus.south) to[out=-90, in=90] (wh.north);
+\draw[->, line width=3pt, opacity =.5,orange] (focus.south) to[out=-90, in=90]node[sloped,above,text=black,font=\tiny,pos=.6]{Whereに置き換えて先頭へ} node[sloped,below,text=black,font=\tiny,pos=.4]{その後は疑問文の語順} (wh.north);
 \end{tikzpicture}
 }
 
-\visible<8->{%
-\begin{exampleblock}{Topics for Today}
+\begin{block}<8->{Topics for Today}
 \pause
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 「どこ」と聞くときは{\bfseries where}を先頭に
- \item {\bfseries Where}に続く部分は疑問文の語順
- \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
+ \item 「どこ」と聞くときは疑問詞の{\bfseries where}を先頭に
+ \item {\bfseries Where}に続く部分はyes/noで答える疑問文の語順
+ \item   文末に`?'をつける / イントネーションは\myDownwardPitch
 \end{itemize}
-     \end{exampleblock}
-}
-\mbox{}\hfill\myaudio{./audio/015_where_01.mp3}
+     \end{block}
+
+\mbox{}\hfill{\tiny 0132}\,{\scriptsize \myaudio{./audio/015_where_01.mp3}}
 
 \end{frame}
 
 \subsection{Where do they live?: 一般動詞のとき}
 \begin{frame}[plain]\frametitle{Where do they live?}
-\Large
+%\Large
 一般動詞のとき
 
-They live \alt<4->{\myAnch{FOCUS2}{orange}{in Sydney}}{\myAnch{focus2}{white}{in Sydney}}.\,\,\,\,\,{\scriptsize \textipa{/s\'Idni/}}
+\hspace*{55pt}They live \alt<4->{\myAnch{FOCUS2}{orange}{in Sydney}}{\myAnch{focus2}{white}{in Sydney}}.\,\,\,\,\,{\scriptsize \textipa{/s\'Idni/}}
 \pause
 \hfill{}%
 cf. \myEmph[6-]{Maroon}{Do they live} in Sydney?\pause
 
-\hfill{\normalsize Yes/Noで答える疑問文}
+\hfill{\scriptsize Yes/Noで答える疑問文}
 
-\visible<5->{\myAnch{WH2}{orange}{Where}  \myEmph[6-]{Maroon}{do they live}\myAnch{question}{orange}{?}}
+\visible<5->{\myAnch{WH2}{orange}{Where}  \myEmph[6-]{Maroon}{do they live} ?}%\myAnch{question}{orange}{?}}
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (focus2.south) to[out=-165, in=15] (WH2.north east);
+ \draw[line width=3pt, opacity=.5, orange, ->] (focus2.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Whereに置き換えて先頭へ} node[sloped,below,text=black,font=\tiny,pos=.5]{その後は疑問文の語順} (WH2.north);
 \end{tikzpicture}
 }
 
-\visible<7->{%
-\begin{exampleblock}{Topics for Today}
+\begin{block}<7->{Topics for Today}
 \pause
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 「どこ」と聞くときは{\bfseries where}を先頭に
- \item {\bfseries Where}に続く部分は疑問文の語順
- \item   文末に`?'をつける（イントネーションは\myDownwardPitch{}\,\,）
+ \item 「どこ」と聞くときは疑問詞{\bfseries where}を先頭に
+ \item {\bfseries Where}に続く部分はyes/noで答える疑問文の語順
+ \item   文末に`?'をつける / イントネーションは\myDownwardPitch{}
 \end{itemize}
-     \end{exampleblock}
-}
-\mbox{}\hfill\myaudio{./audio/015_where_02.mp3}
+     \end{block}
+
+\mbox{}\hfill{\tiny 0131}\,{\scriptsize \myaudio{./audio/015_where_02.mp3}}
 
 \end{frame}
 
 \subsection{Exercises}
 \begin{frame}[plain]{Exercises}
-つぎの文をノートに写して、その意味を考えましょう
+
+{\small つぎの文の意味を考えましょう}
 
 \begin{tabular}{rll}
 1& Where is my phone? &　　{\small phone \textipa{/f\'oUn/}: 電話} \\
@@ -121,12 +118,13 @@ cf. \myEmph[6-]{Maroon}{Do they live} in Sydney?\pause
 4& Where does the cat sleep?&　　{\small sleep \textipa{/sl\'\i :p/}: 眠る} \\
 \end{tabular}
 
-\mbox{}\hfill\myaudio{./audio/015_where_03.mp3}
+\mbox{}\hfill{\tiny 0155}\,{\scriptsize \myaudio{./audio/015_where_03.mp3}}
 
 \end{frame}
 
 \begin{frame}[plain]{Exercises}
- 次の質問に対する答えとしてもっとも適切なものを、右のア～オの中から選びましょう。
+
+ {\small 次の質問に対する答えとしてもっとも適切なものを、右のア～オの中から選びましょう}
 
 \begin{columns}[t]
  \begin{column}{.475\textwidth}
@@ -151,17 +149,29 @@ B: \alt<6->{She's in the kitchen now. オ}{(\hspace{100pt})}
 エ It goes to Chiba Station.\\
 オ She's in the kitchen now.
 \end{tcolorbox} 
-\mbox{}\hfill\myaudio{./audio/015_where_04.mp3}
+\mbox{}\hfill{\tiny 0336}\,{\scriptsize \myaudio{./audio/015_where_04.mp3}}
 \end{column}
 \end{columns}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
+\section{疑問詞whereのまとめ}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{まとめ}
  \begin{block}{Where ～?}
 \begin{description}[　　　　]
- \item[be動詞] Where is 単数形?\,\,\,\,\,/\,\,\,\,\,Where are 複数形?
- \item[一般動詞] Where do you 原形 \ldots\,\,\,?\,\,\,\,\,/\,\,\,\,\,Where does he 原形 \ldots\,\,\,?
+ \item[be動詞] %Where is 単数形?\,\,\,\,\,/\,\,\,\,\,Where are 複数形?
+Where $\left\{
+\begin{array}{l}
+ \text{is}\\
+ \text{are}\\
+\end{array}
+\right\} + \text{S}$ \ldots\,\,\, ?
+ \item[一般動詞] When\,\,\,$\left\{ \begin{tabular}{l}
+	  do / does\\
+	  did\\
+	  will\\
+	 \end{tabular}\right\}$%
+\,\,$+$ S $+$ 原形 \ldots\,\,\,?
 \end{description}
   
  \end{block}

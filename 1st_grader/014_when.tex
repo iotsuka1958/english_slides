@@ -9,6 +9,7 @@
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
+\usepackage{highlightx}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{When do you play baseball?}
@@ -281,7 +282,6 @@ column{1} = {bg=white},
 \end{column}
 \end{columns}
 
-
 \begin{tikzpicture}[remember picture,overlay]
  \onslide<15->{\draw[<-,line width=3pt,SpringGreen,opacity=.75] (haru.east) -- (spring.west);}
  \onslide<16->{\draw[<-,line width=3pt,Goldenrod,opacity=.75] (natsu.east) -- (summer.west);}
@@ -289,32 +289,36 @@ column{1} = {bg=white},
  \onslide<18->{\draw[<-,line width=3pt,azure3,opacity=.75] (fuyu1.east) to[out=0,in=180] (winter.west);}
  \onslide<18->{\draw[<-,line width=3pt,azure3,opacity=.75] (fuyu2.315) to[out=0,in=200] (winter.west);}
 \end{tikzpicture}
-
 \end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{疑問詞when \textipa{/w\'en/} のまとめ}
 \begin{frame}[plain]{まとめ}
  \begin{block}{When ～? \textipa{/w\'en/}}
 \begin{description}[　　　　]
- \item[be動詞] When is ～?%
-\hfill{When is your birthday?}\\[20pt]
- \item[一般動詞] When\,\,\,$\left\{ \begin{tabular}{l}
+ \item[be動詞]<2-> $\HighlightFormula{\text{When is ～?}}$%
+
+\begin{enumerate}
+ \item When is your birthday?\\
+\mbox{}\\
+\mbox{}
+\end{enumerate}
+
+ \item[一般動詞]<3-> $\HighlightFormula{\text{When}\left\{ \begin{tabular}{l}
 	  do / does\\
 	  did\\
 	  will\\
-	 \end{tabular}\right\}$%
-\,\,$+$ S $+$ 原形 \ldots ? 
-       \begin{enumerate}
-       \item When do you play tennis?
-       \item When does she study science?
-       \item When did he go to America?
-       \item When will they come back?
+	 \end{tabular}\right\} + \text{S} + \text{原形 \ldots ?}}$%
+       \begin{enumerate}\setcounter{enumi}{1}
+       \item<4-> When do you play tennis?
+       \item<5-> When does she study science?
+       \item<6-> When did he go to America?
+       \item<7-> When will they come back?
       \end{enumerate}
 \end{description}
-  
-
  \end{block}
+\mbox{}\hfill{\tiny 0220}\,{\scriptsize \myaudio{./audio/014_when_06.mp3}}
+
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
