@@ -42,6 +42,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usepackage{tikzducks}
+\usepackage{tikzlings,tikzsymbols}
 \usetikzlibrary{arrows}
 \usepackage{tcolorbox}
 \newtcolorbox[auto counter, number within=section]{pabox}[2][]{%
@@ -57,7 +58,14 @@ title=Question~\thetcbcounter: #2,#1}
 %%%%%%%%%%
 \usepackage{longtable}
 \usepackage{datetime}
+% Coffeecupを一時退避（tikzsymbols版を保存）
+\let\tikzCoffeecup\Coffeecup
+\let\Coffeecup\relax
+\let\Heart\relax
+\let\Smiley\relax
+
 \usepackage{marvosym,utfsym,circledsteps}
+\usepackage{figchild,cookingsymbols}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagestyle{empty}
 %%%% ハイパーリンク
@@ -97,6 +105,18 @@ title=Question~\thetcbcounter: #2,#1}
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+
+\tikzCoffeecup
+\begin{tikzpicture}
+ \pig
+\end{tikzpicture}
+
+\scalebox{5}{\Fork}
+
+\fcKettle{0.1}{black}{.5}
+
+\Cat
+
 {\gtfamily\bfseries
 %Morning! みなさん、おはようございます。
 Hello! みなさんこんにちは。
