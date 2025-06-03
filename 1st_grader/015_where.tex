@@ -7,6 +7,7 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,8 +94,7 @@ cf. \myEmph[6-]{Maroon}{Do they live} in Sydney?\pause
 \end{tikzpicture}
 }
 
-\begin{block}<7->{Topics for Today}
-\pause
+\begin{block}<7->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「どこ」と聞くときは疑問詞{\bfseries where}を先頭に
  \item {\bfseries Where}に続く部分はyes/noで答える疑問文の語順
@@ -112,16 +112,24 @@ cf. \myEmph[6-]{Maroon}{Do they live} in Sydney?\pause
 {\small つぎの文の意味を考えましょう}
 
 \begin{tabular}{rll}
-1& Where is my phone? &　　{\small phone \textipa{/f\'oUn/}: 電話} \\
-2& Where are your shoes?& 　　{\small shoe \textipa{/S\'u:/}:くつ}\\
-3& Where do they go for vacation? & 　　{\small vacation \textipa{/veIk\'eIS@n/}: バケーション}\\
-4& Where does the cat sleep?&　　{\small sleep \textipa{/sl\'\i :p/}: 眠る} \\
+1& Where is my phone? &　　{\scriptsize phone \textipa{/f\'oUn/}: 電話} \\
+2& Where are your shoes?& 　　{\scriptsize shoe \textipa{/S\'u:/} くつ}\\
+3& Where do they go for vacation? & 　　{\scriptsize vacation \textipa{/veIk\'eIS@n/} バケーション}\\
+4& Where does the cat sleep?&　　{\scriptsize sleep \textipa{/sl\'\i :p/} 眠る} \\
 \end{tabular}
 
 \mbox{}\hfill{\tiny 0155}\,{\scriptsize \myaudio{./audio/015_where_03.mp3}}
+\bigskip
+
+\visible<2->{{\small なぜ1はWhere \Circled{\textbf{is}} \ldots ?で、2はWhere \Circled{\textbf{are}} \ldots ?なのでしょうか}}
+
+\begin{itemize}
+ \item<3-> My phone is on the desk.
+ \item<4-> Your shoes are in the box.
+\end{itemize}
 
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 
  {\small 次の質問に対する答えとしてもっとも適切なものを、右のア～オの中から選びましょう}
@@ -166,7 +174,7 @@ Where $\left\{
  \text{are}\\
 \end{array}
 \right\} + \text{S}$ \ldots\,\,\, ?
- \item[一般動詞] When\,\,\,$\left\{ \begin{tabular}{l}
+ \item[一般動詞] Where\,\,\,$\left\{ \begin{tabular}{l}
 	  do / does\\
 	  did\\
 	  will\\

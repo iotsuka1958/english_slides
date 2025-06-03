@@ -8,7 +8,7 @@
 \setbeamertemplate{navigation symbols}{}
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{media9}
+\newcommand{\quiztoday}{today_o}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% さまざまなアイコン
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -173,7 +173,8 @@
 \textcolor{white}{\textbf{Catch the Alphabet!}}
 
 \raggedleft
-\hyperlink{today_n}{\beamergotobutton{Today's Mission}}%%todayにジャンプ
+%\hyperlink{today_o}{\beamergotobutton{Today's Mission}}%%todayにジャンプ
+\hyperlink{\quiztoday}{\beamergotobutton{Today's Mission}}%%todayにジャンプ
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%

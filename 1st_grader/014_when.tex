@@ -197,7 +197,7 @@ You play tennis \alt<4->{\myAnch{FOCUS2}{NavyBlue}{on Sundays}}{\myAnch{focus2}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{曜日}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{曜日}
+\begin{frame}[plain,label=dayofweek]{曜日}
 \centering
 \begin{tblr}{
   colspec = {rll}, 
@@ -209,7 +209,8 @@ You play tennis \alt<4->{\myAnch{FOCUS2}{NavyBlue}{on Sundays}}{\myAnch{focus2}{
  hline{Z} = {0.08em},    % \toprule, \midrule, \bottomrule
 %  hline{3} = {0.5pt}       % もう1つの \midrule
  baseline=t,
- cell{1}{3} = {halign=r}
+ cell{1}{3} = {halign=r},
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
 }
  & & {\tiny 0415}\,{\scriptsize \myaudio{../misc/audio/002_day_month_season_01.mp3}}\\
   日 & Sunday & \textipa{/s\'\textturnv nd\`eI/}\\
@@ -225,7 +226,7 @@ You play tennis \alt<4->{\myAnch{FOCUS2}{NavyBlue}{on Sundays}}{\myAnch{focus2}{
 \section{month \textipa{/m\'\textturnv nT/}　　　season \textipa{/s\'\i:zn/}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]
+\begin{frame}[plain,label=month]
 \small
 
 \begin{columns}
@@ -322,4 +323,6 @@ column{1} = {bg=white},
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<8>[plain]{dayofweek}
+\againframe<18>[plain]{month}
 \end{document}
