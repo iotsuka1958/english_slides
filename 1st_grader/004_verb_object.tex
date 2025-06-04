@@ -18,6 +18,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
+\usepackage{lua-ul}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{I eat chocolate chip cookies every day.}
@@ -56,16 +57,20 @@
      \item \alt<16->{\Circled[outer color=Maroon]{They}}{They} \alt<17->{\Circled[outer color=NavyBlue]{like}}{like} \alt<25->{\fbox{music}}{music}.  彼らは音楽が好きです。\,\,\visible<25->{\dbend}\hfill\visible<34->{SVO}
 \end{enumerate}
 
+\vspace{-5pt}
+
 \begin{columns}[t]
 \begin{column}{.55\textwidth}
- \begin{exampleblock}<18->{Topics for Today}\small
+ \begin{alertblock}<18->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \visible<18->{\item 英文の骨格は\kenten{主語}と\kenten{動詞}でしたね}
- \visible<20->{\item 「～を」に当たる語を\kenten{目的語}といいます}
-\end{itemize}
+ \item<18-> 英文の骨格は\kenten{主語}と\kenten{述語動詞}でしたね
+ \item<20-> 「～を」に当たる語を\kenten{目的語}といいます\\
+\hfill{\scriptsize 目的語は必ずあるわけではありません}
 
- \end{exampleblock}
+\end{itemize}
+ \end{alertblock}
 %
+\vspace*{-5pt}
 {\tiny 0323}\,{\scriptsize \myaudio{./audio/004_verb_object_1.mp3}}
 
 \end{column} 
@@ -73,9 +78,9 @@
  \begin{block}<26->{新しい記号を覚えましょう}\small
 %   \textbullet\,\,新しい記号を覚えましょう
        \begin{description}
-	\item[主語：] S\hfill{subjectの頭文字} 
-	\item[動詞：] V\hfill{verbの頭文字}
-	\item[目的語：] O \hfill{objectの頭文字}
+	\item[主語：] S\hfill{\underLine{s}ubjectの頭文字} 
+	\item[動詞：] V\hfill{\underLine{v}erbの頭文字}
+	\item[目的語：] O \hfill{\underLine{o}bjectの頭文字}
        \end{description}
       \end{block}
 \end{column} 
@@ -84,21 +89,22 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-23>[plain,label=is_verb]\frametitle{Exercises}
-つぎの各文の\Circled[outer color=Maroon]{主語}と\Circled[outer color=NavyBlue]{動詞}を確認しましょう。また、目的語がある場合は、目的語を\fbox{　　}\,で囲んでください。さらに各文の意味を確認しましょう%
-\hfill{\tiny 0335}\,{\scriptsize \myaudio{./audio/004_verb_object_2.mp3}}
+
+{\small つぎの各文の\Circled[outer color=Maroon]{主語}と\Circled[outer color=NavyBlue]{述語動詞}を確認してください。目的語があるなら目的語を\,\fbox{　　}\,で囲みましょう。さらに各文の組立をS, V, Oの記号で表してください}%
 
  % \setbeamercovered{transparent}
   \begin{enumerate}
    \item<1-> \alt<2->{\Circled[outer color=Maroon]{Birds}}{Birds} \alt<2->{\Circled[outer color=NavyBlue]{sing}}{sing}.\hfill\visible<14->{SV}
-   \item<1-> \alt<3->{\Circled[outer color=Maroon]{Birds}}{Birds} \alt<3->{\Circled[outer color=NavyBlue]{sing}}{sing} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{in the morning}}{in the morning}.\hfill\visible<15->{SV}
-   \item<1-> \alt<4->{\Circled[outer color=Maroon]{He}}{He} \alt<4->{\Circled[outer color=NavyBlue]{swims}}{swims} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{well}}{well}.\hfill\visible<16->{SV}
-   \item<1-> \alt<5->{\Circled[outer color=Maroon]{They}}{They} \alt<5->{\Circled[outer color=NavyBlue]{swim}}{swim} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{in the river}}{in the river}.\hfill\visible<17->{SV}
+   \item<1-> \alt<3->{\Circled[outer color=Maroon]{Birds}}{Birds} \alt<3->{\Circled[outer color=NavyBlue]{sing}}{sing} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{\,in the morning\,}}{\,in the morning\,}.\hfill\visible<15->{SV}
+   \item<1-> \alt<4->{\Circled[outer color=Maroon]{He}}{He} \alt<4->{\Circled[outer color=NavyBlue]{swims}}{swims} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{\,well\,}}{\,well\,}.\hfill\visible<16->{SV}
+   \item<1-> \alt<5->{\Circled[outer color=Maroon]{They}}{They} \alt<5->{\Circled[outer color=NavyBlue]{swim}}{swim} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{\,in the river\,}}{\,in the river\,}.\hfill\visible<17->{SV}
    \item<1-> \alt<6->{\Circled[outer color=Maroon]{George}}{George} \alt<6->{\Circled[outer color=NavyBlue]{speaks}}{speaks} \alt<10->{\fbox{English}}{English}.\hfill\visible<18->{SVO}
-   \item<1-> \alt<7->{\Circled[outer color=Maroon]{Janis}}{Janis} \alt<7->{\Circled[outer color=NavyBlue]{speaks}}{speaks} \alt<11->{\fbox{French}}{French} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{well}}{well}.\hfill\visible<19->{SVO}
-   \item<1-> \alt<8->{\Circled[outer color=Maroon]{I}}{I} \alt<8->{\Circled[outer color=NavyBlue]{drink}}{drink} \alt<12->{\fbox{tea}}{tea} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{every morning}}{every morning}.\hfill\visible<20->{SVO}
-   \item<1-> \alt<9->{\Circled[outer color=Maroon]{Jimmy}}{Jimmy} \alt<9->{\Circled[outer color=NavyBlue]{plays}}{plays} \alt<13->{\fbox{the guitar}}{the guitar} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{in his room}}{in his room}.\hfill\visible<21->{SVO}
+   \item<1-> \alt<7->{\Circled[outer color=Maroon]{Janis}}{Janis} \alt<7->{\Circled[outer color=NavyBlue]{speaks}}{speaks} \alt<11->{\fbox{French}}{French} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{\,well\,}}{\,well\,}.\hfill\visible<19->{SVO}
+   \item<1-> \alt<8->{\Circled[outer color=Maroon]{I}}{I} \alt<8->{\Circled[outer color=NavyBlue]{drink}}{drink} \alt<12->{\fbox{tea}}{tea} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{\,every morning\,}}{\,every morning\,}.\hfill\visible<20->{SVO}
+   \item<1-> \alt<9->{\Circled[outer color=Maroon]{Jimmy}}{Jimmy} \alt<9->{\Circled[outer color=NavyBlue]{plays}}{plays} \alt<13->{\fbox{the guitar}}{the guitar} \alt<22->{\Circled[fill color=gray, outer color=gray, inner color=white]{\,in his room\,}}{\,in his room\,}.\hfill\visible<21->{SVO}
   \end{enumerate}
 
+{\tiny 0335}\,{\scriptsize \myaudio{./audio/004_verb_object_2.mp3}}
 \hfill\visible<23->{%
 \Circled[fill color = gray, outer color=gray, inner color=white]{　　}\,の語句は、文に$+\alpha$の意味をつけくわえています
 }
@@ -149,7 +155,7 @@
 \begin{block}{Topics for Today}
 with, in, after などを\kenten{前置詞}といいます%
 \hfill{}「名詞の\kenten{前}に\kenten{置}く\kenten{詞}」
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item<7-> 裏返していうと「前置詞の\kenten{後}にはかならず\kenten{名詞}がくる」ということです
  \item<8-> \Circled[fill color = gray, outer color=gray, inner color=white]{\,\,$\text{前置詞}+\text{名詞}$\,\,}\,は、文に$+\alpha$の意味をつけくわえます\\
  \hfill\visible<9->{{\scriptsize 前置詞はいろいろあります。ちょっとずつ覚えましょう}}
@@ -184,25 +190,25 @@ with, in, after などを\kenten{前置詞}といいます%
 \section{まとめ}
 \begin{frame}[plain]{学習したこと}
 \begin{block}<1->{まとめ1}
-\begin{itemize}
- \visible<1->{\item 英文の骨格は\kenten{主語}と\kenten{動詞}}
- \visible<2->{\item \kenten{目的語}(「～を」に当たる語)が必要なことがあります}
- \visible<3->{\item 新しい記号
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item<1-> 英文の骨格は\kenten{主語}と\kenten{述語動詞}
+ \item<2-> \kenten{目的語}(「～を」に当たる語)が必要なことがあります
+ \item<3-> 新しい記号
         \begin{description}
-	\item[主語：] S\hfill{subjectの頭文字} 
-	\item[動詞：] V\hfill{verbの頭文字}
-	\item[目的語：] O \hfill{objectの頭文字}
-       \end{description}}
+	\item[主語：] S\hfill{\underLine{s}ubjectの頭文字} 
+	\item[動詞：] V\hfill{\underLine{v}erbの頭文字}
+	\item[目的語：] O \hfill{\underLine{o}bjectの頭文字}
+       \end{description}
 \end{itemize}
  \end{block}
 %%%%%%%%%%%
-\begin{block}<4->{まとめ2}
-\visible<4->{文に$+\alpha$の意味をつけくわえる語句\hfill{\scriptsize (かならず必要な要素ではないが、あると文意が鮮明に)}}
-\begin{itemize}
- \visible<5->{\item \Circled[fill color = white]{\,\,副詞\,\,}%
-\hspace{65pt}well, fast, slowly, now, today, here, there \ldots}
-\visible<6->{ \item \Circled[fill color = white]{\,\,$\text{前置詞}+\text{名詞}$\,\,}%
-\hspace{20pt}{in, on, with, before, after \ldots}\hfill{\scriptsize  (前置詞とは「名詞の\kenten{前}に\kenten{置}く\kenten{詞}」)}}
+\begin{block}<4->{まとめ2}\small
+\visible<4->{文に$+\alpha$の意味をつけくわえる語句\hfill{\scriptsize かならず必要な要素ではないが、あると\kenten{文意が鮮明}になります}}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item<5-> \Circled[fill color = white]{\,\,副詞\,\,}%
+\hspace{60pt}{\scriptsize 様態：}well, fast, slowly\hspace{15pt}{\scriptsize とき：}now, today\hspace{15pt}{\scriptsize 場所：}here, there \ldots
+\item<6-> \Circled[fill color = white]{\,\,$\text{前置詞}+\text{名詞}$\,\,}%
+\hspace{20pt}{in, on, with, before, after \ldots}\hfill{\scriptsize  (前置詞とは「名詞の\kenten{前}に\kenten{置}く\kenten{詞}」)}
 \end{itemize}
 
 \hfill\visible<7->{{\scriptsize 副詞や前置詞はいろいろあります。少しずつ覚えていきましょう}}

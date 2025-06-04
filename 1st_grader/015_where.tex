@@ -11,6 +11,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usepackage{highlightx}
+\usepackage{lua-ul}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{Where does Jane live?}
@@ -122,9 +123,9 @@ cf. \myEmph[6-]{Maroon}{Do they live} in Sydney?\pause
 \mbox{}\hfill{\tiny 0155}\,{\scriptsize \myaudio{./audio/015_where_03.mp3}}
 \bigskip
 
-\visible<2->{{\small なぜ1はWhere \Circled{\textbf{is}} \ldots ?で、2はWhere \Circled{\textbf{are}} \ldots ?なのでしょうか}}
+\visible<2->{{\small なぜ1はWhere \Circled{\textbf{\,is\,}} \ldots\,?\,で、2はWhere \Circled{\textbf{are}} \ldots\,?\,なのでしょうか}}
 
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[circle]
  \item<3-> My phone is on the desk.
  \item<4-> Your shoes are in the box.
 \end{itemize}
@@ -158,15 +159,20 @@ B: \alt<6->{She's in the kitchen now. オ}{(\hspace{100pt})}
 エ It goes to Chiba Station.\\
 オ She's in the kitchen now.
 \end{tcolorbox} 
-\mbox{}\hfill{\tiny 0336}\,{\scriptsize \myaudio{./audio/015_where_04.mp3}}
+
+\hfill{\scriptsize the USA: the \underLine{U}nited \underLine{S}tates of \underLine{A}merica}
+
 \end{column}
 \end{columns}
+
+\mbox{}\hfill{\tiny 0336}\,{\scriptsize \myaudio{./audio/015_where_04.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
 \section{疑問詞whereのまとめ}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{まとめ}
- \begin{block}{Where ～?}
+ \begin{block}{Where ～?\hspace{10pt}\textipa{/w\'e\textrhookschwa /}}
 \begin{description}[　　　　]
  \item[be動詞]<2-> %Where is 単数形?\,\,\,\,\,/\,\,\,\,\,Where are 複数形?
 $\HighlightFormula{\text{Where} \left\{
@@ -200,6 +206,6 @@ $\HighlightFormula{\text{Where} \left\{
  \end{block}
 
 \mbox{}\hfill{\tiny 0336}\,{\scriptsize \myaudio{./audio/015_where_05.mp3}}
-
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

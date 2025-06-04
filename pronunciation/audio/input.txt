@@ -1,5 +1,2 @@
-America<break time="3s"/>America
-hot<break time="3s"/>hot
-chocolate<break time="3s"/>chocolate
-desk<break time="3s"/>desk
-breakfast<break time="3s"/>breakfast
+eat<break time="2s"/>tree<break time="2s"/>people
+winter<break time="2s"/>big<break time="2s"/>picture
