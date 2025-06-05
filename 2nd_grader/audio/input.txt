@@ -1,3 +1,4 @@
-To play tennis is fun.
-The plan was to climb Mt. Fuji.
-He began to write a letter.
+She was sleeping then.
+She was not sleeping then.
+Was she sleeping then?
+Yes, she was.<break time="2s"/>No, she was not.<break time="2s"/>No, she wasn’t.
