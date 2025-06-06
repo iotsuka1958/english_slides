@@ -27,6 +27,7 @@
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{circledsteps}
+\usepackage{manfnt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -104,13 +105,13 @@
 }}{テーブルの上に1冊の本がある}
 \end{column}\pause
 \begin{column}{.55\textwidth}\LARGE
-There is a book on the table.
+\textcolor{Maroon}{\bfseries There is} a book on the table.
 
 \hfill{\small there \textipa{/D\'e\textrhookschwa /}}
 \end{column}
 \end{columns}
 \vfill
-\mbox{}\hfill\myaudio{./audio/001_there_is_01.mp3}
+\mbox{}\hfill{\tiny 0048}\,{\scriptsize \myaudio{./audio/001_there_is_01.mp3}}
 
 \end{frame}
 %%%%%%%%%%%
@@ -122,11 +123,11 @@ There is a book on the table.
 }}{テーブルの上に6冊の本がある}
 \end{column}\pause
 \begin{column}{.65\textwidth}\LARGE
-There are six books on the table.
+\textcolor{Maroon}{\bfseries There are} six books on the table.
 \end{column}
 \end{columns}
 \vfill
-\mbox{}\hfill\myaudio{./audio/001_there_is_02.mp3}
+\mbox{}\hfill{\tiny 0049}\,{\scriptsize \myaudio{./audio/001_there_is_02.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
 \subsection{There is X($=$単数) + 場所}
@@ -155,9 +156,6 @@ $\left\{\begin{array}{l}
 \text{in the box \ldots}
 	 \end{array} \right.$}
 
-
-
-
 \begin{tikzpicture}[remember picture, overlay]
  \draw[thick,->] (subject.west) to[out=180,in=-90]node[midway,sloped,below] {\footnotesize \myEmph[4]{orange}{単数形}} (hako1.south);
  \draw[thick,->] (place.west) to[out=120,in=-45] (hako2.south east);
@@ -165,7 +163,7 @@ $\left\{\begin{array}{l}
 
 \end{frame}
 %%%%%%%%%%%%%
-\subsection{There is X($=$複数) + 場所}
+\subsection{There are X($=$複数) + 場所}
 \begin{frame}[plain]\frametitle{There are two books on the table.}
  \Large
 
@@ -184,76 +182,90 @@ $\left\{\begin{array}{l}
 \text{five cats \ldots}
 	 \end{array} \right.$}
 %
-%\hspace{45pt}%
-%\myAnch{place}{black}{%
-%$\left\{\begin{array}{l}
-%\text{on the table}\\
-%\text{on the chair}\\
-%\text{under the chair}\\
-%\text{in the box \ldots}
-%	 \end{array} \right.$}
+\hspace{45pt}%
+\myAnch{place}{black}{%
+$\left\{\begin{array}{l}
+\text{on the table}\\
+\text{on the chair}\\
+\text{under the chair}\\
+\text{in the box \ldots}
+	 \end{array} \right.$}
 
 \begin{tikzpicture}[remember picture, overlay]
  \draw[thick,->] (subject.west) to[out=180,in=-90]node[midway,sloped,below] {\footnotesize \myEmph[3]{orange}{複数形}} (hako1.south);
-% \draw[thick,->] (place.north west) to[out=125,in=-45] (hako2.south east);
+ \draw[thick,->] (place.north west) to[out=125,in=-45] (hako2.south east);
 \end{tikzpicture}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{～がある}
- \begin{exampleblock}{Topics for Today}
-\begin{itemize}
- \item There is \myEmph[1]{orange}{単数形} $+$ 場所を表す表現
- \item There are \myEmph[2]{orange}{複数形} $+$ 場所を表す表現
+ \begin{block}{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item<1-> There \myEmph[1-]{Maroon}{is 単数形} $+$ 場所を表す表現\,.
+ \item<2-> There \myEmph[2-]{Maroon}{are 複数形} $+$ 場所を表す表現\,.
 \end{itemize}
-\end{exampleblock}
+\end{block}
+
+\hfill\visible<3->{\dbend\dbend\,\,%
+この構文では主語はbe動詞直後の名詞です
+}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%
 \subsection{Exercises}
 \begin{frame}[plain]\frametitle{Exercises}
-\onslide*<1->{空所にisまたはareを補い、正しい英文にしましょう。あわせて、全体の意味を考えましょう\hfill\myaudio{./audio/001_there_is_03.mp3}}
+
+{\small 現在のことを表す正しい英文になるよう空所に適切なbe動詞を補いましょう
  % \setbeamercovered{transparent}
   \begin{enumerate}
    \item<2-> There (\onslide<3->{\myEmph[3]{orange}{~are~}}) three high schools in our city.
    \item<4->  There (\onslide<5->{\myEmph[5]{orange}{~is~}}) a new computer on the desk.
    \item<6-> There (\onslide<7->{\myEmph[7]{orange}{~are~}}) two boys in the park.
-   \item<8-> There (\onslide<9->{\myEmph[9]{orange}{~is~}}) a cat by the tree now.
-   \item<10-> There (\onslide<11->{\myEmph[11]{orange}{~is~}}) a station near my house.
+   \item<8-> There (\onslide<9->{\myEmph[9]{orange}{~is~}}) a cat by the tree now.\hfill{\scriptsize by ～のそばに}
+   \item<10-> There (\onslide<11->{\myEmph[11]{orange}{~is~}}) a station near my house.\hfill{\scriptsize near ～の近くに}
   \end{enumerate}
 
 
-\begin{exampleblock}{Topics for Today}
-\begin{itemize}
- \item There \myEmph[13]{Maroon}{is 単数形} $+$ 場所を表す表現
- \item There \myEmph[14]{Maroon}{are複数形} $+$ 場所を表す表現
+\begin{block}{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item There \myEmph[13]{Maroon}{is 単数形} $+$ 場所を表す表現\,.
+ \item There \myEmph[14]{Maroon}{are複数形} $+$ 場所を表す表現\,.
 \end{itemize}
-\end{exampleblock}
+\end{block}
 
+\hfill{\tiny 0235}\,{\myaudio{./audio/001_there_is_03.mp3}}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{There was(were) X ...}
+\section{～があった}
 \begin{frame}[plain]{〜があった}
 
 ノートに写して意味を考えましょう
 \begin{enumerate}
  \item There was a cat in the garden yesterday.
- \item There was a river behind the house.
+ \item There was a river behind the house.%
+\hfill{\scriptsize behind ～の後ろに \textipa{/bIh\'aInd/}}
  \item There were two big trees in the park.
  \item There were three pictures on the wall.
 \end{enumerate}
 
-\begin{exampleblock}{Topics for Today}
+\begin{block}{Topics for Today}
 過去のことをあらわすとき
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item There \textcolor{Maroon}{was 単数形} $+$ 場所を表す表現
  \item There \textcolor{Maroon}{were 複数形} $+$ 場所を表す表現
 \end{itemize}
-\end{exampleblock}
+\end{block}
 
-\hfill\myaudio{./audio/001_there_is_04.mp3}
+\hfill{\tiny 0207}\,{\scriptsize \myaudio{./audio/001_there_is_04.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
-\section{There is(are, was, were) not X ...}
+\section{～がなかった}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{否定を表すnot}
+ \Large
+
+否定を表すことば： {\LARGE\bfseries not}\hspace{20pt}\textipa{/n\'At/}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{〜がない、～がなかった}
 
 ノートに写して意味を考えましょう
@@ -266,25 +278,26 @@ $\left\{\begin{array}{l}
 \end{enumerate}
 
 
-\begin{exampleblock}{Topics for Today}
-「〜がない（なかった）」
-\begin{itemize}
+\begin{block}{Topics for Today}
+否定語notをbe動詞の直後に置きます
+\begin{itemize}\setbeamertemplate{items}[square]
  \item There $\left\{\begin{array}{l}\text{is}\\\text{was}\end{array}
-\right\}$ \textcolor{Maroon}{not} 単数形 \ldots\hspace{40pt}
+\right\}$ \textcolor{Maroon}{\bfseries not} 単数形 \ldots\hspace{40pt}
 There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
-\right\}$ \textcolor{Maroon}{not} 複数形 \ldots
+\right\}$ \textcolor{Maroon}{\bfseries not} 複数形 \ldots
 \end{itemize}
-\end{exampleblock}
+\end{block}
 
-\hfill\myaudio{./audio/001_there_is_05.mp3}
+\hfill{\tiny 0214}\,{\scriptsize \myaudio{./audio/001_there_is_05.mp3}}
 \end{frame}
-
-\section{Is there X ...?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{～がありますか}
 \subsection{〜がありますか}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{〜がありますか？}
  \Large
 
-疑問文のつくり方\hfill{\scriptsize \myaudio{./audio/001_there_is_06.mp3}}
+疑問文のつくり方\hfill{\tiny 0112}\,{\scriptsize \myaudio{./audio/001_there_is_06.mp3}}
 \vspace{20pt}
 
 \myAnch{there-1}{orange}{There} \myAnch{is-1}{olive}{is} a book on the table.
@@ -306,6 +319,7 @@ There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
  \subsection{Exercises}
+%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 
 つぎの文の意味を考えましょう
@@ -316,11 +330,11 @@ There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
  \item Were there many people at the concert last night?
 \end{enumerate}
 
-\hfill\myaudio{./audio/001_there_is_07.mp3}
+\hfill{\tiny 0206}\,{\scriptsize \myaudio{./audio/001_there_is_07.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Exercises}
-各文を疑問文にしてください\hfill\myaudio{./audio/001_there_is_08.mp3}
+各文を疑問文にしてください\hfill{\tiny 0321}\,{\scriptsize \myaudio{./audio/001_there_is_08.mp3}}
 
   \begin{enumerate}
    \item There is a cat in the garden.\\
@@ -338,7 +352,7 @@ There $\left\{\begin{array}{l}\text{are}\\\text{were}\end{array}
  \begin{frame}[plain]{Yes, there is. / No, there isn't.}
  \Large
 
-疑問文にたいする答え方（現在形）\hfill\myaudio{./audio/001_there_is_09.mp3}
+疑問文にたいする答え方（現在形）\hfill{\tiny 0135}\,{\scriptsize \myaudio{./audio/001_there_is_09.mp3}}
 \vspace{10pt}
 
 \pause
@@ -360,7 +374,7 @@ $\left\{\begin{array}{l}
  \begin{frame}[plain]{Yes, there was. / No, there wasn't.}
  \Large
 
-疑問文にたいする答え方（過去形）\hfill\myaudio{./audio/001_there_is_10.mp3}
+疑問文にたいする答え方（過去形）\hfill{\tiny 0136}\,{\scriptsize \myaudio{./audio/001_there_is_10.mp3}}
 \vspace{10pt}
 
 \pause
@@ -381,7 +395,7 @@ $\left\{\begin{array}{l}
  \begin{frame}[plain]{Yes, there are. / No, there aren't.}
  \Large
 
-疑問文にたいする答え方\hfill\myaudio{./audio/001_there_is_11.mp3}
+疑問文にたいする答え方\hfill{\tiny 0137}\,{\scriptsize \myaudio{./audio/001_there_is_11.mp3}}
 \vspace{10pt}
 
 \pause
@@ -403,7 +417,7 @@ $\left\{\begin{array}{l}
  \begin{frame}[plain]{Yes, there were. / No, there weren't.}
  \Large
 
-疑問文にたいする答え方\hfill\myaudio{./audio/001_there_is_12.mp3}
+疑問文にたいする答え方\hfill{\tiny 0138}\,{\scriptsize \myaudio{./audio/001_there_is_12.mp3}}
 \vspace{10pt}
 
 \pause
@@ -437,7 +451,7 @@ $\left\{\begin{array}{l}
          ( a hospital / is / there ) near here?\\
          \onslide<4->{Is there a hospital near here?}
   \end{enumerate}
-\hfill\myaudio{./audio/001_there_is_13.mp3}
+\hfill{\tiny 0146}\,{\scriptsize \myaudio{./audio/001_there_is_13.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
 \section{まとめ}
@@ -477,6 +491,6 @@ No, there $\left\{
 \right\}$ .\hfill{}\mbox{}
 \end{itemize}
 \end{exampleblock}
-\hfill\myaudio{./audio/001_there_is_14.mp3}
+\hfill{\tiny 0207}\,{\scriptsize \myaudio{./audio/001_there_is_14.mp3}}
 \end{frame}
 \end{document}
