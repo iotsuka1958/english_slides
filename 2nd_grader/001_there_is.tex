@@ -134,31 +134,31 @@
 \begin{frame}[plain]\frametitle{There is a book on the table.}
  \Large
 
-There \myEmph[4]{orange}{is} \myAnch{hako1}{black}{~X\,\,} $+$ \myAnch{hako2}{black}{\small 場所を表す表現} .\pause\hfill{} \fbox{~X~} が(どこどこに)ある\pause
+There \myEmph[3]{Maroon}{is} \myAnch{hako1}{black}{~X\,\,} $+$\,\,\myAnch{hako2}{black}{\small 場所を表す表現} .\pause\hfill{} \fbox{~X~} が(どこどこに)ある\pause
 
 \bigskip
 
 \mbox{}\hspace{100pt}%
-\myAnch{subject}{black}{%
+\myAnch{subject}{white}{%
 $\left\{\begin{array}{l}
 \text{a book}\\
 \text{an apple}\\
 \text{a ball}\\
 \text{a cat \ldots}
-	 \end{array} \right.$}
+	 \end{array} \right\}$}
 %
-\hspace{50.pt}%
-\myAnch{place}{black}{%
+\hspace{40.pt}%
+\myAnch{place}{white}{%
 $\left\{\begin{array}{l}
 \text{on the table}\\
 \text{on the chair}\\
 \text{under the chair}\\
 \text{in the box \ldots}
-	 \end{array} \right.$}
+	 \end{array} \right\}$}
 
 \begin{tikzpicture}[remember picture, overlay]
- \draw[thick,->] (subject.west) to[out=180,in=-90]node[midway,sloped,below] {\footnotesize \myEmph[4]{orange}{単数形}} (hako1.south);
- \draw[thick,->] (place.west) to[out=120,in=-45] (hako2.south east);
+ \draw[thick,->] (subject.west) to[out=180,in=-90] node[midway,sloped,below]{\footnotesize \myEmph[3]{Maroon}{単数形}}  (hako1.south);
+ \draw[thick,->] (place.west) to[out=120,in=-45] node[midway,sloped,above]{\footnotesize \myEmph[3]{Maroon}{場所}}(hako2.south east);
 \end{tikzpicture}
 
 \end{frame}
@@ -167,33 +167,33 @@ $\left\{\begin{array}{l}
 \begin{frame}[plain]\frametitle{There are two books on the table.}
  \Large
 
-There \myEmph[3]{orange}{are} \myAnch{hako1}{black}{~X\,\,} $+$ \myAnch{hako2}{black}{\small 場所を表す表現} .\pause\hfill{} \fbox{~X~} が(どこどこに)ある\pause
+There \myEmph[3]{Maroon}{are} \myAnch{hako1}{black}{~X\,\,} $+$ \myAnch{hako2}{black}{\small 場所を表す表現} .\pause\hfill{} \fbox{~X~} が(どこどこに)ある\pause
 
 \bigskip
 
 \bigskip
 
 \mbox{}\hspace{95pt}%
-\myAnch{subject}{black}{%
+\myAnch{subject}{white}{%
 $\left\{\begin{array}{l}
 \text{two books}\\
 \text{three apples}\\
 \text{four balls}\\
 \text{five cats \ldots}
-	 \end{array} \right.$}
+	 \end{array} \right\}$}
 %
-\hspace{45pt}%
-\myAnch{place}{black}{%
+\hspace{25pt}%
+\myAnch{place}{white}{%
 $\left\{\begin{array}{l}
 \text{on the table}\\
 \text{on the chair}\\
 \text{under the chair}\\
 \text{in the box \ldots}
-	 \end{array} \right.$}
+	 \end{array} \right\}$}
 
 \begin{tikzpicture}[remember picture, overlay]
- \draw[thick,->] (subject.west) to[out=180,in=-90]node[midway,sloped,below] {\footnotesize \myEmph[3]{orange}{複数形}} (hako1.south);
- \draw[thick,->] (place.north west) to[out=125,in=-45] (hako2.south east);
+ \draw[thick,->] (subject.west) to[out=180,in=-90]node[midway,sloped,below] {\footnotesize \myEmph[3]{Maroon}{複数形}} (hako1.south);
+ \draw[thick,->] (place.west) to[out=125,in=-45] node[midway,sloped,above]{\footnotesize \myEmph[3]{Maroon}{場所}} (hako2.south east);
 \end{tikzpicture}
 
 \end{frame}
@@ -207,7 +207,7 @@ $\left\{\begin{array}{l}
 \end{block}
 
 \hfill\visible<3->{\dbend\dbend\,\,%
-この構文では主語はbe動詞直後の名詞です
+この構文において主語はbe動詞直後の名詞です
 }
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%
@@ -223,7 +223,6 @@ $\left\{\begin{array}{l}
    \item<8-> There (\onslide<9->{\myEmph[9]{orange}{~is~}}) a cat by the tree now.\hfill{\scriptsize by ～のそばに}
    \item<10-> There (\onslide<11->{\myEmph[11]{orange}{~is~}}) a station near my house.\hfill{\scriptsize near ～の近くに}
   \end{enumerate}
-
 
 \begin{block}{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]
@@ -276,7 +275,6 @@ $\left\{\begin{array}{l}
  \item There are not many cars on the road today.
  \item There were not many clouds in the sky yesterday.
 \end{enumerate}
-
 
 \begin{block}{Topics for Today}
 否定語notをbe動詞の直後に置きます
@@ -488,7 +486,8 @@ No, there $\left\{
               {aren't}\\
               {weren't}
               \end{tabular}
-\right\}$ .\hfill{}\mbox{}
+\right\}$ .\hfill{}\mbox{}\\
+\hfill{}{\scriptsize もちろん短縮形でないこともあり}
 \end{itemize}
 \end{exampleblock}
 \hfill{\tiny 0207}\,{\scriptsize \myaudio{./audio/001_there_is_14.mp3}}

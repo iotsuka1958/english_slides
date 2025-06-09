@@ -17,6 +17,7 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{She was listening to the radio.}
@@ -248,6 +249,7 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{過去進行形のまとめ}
+%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{要点}
  
 \begin{block}{was / were $+$ --ing}
@@ -267,6 +269,55 @@
 \hfill{\tiny 0229}\,{\scriptsize \myaudio{./audio/005_was_ing_intro_08.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{ひとつ確認}
+%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<-6>[plain]{最後の1文字を重ねる--ing}
+
+{\small カッコ内の動詞を適当な形にしてください}
+
+\begin{enumerate}
+ \item \begin{enumerate}
+	\item He was \alt<1>{(~~~~eat~~~~)}{(~~eating~~)} lunch at that time.\hfill{}eat \textipa{/\'\i:t/}
+	\item He was \alt<1-2>{(~~~~~sit~~~~~)}{(~~sitting~~)} on a chair at that time.\hfill{}\tikzmark{A}sit \textipa{/s\'It/}
+       \end{enumerate}
+ \item \begin{enumerate}
+        \item She was \alt<1-3>{(~~~~learn~~~~)}{(~~learning~~)} Japanese.%
+\hfill{}learn \textipa{/l\'\textrhookschwa :n/}
+         \item She was \alt<1-4>{(~~~~~run~~~~~)}{(~~running~~)} in the yard.%
+\hfill{}\tikzmark{B}run \textipa{/r\'\textturnv n/}
+       \end{enumerate}
+\end{enumerate}
+
+\hfill{\textipa{:}\,\,\,長音記号}
+
+\begin{block}<6->{Topics for Today}
+\Circled[fill color=white]{\,\,$\text{短母音}+\text{子音字}$\,\,}\,\,で終わる動詞のとき\tikzmark{Z}、最後の１文字を重ねる\,\,\dbend\\
+\mbox{}
+\end{block}
+
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<6->{\draw[<-,opacity=.4,line width=2pt] ([xshift=-2pt,yshift=2pt]pic cs:A) to[bend right] ([xshift=2pt, yshift=4pt] pic cs:Z);}
+ \visible<6->{\draw[<-,opacity=.4,line width=2pt] ([xshift=-2pt,yshift=2pt]pic cs:B) to[bend right] ([xshift=2pt, yshift=4pt] pic cs:Z);}
+\end{tikzpicture}
+
+\end{frame}
+%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}\large
+
+{\small つぎの動詞を--ing形にしてみましょう}
+
+\begin{enumerate}
+ \item cut \textipa{/k\'\textturnv t/} \visible<2->{$\longrightarrow$\,\,cutting}
+ \item get \textipa{/g\'et/} \visible<3->{$\longrightarrow$\,\,getting}
+ \item forget \textipa{/f\textrhookschwa g\'et/} \visible<4->{$\longrightarrow$\,\,forgetting}
+ \item hit \textipa{/h\'It/} \visible<5->{$\longrightarrow$\,\,hitting}
+ \item put \textipa{/p\'Ut/} \visible<6->{$\longrightarrow$\,\,putting}
+ \item meet \textipa{/m\'\i:t/} \visible<7->{$\longrightarrow$\,\,meeting}
+ \item begin \textipa{/bIg\'In/} \visible<8->{$\longrightarrow$\,\,beginning}
+ \item win \textipa{/w\'In/} \visible<8->{$\longrightarrow$\,\,winnin}g
+\end{enumerate}
+\end{frame}
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 以下、追加すること
@@ -307,7 +358,5 @@
 \visible<4->{Who was playing the guitar?}
 \end{enumerate}
 \hfill\myaudio{./audio/005_was_ing_intro_09.mp3}
-
-
 \end{frame}
 \end{document}

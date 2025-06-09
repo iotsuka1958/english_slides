@@ -10,6 +10,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
+\usepackage{highlightx}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{How are you?}
@@ -62,11 +63,12 @@
 
 \begin{block}<7->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 「どんな状態で、どのように」と聞くとき
+ \item 「どんな状態で」と聞くとき
 （{\bfseries How}の後ろは疑問文の語順）\\
-$\longrightarrow$\,\,\,{\bfseries How is} 〜?
+\hfill$\HighlightFormula{\text{How} + \text{be動詞} + \text{S ?}}$\\
+\hfill{\scriptsize \textbf{How} is the weather?}
  \item   文末に`?'をつける / イントネーションは\myDownwardPitch{}
- \item 短縮形{\bfseries How is} $\longrightarrow$ {\bfseries How's}
+ \item 短縮形{\bfseries How is} $\longrightarrow$ {\bfseries How's} \textipa{/h\'aUz/}\hfill{\scriptsize \textbf{How's} the weather?}
 \end{itemize}
      \end{block}
 
@@ -102,11 +104,13 @@ $\longrightarrow$\,\,\,{\bfseries How is} 〜?
 
 \begin{block}<7->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 「どんな状態で、どのように」と聞くとき
+ \item 「どんな状態で」と聞くとき
 （{\bfseries How}の後ろは疑問文の語順）\\
-$\longrightarrow$\,\,\,{\bfseries How is} 単数形? / {\bfseries How are} 複数形?
+\hfill$\HighlightFormula{\text{How} + \text{be動詞} + \text{S ?}}$\\
+\hfill{\scriptsize \textbf{How} are you?}
+%$\longrightarrow$\,\,\,{\bfseries How is} S($=$ 単数形)\,? / {\bfseries How are} S($=$ 複数形)\,?
  \item   文末に`?'をつける / イントネーションは\myDownwardPitch{}
- \item 短縮形 {\bfseries How is} $\longrightarrow$ {\bfseries How's} / {\bfseries How are} $\longrightarrow$ {\bfseries How're}
+ \item 短縮形 {\bfseries How are} $\longrightarrow$ {\bfseries How're} \textipa{/h\'aU\textrhookschwa /}
 \end{itemize}
      \end{block}
 
@@ -115,7 +119,8 @@ $\longrightarrow$\,\,\,{\bfseries How is} 単数形? / {\bfseries How are} 複�
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises 1}
- 日本語の意味になるように、語句を並べ替えましょう。先頭にくる語は大文字で書き始めてください
+
+ {\small 日本語の意味になるように、語句を並べ替えましょう。先頭にくる語は大文字で書き始めてください}
 \begin{enumerate}
  \item ( is / mother / how / your )
 {\small あなたのお母さんはいかがですか？}\\
@@ -127,11 +132,11 @@ $\longrightarrow$\,\,\,{\bfseries How is} 単数形? / {\bfseries How are} 複�
  \item ( is / in / how / the weather / Boston )
 {\small ボストンの天気はどうですか？}\\
 \visible<6->{How is the weather in Boston?}
-\visible<7->{---\begin{tabular}[t]{l@{\,\,\,}ll}
-	      It's& sunny. &{\small (晴れ)} \\
-                  & \visible<8->{cloudy.}&\visible<8->{\small (曇り)}\\
-                  & \visible<9->{rainy.}&\visible<9->{\small (雨)}\\
-                  & \visible<10->{snowy.}&\visible<10->{\small (雪)}
+\visible<7->{---\begin{tabular}[t]{l@{\,\,\,}lll}
+	      It's& sunny. &{\small (晴れた)}&{$<$ sun} \\
+                  & \visible<8->{cloudy.}&\visible<8->{\small (曇った)}&\visible<8->{$< $ cloud}\\
+                  & \visible<9->{rainy.}&\visible<9->{\small (雨降りの)}&\visible<9->{$<$ rain}\\
+                  & \visible<10->{snowy.}&\visible<10->{\small (雪の降る)}&\visible<10->{$<$ snow}
 	     \end{tabular}}
 \end{enumerate}
 \hfill{\tiny 0219}\,{\scriptsize \myaudio{./audio/017_how_03.mp3}}
@@ -164,7 +169,7 @@ She goes to work \alt<4->{\myAnch{FOCUS_3}{orange}{by bus}}{\myAnch{focus_3}{whi
 
 \begin{block}<7->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 疑問詞{\bfseries how}が「どんな風に、どうやって、どんな方法で」の意味になることがあります
+ \item 疑問詞{\bfseries how}が「どうやって、どんな方法で」の意味になることがあります
  \item `{\bfseries How}'を先頭に置いて、疑問文のかたちを続ける\\
 \hfill{}How do you  〜? / How does she 〜? 
  \item   文末に`?'をつける / イントネーションは\myDownwardPitch{}
@@ -194,18 +199,18 @@ She goes to work \alt<4->{\myAnch{FOCUS_3}{orange}{by bus}}{\myAnch{focus_3}{whi
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{\fbox{How $+$ X} どれくらい、どれほど}
+\subsection{\fbox{How $+$ X} どれくらい（程度）}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{How $+$ X}
+\begin{frame}[plain]{How $+$ X どれくらい（程度）}
  \begin{enumerate}
   \item<1-> \fbox{How} are you?
   \item<2-> \fbox{How} do you go to work?
-  \item<3-> \fbox{How old} are you?
+  \item<3-> \fbox{How old} are you?\hfill{\scriptsize どのくらい年をとっているのか $\longrightarrow$\,何歳か}
  \end{enumerate}
 
 \bigskip
 
-\begin{block}<4->{Topics for Today}
+\begin{block}<5->{Topics for Today}
  \begin{itemize}\setbeamertemplate{items}[square]\small
   \item {\bfseries How}が単独ではなく\,\,\fcolorbox{black}{white}{\bfseries How $+$ X\,}\,のように他の語とセットで使われることがあります
   \item この{\bfseries How}は「どのくらい～」と\kenten{程度}をたずねる疑問詞です
