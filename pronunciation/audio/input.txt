@@ -1,2 +1,5 @@
-room<break time="2s"/>food<break time="2s"/>juice<break time="2s"/>blue
-book<break time="2s"/>good<break time="2s"/>cookr<break time="2s"/>put
+fish<break time="2s"/>fish
+peach<break time="2s"/>peach
+green<break time="2s"/>green
+dinner<break time="2s"/>dinner
+teacher<break time="2s"/>teacher

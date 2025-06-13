@@ -1,6 +1,5 @@
-Where is your car?
-Where are my glasses?
-Where do you eat lunch?
-Where does she live?
-Where did they play baseball?
-Where will we meet?
+How old is the building? <break time="2s"/> It is 80 years old.
+How tall is the tower? <break time="2s"/> It is fifty meters.
+How long is the bridge? <break time="2s"/> It is 100 meters.
+How many dogs do you have? <break time="2s"/> I have two.
+How much is the book? <break time="2s"/> It is 10 dollars.
