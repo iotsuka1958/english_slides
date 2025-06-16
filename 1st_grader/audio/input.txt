@@ -1,5 +1,7 @@
-How old is the building? <break time="2s"/> It is 80 years old.
-How tall is the tower? <break time="2s"/> It is fifty meters.
-How long is the bridge? <break time="2s"/> It is 100 meters.
-How many dogs do you have? <break time="2s"/> I have two.
-How much is the book? <break time="2s"/> It is 10 dollars.
+I<break time="1.5s"/> my<break time="1.5s"/>me 
+we<break time="1.5s"/> our<break time="1.5s"/>us 
+you<break time="1.5s"/> your<break time="1.5s"/> you
+he<break time="1.5s"/> his<break time="1.5s"/> him
+she<break time="1.5s"/> her<break time="1.5s"/> her 
+it<break time="1.5s"/> its<break time="1.5s"/> it
+they<break time="1.5s"/> their<break time="1.5s"/> them
