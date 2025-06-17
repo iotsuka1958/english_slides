@@ -8,7 +8,6 @@
 \setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{media9}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% さまざまなアイコン
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -111,18 +110,18 @@
  \item<1-> I played tennis yesterday.\hfill{}{\small 過去のこと}
  \item<2-> I play tennis after school.\hfill{}{\small 現在のこと}
  \item<3-> I \textcolor{Maroon}{\bfseries am going to} {\bfseries play} tennis tomorrow.%
-\hfill\visible<4->{{\kenten{未来}のこと}}
+\hfill\visible<4->{\normalsize {\kenten{未来}のこと}}
 \end{enumerate}
 
 \vfill
 
-\begin{exampleblock}<5->{Topic for Today}
+\begin{block}<5->{Topic for Today}
 \small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item \Circled[fill color=white]{\,$\text{be going to}+\text{原形}$\,}\,は「計画」や「予定」など\kenten{未来}のことを表します\\
+ \item \Circled[fill color=white]{\,$\text{\,be going to}+\text{原形}$\,\,}\,\,は「計画」や「予定」など\kenten{未来}のことを表します\\
 \hfill{}「～するつもりだ」
 \end{itemize}
-\end{exampleblock}
+\end{block}
 \hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/011_be_going_to_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -236,19 +235,20 @@ They ( going / not / a party / to / are / have ) this Friday.\\
 
 \section{be going to--の疑問文}
 \subsection{be going to--の疑問文のつくり方}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{be going to--の疑問文}
 \Large
 
-\visible<1->{They \fbox{\alt<1-3>{\myAnch{be1}{white}{\bfseries are}}{\myAnch{BE1}{orange}{\bfseries are}} \alt<1-3>{\myAnch{going1}{white}{\bfseries going to}}{\myAnch{GOING1}{orange}{\bfseries going to}}} {\bfseries visit} France this summer.}\hfill\visible<1->{{\scriptsize visit \textipa{/v\'IzIt/}訪問する}}
+\visible<1->{They \fbox{\alt<1-3>{\myAnch{be1}{white}{\bfseries are}}{\myAnch{BE1}{Maroon}{\bfseries are}} \alt<1-3>{\myAnch{going1}{white}{\bfseries going to}}{\myAnch{GOING1}{Maroon}{\bfseries going to}}} {\bfseries visit} France this summer.}\hfill\visible<1->{{\scriptsize visit \textipa{/v\'IzIt/}訪問する}}
 
 \vspace{15pt}
 
-\visible<3->{\alt<1-3>{\myAnch{be2}{white}{\bfseries Are}}{\myAnch{BE2}{orange}{\bfseries Are}} they \alt<1-3>{\myAnch{going2}{white}{\bfseries going to}}{\myAnch{GOING2}{orange}{\bfseries going to}} {\bfseries visit} France this summer?} 
+\visible<3->{\alt<1-3>{\myAnch{be2}{white}{\bfseries Are}}{\myAnch{BE2}{Maroon}{\bfseries Are}} they \alt<1-3>{\myAnch{going2}{white}{\bfseries going to}}{\myAnch{GOING2}{Maroon}{\bfseries going to}} {\bfseries visit} France this summer?} 
 
 \visible<4->{%
 \begin{tikzpicture}[remember picture,overlay]
- \draw[thick,orange,->] (be1.south) to[out=-90, in=90] (be2.north);
- \draw[thick,orange,->] (going1.south) to[out=-90, in=90] (going2.north);
+ \draw[line width=2pt, opacity=.5,Maroon,->] (be1.south) to[out=-90, in=90] (be2.north);
+ \draw[line width=2pt, opacity=.5,Maroon,->] (going1.south) to[out=-90, in=90] (going2.north);
 \end{tikzpicture}
 }
 
@@ -263,7 +263,7 @@ They ( going / not / a party / to / are / have ) this Friday.\\
                        Are\\
                        Is
 		      \end{tabular}\right\} + \text{S} + \text{going to 原形\,\ldots\,?}$
- \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch\hfill{\tiny 0118}\,{\scriptsize \myaudio{./audio/011_be_going_to_06.mp3}}
+ \item<4-> 文末に`?'をつける / イントネーションは\myRisingPitch\hfill{\tiny 0118}\,{\scriptsize \myaudio{./audio/011_be_going_to_06.mp3}}
 \end{itemize}
       \end{block}
 \vspace{-12pt}
@@ -387,57 +387,55 @@ They ( going / not / a party / to / are / have ) this Friday.\\
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{What are you --ing?}
-\begin{frame}[plain]{What are you --ing?}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{What are you going to $+$ 原形 ?}
 \Large
 
-\mbox{}\hspace{75pt}%
-You are going to buy a car.
+\mbox{}\hspace{45pt}%
+You are going to buy \alt<4->{\myAnch{FOCUS2}{Maroon}{a car}}{\myAnch{focus2}{white}{a car}}.
 
+\hfill%
+{\small Are you going to buy a car?}\\[-6pt]
+\hfill\visible<3->{{\scriptsize Yes/Noで答える疑問文}}
 
-\pause
-
-\mbox{}\hspace{55pt}%
-Are you going to buy \alt<4->{\myAnch{FOCUS2}{orange}{a car}}{\myAnch{focus2}{white}{a car}}?
-\hspace{10pt}\visible<3->{{\normalsize Yes/Noで答える疑問文}}
-
-\visible<5->{\myAnch{WH2}{orange}{What} are you going to buy?}%
-\hspace{2\zw}\visible<7->{{\small あなたはなにを買うつもりですか。}}
+\visible<5->{\myAnch{WH2}{Maroon}{What} are you going to buy?}%
+\hfill\visible<7->{{\small あなたはなにを買うつもりですか。}}
 
 \vspace{-5pt}
 
 \visible<8->{\hspace{160pt}study}
+\hfill\visible<9->{{\small 勉強する}}\hspace{42pt}\mbox{}
 
 \vspace{-5pt}
 
-\visible<9->{\hspace{160pt}eat}
+\visible<10->{\hspace{160pt}eat}
+\hfill\visible<11->{{\small 食べる}}\hspace{52pt}\mbox{}
 
 \vspace{-5pt}
 
-\visible<10->{\hspace{160pt}{{\small ほかにもいろいろな動詞}}}
+\visible<12->{\hspace{160pt}{{\small \ldots}}}
 
 
-\visible<11->{%
-\begin{exampleblock}{Topic for Today\,\,\,{\textcolor{black}{\mdseries 　　What are you going to --?}}}
+\begin{block}<11->{Topic for Today}
 \small
 
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item  動詞を変えることでいろいろな意味を表せます
 \end{itemize}
-      \end{exampleblock}
-}
+      \end{block}
+
 
 \visible<6->{%
 \begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (focus2.south) to[out=-165, in=15] (WH2.north east);
+ \draw[line width=2pt, opacity=.5,, Maroon, ->] (focus2.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.5]{Whatに置き換えて先頭へ} node[sloped,below,text=black,font=\tiny,pos=.5]{後ろは疑問文の語順}(WH2.north);
 \end{tikzpicture}
 }
-\hfill\myaudio{./audio/011_be_going_to_11.mp3}
+\hfill{\tiny 0219}\,{\scriptsize \myaudio{./audio/011_be_going_to_11.mp3}}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
- あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください\hfill\myaudio{./audio/011_be_going_to_12.mp3}
+ あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください\hfill{\tiny 0204}\,{\scriptsize \myaudio{./audio/011_be_going_to_12.mp3}}
 
 
 \begin{enumerate}
@@ -454,10 +452,8 @@ Are you going to buy \alt<4->{\myAnch{FOCUS2}{orange}{a car}}{\myAnch{focus2}{wh
 ( study / are /  to / What / going / you ) for the exam?\\
 \visible<5->{What are you going to study for the exam?}
 \end{enumerate}
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}[plain]{What are you going to do?}
 \Large
 What are you going to\begin{tabular}[t]{l@{\,}}
@@ -470,18 +466,17 @@ What are you going to\begin{tabular}[t]{l@{\,}}
 	     \end{tabular}
 ? 
 
-\begin{exampleblock}<8->{Topic for Today}
+\begin{block}<8->{Topic for Today}
 \small
 
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item  What are you going to do?\\
 「あなたは何をするつもりですか」という決まり文句として覚えよう
 \end{itemize}
-      \end{exampleblock}
-\hfill\myaudio{./audio/011_be_going_to_13.mp3}
+      \end{block}
+\hfill{\tiny 0215}\,{\scriptsize \myaudio{./audio/011_be_going_to_13.mp3}}
 \end{frame}
-
-
+%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
  あたえられた日本語の意味になるよう英文を作りましょう。
 
@@ -492,18 +487,17 @@ What are you going to\begin{tabular}[t]{l@{\,}}
 4&彼らは何をするつもりですか。 &\visible<5->{What are they going to do?} \\
 \end{tabular}
 
-\begin{exampleblock}<6->{Topic for Today}
+\begin{block}<6->{Topic for Today}
 \small
 
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item  主語によってbe動詞の形が変わることに気をつけよう
 \end{itemize}
-      \end{exampleblock}
-\hfill\myaudio{./audio/011_be_going_to_14.mp3}
+      \end{block}
+\hfill{\tiny 0157}\,{\scriptsize \myaudio{./audio/011_be_going_to_14.mp3}}
 
 \end{frame}
-
-
+%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 Aの質問に対するBの答えがあたえられた内容になるよう英文を書きましょう。
 \begin{enumerate}
@@ -516,11 +510,10 @@ Aの質問に対するBの答えがあたえられた内容になるよう英文
  \item A: What is she going to do?\hspace{2\zw}{\small [公園(the park)で走るつもりです]}\hfill\raisebox{-5pt}{\scalebox{2.5}{\twemoji{woman running}}}\\
        B: \visible<5->{She is going to run in the park.}%
  \end{enumerate} 
-\hfill\myaudio{./audio/011_be_going_to_15.mp3}
+\hfill{\tiny 0256}\,{\scriptsize \myaudio{./audio/011_be_going_to_15.mp3}}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%
 \begin{frame}<1-6>[plain]{what以外の疑問詞を用いて}
 各文の意味について考えましょう。
 
@@ -531,17 +524,17 @@ Aの質問に対するBの答えがあたえられた内容になるよう英文
  \item \alt<1-4>{How long}{\fcolorbox{Orange}{white}{How long}} is he going to stay in Tokyo?
 \end{enumerate}
 
-\begin{exampleblock}<6->{Topic for Today}
+\begin{block}<6->{Topic for Today}
 \small
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item  When(いつ)、Where(どこ)、What time(何時に)、How long(どのくらいの期間)
 \end{itemize}
-      \end{exampleblock}
-\hfill\myaudio{./audio/011_be_going_to_16.mp3}
+      \end{block}
+\hfill{\tiny 0208}\,{\scriptsize \myaudio{./audio/011_be_going_to_16.mp3}}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください\hfill\myaudio{./audio/011_be_going_to_16.mp3}
+あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください\hfill{\tiny 0210}\,{\scriptsize \myaudio{./audio/011_be_going_to_16.mp3}}
 
  \begin{enumerate}
   \item 彼はどこで友達と会うつもりですか。\\
@@ -558,7 +551,7 @@ How ( long/ they / to / study / going / are ) tonight?\\
 \visible<5->{How long are they going to study tonight?} 
  \end{enumerate}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%
 \end{document}
 
 
