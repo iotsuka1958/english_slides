@@ -1,3 +1,7 @@
 file '005_pronoun_1.mp3'
 file 'silent.mp3'
 file '005_pronoun_2.mp3'
+file 'silent.mp3'
+file '005_pronoun_21.mp3'
+file 'silent.mp3'
+file '005_pronoun_3.mp3'

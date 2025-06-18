@@ -1,13 +1,3 @@
-file '017_how_01.mp3'
+file '018_why_01.mp3'
 file 'silent.mp3'
-file '017_how_02.mp3
-file 'silent.mp3'
-file '017_how_03.mp3
-file 'silent.mp3'
-file '017_how_04.mp3'
-file 'silent.mp3'
-file '017_how_05.mp3'
-file 'silent.mp3'
-file '017_how_06.mp3'
-file 'silent.mp3'
-file '017_how_07.mp3'
+file '018_why_01b.mp3
