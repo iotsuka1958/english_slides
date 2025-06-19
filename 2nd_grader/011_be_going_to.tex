@@ -23,6 +23,7 @@
 \usepackage{worldflags}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
+\usetikzlibrary{shapes,decorations.pathmorphing, }
 \usetikzlibrary{backgrounds}
 \usepackage{tcolorbox}
 \usepackage{circledsteps}
@@ -30,6 +31,17 @@
 \usepackage{amsmath}
 \usepackage{pxrubrica}
 \usepackage{tipa}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% テキストにバツ印を付けて出力するための命令 \myCrossedOut を定義
+%% https://zrbabbler.hatenablog.com/entry/20150120/1421760816
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*\myCrossedOut[2]{%
+  \tikz[baseline=(T.base)]
+    \node[draw=#1, thick, shape=cross out, decorate,
+      inner sep=2pt, outer sep=0pt,
+      decoration={random steps, segment length=2pt, amplitude=0.4pt}]
+      (T) {#2};}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -147,41 +159,47 @@ They ( to / going / climb / the mountain / this / are / summer )\\
 \end{frame}
 
 \section{be going to-- の否定}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{否定を表すnot}
+ \Large
 
+否定を表すことば： {\LARGE\bfseries not}\hspace{20pt}\textipa{/n\'At/}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}[plain]{復習}
-%つぎの各文を否定文にしてください\hfill\myaudio{./audio/011_be_going_to_03.mp3}
-%
-% % \setbeamercovered{transparent}
-%  \begin{enumerate}
-%   \item \visible<1->{His mother is a teacher.}\\
-%         \visible<2->{His mother \textcolor{orange}{is not} a teacher.} 
-%         \,\,\,\visible<3->{His mother \textcolor{orange}{isn't} a teacher.}%
-%         \hfill{}\visible<4->{($\text{is not} = \text{isn't}$)}
-%   \item \visible<1->{The room is clean.}\\
-%         \visible<5->{The room \textcolor{orange}{is not} clean.}
-%         \,\,\,\visible<6->{The room \textcolor{orange}{isn't} clean.}%
-%   \item \visible<1->{You are busy.}\\
-%         \visible<7->{You \textcolor{orange}{are not} busy.}
-%         \,\,\,\visible<8->{You \textcolor{orange}{aren't} busy.}%
-%          \hfill{}\visible<9->{($\text{are not} = \text{aren't}$)}
-%   \item \visible<1->{They are students.}\\
-%         \visible<10->{They \textcolor{orange}{are not} students.} 
-%         \,\,\,\visible<11->{They \textcolor{orange}{aren't} students.}%
-%         
-%   \item \visible<1->{I am a doctor.}\\
-%         \visible<12->{I \textcolor{orange}{am not} a doctor.}
-%         \,\,\,\visible<13->{*I \textcolor{olive}{amn't} a doctor.}\,\,\,{}%
-%         \visible<14->{$\longleftarrow$こうはいいません}
-%  \end{enumerate}
-%\end{frame}
+\begin{frame}[plain]{復習}
+つぎの各文を否定文にしてください\hfill{\tiny 0502}\,{\scriptsize \myaudio{./audio/011_be_going_to_03.mp3}}
+
+ % \setbeamercovered{transparent}
+  \begin{enumerate}
+   \item \visible<1->{His mother is a teacher.}\\
+         \visible<2->{His mother \textcolor{Maroon}{is not} a teacher.} 
+         \,\,\,\visible<3->{His mother \textcolor{Maroon}{isn't} a teacher.}%
+         \hfill{}\visible<4->{($\text{is not} = \text{isn't}$)}
+   \item \visible<1->{The room is clean.}\\
+         \visible<5->{The room \textcolor{Maroon}{is not} clean.}
+         \,\,\,\visible<6->{The room \textcolor{Maroon}{isn't} clean.}%
+   \item \visible<1->{You are busy.}\\
+         \visible<7->{You \textcolor{Maroon}{are not} busy.}
+         \,\,\,\visible<8->{You \textcolor{Maroon}{aren't} busy.}%
+          \hfill{}\visible<9->{($\text{are not} = \text{aren't}$)}
+   \item \visible<1->{They are students.}\\
+         \visible<10->{They \textcolor{Maroon}{are not} students.} 
+         \,\,\,\visible<11->{They \textcolor{Maroon}{aren't} students.}%
+         
+   \item \visible<1->{I am a doctor.}\\
+         \visible<12->{I \textcolor{Maroon}{am not} a doctor.}
+         \,\,\,\visible<13->{*I \textcolor{olive}{amn't} a doctor.}\,\,\,{}%
+         \visible<14->{$\longleftarrow$こうはいいません}
+  \end{enumerate}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{復習}%
        \begin{block}{be動詞の否定}
 \begin{itemize}\setbeamertemplate{items}[square]
  \item  be動詞の否定: $\text{be動詞} + \text{\Circled[fill color=white]{\,not\,}}$
- \item  短縮形: aren't($=\text{are not}$)、isn't($=\text{is not}$)
+ \item  短縮形: aren't($=\text{are not}$)、isn't($=\text{is not}$)\hfill\myCrossedOut{Maroon}{amn't}
 % \item  She\textcolor{orange}{'s not} ということもあります
 \end{itemize}
       \end{block}
@@ -214,23 +232,23 @@ They ( to / going / climb / the mountain / this / are / summer )\\
 
 \begin{frame}[plain]{Exercises}
 
- {\small あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください}
+ {\small あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください。ただし不足している１語を各自で補って作成してください}\hfill{\tiny 0214}\,{\scriptsize \myaudio{./audio/011_be_going_to_05.mp3}}
+
 
 \begin{enumerate}
  \item わたしは今夜夕食を作るつもりはありません。\\
-I ( dinner / am / not / going / to / cook ) tonight.\\
+I ( dinner / am / going / to / cook ) tonight.\\
 \hfill\visible<2->{I am not going to cook dinner tonight.}
  \item 彼女は明日友達を訪ねるつもりはありません。\\
-She ( going / visit / her friend / is / not / to ) tomorrow.\\
+She ( going / visit / her friend / not / to ) tomorrow.\\
 \hfill\visible<3->{She is not going to visit her friend tomorrow.}
  \item わたしたちは今日公園に行くつもりはありません。\\
-We ( going / the park / to / not / are / go to ) today.\\
+We ( are / the park / to / not / go to ) today.\\
 \hfill\visible<4->{We are not going to go to the park today.}
  \item 彼らは今週の金曜日にパーティーを開くつもりはありません。\\
-They ( going / not / a party / to / are / have ) this Friday.\\
+They ( not / a party / going / are / have ) this Friday.\\
 \hfill\visible<5->{They are not going to have a party this Friday.}
 \end{enumerate}
-\hfill{\tiny 0214}\,{\scriptsize \myaudio{./audio/011_be_going_to_05.mp3}}
 \end{frame}
 
 \section{be going to--の疑問文}
@@ -363,7 +381,7 @@ They ( going / not / a party / to / are / have ) this Friday.\\
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{be going to---（まとめ）}
+\section{be going to---のまとめ}
 \begin{frame}[plain]{要点}
  
 \begin{block}{\Circled[fill color=white]{\,be going to $+$ 原形\,}}
