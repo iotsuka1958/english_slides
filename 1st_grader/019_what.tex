@@ -62,7 +62,7 @@
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->, line width=3pt, opacity=.5, orange] (focus.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.667]{先頭へ} node[sloped,below,text=black,font=\tiny,pos=.5]{後は疑問文の語順} (wh.north);
+\draw[->, line width=3pt, opacity=.5, orange] (focus.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.5]{whatに置き換えて先頭へ} node[sloped,below,text=black,font=\tiny,pos=.5]{後は疑問文の語順} (wh.north);
 \end{tikzpicture}
 }
 
@@ -104,7 +104,7 @@ You want \alt<4->{\myAnch{FOCUS2}{orange}{pizza}}{\myAnch{focus2}{white}{pizza }
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
- \draw[line width=3pt, opacity=.5, orange, ->] (focus2.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.667]{先頭へ} node[sloped,below,text=black,font=\tiny,pos=.5]{後は疑問文の語順} (WH2.north);
+ \draw[line width=3pt, opacity=.5, orange, ->] (focus2.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.5]{whatに置き換えて先頭へ} node[sloped,below,text=black,font=\tiny,pos=.5]{後は疑問文の語順} (WH2.north);
 \end{tikzpicture}
 }
 
@@ -128,10 +128,9 @@ You want \alt<4->{\myAnch{FOCUS2}{orange}{pizza}}{\myAnch{focus2}{white}{pizza }
 \begin{enumerate}
  \item ( his name / is / what ) ? --- His name is John.\\
 \visible<2->{What is his name?}
- \item ( favorite sport / is / what / your) ? --- I love baseball.%
-\hfill{\scriptsize favorite \textipa{/f\'eIv@r@t/} おきにいりの}\\
-\visible<3->{{What is your favorite sport?}}
- \item (morning / you / drink / do / what / every ) ? --- I drink milk.\\
+ \item ( favorite sport / is / what / your ) ? --- I love baseball.\\
+\visible<3->{{What is your favorite sport?}}\hfill{\scriptsize favorite \textipa{/f\'eIv@r@t/} おきにいりの}
+ \item ( morning / you / drink / do / what / every ) ? --- I drink milk.\\
 \visible<4->{What do  you drink every morning?}
  \item ( does / study / what / she ) every day? --- She studies English.\\
 \visible<5->{What does she study every day?}\end{enumerate}
@@ -169,11 +168,11 @@ You want \alt<4->{\myAnch{FOCUS2}{orange}{pizza}}{\myAnch{focus2}{white}{pizza }
 \visible<2->{What movies do you watch?}
  \item ( books / you / read / what / do ) ? --- I read mystery novels.\hfill{\scriptsize novel \textipa{/n\'Avl/}}\\
 \visible<3->{What books do you read?}
- \item ( hobbies / you / have / do / what ) ?\hfill{}{\scriptsize hobby \textipa{/h\'Abi/}}\\
+ \item ( hobbies / you / have / do / what ) ?\hfill{}{\scriptsize hobby \textipa{/h\'Abi/} 趣味}\\
 \mbox{}\hfill{}--- I have hobbies like painting and reading.\hfill{}{\scriptsize like 〜のような}\\
 \visible<4->{What hobbies do you have?}
  \item ( is / day / what / it )  today? --- It's Saturday.\\
-\visible<5->{What day is it today?}\hfill{}\visible<6->{{\small \textdbend\,What day of the week is it today?}}
+\visible<5->{What day is it today?}\hfill{}\visible<6->{{\small \textdbend\,What day \textbf{of the week} is it today?}}
 \end{enumerate}
 
 \mbox{}\hfill{\tiny 0322}\,{\scriptsize \myaudio{./audio/019_what_05.mp3}}
@@ -181,7 +180,7 @@ You want \alt<4->{\myAnch{FOCUS2}{orange}{pizza}}{\myAnch{focus2}{white}{pizza }
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
 \section{まとめ}
-\begin{frame}[plain]{まとめ}
+\begin{frame}[plain]{疑問詞whatのまとめ}
 
 \begin{block}{疑問詞what \textipa{/w\'At/}}
 \begin{itemize}\setbeamertemplate{items}[square]\small

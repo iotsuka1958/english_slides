@@ -9,6 +9,7 @@
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{Whose bag is this?}
@@ -46,36 +47,41 @@
 
 \vfill
 
-\visible<8->{%
-\begin{exampleblock}{Topic for Today}
+\begin{block}<8->{Topics for Today}
 \pause
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 同じ名詞の繰り返しを避けてmine(わたしのもの)、yours(あなたのもの)などということがあります
+ \item 同じ名詞の繰り返しを避けて\\
+mine（わたしのもの）、yours（あなたのもの）、his（彼のもの）、hers（彼女のもの）\\
+などということがあります
+ \item mine, yoursなどを\kenten{所有代名詞}といいます
+\item 所有代名詞 $=$ \Circled[fill color=white]{\,所有格 $+$ 名詞\,}
 \end{itemize}
-     \end{exampleblock}
-}
+     \end{block}
 
-\hfill{\scriptsize \myaudio{./audio/020_whose_01.mp3}}
+\hfill{\tiny 0156}\,{\scriptsize \myaudio{./audio/020_whose_01.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=table]{〜のもの(所有代名詞)}
  
  \begin{center}
- \rowcolors{1}{NavyBlue!50}{yellow!40}
+ \rowcolors{1}{NavyBlue!40}{yellow!40}
 \begin{tabular}{llll}\toprule
 \rowcolor{white}&主格&所有格&所有代名詞\\\midrule
-1人称&I&my&\visible<2->{mine}\\
-&we&our&\visible<3->{ours}\\
-2人称&you&your&\visible<4->{yours}\\
-3人称&he&his&\visible<5->{his}\\
-&she&her&\visible<6->{hers}\\
-&they&their&\visible<7->{theirs}\\
+1人称&I&my&\visible<2->{mine \textipa{/m\'aIn/}}\\
+&we&our&\visible<3->{ours \textipa{/\'aU\textrhookschwa z/}}\\
+2人称&you&your&\visible<4->{yours \textipa{/j\'U\textrhookschwa z/}}\\
+ 3人称&he&his&\visible<5->{his \textipa{/h\'Iz/}}\\
+&she&her&\visible<6->{hers \textipa{/h\'\textrhookschwa :z/}}\\
+&they&their&\visible<7->{theirs \textipa{/D\'e\textrhookschwa z/}}\\
 \bottomrule
 \end{tabular}
 \end{center}
 
 \hfill{}\visible<8->{mine以外はすべてsで終わっていますね}
+
+\hfill{\tiny 0336}\,{\scriptsize \myaudio{./audio/020_whose_01b.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{ジェニファーのもの、わたしのおじのもの}
@@ -85,17 +91,15 @@
  \item These books are \myEmph{Maroon}{my uncle's}.
 \end{enumerate}
 
-\visible<2->{%
-\begin{exampleblock}{Topic for Today}
+\begin{block}<2->{Topic for Today}
 \pause
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「ジェニファーのもの」「私のおじのもの」などの場合は、
 \Circled[fill color=white]{\,\,名詞 's\,\,}\,とします
 \end{itemize}
-     \end{exampleblock}
-}
+     \end{block}
 
-\hfill{\scriptsize \myaudio{./audio/020_whose_02.mp3}}
+\hfill{\tiny 0114}\,{\scriptsize \myaudio{./audio/020_whose_02.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,11 +112,9 @@
   \item These cats are ( Billy ).\hfill\visible<5->{\makebox[40pt][l]{Billy's}\hspace{180pt}\mbox{}}
  \end{enumerate}
 
-\hfill{\scriptsize \myaudio{./audio/020_whose_03.mp3}}
+\hfill{\tiny 0157}\,{\scriptsize \myaudio{./audio/020_whose_03.mp3}}
 
 \end{frame}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{whose \textipa{/h\'u:z/}}
 \subsection{Whose bag is this?}
@@ -126,11 +128,11 @@
 
 \vspace{7pt}
 
-\mbox{}\hfill{}cf. \myEmph[6-]{Maroon}{Is this} her bag?%
+\mbox{}\hfill{}{\small cf. \myEmph[6-]{Maroon}{Is this} her bag?}%
 
 \vspace{-5pt}
 
-\hfill{\small YesまたはNoで答える疑問文}
+\hfill{\small Yes / Noで答える疑問文}
 
 \pause
 
@@ -143,21 +145,20 @@
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->,line width=3pt, opacity=.5, orange] (focus.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.667]{先頭へ} (wh.north);
+\draw[->,line width=3pt, opacity=.5, orange] (focus.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.55]{\Circled{whose $+$名詞}にして先頭へ} node[sloped,below,text=black,font=\tiny,pos=.55]{後は疑問文の語順} (wh.north);
 \end{tikzpicture}
 }
 
-\visible<7->{%
-\begin{exampleblock}{Topics for Today}
+\begin{block}<7->{Topics for Today}
 \pause
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 「だれの？」と聞くとき$\longrightarrow$\,\,\,Whose 〜?
- \item  \fcolorbox{black}{white}{$\text{Whose} + \text{名詞}$}\,\,がひとかたまりで先頭にきます（後ろは疑問文の語順）
+ \item 「だれの？」と聞くとき$\longrightarrow$\,\,\,Whose 〜? \textipa{/h\'u:z/}
+ \item  \fcolorbox{black}{white}{$\text{Whose} + \text{名詞}$}\,\,がひとかたまりで先頭にきます / 後ろは疑問文の語順
 \end{itemize}
-     \end{exampleblock}
-}
+     \end{block}
+
 \vspace{-10pt}
-\hfill{\scriptsize \myaudio{./audio/020_whose_04.mp3}}
+\hfill{\tiny 0131}\,{\scriptsize \myaudio{./audio/020_whose_04.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
@@ -166,17 +167,17 @@
 \begin{frame}[plain]{だれの} \Large
 
 \mbox{}\hspace{55pt}You like \alt<3->{\myAnch{FOCUS}{orange}{Spielberg's movies}}{\myAnch{focus}{white}{Spielberg's movies}}.%
-\hfill{}{\scriptsize Spielberg 米国の映画監督}
+\hfill{}{\scriptsize Spielberg \textipa{/sp\'\i:lb\textrhookschwa :g/} 米国の映画監督}
 
 \pause
 
 \vspace{7pt}
 
-\mbox{}\hfill{}cf. \myEmph[6-]{Maroon}{Do you like} Spielberg's movies?%
+\mbox{}\hfill{}{\small cf. \myEmph[6-]{Maroon}{Do you like} Spielberg's movies?}%
 
 \vspace{-5pt}
 
-\hfill{\small YesまたはNoで答える疑問文}
+\hfill{\small Yes / Noで答える疑問文}
 
 \pause
 
@@ -189,21 +190,20 @@
 
 \visible<5->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[->,line width=3pt, opacity=.5, orange] (focus.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.667]{先頭へ} (wh.north);
+\draw[->,line width=3pt, opacity=.5, orange] (focus.south) to[out=-90, in=90]node[sloped,above,text=black,font=\tiny,pos=.55]{\Circled{whose $+$名詞}にして先頭へ} node[sloped,below,text=black,font=\tiny,pos=.55]{後は疑問文の語順} (wh.north);
 \end{tikzpicture}
 }
 
-\visible<7->{%
-\begin{exampleblock}{Topics for Today}
+\begin{block}{Topics for Today}
 \pause
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 「だれの～を」と聞くとき$\longrightarrow$\,\,\,Whose 〜?
- \item  \fcolorbox{black}{white}{$\text{Whose} + \text{名詞}$}\,\,がひとかたまりで先頭にきます（後ろは疑問文の語順）
+ \item 「だれの～を」と聞くとき$\longrightarrow$\,\,\,Whose 〜? \textipa{/h\'u:z/}
+ \item  \fcolorbox{black}{white}{$\text{Whose} + \text{名詞}$}\,\,がひとかたまりで先頭にきます / 後ろは疑問文の語順
 \end{itemize}
-     \end{exampleblock}
-}
+     \end{block}
+
 \vspace{-10pt}
-\hfill{\scriptsize \myaudio{./audio/020_whose_04b.mp3}}
+\hfill{\tiny 0138}\,{\scriptsize \myaudio{./audio/020_whose_04b.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
@@ -222,7 +222,7 @@
 	\visible<5->{Whose cell phone is this? --- It's mine.}
  \end{enumerate}
 
-\hfill{\scriptsize \myaudio{./audio/020_whose_05.mp3}}
+\hfill{\tiny 0315}\,{\scriptsize \myaudio{./audio/020_whose_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-5>[plain]{Exercises}
@@ -240,30 +240,31 @@ Whose car (\alt<1-3>{~~\phantom{does}~~}{~~does~~}) (\alt<1-3>{~~\phantom{she}~~
 (\alt<1-4>{~~\phantom{Whose}~~}{~~Whose~~}) songs (\alt<1-4>{~~\phantom{do}~~}{~~do~~}) you (\alt<1-4>{~~\phantom{like}~~}{~~like~~})?
 \end{enumerate}
 
-\hfill{\scriptsize \myaudio{./audio/020_whose_05b.mp3}}
+\hfill{\tiny 0156}\,{\scriptsize \myaudio{./audio/020_whose_05b.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
-\section{まとめ}
+\section{疑問詞whoseのまとめ}
 \begin{frame}[plain]{まとめ}
- \begin{exampleblock}{所有代名詞}
+ \begin{block}{所有代名詞 $=$ 所有格 $+$ 名詞}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 同じ名詞の繰り返しを避けてmine(わたしのもの)、yours(あなたのもの)などということがあります\hfill{\scriptsize Is this bike {\bfseries yours} or {\bfseries his}?}
+ \item 同じ名詞の繰り返しを避けて\textbf{mine}(わたしのもの)、\textbf{yours}(あなたのもの)などということがあります\hfill{\scriptsize Is this bike {\bfseries yours} or {\bfseries his}?}
+ \item \textbf{mine, yours}などを\kenten{所有代名詞}といいます
  \item 「ジェニファーのもの」「私の母のもの」などの場合は、
 \Circled[fill color=white]{\,\,名詞 's\,\,}\,とします\\
 \hfill{\scriptsize This car is {\bfseries Jennifer's}.}\\
 \hfill{\scriptsize These books are {\bfseries my mother's}.}
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
 \pause
-\begin{exampleblock}{疑問詞whose \textipa{/h\'u:z/}}
+\begin{block}{疑問詞whose \textipa{/h\'u:z/}}
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「だれの～？」と聞くとき$\longrightarrow$\,\,\,{\bfseries Whose} 〜?
- \item  \fcolorbox{black}{white}{$\text{{\bfseries Whose}} + \text{名詞}$}\,\,がひとかたまりで先頭にきます（後ろは疑問文の語順）
+ \item  \fcolorbox{black}{white}{$\text{{\bfseries Whose}} + \text{名詞}$}\,\,がひとかたまりで先頭にきます / 後ろは疑問文の語順
  \item {\bfseries whose} \textipa{/h\'u:z/}\hfill{\scriptsize {\bfseries Whose} bag is this?}\\\hfill{\scriptsize {\bfseries Whose} movies do you like?}
 \end{itemize}
-     \end{exampleblock}
-\hfill{\scriptsize \myaudio{./audio/020_whose_06.mp3}}
+     \end{block}
+\hfill{\tiny 0221}\,{\scriptsize \myaudio{./audio/020_whose_06.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%

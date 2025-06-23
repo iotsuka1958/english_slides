@@ -1,0 +1,19 @@
+cp pronunciation/audio/vowel_short_i_05.mp3 3rd_grader/upload_archive/20250624/pronunciation_20250624.mp3
+cp pronunciation/audio/vowel_it_eat_01.mp3 3rd_grader/upload_archive/20250625/pronunciation_20250625.mp3
+cp pronunciation/audio/vowel_ship_sheep_01.mp3 3rd_grader/upload_archive/20250626/pronunciation_20250626.mp3
+cp pronunciation/audio/vowel_seat_sit_01.mp3 3rd_grader/upload_archive/20250627/pronunciation_20250627.mp3
+
+cp pronunciation/audio/vowel_like_u_01.mp3 3rd_grader/upload_archive/20250701/pronunciation_20250701.mp3
+cp pronunciation/audio/vowel_long_u_01.mp3 3rd_grader/upload_archive/20250702/pronunciation_20250702.mp3
+cp pronunciation/audio/vowel_long_u_02.mp3 3rd_grader/upload_archive/20250703/pronunciation_20250703.mp3
+cp pronunciation/audio/vowel_long_u_03.mp3 3rd_grader/upload_archive/20250704/pronunciation_20250704.mp3
+
+cp pronunciation/audio/vowel_long_u_04.mp3 3rd_grader/upload_archive/20250708/pronunciation_20250708.mp3
+cp pronunciation/audio/vowel_long_u_05.mp3 3rd_grader/upload_archive/20250709/pronunciation_20250709.mp3
+cp pronunciation/audio/vowel_short_u_01.mp3 3rd_grader/upload_archive/20250710/pronunciation_20250710.mp3
+cp pronunciation/audio/vowel_short_u_02.mp3 3rd_grader/upload_archive/20250711/pronunciation_20250711.mp3
+
+cp pronunciation/audio/vowel_short_u_03.mp3 3rd_grader/upload_archive/20250715/pronunciation_20250715.mp3
+cp pronunciation/audio/vowel_short_u_04.mp3 3rd_grader/upload_archive/20250716/pronunciation_20250716.mp3
+cp pronunciation/audio/vowel_short_u_05.mp3 3rd_grader/upload_archive/20250717/pronunciation_20250717.mp3
+cp pronunciation/audio/vowel_pool_pull_01.mp3 3rd_grader/upload_archive/20250718/pronunciation_20250718.mp3

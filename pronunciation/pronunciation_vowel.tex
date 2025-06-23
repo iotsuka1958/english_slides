@@ -3,7 +3,6 @@
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\emph}[1]{{\upshape\bfseries #1}}
 \usetheme{metropolis}
-\usetheme{metropolis}
 \metroset{block=fill}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{navigation symbols}{}
@@ -908,7 +907,7 @@ cat（ネコ）またはcut（切る）を発音していきます。どちら�
  \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
 \end{tikzpicture}
 
-\hfill{\tiny }\,{\scriptsize \myaudio{./audio/vowel_cat_cut_01.mp3}}
+\hfill{\tiny 0153}\,{\scriptsize \myaudio{./audio/vowel_cat_cut_01.mp3}}
 
 
 \end{frame}
@@ -1242,8 +1241,6 @@ laughing
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 2}
-\hypertarget{ex}{}
-
  発音記号\textipa{/I/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
 
 \LARGE
@@ -1259,6 +1256,7 @@ laughing
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 3}
+\hypertarget{ex}{}
 
  発音記号\textipa{/I/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
 
@@ -1274,6 +1272,131 @@ laughing
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 4}\large
+
+it（それ）またはeat（たべる）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{it}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{eat}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{it}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{eat}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{eat}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{it}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& it &\textipa{/\'It/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& eat &\textipa{/\'\i:t/}\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0135}\,{\scriptsize \myaudio{./audio/vowel_it_eat_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 5}\large
+
+ship（船）またはsheep（ヒツジ）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{sheep}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{ship}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{sheep}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{ship}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{ship}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{sheep}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{ll@{　　}l}
+     \myAnch{a1}{white}{\textbullet}& sheep &\textipa{/S\'i:p/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& ship &\textipa{/S\'Ip/}\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/vowel_ship_sheep_01.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 6}\large
+
+seat（座席）またはsit（座る）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{sit}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{seat}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{seat}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{sit}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{seat}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{sit}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& seat& \textipa{/s\'\i:t/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& sit& \textipa{/s\'It/}  \\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge, NavyBlue] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a1.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a2.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0139}\,{\scriptsize \myaudio{./audio/vowel_seat_sit_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{「ウ」の類の母音}
@@ -1324,10 +1447,9 @@ xshift=80pt, scale=.3, yshift=50pt]
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{\textipa{/u:/}}
+\begin{frame}[plain]{長母音 \textipa{/u:/}}
 
-\Huge
- \textipa{/u:/}
+{\Large 長母音} {\Huge\textipa{/u:/}}
 
 \vspace*{20pt}
 
@@ -1335,7 +1457,7 @@ xshift=80pt, scale=.3, yshift=50pt]
 ポイント
 
 \begin{itemize}
- \item 唇をしっかり丸めて、前に突き出す
+ \item 唇をしっかり丸めて
  \item 長めに
 \end{itemize}
 \end{frame}
@@ -1439,10 +1561,9 @@ xshift=80pt, scale=.3, yshift=50pt]
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{\textipa{/U/}}
+\begin{frame}[plain]{短母音 \textipa{/U/}}
 
-\Huge
- \textipa{/U/}
+ {\Large 短母音} {\Huge \textipa{/U/}}
 
 \vspace*{20pt}
 
@@ -1450,8 +1571,8 @@ xshift=80pt, scale=.3, yshift=50pt]
 ポイント
 
 \begin{itemize}
- \item 「オ」の口で「ウ」
- \item 力を抜いて短く
+ \item \<「オ」の口で「ウ」
+ \item 力を抜いて短く（ぞんざいに）
 \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1536,6 +1657,97 @@ xshift=80pt, scale=.3, yshift=50pt]
 \hfill{\tiny 0107}\,{\scriptsize \myaudio{./audio/vowel_short_u_05.mp3}}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+
+pool（プール）またはpull（ひっぱる）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{pull}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{pool}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{pool}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{pull}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{pool}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{pull}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& pool& \textipa{/p\'u:l/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& pull& \textipa{/p\'Ul/}  \\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge, NavyBlue] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a1.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a2.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/vowel_pool_pull_01.mp3}}
+
+\hfill{\scriptsize He \textbf{pull}ed the rope. 彼はロープを引っ張った}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+
+full（いっぱいの）またはfool（愚か者）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{fool}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{full}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{fool}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{full}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{full}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{fool}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{ll@{　　}l}
+     \myAnch{a1}{white}{\textbullet}& fool &\textipa{/f\'u:l/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& full &\textipa{/f\'Ul/}\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0141}\,{\scriptsize \myaudio{./audio/vowel_full_fool_01.mp3}}
+
+\hfill{\scriptsize The case was \textbf{full} of clothes. そのケースは衣類でいっぱいだった}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{図解}
 \centering

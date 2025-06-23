@@ -1,7 +1,6 @@
-I<break time="1.5s"/> my<break time="1.5s"/>me 
-we<break time="1.5s"/> our<break time="1.5s"/>us 
-you<break time="1.5s"/> your<break time="1.5s"/> you
-he<break time="1.5s"/> his<break time="1.5s"/> him
-she<break time="1.5s"/> her<break time="1.5s"/> her 
-it<break time="1.5s"/> its<break time="1.5s"/> it
-they<break time="1.5s"/> their<break time="1.5s"/> them
+mine<break time="2s"/>mine
+ours<break time="2s"/>ours
+yours<break time="2s"/>yours
+his<break time="2s"/>his
+hers<break time="2s"/>hers
+theirs<break time="2s"/>theirs

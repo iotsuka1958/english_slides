@@ -1,5 +1,6 @@
-fish<break time="2s"/>fish
-peach<break time="2s"/>peach
-green<break time="2s"/>green
-dinner<break time="2s"/>dinner
-teacher<break time="2s"/>teacher
+it<break time="2s"/>it
+eat<break time="2s"/>eat
+it<break time="2s"/>it
+eat<break time="2s"/>eat
+eat<break time="2s"/>eat
+it<break time="2s"/>it
