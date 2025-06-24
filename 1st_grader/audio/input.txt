@@ -1,6 +1,4 @@
-mine<break time="2s"/>mine
-ours<break time="2s"/>ours
-yours<break time="2s"/>yours
-his<break time="2s"/>his
-hers<break time="2s"/>hers
-theirs<break time="2s"/>theirs
+What is your favorite sport?
+What do you eat for breakfast?
+What books do you like?
+What day is it today?<break time="2s"/>What day of the week is it today?

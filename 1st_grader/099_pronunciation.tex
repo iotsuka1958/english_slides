@@ -18,6 +18,7 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide}
+\usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \AtBeginSection[%
@@ -324,31 +325,66 @@ b\myEmph[2-]{BurntOrange}{u}s
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
 \section{有声音と無声音}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{実験}\Large
+ \begin{itemize}\setbeamertemplate{items}[circle]
+  \item<2-> アーイーウーエーオー\hfill\visible<3->{\kenten{声}がでている}
+  \item<4-> シー！（お静かにというとき）\hfill\visible<5->{\kenten{声}がでてない}
+ \end{itemize}
+
+\bigskip
+
+\visible<6->{では喉に手をあててもう1回やってみましょう}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{有声音と無声音}
 \large
  \begin{description}
   \item[有声音: ] \onslide<1->{声帯がふるえる音}
                   \onslide<3->{%
                   \begin{itemize}\setbeamertemplate{items}[circle]\small
-		   \item \onslide<3->{すべての母音}
-		   \item \onslide<4->{一部の子音}\hspace{25pt}\onslide<5->{{\small たとえば \textipa{/b/}\,\,\,\textipa{/d/}\,\,\,\textipa{/g/}\,\,\,\textipa{/v/}\,\,\,\textipa{/z/}}}
+		   \item \onslide<3->{すべての母音}\hspace{25pt}アイウエオ
+%		   \item \onslide<4->{一部の子音}\hspace{35pt}\onslide<5->{{\small たとえば \textipa{/b/}\,\,\,\textipa{/d/}\,\,\,\textipa{/g/}\,\,\,\textipa{/v/}\,\,\,\textipa{/z/}}}
+		   \item \onslide<4->{一部の子音}\hspace{35pt}\onslide<5->{{\small たとえば、バの子音、ガの子音、ザの子音、ダの子音}}
 		  \end{itemize}}
   \item[無声音: ] \onslide<2->{声帯がふるえない音}
                   \onslide<6->{%
                   \begin{itemize}\setbeamertemplate{items}[circle]\small
-		   \item 一部の子音\hspace{25pt}\onslide<7->{{\small たとえば \textipa{/p/}\,\,\,\textipa{/t/}\,\,\,\textipa{/k/}\,\,\,\textipa{/f/}\,\,\,\textipa{/s/}}}
+%		   \item 一部の子音\hspace{35pt}\onslide<7->{{\small たとえば \textipa{/p/}\,\,\,\textipa{/t/}\,\,\,\textipa{/k/}\,\,\,\textipa{/f/}\,\,\,\textipa{/s/}}}
+		   \item 一部の子音\hspace{35pt}\onslide<7->{{\small たとえば、パの子音、カの子音、サの子音、タの子音}}
 		  \end{itemize}}
  \end{description}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{有声音と無声音の区別法}
- \Large
-\begin{description}
- \item[方法1：] \onslide<2->{喉に手をあてる}\,\,\,\,\,\,\,\onslide<3->{$\longrightarrow$ ふるえたら「有声音」}
- \item[方法2：] \onslide<4->{耳を両手でふさぐ}\,\onslide<5->{$\longrightarrow$ 反響したら「有声音」}
-\end{description}
-\end{frame}
+%\begin{frame}[plain]{有声音と無声音の区別法}
+% \Large
+%\begin{description}
+% \item[方法1：] \onslide<2->{喉に手をあてる}\,\,\,\,\,\,\,\onslide<3->{$\longrightarrow$ ふるえたら「有声音」}
+% \item[方法2：] \onslide<4->{耳を両手でふさぐ}\,\onslide<5->{$\longrightarrow$ 反響したら「有声音」}
+%\end{description}
+%\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{英語の有声音と無声音}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{有声音と無声音}
+\large
+ \begin{description}
+  \item[有声音: ] \onslide<1->{声帯がふるえる音}
+                  \onslide<3->{%
+                  \begin{itemize}\setbeamertemplate{items}[circle]\small
+		   \item \onslide<3->{すべての母音}\hspace{25pt}アイウエオ
+		   \item \onslide<4->{一部の子音}\hspace{35pt}\onslide<5->{{\small たとえば \textipa{/b/}\,\,\,\textipa{/d/}\,\,\,\textipa{/g/}\,\,\,\textipa{/v/}\,\,\,\textipa{/z/}}}
+%		   \item \onslide<4->{一部の子音}\hspace{35pt}\onslide<5->{{\small たとえば、バの子音、ガの子音、ザの子音、ダの子音}}
+		  \end{itemize}}
+  \item[無声音: ] \onslide<2->{声帯がふるえない音}
+                  \onslide<6->{%
+                  \begin{itemize}\setbeamertemplate{items}[circle]\small
+		   \item 一部の子音\hspace{35pt}\onslide<7->{{\small たとえば \textipa{/p/}\,\,\,\textipa{/t/}\,\,\,\textipa{/k/}\,\,\,\textipa{/f/}\,\,\,\textipa{/s/}}}
+%		   \item 一部の子音\hspace{35pt}\onslide<7->{{\small たとえば、パの子音、カの子音、サの子音、タの子音}}
+		  \end{itemize}}
+ \end{description}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{有声音と無声音のペア}
 \Large 
  \begin{enumerate}
