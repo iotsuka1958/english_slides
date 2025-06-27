@@ -25,6 +25,7 @@
 \usetikzlibrary{ducks}
 \usepackage{scsnowman}
 \usepackage{tikzlings}
+\usepackage{figchild}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter
 \newcommand*{\themonth}{\two@digits\month}
@@ -1141,7 +1142,6 @@ laughing
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\hypertarget{today}{}
 
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}\pause
@@ -1176,7 +1176,6 @@ laughing
 ]
 \end{tikzpicture}}
 
-\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1272,8 +1271,6 @@ laughing
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 4}\large
-\hypertarget{ex}{}
-
 it（それ）またはeat（たべる）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
 
 \bigskip
@@ -1315,7 +1312,7 @@ it（それ）またはeat（たべる）を発音していきます。どちら
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Quiz 5}\large
+\begin{frame}[plain]{Quiz 5\,\,\,\,\,\,\textipa{/i:/ or \textipa{/I/}}}\large
 
 ship（船）またはsheep（ヒツジ）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
 
@@ -1335,9 +1332,9 @@ ship（船）またはsheep（ヒツジ）を発音していきます。どち�
 %%%%%%%%%%%
    \begin{column}{.45\textwidth}
     \begin{tabular}{ll@{　　}l}
-     \myAnch{a1}{white}{\textbullet}& sheep &\textipa{/S\'i:p/}\\
+     \myAnch{a1}{white}{\textbullet}& \fcSheep{.35}{black}{1} &\textipa{/S\'\i:p/}\\
      &\\
-     \myAnch{a2}{white}{\textbullet}& ship &\textipa{/S\'Ip/}\\
+     \myAnch{a2}{white}{\textbullet}& \fcShip{.3}{black}{1} &\textipa{/S\'Ip/}\\
     \end{tabular}
    \end{column}
  \end{columns}
@@ -1357,6 +1354,9 @@ ship（船）またはsheep（ヒツジ）を発音していきます。どち�
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 6}\large
+\hypertarget{today}{}
+%%%%\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
+%%%\hypertarget{ex}{}
 
 seat（座席）またはsit（座る）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
 

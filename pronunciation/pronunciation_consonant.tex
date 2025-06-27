@@ -107,7 +107,7 @@
 
 \hyperlink{today}{\beamergotobutton{Today's Pronunciation}}
 
-\hyperlink{quiz}{\beamergotobutton{3rd}}
+%\hyperlink{quiz}{\beamergotobutton{3rd}}
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -243,6 +243,8 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
+\hypertarget{today}{}
+
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}\pause
 
@@ -257,29 +259,34 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 \large
 
 \begin{enumerate}
- \item 無声音 \textipa{/p/}\hspace{20pt}\underLine{p}ig,\hspace{1\zw}cu\underLine{p},\hspace{1\zw}\underLine{p}a\underLine{p}er
- \item  有声音 \textipa{/b/}\hspace{20pt}\underLine{b}ig,\hspace{1\zw}jo\underLine{b},\hspace{1\zw}num\underLine{b}er
+ \item<2-> 無声音 \textipa{/p/}\hspace{20pt}\underLine{p}ig,\hspace{1\zw}cu\underLine{p},\hspace{1\zw}\underLine{p}a\underLine{p}er
+ \item<3->  有声音 \textipa{/b/}\hspace{20pt}\underLine{b}ig,\hspace{1\zw}jo\underLine{b},\hspace{1\zw}num\underLine{b}er
 \end{enumerate}
 
 \vspace*{20pt}
 
 \normalsize
-ポイント
+\visible<5->{ポイント
 
-\begin{itemize}
- \item しっかりと口を閉じて、空気が口の外へ漏れないように
- \item 一気に唇を離して空気をいきおいよく口の外へ出す
+\begin{itemize}\setbeamertemplate{items}[circle]
+ \item<5-> しっかりと口を閉じて、空気が口の外へ漏れないように
+ \item<6-> 一気に唇を離して空気をいきおいよく口の外へ出す
+ \item<7-> \textipa{/p/と\textipa{/b/}}のちがいは声の有無だけ（口の動きはまったく同じ）
 \end{itemize}
+}
 
-\textipa{/p/} はパの子音
+\bigskip
 
-\hfill\myaudio{./audio/consonant_p_b_01.mp3}
+\visible<2->{\textipa{/p/} はパ行の子音、}\visible<3->{\textipa{/b/} はバ行の子音}
+
+
+\hfill{\tiny 0205}\,{\scriptsize \myaudio{./audio/consonant_p_b_01.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
- {\small \textipa{/p/}の音を含む英単語}\hfill\myaudio{./audio/consonant_p_b_02.mp3}
+ {\small \textipa{/p/}の音を含む英単語}\hfill{\tiny 0508}\,{\scriptsize \myaudio{./audio/consonant_p_b_02.mp3}}
 
 \begin{enumerate}
  \item\textcolor{NavyBlue}{\bfseries p}ig%
@@ -304,7 +311,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/b/}の音を含む英単語}\hfill\myaudio{./audio/consonant_p_b_03.mp3}
+{\small \textipa{/b/}の音を含む英単語}\hfill{\tiny 0506}\,{\scriptsize \myaudio{./audio/consonant_p_b_03.mp3}}
 
 \begin{enumerate}
  \item\textcolor{NavyBlue}{\bfseries b}ig%
@@ -340,7 +347,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{F}\hspace{1\zw}\visible<11->{dog}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_p_b_04.mp3}
+\hfill{\tiny 0146}\,{\scriptsize \myaudio{./audio/consonant_p_b_04.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz \textipa{/b/}}
@@ -354,7 +361,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{number}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_p_b_05.mp3}
+\hfill{\tiny 0144}\,{\scriptsize \myaudio{./audio/consonant_p_b_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamercolor{background canvas}{bg=}
@@ -402,14 +409,14 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 
 \textipa{/t/}はタの子音
 
-\hfill\myaudio{./audio/consonant_t_d_01.mp3}
+\hfill{\tiny 0207}\,{\scriptsize \myaudio{./audio/consonant_t_d_01.mp3}}
 
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/t/}の音を含む英単語}\hfill\myaudio{./audio/consonant_t_d_02.mp3}
+{\small \textipa{/t/}の音を含む英単語}\hfill{\tiny 0506}\,{\scriptsize \myaudio{./audio/consonant_t_d_02.mp3}}
 
 
 \begin{enumerate}
@@ -440,7 +447,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/d/}の音を含む英単語}\hfill\myaudio{./audio/consonant_t_d_03.mp3}
+{\small \textipa{/d/}の音を含む英単語}\hfill{\tiny 0508}\,{\scriptsize \myaudio{./audio/consonant_t_d_03.mp3}}
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries d}o
@@ -479,7 +486,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{F}\hspace{1\zw}\visible<11->{good}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_t_d_04.mp3}
+\hfill{\tiny 0145}\,{\scriptsize \myaudio{./audio/consonant_t_d_04.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -494,9 +501,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{good}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_t_d_05.mp3}
-
-
+\hfill{\tiny 0144}\,{\scriptsize \myaudio{./audio/consonant_t_d_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
@@ -537,13 +542,13 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 
 \textipa{/k/} はカの子音
 
-\hfill\myaudio{./audio/consonant_k_g_01.mp3}
+\hfill{\tiny 0206}\,{\scriptsize \myaudio{./audio/consonant_k_g_01.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/k/}の音を含む英単語}\hfill\myaudio{./audio/consonant_k_g_02.mp3}
+{\small \textipa{/k/}の音を含む英単語}\hfill{\tiny 0509}\,{\scriptsize \myaudio{./audio/consonant_k_g_02.mp3}}
 
 
 \begin{enumerate}
@@ -573,7 +578,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/g/}の音を含む英単語}\hfill\myaudio{./audio/consonant_k_g_03.mp3}
+{\small \textipa{/g/}の音を含む英単語}\hfill{\tiny 0509}\,{\scriptsize \myaudio{./audio/consonant_k_g_03.mp3}}
 
 
 \begin{enumerate}
@@ -612,9 +617,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{kind}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_k_g_04.mp3}
-
-
+\hfill{\tiny 0146}\,{\scriptsize \myaudio{./audio/consonant_k_g_04.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz \textipa{/g/}}
@@ -628,8 +631,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{again}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_k_g_05.mp3}
-
+\hfill{\tiny 0145}\,{\scriptsize \myaudio{./audio/consonant_k_g_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
@@ -681,13 +683,12 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
  \item 上の前歯と下唇の隙間から、空気を出します
 \end{itemize}
 
-\hfill\myaudio{./audio/consonant_f_v_01.mp3}
-
+\hfill{\tiny 0208}\,{\scriptsize \myaudio{./audio/consonant_f_v_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう \textipa{/f/}}
 \Large
-{\small \textipa{/f/}の音を含む英単語}\hfill\myaudio{./audio/consonant_f_v_02.mp3}
+{\small \textipa{/f/}の音を含む英単語}\hfill{\tiny 0514}\,{\scriptsize \myaudio{./audio/consonant_f_v_02.mp3}}
 
 
 \begin{enumerate}
@@ -710,16 +711,13 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 
 % \item bir\textcolor{NavyBlue}{\bfseries d}
 %\hfill\makebox[80pt][l]{\textipa{/b\'\textrhookschwa :\textcolor{BurntOrange}{d}/}}\hspace{150pt}\mbox{}
-
 \end{enumerate}
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう \textipa{/v/}}
 \Large
-{\small \textipa{/v/}の音を含む英単語}\hfill\myaudio{./audio/consonant_f_v_03.mp3}
-
+{\small \textipa{/v/}の音を含む英単語}\hfill{\tiny 0511}\,{\scriptsize \myaudio{./audio/consonant_f_v_03.mp3}}
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries v}ase
@@ -756,8 +754,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{fifteen}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_f_v_04.mp3}
-
+\hfill{\tiny 0148}\,{\scriptsize \myaudio{./audio/consonant_f_v_04.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 2 \textipa{/v/}}
@@ -771,7 +768,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{five}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_f_v_05.mp3}
+\hfill{\tiny 0147}\,{\scriptsize \myaudio{./audio/consonant_f_v_05.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -816,15 +813,12 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 % \item その隙間から息を出す
  
 \end{itemize}
-\hfill\myaudio{./audio/consonant_s_z_01.mp3}
-
-
+\hfill{\tiny 0207}\,{\scriptsize \myaudio{./audio/consonant_s_z_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/s/}の音を含む英単語}\hfill\myaudio{./audio/consonant_s_z_02.mp3}
-
+{\small \textipa{/s/}の音を含む英単語}\hfill{\tiny 0510}\,{\scriptsize \myaudio{./audio/consonant_s_z_02.mp3}}
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries s}it
@@ -846,14 +840,11 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 % \item bir\textcolor{NavyBlue}{\bfseries d}
 %\hfill\makebox[80pt][l]{\textipa{/b\'\textrhookschwa :\textcolor{BurntOrange}{d}/}}\hspace{150pt}\mbox{}
 \end{enumerate}
-
-
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/z/}の音を含む英単語}\hfill\myaudio{./audio/consonant_s_z_03.mp3}
+{\small \textipa{/z/}の音を含む英単語}\hfill{\tiny 0510}\,{\scriptsize \myaudio{./audio/consonant_s_z_03.mp3}}
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries z}ero
@@ -889,9 +880,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{F}\hspace{1\zw}\visible<11->{zero}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_s_z_04.mp3}
-
-
+\hfill{\tiny 0146}\,{\scriptsize \myaudio{./audio/consonant_s_z_04.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}\textipa{/z/}
@@ -905,7 +894,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{plays}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_s_z_05.mp3}
+\hfill{\tiny 0146}\,{\scriptsize \myaudio{./audio/consonant_s_z_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
@@ -921,7 +910,6 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
  \vspace{30pt}
 
   \textcolor{white}{\Huge\bfseries \textipa{/T/}, \textipa{/D/}}
-
 
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
@@ -945,15 +933,13 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
  \item その隙間から息を出す
  
 \end{itemize}
-\hfill\myaudio{./audio/consonant_Th_01.mp3}
-
+\hfill{\tiny 0205}\,{\scriptsize \myaudio{./audio/consonant_Th_01.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/T/}の音を含む英単語}\hfill\myaudio{./audio/consonant_Th_02.mp3}
-
+{\small \textipa{/T/}の音を含む英単語}\hfill{\tiny 0310}\,{\scriptsize \myaudio{./audio/consonant_Th_02.mp3}}
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries th}ree
@@ -975,15 +961,12 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 % \item bir\textcolor{NavyBlue}{\bfseries d}
 %\hfill\makebox[80pt][l]{\textipa{/b\'\textrhookschwa :\textcolor{BurntOrange}{d}/}}\hspace{150pt}\mbox{}
 \end{enumerate}
-
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/D/}の音を含む英単語}\hfill\myaudio{./audio/consonant_Th_03.mp3}
-
+{\small \textipa{/D/}の音を含む英単語}\hfill{\tiny 0503}\,{\scriptsize \myaudio{./audio/consonant_Th_03.mp3}}
 
 \begin{enumerate}
  \item \textcolor{NavyBlue}{\bfseries th}is
@@ -1019,8 +1002,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{think}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_Th_04.mp3}
-
+\hfill{\tiny 0145}\,{\scriptsize \myaudio{./audio/consonant_Th_04.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1035,9 +1017,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{F}\hspace{1\zw}\visible<11->{zero}
  \end{enumerate}
 
-
-
-\hfill\myaudio{./audio/consonant_Th_05.mp3}
+\hfill{\tiny 0146}\,{\scriptsize \myaudio{./audio/consonant_Th_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1054,9 +1034,6 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
  \vspace{30pt}
 
   \textcolor{white}{\Huge\bfseries \textipa{/S/}, \textipa{/Z/}}
-
-
-
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1079,17 +1056,14 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
  \item ほんのちょっぴり唇を丸めましょう$\rightarrow$\,これで\,\textipa{/S/}\,のできあがり 
  \item 声を出せば$\rightarrow$これで\,\textipa{/Z/}\,のできあがり
 \end{itemize}
-\hfill\myaudio{./audio/consonant_textesh_textyogh_01.mp3}
-
-
+\hfill{\tiny 0152}\,{\scriptsize \myaudio{./audio/consonant_textesh_textyogh_01.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう \textipa{/S/}}
 \Large
-{\small \textipa{/S/}の音を含む英単語}\hfill\myaudio{./audio/consonant_textesh_textyogh_02.mp3}
-
+{\small \textipa{/S/}の音を含む英単語}\hfill{\tiny 0437}\,{\scriptsize \myaudio{./audio/consonant_textesh_textyogh_02.mp3}}
 
 \begin{enumerate}
 
@@ -1114,7 +1088,6 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 %\hfill\makebox[80pt][l]{\textipa{/b\'\textrhookschwa :\textcolor{BurntOrange}{d}/}}\hspace{150pt}\mbox{}
 \end{enumerate}
 
-
 \hfill\visible<2->{{\scriptsize a sheep}}\visible<3->{{\scriptsize / two sheep}}
 
 \end{frame}
@@ -1122,8 +1095,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう \textipa{/Z/}}
 \Large
-{\small \textipa{/Z/}の音を含む英単語}\hfill\myaudio{./audio/consonant_textesh_textyogh_03.mp3}
-
+{\small \textipa{/Z/}の音を含む英単語}\hfill{\tiny 0411}\,{\scriptsize \myaudio{./audio/consonant_textesh_textyogh_03.mp3}}
 
 \begin{enumerate}
 
@@ -1144,7 +1116,6 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
 % \item bir\textcolor{NavyBlue}{\bfseries d}
 %\hfill\makebox[80pt][l]{\textipa{/b\'\textrhookschwa :\textcolor{BurntOrange}{d}/}}\hspace{150pt}\mbox{}
 \end{enumerate}
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1159,7 +1130,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{machine}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_textesh_textyogh_04.mp3}
+\hfill{\tiny 0136}\,{\scriptsize \myaudio{./audio/consonant_textesh_textyogh_04.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -1175,7 +1146,7 @@ $\longrightarrow$\,\,\,なんと素数!\\\pause
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{usually}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_textesh_textyogh_04.mp3}
+\hfill{\tiny 0136}\,{\scriptsize \myaudio{./audio/consonant_textesh_textyogh_04.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1217,14 +1188,13 @@ ls \begin{frame}[plain,label=slide_ttextesh_dtextyogh]{破擦音\textipa{/tS/と
  \item 舌先を歯茎につけてから破裂させます（\textipa{/Z/}は舌がどこにもつきません）
  \item \textipa{/tS dZ/}を何度も繰り返してみましょう（時間のあるとき100回くらい）
 \end{itemize}
-\hfill\myaudio{./audio/consonant_ttextesh_dtextyogh_01.mp3}
+\hfill{\tiny 0151}\,{\scriptsize \myaudio{./audio/consonant_ttextesh_dtextyogh_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう \textipa{/tS/}}
 \Large
-{\small \textipa{/tS/}の音を含む英単語}\hfill\myaudio{./audio/consonant_ttextesh_dtextyogh_02.mp3}
-
+{\small \textipa{/tS/}の音を含む英単語}\hfill{\tiny 0439}\,{\scriptsize \myaudio{./audio/consonant_ttextesh_dtextyogh_02.mp3}}
 
 \begin{enumerate}
 
@@ -1253,11 +1223,9 @@ ls \begin{frame}[plain,label=slide_ttextesh_dtextyogh]{破擦音\textipa{/tS/と
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう \textipa{/dZ/}}
 \Large
-{\small \textipa{/dZ/}の音を含む英単語}\hfill\myaudio{./audio/consonant_ttextesh_dtextyogh_03.mp3}
-
+{\small \textipa{/dZ/}の音を含む英単語}\hfill{\tiny 0437}\,{\scriptsize \myaudio{./audio/consonant_ttextesh_dtextyogh_03.mp3}}
 
 \begin{enumerate}
-
  \item \textcolor{NavyBlue}{\bfseries j}uice
 \hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{dZ}\'u:s/}}\hspace{150pt}\mbox{}
  \item \textcolor{NavyBlue}{\bfseries j}ump
@@ -1277,8 +1245,6 @@ ls \begin{frame}[plain,label=slide_ttextesh_dtextyogh]{破擦音\textipa{/tS/と
 % \item bir\textcolor{NavyBlue}{\bfseries d}
 %\hfill\makebox[80pt][l]{\textipa{/b\'\textrhookschwa :\textcolor{BurntOrange}{d}/}}\hspace{150pt}\mbox{}
 \end{enumerate}
-
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1293,7 +1259,7 @@ ls \begin{frame}[plain,label=slide_ttextesh_dtextyogh]{破擦音\textipa{/tS/と
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{cheese}
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_ttextesh_dtextyogh_04.mp3}
+\hfill{\tiny 0136}\,{\scriptsize \myaudio{./audio/consonant_ttextesh_dtextyogh_04.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -1308,7 +1274,7 @@ ls \begin{frame}[plain,label=slide_ttextesh_dtextyogh]{破擦音\textipa{/tS/と
   \item \mbox{}\visible<5->{F}\hspace{1\zw}\visible<10->{visit}
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{juice}
  \end{enumerate}
-\hfill\myaudio{./audio/consonant_ttextesh_dtextyogh_05.mp3}
+\hfill{\tiny 0136}\,{\scriptsize \myaudio{./audio/consonant_ttextesh_dtextyogh_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1350,13 +1316,12 @@ ls \begin{frame}[plain,label=slide_ttextesh_dtextyogh]{破擦音\textipa{/tS/と
  \item 声を出せば\textipa{/dz/}
  \item \textipa{/ts dz/}を100回繰り返しましょう
 \end{itemize}
-\hfill\myaudio{./audio/consonant_ts_dz_01.mp3}
+\hfill{\tiny 0308}\,{\scriptsize \myaudio{./audio/consonant_ts_dz_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう \textipa{/ts/}}
 \Large
-{\small \textipa{/ts/}の音を含む英単語}\hfill\myaudio{./audio/consonant_ts_dz_02.mp3}
-
+{\small \textipa{/ts/}の音を含む英単語}\hfill{\tiny 0309}\,{\scriptsize \myaudio{./audio/consonant_ts_dz_02.mp3}}
 
 \begin{enumerate}
 
@@ -1385,11 +1350,9 @@ ls \begin{frame}[plain,label=slide_ttextesh_dtextyogh]{破擦音\textipa{/tS/と
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう \textipa{/dz/}}
 \Large
-{\small \textipa{/dz/}の音を含む英単語}\hfill\myaudio{./audio/consonant_ts_dz_03.mp3}
-
+{\small \textipa{/dz/}の音を含む英単語}\hfill{\tiny 0311}\,{\scriptsize \myaudio{./audio/consonant_ts_dz_03.mp3}}
 
 \begin{enumerate}
-
  \item car\textcolor{NavyBlue}{\bfseries ds}
 \hfill\makebox[80pt][l]{\textipa{/k\'A\textrhookschwa\textcolor{BurntOrange}{dz}/}}\hspace{150pt}\mbox{}
  \item bir\textcolor{NavyBlue}{\bfseries ds}
@@ -1407,7 +1370,6 @@ ls \begin{frame}[plain,label=slide_ttextesh_dtextyogh]{破擦音\textipa{/tS/と
  \item stan\textcolor{NavyBlue}{\bfseries ds}
 \hfill\makebox[80pt][l]{\textipa{/st\'\ae n\textcolor{BurntOrange}{dz}/}}\hspace{150pt}\mbox{}
 \end{enumerate}
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1430,13 +1392,10 @@ ls \begin{frame}[plain,label=slide_ttextesh_dtextyogh]{破擦音\textipa{/tS/と
 
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_ts_dz_04.mp3}
-
-
+\hfill{\tiny 0138}\,{\scriptsize \myaudio{./audio/consonant_ts_dz_04.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{\textipa{/z/}と\textipa{/dz/}を区別しよう}
-
 
 まずは肩慣らし\pause{} いや口慣らし\pause
 
@@ -1483,7 +1442,7 @@ carsまたはcardsを発音していきます。どちらを発音したか聞�
  \visible<6->{\draw[ultra thick, olive, ->] (q5.east) to[out=0, in=180] (a1.west);}
 \end{tikzpicture}
 
-\hfill\myaudio{./audio/consonant_ts_dz_05.mp3}
+\hfill{\tiny 0141}\,{\scriptsize \myaudio{./audio/consonant_ts_dz_05.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1507,10 +1466,9 @@ carsまたはcardsを発音していきます。どちらを発音したか聞�
 
  \end{enumerate}
 
-\hfill\myaudio{./audio/consonant_ts_dz_06.mp3}
+\hfill{\tiny 0137}\,{\scriptsize \myaudio{./audio/consonant_ts_dz_06.mp3}}
 
 \end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 2}\large
@@ -1554,7 +1512,7 @@ rose（ばら）またはroads（道路の複数形）を発音していきま�
 
 \vspace{-15pt}
 
-\hfill{\scriptsize \myaudio{./audio/consonant_ts_dz_07.mp3}}
+\hfill{\tiny 0137}{\scriptsize \myaudio{./audio/consonant_ts_dz_07.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1586,7 +1544,6 @@ rose（ばらの単数形）、roads（道路の複数形）、cars(自動車の
    \end{column}
  \end{columns}
 
-
 \begin{tikzpicture}[remember picture, overlay]
  \visible<2->{\draw[ultra thick, orange, ->] (q1.east) to[out=0, in=180] (a4.west);}
  \visible<3->{\draw[ultra thick, olive, ->] (q2.east) to[out=0, in=180] (a2.west);}
@@ -1596,7 +1553,7 @@ rose（ばらの単数形）、roads（道路の複数形）、cars(自動車の
 
 \vspace{-15pt}
 
-\hfill{\scriptsize \myaudio{./audio/consonant_ts_dz_08.mp3}}
+\hfill{\tiny 0117}{\scriptsize \myaudio{./audio/consonant_ts_dz_08.mp3}}
 
 \hypertarget{ex}{}
 %\hyperlink{tips}{\beamerreturnbutton{Back to Tips}}
@@ -1662,7 +1619,7 @@ speech=\scalebox{0.4}{
 \normalsize
 
 
-\myaudio{./audio/consonant_m_n_ng_01.mp3}%
+{\tiny 0432}\,{\scriptsize \myaudio{./audio/consonant_m_n_ng_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \begin{frame}[plain]{鼻音\,\,\textipa{/m/}\,\,\,\,\textipa{/n/}\,\,\,\,\textipa{/N/}}
@@ -1705,7 +1662,7 @@ speech=\scalebox{0.4}{
 
 \normalsize
 
-\myaudio{./audio/consonant_m_n_ng_02.mp3}%
+{\tiny 0432}\,{\scriptsize \myaudio{./audio/consonant_m_n_ng_02.mp3}}
 %\hfill%
 %\hypertarget{tips}{}
 \end{frame}
@@ -1748,7 +1705,7 @@ speech=\scalebox{0.4}{
 
 \normalsize
 
-\myaudio{./audio/consonant_m_n_ng_03.mp3}%
+{\tiny 0433}\,{\scriptsize \myaudio{./audio/consonant_m_n_ng_03.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -1789,7 +1746,7 @@ some（いくつかの）とsun（太陽）を発音していきます。どち�
 
 \hfill{}\visible<7->{{\scriptsize ところでsun（太陽）とson（息子）は同じ発音です}}
 
-\hfill{\scriptsize \myaudio{./audio/consonant_m_n_ng_04.mp3}}
+\hfill{\tiny 0128}{\scriptsize \myaudio{./audio/consonant_m_n_ng_04.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1828,7 +1785,7 @@ win（勝つ）とwing（つばさ）を発音していきます。どちらを�
  \visible<6->{\draw[hoge,NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
 \end{tikzpicture}
 
-\hfill\myaudio{./audio/consonant_m_n_ng_05.mp3}
+\hfill{\tiny 0130}\,{\scriptsize \myaudio{./audio/consonant_m_n_ng_05.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -1871,7 +1828,7 @@ win（勝つ）とwing（つばさ）を発音していきます。どちらを�
  \visible<7->{\draw[hoge, olive] (q6.east) to[out=0, in=180] (a1.west);}
 \end{tikzpicture}
 
-\hfill\myaudio{./audio/consonant_m_n_ng_06.mp3}
+\hfill{\tiny 0145}\,{\scriptsize \myaudio{./audio/consonant_m_n_ng_06.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2767,7 +2724,6 @@ sheまたはsea (see / Cと同じ)を発音していきます。どちらを発�
 \againframe[plain]{slide_l_r}
 %%%%%%%%%%%%%%%%
 %\hfill\hyperlink{tips}{\beamergotobutton{Excercises}}
-\hypertarget{today}{}
 %\hypertarget{tips}{}
 \againframe[plain]{slide_j}
 \againframe[plain]{ear_year_1}

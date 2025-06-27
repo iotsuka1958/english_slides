@@ -32,6 +32,9 @@
 \usepackage{pxrubrica}
 \usepackage{tipa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\liaison}{%
+  \tikz[baseline=0pt] \draw (0,0) to[bend right=20] (0.2,0);%
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% テキストにバツ印を付けて出力するための命令 \myCrossedOut を定義
 %% https://zrbabbler.hatenablog.com/entry/20150120/1421760816
@@ -415,7 +418,7 @@ They ( not / a party / going / are / have ) this Friday.\\
 You are going to buy \alt<4->{\myAnch{FOCUS2}{Maroon}{a car}}{\myAnch{focus2}{white}{a car}}.
 
 \hfill%
-{\small Are you going to buy a car?}\\[-6pt]
+\visible<2->{{\small Are you going to buy a car?}}\\[-6pt]
 \hfill\visible<3->{{\scriptsize Yes/Noで答える疑問文}}
 
 \visible<5->{\myAnch{WH2}{Maroon}{What} are you going to buy?}%
@@ -456,7 +459,7 @@ You are going to buy \alt<4->{\myAnch{FOCUS2}{Maroon}{a car}}{\myAnch{focus2}{wh
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 
-{\small あたえられた日本文の意味になるようカッコ内の語句を並べ替えてましょう。
+{\small あたえられた日本文の意味になるようカッコ内の語句を並べ替えましょう。
 先頭に来る語は大文字で始めてください}\hfill{\tiny 0204}\,{\scriptsize \myaudio{./audio/011_be_going_to_12.mp3}}
 
 
@@ -500,11 +503,13 @@ What are you going to\begin{tabular}[t]{l@{\,}}
 \end{frame}
 %%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
- あたえられた日本語の意味になるよう英文を作りましょう。
+ あたえられた日本語の意味になるよう英文を作りましょう
+
+\bigskip
 
 \begin{tabular}{rl@{　　　}l}
  1&あなたは何をするつもりですか。 & \visible<2->{What are you going to do?} \\
- 2&彼女は何をするつもりですか。 & \visible<3->{What is she going? to do} \\
+ 2&彼女は何をするつもりですか。 & \visible<3->{What is she going to do?} \\
 3&彼は何をするつもりですか。 &\visible<4->{What is he going to do?} \\
 4&彼らは何をするつもりですか。 &\visible<5->{What are they going to do?} \\
 \end{tabular}
@@ -521,15 +526,15 @@ What are you going to\begin{tabular}[t]{l@{\,}}
 \end{frame}
 %%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-Aの質問に対するBの答えがあたえられた内容になるよう英文を書きましょう。
+Aの質問に対するBの答えが、あたえられた内容になるよう英文をつくりましょう
 \begin{enumerate}
- \item A: What are you going to do?\hspace{2\zw}{\small [数学の勉強をするつもりです]}\hfill$a+a=2a$\\
+ \item A: What are you going to do?\hspace{2\zw}{\small [数学の勉強をするつもり]}\hfill$a+a=2a$\\
        B: \visible<2->{I am going to study math.}%
 \item A: What is he going to do?\hspace{2\zw}{\small [夕食を作るつもり]}\hspace{2\zw}{}\raisebox{-5pt}{\scalebox{2}{\twemoji{cooking}\twemoji{spaghetti}\twemoji{carrot}\twemoji{leafy green}\twemoji{tomato}\twemoji{meat on bone}}}\\
        B: \visible<3->{He is going to cook dinner}.%
- \item A: What are they going to do?\hspace{2\zw}{\small [川(the river)で泳ぐつもりです]}\hfill\raisebox{-5pt}{\scalebox{2}{\twemoji{man swimming}}}\\
+ \item A: What are they going to do?\hspace{2\zw}{\small [川(the river)で泳ぐつもり]}\hfill\raisebox{-5pt}{\scalebox{2}{\twemoji{man swimming}}}\\
        B: \visible<4->{They are going to swim in the river.}%
- \item A: What is she going to do?\hspace{2\zw}{\small [公園(the park)で走るつもりです]}\hfill\raisebox{-5pt}{\scalebox{2.5}{\twemoji{woman running}}}\\
+ \item A: What is she going to do?\hspace{2\zw}{\small [公園(the park)で走るつもり]}\hfill\raisebox{-5pt}{\scalebox{2.5}{\twemoji{woman running}}}\\
        B: \visible<5->{She is going to run in the park.}%
  \end{enumerate} 
 \hfill{\tiny 0256}\,{\scriptsize \myaudio{./audio/011_be_going_to_15.mp3}}
@@ -537,13 +542,14 @@ Aの質問に対するBの答えがあたえられた内容になるよう英文
 \end{frame}
 %%%%%%%%%%%%%%%%
 \begin{frame}<1-6>[plain]{what以外の疑問詞を用いて}
-各文の意味について考えましょう。
+
+{\small 各文の意味について考えましょう}
 
 \begin{enumerate}
  \item \alt<1>{Where}{\fcolorbox{Orange}{white}{Where}} is she going to play soccer?
  \item \alt<1-2>{When}{\fcolorbox{Orange}{white}{When}} are you going to start your homework?
- \item \alt<1-3>{What time}{\fcolorbox{Orange}{white}{What time} } are you going to wake up tomorrow?
- \item \alt<1-4>{How long}{\fcolorbox{Orange}{white}{How long}} is he going to stay in Tokyo?
+ \item \alt<1-3>{What time}{\fcolorbox{Orange}{white}{What time} } are you going to wake up tomorrow?\hfill{\scriptsize wake up \textipa{/w\'eIk\liaison \textturnv p/} 起きる}
+ \item \alt<1-4>{How long}{\fcolorbox{Orange}{white}{How long}} is he going to stay in Tokyo?\hfill{\scriptsize stay \textipa{/st\'eI/} 滞在する}
 \end{enumerate}
 
 \begin{block}<6->{Topic for Today}
@@ -556,20 +562,21 @@ Aの質問に対するBの答えがあたえられた内容になるよう英文
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください\hfill{\tiny 0210}\,{\scriptsize \myaudio{./audio/011_be_going_to_16.mp3}}
+
+{\small あたえられた日本文の意味になるようカッコ内の語句を並べ替えてください。先頭の語は大文字ではじめてください}\hfill{\tiny 0210}\,{\scriptsize \myaudio{./audio/011_be_going_to_16.mp3}}
 
  \begin{enumerate}
-  \item 彼はどこで友達と会うつもりですか。\\
-( going / to / meet / is / Where / he ) his friends?\\
+  \item {\small 彼はどこで友達と会うつもりですか。}\\
+( going / to / meet / is / where / he ) his friends?\\
 \visible<2->{Where is he going to meet his friends?}
-  \item 彼女はいつ祖父母を訪ねるつもりですか。\\
-( visit / is / When / to / going / she ) her grandparents?\\
+  \item {\small 彼女はいつ祖父母を訪ねるつもりですか。}\\
+( visit / is / when / to / going / she ) her grandparents?\\
 \visible<3->{When is she going to visit her grandparents?}
-  \item あなたたちは何時に会議を始めるつもりですか。\\
+  \item {\small あなたたちは何時に会議を始めるつもりですか。}\\
 What ( going / are / start / you / time / to ) the meeting?\\
 \visible<4->{What time are youe going to start the meeting?}
-  \item 彼らは今夜どれくらい勉強するつもりですか。\\
-How ( long/ they / to / study / going / are ) tonight?\\
+  \item {\small 彼らは今夜どれくらい勉強するつもりですか。}\\
+How ( long / they / to / study / going / are ) tonight?\\
 \visible<5->{How long are they going to study tonight?} 
  \end{enumerate}
 \end{frame}
