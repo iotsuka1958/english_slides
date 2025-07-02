@@ -1,4 +1,6 @@
-What is your favorite sport?
-What do you eat for breakfast?
-What books do you like?
-What day is it today?<break time="2s"/>What day of the week is it today?
+bananas<break time="2s"/>bananas
+eggs<break time="2s"/>eggs
+parks<break time="2s"/>parks
+lemons<break time="2s"/>lemons
+cups<break time="2s"/>cups
+cars<break time="2s"/>cars
