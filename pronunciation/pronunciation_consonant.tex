@@ -151,15 +151,16 @@
 %  \textcolor{white}{\Huge\bfseries Independence Day}
 %
 %\end{frame}
-%\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%{
-%  \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{../1st_grader/images/betsy_ross_flag.png}}
-%  \begin{frame}
-%    %\frametitle{Slide 3 with background image}
-%    %Content of slide 3.
-%  \end{frame}
-%}
+{
+  \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{../1st_grader/images/betsy_ross_flag.png}}
+  \begin{frame}
+    %\frametitle{Slide 3 with background image}
+    %Content of slide 3.
+  \end{frame}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -268,8 +269,6 @@
 \setbeamercolor{background canvas}{bg=black}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\hypertarget{today}{}
-
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
 
@@ -379,9 +378,8 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz \textipa{/b/}}
-\hypertarget{ex}{}
 \large
-発音記号\textipa{/b/}で示した音声が含まれていたらT、含まれていなければFと答えてください余裕がある人はなんという単語か書き取ってみましょう。\\
+発音記号\textipa{/b/}で示した音声が含まれていたらT、含まれていなければFと答えてください。余裕がある人はなんという単語か書き取ってみましょう。\\
 \hfill{}{\scriptsize T: true（正しい）\hspace{5pt}F: false（まちがい）}
  \begin{enumerate}
   \item \mbox{}\visible<2->{T}\hspace{1\zw}\visible<7->{bus}
@@ -404,6 +402,8 @@
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
+\hypertarget{today}{}
+
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}\pause
 
@@ -418,6 +418,7 @@
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain, label=slide_t_d]{破裂音\textipa{/t/}と\textipa{/d/}}
+\hypertarget{ex}{}
 
 \large
 
@@ -446,31 +447,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-{\small \textipa{/t/}の音を含む英単語}\hfill{\tiny 0506}\,{\scriptsize \myaudio{./audio/consonant_t_d_02.mp3}}
+{\small \textipa{/t/}の音を含む英単語}\hfill{\tiny 0504}\,{\scriptsize \myaudio{./audio/consonant_t_d_02.mp3}}
 
 
 \begin{enumerate}
- \item \textcolor{NavyBlue}{\bfseries t}op
-\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{t}\'Ap/}}\hspace{150pt}\mbox{}
- \item \textcolor{NavyBlue}{\bfseries t}able
-\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{t}\'eIbl/}}\hspace{150pt}\mbox{}
- \item\textcolor{NavyBlue}{\bfseries t}ime%
-\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{t}\'aIm/}}\hspace{150pt}\mbox{}
-\item \textcolor{NavyBlue}{\bfseries t}oy
-\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{t}\'OI/}}\hspace{150pt}\mbox{}
- \item ca\textcolor{NavyBlue}{\bfseries t}
-\hfill\makebox[80pt][l]{\textipa{/k\'\ae \textcolor{BurntOrange}{t}/}}\hspace{150pt}\mbox{}
+ \item ca\textcolor{NavyBlue}{\bfseries t}\hfill\makebox[80pt][l]{\textipa{/k\'\ae \textcolor{BurntOrange}{t}/}}\hspace{150pt}\mbox{}
+ \item cu\textcolor{NavyBlue}{\bfseries t}\hfill\makebox[80pt][l]{\textipa{/k\'\textturnv\textcolor{BurntOrange}{t}/}}\hspace{150pt}\mbox{} 
+\item mee\textcolor{NavyBlue}{\bfseries t}\hfill\makebox[80pt][l]{\textipa{/m\'\i:\textcolor{BurntOrange}{t}/}}\hspace{150pt}\mbox{} 
+ \item \textcolor{NavyBlue}{\bfseries t}op\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{t}\'Ap/}}\hspace{150pt}\mbox{}
+ \item\textcolor{NavyBlue}{\bfseries t}ime\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{t}\'aIm/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries t}able\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{t}\'eIbl/}}\hspace{150pt}\mbox{}
+\item \textcolor{NavyBlue}{\bfseries t}oy\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{t}\'OI/}}\hspace{150pt}\mbox{}
 % \item bir\textcolor{NavyBlue}{\bfseries d}
 %\hfill\makebox[80pt][l]{\textipa{/b\'\textrhookschwa :\textcolor{BurntOrange}{d}/}}\hspace{150pt}\mbox{}
-
-
- \item cu\textcolor{NavyBlue}{\bfseries t}
-\hfill\makebox[80pt][l]{\textipa{/k\'\textturnv\textcolor{BurntOrange}{t}/}}\hspace{150pt}\mbox{} 
-
-\item mee\textcolor{NavyBlue}{\bfseries t}
-\hfill\makebox[80pt][l]{\textipa{/m\'\i:\textcolor{BurntOrange}{t}/}}\hspace{150pt}\mbox{} 
-\item ci\textcolor{NavyBlue}{\bfseries t}y
-\hfill\makebox[80pt][l]{\textipa{/s\'I\textcolor{BurntOrange}{t}i/}}\hspace{150pt}\mbox{}
+\item \textcolor{NavyBlue}{\bfseries t}eam\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{t}\'\i:m/}}\hspace{150pt}\mbox{}
+%\item ci\textcolor{NavyBlue}{\bfseries t}y\hfill\makebox[80pt][l]{\textipa{/s\'I\textcolor{BurntOrange}{t}i/}}\hspace{150pt}\mbox{}
+\item \textcolor{NavyBlue}{\bfseries t}ool\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{t}\'u:l/}}\hspace{150pt}\mbox{} 
 \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -512,11 +504,11 @@
   \item \mbox{}\visible<2->{T}\hspace{1\zw}\visible<7->{time}
   \item \mbox{}\visible<3->{F}\hspace{1\zw}\visible<8->{dance}
   \item \mbox{}\visible<4->{T}\hspace{1\zw}\visible<9->{cut}
-  \item \mbox{}\visible<5->{T}\hspace{1\zw}\visible<10->{city}
+  \item \mbox{}\visible<5->{T}\hspace{1\zw}\visible<10->{team}
   \item \mbox{}\visible<6->{F}\hspace{1\zw}\visible<11->{good}
  \end{enumerate}
 
-\hfill{\tiny 0145}\,{\scriptsize \myaudio{./audio/consonant_t_d_04.mp3}}
+\hfill{\tiny 0135}\,{\scriptsize \myaudio{./audio/consonant_t_d_04.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%

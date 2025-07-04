@@ -1,6 +1,5 @@
-it<break time="2s"/>it
-eat<break time="2s"/>eat
-it<break time="2s"/>it
-eat<break time="2s"/>eat
-eat<break time="2s"/>eat
-it<break time="2s"/>it
+time<break time="2s"/>time
+dance<break time="2s"/>dance
+cut<break time="2s"/>cut
+team<break time="2s"/>team
+good<break time="2s"/>good

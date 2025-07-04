@@ -1,6 +1,7 @@
-bananas<break time="2s"/>bananas
-eggs<break time="2s"/>eggs
-parks<break time="2s"/>parks
-lemons<break time="2s"/>lemons
-cups<break time="2s"/>cups
-cars<break time="2s"/>cars
+buy<break time="2s"/>buys
+enjoy<break time="2s"/>enjoys
+say<break time="2s"/>says
+cry<break time="2s"/>cries
+carry<break time="2s"/>carries
+fly<break time="2s"/>flies
+try<break time="2s"/>tries
