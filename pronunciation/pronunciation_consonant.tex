@@ -25,6 +25,8 @@
 \usetikzlibrary{decorations.pathmorphing}
 \usetikzlibrary{ducks}
 \usepackage{scsnowman}
+\usetikzlibrary{tikzmark}
+\usetikzlibrary{backgrounds}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{multimedia}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -306,7 +308,6 @@
 
 \hfill{\tiny 0205}\,{\scriptsize \myaudio{./audio/consonant_p_b_01.mp3}}
 
-\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
@@ -418,7 +419,6 @@
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain, label=slide_t_d]{破裂音\textipa{/t/}と\textipa{/d/}}
-\hypertarget{ex}{}
 
 \large
 
@@ -438,14 +438,126 @@
  \item そのあとに舌の先を離して、いきおいよく息を口から外へ出す
  \end{itemize}
 
-\textipa{/t/}はタの子音
+\textipa{/t/}はタの子音、
+\textipa{/d/}はダの子音
 
 \hfill{\tiny 0207}\,{\scriptsize \myaudio{./audio/consonant_t_d_01.mp3}}
 
+\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{日本語の発音}
+ 
+\visible<2->{ア行とン以外は、「子音$+$母音」の組み合わせ}
+
+\visible<3->{たとえばカ行は}
+
+\visible<4->{\begin{tblr}{lll}
+\tikzmark{hoge}\textipa{/k/} $+$ ア &$\rightarrow$ &カ \\
+\textipa{/k/} $+$ イ &$\rightarrow$ &キ \\
+\textipa{/k/} $+$ ウ &$\rightarrow$ &ク \\
+\textipa{/k/} $+$ エ &$\rightarrow$ &ケ \\
+\textipa{/k/}\tikzmark{uke} $+$ オ &$\rightarrow$ &コ \\
+\end{tblr}}
+
+\hfill\tikzmark{seme}\visible<5->{ぜんぶ同じ子音がつかわれてる}
+
+\hfill\visible<6->{とても論理的。うつくしい}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([xshift=-2pt,yshift=-8pt]pic cs:uke) to[out=-30, in=190] ([xshift=-2pt, yshift=2pt] pic cs:seme);}
+    \visible<5->{\fill[fill=yellow!30,rounded corners]
+      ([shift={(-0.3em,2ex)}]pic cs:hoge) 
+      rectangle 
+      ([shift={(0.2em,-1ex)}]pic cs:uke);}
+ % 文字を再描画（上に重ねる）
+  \visible<5->{\node[anchor=base west] at ([shift={(-3.9pt,0pt)}]pic cs:hoge) {\textipa{/k/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(3.9pt,60pt)}]pic cs:uke) {\textipa{/k/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(3.9pt,40pt)}]pic cs:uke) {\textipa{/k/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(3.9pt,20pt)}]pic cs:uke) {\textipa{/k/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(3.9pt,0pt)}]pic cs:uke) {\textipa{/k/}};}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{日本語の発音}
+\visible<2->{もうひとつ}
+
+\visible<3->{じゃあマ行は}
+
+\visible<4->{\begin{tblr}{lll}
+\tikzmark{hoge2}\textipa{/m/} $+$ ア &$\rightarrow$ &マ \\
+\textipa{/m/} $+$ イ &$\rightarrow$ &ミ \\
+\textipa{/m/} $+$ ウ &$\rightarrow$ &ム \\
+\textipa{/m/} $+$ エ &$\rightarrow$ &メ \\
+\textipa{/m/}\tikzmark{uke2} $+$ オ &$\rightarrow$ &モ \\
+\end{tblr}}
+
+\hfill\tikzmark{seme2}\visible<5->{ぜんぶ同じ子音がつかわれてる}
+
+\hfill\visible<6->{とても論理的。うつくしい}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([xshift=-2pt,yshift=-8pt]pic cs:uke2) to[out=-30, in=190] ([xshift=-2pt, yshift=2pt] pic cs:seme2);}
+    \visible<5->{\fill[fill=yellow!30,rounded corners]
+      ([shift={(-0.3em,2ex)}]pic cs:hoge2) 
+      rectangle 
+      ([shift={(0.2em,-1ex)}]pic cs:uke2);}
+ % 文字を再描画（上に重ねる）
+  \visible<5->{\node[anchor=base west] at ([shift={(-3.9pt,0pt)}]pic cs:hoge2) {\textipa{/m/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(3.9pt,60pt)}]pic cs:uke2) {\textipa{/m/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(3.9pt,40pt)}]pic cs:uke2) {\textipa{/m/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(3.9pt,20pt)}]pic cs:uke2) {\textipa{/m/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(3.9pt,0pt)}]pic cs:uke2) {\textipa{/m/}};}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{日本語の発音}
+\visible<2->{もうひとつ}
+
+\visible<3->{じゃあタ行は}
+
+\visible<4->{\begin{tblr}{rllll}
+\tikzmark{hoge3}\textipa{/t/} $+$ ア &$\rightarrow$ &タ \\
+\textipa{/tS/} $+$ イ &$\rightarrow$ &チ &\visible<6->{$\neq$}&\visible<6->{\textipa{/ti/}}\\
+\textipa{/ts/} $+$ ウ &$\rightarrow$ &ツ &\visible<6->{$\neq$}&\visible<6->{\textipa{/tu/}}\\
+\textipa{/t/} $+$ エ &$\rightarrow$ &テ \\
+\textipa{/t/}\tikzmark{uke3} $+$ オ &$\rightarrow$ &ト \\
+\end{tblr}}
+
+\hfill\tikzmark{seme3}\visible<5->{ぜんぶ同じ子音というわけじゃない}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([xshift=-2pt,yshift=-8pt]pic cs:uke3) to[out=-30, in=190] ([xshift=-2pt, yshift=2pt] pic cs:seme3);}
+    \visible<5->{\fill[fill=yellow!30,rounded corners]
+      ([shift={(-0.3em,2ex)}]pic cs:hoge3) 
+      rectangle 
+      ([shift={(0.2em,-1ex)}]pic cs:uke3);}
+ % 文字を再描画（上に重ねる）
+  \visible<5->{\node[anchor=base east] at ([shift={(3.9pt,80pt)}]pic cs:uke3) {\textipa{/t/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(4pt,60pt)}]pic cs:uke3) {\textipa{/tS/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(4pt,40pt)}]pic cs:uke3) {\textipa{/ts/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(3.9pt,20pt)}]pic cs:uke3) {\textipa{/t/}};}
+  \visible<5->{\node[anchor=base east] at ([shift={(3.9pt,0pt)}]pic cs:uke3) {\textipa{/t/}};}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{日本語なまり}
+ 日本語話者は\textipa{/t/}のあとに「イ」や「ウ」の類の母音が続くとなまりやすい
+
+\begin{enumerate}
+ \item team \textipa{/t\'\i:m/}\hfill{\scriptsize 野球\kenten{チ}ーム}
+ \item tip \textipa{/t\'Ip/}\hfill{\scriptsize \kenten{チ}ップという習慣}
+ \item ticket \textipa{/t\'IkIt/}\hfill{\scriptsize 映画の\kenten{チ}ケット}
+ \item two \textipa{/t\'u:/}\hfill{\scriptsize \kenten{ツ}ーアウト満塁}
+ \item tool \textipa{/t\'u:l/}\hfill{\scriptsize \kenten{ツ}ールボックス}
+ \item tour \textipa{/t\'U\textrhookschwa /}\hfill{\scriptsize 観光\kenten{ツ}アー}
+\end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
+\hypertarget{ex}{}
+
 \Large
 {\small \textipa{/t/}の音を含む英単語}\hfill{\tiny 0504}\,{\scriptsize \myaudio{./audio/consonant_t_d_02.mp3}}
 
