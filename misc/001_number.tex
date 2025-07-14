@@ -476,6 +476,26 @@
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{大きい数の表現}
+ \Large
+
+20,\tikzmark{comma_million}250,\tikzmark{comma_thousand}717
+
+\large 
+
+\hfill{}\tikzmark{thousand}thousand
+
+\hfill{}\tikzmark{million}million
+
+\vfill
+
+\hfill{}twenty million, two hundred fifty thousand, seven hundred seventeen
+
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<1->{\draw[<-] ([xshift=0pt, yshift=-5pt]pic cs:comma_thousand) to[out=-60, in=180] ([xshift=-2pt, yshift=2pt]pic cs:thousand);}
+ \visible<1->{\draw[<-] ([xshift=0pt, yshift=-5pt] pic cs:comma_million) to[out=-80,in=180] ([xshift=-2pt, yshift=4pt] pic cs:million);}\end{tikzpicture}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 \scriptsize
