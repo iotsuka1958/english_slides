@@ -311,7 +311,7 @@
 125& one hundred (and) twenty-five\\
 134& one hundred (and) thirty-four\\
 243& two hundred (and) forty-three\\
-358& one hundred (and) fifty-eight\\
+358& three hundred (and) fifty-eight\\
 567& five hundred (and) sixty-seven\\
 777& seven hundered (and) seventy-seven\\
 999& nine hundred (and) ninty-nine\\
@@ -448,6 +448,34 @@
   1,000,000,000 & one billion\\
 \end{tblr}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{大きい数の表現}
+ \Large
+
+20,\tikzmark{comma_million}250,\tikzmark{comma_thousand}717
+
+\large 
+
+\vspace{50pt}
+
+\hfill{}\tikzmark{thousand}\visible<2->{thousand}
+
+\hfill{}\tikzmark{million}\visible<3->{million}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<4->{\draw[<-] ([xshift=0pt, yshift=-5pt]pic cs:comma_thousand) to[out=-50, in=180] ([xshift=-2pt, yshift=2pt]pic cs:thousand);}
+ \visible<5->{\draw[<-] ([xshift=0pt, yshift=-5pt] pic cs:comma_million) to[out=-60,in=180] ([xshift=-2pt, yshift=4pt] pic cs:million);}
+\end{tikzpicture}
+
+
+\hfill{20 million, 250 thousand, 715}
+
+\vfill
+
+\hfill{}\visible<6->{twenty million, two hundred fifty thousand, seven hundred  seventeen}
+
+{\scriptsize \myaudio{./audio/001_number_06a.mp3}}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{小数}
  \Huge
@@ -476,26 +504,6 @@
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain,t]{大きい数の表現}
- \Large
-
-20,\tikzmark{comma_million}250,\tikzmark{comma_thousand}717
-
-\large 
-
-\hfill{}\tikzmark{thousand}thousand
-
-\hfill{}\tikzmark{million}million
-
-\vfill
-
-\hfill{}twenty million, two hundred fifty thousand, seven hundred seventeen
-
-
-\begin{tikzpicture}[remember picture,overlay]
- \visible<1->{\draw[<-] ([xshift=0pt, yshift=-5pt]pic cs:comma_thousand) to[out=-60, in=180] ([xshift=-2pt, yshift=2pt]pic cs:thousand);}
- \visible<1->{\draw[<-] ([xshift=0pt, yshift=-5pt] pic cs:comma_million) to[out=-80,in=180] ([xshift=-2pt, yshift=4pt] pic cs:million);}\end{tikzpicture}
-\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 \scriptsize
