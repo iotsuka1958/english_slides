@@ -24,8 +24,10 @@
 \usetikzlibrary{backgrounds}
 \usepackage{tcolorbox}
 \usepackage{tikzpeople}
+\usepackage{tikzducks}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{tipa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -81,189 +83,228 @@
 %% TEXT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
   \titlepage
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{授業の流れ}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
   \frametitle{授業の流れ}
   \tableofcontents
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{be動詞の疑問文}
+\subsection{一人称}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{一人称}
+ \large
 
-\subsection{わたしは〜ですか}
-\begin{frame}[plain]{わたしは〜ですか？}
- \Large
+疑問文のつくり方($\text{主語} = \text{\alt<1-5>{I}{I $\rightarrow$ We}}$)%
+\hfill{\tiny 0102}\,{\scriptsize\myaudio{./audio/008_question_be_01.mp3}}
 
-疑問文のつくり方($\text{主語} = \text{I}$)\pause
-\vspace{15pt}
+\vspace{10pt}
 
-\myAnch{s-1}{orange}{I} \myAnch{be-1}{olive}{am} late for the movie. \scalebox{2}{\myDownwardPitch}
-\vspace{35pt}\pause
+\myAnch{s-1}{orange}{\alt<1-5>{I}{We}} \myAnch{be-1}{olive}{\alt<1-5>{am}{are}} late for the mivie.%
+\hfill{\scriptsize be late for ～に遅れる}
 
-\myAnch{be-2}{olive}{Am} \myAnch{s-2}{orange}{I} late for the movie\myAnch{question}{orange}{?}
-\pause
-\begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north); \pause
- \draw[thick, olive, ->] (be-1.south) to[out=-90, in=90] (be-2.north);
-\pause
-\node at (-4.5,-1) {be動詞を先頭に};
-\pause
-\node at (0.5,0.25) {\scalebox{2}{\myRisingPitch}};
-\pause
-\node at (3,-1) {?と最後のイントネーションに注意};
-\pause%
-% Embed the sound file
-\node at (7,-1.5) {\myaudio{./audio/008_question_be_01.mp3}};
-\end{tikzpicture}
+\vspace{25pt}
+
+\visible<2->{\myAnch{be-2}{olive}{\alt<1-5>{Am}{Are}} \myAnch{s-2}{orange}{\alt<1-5>{I}{we}} late for the movie\myAnch{question}{orange}{?}}\visible<5->{\scalebox{2}{\myRisingPitch}}
+
+\visible<4->{{\small be動詞を先頭に}}\hspace{70pt}\visible<5->{{\small ?と最後のイントネーションに注意}}
 
 
+\visible<3->{\begin{tikzpicture}[remember picture, overlay]
+ \draw[line width=2pt, opacity=.5, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north);
+ \draw[line width=2pt, opacity=.5, olive, ->] (be-1.south) to[out=-90, in=90] (be-2.north);
+\end{tikzpicture}}
 
+\begin{block}<7->{Topics for Today}\small
+ \begin{itemize}\setbeamertemplate{items}[square]
+  \item \textbf{I am} ～ . の疑問文は\textbf{Am I} ～ ?
+  \item \textbf{We are} ～ . の疑問文は\textbf{Are we} ～ ?%
+	\hfill{\scriptsize \textbf{Are we} late for the movie?}
+  \item \textbf{be}動詞を先頭にもっていくだけです
+\end{itemize}
+\end{block}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{二人称}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{二人称}
+ \large
+
+疑問文のつくり方($\text{主語} = \text{You}$)%
+\hfill{\tiny 0057}\,{\scriptsize \myaudio{./audio/008_question_be_02.mp3}}
 
 
-\subsection{あなたは〜ですか}
-\begin{frame}[plain]{あなたは〜ですか？}
- \Large
-
-疑問文のつくり方($\text{主語} = \text{You}$)\pause
-
-\vspace{15pt}
+\vspace{10pt}
 
 \myAnch{s-1}{orange}{You} \myAnch{be-1}{olive}{are} happy.\scalebox{2}{\myDownwardPitch}
-\vspace{35pt}\pause
+\vspace{20pt}
 
-\myAnch{be-2}{olive}{Are} \myAnch{s-2}{orange}{you} happy\myAnch{question}{orange}{?}
-\pause
-\begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north); \pause
- \draw[thick, olive, ->] (be-1.south) to[out=-90, in=90] (be-2.north);
-\pause
-\node at (-4,-1) {be動詞を先頭に};
-\pause
-\node at (0.5,0.25) {\scalebox{2}{\myRisingPitch}};
-\pause
-\node at (3,-1) {?と最後のイントネーションに注意};
-\pause
-% Embed the sound file
-\node at (7,-1.5) {\myaudio{./audio/008_question_be_02.mp3}};
-\end{tikzpicture}
+\visible<2->{\myAnch{be-2}{olive}{Are} \myAnch{s-2}{orange}{you} happy\myAnch{question}{orange}{?}}\visible<5->{\scalebox{2}{\myRisingPitch}}
 
+\visible<4->{\small be動詞を先頭に}\hspace{52pt}\visible<5->{\small ?と最後のイントネーションに注意}
+
+\visible<3->{\begin{tikzpicture}[remember picture, overlay]
+%\draw [help lines] (0,0) grid (10,4);%(0,0)から(10,4)までの"細線の方眼"
+ \draw[line width=2pt, opacity=.5, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north);
+ \draw[line width=2pt, opacity=.5, olive, ->] (be-1.south) to[out=-90, in=90] (be-2.north);
+\end{tikzpicture}}
+
+\begin{block}<6->{Topics for Today}\small
+ \begin{itemize}\setbeamertemplate{items}[square]
+  \item \textbf{You are} ～ . の疑問文は\textbf{Are you} ～ ?
+  \item \textbf{be}動詞を先頭にもっていくだけです
+\end{itemize}
+\end{block}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{三人称単数}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,plain]{三人称単数}
+ \large
 
+疑問文のつくり方($\text{主語} = \text{\temporal<6>{She}{She $\rightarrow$ He}{She $\rightarrow$ He $\rightarrow$ Our teacher}}$)%
+\hfill{\tiny 0225}\,{\scriptsize \myaudio{./audio/008_question_be_03.mp3}}
 
-
-\subsection{彼女は〜ですか}
-\begin{frame}<1-11>[plain]{Xは〜ですか？}
- \Large
-
-疑問文のつくり方($\text{主語} = \text{\temporal<9>{She}{He}{Our teacher}}$)\pause
-
-\vspace{15pt}
-
-\myAnch{s-1}{orange}{\temporal<9>{She}{He}{Our teacher}} \myAnch{be-1}{olive}{is} from Australia.
-\vspace{35pt}\pause
-
-\myAnch{be-2}{olive}{Is} \myAnch{s-2}{orange}{\temporal<9>{she}{he}{our teacher}} from Australia\myAnch{question}{orange}{?}
-\pause
-\begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north); \pause
- \draw[thick, olive, ->] (be-1.south) to[out=-90, in=90] (be-2.north);
-\pause
-\onslide<6-8>{\node at (-4.5,-1) {be動詞を先頭に};}
-\pause
-\node at (0.5,0.25) {\scalebox{2}{\myRisingPitch}};
-\pause
-\onslide<8>{\node at (3,-1) {?と最後のイントネーションに注意};}
-\pause
-% Embed the sound file
-\onslide<11>{\node at (2,-1.5) {\myaudio{./audio/008_question_be_03.mp3}\,\,\,She$\rightarrow$He$\rightarrow$Our teacher};}
-\end{tikzpicture}
-\end{frame}
-
-
-\subsection{彼らは〜ですか}
-\begin{frame}<1-10>[plain]{彼らは〜ですか？}
- \Large
-
-疑問文のつくり方($\text{主語} = \text{\alt<1-8>{They}{Jack and Betty}}$)\pause
+\myAnch{s-1}{orange}{\temporal<6>{She}{He}{Our teacher}} \myAnch{be-1}{olive}{is} from Australia.\hfill{\scriptsize be from ～の出身だ}\\
+\hfill{\scriptsize Australia \textipa{/O:str\'eIlj@/} オーストラリア}
 
 \vspace{20pt}
 
-\myAnch{s-1}{orange}{\alt<1-8>{They}{Jack and Betty}} \myAnch{be-1}{olive}{are} good singers.
-\vspace{35pt}\pause
+\visible<2->{\myAnch{be-2}{olive}{Is} \myAnch{s-2}{orange}{\temporal<6>{she}{he}{our teacher}} from Australia\myAnch{question}{orange}{?}}\visible<5->{\scalebox{2}{\myRisingPitch}}
 
-\myAnch{be-2}{olive}{Are} \myAnch{s-2}{orange}{\alt<1-8>{they}{Jack and Betty}} good singers\myAnch{question}{orange}{?}
-\pause
-\begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north); \pause
- \draw[thick, olive, ->] (be-1.south) to[out=-90, in=90] (be-2.north);
-\pause
-\onslide<6-8>{\node at (-4.5,-1) {be動詞を先頭に};}
-\pause
-\node at (0.5,0.25) {\scalebox{2}{\myRisingPitch}};
-\pause
-\onslide<8>{\node at (3,-1) {?と最後のイントネーションに注意};}
-\pause
-% Embed the sound file
-\onslide<10>{\node at (2,-.75) {\myaudio{./audio/008_question_be_04.mp3}\,\,\,They\,\,$\rightarrow$\,\,Jack and Betty};}
-\end{tikzpicture}
-\end{frame}
+\visible<4->{{\small be動詞を先頭に}}\hspace{90pt}\visible<5->{{\small ?と最後のイントネーションに注意}}
 
+\visible<3->{\begin{tikzpicture}[remember picture, overlay]
+ \draw[line width=2pt, opacity=.5, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north);
+ \draw[line width=2pt, opacity=.5, olive, ->] (be-1.south) to[out=-90, in=90] (be-2.north);
+\end{tikzpicture}}
 
-\begin{frame}[plain]{要点}
+\vspace{-5pt}
 
-be動詞を用いた文の疑問文のつくり方\pause
-\begin{exampleblock}{Topics for Today}
-\begin{itemize}
- \item   be動詞を先頭にする\pause
- \item   文末に`?'をつける\pause
- \item   イントネーションは\myRisingPitch
+\begin{block}<8->{Topics for Today}\small
+ \begin{itemize}\setbeamertemplate{items}[square]
+  \item \textbf{She(He, Our teacher) is} ～ . の疑問文は\textbf{Is she(he, our teacher)} ～ ?
+  \item \textbf{be}動詞を先頭にもっていくだけです
 \end{itemize}
-     \end{exampleblock}
+\end{block}
 
-\pause
-\mbox{}\hfill{}`?'をquestion mark（クエスチョンマーク）といいます
+\vspace{-5pt}
+
+\hfill{\scriptsize teacher $<$ teach $+$ er($=$ ～する人)}
+
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{三人称複数}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{三人称複数}
+ \large
+
+疑問文のつくり方($\text{主語} = \text{\alt<1-5>{They}{They $\rightarrow$ Jack and Betty}}$)%
+\hfill{\tiny 0146}\,{\scriptsize\myaudio{./audio/008_question_be_04.mp3}}
+
+\vspace{10pt}
+
+\myAnch{s-1}{orange}{\alt<1-5>{They}{Jack and Betty}} \myAnch{be-1}{olive}{are} good singers.%
+\hfill{\scriptsize singer \textipa{/s\'IN\textrhookschwa/} 歌手 $<$ sing $+$ er}\\
+\hfill{\scriptsize er ～する人}
+
+\vspace{25pt}
+
+\visible<2->{\myAnch{be-2}{olive}{Are} \myAnch{s-2}{orange}{\alt<1-5>{they}{Jack and Betty}} good singers\myAnch{question}{orange}{?}}\visible<5->{\scalebox{2}{\myRisingPitch}}
+
+\visible<4->{{\small be動詞を先頭に}}\hspace{70pt}\visible<5->{{\small ?と最後のイントネーションに注意}}
 
 
+\visible<3->{\begin{tikzpicture}[remember picture, overlay]
+ \draw[line width=2pt, opacity=.5, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north);
+ \draw[line width=2pt, opacity=.5, olive, ->] (be-1.south) to[out=-90, in=90] (be-2.north);
+\end{tikzpicture}}
 
-
-
-\begin{frame}<1-10>[plain]\frametitle{Exercises}
-
-つぎの文を疑問文にしましょう。
+\begin{block}<7->{Topics for Today}\small
+ \begin{itemize}\setbeamertemplate{items}[square]
+  \item \textbf{They(Jack and Betty) are} ～ . の疑問文は\textbf{Are they(Jack and Betty)} ～ ?
+  \item \textbf{be}動詞を先頭にもっていくだけです
+\end{itemize}
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{確認問題}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]\frametitle{Exercises}
+つぎの各文を疑問文にしましょう%
+\hfill{\tiny 0340}\,{\scriptsize\myaudio{./audio/008_question_be_05.mp3}}
 
  \begin{enumerate}
-  \item<1-> I am late for the meeting.
-        \onslide<5->{$\longrightarrow$ Am I late for the meeting?}
-  \item<1-> You are hungry.
-        \onslide<6->{$\longrightarrow$ Are you hungry?}
- \item<1-> They are happy.
+  \item I am late for the meeting.
+        \onslide<5->{$\longrightarrow$ Am I late for the meeting?}%
+	\hfill{\scriptsize be late for ～に遅れる}
+  \item You are hungry.
+        \onslide<6->{$\longrightarrow$ Are you hungry?}%
+	\hfill{\scriptsize hungry \textipa{/h\'2Ngri/} 空腹の}
+  \item They are happy.
         \onslide<7->{$\longrightarrow$ Are they happy?}
-  \item<1-> She is in the kitchen.
-        \onslide<8->{$\longrightarrow$ Is she in the kitchen?}
-  \item<1-> Our teacher is busy.
-        \onslide<9->{$\longrightarrow$ Is our teacher busy? }
+  \item She is in the kitchen.
+        \onslide<8->{$\longrightarrow$ Is she in the kitchen?}%
+	\hfill{\scriptsize kitchen \textipa{/k\'ItS@n/} 台所、キッチン}
+  \item Our teacher is busy.
+        \onslide<9->{$\longrightarrow$ Is our teacher busy?}%
+	\hfill{\scriptsize busy \textipa{/b\'Izi/} 忙しい}
  \end{enumerate}
 
-\begin{exampleblock}<2->{Topics for Today}
+\begin{block}<2->{Topics for Today}
 be動詞の疑問文のつくり方
-\begin{itemize}
- \item<3->  be動詞を先頭にする
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item<3->\ \textbf{be}動詞を先頭にする
  \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
 \end{itemize}
-      \end{exampleblock}
-\vspace{-10pt}
-% Embed the sound file
-\onslide<10>{%
-\myaudio{./audio/008_question_be_05.mp3}\,\,{}Listen carefully.(注意して聞いてください)
-}
-
+      \end{block}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]\frametitle{Exercises}
 
+日本文の意味になるよう語を並べ替えましょう。先頭に来る語は大文字ではじめてください。クエスチョンマークは補ってください%
+\hfill{\tiny 0321}\,{\scriptsize\myaudio{./audio/008_question_be_06.mp3}}
+
+\begin{enumerate}
+  \item あなたは幸せですか。 ( happy / you / are )\hfill\visible<2->{Are you happy?}
+  \item 彼女は学生ですか。( a / she / student / is )\hfill\visible<3->{Is she a student?}
+  \item 彼らは日本の出身ですか。( from / are / they / Japan )\hfill\visible<4->{Are they from Japan?}
+  \item 彼はあなたのお父さんですか。( father / he / your / is )\hfill\visible<5->{Is he your father?}
+  \item 私たちは会議に遅刻でしょうか。( for / are / late / we / the meeting )\\
+\hfill\visible<6->{Are we late for the meeting?}
+  \item きょうは寒いですか。( cold / today / it / is )\hfill\visible<7->{Is it cold today?}
+  \item その犬たちは空腹ですか。( dogs / hungry / the / are )\hfill\visible<8->{Are the dogs hungry?}
+  \item トムは部屋にいますか。( room / is / in / Tom / the )
+\hfill\visible<9->{Is Tom in the room?}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{be動詞の疑問文（まとめ）}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{要点}
+
+\begin{block}{be動詞を用いた文の疑問文のつくり方}
+
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item   \textbf{be}動詞を先頭にする
+ \item   文末に`?'をつける\hfill{\scriptsize `?'をquestion mark（クエスチョンマーク）といいます}
+
+ \item   イントネーションは\myRisingPitch
+\end{itemize}
+     \end{block}
+\hfill{\scriptsize 主語がなんであろうが、疑問文のつくり方は同じです}%
+{\begin{tikzpicture}
+	\duck[strawhat=brown!50!white,
+ribbon=gray];
+       \end{tikzpicture}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 

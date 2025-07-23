@@ -21,6 +21,7 @@
 \usepackage{fontmfizz}
 \usepackage{manfnt}
 \usepackage{tipa}
+\usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
@@ -81,45 +82,45 @@
 
 \section{一般動詞の否定}
 \subsection{I do not like coffee.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-11>[plain]\frametitle{do not / don't}
-
 \begin{tabular}{lll}
  \onslide<1->{\scalebox{4}{\twemoji{smiling face with
 heart-eyes}\,\,\,{\tiny\mfCoffeeBean}\mfJavaBold{}}}&\onslide<2->{1.\,\,\,I like coffee.}& \onslide<4->{{\scriptsize 私はコーヒーが好きだ。}}\\
-\onslide<7->{\scalebox{4}{\twemoji{person gesturing NO}\,\,\,{\tiny\mfCoffeeBean}\mfJavaBold{}}}&\onslide<6->{2.\,\,\,I \myAnch{long}{orange}{do not} like coffee.}&  \onslide<5->{{\scriptsize 私はコーヒーが好きではない。}}\\[20pt]
-&\onslide<11->{3.\,\,\,I \myAnch{short}{orange}{don't} like coffee.}
+\onslide<5->{\scalebox{4}{\twemoji{person gesturing NO}\,\,\,{\tiny\mfCoffeeBean}\mfJavaBold{}}}&\onslide<7->{2.\,\,\,I \myAnch{long}{orange}{\textbf{do not}} like coffee.}&  \onslide<6->{{\scriptsize 私はコーヒーが好きではない。}}\\[20pt]
+&\onslide<8->{3.\,\,\,I \myAnch{short}{orange}{\textbf{don't}} like coffee.}
 \end{tabular}
 
 \vspace{15pt}
-\onslide<3->{\small \mbox{}\hfill{}coffee: コーヒー}\myaudio{audio/007_negative_do_00.mp3}
+\onslide<3->{\small \mbox{}\hfill{}{\scriptsize coffee \textipa{/k\'O:fi/} コーヒー}}\\
+\hfill{\tiny 0115}\,{\scriptsize \myaudio{audio/007_negative_do_00.mp3}}
 
 
-\onslide<8->{%
-\begin{exampleblock}{Topics for Today}
-\begin{itemize}
- \item<9->  一般動詞の否定は\textcolor{Maroon}{$\text{do not} + \text{動詞}$}\hfill\textipa{/d\'u: n\'At/}\pause
- \item<10->  do notは縮めて \textcolor{Maroon}{$\text{don't} + \text{動詞}$}ということもあります(短縮形)\hfill\textipa{/d\'oUnt/}
+%
+\begin{block}<9->{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item<9->  一般動詞の否定は\textcolor{Maroon}{$\text{\bfseries do not} + \text{原形}$}\hfill\textipa{/d\'u: n\'At/}
+ \item<10->  \textbf{do not}は縮めて \textcolor{Maroon}{\bfseries don't}ということもあります(短縮形)\hfill\textipa{/d\'oUnt/}
 \end{itemize}
-      \end{exampleblock}
-}
+\end{block}
 
-\onslide<11>{
+
+\onslide<8->{
 \begin{tikzpicture}[remember picture, overlay]
  \draw[->, thick, orange] (long) to (short);
 \end{tikzpicture}
 }
-
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{frame}<1-12>[plain]\frametitle{be動詞との比較}
 \begin{columns}[T]
  \begin{column}{.48\textwidth}
 \begin{itemize}
- \item I am \only<2->{\textcolor{orange}{\bfseries not}} hungry.
- \item You are \only<3->{\textcolor{orange}{\bfseries not}} hungry.
- \item He is \only<4->{\textcolor{orange}{\bfseries not}}  hungry.
+ \item[A--1] I am \only<2->{\textcolor{orange}{\bfseries not}} hungry.
+ \item[A--2] You are \only<3->{\textcolor{orange}{\bfseries not}} hungry.
+ \item[A--3] He is \only<4->{\textcolor{orange}{\bfseries not}}  hungry.
 \end{itemize}
  \end{column}
 \begin{column}{.48\textwidth}
@@ -142,9 +143,9 @@ heart-eyes}\,\,\,{\tiny\mfCoffeeBean}\mfJavaBold{}}}&\onslide<2->{1.\,\,\,I like
 \begin{columns}[T]
  \begin{column}{.48\textwidth}
 \begin{itemize}
- \item I \only<6->{\textcolor{orange}{\bfseries do not}} like coffee.
- \item You \only<7->{\textcolor{orange}{\bfseries do not}} like coffee.
- \item They \only<8->{\textcolor{orange}{\bfseries do not}} like coffee.
+ \item[B--1] I \only<6->{\textcolor{orange}{\bfseries do not}} like coffee.
+ \item[B--2] You \only<7->{\textcolor{orange}{\bfseries do not}} like coffee.
+ \item[B--3] They \only<8->{\textcolor{orange}{\bfseries do not}} like coffee.
 \end{itemize}
  \end{column}
 \begin{column}{.48\textwidth}
@@ -155,102 +156,93 @@ heart-eyes}\,\,\,{\tiny\mfCoffeeBean}\mfJavaBold{}}}&\onslide<2->{1.\,\,\,I like
 \end{column}
 \end{columns}
 
-\onslide<10->{%
-\begin{exampleblock}{Topics for Today}
-\begin{itemize}
- \item<11->  be動詞の否定はnotを後ろにつける
- \item<12-> 一般動詞の否定は do not\,($=\text{don't}$)を前につける%
+\begin{block}<10->{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item<11->  be動詞の否定は\textbf{not}（だけ）を\kenten{後ろ}につける
+ \item<12-> 一般動詞の否定は\textbf{do not}\,($=\text{\textbf{don't}}$)を\kenten{前}につける%
 \hfill\textipa{/d\'u: n\'At/}\hspace{5pt}\textipa{/d\'oUnt/}
 \end{itemize}
-      \end{exampleblock}
-}
+      \end{block}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Exercises}
  
 つぎの文を否定文にしてください
 \begin{enumerate}
  \item I play soccer after school.\hfill{\scriptsize after school: 放課後に}
-         \visible<2->{\begin{itemize}
-	 \item I \textcolor{orange}{\bfseries do not} play soccer after school.
-	  \item I \textcolor{orange}{\bfseries don't} play soccer after school.
-	\end{itemize}}
+         \begin{itemize}\setbeamertemplate{items}[circle]
+	 \item<2-> I \textcolor{orange}{\bfseries do not} play soccer after school.
+	  \item<3-> I \textcolor{orange}{\bfseries don't} play soccer after school.
+	\end{itemize}
  \item You study math at night.\hfill{\scriptsize study: 勉強する　math: 数学　at night: 夜に}
-       \visible<3->{\begin{itemize}
-	\item You \textcolor{orange}{\bfseries do not} study math at night.\\
-	\item You \textcolor{orange}{\bfseries don't} study math at night.
-       \end{itemize}}
+       \begin{itemize}\setbeamertemplate{items}[circle]
+	\item<4-> You \textcolor{orange}{\bfseries do not} study math at night.\\
+	\item<5-> You \textcolor{orange}{\bfseries don't} study math at night.
+       \end{itemize}
  \item We eat meat at home.\hfill{\scriptsize eat: 食べる　meat: 肉　at home: 家で}
-\visible<4->{\begin{itemize}
- \item We \textcolor{orange}{\bfseries do not} eat meat at home.\\
- \item We \textcolor{orange}{\bfseries don't} eat meat at home.
-\end{itemize}}
+        \begin{itemize}\setbeamertemplate{items}[circle]
+ \item<6-> We \textcolor{orange}{\bfseries do not} eat meat at home.\\
+ \item<7-> We \textcolor{orange}{\bfseries don't} eat meat at home.
+       \end{itemize}
  \item They like horror movies.\hfill{\scriptsize horror movie: ホラー映画}
-\visible<5->{\begin{itemize}
- \item They \textcolor{orange}{\bfseries do not} like horror movies.\\
- \item They \textcolor{orange}{\bfseries don't} like horror movies.
-\end{itemize}}
+        \begin{itemize}\setbeamertemplate{items}[circle]
+ \item<8-> They \textcolor{orange}{\bfseries do not} like horror movies.\\
+ \item<9-> They \textcolor{orange}{\bfseries don't} like horror movies.
+        \end{itemize}
 \end{enumerate}
 
 % Embed the sound file
-\myaudio{audio/007_negative_do_01.mp3}
+\hfill{\tiny 0352}\,{\scriptsize \myaudio{audio/007_negative_do_01.mp3}}
 
 \end{frame}
 
 
 \subsection{He does not like coffee.}
-\begin{frame}<1-16>[plain]\frametitle{does not / doesn't}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]\frametitle{主語が3人称単数のとき}
 
 \begin{enumerate}
  \item<1-> I live in Paris.\onslide<2->{$\longrightarrow$ I do not\only<3->{($= \text{don't}$)} live in Paris.}
  \item<4-> You live  in Paris. \onslide<5->{$\longrightarrow$ You do not\only<6->{($= \text{don't}$)} live in Paris.}
  \item<7-> They live in Paris.\onslide<8->{$\longrightarrow$ They do not\only<9->{($= \text{don't}$)} live in Paris.}
- \item<10-> He \myAnch{t1}{orange}{lives} in Paris.\onslide<11->{$\longrightarrow$ He \myAnch{t2}{orange}{does not\only<12->{($= \text{doesn't}$)} live} in Paris.\hfill{\scriptsize \textipa{/d\'\textturnv z n\'At/}}\only<12->{{\scriptsize $\rightarrow$\textipa{/d\'\textturnv znt/}}}}
+ \item<11-> He \myAnch{t1}{orange}{lives} in Paris.\onslide<12->{$\longrightarrow$ He \myAnch{t2}{orange}{\textbf{does not}\only<13->{($= \text{\textbf{doesn't}}$)} live} in Paris.\hfill{\scriptsize \textipa{/d\'\textturnv z n\'At/}}\only<14->{{\scriptsize $\rightarrow$\textipa{/d\'\textturnv znt/}}}}
 \end{enumerate}
 
 \vspace{20pt}
-\onslide<16>{%
+\onslide<15->{%
 \mbox{}\hfill\hfill\hfill\hfill\hfill\myAnch{t3}{orange}{主語が3人称単数のとき}\hfill\mbox{}
 
 \begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (t3.west) to[out=180, in=-60] node[black,sloped,midway,below]{\footnotesize $\text{動詞} + \text{s(3単現)}$} (t1.south);
- \draw[thick, orange, ->] (t3.west) to[out=180, in=-90] node[black, pos=0.75, below right,rotate=0]{\footnotesize does not$\text{(}= \text{doesn't)} + \text{動詞(原形)}$} (t2.south);
+ \draw[thick, orange, ->] (t3.west) to[out=180, in=-60] node[black,sloped,midway,below]{\footnotesize $\text{原形} + \text{s(3単現)}$} (t1.south);
+ \draw[thick, orange, ->] (t3.west) to[out=180, in=-90] node[black, pos=0.8, below right,rotate=0]{\footnotesize does not$\text{(}= \text{doesn't)} + \text{原形}$} (t2.south);
 \end{tikzpicture}
 }
 
-
-%\bigskip
-
 \normalsize
-\onslide<13->{%
-\begin{exampleblock}{Topics for Today}
-\begin{itemize}
- \item<14->  一般動詞の否定は\hspace{50pt}\textcolor{Maroon}{do not($=\text{don't)} + \text{動詞{\scriptsize ($=$ 原形)}}$}
- \item<15->  主語が3人称単数のときは\hspace{8pt}\textcolor{Maroon}{does not($=\text{doesn't)} + \text{動詞{\scriptsize ($=$ 原形)}}$}\\
-\hfill{}{\scriptsize \dbend\,\,{}*He does not live\Circled[fill color = white]{s} in Paris.}\\
-\mbox{}{\scriptsize\myaudio{audio/007_negative_do_02.mp3}}
+%
+\begin{block}<10->{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item<10->  一般動詞の否定は\hspace{50pt}\textcolor{Maroon}{\textbf{do not}($=\text{\textbf{don't})} + \text{原形}$}
+ \item<16->  主語が3人称単数のときは\hspace{8pt}\textcolor{Maroon}{\textbf{does not}($=\text{\textbf{doesn't})} + \text{原形}$}\\
+\hfill{}\visible<17->{{\scriptsize \dbend\,\,{}*He does not live\Circled[fill color = white]{s} in Paris.}}\\
+\hfill{}{\tiny 0110}\,{\scriptsize\myaudio{audio/007_negative_do_02.mp3}}
 \end{itemize}
-      \end{exampleblock}
-}
-
+      \end{block}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Exercises}
-カッコ内から適当なものを選んでください。また、その文の意味を考えましょう%
-\hfill{\scriptsize\myaudio{audio/007_negative_do_03.mp3}}
+カッコ内から適当なものを選びましょう%
 
 \begin{enumerate}
- \item I ( \alt<2->{\Circled[outer color=BurntOrange]{am not}}{am not} / do not / not ) a baseball fan.\hfill{\scriptsize fan:}{\tiny ファン}
- \item He ( \alt<3->{\Circled[outer color=BurntOrange]{is not}}{is not}  / do not  / does not ) from New Zealand.\hfill{\scriptsize New Zealand:}{\tiny  ニュージーランド}
- \item They ( are not / \alt<4->{\Circled[outer color=BurntOrange]{do not}}{do not}  / not ) speak French.\hfill{\scriptsize French:} {\tiny フランス語}
+ \item I ( \alt<2->{\Circled[outer color=BurntOrange]{am not}}{am not} / do not / not ) a baseball fan.\hfill{\scriptsize fan \textipa{/f\'\ae n/} ファン}
+ \item He ( \alt<3->{\Circled[outer color=BurntOrange]{is not}}{is not}  / do not  / does not ) from New Zealand.\\
+\hfill{\scriptsize New Zealand \textipa{/n\`(j)u:z\'\i:l@nd/}  ニュージーランド}
+ \item They ( are not / \alt<4->{\Circled[outer color=BurntOrange]{do not}}{do not}  / not ) speak French.\hfill{\scriptsize French \textipa{/fr\'entS/} フランス語}
  \item I ( am not / \alt<5->{\Circled[outer color=BurntOrange]{do not}}{do not} / not ) have a dog.
  \item Sue ( is not / do not / \alt<6->{\Circled[outer color=BurntOrange]{does not}}{does not}  ) play tennis on Sundays.\hfill{\scriptsize on Sundays:} {\tiny 日曜日に}
 \end{enumerate}
 
+\hfill{\tiny 0211}\,{\scriptsize\myaudio{audio/007_negative_do_03.mp3}}
 
 %\vspace{-100pt}
 
@@ -265,18 +257,34 @@ heart-eyes}\,\,\,{\tiny\mfCoffeeBean}\mfJavaBold{}}}&\onslide<2->{1.\,\,\,I like
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
+\section{一般動詞の否定（まとめ）}
+%%%%%%%%%%%%%%%%%%%%%%%}
 \begin{frame}[plain]{この単元で学んだこと}
- \begin{exampleblock}{Topics for Today}
-\begin{itemize}
- \item 一般動詞の否定は\hspace{50pt}\textcolor{Maroon}{do not($=\text{don't)} + \text{動詞{\scriptsize ($=$ 原形)}}$}
- \item 主語が3人称単数のときは\hspace{8pt}\textcolor{Maroon}{does not($=\text{doesn't)} + \text{動詞{\scriptsize ($=$ 原形)}}$}\\
-\hfill{}{\scriptsize \dbend\,\,{}*He does not live\Circled[fill color = white]{s} in Paris.}\\
-\mbox{}
+\small
+\begin{block}{一般動詞の否定}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item  一般動詞の否定は\hspace{50pt}\textcolor{Maroon}{\textbf{do not}($=\text{\textbf{don't})} + \text{原形}$}\
+
+ \item  主語が3人称単数のときは\hspace{12pt}\textcolor{Maroon}{\textbf{does not}($=\text{\textbf{doesn't})} + \text{原形}$}\\
+\hfill{}{\scriptsize \dbend\,\,{}*He does not live\Circled[fill color = white]{s} in Paris.}
 \end{itemize}
-      \end{exampleblock}
-\hfill{}be動詞の否定との違いに注意しよう
+      \end{block}
+
+\begin{block}{be動詞とのちがい}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item  be動詞の否定は\textbf{not}（だけ）を\kenten{後ろ}につける
+ \item 一般動詞の否定は\textbf{do not}\,($=\text{\textbf{don't}}$) / \textbf{does not}\,($=\text{\textbf{doesn't}}$)を\kenten{前}につける%
+\end{itemize}
+      \end{block}
+
+\begin{block}{Pronunciation}
+ \begin{itemize}\setbeamertemplate{items}[square]
+  \item \textbf{do not} \textipa{/d\'u: n\'At/} \hspace{40pt} \textbf{don't} \textipa{/d\'oUnt/}
+  \item \textbf{does not} \textipa{/d\'2z n\'At/} \hspace{30pt} \textbf{doesn't} \textipa{/d\'2znt/}
+ \end{itemize}
+
+\end{block}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 

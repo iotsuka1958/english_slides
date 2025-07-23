@@ -1,7 +1,8 @@
-buy<break time="2s"/>buys
-enjoy<break time="2s"/>enjoys
-say<break time="2s"/>says
-cry<break time="2s"/>cries
-carry<break time="2s"/>carries
-fly<break time="2s"/>flies
-try<break time="2s"/>tries
+Are you happy?
+Is she a student?
+Are they from Japan?
+Is he your father?
+Are we late for the meeting?
+Is it cold today?
+Are the dogs hungry?
+Is Tom in the room?
