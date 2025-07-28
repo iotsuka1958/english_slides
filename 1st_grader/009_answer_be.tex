@@ -20,11 +20,13 @@
 \usepackage{marvosym}
 \usepackage{fontmfizz}
 \usepackage{tipa}
+\usepackage{circledsteps}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
 \usepackage{tcolorbox}
 \usepackage{myascolorbox} %ascolorbox.sty(https://github.com/yasunari/ascolorbox)をlualatexで使えるようにzw2箇所を\zwに改変したもの
+\usetikzlibrary{tikzmark}
 \usepackage{tikzpeople}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{amsmath}
@@ -93,305 +95,264 @@
   \tableofcontents
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{復習}
 \subsection{be動詞の疑問文}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{要点}
 
-be動詞を用いた文の疑問文のつくり方\pause
-\begin{exampleblock}{Topics for Today}
-\begin{itemize}
- \item   主語とbe動詞を逆の順番にする\pause
- \item   文末に`?'をつける\pause
- \item   イントネーションは\myRisingPitch
+be動詞を用いた文の疑問文のつくり方
+\begin{block}<2->{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item<3->   be動詞を文の先頭に置く\\
+\hfill{\scriptsize He is rich. $\rightarrow$ Is he rich?}
+ \item<4->   文末に`?'をつける\\
+\hfill{}\visible<5->{{ \scriptsize `?'をquestion mark（クエスチョンマーク）といいます}}
+ \item<6->   イントネーションは\myRisingPitch
 \end{itemize}
-     \end{exampleblock}
-
-\pause
-\mbox{}\hfill{}`?'をquestion mark（クエスチョンマーク）といいます
+     \end{block}
 \end{frame}
-
-
-\section{疑問文への答え方}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{be動詞の疑問文への答え方}
 \subsection{Are you 〜 ? と聞かれたら}
- \begin{frame}[plain]{Are you 〜 ? と聞かれたら}
- \Large
-\pause
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{frame}[plain,t]{Are you 〜 ? と聞かれたら}
+ \large
 
-Are you from New York?
+\visible<2->{Are you from New York?}
 
 \vspace{20pt}
-\pause
 
-\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}
-         \text{Yes, I am.}\\\pause
-         \text{No, I am not.}\\\pause
-         \text{(}= \text{No, I'm not.)}
-        \end{tabular}\right.$
+\mbox{}\hspace{100pt}%
+\visible<3->{$\left\{\begin{tabular}{l}
+         \visible<3->{\text{Yes, I am.}}\\
+         \visible<4->{\alt<5,6,7>{\text{No, \Circled{I am} not.}}{\text{No, I am not.}}}\\
+         \visible<5->{\text{(}= \text{No, I'm not.)}}
+        \end{tabular}\right.$}
 
-\pause
+\hfill\visible<6->{{\small NoのときI amを縮めてNo, \textcolor{Maroon}{\bfseries I'm} not.ともいいます（短縮形）}}\\
+\hfill\visible<7->{{\small でもNo, I \textcolor{Maroon}{\bfseries amn't}.とはいいません}}
 
-\mbox{}\hfill{}{\small NoのときI amを縮めてNo, \textcolor{orange}{I'm} not.ともいいます}
-
-\mbox{}\hfill{}{\small でもNo, I \textcolor{orange}{amn't}.とはいいません}
-
-\pause
-\myaudio{./audio/009_answer_be_01.mp3}\,\,{}Listen carefully.
+\hfill{\tiny 0117}\,{\scriptsize \myaudio{./audio/009_answer_be_01.mp3}}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Is he 〜 ?  / Is she 〜 ? と聞かれたら}
-
-\begin{frame}[plain]{Is he  〜 ? / Is she 〜 ? と聞かれたら}
- \Large
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{Is he  〜 ? / Is she 〜 ? と聞かれたら}
+ \large
 
 \begin{columns}[t]
 \begin{column}{.475\textwidth}
-Is he a baseball player?
+\visible<2->{Is he a baseball player?}
 
 \vspace{20pt}
 
-\pause
-
-\mbox{}\hspace{40pt}$\left\{\begin{tabular}{l}
-         \text{Yes, he is.}\\\pause
-         \text{No, he is not.}\\\pause
-         \text{(}= \text{No, he's not.)}\\\pause
-         \text{(}= \text{No, he isn't.)}
-       \end{tabular}\right.$
-
-\pause
+\mbox{}\hspace{40pt}%
+\visible<3->{$\left\{\begin{tabular}{l}
+         \visible<3->{\text{Yes, he is.}}\\
+         \visible<4->{\temporal<5>{\text{No, he is not.}}{\text{No, \Circled{he is} not.}}{\text{No, he \Circled{is not.}}}}\\
+         \visible<5->{\text{(}= \text{No, he's not.)}}\\
+         \visible<6->{\text{(}= \text{No, he isn't.)}}
+       \end{tabular}\right.$}
 
 \vspace{10pt}
 
-\mbox{}\hfill{}{\small Noのときhe isを縮めてNo, \textcolor{orange}{he's} not.}
+\hfill\visible<5->{{\small Noのときhe isを縮めてNo, \textcolor{Maroon}{\bfseries he's} not.}}
 
 \vspace{-5pt}
 
-\mbox{}\hfill{}{\small \phantom{Noのとき}is notを縮めてNo, he \textcolor{orange}{isn't.}}
+\hfill\visible<6->{{\small \phantom{Noのとき}is notを縮めてNo, he \textcolor{Maroon}{\bfseries isn't.}}}
 
 \end{column}
-\pause
 \begin{column}{.475\textwidth}
-Is she a good singer?
+\visible<7->{Is she a good singer?}
 
 \vspace{20pt}
 
-\pause
+\mbox{}\hspace{40pt}
+\visible<8->{$\left\{\begin{tabular}{l}
+         \visible<8->{\text{Yes, she is.}}\\
+         \visible<9->{\temporal<10>{\text{No, she is not.}}{\text{No, \Circled{she is} not.}}{\text{No, she \Circled{is not.}}}}\\
+         \visible<10->{\text{(}= \text{No, she's not.)}}\\
+         \visible<11->{\text{(}= \text{No, she isn't.)}}
+       \end{tabular}\right.$}
 
-\mbox{}\hspace{40pt}$\left\{\begin{tabular}{l}
-         \text{Yes, she is.}\\\pause
-         \text{No, she is not.}\\\pause
-         \text{(}= \text{No, she's not.)}\\\pause
-         \text{(}= \text{No, she isn't.)}
-       \end{tabular}\right.$
-
-
-\pause
 
 \vspace{20pt}
-\mbox{}\hfill\myaudio{./audio/009_answer_be_02.mp3}\,\,{}
+
+\hfill{\tiny 0341}\,{\scriptsize \myaudio{./audio/009_answer_be_02.mp3}}
 
 \end{column}
 \end{columns}
-
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Is John 〜 ?  / Is Emily 〜 ? と聞かれたら}
-\begin{frame}[plain]{Is John  〜 ? / Is Emily 〜 ? と聞かれたら}
- \Large
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{Is John  〜 ? / Is Emily 〜 ? と聞かれたら}
+ \large
 
-\pause
 \begin{columns}[t]
 \begin{column}{.49\textwidth}
-Is \myAnch{john}{orange}{John} a teacher?
-
-
-\pause
+\visible<2->{Is \myAnch{john}{Maroon}{John} a teacher?}
 
 \vspace{20pt}
 
-\mbox{}\hfill$\left\{\begin{tabular}{l}
-         Yes, \myAnch{he1}{orange}{he} is.\\\pause
-         No, \myAnch{he2}{orange}{he} is not.\\\pause
-         \text{(}= \text{No, he's not.)}\\\pause
-         \text{(}= \text{No, he isn't.)}
-        \end{tabular}\right.$
-
-\pause
-
-%\mbox{}\hfill{}{\footnotesize }
+\mbox{}\hfill%
+\visible<3->{$\left\{\begin{tabular}{l}
+         \visible<3->{Yes, \myAnch{he1}{Maroon}{he} is.}\\
+         \visible<4->{No, \myAnch{he2}{Maroon}{he} is not.}\\
+         \visible<5->{\text{(}= \text{No, he's not.)}}\\
+         \visible<6->{\text{(}= \text{No, he isn't.)}}
+        \end{tabular}\right.$}
 
 \begin{tikzpicture}[remember picture,overlay]
- \draw[->,thick,orange] (john.south) to[out=-30,in=160] (he1.north west);
- \draw[->,thick,orange] (john.south) to[out=-110, in=155] (he2.west);
+ \visible<3->{\draw[->,line width=2pt,opacity=.5,Maroon] (john.south) to[out=-30,in=160] (he1.north west);}
+ \visible<4->{\draw[->,line width=2pt,opacity=.5,Maroon] (john.south) to[out=-110, in=155] ([yshift=3pt]he2.west);}
 \end{tikzpicture}
 
 \end{column}
-\pause
+%%%%%%%%%%%%%%%%%%%%
 \begin{column}{.49\textwidth}
-Is \myAnch{emily}{orange}{Emily} from Sydney?
-
-\pause
-
-\vspace{20pt}
-
-\mbox{}\hfill$\left\{\begin{tabular}{l}
-         Yes, \myAnch{she1}{orange}{she} is.\\\pause
-         No, \myAnch{she2}{orange}{she} is not.\\\pause
-         \text{(}= \text{No, she's not.)}\\\pause
-         \text{(}= \text{No, she isn't.)}
-        \end{tabular}\right.$
-
-\begin{tikzpicture}[remember picture,overlay]
- \draw[->,thick,orange] (emily.south) to[out=-30,in=160] (she1.north west);
- \draw[->,thick,orange] (emily.south) to[out=-165, in=165] (she2.west);
-\end{tikzpicture}
-
-\pause
+\visible<7->{Is \myAnch{emily}{Maroon}{Emily} from Sydney?\\
+\hfill{\scriptsize Sydney \textipa{/s\'Idni/}}}
 
 \vspace{20pt}
 
-\mbox{}\hfill\myaudio{./audio/009_answer_be_03.mp3}\,\,{}
+\mbox{}\hfill%
+\visible<8->{$\left\{\begin{tabular}{l}
+         \visible<8->{Yes, \myAnch{she1}{Maroon}{she} is.}\\
+         \visible<9->{No, \myAnch{she2}{Maroon}{she} is not.}\\
+         \visible<10->{\text{(}= \text{No, she's not.)}}\\
+         \visible<11->{\text{(}= \text{No, she isn't.)}}
+        \end{tabular}\right.$}
+
+{\begin{tikzpicture}[remember picture,overlay]
+ \visible<8->{\draw[->,line width=2pt,opacity=.5,Maroon] (emily.south) to[out=-30,in=160] (she1.north west);}
+ \visible<9->{\draw[->,line width=2pt,opacity=.5,Maroon] (emily.south) to[out=-165, in=165] ([yshift=3pt]she2.west);}
+\end{tikzpicture}}
+
+\vspace{20pt}
+
+\hfill{\tiny 0340}\,{\scriptsize \myaudio{./audio/009_answer_be_03.mp3}}
 \end{column}
 \end{columns}
 
-\pause
-
-{\small 答えるときは、名前そのものではなくheやsheを使います}
+\visible<3->{\small 答えるときは、名前そのものではなくheやsheを用います}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \subsection{Are they 〜 ? と聞かれたら}
-\begin{frame}[plain]{Are they 〜 ? と聞かれたら}
- \Large
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{Are they 〜 ? と聞かれたら}
+ \large
 
-
-\pause
-
-Are they your friends?\hfill{\scriptsize friend \textipa{/fr\'end/}}
-
-\pause
+\visible<2->{Are they your friends?\hfill{\scriptsize friend \textipa{/fr\'end/}}}
 
 \vspace{10pt}
 
-\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}
-         Yes, they are.\\\pause
-         No, they are not.\\\pause
-         \text{(}= \text{No, they're not.)}\\\pause
-         \text{(}= \text{No, they aren't.)}
-        \end{tabular}\right.$
+\mbox{}\hspace{100pt}%
+\visible<3->{$\left\{\begin{tabular}{l}
+         \visible<3->{Yes, they are.}\\
+         \visible<4->{\temporal<5>{\text{No, they are not.}}{\text{No, \Circled{they are} not.}}{\text{No, they \Circled{are not.}}}}\\
+         \visible<5->{\text{(}= \text{No, they're not.)}}\\
+         \visible<6->{\text{(}= \text{No, they aren't.)}}
+        \end{tabular}\right.$}
+
 \vspace{10pt}
 
-\pause 
-\mbox{}\hfill{}{\small Noのときthey areを縮めてNo, \textcolor{orange}{they're} not.}
+\hfill\visible<5->{{\small Noのときthey areを縮めてNo, \textcolor{Maroon}{they're} not.}}
 
 \vspace{-8pt}
 
-\mbox{}\hfill{}{\small \phantom{Noのとき}are notを縮めてNo, they \textcolor{orange}{aren't.}}
+\hfill\visible<6->{{\small \phantom{Noのとき}are notを縮めてNo, they \textcolor{Maroon}{aren't.}}}
 
 \vspace{20pt}
 
-\mbox{}\hfill\myaudio{./audio/009_answer_be_04.mp3}\,\,{}
+\hfill{\tiny 0155}\,{\scriptsize \myaudio{./audio/009_answer_be_04.mp3}}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{Are A and B 〜 ? と聞かれたら}
+ \large
 
-
-
-\begin{frame}[plain]{Are A and B 〜 ? と聞かれたら}
- \Large
-
-Are \myAnch{s1}{orange}{George and Peter} your friends?
-
-
-\pause
+\visible<2->{Are \myAnch{s1}{Maroon}{George and Peter} your friends?}
 
 \vspace{10pt}
 
-\mbox{}\hspace{100pt}$\left\{\begin{tabular}{l}
-         Yes, \myAnch{they4}{orange}{they} are.\\\pause
-         No, \myAnch{they5}{orange}{they} are not.\\\pause
-          \text{(}= \text{No, they're not.)}\\\pause
-         \text{(}= \text{No, they aren't.)}
-       \end{tabular}\right.$
+\mbox{}\hspace{100pt}%
+\visible<3->{$\left\{\begin{tabular}{l}
+         \visible<3->{Yes, \myAnch{they4}{Maroon}{they} are.}\\
+         \visible<4->{No, \myAnch{they5}{Maroon}{they} are not.}\\
+         \visible<5->{\text{(}= \text{No, they're not.)}}\\
+         \visible<6->{\text{(}= \text{No, they aren't.)}}
+       \end{tabular}\right.$}
 
 \begin{tikzpicture}[remember picture,overlay]
- \draw[->,thick,orange] (s1.south) to[out=-30,in=160] (they4.north west);
- \draw[->,thick,orange] (s1.south) to[out=-90, in=165] (they5.north west);
+ \visible<3->{\draw[->,line width=2pt,opacity=.5,Maroon] (s1.south) to[out=-30,in=160] (they4.north west);}
+ \visible<4->{\draw[->,line width=2pt,opacity=.5,Maroon] (s1.south) to[out=-90, in=165] (they5.north west);}
 \end{tikzpicture}
 
-\mbox{}\hfill\myaudio{./audio/009_answer_be_05.mp3}\,\,{}
+\hfill{\tiny 0157}\,{\scriptsize \myaudio{./audio/009_answer_be_05.mp3}}
 
-\pause
-
-{\small 答えるときは、名前そのものではなくtheyを使います}
+\visible<3->{{\small 答えるときは、名前そのものではなくtheyを用います}}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \subsection{Is this 〜 ?  / Is that 〜 ? と聞かれたら}
-\begin{frame}[plain]{Is this  〜 ? / Is that 〜 ? と聞かれたら}
- \Large
-
-\pause
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{Is this  〜 ? / Is that 〜 ? と聞かれたら}
+ \large
 
 \begin{columns}[t]
 \begin{column}{.49\textwidth}
-Is \myAnch{this}{orange}{this} your book?
-
-\pause
+\visible<2->{Is \myAnch{this}{Maroon}{this} your book?}
 
 \vspace{10pt}
 
-\mbox{}\hfill$\left\{\begin{tabular}{l}
-         Yes, \myAnch{it1}{orange}{it} is.\\\pause
-         No, \myAnch{it2}{orange}{it} is not.\\\pause
-          \text{(}= \text{No, it's not.)}\\\pause
-         \text{(}= \text{No, it isn't.)}
-       \end{tabular}\right.$
-
-\pause
-
-%\mbox{}\hfill{}{\footnotesize }
+\mbox{}\hfill%
+\visible<3->{$\left\{\begin{tabular}{l}
+         \visible<3->{Yes, \myAnch{it1}{Maroon}{it} is.}\\
+         \visible<4->{No, \myAnch{it2}{Maroon}{it} is not.}\\
+         \visible<5->{\text{(}= \text{No, it's not.)}}\\
+         \visible<6->{\text{(}= \text{No, it isn't.)}}
+       \end{tabular}\right.$}
 
 \begin{tikzpicture}[remember picture,overlay]
- \draw[->,thick,orange] (this.south) to[out=-30,in=160] (it1.north west);
- \draw[->,thick,orange] (this.south) to[out=-110, in=165] (it2.north west);
+ \visible<3->{\draw[->,line width=2pt,opacity=.5,Maroon] (this.south) to[out=-30,in=160] (it1.north west);}
+ \visible<4->{\draw[->,line width=2pt,opacity=.5,Maroon] (this.south) to[out=-110, in=165] (it2.north west);}
 \end{tikzpicture}
-
 \end{column}
-\pause
+%%%%%%%%%%%%%%
 \begin{column}{.49\textwidth}
-Is \myAnch{that}{orange}{that} your house?
-
-\pause
+\visible<7->{Is \myAnch{that}{Maroon}{that} your house?}
 
 \vspace{10pt}
 
-\mbox{}\hfill$\left\{\begin{tabular}{l}
-         Yes, \myAnch{it3}{orange}{it} is.\\\pause
-         No, \myAnch{it4}{orange}{it} is not.\\\pause
-          \text{(}= \text{No, it's not.)}\\\pause
-         \text{(}= \text{No, it isn't.)}
-       \end{tabular}\right.$
+\mbox{}\hfill
+\visible<8->{$\left\{\begin{tabular}{l}
+         \visible<8->{Yes, \myAnch{it3}{Maroon}{it} is.}\\
+         \visible<9->{No, \myAnch{it4}{Maroon}{it} is not.}\\
+         \visible<10->{\text{(}= \text{No, it's not.)}}\\
+         \visible<11->{\text{(}= \text{No, it isn't.)}}
+       \end{tabular}\right.$}
 
 \begin{tikzpicture}[remember picture,overlay]
- \draw[->,thick,orange] (that.south) to[out=-30,in=160] (it3.north west);
- \draw[->,thick,orange] (that.south) to[out=-90, in=165] (it4.north west);
+ \visible<8->{\draw[->,thick,Maroon] (that.south) to[out=-30,in=160] (it3.north west);}
+ \visible<9->{\draw[->,thick,Maroon] (that.south) to[out=-90, in=165] (it4.north west);}
 \end{tikzpicture}
-\pause
 
-\mbox{}\hfill\myaudio{./audio/009_answer_be_06.mp3}\,\,{}
+\hfill{\tiny 0334}\,{\scriptsize \myaudio{./audio/009_answer_be_06.mp3}}
 
 \end{column}
 \end{columns}
 
+\visible<3->{{\small 答えるときは、thisやthatではなくitを用います}}
+
 \end{frame}
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-20>[plain]\frametitle{Exercises}
-例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。
-\mbox{}\hfill\myaudio{./audio/009_answer_be_07.mp3}
+例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう%
+\hfill{\tiny 0109}\,{\scriptsize \myaudio{./audio/009_answer_be_07.mp3}}
 
+\bigskip
 
 \begin{tabular}{rlcll}
 \visible<1->{例}& \visible<1->{Are you busy?}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I am.}&\visible<4->{(2) No, I am not.}\\
@@ -401,44 +362,58 @@ Is \myAnch{that}{orange}{that} your house?
 \visible<1->{4}&\visible<1->{Is math easy for you?}&\visible<14->{$\rightarrow$}&\visible<15->{(1) Yes, it is.}&\visible<16->{(2) No, it is not.}\\
 \visible<1->{5}&\visible<1->{Is that your car?}&\visible<17->{$\rightarrow$}&\visible<18->{(1) Yes, it is.}&\visible<19->{(2) No, it is not.}
 \end{tabular}
-
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]\frametitle{Exercises}
 %\begin{ascolorbox3}{Susanの自己紹介を読んで、問に答えましょう}[orange][coltitle=orange!50!black]
 \begin{tcolorbox}[colframe=ForestGreen,
   colback=ForestGreen!10!white,
   colbacktitle=ForestGreen!40!white,
   coltitle=black, %fonttitle=\bfseries,
-  title=Susanの自己紹介を読んで、問に答えましょう。]
+  title=Susanの自己紹介を読んで、問に答えましょう]
 \parindent=15pt
 
-\noindent{}Hi, I'm Susan, and I'm from New York. Nice to meet you!
+\noindent{}Hi, I'm Susan, and I'm from\tikzmark{clue1} New York. Nice to meet you!
 
 Look at this picture. It's my family.
-Dad, George, is a dentist, and Mom, Helen, teaches.
-I have a fifteen-year-old brother, Kevin, and our sweet dog, Brownie.
+Dad, George, is a \tikzmark{clue2}dentist, and Mom, Helen, tea\tikzmark{clue3}ches.
+I have a fifteen-year-old brother, Kevin, and our sweet dog, Brownie.\tikzmark{clue4}
 
-I am really happy to meet you. Thank you!
-\mbox{}\hfill\myaudio{./audio/009_answer_be_08.mp3}
+I am really happy to meet you. Thank you!%
+\hfill{\tiny 0341}\,{\scriptsize \myaudio{./audio/009_answer_be_08.mp3}}
 \end{tcolorbox}
 %\end{ascolorbox3}
 
 
-\begin{tabular}{rll}
-1&\visible<2->{Is Susan from New York?}&\visible<3->{Yes, she is.}\\
-2&\visible<2->{Is Susan's father a teacher?}&\visible<4->{No, he isn't.}\\
-3&\visible<2->{Is Helen a dentist?}&\visible<5->{No, she isn't.}\\
-4&\visible<2->{Is the name of Susan's dog Brownie?\hspace{20pt}\mbox{}}&\visible<6->{Yes, it is.}
-\end{tabular}
 
+\begin{tabular}{rll}
+1&\visible<2->{Is Susan from New York?}\tikzmark{q1}&\visible<4->{Yes, she is.}\\
+2&\visible<2->{Is Susan's father a teacher?}\tikzmark{q2}&\visible<6->{No, he isn't.}\\
+3&\visible<2->{Is Helen a dentist?}\tikzmark{q3}&\visible<8->{No, she isn't.}\\
+4&\visible<2->{Is the name of Susan's dog Brownie?\tikzmark{q4}\hspace{20pt}\mbox{}}&\visible<10->{Yes, it is.}
+\end{tabular}
 
 \mbox{}\hfill\visible<1->{{\scriptsize Nice to meet you. はじめまして\hspace{15pt}look at ～を見る\hspace{15pt}dentist 歯医者\hspace{15pt}Susan's: Susanの所有格}}
 
-\mbox{}\hfill\myaudio{./audio/009_answer_be_09.mp3}\hspace{15pt}\mbox{}
+\vspace*{-10pt}
+
+\hfill{\tiny 0312}\,{\scriptsize \myaudio{./audio/009_answer_be_09.mp3}}
+
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,line width=2pt, opacity=.4] ([yshift=-2pt]pic cs:clue3) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([yshift=2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ 
+\includegraphics[height=\textheight]{./images/suzans_family.png}
+\hfill{\tiny 0341}\,{\scriptsize \myaudio{./audio/009_answer_be_08.mp3}}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
