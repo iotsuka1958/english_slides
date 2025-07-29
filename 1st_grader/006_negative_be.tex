@@ -5,6 +5,7 @@
 \usetheme{metropolis}
 \metroset{block=fill}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{media9}
@@ -22,9 +23,13 @@
 \usetikzlibrary{backgrounds}
 \usepackage{tcolorbox}
 \usepackage{tikzpeople}
-\usepackage{xcolor}
+%\usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{tipa}
+\usepackage{circledsteps}
+\usepackage{booktabs}
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -92,23 +97,25 @@
 
 \begin{tabular}{lll}
 \onslide<1->{\textcolor{Maroon}{1.}\,\,\,\,I am hungry.}& \onslide<2->{(I $=$ hungry)}& \onslide<3->{\scriptsize わたしはおなかがすいている。}\\
-\onslide<6->{\textcolor{Maroon}{2.}\,\,\,\,I am \textcolor{Maroon}{not} hungry.}& \onslide<5->{(I $\neq$ hungry)}& \onslide<4->{\scriptsize わたしはおなかがすいていない。}
+\onslide<6->{\textcolor{Maroon}{2.}\,\,\,\,I am \textcolor{Maroon}{\bfseries not} hungry.}& \onslide<5->{(I $\neq$ hungry)}& \onslide<4->{\scriptsize わたしはおなかがすいていない。}\\
+\onslide<7->{\textcolor{Maroon}{3.}\,\,\,\,\textbf{I'm} \textcolor{Maroon}{\bfseries not} hungry.}&&\\
+
 %\onslide<8->{I\textcolor{Maroon}{'m not} hungry.}
 \end{tabular}
 
 \vspace{50pt}
-\onslide<1->{\small \mbox{}\hfill{}hungry \textipa{/h\'\textturnv Ngri/} 空腹だ}
+\onslide<1->{\scriptsize \mbox{}\hfill{}hungry \textipa{/h\'\textturnv Ngri/} 空腹だ}
 
-\begin{block}<7->{Topics for Today}
+\begin{block}<8->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 否定「～でない」を表す単語はnot \textipa{/n\'At/}
- \item  I am X. の否定はI am \textcolor{Maroon}{not} X. 
-% \item  縮めて I\textcolor{Maroon}{'m not} ということもあります
+ \item 否定「～でない」を表す単語は\textbf{not} \textipa{/n\'At/}
+ \item  I am X. の否定はI am \textcolor{Maroon}{\bfseries not} X. 
+ \item  縮めて \textbf {I'm} \textcolor{Maroon}{\bfseries not} X. ということもあります
 \end{itemize}
       \end{block}
 
 % Embed the sound file
-\hfill{\tiny 0113}\,{\scriptsize \myaudio{audio/006_negative_be_01.mp3}}
+\hfill{\tiny 0130}\,{\scriptsize \myaudio{audio/006_negative_be_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{You are not from Canada.}
@@ -117,24 +124,23 @@
 
 \begin{tabular}{lll}
 \onslide<1->{\textcolor{Maroon}{1.}\,\,\,\,You are from Canada.}& \onslide<2->{(You $=$ from Canada)}& \onslide<3->{{\scriptsize あなたはカナダの出身です。}}\\
-\onslide<6->{\textcolor{Maroon}{2.}\,\,\,\,You \textcolor{Maroon}{are not} from Canada.}& \onslide<5->{(You $\neq$ from Canada)}& \onslide<4->{{\scriptsize あなたはカナダの出身ではない。}}\\
-\onslide<7->{\textcolor{Maroon}{3.}\,\,\,\,You \textcolor{Maroon}{aren't} from Canada.}
-%\onslide<9->{You\textcolor{Maroon}{'re not} from Canada.}\\
+\onslide<6->{\textcolor{Maroon}{2.}\,\,\,\,You \textcolor{Maroon}{\bfseries are not} from Canada.}& \onslide<5->{(You $\neq$ from Canada)}& \onslide<4->{{\scriptsize あなたはカナダの出身ではない。}}\\
+\onslide<7->{\textcolor{Maroon}{3.}\,\,\,\,\textbf{You're} \textcolor{Maroon}{\bfseries not} from Canada.}\\
+\onslide<8->{\textcolor{Maroon}{4.}\,\,\,\,You \textcolor{Maroon}{\bfseries aren't} from Canada.}
 \end{tabular}
 
-\vspace{50pt}
-\onslide<1->{\small \mbox{}\hfill{}from 〜:  〜の出身だ}
+\onslide<1->{\scriptsize \mbox{}\hfill{}from 〜:  〜の出身だ}
 
-\begin{block}<8->{Topics for Today}
+\begin{block}<9->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item  You are X. の否定はYou \textcolor{Maroon}{\bfseries are not} X.  
- \item  縮めて \textcolor{Maroon}{\bfseries aren't} ということもあります
-% \item  You\textcolor{Maroon}{'re not} ということもあります
+ \item  You are X. の否定はYou are \textcolor{Maroon}{\bfseries not} X.  
+ \item  縮めて\textbf{You're} \textcolor{Maroon}{\bfseries not} X. ということもあります
+ \item  \textbf{are not}を縮めて\textcolor{Maroon}{\bfseries aren't} ということもあります
 \end{itemize}
       \end{block}
 
 % Embed the sound file
-\hfill{\tiny 0140}\,{\myaudio{audio/006_negative_be_02.mp3}}
+\hfill{\tiny 0158}\,{\myaudio{audio/006_negative_be_02.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{She is not a student.}
@@ -142,48 +148,146 @@
 \begin{frame}[plain]\frametitle{$\text{A}\neq\text{B}$}
 
 \begin{tabular}{lll}
-\onslide<1->{She is a student.}& \onslide<2->{(She $=$ a student)}& \onslide<3->{{\scriptsize 彼女は学生です。}}\\
-\onslide<6->{She \textcolor{Maroon}{is not} a student.}& \onslide<5->{(She $\neq$ a student)}& \onslide<4->{{\scriptsize 彼女は学生ではない。}}\\
-\onslide<7->{She \textcolor{Maroon}{isn't} a student.}
+\onslide<1->{\textcolor{Maroon}{1.}\,\,\,\,She is a student.}& \onslide<2->{(She $=$ a student)}& \onslide<3->{{\scriptsize 彼女は学生です。}}\\
+\onslide<6->{\textcolor{Maroon}{2.}\,\,\,\,She \textcolor{Maroon}{\bfseries is not} a student.}& \onslide<5->{(She $\neq$ a student)}& \onslide<4->{{\scriptsize 彼女は学生ではない。}}\\
+\onslide<7->{\textcolor{Maroon}{3.}\,\,\,\,\textbf{She's} \textcolor{Maroon}{\bfseries not} a student.}\\
+\onslide<8->{\textcolor{Maroon}{4.}\,\,\,\,She \textcolor{Maroon}{\bfseries isn't} a student.}
 %\onslide<9->{She\textcolor{Maroon}{'s not} a student.}
 \end{tabular}
 
-\vspace{50pt}
-
 \hfill\onslide<1->{\scriptsize student \textipa{/st(j)\'u:dnt/} 生徒、学生}
 
-\begin{block}<8->{Topics for Today}
+\begin{block}<9->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small 
  \item  She is X. の否定はShe \textcolor{Maroon}{\bfseries is not} X.
- \item  縮めて \textcolor{Maroon}{\bfseries isn't} ということもあります
-% \item  She\textcolor{Maroon}{'s not} ということもあります
+ \item  縮めて\textbf{She's} \textcolor{Maroon}{\bfseries not} ということもあります
+ \item  \textbf{is not}を縮めて\textcolor{Maroon}{\bfseries isn't} ということもあります
 \end{itemize}
       \end{block}
 
 % Embed the sound file
-\hfill{\tiny 0139}\,{\scriptsize \myaudio{audio/006_negative_be_03.mp3}}
+\hfill{\tiny 0157}\,{\scriptsize \myaudio{audio/006_negative_be_03.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{They are not busy.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]\frametitle{$\text{A}\neq\text{B}$}
+
+\begin{tabular}{lll}
+\onslide<1->{\textcolor{Maroon}{1.}\,\,\,\,They are busy.}& \onslide<2->{(They $=$ busy)}& \onslide<3->{{\scriptsize 彼らは忙しい。}}\\
+\onslide<6->{\textcolor{Maroon}{2.}\,\,\,\,They \textcolor{Maroon}{\bfseries are not} busy.}& \onslide<5->{(They $\neq$ busy)}& \onslide<4->{{\scriptsize 彼らは忙しくない。}}\\
+\onslide<7->{\textcolor{Maroon}{3.}\,\,\,\,\textbf{They're} \textcolor{Maroon}{\bfseries not} busy.}\\
+\onslide<8->{\textcolor{Maroon}{4.}\,\,\,\,They \textcolor{Maroon}{\bfseries aren't} busy.}
+\end{tabular}
+
+\hfill{\scriptsize busy \textipa{/b\'Izi/} 忙しい}
+
+\begin{block}<9->{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item  They are X. の否定はThey are \textcolor{Maroon}{\bfseries not} X.  
+ \item  縮めて\textbf{They're} \textcolor{Maroon}{\bfseries not} X. ということもあります
+ \item  \textbf{are not}を縮めて\textcolor{Maroon}{\bfseries aren't} ということもあります
+\end{itemize}
+      \end{block}
+
+% Embed the sound file
+\hfill{\tiny 0152}\,{\myaudio{audio/006_negative_be_031.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Exercises}
 つぎの各文を否定文にしてください
 
  % \setbeamercovered{transparent}
   \begin{enumerate}
    \item His mother is a teacher.\\
-         \visible<2->{His mother \textcolor{Maroon}{is not} a teacher.} \visible<3->{/ His mother \textcolor{Maroon}{isn't} a teacher.}
+         \visible<2->{His mother \textcolor{Maroon}{\bfseries is not} a teacher.}\\
+	 \hfill\visible<3->{His mother\textbf{'s} \textcolor{Maroon}{\bfseries not} a teacher. / His mother \textcolor{Maroon}{\bfseries isn't} a teacher.}
    \item The room is clean.\\
-         \visible<4->{The room \textcolor{Maroon}{is not} clean.} \visible<5->{/ The room \textcolor{Maroon}{isn't} clean.}
+         \visible<4->{The room \textcolor{Maroon}{\bfseries is not} clean.}
+	 \visible<5->{/ The room\textbf{'s} \textcolor{Maroon}{\bfseries not} clean. / The room \textcolor{Maroon}{\bfseries isn't} clean.}
    \item You are busy.\\
-         \visible<6->{You \textcolor{Maroon}{are not} busy}. \visible<7->{/ You \textcolor{Maroon}{aren't} busy.}
+         \visible<6->{You \textcolor{Maroon}{\bfseries are not} busy}.
+	 \visible<7->{/ You\textbf{'re} \textcolor{Maroon}{\bfseries not} busy. / You \textcolor{Maroon}{\bfseries aren't} busy.}
    \item They are students.\\
-         \visible<8->{They \textcolor{Maroon}{are not} students.} \visible<9->{/ They \textcolor{Maroon}{aren't} students.}
+         \visible<8->{They \textcolor{Maroon}{\bfseries are not} students.}
+	 \visible<9->{/ They\textbf{'re} \textcolor{Maroon}{\bfseries not} students. / They \textcolor{Maroon}{\bfseries aren't} students.}
    \item I am a doctor.\\
-         \visible<10->{I \textcolor{Maroon}{am not} a doctor.}  \visible<11->{/ *I \textcolor{NavyBlue}{amn't} a doctor.\,\,\,{}$\longleftarrow$こうはいいません}
+	 \visible<10->{I \textcolor{Maroon}{\bfseries am not} a doctor.}
+	 \visible<11->{/ I\textbf{'m} \textcolor{Maroon}{\bfseries not} a doctor.}
+	 \visible<12->{/ *I \textcolor{NavyBlue}{amn't} a doctor.}
   \end{enumerate}
 
 % Embed the sound file
-\hfill{\tiny 0434}\,{\scriptsize \myaudio{audio/006_negative_be_04.mp3}}
+\hfill{\tiny 0447}\,{\scriptsize \myaudio{audio/006_negative_be_04.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{be動詞の否定のまとめ}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ}
+
+\begin{block}<1->{要点}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item<1->  be動詞の否定は\,\,\Circled[fill color = white]{\,\,$\text{be動詞} + \text{\textcolor{Maroon}{\bfseries not}}$\,\,}
+ \item<2-> 短縮形が用いられることもあります
+       \begin{enumerate}\setbeamertemplate{items}[circle]
+	\item<3-> \temporal<4,5>{She is not}{\Circled{She is} not}{She \Circled{is not}} busy.
+	\item<5-> \textbf{She's} not busy.
+	\item<7-> She \textbf{isn't} busy.
+       \end{enumerate}
+\end{itemize}
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[plain]{短縮形}
+% \begin{center}
+% \rowcolors{3}{NavyBlue!40}{yellow!40}
+%\begin{tabular}{lll}\toprule
+%{\small }&\multicolumn{2}{c}{\small 短縮形}\\
+%&{\small パターンA}&{\small パターンB}\\\midrule
+%\visible<1->{I am not X.}&\visible<2->{{I'm not x.}}&\visible<10->{{*I amn't X.}}\\
+%\visible<1->{You are not X.}&\visible<3->{{You're not x.}}&\visible<11->{{You aren't X.}}\\
+%\visible<1->{He is not X.}&\visible<4->{{He's not x.}}&\visible<12->{{He isn't X.}}\\
+%\visible<1->{She is not X.}&\visible<5->{{She's not x.}}&\visible<13->{{She isn't X.}}\\
+%\visible<1->{It is not X.}&\visible<6->{{It's not x.}}&\visible<14->{{It isn't X.}}\\
+%\visible<1->{That is not X.}&\visible<7->{{That's not x.}}&\visible<15->{{That isn't X.}}\\
+%\visible<1->{We are not X.}&\visible<8->{{We're not x.}}&\visible<16->{{We aren't X.}}\\
+%\visible<1->{They are not X.}&\visible<9->{{They're not x.}}&\visible<17->{{They aren't X.}}\\
+%\bottomrule
+%\end{tabular}%
+%\end{center}
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{oyoyo}
+ 
+% --- プリアンブルで必要なもの ---
+% \usepackage{tabularray}
+% \UseTblrLibrary{booktabs}
+% \documentclass{beamer} などで色の定義も必要です
+
+\centering
+\begin{tblr}{
+  colspec = {lll}, % 列の指定：3列とも左揃え
+  row{odd} = {bg=NavyBlue!40},
+  row{even} = {bg=yellow!40},
+  row{1-2} = {font=\small, bg=white}, % 1行目と2行目のフォントを \small に
+}
+\toprule
+% --- 表のヘッダー ---
+& \SetCell[c=2]{c} 短縮形 & \\ % 2列を結合(Colspan=2)して中央揃え(center)
+& パターンA & パターンB \\
+\midrule
+% --- 表の本体 ---
+\visible<1->{I am not X.}   & \visible<2->{{I'm not x.}}   & \visible<10->{{*I amn't X.}} \\
+\visible<1->{You are not X.}  & \visible<3->{{You're not x.}}  & \visible<11->{{You aren't X.}} \\
+\visible<1->{He is not X.}    & \visible<4->{{He's not x.}}    & \visible<12->{{He isn't X.}} \\
+\visible<1->{She is not X.}   & \visible<5->{{She's not x.}}   & \visible<13->{{She isn't X.}} \\
+\visible<1->{It is not X.}    & \visible<6->{{It's not x.}}    & \visible<14->{{It isn't X.}} \\
+\visible<1->{That is not X.}  & \visible<7->{{That's not x.}}  & \visible<15->{{That isn't X.}} \\
+\visible<1->{We are not X.}   & \visible<8->{{We're not x.}}   & \visible<16->{{We aren't X.}} \\
+\visible<1->{They are not X.} & \visible<9->{{They're not x.}} & \visible<17->{{They aren't X.}} \\
+\bottomrule
+\end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 
