@@ -13,7 +13,7 @@
 %% さまざまなアイコン
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fontawesome}
-\usepackage{figchild}
+%\usepackage{figchild}
 \usepackage{twemojis}
 \usepackage{utfsym}
 \usepackage{bclogo}
@@ -92,123 +92,117 @@
   \titlepage
 \end{frame}
 
-
 \section*{授業の流れ}
 \begin{frame}[plain]
   \frametitle{授業の流れ}
   \tableofcontents
 \end{frame}
-
-
-
-
-%\subsection{復習}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{be動詞の疑問文（復習）}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{be動詞の疑問文（復習）}
- \Large
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{be動詞の疑問文}
+ \large
 
-疑問文のつくり方\pause
+疑問文のつくり方%
+\hfill{\tiny 0057}\,{\scriptsize \myaudio{./audio/008_question_be_02.mp3}}
 
-\vspace{15pt}
 
-\myAnch{s-1}{orange}{You} \myAnch{be-1}{olive}{are} happy.\raisebox{-10pt}{\scalebox{2}{\myDownwardPitch}}
-\vspace{35pt}\pause
+\vspace{10pt}
 
-\myAnch{be-2}{olive}{Are} \myAnch{s-2}{orange}{you} happy\myAnch{question}{orange}{?}
-\pause
-\begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north); \pause
- \draw[thick, olive, ->] (be-1.south) to[out=-90, in=90] (be-2.north);
-\pause
-\node at (-3,-1) {{\scriptsize \textbullet\,\,be動詞を先頭に(Sはその直後)}};
-\pause
-\node at (0.5,0.25) {\scalebox{2}{\myRisingPitch}};
-\pause
-\node at (2,-1) {{\scriptsize \textbullet\,\,?と最後のイントネーションに注意}};
-% Embed the sound file
-\node at (7,-1.5) {\myaudio{./audio/023_is_ing_question_000.mp3}};
-\end{tikzpicture}
+\myAnch{s-1}{orange}{You} \myAnch{be-1}{olive}{are} happy.\scalebox{2}{\myDownwardPitch}
+\vspace{20pt}
 
+\visible<2->{\myAnch{be-2}{olive}{Are} \myAnch{s-2}{orange}{you} happy\myAnch{question}{orange}{?}}\visible<5->{\scalebox{2}{\myRisingPitch}}
+
+\visible<4->{\small be動詞を先頭に}\hspace{52pt}\visible<5->{\small ?と最後のイントネーションに注意}
+
+\visible<3->{\begin{tikzpicture}[remember picture, overlay]
+%\draw [help lines] (0,0) grid (10,4);%(0,0)から(10,4)までの"細線の方眼"
+ \draw[line width=2pt, opacity=.5, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north);
+ \draw[line width=2pt, opacity=.5, olive, ->] (be-1.south) to[out=-90, in=90] (be-2.north);
+\end{tikzpicture}}
+
+\begin{block}<6->{Topics for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item \ \textbf{be}動詞を先頭にする（主語はその後ろ）\\
+      \hfill\Circled[fill color = white]{\,\,$\text{S}+\text{be動詞}\,\,$\,\,\ldots\,\,\,}\,\,.\,\,$\longrightarrow$\,\,\,\,\Circled[fill color = white]{\,\,$\text{be動詞}+\text{S}\,\,$\,\,\ldots\,\,\,}\,\,?
+ \item 文末に`?'をつける　　　イントネーションは\myRisingPitch
+\end{itemize}
+\end{block}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
-
-つぎの文を疑問文にしましょう
+\begin{frame}[plain]\frametitle{Exercises}
+つぎの各文を疑問文にしましょう%
+\hfill{\tiny 0340}\,{\scriptsize\myaudio{./audio/008_question_be_05.mp3}}
 
  \begin{enumerate}
-  \item<1-> I am late for the meeting.
-        \onslide<5->{$\longrightarrow$ Am I late for the meeting?}\hfill\onslide<1->{{\scriptsize be late for ～に遅れる}}
-  \item<1-> You are hungry.
-        \onslide<6->{$\longrightarrow$ Are you hungry?}\hfill\onslide<1->{{\scriptsize hungry: 空腹だ}}
- \item<1-> They are happy.
-        \onslide<7->{$\longrightarrow$ Are they happy?}
-  \item<1-> She is in the kitchen.
-        \onslide<8->{$\longrightarrow$ Is she in the kitchen?}
-  \item<1-> Our teacher is busy.
-        \onslide<9->{$\longrightarrow$ Is our teacher busy?}\hfill\onslide<1->{{\scriptsize busy \textipa{/b\'Izi/} いそがしい}}
+  \item I am late for the meeting.
+        \onslide<2->{$\longrightarrow$ Am I late for the meeting?}%
+	\hfill{\scriptsize be late for ～に遅れる}
+  \item You are hungry.
+        \onslide<3->{$\longrightarrow$ Are you hungry?}%
+	\hfill{\scriptsize hungry \textipa{/h\'2Ngri/} 空腹の}
+  \item They are happy.
+        \onslide<4->{$\longrightarrow$ Are they happy?}
+  \item She is in the kitchen.
+        \onslide<5->{$\longrightarrow$ Is she in the kitchen?}%
+	\hfill{\scriptsize kitchen \textipa{/k\'ItS@n/} 台所、キッチン}
+  \item Our teacher is busy.
+        \onslide<6->{$\longrightarrow$ Is our teacher busy?}%
+	\hfill{\scriptsize busy \textipa{/b\'Izi/} 忙しい}
  \end{enumerate}
 
-\begin{exampleblock}<2->{Topics for Today}\small
+\begin{block}{Topics for Today}\small
 be動詞の疑問文のつくり方
 \begin{itemize}\setbeamertemplate{items}[square]
- \item<3->  be動詞が先頭（主語はその後ろ）\\
-\hfill\Circled[fill color = white]{\,\,$\text{S}+\text{be動詞}\,\,$\,\,\ldots\,\,\,}\,\,.\,\,$\longrightarrow$\,\,\,\,\Circled[fill color = white]{\,\,$\text{be動詞}+\text{S}\,\,$\,\,\ldots\,\,\,}\,\,? 
- \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
+ \item\ \textbf{be}動詞を先頭にする（主語はその後ろ）\\
+      \hfill\Circled[fill color = white]{\,\,$\text{S}+\text{be動詞}\,\,$\,\,\ldots\,\,\,}\,\,.\,\,$\longrightarrow$\,\,\,\,\Circled[fill color = white]{\,\,$\text{be動詞}+\text{S}\,\,$\,\,\ldots\,\,\,}\,\,?
+ \item 文末に`?'をつける　　　イントネーションは\myRisingPitch
 \end{itemize}
-      \end{exampleblock}
-\vspace{-10pt}
-% Embed the sound file
-
-\myaudio{./audio/023_is_ing_question_00.mp3}
-
-
+      \end{block}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{現在進行形の疑問文}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{現在進行形の疑問文のつくり方}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{現在進行形の疑問文}
-\Large
+\large
 
-\visible<1->{They \alt<1-3>{\myAnch{be1}{white}{are}}{\myAnch{BE1}{orange}{are}} studying.}\hfill\visible<2->{{\small study:勉強する}}
+\visible<1->{They \alt<1>{\myAnch{be1}{white}{are}}{\myAnch{BE1}{orange}{are}} studying.}\hfill\visible<1->{{\scriptsize study \textipa{/st\'2di/} 勉強する}}
 
 \vspace{15pt}
 
-\visible<3->{\alt<1-3>{\myAnch{be2}{white}{Are}}{\myAnch{BE2}{orange}{Are}} they studying?} 
-
-\visible<4->{%
+\visible<2->{\alt<1>{\myAnch{be2}{white}{Are}}{\myAnch{BE2}{orange}{Are}} they studying?} 
+%
 \begin{tikzpicture}[remember picture,overlay]
- \draw[thick,orange,->] (be1.south) to[out=-90, in=90] (be2.north);
+ \visible<2->{\draw[thick,orange,->] (be1.south) to[out=-90, in=90] (be2.north);}
 \end{tikzpicture}
-}
 
-\normalsize
-
-\begin{exampleblock}<5->{Topics for Today}\small
+\begin{block}<3->{Topics for Today}\small
 現在進行形の疑問文のつくり方
 \begin{itemize}\setbeamertemplate{items}[square]
- \item<6->  be動詞を先頭にする（主語はその後ろ）\\
+ \item  be動詞を先頭にする（主語はその後ろ）\\
 \hfill\Circled[fill color = white]{\,\,$\text{S}+\text{be動詞}+\text{---ing}\,\,$\,\,\ldots\,\,\,}\,\,.\,\,$\longrightarrow$\,\,\,\,\Circled[fill color = white]{\,\,$\text{be動詞}+\text{S}+\text{---ing}\,\,$\,\,\ldots\,\,\,}\,\,? 
- \item<7-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
+ \item 文末に`?'をつける　　　イントネーションは\myRisingPitch
 \end{itemize}
-      \end{exampleblock}
-\hfill{}\visible<8->{{\scriptsize be動詞の疑問文のときと同じです}}
+\end{block}
 
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_question_01.mp3}}
+\hfill{}\visible<4->{{\scriptsize be動詞の疑問文のときと同じです}}
+
+\mbox{}\hfill{\tiny 0108}\,{\scriptsize \myaudio{./audio/023_is_ing_question_01.mp3}}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-4>[plain]\frametitle{Exercises}
 
-日本文を参考にして(~~~~~~~~)の語を並べかえ、英文を完成させましょう。
-ただし先頭に来る単語は大文字で始めてください。
-
-
+{\small 日本文を参考にして(~~~~~~~~)の語を並べかえ、英文を完成させましょう。
+ただし先頭に来る単語は大文字で始めてください}
 
 \begin{enumerate}
  \item  ( watching /  you  / TV / are ) now?\hfill%
-あなたはいまテレビを見ていますか。\fcTelevision{0.025}{blue}{.5}\\
+あなたはいまテレビを見ていますか。\\%\fcTelevision{0.025}{blue}{.5}\\
 \visible<2->{$\longrightarrow$\,\,\,Are you watching TV now?}
  \item ( she / working/ is ) now ?
 \hspace{5.3\zw}彼女はいま働いていますか。\\
@@ -218,18 +212,17 @@ be動詞の疑問文のつくり方
 \visible<4->{$\longrightarrow$\,\,\,Is John sleeping now?}
 \end{enumerate}
 
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_question_02.mp3}}
+\mbox{}\hfill{\tiny 0134}\,{\scriptsize \myaudio{./audio/023_is_ing_question_02.mp3}}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-7>[plain]\frametitle{Exercises}
 
-次の英文の(~~~~~~~~)内から動詞の正しい形を選び、○で囲みましょう
+{\small 次の英文の(~~~~~~~~)内から動詞の正しい形を選び、○で囲みましょう}
 
 \begin{enumerate}
- \item ( Do / Does / is / \alt<2->{\Circled[outer color=orange]{Is}}{Is} ) she reading a book?\hspace{10pt}\raisebox{0pt}{\bcbook}
- \item ( Do / Does / \alt<3->{\Circled[outer color=orange]{Are}}{Are} / is ) you waiting for the bus?\hspace{10pt}\scalebox{2.5}{\twemoji{bus stop}\twemoji{bus}}\hfill{\scriptsize wait for ～を待つ}
- \item Are you ( playing / \alt<4->{\Circled[outer color=orange]{listening}}{listening} / listen ) to music now?\hfill{\scriptsize listen to ～を聞く}\\
+ \item ( Do / Does / \alt<2->{\Circled[outer color=orange]{Is}}{Is} ) she reading a book?\hspace{10pt}\raisebox{0pt}{\bcbook}
+ \item ( Do / Does / \alt<3->{\Circled[outer color=orange]{Are}}{Are} ) you waiting for the bus?\hspace{10pt}\scalebox{2.5}{\twemoji{bus stop}\twemoji{bus}}\hfill{\scriptsize wait for ～を待つ}
+ \item Are you ( playing / \alt<4->{\Circled[outer color=orange]{listening}}{listening} / listen ) \myEmph[4-]{Maroon}{to} music now?\hfill{\scriptsize listen to ～を聞く}\\
 \hfill\visible<5->{{\scriptsize cf. Are you playing music now?}}
   \item ( Do / Does / \alt<6->{\Circled[outer color=orange]{Are}}{Are} / Is ) George and Eric singing in the hall now?\hspace{10pt}\raisebox{-5pt}{\rotatebox{0}{\scalebox{2.5}{\twemoji{musical notes}}}}\\
 \hfill\visible<7->{\scriptsize cf. Are \textbf{they} singing in the hall now?}
@@ -238,16 +231,14 @@ be動詞の疑問文のつくり方
 
 \vfill
 
-
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_question_03.mp3}}
-
-
+\mbox{}\hfill{\tiny 0200}\,{\scriptsize \myaudio{./audio/023_is_ing_question_03.mp3}}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{現在進行形の疑問文への答え方}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{疑問文への答え方}
 
-\Large
+\large
 
 \begin{columns}
 \begin{column}{.425\textwidth}
@@ -281,53 +272,54 @@ be動詞の疑問文のつくり方
 \end{column}
 \end{columns}
 
-\vspace{-75pt}
+\vspace{-50pt}
 
 \visible<13->{\mbox{}\hfill\textcolor{Orange}{\bfseries \begin{tabular}{c}
 			   $\equiv$\\[-5pt]
                            {\footnotesize (同じ)}
 			  \end{tabular}}\hfill\mbox{}}
 
-\vspace{25pt}
+\vspace{15pt}
 
-\visible<14->{%
-\begin{exampleblock}{Topics for Today\,\,\,}
-\small
+\begin{block}<14->{Topics for Today\,\,\,}\small
 
 \begin{itemize}\setbeamertemplate{items}[square]
  \item 「be動詞の疑問文」への答え方と「現在進行形の疑問文」への答え方は同じ
  \item 「いいえ」のときは\kenten{短縮形}が使われることがあります
-         \begin{enumerate}
+         \begin{enumerate}\setbeamertemplate{items}[circle]
 	  \item \Circled[fill color = white]{\,\,$\text{S}+\text{be動詞}$\,\,}\,\,がまとまる場合\hfill{}{\scriptsize I'm not, you're not, she's not, it's not,  they're not}
 	  \item \Circled[fill color = white]{\,\,$\text{be動詞}+\text{not}$\,\,}\,\,がまとまる場合\hfill{}{\scriptsize aren't, isn't\,\,(でもamn'tはない)}
 	 \end{enumerate}
 \end{itemize}
-      \end{exampleblock}
-}
+      \end{block}
+
 \vspace{-15pt}
 
-\mbox{}\hfill{\scriptsize \myaudio{./audio/023_is_ing_question_04.mp3}}
+\mbox{}\hfill{\tiny 0321}\,{\scriptsize \myaudio{./audio/023_is_ing_question_04.mp3}}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-例にならって、質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。
 
-\begin{tabular}{rl@{\,\,\,}c@{\,\,\,}l@{\,\,\,}l}
-\visible<1->{例}& \visible<1->{Is she eating lunch now?}\hspace{.5\zw}\fchamburger{0.05}{black}{.5}\fcFrenchFries{0.05}{black}{.5}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, she is.}&\visible<4->{(2) No, she is not.~~~\,}%
+{\small 例にならって、質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。短縮形も可}
+
+\noindent\begin{tabular}{@{}rl@{\,\,\,}c@{\,\,\,}l@{\,\,\,}l}
+\visible<1->{例}& \visible<1->{Is she eating lunch now?}%\hspace{.5\zw}\fchamburger{0.05}{black}{.5}\fcFrenchFries{0.05}{black}{.5}
+& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, she is.}&\visible<4->{(2) No, she is not.~~~\,}%
 \footnote{\visible<5->{No, she's not.やNo, she isn't.も\scalebox{1.4}{\twemoji{OK button}}}}\\
 \visible<1->{1}&\visible<1->{Are they studying in the library?\hspace{5pt}\raisebox{0pt}{\bcbook}}&\visible<6->{$\rightarrow$}&\visible<7->{(1) Yes, they are.}&\visible<8->{(2) No, they are not.}%
 \footnote{\visible<9->{No, they're not.やNo, they aren't.も\scalebox{1.4}{\twemoji{OK button}}}}\\
-\visible<1->{2}&\visible<1->{Are you enjoying your vacation?}&\visible<10->{$\rightarrow$}& \visible<11->{(1) Yes, I am.}&\visible<
-12->{(2) No, I am not.~~~~\,\,\,\,}%
+\visible<1->{2}&\visible<1->{Are you enjoying your vacation?}&\visible<10->{$\rightarrow$}& \visible<11->{(1) Yes, I am.}&
+\visible<12->{(2) No, I am not.~~~~\,\,\,\,}%
 \footnote{\visible<13->{No, I'm not.も\scalebox{1.4}{\twemoji{OK button}}}\hspace{2\zw}\visible<14->{でもNo, I amn't.とはいいません。\scalebox{.5}{\bcbombe}}}\\
 \visible<1->{3}&\visible<1->{Is he sleeping in his room?}&\visible<15->{$\rightarrow$}&\visible<16->{(1) Yes, he is.}&\visible<17->{(2) No, he is not.}\\
-\visible<1->{4}&\visible<1->{Are Jack and Betty watching TV?\hspace{5pt}\raisebox{-5pt}{\fcTelevision{0.025}{blue}{.5}}}&\visible<18->{$\rightarrow$}&\visible<19->{(1) Yes, they are.}&\visible<20->{(2) No, they are not.}
+\visible<1->{4}&\visible<1->{Are Jack and Betty watching TV?}%\hspace{5pt}\raisebox{-5pt}{\fcTelevision{0.025}{blue}{.5}}
+&\visible<18->{$\rightarrow$}&\visible<19->{(1) Yes, they are.}&\visible<20->{(2) No, they are not.}
 \end{tabular}
 
 \vfill
 
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_question_05.mp3}}
+\mbox{}\hfill{\tiny 0401}\,{\scriptsize \myaudio{./audio/023_is_ing_question_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -336,11 +328,11 @@ be動詞の疑問文のつくり方
  
 \begin{block}{現在進行形$=$\,\,\Circled[fill color=white]{\,be動詞の現在形 $+$ --ing\,}}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 現在進行形(〜している)$\longrightarrow$いまこの瞬間に起こっていること%
+ \item<2-> 現在進行形(〜している)$\longrightarrow$いまこの瞬間に起こっていること%
 \hfill{She {\bfseries is sleeping} now.}
- \item 否定文のつくり方: be動詞の直後にnot
+ \item<3-> 否定文のつくり方: be動詞の直後にnot
 \hfill{}{She {\bfseries is} \Circled[fill color=white]{\,not\,} {\bfseries sleeping} now.}
- \item 疑問文のつくり方: be動詞を先頭に
+ \item<4-> 疑問文のつくり方: be動詞を先頭に
 \hfill{}{{\bfseries Is} she {\bfseries sleeping} now?}\\
 \hfill{}Yes, she is.\\
 \hfill{}No, She is not.\\
@@ -348,63 +340,56 @@ be動詞の疑問文のつくり方
 \hfill{}($=$ No, she isn't.)
 \end{itemize}
 \end{block}
-\hfill{{\scriptsize 否定文のつくり方・疑問文のつくり方・疑問文への答え方--みんなbe動詞の時と同じ}}
+\hfill\visible<5->{{\scriptsize 否定文のつくり方・疑問文のつくり方・疑問文への答え方---みんなbe動詞の時と同じ}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{What are you --ing?}
 \begin{frame}[plain]{What are you --ing?}
 \Large
 
-\mbox{}\hspace{80pt}%
-You are studying English now.
+You are studying \alt<4->{\myAnch{FOCUS2}{orange}{English}}{\myAnch{focus2}{white}{English}} now.
 
-
-\pause
-
-\mbox{}\hspace{55pt}%
-Are you studying \alt<4->{\myAnch{FOCUS2}{orange}{English}}{\myAnch{focus2}{white}{English}} now?
-\hspace{10pt}\visible<3->{{\normalsize Yes/Noで答える疑問文}}
+\hfill\visible<2->{{\small Are you studying English now?}}\\[-5pt]
+\hfill\visible<2->{{\scriptsize Yes/Noで答える疑問文}}
 
 \visible<5->{\myAnch{WH2}{orange}{What} are you studying now?}%
-\hspace{2\zw}\visible<7->{{\small あなたはいまなにを勉強していますか。}}
+\hfill\visible<7->{{\scriptsize あなたはいまなにを勉強していますか。}}
 
-\vspace{-5pt}
+\vspace{-8pt}
 
-\visible<8->{\hspace{103pt}drinking}
+\visible<8->{\hspace{103pt}drinking}%
+\hfill\visible<8->{{\scriptsize あなたはいまなにを飲んでいますか。}}
 
-\vspace{-5pt}
+\vspace{-8pt}
 
-\visible<9->{\hspace{103pt}eating}
+\visible<9->{\hspace{103pt}eating}%
+\hfill\visible<9->{{\scriptsize あなたはいまなにを食べていますか。}}
 
-\vspace{-5pt}
+\vspace{-8pt}
 
-\visible<10->{\hspace{103pt}{{\small ほかにもいろいろな動詞の--ing}}}
+\visible<10->{\hspace{103pt}{{\scriptsize ほかにもいろいろな動詞の--ing}}}
 
-
-\visible<11->{%
-\begin{exampleblock}{Topic for Today\,\,\,{\textcolor{black}{\mdseries ---What are you --ing?---}}}
+\begin{block}<11->{Topic for Today}
 \small
 
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item  動詞を変えることでいろいろな意味を表せます%
 \end{itemize}
-      \end{exampleblock}
-}
+      \end{block}
 
-\visible<6->{%
 \begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (focus2.south) to[out=-165, in=15] (WH2.north east);
+ \visible<6->{\draw[line width=3pt, opacity=.5, orange, ->] (focus2.south) to[out=-165, in=15] node[sloped,above,text=black,font=\tiny,pos=.55]{whatに置き換えて先頭へ} node[sloped,below,text=black,font=\tiny,pos=.5]{後は疑問文の語順} (WH2.north);}
 \end{tikzpicture}
-}
 
 \vspace{-30pt}
 
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_06.mp3}}
+\mbox{}\hfill{\tiny 0226}\,{\scriptsize \myaudio{./audio/023_is_ing_06.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-AとBとの対話になるように空所に適語を補いましょう。
+
+{\small AとBとの対話になるように空所に適語を補いましょう}
 \begin{enumerate}
  \item A: (\visible<2->{~~\textcolor{Orange}{What}~~}) are you studying?\\
        B: I am studying math.%
@@ -429,14 +414,13 @@ AとBとの対話になるように空所に適語を補いましょう。
 \visible<10>{%
 つづりが`e'で終わる動詞の--ing形に注意しよう}
 
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_07.mp3}}
+\mbox{}\hfill{\tiny 0248}\,{\scriptsize \myaudio{./audio/023_is_ing_07.mp3}}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-(~~~~)内の動詞を用いて、あたえられた日本語の意味になるよう英文を作りましょう。
-なお、(~~~~)内の動詞は、必要があれば変化させてください。
+
+{\small (~~~~)内の動詞を用いて、あたえられた日本語の意味になるよう英文を作りましょう。なお、動詞は必要があれば変化させてください}
 
 \bigskip
 
@@ -451,12 +435,9 @@ AとBとの対話になるように空所に適語を補いましょう。
  &\visible<5->{What are they writing?} & \\
 \end{tabular}
 
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_08.mp3}}
-
+\mbox{}\hfill{\tiny 0152}\,{\scriptsize \myaudio{./audio/023_is_ing_08.mp3}}
 \end{frame}
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{What are you doing?}
 \Large
 
@@ -470,23 +451,19 @@ What are you \begin{tabular}[t]{l@{\,}}
 	     \end{tabular}
 ? 
 
-\begin{exampleblock}<7->{Topic for Today}
-\small
-
-\begin{itemize}
+\begin{block}<7->{Topic for Today}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item  What are you doing?
 は「あなたは何をしていますか」という決まり文句として覚えよう
 \end{itemize}
-      \end{exampleblock}
+\end{block}
 
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_09.mp3}}
-
+\mbox{}\hfill{\tiny 0211}\,{\scriptsize \myaudio{./audio/023_is_ing_09.mp3}}
 \end{frame}
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
- あたえられた日本語の意味になるよう英文を作りましょう。
+
+{\small あたえられた日本語の意味になるよう英文を作りましょう}
 
 \begin{tabular}{rll}
  1&あなたは何をしていますか。 & \\
@@ -499,33 +476,32 @@ What are you \begin{tabular}[t]{l@{\,}}
  &\visible<5->{What are they doing?} & \\
 \end{tabular}
 
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_10.mp3}}
+\mbox{}\hfill{\tiny 0150}\,{\scriptsize \myaudio{./audio/023_is_ing_10.mp3}}
 
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-Aの質問に対するBの答えがあたえられた内容になるよう英文を書きましょう。
+
+{\small Aの質問に対するBの答えがあたえられた内容になるようBのセリフを英語で書きましょう}
 \begin{enumerate}
- \item A: What are you doing?\hspace{2\zw}{\small [数学の勉強をしています]}\hfill$2(a+b)=2a+2b$\\
+ \item A: What are you doing?\hspace{2\zw}{\small [私は数学の勉強をしています]}\hfill$2(a+b)=2a+2b$\\
        B: \visible<2->{I am studying math.}%
-\item A: What is he doing?\hspace{2\zw}{\small [夕食を作っています]}\hspace{2\zw}{}\raisebox{-5pt}{\scalebox{2}{\twemoji{cooking}\twemoji{spaghetti}\twemoji{carrot}\twemoji{leafy green}\twemoji{tomato}\twemoji{meat on bone}}}\\
+\item A: What is he doing?\hspace{2\zw}{\small [彼は夕食を作っています]}\hfill\raisebox{-5pt}{\scalebox{2}{\twemoji{cooking}\twemoji{spaghetti}\twemoji{carrot}\twemoji{leafy green}\twemoji{tomato}\twemoji{meat on bone}}}\\
        B: \visible<3->{He is cooking dinner}.%
- \item A: What are they doing?\hspace{2\zw}{\small [川(the river)で泳いでいます]}\hfill\raisebox{-5pt}{\scalebox{2}{\twemoji{man swimming}}}\\
+ \item A: What are they doing?\hspace{2\zw}{\small [彼らは川(the river)で泳いでいます]}\hfill\raisebox{-5pt}{\scalebox{2}{\twemoji{man swimming}}}\\
        B: \visible<4->{They are swimming in the river.}%
 \hfill%
 \visible<6->{$\text{swi\textcolor{red}{m}}+\text{ing}\rightarrow{}\text{swi\textcolor{red}{mm}ing}}$
- \item A: What is she doing?\hspace{2\zw}{\small [公園(the park)で走っています]}\hfill\scalebox{2.5}{\twemoji{woman running}}\\
+ \item A: What is she doing?\hspace{2\zw}{\small [彼女は公園(the park)で走っています]}\hfill\scalebox{2.5}{\twemoji{woman running}}\\
        B: \visible<5->{She is running in the park.}%
 \hfill%
 \visible<7->{$\text{ru\textcolor{red}{n}}+\text{ing}\rightarrow{}\text{ru\textcolor{red}{nn}ing}}$
 
  \end{enumerate} 
 
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_11.mp3}}
-
+\mbox{}\hfill{\tiny 0247}\,{\scriptsize \myaudio{./audio/023_is_ing_11.mp3}}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Who is --ing?}
 \begin{frame}[plain]{Who is --ing?}
 \Large
@@ -536,29 +512,26 @@ Aの質問に対するBの答えがあたえられた内容になるよう英文
 \visible<3->{\alt<1-2>{\myAnch{who}{white}{Who}}{\myAnch{WHO}{orange}{Who}} is playing the guitar\alt<1-2>{\myAnch{qm}{white}{?}}{\myAnch{QM}{orange}{?}}}
 \visible<5->{{\small だれがギターを演奏していますか}}
 
-\begin{exampleblock}<6->{Topics for Today}
+\begin{block}<6->{Topics for Today}
 \small
 
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「だれが〜していますか」はWho is --ing?
- \item Jimmy is.のように答えます\mbox{}\hfill{\myaudio{./audio/023_is_ing_12.mp3}}
+ \item Jimmy is.のように答えます\mbox{}\hfill{\tiny 0113}\,{\scriptsize \myaudio{./audio/023_is_ing_12.mp3}}
 
 \end{itemize}
-      \end{exampleblock}
+      \end{block}
 
-\smallskip
+ls\smallskip
 
-
-\visible<4->{%
 \begin{tikzpicture}[remember picture, overlay]
-\draw[thick,orange,->] (jimmy.south) to (who.north);
+\visible<4->{\draw[thick,orange,->] (jimmy.south) to (who.north);}
 \end{tikzpicture}
-}
 \end{frame}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
- あたえられた日本語の意味になるよう英文を作りましょう。
+
+{\small あたえられた日本語の意味になるよう英文を作りましょう}
 
 \begin{tabular}{rll}
  1&だれがその歌を歌っていますか。\scalebox{2.5}{\twemoji{woman singer}} & \\
@@ -567,16 +540,12 @@ Aの質問に対するBの答えがあたえられた内容になるよう英文
  &\visible<3->{Who is playing the guitar?} & \\
  2&だれがテレビ(TV)を見ていますか。\scalebox{2.5}{\twemoji{television}} & \\
  &\visible<4->{Who is watching TV?} & \\
-4&だれがあそこに座っていますか。 \raisebox{-5pt}{\fcChairA{0.05}{black}{.2}} &{\small (あそこに: over there)} \\
+4&だれがあそこに座っていますか。% \raisebox{-5pt}{\fcChairA{0.005}{black}{.02}} 
+&{\small (あそこに: over there)} \\
  &\visible<5->{Who is sitting over there?} & $\text{si\textcolor{red}{t}}+\text{ing}\rightarrow{}\text{si\textcolor{red}{tt}ing}$\\
 \end{tabular}
 
-\mbox{}\hfill{\myaudio{./audio/023_is_ing_13.mp3}}
-
+\mbox{}\hfill{\tiny 0157}\,{\scriptsize \myaudio{./audio/023_is_ing_13.mp3}}
 \end{frame}
-
-\begin{frame}[plain]{hoge}
- \fcChairA{0.05}{black}{.2}
-\end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

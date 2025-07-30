@@ -13,7 +13,7 @@
 %% さまざまなアイコン
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fontawesome}
-\usepackage{figchild}
+%\usepackage{figchild}
 \usepackage{twemojis}
 \usepackage{utfsym}
 \usepackage{bclogo}
@@ -21,16 +21,21 @@
 \usepackage{fontmfizz}
 \usepackage{pifont}
 \usepackage{phaistos}
-\usepackage{worldflags}
+%\usepackage{worldflags}
 \usepackage{circledsteps}
 \usepackage{tipa,manfnt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
-\usetikzlibrary{backgrounds}
+%\usetikzlibrary{backgrounds}
 \usepackage{tcolorbox}
 \usepackage{tikzducks}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}  %% 任意の位置に図を配置
+%\usepackage[colorgrid,gridunit=pt,texcoord]{eso-pic} %%場所決めのための格子
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -109,53 +114,78 @@
 \section{be動詞の否定（復習）}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{be動詞の否定（復習）}
-
-否定のことばnotを用いて、つぎの各文を否定文にしましょう%
-\hfill{\tiny 0424}\,{\scriptsize \myaudio{audio/022_is_ing_negative_01.mp3}}
+つぎの各文をnotを用いて否定文にしてください（短縮形も可）
 
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item \visible<1->{His mother is a teacher.}\\
-         \visible<2->{His mother \textcolor{orange}{\bfseries is not} a teacher.} 
-         \,\,\,\,\visible<7->{$=$ His mother \textcolor{orange}{\bfseries isn't} a teacher.}%
-         \hfill{}\visible<8->{($\text{is not} = \text{isn't}$)}
-   \item \visible<1->{The room is clean.}\\
-         \visible<3->{The room \textcolor{orange}{\bfseries is not} clean.}
-         \hspace*{33pt}\visible<9->{$=$ The room \textcolor{orange}{\bfseries isn't} clean.}%
-   \item \visible<1->{You are busy.}\\
-         \visible<4->{You \textcolor{orange}{\bfseries are not} busy.}
-         \hspace*{58pt}\visible<10->{$=$ You \textcolor{orange}{\bfseries aren't} busy.}%
-          \hfill{}\visible<11->{($\text{are not} = \text{aren't}$)}
-   \item \visible<1->{They are students.}\\
-         \visible<5->{They \textcolor{orange}{\bfseries are not} students.} 
-         \hspace*{33pt}\visible<12->{$=$ They \textcolor{orange}{\bfseries aren't} students.}%
-         
-   \item \visible<1->{I am a doctor.}\\
-         \visible<6->{I \textcolor{orange}{\bfseries am not} a doctor.}
-         \hspace*{56pt}\visible<13->{$\neq$ *I \textcolor{olive}{\bfseries amn't} a doctor.}%
-         \hfill\visible<14->{\small {$\longleftarrow$こうはいいません\,\,\dbend}\\[5pt]}
-\hspace{160pt}\visible<14->{\scriptsize * 「まちがった英文です」という記号}
+   \item His mother is a teacher.\\
+         \visible<2->{\,\,\,\,\,$\longrightarrow$\,His mother \textcolor{Maroon}{\bfseries is not} a teacher.}\\
+	 \hfill\visible<3->{His mother\textbf{'s} \textcolor{Maroon}{\bfseries not} a teacher. / His mother \textcolor{Maroon}{\bfseries isn't} a teacher.}
+   \item The room is clean.\\
+         \visible<4->{\,\,\,\,\,$\longrightarrow$\,The room \textcolor{Maroon}{\bfseries is not} clean.}
+	 \visible<5->{/ The room\textbf{'s} \textcolor{Maroon}{\bfseries not} clean. / The room \textcolor{Maroon}{\bfseries isn't} clean.}
+   \item You are busy.\\
+         \visible<6->{\,\,\,\,\,$\longrightarrow$\,You \textcolor{Maroon}{\bfseries are not} busy}.
+	 \visible<7->{/ You\textbf{'re} \textcolor{Maroon}{\bfseries not} busy. / You \textcolor{Maroon}{\bfseries aren't} busy.}
+   \item They are students.\\
+         \visible<8->{\,\,\,\,\,$\longrightarrow$\,They \textcolor{Maroon}{\bfseries are not} students.}
+	 \visible<9->{/ They\textbf{'re} \textcolor{Maroon}{\bfseries not} students. / They \textcolor{Maroon}{\bfseries aren't} students.}
+   \item I am a doctor.\\
+	 \visible<10->{\,\,\,\,\,$\longrightarrow$\,I \textcolor{Maroon}{\bfseries am not} a doctor.}
+	 \visible<11->{/ I\textbf{'m} \textcolor{Maroon}{\bfseries not} a doctor.}
+	 \visible<12->{/ *I \textcolor{NavyBlue}{amn't} a doctor.}
   \end{enumerate}
+
+% Embed the sound file
+\hfill{\tiny 0447}\,{\scriptsize \myaudio{audio/022_is_ing_negative_00.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{be動詞の否定（復習）}
-\begin{block}{要点}
+\begin{block}<1->{要点}
 \begin{itemize}\setbeamertemplate{items}[square]
- \item<2->  be動詞の否定は\,\,\Circled[fill color = white]{\,\,$\text{be動詞} + \text{\textcolor{Maroon}{\bfseries not}}$\,\,}
- \item<4->  縮めて {\bfseries aren't} ($=\text{are not}$)、{\bfseries isn't} ($=\text{is not}$) ということもあります\hfill{}{\scriptsize (短縮形)}\,\,\\
-\hfill{{\scriptsize \dbend\,\,amn'tとはいいません\,\,\,}}
-% \item  She\textcolor{orange}{'s not} ということもあります
+ \item<1->  be動詞の否定は\,\,\Circled[fill color = white]{\,\,$\text{be動詞} + \text{\textcolor{Maroon}{\bfseries not}}$\,\,}
+ \item<2-> 短縮形が用いられることもあります
+       \begin{enumerate}\setbeamertemplate{items}[circle]
+	\item<3-> \temporal<4,5>{She is not}{\Circled{She is} not}{She \Circled{is not}} busy.
+	\item<5-> \textbf{She's} not busy.
+	\item<7-> She \textbf{isn't} busy.
+       \end{enumerate}
 \end{itemize}
-\hfill\begin{minipage}{.75\textwidth}
-\begin{enumerate}
- \item<3-> They {\itshape are} {\bfseries not} students. \onslide<5->{($=$ They {\bfseries aren't} students.)}
- \item<3-> She {\itshape is} {\bfseries not} busy. \onslide<5->{($=$ She {\bfseries isn't} busy.)}
- \item<3-> I {\itshape am} {\bfseries not} hungry. \onslide<5->{($\neq$ * I {\bfseries amn't} hungry.)}
-\end{enumerate}
-\end{minipage}
 \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{短縮形の一覧表}
+ 
+% --- プリアンブルで必要なもの ---
+% \usepackage{tabularray}
+% \UseTblrLibrary{booktabs}
+% \documentclass{beamer} などで色の定義も必要です
+
+\centering
+\begin{tblr}{
+  colspec = {lll}, % 列の指定：3列とも左揃え
+  row{odd} = {bg=NavyBlue!40},
+  row{even} = {bg=yellow!40},
+  row{1-2} = {font=\small, bg=white}, % 1行目と2行目のフォントを \small に
+}
+\toprule
+% --- 表のヘッダー ---
+& \SetCell[c=2]{c} 短縮形 & \\ % 2列を結合(Colspan=2)して中央揃え(center)
+& パターンA & パターンB \\
+\midrule
+% --- 表の本体 ---
+\visible<1->{I am not X.}   & \visible<2->{{I'm not x.}}   & \visible<10->{{*I amn't X.}} \\
+\visible<1->{You are not X.}  & \visible<3->{{You're not x.}}  & \visible<11->{{You aren't X.}} \\
+\visible<1->{He is not X.}    & \visible<4->{{He's not x.}}    & \visible<12->{{He isn't X.}} \\
+\visible<1->{She is not X.}   & \visible<5->{{She's not x.}}   & \visible<13->{{She isn't X.}} \\
+\visible<1->{It is not X.}    & \visible<6->{{It's not x.}}    & \visible<14->{{It isn't X.}} \\
+\visible<1->{That is not X.}  & \visible<7->{{That's not x.}}  & \visible<15->{{That isn't X.}} \\
+\visible<1->{We are not X.}   & \visible<8->{{We're not x.}}   & \visible<16->{{We aren't X.}} \\
+\visible<1->{They are not X.} & \visible<9->{{They're not x.}} & \visible<17->{{They aren't X.}} \\
+\bottomrule
+\end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{現在進行形の否定}
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{現在進行形の否定}
@@ -164,16 +194,20 @@
 \begin{enumerate}
  \item<2-> They {\itshape\bfseries are studying} now.\hfill{\scriptsize study \textipa{/st\'2di/} 勉強する}
  \item<3-> They {\itshape\bfseries are} \textcolor{Maroon}{\bfseries not} {\itshape\bfseries studying} now.\\
-      \visible<5->{($=$ They \textcolor{Maroon}{\bfseries aren't} {\itshape studying} now.)}
+ \item<5-> They\textcolor{Maroon}{\bfseries 're not} {\itshape studying} now.
+ \item<6-> They \textcolor{Maroon}{\bfseries aren't} {\itshape studying} now.
 \end{enumerate}
 
 \vfill
+
+\hfill{\tiny 0159}\,{\scriptsize \myaudio{audio/022_is_ing_negative_01.mp3}}
 
 \begin{block}<4->{Topic for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
  \item  現在進行形\,\,\Circled[fill color = white]{\,\,$\text{be動詞}+\text{---ing}$\,\,}\,\,の否定$\longrightarrow$\,\,%
 \Circled[fill color = white]{\,\,$\text{be動詞} + \text{\textcolor{Maroon}{\bfseries not}} + \text{---ing}$\,\,}
- \visible<6->{\item 短縮形aren't ---ing, isn't ---ingが使われることもあります} \end{itemize}
+ \visible<7->{\item 短縮形が使われることもあります}
+\end{itemize}
 \end{block}
 \hfill{}\onslide<7->{\scriptsize be動詞の直後に\textcolor{Maroon}{\bfseries not}がくるのは、be動詞の否定と同じです\hspace{1\zw}}
 \end{frame}
@@ -227,28 +261,57 @@ We \alt<6->{(\,\,\textcolor{BurntOrange}{\bfseries aren't}\,\,)}{(\phantom{\,\,a
  
 \begin{block}<1->{be動詞の否定}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item  be動詞の否定は\,\,\Circled[fill color = white]{\,\,$\text{be動詞} + \text{\textcolor{Maroon}{\bfseries not}}$\,\,}
- \item  縮めて {\bfseries aren't}\,\,($=\text{are not}$)、{\bfseries isn't}\,\,($=\text{is not}$) ということもあります（短縮形）
-\begin{enumerate}\setbeamertemplate{items}[circle]
- \item George {\itshape is} busy.
- \item George {\itshape is} \textcolor{Maroon}{\bfseries not} busy.($=$ George {\bfseries isn't} busy.)
-\end{enumerate}
-% \item  She\textcolor{orange}{'s not} ということもあります
+ \item<1->  be動詞の否定は\,\,\Circled[fill color = white]{\,\,$\text{be動詞} + \text{\textcolor{Maroon}{\bfseries not}}$\,\,}
+ \item<2-> 短縮形が用いられることもあります
+       \begin{enumerate}\setbeamertemplate{items}[circle]
+	\item<3-> \temporal<4,5>{She is not}{\Circled{She is} not}{She \Circled{is not}} busy.
+	\item<5-> \textbf{She's} not busy.
+	\item<7-> She \textbf{isn't} busy.
+       \end{enumerate}
 \end{itemize}
 \end{block}
 
-\begin{block}<2->{現在進行形の否定}\small
+\begin{block}<8->{現在進行形の否定}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item  現在進行形\,\,\Circled[fill color = white]{\,\,$\text{be動詞}+\text{---ing}$\,\,}\,\,の否定$\longrightarrow$\,\,%
+ \item<8->  現在進行形\,\,\Circled[fill color = white]{\,\,$\text{be動詞}+\text{---ing}$\,\,}\,\,の否定$\longrightarrow$\,\,%
 \Circled[fill color = white]{\,\,$\text{be動詞} + \text{\textcolor{Maroon}{\bfseries not}} + \text{---ing}$\,\,}
-
-\begin{enumerate}\setbeamertemplate{items}[circle]
- \item They {\itshape are playing} the guitar.
- \item They {\itshape are} \textcolor{Maroon}{\bfseries not} {\itshape playing} the guitar.($=$ They {\bfseries aren't} {\itshape playing} the guitar.)
-\end{enumerate}
+ \item<9-> 短縮形が用いられることもあります
+       \begin{enumerate}\setbeamertemplate{items}[circle]
+	\item<10-> \temporal<11,12>{They are not}{\Circled{They are} not}{They \Circled{are not}} playing the guitar.
+	\item<12-> \textbf{They're} not playing the guitar.
+	\item<14-> They \textbf{aren't} playing the guitar.
+       \end{enumerate}
+%\begin{enumerate}\setbeamertemplate{items}[circle]
+% \item They {\itshape are playing} the guitar.
+% \item They {\itshape are} \textcolor{Maroon}{\bfseries not} {\itshape playing} the guitar.
+% \item They\textcolor{Maroon}{\bfseries 're not} {\itshape playing} the guitar.
+% \item They \textcolor{Maroon}{\bfseries aren't} {\itshape playing} the guitar.
+%\end{enumerate}
 \end{itemize}
 \end{block}
 
-\hfill{}\onslide<3->{be動詞の直後に\textcolor{Maroon}{\bfseries not}がくるのは、どちらも同じです\hspace{1\zw}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]
+\vspace*{50pt}
+
+be動詞の否定も現在進行形の否定も、どちらもbe動詞の直後に\textcolor{Maroon}{\bfseries not}がきます！
+
+\vspace{20pt}
+
+% この場合は (340pt, 200pt) の位置に 0.4\linewidth の幅のブロックができる．
+\begin{textblock*}{0.4\linewidth}(340pt,100pt)
+    % TiKZを使った図形の描画
+    \begin{tikzpicture}
+        \duck[laughing,bowtie,
+strawhat=brown!50!white,
+ribbon=black,
+think={\scriptsize おなじ！},
+bubblecolour=white!50!pink,
+scale=1.1414]
+    \end{tikzpicture}
+\end{textblock*}
+
 \end{frame}
 \end{document}

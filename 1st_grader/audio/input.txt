@@ -1,5 +1,4 @@
-His mother is not a teacher.<break time="2.5s"/>His mother’s not a teacher.<break time="2.5s"/>His mother isn’t a teacher.
-The room is not clean.<break time="2.5s"/>The room’s not clean.<break time="2.5s"/>The room isn’t clean.
-You are not busy. <break time="2.5s"/> You’re not busy.<break time="2.5s"/> You aren’t busy.
-They are not students.<break time="2.5s"/>They’re not students.<break time="2.5s"/>They aren’t students.
-I am not a doctor.<break time="2.5s"/>I’m not a doctor.
+They are studying now.
+They are not studying now.
+They’re not studying now.
+They aren’t studying now.
