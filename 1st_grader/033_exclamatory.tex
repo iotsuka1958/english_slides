@@ -16,6 +16,9 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usepackage{luatexja-otf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -77,7 +80,7 @@
 \visible<9->{%
 \begin{block}{Topics for Today}
 \pause
-\textbf{What} \textipa{/w\'At/} を用いた感嘆文\hfill{\scriptsize \myaudio{./audio/033_exclamatory_01.mp3}}
+\textbf{What} \textipa{/w\'At/} を用いた感嘆文\hfill{\tiny 0245}\,{\scriptsize \myaudio{./audio/033_exclamatory_01.mp3}}
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「なんと～な\ldots{}でしょう」というとき$\longrightarrow$\,\,\,%
@@ -94,7 +97,8 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-日本語の意味になるよう空所に適当な単語を補いましょう
+
+{\small 日本語の意味になるよう空所に適当な単語を補いましょう}
  \begin{enumerate}
   \item うわあ、大きな家。\hfill{\scriptsize cf. This is a big house.}\\
 	(~~\alt<2->{What}{\phantom{What}}~~) a big house!
@@ -103,12 +107,12 @@
   \item うわあ、なんて大きな犬を飼っているんでしょう。\hfill{\scriptsize cf. You have a big dog.}\\
 	(~~\alt<4->{What}{\phantom{What}}~~) (~~~~\alt<4->{a}{\phantom{a}}~~~~) big (~~\alt<4->{dog}{\phantom{dog}}~~) you have!
  \end{enumerate}
-\hfill{\scriptsize \myaudio{./audio/033_exclamatory_02.mp3}}
-
+\hfill{\tiny 0136}\,{\scriptsize \myaudio{./audio/033_exclamatory_02.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{How \ldots ! \textipa{/h\'aU/}}
 \subsection{なんて～でしょう}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{How \ldots ! \textipa{/h\'aU/}}
 
 \begin{columns}[t]
@@ -134,7 +138,6 @@
  \end{column}
 %%%%%%%%%%%%%%%%%%%%%%%
 \end{columns}
- 
 
 \begin{tikzpicture}[remember picture, overlay]
 \visible<2->{\draw[->, line width=3pt, NavyBlue, opacity=.5] (c1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.6]{Howつけて} node[sloped,below,text=black,font=\tiny,pos=.4]{先頭へ} (c2.160);}
@@ -145,7 +148,7 @@
 \visible<8->{%
 \begin{block}{Topics for Today}
 \pause
-\textbf{How} \textipa{/h\'aU/} を用いた感嘆文\hfill{\scriptsize \myaudio{./audio/033_exclamatory_03.mp3}}
+\textbf{How} \textipa{/h\'aU/} を用いた感嘆文\hfill{\tiny 0241}\,{\scriptsize \myaudio{./audio/033_exclamatory_03.mp3}}
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「なんて～でしょう」というとき$\longrightarrow$\,\,\,%
@@ -164,6 +167,8 @@
 \hfill\hyperlink{WHAT}{\beamergotobutton{what}}
 \hypertarget{HOW}{}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%
+\section{WhatとHowの使い分け}
 %%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{WhatとHowのどっちを使えばいいの？}
  \begin{enumerate}
@@ -181,7 +186,7 @@
 	\end{enumerate}
  \end{enumerate}
 
-\begin{block}<7->{Today's Point}\small
+\begin{block}<8->{Today's Point}\small
 注目しているところに名詞があるかどうかで決まります
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 名詞があれば　$\longrightarrow$ What \ldots !
@@ -189,15 +194,27 @@
 \end{itemize}
 \end{block}
 \vspace*{-5pt}
-\hfill{\scriptsize \myaudio{./audio/033_exclamatory_04b.mp3}}
+\hfill{\tiny 0227}\,{\scriptsize \myaudio{./audio/033_exclamatory_04b.mp3}}
 
 \hfill\hyperlink{HOW}{\beamergotobutton{how}}%
 \hspace{10pt}\hyperlink{WHAT}{\beamergotobutton{what}}
 
+\begin{textblock*}{0.4\linewidth}(300pt,40pt)
+\visible<7->{\begin{tikzpicture}
+\duck[laughing,bowtie,
+strawhat=brown!50!white,
+ribbon=black,
+think={\tiny \begin{tabular}{l}
+名詞の\\有無が鍵
+\end{tabular}},
+bubblecolour=white!50!pink,scale=1.1414]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-日本語の意味になるよう(~~~~~~)内の単語を並べ替えましょう。先頭に来る語は大文字で始めてください\hfill{\scriptsize \myaudio{./audio/033_exclamatory_04.mp3}}
+
+{\small 日本語の意味になるよう(~~~~~~)内の単語を並べ替えましょう。先頭に来る語は大文字で始めてください}\hfill{\tiny 0157}\,{\scriptsize \myaudio{./audio/033_exclamatory_04.mp3}}
 
  \begin{enumerate}
   \item あなたはなんて親切なんでしょう。\hfill{\scriptsize cf. You are kind.}\\
@@ -218,7 +235,8 @@
 
 %%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-日本語の意味になるよう(~~~~~~)内の語句を並べ替えましょう。先頭に来る語は大文字で書き始めてください。なお $[ +1 ]$とある場合は不足している1語を補ってください。$[ -1 ]$とある場合は余計な1語が含まれています\hfill{\scriptsize \myaudio{./audio/033_exclamatory_05.mp3}}
+
+{\small 日本語の意味になるよう(~~~~~~)内の語句を並べ替えましょう。先頭に来る語は大文字で書き始めてください。なお $[ +1 ]$とある場合は不足している1語を補ってください。$[ -1 ]$とある場合は余計な1語が含まれています}\hfill{\tiny 0135}\,{\scriptsize \myaudio{./audio/033_exclamatory_05.mp3}}
  \
  \begin{enumerate}
   \item これはなんてかわいい猫なんでしょう。\hfill{\scriptsize cf. This is a cute cat.}\\
@@ -234,7 +252,8 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-日本語の意味になるよう空所にHowまたはWhatを補いましょう\hfill{\scriptsize \myaudio{./audio/033_exclamatory_06.mp3}}
+
+{\small 日本語の意味になるよう空所にHowまたはWhatを補いましょう}\hfill{\tiny 0232}\,{\scriptsize \myaudio{./audio/033_exclamatory_06.mp3}}
 \begin{enumerate}
  \item  なんて運がいいんだろう。\\
 	(~~\alt<2->{How}{\phantom{How}}~~) lucky!
@@ -249,11 +268,25 @@
  \item まあ、きれいな花。\\
        (~~\alt<7->{What}{\phantom{How}}~~) beautiful flowers!
 \end{enumerate}
+
+\begin{textblock*}{0.4\linewidth}(300pt,140pt)
+\visible<8->{\begin{tikzpicture}
+\duck[laughing,bowtie,
+strawhat=brown!50!white,
+ribbon=black,
+speech={\tiny 感極まって},
+think={\tiny \begin{tabular}{l}
+S$+$Vが\\ふっとんだ
+\end{tabular}},
+bubblecolour=white!50!pink,scale=1.1414]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}\small
-A, B\,\,2人の対話がなりたつように、(~~~~~~~~)に適する文を選択肢から選びましょう。\\
-ひとつ余計なものが含まれています\hfill{\scriptsize \myaudio{./audio/033_exclamatory_07.mp3}}
+
+{\small A, B\,\,2人の対話がなりたつように、(~~~~~~~~)に適する文を選択肢から選びましょう。}\\
+{\small ひとつ余計なものが含まれています}\hfill{\tiny 0021}\,{\scriptsize \myaudio{./audio/033_exclamatory_07.mp3}}
 
 \bigskip
 
@@ -302,6 +335,7 @@ A, B\,\,2人の対話がなりたつように、(~~~~~~~~)に適する文を選�
   \end{frame}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{感嘆文のまとめ}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{まとめ}
  
@@ -321,7 +355,7 @@ A, B\,\,2人の対話がなりたつように、(~~~~~~~~)に適する文を選�
 \end{itemize}
      \end{block}
 
-\begin{block}<2->{Today's Point}\small
+\begin{block}<2->{WhatかHowか}\small
 注目しているところに名詞があるかどうかで決まります
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 名詞があれば　$\longrightarrow$ What \ldots !
@@ -341,8 +375,13 @@ A, B\,\,2人の対話がなりたつように、(~~~~~~~~)に適する文を選�
  \Huge\centering
 \visible<4->{なんて日だ！}
 
-\hfill{\scriptsize \myaudio{./audio/033_exclamatory_08.mp3}}
+\hfill{\tiny 0127}\,{\scriptsize \myaudio{./audio/033_exclamatory_08.mp3}}
 \end{frame}
+\begin{tikzpicture}
+  \duck[crazyhair=brown!60!black, glasses, eyebrow,
+    signpost=TikZ, speech=Use it!, laughing,
+    jacket=orange, lapel, buttons, water]
+\end{tikzpicture}
 \end{document}
 
 

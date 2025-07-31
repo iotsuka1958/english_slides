@@ -13,7 +13,7 @@
 %% さまざまなアイコン
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fontawesome}
-\usepackage{figchild}
+%\usepackage{figchild}
 \usepackage{twemojis}
 \usepackage{utfsym}
 \usepackage{bclogo}
@@ -28,11 +28,16 @@
 \usetikzlibrary{backgrounds}
 \usepackage{tcolorbox}
 \usepackage{tikzpeople}
+\usepackage{tikzducks}
 \usepackage{circledsteps}
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{pxrubrica}
 \usepackage{tipa}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}  %% 任意の位置に図を配置
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %%場所決めのための格子
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -97,34 +102,81 @@
   \frametitle{授業の流れ}
   \tableofcontents
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Pronunciation of Can}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{canの発音}
+\LARGE
+can
 
+\hfill\visible<3->{\textipa{/k@n/}}\hfill\visible<2->{\textipa{/k\'\ae n/}}\hfill\mbox{}
 
-\section{can}
+\vspace{90pt}
 
+\begin{block}<5->{Topic for Today}\small
+ \begin{itemize}\setbeamertemplate{items}[square]\small
+  \item \textbf{can}には2とおりの発音があります%
+\hfill{\scriptsize 使い分けが気になりますね}
+
+ \end{itemize}
+\end{block}
+
+% この場合は (363pt, 100pt) の位置に 0.4\linewidth の幅のブロックができる．
+\begin{textblock*}{0.4\linewidth}(363pt,100pt)
+    % TiKZを使った図形の描画
+    \visible<4->{\begin{tikzpicture}
+        \duck[laughing,bowtie,
+strawhat=brown!50!white,
+ribbon=black,
+think={\scriptsize 2つ！},
+bubblecolour=white!50!pink,
+scale=1.1414]
+    \end{tikzpicture}}
+\end{textblock*}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{〜できる}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{〜できる}
  \Large
 
 \begin{enumerate}
- \item I play the guitar every day. \hfill{\scriptsize every day: 毎日}\pause
- \item I \textcolor{Maroon}{\bfseries can} {\bfseries play} the guitar.\pause
+ \item<2-> I play the guitar every day. \hfill{\scriptsize every day: 毎日}
+ \item<3-> I \textcolor{Maroon}{\bfseries can} {\bfseries play} the guitar.
 \end{enumerate}
 
-\vfill
+\vspace{60pt}
 
-\begin{exampleblock}{Topics for Today}
+\begin{block}<4->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item   {\bfseries can} $+$ 原形$\longrightarrow${\,\,\,}「〜することができる」
- \item \textipa{/k@n/ /k\'\ae n/}
+ \item<4->   {\bfseries can} $+$ 原形$\longrightarrow${\,\,\,}「〜することができる」
+% \item \textipa{/k@n/ /k\'\ae n/}
+ \item<6-> \<「～できる」というときは\textipa{/k@n/}が普通です
+ \item<7-> \textbf{can}のように動詞と組み合わせて動詞の意味を補足する語を\kenten{助動詞}といいます
  \end{itemize}
-     \end{exampleblock}
+     \end{block}
 
-\mbox{}\hfill\visible{\myaudio{./audio/012_can_01.mp3}} 
+\vspace*{-20pt}
+
+\mbox{}\hfill{\tiny 0102}\,{\scriptsize \myaudio{./audio/012_can_01.mp3}} 
+
+% この場合は (363pt, 100pt) の位置に 0.4\linewidth の幅のブロックができる．
+\begin{textblock*}{0.4\linewidth}(363pt,62.5pt)
+    % TiKZを使った図形の描画
+    \visible<5->{\begin{tikzpicture}
+        \duck[laughing,bowtie,
+strawhat=brown!50!white,
+ribbon=black,
+think={\scriptsize どっち？},
+bubblecolour=white!50!pink,
+scale=1.1414]
+    \end{tikzpicture}}
+\end{textblock*}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]\frametitle{〜できる}
+\begin{frame}[plain]\frametitle{助動詞can}
 
 \begin{enumerate}
  \item I \textcolor{Maroon}{\bfseries can} {\bfseries play} the guitar.
@@ -137,37 +189,54 @@
 
 \vfill
 
-\begin{exampleblock}<2->{Topics for Today}
+\begin{block}<3->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item<2->   {\bfseries can} $+$ 原形$\longrightarrow${\,\,\,}「〜することができる」
- \item<3->   主語がなんであっても同じ\\
-\hfill\visible<3->{\scriptsize canのように動詞と組み合わせて動詞の意味を補足する語を\kenten{助動詞}といいます}
- \item<4-> 「～できる」というときは\textipa{/k@n/}が普通です
+% \item<2->   {\bfseries can} $+$ 原形$\longrightarrow${\,\,\,}「〜することができる」
+ \item<3->   主語がなんであっても\textbf{can} $+$ 原形\\
+%\hfill\visible<3->{\scriptsize canのように動詞と組み合わせて動詞の意味を補足する語を\kenten{助動詞}といいます}
+% \item<4-> \<「～できる」というときは\,\textipa{/k@n/}\,が普通です
  \end{itemize}
-     \end{exampleblock}
+\end{block}
 
-\mbox{}\hfill\visible{\myaudio{./audio/012_can_02.mp3}}
+\vspace*{-10pt}
+
+\hfill{\tiny 0240}\,{\scriptsize \myaudio{./audio/012_can_02.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(300pt,62.5pt)
+    % TiKZを使った図形の描画
+    \visible<5->{\begin{tikzpicture}
+  \duck[crazyhair=brown!60!black, glasses, eyebrow,
+    signpost={\small\textipa{/k@n/}}, speech={\scriptsize できる！}, laughing,
+    jacket=Maroon!30, lapel, buttons, water=NavyBlue]
+    \end{tikzpicture}}
+\end{textblock*}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]\frametitle{Exercises}
 
+{\small 次の英文の(~~~~~~~~)内から動詞の正しい形を選びましょう}\\%
+\hfill{\tiny 0231}\,{\scriptsize \myaudio{./audio/012_can_03.mp3}}
 
-\begin{frame}<1-7>[plain]\frametitle{Exercises}
-
-次の英文の(~~~~~~~~)内から動詞の正しい形を選び、○で囲みましょう
 
 \begin{enumerate}
  \item John ( play / \alt<2->{\Circled[outer color=orange]{plays}}{plays} / playing ) baseball.
- \item Jane can ( plays / \alt<3->{\Circled[outer color=orange]{play}}{play} / playing ) the guitar.
+ \item Jane can ( plays / \alt<3->{\Circled[outer color=orange]{play}}{play} / playing ) the guitar.\hfill{\scriptsize guitar \textipa {/gIt\'A\textrhookschwa /} ギター}
  \item You can ( dancing / \alt<4->{\Circled[outer color=orange]{sing}}{sing} / sings  ) very well.\hfill{}{\scriptsize dance \textipa{/d\'\ae ns/} 踊る}
- \item They can ( \alt<5->{\Circled[outer color=orange]{swim}}{swim} / swims / swimming ).
+ \item They can ( \alt<5->{\Circled[outer color=orange]{swim}}{swim} / dances / singing ).
  \item We can（ reads / writes /\alt<6->{\Circled[outer color=orange]{speak}}{speak} ) Japanese.
 \end{enumerate}
 
-\vfill
-
-\visible<1->{%
-\mbox{}\hfill\visible{\myaudio{./audio/012_can_03.mp3}}
-}
-
+\begin{textblock*}{0.4\linewidth}(350pt,150pt)
+    % TiKZを使った図形の描画
+    \visible<7->{\begin{tikzpicture}
+        \duck[laughing,bowtie,
+strawhat=brown!50!white,
+ribbon=black,
+think={\scriptsize \textbf{can} $+$ 原形},
+bubblecolour=white!50!pink,
+scale=1.1414]
+    \end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{canの否定}
@@ -182,23 +251,37 @@
   \Large
 
 \begin{enumerate}
- \item<1-> I {\bfseries can} use a computer. \hfill{\scriptsize use \textipa{/j\'u:z/} 使う　computer \textipa{/k@mpj\'u:t\textrhookschwa /} コンピューター}
- \item<3-> I \textcolor{orange}{\bfseries cannot} use a computer.\hfill{\scriptsize \textipa{/k\'\ae nAt/}}
- \item<5-> I \textcolor{orange}{\bfseries can't} use a computer.\hfill{\scriptsize \textipa{/k\'\ae nt/}}
+ \item<1-> I {\bfseries can} use a computer. \hfill{\scriptsize use \textipa{/j\'u:z/} 使う}\hfill\hfill{\scriptsize \textipa{/k@n/}}
+%　computer \textipa{/k@mpj\'u:t\textrhookschwa /} コンピューター}
+ \item<3-> I \textcolor{Maroon}{\bfseries cannot} use a computer.\hfill{\scriptsize \textipa{/k\'\ae nAt/}}
+ \item<5-> I \textcolor{Maroon}{\bfseries can't} use a computer.\hfill{\scriptsize \textipa{/k\'\ae nt/}}
 \end{enumerate}
 
 \vfill
 
-\begin{exampleblock}<1->{Topics for Today}
+\begin{block}<1->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item<1->  「〜できる」$\longrightarrow$\,\,\, {\bfseries can} $+$ 原形\hfill{\scriptsize \textipa{/k@n/}}
  \item<6->   「〜することができない」$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{\bfseries cannot}\\\text{\bfseries can't}\end{tabular}\right\} + \text{原形}$\hfill{\scriptsize \textipa{/k\'\ae nAt/} \textipa{/k\'\ae nt/}}
  \end{itemize}
-     \end{exampleblock}
+     \end{block}
 
-\hfill\visible<4->{{\scriptsize \dbend\,\dbend\,\,\,can notはあまり使われません}}
+\hfill\visible<4->{{\scriptsize 2語のcan notはあまり使われません}}
 
-\mbox{}\hfill{}\myaudio{./audio/012_can_04.mp3}
+\hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/012_can_04.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(210pt,190pt)
+    % TiKZを使った図形の描画
+    \visible<4->{\begin{tikzpicture}
+        \duck[laughing,bowtie,glasses,
+strawhat=brown!50!white,
+ribbon=black,
+think={\scriptsize cannot！},
+speech={\scriptsize 1語で},
+bubblecolour=white!50!pink,
+scale=.75]
+    \end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Exercises}
@@ -212,19 +295,17 @@
 \end{enumerate}
 \vfill
 
-\visible<2->{%
-\begin{exampleblock}{Topics for Today}
+
+\begin{block}<2->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item  「〜できる」$\longrightarrow$\,\,\, {\bfseries can} $+$ 原形\hfill{\scriptsize \textipa{/k@n/}}
  \item 「〜できない」$\longrightarrow${\,\,\,}$\left\{\begin{tabular}{l}\text{\bfseries cannot}\\\text{\bfseries can't}\end{tabular}\right\} + \text{原形}$\hfill{\scriptsize \textipa{/k\'\ae nAt/} \textipa{/k\'\ae nt/}}
 % \item 主語がなんであっても同じ
  \end{itemize}
-     \end{exampleblock}%
-}
-
+     \end{block}%
 \hfill\visible<2->{{\scriptsize \dbend\,\dbend\,\,\,can notはあまり使われません}}
 
-\mbox{}\hfill{\myaudio{./audio/012_can_05.mp3}}
+\hfill{\tiny 0248}\,{\scriptsize \myaudio{./audio/012_can_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Exercises}
@@ -246,53 +327,61 @@
 \visible<5->{$\longrightarrow$\,\,\,He cannot ride a bicycle.}
 \end{enumerate}
 
-\mbox{}\hfill\visible<1->{\myaudio{./audio/012_can_06.mp3}}
+\hfill{\tiny 0207}\,{\scriptsize \myaudio{./audio/012_can_06.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{canの疑問文}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{canの疑問文のつくり方}
-\begin{frame}[plain,t]{〜できますか？}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{〜できますか？}
  \Large
 
-\pause
+\myAnch{s-1}{olive}{You} \myAnch{aux-1}{orange}{can} play the guitar.\visible<4->{\raisebox{-10pt}{\scalebox{2}{\myDownwardPitch}}}\hfill\visible<5->{{\scriptsize \textipa{/k@n/}}}
 
+\vspace{30pt}
 
-\myAnch{s-1}{orange}{You} \myAnch{aux-1}{olive}{can} play the guitar. \scalebox{2}{\myDownwardPitch}\hfill{\scriptsize \textipa{/k@n/}}
-\vspace{30pt}\pause
+\visible<2->{\myAnch{aux-2}{orange}{\textbf{Can}} \myAnch{s-2}{olive}{you} play the guitar\myAnch{question}{orange}{?}}\visible<4->{\scalebox{2}{\myRisingPitch}}
 
-\myAnch{aux-2}{olive}{Can} \myAnch{s-2}{orange}{you} play the guitar\myAnch{question}{orange}{?}
-\pause
+\hspace{190pt}\visible<4-> {\scriptsize ?と最後のイントネーションに注意}
+
 \begin{tikzpicture}[remember picture, overlay]
- \draw[thick, orange, ->] (s-1.south) to[out=-90, in=90] (s-2.north); 
- \draw[thick, olive, ->] (aux-1.south) to[out=-90, in=90] (aux-2.north);
-%\pause
-%\visible<8->{\node at (0.5,0.25) {\scalebox{2}{\myRisingPitch}};}
+ \visible<3->{\draw[line width=2pt,opacity=.5, olive, ->] (s-1.south) to[out=-90, in=90] (s-2.north);} 
+ \visible<3->{\draw[line width=2pt, opacity=.5, orange, ->] (aux-1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.55]{Canを先頭へ} (aux-2.north);}
 \end{tikzpicture}
-
-\vspace{-25pt}
-\mbox{}\hspace{200pt}\visible<6->{\scalebox{2}{\myRisingPitch}}
-
-\hspace{30pt}\visible<5->{{\small Canを先頭に} {\scriptsize \textipa{/k\'\ae n/}}}
-\hspace{90pt}\visible<6-> {\small ?と最後のイントネーションに注意}
 
 \vfill
 
-\begin{exampleblock}<7->{Topic for Today}
-
+\begin{block}<7->{Topic for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item   「〜することができますか？」\\
 \hspace{100pt}$\longrightarrow${\,\,\,}$\text{\bfseries Can} + \text{S} + \text{原形}$ \ldots{}\,\,? \textipa{/k\'\ae n/}
  \end{itemize}
-     \end{exampleblock}
+     \end{block}
 
- \mbox{}\hfill\visible<1->{\myaudio{./audio/012_can_07.mp3}}
+\vspace*{-8pt}
+
+\hfill{\tiny 0110}\,{\scriptsize \myaudio{./audio/012_can_07.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(350pt,85pt)
+    % TiKZを使った図形の描画
+    \visible<6->{\begin{tikzpicture}
+        \duck[laughing,bowtie,
+strawhat=brown!50!white,
+ribbon=black,
+think={\tiny \begin{tabular}{l}
+	      疑問文は\\\textipa{/k\'\ae n/}
+	     \end{tabular}},
+bubblecolour=white!50!pink,
+scale=1.1414]
+    \end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{Exercises}
 
-日本文を参考にして(~~~~~~~~)の語を並べかえ、英文を完成させましょう。
-ただし先頭に来る単語は大文字で始めてください
+{\small 日本文を参考にして(~~~~~~~~)の語を並べかえ、英文を完成させましょう。
+ただし先頭に来る単語は大文字で始めてください}
 
 \begin{enumerate}
  \item  ( can / this English song / sing / you ) ?\hspace{2\zw}%
@@ -309,31 +398,43 @@
 \hfill{\scriptsize drive \textipa{/dr\'aIv/} （車など）を運転する}
 \end{enumerate}
 
-\mbox{}\hfill\visible<1->{\myaudio{./audio/012_can_08.mp3}}
+\hfill{\tiny 0139}\,{\scriptsize \myaudio{./audio/012_can_08.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{canの疑問文への答え方}
 \begin{frame}[plain]{Can you 〜? と聞かれたら}
  \Large
 
-Can you cook pizza?\hfill{\textipa{/k\'\ae n/}}
+\visible<1->{Can you cook pizza?\hfill{\small \textipa{/k\'\ae n/}}}
 
 \vspace{20pt}
-\pause
 
-\mbox{}\hspace{100pt}$\left\{\begin{tabular}{ll}
-         \text{Yes, I can.}&\text{\textipa{/k\'\ae n/}}\\\pause
-         \text{No, I cannot.}&\text{\textipa{/k\'\ae nAt/}}\\\pause
-         \text{(}= \text{No, I can't.)}&\text{\textipa{/k\'\ae nt/}}
-        \end{tabular}\right.$
+\mbox{}\hspace{125pt}%
+\visible<2->{$\left\{\begin{tabular}{ll}
+         \visible<2->{\text{Yes, I can.}}&\visible<2->{\text{\small {\textipa{/k\'\ae n/}}}}\\
+         \visible<3->{\text{No, I cannot.}}&\visible<3->{\text{\small {\textipa{/k\'\ae nAt/}}}}\\
+         \visible<4->{\text{(}= \text{No, I can't.)}}&\visible<4->{\text{\small {\textipa{/k\'\ae nt/}}}}
+        \end{tabular}\right.$}
 
-\mbox{}\hfill{\myaudio{./audio/012_can_09.mp3}}
+\hfill{\tiny 0142}\,{\scriptsize \myaudio{./audio/012_can_09.mp3}}
 
-
+\begin{textblock*}{0.4\linewidth}(40pt,150pt)
+    % TiKZを使った図形の描画
+    \visible<5->{\begin{tikzpicture}
+        \duck[laughing,bowtie,
+strawhat=brown!50!white,
+ribbon=black,
+think={\tiny \begin{tabular}{l}
+	      答えるときも\\\textipa{/\ae /}
+	     \end{tabular}},
+bubblecolour=white!50!pink,
+scale=1.1414]
+    \end{tikzpicture}}
+\end{textblock*}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう。
+例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう
 
 \begin{tabular}{rlcll}
 \visible<1->{例}& \visible<1->{Can you skate?}\hspace{2\zw}\scalebox{2}{\twemoji{ice skate}}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I can.}&\visible<4->{(2) No, I can't.($= \text{cannot}$)}\\
@@ -346,7 +447,7 @@ Can you cook pizza?\hfill{\textipa{/k\'\ae n/}}
 
 \vfill
 
-\mbox{}\hfill\visible<1->{\myaudio{./audio/012_can_10.mp3}}
+\hfill{\tiny 0528}\,{\scriptsize \myaudio{./audio/012_can_10.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -354,26 +455,25 @@ Can you cook pizza?\hfill{\textipa{/k\'\ae n/}}
 \begin{frame}[plain]{要点}
  
 \begin{block}{助動詞can \textipa{/k@n/} \textipa{/k\'\ae n/}}
-\begin{enumerate}\setbeamertemplate{items}[square]\small
- \item {\bfseries can} $+$ 原形 {\scriptsize （～することができる）}%
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item<1-> S $+$ {\bfseries can} $+$ 原形 {\scriptsize （～することができる）}%
 \hfill{}I {\bfseries can} cook. \textipa{/k@n/}
 
- \item 否定文のつくり方: $\left\{\begin{tabular}{l}\text{\bfseries cannot}\\\text{\bfseries can't}\end{tabular}\right\} + \text{原形}$\hfill{ }%
+ \item<2-> 否定文のつくり方 $\text{S}+\left\{\begin{tabular}{l}\text{\bfseries cannot}\\\text{\bfseries can't}\end{tabular}\right\} + \text{原形}$\hfill{ }%
 \hfill{}{\normalsize He {\bfseries cannot} play the guitar.}\textipa{/k\'\ae nAt/}\\[-5pt]
 \hfill{}{\normalsize He {\bfseries can't} play the guitar.}\textipa{/k\'\ae nt/}\\
 \hfill{\scriptsize \dbend\,\dbend\,\,\,can notはあまり使われません}\\[15pt]
 
- \item 疑問文のつくり方: {\bfseries Can} $+$ S $+$ 原形 \ldots\,\,?
+ \item<3-> 疑問文のつくり方 {\bfseries Can} $+$ S $+$ 原形 \ldots\,\,?
 \hfill{}{\normalsize {\bfseries Can} she sing well?\textipa{/k\'\ae n/}}
- \item 疑問文への答え方%
+ \item<4-> 疑問文への答え方%
 \hfill{}Yes, she {\bfseries can}. \textipa{/k\'\ae n/}\\
 \hfill{}No, she {\bfseries cannot}.\textipa{/k\'\ae nAt/}\\
-\hfill{}($=$ No, she {\bfseries can't}.\textipa{/k\'\ae nt/})
-\end{enumerate}
+\hfill{}($=$ No, she {\bfseries can't}.)\textipa{/k\'\ae nt/}
+\end{itemize}
 \end{block}
 
-\mbox{}\hfill\visible<1->{\myaudio{./audio/012_can_11.mp3}}
-
+\hfill{\tiny 0257}\,{\scriptsize \myaudio{./audio/012_can_11.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
