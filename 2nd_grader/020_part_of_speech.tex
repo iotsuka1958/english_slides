@@ -17,16 +17,21 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
+\usetikzlibrary{tikzmark}
 \usepackage{pxrubrica}
 \usepackage{pangram}
 \PangramSetup{
 sizes={7pt,8pt,9pt,10pt,11pt,12pt,13pt,14pt,15pt,16pt},
 tagfont=\color{gray}\ttfamily\footnotesize,}
 \NewPangramClass{IRO}{\input{iroha.txt}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}  %% 任意の位置に図を配置
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %%場所決めのための格子
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{The quick brown fox jumps over the lazy dog.}
-\author{\myaudio{./audio/020_part_of_speech_00.mp3}
+\author{{\tiny 0054}\,{\scriptsize\myaudio{./audio/020_part_of_speech_00.mp3}}
 }
 \institute[]{}
 \date[]
@@ -46,6 +51,7 @@ tagfont=\color{gray}\ttfamily\footnotesize,}
   \tableofcontents
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{品詞}
 \subsection{品詞とは}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,12 +69,12 @@ tagfont=\color{gray}\ttfamily\footnotesize,}
 
 \vfill
 
-\mbox{}\hfill\visible<14->{ほかにもありますが、まずはこれをしっかり理解しましょう}
+\hfill\visible<14->{まずはこれをしっかり理解しましょう}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 それぞれの英文の単語の品詞がなにかかんがえましょう%
-\mbox{}\hfill{\scriptsize \myaudio{./audio/020_part_of_speech_01.mp3}}
+\hfill{\tiny 0232}\,{\scriptsize \myaudio{./audio/020_part_of_speech_01.mp3}}
 
 \begin{columns}[t]
 \begin{column}{.7\textwidth}
@@ -99,9 +105,9 @@ tagfont=\color{gray}\ttfamily\footnotesize,}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{代名詞}
-\Large
+\large
 
-代名詞: 名詞の代わりに使う語
+代名詞: \kenten{名}詞の\kenten{代}わりに使う語
 
  \begin{enumerate} 
   \item \begin{enumerate}
@@ -131,12 +137,12 @@ tagfont=\color{gray}\ttfamily\footnotesize,}
   % Draw the arrow with right angles
   \visible<6->{\draw[<-,Maroon] (Y) -- (Y1) -- (y1) -- (y);}
 \end{tikzpicture}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/020_part_of_speech_03.mp3}}
+\hfill{\tiny 0309}\,{\scriptsize \myaudio{./audio/020_part_of_speech_03.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{前置詞}
-\hfill{\scriptsize \myaudio{../1st_grader/audio/004_verb_object_4.mp3}}
+\hfill{\tiny 0234}\,{\scriptsize \myaudio{../1st_grader/audio/004_verb_object_4.mp3}}
  \begin{enumerate}
   \item<1-> He plays tennis.
   \item<2-> He plays tennis \Circled[fill color = gray, outer color=gray, inner color=white]{\,\,with his friends\,\,}.%
@@ -149,8 +155,7 @@ tagfont=\color{gray}\ttfamily\footnotesize,}
 
  \end{enumerate}
 
-\visible<6->{%
-\begin{exampleblock}{Topics for Today}\small
+\begin{block}<6->{Topics for Today}\small
 with, in, after などを\kenten{前置詞}といいます%
 \hfill{}「（代）名詞の\kenten{前}に\kenten{置}く\kenten{詞}」
 \begin{itemize}\setbeamertemplate{items}[square]\small
@@ -158,8 +163,7 @@ with, in, after などを\kenten{前置詞}といいます%
  \item<8-> \Circled[fill color = gray, outer color=gray, inner color=white]{\,\,$\text{前置詞}+\text{（代）名詞}$\,\,}\,は、文に$+\alpha$の意味をつけくわえます\\
  \hfill\visible<9->{{\scriptsize 前置詞はいろいろあります。ちょっとずつ覚えましょう}}
 \end{itemize}
-     \end{exampleblock}
-}
+     \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
 \againframe<14>[plain]{basic}
@@ -171,9 +175,9 @@ with, in, after などを\kenten{前置詞}といいます%
 % \end{description}
 %\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
-\section{もうひとつ}
+\section{冠詞}
 \begin{frame}[plain]{冠詞}
-\Large
+\large
 
 冠詞: a / an ,\hspace{10pt}the
 
@@ -189,7 +193,7 @@ with, in, after などを\kenten{前置詞}といいます%
 	 \item the apple / the apples\hfill\textipa{/\dh i/}
 	\end{enumerate}
  \end{enumerate}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/020_part_of_speech_02.mp3}}
+\hfill{\tiny 0218}\,{\scriptsize \myaudio{./audio/020_part_of_speech_02.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{冠詞}
@@ -207,7 +211,7 @@ with, in, after などを\kenten{前置詞}といいます%
  $\text{冠詞} = \left\{\begin{tabular}{ll}a(an)&不定冠詞\\the&定冠詞\end{tabular}\right.$
 \end{block}
 
-\mbox{}\hfill{\scriptsize \myaudio{./audio/020_part_of_speech_99.mp3}}
+{\tiny 0144}\,\hfill{\scriptsize \myaudio{./audio/020_part_of_speech_99.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -233,6 +237,73 @@ with, in, after などを\kenten{前置詞}といいます%
 %\mbox{}\hfill{\scriptsize \myaudio{./audio/020_part_of_speech_04.mp3}}
 %\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
+\section{品詞のまとめ}
+%%%%%%%%%%%%%%%%%%%%%%%
+\againframe{basic}
+%%%%%%%%%%%%%%%%%%%%%%%
+\section{混乱しないで}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{きちんと区別しよう}
+ \begin{enumerate}
+  \item<1-> birdの品詞は？\hfill\visible<2->{名詞}
+  \item<3-> Birds sing.という英文のBirdsの品詞は？\hfill\visible<4->{名詞}
+  \item<5-> Birds sing. という英文の主語は？\hfill\visible<6->{Birds}
+ \end{enumerate}
+
+\visible<7->{てことはBirds sing.のBirdsは名詞でもあるし主語でもあるってことなの？}
+
+\visible<8->{Birds sing.のBirdsは「名詞です」といったり「主語です」といったり、なんか混乱しちゃうんですけど}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{きちんと区別しよう}
+
+説明の角度がちがいます\pause
+
+\bigskip
+
+「Birds sing.のBirdsは主語です」というときは、Birdsという単語が文の中でどういう役割をしているかについて言及しています。\pause
+おなじbirdsでもI love birds.という文のbirdsは目的語ですよね\pause
+
+\bigskip
+
+いっぽう「Birds sing.のBirdsは名詞です」というときは、文中での役割とは無関係にbirdsという単語固有の話をしています。いいかえるとbirdsという単語は文のどこに出てきても、いつでも名詞なのです。
+I love birds.のbirdsが名詞なのは明らかですよね
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{きちんと区別しよう}
+
+\visible<1->{{\Large We drink \textcolor{Maroon}{\bfseries water}\tikzmark{water1}. \textcolor{Maroon}{\bfseries Water}\tikzmark{water2} is very important.}}
+
+\vfill
+
+\hfill\hfill{}\tikzmark{noun}\visible<2->{名詞}\hfill~
+
+\vfill
+
+\hspace*{100pt}\visible<3->{目的語}\tikzmark{object}\hspace{60pt}\visible<4->{主語}\tikzmark{subject}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<2->{\draw[<-,Maroon,opacity=.7,line width=2pt] ([xshift=-15pt,yshift=-2pt]pic cs:water1) to[out=-70, in=180] ([xshift=-2pt, yshift=4pt] pic cs:noun);}
+ \visible<2->{\draw[<-,Maroon,opacity=.7,line width=2pt] ([xshift=-14pt,yshift=-2pt]pic cs:water2) to[out=-70, in=180] ([xshift=-2pt, yshift=4pt] pic cs:noun);}
+%%%%%%%%%%%%%%%
+ \visible<3->{\draw[->,opacity=.4,line width=2pt] ([xshift=-15pt,yshift=-2pt]pic cs:water1) to[out=-90, in=90] ([xshift=-14pt, yshift=10pt] pic cs:object);}
+ \visible<4->{\draw[->,opacity=.4,line width=2pt] ([xshift=-15pt,yshift=-2pt]pic cs:water2) to[out=-90, in=90] ([xshift=-14pt, yshift=10pt] pic cs:subject);}
+\end{tikzpicture}
+
+\begin{textblock*}{0.4\linewidth}(275pt,165pt)
+    % TiKZを使った図形の描画
+    \visible<5->{\begin{tikzpicture}
+      \node[name=k, shape=businessman, minimum size=55pt, mirrored] {};
+  \node[ellipse callout, xshift=-1.8cm, draw,yshift= .2cm,
+    callout absolute pointer={(k.mouth)},
+    font=\tiny\bfseries, align=center, inner sep=1pt]
+    {名詞は\\SにもOにも\\なります};
+    \end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{おまけ}
+%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{???}
 \Large
  The qui\myEmph[5-]{Maroon}{c}k \myEmph[4-]{Maroon}{b}rown fox jumps over the l\myEmph[3-]{Maroon}{a}zy \myEmph[6-]{Maroon}{d}og. 
