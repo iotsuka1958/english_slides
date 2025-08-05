@@ -17,6 +17,9 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
+\usepackage[absolute,overlay]{textpos}  %% 任意の位置に図を配置
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %%場所決めのための格子
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{Sleeping is necessary to us.}
@@ -39,12 +42,12 @@
   \tableofcontents
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{動名詞}
 \subsection{主語}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{～すること}
  \large
-
 
 \begin{enumerate}
  \item<1-> Exercise is good for your health.\hfill{\scriptsize exercise \textipa{/\'eks@s\`aIz/} 運動　health \textipa{/h\'elT/} 健康}
@@ -216,16 +219,31 @@
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{2種類のbe $+$ ---ing}
-つぎの2文の意味を考えましょう\,\,\textdbend\textdbend
+\section{2つのbe $+$ ---ing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{2つのbe $+$ ---ing}
 
  \begin{enumerate}
-  \item Her hobby is listening to the radio.\hfill{\scriptsize Her hobby $=$ listening to the radio}\\
-\hfill{\scriptsize *Her hobby listens to the radio.}
-  \item She is listening to the radio.\hfill{\scriptsize $<$ She listens to the radio.}
+  \item<1-> Her hobby is listening to the radio.%
+\hfill\visible<3->{{\scriptsize Her hobby $=$ \fbox{listening to the radio}}}\\
+\hfill\visible<4->{{\scriptsize このlisteningは動名詞}}\\
+\hfill\visible<5->{{\scriptsize *Her hobby listens to the radio.}}
+  \item<2-> She is listening to the radio.\visible<7->{{\scriptsize （現在進行形）}}\hfill\visible<6->{{\scriptsize $<$ She listens to the radio.（現在形）}}\\
+\hfill\visible<8->{{\scriptsize このlisteningは現在分詞}}\\
+
  \end{enumerate}
 %
 \hfill{\tiny 0117}\,{\scriptsize \myaudio{./audio/036_gerund_09.mp3}}
+
+\vspace{20pt}
+
+\begin{block}<9->{Topic for Today}\small
+S $+$ be $+$ ---ing
+ \begin{enumerate}\setbeamertemplate{items}[circle]
+  \item<10-> S $=$ 動名詞\hspace{29pt}$\rightarrow$\hspace{5pt}S $+$ be $+$ ---ing（$=$ 動名詞）\hfill{}「Sは～することだ」
+  \item<11-> S $+$ V. の進行形\hspace{10pt}$\rightarrow$\hspace{5pt}S $+$ be $+$ ---ing（$=$ 現在分詞）\hfill{}「Sは～している」
+ \end{enumerate}
+\end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
