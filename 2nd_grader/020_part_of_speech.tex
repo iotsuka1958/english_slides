@@ -16,6 +16,9 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}  %% 任意の位置に図を配置
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %%場所決めのための格子 \myPreamble4Slide.texより先に読み込むこと
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usetikzlibrary{tikzmark}
 \usepackage{pxrubrica}
@@ -25,9 +28,6 @@ sizes={7pt,8pt,9pt,10pt,11pt,12pt,13pt,14pt,15pt,16pt},
 tagfont=\color{gray}\ttfamily\footnotesize,}
 \NewPangramClass{IRO}{\input{iroha.txt}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[absolute,overlay]{textpos}  %% 任意の位置に図を配置
-%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %%場所決めのための格子
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{The quick brown fox jumps over the lazy dog.}
