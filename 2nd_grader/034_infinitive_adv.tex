@@ -17,6 +17,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 \usetikzlibrary{tikzmark}
@@ -48,10 +50,9 @@
 \begin{frame}[plain]{～するために}
  \large
 
-
 \begin{enumerate}
  \item<1-> You must work hard.\hfill{\scriptsize work \textipa{/w\'\textrhookschwa :k/} 働く、勉強する}
- \item<2-> You must \myAnch{a}{white}{work}hard \,\,\,\myAnch{b}{Maroon}{to pass the exam}.\hfill{\scriptsize pass \textipa{/p\'\ae s/} （試験に）受かる}
+ \item<2-> You must \myAnch{a}{white}{work}hard \,\,\,\myAnch{b}{Maroon}{\textbf{to pass} the exam}.\hfill{\scriptsize pass \textipa{/p\'\ae s/} （試験に）受かる}
 
 \end{enumerate}
 
@@ -65,46 +66,91 @@
 
 %
 \hfill{\tiny 0113}\,{\scriptsize \myaudio{./audio/034_infinitive_adv_01.mp3}}
-\visible<4->{%
-\begin{block}{Topic for Today ---副詞的用法---}
+%
+\begin{block}<4->{Topic for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \Circled[fill color= yellow!50]{\,$\text{to} + \text{動詞の原形}$\,} が、
-「〜するために」の意味で副詞としてはたらくことがある
+ \item to不定詞が「〜するために」の意味で動詞を修飾することがある
  \item \kenten{目的}を表します
+ \item to不定詞の\kenten{副詞的用法}といいます\\
+       \hfill{\scriptsize 動詞を修飾するのは副詞の役目ですよね}
  \end{itemize}
      \end{block}
-}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
-
-{\small つぎの文の意味を考えましょう}%
+\section{目的を表すto不定詞の位置}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{目的を表すto不定詞の位置}
 
  \begin{enumerate}
-  \item I got up early to catch the first train.\hfill{\scriptsize catch \textipa{/k\'\ae\textteshlig/} 間に合う}
-  \item She went to the station to meet her parents.\hfill{\scriptsize meet \textipa{/m\'\i:t/} 出迎える}
-  \item To save money, we eat at home.\hfill{\scriptsize save \textipa{/s\'eIv/ 節約する}}
-  \item To help his parents, he cleans the house every day.\hfill{\scriptsize clean \textipa{/kl\'\i:n/ 掃除する}}
+  \item<2-> \begin{enumerate}
+	 \item<2-> The door opened \textbf{suddenly}%
+	      \hfill\visible<3->{{\scriptsize S $+$ V\,\,\,\Circled{\,副詞\,}}}
+	 \item<4-> \textbf{Suddenly}, the door opened. 
+	      \hfill\visible<5->{{\scriptsize \Circled{\,副詞\,},\,\,\,S $+$ V }}
+	\end{enumerate}
+       \hfill{\scriptsize suddenly \textipa{/s\'\textturnv dnli/ 突然}}%
+  \item<6-> \begin{enumerate}
+	 \item<6-> You must work hard \fbox{\textbf{to pass} the exam}.%
+	      \hfill\visible<7->{{\scriptsize S $+$ V\,\,\,\Circled{\,to不定詞\,}}}
+	 \item<8-> \fbox{\textbf{To pass} the exam}, you must work hard.%
+	      \hfill\visible<9->{{\scriptsize \Circled{\,To不定詞\,},\,\,\,S $+$ V }}
+	\end{enumerate}
  \end{enumerate}
 
-\visible<2->{%
-\begin{block}{Topic for Today ---副詞的用法---}
+\vspace{20pt}
+
+\begin{block}<10->{Topic for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \kenten{目的}をあらわすto不定詞は、文の最後にも先頭にもきます
+ \item \kenten{目的}をあらわす副詞的用法のto不定詞は、文の最後にも先頭にもきます
        \begin{itemize}\setbeamertemplate{items}[circle]\small
 \setlength{\itemsep}{5pt} % 項目間
 	\item $\text{
-S} + \text{V}\,\,\,\,$\Circled[fill color= yellow!40]{\,$\text{to} + \text{動詞の原形}$\,}.%
-\hfill{\scriptsize The door opened \textbf{suddenly}.}
-	\item \Circled[fill color= yellow!30]{\,$\text{To} + \text{動詞の原形}$\,},\,\, $\text{S} + \text{V}$.%
-\hfill{\scriptsize \textbf{Suddenly}, the door opened.}\\
-\hfill{\scriptsize suddenly \textipa{/s\'\textturnv dnli/ 突然}}
+S} + \text{V}\,\,\,\,$\Circled[fill color= yellow!40]{\,to不定詞\,}
+	\item \Circled[fill color= yellow!30]{\,To不定詞\,},\,\, $\text{S} + \text{V}$.
        \end{itemize}
  \end{itemize}
+\hfill{\scriptsize1語の副詞の場合と同じです}
      \end{block}
-}
+
+\vspace{-10pt}
+
+\hfill{\tiny 0218}\,{\scriptsize \myaudio{./audio/034_infinitive_adv_02.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+
+{\small 各英文の意味を考えましょう}
+
+ \begin{enumerate}
+  \item I got up early \textbf{to catch} the first train.\hfill{\scriptsize catch \textipa{/k\'\ae\textteshlig/} 間に合う}
+  \item She went to the station \textbf{to meet} her parents.\hfill{\scriptsize meet \textipa{/m\'\i:t/} 出迎える}
+  \item \textbf{To save} money, we eat at home.\hfill{\scriptsize save \textipa{/s\'eIv/ 節約する}}
+  \item \textbf{To help} his parents, he cleans the house every day.\hfill{\scriptsize clean \textipa{/kl\'\i:n/ 掃除する}}
+ \end{enumerate}
+
+\vspace{100pt}
  
 \hfill{\tiny 0218}\,{\scriptsize \myaudio{./audio/034_infinitive_adv_02.mp3}}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(310pt,137pt)
+\visible<2->{\begin{tikzpicture}
+\pig[
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+\centering 文の先頭にも\\最後にも\\きますね！}},
+speech={\tiny
+ \begin{tabular}{c}
+ 目的を表す\\to不定詞
+ \end{tabular}
+},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -128,16 +174,19 @@ S} + \text{V}\,\,\,\,$\Circled[fill color= yellow!40]{\,$\text{to} + \text{動�
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{to不定詞で文がはじまったとき}\large
+\section{To不定詞で文がはじまったとき}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{to不定詞で文がはじまったとき}
+
  {\small つぎの2文の意味を考えましょう\textdbend}
 
 \begin{enumerate}
- \item \alt<2->{\fbox{To study English}}{To study English}\,\,\,is very important.
+ \item \alt<2->{\fbox{\textbf{To study} English}}{To study English}\,\,\,is very important.
 \hfill{}%
-\visible<4->{\Circled[fill color= yellow!30]{\,$\text{To} + \text{動詞の原形}$\,}\, ($=$S)\,\, $+$ V}
+\visible<4->{\Circled[fill color= yellow!30]{\,To不定詞($=$ 名詞的用法)\,}\, ($=$S)\,\, $+$ V}
 
- \item \alt<2->{\fbox{To study English}}{To study English}\,,\,\,\,he went to Australia.\hfill%
-\visible<5->{\Circled[fill color= yellow!30]{\,$\text{To} + \text{動詞の原形}$\,},\,\,\,\, $\text{S} + \text {V}$}\hspace{13pt}\mbox{}\\
+ \item \alt<2->{\fbox{\textbf{To study} English}}{To study English}\,,\,\,\,he went to Australia.\hfill%
+\visible<5->{\Circled[fill color= yellow!30]{\,To不定詞($=$ 副詞的用法)\,},\,\,\,\, $\text{S} + \text {V}$}\\
 \hfill{\scriptsize Australia \textipa{/O:str\'eIlj@/} オーストラリア}
 \end{enumerate}
 %
@@ -165,55 +214,55 @@ S} + \text{V}\,\,\,\,$\Circled[fill color= yellow!40]{\,$\text{to} + \text{動�
 \hfill{\scriptsize 主語と組み合わせる動詞を特に\Circled{述語動詞}\tikzmark{predicate}といいます}
 }
 
-\visible<5->{{\small だが、特別に}
 
+\visible<5->{だが、特別に
 
-\myAnch{v}{white}{動詞}}%
-\hspace{30pt}%
+\begin{tcolorbox}[colback=yellow!10!white]
+\myAnch{v}{white}{動詞}%
+\hspace{25pt}%
 \begin{tabular}{ll}
- \visible<5->{\myAnch{n}{white}{名詞のはたらき}: }&\visible<6->{\fbox{To get up early} is important.}\\
- \visible<5->{\myAnch{adj}{white}{形容詞のはたらき}: }&\visible<7->{I want something \fbox{to drink}.}\\
- \visible<5->{\myAnch{adv}{white}{副詞のはたらき}: }&\visible<8->{She studied hard \fbox{to pass the exam}}.
+ \visible<5->{\myAnch{n}{white}{名詞のはたらき}}&\visible<6->{\fcolorbox{black}{white}{\textbf{To get} up early} is important.}\\
+ \visible<5->{\myAnch{adj}{white}{形容詞のはたらき}}&\visible<7->{I want something \fcolorbox{black}{white}{\textbf{to drink}}.}\\
+ \visible<5->{\myAnch{adv}{white}{副詞のはたらき}}&\visible<8->{She studied hard \fcolorbox{black}{white}{\textbf{to pass} the exam}}.
 \end{tabular}
+\end{tcolorbox}
 
-\visible<5->%
-{\begin{tikzpicture}[remember picture, overlay]
- \visible<5->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (n.west);}
- \visible<5->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (adj.west);} 
- \visible<5->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (adv.west);} 
-\end{tikzpicture}}
-
-\vspace{-5pt}
-
-\mbox{}\hfill%
-\visible<9->{%
-\begin{minipage}{.26\textwidth}\scriptsize 
-to不定詞：\Circled[fill color = white]{\,$\text{to} + \text{動詞の原形}$\,}
-\end{minipage}
+をすることがある
 }
 
-\hspace{50pt}{\small toは\kenten{述語動詞ではない}という目印！}
+\begin{tikzpicture}[remember picture, overlay]
+ \visible<5->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (n.west);} 
+ \visible<5->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (adj.west);} 
+ \visible<5->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (adv.west);} 
+\end{tikzpicture}
+
+\visible<9->{
+\Circled[fill color = yellow!10!white]{\,$\text{to} + \text{動詞の原形}$\,}
+のことをto\kenten{不定詞}といいます
+}
+
+\visible<10->{{\scriptsize \textdbend\,\,toは\kenten{述語動詞ではない}という目印！}}%
+\hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/031_infinitive_intro_01.mp3}}
 
 \begin{tikzpicture}[remember picture,overlay]
  \visible<4->{\draw[Stealth-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:play) to[out=-30,in=160] ([xshift=-16pt, yshift=10pt] pic cs:predicate);}
  \visible<4->{\draw[Stealth-,opacity=.4,line width=2pt] ([xshift=-25pt,yshift=-1pt]pic cs:sings) to ([xshift=-16pt, yshift=10pt] pic cs:predicate);}
 \end{tikzpicture}
 
-\vspace*{-50pt}
-
-\scalebox{.5}{\begin{tikzpicture}
-\duck[
-signpost=\textcolor{black}{to},
-%signpost=\scalebox{0.5}{
-%\parbox{.5cm}{\color{black}
-%to}},
+\begin{textblock*}{0.4\linewidth}(300pt,170pt)
+\visible<9->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}
+{\Large to $+$ 原形}\\{\Large $=$ to不定詞}}},
 signcolour=brown!70!gray,
 signback=white!80!brown,
 graduate=gray!20!black,
-tassel=red!70!black
+tassel=red!70!black,
+speech={\scalebox{.75}{\tiny 述語動詞じゃない}}
 ]
-\end{tikzpicture}} 
-\hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/031_infinitive_intro_01.mp3}}
+\end{tikzpicture}}
+\end{textblock*}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
