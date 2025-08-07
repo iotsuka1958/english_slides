@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,48 +51,66 @@
 \Large
 
 \begin{enumerate}
- \item<1-> Small cats\only<2->{(=S)} jump\only<2->{(=V)} quickly.%
+ \item<1-> Small cats\only<2->{($=$S)} jump\only<2->{($=$V)} quickly.%
       \hfill{\small この英文の主語と述語動詞はなに？}
  \item<3-> Small cats jump quickly.%
       \hfill{\small この英文4つの単語の品詞はなに？}\\
 	\visible<4->{{\small \Circled{ 形 }\hspace{25pt}\Circled{ 名 }\hspace{15pt}\Circled{ 動 }\hspace{24pt}\Circled{ 副 }}}
 \end{enumerate}
-
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{to不定詞とは}
+
 \large
-\visible<2->{動詞とは本来、主語と組み合わせて使うもの
-\mbox{}\hfill{}\myEmph[2-]{NavyBlue}{I} \myEmph[2-]{Maroon}{play} the piano and \myEmph[2-]{NavyBlue}{she} \myEmph[2-]{Maroon}{sings}.}
+\visible<2->{動詞とは本来、主語と組み合わせて使うもの}
+\hfill\visible<3->{\myEmph[3-]{NavyBlue}{I} \myEmph[3-]{Maroon}{play} the piano and \myEmph[3-]{NavyBlue}{she} \myEmph[3-]{Maroon}{sings}.}
 
-\visible<3->{だが、特別に
+\visible<4->{だが、特別に
 
-\vfill
-
-\myAnch{v}{white}{動詞}}%
-\hspace{30pt}%
+\begin{tcolorbox}[colback=yellow!10!white]
+\myAnch{v}{white}{動詞}%
+\hspace{25pt}%
 \begin{tabular}{ll}
- \visible<3->{\myAnch{n}{white}{名詞のはたらき}: }&\visible<5->{\fbox{To get up early} is important.}\\
- \visible<3->{\myAnch{adj}{white}{形容詞のはたらき}: }&\visible<6->{I want something \fbox{to drink}.}\\
- \visible<3->{\myAnch{adv}{white}{副詞のはたらき}: }&\visible<7->{She studied hard \fbox{to pass the exam}}.
+ \visible<4->{\myAnch{n}{white}{名詞のはたらき}}&\visible<5->{\fcolorbox{black}{white}{\textbf{To get} up early} is important.}\\
+ \visible<4->{\myAnch{adj}{white}{形容詞のはたらき}}&\visible<6->{I want something \fcolorbox{black}{white}{\textbf{to drink}}.}\\
+ \visible<4->{\myAnch{adv}{white}{副詞のはたらき}}&\visible<7->{She studied hard \fcolorbox{black}{white}{\textbf{to pass} the exam}}.
 \end{tabular}
+\end{tcolorbox}
 
-\visible<3->%
-{\begin{tikzpicture}[remember picture, overlay]
- \visible<3->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (n.west);} 
- \visible<3->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (adj.west);} 
- \visible<3->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (adv.west);} 
-\end{tikzpicture}}
+をすることがある
+}
 
-\vspace{-5pt}
+\begin{tikzpicture}[remember picture, overlay]
+ \visible<4->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (n.west);} 
+ \visible<4->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (adj.west);} 
+ \visible<4->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (adv.west);} 
+\end{tikzpicture}
 
-\mbox{}\hfill%
-\visible<8->{\begin{minipage}{.4\textwidth}
-\visible<9->{to不定詞}：\Circled[fill color = white]{\,$\text{to} + \text{動詞の原形}$\,}
-\end{minipage}}
+%\vspace{-5pt}
+
+%\hfill%
+%\visible<9->{to不定詞：\Circled[fill color = yellow!10!white]{\,$\text{to} + \text{動詞の原形}$\,}}
+
+\visible<8->{
+\Circled[fill color = yellow!10!white]{\,$\text{to} + \text{動詞の原形}$\,}
+のことをto\kenten{不定詞}といいます
+}
 
 \hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/031_infinitive_intro_01.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(330pt,170pt)
+\visible<9->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}
+to $+$原形\\$=$ to不定詞}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+speech={\tiny メモメモ}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{to不定詞}
@@ -100,15 +120,15 @@
  \item \begin{enumerate}
 	\item<1-> I like \fbox{~~~X~~~}\,.
 	\item<2-> I like cookies.
-	\item<3-> I like \alt<4->{\fbox{to make cookies}}{to make cookies}\,.
+	\item<3-> I like \alt<4->{\fbox{\textbf{to make} cookies}}{to make cookies}\,.
        \end{enumerate}
  \item \begin{enumerate}
 	\item<5-> He likes cookies.
-	\item<6-> He likes \alt<7->{\fbox{to make cookies}}{to make cookies}\,.
+	\item<6-> He likes \alt<7->{\fbox{\textbf{to make} cookies}}{to make cookies}\,.
        \end{enumerate}
  \item \begin{enumerate}
 	\item<8-> She liked cookies.
-	\item<9-> She liked \alt<10->{\fbox{to make cookies}}{to make cookies}\,.
+	\item<9-> She liked \alt<10->{\fbox{\textbf{to make} cookies}}{to make cookies}\,.
        \end{enumerate} 
 \end{enumerate}
 
@@ -123,6 +143,23 @@
  \end{itemize}
      \end{block}
 }
+
+\vspace{-12pt}
+
 \mbox{}\hfill{\tiny 0300}\,{\scriptsize \myaudio{./audio/031_infinitive_intro_02.mp3}}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(355pt,37pt)
+\visible<11->{\begin{tikzpicture}
+\pig[
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+\centering to不定詞は\\いつでも\\おなじ！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+
 \end{frame}
 \end{document}
