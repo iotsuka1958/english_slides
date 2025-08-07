@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -41,25 +43,25 @@
 \end{frame}
 
 \section{形容詞的用法}
-\subsection{形容詞的用法}
+\subsection{名詞 $\longleftarrow$ \fbox{to不定詞}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{形容詞的用法}
+\begin{frame}[plain]{名詞 $\longleftarrow$ \fbox{to不定詞}}
  \begin{enumerate}
   \item \begin{enumerate}
 	 \item<1-> He doesn't have time to read books.%
 \hfill{\tiny 0137}\,{\scriptsize \myaudio{./audio/033_infinitive_adj_01.mp3}}\\
 	       \mbox{}
-	 \item<2-> He doesn't have \myAnch{a1}{white}{\myEmph[3-]{NavyBlue}{time}} \myAnch{b1}{Maroon}{to read books}.\visible<3->{本を読む時間}
+	 \item<2-> He doesn't have \myAnch{a1}{white}{\myEmph[3-]{NavyBlue}{time}} \myAnch{b1}{Maroon}{\textbf{to read} books}.\visible<3->{本を読む時間}
  	\end{enumerate}
   \item \begin{enumerate}
 	 \item<4-> I want something to drink.\\
 	       \mbox{}
-	 \item<5-> I want \myAnch{a2}{white}{\myEmph[6-]{NavyBlue}{something}} \myAnch{b2}{Maroon}{to drink}.\visible<6->{なにか飲むもの}
+	 \item<5-> I want \myAnch{a2}{white}{\myEmph[6-]{NavyBlue}{something}} \myAnch{b2}{Maroon}{\textbf{to drink}}.\visible<6->{なにか飲むもの}
 	\end{enumerate}
   \item \begin{enumerate}
 	 \item<7-> I need someone to help me.\\
 	       \mbox{}
-	 \item<8-> I need \myAnch{a3}{white}{\myEmph[9-]{NavyBlue}{someone}} \myAnch{b3}{Maroon}{to help me}.\visible<9->{私を助けてくれるだれか}
+	 \item<8-> I need \myAnch{a3}{white}{\myEmph[9-]{NavyBlue}{someone}} \myAnch{b3}{Maroon}{\textbf{to help} me}.\visible<9->{私を助けてくれるだれか}
 	\end{enumerate}
  \end{enumerate}
 
@@ -83,14 +85,15 @@
   \visible<9->{\draw[<-,Maroon] (a3) -- (A3) -- (B3) -- (b3);}
 \end{tikzpicture}
 
-\visible<10->{%
-\begin{block}{Topic for Today}
+
+\begin{block}<10->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item to不定詞つまり\Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$\,} が、名詞を後ろから修飾することがある\\
-\hfill{}to不定詞の\kenten{形容詞的用法}といいます
+\setlength{\itemsep}{4pt}
+ \item<11-> to不定詞が名詞を後ろから修飾することがある\\
+\hfill\hfill{}名詞 $\longleftarrow$ \Circled[fill color=white]{\,to不定詞\,}\hfill~
+ \item<12-> to不定詞の\kenten{形容詞的用法}といいます
  \end{itemize}
      \end{block}
-}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
@@ -98,88 +101,98 @@
 \hfill{\tiny 0245}\,{\scriptsize \myaudio{./audio/033_infinitive_adj_02.mp3}}
  \begin{enumerate}
   \item<1->{He has ( help / many friends / to ) him.}\\
-       \visible<2->{\textcolor{lightgray}{He has} many friends to help \textcolor{lightgray}{him}.}
-  \item<1-> She has a lot of ( to / do / things ) today.\\
-	\visible<3->{\textcolor{lightgray}{She has a lot of} things to do \textcolor{lightgray}{today}.}
+       \visible<2->{\textcolor{gray}{He has} many friends to help \textcolor{gray}{him}.}%
+\hfill\visible<3->{{\scriptsize many friends $\longleftarrow$\,\fbox{to help him}}}
+  \item<1-> She has a lot of ( to / do / things ) today.%
+       \hfill{\scriptsize a lot of ～: たくさんの～}\\
+	\visible<4->{\textcolor{gray}{She has a lot of} things to do \textcolor{gray}{today}.}%
+\hfill\visible<5->{{\scriptsize a lot of things $\longleftarrow$\,\fbox{to do}}}
   \item<1-> I am hungry. I ( eat / want something / to )\\
-	\visible<4->{\textcolor{lightgray}{I am hungry. I} want something to eat}.
+	\visible<6->{\textcolor{gray}{I am hungry. I} want something to eat}.%
+\hfill\visible<7->{{\scriptsize something $\longleftarrow$\,\fbox{to eat}}}
   \item<1-> There are ( places / see / many / to ) in New York.\\
-	\visible<5->{\textcolor{lightgray}{There are} many places to see \textcolor{lightgray}{in New York}.}
+	\visible<8->{\textcolor{gray}{There are} many places to see \textcolor{gray}{in New York}.}%
+\hfill\visible<9->{{\scriptsize many places $\longleftarrow$\,\fbox{to see}}}
   \item<1-> They have ( a plan / to / to / go ) Boston.\\
-	\visible<6->{\textcolor{lightgray}{They have} a plan to go to \textcolor{lightgray}{Boston}.}
+	\visible<10->{\textcolor{gray}{They have} a plan to go to \textcolor{gray}{Boston}.}
+\hfill\visible<11->{{\scriptsize a plan $\longleftarrow$\,\fbox{to go to Boston}}}
  \end{enumerate} 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{まとめ}
+\section{to不定詞の形容詞的用法（まとめ）}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{to不定詞の形容詞的用法のまとめ}
  
 \begin{block}{Topic for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item to不定詞つまり\Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$\,} が、名詞を後ろから修飾することがある\\
-\hfill{}to不定詞の\kenten{形容詞的用法}といいます
+ \item to不定詞が名詞を後ろから修飾することがある\\
+\hfill\hfill{}名詞 $\longleftarrow$ \Circled[fill color=white]{\,to不定詞\,}\hfill~
+ \item to不定詞の\kenten{形容詞的用法}といいます
 
 
-\hfill{}{\scriptsize He doesn't have time to read books.}\\
-\hfill{}{\scriptsize I want something to drink.}\\
-\hfill{}{\scriptsize I need someone to help me.}
+\hfill{}{\scriptsize He doesn't have time \textbf{to read} books.}\\
+\hfill{}{\scriptsize I want something \textbf{to drink}.}\\
+\hfill{}{\scriptsize I need someone \textbf{to help} me.}
 
  \end{itemize}
      \end{block}
 \hfill{\tiny 0137}\,{\scriptsize \myaudio{./audio/033_infinitive_adj_01.mp3}}\
 
 \end{frame}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{to不定詞とは}
+
 \large
-\visible<2->{動詞とは本来、主語と組み合わせて使うもの
-\mbox{}\hfill{}\myEmph[2-]{NavyBlue}{I} \myEmph[2-]{Maroon}{play} the piano and \myEmph[2-]{NavyBlue}{she} \myEmph[2-]{Maroon}{sings}.}
+\visible<2->{動詞とは本来、主語と組み合わせて使うもの}
+\hfill\visible<3->{\myEmph[3-]{NavyBlue}{I} \myEmph[3-]{Maroon}{play} the piano and \myEmph[3-]{NavyBlue}{she} \myEmph[3-]{Maroon}{sings}.}
 
-\visible<3->{だが、特別に
+\visible<4->{だが、特別に
 
-\vfill
-
-\myAnch{v}{white}{動詞}}%
-\hspace{30pt}%
+\begin{tcolorbox}[colback=yellow!10!white]
+\myAnch{v}{white}{動詞}%
+\hspace{25pt}%
 \begin{tabular}{ll}
- \visible<3->{\myAnch{n}{white}{名詞のはたらき}: }&\visible<3->{\fbox{To get up early} is important.}\\
- \visible<3->{\myAnch{adj}{white}{形容詞のはたらき}: }&\visible<3->{I want something \fbox{to drink}.}\\
- \visible<4->{\myAnch{adv}{white}{副詞のはたらき}: }&\visible<5->{She studied hard \fbox{to pass the exam}}.
+ \visible<4->{\myAnch{n}{white}{名詞のはたらき}}&\visible<5->{\fcolorbox{black}{white}{\textbf{To get} up early} is important.}\\
+ \visible<4->{\myAnch{adj}{white}{形容詞のはたらき}}&\visible<6->{I want something \fcolorbox{black}{white}{\textbf{to drink}}.}\\
+ \visible<4->{\myAnch{adv}{white}{副詞のはたらき}}&\visible<7->{She studied hard \fcolorbox{black}{white}{\textbf{to pass} the exam}}.
 \end{tabular}
+\end{tcolorbox}
 
-\visible<3->%
-{\begin{tikzpicture}[remember picture, overlay]
- \visible<3->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (n.west);} 
- \visible<3->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (adj.west);} 
- \visible<4->{\draw[line width=2pt,opacity=.75, Maroon, ->] (v.east) to[out=0, in=180] (adv.west);} 
-\end{tikzpicture}}
+をすることがある
+}
 
-\vspace{-5pt}
+\begin{tikzpicture}[remember picture, overlay]
+ \visible<4->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (n.west);} 
+ \visible<4->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (adj.west);} 
+ \visible<4->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (adv.west);} 
+\end{tikzpicture}
 
-\mbox{}\hfill%
-\visible<6->{\begin{minipage}{.4\textwidth}
-\visible<6->{to不定詞}：\Circled[fill color = yellow!50]{\,$\text{to} + \text{動詞の原形}$\,}
-\end{minipage}}
+%\vspace{-5pt}
+
+%\hfill%
+%\visible<9->{to不定詞：\Circled[fill color = yellow!10!white]{\,$\text{to} + \text{動詞の原形}$\,}}
+
+\visible<8->{
+\Circled[fill color = yellow!10!white]{\,$\text{to} + \text{動詞の原形}$\,}
+のことをto\kenten{不定詞}といいます
+}
 
 \hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/031_infinitive_intro_01.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(330pt,170pt)
+\visible<9->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}
+to $+$原形\\$=$ to不定詞}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+speech={\tiny メモメモ}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
