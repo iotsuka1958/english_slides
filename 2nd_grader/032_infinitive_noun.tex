@@ -280,4 +280,60 @@ $^{10}$continue: 続ける
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \againframe{vtodo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{to不定詞とは}
+
+\large
+\visible<2->{動詞とは本来、主語と組み合わせて使うもの}
+\hfill\visible<3->{\myEmph[3-]{NavyBlue}{I} \myEmph[3-]{Maroon}{play} the piano and \myEmph[3-]{NavyBlue}{she} \myEmph[3-]{Maroon}{sings}.}
+
+\visible<4->{だが、特別に
+
+\begin{tcolorbox}[colback=yellow!10!white]
+\myAnch{v}{white}{動詞}%
+\hspace{25pt}%
+\begin{tabular}{ll}
+ \visible<4->{\myAnch{n}{white}{名詞のはたらき}}&\visible<5->{\fcolorbox{black}{white}{\textbf{To get} up early} is important.}\\
+ \visible<4->{\myAnch{adj}{white}{形容詞のはたらき}}&\visible<6->{I want something \fcolorbox{black}{white}{\textbf{to drink}}.}\\
+ \visible<4->{\myAnch{adv}{white}{副詞のはたらき}}&\visible<7->{She studied hard \fcolorbox{black}{white}{\textbf{to pass} the exam}}.
+\end{tabular}
+\end{tcolorbox}
+
+をすることがある
+}
+
+\begin{tikzpicture}[remember picture, overlay]
+ \visible<4->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (n.west);} 
+ \visible<4->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (adj.west);} 
+ \visible<4->{\draw[line width=2pt,opacity=.75, gray, ->] (v.east) to[out=0, in=180] (adv.west);} 
+\end{tikzpicture}
+
+%\vspace{-5pt}
+
+%\hfill%
+%\visible<9->{to不定詞：\Circled[fill color = yellow!10!white]{\,$\text{to} + \text{動詞の原形}$\,}}
+
+\visible<8->{
+\Circled[fill color = yellow!10!white]{\,$\text{to} + \text{動詞の原形}$\,}
+のことをto\kenten{不定詞}といいます
+}
+
+\hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/031_infinitive_intro_01.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(330pt,170pt)
+\visible<9->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}
+to $+$原形\\$=$ to不定詞}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+speech={\tiny メモメモ}
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
