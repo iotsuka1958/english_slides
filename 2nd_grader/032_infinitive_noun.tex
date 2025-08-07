@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}  %% 任意の位置に図を配置
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %%場所決めのための格子
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,31 +42,32 @@
   \tableofcontents
 \end{frame}
 
-\section{名詞的用法}
-\subsection{名詞的用法}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{名詞的用法1}
+\subsection{to不定詞 $=$ Sなど}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{～すること}
  \begin{enumerate}
   \item \begin{enumerate}
 	 \item<1-> Science is fun.%
 \hfill{\tiny 0251}\,{\scriptsize \myaudio{./audio/032_infinitive_noun_01.mp3}}
 
-	 \item<2-> \alt<3->{\fbox{To study science}}{To study science } is fun.	
+	 \item<2-> \alt<3->{\fbox{\textbf{To study} science}}{To study science } is fun.	
 	\end{enumerate}
   \item \begin{enumerate}
 	 \item<4-> His idea is important.%
 	      \hfill{\scriptsize important \textipa{/Imp\'O\textrhookschwa tnt/} 重要な}
-	 \item<5-> \alt<6->{\fbox{To understand his idea}}{To understand his idea } is important.\mbox{}\hfill{\scriptsize understand \textipa{/\`\textturnv nd\textrhookschwa st\'\ae nd/} 理解する}
+	 \item<5-> \alt<6->{\fbox{\textbf{To understand} his idea}}{To understand his idea } is important.\mbox{}\hfill{\scriptsize understand \textipa{/\`\textturnv nd\textrhookschwa st\'\ae nd/} 理解する}
 	\end{enumerate}
   \item \begin{enumerate}
 	 \item<7-> The plan was a success.\mbox{}\hfill{\scriptsize success\textipa{/s@ks\'es/} 成功}
-	 \item <8-> The plan was \alt<9->{\fbox{to make a hospital}}{to make a hospital}\,.%
+	 \item <8-> The plan was \alt<9->{\fbox{\textbf{to make} a hospital}}{to make a hospital}\,.%
 \hfill{\scriptsize hospital \textipa{/h\'Aspitl/} 病院}
 	\end{enumerate}
  \end{enumerate}
 
 \visible<10->{%
-\begin{block}{Topics for Today ---名詞的用法---}
+\begin{block}{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item<10->   to不定詞つまり\,\Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$\,}\,が「～すること」という意味を表し、名詞のはたらきをすることがあります
  %\item<11-> to不定詞つまり\,\Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$}\,が
@@ -78,28 +81,31 @@
 }
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{名詞的用法2}
+\subsection{to不定詞 $=$ 目的語}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{一般動詞 $+$ to不定詞}
 \large 
 
 \begin{enumerate}
  \item \begin{enumerate}
 	\item<1-> I like \fbox{~~~X~~~}\,.%
-\hfill{\tiny 0300}\,{\scriptsize \myaudio{./audio/032_infinitive_noun_02.mp3}}
 	\item<2-> I like cookies.\hfill{}O $=$ cookies
-	\item<3-> I like \alt<4->{\fbox{to make cookies}}{to make cookies}\,.\hfill{}O $=$ \fbox{to make cookies}
+	\item<3-> I like \alt<4->{\fbox{\textbf{to make} cookies}}{to make cookies}\,.\hfill{}O $=$ \fbox{\textbf{to make} cookies}
        \end{enumerate}
  \item \begin{enumerate}
 	\item<5-> He likes cookies.
-	\item<6-> He likes \alt<7->{\fbox{to make cookies}}{to make cookies}\,.
+	\item<6-> He likes \alt<7->{\fbox{\textbf{to make} cookies}}{to make cookies}\,.
        \end{enumerate}
  \item \begin{enumerate}
 	\item<8-> She liked cookies.
-	\item<9-> She liked \alt<10->{\fbox{to make cookies}}{to make cookies}\,.
+	\item<9-> She liked \alt<10->{\fbox{\textbf{to make} cookies}}{to make cookies}\,.
        \end{enumerate} 
 \end{enumerate}
 
-\visible<11->{%
-\begin{block}{Topics for Today ---名詞的用法---}
+\vspace*{40pt}
+
+\begin{block}<11->{Topic for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
 % \item<11->   \Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$\,} が「～すること」という意味を表し、名詞のはたらきをすることがある
  \item<11->   名詞的用法のto不定詞が一般動詞の目的語になることがある
@@ -107,34 +113,66 @@
 %いつでも\,\Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$\,}\\
  \end{itemize}
      \end{block}
-}
+
+\vspace{-10pt}
+
+\hfill{\tiny 0300}\,{\scriptsize \myaudio{./audio/032_infinitive_noun_02.mp3}}
+
+
+\begin{textblock*}{0.4\linewidth}(318pt,110pt)
+\visible<9->{\begin{tikzpicture}
+\duck[scale=1.2,
+signpost=\scalebox{0.33}{
+\parbox{2.5cm}{\color{black}
+V $+$ to不定詞}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+speech={\tiny メモメモ}
+]
+\end{tikzpicture}}
+\end{textblock*}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{一般動詞 $+$ to不定詞}
- 
-\begin{enumerate}
+\subsection{頻出表現}
+%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{一般動詞 $+$ to不定詞}
+\begin{enumerate}\setlength{\itemsep}{-1pt}
  \item I \textbf{like to} read books before bed.\hfill{\tiny 0312}\,{\scriptsize \myaudio{./audio/032_infinitive_noun_02a.mp3}}
 
- \item We will \textbf{begin to} study for the exam soon.
+ \item We will \textbf{begin to} study for the exam soon.%
+       \hfill{\scriptsize exam \textipa{/Igz\'\ae m/} 試験}
  \item She \textbf{started to} read a new book yesterday.
  \item They \textbf{decided to} have a party for his birthday.%
 \hfill{\scriptsize decide \textipa{/dIs\'aId/}決める、決心する}
  \item I \textbf{need to} finish my homework before dinner.
 \hfill{\scriptsize need \textipa{/n\'\i:d/} 必要がある}
  \item Did they \textbf{continue to} play soccer until dark?
-\hfill{\scriptsize continue \textipa{/k@nt\'Inju:/} 続ける}
+\hfill{\scriptsize continue \textipa{/k@nt\'Inju:/} 続ける}\\
+\hfill{\scriptsize until \textipa{/@nt\'Il/} ～まで　until dark 暗くなるまで}
 \end{enumerate}
 
-\begin{block}<2->{頻出表現}
+\begin{block}<2->{頻出表現}\small
  $\left\{
- \begin{tabular}[c]{l}
-       like\\begin\\start\\decide\\need\\continue
+ \begin{tabular}[c]{>{\bfseries }l}
+       like\\[-1pt]begin\\[-1pt]start\\[-1pt]decide\\[-1pt]need\\[-1pt]continue
  \end{tabular}
-\right\}+\text{to不定詞}$ 
+\right\}+\text{\textbf{to}不定詞}$ 
 \end{block}
 
-
-
+\begin{textblock*}{0.4\linewidth}(300pt,158pt)
+\visible<3->{\begin{tikzpicture}
+\pig[
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+\centering 身につけると\\表現の幅が\\広がります！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=vtodo]{頻出表現}\large
@@ -143,7 +181,7 @@
 \vcenter{
   \hbox{$
     \left\{
-    \begin{tabular}[c]{l}
+    \begin{tabular}[c]{>{\bfseries}l}
       like\\
       begin\\
       start\\
@@ -151,7 +189,7 @@
       need\\
       continue
     \end{tabular}
-    \right\} + \text{to不定詞}
+    \right\} + \text{\textbf{to}不定詞}
   $}
 }
 \hspace{80pt}
@@ -177,7 +215,7 @@
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
+\begin{frame}[plain,t]{Exercises}
 
 {\small つぎの英文を読みましょう}%
 \hfill{\tiny 0536}\,{\scriptsize \myaudio{./audio/032_infinitive_noun_03.mp3}}
@@ -192,8 +230,36 @@ They {\bfseries decided to save}\footnote{save: 貯蓄する} money for their tr
 During their trip, they {\bfseries needed to try} new foods.
 After the trip, they { \bfseries continued}\footnote{continue: 続ける} {\bfseries to talk} about their memories.
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{Exercises}
+
+{\small つぎの英文を読みましょう}%
+\hfill{\tiny 0536}\,{\scriptsize \myaudio{./audio/032_infinitive_noun_03.mp3}}
+
+\begin{tcolorbox}
+Every summer, Jane and her friends planned\footnotemark[1] fun activities\footnotemark[2].
+Jane {\bfseries wanted to visit} many countries.
+Tom {\bfseries liked to draw}\footnotemark[3] pictures of the places they visited\footnotemark[4].
+Mary {\bfseries began to pack}\footnotemark[5] her bags early.
+John {\bfseries started to read} travel books\footnotemark[6].
+They were so excited\footnotemark[7].
+They {\bfseries decided to save}\footnotemark[8] money for their trip.
+During\footnotemark[9] their trip, they {\bfseries needed to try} new foods.
+After the trip, they {\bfseries continued}\footnotemark[10] {\bfseries to talk} about their memories.
+\end{tcolorbox}
+
+\vspace*{40pt}
+\scriptsize
+$^{1}$plan: 計画する\hfill{}$^{2}$fun activity: 楽しい活動\hfill{}%
+$^{3}$draw: （絵を）描く\hfill$^{4}$the places they visited: 彼らが訪ねた場所\\%
+$^{5}$pack: 詰める\hfill{}$^{6}$travel books: 旅行の本\hfill{}%
+$^{7}$excited: わくわくして\hfill{}$^{8}$save: 貯蓄する\hfill%
+$^{9}$during: ～の間\\
+$^{10}$continue: 続ける
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{まとめ}
+\section{to不定詞の名詞的用法（まとめ）}
 \begin{frame}[plain]{まとめ}
  
 \begin{block}{to不定詞の名詞的用法}
@@ -203,9 +269,9 @@ After the trip, they { \bfseries continued}\footnote{continue: 続ける} {\bfse
  %\item<11-> to不定詞つまり\,\Circled[fill color= white]{\,$\text{to} + \text{動詞の原形}$}\,が
  \item 具体的には次の場合があります
       \begin{enumerate}\setbeamertemplate{items}[circle]
-       \item 文全体の主語\hfill{\footnotesize \fbox{To play tennis} is fun.}
-       \item be動詞の直後\hfill{\footnotesize The plan was \fbox{to climb Mt. Fuji.}}
-       \item 一般動詞の直後\hfill{\footnotesize He began \fbox{to write a letter}.}
+       \item 文全体の主語\hfill{\footnotesize \fbox{\textbf{To play} tennis} is fun.}
+       \item be動詞の直後\hfill{\footnotesize The plan was \fbox{\textbf{to climb} Mt. Fuji.}}
+       \item 一般動詞の直後\hfill{\footnotesize He began \fbox{\textbf{to write} a letter}.}
       \end{enumerate}
  \end{itemize}
      \end{block}
