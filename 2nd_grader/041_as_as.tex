@@ -16,7 +16,11 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{John is as tall as his father.}
@@ -43,7 +47,7 @@
 \subsection{as ～ as \ldots{}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{as ～ as \ldots{}}
- \Large
+ %\Large
 
 \begin{enumerate}
  \item \begin{enumerate}
@@ -56,31 +60,50 @@
        \end{enumerate}
 \end{enumerate}
 %
-\hfill{\scriptsize \myaudio{./audio/041_as_as_01.mp3}}
+\hfill{\tiny 0152}\,{\scriptsize \myaudio{./audio/041_as_as_01.mp3}}
 \vfill
 
-\visible<5->{%
-\begin{block}{Topics for Today}
+\begin{block}<5->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item AとBの程度が同じとき（$\text{A}=\text{B}$のとき）は\\
+ \item<6-> AとBの程度が同じとき（$\text{A}=\text{B}$のとき）は\\
 \mbox{}\hspace{120pt} $\text{\Circled[fill color=white]{A}\,\,\,\,\,\ldots\,\,\,\,\,\myEmph[5-]{Maroon}{as}\,\,}+\left\{\begin{tblr}{l}
 	    \text{形容詞}\\
 	    \text{副詞}
 	 \end{tblr}\right\} + \text{\myEmph[5-]{Maroon}{as}\,\,\,\,\,\Circled[fill color=white]{B}}$
- \item 述語動詞はbe動詞のこともあれば一般動詞のこともあります
+ \item<7-> 述語動詞はbe動詞のこともあれば一般動詞のこともあります
+ \item<8-> \kenten{何}と\kenten{何}を\kenten{何}について比べているのか確認しよう\\%
+       \hfill\visible<9->{{\scriptsize John($=$ \Circled[fill color=white]{A})とhis brother($=$ \Circled[fill color=white]{B})を「背の高さ」($=$ tall)について比較}}\\
+       \hfill\visible<10->{{\scriptsize Jennifer($=$ \Circled[fill color=white]{A})とEmily($=$ \Circled[fill color=white]{B})を「走る速さ」($=$ fast)について比較}}
  \end{itemize}
      \end{block}
-}
+
+\begin{textblock*}{0.4\linewidth}(358pt,130pt)
+\visible<11->{\begin{tikzpicture}
+\pig[
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+\centering 何と何を\\何について\\比べてる？}},
+%speech={\tiny
+% \begin{tabular}{c}
+% 目的を表す\\to不定詞
+% \end{tabular}
+%},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 \small
 日本語の意味になるよう(~~~~~~)内の語句を並べ替えましょう。なお $[ +1 ]$とある場合は不足している1語を補ってください。$[ -1 ]$とある場合は余計な1語が含まれています%
-\hfill{\scriptsize \myaudio{./audio/041_as_as_02.mp3}}
+\hfill{\tiny 0215}\,{\scriptsize \myaudio{./audio/041_as_as_02.mp3}}
 
 \normalsize
  \begin{enumerate}
-  \item {\small その国ではバスケットボールは野球と同じくらい人気がある。}\hfill{\scriptsize popular \textipa{/p\'ApjUl\textrhookschwa /} 人気がある}\\
+  \item {\small その国ではバスケットボールは野球と同じくらい人気がある。}\hfill{\scriptsize popular \textipa{/p\'ApjUl\textrhookschwa /} 人気のある}\\
 	Basketball is ( popular / as / as ) baseball in the country.\hfill{\scriptsize country \textipa{/k\'\textturnv ntri/} 国}\\
 	\hspace{80pt}\visible<2->{\myEmph[2-]{BurntOrange}{as popular as}}
   \item {\small ジョージはジョンと同じくらい有名だ。}\hfill{\scriptsize famous \textipa{/f\'eIm@s/} 有名な}\\
@@ -95,38 +118,49 @@
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{not as ～ as\hspace{10pt} \visible<4->{/\hspace{10pt}not so ～ as}}
+\section{as ～ as \ldots\,\,\,の否定}
+\subsection{not $\left\{\begin{tabular}{l}
+                    as\\
+                    so
+		     \end{tabular}\right\}$
+		     ～ as \ldots}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{not as ～ as\hspace{10pt} \visible<4->{/\hspace{10pt}not so ～ as}}
  \begin{enumerate}
-  \item<1-> Tokyo Tower is \myEmph[1-]{Maroon}{not} \myEmph[1-]{NavyBlue}{as} high \myEmph[1-]{NavyBlue}{as} Tokyo Sky Tree.\hfill{\scriptsize high \textipa{/h\'aI/} 高い}
-  \item<3-> Tokyo Tower is \myEmph[2-]{Maroon}{not} \myEmph[2-]{NavyBlue}{so} high \myEmph[2-]{NavyBlue}{as} Tokyo Sky Tree.
+  \item<1-> Tokyo Tower is \myEmph[1-]{Maroon}{not} \myEmph[1-]{NavyBlue}{as} high \myEmph[1-]{NavyBlue}{as} Tokyo Skytree.\hfill{\scriptsize high \textipa{/h\'aI/} 高い}
+  \item<3-> Tokyo Tower is \myEmph[2-]{Maroon}{not} \myEmph[2-]{NavyBlue}{so} high \myEmph[2-]{NavyBlue}{as} Tokyo Skytree.
  \end{enumerate}
 %
-\hfill{\scriptsize \myaudio{./audio/041_as_as_03.mp3}}
-\vfill
+\vspace*{40pt}
 
-\visible<2->{%
-\begin{block}{Topics for Today}
+\begin{block}<2->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item<2-> $\text{\Circled[fill color=white]{A}\,\,\,\,\,\ldots\,\,\,\,\,\myEmph[2-]{Maroon}{not as}\,\,}+\left\{\begin{array}{l}
+ \item<2-> $\text{\Circled[fill color=white]{A}\,\,\,\,\,\ldots\,\,\,\,\,\myEmph[2-]{Maroon}{not}\,\,\,\,\myEmph[2-]{Maroon}{as}\,\,}+\left\{\begin{array}{l}
 	    \text{形容詞}\\
 	    \text{副詞}
 	 \end{array}\right\} + \text{\myEmph[2-]{Maroon}{as}\,\,\,\,\,\Circled[fill color=white]{B}}$%
-\,\,$\Longrightarrow$\,\,「AはBほど～でない」の意味
- \item<4-> 最初のasがsoになることがある\\
+\,\,\,\,$\Longrightarrow$\,\,\,\,「AはBほど～でない」の意味%
+      \hfill{A $<$ B}
+ \item<4-> 最初の\textbf{as}が\textbf{so}になることがある\\
 \hspace{100pt}%
-$\text{\Circled[fill color=white]{A}\,\,\,\,\,\ldots\,\,\,\,\,\myEmph[4-]{Maroon}{not so}\,\,}+\left\{\begin{array}{l}
+$\text{\Circled[fill color=white]{A}\,\,\,\,\,\ldots\,\,\,\,\,\myEmph[4-]{Maroon}{not}\,\,\,\,\myEmph[2-]{NavyBlue}{so}\,\,}+\left\{\begin{array}{l}
 	    \text{形容詞}\\
 	    \text{副詞}
 	 \end{array}\right\} + \text{\myEmph[4-]{Maroon}{as}\,\,\,\,\,\Circled[fill color=white]{B}}$%
-
+ \item<5-> \kenten{何}と\kenten{何}を\kenten{何}について比べているのか確認しよう\\%
+\hfill\visible<6->{{\scriptsize Tokyo Tower($=$ \Circled[fill color=white]{A})とTokyo Skytree($=$ \Circled[fill color=white]{B})を「建物の高さ」($=$ high)について比較}}
  \end{itemize}
      \end{block}
-}
+
+\vspace{-5pt}
+
+\hfill{\tiny 0128}\,{\scriptsize \myaudio{./audio/041_as_as_03.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}\small
 日本語の意味になるよう(~~~~~~)内の語句を並べ替えましょう%
-\hfill{\scriptsize \myaudio{./audio/041_as_as_04.mp3}}
+\hfill{\tiny 0146}\,{\scriptsize \myaudio{./audio/041_as_as_04.mp3}}
 
 \normalsize
  \begin{enumerate}
@@ -142,4 +176,112 @@ $\text{\Circled[fill color=white]{A}\,\,\,\,\,\ldots\,\,\,\,\,\myEmph[4-]{Maroon
 	\hspace{160pt}\visible<3->{\myEmph[3-]{BurntOrange}{as well as}}
  \end{enumerate}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{読んでみよう}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]
+
+\small
+\begin{tcolorbox}\parindent=15pt
+\noindent{}Today, our class has a lunch contest.%
+\hfill{\tiny 0033}\,{\scriptsize \myaudio{./audio/041_as_as_05.mp3}}
+
+    First, we look at the sandwiches. Tom's sandwich is big, and it's as big\tikzmark{clue1} as Mike's. Both are very big!
+
+    Next, we look at the salads and fruit. Sally's \tikzmark{clue2}salad has many colors. It's as colorful as Anna's fruit bowl. Anna's fruit is also very colorful. Ken has soup. It's very hot. His soup is as \tikzmark{clue3}hot as a cup of tea.
+
+    Then, we start eating. Tom eats his sandwich as \tikzmark{clue4}fast as Mike.  Sally eats her salad slowly. She eats as slowly as Anna.
+
+    After we all finish, we decide on the winner. We all agree. Every lunch is a winner!% Each lunch is as good as the others.
+\end{tcolorbox}
+
+\visible<2->{{\small つぎの英文が本文の内容に一致すればT、
+一致しなければFと答えましょう}}
+
+\begin{enumerate}\small\setlength{\itemsep}{01pt}
+ \item<2-> Tom's sandwich is not so big as Mike's.\tikzmark{q1}\hfill\visible<4->{F}
+ \item<2-> Anna's salad is as colorful as Sally's fruit bowl.\tikzmark{q2}\hfill\visible<6->{F}
+ \item<2-> Ken's soup is as hot as the tea.\tikzmark{q3}\hfill\visible<8->{T}
+ \item<2-> Tom eats as quickly as Mike.\tikzmark{q4}\hfill\visible<10->{T}
+\end{enumerate}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([xshift=-6pt,yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,line width=2pt, opacity=.4] ([xshift=8pt,yshift=-2pt]pic cs:clue3) to[bend left] ([xshift=5pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([xshift=5pt,yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(275pt,180pt)
+\visible<2->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}
+{\Large T or F?}}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+speech={\tiny 根拠をはっきり}
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{as ～ as \ldots\,\,\,のまとめ}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ1}
+ \begin{block}<1->{as ～ as \ldots}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item<1-> AとBの程度が同じとき（$\text{A}=\text{B}$のとき）は\\
+\mbox{}\hspace{120pt} $\text{\Circled[fill color=white]{A}\,\,\,\,\,\ldots\,\,\,\,\,\textbf{as}\,\,}+\left\{\begin{tblr}{l}
+	    \text{形容詞}\\
+	    \text{副詞}
+	 \end{tblr}\right\} + \text{\textbf{as}\,\,\,\,\,\Circled[fill color=white]{B}}$
+ \item<2-> 述語動詞はbe動詞のこともあれば一般動詞のこともあります
+ \item<3-> \kenten{何}と\kenten{何}を\kenten{何}について比べているのか確認しよう\\%
+ \end{itemize}
+     \end{block}
+
+\visible<4->{\begin{enumerate}
+ \item This cake is \textbf{as} sweet \textbf{as} honey.
+ \item Eating a salad is \textbf{as} good \textbf{as} eating an apple.
+ \item She sings \textbf{as} well \textbf{as} her mother.
+ \item We drink tea \textbf{as} often \textbf{as} coffee.
+\end{enumerate}}
+
+\hfill{\tiny 0209}\,{\scriptsize \myaudio{./audio/041_as_as_06.mp3}}
+
+\end{frame}
+%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ2}
+\begin{block}<1->{as ～ as \ldots\,\,の否定}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item<1-> $\text{\Circled[fill color=white]{A}\,\,\,\,\,\ldots\,\,\,\,\,\textbf{not}\,\,\,\,\textbf{as}\,\,}+\left\{\begin{array}{l}
+	    \text{形容詞}\\
+	    \text{副詞}
+	 \end{array}\right\} + \text{\textbf{as}\,\,\,\,\,\Circled[fill color=white]{B}}$%
+\,\,\,\,$\Longrightarrow$\,\,\,\,「AはBほど～でない」の意味%
+      \hfill{A $<$ B}
+ \item<2-> 最初の\textbf{as}が\textbf{so}になることがある\\
+\hspace{100pt}%
+$\text{\Circled[fill color=white]{A}\,\,\,\,\,\ldots\,\,\,\,\,\textbf{not}\,\,\,\,\myEmph[2-]{Maroon}{so}\,\,}+\left\{\begin{array}{l}
+	    \text{形容詞}\\
+	    \text{副詞}
+	 \end{array}\right\} + \text{\textbf{as}\,\,\,\,\,\Circled[fill color=white]{B}}$%
+ \end{itemize}
+     \end{block}
+
+\visible<3->{\begin{enumerate}
+ \item My house is \textbf{not as} old \textbf{as} his.
+ \item This car is \textbf{not so} popular \textbf{as} that one.
+ \item She does \textbf{not} eat \textbf{as} quickly \textbf{as} Bob.
+ \item He does \textbf{not} enjoy pizza  \textbf{so} much \textbf{as} pasta.
+\end{enumerate}}
+
+\hfill{\tiny 0215}\,{\scriptsize \myaudio{./audio/041_as_as_07.mp3}}
+
+\end{frame}
+%%%%%%%%
 \end{document}
