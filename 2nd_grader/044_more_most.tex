@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
@@ -46,51 +48,50 @@
 \begin{enumerate}
  \item<1-> \begin{enumerate}
 	\item<1-> Jennifer is tall\myEmph[1-]{Maroon}{er} than Emily.%
-\hfill{\scriptsize \myaudio{./audio/044_more_most_01.mp3}}
+\hfill{\tiny 0209}{\scriptsize \myaudio{./audio/044_more_most_01.mp3}}
 	\item<1-> The river is wid\myEmph[1-]{Maroon}{er} than a mile near here.
 	\item<1-> Tokyo is busi\myEmph[1-]{Maroon}{er} than my city.
 	\item<1-> Whales are bigg\myEmph[1-]{Maroon}{er} than dolphines.
        \end{enumerate}
  \item<2-> \begin{enumerate}
 	\item<2-> Health is important.%
-\hfill{\scriptsize \myaudio{./audio/044_more_most_02.mp3}}
-	\item<3-> \only<4->{*}\visible<3->{Health is important\myEmph[3-]{Maroon}{er} than money.}\hfill\visible<4->{importanterとはいわない}
-	\item<5-> Health is \myEmph[5-]{Maroon}{more} important than money.
-	\item<6-> Health is \myEmph[6-]{Maroon}{the most} important.\hfill\visible<6->{importantestとはいわない}
+\hfill{\tiny 0154}\,{\scriptsize \myaudio{./audio/044_more_most_02.mp3}}
+	\item<3-> \only<4->{*}\visible<3->{Health is important\myEmph[3-]{Maroon}{er} than money.}\hfill\visible<4->{{\scriptsize importanterとはいわない}}
+	\item<5-> Health is \myEmph[5-]{Maroon}{more} important than money.\hfill{\scriptsize more \textipa{/m\'O\textrhookschwa /}}
+	\item<6-> Health is \myEmph[6-]{Maroon}{the most} important.\hfill\visible<6->{{\scriptsize importantestとはいわない}}\\
+\hfill{\scriptsize most \textipa{/m\'oUst/}}
        \end{enumerate}
 \end{enumerate}
 
-\visible<7->{%
-\begin{exampleblock}{Topics for Today}
+\begin{block}<7->{Topics for Today}
 \begin{description}[第2のパターン]\small
  \item<7->[\textcolor{black}{原則:}] ---er, ---est%
 	    \hfill{}\makebox[200pt][l]{tall, wide, busy, big \ldots}
  \item<8->[\textcolor{black}{第2のパターン:}]  more ---,\,\,\,\,\,\,most ---
 	    \hfill{}\makebox[200pt][l]{important, beautiful, difficult, interesting \ldots}\\
 	    \mbox{}\hspace{120pt}\visible<9->{\Circled[fill color = white]{\small \,\,比較的長い単語は第2のパターン\,\,}}
-
-
  \end{description}
-     \end{exampleblock}
-}
+     \end{block}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-選択肢の中の語を用いて日本語の意味になるようにしましょう%
-\hfill{\scriptsize \myaudio{./audio/044_more_most_03.mp3}}
+
+{\small 選択肢の中の語を用いて日本語の意味になるようにしましょう。カッコ内は1語とは限りません}%
+\hfill{\tiny 0247}\,{\scriptsize \myaudio{./audio/044_more_most_03.mp3}}
 \begin{columns}[t]
  \begin{column}{.75\textwidth}
    \begin{enumerate}
   \item 理科は数学よりもわたしにはむずかしい。\\
-	Science is (~~\alt<2->{more difficult}{\phantom{more difficult}}~~) than math for me.
+	Science is (~~\alt<2->{\textcolor{Maroon}{\bfseries more difficult}}{\phantom{more difficult}}~~) than math for me.
   \item 私の庭は春にもっとも美しい。\\
-	My garden is (~~\alt<3->{the most beautiful}{\phantom{the most beautiful}}~~) in spring.
+	My garden is (~~\alt<3->{\textcolor{Maroon}{\bfseries the most beautiful}}{\phantom{the most beautiful}}~~) in spring.
   \item 多くの国でコーヒーはお茶よりも人気がある。\\
-	Coffee is (~~\alt<4->{more popular}{\phantom{more popular}}~~) than tea in many countries.
+	Coffee is (~~\alt<4->{\textcolor{Maroon}{\bfseries more popular}}{\phantom{more popular}}~~) than tea in many countries.
   \item ダイアモンドは真珠よりも高価だ。\\
-	A diamond is (~~\alt<5->{more expensive}{\phantom{more expensive}}~~) than a pearl.
+	A diamond is (~~\alt<5->{\textcolor{Maroon}{\bfseries more expensive}}{\phantom{more expensive}}~~) than a pearl.
   \item モナリザはもっとも有名な絵画だ。\\
-	The Mona Lisa is (~~\alt<6->{the most famous}{\phantom{the most famous}}~~) painting.
+	The Mona Lisa is (~~\alt<6->{\textcolor{Maroon}{\bfseries the most famous}}{\phantom{the most famous}}~~) painting.
  \end{enumerate}
  \end{column}
 \begin{column}{.2\textwidth}
@@ -105,7 +106,11 @@ popular
 \end{columns}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{比較級のつくりかた}
+\section{長い単語の比較級・最上級}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t,label=table1]{長い単語の比較級・最上級のつくりかた}
+more \textipa{/m\'O\textrhookschwa /}\hspace{40pt}most \textipa{/m\'oUst/}
+
 \centering
   \begin{tblr}{colspec={lll},
 % 表の最上と最下に太さ 0.08em の横罫線
@@ -125,52 +130,114 @@ useful&\visible<14->{more useful}&\visible<15->{most useful}\\
 interesting&\visible<16->{more interesting}&\visible<17->{most interesting}\\
    \end{tblr}
 
-\hfill{\scriptsize \myaudio{./audio/044_more_most_04.mp3}}
+\hfill{\tiny 0643}\,{\scriptsize \myaudio{./audio/044_more_most_04.mp3}}
+
+\begin{textblock*}{0.3\linewidth}(340pt,135pt)
+\visible<18->{\begin{tikzpicture}
+\pig[
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+\centering 長い単語は\\{\Large more ---}\\{\Large most ---}}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{--ly}
+\begin{frame}[plain,t]{---lyで終わるとき}
+\large
+
  \begin{enumerate}
   \item \begin{enumerate}
 	 \item Bob spoke \myEmph[1-]{Maroon}{more} slow\myEmph[1-]{Maroon}{ly} than Jane.%
-\hfill{\scriptsize \myaudio{./audio/044_more_most_05.mp3}}
+\hfill{\tiny 0144}\,{\scriptsize \myaudio{./audio/044_more_most_05.mp3}}
 
 	 \item Jane spoke \myEmph[1-]{Maroon}{more} quick\myEmph[1-]{Maroon}{ly} than Bob.
 	 \item Please speak \myEmph[1-]{Maroon}{more} quiet\myEmph[1-]{Maroon}{ly}.
 	\end{enumerate}
   \item \begin{enumerate}
 	 \item<2-> Jennifer got up \myEmph[2-]{Maroon}{earlier} than Emily.%
-	      \hfill\visible<3->{more earlyとはいわない}
+	      \hfill\visible<3->{{\scriptsize more earlyとはいわない}}
 	 \item<4-> Jennifer got up the \myEmph[4-]{Maroon}{earliest} of all.%
-	      \hfill\visible<5->{most earlyとはいわない}
+	      \hfill\visible<5->{{\scriptsize most earlyとはいわない}}
 	\end{enumerate}
  \end{enumerate}
-%
-\hfill{\scriptsize \myaudio{./audio/044_more_most_06.mp3}}
-\visible<6->{%
-\begin{exampleblock}{Topics for Today}
- \begin{itemize}
-  \item<7-> --lyで終わる副詞の比較級はmore ---, most ---
-  \item<8-> ただしearlyはearlier, earliest
+\vspace{-8pt}
+\hfill{\tiny 0117}\,{\scriptsize \myaudio{./audio/044_more_most_06.mp3}}
+
+\vspace{60pt}
+
+\begin{block}<7->{Topics for Today}
+ \begin{itemize}\setbeamertemplate{items}[square]\small
+  \item<7-> --{\bfseries ly}で終わる副詞の比較級は{\bfseries more} ---, 最上級は{\bfseries most} ---
+  \item<8-> ただし{\bfseries early}は{\bfseries earlier}, {\bfseries earliest}
  \end{itemize}
-     \end{exampleblock}
-}
+     \end{block}
+
+\begin{textblock*}{0.2\linewidth}(320pt,120pt)
+\visible<6->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}\centering
+{\Huge\bfseries more\\[3pt] most}}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+speech={\tiny --{\bfseries ly}のとき}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-日本語の意味になるよう(~~~~~~)内の語を並べ替えましょう。なお $[ +1 ]$とある場合は不足している1語を補いましょう。$[ -1 ]$とある場合は余計な1語が含まれています%
-\hfill{\scriptsize \myaudio{./audio/044_more_most_07.mp3}}
+
+{\small 日本語の意味になるよう(~~~~~~)内の語を並べ替えましょう。なお $[ +1 ]$とある場合は不足している1語を補いましょう。$[ -1 ]$とある場合は余計な1語が含まれています}%
+\hfill{\tiny 0139}\,{\scriptsize \myaudio{./audio/044_more_most_07.mp3}}
 
  \begin{enumerate}
   \item 彼は静かに話しました。\\
 	He ( quiet / quietly / spoke ) . $[-1]$\\
-	\visible<2->{He \textcolor{BurntOrange}{spoke quietly}.\,\,\,(✕\,quiet)}
+	\visible<2->{He \textcolor{Maroon}{\bfseries spoke quietly}.\,\,\,(✕\,quiet)}
   \item もっと静かに話してください。\\
 	Please ( quietly / speak ) . $[+1]$\\
-	\visible<3->{Please \textcolor{BurntOrange}{speak more quietly}.}
+	\visible<3->{Please \textcolor{Maroon}{\bfseries speak more quietly}.}
   \item 彼女は3人のなかでもっとも早く起きた。\\
 	She got up ( the / of / most / earliest ) the three. $[-1]$\\
-	\visible<4->{She got up \textcolor{BurntOrange}{the earliest} of the three.\,\,\,(✕\,most)}
+	\visible<4->{She got up \textcolor{Maroon}{\bfseries the earliest} of the three.\,\,\,(✕\,most)}
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{more ---, most --- のまとめ}
+
+\begin{frame}[plain]{まとめ}
+
+\begin{block}<1->{比較級・最上級をつくる2つのパターン}
+\begin{description}[第2のパターン]\small
+ \item[\textcolor{black}{原則:}] ---er, ---est%
+	    \hfill{}\makebox[200pt][l]{tall, wide, busy, big \ldots}
+ \item[\textcolor{black}{第2のパターン:}]  more ---,\,\,\,\,\,\,most ---
+	    \hfill{}\makebox[200pt][l]{important, beautiful, difficult, interesting \ldots}\\
+	    \mbox{}\hspace{120pt}{\Circled[fill color = white]{\small \,\,比較的長い単語は第2のパターン\,\,}}
+ \end{description}
+     \end{block}
+ 
+\begin{block}<2->{---lyのとき}
+ \begin{itemize}\setbeamertemplate{items}[square]\small
+  \item --lyで終わる副詞の比較級は{\bfseries more} ---, 最上級は{\bfseries most} ---
+  \item ただし{\bfseries early}は{\bfseries earlier}, {\bfseries earliest}
+ \end{itemize}
+     \end{block}
+
+\begin{block}<3->{Pronunciation}
+ \begin{itemize}\setbeamertemplate{items}[square]\small
+  \item {\bfseries more} \textipa{/m\'O\textrhookschwa /}
+  \item {\bfseries most} \textipa{/m\'oUst/}
+\end{itemize}
+ 
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<18>{table1}
 \end{document}
