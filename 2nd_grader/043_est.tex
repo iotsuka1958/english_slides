@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
@@ -39,6 +41,7 @@
   \tableofcontents
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{最上級}
 \subsection{もっとも〜だ}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,50 +50,87 @@
 
 \begin{enumerate}
  \item<1-> The Nile River is \only<2->{\myEmph[2-]{Maroon}{the}} long\only<2->{\myEmph[2-]{Maroon}{est} in the world}.%
-\hfill{\scriptsize \myaudio{./audio/043_est_01.mp3}}
+\hfill{\tiny 0243}\,{\scriptsize \myaudio{./audio/043_est_01.mp3}}
  \item<1-> Mt. Fuji is \only<3->{\myEmph[3-]{Maroon}{the}} high\only<3->{\myEmph[3-]{Maroon}{est} in Japan}.
  \item<1-> Jennifer is \only<4->{\myEmph[4-]{Maroon}{the}} tall\only<4->{\myEmph[4-]{Maroon}{est} in her school}.
  \item<1-> Peter is \only<5->{\myEmph[5-]{Maroon}{the}} young\only<5->{\myEmph[5-]{Maroon}{est} of the three brothers}.
  \item<1-> George swims \only<6->{\myEmph[6-]{Maroon}{the}} fast\only<6->{\myEmph[6-]{Maroon}{est} of all the students}.
 \end{enumerate}
 
-\visible<7->{%
-\begin{exampleblock}{Topics for Today}
-\begin{itemize}\small
+\begin{block}<7->{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「もっとも〜だ」は\,\,\,\,\,$\text{the} +%
-\Circled[fill color=white]{\,\,\,\,\,\left\{\begin{array}{l}
+\Circled[fill color=white]{\,\,\,\,\,\left\{\begin{tabular}{l}
             形容詞\\
             副詞
-         \end{array}\right\} + \text{\myEmph[5-]{Maroon}{est}\,\,\,\,}}$
+         \end{tabular}\right\} + \text{\myEmph[5-]{Maroon}{est}\,\,\,\,}}$
 \,\,\,\,\,で表します。「最上級」といいます
  \item \fcolorbox{white}{white}{the $+$ 最上級}のあとには\,\,$\left\{
-\begin{array}{l}
+\begin{tabular}{l}
  \text{in} + \text{範囲を表す語}\\
  \text{of} + \text{複数}
-\end{array}
+\end{tabular}
 \right\}$が続くことがあります
  \end{itemize}
-
-     \end{exampleblock}
+     \end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{最上級のつくり方}
+\subsection{原則}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,label=table1]{最上級のつくりかた（原則）}
+\centering
+  \begin{tblr}{colspec={ll},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1,Z} = { 0.08em },
+hline{2} = { 0.05em },
+row{odd}={gray9},
+row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
 }
+原級&比較級&最上級\\
+long&\visible<2->{longer}&\visible<11->{longest}\\
+small&\visible<3->{smaller}&\visible<12->{smallest}\\
+tall&\visible<4->{taller}&\visible<13->{tallest}\\
+young&\visible<5->{younger}&\visible<14->{youngest}\\
+old&\visible<6->{older}&\visible<15->{oldest}\\
+high&\visible<7->{higher}&\visible<16->{highest}\\
+cold&\visible<8->{colder}&\visible<17->{coldest}\\
+cheap&\visible<9->{cheaper}&\visible<18->{cheapest}\\
+fast&\visible<10->{faster}&\visible<19->{fastest}\\
+   \end{tblr}
 
+\hfill{\tiny }\,{\scriptsize \myaudio{./audio/043_est_01a.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(300pt,168pt)
+\visible<20->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}\centering
+{\Huge\bfseries --est}}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+speech={\tiny まずは原則！}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 日本語の意味になるよう空所に適当な語を選択肢から選んで補いましょう。\\必要に応じて変化させてください%
-\hfill{\scriptsize \myaudio{./audio/043_est_02.mp3}}
+\hfill{\tiny 0217}\,{\scriptsize \myaudio{./audio/043_est_02.mp3}}
 
 \begin{columns}[t]
  \begin{column}{.78\textwidth}
    \begin{enumerate}
   \item 私の祖父は家族で最年長です。\\
-	My grandfather is the (~~\alt<2->{\myEmph[2-]{BurntOrange}{oldest}}{\phantom{oldest}}~~) in my family. 
+	My grandfather is the (~~\alt<2->{\myEmph[2-]{Maroon}{oldest}}{\phantom{oldest}}~~) in my family. 
     \item この教室は学校のなかでいちばん小さいです。\\
-	This classroom is the (~~\alt<3->{\myEmph[3-]{BurntOrange}{smallest}}{\phantom{smallest}}~~) in our school. 
+	This classroom is the (~~\alt<3->{\myEmph[3-]{Maroon}{smallest}}{\phantom{smallest}}~~) in our school. 
     \item このバッグはその店でいちばん安いです。\\
-	The bag is the (~~\alt<4->{\myEmph[4-]{BurntOrange}{cheapest}}{\phantom{cheapest}}~~) in the store.
+	The bag is the (~~\alt<4->{\myEmph[4-]{Maroon}{cheapest}}{\phantom{cheapest}}~~) in the store.
     \item エミリーが5人の生徒のなかでいちばん高くジャンプした。\\
-	Emily jumped the (~~\alt<5->{\myEmph[5-]{BurntOrange}{highest}}{\phantom{highest}}~~) of the five students.
+	Emily jumped the (~~\alt<5->{\myEmph[5-]{Maroon}{highest}}{\phantom{highest}}~~) of the five students.
 
 \end{enumerate}
 
@@ -110,23 +150,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \begin{frame}[plain]{Exercises}
 日本語の意味になるよう(~~~~~~)に適語を補いましょう%
-\hfill{\scriptsize \myaudio{./audio/043_est_03.mp3}}
+\hfill{\tiny 0215}\,{\scriptsize \myaudio{./audio/043_est_03.mp3}}
   \begin{enumerate}
    \item ナイル川は世界でいちばん長い。\\
-	 The Nile River is (~~\alt<2->{the}{\phantom{the}}~~) (~~\alt<2->{longest}{\phantom{longest}}~~) (~~\alt<2->{in}{\phantom{in}}~~) the world.
+	 The Nile River is (~~\alt<2->{\myEmph[2-]{Maroon}{the}}{\phantom{the}}~~) (~~\alt<2->{\myEmph[2-]{Maroon}{longest}}{\phantom{longest}}~~) (~~\alt<2->{\myEmph[2-]{Maroon}{in}}{\phantom{in}}~~) the world.
    \item ジェニファーは学校でいちばん背が高い。\\
-	 Jennifer is (~~\alt<3->{the}{\phantom{the}}~~) (~~\alt<3->{tallest}{\phantom{tallest}}~~) (~~\alt<2->{in}{\phantom{in}}~~) her school.
+	 Jennifer is (~~\alt<3->{\myEmph[3-]{Maroon}{the}}{\phantom{the}}~~) (~~\alt<3->{\myEmph[3-]{Maroon}{tallest}}{\phantom{tallest}}~~) (~~\alt<3->{\myEmph[2-]{Maroon}{in}}{\phantom{in}}~~) her school.
    \item ボブは3人の生徒の中でいちばんはやく走った。\\
-	 Bob ran the (~~\alt<4->{fastest}{\phantom{fastest}}~~) (~~\alt<4->{of}{\phantom{of}}~~) the three students.
+	 Bob ran the (~~\alt<4->{\myEmph[4-]{Maroon}{fastest}}{\phantom{fastest}}~~) (~~\alt<4->{\myEmph[4-]{Maroon}{of}}{\phantom{of}}~~) the three students.
    \item ピーターはすべてのメンバーの中で最年少だった。\\
-	 Peter was  (~~\alt<5->{the}{\phantom{the}}~~) (~~\alt<5->{youngest}{\phantom{youngest}}~~) (~~\alt<5->{of}{\phantom{in}}~~) all the members.
+	 Peter was  (~~\alt<5->{\myEmph[5-]{Maroon}{the}}{\phantom{the}}~~) (~~\alt<5->{\myEmph[5-]{Maroon}{youngest}}{\phantom{youngest}}~~) (~~\alt<5->{\myEmph[5-]{Maroon}{of}}{\phantom{in}}~~) all the members.
   \end{enumerate}
  \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{最上級のつくり方}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{注意すべき最上級}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{注意すべき最上級のつくり方}
  \begin{enumerate}
   \item<1-> The park is \only<2->{\myEmph[2-]{Maroon}{the}} \alt<2->{larg\myEmph[2-]{Maroon}{est} in the city}{large}.%
-\hfill{\scriptsize \myaudio{./audio/043_est_04.mp3}}
+\hfill{\tiny 0304}\,{\scriptsize \myaudio{./audio/043_est_04.mp3}}
   \item<1-> The question is \only<3->{\myEmph[3-]{Maroon}{the}} \alt<3->{eas\myEmph[3-]{Maroon}{iest} of all}{easy}.
   \item<1-> The box was \only<4->{\myEmph[4-]{Maroon}{the}} \alt<4->{heav\myEmph[3-]{Maroon}{iest} of all}{heavy}.
   \item<1-> John is \only<5->{\myEmph[5-]{Maroon}{the}} \alt<5->{bus\myEmph[2-]{Maroon}{iest} in the hospital}{busy}.
@@ -134,106 +177,131 @@
   \item<1-> My dog is \only<7->{\myEmph[7-]{Maroon}{the}} \alt<7->{bi\myEmph[2-]{Maroon}{ggest} in our neighborhood}{big}.
  \end{enumerate}
 
-\visible<8->{%
-\begin{exampleblock}{Topics for Today}
+\begin{block}<8->{Topics for Today}
 {\small 原則は語尾に--est。
 ただし}
-\begin{itemize}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item 最後がeのときは--stだけつける\\\hfill{}large -- largest, wide -- widest, nice --nicest, fine --finest　
  \item 最後のyをiにして--estをつけるもの\\\hfill{}easy -- easiest, heavy -- heaviest, busy -- busiest, happy -- happiest, early -- earliest　
  \item 最後の文字を重ねて --erをつけるもの\hfill{}hot -- hottest, big -- biggest　
 
  \end{itemize}
-     \end{exampleblock}
-}
-
+     \end{block}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{最上級のつくりかた}
+\begin{frame}[plain,label=table2]{注意すべき最上級のつくりかた}
 
 \begin{columns}
 %%%%%%%%%%%%%%%%%%
-\begin{column}[T]{.3\textwidth}
-最後がeのとき
+\begin{column}[T]{.275\textwidth}
+{\small 最後がeのと}き
 
 \bigskip
 
-   \begin{tblr}{colspec={ll},
+   \begin{tblr}{colspec={lll},
 % 表の最上と最下に太さ 0.08em の横罫線
 hline{1,Z} = { 0.08em },
 hline{2} = { 0.05em },
 row{odd}={gray9},
-row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
+row{1} = { halign = c, font = { \small\sffamily\bfseries }, bg = gray6, fg = white }
 }
-原級&最上級\\
-large&\visible<2->{largest}\\
-wide&\visible<3->{widest}\\
-nice&\visible<4->{nicest}\\
-fine&\visible<5->{finest}\\
+原級&比較級&最上級\\
+large&\visible<2->{larger}&\visible<3->{largest}\\
+wide&\visible<2->{wider}&\visible<4->{widest}\\
+nice&\visible<2->{nicer}&\visible<5->{nicest}\\
+fine&\visible<2->{finer}&\visible<6->{finest}\\
    \end{tblr}
+
+{\tiny 0618}\,{\scriptsize \myaudio{./audio/043_est_05a.mp3}}
+
+
 \end{column}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{column}[T]{.3\textwidth}
-最後がyのとき
+\begin{column}[T]{.33\textwidth}
+{\small 最後がyのとき}
 
 \bigskip
 
-  \begin{tblr}{colspec={ll},
+  \begin{tblr}{colspec={lll},
 % 表の最上と最下に太さ 0.08em の横罫線
 hline{1,Z} = { 0.08em },
 hline{2} = { 0.05em },
 row{odd}={gray9},
-row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
+row{1} = { halign = c, font = { \small\sffamily\bfseries }, bg = gray6, fg = white }
 }
-原級&最上級\\
-easy&\visible<6->{easiest}\\
-heavy&\visible<7->{heaviest}\\
-busy&\visible<8->{busiest}\\
-happy&\visible<9->{happiest}\\
-early&\visible<10->{earliest}\\
+原級&比較級&最上級\\
+easy&\visible<7->{easier}&\visible<8->{easiest}\\
+heavy&\visible<7->{heavier}&\visible<9->{heaviest}\\
+busy&\visible<7->{busier}&\visible<10->{busiest}\\
+happy&\visible<7->{happier}&\visible<11->{happiest}\\
+early&\visible<7->{earlier}&\visible<12->{earliest}\\
    \end{tblr}
+
+{\tiny 0618}\,{\scriptsize \myaudio{./audio/043_est_05b.mp3}}
+
 \end{column}
 %%%%%%%%%%%%%%%%%%%%%%
 \begin{column}[T]{.3\textwidth}
-最後の文字を重ねるもの
+{\small 最後の文字を重ねるもの}
 
 \bigskip
 
-   \begin{tblr}{colspec={ll},
+   \begin{tblr}{colspec={lll},
 % 表の最上と最下に太さ 0.08em の横罫線
 hline{1,Z} = { 0.08em },
 hline{2} = { 0.05em },
 row{odd}={gray9},
-row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
+row{1} = { halign = c, font = { \small\sffamily\bfseries }, bg = gray6, fg = white }
 }
-原級&最上級\\
-hot&\visible<11->{hottest}\\
-big&\visible<12->{biggest}
+原級&比較級&最上級\\
+hot&\visible<13->{hotter}&\visible<14->{hottest}\\
+big&\visible<13->{bigger}&\visible<15->{biggest}
    \end{tblr}
+
+{\tiny 0618}\,{\scriptsize \myaudio{./audio/043_est_05c.mp3}}
 \end{column}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{columns}
 
 \vfill
 
-\hfill\visible<13->{微妙な差異はありますが、語尾が--estであることにかわりありませんね}%
-{\scriptsize \myaudio{./audio/043_est_05.mp3}}
+\visible<17->{{\small 微妙な差異はありますが、語尾が--estであることにかわりありませんね}}%
+\hfill{\tiny 0618}\,{\scriptsize \myaudio{./audio/043_est_05.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(350pt,140pt)
+\visible<16->{\begin{tikzpicture}
+\pig[
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+\centering 最後が\\{\Large --est}なのは\\同じです！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 日本語の意味になるよう(~~~~~~)に適語を補いましょう%
-\hfill{\scriptsize \myaudio{./audio/043_est_06.mp3}}
+\hfill{\tiny 0309}\,{\scriptsize \myaudio{./audio/043_est_06.mp3}}
  \begin{enumerate}
   \item その象は動物園でいちばん大きい動物だ。\\
-	The elephant is the (~~\alt<2->{\textcolor{BurntOrange}{largest}}{\phantom{largest}}~~) animal in the zoo. \visible<2->{または\textcolor{BurntOrange}{biggest}}
+	The elephant is the (~~\alt<2->{\textcolor{Maroon}{largest}}{\phantom{largest}}~~) animal in the zoo. \visible<2->{または\textcolor{Maroon}{biggest}}
   \item その店では月曜日がいちばん忙しい日です。\\
-	Monday is the (~~\alt<3->{\textcolor{BurntOrange}{busiest}}{\phantom{busiest}}~~) day at the store.
+	Monday is the (~~\alt<3->{\textcolor{Maroon}{busiest}}{\phantom{busiest}}~~) day at the store.
   \item デイブはメンバーの中でいちばん早く起きた。\\
-	Dave got up the (~~\alt<4->{\textcolor{BurntOrange}{earliest}}{\phantom{earliest}}~~) of all the members.
+	Dave got up the (~~\alt<4->{\textcolor{Maroon}{earliest}}{\phantom{earliest}}~~) of all the members.
   \item 砂漠(desert)は地球上でもっとも暑い場所です。\\
-	The desert is the (~~\alt<5->{\textcolor{BurntOrange}{hottest}}{\phantom{hottest}}~~) place on Earth.
+	The desert is the (~~\alt<5->{\textcolor{Maroon}{hottest}}{\phantom{hottest}}~~) place on Earth.
   \item わたしにとって秋がもっとも幸せな季節です。\\
-	Fall  is the (~~\alt<6->{\textcolor{BurntOrange}{happiest}}{\phantom{happiest}}~~) season for me.
+	Fall  is the (~~\alt<6->{\textcolor{Maroon}{happiest}}{\phantom{happiest}}~~) season for me.
  \end{enumerate}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<1,20>[plain]{table1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<1,17>[plain]{table2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
