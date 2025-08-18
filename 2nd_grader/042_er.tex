@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
@@ -47,34 +49,47 @@
 
 \begin{enumerate}
  \item<1-> The Nile River is long\only<2->{\myEmph[2-]{Maroon}{er than} the Amazon River}.%
-\hfill{\scriptsize \myaudio{./audio/042_er_01.mp3}}
+\hfill{\tiny 0236}\,{\scriptsize \myaudio{./audio/042_er_01.mp3}}
  \item<1-> Rabbits are small\only<3->{\myEmph[3-]{Maroon}{er than} foxes}.
  \item<1-> Jennifer is tall\only<4->{\myEmph[4-]{Maroon}{er than} Emily}.
  \item<1-> Peter is young\only<5->{\myEmph[5-]{Maroon}{er than} George}.
  \item<1-> Peter swims fast\only<6->{\myEmph[6-]{Maroon}{er than} George}.
 \end{enumerate}
 
-\visible<7->{%
-\begin{exampleblock}{Topic for Today}
-\begin{itemize}\small
- \item 「AはBより～だ」\\
+\begin{block}<7->{Topic for Today}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item<7-> 「AはBより～だ」\\
 \mbox{}\hspace{120pt} $\text{A\,\,\,\,\,\ldots\,\,\,\,\,\,\,}+%
-\Circled[fill color=white]{\,\,\,\,\,\left\{\begin{array}{l}
+\Circled[fill color=white]{\,\,\,\,\,\left\{\begin{tabular}{l}
             形容詞\\
             副詞
-         \end{array}\right\} + \text{\myEmph[5-]{Maroon}{er}\,\,\,\,}} \text{\myEmph[5-]{Maroon}{\,\,\,\,\,than}}\,\,\,\,\,\text{B}$
- \item \Circled[fill color=white]{$\,\,\,\,\,\left\{\begin{array}{l}
+         \end{tabular}\right\} + \text{\myEmph[5-]{Maroon}{er}\,\,\,\,}} \text{\myEmph[5-]{Maroon}{\,\,\,\,\,than}}\,\,\,\,\,\text{B}$
+ \item<8-> \Circled[fill color=white]{$\,\,\,\,\,\left\{\begin{tabular}{l}
             形容詞\\
             副詞
-         \end{array}\right\} + \text{\myEmph[5-]{Maroon}{er}\,\,\,\,}$}%
-\,\,\,のことを「比較級」といいます\hfill{\scriptsize (もとの形は「原級」)}
+         \end{tabular}\right\} + \text{\myEmph[5-]{Maroon}{er}\,\,\,\,}$}%
+\,\,\,のことを「比較級」といいます\hfill\visible<9->{{\scriptsize (もとの形は「原級」)}}
  \end{itemize}
 
-     \end{exampleblock}
-}
+     \end{block}
+
+\begin{textblock*}{0.4\linewidth}(350pt,40pt)
+\visible<10->{\begin{tikzpicture}
+\pig[
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+\centering 何と何を\\何について\\比べてる？}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{比較級のつくりかた}
+\section{比較級のつくり方}
+\subsection{原則}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,label=table1]{比較級のつくりかた（原則）}
 \centering
   \begin{tblr}{colspec={ll},
 % 表の最上と最下に太さ 0.08em の横罫線
@@ -95,26 +110,40 @@ cheap&\visible<9->{cheaper}\\
 fast&\visible<10->{faster}\\
    \end{tblr}
 
-\hfill{\scriptsize \myaudio{./audio/042_er_02.mp3}}
+\hfill{\tiny 0510}\,{\scriptsize \myaudio{./audio/042_er_02.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(300pt,168pt)
+\visible<2->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}\centering
+{\Huge\bfseries --er}}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+speech={\tiny まずは原則！}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 日本語の意味になるよう空所に適当な語を選択肢から選んで補いましょう。\\必要に応じて変化させてください%
-\hfill{\scriptsize \myaudio{./audio/042_er_03.mp3}}
+\hfill{\tiny 0235}\,{\scriptsize \myaudio{./audio/042_er_03.mp3}}
 
 \begin{columns}[t]
  \begin{column}{.78\textwidth}
    \begin{enumerate}
   \item このコンピューターはあれよりも安い。\\
-	This computer is (~~\alt<2->{\myEmph[2-]{BurntOrange}{cheaper}}{\phantom{cheaper}}~~) than that one. 
+	This computer is (~~\alt<2->{\myEmph[2-]{Maroon}{cheaper}}{\phantom{cheaper}}~~) than that one. 
     \item クマは犬よりも強い。\\
-	Bears are (~~\alt<3->{\myEmph[3-]{BurntOrange}{stronger}}{\phantom{stronger}}~~) than dogs. 
+	Bears are (~~\alt<3->{\myEmph[3-]{Maroon}{stronger}}{\phantom{stronger}}~~) than dogs. 
     \item ワシは小鳥よりも高く飛ぶ。\\
-	Eagles fly (~~\alt<4->{\myEmph[4-]{BurntOrange}{higher}}{\phantom{higher}}~~) than little birds. 
+	Eagles fly (~~\alt<4->{\myEmph[4-]{Maroon}{higher}}{\phantom{higher}}~~) than little birds. 
     \item ジェーンはボブよりも若い。\\
-	Jane is (~~\alt<5->{\myEmph[5-]{BurntOrange}{younger}}{\phantom{younger}}~~) than Bob. 
+	Jane is (~~\alt<5->{\myEmph[5-]{Maroon}{younger}}{\phantom{younger}}~~) than Bob. 
     \item ジョージはポールよりフランス語をけんめいに勉強した。\\
-	George studied French (~~\alt<6->{\myEmph[6-]{BurntOrange}{harder}}{\phantom{harder}}~~) than Paul. 
+	George studied French (~~\alt<6->{\myEmph[6-]{Maroon}{harder}}{\phantom{harder}}~~) than Paul. 
  \end{enumerate}
  \end{column}
 %%%%%%%%%%%%%%
@@ -130,6 +159,8 @@ fast&\visible<10->{faster}\\
 \end{columns}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{注意すべき比較級}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意すべき--er} 
  \begin{enumerate}
   \item His house is \alt<2->{larg\myEmph[2-]{Maroon}{er than} mine\,($=\text{my house}$)}{large}.\hfill{}\visible<3->{large -- larger}
@@ -141,21 +172,20 @@ fast&\visible<10->{faster}\\
   \item Elephants are \alt<14->{bi\myEmph[14-]{Maroon}{gger than} lions}{big}.\hfill{}\visible<15->{big -- bigger}
  \end{enumerate}
 
-\visible<16->{%
-\begin{exampleblock}{Topics for Today}
+\begin{block}<16->{Topics for Today}
 {\small 原則は語尾に--er。
 ただし}%
-\hfill{\scriptsize \myaudio{./audio/042_er_04.mp3}}
-\begin{itemize}\small
+\hfill{\tiny 0325}\,{\scriptsize \myaudio{./audio/042_er_04.mp3}}
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item 最後がeのときは--rだけつける\\\hfill{}large -- larger, wide -- wider, nice -- nicer, fine -- finer　
  \item 最後のyをiにして--erをつけるもの\\\hfill{}easy -- easier, heavy -- heavier, busy -- busier, happy -- happier, early -- earlier　
  \item 最後の文字を重ねて --erをつけるもの\hfill{}hot -- hotter, big -- bigger　
  \end{itemize}
-     \end{exampleblock}
-}
+     \end{block}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{比較級のつくりかた}
+\begin{frame}[plain,label=table2]{注意すべき比較級のつくりかた}
 
 \begin{columns}
 %%%%%%%%%%%%%%%%%%
@@ -222,27 +252,39 @@ big&\visible<12->{bigger}
 
 \vfill
 
-\hfill\visible<13->{微妙な差異はありますが、語尾が--erであることにかわりありませんね}%
-{\scriptsize \myaudio{./audio/042_er_05.mp3}}
+\visible<14->{{\small 微妙な差異はありますが、語尾が--erであることにかわりありませんね}}%
+\hfill{\tiny 0612}\,{\scriptsize \myaudio{./audio/042_er_05.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(350pt,140pt)
+\visible<13->{\begin{tikzpicture}
+\pig[
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+\centering 最後が\\{\Large --er}なのは\\同じです！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
  日本語の意味になるよう空所に適当な語を選択肢から選んで補いましょう。\\必要に応じて変化させてください%
-\hfill{\scriptsize \myaudio{./audio/042_er_06.mp3}}
+\hfill{\tiny 0237}\,{\scriptsize \myaudio{./audio/042_er_06.mp3}}
 
 \begin{columns}[t]
  \begin{column}{.78\textwidth}
    \begin{enumerate}
   \item 東京はニューヨークよりも大きい。\\
-	Tokyo is (~~\alt<2->{\myEmph[2-]{BurntOrange}{larger}}{\phantom{larger}}~~) than New York. 
+	Tokyo is (~~\alt<2->{\myEmph[2-]{Maroon}{larger}}{\phantom{larger}}~~) than New York. 
     \item ジョージはパティよりも早く起きた。\\
-	George got up (~~\alt<3->{\myEmph[2-]{BurntOrange}{earlier}}{\phantom{earlier}}~~) than Patty. 
+	George got up (~~\alt<3->{\myEmph[2-]{Maroon}{earlier}}{\phantom{earlier}}~~) than Patty. 
     \item その白いバッグはあの黒いバッグより重い。\\
-	The white bag is (~~\alt<4->{\myEmph[2-]{BurntOrange}{heavier}}{\phantom{heavier}}~~) than the black one. 
+	The white bag is (~~\alt<4->{\myEmph[2-]{Maroon}{heavier}}{\phantom{heavier}}~~) than the black one. 
     \item コーヒーはお茶よりも熱かった。\\
-	The coffee was (~~\alt<5->{\myEmph[2-]{BurntOrange}{hotter}}{\phantom{hotter}}~~) than the tea. 
+	The coffee was (~~\alt<5->{\myEmph[2-]{Maroon}{hotter}}{\phantom{hotter}}~~) than the tea. 
     \item この試験はあの試験よりかんたんだ。\\
-	This exam  is (~~\alt<6->{\myEmph[2-]{BurntOrange}{easier}}{\phantom{easier}}~~) than that one. 
+	This exam  is (~~\alt<6->{\myEmph[2-]{Maroon}{easier}}{\phantom{easier}}~~) than that one. 
  \end{enumerate}
  \end{column}
 %%%%%%%%%%%%%%
@@ -257,4 +299,41 @@ big&\visible<12->{bigger}
 \end{column}
 \end{columns}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{比較級のまとめ}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ}
+
+\begin{block}{比較級の基本}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item 「AはBより～だ」\\
+\mbox{}\hspace{120pt} $\text{A\,\,\,\,\,\ldots\,\,\,\,\,\,\,}+%
+\Circled[fill color=white]{\,\,\,\,\,\left\{\begin{tabular}{l}
+            形容詞\\
+            副詞
+         \end{tabular}\right\} + \text{\myEmph[5-]{Maroon}{er}\,\,\,\,}} \text{\myEmph[5-]{Maroon}{\,\,\,\,\,than}}\,\,\,\,\,\text{B}$
+ \item \Circled[fill color=white]{$\,\,\,\,\,\left\{\begin{tabular}{l}
+            形容詞\\
+            副詞
+         \end{tabular}\right\} + \text{\myEmph[5-]{Maroon}{er}\,\,\,\,}$}%
+\,\,\,のことを「比較級」といいます\hfill{\scriptsize (もとの形は「原級」)}
+ \end{itemize}
+     \end{block}
+ 
+\begin{block}{比較級のつくり方}
+{\small 原則は語尾に--er。
+ただし}%
+\hfill{\tiny 0325}\,{\scriptsize \myaudio{./audio/042_er_04.mp3}}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item 最後がeのときは--rだけつける\\\hfill{}large -- larger, wide -- wider, nice -- nicer, fine -- finer　
+ \item 最後のyをiにして--erをつけるもの\\\hfill{}easy -- easier, heavy -- heavier, busy -- busier, happy -- happier, early -- earlier　
+ \item 最後の文字を重ねて --erをつけるもの\hfill{}hot -- hotter, big -- bigger　
+ \end{itemize}
+     \end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<1,10>[plain]{table1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<1,14>[plain]{table2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
