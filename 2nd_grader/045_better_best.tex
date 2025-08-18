@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
@@ -33,59 +35,61 @@
   \titlepage
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{授業の流れ}
 \begin{frame}[plain]
   \frametitle{授業の流れ}
   \tableofcontents
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{不規則変化する比較級・最上級}
-\subsection{better / best}
+\subsection{wellとgood}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{well --- better --- best / good --- better --- best}
+\begin{frame}[plain]{wellとgood}
  \begin{enumerate}
   \item \begin{enumerate}
 	 \item<1-> Billy plays the piano \myEmph[1-]{Maroon}{well}.
 %	 \item<2-> Billy plays the piano \myEmph[2-]{Maroon}{as} well \myEmph[2-]{Maroon}{as} John.
 	 \item<2-> Billy plays the piano \myEmph[2-]{Maroon}{better} than John.
 	 \item<3-> Billy plays the piano \myEmph[3-]{Maroon}{the best} in his school.%
-\hfill{\scriptsize \myaudio{./audio/045_better_best_01.mp3}}
+\hfill{\tiny 0146}\,{\scriptsize \myaudio{./audio/045_better_best_01.mp3}}
 	\end{enumerate}
   \item \begin{enumerate}
 	 \item<4-> Janis is a \myEmph[4-]{Maroon}{good} singer.
 	 \item<5-> Janis is a \myEmph[5-]{Maroon}{better} singer than Linda.
 	 \item<6-> Janis is \myEmph[6-]{Maroon}{the best} singer of all.
-\hfill{\scriptsize \myaudio{./audio/045_better_best_02.mp3}}
+\hfill[\tiny 0141]\,{\scriptsize \myaudio{./audio/045_better_best_02.mp3}}
 	\end{enumerate}
  \end{enumerate}
-%
-\visible<7>{%
-\begin{exampleblock}{Topics for Today}\small
+
+\begin{block}<7->{Topics for Today}\small
 副詞{\bfseries well}（じょうずに）と形容詞{\bfseries good}（よい）は不規則な変化をします%
-\hfill{\scriptsize \myaudio{./audio/045_better_best_03.mp3}}
+\hfill{\tiny 0148}\,{\scriptsize \myaudio{./audio/045_better_best_03.mp3}}
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item {\bfseries well} \textipa{/w\'el/} --- {\bfseries better} \textipa{/b\'et\textrhookschwa /} --- {\bfseries best} \textipa{/b\'est/}
  \item {\bfseries good} \textipa{/g\'Ud/} --- {\bfseries better} \textipa{/b\'et\textrhookschwa /}--- {\bfseries best} \textipa{/b\'est/}
  \end{itemize}
-     \end{exampleblock}
-}
+     \end{block}
 \end{frame}
 %%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-日本語の意味になるよう空所に適語を補ってください%
-\hfill{\scriptsize \myaudio{./audio/045_better_best_04.mp3}}
+
+{\small 日本語の意味になるよう空所に適語を補ってください}%
+\hfill{\tiny 0207}\,{\scriptsize \myaudio{./audio/045_better_best_04.mp3}}
 \begin{enumerate}
  \item ジャニスはリンダよりも歌うのがうまい。\\
-       Janis sings (~~\alt<2->{\textcolor{BurntOrange}{better}}{\phantom{better}}~~) than Linda.\\
-       $=$\,\,Janis is a  (~~\alt<3->{\textcolor{BurntOrange}{better}}{\phantom{better}}~~)  (~~\alt<3->{\textcolor{BurntOrange}{singer}}{\phantom{singer}}~~) than Linda.
+       Janis sings (~~\alt<2->{\textcolor{Maroon}{\bfseries better}}{\phantom{better}}~~) than Linda.\\
+       $=$\,\,Janis is a  (~~\alt<3->{\textcolor{Maroon}{\bfseries better}}{\phantom{better}}~~)  (~~\alt<3->{\textcolor{Maroon}{\bfseries singer}}{\phantom{singer}}~~) than Linda.
  \item ダイアナはみんなのなかでもっともピアノがうまい。\\
-       Diana plays the piano the (~~\alt<4->{\textcolor{BurntOrange}{best}}{\phantom{best}}~~) of all.\\
-       $=$\,\,Diana is (~~\alt<5->{\textcolor{BurntOrange}{the}}{\phantom{the}}~~)  (~~\alt<5->{\textcolor{BurntOrange}{best}}{\phantom{best}}~~) pianist of all.
+       Diana plays the piano the (~~\alt<4->{\textcolor{Maroon}{\bfseries best}}{\phantom{best}}~~) of all.\\
+       $=$\,\,Diana is (~~\alt<5->{\textcolor{Maroon}{\bfseries the}}{\phantom{the}}~~)  (~~\alt<5->{\textcolor{Maroon}{\bfseries best}}{\phantom{best}}~~) pianist of all.
 \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{many --- more --- most / much --- more --- most}
+\subsection{manyとmuch}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{manyとmuch}
  \begin{enumerate}
   \item \begin{enumerate}
 	 \item<1-> Bob ate too \myEmph[1-]{Maroon}{many} cookies.\hfill{\scriptsize cookie:数えられる名詞}
@@ -103,44 +107,43 @@
 	\end{enumerate}
  \end{enumerate}
 %
-\visible<7->{%
-\begin{exampleblock}{Topics for Today}\small
+\begin{block}<7->{Topics for Today}\small
 形容詞{\bfseries many}（多数の）と{\bfseries much}（多量の）は不規則な変化をします%
-\hfill{\scriptsize \myaudio{./audio/045_better_best_07.mp3}}
+\hfill{\tiny 0149}\,{\scriptsize \myaudio{./audio/045_better_best_07.mp3}}
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item {\bfseries many} \textipa{/m\'eni/} --- {\bfseries more}  \textipa{/m\'O\textrhookschwa /} --- {\bfseries most}  \textipa{/m\'oUst/} 
  \item {\bfseries much} \textipa{/m\'\textturnv tS/}  --- {\bfseries more}  \textipa{/m\'O\textrhookschwa /} --- {\bfseries most}  \textipa{/m\'oUst/} 
  \end{itemize}
-     \end{exampleblock}
-}
+     \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-1.1と1.2は正しいほうを選びましょう。2.1～は空所に適語を補ってください%
-\hfill{\scriptsize \myaudio{./audio/045_better_best_08.mp3}}
+
+{\small 1.1と1.2は正しいほうを選びましょう。2.1～は空所に適語を補ってください}%
+\hfill{\tiny 0349}\,{\scriptsize \myaudio{./audio/045_better_best_08.mp3}}
  \begin{enumerate}
   \item \begin{enumerate}
-	 \item<1-> Paul ate too ( \alt<2->{\Circled[outer color = BurntOrange]{many}}{ many } / much ) hotdogs.
-	 \item<1-> Paul drank too ( many / \alt<3->{\Circled[outer color = BurntOrange]{much}}{ much }) water.
+	 \item<1-> Paul ate too ( \alt<2->{\Circled[outer color = Maroon]{many}}{ many } / much ) hotdogs.
+	 \item<1-> Paul drank too ( many / \alt<3->{\Circled[outer color = Maroon]{much}}{ much }) water.
 	\end{enumerate}
   \item \begin{enumerate}
 	 \item<1-> ポールはジョンよりたくさんのホットドッグを食べた。\\
-	       Paul ate (~~\alt<4->{\myEmph[4-]{BurntOrange}{more}}{\phantom{many}}~~) hotdogs (~~\alt{\myEmph[4-]{BurntOrange}{than}}{\phantom{than}}~~) John.
+	       Paul ate (~~\alt<4->{\myEmph[4-]{Maroon}{more}}{\phantom{many}}~~) hotdogs (~~\alt{\myEmph[4-]{Maroon}{than}}{\phantom{than}}~~) John.
 	 \item<1-> ポールはジョンよりたくさんのコーヒーを飲んだ。\\
-	       Paul drank (~~\alt<5->{\myEmph[5-]{BurntOrange}{more}}{\phantom{many}}~~) coffee (~~\alt<5->{\myEmph[5-]{BurntOrange}{than}}{\phantom{than}}~~) John.
+	       Paul drank (~~\alt<5->{\myEmph[5-]{Maroon}{more}}{\phantom{many}}~~) coffee (~~\alt<5->{\myEmph[5-]{Maroon}{than}}{\phantom{than}}~~) John.
 	\end{enumerate}
   \item \begin{enumerate}
 	 \item<1-> ポールがもっともおおくのホットドッグを食べた。\\
-	       Paul ate (~~\alt<6->{\myEmph[6-]{BurntOrange}{the}}{\phantom{the}}~~) (~~\alt<6->{\myEmph[6-]{BurntOrange}{most}}{\phantom{most}}~~) hotdogs.
+	       Paul ate (~~\alt<6->{\myEmph[6-]{Maroon}{the}}{\phantom{the}}~~) (~~\alt<6->{\myEmph[6-]{Maroon}{most}}{\phantom{most}}~~) hotdogs.
 	 \item<1-> ポールがいちばん大量のコーヒーを飲んだ。\\
-	       Paul drank (~~\alt<7->{\myEmph[7-]{BurntOrange}{the}}{\phantom{the}}~~) (~~\alt<7->{\myEmph[7-]{BurntOrange}{most}}{\phantom{most}}~~) coffee.
+	       Paul drank (~~\alt<7->{\myEmph[7-]{Maroon}{the}}{\phantom{the}}~~) (~~\alt<7->{\myEmph[7-]{Maroon}{most}}{\phantom{most}}~~) coffee.
 	\end{enumerate}
   \item \begin{enumerate}
 	 \item<1-> ポールはジョン同数のホットドッグを食べた。\\
-	       Paul ate (~~\alt<8->{\myEmph[8-]{BurntOrange}{as}}{\phantom{as}}~~) (~~\alt<8->{\myEmph[8-]{BurntOrange}{many}}{\phantom{many}}~~) hotdogs as John.
+	       Paul ate (~~\alt<8->{\myEmph[8-]{Maroon}{as}}{\phantom{as}}~~) (~~\alt<8->{\myEmph[8-]{Maroon}{many}}{\phantom{many}}~~) hotdogs as John.
 	 \item<1-> ポールはジョンと同量のコーヒーを飲んだ。\\
-	       Paul drank (~~\alt<9->{\myEmph[9-]{BurntOrange}{as}}{\phantom{as}}~~) (~~\alt<9->{\myEmph[9-]{BurntOrange}{much}}{\phantom{much}}~~) coffee as John.
+	       Paul drank (~~\alt<9->{\myEmph[9-]{Maroon}{as}}{\phantom{as}}~~) (~~\alt<9->{\myEmph[9-]{Maroon}{much}}{\phantom{much}}~~) coffee as John.
 	\end{enumerate}
  \end{enumerate}
 \end{frame}
@@ -162,32 +165,31 @@ much&\visible<8->{more}&\visible<9->{most}\\
    \end{tblr}
 
 %
-\hfill{\scriptsize \myaudio{./audio/045_better_best_09.mp3}}
+\hfill{\tiny 0313}\,{\scriptsize \myaudio{./audio/045_better_best_09.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
 \begin{frame}[plain]{まとめ}
- \begin{exampleblock}{Topics for Today}\small
+ \begin{block}{well, good}\small
 副詞{\bfseries well}（じょうずに）と形容詞{\bfseries good}（よい）は不規則な変化をします%
-\hfill{\scriptsize \myaudio{./audio/045_better_best_03.mp3}}
+\hfill{\tiny 0148}\,{\scriptsize \myaudio{./audio/045_better_best_03.mp3}}
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item {\bfseries well} \textipa{/w\'el/} --- {\bfseries better} \textipa{/b\'et\textrhookschwa /} --- {\bfseries best} \textipa{/b\'est/}
  \item {\bfseries good} \textipa{/g\'Ud/} --- {\bfseries better} \textipa{/b\'et\textrhookschwa /}--- {\bfseries best} \textipa{/b\'est/}
  \end{itemize}
-     \end{exampleblock}
+     \end{block}
 
-\begin{exampleblock}{Topics for Today}\small
+\begin{block}{many, much}\small
 形容詞{\bfseries many}（多数の）と{\bfseries much}（多量の）は不規則な変化をします%
-\hfill{\scriptsize \myaudio{./audio/045_better_best_07.mp3}}
+\hfill{\tiny 0149}\,{\scriptsize \myaudio{./audio/045_better_best_07.mp3}}
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item {\bfseries many} \textipa{/m\'eni/} --- {\bfseries more}  \textipa{/m\'O\textrhookschwa /} --- {\bfseries most}  \textipa{/m\'oUst/} 
  \item {\bfseries much} \textipa{/m\'\textturnv tS/}  --- {\bfseries more}  \textipa{/m\'O\textrhookschwa /} --- {\bfseries most}  \textipa{/m\'oUst/} 
  \end{itemize}
-     \end{exampleblock}
+     \end{block}
 \end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 
