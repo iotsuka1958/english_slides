@@ -1,4 +1,2 @@
-My house is not as old as his.
-This car is not so popular as that one.
-She does not eat as quickly as Bob.
-He does not enjoy pizza so much as pasta.
+hot<break time ="2.5s"/>hotter<break time ="2.5s"/>hottest
+big<break time ="2.5s"/>bigger<break time ="2.5s"/>biggest
