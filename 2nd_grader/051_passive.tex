@@ -9,11 +9,13 @@
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{media9}
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% さまざまなアイコン
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fontawesome}
-\usepackage{figchild}
+%\usepackage{figchild}
 \usepackage{twemojis}
 \usepackage{utfsym}
 \usepackage{bclogo}
@@ -29,6 +31,7 @@
 \usepackage{tcolorbox}
 \usepackage{tikzpeople}
 \usepackage{tikzducks}
+\usepackage{tikzlings}
 \usepackage{circledsteps}
 \usepackage{xcolor}
 \usepackage{amsmath}
@@ -95,16 +98,16 @@
   \titlepage
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{授業の流れ}
 \begin{frame}[plain]
   \frametitle{授業の流れ}
   \tableofcontents
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{受け身}
-
 \subsection{受け身とは}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{受け身とは}
  \Large
 
@@ -123,12 +126,11 @@
        \end{enumerate}
 \end{enumerate}
 
-\begin{exampleblock}<7->{Topic for Today}
+\begin{block}<7->{Topic for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item \kenten{受け身}とは「〜される」の意味を表します
 \end{itemize}
-     \end{exampleblock}
-
+     \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{受け身の基本：be $+$ 過去分詞}
@@ -153,13 +155,13 @@ speak&spoke&spoken
 %\vfill
 
 \hfill{\tiny 0133}\,{\scriptsize \myaudio{./audio/051_passive_01.mp3}}
-\begin{exampleblock}<5->{Topics for Today}
+\begin{block}<5->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「過去分詞」は「受け身」の意味を表します\\
 \hfill{\textdbend\,過去分詞は過去とは関係ありません}\scalebox{2}{😭}
  \item \Circled[fill color=white]{\,be動詞$+$ 過去分詞\,}\, $\longrightarrow$\,\,\,\,受け身(〜される)
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
@@ -261,6 +263,21 @@ speak&spoke&spoken
 \vspace{-8pt}
 
 \hfill{}\visible<17->{{\scriptsize 覚えるには、なんども口ずさんだり、紙に書いたりするのが効果的です！}}
+
+\begin{textblock*}{0.4\linewidth}(30pt,170pt)
+\visible<18->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}\centering
+{\LARGE なんども\\やろう！}}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+laughing,
+%speech={\tiny 反復練習！}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-7>[plain]{Exercises}
@@ -268,12 +285,12 @@ speak&spoke&spoken
 {\small あたえられた日本文の意味になるよう、下の枠から動詞を選び適当な形にして(~~~~~~~~~~)に補いましょう}\hfill{\tiny 0302}\,{\scriptsize \myaudio{./audio/051_passive_05.mp3}
 }
 \begin{enumerate}
- \item The song is \alt<1>{(~~\phantom{loved}~~)}{(~~loved~~)} by many people.\hfill{\small その歌は多くの人から愛されている。}
- \item The vase was \alt<1-2>{(~~\phantom{broken}~~)}{(~~broken~~)} by the cat. \hfill{\small 花瓶がネコにこわされた。}
- \item The photo was \alt<1-3>{(~~\phantom{taken}~~)}{(~~taken~~)} by my mother.\hfill{\small その写真をとったのは私の母です。}
- \item Spanish is \alt<1-4>{(~~\phantom{spoken}~~)}{(~~spoken~~)} in Mexico.\hfill{\small メキシコではスペイン語が話されている。}
- \item Sushi is \alt<1-5>{(~~\phantom{eaten}~~)}{(~~eaten~~)} in the United States.\hfill{\small アメリカではすしが食べられている。}
- \item The book was \alt<1-6>{(~~\phantom{written}~~)}{(~~written~~)} by Hemingway. \\
+ \item The song is \alt<1>{(~~\phantom{loved}~~)}{(~~\textcolor{Maroon}{\bfseries loved}~~)} by many people.\hfill{\small その歌は多くの人から愛されている。}
+ \item The vase was \alt<1-2>{(~~\phantom{broken}~~)}{(~~\textcolor{Maroon}{\bfseries broken}~~)} by the cat. \hfill{\small 花瓶がネコにこわされた。}
+ \item The photo was \alt<1-3>{(~~\phantom{taken}~~)}{(~~\textcolor{Maroon}{\bfseries taken}~~)} by my mother.\hfill{\small その写真をとったのは私の母です。}
+ \item Spanish is \alt<1-4>{(~~\phantom{spoken}~~)}{(~~\textcolor{Maroon}{\bfseries spoken}~~)} in Mexico.\hfill{\small メキシコではスペイン語が話されている。}
+ \item Sushi is \alt<1-5>{(~~\phantom{eaten}~~)}{(~~\textcolor{Maroon}{\bfseries eaten}~~)} in the United States.\hfill{\small アメリカではすしが食べられている。}
+ \item The book was \alt<1-6>{(~~\phantom{written}~~)}{(~~\textcolor{Maroon}{\bfseries written}~~)} by Hemingway. \\
 \hfill{\small その本はヘミングウェイによって書かれた。}
 \end{enumerate}
 
@@ -300,8 +317,6 @@ think={ア},
 laughing
 ]
 \end{tikzpicture}
-
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{受け身の否定}
@@ -315,12 +330,11 @@ laughing
 
 \hfill{\tiny 0117}\,{\scriptsize \myaudio{./audio/051_passive_06.mp3}}
 
-\begin{exampleblock}{Topic for Today}
+\begin{block}{Topic for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 「受け身」の否定 $\longrightarrow$\,\,\,\,`be動詞$+$ \textcolor{Maroon}{{\bfseries not}} $+$ 過去分詞'
 \end{itemize}
-     \end{exampleblock}
-
+     \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{受け身の疑問文}
@@ -336,7 +350,7 @@ laughing
 \visible<5->{\begin{tikzpicture}
 \duck[signpost=\scalebox{0.3}{
 \parbox{2.5cm}{\color{black}
-前に\\出すだけ}},
+be動詞を\\前に\\出すだけ}},
 signcolour=brown!70!gray,
 signback=white!80!brown,
 graduate=gray!20!black,
@@ -355,14 +369,13 @@ speech={\tiny 語順がだいじ}
 
 \hfill{\tiny 0111}\,{\scriptsize \myaudio{./audio/051_passive_07.mp3}}
 
-\begin{exampleblock}<6->{Topics for Today}\small
+\begin{block}<6->{Topics for Today}\small
 受け身の疑問文のつくり方
 \begin{itemize}\setbeamertemplate{items}[square]
  \item<3->  be動詞を先頭へ\hfill{\scriptsize ふつうのbe動詞の文と同じ(He is kind.\,$\rightarrow$\,Is he kind?)}
  \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
 \end{itemize}
-      \end{exampleblock}
-
+      \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{受け身の疑問文への答え方}
@@ -375,12 +388,11 @@ Is English spoken in the country?
 \pause
 
 \mbox{}\hspace{100pt}$\left\{\begin{tabular}{ll}
-         \text{Yes, it is.}&\\\pause
-         \text{No, it is not.}&\\\pause
-         \text{(}= \text{No, it isn't.)}&
+         \text{Yes, it is.}\\\pause
+         \text{No, it is not.}\\\pause
+         \text{(}$=$ \text{No, it's not.)}&{\scriptsize it isを縮めて}\\
+         \text{(}$=$ \text{No, it isn't.)}&{\scriptsize is notを縮めて}
         \end{tabular}\right.$
-
-
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -407,15 +419,15 @@ Is English spoken in the country?
 \visible<9->{Was he known as a good singer?}%
        \hfill\visible<8->{cf.\,\,He was known as a good singer.}
 \end{enumerate}
-
 \end{frame}
-
-\section{まとめ}
-\begin{frame}[plain]{要点}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{受け身のまとめ}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{まとめ}
  
-\begin{exampleblock}{Topics for Today}
+\begin{block}{要点}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item `be動詞$+$ 過去分詞' $\longrightarrow$\,\,\,\,受け身(〜される)
+ \item \Circled[fill color=white]{\,\,\textbf{be}動詞$+$ 過去分詞\,\,} $\longrightarrow$\,\,\,\,受け身(〜される)
  \item 「過去分詞」は「受け身」の意味を表します
         \begin{itemize}
 	 \item 過去形と過去分詞が同じことが多い\\
@@ -425,14 +437,24 @@ Is English spoken in the country?
 	\end{itemize}
  \item 「受け身」の否定文と疑問文の作り方は、be動詞を用いた普通の文と同じです
 \end{itemize}
-     \end{exampleblock}
+     \end{block}
+
+\begin{textblock*}{0.4\linewidth}(310pt,160pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+speech={\scriptsize トラップです},
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+\centering 過去分詞は\\過去と\\関係なし！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
-\againframe<17>{table}
-
-
-
-
+\againframe<18>{table}
 \end{document}
 
 
