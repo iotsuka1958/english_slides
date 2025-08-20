@@ -10,11 +10,13 @@
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{media9}
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% さまざまなアイコン
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fontawesome}
-\usepackage{figchild}
+%\usepackage{figchild}
 \usepackage{twemojis}
 \usepackage{utfsym}
 \usepackage{bclogo}
@@ -26,8 +28,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
+\usetikzlibrary{tikzmark}
 \usepackage{tcolorbox}
 \usepackage{tikzpeople}
+\usepackage{tikzducks}
+\usepackage{tikzlings}
 \usepackage{circledsteps}
 \usepackage{xcolor}
 \usepackage{amsmath}
@@ -101,8 +106,8 @@
   \tableofcontents
 \end{frame}
 
-\section{現在完了--継続--}
-\subsection{現在完了とは(復習)}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{現在完了とは（復習）}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{現在完了とは(復習)}
  \begin{enumerate}
@@ -111,132 +116,255 @@
  \item Bob \textcolor{NavyBlue}{\bfseries has lost} his bag.
 \end{enumerate}
 
+\vspace{30pt}
 
-
- \begin{exampleblock}{Topic for Today}
+ \begin{block}<2->{現在完了の基本}
 \small
-\begin{itemize}
- \item  $\text{現在完了(}=\textcolor{NavyBlue}{\text{\bfseries have} + \text{\bfseries 過去分詞\,)}}$%
-は「過去と現在にまたがる表現」です
- \item 主語が三人称単数のときは \textcolor{NavyBlue}{\bfseries has $+$ 過去分詞}
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item<3->  現在完了形\,\Circled[fill color=white]{\,\textbf{have} $+$ 過去分詞\,}\,は「過去と現在にまたがる表現」です\\
+\hfill\visible<4->{{\scriptsize 主語が三人称単数のときは$\textcolor{NavyBlue}{\text{\bfseries has} + \text{過去分詞}}$}}
+ \item \visible<5->{過去分詞は\kenten{受け身}とならんで\kenten{完了}の意味をあらわします}%
 \end{itemize}
-      \end{exampleblock}
-\mbox{}\hfill\myaudio{./audio/012_have_pp_keizoku_01.mp3}
+      \end{block}
+\hfill{\tiny 0144}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_01.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(365pt,50pt)
+\visible<1->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}\centering
+{\Large 現在完了$=$\\過去$+$現在}}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+laughing,
+%speech={\tiny 反復練習！}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{現在完了--継続--}
+\section{継続をあらわす現在完了}
 %%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{現在完了--継続--}
+\begin{frame}[plain,t]{現在完了--継続--}
  
 \visible<1->{\begin{enumerate}
  \item $\left\{\begin{tabular}{rl}
-(A)& Jane \textcolor{Maroon}{\bfseries stayed} in London two years ago.\hspace{7\zw}{\small stay \textipa{/st\'eI/} 滞在する}\\
-(B)& Jane \textcolor{NavyBlue}{\bfseries has stayed} in London for six years.
+(A)& Jane \textcolor{Maroon}{\bfseries stayed} in London two years ago.\hspace{80pt}{\scriptsize stay \textipa{/st\'eI/} 滞在する}\\
+(B)& Jane \textcolor{NavyBlue}{\bfseries has stayed} in London for six years.\hspace{69pt}{\scriptsize for \textipa{/f\textrhookschwa /} ～の間}\\
 \end{tabular}
 \right.$
 \end{enumerate}}
 
-\visible<2->{\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{stayed}},,今}{,,,}}
-\visible<3->{\signchart[width=10,height=.5]{,6年前,,,{\textcolor{NavyBlue}{has stayed}},,,今}{,,,}}
+\visible<2->{\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{\textbf{stayed}}},,今}{,,,}}
+\visible<3->{\signchart[width=10,height=.5]{,6年前,,,{\textcolor{NavyBlue}{\textbf{has stayed}}},,,今}{,,,}}
 
 \begin{tikzpicture}[overlay]
  %\draw[gray!50] (0,0) grid (12,5);
  %\fill[ForestGreen!70,opacity=.5] (11.57,3.75) circle [radius=.25];
 \visible<2->{ \fill[Maroon!70,opacity=.5] (8.675,2.66) circle [radius=.25];}
 \visible<3->{ \draw[NavyBlue!70,line width=6pt,opacity=.7] (4.2,1.21) -- (10.9,1.21);}
+\visible<3->{\node (kikan) at (7.5,0.5) {6年間};}
+\visible<3->{\draw (4.2,1.2) to[out=-30,in=180] (kikan.west);}
+\visible<3->{\draw (kikan.east) to[out=0,in=210] (10.9,1.2);}
 \end{tikzpicture}
 
-\visible<4->{主語が三人称単数のときは has $+$ 過去分詞}
+\visible<4->{{\scriptsize 主語が三人称単数のときは has $+$ 過去分詞}}
 
-\visible<5->{for six yearsは「期間」を表す表現です}\mbox{}\hfill{\scriptsize \myaudio{./audio/012_have_pp_keizoku_02.mp3}}
+\vspace{-5pt}
+
+\visible<5->{{\scriptsize \textbf{for} six yearsは\kenten{期間}を表します}}%
+\hfill{\tiny 0120}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_02.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(385pt,90pt)
+\visible<2->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}\centering
+{\Large 1目盛り\\1年}！}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+laughing,
+%speech={\tiny 反復練習！}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{継続}
+\begin{frame}[plain,t]{継続}
 \visible<1->{\begin{enumerate}\setcounter{enumi}{1}
  \item $\left\{\begin{tabular}{rl}
-(A)& I \textcolor{Maroon}{\bfseries am} sick today.\hspace{9\zw}{\small sick \textipa{/s\'Ik/} 病気だ、具合が悪い}\\
+(A)& I \textcolor{Maroon}{\bfseries am} sick today.\hspace{160pt}{\scriptsize sick \textipa{/s\'Ik/} 病気だ、具合が悪い}\\
 %(B)& I \textcolor{NavyBlue}{\bfseries have been} sick since yeaterday.\\
-		(B)& I \textcolor{NavyBlue}{\bfseries have been} sick for six days.\hspace{3\zw}{\small been \textipa{/bIn/} beの過去分詞}
+		(B)& I \textcolor{NavyBlue}{\bfseries have been} sick for six days.\hspace{95pt}{\scriptsize been \textipa{/bIn/} beの過去分詞}
 \end{tabular}
 \right.$
 \end{enumerate}}
 
 
-\visible<2->{\signchart[width=10,height=.5]{,,,,,,,{\textcolor{Maroon}{am}}}{,,,}}
+\visible<2->{\signchart[width=10,height=.5]{,,,,,,,{\textcolor{Maroon}{\textbf{am}}}}{,,,}}
 %\visible<3->{\signchart[width=10,height=.5]{,,,,,,{\textcolor{NavyBlue}{have been}},}{,,,}}
 
-\visible<3->{\signchart[width=10,height=.5]{,6日前,,,{\textcolor{NavyBlue}{have been}},,,今}{,,,}}
+\visible<3->{\signchart[width=10,height=.5]{,6日前,,,{\textcolor{NavyBlue}{\textbf{have been}}},,,今}{,,,}}
 
 \begin{tikzpicture}[overlay]
-% \draw[gray!50] (0,0) grid (12,5);
+ %\draw[gray!50] (0,0) grid (12,5);
  \visible<2-> {\fill[Maroon!70,opacity=.5] (10.9,2.7) circle [radius=.25];}
 %\visible<3->{ \draw[NavyBlue!70,line width=7pt,opacity=.7] (9.8,2.65) -- (10.9,2.65);}
 \visible<3->{ \draw[NavyBlue!70,line width=7pt,opacity=.7] (4.2,1.21) -- (10.9,1.21);}
+\visible<3->{\node (kikan) at (7.5,0.5) {6日間};}
+\visible<3->{\draw (4.2,1.2) to[out=-30,in=180] (kikan.west);}
+\visible<3->{\draw (kikan.east) to[out=0,in=210] (10.9,1.2);}
 \end{tikzpicture}
 
-\vspace{-20pt}
+%\vspace{-20pt}
 
-\visible<4->{{\bfseries for} six daysは\kenten{期間}を表します}\mbox{}\hfill\myaudio{./audio/012_have_pp_keizoku_03.mp3}
+\visible<4->{{\scriptsize \textbf{for} six daysは\kenten{期間}を表します}}\hfill{\tiny 0112}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_03.mp3}}
 
 %\visible<5->{since 〜は「起点」を表す表現です。「〜から」}
-
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{継続}
+\begin{frame}[plain,t]{継続}
 \visible<1->{\begin{enumerate}\setcounter{enumi}{2}
  \item $\left\{\begin{tabular}{rl}
 (A)& I \textcolor{Maroon}{\bfseries know} him.\\
-(B)& I \textcolor{NavyBlue}{\bfseries have known} him since 1995.\\
+(B)& I \textcolor{NavyBlue}{\bfseries have known} him since 1995.%
+\hspace{80pt}{\scriptsize since \textipa{/s\'Ins/} ～から、以来}
 %(B)& I \textcolor{NavyBlue}{\bfseries have known} sick for six days.\hspace{3\zw}{\small known \textipa{/n\'oUn/} knowの過去分詞}
 \end{tabular}
 \right.$
 \end{enumerate}}
 
 
-\visible<2->{\signchart[width=10,height=.5]{,,,,,,,{\textcolor{Maroon}{know}}}{,,,}}
+\visible<2->{\signchart[width=10,height=.5]{,,,,,,,{\textcolor{Maroon}{\textbf{know}}}}{,,,}}
 %\visible<3->{\signchart[width=10,height=.5]{,,,,,,{\textcolor{NavyBlue}{have been}},}{,,,}}
 
-\visible<3->{\signchart[width=10,height=.5]{,1995,,,{\textcolor{NavyBlue}{have known}},,,2025}{,,,}}
+\visible<3->{\signchart[width=10,height=.5]{,1995,,,{\textcolor{NavyBlue}{\textbf{have known}}},,,2025}{,,,}}
 
 \begin{tikzpicture}[overlay]
  %\draw[gray!50] (0,0) grid (12,5);
  \visible<2-> {\fill[Maroon!70,opacity=.5] (10.9,2.5) circle [radius=.25];}
 %\visible<3->{ \draw[NavyBlue!70,line width=7pt,opacity=.7] (9.8,2.65) -- (10.9,2.65);}
 \visible<3->{ \draw[NavyBlue!70,line width=7pt,opacity=.7] (4.2,1.21) -- (10.9,1.21);}
+\visible<3->{\node (kikan) at (7.5,0.5) {30年間};}
+\visible<3->{\draw (4.2,1.2) to[out=-30,in=180] (kikan.west);}
+\visible<3->{\draw (kikan.east) to[out=0,in=210] (10.9,1.2);}
 \end{tikzpicture}
 
-\vspace{-20pt}
+%\vspace{-20pt}
 
 %\visible<4->{for a weekは「期間」を表します。}
-\visible<5->{{\bfseries since} 〜は\kenten{起点}を表します。「〜から、以来」}\mbox{}\hfill{\scriptsize \myaudio{./audio/012_have_pp_keizoku_04.mp3}}
+\visible<3->{\scriptsize \textbf{since} 〜は\kenten{起点}を表します。「〜から、以来」}\\%
+\visible<3->{\scriptsize 1995の読み方：nineteen ninty-five}
+
+\hfill{\tiny 0113}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_04.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(385pt,90pt)
+\visible<2->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}\centering
+{\Large 1目盛り\\5年}！}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+laughing,
+%speech={\tiny 反復練習！}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{forとsince}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{for \textipa{/f\textrhookschwa /}とsince \textipa{/s\'Ins/}}
+ 
+\begin{enumerate}
+ \item We {\bfseries have enjoyed} the game \textcolor{NavyBlue}{\bfseries for} three hours.%
+       \hfill\visible<4->{{\scriptsize for \Circled{\,名詞\,}}}
+ \item Billy {\bfseries has practice}d the piano \textcolor{NavyBlue}{\bfseries for} two years.%
+       \hfill\visible<4->{{\scriptsize for \Circled{\,名詞\,}}}
+ \item I {\bfseries have been} sick \textcolor{Maroon}{\bfseries since} this morning.%
+       \hfill\visible<6->{{\scriptsize since \Circled{\,名詞\,}}}
+ \item I {\bfseries have known} him \textcolor{Maroon}{\bfseries since} he was a child.%
+       \hfill\visible<7->{{\scriptsize since \Circled{\,S $+$ V\,}}}
+\end{enumerate}
+
+\vspace{30pt}
+
+\begin{block}<2->{Topics for Today}\small
+ \begin{itemize}\setbeamertemplate{items}[square]
+  \item<3-> \textbf{for}は\kenten{期間}を、\textbf{since}は\kenten{起点}をあらわす
+  \item<5-> \textbf{for}\tikzmark{for}\,\,\,\Circled[fill color=white]{\,名詞\,}\hspace{150pt}\visible<8->{{\scriptsize \tikzmark{prep}前置詞}}
+  \item<8-> $\left\{
+	\begin{tabular}{ll}
+	\textbf{since}\tikzmark{since1}\,\,\,\Circled[fill color=white]{\,名詞\,}&\\
+	\textbf{since}\tikzmark{since2}\,\,\,\Circled[fill color=white]{\,\textbf{S} $+$ \textbf{V}\,}&\hspace{106pt}\visible<10->{{\scriptsize \tikzmark{conj}接続詞}}
+	\end{tabular}
+	\right.$
+ \end{itemize}
+\end{block}
+\vspace{-5pt}
+\hfill{\tiny 0216}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_05.mp3}}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<8->{\draw[<-,opacity=.6,line width=.8pt] ([xshift=-4pt,yshift=7pt]pic cs:for) to[out=22, in=180] ([xshift=-2pt, yshift=2pt] pic cs:prep);}
+ \visible<9->{\draw[<-,opacity=.6,line width=.8pt] ([xshift=-2pt,yshift=8pt]pic cs:since1) to[out=45, in=180] ([xshift=-2pt, yshift=2pt] pic cs:prep);}
+ \visible<10->{\draw[<-,opacity=.6,line width=.8pt] ([xshift=-2pt,yshift=-2pt]pic cs:since2) to[out=-15, in=180] ([xshift=-2pt, yshift=2pt] pic cs:conj);}
+\end{tikzpicture}
+
+\begin{textblock*}{0.4\linewidth}(310pt,133pt)
+\visible<11->{\begin{tikzpicture}
+\marmot[
+speech={\scriptsize for{\tiny と}since},
+bubblecolor=white,
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+\centering 意味の違いと\\品詞にも\\注意！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-11>[plain]{Exercises}
-あたえられた日本語の意味になるよう、(~~~~~~~~)内に適当な語を補いましょう\mbox{}\hfill{\scriptsize \myaudio{./audio/012_have_pp_keizoku_05.mp3}}
+
+{\small あたえられた日本語の意味になるよう、(~~~~~~~~)内に適当な語を補いましょ}う%
+\hfill{\tiny 0216}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_05.mp3}}
 
 \begin{enumerate}
  \item {\small われわれはゲームをこの3時間楽しんだ。}\hfill{}{\scriptsize enjoy \textipa{/IndZ\'OI/} 楽しむ}\\
-We \alt<1>{(~~\phantom{have}~~)}{(~~have~~)} enjoyed the game for three hours. \item {\small ビリーはピアノの練習をはじめて2年になる。}\hfill{}{\scriptsize practice \textipa{/pr\'\ae ktIs/} 練習する}\\
-Billy \alt<1-2>{(~~\phantom{has}~~)}{(~~has~~)} practiced the piano \alt<1-3>{(~~\phantom{for}~~)}{(~~for~~)} two years.
- \item {\small わたしは今朝からずっと具合が悪い。}\hfill{}{\scriptsize be sick: 病気だ}\\
-I have \alt<1-4>{(~~\phantom{been}~~)}{(~~been~~)} sick \alt<1-5>{(~~\phantom{since}~~)}{(~~since~~)} this morning.\hfill\visible<6->{{\scriptsize since $+$ 名詞}}
+We \alt<1>{(~~\phantom{have}~~)}{(~~\textcolor{Maroon}{\bfseries have}~~)} enjoyed the game for three hours.%
+       \hfill\visible<2->{{\scriptsize for \Circled{\,名詞\,}}}
+ \item {\small ビリーはピアノの練習をはじめて2年になる。}%
+       \hfill{}{\scriptsize practice \textipa{/pr\'\ae ktIs/} 練習する}\\
+Billy \alt<1-2>{(~~\phantom{has}~~)}{(~~\textcolor{Maroon}{\bfseries has}~~)} practiced the piano \alt<1-3>{(~~\phantom{for}~~)}{(~~\textcolor{Maroon}{\bfseries for}~~)} two years.
+ \item {\small わたしは今朝からずっと具合が悪い。}%
+       \hfill{}{\scriptsize be sick: 病気だ、具合が悪い}\\
+I have \alt<1-4>{(~~\phantom{been}~~)}{(~~\textcolor{Maroon}{\bfseries been}~~)} sick \alt<1-5>{(~~\phantom{since}~~)}{(~~\textcolor{Maroon}{\bfseries since}~~)} this morning.%
+       \hfill\visible<6->{{\scriptsize since \Circled{\,名詞\,}}}
  \item {\small 彼が子供のころから、わたしは彼を知っています。}\\
-I have \alt<1-6>{(~~\phantom{known}~~)}{(~~known~~)} him \alt<1-7>{(~~\phantom{since}~~)}{(~~since~~)} he was a child.\hfill\visible<8->{{\scriptsize since \Circled{\,\,S $+$ V\,\,}}}
+I have \alt<1-6>{(~~\phantom{known}~~)}{(~~\textcolor{Maroon}{\bfseries known}~~)} him \alt<1-7>{(~~\phantom{since}~~)}{(~~\textcolor{Maroon}{\bfseries since}~~)} he was a child.%
+       \hfill\visible<8->{{\scriptsize since \Circled{\,\,S $+$ V\,\,}}}
 \end{enumerate}
 
-\begin{exampleblock}<9->{Topics for Today}\small
+\begin{block}<9->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item \visible<10->{{\bfseries for} 〜は\kenten{期間}を表します\hfill{}{\scriptsize {\bfseries for} two days, {\bfseries for} three months, {\bfseries for} a long time \ldots}}
- \item \visible<11->{{\bfseries since} 〜は\kenten{起点}を表します\hfill{}{\scriptsize {\bfseries since} yesterday, {\bfseries since} 2000, {\bfseries since}  he was a child \ldots}}
-
+ \item \visible<10->{{\bfseries for} 〜は\kenten{期間}%
+\hfill{}{\scriptsize {\bfseries for} two days, {\bfseries for} three months, {\bfseries for} a long time \ldots}}
+ \item \visible<11->{{\bfseries since} 〜は\kenten{起点}%
+\hfill{}{\scriptsize {\bfseries since} yesterday, {\bfseries since} 2000, {\bfseries since}  he was a child \ldots}}
 \end{itemize}
-      \end{exampleblock}
+      \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 
-あたえられた日本語の意味になるよう、(~~~~~~~~)内の語句を並べ替えましょう。なお、先頭の語は大文字ではじめてください\mbox{}\hfill{\scriptsize \myaudio{./audio/012_have_pp_keizoku_06.mp3}}
+{\small あたえられた日本語の意味になるよう、(~~~~~~~~)内の語句を並べ替えましょう。なお、先頭の語は大文字ではじめてください}%
+\hfill{\tiny 0210}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_06.mp3}}
 
  \begin{enumerate}
   \item {\small 彼は先週の金曜日から病気だ。}
@@ -258,44 +386,57 @@ I have \alt<1-6>{(~~\phantom{known}~~)}{(~~known~~)} him \alt<1-7>{(~~\phantom{s
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{否定文}
-\begin{frame}[plain]{否定文}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{否定文}
  \Large
 
 %\visible<1->{I \,\myAnch{aux1}{NavyBlue}{have known} her for a long time.}
-
-
 \visible<2->{I \,\myAnch{aux2}{NavyBlue}{\bfseries have} \textcolor{Maroon}{\bfseries not} \,\myAnch{aux3}{NavyBlue}{\bfseries seen} you for a long time.}
 
 \visible<3->{I \textcolor{Maroon}{\bfseries haven't} {\bfseries seen} you for a long time.
 }
-\vfill
+\vspace{70pt}
 
-\visible<3->{%
-\begin{exampleblock}{Topics for Today}\small
+\begin{block}<3->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item  \visible<3->{現在完了の否定は$\text{have} + \text{not} + \text{過去分詞}$\\
+ \item  \visible<3->{現在完了の否定は$\text{\bfseries have} + \text{\bfseries not} + \text{過去分詞}$\\
 \mbox{}\hfill%
-\visible<4->{{\scriptsize 主語が三人称単数のときは$\text{has} + \text{not} + \text{過去分詞}$}}}
- \item  \visible<5->{haven't\,($=\text{have not}$)、hasn't\,($=\text{has not}$) という短縮形もあります}
+\visible<4->{{\scriptsize 主語が三人称単数のときは$\text{\bfseries has} + \text{\bfseries not} + \text{過去分詞}$}}}
+ \item  \visible<5->{\textbf{haven't}\,($=\text{\bfseries have not}$)、\textbf{hasn't}\,($=\text{\bfseries has not}$) という短縮形もあります}
 % \item  She\textcolor{orange}{'s not} ということもあります
 \end{itemize}
-      \end{exampleblock}
-}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/012_have_pp_keizoku_07.mp3}}
+      \end{block}
+
+\vspace{-10pt}
+
+\hfill{\tiny 0118}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_07.mp3}}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(360pt,50pt)
+\visible<4->{\begin{tikzpicture}
+\bear[
+%speech={\scriptsize 現在完了},
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+\centering 会ってない\\期間が\\長いってこと}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{疑問文と答え方}
-\begin{frame}[plain]{疑問文と答え方}
+\begin{frame}[plain,t]{疑問文と答え方}
  \Large
 
 \mbox{}\phantom{~You~~~~~}%
 \visible<1->{You \myAnch{aux1}{NavyBlue}{have} known her for a long time.}
 
-
-\vspace{10pt}
+\vspace{20pt}
 
 \visible<2->{\myAnch{aux2}{NavyBlue}{Have} you known her for a long time\fcolorbox{NavyBlue}{white}{?}}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/012_have_pp_keizoku_08.mp3}}
+\hfill{\tiny 0216}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_08.mp3}}
 
 
 \mbox{}\hfill%
@@ -305,25 +446,41 @@ No, I have not($=$ haven't)
 	\end{tabular}\right\}$}
 
 \begin{tikzpicture}[remember picture,overlay]
-\visible<3->{\draw[NavyBlue, line width=3pt,opacity=.5,->] (aux1.south) to[out=-90,in=90] (aux2.north);}
+\visible<3->{\draw[NavyBlue, line width=3pt,opacity=.5,->] (aux1.south) to[out=-90,in=90]node[sloped,above,text=black,font=\tiny,pos=.67]{先頭へ} (aux2.north);}
 \end{tikzpicture}
 
-\vfill
+%\vspace{5pt}
 
-\begin{exampleblock}<5->{Topics for Today}\small
+\begin{block}<5->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item \visible<6->{現在完了の疑問文は$\text{Have} + \text{S} + \text{過去分詞\ldots\,?}$}\\
+ \item \visible<6->{現在完了形の疑問文は$\text{\bfseries Have} + \text{\bfseries S} + \text{過去分詞\ldots\,?}$}\\
 \mbox{}\hspace{0\zw}%
-\hfill\visible<7->{{\scriptsize 主語が三人称単数のときは$\text{Has} + \text{S} + \text{過去分詞\ldots{\,?}}$}}
- \item \visible<8->{答え方はYes, S $+$ have.またはNo, S $+$ have not($=$haven't).}\\
-\hfill\visible<9->{{\scriptsize 主語が三人称単数のときはYes, S $+$ has.またはNo, S $+$ has not($=$hasn't).}}
+\hfill\visible<7->{{\scriptsize 主語が三人称単数のときは$\text{\bfseries Has} + \text{\bfseries S} + \text{過去分詞\ldots{\,?}}$}}
+ \item \visible<8->{答え方は\textbf{Yes, S} $+$ \textbf{have}.または\textbf{No, S} $+$ \textbf{have not}($=$\textbf{haven't}).}\\
+\hfill\visible<9->{{\scriptsize 主語が三人称単数のときは\textbf{Yes, S} $+$ \textbf{has}.または\textbf{No, S} $+$ \textbf{has not}($=$\textbf{hasn'}t).}}
 \end{itemize}
-      \end{exampleblock}
+      \end{block}
+
+\begin{textblock*}{0.4\linewidth}(70pt,100pt)
+\visible<3->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.25}{
+\parbox{2.5cm}{\color{black}\centering
+{\LARGE Haveだけ\\前に}！}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+laughing,
+%speech={\tiny 反復練習！}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
  
-あたえられた日本語の意味になるよう、(~~~~~~~~) 内の語句を並べ替えましょう。なお、先頭の語は大文字ではじめてください\mbox{}\hfill{\scriptsize \myaudio{./audio/012_have_pp_keizoku_09.mp3}}
+{\small あたえられた日本語の意味になるよう、(~~~~~~~~) 内の語句を並べ替えましょう。なお、先頭の語は大文字ではじめてください}%
+\hfill{\tiny 0149}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_09.mp3}}
 
 
 \begin{enumerate}
@@ -337,6 +494,10 @@ I ~~( eaten /  have / not )~~sushi~~( long / a / for / time ).\\
 ( stayed /  your aunt / has ) in Paris ( last / month / since ) ? \\
 \visible<4->{Has your aunt stayed in Paris since last month?}
 \end{enumerate}
+
+\begin{textblock*}{0.4\linewidth}(360pt,125pt)
+\visible<1->{\includegraphics[width=.4\textwidth]{./images/sushi.png}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{How long 〜?}
@@ -345,35 +506,39 @@ I ~~( eaten /  have / not )~~sushi~~( long / a / for / time ).\\
 
 \visible<1->{You have stayed in Paris \myAnch{long1}{Maroon}{for two weeks}.}
  
-\vspace{10pt}
+\vspace{15pt}
 
 \hfill\visible<2->{cf. \textcolor{NavyBlue}{\bfseries Have you stayed} in Paris for two weeks?}
 
-\vspace{10pt}
+\vspace{15pt}
 
 \visible<3->{\myAnch{long2}{Maroon}{\bfseries How long} \textcolor{NavyBlue}{\bfseries have you stayed} in Paris?}%
-\hfill\visible<4->{{\small どれくらいの期間}}
+\hfill\visible<4->{{\scriptsize どれくらいの期間}}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<4->{\draw[Maroon,->,line width=3pt,opacity=.5] (long1.south) to[out=-90,in=90] node[sloped,above,text=black,font=\tiny,pos=.667]{先頭へ} (long2.north);}
+ \visible<4->{\draw[Maroon,->,line width=3pt,opacity=.5] (long1.south) to[out=-90,in=90] node[sloped,above,text=black,font=\tiny,pos=.5]{How longに置き換え先頭へ} node[sloped,below,text=black,font=\tiny,pos=.5]{後ろは疑問文の語順} (long2.north);}
 \end{tikzpicture}
 
-\begin{exampleblock}<5->{Topics for Today}\small
+\begin{block}<5->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item $\text{How long have} + \text{S} + \text{過去分詞 \ldots ?}$は「継続している期間」をたずねる表現\\
+ \item $\text{\bfseries How long have} + \text{\bfseries S} + \text{過去分詞 \ldots ?}$は「継続している期間」をたずねる表現\\
 \mbox{}\hfill「どのくらいのあいだ(期間)〜ですか」\\
-\hfill{\scriptsize 主語が三人称単数のときは$\text{How long has} + \text{S} + \text{過去分詞 \ldots ?}$}
- \item How longの後ろは疑問文の語順
+\hfill{\scriptsize 主語が三人称単数のときは$\text{\bfseries How long has} + \text{\bfseries S} + \text{過去分詞 \ldots ?}$}
+ \item \textbf{How long}の後ろは疑問文の語順
 
 \end{itemize}
-      \end{exampleblock}
-\mbox{}\hfill\myaudio{./audio/012_have_pp_keizoku_10.mp3}
+      \end{block}
+
+\vspace{-10pt}
+
+\hfill{\tiny 0143}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_10.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 
-あたえられた日本語の意味になるよう、(~~~~~~~~) 内の語句を並べ替えましょう。なお、先頭の語は大文字ではじめてください\mbox{}\hfill\myaudio{./audio/012_have_pp_keizoku_11.mp3}
+{\small あたえられた日本語の意味になるよう、(~~~~~~~~) 内の語句を並べ替えましょう。なお、先頭の語は大文字ではじめてください}%
+\hfill{\tiny 0205}\,{\scriptsize \myaudio{./audio/012_have_pp_keizoku_11.mp3}}
 
 \vspace{-5pt}
 
@@ -391,34 +556,47 @@ I ~~( eaten /  have / not )~~sushi~~( long / a / for / time ).\\
 ( long / known / you / have / how ) Jennifer?\\
 \visible<5->{How long have you known Jennifer?}
 \end{enumerate}
+
+\begin{textblock*}{0.4\linewidth}(386.5pt,60pt)
+\visible<1->{\worldflag[width=1cm,framewidth=0.3mm,framecolor=black]{ES}}
+\end{textblock*}
+
+\begin{textblock*}{0.4\linewidth}(386.5pt,105pt)
+\visible<1->{\worldflag[width=1cm,framewidth=0.3mm,framecolor=black]{IT}}
+\end{textblock*}
+
+\begin{textblock*}{0.4\linewidth}(337pt,140pt)
+\visible<1->{\includegraphics[width=.6\textwidth]{./images/worker.png}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
+%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-12>[plain]{まとめ}
 
- \begin{exampleblock}<1->{Topics for Today \textcolor{black}{\mdseries --「継続」を表す現在完了--}}
+\begin{block}<1->{「継続」を表す現在完了}
 \small
 
 \begin{itemize}\setbeamertemplate{items}[square]
- \item[]<2-> 基本: $\text{現在完了(}=\textcolor{NavyBlue}{\text{\bfseries have} + \text{\bfseries 過去分詞\,})}$は「過去と現在にまたがる表現」
+ \item[]<2-> 基本: 現在完了形\,\Circled[fill color=white]{\,\textbf{have} $+$ 過去分詞\,}\,は「過去と現在にまたがる表現」
 
- \item \visible<3->{「継続」を表す用法があります\hfill{\scriptsize 過去のあるときから、いままでずっと}}
-  \item  \visible<4->{否定は$\text{have} + \text{not} + \text{過去分詞}$%\\
+ \item \visible<3->{\<「継続」を表す用法があります\hfill{\scriptsize 過去のあるときから、いままでずっと}}
+  \item  \visible<4->{否定は$\textbf{have} + \textbf{not} + \textbf{過去分詞}$%\\
 %\mbox{}\hspace{9\zw}%
-\hfill\visible<5->{{\scriptsize 主語が三人称単数のときは$\text{has} + \text{not} + \text{過去分詞}$}}}\\
-\mbox{}\hfill\visible<6->{{\scriptsize 短縮形はhaven't($=\text{have not}$)、hasn't($=\text{has not}$)}}
+\hfill\visible<5->{{\scriptsize 主語が三人称単数のときは$\textbf{has} + \textbf{not} + \text{過去分詞}$}}}\\
+\mbox{}\hfill\visible<6->{{\scriptsize 短縮形は\textbf{haven't}($=\textbf{have not}$)、\textbf{hasn't}($=\textbf{has not}$)}}
 % \item  She\textcolor{orange}{'s not} ということもあります
 
- \item \visible<7->{疑問文は$\text{Have} + \text{S} + \text{過去分詞\ldots\,?}$}\hfill\visible<8->{{\scriptsize 主語が三人称単数のときは$\text{Has} + \text{S} + \text{過去分詞\ldots{\,?}}$}}
- \item \visible<9->{答え方はYes, S $+$ have.またはNo, S $+$ have not($=$haven't).}\\
-\mbox{}\hfill\visible<10->{{\scriptsize 主語が三人称単数のときはYes, S $+$ has.またはNo, S $+$ has not($=$hasn't).}}
+ \item \visible<7->{疑問文は$\textbf{Have} + \textbf{S} + \text{過去分詞\ldots\,?}$}\hfill\visible<8->{{\scriptsize 主語が三人称単数のときは$\textbf{Has} + \textbf{S} + \text{過去分詞\ldots{\,?}}$}}
+ \item \visible<9->{答え方は\textbf{Yes, S} $+$ \textbf{have}.または\textbf{No, S} $+$ \textbf{have not}($=\textbf{haven't}$).}\\
+\mbox{}\hfill\visible<10->{{\scriptsize 主語が三人称単数のときは\textbf{Yes, S} $+$ \textbf{has}.または\textbf{No, S} $+$ \textbf{has not}($=\textbf{hasn't}$).}}
 
- \item \visible<11->{$\text{How long have} + \text{S} + \text{過去分詞 \ldots ?}$は「継続している期間」をたずねる表現}\\%
+ \item \visible<11->{$\textbf{How long have} + \textbf{S} + \text{過去分詞 \ldots ?}$は「継続している期間」をたずねる表現}\\%
 %\mbox{}\hfill\visible<7->{「どのくらいのあいだ(期間)〜ですか」　　　}\\
-\mbox{}\hfill\visible<12->{{\scriptsize 主語が三人称単数のときは$\text{How long has} + \text{S} + \text{過去分詞 \ldots ?}$}}
+\mbox{}\hfill\visible<12->{{\scriptsize 主語が三人称単数のときは$\textbf{How long has} + \textbf{S} + \text{過去分詞 \ldots ?}$}}
 \end{itemize}
-      \end{exampleblock}
+      \end{block}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 
