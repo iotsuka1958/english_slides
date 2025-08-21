@@ -1,9 +1,2 @@
-give<break time="0.5s"/>gave<break time="0.5s"/>given<break time="0.5s"/>giving
-send<break time="0.5s"/>sent<break time="0.5s"/>sent<break time="0.5s"/>sending
-show<break time="0.5s"/>showed<break time="0.5s"/>shown<break time="0.5s"/>showing
-write<break time="0.5s"/>wrote<break time="0.5s"/>written<break time="0.5s"/>writing
-tell<break time="0.5s"/>told<break time="0.5s"/>told<break time="0.5s"/>telling
-teach<break time="0.5s"/>taught<break time="0.5s"/>taught<break time="0.5s"/>teaching
-buy<break time="0.5s"/>bought<break time="0.5s"/>bought<break time="0.5s"/>buying
-make<break time="0.5s"/>made<break time="0.5s"/>made<break time="0.5s"/>making
-cook<break time="0.5s"/>cooked<break time="0.5s"/>cooked<break time="0.5s"/>cooking
+I have lost my key.<break time="2s"/>I lost my key yesterday.
+She has gone to Italy.<break time="2s"/>She went to Italy two years ago.
