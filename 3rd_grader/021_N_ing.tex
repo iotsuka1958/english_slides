@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,91 +55,114 @@
   \item an important question / important questions\hfill{\scriptsize important \textipa{/Imp\'O\textrhookschwa tnt/} 重要な}
  \end{enumerate}
 
-\visible<2->{%
-\begin{exampleblock}{Topic for Today}\small
+\begin{block}<2->{Topic for Today}\small
 名詞を修飾することばを「形容詞」といいます
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 形容詞は名詞の前に置きます
  \item \fcolorbox{black}{white}{\,$\text{(冠詞)}+\text{形容詞}+\text{名詞}$\,\,}\,\,\,は意味のかたまりになります
  \end{itemize}
-     \end{exampleblock}
-}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/021_N_ing_01.mp3}}
+     \end{block}
+
+\mbox{}\hfill{\tiny 0400}\,{\scriptsize \myaudio{./audio/021_N_ing_01.mp3}}
  \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
 \section{現在分詞 $+$ 名詞}
 \subsection{現在分詞 $+$ 名詞}
 %%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{冠詞 $+$ ---ing $+$ 名詞}
+\begin{frame}[plain,t]{冠詞 $+$ ---ing $+$ 名詞}
  \begin{enumerate}
 	 \item<1-> I looked at \fbox{the cat}.\hspace{35pt}{\scriptsize look at ～を見る}\hfill{\scriptsize {\fbox{$\text{冠詞}+\text{名詞}$}}}
 	 \item<2-> I looked at \fbox{the cute cat}.\hspace{10pt}{\scriptsize cute \textipa{/kj\'u:t/} かわいい}\hfill{\scriptsize {\fbox{$\text{冠詞}+\text{形容詞}+\text{名詞}$}}}
-	 \item<3-> I looked at \fbox{the {\bfseries sleeping} cat}.\hfill{\scriptsize {\fbox{$\text{冠詞}+\text{\,\,---ing\,\,}+\text{名詞}$}}}
+	 \item<3-> I looked at \fbox{the {\bfseries sleeping} cat}.\hfill{\scriptsize {\fbox{$\text{冠詞}+\textbf{\,\,---ing\,\,}+\text{名詞}$}}}
  \end{enumerate}
 
-\visible<4->{%
-\begin{exampleblock}{Topic for Today}\small
+\vspace{20pt}
+
+\begin{block}<4->{Topics for Today}\small
 \Circled[fill color = white]{\,\,---ing\,\,}\,\,が名詞を修飾することがあります%
 \hfill{\scriptsize つまり「形容詞」の役目をしています}
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item<5-> この\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,は「～している」という\kenten{進行}の意味
- \item<6-> この\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,を「現在分詞」といいます\\
+ \item<5-> この\,\,\Circled[fill color = white]{\,\,\textbf{---in}g\,\,}\,\,は「～している」という\kenten{進行}の意味
+ \item<6-> この\,\,\Circled[fill color = white]{\,\,\textbf{---ing}\,\,}\,\,を「現在分詞」といいます\\
 {\scriptsize \textdbend\textdbend 「現在分詞」は\kenten{現在}の意味ではなく\kenten{進行}の意味}\\
 \hfill{\scriptsize 「過去分詞」は\kenten{過去}の意味ではなく「されている」という\kenten{受け身}の意味でしたね}
  \end{itemize}
-     \end{exampleblock}
-}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/021_N_ing_02.mp3}}
+     \end{block}
+\vspace*{-5pt}
+
+\mbox{}\hfill\tiny 0135{\,}{\scriptsize \myaudio{./audio/021_N_ing_02.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-日本語の意味になるよう(~~~~~~)の語を並べ替えましょう。先頭に来る語は大文字で始めてください\mbox{}\hfill{\scriptsize \myaudio{./audio/021_N_ing_03.mp3}}
+
+{\small 日本語の意味になるよう(~~~~~~)の語を並べ替えましょう。先頭に来る語は大文字で始めてください}\hfill{\tiny 0226}\,{\scriptsize \myaudio{./audio/021_N_ing_03.mp3}}
  \begin{enumerate}
-  \item {\small あなたは歌っている女性を知っていますか。}\\
+  \item {\small あなたは歌っているあの女性を知っていますか。}\\
 	( you / singing / the / woman / do / know ) ?\\
 	\visible<2->{Do you know the singing woman?}\hfill{\scriptsize singing \textipa{/s\'INiN/}}
   \item {\small 沸騰しているお湯は熱い。}
 	( hot / is / water / boiling ) .\hfill{\scriptsize boil \textipa{/b\'OIl/} 沸騰する}\\
 	\visible<3->{Boiling water is hot.}
-  \item {\small あの眠っているネコはかわいい。}
+  \item {\small 眠っているあのネコはかわいい。}
 	That ( is / cat / sleeping ) cute.\\
 	\visible<4->{That sleeping cat is cute.}
-  \item {\small 昇っている太陽が美しかった。}
+  \item {\small 昇っていく太陽が美しかった。}
 	( sun / was / rising  / the ) beautiful.\\
 	\visible<5->{The rising sun was beautiful.}\hfill{\scriptsize rise \textipa{/r\'aIz/} 昇る}
-  \item {\small 飛んでいる鳥を見てください。}
+  \item {\small 飛んでいるあの鳥を見てください。}
 	( at / birds / the / look / flying ) .\\
 	\visible<6->{Look at the flying birds.}
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{名詞 $+$ 現在分詞}
-\begin{frame}[plain]{名詞 $+$ ---ing \ldots}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{名詞 $+$ ---ing \ldots}
  \begin{enumerate} 
   \item<1-> The girl is Jane.\hfill{}{\scriptsize The girl($=\text{S}$)\,\,\,\,is($=\text{V}$)}
   \item<3-> The girl in the yard is Jane.%
 	\hfill{}\visible<4->{\scriptsize The girl $\longleftarrow$\,\fbox{\,in the yard\,}}
   \item<5-> The girl {\bfseries playing} in the yard is Jane.%
-	\hfill{}\visible<6->{\scriptsize The girl $\longleftarrow$\,\fbox{\,playing in the yard\,}}
+	\hfill{}\visible<6->{\scriptsize The girl $\longleftarrow$\,\fbox{\,play{\bfseries ing} in the yard\,}}
  \end{enumerate}
 
-\visible<7->{%
-\begin{exampleblock}{Topic for Today}
-\Circled[fill color = white]{\,\,---ing\,\,}\,\,がほかの語句を伴うときは、
+\vspace{60pt}
+
+\begin{block}<7->{Topic for Today}
+\Circled[fill color = white]{\,\,\textbf{---ing}\,\,}\,\,がほかの語句を伴うときは、
 後ろから前の名詞を修飾します%
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \Circled[fill color = white]{\,\,---ing\,\,}\,\, $\longrightarrow \text{\,\,名詞}$\hfill{\scriptsize the sleeping cat}
- \item $\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,---ing\,\,+\text{\,\,ほかの語句\,\,}}\hfill{\scriptsize the cat sleeping in the sun}
+ \item \Circled[fill color = white]{\,\,\textbf{---ing}\,\,}\,\, $\longrightarrow \text{\,\,名詞}$\hfill{\scriptsize the \textbf{sleeping} cat}
+ \item $\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,\textbf{---ing}\,\,+\text{\,\,ほかの語句\,\,}}\hfill{\scriptsize the cat \textbf{sleeping} in the sun}
  \end{itemize}
-     \end{exampleblock}
-}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/021_N_ing_04.mp3}}
+     \end{block}
+\vspace{-13pt}
+
+\hfill{\tiny 0139}\,{\scriptsize \myaudio{./audio/021_N_ing_04.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(330pt,87pt)
+\visible<8->{\begin{tikzpicture}
+\duck[
+signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}\centering
+{\Large 名詞の後にきます！}}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+laughing,
+speech={\tiny ---ing $+ \alpha$}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-日本語の意味になるよう(~~~~~~)の語を並べ替えましょう\mbox{}\hfill{\scriptsize \myaudio{./audio/021_N_ing_05.mp3}}
+
+{\small 日本語の意味になるよう(~~~~~~)の語を並べ替えましょう}%
+\hfill{\tiny 0212}\,{\scriptsize \myaudio{./audio/021_N_ing_05.mp3}}
  \begin{enumerate}
   \item  {\small 英語を話している少年たちを見なさい。}\\
 	Look ( English / the boys / speaking / at ) .\\
@@ -152,37 +177,72 @@
 	Do ( the girl / a dog / know / with / running  / you ) ?\\
 	\visible<5->{Do you know the girl running with a dog?}
  \end{enumerate}
+
+\begin{textblock*}{0.4\linewidth}(320pt,150pt)
+\visible<1->{\begin{tikzpicture}
+\bear[
+scale=1,
+speech={\tiny  ---ing $+ \alpha$},
+signpost=\scalebox{.5}{
+\parbox{2.5cm}{\color{black}
+\centering 後から前の\\名詞を修飾\\します！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ1}
 
-
-\begin{frame}[plain]{まとめ}
-
- \begin{block}{Topic for Today}\small
+ \begin{block}{形容詞とは}\small
 名詞を修飾することばを「形容詞」といいます
 \begin{itemize}\setbeamertemplate{items}[square]\small
+\setlength{\itemsep}{5pt}
  \item 形容詞は名詞の前に置きます
- \item \fbox{\,$\text{(冠詞)}+\text{形容詞}+\text{名詞}$\,\,}\,\,\,は意味のかたまりになります
+ \item \fcolorbox{black}{white}{\,$\text{(冠詞)}+\text{形容詞}+\text{名詞}$\,\,}\,\,\,は意味のかたまりになります
  \end{itemize}
      \end{block}
 
-\begin{block}{Topic for Today}\setbeamertemplate{items}[square]\small
+\begin{block}{名詞を修飾する---ing}\small
 \Circled[fill color = white]{\,\,---ing\,\,}\,\,が名詞を修飾することがあります%
 \hfill{\scriptsize つまり「形容詞」の役目をしています}
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item この\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,は「～している」という意味\hfill{\scriptsize この\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,を「現在分詞」といいます}
+\setlength{\itemsep}{5pt}
+ \item この\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,は「～している」という\kenten{進行}の意味
+ \item この\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,を「現在分詞」といいます\\
+{\scriptsize \textdbend\textdbend 「現在分詞」は\kenten{現在}の意味ではなく\kenten{進行}の意味}\\
+\hfill{\scriptsize 「過去分詞」は\kenten{過去}の意味ではなく「されている」という\kenten{受け身}の意味でしたね}
  \end{itemize}
      \end{block}
 
-\begin{block}{Topic for Today}\small
-\Circled[fill color = white]{\,\,---ing\,\,}\,\,がほかの語句を伴うときは、
-後ろから前の名詞を修飾します%
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ2}
+
+\begin{block}{名詞を修飾する---ingの位置}\small
+
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \Circled[fill color = white]{\,\,---ing\,\,}\,\, $\longrightarrow \text{\,\,名詞}$\hfill{\scriptsize the sleeping cat}
- \item $\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,---ing\,\,+\text{\,\,ほかの語句\,\,}}\hfill{\scriptsize the cat sleeping in the sun}
+\setlength{\itemsep}{5pt}
+ \item \Circled[fill color = white]{\,\,---ing\,\,}\,\,が単独のときは、前から後ろの名詞を修飾します
+
+\hspace{50pt}\Circled[fill color = white]{\,\,---ing\,\,}\,\, $\longrightarrow \text{\,\,名詞}$\hfill{\scriptsize the \textbf{sleepin}g cat}\\
+\hfill{\scriptsize the \textbf{singing} woman}\\
+\hfill{\scriptsize \textbf{boiling} water}\\
+\hfill{\scriptsize the \textbf{rising} sun}\\
+\hfill{\scriptsize the \textbf{flying} birds}
+ \item \Circled[fill color = white]{\,\,---ing\,\,}\,\,がほかの語句を伴うときは、
+後ろから前の名詞を修飾します
+
+\hspace{50pt}$\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,---ing\,\,+\text{\,\,ほかの語句\,\,}}\hfill{\scriptsize the cat \textbf{sleeping} in the sun}\\
+\hfill{\scriptsize the boys \textbf{speaking} English}\\
+\hfill{\scriptsize the man \textbf{swimming} in the sea}\\
+\hfill{\scriptsize the boy \textbf{reading} a book}\\
+\hfill{\scriptsize the girl \textbf{running} with a dog}\\
  \end{itemize}
      \end{block}
 \end{frame}
