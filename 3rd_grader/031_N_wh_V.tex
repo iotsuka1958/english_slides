@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -42,7 +44,7 @@
 
 \section{関係代名詞who}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{人 $\leftarrow$ \fbox{who ＋V ...}}
+\begin{frame}[plain,t]{人 $\leftarrow$ \fbox{who ＋V ...}}
  \begin{enumerate}
   \item<1-> I know the girl.\hfill{\scriptsize the girl}
   \item<2-> I know the girl in the room.%
@@ -53,21 +55,24 @@
         \hfill{}\visible<7->{\scriptsize the girl $\longleftarrow$\,\fbox{\,who speaks two languages\,}}
  \end{enumerate}
 
-\visible<8->{%
-\begin{exampleblock}{Topic for Today}
+\vspace{50pt}
+
+\begin{block}<8->{Topic for Today}
 「人」について、後ろから詳しく説明するとき\textbf{who}をつかいます
 
-\begin{itemize}\small
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item この\textbf{who}を「関係代名詞」といいます
 % \item whoには動詞が続きます
  \item $\text{人\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,\textbf{who}\,\,+\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}\hfill{\scriptsize the girl \textbf{who} speaks two languages}
  \end{itemize}
-     \end{exampleblock}
-}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_01.mp3}}
+     \end{block}
+
+\vspace{-10pt}
+
+\hfill{\tiny 0202}\,{\scriptsize \myaudio{./audio/031_N_wh_V_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{図解}
+\begin{frame}[plain,t]{図解}
  \begin{enumerate}
   \item<1-> I know \myAnch{a1}{Maroon}{\bfseries the girl}.
   \item<2-> \myAnch{a2}{NavyBlue}{The girl} speaks two languages.\\[10pt]
@@ -84,10 +89,9 @@
  \visible<5->{\draw[->,black,thick] (a5) -- (A5) -- (A4) -- (a4);}
 \end{tikzpicture}
 
-\visible<6->{%
-\begin{exampleblock}{Topics for Today}\small
+\begin{block}<6->{Topics for Today}\small
 関係代名詞の\textbf{who}は後ろから前の「人」について詳しく説明します(～する人)%
-\mbox{}\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_02.mp3}}
+\mbox{}\hfill{\tiny 0139}\,{\scriptsize \myaudio{./audio/031_N_wh_V_02.mp3}}
 
 \begin{enumerate}\small
  \item 2つの文で、同じ「人」を指している語句を見つけます
@@ -95,13 +99,14 @@
  \end{enumerate}
 
 \hfill{\small 修飾される側の名詞{(\scriptsize ここではthe girl)}を「先行詞」といいます}
-     \end{exampleblock}
-}
+     \end{block}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
-\fbox{　　}\,\,で囲まれた語を関係代名詞whoにかえて各2文を1文にまとめましょう%
-\mbox{}\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_03.mp3}}
+\begin{frame}[plain,t]{Exercises}
+
+{\small \fbox{　　}\,\,で囲まれた語を関係代名詞whoにかえて各2文を1文にまとめましょう}%
+\hfill{\tiny 0148}\,{\scriptsize \myaudio{./audio/031_N_wh_V_03.mp3}}
 \begin{enumerate}
  \item \begin{enumerate}
 	\item I know {\bfseries the man}.
@@ -120,12 +125,15 @@
        \end{enumerate}
 \end{enumerate} 
 
-\fbox{　　}\,\,で囲まれた語をwhoにかえて太字の語の後ろにつなげます
+\vspace{30pt}
+
+\hfill{\small \fbox{　　}\,\,で囲まれた語をwhoにかえて太字の語の後ろにつなげます}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-日本語の意味になるよう(~~~~~~)の語句を並べ替えましょう\&
-\mbox{}\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_04.mp3}}
+
+{\small 日本語の意味になるよう(~~~~~~)の語句を並べ替えましょう}
+\hfill{\tiny 0215}\,{\scriptsize \myaudio{./audio/031_N_wh_V_04.mp3}}
  \begin{enumerate}
   \item わたしはテニスがとてもじょうずな少女を知っています。\\
 	I ( a girl / tennis / who / know / plays ) very well.\\
@@ -143,7 +151,8 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{関係代名詞which}
-\begin{frame}[plain]{もの $\leftarrow$ \fbox{which ＋V ...}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{もの $\leftarrow$ \fbox{which ＋V ...}}
  \begin{enumerate}
   \item<1-> We went to the restaurant.\hfill{\scriptsize the restaurant}
   \item<2-> We went to the restaurant near the beach.%
@@ -154,18 +163,21 @@
         \hfill{}\visible<7->{\scriptsize the restaurant $\longleftarrow$\,\fbox{\,which was famous for seafood\,}}
  \end{enumerate}
 
-\visible<8->{%
-\begin{exampleblock}{Topics for Today}\small
-「もの」について、後ろから詳しく説明するとき\textbf{which}をつかいます(～するもの)
-\mbox{}\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_05.mp3}}
+\vspace{20pt}
 
-\begin{itemize}\small
+\begin{block}<8->{Topics for Today}\small
+「もの」について、後ろから詳しく説明するとき\textbf{which}をつかいます(～するもの)
+
+\begin{itemize}\setbeamertemplate{items}[square]\small
  \item この\textbf{which}は「関係代名詞」です
  %\item whoには動詞が続きます
- \item $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,\textbf{which}\,\,+\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}\hfill{\scriptsize the restaurant which is famous for seafood}
+ \item $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,\textbf{which}\,\,+\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}\hfill{\scriptsize the restaurant \textbf{which} is famous for seafood}
  \end{itemize}
-     \end{exampleblock}
-}
+     \end{block}
+\vspace{-10pt}
+
+\hfill{\tiny 0211}\,{\scriptsize \myaudio{./audio/031_N_wh_V_05.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{図解}
@@ -185,8 +197,7 @@
  \visible<5->{\draw[->,black,thick] (a5) -- (A5) -- (A4) -- (a4);}
 \end{tikzpicture}
 
-\visible<6->{%
-\begin{exampleblock}{Topics for Today}
+\begin{block}<6->{Topics for Today}
  関係代名詞の\textbf{which}は後ろから前の「もの」について詳しく説明します%
 \mbox{}\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_06.mp3}}
 
@@ -196,12 +207,14 @@
  \end{enumerate}
 
 \hfill{\small 修飾される側の名詞{(\scriptsize ここではthe factory)}を「先行詞」といいます}
-     \end{exampleblock}
-}
+     \end{block}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
-\fbox{　　}\,\,で囲まれた語を関係代名詞whichにかえて各2文を1文にまとめましょう%
+\begin{frame}[plain,t]{Exercises}
+
+{\small \fbox{　　}\,\,で囲まれた語を関係代名詞whichにかえて各2文を1文にまとめましょう}%
+\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_07.mp3}}
 
 \begin{enumerate}
  \item \begin{enumerate}
@@ -223,13 +236,13 @@
        \end{enumerate}
 \end{enumerate} 
 
-\fbox{　　}\,\,で囲まれた語をwhichにかえて太字の語の後ろにつなげます%
-\mbox{}\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_07.mp3}}
+\hfill{\small \fbox{　　}\,\,で囲まれた語をwhichにかえて太字の語の後ろにつなげます}%
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-日本語の意味になるよう(~~~~~~)の語句を並べ替えましょう%
-\mbox{}\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_08.mp3}}
+
+{\small 日本語の意味になるよう(~~~~~~)の語句を並べ替えましょう}%
+\hfill{\tiny 0219}\,{\scriptsize \myaudio{./audio/031_N_wh_V_08.mp3}}
  \begin{enumerate}
   \item 彼女は賞を獲得した本を読んだ。%
 	\hfill{\scriptsize win \textipa{/w\'In/} （賞などを）獲得する}\\
@@ -249,10 +262,11 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{関係代名詞that}
-\begin{frame}[plain]{関係代名詞のthat}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{関係代名詞のthat}
  \begin{enumerate}
   \item<1-> わたしはテニスがうまい少女を知っています。%
-\mbox{}\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_09.mp3}}
+\hfill{\tiny 0218}\,{\scriptsize \myaudio{./audio/031_N_wh_V_09.mp3}}
 	\begin{enumerate}
 	 \item<1-> I know a girl (~~~~~~) plays tennis well.
 	 \item<2-> I know a girl \myEmph[2-]{Maroon}{who} plays tennis well.
@@ -266,8 +280,7 @@
        \end{enumerate}
  \end{enumerate}
 
-\visible<4->{%
-\begin{exampleblock}{Topics for Today}
+\begin{block}<4->{Topics for Today}
 \small
  
 \begin{enumerate}\small
@@ -277,14 +290,14 @@
  \end{enumerate}
 
 \hfill\visible<7->{関係代名詞の\textbf{that}は先行詞が「人」でも「もの」でも使えます　}
-     \end{exampleblock}
-}
+     \end{block}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=ichiran]{人・もの $\leftarrow$ \fbox{that ＋V ...}}
  \begin{enumerate}
   \item I know the girl \alt<2->{{\bfseries that}}{{\bfseries who}} speaks two languages.%
-\mbox{}\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_10.mp3}}
+\hfill{\tiny 0609}\,{\scriptsize \myaudio{./audio/031_N_wh_V_10.mp3}}
 %  \item I know the man who came from Hawaii.
   \item I met the teacher \alt<2->{{\bfseries that}}{{\bfseries who}} lived near my house.
   \item He has a friend \alt<2->{{\bfseries that}}{{\bfseries who}} lives in Kyoto.
@@ -304,11 +317,9 @@
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{主格の関係代名詞}
-
-\dbend%\,\,\dbend
-
-\bigskip
+\section{格}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{主格の関係代名詞}
 
 \begin{enumerate}
  \item<1-> I know a girl. The girl plays tennis well.
@@ -325,12 +336,74 @@
        \end{enumerate}
 \end{enumerate}
 
-\visible<9->{%
-\begin{exampleblock}{Topic for Today}
+
+\vspace{25pt}
+
+
+\begin{block}<9->{Topic for Today}
 \small
- 直後に「動詞」が続くwho, which, thatを「\kenten{主格}の関係代名詞」といいます
-     \end{exampleblock}
-}
+ 直後に「動詞」が続く\textbf{who}, \textbf{which}, \textbf{that}を「\kenten{主格}の関係代名詞」といいます\\
+\hfill{\scriptsize 後続する動詞に対して\kenten{主}語の働きをしているからです}\raisebox{0pt}{\dbend}\\
+\mbox{}
+     \end{block}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ1}
+ \begin{block}<1->{関係代名詞who}
+「人」について、後ろから詳しく説明するとき\textbf{who}をつかいます
+
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item この\textbf{who}を「関係代名詞」といいます
+% \item whoには動詞が続きます
+ \item $\text{人\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,\textbf{who}\,\,+\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}\hfill{\scriptsize the girl \textbf{who} speaks two languages}
+ \end{itemize}
+     \end{block}
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ2}
+\begin{block}<1->{関係代名詞which}
+ \begin{itemize}\setbeamertemplate{items}[square]
+ \item 関係代名詞の\textbf{which}は後ろから前の「もの」について詳しく説明します%
+\mbox{}\hfill{\scriptsize \myaudio{./audio/031_N_wh_V_06.mp3}}
+ \item $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,\textbf{which}\,\,+\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}\hfill{\scriptsize the book \textbf{which} was written 20 years ago}
+ \end{itemize}
+
+%\begin{enumerate}\small
+% \item 2つの文で、同じ「もの」を指している語句を見つけます
+% \item 2つめを\,\,\Circled[fill color = white]{\,\,which\,\,}\,\,にして、1つめの後ろにつなげてまとめます
+% \end{enumerate}
+
+\hfill{\small 修飾される側の名詞{(\scriptsize ここではthe book)}を「先行詞」といいます}
+     \end{block}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ3}
+
+\begin{block}<1->{関係代名詞that}
+\small
+ 
+\begin{enumerate}\small
+ \item  $\text{人\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,who\,\,+\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}
+ \item  $\text{もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,which\,\,+\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}
+ \item  $\text{人・もの\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,that\,\,+\text{\,\,V\,\,}\text{\,\,\ldots\,\,\,}}
+ \end{enumerate}
+
+\hfill\visible<1->{関係代名詞の\textbf{that}は先行詞が「人」でも「もの」でも使えます　}
+     \end{block}
+
+\begin{block}<1->{関係代名詞の格}
+\small
+ 直後に「動詞」が続く\textbf{who}, \textbf{which}, \textbf{that}を「\kenten{主格}の関係代名詞」といいます\\
+\hfill{\scriptsize 後続する動詞に対して\kenten{主}語の働きをしているからです}\raisebox{0pt}{\dbend}\\
+\mbox{}
+     \end{block}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \againframe{ichiran}
