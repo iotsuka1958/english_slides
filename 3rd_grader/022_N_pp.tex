@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,43 +42,67 @@
   \tableofcontents
 \end{frame} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{名詞を修飾する過去分詞}
-\subsection{過去分詞 $+$ 名詞}
+\section*{名詞を修飾する過去分詞}
+\section{過去分詞 $+$ 名詞}
 %%%%%%%%%%%%%%%%
- \begin{frame}[plain]{p.p. $+$ 名詞}
+ \begin{frame}[plain,t]{p.p. $+$ 名詞}
   \begin{enumerate}
    \item \begin{enumerate}
 	  \item<1-> break --- broke --- broken%
 \hfill{}{\scriptsize 原形 --- 過去形 --- 過去分詞}
 	  \item<2-> He broke the window.
-	  \item<3-> The window was broken by him.\hfill\visible<4->{\scriptsize $\text{受け身}=\text{be動詞}+\text{過去分詞}$}
+	  \item<3-> The window was broken by him.\hfill\visible<4->{\scriptsize \text{受け身} $=$ \Circled{\,\,be動詞 $+$ 過去分詞\,\,}}
 	 \end{enumerate}
    \item \begin{enumerate}
-	  \item<5-> Look at \fbox{the window}.
-	  \item<6-> Look at \fbox{the old window}.%
-\hfill\visible<7->{\scriptsize \fbox{$\text{冠詞}+\text{形容詞}+\text{名詞}$}}
-	  \item<8-> Look at \fbox{the \myEmph[8-]{Maroon}{broken} window.}%
-\hfill\visible<8->{\scriptsize \fbox{$\text{冠詞}+\text{過去分詞}+\text{名詞}$}}
+	  \item<5-> Look at \fbox{the window}.%
+\hfill\visible<6->{\scriptsize \fbox{$\text{冠詞}+\text{名詞}$}}
+	  \item<7-> Look at \fbox{the old window}.%
+\hfill\visible<8->{\scriptsize \fbox{$\text{冠詞}+\text{形容詞}+\text{名詞}$}}
+	  \item<9-> Look at \fbox{the \myEmph[8-]{Maroon}{broken} window.}%
+\hfill\visible<10->{\scriptsize \fbox{$\text{冠詞}+\text{過去分詞}+\text{名詞}$}}
 	 \end{enumerate}
   \end{enumerate}
 
-\visible<10->{%
-\begin{exampleblock}{Topic for Today}\small
+\vspace{8pt}
+
+\begin{block}<11->{Topic for Today}\small
 \Circled[fill color = white]{\,\,過去分詞\,\,}\,\,が名詞を修飾することがあります%
 \hfill{\scriptsize つまり「形容詞」の役目をしています}
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item \,\,\Circled[fill color = white]{\,\,過去分詞\,\,}\,\,は「～された」という\kenten{受け身}の意味\\
-\hfill{\scriptsize \Circled[fill color = white]{\,\,現在分詞\,\,}\,\,は\kenten{進行}の意味でしたね}
+\hfill{\scriptsize \Circled[fill color = white]{\,\,現在分詞\,\,}\,\,は\kenten{進行}（～している）の意味でしたね}
  \item \,\,\Circled[fill color = white]{\,\,過去分詞\,\,}\,\,を\,\,\Circled[fill color = white]{\,\,p.p.\,\,}\,\,と表記することがあります
  \end{itemize}
-     \end{exampleblock}
-}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/022_N_pp_01.mp3}}
+     \end{block}
+
+\vspace*{-12pt}
+
+\hfill{\tiny 0253}\,{\scriptsize \myaudio{./audio/022_N_pp_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{名詞 $+$ 過去分詞}
-\begin{frame}[plain]{名詞 $+$ p.p. \ldots}
+\begin{frame}[plain,t]{Exercises}
+ 
+{\small 日本語の意味になるよう(~~~~~~)の語を並べ替えましょう}%
+\hfill{\tiny 02362}\,{\scriptsize \myaudio{./audio/022_N_pp_01b.mp3}}
+ 
+\begin{enumerate}
+ \item  ( a / has / toy / little brother / my / broken ) .\hfill{\small 弟は壊れたおもちゃを持っている。}\\
+My little brother has a broken toy.
+ \item  ( money / found / stolen / the police / the )\hfill{\small 警察は盗まれたお金を見つけた。}\\
+The police found the stolen money.
+ \item  ( yesterday / used / he / a / car / bought ) .\hfill{\small 彼はきのう中古車を買った。}\\
+He bought a used car yesterday.
+ \item  ( boiled / I / a / ate / breakfast / egg ) this morning.\hfill{\small 私は朝食にゆで卵を食べた。}\\
+I ate a boiled egg this morning.
+ \item  ( like / potatoes / baked / I  ) very much.\hfill{\small 私は焼いたポテトが大好きだ。}\\
+I like baked potatoes very much.
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{名詞 $+$ 過去分詞}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{名詞 $+$ p.p. \ldots}
  \begin{enumerate}
   \item \begin{enumerate}
 	 \item<1-> The man is my father.\hfill\visible<2->{\scriptsize  \fbox{$\text{冠詞}+\text{名詞}$}}
@@ -90,30 +116,33 @@
 	\end{enumerate}
  \end{enumerate}
 
-\visible<12->{%
-\begin{exampleblock}{Topic for Today}\small
+\vspace{8pt}
+
+\begin{block}<12->{Topic for Today}\small
 \Circled[fill color = white]{\,\,p.p.\,\,}\,\,がほかの語句を伴うときは、
 後ろから前の名詞を修飾します%
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \Circled[fill color = white]{\,\,p.p.\,\,}\,\, $\longrightarrow \text{\
-                                                                               \,\,名詞}$\hfill{\scriptsize the broken window}
- \item $\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,p.p.\,\,+\text{\,\,ほかの語句\,\,}}\hfill{\scriptsize the window broken in the storm last night}
+ \item \Circled[fill color = white]{\,\,p.p.\,\,}\,\, $\longrightarrow \text{\,\,名詞}$\hfill{\scriptsize the \textbf{broken} window}
+ \item $\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,p.p.\,\,+\text{\,\,ほかの語句\,\,}}\hfill{\scriptsize the window \textbf{broken} in the storm last night}
  \end{itemize}
-     \end{exampleblock}
-}
-\mbox{}\hfill{\scriptsize \myaudio{./audio/022_N_pp_02.mp3}}
+     \end{block}
+
+\vspace{-12pt}
+
+\hfill{\tiny 0243}\,{\scriptsize \myaudio{./audio/022_N_pp_02.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-日本語の意味になるよう(~~~~~~)内の語句を並べ替えましょう%
-\mbox{}\hfill{\scriptsize \myaudio{./audio/022_N_pp_03.mp3}}
+
+{\small 日本語の意味になるよう(~~~~~~)内の語句を並べ替えましょう}%
+\hfill{\tiny 0214}\,{\scriptsize \myaudio{./audio/022_N_pp_03.mp3}}
  \begin{enumerate}
   \item {\small デイブはドイツ製の新車を購入した。}%
 \hfill{\scriptsize bought \textipa{/b\'O:t/} buyの過去形}\\
 	Dave ( new / a / in / made / bought / car ) Germany.\\
 	\visible<2->{Dave bought a new car made in Germany.}
-  \item {\small 彼らはヘレンが調理した食事を楽しんだ。}\hfill{\scriptsize meal: 食事}\\
+  \item {\small 彼らはヘレンが調理した食事を楽しんだ。}\hfill{\scriptsize meal \textipa{/m\'\i :l/} 食事}\\
 	They ( by / cooked / enjoyed / the meal ) Helen.\\
 	\visible<3->{They enjoyed the meal cooked by Helen.}
   \item {\small これはパティが撮影した有名な写真です。}\\
@@ -124,33 +153,76 @@
 	\visible<5->{She read an interesting book written in English.}%
 \hfill{}{\scriptsize readの過去形read \textipa{/r\'ed/}}
  \end{enumerate}
+
+\begin{textblock*}{0.4\linewidth}(350pt,120pt)
+\visible<1->{
+\includegraphics[width=.65\textwidth]{./images/couple.jpg}
+}
+\end{textblock*}
+
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
-\begin{frame}[plain]{まとめ}
+\begin{frame}[plain,t]{まとめ1}
  
-\begin{block}{Topic for Today}\setbeamertemplate{items}[square]\small
+\begin{block}{名詞を修飾する過去分詞}\setbeamertemplate{items}[square]\small
 
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \Circled[fill color = white]{\,\,過去分詞\,\,}\,\,は「～される」という意味\hfill{}{\scriptsize 過去分詞のことを\Circled[fill color = white]{\,\,p.p.\,\,}\,\,と表記することがあります}
- \item \Circled[fill color = white]{\,\,過去分詞\,\,}\,\,が名詞を修飾することがあります%
+ \item \Circled[fill color = white]{\,\,過去分詞\,\,}\,\,は「～される」という受け身の意味\\
+\hfill{\scriptsize \Circled[fill color = white]{\,\,現在分詞\,\,}\,\,は\kenten{進行}（～している）の意味でしたね}
+ \item \Circled[fill color = white]{\,\,過去分詞\,\,}\,\,が名詞を修飾することがあります\\
 \hfill{\scriptsize つまり「形容詞」の役目をしています}
+ \item 過去分詞のことを\Circled[fill color = white]{\,\,p.p.\,\,}\,\,と表記することがあります
  \end{itemize}
      \end{block}
 
-\begin{block}{Topic for Today}\small
-\Circled[fill color = white]{\,\,過去分詞\,\,}\,\,がほかの語句を伴うときは、
-
-後ろから前の名詞を修飾します%
-
-\begin{itemize}\setbeamertemplate{items}[square]\small
- \item \Circled[fill color = white]{\,\,p.p.\,\,}\,\, $\longrightarrow \text{\,\,名詞}$\hfill{\scriptsize the broken window}
- \item $\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,p.p.\,\,+\text{\,\,ほかの語句\,\,}}\hfill{\scriptsize a car made in Germany}
- \end{itemize}
-     \end{block}
-
+\begin{textblock*}{0.4\linewidth}(320pt,150pt)
+\visible<1->{\begin{tikzpicture}
+\bear[
+scale=1,
+speech={\tiny  ---ingとp.p.},
+signpost=\scalebox{.5}{
+\parbox{2.5cm}{\color{black}
+\centering ---ingは進行p.p.は受け身}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{まとめ2}
+
+\begin{block}{名詞を修飾する過去分詞の位置}\small
+
+
+\begin{itemize}\setbeamertemplate{items}[square]\small
+\setlength{\itemsep}{5pt}
+ \item \Circled[fill color = white]{\,\,\,\,p.p.\,\,\,\,}\,\,が単独のときは、前から後ろの名詞を修飾します
+
+\hspace{50pt}\Circled[fill color = white]{\,\,\,\,p.p.\,\,\,\,}\,\, $\longrightarrow \text{\,\,名詞}$\hfill{\scriptsize the \textbf{broken} window}\\
+\hfill{\scriptsize a \textbf{broken} toy}\\
+\hfill{\scriptsize the \textbf{stolen} money}\\
+\hfill{\scriptsize a \textbf{used} car}\\
+\hfill{\scriptsize \textbf{boiled} egg}\\
+\hfill{\scriptsize \textbf{baked} potatoes}\\
+
+ \item \Circled[fill color = white]{\,\,p.p.\,\,}\,\,がほかの語句を伴うときは、
+後ろから前の名詞を修飾します
+
+\hspace{50pt}$\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,\,\,p.p.\,\,+\text{\,\,\,\,ほかの語句\,\,\,\,}}\hfill{\scriptsize the window \textbf{broken} in the storm last night}\\
+\hfill{\scriptsize a new car \textbf{made} in Germany}\\
+\hfill{\scriptsize the meal \textbf{cooked} byHelen}\\
+\hfill{\scriptsize a famouse picture \textbf{taken} by Pattie}\\
+\hfill{\scriptsize an interesting book \textbf{written} in English}\\
+ \end{itemize}
+     \end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+
+
+
 \end{document}
 %%%%%%%%%%%%%%%%%%%
 the {\tikz[remember picture, baseline=(a.base)]\node (a){broken};}  {\tikz[remember picture, baseline=(b.base)]\node (b){window};} 
