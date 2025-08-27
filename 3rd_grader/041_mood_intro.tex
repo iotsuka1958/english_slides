@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,57 +42,98 @@
   \tableofcontents
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%
 \section{仮定法}
 \subsection{仮定法とは}
-\begin{frame}[plain]{仮定法とは}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{仮定法}
  \large
 
 \begin{enumerate}
- \item<1-> I don't have a lot of money.
- \item<2-> I wish I \myEmph[2-]{Maroon}{had} a lot of money.\hfill\visible<3->{{\scriptsize お金がたくさんあったらいいのになあ}}
+ \item<1-> I don't have a lot of money.\hfill{\scriptsize a lot of ～\,\,\,\,\Circled{\,形\,}\,\,\,\,たくさんの～}
+ \item<2-> I wish I \myEmph[2-]{Maroon}{had} a lot of money.%
+\hfill{\scriptsize wish \textipa{/w\'IS/} ～であればよいのにと思う}\\
+\visible<3->{{\scriptsize たくさんお金があったらいいのになあ}}
 \end{enumerate}
 
-\vfill
+\vspace{80pt}
 
 \begin{block}<4->{Topics for Today}
 \small
 
-\begin{itemize}
+\begin{itemize}\setbeamertemplate{items}[square]
  \item \kenten{現在}の\kenten{事実}の\kenten{反対}のことをあらわすときは、
 現在のことでも\kenten{過去形}を使います
  \item これを「仮定法過去」といいます
 \end{itemize}
 \end{block}
 
-\mbox{}\hfill\visible{\myaudio{./audio/041_mood_intro_01.mp3}} 
+\mbox{}\hfill{\tiny 0112}\,{{\scriptsize \myaudio{./audio/041_mood_intro_01.mp3}}} 
+
+
+\begin{textblock*}{0.4\linewidth}(330pt,100pt)
+\visible<1->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}\centering
+{\Large 現在の\\ことなのに\\過去形！}}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+laughing,
+speech={\tiny 事実の反対}
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{もうひとつ}
- \begin{enumerate}
-  \item<1-> If I \myEmph[1-]{NavyBlue}{am} hungry, I  eat a sandwich.%
-\hfill\visible<2->{{\scriptsize おなかがすいたときは、いつもサンドイッチを食べます}}
-  \item<3-> If I \myEmph[3-]{Maroon}{were} hungry, I would eat the sandwich.%
-\hfill\visible<4->{{\scriptsize 空腹ならば、そのサンドイッチを食べるのですが}}\\
-\hfill\visible<4->{{\scriptsize (いまはおなかがすいていない)}}
+\begin{frame}[plain,t]{仮定法（be動詞）}
+
+\begin{enumerate}
+ \item<1-> \begin{enumerate}
+	\item<1-> I \textbf{am} hungry now.
+	\item<2-> I \textbf{was} hungry at that time.
+       \end{enumerate}
+ \item<3->  \begin{enumerate}
+	 \item<3-> If I \myEmph[3-]{NavyBlue}{am} hungry, I  eat a sandwich.
+\hfill\visible<4->{{\scriptsize おなかがすいたときは、サンドイッチを食べます}}\\
+\hfill\visible<5->{{\scriptsize (いまおなかがすいているかどうかわからない)}}
+	 \item<6-> If I \myEmph[5-]{Maroon}{were} hungry, I would eat the sandwich.\\
+\hfill\visible<7->{{\scriptsize 空腹ならば、そのサンドイッチを食べるのですが}}\\
+	      \hfill\visible<8->{{\scriptsize (いまはおなかがすいていない)}}
  \end{enumerate}
+\end{enumerate}
 
-\vfill
+\vspace{60pt}
 
-\begin{block}<5->{be動詞の仮定法過去}
-\small
+\begin{block}<9->{be動詞の仮定法過去}\small
 
-\begin{itemize}
- \item be動詞の仮定法過去は、主語にかかわらずwereをもちいます
+\begin{itemize}\setbeamertemplate{items}[square]
+ \item \textbf{be}動詞の仮定法過去は、主語にかかわらず\textbf{were}を使います
 \end{itemize}
 \end{block}
-\mbox{}\hfill\visible{\myaudio{./audio/041_mood_intro_02.mp3}} 
 
+\vspace{-10pt}
+
+\hfill{\tiny 0119}\,{{\scriptsize \myaudio{./audio/041_mood_intro_02.mp3}}}
+\begin{textblock*}{0.4\linewidth}(50pt,107pt)
+\visible<10->{\begin{tikzpicture}
+\chicken[
+scale=1,
+speech={\tiny  be動詞},
+signpost=\scalebox{.5}{
+\parbox{2.5cm}{\color{black}
+\centering \textbf{I was}\\じゃなく\\\textbf{I were}！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
- つぎの英文がどういう意味か、考えましょう\mbox{}\hfill\visible{\myaudio{./audio/041_mood_intro_03.mp3}} 
+\begin{frame}[plain,t]{Exercises}
 
-
+{\small つぎの各組の2つの英文がどういう意味か、考えましょう}
 
 \begin{enumerate}
  \item \begin{enumerate}
@@ -99,37 +142,95 @@
        \end{enumerate}
  \item \begin{enumerate}
 	\item If you have time, you can watch television.
-	\item If you \myEmph[2-]{Maroon}{had} time, you could watch television.
+	\item If you \myEmph[3-]{Maroon}{had} time, you could watch television.
        \end{enumerate}
  \item \begin{enumerate}
 	\item I hope it will be fine tomorrow.
-	\item I wish it \myEmph[2-]{Maroon}{were} fine today.
+	\item I wish it \myEmph[4-]{Maroon}{were} fine today.
        \end{enumerate}
  \item \begin{enumerate}
 	\item I am sorry I don't have a car.
-	\item I wish I \myEmph[2-]{Maroon}{had} a car.
+	\item I wish I \myEmph[5-]{Maroon}{had} a car.
        \end{enumerate}
 \end{enumerate}
+
+\vspace{50pt}
+
+\hfill{\tiny 0336}\,{{\scriptsize \myaudio{./audio/041_mood_intro_03.mp3}}}
+\begin{textblock*}{0.4\linewidth}(270pt,110pt)
+\visible<1->{\begin{tikzpicture}
+\squirrel[
+scale=1.4,
+speech={\tiny  仮定法過去},
+signpost=\scalebox{.5}{
+\parbox{3.4cm}{\color{black}
+\centering 「現在の事実の反対」\\ということは\\実際にはどうなの？ 
+}},
+signcolour= NavyBlue!50!gray,
+signback=white!80!yellow
+]
+\end{tikzpicture}}
+\end{textblock*}
+
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{まとめ}
+\section{まとめ}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{まとめ}
  \begin{block}{仮定法過去}
 \small
 
 \begin{itemize}\setbeamertemplate{items}[square]
- \item \kenten{現在}の\kenten{事実}の\kenten{反対}のことをあらわすときは、
+%\setlength{\itemsep}{-6pt}
+ \item<2-> \kenten{現在}の\kenten{事実}の\kenten{反対}のことをあらわすときは、
 現在のことでも\kenten{過去形}を使います\\
-\hfill{}$\longrightarrow$ これを\,\Circled[fill color = white]{\,仮定法過去\,}\,といいます\\
-\hfill{}I wish I \textcolor{Maroon}{{\bfseries had}} a lot of money.{\scriptsize たくさんお金があればいいのに}\\
-\hfill{}If I \textcolor{Maroon}{{\bfseries had}} a lot of money, I would buy a big house.
-\hfill{\scriptsize たくさんお金があったら大きな家を買うのに}\\
-\hfill{\scriptsize （現実には、たくさんお金を持っていない）}\\
-\mbox{}
- \item be動詞の\,\Circled[fill color = white]{\,仮定法過去\,}\,は、主語にかかわらずwereです\\
-\hfill{}I wish I \textcolor{Maroon}{{\bfseries were}} rich.{\scriptsize お金持ちだったらいいのに}\\
-\hfill{}If I \textcolor{Maroon}{{\bfseries were}} rich, I would buy a big house.{\scriptsize お金持ちだったら大きな家を買うのに}\\
-\hfill{\scriptsize （現実には、私は金持ちではない）}
+\hspace{90pt}$\longrightarrow$\,\,\,\,\,これを\,\Circled[fill color = white]{\,仮定法過去\,}\,といいます\\
+\hfill{}\visible<3->{I wish I \textcolor{Maroon}{{\bfseries had}} a lot of money.}\\
+\hfill\visible<4->{{\scriptsize たくさんお金があればいいのに}}\\[5pt]
+\hfill{}\visible<5->{If I \textcolor{Maroon}{{\bfseries had}} a lot of money, I would buy a big house.}\\
+\hfill\visible<6->{{\scriptsize たくさんお金があったら大きな家を買うのに}}\\
+%\hfill{\scriptsize （現実には、たくさんお金を持っていない）}\\
+
+ \item<8-> \textbf{be}動詞の\,\Circled[fill color = white]{\,仮定法過去\,}\,は、主語にかかわらず\textbf{were}です\\
+\hfill\visible<9->{I wish I \textcolor{Maroon}{{\bfseries were}} rich.}\\
+\hfill\visible<10->{{\scriptsize お金持ちだったらいいのに}}\\[5pt]
+\hfill\visible<11->{If I \textcolor{Maroon}{{\bfseries were}} rich, I would buy a big house.}\\
+\hfill\visible<12->{{\scriptsize お金持ちだったら大きな家を買うのに}}\\
+%\hfill{\scriptsize （現実には、私は金持ちではない）}
 \end{itemize}
 \end{block}
+\vspace{0pt}
+ \hfill{\tiny 0212}\,{{\scriptsize \myaudio{./audio/041_mood_intro_04.mp3}}}
+
+\begin{textblock*}{0.4\linewidth}(50pt,75pt)
+\visible<7->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}\centering
+{\LARGE お金が\\ない！\\残念}}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+crazyhair=gray!20!black,
+laughing,eyebrow,glasses,
+speech={\tiny 現実には},
+bubblecolor=white
+]
+\end{tikzpicture}}
+\end{textblock*}
+
+\begin{textblock*}{0.4\linewidth}(50pt,163pt)
+\visible<13->{\begin{tikzpicture}
+\cat[
+scale=.9,
+speech={\tiny  be動詞},bubblecolor=white,
+signpost=\scalebox{.5}{
+\parbox{2.5cm}{\color{black}
+\centering \textbf{I was}\\じゃなく\\\textbf{I were}！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
