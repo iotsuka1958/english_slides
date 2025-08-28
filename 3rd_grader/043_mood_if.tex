@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -41,56 +43,81 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{If S $+$ 仮定法過去($=$ V)}
-
-\begin{frame}[plain]{If S $+$ 仮定法過去($=$ V)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{If S $+$ 仮定法過去($=$ V)}
  \large
 \begin{enumerate} 
- \item I wish I \textcolor{Maroon}{\bfseries had} money.\hfill{\scriptsize お金があったらいいのに}
- \item If I \textcolor{Maroon}{\bfseries had} money, I would buy the cake.\hfill{\scriptsize お金があったらそのケーキを買うのに}
- \item If I \textcolor{NavyBlue}{\bfseries have} money, I will buy the cake.\hfill{\scriptsize お金があったらそのケーキを買います}
+ \item<1-> I wish I \textcolor{Maroon}{\bfseries had} money.\hfill{\scriptsize お金があったらいいのに}
+ \item<2-> \textbf{If} I \textcolor{Maroon}{\bfseries had} money, I \textbf{would} buy the cake.\hfill{\scriptsize お金があったらそのケーキを買うのに}
+ \item<10> \textbf{If} I \textcolor{NavyBlue}{\bfseries have} money, I will buy the cake.\hfill{\scriptsize お金があったらそのケーキを買います}
 \end{enumerate}
 
-
-\begin{block}{If S $+$ 仮定法過去($=$ V)\mbox{}\hfill{\myaudio{./audio/043_mood_if_01.mp3}} }
+\begin{block}<3->{If S $+$ 仮定法過去($=$ V)\hfill{\tiny 0142}\,{\scriptsize \myaudio{./audio/043_mood_if_01.mp3}}}
 \small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item ifと仮定法過去を組み合わせることがあります\par
-If $\text{S}_{1} +$ \myAnch{mood1}{white}{仮定法過去}($= \text{V}_{1}$) \ldots \hspace{2pt},\hspace{10pt}
- $\text{S}_{2}\,+$ \Circled[fill color = white]{\,\,$\left\{ \begin{array}{l}
+ \item<3-> \textbf{if}と仮定法過去を組み合わせることがあります\par
+\visible<4->{\bfseries
+If $\text{S}_{1} +$ \myAnch{mood1}{Maroon}{仮定法過去}($= \text{V}_{1}$) \ldots \hspace{2pt},\hspace{10pt}
+ \visible<6->{$\text{S}_{2}\,+$ \Circled[fill color = white]{\,\,\,\,\,$\left\{ \begin{array}{l}
 \text{would} \\
 \text{could}
-\end{array}\right\} + \text{原形}$\,\,}\,($=\text{V}_{2}$) \ldots\hspace{2pt} .\\[10pt]
-\hfill{}\myAnch{mood2}{white}{現在の事実の反対}を表しています
+\end{array}\right\} + \text{原形}$\,\,\,\,}\,\,($=\text{V}_{2}$) \ldots\hspace{2pt} .
+}}\\[10pt]
+\hfill\visible<5->{\myAnch{mood2}{Maroon}{現在の事実の反対}を表しています}
+ \item<7-> そのときは\,\,\Circled{\bfseries \,\,S $+ \left\{ \begin{tabular}{l}
+			       would\\
+			       could
+			      \end{tabular} \right\} +$ 原形\,\,}\,\,をセットで使います
 \end{itemize}
 
-\hfill{\scriptsize wouldは「（～なら）～するのに」、couldは「（～なら）～できるのに」の意味になります}
+\hfill\visible<8->{\scriptsize \textbf{would}は「（～なら）～するのに」、\textbf{could}は「（～なら）～できるのに」の意味}
 
-\hfill{\scriptsize would, couldはそれぞれwill, canの過去形です}
+\hfill\visible<9->{\scriptsize \textbf{would} \textipa{w@d/}, \textbf{could} \textipa{/kUd/}はそれぞれ\textbf{will}, \textbf{can}の過去形}
  
 \begin{tikzpicture}[remember picture,overlay]
- \draw[thick,orange,->] (mood2.west) to[out=180, in=-45] (mood1.south east);
+ \visible<5->{\draw[thick,Maroon,->] (mood2.west) to[out=180, in=-45] (mood1.south east);}
 \end{tikzpicture}
 
 \end{block}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
- 日本文の意味になるように、適切なものを選びましょう\hfill{\myaudio{./audio/043_mood_if_02.mp3}} 
+
+{\small 日本文の意味になるように、適切なものを選びましょう}
 
 \begin{enumerate}
- \item 1,000円あったら、チーズバーガーとフライドポテトを買うのに（残念なことに手持ちがない）\\
-If I ( get / have / \alt<2->{\Circled{had}}{had} ) 1,000 yen, I would buy a cheeseburger and fries.
- \item もしわたしがあなたなら、毎日朝食を食べますよ\\
-If I ( am / are / \alt<3->{\Circled{were}}{were} ) you, I would eat breakfast every day. 
+ \item 1,000円あったら、チーズバーガーとフライドポテトを買うのに\\
+\hfill{\scriptsize （残念なことに手持ちがない）}\\
+If I ( get / have / \alt<2->{\Circled{\bfseries had}}{had} ) 1,000 yen, I would buy a cheeseburger and fries.
+ \item もしわたしがあなたなら、毎日朝食を食べますよ%
+{\scriptsize （わたし $\neq$ あなた）}\\
+If I ( am / are / \alt<3->{\Circled{\bfseries were}}{were} ) you, I would eat breakfast every day. 
  \item もしわたしがあなたなら、早く寝ますよ\\
-If I were you, I ( \alt<4->{\Circled{would}}{would} / will ) go to bed early.
-\item もしわたしが魚だったら、じょうずに泳げるのに\\
-If I were a fish, I ( can /  \alt<5->{\Circled{could}}{could} ) swim well.
+If I were you, I ( \alt<4->{\Circled{\bfseries would}}{would} / will ) go to bed early.
+\item もしわたしが魚だったら、じょうずに泳げるのに{\scriptsize （わたし $\neq$ 魚）}\\
+If I were a fish, I ( can /  \alt<5->{\Circled{\bfseries could}}{could} ) swim well.
 \end{enumerate}
+
+\hfill{\tiny 0226}\,{\scriptsize \myaudio{./audio/043_mood_if_02.mp3}} 
+
+\begin{textblock*}{0.4\linewidth}(350pt,125pt)
+\visible<3->{\begin{tikzpicture}
+\chicken[
+scale=1,
+%speech={\tiny  be動詞},
+signpost=\scalebox{.5}{
+\parbox{2.5cm}{\color{black}
+\centering \textbf{If I were you}はアドバイス}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
-日本文の意味になるよう(~~~~~~~~)内の語句を並べ替えましょう\hfill{\myaudio{./audio/043_mood_if_03.mp3}} 
+\begin{frame}[plain,t]{Exercises}
+
+{\small 日本文の意味になるよう(~~~~~~~~)内の語句を並べ替えましょう}\hfill{\tiny 0152}\,{\scriptsize \myaudio{./audio/043_mood_if_03.mp3}} 
  \begin{enumerate}
   \item わたしがあなたなら、その本を読みますよ\\
 If ( read / you / I / I / the book / were / would  ).\\
@@ -98,34 +125,58 @@ If ( read / you / I / I / the book / were / would  ).\\
   \item たくさんお金があったら、大きな家を買うのになあ\\
 If ( house / a /would / had / buy / money / I / I / large / a lot of ).\\
 \visible<3->{If I had a lot of money, I would buy a large house.}
-  \item きょう晴れていたら、外で遊べるのになあ\hfill{\scriptsize outdoors: 屋外で}\\
+  \item きょう晴れていたら、外で遊べるのになあ\hfill{\scriptsize outdoors \textipa{/\'aUtd\`O\textrhookschwa z/} 屋外で}\\
 If ( sunny / I / it / play outdoors / were / could / today ).\\
 \visible<4->{If it were sunny today, I could play outdoors.}
-
  \end{enumerate}
+
+\begin{textblock*}{0.4\linewidth}(330pt,50pt)
+\visible<1->{\begin{tikzpicture}
+\duck[signpost=\scalebox{0.3}{
+\parbox{2.5cm}{\color{black}\centering
+{\Large 現在の\\ことなのに\\過去形！}}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+laughing,
+speech={\tiny 事実の反対}
+]
+\end{tikzpicture}}
+\end{textblock*}
+
+\begin{textblock*}{0.65\linewidth}(345pt,170pt)
+\visible<1->{\includegraphics[width=.3\textwidth]{./images/raining.png}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{まとめ}
- \begin{block}{If S $+$ 仮定法過去($=$ V)}
+\begin{block}<3->{If S $+$ 仮定法過去($=$ V)\hfill{\tiny 0142}\,{\scriptsize \myaudio{./audio/043_mood_if_01.mp3}}}
 \small
 \begin{itemize}\setbeamertemplate{items}[square]
- \item ifと仮定法過去を組み合わせることがあります\par
-
-If $\text{S}_{1} +$ \myAnch{mood1}{white}{仮定法過去}($= \text{V}_{1}$) \ldots\,\,\,,\hspace{10pt}
- $\text{S}_{2}\,+$ \Circled[fill color = white]{\,\,$\left\{ \begin{array}{l}
+ \item<3-> \textbf{if}と仮定法過去を組み合わせることがあります\par
+\visible<4->{\bfseries
+If $\text{S}_{1} +$ \myAnch{mood1}{Maroon}{仮定法過去}($= \text{V}_{1}$) \ldots \hspace{2pt},\hspace{10pt}
+ \visible<6->{$\text{S}_{2}\,+$ \Circled[fill color = white]{\,\,\,\,\,$\left\{ \begin{array}{l}
 \text{would} \\
 \text{could}
-\end{array}\right\} + \text{原形}$\,\,}\,($=\text{V}_{2}$) \ldots\,\,\,.\\[10pt]
-\hfill{}\myAnch{mood2}{white}{現在の事実の反対}を表しています
+\end{array}\right\} + \text{原形}$\,\,\,\,}\,\,($=\text{V}_{2}$) \ldots\hspace{2pt} .
+}}\\[10pt]
+\hfill\visible<5->{\myAnch{mood2}{Maroon}{現在の事実の反対}を表しています}
+ \item<7-> そのときは\,\,\Circled[fill color=white]{\bfseries \,\,S $+ \left\{ \begin{tabular}{l}
+			       would\\
+			       could
+			      \end{tabular} \right\} +$ 原形\,\,}\,\,をセットで使います
 \end{itemize}
 
-\hfill{\scriptsize wouldは「（～なら）～するのに」、couldは「（～なら）～できるのに」の意味になります}
+\hfill\visible<8->{\scriptsize \textbf{would}は「（～なら）～するのに」、\textbf{could}は「（～なら）～できるのに」の意味}
 
-\hfill{\scriptsize would, couldはそれぞれwill, canの過去形です}
-
+\hfill\visible<9->{\scriptsize \textbf{would} \textipa{/w@d/}, \textbf{could} \textipa{/kUd/}はそれぞれ\textbf{will}, \textbf{can}の過去形}
  
 \begin{tikzpicture}[remember picture,overlay]
- \draw[thick,orange,->] (mood2.west) to[out=180, in=-45] (mood1.south east);
+ \visible<5->{\draw[thick,Maroon,->] (mood2.west) to[out=180, in=-45] (mood1.south east);}
 \end{tikzpicture}
 
 \end{block}
