@@ -25,7 +25,7 @@
 \usetikzlibrary{ducks}
 \usepackage{scsnowman}
 \usepackage{tikzlings}
-\usepackage{figchild}
+%\usepackage{figchild}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter
 \newcommand*{\themonth}{\two@digits\month}
@@ -1421,6 +1421,9 @@ it（それ）またはeat（たべる）を発音していきます。どちら
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+%以下、figchildパッケージが衝突してくるので一部、
+%\fcsheepとfcshipを外すためにこのページ全体をコメントアウトする。
+%\fc...を他の図に置き換えること
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 5\,\,\,\,\,\,\textipa{/i:/ or \textipa{/I/}}}\large
 
@@ -1441,23 +1444,23 @@ ship（船）またはsheep（ヒツジ）を発音していきます。どち�
    \end{column}
 %%%%%%%%%%%
    \begin{column}{.45\textwidth}
-    \begin{tabular}{ll@{　　}l}
-     \myAnch{a1}{white}{\textbullet}& \fcSheep{.35}{black}{1} &\textipa{/S\'\i:p/}\\
-     &\\
-     \myAnch{a2}{white}{\textbullet}& \fcShip{.3}{black}{1} &\textipa{/S\'Ip/}\\
-    \end{tabular}
+%    \begin{tabular}{ll@{　　}l}
+%     \myAnch{a1}{white}{\textbullet}& \fcSheep.35}{black}{1} &\textipa{/S\'\i:p/}\\
+%     &\\
+%     \myAnch{a2}{white}{\textbullet}& \fcShip{.3}{black}{1} &\textipa{/S\'Ip/}\\
+%    \end{tabular}
    \end{column}
  \end{columns}
 
-\begin{tikzpicture}[remember picture, overlay]
-\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
- \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
- \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
- \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
- \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
- \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
- \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
-\end{tikzpicture}
+%\begin{tikzpicture}[remember picture, overlay]
+%\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+% \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+% \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+% \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+% \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+% \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+% \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+%\end{tikzpicture}
 
 \hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/vowel_ship_sheep_01.mp3}}
 \end{frame}
@@ -1772,7 +1775,6 @@ xshift=80pt, scale=.3, yshift=50pt]
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 3}
-\hypertarget{ex}{}
 
  発音記号\textipa{/U/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
 
@@ -1789,6 +1791,7 @@ xshift=80pt, scale=.3, yshift=50pt]
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}\large
+\hypertarget{ex}{}
 
 pool（プール）またはpull（ひっぱる）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
 
@@ -1825,8 +1828,8 @@ pool（プール）またはpull（ひっぱる）を発音していきます。
  \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a2.west);}
 \end{tikzpicture}
 
-\hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/vowel_pool_pull_01.mp3}}
-
+\hfill{\tiny 0113}\,{\scriptsize \myaudio{./audio/vowel_boat_bought_01.mp3}}
+ls
 \hfill{\scriptsize He \textbf{pull}ed the rope. 彼はロープを引っ張った}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1885,7 +1888,237 @@ full（いっぱいの）またはfool（愚か者）を発音していきます
 \end{description}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{「エ」の類の母音}
+\Large
+
+\begin{description}
+ \item[短母音 \textipa{/e/}]
+\hspace{72pt}b\underLine{e}d\hspace{20pt}p\underLine{e}t\hspace{20pt}\underLine{e}gg\hspace{20pt}br\underLine{ea}d
+ \item[二重母音\textipa{/eI/}]
+\hspace{58pt}c\underLine{a}ke\hspace{20pt}p\underLine{a}ge\hspace{20pt}g\underLine{a}me\hspace{20pt}r\underLine{ai}n
+ \end{description}
+
+\vfill
+
+\hfill%
+\begin{tikzpicture}
+\duck[%tshirt,
+cap=NavyBlue!80!black,
+glasses,
+megaphone,
+%jacket=gray,
+buttons,
+bowtie,
+%speech={\tiny 2つだけ},
+laughing,
+signpost={{\scriptsize エの類}},
+bubblecolour=white!30!yellow]
+]
+\duck[xshift=90pt, scale=.3, yshift=150pt]
+\duck[xshift=60pt, scale=.3, yshift=100pt]
+\duck[body=gray!50!white, head=gray!50!white,
+xshift=80pt, scale=.3, yshift=50pt]
+\end{tikzpicture}
+
+\hfill{\tiny 0134}\,{\scriptsize \myaudio{./audio/vowel_like_e_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\hypertarget{today}{}
+
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Huge\bfseries \textipa{/e/}}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{短母音 \textipa{/e/}}
+
+ {\Large 短母音} {\Huge \textipa{/e/}}
+
+
+\normalsize
+ポイント
+
+\begin{itemize}\setbeamertemplate{items}[circle]
+% \item \<「オ」の口で「ウ」
+ \item 日本語の「エ」よりちょっぴり口を開いて 
+% \item \textipa{/E/}と表記することもあります
+
+\end{itemize}
+
+\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{実際の単語で確認しよう \textipa{/e/}}
+
+\LARGE
+\hfill{\tiny 0134}\,{\scriptsize \myaudio{./audio/vowel_e_01.mp3}}
+
+\vspace{-15pt}
+
+\begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
+ \item p\textcolor{NavyBlue}{\bfseries e}t%
+\hfill\makebox[80pt][l]{\textipa{/p\textcolor{BurntOrange}{\'e}t/}}\hspace{150pt}\mbox{}
+ \item g\textcolor{NavyBlue}{\bfseries e}t%
+\hfill\makebox[80pt][l]{\textipa{/g\textcolor{BurntOrange}{\'e}t/}}\hspace{150pt}\mbox{}
+ \item s\textcolor{NavyBlue}{\bfseries e}t%
+\hfill\makebox[80pt][l]{\textipa{/s\textcolor{BurntOrange}{\'e}t/}}\hspace{150pt}\mbox{}
+ \item b\textcolor{NavyBlue}{\bfseries e}d%
+\hfill\makebox[80pt][l]{\textipa{/b\textcolor{BurntOrange}{\'e}d/}}\hspace{150pt}\mbox{}
+ \item r\textcolor{NavyBlue}{\bfseries e}d%
+\hfill\makebox[80pt][l]{\textipa{/r\textcolor{BurntOrange}{\'e}d/}}\hspace{150pt}\mbox{}
+\item br\textcolor{NavyBlue}{\bfseries ea}d%
+\hfill\makebox[80pt][l]{\textipa{/br\textcolor{BurntOrange}{\'e}d/}}\hspace{150pt}\mbox{}
+ \item h\textcolor{NavyBlue}{\bfseries ea}lth%
+\hfill\makebox[80pt][l]{\textipa{/h\textcolor{BurntOrange}{\'e}lT/}}\hspace{150pt}\mbox{} 
+ \item br\textcolor{NavyBlue}{\bfseries ea}kfast%
+\hfill\makebox[80pt][l]{\textipa{/br\textcolor{BurntOrange}{\'e}kf@st/}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 1}
+
+ 発音記号\textipa{/e/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
+
+\LARGE
+\begin{enumerate}
+ \item \mbox{}\onslide<7->{bed\hfill\textipa{/b\'ed/}}\hspace{40pt}\visible<2->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<8->{get\hfill\textipa{/g\'et/}}\hspace{40pt}\visible<3->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<9->{eight\hfill\textipa{/\'eIt/}}\hspace{40pt}\visible<4->{\textcolor{Maroon}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<10->{cake\hfill\textipa{/k\'eIk/}}\hspace{40pt}\visible<5->{\textcolor{Maroon}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<11->{bread\hfill\textipa{/br\'ed/}}\hspace{40pt}\visible<6->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\hfill{\tiny 0107}\,{\scriptsize \myaudio{./audio/vowel_e_02.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 2}
+
+ 発音記号\textipa{/e/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
+
+\LARGE
+\begin{enumerate}
+ \item \mbox{}\onslide<7->{get\hfill\textipa{/g\'et/}}\hspace{40pt}\visible<2->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<8->{red\hfill\textipa{/r\'ed/}}\hspace{40pt}\visible<3->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<9->{make\hfill\textipa{/m\'eIk/}}\hspace{40pt}\visible<4->{\textcolor{Maroon}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<10->{health\hfill\textipa{/h\'elT/}}\hspace{40pt}\visible<5->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<11->{breakfast\hfill\textipa{/br\'ekf@st/}}\hspace{40pt}\visible<6->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\hfill{\tiny 0108}\,{\scriptsize \myaudio{./audio/vowel_e_03.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\hypertarget{today}{}
+
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Huge\bfseries \textipa{/eI/}}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{二重母音 \textipa{/e/}}
+
+ {\Large 短母音} {\Huge \textipa{/eI/}}
+
+
+\normalsize
+ポイント
+
+\begin{itemize}\setbeamertemplate{items}[circle]
+% \item \<「オ」の口で「ウ」
+ \item 日本語の「エー」ではない
+ \item 「エ」からなめらかに「イ」に移行
+
+\end{itemize}
+
+\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/eI/}}
+
+\LARGE
+\hfill{\tiny 0143}\,{\scriptsize \myaudio{./audio/vowel_ei_01.mp3}}
+
+\vspace{-25pt}
+
+\begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
+ \item c\textcolor{NavyBlue}{\bfseries a}ke%
+\hfill\makebox[80pt][l]{\textipa{/k\textcolor{BurntOrange}{\'eI}k/}}\hspace{150pt}\mbox{}
+ \item m\textcolor{NavyBlue}{\bfseries a}ke%
+\hfill\makebox[80pt][l]{\textipa{/m\textcolor{BurntOrange}{\'eI}k/}}\hspace{150pt}\mbox{}
+ \item g\textcolor{NavyBlue}{\bfseries a}me%
+\hfill\makebox[80pt][l]{\textipa{/g\textcolor{BurntOrange}{\'eI}m/}}\hspace{150pt}\mbox{}
+ \item p\textcolor{NavyBlue}{\bfseries a}ge%
+\hfill\makebox[80pt][l]{\textipa{/p\textcolor{BurntOrange}{\'eI}dZ/}}\hspace{150pt}\mbox{}
+\item f\textcolor{NavyBlue}{\bfseries a}ce%
+\hfill\makebox[80pt][l]{\textipa{/f\textcolor{BurntOrange}{\'eI}s/}}\hspace{150pt}\mbox{}
+ \item r\textcolor{NavyBlue}{\bfseries ai}n%
+\hfill\makebox[80pt][l]{\textipa{/r\textcolor{BurntOrange}{\'eI}n/}}\hspace{150pt}\mbox{}
+ \item p\textcolor{NavyBlue}{\bfseries ai}n%
+\hfill\makebox[80pt][l]{\textipa{/p\textcolor{BurntOrange}{\'eI}n/}}\hspace{150pt}\mbox{} 
+ \item d\textcolor{NavyBlue}{\bfseries ay}%
+\hfill\makebox[80pt][l]{\textipa{/d\textcolor{BurntOrange}{\'eI}/}}\hspace{150pt}\mbox{}
+ \item th\textcolor{NavyBlue}{\bfseries ey}%
+\hfill\makebox[80pt][l]{\textipa{/D\textcolor{BurntOrange}{\'eI}/}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 1}
+
+ 発音記号\textipa{/eI/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
+
+\LARGE
+\begin{enumerate}
+ \item \mbox{}\visible<7->{bread\hfill\textipa{/br\'ed/}}\hspace{40pt}\visible<2->{\textcolor{Maroon}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\onslide<8->{cake\hfill\textipa{/k\'eIk/}}\hspace{40pt}\visible<3->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<9->{rain\hfill\textipa{/r\'eIn/}}\hspace{40pt}\visible<4->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<10->{fine\hfill\textipa{/f\'aIn/}}\hspace{40pt}\visible<5->{\textcolor{Maroon}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<11->{day\hfill\textipa{/d\'eI/}}\hspace{40pt}\visible<6->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\hfill{\tiny 0108}\,{\scriptsize \myaudio{./audio/vowel_ei_02.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 2}
+
+ 発音記号\textipa{/eI/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
+
+\LARGE
+\begin{enumerate}
+ \item \mbox{}\onslide<7->{game\hfill\textipa{/g\'eIm/}}\hspace{40pt}\visible<2->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<8->{eighty\hfill\textipa{/\'eIti/}}\hspace{40pt}\visible<3->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<9->{bed\hfill\textipa{/b\'ed/}}\hspace{40pt}\visible<4->{\textcolor{Maroon}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<10->{said\hfill\textipa{/s\'ed/}}\hspace{40pt}\visible<5->{\textcolor{Maroon}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<11->{break\hfill\textipa{/br\'eIk/}}\hspace{40pt}\visible<6->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\hfill{\tiny 0108}\,{\scriptsize \myaudio{./audio/vowel_ei_03.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=sofar_u]{これまで学習した英語の母音}
 
 \begin{description}
@@ -1893,14 +2126,326 @@ full（いっぱいの）またはfool（愚か者）を発音していきます
  \item[イの類：]<3-> {\Large \textipa{/i:/} \textipa{/I/}} 
  \item[ウの類：]<4-> {\Large \textipa{/u:/} \textipa{/U/}}
  \item[エの類：]<5-> {\Large \textipa{/e/} \textipa{/eI/}} 
- \item[オの類：]<6-> {\Large \textipa{/O:/} \textipa{/OU/}} $\Longleftarrow$\,こんどはこの2つを学習します 
+ \item[オの類：]<6-> {\Large \textipa{/O:/} \textipa{/oU/}} $\Longleftarrow$\,こんどはこの2つを学習します 
 \end{description}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{「オ」の類の母音}
+\Large
+
+\begin{description}
+ \item[長母音 \textipa{/O:/}]
+\hspace{72pt}\underLine{a}ll\hspace{20pt}b\underLine{a}ll\hspace{20pt}f\underLine{a}ll\hspace{20pt}t\underLine{a}ll
+ \item[二重母音\textipa{/oU/}]
+\hspace{58pt}b\underLine{oa}t\hspace{20pt}c\underLine{oa}t\hspace{20pt}r\underLine{oa}d\hspace{20pt}kn\underLine{ow}
+ \end{description}
+
+\vfill
+
+\hfill%
+\begin{tikzpicture}
+\duck[%tshirt,
+cap=NavyBlue!80!black,
+glasses,
+megaphone,
+%jacket=gray,
+buttons,
+bowtie,
+%speech={\tiny 2つだけ},
+laughing,
+signpost={{\scriptsize オの類}},
+bubblecolour=white!30!yellow]
+]
+\duck[xshift=90pt, scale=.3, yshift=150pt]
+\duck[xshift=60pt, scale=.3, yshift=100pt]
+\duck[body=gray!50!white, head=gray!50!white,
+xshift=80pt, scale=.3, yshift=50pt]
+\end{tikzpicture}
+
+\hfill{\tiny 0133}\,{\scriptsize \myaudio{./audio/vowel_like_o_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\hypertarget{today}{}
+
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Huge\bfseries \textipa{/O:/}}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{長母音 \textipa{/O:/}}
+
+ {\Large 長母音} {\Huge \textipa{/O:/}}
+
+
+\normalsize
+ポイント
+
+\begin{itemize}\setbeamertemplate{items}[circle]
+% \item \<「オ」の口で「ウ」
+ \item 
+\end{itemize}
+
+\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/O:/}}
+
+\LARGE
+\hfill{\tiny 0135}\,{\scriptsize \myaudio{./audio/vowel_long_o_01.mp3}}
+
+\vspace{-25pt}
+
+\begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
+ \item \textcolor{NavyBlue}{\bfseries a}ll%
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'O:}l/}}\hspace{150pt}\mbox{}
+ \item b\textcolor{NavyBlue}{\bfseries a}ll%
+\hfill\makebox[80pt][l]{\textipa{/b\textcolor{BurntOrange}{\'O:}l/}}\hspace{150pt}\mbox{}
+ \item f\textcolor{NavyBlue}{\bfseries a}ll%
+\hfill\makebox[80pt][l]{\textipa{/f\textcolor{BurntOrange}{\'O:}l/}}\hspace{150pt}\mbox{}
+ \item t\textcolor{NavyBlue}{\bfseries a}ll%
+\hfill\makebox[80pt][l]{\textipa{/t\textcolor{BurntOrange}{\'O:}l/}}\hspace{150pt}\mbox{}
+\item t\textcolor{NavyBlue}{\bfseries a}lk%
+\hfill\makebox[80pt][l]{\textipa{/t\textcolor{BurntOrange}{\'O:}k/}}\hspace{150pt}\mbox{}
+ \item s\textcolor{NavyBlue}{\bfseries a}w%
+\hfill\makebox[80pt][l]{\textipa{/s\textcolor{BurntOrange}{\'O:}/}}\hspace{150pt}\mbox{} 
+ \item bec\textcolor{NavyBlue}{\bfseries au}se%
+\hfill\makebox[80pt][l]{\textipa{/bIk\textcolor{BurntOrange}{\'O:}z/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries au}tumn%
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'O:}t@m/}}\hspace{150pt}\mbox{}
+\item str\textcolor{NavyBlue}{\bfseries aw}berry%
+\hfill\makebox[80pt][l]{\textipa{/str\textcolor{BurntOrange}{\'O:}beri/}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 1}
+
+ 発音記号\textipa{/O:/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
+
+\LARGE
+\begin{enumerate}
+ \item \mbox{}\onslide<7->{fall\hfill\textipa{/f\'O:l/}}\hspace{40pt}\visible<2->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<8->{autumn\hfill\textipa{/\'O:t@m/}}\hspace{40pt}\visible<3->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<9->{boat\hfill\textipa{/b\'oUt/}}\hspace{40pt}\visible<4->{\textcolor{Maroon}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<10->{coat\hfill\textipa{/k\'oUt/}}\hspace{40pt}\visible<5->{\textcolor{Maroon}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<11->{talk\hfill\textipa{/t\'O:k/}}\hspace{40pt}\visible<6->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\hfill{\tiny 0108}\,{\scriptsize \myaudio{./audio/vowel_long_o_02.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 2}
+
+ 発音記号\textipa{/O:/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
+
+\LARGE
+\begin{enumerate}
+ \item \mbox{}\visible<7->{road\hfill\textipa{/r\'oUd/}}\hspace{40pt}\visible<2->{\textcolor{Maroon}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\onslide<8->{because\hfill\textipa{/bIk\'O:z/}}\hspace{40pt}\visible<3->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<9->{ball\hfill\textipa{/b\'O:l/}}\hspace{40pt}\visible<4->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<10->{show\hfill\textipa{/S\'oU/}}\hspace{40pt}\visible<5->{\textcolor{Maroon}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<11->{tall\hfill\textipa{/t\'O:l/}}\hspace{40pt}\visible<6->{\textcolor{NavyBlue}{\bfseries T}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\hfill{\tiny 0109}\,{\scriptsize \myaudio{./audio/vowel_long_o_03.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\hypertarget{today}{}
+
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Huge\bfseries \textipa{/oU/}}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{二重母音 \textipa{/oU/}}
+
+ {\Large 長母音} {\Huge \textipa{/oU/}}
+
+
+\normalsize
+ポイント
+
+\begin{itemize}\setbeamertemplate{items}[circle]
+ \item \<「オ」からなめらかに「ウ」に移行
+ \item \<「オー」じゃない
+\end{itemize}
+
+\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/oU/}}
+
+\LARGE
+\hfill{\tiny 0142}\,{\scriptsize \myaudio{./audio/vowel_ou_01.mp3}}
+
+\vspace{-25pt}
+
+\begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
+ \item b\textcolor{NavyBlue}{\bfseries oa}t%
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{b\'oU}t/}}\hspace{150pt}\mbox{}
+ \item c\textcolor{NavyBlue}{\bfseries oa}t%
+\hfill\makebox[80pt][l]{\textipa{/k\textcolor{BurntOrange}{\'oU}t/}}\hspace{150pt}\mbox{}
+ \item r\textcolor{NavyBlue}{\bfseries oa}d%
+\hfill\makebox[80pt][l]{\textipa{/r\textcolor{BurntOrange}{\'oU}d/}}\hspace{150pt}\mbox{}
+ \item kn\textcolor{NavyBlue}{\bfseries ow}%
+\hfill\makebox[80pt][l]{\textipa{/n\textcolor{BurntOrange}{\'oU}/}}\hspace{150pt}\mbox{}
+\item sh\textcolor{NavyBlue}{\bfseries ow}%
+\hfill\makebox[80pt][l]{\textipa{/S\textcolor{BurntOrange}{\'oU}/}}\hspace{150pt}\mbox{}
+ \item g\textcolor{NavyBlue}{\bfseries o}%
+\hfill\makebox[80pt][l]{\textipa{/g\textcolor{BurntOrange}{\'oU}/}}\hspace{150pt}\mbox{} 
+ \item h\textcolor{NavyBlue}{\bfseries o}me%
+\hfill\makebox[80pt][l]{\textipa{/h\textcolor{BurntOrange}{\'oU}m/}}\hspace{150pt}\mbox{}
+ \item h\textcolor{NavyBlue}{\bfseries o}pe%
+\hfill\makebox[80pt][l]{\textipa{/h\textcolor{BurntOrange}{\'oU}p/}}\hspace{150pt}\mbox{}
+\item \textcolor{NavyBlue}{\bfseries o}pen%
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'oU}pn/}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 1}
+
+ 発音記号\textipa{/oU/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
+
+\LARGE
+\begin{enumerate}
+ \item \mbox{}\visible<7->{road\hfill\textipa{/r\'oUd/}}\hspace{40pt}\visible<2->{\textcolor{Maroon}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\onslide<8->{because\hfill\textipa{/bIk\'O:z/}}\hspace{40pt}\visible<3->{\textcolor{NavyBlue}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<9->{ball\hfill\textipa{/b\'O:l/}}\hspace{40pt}\visible<4->{\textcolor{NavyBlue}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<10->{show\hfill\textipa{/S\'oU/}}\hspace{40pt}\visible<5->{\textcolor{Maroon}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<11->{tall\hfill\textipa{/t\'O:l/}}\hspace{40pt}\visible<6->{\textcolor{NavyBlue}{\bfseries F}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\hfill{\tiny 0109}\,{\scriptsize \myaudio{./audio/vowel_ou_02.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 2}
+
+ 発音記号\textipa{/oU/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
+
+\LARGE
+\begin{enumerate}
+ \item \mbox{}\onslide<7->{fall\hfill\textipa{/f\'O:l/}}\hspace{40pt}\visible<2->{\textcolor{NavyBlue}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<8->{autumn\hfill\textipa{/\'O:t@m/}}\hspace{40pt}\visible<3->{\textcolor{NavyBlue}{\bfseries F}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<9->{boat\hfill\textipa{/b\'oUt/}}\hspace{40pt}\visible<4->{\textcolor{Maroon}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<10->{coat\hfill\textipa{/k\'oUt/}}\hspace{40pt}\visible<5->{\textcolor{Maroon}{\bfseries T}}\hspace{150pt}\mbox{}
+ \item \mbox{}\visible<11->{talk\hfill\textipa{/t\'O:k/}}\hspace{40pt}\visible<6->{\textcolor{NavyBlue}{\bfseries F}}\hspace{150pt}\mbox{}
+\end{enumerate}
+\hfill{\tiny 0108}\,{\scriptsize \myaudio{./audio/vowel_o_03.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz \textipa{/O:/} \textipa{/oU/}}\large
+
+boat（ボート）またはbought（buyの過去形）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{bought}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{boat}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{bought}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{boat}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{boat}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{bought}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{ll@{　　}l}
+     \myAnch{a1}{white}{\textbullet}& bought &\textipa{/b\'O:t/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& boat &\textipa{/b\'oUt/}\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0141}\,{\scriptsize \myaudio{./audio/vowel_full_fool_01.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 6}\large
+coat（コート）またはcaught（catchの過去形）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{caught}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{coat}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{coat}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{caught}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{coat}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{caught}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& coat& \textipa{/k\'oUt/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& caught& \textipa{/k\'O:t/}  \\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge, NavyBlue] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a1.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a2.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0117}\,{\scriptsize \myaudio{./audio/vowel_coat_caught_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{図解}
 \centering
