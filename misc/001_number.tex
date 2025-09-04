@@ -261,7 +261,7 @@
 \hfill\visible<11->{\scriptsize 20から90までは語尾がty}\\
 \hfill\visible<12->{40は*fourtyじゃなく\textbf{forty}}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
  つぎの語があらわす数を数字で書きましょう\hspace{20pt}例： one $\rightarrow$ 1
@@ -293,8 +293,20 @@
  \item 100\,(2語で)\hfill\visible<10>{\makebox[20pt][l]{one hundred}}\hspace{250pt}\mbox{}
 \end{enumerate}
 \end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{more than 100}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{200はなんていうの？}
+\Huge\centering
+
+\begin{tabular}{lll}
+ \visible<2->{100}& \visible<3->{$\longrightarrow$\,\,\,\,one hundred} & \\
+ \visible<4->{200}& \visible<5->{$\longrightarrow$\,\,\,\,two hundred\textcolor{Maroon}{s}} & \visible<6->{{\normalsize まちがい}}\\
+&\visible<7->{$\longrightarrow$\,\,\,\,two hundred}&\visible<7->{{\normalsize 正解}}
+\end{tabular}
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{more than 100}
  \small
@@ -478,16 +490,16 @@
 \hfill{}\tikzmark{million}\visible<3->{million}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<4->{\draw[<-] ([xshift=0pt, yshift=-5pt]pic cs:comma_thousand) to[out=-50, in=180] ([xshift=-2pt, yshift=2pt]pic cs:thousand);}
- \visible<5->{\draw[<-] ([xshift=0pt, yshift=-5pt] pic cs:comma_million) to[out=-60,in=180] ([xshift=-2pt, yshift=4pt] pic cs:million);}
+ \visible<2->{\draw[<-] ([xshift=0pt, yshift=-5pt]pic cs:comma_thousand) to[out=-50, in=180] ([xshift=-2pt, yshift=2pt]pic cs:thousand);}
+ \visible<3->{\draw[<-] ([xshift=0pt, yshift=-5pt] pic cs:comma_million) to[out=-60,in=180] ([xshift=-2pt, yshift=4pt] pic cs:million);}
 \end{tikzpicture}
 
 
-\hfill\visible<6->{20 million, 250 thousand, 717}
+\hfill\visible<4->{20 million, 250 thousand, 717}
 
 \vfill
 
-\hfill{}\visible<7->{twenty million, two hundred fifty thousand, seven hundred  seventeen}
+\hfill{}\visible<5->{twenty million, two hundred fifty thousand, seven hundred  seventeen}
 
 {\tiny 0102}\,{\scriptsize \myaudio{./audio/001_number_06a.mp3}}
 \end{frame}
@@ -571,7 +583,7 @@ How many digits\footnotemark{} are there in pi? It has many! 3.141592\ldots\,\, 
 
 3月14日はアメリカで「円周率の日」と呼ばれています。なぜでしょうか？数字で3月14日は3/14と書き、円周率（$\pi$）は3.14で始まるからです。円周率は円周の長さを求めるときに使います。
 
-3月14日にはパイを食べる人もいます。なぜでしょうか？食べ物の「パイ」は円周率の「パイ」と発音が似ているからです。学校によっては、生徒たちが円や円周率について学び、甘いパイを食べることもあります。楽しい数学の日です。
+3月14日にはパイを食べる人もいます。なぜでしょうか？食べ物の「パイ」は円周率の「パイ」と発音が似ているからです。学校によっては、生徒たちが円や円周率について学び、甘いパイを食べることもあります。数学を楽しむ楽しい日です。
 
 円周率には何桁の数字があるでしょうか？たくさんの桁があります！$3.141592 \ldots$と、えんえんと続きます！
 \end{frame}
