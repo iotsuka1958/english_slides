@@ -4,8 +4,8 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./orientation/orientation_another.tex,2025-04-24,2025-04-15,2025-04-15,,2,1,1,,done,done,done,,999,999,999,
 ./1st_grader/999quiz_full_vesion.tex,2025-05-07,2024-06-18,2024-06-18,2024-06-18,26,26,26,26,done,done,done,done,999,999,999,999
 ./1st_grader/099_pronunciation.tex,2025-06-19,2024-09-03,2024-07-18,2024-07-18,4,3,3,3,done,done,done,done,999,999,999,999
-./pronunciation/pronunciation_consonant.tex,2025-06-26,2024-09-18,2024-09-18,2024-09-18,17,1,1,1,,done,done,done,fv,999,999,999
-./pronunciation/pronunciation_vowel.tex,,2025-04-16,2025-04-16,,,54,54,,,,,,,ウの類,ウの類,
+./pronunciation/pronunciation_consonant.tex,2025-06-26,2024-09-18,2024-09-18,2024-09-18,18,1,1,1,,done,done,done,fv,999,999,999
+./pronunciation/pronunciation_vowel.tex,,2025-04-16,2025-04-16,,,55,55,,,,,,,エの類,エの類,
 ./pronunciation/pronunciation_japanese.tex,,2025-01-07,2025-01-07,2025-01-07,,4,4,4,,done,done,done,,999,999,999
 ./1st_grader/001_alphabet.tex,2025-04-30,2024-06-14,,,2,2,,,done,done,,,999,999,,
 ./1st_grader/002_sv.tex,2025-05-07,2024-06-18,2024-06-13,2024-06-13,4,4,2,2,done,done,done,done,999,999,999,999
@@ -45,7 +45,7 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./2nd_grader/011_be_going_to.tex,,2025-06-18,2024-12-12,2024-12-12,,8,5,4,,done,done,done,,999,slide62,slide62
 ./2nd_grader/012_will.tex,,2025-07-02,2024-12-19,2024-12-19,,7,5,5,,done,done,done,,999,999,999
 ./2nd_grader/013_must.tex,,2025-07-11,2025-01-30,,,4,2,,,done,done,,,999,999,
-./2nd_grader/014_have_to.tex,,2025-09-02,2025-01-31,,,3,7,,,,done,,,slide66,999,
+./2nd_grader/014_have_to.tex,,2025-09-02,2025-01-31,,,4,7,,,,done,,,slide79,999,
 ./2nd_grader/020_part_of_speech.tex,,2025-02-26,2025-02-13,,,4,4,,,done,done,,,999,999,
 ./2nd_grader/021_when.tex,,,2025-02-20,,,,4,,,,done,,,,999,
 ./2nd_grader/022_if.tex,,,2025-02-27,,,,2,,,,done,,,,999,
@@ -80,7 +80,7 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./3rd_grader/055_indirect_question.tex,,,,,,,,,,,,,,,,
 ./3rd_grader/061_want_to_etc.tex,,,,,,,,,,,,,,,,
 ./3rd_grader/062_it_for_to.tex,,,,,,,,,,,,,,,,
-./misc/001_number.tex,2025-07-18,,2025-07-11,,3,,7,,,,,,slide104,,slide155,
+./misc/001_number.tex,2025-07-18,,2025-07-11,,4,,8,,,,,,slide132,,slide160,
 ./misc/002_day_month_season.tex,,,,,,,,,,,,,,,,
 ./misc/003_weather.tex,,,,,,,,,,,,,,,,
 ./misc/004_direction.texx,,,,,,,,,,,,,,,,
