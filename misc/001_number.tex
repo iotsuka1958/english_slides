@@ -372,7 +372,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{一覧表}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain,shrink=5]{一覧表}
+\begin{frame}[plain,shrink=5,label=ichiran]{一覧表}
 \small
 \begin{tblr}{
   colspec = {rl}, 
@@ -476,7 +476,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{大きな数}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain,t]{大きい数の表現}
+\begin{frame}[plain,t,label=largenumber]{大きい数の表現}
  \Large
 
 20,\tikzmark{comma_million}250,\tikzmark{comma_thousand}717
@@ -506,7 +506,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{小数}
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{小数}
+\begin{frame}[plain,label=decimal]{小数}
  \Huge
 
 \[
@@ -587,4 +587,9 @@ How many digits\footnotemark{} are there in pi? It has many! 3.141592\ldots\,\, 
 
 円周率には何桁の数字があるでしょうか？たくさんの桁があります！$3.141592 \ldots$と、えんえんと続きます！
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
+\againframe<4>[plain]{ichiran}
+\againframe<5>[plain]{largenumber}
+\againframe<3>[plain]{decimal}
 \end{document}

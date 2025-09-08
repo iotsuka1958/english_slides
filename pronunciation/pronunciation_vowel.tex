@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide}
 \usepackage{vowel}
 \usepackage{lua-ul}
@@ -1528,8 +1530,6 @@ seat（座席）またはsit（座る）を発音していきます。どちら�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{「ウ」の類の母音}
-\hypertarget{today}{}
-
 \Large
 
 \begin{description}
@@ -1884,7 +1884,6 @@ full（いっぱいの）またはfool（愚か者）を発音していきます
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=sofar_u]{これまで学習した英語の母音}
-\hypertarget{ex}{}
 
 \begin{description}
  \item[アの類：]<2-> {\Large \textipa{/\ae /} \textipa{/A/} \textipa{/\textturnv /} \textipa{/@/} }
@@ -1923,6 +1922,8 @@ full（いっぱいの）またはfool（愚か者）を発音していきます
 
 %%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{「エ」の類の母音}
+\hypertarget{today}{}
+
 \Large
 
 \begin{description}
@@ -1995,6 +1996,7 @@ xshift=80pt, scale=.3, yshift=50pt]
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう \textipa{/e/}}
+\hypertarget{ex}{}
 
 \LARGE
 \hfill{\tiny 0134}\,{\scriptsize \myaudio{./audio/vowel_e_01.mp3}}
@@ -2071,22 +2073,49 @@ xshift=80pt, scale=.3, yshift=50pt]
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{二重母音 \textipa{/e/}}
+\begin{frame}[plain,t]{二重母音 \textipa{/eI/}}
 
- {\Large 短母音} {\Huge \textipa{/eI/}}
+ {\Large 二重母音} {\Huge \textipa{/eI/}}
 
+{\LARGE
+\hspace{100pt}c\underLine{a}ke\hspace{10pt}
+m\underLine{a}ke\hspace{10pt}
+f\underLine{a}ce\hspace{10pt}
+g\underLine{a}me%
+}
+\vspace{20pt}
 
 \normalsize
 ポイント
 
 \begin{itemize}\setbeamertemplate{items}[circle]
 % \item \<「オ」の口で「ウ」
- \item 日本語の「エー」ではない
+% \item 日本語の「エー」ではない
  \item 「エ」からなめらかに「イ」に移行
 
 \end{itemize}
 
+\vspace{55pt}
+
+\hfill{\tiny 0143}\,{\scriptsize \myaudio{./audio/vowel_ei_00.mp3}}
+
+
 \hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,70pt)
+\visible<1->{\begin{tikzpicture}
+\chicken[
+scale=1.4,
+speech={\scriptsize 二重母音 \textipa{eI/}},
+signpost=\scalebox{0.6}{
+\parbox{2.2cm}{\color{black}
+\centering 「エー」じゃない！「\\「エイ」！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2261,6 +2290,21 @@ xshift=80pt, scale=.3, yshift=50pt]
 \item str\textcolor{NavyBlue}{\bfseries aw}berry%
 \hfill\makebox[80pt][l]{\textipa{/str\textcolor{BurntOrange}{\'O:}beri/}}\hspace{150pt}\mbox{}
 \end{enumerate}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,100pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+scale=1.4,
+speech={\scriptsize 長母音 \textipa{O:/}},
+signpost=\scalebox{0.6}{
+\parbox{2.2cm}{\color{black}
+\centering }},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -2315,7 +2359,7 @@ xshift=80pt, scale=.3, yshift=50pt]
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{二重母音 \textipa{/oU/}}
 
- {\Large 長母音} {\Huge \textipa{/oU/}}
+ {\Large 二重母音} {\Huge \textipa{/oU/}}
 
 
 \normalsize
@@ -2340,7 +2384,7 @@ xshift=80pt, scale=.3, yshift=50pt]
 
 \begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
  \item b\textcolor{NavyBlue}{\bfseries oa}t%
-\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{b\'oU}t/}}\hspace{150pt}\mbox{}
+\hfill\makebox[80pt][l]{\textipa{/b\textcolor{BurntOrange}{\'oU}t/}}\hspace{150pt}\mbox{}
  \item c\textcolor{NavyBlue}{\bfseries oa}t%
 \hfill\makebox[80pt][l]{\textipa{/k\textcolor{BurntOrange}{\'oU}t/}}\hspace{150pt}\mbox{}
  \item r\textcolor{NavyBlue}{\bfseries oa}d%
@@ -2358,6 +2402,21 @@ xshift=80pt, scale=.3, yshift=50pt]
 \item \textcolor{NavyBlue}{\bfseries o}pen%
 \hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'oU}pn/}}\hspace{150pt}\mbox{}
 \end{enumerate}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,100pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+scale=1.4,
+speech={\scriptsize 二重母音 \textipa{oU/}},
+signpost=\scalebox{0.6}{
+\parbox{2.2cm}{\color{black}
+\centering 「オー」じゃない！「\\「オゥ」！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
