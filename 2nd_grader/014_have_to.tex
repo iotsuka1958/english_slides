@@ -415,9 +415,9 @@ scale=1.1414]
 \hfill\tiny{0159}\,{\scriptsize \myaudio{./audio/014_have_to_09.mp3}}
 
 % この場合は (363pt, 80pt) の位置に 0.4\linewidth の幅のブロックができる．
-\begin{textblock*}{0.4\linewidth}(363pt,85pt)
+\begin{textblock*}{0.4\linewidth}(340pt,85pt)
     % TiKZを使った図形の描画
-    \visible<4->{\begin{tikzpicture}
+    \visible<7->{\begin{tikzpicture}
         \duck[laughing,bowtie,
 strawhat=brown!50!white,
 ribbon=black,
@@ -438,7 +438,8 @@ scale=1.1414]
  \begin{frame}[plain]{Does he have to〜 ? と聞かれたら}
  \Large
 
-\visible<2->{Does he have to get up early tomorrow?}
+\visible<2->{Does he have to get up early tomorrow?}%
+\hfill\visible<2->{{\scriptsize get up 起きる}}
 
 \vspace{30pt}
 
@@ -453,11 +454,27 @@ scale=1.1414]
 \hfill\visible<6->{{\small Noのときdoes notを縮めてNo, he \textcolor{Maroon}{\bfseries doesn't}.ともいいます}}%
 
 \hfill{\tiny 0202}\,{\scriptsize \myaudio{./audio/014_have_to_10.mp3}}
+
+\begin{textblock*}{0.4\linewidth}(340pt,85pt)
+    % TiKZを使った図形の描画
+    \visible<7->{\begin{tikzpicture}
+        \duck[laughing,bowtie,
+strawhat=brown!50!white,
+ribbon=black,
+think={\scriptsize
+ \begin{tabular}{c}
+ 三単現は\\does！
+ \end{tabular}
+},
+bubblecolour=white!50!pink,
+scale=1.1414]
+    \end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 例にならって、つぎの質問に対する答えを「はい」と「いいえ」の2通りつくりましょう%
-\hfill{\scriptsize \myaudio{./audio/014_have_to_11.mp3}}
+\hfill{\tiny 0330}\,{\scriptsize \myaudio{./audio/014_have_to_11.mp3}}
 
 \begin{tabular}{@{}r@{\,\,\,\,}l@{\,\,\,\,}c@{\,\,\,\,}l@{\,\,\,}l}
 \visible<1->{\scriptsize 例}& \visible<1->{Do you have to study every day?}& \visible<2->{$\rightarrow$}&\visible<3->{(1) Yes, I do.}&\visible<4->{(2) No, I don't.}\\[10pt]

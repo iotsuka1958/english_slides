@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 \UseTblrLibrary{counter}%%%%tabularrayとpauseが衝突することを回避する
@@ -332,7 +334,7 @@
 243& two hundred (and) forty-three\\
 358& three hundred (and) fifty-eight\\
 567& five hundred (and) sixty-seven\\
-777& seven hundered (and) seventy-seven\\
+777& seven hundred (and) seventy-seven\\
 999& nine hundred (and) ninety-nine\\
 \end{tblr}
 
@@ -373,8 +375,9 @@
 \section{一覧表}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,shrink=5,label=ichiran]{一覧表}
+
 \small
-\begin{tblr}{
+\visible<2->{\begin{tblr}{
   colspec = {rl}, 
  row{odd} = {bg=azure8},
  row{1} = { bg=azure3, fg=white},
@@ -394,9 +397,9 @@
   8 & eight \\
   9 & nine \\
   10 & ten \\
-\end{tblr}
-\pause
- \begin{tblr}{
+\end{tblr}}
+%\pause
+ \visible<3->{\begin{tblr}{
   colspec = {rl}, 
 %  column{1} = {fg=red},    % 第1列の文字を赤に
 %  column{2} = {fg=blue},   % 第7列の文字を青に
@@ -419,9 +422,9 @@
   18 & eighteen \\
   19 & nineteen \\
   20 & twenty \\
-\end{tblr}
-\pause
-\begin{tblr}{
+\end{tblr}}
+%\pause
+\visible<4->{\begin{tblr}{
   colspec = {rll}, 
 %  column{1} = {fg=red},    % 第1列の文字を赤に
 %  column{2} = {fg=blue},   % 第7列の文字を青に
@@ -445,9 +448,9 @@
   28 & twenty-eight \\
   29 & twenty-nine \\
   30 & thirty \\
-\end{tblr}
-\pause
-\begin{tblr}{
+\end{tblr}}
+%\pause
+\visible<5->{\begin{tblr}{
   colspec = {rll}, 
 %  column{1} = {fg=red},    % 第1列の文字を赤に
 %  column{2} = {fg=blue},   % 第7列の文字を青に
@@ -471,7 +474,9 @@
   1,000 & one thousand\\
   1,000,000 & one million\\
   1,000,000,000 & one billion\\
-\end{tblr}
+\end{tblr}}
+
+\hspace{110pt}\visible<3->{teen: $+ 10$}\hspace{55pt}\visible<4->{ty: $\times 10$}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{大きな数}
@@ -526,6 +531,8 @@
 
 \hfill{}\tikzmark{approx}\visible<2->{$\approx$は「ほぼ等しい」という記号}\hspace{7pt}\mbox{}
 
+
+
 \begin{tikzpicture}[remember picture,overlay]
  \visible<3->{\draw[<-,line width=.8pt] ([xshift=14pt, yshift=-5pt] pic cs:target_pi) to[out=-90,in=130] ([xshift=-4pt, yshift=6pt] pic cs:pi);}
  \visible<2->{\draw[<-] ([xshift=14pt, yshift=-5pt]pic cs:target_approx) to[out=-120, in=190] ([xshift=-3pt, yshift=3pt]pic cs:approx);}
@@ -533,6 +540,21 @@
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{2つのパイ}
+\Large
+\begin{description}
+ \item[円周率のパイ] {\Huge $\pi$\,\,($=$ pi)}
+ \item[食べ物のパイ] {\Huge pie}
+\end{description}
+
+\vspace{40pt}
+
+\hspace*{40pt}{発音はどちらも\textipa{/p\'aI/}}
+
+\begin{textblock*}{0.6\linewidth}(230pt,40pt)
+\includegraphics[width=.85\textwidth]{./image/pie.png}
+\end{textblock*}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 \scriptsize
@@ -589,7 +611,7 @@ How many digits\footnotemark{} are there in pi? It has many! 3.141592\ldots\,\, 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
-\againframe<4>[plain]{ichiran}
+\againframe<5>[plain]{ichiran}
 \againframe<5>[plain]{largenumber}
 \againframe<3>[plain]{decimal}
 \end{document}
