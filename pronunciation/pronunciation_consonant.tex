@@ -816,7 +816,7 @@
 \end{enumerate}
 
 
-\vspace*{20pt}
+\vspace*{15pt}
 
 \normalsize
 ポイント
@@ -824,9 +824,12 @@
 \begin{itemize}[<+->]\setbeamertemplate{items}[circle]
  \item 普通に口を閉じましょう
  \item 上の前歯が下唇の内側に\kenten{軽く}触れていることを確認
- \item 上唇をもちあげて上の前歯を出す
+ \item 上唇をもちあげて上の前歯を出す（歯の付け根が見えるくらい）
  \item 上の前歯と下唇の隙間から、空気を出します
+ \item \textipa{/f:::::::/} $\longrightarrow$ \textipa{/f::::v::::/}
 \end{itemize}
+
+\vspace{-10pt}
 
 \hfill{\tiny 0208}\,{\scriptsize \myaudio{./audio/consonant_f_v_01.mp3}}
 
@@ -834,11 +837,8 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう \textipa{/f/}}
-\hypertarget{ex}{}
-
 \Large
 {\small \textipa{/f/}の音を含む英単語}\hfill{\tiny 0514}\,{\scriptsize \myaudio{./audio/consonant_f_v_02.mp3}}
-
 
 \begin{enumerate}
 \item \textcolor{NavyBlue}{\bfseries f}ace
@@ -893,6 +893,7 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 1 \textipa{/f/}}
+
 \large
 発音記号\textipa{/f/}で示した音声が含まれていたらT、含まれていなければFと答えてください。余裕がある人はなんという単語か書き取ってみましょう
 
@@ -909,6 +910,7 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 2 \textipa{/v/}}
+\hypertarget{ex}{}
 \large
 発音記号\textipa{/v/}で示した音声が含まれていたらT、含まれていなければFと答えてください。余裕がある人はなんという単語か書き取ってみましょう。
 
@@ -924,6 +926,48 @@
 \hfill{\tiny 0147}\,{\scriptsize \myaudio{./audio/consonant_f_v_05.mp3}}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+
+free（自由な）またはthree（3）を発音していきます。どちらを発音したか判断しましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{three}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{free}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{free}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{three}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{free}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{three}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& free& \textipa{/fr\'\i :/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& three& \textipa{/Tr\'\i :/}  \\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge, NavyBlue] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a1.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a2.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 音声ファイルつくること}\,{\scriptsize \myaudio{./audio/consonant_free_three_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% /s/ /z/

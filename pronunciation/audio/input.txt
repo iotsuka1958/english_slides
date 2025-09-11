@@ -1,4 +1,9 @@
-cake
-make
-face
-game
+boat<break time="2s"/>boat
+coat<break time="2s"/>coat
+road<break time="2s"/>road
+know<break time="2s"/>know
+show<break time="2s"/>show
+go<break time="2s"/>go
+home<break time="2s"/>home
+hope<break time="2s"/>hope
+open<break time="2s"/>open

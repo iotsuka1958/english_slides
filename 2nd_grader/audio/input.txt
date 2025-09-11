@@ -1,2 +1,3 @@
-hot<break time ="2.5s"/>hotter<break time ="2.5s"/>hottest
-big<break time ="2.5s"/>bigger<break time ="2.5s"/>biggest
+You have to study today.<break time ="2.5s"/>You don’t have to study today.
+You have to do it alone.<break time ="2.5s"/>You don’t have to do it alone.
+You have to be perfect.<break time ="2.5s"/>You don’t have to be perfect.
