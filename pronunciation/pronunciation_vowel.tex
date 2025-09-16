@@ -1961,7 +1961,6 @@ xshift=80pt, scale=.3, yshift=50pt]
 \setbeamercolor{background canvas}{bg=black}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\hypertarget{today}{}
 
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -1974,7 +1973,6 @@ xshift=80pt, scale=.3, yshift=50pt]
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{短母音 \textipa{/e/}}
-\hypertarget{today}{}
 
  {\Large 短母音} {\Huge \textipa{/e/}}
 
@@ -2037,7 +2035,6 @@ xshift=80pt, scale=.3, yshift=50pt]
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 2}
-\hypertarget{ex}{}
 
  短母音\textipa{/e/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう（\textipa{/e/}と\textipa{/eI/}は異なる音ですよ）
 
@@ -2088,11 +2085,12 @@ g\underLine{a}me%
 \begin{itemize}\setbeamertemplate{items}[circle]
 % \item \<「オ」の口で「ウ」
 % \item 日本語の「エー」ではない
- \item 「エ」からなめらかに「イ」に移行
+ \item \<「エ」からなめらかに「イ」に移行
+ \item 前半が長め
 
 \end{itemize}
 
-\vspace{55pt}
+\vspace{50pt}
 
 \hfill{\tiny 0143}\,{\scriptsize \myaudio{./audio/vowel_ei_00.mp3}}
 
@@ -2104,7 +2102,7 @@ g\underLine{a}me%
 \visible<1->{\begin{tikzpicture}
 \chicken[
 scale=1.4,
-speech={\scriptsize 二重母音 \textipa{eI/}},
+speech={\scriptsize 二重母音 \textipa{/eI/}},
 signpost=\scalebox{0.6}{
 \parbox{2.2cm}{\color{black}
 \centering 「エー」じゃない！「\\「エーィ」！}},
@@ -2118,11 +2116,15 @@ signback=white!80!brown
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/eI/}}
+\hypertarget{ex}{}
 
 \LARGE
-\hfill{\tiny 04373}\,{\scriptsize \myaudio{./audio/vowel_ei_01.mp3}}
 
-\vspace{-25pt}
+二重母音 \textipa{/eI/}
+
+\hfill{\tiny 0303}\,{\scriptsize \myaudio{./audio/vowel_ei_01.mp3}}
+
+%\vspace{-25pt}
 
 \begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
  \item c\textcolor{NavyBlue}{\bfseries a}ke%
@@ -2135,6 +2137,55 @@ signback=white!80!brown
 \hfill\makebox[80pt][l]{\textipa{/p\textcolor{BurntOrange}{\'eI}dZ/}}\hspace{150pt}\mbox{}
 \item f\textcolor{NavyBlue}{\bfseries a}ce%
 \hfill\makebox[80pt][l]{\textipa{/f\textcolor{BurntOrange}{\'eI}s/}}\hspace{150pt}\mbox{}
+% \item r\textcolor{NavyBlue}{\bfseries ai}n%
+%\hfill\makebox[80pt][l]{\textipa{/r\textcolor{BurntOrange}{\'eI}n/}}\hspace{150pt}\mbox{}
+% \item p\textcolor{NavyBlue}{\bfseries ai}n%
+%\hfill\makebox[80pt][l]{\textipa{/p\textcolor{BurntOrange}{\'eI}n/}}\hspace{150pt}\mbox{} 
+% \item d\textcolor{NavyBlue}{\bfseries ay}%
+%\hfill\makebox[80pt][l]{\textipa{/d\textcolor{BurntOrange}{\'eI}/}}\hspace{150pt}\mbox{}
+% \item th\textcolor{NavyBlue}{\bfseries ey}%
+%\hfill\makebox[80pt][l]{\textipa{/D\textcolor{BurntOrange}{\'eI}/}}\hspace{150pt}\mbox{}
+\end{enumerate}
+
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,100pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+scale=1.4,
+speech={\scriptsize 二重母音 \textipa{/eI/}},
+signpost=\scalebox{0.6}{
+\parbox{2.2cm}{\color{black}
+\centering 「エー」じゃない！「\\「エーィ」！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/eI/}}
+
+\LARGE
+
+二重母音 \textipa{/eI/}
+
+\hfill{\tiny 0230}\,{\scriptsize \myaudio{./audio/vowel_ei_01b.mp3}}
+
+\vspace{-25pt}
+
+\begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
+% \item c\textcolor{NavyBlue}{\bfseries a}ke%
+%\hfill\makebox[80pt][l]{\textipa{/k\textcolor{BurntOrange}{\'eI}k/}}\hspace{150pt}\mbox{}
+% \item m\textcolor{NavyBlue}{\bfseries a}ke%
+%\hfill\makebox[80pt][l]{\textipa{/m\textcolor{BurntOrange}{\'eI}k/}}\hspace{150pt}\mbox{}
+% \item g\textcolor{NavyBlue}{\bfseries a}me%
+%\hfill\makebox[80pt][l]{\textipa{/g\textcolor{BurntOrange}{\'eI}m/}}\hspace{150pt}\mbox{}
+% \item p\textcolor{NavyBlue}{\bfseries a}ge%
+%\hfill\makebox[80pt][l]{\textipa{/p\textcolor{BurntOrange}{\'eI}dZ/}}\hspace{150pt}\mbox{}
+%\item f\textcolor{NavyBlue}{\bfseries a}ce%
+%\hfill\makebox[80pt][l]{\textipa{/f\textcolor{BurntOrange}{\'eI}s/}}\hspace{150pt}\mbox{}
  \item r\textcolor{NavyBlue}{\bfseries ai}n%
 \hfill\makebox[80pt][l]{\textipa{/r\textcolor{BurntOrange}{\'eI}n/}}\hspace{150pt}\mbox{}
  \item p\textcolor{NavyBlue}{\bfseries ai}n%
@@ -2251,8 +2302,7 @@ xshift=80pt, scale=.3, yshift=50pt]
 ポイント
 
 \begin{itemize}\setbeamertemplate{items}[circle]
-% \item \<「オ」の口で「ウ」
- \item 
+ \item 広い口で「オー」
 \end{itemize}
 
 \hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
@@ -2263,9 +2313,11 @@ xshift=80pt, scale=.3, yshift=50pt]
 \begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/O:/}}
 
 \LARGE
-\hfill{\tiny 0513}\,{\scriptsize \myaudio{./audio/vowel_long_o_01.mp3}}
+長母音 \textipa{/O:/}
 
-\vspace{-25pt}
+\hfill{\tiny 0230}\,{\scriptsize \myaudio{./audio/vowel_long_o_01.mp3}}
+
+%\vspace{-25pt}
 
 \begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
  \item \textcolor{NavyBlue}{\bfseries a}ll%
@@ -2276,6 +2328,54 @@ xshift=80pt, scale=.3, yshift=50pt]
 \hfill\makebox[80pt][l]{\textipa{/f\textcolor{BurntOrange}{\'O:}l/}}\hspace{150pt}\mbox{}
  \item t\textcolor{NavyBlue}{\bfseries a}ll%
 \hfill\makebox[80pt][l]{\textipa{/t\textcolor{BurntOrange}{\'O:}l/}}\hspace{150pt}\mbox{}
+%\item t\textcolor{NavyBlue}{\bfseries a}lk%
+%\hfill\makebox[80pt][l]{\textipa{/t\textcolor{BurntOrange}{\'O:}k/}}\hspace{150pt}\mbox{}
+% \item s\textcolor{NavyBlue}{\bfseries a}w%
+%\hfill\makebox[80pt][l]{\textipa{/s\textcolor{BurntOrange}{\'O:}/}}\hspace{150pt}\mbox{} 
+% \item bec\textcolor{NavyBlue}{\bfseries au}se%
+%\hfill\makebox[80pt][l]{\textipa{/bIk\textcolor{BurntOrange}{\'O:}z/}}\hspace{150pt}\mbox{}
+% \item \textcolor{NavyBlue}{\bfseries au}tumn%
+%\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'O:}t@m/}}\hspace{150pt}\mbox{}
+%\item str\textcolor{NavyBlue}{\bfseries aw}berry%
+%\hfill\makebox[80pt][l]{\textipa{/str\textcolor{BurntOrange}{\'O:}beri/}}\hspace{150pt}\mbox{}
+\end{enumerate}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,100pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+scale=1.4,
+speech={\scriptsize 長母音 \textipa{/O:/}},
+signpost=\scalebox{0.6}{
+\parbox{2.2cm}{\color{black}
+\centering 広い口で「オー」}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/O:/}}
+
+\LARGE
+
+長母音 \textipa{/O:/}
+
+\hfill{\tiny 0307}\,{\scriptsize \myaudio{./audio/vowel_long_o_01b.mp3}}
+
+%\vspace{-25pt}
+
+\begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
+% \item \textcolor{NavyBlue}{\bfseries a}ll%
+%\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'O:}l/}}\hspace{150pt}\mbox{}
+% \item b\textcolor{NavyBlue}{\bfseries a}ll%
+%\hfill\makebox[80pt][l]{\textipa{/b\textcolor{BurntOrange}{\'O:}l/}}\hspace{150pt}\mbox{}
+% \item f\textcolor{NavyBlue}{\bfseries a}ll%
+%\hfill\makebox[80pt][l]{\textipa{/f\textcolor{BurntOrange}{\'O:}l/}}\hspace{150pt}\mbox{}
+% \item t\textcolor{NavyBlue}{\bfseries a}ll%
+%\hfill\makebox[80pt][l]{\textipa{/t\textcolor{BurntOrange}{\'O:}l/}}\hspace{150pt}\mbox{}
 \item t\textcolor{NavyBlue}{\bfseries a}lk%
 \hfill\makebox[80pt][l]{\textipa{/t\textcolor{BurntOrange}{\'O:}k/}}\hspace{150pt}\mbox{}
  \item s\textcolor{NavyBlue}{\bfseries a}w%
@@ -2293,10 +2393,10 @@ xshift=80pt, scale=.3, yshift=50pt]
 \visible<1->{\begin{tikzpicture}
 \pig[
 scale=1.4,
-speech={\scriptsize 長母音 \textipa{O:/}},
+speech={\scriptsize 長母音 \textipa{/O:/}},
 signpost=\scalebox{0.6}{
 \parbox{2.2cm}{\color{black}
-\centering }},
+\centering 広い口で「オー」}},
 signcolour= brown!70!gray,
 signback=white!80!brown
 ]
@@ -2375,9 +2475,11 @@ signback=white!80!brown
 \begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/oU/}}
 
 \LARGE
-\hfill{\tiny 0506}\,{\scriptsize \myaudio{./audio/vowel_ou_01.mp3}}
+\hfill{\tiny 0230}\,{\scriptsize \myaudio{./audio/vowel_ou_01.mp3}}
 
-\vspace{-25pt}
+二重母音 \textipa{/oU/}
+
+%\vspace{-25pt}
 
 \begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
  \item b\textcolor{NavyBlue}{\bfseries oa}t%
@@ -2388,6 +2490,54 @@ signback=white!80!brown
 \hfill\makebox[80pt][l]{\textipa{/r\textcolor{BurntOrange}{\'oU}d/}}\hspace{150pt}\mbox{}
  \item kn\textcolor{NavyBlue}{\bfseries ow}%
 \hfill\makebox[80pt][l]{\textipa{/n\textcolor{BurntOrange}{\'oU}/}}\hspace{150pt}\mbox{}
+%\item sh\textcolor{NavyBlue}{\bfseries ow}%
+%\hfill\makebox[80pt][l]{\textipa{/S\textcolor{BurntOrange}{\'oU}/}}\hspace{150pt}\mbox{}
+% \item g\textcolor{NavyBlue}{\bfseries o}%
+%\hfill\makebox[80pt][l]{\textipa{/g\textcolor{BurntOrange}{\'oU}/}}\hspace{150pt}\mbox{} 
+% \item h\textcolor{NavyBlue}{\bfseries o}me%
+%\hfill\makebox[80pt][l]{\textipa{/h\textcolor{BurntOrange}{\'oU}m/}}\hspace{150pt}\mbox{}
+% \item h\textcolor{NavyBlue}{\bfseries o}pe%
+%\hfill\makebox[80pt][l]{\textipa{/h\textcolor{BurntOrange}{\'oU}p/}}\hspace{150pt}\mbox{}
+%\item \textcolor{NavyBlue}{\bfseries o}pen%
+%\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'oU}pn/}}\hspace{150pt}\mbox{}
+\end{enumerate}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,100pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+scale=1.4,
+speech={\scriptsize 二重母音 \textipa{/oU/}},
+signpost=\scalebox{0.6}{
+\parbox{2.2cm}{\color{black}
+\centering 「オー」じゃない！\\「オゥ」！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/oU/}}
+
+\LARGE
+
+二重母音 \textipa{/oU/}
+
+\hfill{\tiny 0302}\,{\scriptsize \myaudio{./audio/vowel_ou_01b.mp3}}
+
+%\vspace{-25pt}
+
+\begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
+% \item b\textcolor{NavyBlue}{\bfseries oa}t%
+%\hfill\makebox[80pt][l]{\textipa{/b\textcolor{BurntOrange}{\'oU}t/}}\hspace{150pt}\mbox{}
+% \item c\textcolor{NavyBlue}{\bfseries oa}t%
+%\hfill\makebox[80pt][l]{\textipa{/k\textcolor{BurntOrange}{\'oU}t/}}\hspace{150pt}\mbox{}
+% \item r\textcolor{NavyBlue}{\bfseries oa}d%
+%\hfill\makebox[80pt][l]{\textipa{/r\textcolor{BurntOrange}{\'oU}d/}}\hspace{150pt}\mbox{}
+% \item kn\textcolor{NavyBlue}{\bfseries ow}%
+%\hfill\makebox[80pt][l]{\textipa{/n\textcolor{BurntOrange}{\'oU}/}}\hspace{150pt}\mbox{}
 \item sh\textcolor{NavyBlue}{\bfseries ow}%
 \hfill\makebox[80pt][l]{\textipa{/S\textcolor{BurntOrange}{\'oU}/}}\hspace{150pt}\mbox{}
  \item g\textcolor{NavyBlue}{\bfseries o}%
@@ -2405,7 +2555,7 @@ signback=white!80!brown
 \visible<1->{\begin{tikzpicture}
 \pig[
 scale=1.4,
-speech={\scriptsize 二重母音 \textipa{oU/}},
+speech={\scriptsize 二重母音 \textipa{/oU/}},
 signpost=\scalebox{0.6}{
 \parbox{2.2cm}{\color{black}
 \centering 「オー」じゃない！「\\「オゥ」！}},
@@ -2415,7 +2565,6 @@ signback=white!80!brown
 \end{tikzpicture}}
 \end{textblock*}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 1}
 
@@ -2449,14 +2598,10 @@ signback=white!80!brown
 \hfill{\tiny 0108}\,{\scriptsize \myaudio{./audio/vowel_o_03.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz \textipa{/O:/} \textipa{/oU/}}\large
 
-boat（ボート）またはbought（buyの過去形）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+bought（buyの過去形）またはboat（ボート）を発音していきます。どちらを発音したか判断してください
 
 \bigskip
 
@@ -2495,8 +2640,8 @@ boat（ボート）またはbought（buyの過去形）を発音していきま�
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Quiz 6}\large
-coat（コート）またはcaught（catchの過去形）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+\begin{frame}[plain]{Quiz \textipa{/oU/} \textipa{/O:/}}\large
+coat（コート）またはcaught（catchの過去形）を発音していきます。どちらを発音したか判断してください
 
 \bigskip
 
@@ -2535,6 +2680,410 @@ coat（コート）またはcaught（catchの過去形）を発音していき�
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,label=sofar_u]{これまで学習した英語の母音}
+
+\begin{description}
+ \item[アの類：]<2-> {\Large \textipa{/\ae /} \textipa{/A/} \textipa{/\textturnv /} \textipa{/@/} }
+ \item[イの類：]<3-> {\Large \alt<7->{\tikz[baseline=(x.base)]{\node(x)[rectangle, fill={red!50}, rounded corners]{\textipa{/i:/}};}}{\textipa{/i:/}} \textipa{/I/}} 
+ \item[ウの類：]<4-> {\Large \alt<7->{\tikz[baseline=(x.base)]{\node(x)[rectangle, fill={red!50}, rounded corners]{\textipa{/u:/}};}}{\textipa{/u:/}} \textipa{/U/}}
+ \item[エの類：]<5-> {\Large \textipa{/e/} \alt<8->{\tikz[baseline=(x.base)]{\node(x)[rectangle, fill={yellow!70}, rounded corners]{\textipa{/eI/}};}}{\textipa{/eI/}}} 
+ \item[オの類：]<6-> {\Large \alt<7->{\tikz[baseline=(x.base)]{\node(x)[rectangle, fill={red!50}, rounded corners]{\textipa{/O:/}};}}{\textipa{/O:/}} \alt<8->{\tikz[baseline=(x.base)]{\node(x)[rectangle, fill={yellow!70}, rounded corners]{\textipa{/oU/}};}}{\textipa{/oU/}}}
+\end{description}
+
+\hfill\visible<9->{短母音}\hspace{20pt}%
+\visible<7->{\tikz[baseline=(x.base)]{\node(x)[rectangle, fill={red!50}, rounded corners]{長母音};}}\hspace{20pt}%
+\visible<8->{\tikz[baseline=(x.base)]{\node(x)[rectangle, fill={yellow!70}, rounded corners]{二重母音};}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\hypertarget{today}{}
+
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Huge\bfseries \textipa{/aI/}}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{二重母音 \textipa{/aI/}}
+
+ {\Large 二重母音} {\Huge \textipa{/aI/}}
+
+
+\normalsize
+ポイント
+
+\begin{itemize}\setbeamertemplate{items}[circle]
+ \item 日本語の「アイ」でいい
+ \item 前半を長めに
+\end{itemize}
+
+\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/aI/}}
+
+\LARGE
+
+二重母音 \textipa{/aI/}
+
+\hfill{\tiny 0302}\,{\scriptsize \myaudio{./audio/vowel_ai_01.mp3}}
+
+%\vspace{-25pt}
+
+\begin{enumerate}[<+->]%\setlength{\itemsep}{-2pt}
+ \item \textcolor{NavyBlue}{\bfseries I}%
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'aI}/}}\hspace{150pt}\mbox{}
+ \item f\textcolor{NavyBlue}{\bfseries i}ne%
+\hfill\makebox[80pt][l]{\textipa{/f\textcolor{BurntOrange}{\'aI}n/}}\hspace{150pt}\mbox{} \item n\textcolor{NavyBlue}{\bfseries i}ce%
+\hfill\makebox[80pt][l]{\textipa{/n\textcolor{BurntOrange}{\'aI}s/}}\hspace{150pt}\mbox{}
+ \item n\textcolor{NavyBlue}{\bfseries i}ght%
+\hfill\makebox[80pt][l]{\textipa{/n\textcolor{BurntOrange}{\'aI}t/}}\hspace{150pt}\mbox{}
+\item \textcolor{NavyBlue}{\bfseries i}ce%
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'aI}s/}}\hspace{150pt}\mbox{}
+% \item cr\textcolor{NavyBlue}{\bfseries y}%
+%\hfill\makebox[80pt][l]{\textipa{/kr\textcolor{BurntOrange}{\'aI}/}}\hspace{150pt}\mbox{}
+% \item fl\textcolor{NavyBlue}{\bfseries y}%
+%\hfill\makebox[80pt][l]{\textipa{/fl\textcolor{BurntOrange}{\'aI}/}}\hspace{150pt}\mbox{}
+% \item b\textcolor{NavyBlue}{\bfseries uy}%
+%\hfill\makebox[80pt][l]{\textipa{/b\textcolor{BurntOrange}{\'aI}/}}\hspace{150pt}\mbox{} 
+% \item \textcolor{NavyBlue}{\bfseries eye}%
+%\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'aI}/}}\hspace{150pt}\mbox{} 
+\end{enumerate}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,100pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+scale=1.4,
+speech={\scriptsize 二重母音 \textipa{/aI/}},
+signpost=\scalebox{0.6}{
+\parbox{2.3cm}{\color{black}
+	      \centering 前半を長めに、なめらかにイに移行}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/aI/}}
+
+\LARGE
+
+二重母音 \textipa{/aI/}
+
+\hfill{\tiny 0231}\,{\scriptsize \myaudio{./audio/vowel_ai_02.mp3}}
+
+%\vspace{-25pt}
+
+\begin{enumerate}[<+->]%\setlength{\itemsep}{-2pt}
+% \item \textcolor{NavyBlue}{\bfseries I}%
+%\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'aI}/}}\hspace{150pt}\mbox{}
+% \item f\textcolor{NavyBlue}{\bfseries i}ne%
+%\hfill\makebox[80pt][l]{\textipa{/f\textcolor{BurntOrange}{\'aI}n/}}\hspace{150pt}\mbox{} \item n\textcolor{NavyBlue}{\bfseries i}ce%
+%\hfill\makebox[80pt][l]{\textipa{/n\textcolor{BurntOrange}{\'aI}s/}}\hspace{150pt}\mbox{}
+% \item n\textcolor{NavyBlue}{\bfseries i}ght%
+%\hfill\makebox[80pt][l]{\textipa{/n\textcolor{BurntOrange}{\'aI}t/}}\hspace{150pt}\mbox{}
+%\item \textcolor{NavyBlue}{\bfseries i}ce%
+%\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'aI}s/}}\hspace{150pt}\mbox{}
+ \item cr\textcolor{NavyBlue}{\bfseries y}%
+\hfill\makebox[80pt][l]{\textipa{/kr\textcolor{BurntOrange}{\'aI}/}}\hspace{150pt}\mbox{}
+ \item fl\textcolor{NavyBlue}{\bfseries y}%
+\hfill\makebox[80pt][l]{\textipa{/fl\textcolor{BurntOrange}{\'aI}/}}\hspace{150pt}\mbox{}
+ \item b\textcolor{NavyBlue}{\bfseries uy}%
+\hfill\makebox[80pt][l]{\textipa{/b\textcolor{BurntOrange}{\'aI}/}}\hspace{150pt}\mbox{} 
+ \item \textcolor{NavyBlue}{\bfseries eye}%
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'aI}/}}\hspace{150pt}\mbox{} 
+\end{enumerate}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,110pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+scale=1.4,
+speech={\scriptsize 二重母音 \textipa{/aI/}},
+signpost=\scalebox{0.6}{
+\parbox{2.3cm}{\color{black}
+	      \centering 前半を長めに、なめらかにイに移行}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\hypertarget{today}{}
+
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Huge\bfseries \textipa{/OI/}}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{二重母音 \textipa{/OI/}}
+
+ {\Large 二重母音} {\Huge \textipa{/OI/}}
+
+
+\normalsize
+ポイント
+
+\begin{itemize}\setbeamertemplate{items}[circle]
+ \item 少し口を開き気味で「オイ」
+ \item 前半を長めに
+\end{itemize}
+
+\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/OI/}}
+
+\LARGE
+
+二重母音 \textipa{/OI/}
+
+\hfill{\tiny 0303}\,{\scriptsize \myaudio{./audio/vowel_oi_01.mp3}}
+
+%\vspace{-25pt}
+
+\begin{enumerate}[<+->]%\setlength{\itemsep}{-2pt}
+ \item b\textcolor{NavyBlue}{\bfseries oy}%
+\hfill\makebox[80pt][l]{\textipa{/b\textcolor{BurntOrange}{\'OI}/}}\hspace{150pt}\mbox{}
+ \item t\textcolor{NavyBlue}{\bfseries oy}%
+\hfill\makebox[80pt][l]{\textipa{/t\textcolor{BurntOrange}{\'OI}/}}\hspace{150pt}\mbox{}
+ \item enj\textcolor{NavyBlue}{\bfseries oy}%
+\hfill\makebox[80pt][l]{\textipa{/IndZ\textcolor{BurntOrange}{\'OI}/}}\hspace{150pt}\mbox{}
+ \item \textcolor{NavyBlue}{\bfseries oi}l%
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'OI}l/}}\hspace{150pt}\mbox{}
+ \item c\textcolor{NavyBlue}{\bfseries oi}n%
+\hfill\makebox[80pt][l]{\textipa{/k\textcolor{BurntOrange}{\'OI}n/}}\hspace{150pt}\mbox{}
+%\item v\textcolor{NavyBlue}{\bfseries oi}ce%
+%\hfill\makebox[80pt][l]{\textipa{/v\textcolor{BurntOrange}{\'OI}s/}}\hspace{150pt}\mbox{}
+% \item n\textcolor{NavyBlue}{\bfseries oi}se%
+%\hfill\makebox[80pt][l]{\textipa{/n\textcolor{BurntOrange}{\'OI}z/}}\hspace{150pt}\mbox{}
+% \item v\textcolor{NavyBlue}{\bfseries oi}ce%
+%\hfill\makebox[80pt][l]{\textipa{/v\textcolor{BurntOrange}{\'OI}s/}}\hspace{150pt}\mbox{} 
+% \item p\textcolor{NavyBlue}{\bfseries oi}nt%
+%\hfill\makebox[80pt][l]{\textipa{/p\textcolor{BurntOrange}{\'OI}nt/}}\hspace{150pt}\mbox{} 
+\end{enumerate}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,110pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+scale=1.4,
+speech={\scriptsize 二重母音 \textipa{/OI/}},
+signpost=\scalebox{0.6}{
+\parbox{2.3cm}{\color{black}
+	      \centering 前半を長めに、なめらかにイに移行}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/OI/}}
+
+\LARGE
+
+二重母音 \textipa{/OI/}
+
+\hfill{\tiny 0230}\,{\scriptsize \myaudio{./audio/vowel_oi_02.mp3}}
+
+\vspace{-25pt}
+
+\begin{enumerate}[<+->]%\setlength{\itemsep}{-2pt}
+% \item b\textcolor{NavyBlue}{\bfseries oy}%
+%\hfill\makebox[80pt][l]{\textipa{/b\textcolor{BurntOrange}{\'OI}/}}\hspace{150pt}\mbox{}
+% \item t\textcolor{NavyBlue}{\bfseries oy}%
+%\hfill\makebox[80pt][l]{\textipa{/t\textcolor{BurntOrange}{\'OI}/}}\hspace{150pt}\mbox{}
+% \item enj\textcolor{NavyBlue}{\bfseries oy}%
+%\hfill\makebox[80pt][l]{\textipa{/IndZ\textcolor{BurntOrange}{\'OI}/}}\hspace{150pt}\mbox{}
+% \item \textcolor{NavyBlue}{\bfseries oi}l%
+%\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'OI}l/}}\hspace{150pt}\mbox{}
+% \item c\textcolor{NavyBlue}{\bfseries oi}n%
+%\hfill\makebox[80pt][l]{\textipa{/k\textcolor{BurntOrange}{\'OI}n/}}\hspace{150pt}\mbox{}
+\item v\textcolor{NavyBlue}{\bfseries oi}ce%
+\hfill\makebox[80pt][l]{\textipa{/v\textcolor{BurntOrange}{\'OI}s/}}\hspace{150pt}\mbox{}
+ \item n\textcolor{NavyBlue}{\bfseries oi}se%
+\hfill\makebox[80pt][l]{\textipa{/n\textcolor{BurntOrange}{\'OI}z/}}\hspace{150pt}\mbox{}
+ \item ch\textcolor{NavyBlue}{\bfseries oi}ce%
+\hfill\makebox[80pt][l]{\textipa{/tS\textcolor{BurntOrange}{\'OI}s/}}\hspace{150pt}\mbox{} 
+ \item p\textcolor{NavyBlue}{\bfseries oi}nt%
+\hfill\makebox[80pt][l]{\textipa{/p\textcolor{BurntOrange}{\'OI}nt/}}\hspace{150pt}\mbox{} 
+\end{enumerate}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,100pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+scale=1.4,
+speech={\scriptsize 二重母音 \textipa{/OI/}},
+signpost=\scalebox{0.6}{
+\parbox{2.3cm}{\color{black}
+	      \centering 前半を長めに、なめらかにイに移行}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\hypertarget{today}{}
+
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Huge\bfseries \textipa{/aU/}}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{二重母音 \textipa{/aU/}}
+
+ {\Large 二重母音} {\Huge \textipa{/aU/}}
+
+
+\normalsize
+ポイント
+
+\begin{itemize}\setbeamertemplate{items}[circle]
+ \item 日本語の「アウ」でいい
+ \item 前半を長めに
+\end{itemize}
+
+\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/aU/}}
+
+\LARGE
+
+二重母音 \textipa{/aU/}
+
+
+\hfill{\tiny 0304}\,{\scriptsize \myaudio{./audio/vowel_au_01.mp3}}
+
+%\vspace{-25pt}
+
+\begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
+ \item \textcolor{NavyBlue}{\bfseries ou}t%
+\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'aU}t/}}\hspace{150pt}\mbox{}
+ \item s\textcolor{NavyBlue}{\bfseries ou}nd%
+\hfill\makebox[80pt][l]{\textipa{/s\textcolor{BurntOrange}{\'aU}nd/}}\hspace{150pt}\mbox{} 
+ \item c\textcolor{NavyBlue}{\bfseries ou}nt%
+\hfill\makebox[80pt][l]{\textipa{/k\textcolor{BurntOrange}{\'aU}nt/}}\hspace{150pt}\mbox{}
+ \item m\textcolor{NavyBlue}{\bfseries ou}ntain%
+\hfill\makebox[80pt][l]{\textipa{/m\textcolor{BurntOrange}{\'aU}ntn/}}\hspace{150pt}\mbox{} 
+\item h\textcolor{NavyBlue}{\bfseries ou}se%
+\hfill\makebox[80pt][l]{\textipa{/h\textcolor{BurntOrange}{\'aU}s/}}\hspace{150pt}\mbox{}
+% \item h\textcolor{NavyBlue}{\bfseries ow}%
+%\hfill\makebox[80pt][l]{\textipa{/h\textcolor{BurntOrange}{\'aU}/}}\hspace{150pt}\mbox{}
+% \item c\textcolor{NavyBlue}{\bfseries ow}%
+%\hfill\makebox[80pt][l]{\textipa{/k\textcolor{BurntOrange}{\'aU}/}}\hspace{150pt}\mbox{}
+% \item d\textcolor{NavyBlue}{\bfseries ow}n%
+%\hfill\makebox[80pt][l]{\textipa{/d\textcolor{BurntOrange}{\'aU}n/}}\hspace{150pt}\mbox{}
+% \item t\textcolor{NavyBlue}{\bfseries ow}n%
+%\hfill\makebox[80pt][l]{\textipa{/t\textcolor{BurntOrange}{\'aU}n/}}\hspace{150pt}\mbox{}
+\end{enumerate}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,100pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+scale=1.4,
+speech={\scriptsize 二重母音 \textipa{/aU/}},
+signpost=\scalebox{0.6}{
+\parbox{2.3cm}{\color{black}
+	      \centering 前半を長めに、なめらかにウに移行}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/aU/}}
+
+\LARGE
+
+二重母音 \textipa{/aU/}
+
+\hfill{\tiny 0231}\,{\scriptsize \myaudio{./audio/vowel_au_02.mp3}}
+
+%\vspace{-25pt}
+
+\begin{enumerate}[<+->]\setlength{\itemsep}{-2pt}
+% \item \textcolor{NavyBlue}{\bfseries ou}t%
+%\hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{\'aU}t/}}\hspace{150pt}\mbox{}
+% \item s\textcolor{NavyBlue}{\bfseries ou}nd%
+%\hfill\makebox[80pt][l]{\textipa{/s\textcolor{BurntOrange}{\'aU}nd/}}\hspace{150pt}\mbox{} 
+% \item c\textcolor{NavyBlue}{\bfseries ou}nt%
+%\hfill\makebox[80pt][l]{\textipa{/k\textcolor{BurntOrange}{\'aU}nt/}}\hspace{150pt}\mbox{}
+% \item m\textcolor{NavyBlue}{\bfseries ou}ntain%
+%\hfill\makebox[80pt][l]{\textipa{/m\textcolor{BurntOrange}{\'aU}ntn/}}\hspace{150pt}\mbox{} 
+%\item h\textcolor{NavyBlue}{\bfseries ou}se%
+%\hfill\makebox[80pt][l]{\textipa{/h\textcolor{BurntOrange}{\'aU}s/}}\hspace{150pt}\mbox{}
+ \item h\textcolor{NavyBlue}{\bfseries ow}%
+\hfill\makebox[80pt][l]{\textipa{/h\textcolor{BurntOrange}{\'aU}/}}\hspace{150pt}\mbox{}
+ \item c\textcolor{NavyBlue}{\bfseries ow}%
+\hfill\makebox[80pt][l]{\textipa{/k\textcolor{BurntOrange}{\'aU}/}}\hspace{150pt}\mbox{}
+ \item d\textcolor{NavyBlue}{\bfseries ow}n%
+\hfill\makebox[80pt][l]{\textipa{/d\textcolor{BurntOrange}{\'aU}n/}}\hspace{150pt}\mbox{}
+ \item t\textcolor{NavyBlue}{\bfseries ow}n%
+\hfill\makebox[80pt][l]{\textipa{/t\textcolor{BurntOrange}{\'aU}n/}}\hspace{150pt}\mbox{}
+\end{enumerate}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,100pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+scale=1.4,
+speech={\scriptsize 二重母音 \textipa{/aU/}},
+signpost=\scalebox{0.6}{
+\parbox{2.3cm}{\color{black}
+	      \centering 前半を長めに、なめらかにウに移行}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{図解}
 \centering

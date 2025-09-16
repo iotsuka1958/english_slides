@@ -1,6 +1,4 @@
-three<break time="2s"/>three
-free<break time="2s"/>free
-free<break time="2s"/>free
-three<break time="2s"/>three
-free<break time="2s"/>free
-three<break time="2s"/>three
+rain<break time="2s"/>rain
+pain<break time="2s"/>pain
+day<break time="2s"/>day
+they<break time="2s"/>they
