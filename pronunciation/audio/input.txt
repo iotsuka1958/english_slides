@@ -1,4 +1,4 @@
-rain<break time="2s"/>rain
-pain<break time="2s"/>pain
-day<break time="2s"/>day
-they<break time="2s"/>they
+cake<break time="2s"/>cake
+make<break time="2s"/>make
+face<break time="2s"/>face
+game<break time="2s"/>game
