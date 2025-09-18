@@ -1,508 +1,361 @@
 1
-00:00:00,000 --> 00:00:05,600
-Have you ever noticed how that little ING
-ending in English seems to be, well,
-everywhere?
+00:00:00,000 --> 00:00:02,000
+Welcome to the explainer.
 
 2
-00:00:05,600 --> 00:00:10,800
-It shows up on verbs, it acts like a noun,
-it describes things, I mean, it's a real
+00:00:02,000 --> 00:00:06,000
+You know, sometimes the most common words
+in English are the sneakiest.
 
 3
-00:00:10,800 --> 00:00:12,720
-workhorse of the language.
+00:00:06,000 --> 00:00:10,000
+Today, we're going to pull back the
+curtain on one of the best examples, the
+gerund.
 
 4
-00:00:12,720 --> 00:00:15,800
-But let's be honest, it can also be a
-little bit of a puzzle.
+00:00:10,000 --> 00:00:13,000
+These are basically verbs living a secret
+double life.
 
 5
-00:00:15,800 --> 00:00:20,560
-So today we are going to crack the code on
-one of its most important and maybe most
+00:00:13,000 --> 00:00:16,000
+And once you see it, you'll see it
+everywhere. Let's dive in.
 
 6
-00:00:20,560 --> 00:00:24,480
-confusing jobs. Okay, let's just dive
-right in.
+00:00:16,000 --> 00:00:22,000
+And that secret life really boils down to
+this one kind of weird question.
 
 7
-00:00:24,480 --> 00:00:28,480
-We're going to start by looking at a super
-common point of confusion, a place where
+00:00:22,000 --> 00:00:27,000
+How can an action, you know, something you
+do, also be a thing, a concept?
 
 8
-00:00:28,480 --> 00:00:32,440
-this simple three-letter ending creates a
-real head scratcher.
+00:00:27,000 --> 00:00:29,000
+It seems impossible, right?
 
 9
-00:00:32,440 --> 00:00:34,360
-So here's the mystery we're gonna solve
-today.
+00:00:29,000 --> 00:00:32,280
+Well, that's the puzzle we're going to
+solve right now.
 
 10
-00:00:34,360 --> 00:00:36,680
-On the surface, the two sentences you're
-about to see
+00:00:32,280 --> 00:00:39,480
+Okay, let's start super simple. Take the
+sentence, exercise is fun. Here the word
+exercise is the
 
 11
-00:00:36,680 --> 00:00:39,680
-look almost the same, but that one word
-listening
+00:00:39,480 --> 00:00:45,160
+subject. It's a noun. It's a thing we're
+talking about. Easy enough, right? Now we
+could also say
 
 12
-00:00:39,680 --> 00:00:41,520
-is pulling off a pretty clever trick.
+00:00:45,160 --> 00:00:49,400
+to run is fun. See what's happening? The
+phrase to run that's called an infinitive
 
 13
-00:00:41,520 --> 00:00:45,440
-The question is, what exactly is it doing?
-Okay, here we go.
+00:00:49,400 --> 00:00:54,760
+is doing the exact same job as exercise.
+It's not an action someone's doing. It's
+the idea
 
 14
-00:00:45,440 --> 00:00:48,540
-In that first sentence, her hobby is
-listening to the radio.
+00:00:54,760 --> 00:01:00,200
+of running that's fun. It's acting like a
+noun. And this, this brings us to our main
+event.
 
 15
-00:00:48,540 --> 00:00:51,560
-The word listening is basically the name
-of an activity.
+00:01:00,760 --> 00:01:07,240
+Running is fun. Look at that. A word that
+looks for all the world like a verb,
+running,
 
 16
-00:00:51,560 --> 00:00:53,880
-It's a thing, right? It's her hobby.
+00:01:07,240 --> 00:01:12,920
+is actually doing the job of a noun. This
+is our shapeshifter. This is the gerund.
 
 17
-00:00:53,880 --> 00:00:56,840
-But in the second one, she is listening to
-the radio.
+00:01:12,920 --> 00:01:15,640
+It's an action that's been packaged up
+into a thing.
 
 18
-00:00:56,840 --> 00:01:00,620
-It's all about action. It's what she's
-doing right this very second.
+00:01:16,600 --> 00:01:21,880
+So let's get a closer look at this verb in
+disguise. What is a gerund, really?
 
 19
-00:01:00,620 --> 00:01:04,900
-So same word, totally different jobs. How
-is that possible?
+00:01:21,880 --> 00:01:25,800
+And how does it manage to pull off this
+awesome grammatical magic trick?
 
 20
-00:01:04,900 --> 00:01:08,500
-What is going on here? Well, it's time to
-pull back the curtain
+00:01:26,600 --> 00:01:28,840
+Well, here's the official definition for
+you.
 
 21
-00:01:08,500 --> 00:01:12,920
-and solve this mystery by introducing the
-hero of our story today.
+00:01:28,840 --> 00:01:31,960
+A gerund is simply a verb that ends in
+I-N-G.
 
 22
-00:01:12,920 --> 00:01:17,300
-It's a special kind of word that
-absolutely loves to go undercover.
+00:01:31,960 --> 00:01:36,280
+But, and this is the crucial part, it acts
+as a noun in the sentence.
 
 23
-00:01:17,300 --> 00:01:20,980
-It's called a gerund. And you know, the
-absolute best way to think
+00:01:36,280 --> 00:01:38,920
+It's not describing an action that's
+happening right now,
 
 24
-00:01:20,980 --> 00:01:23,920
-about a gerund is that it's a verb, an
-action word,
+00:01:38,920 --> 00:01:43,240
+it's naming the activity itself. And
+because it's a noun in disguise,
 
 25
-00:01:23,920 --> 00:01:26,680
-that puts on an in costume so it can sneak
-around
+00:01:43,240 --> 00:01:46,200
+it can do all the jobs a regular noun can.
 
 26
-00:01:26,680 --> 00:01:30,320
-and do the job of a noun. It's a master of
-disguise,
+00:01:46,200 --> 00:01:48,600
+For example, it can be the subject of a
+sentence,
 
 27
-00:01:30,320 --> 00:01:33,520
-turning an action into a thing you can
-talk about.
+00:01:48,600 --> 00:01:51,640
+like in eating vegetables is good for your
+health.
 
 28
-00:01:33,520 --> 00:01:36,920
-And really, it all boils down to this
-simple formula.
+00:01:51,640 --> 00:01:55,160
+Or it can be a compliment, which kind of
+restates the subject.
 
 29
-00:01:36,920 --> 00:01:40,080
-You take a verb, any verb, like read or
-swim,
+00:01:55,160 --> 00:01:57,200
+His job is helping students.
 
 30
-00:01:40,080 --> 00:01:42,720
-you slap ing on the end and boom,
+00:01:57,200 --> 00:01:59,960
+And of course, it can be the object that
+receives an action.
 
 31
-00:01:42,720 --> 00:01:45,800
-it's not just an action anymore, it's a
-noun.
+00:01:59,960 --> 00:02:03,400
+He started laughing. Now, you probably
+remember from the beginning
 
 32
-00:01:45,800 --> 00:01:49,440
-It's the activity of reading or the
-concept of swimming.
+00:02:03,400 --> 00:02:06,400
+that infinitives, that's the two form of a
+verb, like to run,
 
 33
-00:01:49,440 --> 00:01:53,600
-It's no longer just something you do, it's
-the idea of doing it.
+00:02:06,400 --> 00:02:08,120
+can do a really similar job.
 
 34
-00:01:53,600 --> 00:01:55,880
-So now that we know its secret identity,
+00:02:08,120 --> 00:02:10,400
+And this sets up a little friendly
+competition,
 
 35
-00:01:55,880 --> 00:01:59,720
-Let's go on a little safari and see where
-the shape-shifting word likes to show up.
+00:02:10,400 --> 00:02:13,200
+what I like to call the infinitive
+rivalry.
 
 36
-00:01:59,720 --> 00:02:02,920
-It has a few favorite hangouts in a
-sentence.
+0:02:13,200 --> 00:02:16,360
+A lot of the time, it really doesn't
+matter which one you use.
 
 37
-00:02:02,920 --> 00:02:06,400
-Turns out you can usually find gerunds in
-one of three main spots.
+00:02:16,360 --> 00:02:20,040
+A gerund and a two-infinitive can be
+totally interchangeable,
 
 38
-00:02:06,400 --> 00:02:10,120
-They can be the subject, you know, the
-main character of the whole sentence.
+00:02:20,040 --> 00:02:26,760
+saying speaking English is difficult means
+the exact same thing as to speak English
+is difficult.
 
 39
-00:02:10,120 --> 00:02:15,040
-They pop up after b-verbs, like is, am, or
-are, and they can be the object, the thing
+00:02:26,760 --> 00:02:32,120
+Same with I love singing versus I love to
+sing. In these cases, they get along just
+fine.
 
 40
-00:02:15,040 --> 00:02:18,800
-getting the action from another verb.
-Let's take a look at each one.
+00:02:32,680 --> 00:02:38,360
+But that rivalry isn't always so friendly.
+See, sometimes one of them gets a little
+possessive.
 
 41
-00:02:18,800 --> 00:02:21,520
-So in this sentence, what's actually good
-for your health?
+00:02:38,920 --> 00:02:42,600
+There are specific cases where only a
+gerant is allowed to show up.
 
 42
-00:02:21,520 --> 00:02:26,000
-It's not just the vegetables, right? It's
-the activity of eating them.
+00:02:43,400 --> 00:02:46,440
+And that's because some verbs are just
+picky.
 
 43
-00:02:26,000 --> 00:02:29,560
-That gerund eating is the subject of the
-entire sentence.
+00:02:46,440 --> 00:02:51,720
+Verbs like enjoy or finish, they
+absolutely demand to be followed by a
+gerund.
 
 44
-00:02:29,560 --> 00:02:32,360
-It's the thing this whole sentence is
-about.
+00:02:51,720 --> 00:02:56,280
+You can say, I enjoy playing golf, but I
+enjoy to play golf?
 
 45
-00:02:32,360 --> 00:02:34,000
-Now check out the structure here.
+00:02:56,280 --> 00:02:59,560
+Nope, that just sounds all wrong. Same
+with finish.
 
 46
-00:02:34,000 --> 00:02:36,360
-It's basically a perfect little equation.
+00:02:59,560 --> 00:03:02,040
+She finished writing. She never finished
+to write.
 
 47
-00:02:36,360 --> 00:02:40,080
-His job equals helping students. See that?
+00:03:02,840 --> 00:03:06,760
+Okay, time for a quick pop quiz. Let's see
+if you are listening.
 
 48
-00:02:40,080 --> 00:02:44,800
-The gerund helping comes right after the
-verb IS and it renames or defines what the
-job
+00:03:06,760 --> 00:03:10,680
+How would you finish this sentence the
+right way? She finished, what?
 
 49
-00:02:44,800 --> 00:02:50,320
-IS. His job IS that activity. And here we
-have our third spot.
+00:03:11,640 --> 00:03:14,920
+You got it. She finished writing the
+letter.
 
 50
-00:02:50,320 --> 00:02:52,940
-What did he start? He started laughing.
+00:03:14,920 --> 00:03:19,640
+because the verb finish is one of those
+picky verbs that always always takes a
+gerund.
 
 51
-00:02:52,940 --> 00:02:56,800
-The gerund laughing is the direct object
-of the verb started.
+00:03:19,640 --> 00:03:21,960
+See? Once you know the rule, it's pretty
+simple.
 
 52
-00:02:56,800 --> 00:03:00,000
-It's the thing that received the action.
-Simple as that.
+00:03:22,680 --> 00:03:26,600
+All right, there is one last piece of spy
+craft we need to cover, and honestly,
 
 53
-00:03:00,000 --> 00:03:02,400
-Okay, seems pretty straightforward, right?
+00:03:26,600 --> 00:03:30,120
+this is the big one. It's how to spot the
+gerund's nearly identical twin.
 
 54
-00:03:02,400 --> 00:03:05,600
-Verb plus ing equals a noun. Got it.
+00:03:30,120 --> 00:03:32,440
+It's look like imposter, the present
+participle.
 
 55
-00:03:05,600 --> 00:03:08,960
-But you know, just when you think you've
-got English figured out, it loves to throw
+00:03:33,240 --> 00:03:36,680
+Okay, look really closely at these two
+sentences.
 
 56
-00:03:08,960 --> 00:03:10,120
-a curveball.
+00:03:36,680 --> 00:03:41,400
+They both use the word listening, but in
+that first one, listening is a thing.
 
 57
-00:03:10,120 --> 00:03:15,460
-It turns out the gerund has a rival,
-something that often tries to do the exact
-same job.
+00:03:41,400 --> 00:03:45,880
+It's a gerant. In the second one, it's an
+action, a present participle.
 
 58
-00:03:15,460 --> 00:03:19,560
-And here it is, the rival we were talking
-about, the two infinitive.
+00:03:45,880 --> 00:03:48,600
+So how on earth are you supposed to tell
+them apart?
 
 59
-00:03:19,560 --> 00:03:23,160
-Just look at these two sentences. One uses
-the gerund, speaking.
+00:03:49,400 --> 00:03:53,880
+Don't worry, I've got a super simple trick
+for you. I call it the equal sign test.
 
 60
-00:03:23,160 --> 00:03:25,600
-The other uses the infinitive, to speak.
+00:03:53,880 --> 00:03:57,480
+Just ask yourself if you can replace the
+verb is with an equal sign.
 
 61
-00:03:25,600 --> 00:03:28,400
-But here's the wild part, they mean the
-exact same thing.
+00:03:57,480 --> 00:04:01,080
+So, her hobby equals listening to the
+radio. Does that make sense?
 
 62
-00:03:28,400 --> 00:03:31,480
-In a lot of cases, they are totally
-interchangeable.
+00:04:01,080 --> 00:04:04,760
+Yes, it totally does. Her hobby is that
+activity.
 
 63
-00:03:31,480 --> 00:03:34,360
-And that of course leads us to the million
-dollar question.
+00:04:04,760 --> 00:04:07,320
+If the equal sign works, you've found
+yourself a gerant.
 
 64
-00:03:34,360 --> 00:03:38,560
-If they can often do the same job, can we
-just swap them out whenever we feel like
-it?
+00:04:07,320 --> 00:04:14,600
+Now, let's try it on the other sentence.
+She equals listening? No way. That makes
+zero sense.
 
 65
-00:03:38,560 --> 00:03:43,760
-And the answer, maybe not so surprisingly
-for English, is a big fat no.
+00:04:14,600 --> 00:04:20,440
+She's a person, not an activity. She is
+doing the action of listening. So in this
+case,
 
 66
-00:03:43,760 --> 00:03:48,040
-You see, some verbs are just picky. They
-have their preferences.
+00:04:20,440 --> 00:04:25,600
+listening is a present participle. It's
+just part of a verb tense describing an
+action in
 
 67
-00:03:48,040 --> 00:03:50,600
-Verbs like enjoy and finish, for instance.
+00:04:25,600 --> 00:04:31,560
+progress, not a thing itself. So there you
+have it. The secret life of verbs is out
+in
 
 68
-00:03:50,600 --> 00:03:52,400
-They only want to work with a gerund.
+00:04:31,560 --> 00:04:37,280
+the open. Jurins are absolutely
+everywhere, hiding in plain sight, turning
+actions into
 
 69
-00:03:52,400 --> 00:03:56,640
-You can say, I enjoy playing golf, but I
-enjoy to play golf.
+00:04:37,280 --> 00:04:42,760
+ideas. Now that you know their secret
+identity and you know how to spot them,
+where else are
 
 70
-00:03:56,640 --> 00:03:59,280
-It just sounds wrong to a native speaker,
-doesn't it?
-
-71
-00:03:59,280 --> 00:04:01,680
-These verbs demand a gerund as their
-partner.
-
-72
-00:04:01,680 --> 00:04:04,280
-All right, let's bring it all home.
-
-73
-00:04:04,280 --> 00:04:08,380
-Now that we know what a gerund is and what
-it isn't, we have all the tools we need
-
-74
-00:04:08,380 --> 00:04:12,160
-to finally solve that mystery from the
-very beginning.
-
-75
-00:04:12,160 --> 00:04:14,200
-So let's go back to the scene of the
-crime.
-
-76
-00:04:14,200 --> 00:04:16,040
-What is really the difference here?
-
-77
-00:04:16,040 --> 00:04:21,260
-One sentence is talking about the hobby of
-listening, which is a noun, a concept.
-
-78
-00:04:21,260 --> 00:04:25,440
-And the other is talking about the action
-of listening, which is a verb, something
-happening
-
-79
-00:04:25,440 --> 00:04:30,320
-right now. How can we tell them apart for
-good? Here it is.
-
-80
-00:04:30,320 --> 00:04:32,080
-This is the definitive test.
-
-81
-00:04:32,080 --> 00:04:35,180
-In that first sentence, her hobby is
-collecting stamps.
-
-82
-00:04:35,180 --> 00:04:40,160
-The ing word is a gerant. Why? Because you
-can use an equal sign.
-
-83
-00:04:40,160 --> 00:04:43,360
-Her hobby equals the activity of
-collecting.
-
-84
-00:04:43,360 --> 00:04:44,680
-They are the same concept.
-
-85
-00:04:44,680 --> 00:04:51,020
-a noun. But in the second one, she IS
-collecting stamps, that ING word is just
-doing its normal
-
-86
-00:04:51,020 --> 00:04:56,700
-verb job. Its fancy name is a present
-participle, and it's just showing an
-ongoing action.
-
-87
-00:04:56,700 --> 00:05:02,360
-The equals test totally fails here. She
-does not equal collecting. She is a
-person, collecting
-
-88
-00:05:02,360 --> 00:05:06,100
-is the action she is doing. That's the key
-difference.
-
-89
-00:05:06,100 --> 00:05:09,340
-So there you have it. You know the secret.
-You cannot tell the difference between a
-
-90
-00:05:09,340 --> 00:05:13,200
-verb wearing a noun costume and a verb
-that's just, you know, being a verb. Let's
-
-91
-00:05:13,200 --> 00:05:16,000
-Let's wrap this up into your new grammar
-superpower.
-
-92
-00:05:16,000 --> 00:05:19,520
-Think of this as your personal three-step
-Jaren spotting guide.
-
-93
-00:05:19,520 --> 00:05:23,120
-Step one, find the word ending in ING.
-Easy enough.
-
-94
-00:05:23,120 --> 00:05:26,400
-Step two, ask yourself, is this thing
-acting like a noun?
-
-95
-00:05:26,400 --> 00:05:28,760
-Is it naming an activity or an idea?
-
-96
-00:05:28,760 --> 00:05:32,320
-And finally, step three, check its job. Is
-it the subject?
-
-97
-00:05:32,320 --> 00:05:33,320
-Is it the object?
-
-98
-00:05:33,320 --> 00:05:37,440
-Or, and this is the big one, does it pass
-that equals test after the verb is?
-
-99
-00:05:37,440 --> 00:05:41,320
-If the answer is yes, congratulations,
-you've spotted a Jaren in the wild.
-
-100
-00:05:41,320 --> 00:05:45,760
-The gerund is just this brilliant little
-piece of English grammar that lets us talk
-about
-
-101
-00:05:45,760 --> 00:05:48,680
-actions as if they were actual things.
-
-102
-00:05:48,680 --> 00:05:53,680
-It's what lets us say running is my
-favorite exercise, or I really hate
-cleaning.
-
-103
-00:05:53,680 --> 00:05:58,280
-So now that you know it's secret identity,
-the only question left is where are you
-going
-
-104
-00:05:58,280 --> 00:06:00,680
-to spot this amazing verb in disguise
-next?
+00:04:42,760 --> 00:04:45,240
+you going to see these amazing verbs in
+disguise?
