@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide}
 \usepackage{lua-ul}
 \usepackage{pxrubrica}
@@ -109,7 +111,8 @@
 
 \hyperlink{today}{\beamergotobutton{Today's Pronunciation}}
 
-%\hyperlink{quiz}{\beamergotobutton{3rd}}
+\pause
+\textcolor{white}{$20250919=13\times{}1,557,763$}
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -977,7 +980,7 @@ free（自由な）またはthree（3）を発音していきます。どちら�
 \hypertarget{today}{}
 
 \centering
-  \textcolor{white}{\Huge\bfseries Today's Pronunciation}\pause
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
 
  \vspace{30pt}
 
@@ -1016,7 +1019,6 @@ free（自由な）またはthree（3）を発音していきます。どちら�
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
-\hypertarget{ex}{}
 \Large
 {\small \textipa{/s/}の音を含む英単語}\hfill{\tiny 0510}\,{\scriptsize \myaudio{./audio/consonant_s_z_02.mp3}}
 
@@ -1043,10 +1045,11 @@ free（自由な）またはthree（3）を発音していきます。どちら�
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
+\hypertarget{ex}{}
 \Large
 {\small \textipa{/z/}の音を含む英単語}\hfill{\tiny 0510}\,{\scriptsize \myaudio{./audio/consonant_s_z_03.mp3}}
 
-\begin{enumerate}
+\begin{enumerate}[<+->]
  \item \textcolor{NavyBlue}{\bfseries z}ero
 \hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{z}\'IroU/}}\hspace{150pt}\mbox{}
 \item \textcolor{NavyBlue}{\bfseries z}oo%
@@ -1067,6 +1070,21 @@ free（自由な）またはthree（3）を発音していきます。どちら�
 \item play\textcolor{NavyBlue}{\bfseries s}
 \hfill\makebox[80pt][l]{\textipa{/pl\'eI\textcolor{BurntOrange}{z}/}}\hspace{150pt}\mbox{} 
 \end{enumerate}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,90pt)
+\visible<3->{\begin{tikzpicture}
+\cat[
+scale=1.5,
+speech={\small zipper},
+signpost=\scalebox{0.6}{
+\parbox{2.8cm}{\color{black}
+\centering 「\kenten{ジ}ッパー」\\じゃない！\\[5pt]「\kenten{ズィ}ッパー」！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz \textipa{/s/}}
