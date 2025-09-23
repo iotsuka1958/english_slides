@@ -20,6 +20,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{You will succeed if you work hard.}
@@ -50,32 +51,36 @@
 \begin{frame}[plain]{もし～なら}
 \large
  \begin{enumerate}
-  \item You \myAnch{x_1}{white}{\myEmph[2-]{NavyBlue}{will succeed}} \alt<2->{\myAnch{y_1}{Maroon}{if you work hard}}{\myAnch{Y_1}{white}{if you work hard}}.\hfill\visible<7->{{\footnotesize {\bfseries S $+$ V}\,\,\Circled[fill color = white]{ if s $+$ v }}}
-\item<3->  \alt<4->{\myAnch{y_2}{Maroon}{If you work hard}}{\myAnch{Y_2}{white}{If you work hard}},\,\, you  \myAnch{x_2}{white}{\myEmph[4-]{NavyBlue}{will succeed}}.\hfill\visible<7->{{\footnotesize \Circled[fill color = white]{ If s $+$ v },\,\, {\bfseries S $+$ V}}}
+  \item<1-> You \myAnch{x_1}{white}{\myEmph[2-]{NavyBlue}{will succeed}} \alt<2->{\myAnch{y_1}{Maroon}{if you work hard}}{\myAnch{Y_1}{white}{if you work hard}}.\hfill\visible<7->{{\footnotesize {\bfseries S $+$ V}\,\,\Circled[fill color = white]{ if s $+$ v }}}
+\item<4->  \alt<5->{\myAnch{y_2}{Maroon}{If you work hard}}{\myAnch{Y_2}{white}{If you work hard}},\,\, you  \myAnch{x_2}{white}{\myEmph[5-]{NavyBlue}{will succeed}}.\hfill\visible<7->{{\footnotesize \Circled[fill color = white]{ If s $+$ v },\,\, {\bfseries S $+$ V}}}
 \end{enumerate}
 
-\visible<2->%
-{\begin{tikzpicture}[remember picture, overlay]
+\begin{tikzpicture}[remember picture, overlay]
  \visible<2->{\draw[thick, Maroon, ->] (Y_1.north west) to[out=170, in=10] (x_1.north);} 
- \visible<4->{\draw[thick, Maroon, ->] (Y_2.north east) to[out=5, in=175] (x_2.north);} 
-\end{tikzpicture}}
+ \visible<5->{\draw[thick, Maroon, ->] (Y_2.north east) to[out=5, in=175] (x_2.north);} 
+\end{tikzpicture}
 
 
 \hfill{\tiny 0118}\,{\scriptsize \myaudio{./audio/022_if_01.mp3}}
-\begin{block}<5->{Topics for Today}\small
+
+\begin{block}<3->{Topics for Today}\small
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item   \visible<5->{\Circled[fill color = white]{ if s $+$ v }\,は「もし～なら」という意味}
- \item   \visible<6->{\Circled[fill color = white]{ if s $+$ v }\,は全体で「副詞」の役割}
- \item   \visible<7->{\Circled[fill color = white]{ if s $+$ v }\,は、前にも後ろにも位置します
+ \item<3->   \visible<3->{\Circled[fill color = white]{ if s $+$ v }\,は「もし～なら」という意味}
+ \item<3->   \visible<3->{\Circled[fill color = white]{ if s $+$ v }\,は全体で「副詞」の役割}
+ \item   \visible<8->{\Circled[fill color = white]{ if s $+$ v }\,は、前にも後ろにも位置します
 \begin{enumerate}\setbeamertemplate{items}[circle]
 	  \item {\bfseries S $+$ V}\,\,\Circled[fill color = white]{ if s $+$ v }
-	  \item \Circled[fill color = white]{ If s $+$ v },\,\,{\bfseries S $+$ V}%
-\hfill{}{カンマに注意！}
+	  \item \Circled[fill color = white]{ If s $+$ v }\,,\tikzmark{target}\,\,{\bfseries S $+$ V}%
+\hfill\visible<9->{{\tikzmark{pointer}カンマに注意！}}
 	 \end{enumerate}
 	 }
- \item<8-> {\bfseries if}は2組の\,\,\Circled[fill color=white]{\,主語と動詞の組合せ\,}\,\,をつないでいます\visible<9->{$\rightarrow$\kenten{接続詞}}
+ \item<10-> {\bfseries if}は2組の\,\,\Circled[fill color=white]{\,主語と動詞の組合せ\,}\,\,をつないでいます\visible<11->{$\longrightarrow$\kenten{接続詞}}
 \end{itemize}
      \end{block}
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<9->{\draw[<-] ([xshift=1pt,yshift=-2pt]pic cs:target) to[out=-5,in=185] ([xshift=-2pt, yshift=4pt] pic cs:pointer);}
+\end{tikzpicture}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Exercises}
@@ -85,15 +90,15 @@
 
  \begin{enumerate}
   \item ( you / water / if / drink ), you will feel better.{\small 水を飲めば、気持ちよくなりますよ。}\\
-	\visible<2->{If you drink water, \textcolor{lightgray}{you will feel better.}}\hfill \visible<7->{\Circled[fill color = yellow!50]{ If s $+$ v }, {\bfseries S $+$ V}}
+	\visible<2->{If you drink water, \textcolor{gray}{you will feel better.}}\hfill \visible<7->{\Circled[fill color = yellow!50]{ If s $+$ v }, {\bfseries S $+$ V}}
   \item (soccer / you / play / if ), you will have fun.{\small サッカーをすれば、楽しいですよ。}\\
-	\visible<3->{If you play soccer, \textcolor{lightgray}{you will have fun.}}\hfill \visible<8->{\Circled[fill color = yellow!50]{ If s $+$ v }, {\bfseries S $+$ V}}
+	\visible<3->{If you play soccer, \textcolor{gray}{you will have fun.}}\hfill \visible<8->{\Circled[fill color = yellow!50]{ If s $+$ v }, {\bfseries S $+$ V}}
   \item (books / if / read / you ), you will learn a lot.{\small 本を読めば、おおくのことを学べる。}\\
-	\visible<4->{If you read books, \textcolor{lightgray}{you will learn a lot.}}\hfill \visible<9->{\Circled[fill color = yellow!50]{ If s $+$ v }, {\bfseries S $+$ V}}
+	\visible<4->{If you read books, \textcolor{gray}{you will learn a lot.}}\hfill \visible<9->{\Circled[fill color = yellow!50]{ If s $+$ v }, {\bfseries S $+$ V}}
   \item We will watch a movie ( rains / it / if ).{\small 雨だったら、映画を見ます。}\\
-	\visible<5->{\textcolor{lightgray}{We will watch a movie} if it rains.}\hfill\visible<10->{{\bfseries S $+$ V}\,\,\Circled[fill color = yellow!50]{ if s $+$ v }}
+	\visible<5->{\textcolor{gray}{We will watch a movie} if it rains.}\hfill\visible<10->{{\bfseries S $+$ V}\,\,\Circled[fill color = yellow!50]{ if s $+$ v }}
   \item We ( will be  / smile / if / happy / you ). {\small あなたが笑うと、わたしたちは幸福だ。}\\
-	\visible<6->{\textcolor{lightgray}{We} will be happy if you smile.}\hfill \visible<11->{{\bfseries S $+$ V}\,\,\Circled[fill color = yellow!50]{ if s $+$ v }}
+	\visible<6->{\textcolor{gray}{We} will be happy if you smile.}\hfill \visible<11->{{\bfseries S $+$ V}\,\,\Circled[fill color = yellow!50]{ if s $+$ v }}
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -114,8 +119,7 @@ if \textipa{/If/}
 \end{itemize}
      \end{block}
 
-\pause
-\textdbend If you work hard, you will succeed.で中心となる主語と動詞はどれですか
+%\textdbend If you work hard, you will succeed.で中心となる主語と動詞はどれですか
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
