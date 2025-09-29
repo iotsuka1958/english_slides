@@ -1,4 +1,8 @@
-cake<break time="2s"/>cake
-make<break time="2s"/>make
-face<break time="2s"/>face
-game<break time="2s"/>game
+all<break time="2s"/>all
+ball<break time="2s"/>ball
+fall<break time="2s"/>fall
+tall<break time="2s"/>tall
+boat<break time="2s"/>boat
+coat<break time="2s"/>coat
+road<break time="2s"/>road
+know<break time="2s"/>know
