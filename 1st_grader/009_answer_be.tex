@@ -30,6 +30,8 @@
 \usepackage{tikzpeople}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{amsmath}
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 場合分け
 \usepackage{cases}
@@ -415,5 +417,32 @@ I am really happy to meet you. Thank you!%
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{要点}
+\small
+\begin{tblr}{
+  colspec = {l l l l l},
+  row{1} = {font=\bfseries}, % ヘッダーを太字に
+}
+\toprule
+疑問文 & はい (Yes) & いいえ (No) & \shortstack{パターン1 \\ {\scriptsize (S $+$ beを短縮)}} & \shortstack{パターン2 \\ {\scriptsize (be $+$ not を短縮)}} \\
+\midrule
+{Am I} ...?      & Yes, you are. & No, you are not. & No, \textbf{you're} not.          & No, you \textbf{aren't}.   \\
+{Are you} ...?   & Yes, I am.    & No, I am not.    & No, \textbf{I'm} not.      & ---       \\
+{Is he} ...?     & Yes, he is.   & No, he is not.   & No, \textbf{he's} not.     & No, he \textbf{isn't}.     \\
+Is your father ...?\\
+{Is she} ...?    & Yes, she is.  & No, she is not.  & No, \textbf{she's} not.    & No, she \textbf{isn't}.    \\
+Is your mother ...?\\
+{Is it} ...?     & Yes, it is.   & No, it is not.   & No, \textbf{it's} not.     & No, it \textbf{isn't}.     \\
+%{Are we} ...?    & Yes, we are.  & No, we are not.  & No, \textbf{we're not}.    & No, we \textbf{aren't}.    \\
+%{Are you} ...? (複数) & Yes, we are. & No, we are not. & No, \textbf{we're} not. & No, we \textbf{aren't}.    \\
+{Are they} ...?  & Yes, they are.& No, they are not.  & No, \textbf{they're} not.  & No, they \textbf{aren't}.  \\
+Are your parents ...?\\
+\bottomrule
+\end{tblr}
 
+{\tiny audio\_overview 1740}\,{\scriptsize \myaudio{./audio/overview/009_answer_be_audio_overview.mp4}}
+
+\end{frame}
 \end{document}
