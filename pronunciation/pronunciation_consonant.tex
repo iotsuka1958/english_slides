@@ -1166,7 +1166,6 @@ signback=white!80!brown
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう}
 \Large
-\hypertarget{ex}{}
 
 {\small \textipa{/T/}の音を含む英単語}\hfill{\tiny 0310}\,{\scriptsize \myaudio{./audio/consonant_Th_02.mp3}}
 
@@ -1221,6 +1220,7 @@ signback=white!80!brown
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz \textipa{/T/}}
+\hypertarget{ex}{}
 \large
 発音記号\textipa{/T/}で示した音声が含まれていたらT、含まれていなければFと答えてください。余裕がある人はなんという単語か書き取ってみましょう
 
@@ -1253,6 +1253,90 @@ signback=white!80!brown
 \hfill{\tiny 0146}\,{\scriptsize \myaudio{./audio/consonant_Th_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+
+singまたはthingを発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{sing}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{thing}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{sing}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{thing}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{thing}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{sing}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& sing &\textipa{/s\'IN/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& thing &\textipa{/T\'IN/}\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\scriptsize \myaudio{./audio/consonant_sing_thing_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+
+freeまたはthreeを発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{three}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{free}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{free}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{three}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{free}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{three}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& free& \textipa{/fr\'\i:/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& three& \textipa{/Tr\'\i:/}  \\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge, NavyBlue] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a1.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a2.west);}
+\end{tikzpicture}
+
+\hfill\myaudio{./audio/consonant_free_three_01.mp3}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% /S/ /Z/

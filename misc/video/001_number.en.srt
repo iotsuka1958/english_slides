@@ -1,484 +1,602 @@
 1
-00:00:00,000 --> 00:00:04,300
-Have you ever really stopped to think
-about how we say numbers in English?
+00:00:00,000 --> 00:00:04,880
+Hey what's up everyone and welcome. Are
+you ready to crack one of the biggest,
+most useful
 
 2
-00:00:04,300 --> 00:00:10,500
-I mean, it seems pretty simple on the
-surface, but there's actually a hidden
-code, a secret logic, right under our
-noses.
+00:00:04,880 --> 00:00:10,880
+secret codes in English? Yup, I'm talking
+about numbers. You see them everywhere and
+after this
 
 3
-00:00:10,500 --> 00:00:16,500
-So today, we're going to go on a little
-journey, and using this language textbook
-as our guide, we're going to crack it.
+00:00:10,880 --> 00:00:15,600
+you're gonna be able to say even the
+craziest, biggest numbers without breaking
+a sweat.
 
 4
-00:00:16,500 --> 00:00:22,000
-So let's kick things off with a mystery
-you've probably heard your whole life but
-never really questioned.
+00:00:15,600 --> 00:00:22,240
+Trust me, it's gonna be fun. Okay, let's
+dive in. Whoa, okay let's just jump right
+in with a big one,
 
 5
-00:00:22,000 --> 00:00:28,500
-We say 14, 16, 17, so why in the world
-don't we say one teen, or two teen?
+00:00:22,240 --> 00:00:27,200
+huh? Take a look at this number. If you're
+thinking there is no way I can say that,
 
 6
-00:00:28,500 --> 00:00:30,620
-It just sounds wrong, right?
+00:00:27,200 --> 00:00:30,560
+That's totally normal. But hey, here's a
+little spoiler.
 
 7
-00:00:30,620 --> 00:00:34,460
-Well that little bit of weirdness, that's
-our first big clue that there's a system
+00:00:30,560 --> 00:00:35,280
+That number is 20,250,717.
 
 8
-00:00:34,460 --> 00:00:38,460
-at play here. You know, every good code
-has a key.
+00:00:35,280 --> 00:00:37,600
+And believe it or not, by the end of our
+time together,
 
 9
-00:00:38,460 --> 00:00:42,340
-And for English numbers, the key is a
-bunch of words that don't seem to follow
-any pattern
+00:00:37,600 --> 00:00:40,640
+you'll know exactly how to say it too. You
+will!
 
 10
-00:00:42,340 --> 00:00:46,240
-at all. These are the odd ones out, the
-special cases.
+00:00:41,680 --> 00:00:43,200
+See, here's the thing.
 
 11
-00:00:46,240 --> 00:00:50,140
-We have to learn them first, because they
-are the absolute foundation for the entire
+00:00:43,200 --> 00:00:46,480
+English numbers aren't just a long, random
+list of words
 
 12
-00:00:50,140 --> 00:00:51,140
-system.
+00:00:46,480 --> 00:00:50,480
+you have to memorize. Not at all. They're
+a system, a pattern.
 
 13
-00:00:51,140 --> 00:00:55,660
-So here they are, every single one of
-these, from 0 all the way to 12, is a
-totally
+00:00:50,480 --> 00:00:52,320
+It's kind of like a secret code.
 
 14
-00:00:55,660 --> 00:00:56,660
-unique word.
+00:00:52,320 --> 00:00:55,200
+So our mission today, should you choose to
+accept it,
 
 15
-00:00:56,660 --> 00:01:01,380
-There's no system here, no secret to
-figure out. You just have to know them.
+00:00:55,200 --> 00:01:00,160
+is to crack that code together. piece by
+piece. Ready? Let's do this.
 
 16
-00:01:01,380 --> 00:01:05,940
-Think of these as our main characters, the
-core pieces we're going to use to build
-everything else.
+00:01:00,160 --> 00:01:05,280
+First things first. Every single giant
+number, even that crazy one we just saw,
 
 17
-00:01:06,660 --> 00:01:12,420
-Okay, so once you've got those first 13
-numbers locked in, we can finally move
-past the chaos.
+00:01:05,280 --> 00:01:11,120
+is built from a few tiny, simple parts.
+Think of them like Legos, our building
+blocks.
 
 18
-00:01:12,420 --> 00:01:16,500
-Because right after the number 12, the
-code starts to reveal itself.
+00:01:11,120 --> 00:01:15,680
+Once you know these few little pieces, you
+can build absolutely anything.
 
 19
-00:01:16,500 --> 00:01:18,900
-We're about to find our very first real
-pattern.
+00:01:16,480 --> 00:01:21,200
+And here they are, our main characters.
+These are the absolute basics.
 
 20
-00:01:19,540 --> 00:01:23,460
-And here it is, the first piece of the
-puzzle, the suffix teen.
+00:01:21,200 --> 00:01:25,600
+Let's just say them slowly and clearly. I
+want you to listen and maybe even say them
+quietly
 
 21
-00:01:23,460 --> 00:01:28,060
-Now, it's not just some random ending,
-it's actually an old word that literally
-means
+00:01:25,600 --> 00:01:39,520
+with me. Ready? Zero. One. Two. Three.
+Four. Five. Six. Seven. Eight. Nine. Ten.
+Awesome.
 
 22
-00:01:28,060 --> 00:01:29,060
-plus ten.
+00:01:39,520 --> 00:01:44,440
+This is your foundation. Seriously. Nail
+these and you've basically won half the
+bow.
 
 23
-00:01:29,060 --> 00:01:33,060
-So, every time you hear that teen sound,
-you're basically hearing a tiny little
-math equation
+00:01:44,440 --> 00:01:48,480
+Now every secret code has a couple of
+rebels, right? You know, characters that
+don't really
 
 24
-00:01:33,060 --> 00:01:36,740
-hidden right inside the word itself. Just
-look at this.
+00:01:48,480 --> 00:01:54,960
+play by the rules. Well, in English
+numbers, meet our two special agents.
+Eleven and twelve.
 
 25
-00:01:36,740 --> 00:01:42,100
-You take one of our original numbers, like
-four, you tack on the teen suffix, and
-boom!
+00:01:54,960 --> 00:01:58,280
+These two are totally unique, so you just
+have to memorize them.
 
 26
-00:01:42,100 --> 00:01:44,740
-You get fourteen. Four plus ten.
+00:01:58,280 --> 00:01:59,280
+But the good news?
 
 27
-00:01:44,740 --> 00:01:49,220
-It's that simple, it's that predictable.
-See? The code actually works!
+00:01:59,280 --> 00:02:01,920
+These are pretty much the last weird ones
+for a bit.
 
 28
-00:01:49,220 --> 00:01:52,820
-Of course, you know, English just loves to
-have its little quirks.
+00:02:01,920 --> 00:02:05,400
+So just lock them in your memory, 11 and
+12.
 
 29
-00:01:52,820 --> 00:01:56,880
-The teen system is fantastic, but it's got
-a few little exceptions that kind of show
+00:02:05,400 --> 00:02:08,040
+Okay, so you've got the basic crew.
 
 30
-00:01:56,880 --> 00:01:58,480
-the language's age.
+00:02:08,040 --> 00:02:11,260
+Are you ready for the first secret rule of
+our code?
 
 31
-00:01:58,480 --> 00:02:04,040
-It's not 13, it's 13, and it's not 15,
-it's 15.
+00:02:11,260 --> 00:02:15,360
+This is where the fun really starts,
+because this one rule is going to unlock a
+whole
 
 32
-00:02:04,040 --> 00:02:08,640
-And with 18, we just get rid of that extra
-T. They're just small spelling changes,
-but
+00:02:15,360 --> 00:02:19,000
+group of numbers for you, just like that.
+Let's check it out.
 
 33
-00:02:08,640 --> 00:02:13,360
-the core logic, a number plus 10, that
-stays exactly the same.
+00:02:19,000 --> 00:02:21,320
+The first magic word is teen.
 
 34
-00:02:13,360 --> 00:02:17,300
-So the teen suffix gets us all the way
-from 13 to 19.
+00:02:21,320 --> 00:02:26,360
+You just take a number you already know,
+like 4, and you snap teen onto the end.
 
 35
-00:02:17,300 --> 00:02:18,480
-But what happens next?
+00:02:26,360 --> 00:02:28,240
+And boom, 14.
 
 36
-00:02:18,480 --> 00:02:22,600
-Well, the next piece of the code is
-another suffix that sounds almost the
-same.
+00:02:28,240 --> 00:02:31,600
+Now pay attention here, because there are
+two little exceptions.
 
 37
-00:02:22,600 --> 00:02:26,600
-And this one little change unlocks pretty
-much everything else up to 100.
+00:02:31,600 --> 00:02:37,080
+It's not 13, it's 13, and not 15, but 15.
 
 38
-00:02:26,600 --> 00:02:32,600
-Okay, this is probably the most important
-part. 13 is 3 plus 10.
+00:02:37,080 --> 00:02:40,800
+A little weird, I know, but you can still
+hear that pattern, right?
 
 39
-00:02:32,600 --> 00:02:35,600
-But 30, that's 3 times 10.
+00:02:40,800 --> 00:02:45,440
+You got this. And here they are, your
+whole teen toolkit.
 
 40
-00:02:35,600 --> 00:02:38,600
-So one is for adding, the other is for
-multiplying.
+00:02:45,440 --> 00:02:48,800
+Let's listen for that magic sound at the
+end of each one.
 
 41
-00:02:38,600 --> 00:02:44,600
-That one tiny little sound shift is the
-absolute key to counting all the way up to
-99.
+00:02:48,800 --> 00:02:56,640
+15, 14, 15, 16, 17, 18, 19.
 
 42
-00:02:44,600 --> 00:02:46,600
-And once you have these t-words down,
+00:02:56,640 --> 00:03:00,600
+Hear that? That strong sound at the end?
+That's the secret.
 
 43
-00:02:46,600 --> 00:02:49,600
-building any other number is just like
-stacking blocks.
+00:03:00,600 --> 00:03:04,220
+Once you get that trick, you know all of
+them. Great job!
 
 44
-00:02:49,600 --> 00:02:54,120
-blocks. You just grab your 10 block, let's
-say 20, and you snap one of our original
-numbers
+00:03:04,220 --> 00:03:09,300
+All right, everybody, deep breath, this
+next slide. This is a big one.
 
 45
-00:02:54,120 --> 00:03:00,560
-right onto the end, so 20 plus 1 gives you
-21. And it just keeps on working, over and
+00:03:09,300 --> 00:03:12,680
+This is maybe the most important slide in
+our whole mission.
 
 46
-00:03:00,560 --> 00:03:08,680
-over, 22, 35, 67, all the way up to 99.
-It's the same simple repeatable pattern.
-The system
+00:03:12,680 --> 00:03:16,880
+This is the number one mistake people
+make, but you, you are not going to make
+it.
 
 47
-00:03:08,680 --> 00:03:13,200
-is actually really elegant when you think
-about it. No more memorizing, now we're
+00:03:16,880 --> 00:03:21,640
+Not after this. This is the boss level.
+Okay, look closely.
 
 48
-00:03:13,200 --> 00:03:18,100
-just building. Okay, so we've mastered
-everything from 1 to 99.
+00:03:21,640 --> 00:03:27,900
+The difference between 13 and 30, or 14
+and 40, is all about stress.
 
 49
-00:03:18,100 --> 00:03:20,800
-But how do we get to the really big
-numbers?
+00:03:27,900 --> 00:03:31,160
+It's about where you put the energy, the
+punch, in the word.
 
 50
-00:03:20,800 --> 00:03:25,720
-Well, it turns out you only need a few
-more special words, and these words act
-like massive
+00:03:31,160 --> 00:03:35,780
+For the teens, the energy is at the end.
+Listen close, 13.
 
 51
-00:03:25,720 --> 00:03:30,200
-building blocks that let us scale this
-whole system way, way up.
+00:03:35,780 --> 00:03:39,160
+Hear how my voice goes up at the end? Now
+listen to this, 30.
 
 52
-00:03:30,200 --> 00:03:34,360
-The first major checkpoint after 99 is, of
-course, 100.
+00:03:39,160 --> 00:03:43,940
+The energy is right at the start. Let's
+try another one, 14, 40.
 
 53
-00:03:34,360 --> 00:03:39,740
-This one word opens up the ability to
-build every number all the way to 999.
+00:03:43,940 --> 00:03:46,760
+You hear that difference? It's huge.
 
 54
-00:03:39,740 --> 00:03:42,480
-After that, the next big jump is to 1,000.
+00:03:46,760 --> 00:03:51,420
+So what's the one thing to remember? It's
+all about the stress.
 
 55
-00:03:42,480 --> 00:03:45,280
-Can you see that comma there? That's not
-just for looks.
+00:03:51,420 --> 00:03:53,780
+Let's do one more together. Come on, try
+it with me.
 
 56
-00:03:45,280 --> 00:03:49,560
-It's a visual clue telling you that you've
-just hit a brand new, much more powerful
-building
+00:03:53,780 --> 00:03:59,220
+Even if you feel a little silly, it really
+helps. Say it loud, 16.
 
 57
-00:03:49,560 --> 00:03:50,720
-block.
+00:03:59,220 --> 00:04:03,180
+Now say 60. Yes, that's it.
 
 58
-00:03:50,720 --> 00:03:54,920
-And from a thousand, we take this enormous
-leap all the way to one million.
+00:04:03,180 --> 00:04:06,560
+Practicing just like that is how you
+master it for good.
 
 59
-00:03:54,920 --> 00:03:57,160
-And honestly, that's pretty much it.
+00:04:06,560 --> 00:04:10,940
+You are doing so great. Yes, you did it.
 
 60
-00:03:57,160 --> 00:04:01,700
-With just these few new level markers, we
-can now build almost any number you can
+00:04:10,940 --> 00:04:14,460
+You just totally beat the boss level of
+English numbers.
 
 61
-00:04:01,700 --> 00:04:06,360
-possibly imagine. Okay, so we've gathered
-all the pieces of our code.
+00:04:14,460 --> 00:04:16,980
+I'm serious, that was the hardest part.
 
 62
-00:04:06,360 --> 00:04:10,280
-We have our regulars, we've got our teen
-and our teen rules, and we have our big
+00:04:16,980 --> 00:04:19,260
+From here on out, we're just combining the
+puzzle pieces
 
 63
-00:04:10,280 --> 00:04:13,520
-building blocks. Now it is time for the
-payoff.
+00:04:19,260 --> 00:04:23,620
+you already know how to use to build even
+bigger and cooler numbers.
 
 64
-00:04:13,520 --> 00:04:17,520
-Let's put our new knowledge to the test on
-a really big, complicated number.
+00:04:23,620 --> 00:04:27,500
+Okay, building numbers from 21 to 99 is
+super easy.
 
 65
-00:04:17,520 --> 00:04:22,440
-Alright, here's our final challenge, taken
-straight out of the textbook.
+00:04:27,500 --> 00:04:29,580
+It's like a simple two-step formula.
 
 66
-00:04:22,440 --> 00:04:25,440
-20,250,717.
+00:04:29,580 --> 00:04:32,140
+Step one, grab a T number, like 20.
 
 67
-00:04:25,440 --> 00:04:29,400
-I mean, that looks like a monster, right?
+00:04:32,140 --> 00:04:35,220
+Step two, add a single number from one to
+nine, like three.
 
 68
-00:04:29,400 --> 00:04:33,160
-But now that we know the code, we can
-break it down no problem.
+00:04:35,220 --> 00:04:37,600
+Stick them together and bam, 23.
 
 69
-00:04:33,160 --> 00:04:39,000
-The secret is to just ignore the whole
-thing at first and focus only on the
-commas.
+00:04:37,600 --> 00:04:41,980
+It works every single time, 71, 55, 89.
 
 70
-00:04:39,000 --> 00:04:44,400
-They act like little walls, breaking the
-number into small manageable chunks.
+00:04:41,980 --> 00:04:46,900
+See, you can do all of them now. All
+right, you are crushing this.
 
 71
-00:04:44,400 --> 00:04:50,200
-All we have to do is read the number
-inside each chunk, like 20 or 250, and
-then just
+00:04:46,900 --> 00:04:50,860
+So let's level up one more time. We've got
+200 on the screen.
 
 72
-00:04:50,200 --> 00:04:54,600
-say the name of that chunk's level, so
-million or thousand.
+00:04:50,860 --> 00:04:52,340
+How do we say this one?
 
 73
-00:04:54,600 --> 00:04:58,160
-It's like reading three small numbers
-instead of one giant one.
+00:04:52,340 --> 00:04:56,780
+Well, this is where we hit another little
+trap, a really common mistake, but one
+you're about
 
 74
-00:04:58,160 --> 00:05:03,720
-And there you have it, 20,250,717.
+00:04:56,780 --> 00:04:59,340
+to learn how to dodge like a pro.
 
 75
-00:05:03,720 --> 00:05:04,720
-We did it.
+00:04:59,340 --> 00:05:03,740
+Okay, so your brain probably wants to say
+200s.
 
 76
-00:05:04,720 --> 00:05:09,600
-We took this massive, intimidating number
-and we broke it down with the simple,
-logical
+00:05:03,740 --> 00:05:06,500
+I mean, it makes perfect sense, right?
+There are two of them.
 
 77
-00:05:09,600 --> 00:05:12,680
-rules we uncovered. The code works
-perfectly.
+00:05:06,500 --> 00:05:08,500
+But hold on. That's the trap.
 
 78
-00:05:12,680 --> 00:05:15,720
-Alright, now for a fun little encore.
+00:05:08,500 --> 00:05:10,900
+It feels right, but it's actually
+incorrect.
 
 79
-00:05:15,720 --> 00:05:19,280
-We've pretty much mastered whole numbers,
-but what about decimals?
+00:05:10,900 --> 00:05:14,340
+But don't you worry, the fix is super
+easy.
 
 80
-00:05:19,280 --> 00:05:24,040
-And how can that lead us to a, uh,
-delicious mathematical pun?
+00:05:14,340 --> 00:05:16,380
+And here's the super simple fix.
 
 81
-00:05:24,040 --> 00:05:27,600
-Believe it or not, the rule for decimals
-might be the simplest one of all.
+00:05:16,380 --> 00:05:20,340
+You just say the number, and then the word
+hundred. That's it.
 
 82
-00:05:27,600 --> 00:05:32,040
-You just say the whole number, then you
-say the word point, and then you just
+00:05:20,340 --> 00:05:22,860
+200, 800, 500.
 
 83
-00:05:32,040 --> 00:05:34,480
-read out each digit one by one.
+00:05:22,860 --> 00:05:26,180
+The words hundred, thousand, and million
+are kind of lazy.
 
 84
-00:05:34,480 --> 00:05:40,320
-So 3.14 is never 3.14, it's always 3.14.
+00:05:26,180 --> 00:05:29,900
+They don't like to add an S on the end
+when there's a specific number in front.
 
 85
-00:05:40,320 --> 00:05:41,840
-Easy, right?
+00:05:29,900 --> 00:05:34,260
+Just remembering that one tip will make
+your English sound so much more natural.
 
 86
-00:05:41,840 --> 00:05:45,520
-And this brings us to this great little
-cultural tidbit from our source material.
+00:05:34,260 --> 00:05:38,460
+And now, look at how we just start
+stacking those Legos we learned about.
 
 87
-00:05:45,520 --> 00:05:48,000
-So the number pi starts with 3.14.
+00:05:38,460 --> 00:05:42,940
+For 243, you just say the first part, 200,
+and then you say the next part you
 
 88
-00:05:48,000 --> 00:05:51,120
-In the US, March 14th is written as 314.
+00:05:42,940 --> 00:05:52,820
+already know, 43. For a big one like 4567,
+you just go piece by piece. 4567. Oh, and
 
 89
-00:05:51,120 --> 00:05:53,280
-So naturally, it became Pi Day.
+00:05:52,820 --> 00:05:58,740
+by the way, you'll hear people say and in
+there like 243. That's totally cool, too.
 
 90
-00:05:53,280 --> 00:05:56,920
-And because pi sounds exactly like pi,
-it's become a fun tradition to celebrate
-this
+00:05:58,740 --> 00:06:00,340
+You can use it or not.
 
 91
-00:05:56,920 --> 00:05:59,880
-math holiday by eating, well, pi.
+00:06:00,340 --> 00:06:06,240
+Okay, you have been working so hard, and
+you've learned all the main rules of the
+code. So
 
 92
-00:05:59,880 --> 00:06:04,320
-So what started with a strange little
-question about 1 teen ended with us
-cracking an
+00:06:06,240 --> 00:06:10,860
+as a reward, I think you've earned a
+little bonus level, a fun one, where
+English gets
 
 93
-00:06:04,320 --> 00:06:06,600
-entire linguistic code.
+00:06:10,860 --> 00:06:15,260
+It's a little silly. You've definitely
+seen this number in math class.
 
 94
-00:06:06,600 --> 00:06:10,520
-It just goes to show you that language is
-full of these amazing hidden systems, if
-you
+00:06:15,260 --> 00:06:19,120
+Good old pie. But what do we do with that
+little dot in the middle?
 
 95
-00:06:10,520 --> 00:06:14,240
-just know how to look. Which of course
-leads to one final thought.
+00:06:19,120 --> 00:06:21,980
+How do we say numbers that have a decimal
+point?
 
 96
-00:06:14,240 --> 00:06:18,160
-We've just figured out the secret of
-English numbers, so what incredible
-patterns are just
+00:06:21,980 --> 00:06:23,980
+Okay, you're not gonna believe how easy
+this is.
 
 97
-00:06:18,160 --> 00:06:21,200
-waiting to be discovered in all the other
-languages of the world?
+00:06:23,980 --> 00:06:27,140
+This might be the easiest rule of the
+whole day.
+
+98
+00:06:27,140 --> 00:06:29,940
+For the dot, you just say the word point.
+
+99
+00:06:29,940 --> 00:06:35,140
+And then for the numbers that come after
+it, you say them one by one.
+
+100
+00:06:35,140 --> 00:06:39,700
+So 3.14 becomes 3.14.
+
+101
+00:06:39,700 --> 00:06:44,460
+It's not 3.14, nope, just 3.14.
+
+102
+00:06:44,460 --> 00:06:46,220
+Super easy, right?
+
+103
+00:06:46,220 --> 00:06:49,500
+And here's where English gets a little
+weird and fun.
+
+104
+00:06:49,500 --> 00:06:54,380
+The word for the number P-I, pi, sounds
+exactly the same as the word
+
+105
+00:06:54,380 --> 00:06:57,460
+for a delicious dessert, P-I-E, pi.
+
+106
+00:06:57,460 --> 00:07:02,740
+And that is exactly why in America, March
+14th, which we write as 314,
+
+107
+00:07:02,740 --> 00:07:07,580
+is called pi day and people celebrate by
+eating pi. It's a silly joke,
+
+108
+00:07:07,580 --> 00:07:11,580
+but it's a great way to remember the
+number. And that's it.
+
+109
+00:07:11,580 --> 00:07:13,420
+Just like that, you've done it.
+
+110
+00:07:13,420 --> 00:07:15,420
+You made it all the way through the code
+book.
+
+111
+00:07:15,420 --> 00:07:19,140
+You learned the secret rules, you dodged
+the tricky traps, all of it.
+
+112
+00:07:19,140 --> 00:07:20,900
+You now have the keys to say pretty much
+
+113
+00:07:20,900 --> 00:07:22,700
+any number you can think of in English.
+
+114
+00:07:22,700 --> 00:07:25,940
+So let's look at your final reward. So
+think of this slide
+
+115
+00:07:25,940 --> 00:07:29,500
+as your official number master code book.
+It's your quick cheat sheet
+
+116
+00:07:29,500 --> 00:07:32,780
+with all the key code words we learned
+today. It's all right here.
+
+117
+00:07:32,780 --> 00:07:35,740
+From the basics to our special agents 11
+and 12,
+
+118
+00:07:35,740 --> 00:07:39,080
+to those tricky teens and teens all the
+way up to a million.
+
+119
+00:07:39,080 --> 00:07:43,220
+You know how all these parts work together
+now? You totally earn this.
+
+120
+00:07:43,220 --> 00:07:45,500
+So now I've got a final challenge for you.
+
+121
+00:07:45,500 --> 00:07:49,780
+You have the code, you know the secrets,
+you have the confidence.
+
+122
+00:07:49,780 --> 00:07:54,620
+So what's the biggest, wildest, most
+amazing number you can think of?
+
+123
+00:07:54,620 --> 00:07:59,060
+Go find one today and say it out loud in
+English. You can do it.
+
+124
+00:07:59,060 --> 00:08:02,460
+Awesome work today. And thanks so much for
+cracking the code with me.

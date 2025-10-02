@@ -69,5 +69,6 @@ rsconnect/
 *.txt~
 *synctex.gz
 *old
+*srt~
 images/
 

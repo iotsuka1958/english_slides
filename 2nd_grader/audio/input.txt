@@ -1,3 +1,4 @@
-You have to study today.<break time ="2.5s"/>You don’t have to study today.
-You have to do it alone.<break time ="2.5s"/>You don’t have to do it alone.
-You have to be perfect.<break time ="2.5s"/>You don’t have to be perfect.
+This cake is as sweet as honey.
+Eating a salad is as good as eating an apple.
+She sings as well as her mother.
+We drink tea as often as coffee.
