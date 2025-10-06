@@ -20,9 +20,11 @@
 %\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
+\usepackage{lua-ul}
 \UseTblrLibrary{counter}%%%%tabularrayとpauseが衝突することを回避する
 \usepackage{lmodern}
 \usetikzlibrary{tikzmark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{数字}
@@ -102,6 +104,24 @@
   20 & twenty & \textipa{/tw\'enti/}\\
 \end{tblr}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{11--19}
+
+\visible<4->{13から19は、ぜんぶ \framebox{　　} $+$ teen!\hspace{20pt}%
+teen は $+10$ のこと}
+
+ \begin{enumerate}\setcounter{enumi}{10}
+  \item<1-> eleven\hfill{覚えるしかない}
+  \item<2-> twelve\hfill{覚えるしかない}
+  \item<3-> thirteen\visible<5->{($=3+10$)}\hfill\visible<6->{でもthreeteenじゃないので注意}
+  \item<3-> fourteen\visible<7->{($=4+10$)}
+  \item<3-> fifteen\visible<8->{($=5+10$)}\hfill\visible<9->{でもfiveteenじゃないので注意}
+  \item<3-> sixteen\visible<10->{($=6+10$)}
+  \item<3-> seventeen\visible<11->{($=7+10$)}
+  \item<3-> eighteen\visible<12->{($=8+10$)}\hfill\visible<13->{でもeigh\underLine{tt}eenじゃないので注意}
+  \item<3-> nineteen\visible<14->{($=9+10$)}
+ \end{enumerate}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
  つぎの語があらわす数を数字で書きましょう\hspace{20pt}例： one $\rightarrow$ 1
@@ -131,101 +151,6 @@
  \item 15\hfill\visible<8->{\makebox[20pt][l]{fifteen}}\hspace{250pt}\mbox{}
  \item 19\hfill\visible<9->{\makebox[20pt][l]{nineteen}}\hspace{250pt}\mbox{}
  \item 20\hfill\visible<10>{\makebox[20pt][l]{twenty}}\hspace{250pt}\mbox{}
-\end{enumerate}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{20, 21, 22 \ldots\,27, 28, 29}
-\begin{frame}[plain]{20, 21, 22 \ldots\,27, 28, 29}
-\small\centering
-\begin{tblr}{
-  colspec = {rll}, 
-%  column{1} = {fg=red},    % 第1列の文字を赤に
-%  column{2} = {fg=blue},   % 第7列の文字を青に
- row{odd} = {bg=azure8},
- row{1} = { bg=azure3, fg=white},
-%  hline{1,2,Z} = {1pt},    % \toprule, \midrule, \bottomrule
-%  hline{3} = {0.5pt}       % もう1つの \midrule
- baseline=t,
- cell{1}{3} = {halign=r},
- cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
-}
-  number  & &{\tiny 0217}\,{\scriptsize \myaudio{./audio/001_number_02.mp3}}\\
-  20 & twenty & \textipa{/tw\'enti/}\\
-  21 & twenty-one & \textipa{/tw\'enti w\'\textturnv n/}\\
-  22 & twenty-two & \textipa{/tw\'enti t\'u:/}\\ 
-  23 & twenty-three & \textipa{/tw\'enti Tr\'\i:/}\\
-  24 & twenty-four & \textipa{/tw\'enti f\'O\textrhookschwa /}\\
-  25 & twenty-five & \textipa{/tw\'enti f\'aIv/}\\
-  26 & twenty-six & \textipa{/tw\'enti s\'Iks/}\\
-  27 & twenty-seven & \textipa{/tw\'enti s\'evn/}\\
-  28 & twenty-eight & \textipa{/tw\'enti \'eIt/}\\
-  29 & twenty-nine & \textipa{/tw\'enti n\'aIn/}\\
-%  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\
-\end{tblr}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{30, 31, 32 \ldots\,37, 38, 39}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{30, 31, 32 \ldots\,38, 39}
-\small
-\centering
- \begin{tblr}{
-  colspec = {rll}, 
-%  column{1} = {fg=red},    % 第1列の文字を赤に
-%  column{2} = {fg=blue},   % 第7列の文字を青に
- row{odd} = {bg=azure8},
- row{1} = { bg=azure3, fg=white},
-%  hline{1,2,Z} = {1pt},    % \toprule, \midrule, \bottomrule
-%  hline{3} = {0.5pt}       % もう1つの \midrule
- baseline=t,
- cell{1}{3} = {halign=r},
- cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
-}
-  number  & &{\tiny 0219}{\scriptsize \myaudio{./audio/001_number_03.mp3}}\\
-  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\
-  31 & thirty-one & \textipa{/T\'\textrhookschwa :ti w\'\textturnv n/}\\
-  32 & thirty-two & \textipa{/T\'\textrhookschwa :ti t\'u:/}\\ 
-  33 & thirty-three & \textipa{/T\'\textrhookschwa :ti Tr\'\i:/}\\
-  34 & thirty-four & \textipa{/T\'\textrhookschwa :ti f\'O\textrhookschwa /}\\
-  35 & thirty-five & \textipa{/T\'\textrhookschwa :ti f\'aIv/}\\
-  36 & thirty-six & \textipa{/T\'\textrhookschwa :ti s\'Iks/}\\
-  37 & thirty-seven & \textipa{/T\'\textrhookschwa :ti s\'evn/}\\
-  38 & thirty-eight & \textipa{/T\'\textrhookschwa :ti \'eIt/}\\
-  39 & thirty-nine & \textipa{/T\'\textrhookschwa :ti n\'aIn/}\\
-%  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\
-\end{tblr}
- 
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
- つぎの語があらわす数を数字で書きましょう\hspace{20pt}例： one $\rightarrow$ 1
-\begin{enumerate}
- \item twenty-one\hfill\visible<2->{\makebox[20pt][r]{21}}\hspace{250pt}\mbox{}
- \item twenty-two\hfill\visible<3->{\makebox[20pt][r]{22}}\hspace{250pt}\mbox{}
- \item twenty-five\hfill\visible<4->{\makebox[20pt][r]{25}}\hspace{250pt}\mbox{}
- \item twenty-seven\hfill\visible<5->{\makebox[20pt][r]{27}}\hspace{250pt}\mbox{}
- \item thirty-three\hfill\visible<6->{\makebox[20pt][r]{33}}\hspace{250pt}\mbox{}
- \item thirty-four\hfill\visible<7->{\makebox[20pt][r]{34}}\hspace{250pt}\mbox{}
- \item thirty-six\hfill\visible<8->{\makebox[20pt][r]{36}}\hspace{250pt}\mbox{}
- \item thirty-eight\hfill\visible<9->{\makebox[20pt][r]{38}}\hspace{250pt}\mbox{}
- \item thirty-nine\hfill\visible<10>{\makebox[20pt][r]{39}}\hspace{250pt}\mbox{}
-\end{enumerate}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
- つぎの数字を英語でつづりましょう\hspace{20pt}例： 2 $\rightarrow$ two
-\begin{enumerate}
- \item 23\hfill\visible<2->{\makebox[20pt][l]{twenty-three}}\hspace{250pt}\mbox{}
- \item 24\hfill\visible<3->{\makebox[20pt][l]{twenty-four}}\hspace{250pt}\mbox{}
- \item 25\hfill\visible<4->{\makebox[20pt][l]{twenty-five}}\hspace{250pt}\mbox{}
- \item 29\hfill\visible<5->{\makebox[20pt][l]{twenty-nine}}\hspace{250pt}\mbox{}
- \item 31\hfill\visible<6->{\makebox[20pt][l]{thirty-one}}\hspace{250pt}\mbox{}
- \item 36\hfill\visible<7->{\makebox[20pt][l]{thirty-six}}\hspace{250pt}\mbox{}
- \item 37\hfill\visible<8->{\makebox[20pt][l]{thirty-seven}}\hspace{250pt}\mbox{}
- \item 38\hfill\visible<9->{\makebox[20pt][l]{thirty-eight}}\hspace{250pt}\mbox{}
- \item 39\hfill\visible<10>{\makebox[20pt][l]{thirty-nine}}\hspace{250pt}\mbox{}
 \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -260,11 +185,204 @@
 %  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\
 \end{tblr}
 
-\hfill\visible<11->{\scriptsize 20から90までは語尾がty}\\
-\hfill\visible<12->{40は*fourtyじゃなく\textbf{forty}}
+\hfill\visible<12->{\scriptsize 20から90までは語尾がty}\\
+\hfill\visible<13->{40は*fourtyじゃなく\textbf{forty}}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{10, 20, 30, ... 70, 80, 90}
+
+\visible<4->{20から90は、ぜんぶ \framebox{　　} $+$ ty!\hspace{20pt}%
+ty は $\times 10$ のこと}
+
+ \begin{enumerate}\setcounter{enumi}{10}
+  \item[10]<1-> ten
+  \item[20]<2-> twenty\visible<5->{($=2\times 10$)}\hfill\visible<6->{でもtwotyじゃないので注意}
+  \item[30]<3-> thirty\visible<7->{($=3\times 10$)}\hfill\visible<8->{でもthreetyじゃないので注意}
+  \item[40]<3-> forty\visible<9->{($=4\times 10$)}\hfill\visible<10->{でもfo\underLine{u}rtyじゃないので注意}
+  \item[50]<3-> fifty\visible<11->{($=5\times 10$)}\hfill\visible<12->{でもfivetyじゃないので注意}
+  \item[60]<3-> sixty\visible<13->{($=6\times 10$)}
+  \item[70]<3-> seventy\visible<14->{($=7\times 10$)}
+  \item[80]<3-> eighty\visible<15->{($=8\times 10$)}\hfill\visible<16->{でもeigh\underLine{tt}yじゃないので注意}
+  \item[90]<3-> ninety\visible<17->{($=9\times 10$)}
+ \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-5>[plain]{ここまでは}
+
+\centering
+\begin{tblr}{
+colspec = rrrrrrrrrr,
+cells={fg=gray6}
+}
+ \alt<1>{1}{\textcolor{black}{1}}&\alt<1>{2}{\textcolor{black}{2}}&\alt<1>{3}{\textcolor{black}{3}}&\alt<1>{4}{\textcolor{black}{4}}&\alt<1>{5}{\textcolor{black}{5}}&\alt<1>{6}{\textcolor{black}{6}}&\alt<1>{7}{\textcolor{black}{7}}&\alt<1>{8}{\textcolor{black}{8}}&\alt<1>{9}{\textcolor{black}{9}}&\alt<1>{10}{\textcolor{black}{10}}\\
+ \alt<1-2>{11}{\textcolor{black}{11}}&\alt<1-2>{12}{\textcolor{black}{12}}&\alt<1-2>{13}{\textcolor{black}{13}}&\alt<1-2>{14}{\textcolor{black}{14}}&\alt<1-2>{15}{\textcolor{black}{15}}&\alt<1-2>{16}{\textcolor{black}{16}}&\alt<1-2>{17}{\textcolor{black}{17}}&\alt<1-2>{18}{\textcolor{black}{18}}&\alt<1-2>{19}{\textcolor{black}{19}}&\alt<1-2>{20}{\textcolor{black}{20}}\\
+ \alt<1-4>{21}{\textcolor{Maroon}{21}}&\alt<1-4>{22}{\textcolor{Maroon}{22}}&\alt<1-4>{23}{\textcolor{Maroon}{23}}&\alt<1-4>{24}{\textcolor{Maroon}{24}}&\alt<1-4>{25}{\textcolor{Maroon}{25}}&\alt<1-4>{26}{\textcolor{Maroon}{26}}&\alt<1-4>{27}{\textcolor{Maroon}{27}}&\alt<1-4>{28}{\textcolor{Maroon}{28}}&\alt<1-4>{29}{\textcolor{Maroon}{29}}&\alt<1-3>{30}{\textcolor{black}{30}}\\
+ 31&32&33&34&35&36&37&38&39&\alt<1-3>{40}{\textcolor{black}{40}}\\
+ 41&42&43&44&45&46&47&48&49&\alt<1-3>{50}{\textcolor{black}{50}}\\
+ 51&52&53&54&55&56&57&58&59&\alt<1-3>{60}{\textcolor{black}{60}}\\
+ 61&62&63&64&65&66&67&68&69&\alt<1-3>{70}{\textcolor{black}{70}}\\
+ 71&72&73&74&75&76&77&78&79&\alt<1-3>{80}{\textcolor{black}{80}}\\
+ 81&82&83&84&85&86&87&88&89&\alt<1-3>{90}{\textcolor{black}{90}}\\
+ 91&92&93&94&95&96&97&98&99&\alt<1-3>{}{\textcolor{black}{}}\\
+\end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{20, 21, 22 \ldots\,27, 28, 29}
+\begin{frame}[plain]{20, 21, 22 \ldots\,27, 28, 29}
+\small\centering
+\begin{tblr}{
+  colspec = {rll}, 
+%  column{1} = {fg=red},    % 第1列の文字を赤に
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+ row{odd} = {bg=azure8},
+ row{1} = { bg=azure3, fg=white},
+%  hline{1,2,Z} = {1pt},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+ baseline=t,
+ cell{1}{3} = {halign=r},
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+  number  & &{\tiny 0217}\,{\scriptsize \myaudio{./audio/001_number_02.mp3}}\\
+  20 & twenty & \textipa{/tw\'enti/}\\
+  21 & twenty-one & \textipa{/tw\'enti w\'\textturnv n/}\\
+  22 & twenty-two & \textipa{/tw\'enti t\'u:/}\\ 
+  23 & twenty-three & \textipa{/tw\'enti Tr\'\i:/}\\
+  24 & twenty-four & \textipa{/tw\'enti f\'O\textrhookschwa /}\\
+  25 & twenty-five & \textipa{/tw\'enti f\'aIv/}\\
+  26 & twenty-six & \textipa{/tw\'enti s\'Iks/}\\
+  27 & twenty-seven & \textipa{/tw\'enti s\'evn/}\\
+  28 & twenty-eight & \textipa{/tw\'enti \'eIt/}\\
+  29 & twenty-nine & \textipa{/tw\'enti n\'aIn/}\\
+%  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\
+\end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{21--29}
+ 
+\large
+
+21から29までは twenty-\fbox{　　}\tikzmark{target}
+
+\vspace{50pt}
+
+\hfill{}\tikzmark{shooter}one, two, three ... eight, nine
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<1->{\draw[<-,opacity=.4,line width=1pt] ([xshift=-15pt,yshift=-4pt]pic cs:target) to[out=-90, in=180] ([xshift=-2pt, yshift=2pt] pic cs:shooter);}
+\end{tikzpicture}
+
+\begin{textblock*}{0.4\linewidth}(50pt,120pt)
+\visible<1->{\begin{tikzpicture}
+\pig[
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+ハイフンをお忘れなく}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{30, 31, 32 \ldots\,37, 38, 39}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{30, 31, 32 \ldots\,38, 39}
+\small
+\centering
+ \begin{tblr}{
+  colspec = {rll}, 
+%  column{1} = {fg=red},    % 第1列の文字を赤に
+%  column{2} = {fg=blue},   % 第7列の文字を青に
+ row{odd} = {bg=azure8},
+ row{1} = { bg=azure3, fg=white},
+%  hline{1,2,Z} = {1pt},    % \toprule, \midrule, \bottomrule
+%  hline{3} = {0.5pt}       % もう1つの \midrule
+ baseline=t,
+ cell{1}{3} = {halign=r},
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+}
+  number  & &{\tiny 0219}{\scriptsize \myaudio{./audio/001_number_03.mp3}}\\
+  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\
+  31 & thirty-one & \textipa{/T\'\textrhookschwa :ti w\'\textturnv n/}\\
+  32 & thirty-two & \textipa{/T\'\textrhookschwa :ti t\'u:/}\\ 
+  33 & thirty-three & \textipa{/T\'\textrhookschwa :ti Tr\'\i:/}\\
+  34 & thirty-four & \textipa{/T\'\textrhookschwa :ti f\'O\textrhookschwa /}\\
+  35 & thirty-five & \textipa{/T\'\textrhookschwa :ti f\'aIv/}\\
+  36 & thirty-six & \textipa{/T\'\textrhookschwa :ti s\'Iks/}\\
+  37 & thirty-seven & \textipa{/T\'\textrhookschwa :ti s\'evn/}\\
+  38 & thirty-eight & \textipa{/T\'\textrhookschwa :ti \'eIt/}\\
+  39 & thirty-nine & \textipa{/T\'\textrhookschwa :ti n\'aIn/}\\
+%  30 & thirty & \textipa{/T\'\textrhookschwa :ti/}\\
+\end{tblr}
+ 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{21--99}
+ 
+\large
+
+31から39までは thirty\tikzmark{target10}-\fbox{　　}\tikzmark{target01}
+
+\vspace{50pt}
+
+\hfill{}\tikzmark{shooter01}one, two, three ... eight, nine
+
+\hfill\visible<2->{\tikzmark{shooter10}twenty, thirty, forty ... eighty, ninety}
+
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<1->{\draw[<-,opacity=.4,line width=1pt] ([xshift=-15pt,yshift=-4pt]pic cs:target01) to[out=-90, in=180] ([xshift=-2pt, yshift=2pt] pic cs:shooter01);}
+ \visible<2->{\draw[<-,opacity=.4,line width=1pt] ([xshift=-15pt,yshift=-4pt]pic cs:target10) to[out=-90, in=180] ([xshift=-2pt, yshift=2pt] pic cs:shooter10);}
+\end{tikzpicture}
+
+\begin{textblock*}{0.4\linewidth}(50pt,120pt)
+\visible<1->{\begin{tikzpicture}
+\cat[
+signpost=\scalebox{0.5}{
+\parbox{2.2cm}{\color{black}
+99まで\\同じです}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ つぎの語があらわす数を数字で書きましょう\hspace{20pt}例： one $\rightarrow$ 1
+\begin{enumerate}
+ \item twenty-one\hfill\visible<2->{\makebox[20pt][r]{21}}\hspace{250pt}\mbox{}
+ \item twenty-two\hfill\visible<3->{\makebox[20pt][r]{22}}\hspace{250pt}\mbox{}
+ \item twenty-five\hfill\visible<4->{\makebox[20pt][r]{25}}\hspace{250pt}\mbox{}
+ \item twenty-seven\hfill\visible<5->{\makebox[20pt][r]{27}}\hspace{250pt}\mbox{}
+ \item thirty-three\hfill\visible<6->{\makebox[20pt][r]{33}}\hspace{250pt}\mbox{}
+ \item thirty-four\hfill\visible<7->{\makebox[20pt][r]{34}}\hspace{250pt}\mbox{}
+ \item thirty-six\hfill\visible<8->{\makebox[20pt][r]{36}}\hspace{250pt}\mbox{}
+ \item thirty-eight\hfill\visible<9->{\makebox[20pt][r]{38}}\hspace{250pt}\mbox{}
+ \item thirty-nine\hfill\visible<10>{\makebox[20pt][r]{39}}\hspace{250pt}\mbox{}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ つぎの数字を英語でつづりましょう\hspace{20pt}例： 2 $\rightarrow$ two
+\begin{enumerate}
+ \item 23\hfill\visible<2->{\makebox[20pt][l]{twenty-three}}\hspace{250pt}\mbox{}
+ \item 24\hfill\visible<3->{\makebox[20pt][l]{twenty-four}}\hspace{250pt}\mbox{}
+ \item 25\hfill\visible<4->{\makebox[20pt][l]{twenty-five}}\hspace{250pt}\mbox{}
+ \item 29\hfill\visible<5->{\makebox[20pt][l]{twenty-nine}}\hspace{250pt}\mbox{}
+ \item 31\hfill\visible<6->{\makebox[20pt][l]{thirty-one}}\hspace{250pt}\mbox{}
+ \item 36\hfill\visible<7->{\makebox[20pt][l]{thirty-six}}\hspace{250pt}\mbox{}
+ \item 37\hfill\visible<8->{\makebox[20pt][l]{thirty-seven}}\hspace{250pt}\mbox{}
+ \item 38\hfill\visible<9->{\makebox[20pt][l]{thirty-eight}}\hspace{250pt}\mbox{}
+ \item 39\hfill\visible<10>{\makebox[20pt][l]{thirty-nine}}\hspace{250pt}\mbox{}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
  つぎの語があらわす数を数字で書きましょう\hspace{20pt}例： one $\rightarrow$ 1
 \begin{enumerate}
@@ -486,7 +604,7 @@
 
 20,\tikzmark{comma_million}250,\tikzmark{comma_thousand}717
 
-\large 
+\large
 
 \vspace{50pt}
 
@@ -495,8 +613,9 @@
 \hfill{}\tikzmark{million}\visible<3->{million}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<2->{\draw[<-] ([xshift=0pt, yshift=-5pt]pic cs:comma_thousand) to[out=-50, in=180] ([xshift=-2pt, yshift=2pt]pic cs:thousand);}
- \visible<3->{\draw[<-] ([xshift=0pt, yshift=-5pt] pic cs:comma_million) to[out=-60,in=180] ([xshift=-2pt, yshift=4pt] pic cs:million);}
+ \visible<2->{\draw[<-] ([xshift=0pt, yshift=-5pt]pic cs:comma_thousand) to[out=-50, in=180] ([xshift=-2pt, yshift=3
+pt]pic cs:thousand);}
+ \visible<3->{\draw[<-] ([xshift=0pt, yshift=-5pt] pic cs:comma_million) to[out=-60,in=180] ([xshift=-2pt, yshift=3pt] pic cs:million);}
 \end{tikzpicture}
 
 
