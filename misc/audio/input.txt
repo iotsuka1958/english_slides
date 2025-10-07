@@ -1,10 +1,9 @@
-one hundred one
-one hundred two
-one hundred  eleven
-one hundred  twenty-five
-one hundred  thirty-four
-two hundred  forty-three
-three hundred  fifty-eight
-five hundred  sixty-seven
-seven hundered  seventy-seven
-nine hundred  ninety-nine
+twenty-three<break time="2s"/>twenty-three
+thirty-four<break time="2s"/>thirty-four
+forty-five<break time="2s"/>forty-five
+fifty-nine<break time="2s"/>fifty-nine
+sixty-one<break time="2s"/>sixty-one
+seventy-three<break time="2s"/>seventy-three
+eighty-three<break time="2s"/>eighty-three
+ninety-nine<break time="2s"/>ninety-nine
+one hundred<break time="2s"/>one hundred
