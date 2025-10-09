@@ -55,6 +55,7 @@ rsconnect/
 *.mp3
 *.m4a
 *.html
+*.html~
 *.pdf
 *.jpg
 *.jpeg

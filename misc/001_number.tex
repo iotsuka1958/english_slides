@@ -324,18 +324,18 @@ signback=white!80!brown
  
 \large
 
-31から39までは thirty\tikzmark{target10}-\fbox{　　}\tikzmark{target01}
+31から39までは thirty\tikzmark{Target10}-\fbox{　　}\tikzmark{Target01}
 
 \vspace{50pt}
 
-\hfill{}\tikzmark{shooter01}one, two, three ... eight, nine
+\hfill{}\tikzmark{Shooter01}one, two, three ... eight, nine
 
-\hfill\visible<2->{\tikzmark{shooter10}twenty, thirty, forty ... eighty, ninety}
+\hfill\visible<2->{\tikzmark{Shooter10}twenty, thirty, forty ... eighty, ninety}
 
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<1->{\draw[<-,opacity=.4,line width=1pt] ([xshift=-15pt,yshift=-4pt]pic cs:target01) to[out=-90, in=180] ([xshift=-2pt, yshift=2pt] pic cs:shooter01);}
- \visible<2->{\draw[<-,opacity=.4,line width=1pt] ([xshift=-15pt,yshift=-4pt]pic cs:target10) to[out=-90, in=180] ([xshift=-2pt, yshift=2pt] pic cs:shooter10);}
+ \visible<1->{\draw[<-,opacity=.4,line width=1pt] ([xshift=-15pt,yshift=-4pt]pic cs:Target01) to[out=-90, in=180] ([xshift=-2pt, yshift=2pt] pic cs:Shooter01);}
+ \visible<2->{\draw[<-,opacity=.4,line width=1pt] ([xshift=-15pt,yshift=-4pt]pic cs:Target10) to[out=-90, in=180] ([xshift=-2pt, yshift=2pt] pic cs:Shooter10);}
 \end{tikzpicture}
 
 \begin{textblock*}{0.4\linewidth}(40pt,120pt)
@@ -463,6 +463,42 @@ signback=white!80!brown
 
 \hfill\visible<2->{\scriptsize hundredのあとのandはあってもなくてもOK}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{101--999}
+ 
+\large
+
+101から999までは
+
+\hspace*{20pt}\fbox{百の位の数}\tikzmark{target100} hundred (and) \fbox{1から99までの数}\tikzmark{target10}
+
+\vspace{50pt}
+
+\hfill{}\visible<3->{\tikzmark{shooter10}one, two, three ... twenty-one ... ninety-nine}
+
+
+\hfill\visible<2->{\tikzmark{shooter100}one, two, three ... eight, nine}
+
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,opacity=.4,line width=1pt] ([xshift=-50pt,yshift=-4pt]pic cs:target10) to[out=-90, in=180] ([xshift=-2pt, yshift=2pt] pic cs:shooter10);}
+ \visible<2->{\draw[<-,opacity=.4,line width=1pt] ([xshift=-20pt,yshift=-4pt]pic cs:target100) to[out=-90, in=180] ([xshift=-2pt, yshift=2pt] pic cs:shooter100);}
+\end{tikzpicture}
+
+\begin{textblock*}{0.4\linewidth}(35pt,120pt)
+\visible<4->{\begin{tikzpicture}
+\cat[
+scale=1.4,
+signpost=\scalebox{0.7}{
+\parbox{2.2cm}{\color{black}
+999まで\\つくり方は同じです！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{more than 999}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -742,6 +778,8 @@ How many digits\footnotemark{} are there in pi? It has many! 3.141592\ldots\,\, 
 \begin{frame}[plain]{音声概要と解説動画}
  
 {\tiny audio\_overview 2220}\,{\scriptsize \myaudio{./audio/overview/001_number_audio_overview.m4a}}
+
+{\tiny video 0805}\,{\scriptsize \href{./video/001_number_ja_subtitle.mp4}{\reflectbox{\twemoji{movie camera}}}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
 \end{document}

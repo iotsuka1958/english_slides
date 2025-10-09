@@ -4,8 +4,8 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./orientation/orientation_another.tex,2025-04-24,2025-04-15,2025-04-15,,2,1,1,,done,done,done,,999,999,999,
 ./1st_grader/999quiz_full_vesion.tex,2025-05-07,2024-06-18,2024-06-18,2024-06-18,26,26,26,26,done,done,done,done,999,999,999,999
 ./1st_grader/099_pronunciation.tex,2025-06-19,2024-09-03,2024-07-18,2024-07-18,4,3,3,3,done,done,done,done,999,999,999,999
-./pronunciation/pronunciation_consonant.tex,2025-06-26,2024-09-18,2024-09-18,2024-09-18,35,,1,1,,done,done,done,sz,999,999,999
-./pronunciation/pronunciation_vowel.tex,,2025-04-16,2025-04-16,,,71,71,,,,,,,オの類,オの類,
+./pronunciation/pronunciation_consonant.tex,2025-06-26,2024-09-18,2024-09-18,2024-09-18,36,,1,1,,done,done,done,sz,999,999,999
+./pronunciation/pronunciation_vowel.tex,,2025-04-16,2025-04-16,,,72,72,,,,,,,オの類,オの類,
 ./pronunciation/pronunciation_japanese.tex,,2025-01-07,2025-01-07,2025-01-07,,4,4,4,,done,done,done,,999,999,999
 ./1st_grader/001_alphabet.tex,2025-04-30,2024-06-14,,,2,2,,,done,done,,,999,999,,
 ./1st_grader/002_sv.tex,2025-05-07,2024-06-18,2024-06-13,2024-06-13,4,4,2,2,done,done,done,done,999,999,999,999
@@ -17,7 +17,7 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./1st_grader/006_negative_be.tex,2025-09-12,2024-10-23,,,3,2,,,done,done,,,999,999,,
 ./1st_grader/007_negative_do.tex,2025-09-19,2024-10-24,2024-10-11,2024-10-11,3,4,3,3,done,done,done,done,999,999,999,999
 ./1st_grader/008_question_be.tex,2025-09-26,,,,3,2,,,done,done,,,999,999,,
-./1st_grader/009_answer_be.tex,2025-10-02,2024-10-31,,,4,4,,,done,done,,,999,999,,
+./1st_grader/009_answer_be.tex,2025-10-02,2024-10-31,,,5,4,,,done,done,,,999,999,,
 ./1st_grader/010_question_do.tex,,2024-11-14,,,,3,,,,done,,,,999,,
 ./1st_grader/011_answer_do.tex,,2024-11-19,2024-10-16,2024-10-16,,4,6,6,,done,done,done,,999,999,999
 ./1st_grader/012_can.tex,,2024-12-12,2025-01-22,,,6,5,,,done,done,,,999,999,
@@ -57,7 +57,7 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./2nd_grader/035_wh_to_do.tex,,,2025-07-04,,,,5,,,,done,,,,999,
 ./2nd_grader/036_gerund.tex,,,2025-09-10,,,,7,,,,done,,,,999,
 ./2nd_grader/041_as_as.tex,,,2025-09-25,,,,6,,,,done,,,999,999,
-./2nd_grader/042_er.tex,,,2025-10-07,,,,2,,,,,,,,slide31,
+./2nd_grader/042_er.tex,,,2025-10-07,,,,3,,,,,,,,slide47,
 ./2nd_grader/043_est.tex,,,,,,,,,,,,,,,,
 ./2nd_grader/044_more_most.tex,,,,,,,,,,,,,,,,
 ./2nd_grader/045_better_best.tex,,,,,,,,,,,,,,,,
@@ -80,7 +80,7 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./3rd_grader/055_indirect_question.tex,,,,,,,,,,,,,,,,
 ./3rd_grader/061_want_to_etc.tex,,,,,,,,,,,,,,,,
 ./3rd_grader/062_it_for_to.tex,,,,,,,,,,,,,,,,
-./misc/001_number.tex,2025-07-18,2025-10-03,2025-07-11,,7,3,10,,done,,done,,999,slide114,999,
+./misc/001_number.tex,2025-07-18,2025-10-03,2025-07-11,,7,4,10,,done,,done,,999,slide172,999,
 ./misc/002_day_month_season.tex,,,,,,,,,,,,,,,,
 ./misc/003_weather.tex,,,,,,,,,,,,,,,,
 ./misc/004_direction.texx,,,,,,,,,,,,,,,,
