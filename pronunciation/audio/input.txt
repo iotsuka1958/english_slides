@@ -1,8 +1,8 @@
-all<break time="2s"/>all
-ball<break time="2s"/>ball
-fall<break time="2s"/>fall
-tall<break time="2s"/>tall
-boat<break time="2s"/>boat
-coat<break time="2s"/>coat
-road<break time="2s"/>road
-know<break time="2s"/>know
+she<break time="2s"/>she
+ship<break time="2s"/>ship
+sheep<break time="2s"/>sheep
+shoes<break time="2s"/>shoes
+push<break time="2s"/>push
+wash<break time="2s"/>wash
+station<break time="2s"/>station
+ocean<break time="2s"/>ocean

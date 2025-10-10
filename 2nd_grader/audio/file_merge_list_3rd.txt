@@ -5,4 +5,8 @@ file 'silent.mp3'
 file '042_er_03.mp3'
 file 'silent.mp3'
 file '042_er_04.mp3'
+file 'silent.mp3'
+file '042_er_05.mp3'
+file 'silent.mp3'
+file '042_er_06.mp3'
 
