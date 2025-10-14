@@ -502,6 +502,17 @@ signback=white!80!brown
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{more than 999}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{2000はなんていうの？}
+\Huge\centering
+
+\begin{tabular}{lll}
+ \visible<2->{1000}& \visible<3->{$\longrightarrow$\,\,\,\,one thousand} & \\
+ \visible<4->{2000}& \visible<5->{$\longrightarrow$\,\,\,\,two thousand\textcolor{Maroon}{s}} & \visible<6->{{\normalsize まちがい}}\\
+&\visible<7->{$\longrightarrow$\,\,\,\,two thousand}&\visible<7->{{\normalsize 正解}}
+\end{tabular}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{{\scriptsize \textdbend}\,more than 999}
   \small
 \centering
@@ -654,20 +665,31 @@ signback=white!80!brown
 \hfill{}\tikzmark{million}\visible<3->{million}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<2->{\draw[<-] ([xshift=0pt, yshift=-5pt]pic cs:comma_thousand) to[out=-50, in=180] ([xshift=-2pt, yshift=3
-pt]pic cs:thousand);}
+ \visible<2->{\draw[<-] ([xshift=0pt, yshift=-5pt]pic cs:comma_thousand) to[out=-50, in=180] ([xshift=-2pt, yshift=3pt]pic cs:thousand);}
  \visible<3->{\draw[<-] ([xshift=0pt, yshift=-5pt] pic cs:comma_million) to[out=-60,in=180] ([xshift=-2pt, yshift=3pt] pic cs:million);}
 \end{tikzpicture}
 
 
-\hfill\visible<4->{20 million, 250 thousand, 717}
+\hfill\visible<4->{20 million 250 thousand 717}
 
-\vfill
+\vspace{20pt}
 
-\hfill{}\visible<5->{twenty million, two hundred fifty thousand, seven hundred  seventeen}
+\hfill{}\visible<5->{twenty million two hundred fifty thousand seven hundred  seventeen}
 
 {\tiny 0102}\,{\scriptsize \myaudio{./audio/001_number_06a.mp3}}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercise}
+ 
+つぎの数を英語で書いてみよう
+
+\begin{itemize}
+ \item 20,251,014\hfill
+\visible<2->{20 million 251 thousand 14}\\
+\hfill\visible<3->{twenty million two hundred fifty-one thousand fourteen}
+\end{itemize}
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{小数}
 %%%%%%%%%%%%%%%%%%%%%%%%%

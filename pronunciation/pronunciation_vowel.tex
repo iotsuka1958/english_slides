@@ -2453,7 +2453,7 @@ signback=white!80!brown
 \setbeamercolor{background canvas}{bg=black}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\hypertarget{today}{}
+%\hypertarget{today}{}
 
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -2464,7 +2464,7 @@ signback=white!80!brown
 
 \vspace{50pt}
 
-\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
+%\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2612,7 +2612,6 @@ signback=white!80!brown
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 2}
-\hypertarget{ex}{}
 
  発音記号\textipa{/oU/}の音が含まれていたらT、含まれていなければFと答えてください。余裕があれば、なんという単語か書き取ってみましょう
 
@@ -2627,8 +2626,41 @@ signback=white!80!brown
 \hfill{\tiny 0108}\,{\scriptsize \myaudio{./audio/vowel_ou_03.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+\hypertarget{today}
+\Large
+
+\begin{enumerate}
+ \item<1-> He \textbf{buy}s eggs at that store.
+ \item<2-> He \textbf{bought} eggs at that store.
+\end{enumerate}
+
+\vspace{80pt}
+
+\visible<3->{buy \textipa{/b\'aI/} の過去形はbought \textipa{/b\'O:t/}}
+
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,100pt)
+\visible<3->{\begin{tikzpicture}
+\cat[
+scale=1.4,
+speech={\scriptsize bought \textipa{/b\'O:t/}},
+signpost=\scalebox{0.6}{
+\parbox{2.2cm}{\color{black}
+\centering buyは\\不規則動詞！}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+
+\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz \textipa{/O:/} \textipa{/oU/}}\large
+\hypertarget{ex}{}
 
 bought（buyの過去形）またはboat（ボート）を発音していきます。どちらを発音したか判断してください
 
@@ -2665,7 +2697,7 @@ bought（buyの過去形）またはboat（ボート）を発音していきま�
  \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
 \end{tikzpicture}
 
-\hfill{\tiny 0141}\,{\scriptsize \myaudio{./audio/vowel_full_fool_01.mp3}}
+\hfill{\tiny 0141}\,{\scriptsize \myaudio{./audio/vowel_boat_bought_01.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
