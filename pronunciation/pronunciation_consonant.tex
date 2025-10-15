@@ -1293,6 +1293,48 @@ singまたはthingを発音していきます。どちらを発音したか聞�
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+
+mouseまたはmouthを発音していきます。どちらを発音したか聞き取って線でつなぎましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{mouse}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{mouth}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{mouse}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{mouth}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{mouth}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{mouse}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& mouse &\textipa{/m\'aUs/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& mouth &\textipa{/m\'aUT/}\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0142}\,{\scriptsize \myaudio{./audio/consonant_mouse_mouth_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}\large
 %\hypertarget{ex}{}
@@ -1413,7 +1455,6 @@ freeまたはthreeを発音していきます。どちらを発音したか判�
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{実際の単語で確認しよう \textipa{/Z/}}
-\hypertarget{ex}{}
 
 \Large
 {\small \textipa{/Z/}の音を含む英単語}\hfill{\tiny 0411}\,{\scriptsize \myaudio{./audio/consonant_textesh_textyogh_03.mp3}}
@@ -1441,13 +1482,14 @@ freeまたはthreeを発音していきます。どちらを発音したか判�
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz \textipa{/S/}}
+\hypertarget{ex}{}
 \large
 発音記号\textipa{/S/}で示した音声が含まれていたらT、含まれていなければFと答えてください。余裕がある人はなんという単語か書き取ってみましょう
 
 \hfill{}{\scriptsize T: true（正しい）\hspace{5pt} F: false（まちがい）}
  \begin{enumerate}
   \item \mbox{}\visible<2->{T}\hspace{1\zw}\visible<7->{she}
-  \item \mbox{}\visible<3->{F}\hspace{1\zw}\visible<8->{sea / see }
+  \item \mbox{}\visible<3->{F}\hspace{1\zw}\visible<8->{sea / see / C }
   \item \mbox{}\visible<4->{T}\hspace{1\zw}\visible<9->{ship}
   \item \mbox{}\visible<5->{F}\hspace{1\zw}\visible<10->{sick}
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{machine}
@@ -1472,8 +1514,183 @@ freeまたはthreeを発音していきます。どちらを発音したか判�
   \item \mbox{}\visible<6->{T}\hspace{1\zw}\visible<11->{usually}
  \end{enumerate}
 
-\hfill{\tiny 0136}\,{\scriptsize \myaudio{./audio/consonant_textesh_textyogh_04.mp3}}
+\hfill{\tiny 0136}\,{\scriptsize \myaudio{./audio/consonant_textesh_textyogh_05.mp3}}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}
+\large
+
+seaまたはsheを発音していきます。どちらを発音したか聞き取りましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{sea}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{she}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{sea}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{she}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{she}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{sea}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& sea &\textipa{/s\'\i:/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& she &\textipa{/S\'\i:/}\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\scriptsize \myaudio{./audio/consonant_sea_she_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+%\hypertarget{ex}{}
+
+sitまたはshitを発音していきます。どちらを発音したか判断してください
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{shit}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{sit}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{sit}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{shit}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{sit}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{shit}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& sit &\textipa{/s\'It/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& shit& \textipa{/S\'It/}  \\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge, NavyBlue] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a1.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a2.west);}
+\end{tikzpicture}
+
+\hfill{\small shitは品のないことばなので、決して口にしないようにしましょう}
+
+\hfill{\tiny 0138}\,{\scriptsize \myaudio{./audio/consonant_sit_shit_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+
+seat（座席）またはsheet（シーツ）を発音していきます。どちらを発音したか判断しましょう
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{seat}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{sheet}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{seat}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{sheet}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{sheet}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{seat}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& seat &\textipa{/s\'\i:t/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& sheet &\textipa{/S\'\i:t/}\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\scriptsize a \textbf{sheet} of paper / two \textbf{sheets} of paper}
+
+\hfill{\scriptsize \myaudio{./audio/consonant_seat_sheet_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+%\hypertarget{ex}{}
+
+suit（スーツ）またはshoot（撃つ）を発音していきます。どちらを発音したか判断してください
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{shoot}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{suit}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{suit}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{shoot}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{suit}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{shoot}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& suit &\textipa{/s\'u:t/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& shoot& \textipa{/S\'u:t/}  \\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge, NavyBlue] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a1.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a2.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/consonant_suit_shoot_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%

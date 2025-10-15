@@ -1,8 +1,5 @@
-she<break time="2s"/>she
-ship<break time="2s"/>ship
-sheep<break time="2s"/>sheep
-shoes<break time="2s"/>shoes
-push<break time="2s"/>push
-wash<break time="2s"/>wash
-station<break time="2s"/>station
-ocean<break time="2s"/>ocean
+learn<break time="2s"/>learn
+turn<break time="2s"/>turn
+nurse<break time="2s"/>nurse
+her<break time="2s"/>her
+circle<break time="2s"/>circle
