@@ -1,0 +1,142 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!70}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
+\input{myPreamble4Slide}
+\usepackage{lua-ul}
+\usepackage{pxrubrica}
+\usepackage{soup}
+\usepackage{circledsteps}
+\usepackage{tikzducks}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{ducks}
+\usepackage{scsnowman}
+\usetikzlibrary{tikzmark}
+\usetikzlibrary{backgrounds}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{multimedia}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\newcommand*{\themonth}{\two@digits\month}
+\newcommand*{\theday}{\two@digits\day}
+\makeatother
+\newcommand{\mytoday}{{\the\year}--{\themonth}--{\theday}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{Pronunciation---consonant---}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色をグレイに変更
+%\setbeamercolor{background canvas}{bg=gray}
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+%\centering
+\raggedleft
+  \textcolor{white}{\Huge\bfseries English is fun.}
+
+\vfill
+
+\raggedleft
+% \textcolor{white}{\LARGE\bfseries 2024--11--26}
+% \textcolor{white}{\LARGE\bfseries \today}
+ \textcolor{white}{\LARGE\bfseries \mytoday}
+
+\vfill
+\vfill
+\vfill
+
+\raggedleft
+\textcolor{white}{\large The lesson will begin at the scheduled time.}
+
+%\textcolor{white}{\large 可能なら、鏡を用意してください}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色をグレイに変更
+%\setbeamercolor{background canvas}{bg=gray}
+\setbeamercolor{background canvas}{bg=black}
+
+\begin{frame}
+%\centering
+\raggedleft
+  \textcolor{white}{\Huge\bfseries \textcolor{yellow}{E}nglish is fun.}
+
+\vfill
+
+\vfill
+
+\raggedleft
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{H}ello, everybody!}
+
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{H}ow are you today?}
+
+\raggedleft
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{A}re you ready to start?}
+
+ \textcolor{white}{\LARGE\bfseries \textcolor{yellow}{L}et's begin today's lesson.}
+
+\vfill
+
+\raggedleft
+% \textcolor{white}{\LARGE\bfseries 2024--11--26}
+% \textcolor{white}{\LARGE\bfseries \today}
+ \textcolor{white}{\Large \bfseries \mytoday}
+
+\hyperlink{today}{\beamergotobutton{Today's Pronunciation}}
+
+%\pause
+%\textcolor{white}{$20250919=13\times{}1,557,763$}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% /S/ /Z/
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\hypertarget{today}{}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}e
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Large 音の連続}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{音の連続}
+ \Large
+\begin{enumerate}
+ \item an apple\hspace{20pt}✕アン アップル\hspace{20pt}ア{\bfseries\Huge ナ}ポウ
+ \item an egg\hspace{33.75pt}✕アン エッグ\hspace{34pt}ア{\bfseries\Huge ネ}ーグ
+\end{enumerate}
+\end{frame}
+\end{document}
