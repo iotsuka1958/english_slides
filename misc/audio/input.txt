@@ -1,6 +1,2 @@
-one point three<break time="2s"/>one point three
-zero point five<break time="2s"/>zero point five
-one point two five<break time="2s"/>one point two five
-zero point zero eight<break time="2s"/>zero point zero eight
-ten point seven<break time="2s"/>ten point seven
-twelve point three four five<break time="2s"/>twelve point three four five
+two thousand three hundred fifty-one
+six million, eight hundred thirty seven thousand, three hundred seventy

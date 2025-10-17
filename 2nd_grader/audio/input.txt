@@ -1,4 +1,9 @@
-This cake is as sweet as honey.
-Eating a salad is as good as eating an apple.
-She sings as well as her mother.
-We drink tea as often as coffee.
+long<break time="2s"/>longer<break time="2s"/>longest
+small<break time="2s"/>smaller<break time="2s"/>smallest
+tall<break time="2s"/>taller<break time="2s"/>tallest
+young<break time="2s"/>younger<break time="2s"/>youngest
+old<break time="2s"/>older<break time="2s"/>oldest
+high<break time="2s"/>higher<break time="2s"/>highest
+cold<break time="2s"/>colder<break time="2s"/>coldest
+cheap<break time="2s"/>cheaper<break time="2s"/>cheapest
+fast<break time="2s"/>faster<break time="2s"/>fastest
