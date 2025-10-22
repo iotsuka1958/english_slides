@@ -1,5 +1,6 @@
-learn<break time="2s"/>learn
-turn<break time="2s"/>turn
-nurse<break time="2s"/>nurse
-her<break time="2s"/>her
-circle<break time="2s"/>circle
+saw<break time="2s"/>saw
+so<break time="2s"/>so
+saw<break time="2s"/>saw
+so<break time="2s"/>so
+so<break time="2s"/>so
+saw<break time="2s"/>saw
