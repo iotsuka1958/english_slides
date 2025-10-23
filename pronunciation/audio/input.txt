@@ -1,6 +1,2 @@
-saw<break time="2s"/>saw
-so<break time="2s"/>so
-saw<break time="2s"/>saw
-so<break time="2s"/>so
-so<break time="2s"/>so
-saw<break time="2s"/>saw
+How are you?
+I'm fine, thank you.
