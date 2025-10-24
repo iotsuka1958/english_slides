@@ -109,36 +109,54 @@
   \tableofcontents
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{受け身}
-\subsection{受け身とは}
+\section{受け身とは}
+%\subsection{受け身とは}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{受け身とは}
  \Large
 
 \begin{enumerate}
  \item<1-> \begin{enumerate}
-	\item<1-> 先生は彼女をほめました。
-	\item<2-> 彼女は先生にほめられました。
+	\item<1-> 先生は彼女をほめました。\hfill\visible<10->{The teacher praised her.}
+	\item<2-> 彼女は先生にほめられました。\hfill\visible<13->{\tikzmark{reibun1}She was praised by the teacher.}
        \end{enumerate}
  \item<3-> \begin{enumerate}
-	\item<3-> ジョンはジェニファーを愛しています。
-	\item<4-> ジェニファーはジョンに愛されています。
+	\item<3-> ジョンはジェニファーを愛しています。\hfill\visible<11->{John loves Jennifer.}
+	\item<4-> ジェニファーはジョンに愛されています。\hfill\visible<15->{\tikzmark{reibun2}Jennifer is loved by John.}
        \end{enumerate}
  \item<5-> \begin{enumerate}
-	\item<5-> 牛乳からチーズを作ります。
-	\item<6-> チーズは牛乳から作られます。
+	\item<5-> 牛乳からチーズを作ります。\hfill\visible<12->{They make cheese from milk.}
+	\item<6-> チーズは牛乳から作られます。\hfill\visible<17->{\tikzmark{reibun3}Cheese is made from milk.}
        \end{enumerate}
 \end{enumerate}
 
-\begin{block}<7->{Topic for Today}
+\vspace{15pt}
+
+\begin{block}<7->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item \kenten{受け身}とは「〜される」の意味を表します
+ \item<7-> \kenten{受け身}とは「〜される」の意味を表す表現のことです
+ \item<8-> 英語にも\kenten{受け身}の表現があります\tikzmark{ukemi}
 \end{itemize}
      \end{block}
+
+\vspace{-8pt}
+
+\hfill\visible<9->{{\scriptsize praise \textipa{/pr\'eIz/} ほめる}}
+
+\vspace{-8pt}
+
+\hfill{\tiny 0222}\,{\scriptsize \myaudio{./audio/051_passive_00.mp3}}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<14->{\draw[<-,opacity=.4,line width=2pt,Maroon!80] ([xshift=-4pt,yshift=2pt]pic cs:reibun1) to[out=210,in=0] ([xshift=4pt, yshift=2pt] pic cs:ukemi);}
+ \visible<16->{\draw[<-,opacity=.4,line width=2pt,Maroon!80] ([xshift=-4pt,yshift=2pt]pic cs:reibun2) to[out=180,in=0] ([xshift=4pt, yshift=2pt] pic cs:ukemi);}
+ \visible<18->{\draw[<-,opacity=.4,line width=2pt,Maroon!80] ([xshift=-4pt,yshift=2pt]pic cs:reibun3) to[out=180,in=0] ([xshift=4pt, yshift=2pt] pic cs:ukemi);}
+\end{tikzpicture}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{受け身の基本：be $+$ 過去分詞}
-\begin{frame}[plain]{be $+$ 過去分詞}
+\section{受け身の基本}
+\begin{frame}[plain]{受け身\hspace{20pt}\ldots される}
  \large
 \begin{enumerate}
  \item<1-> They \textbf{speak} English.\hspace{1\zw}{{\small 現在形}}\hfill{}{\scriptsize 彼らは英語を話す。}

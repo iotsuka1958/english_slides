@@ -2881,7 +2881,6 @@ saw（seeの過去形）またはso（それほど、とても）を発音して
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=sofar_u]{これまで学習した英語の母音}
-\hypertarget{today}{}
 
 \begin{description}
  \item[アの類：]<2-> {\Large \textipa{/\ae /} \textipa{/A/} \textipa{/\textturnv /} \textipa{/@/} }
@@ -2919,7 +2918,7 @@ saw（seeの過去形）またはso（それほど、とても）を発音して
 
 How are you?
 
-\underLine{I}'m f\underline{i}ne, thank you.
+\hspace{60pt}\underLine{I}'m f\underline{i}ne, thank you.
 
 \normalsize
 ポイント
@@ -2927,6 +2926,7 @@ How are you?
 \begin{itemize}\setbeamertemplate{items}[circle]
  \item 日本語の「アイ」でいい
  \item 前半を長めに
+ \item なめらかに「イ」に移行
 \end{itemize}
 
 \hfill{\tiny 0112}\,{\scriptsize \myaudio{./audio/vowel_ai_00.mp3}}
@@ -2934,18 +2934,31 @@ How are you?
 
 \hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
 
+\normalsize
+\begin{textblock*}{0.4\linewidth}(270pt,80pt)
+\visible<1->{\begin{tikzpicture}
+\cat[
+scale=1.4,
+speech={\scriptsize 二重母音 \textipa{/aI/}},
+signpost=\scalebox{0.6}{
+\parbox{2.5cm}{\color{black}
+	      \centering 前半を長めに、なめらかに\\イに移行}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]{実際の単語で確認しよう \textipa{/aI/}}
-
+\hypertarget{ex}{}
 \LARGE
 
 二重母音 \textipa{/aI/}
-
 \hfill{\tiny 0302}\,{\scriptsize \myaudio{./audio/vowel_ai_01.mp3}}
 
-%\vspace{-25pt}
+\vspace{10pt}
 
 \begin{enumerate}[<+->]%\setlength{\itemsep}{-2pt}
  \item \textcolor{NavyBlue}{\bfseries I}%
@@ -2970,12 +2983,12 @@ How are you?
 \normalsize
 \begin{textblock*}{0.4\linewidth}(270pt,100pt)
 \visible<1->{\begin{tikzpicture}
-\pig[
+\bear[
 scale=1.4,
 speech={\scriptsize 二重母音 \textipa{/aI/}},
 signpost=\scalebox{0.6}{
-\parbox{2.3cm}{\color{black}
-	      \centering 前半を長めに、なめらかにイに移行}},
+\parbox{2.5cm}{\color{black}
+	      \centering 前半を長めに、なめらかに\\イに移行}},
 signcolour= brown!70!gray,
 signback=white!80!brown
 ]
@@ -3020,8 +3033,8 @@ signback=white!80!brown
 scale=1.4,
 speech={\scriptsize 二重母音 \textipa{/aI/}},
 signpost=\scalebox{0.6}{
-\parbox{2.3cm}{\color{black}
-	      \centering 前半を長めに、なめらかにイに移行}},
+\parbox{2.5cm}{\color{black}
+	      \centering 前半を長めに、なめらかに\\イに移行}},
 signcolour= brown!70!gray,
 signback=white!80!brown
 ]
@@ -3460,4 +3473,5 @@ signback=white!80!brown
 }
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
