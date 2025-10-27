@@ -1,3 +1,9 @@
-The teacher praised her.<break time="2s"/>She was praised by the teacher.
-John loves Jennifer.<break time="2s"/>Jennifer is loved by John.
-They make cheese from milk.<break time="2s"/>Cheese is made from milk.
+Let’s learn about our world.
+What is the highest mountain in Japan?<break time="2.5s"/>It is Mount Fuji.
+Lake Biwa is the largest lake in Japan.
+Now, let’s look at animals.
+The cheetah is the fastest land animal of all.
+The blue whale is the biggest animal in the world.
+What about places?
+Shinjuku Station is the busiest station in the world.
+This information is not the easiest, but it is interesting.

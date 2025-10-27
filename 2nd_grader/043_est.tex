@@ -17,8 +17,9 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[absolute,overlay]{textpos}
-%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
+\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{Mt. Everest is the highest in the world.}
@@ -298,6 +299,74 @@ signback=white!80!brown
   \item わたしにとって秋がもっとも幸せな季節です。\\
 	Fall  is the (~~\alt<6->{\textcolor{Maroon}{\bfseries happiest}}{\phantom{happiest}}~~) season for me.
  \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{聞いてみよう、読んでみよう}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ 
+\includegraphics[height=1.125\textheight]{./images/no1_in_the_world.png}
+
+\vspace{-30pt}
+
+\hfill{\tiny 0341}\,{\scriptsize \myaudio{./audio/043_est_07a.mp3}}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(130pt,218pt)
+\visible<1->{{\bfseries \scalebox{.66}{Whales}}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]\frametitle{Exercises}
+%\begin{ascolorbox3}{Susanの自己紹介を読んで、問に答えましょう}[orange][coltitle=orange!50!black]
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+  fonttitle=\small,
+  title=次の英文を読んで、空所に適語を補いましょう\hfill{\tiny 0341}\,{\scriptsize \myaudio{./audio/043_est_07a.mp3}}]
+\parindent=15pt
+
+\noindent{}
+Let's learn about our world.
+What is the highest\tikzmark{clue1} mountain in Japan?
+It is Mount Fuji.
+%What is the longest river in Japan?
+%It is the Shinano River.
+Lake Biwa is the largest lake in Japan.
+
+Now, let's look at animals.
+The cheetah is the fastest\tikzmark{clue2} land animal of all.
+The blue whale is the biggest\tikzmark{clue3} animal in the world.
+
+What about places?
+%Death Valley in America is one of the hottest places.
+Shinjuku Station is the busiest\tikzmark{clue4} station in the world.
+
+This information is not the easiest, but it is interesting.
+\end{tcolorbox}
+%\end{ascolorbox3}
+
+\begin{tabular}{rlll}
+1&\visible<2->{What is the highest mountain in Japan?}\tikzmark{q1}&\visible<2->{It is (\visible<4->{\,\,Mount Fuji\,\,}).}&{\scriptsize 2語}\\
+2&\visible<2->{What is the fastest land animal of all?}\tikzmark{q2}&\visible<2->{It is the (\visible<6->{\,\,cheetah\,\,}).}&{\scriptsize 1語}\\
+3&\visible<2->{What is the largest animal in the world?}\tikzmark{q3}&\visible<2->{It is the (\visible<8->{\,\,blue whale\,\,}).}&{\scriptsize 2語}\\
+4&\visible<2->{What is the busiest station in the world?}\tikzmark{q4}&\visible<2->{It is (\visible<10->{\,\,Shinjuku Station\,\,}).}&{\scriptsize 2語}\\
+
+\end{tabular}
+
+
+\visible<2->{{\scriptsize 「なんとなく」ではなく根拠をはっきりさせましょう}}
+\hfill{\tiny 0313}\,{\scriptsize \myaudio{./audio/043_est_07b.mp3}}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue3) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([xshift=-10pt,yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
