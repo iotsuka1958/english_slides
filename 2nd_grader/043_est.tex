@@ -17,7 +17,7 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[absolute,overlay]{textpos}
-\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -313,9 +313,25 @@ signback=white!80!brown
 \hfill{\tiny 0341}\,{\scriptsize \myaudio{./audio/043_est_07a.mp3}}
 
 \normalsize
-\begin{textblock*}{0.4\linewidth}(130pt,218pt)
-\visible<1->{{\bfseries \scalebox{.66}{Whales}}}
+\begin{textblock*}{0.4\linewidth}(128pt,218pt)
+\visible<1->{{\bfseries \scalebox{.66}{Whale:}}}
 \end{textblock*}
+
+\begin{textblock*}{0.4\linewidth}(210pt,232pt)
+\scalebox{.5}{
+\parbox{3.5cm}{
+\bfseries
+the busiest station in the world}}
+\end{textblock*}
+
+\begin{textblock*}{0.4\linewidth}(160pt,232pt)
+\scalebox{.5}{
+\parbox{3cm}{
+\bfseries
+the hottest place on Earth}}
+\end{textblock*}
+
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]\frametitle{Exercises}
@@ -349,10 +365,10 @@ This information is not the easiest, but it is interesting.
 %\end{ascolorbox3}
 
 \begin{tabular}{rlll}
-1&\visible<2->{What is the highest mountain in Japan?}\tikzmark{q1}&\visible<2->{It is (\visible<4->{\,\,Mount Fuji\,\,}).}&{\scriptsize 2語}\\
-2&\visible<2->{What is the fastest land animal of all?}\tikzmark{q2}&\visible<2->{It is the (\visible<6->{\,\,cheetah\,\,}).}&{\scriptsize 1語}\\
-3&\visible<2->{What is the largest animal in the world?}\tikzmark{q3}&\visible<2->{It is the (\visible<8->{\,\,blue whale\,\,}).}&{\scriptsize 2語}\\
-4&\visible<2->{What is the busiest station in the world?}\tikzmark{q4}&\visible<2->{It is (\visible<10->{\,\,Shinjuku Station\,\,}).}&{\scriptsize 2語}\\
+\visible<2->{1}&\visible<2->{What is the highest mountain in Japan?}\tikzmark{q1}&\visible<2->{It is (\visible<4->{\,\,Mount Fuji\,\,}).}&\visible<2->{{\scriptsize 2語}}\\
+\visible<2->{2}&\visible<2->{What is the fastest land animal of all?}\tikzmark{q2}&\visible<2->{It is the (\visible<6->{\,\,cheetah\,\,}).}&\visible<2->{{\scriptsize 1語}}\\
+\visible<2->{3}&\visible<2->{What is the largest animal in the world?}\tikzmark{q3}&\visible<2->{It is the (\visible<8->{\,\,blue whale\,\,}).}&\visible<2->{{\scriptsize 2語}}\\
+\visible<2->{4}&\visible<2->{What is the busiest station in the world?}\tikzmark{q4}&\visible<2->{It is (\visible<10->{\,\,Shinjuku Station\,\,}).}&\visible<2->{{\scriptsize 2語}}\\
 
 \end{tabular}
 
@@ -367,6 +383,42 @@ This information is not the easiest, but it is interesting.
  \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([xshift=-10pt,yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
 \end{tikzpicture}
 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{大意}
+ 
+\begin{tcolorbox}
+\parindent=15pt
+
+\noindent{}
+Let's learn about our world.
+What is the highest\tikzmark{clue1} mountain in Japan?
+It is Mount Fuji.
+%What is the longest river in Japan?
+%It is the Shinano River.
+Lake Biwa is the largest lake in Japan.
+
+Now, let's look at animals.
+The cheetah is the fastest\tikzmark{clue2} land animal of all.
+The blue whale is the biggest\tikzmark{clue3} animal in the world.
+
+What about places?
+%Death Valley in America is one of the hottest places.
+Shinjuku Station is the busiest\tikzmark{clue4} station in the world.
+
+This information is not the easiest, but it is interesting.
+\end{tcolorbox}
+
+\vspace{5pt}
+%\footnotesize
+\small
+
+\parindent=1\zw
+世界について学びましょう。
+日本でもっとも高い山は何ですか。富士山です。 琵琶湖が日本でいちばん大きな湖です。\\
+では、動物について見てみましょう。 チーターが、すべての中でいちばん速い陸の動物です。 シロナガスクジラが、世界でもっとも大きな動物です。\\
+場所についてはどうでしょう？ 新宿駅が、世界でいちばん忙しい駅です。\\
+この情報は、いちばんかんたんというわけではありませんが、おもしろいですね。
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
@@ -407,7 +459,7 @@ This information is not the easiest, but it is interesting.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
  
-{\tiny audio\_overview 2402}\,{\scriptsize \myaudio{./audio/overview/043_est_audio_overview.m4a}}
+{\tiny audio\_overview 2040}\,{\scriptsize \myaudio{./audio/overview/043_est_audio_overview.m4a}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

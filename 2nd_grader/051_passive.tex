@@ -191,24 +191,20 @@ speak&spoke&spoken
 {\small 次の各文の意味を考えましょう}\hfill{\tiny 0325}\,{\scriptsize \myaudio{./audio/051_passive_02.mp3}}
 
 \begin{enumerate}
- \item The picture \textbf{was painted} by her.\hfill{}{ \scriptsize painted \textipa{/p\'eIntId/}: paintの過去分詞}
+ \item The picture \textbf{was painted} \alt<2->{\textcolor{Maroon}{\bfseries by her}}{by her}.\hfill{}{ \scriptsize painted \textipa{/p\'eIntId/}: paintの過去分詞}
  \item The car \textbf{is washed} every Sunday.\hfill{}{\scriptsize washed \textipa{/w\'ASt/}: washの過去分詞}
- \item The computer \textbf{is used} by students.\hfill{}{\scriptsize used \textipa{/j\'u:zd/} : useの過去分詞}
- \item The cat \textbf{is loved by} the family.\hfill{}{\scriptsize loved \textipa{/l\'\textturnv vd/} : loveの過去分詞}
+ \item The computer \textbf{is used} \alt<3->{\textcolor{Maroon}{\bfseries by students}}{by students}.\hfill{}{\scriptsize used \textipa{/j\'u:zd/} : useの過去分詞}
+ \item The cat \textbf{is loved} \alt<4->{\textcolor{Maroon}{\bfseries by the family}}{by the family}.\hfill{}{\scriptsize loved \textipa{/l\'\textturnv vd/} : loveの過去分詞}
  \item The house \textbf{was built} ten years ago.\hfill{}{\scriptsize built \textipa{/b\'Ilt/} : buildの過去分詞}
  \item The toy \textbf{was made} in Canada.\hfill{}{\scriptsize made \textipa{/m\'eId/} : makeの過去分詞}
- \item The book \textbf{is read} by many people.\hfill{}{\scriptsize read \textipa{/r\'ed/} : readの過去分詞}
+ \item The book \textbf{is read} \alt<5->{\textcolor{Maroon}{\bfseries by many people}}{by many people}.\hfill{}{\scriptsize read \textipa{/r\'ed/} : readの過去分詞}
 \end{enumerate}
 
 \hfill{\scriptsize by ～（～によって）$\longleftarrow$受け身の文でよく使われる表現です}
 
-\pause
 
-{\small これらの動詞の過去分詞は、過去形と同じ}
-
-\vspace{-5pt}
-
-{\small 過去形がしっかり身についていればだいじょうぶ}
+\visible<6->{{\small これらの動詞の過去分詞は、過去形と同じ}}\\
+\visible<6->{{\small 過去形がしっかり身についていればだいじょうぶ}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{過去形 $=$ 過去分詞}
@@ -442,6 +438,71 @@ Is English spoken in the country?
        \hfill\visible<8->{cf.\,\,He was known as a good singer.}
 \end{enumerate}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{聞いてみよう、読んでみよう}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ 
+\includegraphics[height=1.125\textheight]{./images/nanobanana-output/passive.png}
+
+\vspace{-30pt}
+
+\hfill{\tiny 0022}\,{\scriptsize \myaudio{./audio/051_passive_09.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{Exercises}
+\scriptsize
+
+\vspace{-3pt}
+\small
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+before upper={\setlength{\parindent}{1.25em}},
+ title=次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\tiny 0022}\,{\scriptsize \myaudio{./audio/051_passive_09.mp3}}
+]
+Many things are used in our everyday lives\footnotemark.
+For example\footnotemark, coffee\tikzmark{clue1} is made in many homes each morning.
+English is spoken in many countries around the world.
+
+In my city, there are many old\tikzmark{clue2} buildings.
+They were built a long time ago.
+%These buildings are loved by tourists.
+
+I ride my bike\tikzmark{clue3} to school every day.
+Sometimes, dinner\tikzmark{clue4} is cooked by my dad.
+On weekends, food is often bought at the supermarket.
+%Is your city famous for anything special?
+%Some traditions are kept alive by families.
+
+\end{tcolorbox}
+
+%\vspace{-5pt}
+{\scriptsize 本文に照らし合わせて、正しければT、そうでなければFと答えましょう}
+\begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
+ \item<2-> 毎朝コーヒーをいれる家庭はおおい\tikzmark{q1}\hfill\visible<4->{T}
+ \item<2-> 筆者の住んでいる町には新しい建物はない\tikzmark{q2}\hfill\visible<6->{F}
+ \item<2-> 筆者は自転車を所有している\tikzmark{q3}\hfill\visible<8->{T}
+ \item<2-> 筆者の家では、毎日夕食を作るのは父親だ\tikzmark{q4}\hfill\visible<10->{F}
+\end{enumerate}
+
+\vspace*{-15pt}
+
+\footnotetext[1]{\scriptsize everyday lives：日常生活　　livesはlife(生活)の複数形}
+\footnotetext[2]{\scriptsize for example：たとえば}
+%\footnotetext[3]{\scriptsize go on and on：えんえんと続く}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue3) to[in=30,out=-70] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to[out=-120, in=0] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{受け身のまとめ}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
