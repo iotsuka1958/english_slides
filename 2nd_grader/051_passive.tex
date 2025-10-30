@@ -210,26 +210,27 @@ speak&spoke&spoken
 \begin{frame}[plain]{過去形 $=$ 過去分詞}
 
  \begin{enumerate}
-  \item paint --- painted --- painted\tikzmark{A1}%
+  \item[]<1-> 原形 --- 過去形 --- 過去分詞 
+  \item<1-> paint --- painted --- painted\tikzmark{A1}%
 \hfill\visible<2->{{\scriptsize \tikzmark{B1}最後がedで終わります}}
-  \item wash --- washed --- washed\tikzmark{A2}
-  \item use --- used --- used\tikzmark{A3}
-  \item love --- loved --- loved\tikzmark{A4}%
-  \item build --- built --- built\tikzmark{A5}%
+  \item<3-> wash --- washed --- washed\tikzmark{A2}
+  \item<4-> use --- used --- used\tikzmark{A3}
+  \item<5-> love --- loved --- loved\tikzmark{A4}%
+  \item<6-> build --- built --- built\tikzmark{A5}%
 \hfill\visible<4->{{\scriptsize \tikzmark{B2}不規則動詞です}}
-  \item make --- made --- made\tikzmark{A6}
-  \item read --- read --- read\tikzmark{A7}
+  \item<7-> make --- made --- made\tikzmark{A6}
+  \item<8-> read --- read --- read\tikzmark{A7}
  \end{enumerate}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<2->{\draw[<-,opacity=0.5, line width=2pt,Maroon] ([xshift=2pt,yshift=3pt]pic cs:A1) to node[sloped,above,text=black,font=\tiny,pos=.4]{原形にedつけて} ([xshift=-2pt, yshift=3pt] pic cs:B1);}
- \visible<2->{\draw[<-,opacity=0.5, line width=2pt,Maroon] ([xshift=2pt,yshift=3pt]pic cs:A2) to ([xshift=-2pt, yshift=3pt] pic cs:B1);}
- \visible<3->{\draw[<-,opacity=0.5, line width=2pt,Maroon,dashed] ([xshift=2pt,yshift=3pt]pic cs:A3) to ([xshift=-2pt, yshift=3pt] pic cs:B1);}
- \visible<3->{\draw[<-,opacity=0.5, line width=2pt,Maroon,dashed] ([xshift=2pt,yshift=3pt]pic cs:A4) to node[sloped,above,text=black,font=\tiny,pos=.2]{原形にdつけて} ([xshift=-2pt, yshift=3pt] pic cs:B1);}
+ \visible<2->{\draw[<-,opacity=0.5, line width=2pt,Maroon] ([xshift=2pt,yshift=3pt]pic cs:A1) to node[sloped,above,text=black,font=\tiny,pos=.4]{原形にedをつけて} ([xshift=-2pt, yshift=3pt] pic cs:B1);}
+ \visible<3->{\draw[<-,opacity=0.5, line width=2pt,Maroon] ([xshift=2pt,yshift=3pt]pic cs:A2) to ([xshift=-2pt, yshift=3pt] pic cs:B1);}
+ \visible<4->{\draw[<-,opacity=0.5, line width=2pt,Maroon,dashed] ([xshift=2pt,yshift=3pt]pic cs:A3) to node[sloped,below,text=black,font=\tiny,pos=.2]{原形にdをつけて}([xshift=-2pt, yshift=3pt] pic cs:B1);}
+ \visible<5->{\draw[<-,opacity=0.5, line width=2pt,Maroon,dashed] ([xshift=2pt,yshift=3pt]pic cs:A4) to ([xshift=-2pt, yshift=3pt] pic cs:B1);}
  %%%%%%%%%%%%%%%%%%%%%%
- \visible<4->{\draw[<-,opacity=0.5, line width=2pt,NavyBlue] ([xshift=2pt,yshift=3pt]pic cs:A5) to ([xshift=-2pt, yshift=3pt] pic cs:B2);}
- \visible<4->{\draw[<-,opacity=0.5, line width=2pt,NavyBlue] ([xshift=2pt,yshift=3pt]pic cs:A6) to ([xshift=-2pt, yshift=3pt] pic cs:B2);}
- \visible<4->{\draw[<-,opacity=0.5, line width=2pt,NavyBlue] ([xshift=2pt,yshift=3pt]pic cs:A7) to ([xshift=-2pt, yshift=3pt] pic cs:B2);}
+ \visible<6->{\draw[<-,opacity=0.5, line width=2pt,NavyBlue] ([xshift=2pt,yshift=3pt]pic cs:A5) to ([xshift=-2pt, yshift=3pt] pic cs:B2);}
+ \visible<7->{\draw[<-,opacity=0.5, line width=2pt,NavyBlue] ([xshift=2pt,yshift=3pt]pic cs:A6) to ([xshift=-2pt, yshift=3pt] pic cs:B2);}
+ \visible<8->{\draw[<-,opacity=0.5, line width=2pt,NavyBlue] ([xshift=2pt,yshift=3pt]pic cs:A7) to node[sloped,below,text=black,font=\tiny,pos=.4]{綴りはみな同じ。でも発音に注意} ([xshift=-2pt, yshift=3pt] pic cs:B2);}
 \end{tikzpicture}
 
 \visible<5->{{\scriptsize \textdbend 覚えるには、なんども口ずさんだり、紙に書いたりするのが効果的です！}}
