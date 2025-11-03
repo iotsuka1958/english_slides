@@ -22,7 +22,7 @@
 %% さまざまなアイコン
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fontawesome}
-\usepackage{figchild}
+%\usepackage{figchild}
 \usepackage{twemojis}
 \usepackage{utfsym}
 \usepackage{bclogo}
@@ -36,6 +36,8 @@
 \usepackage{circledsteps}
 \usepackage{manfnt}
 \usepackage{tipa}
+\usepackage{tikzpeople}
+\usepackage{tikzlings}
 %\input{myPreamble4Slide.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
@@ -88,6 +90,9 @@
 \end{tikzpicture}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{He is reading a book now.}
 \author{}
@@ -235,13 +240,43 @@ Our cat is \alt<5->{(\,\,\textcolor{Maroon}{\bfseries sleeping}\,\,)}{(\phantom{
 \hfill{\tiny 0259}\,{\scriptsize \myaudio{./audio/021_is_ing_intro_04.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]
+\begin{frame}[plain,t]
  
 \Large
 
-\textdbend\,最後の1文字を重ねるときって？
-\end{frame}
+\vspace*{30pt}
 
+sitting, running, swimming \ldots
+
+\textdbend\,最後の1文字を重ねるときって？
+
+\begin{textblock*}{0.4\linewidth}(90pt,130pt)
+\visible<2->{
+\scalebox{2}{\begin{tikzpicture}
+  \node[name=k, shape=maninblack, minimum size=1cm] {};
+  \node[ellipse callout, xshift=1.2cm, draw,yshift= .3cm,
+    callout absolute pointer={(k.mouth)},
+    font=\tiny\sffamily, align=center, inner sep=1pt]
+    {覚えるしか\\ないの？};
+\end{tikzpicture}}
+}
+\end{textblock*}
+
+\normalsize
+\begin{textblock*}{0.4\linewidth}(250pt,70pt)
+\visible<3->{\begin{tikzpicture}
+\chicken[
+scale=1.6,
+speech={\scriptsize それはたいへん},
+signpost=\scalebox{0.6}{
+\parbox{2.52cm}{\color{black}
+\centering 実は、\\そんなことはありません}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{最後の1文字を重ねるとき}
  \Large

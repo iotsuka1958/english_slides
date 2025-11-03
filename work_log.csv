@@ -4,8 +4,8 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./orientation/orientation_another.tex,2025-04-24,2025-04-15,2025-04-15,,2,1,1,,done,done,done,,999,999,999,
 ./1st_grader/999quiz_full_vesion.tex,2025-05-07,2024-06-18,2024-06-18,2024-06-18,26,26,26,26,done,done,done,done,999,999,999,999
 ./1st_grader/099_pronunciation.tex,2025-06-19,2024-09-03,2024-07-18,2024-07-18,4,3,3,3,done,done,done,done,999,999,999,999
-./pronunciation/pronunciation_consonant.tex,2025-06-26,2024-09-18,2024-09-18,2024-09-18,47,,1,1,,done,done,done,SZ,999,999,999
-./pronunciation/pronunciation_vowel.tex,,2025-04-16,2025-04-16,,,92,92,,,,,,,ai,ai,
+./pronunciation/pronunciation_consonant.tex,2025-06-26,2024-09-18,2024-09-18,2024-09-18,48,,1,1,,done,done,done,SZ,999,999,999
+./pronunciation/pronunciation_vowel.tex,,2025-04-16,2025-04-16,,,93,93,,,,,,,ai,ai,
 ./pronunciation/pronunciation_japanese.tex,,2025-01-07,2025-01-07,2025-01-07,,4,4,4,,done,done,done,,999,999,999
 ./1st_grader/001_alphabet.tex,2025-04-30,2024-06-14,,,2,2,,,done,done,,,999,999,,
 ./1st_grader/002_sv.tex,2025-05-07,2024-06-18,2024-06-13,2024-06-13,4,4,2,2,done,done,done,done,999,999,999,999
@@ -30,7 +30,7 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./1st_grader/019_what.tex,,2025-02-06,2025-06-20,,,4,3,,,done,done,,,999,999,
 ./1st_grader/020_whose.tex,,2025-02-13,2025-06-25,,,5,4,,,done,done,,,999,999,
 ./1st_grader/020a_wh.tex,,2025-02-20,2025-07-01,,,3,4,,,done,done,,,999,999,
-./1st_grader/021_is_ing_intro.tex,,2024-11-26,2024-09-18,2024-09-18,4,6,6,6,,done,done,done,slide46,999,999,999
+./1st_grader/021_is_ing_intro.tex,,2024-11-26,2024-09-18,2024-09-18,5,6,6,6,,done,done,done,slide66,999,999,999
 ./1st_grader/022_is_ing_negative.tex,,2024-12-04,2024-10-01,2024-10-01,,3,3,3,,done,done,done,,999,999,999
 ./1st_grader/023_is_ing_question.tex,,2024-12-06,2024-10-04,2024-10-04,,4,5,5,,done,done,done,,slide78,slide75,slide75
 ./1st_grader/024_past_be.tex,,2025-04-16,2024-10-25,2024-10-25,,6,4,4,,done,done,done,,999,999,999
