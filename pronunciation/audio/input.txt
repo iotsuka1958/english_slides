@@ -1,1 +1,7 @@
-The boy enjoyed the boiled oysters.
+dance<break time="3s"/>dance
+mouse<break time="3s"/>mouse
+house<break time="3s"/>house
+face<break time="3s"/>face
+books<break time="3s"/>books
+likes<break time="3s"/>likes
+Christmas<break time="3s"/>Christmas
