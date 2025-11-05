@@ -1,7 +1,4 @@
-dance<break time="3s"/>dance
-mouse<break time="3s"/>mouse
-house<break time="3s"/>house
-face<break time="3s"/>face
-books<break time="3s"/>books
-likes<break time="3s"/>likes
-Christmas<break time="3s"/>Christmas
+She likes hot tea.<break time="3s"/>She likes hot tea.
+What time is it now?<break time="3s"/>What time is it now?
+Let's get together.<break time="3s"/>Let's get together.
+Have a great time.<break time="3s"/>Have a great time.<break time="3s"/>

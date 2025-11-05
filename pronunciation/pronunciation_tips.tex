@@ -153,6 +153,7 @@
 \hfill{\tiny 0126}\,{\scriptsize \myaudio{./audio/tips_extra_vowel_02.mp3}}\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises 語尾の\textipa{/p/}}
+\Large
  \begin{enumerate}
   \item cap
   \item map
@@ -164,6 +165,7 @@
 \hfill{\tiny 0318}\,{\scriptsize \myaudio{./audio/tips_extra_vowel_03.mp3}}\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises 語尾の\textipa{/t/}}
+\Large
  \begin{enumerate}
   \item hat
   \item hot
@@ -176,6 +178,7 @@
 \hfill{\tiny 0353}\,{\scriptsize \myaudio{./audio/tips_extra_vowel_04.mp3}}\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises 語尾の\textipa{/k/}}
+\Large
  \begin{enumerate}
   \item cook
   \item steak
@@ -188,6 +191,7 @@
 \hfill{\tiny 0356}\,{\scriptsize \myaudio{./audio/tips_extra_vowel_05.mp3}}\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises 語尾の\textipa{/s/}}
+\Large
  \begin{enumerate}
   \item dance
   \item mouse
@@ -200,6 +204,94 @@
 
 \hfill{\tiny 0435}\,{\scriptsize \myaudio{./audio/tips_extra_vowel_06.mp3}}\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises 語尾の\textipa{/S/}}
+\Large
+ \begin{enumerate}
+  \item fish
+  \item English
+  \item Spanish
+  \item finish
+  \item dash
+  \item push
+  \item wash
+ \end{enumerate}
+
+\hfill{\tiny 0434}\,{\scriptsize \myaudio{./audio/tips_extra_vowel_07.mp3}}\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises 語尾の\textipa{/tS/}}
+\Large
+ \begin{enumerate}
+  \item beach
+  \item lunch
+  \item much
+  \item rich
+  \item touch
+  \item pitch
+  \item catch
+  \item watch
+ \end{enumerate}
+
+\hfill{\tiny 0506}\,{\scriptsize \myaudio{./audio/tips_extra_vowel_08.mp3}}\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises 語尾の\textipa{/b/}}
+\Large
+ \begin{enumerate}
+  \item Bob
+  \item club
+  \item job
+  \item cab
+  \item herb
+  \item verb
+  \item web
+ \end{enumerate}
+
+\hfill{\tiny 0403}\,{\scriptsize \myaudio{./audio/tips_extra_vowel_09.mp3}}\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises 語尾の\textipa{/d/}}
+\Large
+ \begin{enumerate}
+  \item bad
+  \item hard
+  \item hundred
+  \item cloud
+  \item road
+  \item bird
+  \item friend
+  \item surprised
+ \end{enumerate}
+
+\hfill{\tiny 0438}\,{\scriptsize \myaudio{./audio/tips_extra_vowel_10.mp3}}\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises 語尾の\textipa{/g/}}
+\Large
+ \begin{enumerate}
+  \item bag
+  \item dog
+  \item big
+  \item leg
+  \item egg
+  \item pig
+  \item hug
+  \item drug
+ \end{enumerate}
+
+\hfill{\tiny 0432}\,{\scriptsize \myaudio{./audio/tips_extra_vowel_11.mp3}}\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises 語尾の\textipa{/m/}}
+\Large
+ \begin{enumerate}
+  \item come
+  \item some
+  \item home
+  \item Rome
+  \item time
+  \item same
+  \item name
+  \item steam
+ \end{enumerate}
+
+\hfill{\tiny 0436}\,{\scriptsize \myaudio{./audio/tips_extra_vowel_12.mp3}}\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% enchainement
 %%
@@ -207,33 +299,42 @@
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-\hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}e
 
  \vspace{30pt}
 
-  \textcolor{white}{\Large 音の連続}
+  \textcolor{white}{\Large 区切らない}
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{音の連続}
+\begin{frame}[plain,t]{音の連続}
  \Large
 
-なめらかに発音しよう
-
-\begin{enumerate}
- \item<1-> an \only<3->\textbottomtiebar{} apple\hspace{20pt}%
-      \visible<2->{✕アン アップル}\hspace{20pt}%
-      \visible<3->{ア{\bfseries\Huge ナ}ポウ}
-\item<4-> an \only<6->\textbottomtiebar{}  egg\hspace{33.75pt}%
-     \visible<5->{✕アン エッグ}\hspace{34pt}%
-     \visible<6->{ア{\bfseries\Huge ネ}ーグ}
-\end{enumerate}
-
+なめらかに発音しよう%
 \hfill{\tiny 0107}\,{\scriptsize \myaudio{./audio/tips_enchainement_01.mp3}}
 
+\begin{enumerate}
+ \item<1-> an \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} apple\hspace{20pt}%
+      \visible<2->{✕アン アップル}\hspace{20pt}%
+      \visible<4->{ア{\bfseries\Huge ナ}ポウ}
+\item<5-> an\tikzmark{consonant} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }}  \tikzmark{vowel}egg\hspace{33.75pt}%
+     \visible<6->{✕アン エッグ}\hspace{34pt}%
+     \visible<8->{ア{\bfseries\Huge ネ}ーグ}
+\end{enumerate}
+
+\vspace{50pt}
+
+\hfill\visible<10->{{\scriptsize \tikzmark{boin}後の単語の最初の母音}}
+
+\hfill\visible<9->{{\scriptsize \tikzmark{shiin}前の単語の最後の子音}}
+
 \hfill{\tiny 0126}\,{\scriptsize \myaudio{./audio/tips_enchainement_02.mp3}}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<10->{\draw[<-] ([xshift=4pt, yshift=-2pt] pic cs:vowel) to[out=-60,in=185] ([xshift=-5pt, yshift=2pt] pic cs:boin);}
+ \visible<9->{\draw[<-] ([xshift=-4pt, yshift=-2pt]pic cs:consonant) to[out=-60, in=180] ([xshift=-5pt, yshift=2pt]pic cs:shiin);}
+\end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
@@ -241,10 +342,10 @@
 なんといっていますか？
 \Large
  \begin{enumerate}
- \item<2-> Get \only<3->\textbottomtiebar{}  up.
- \item<4-> Stand \only<5->\textbottomtiebar{}  up.
- \item<6-> I like \only<7->\textbottomtiebar{}  it.
- \item<8-> Turn \only<9->\textbottomtiebar{}  it \only<10->\textbottomtiebar{}  off.
+ \item<2-> Get \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }}  up.
+ \item<4-> Stand \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }}  up.
+ \item<6-> I like \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }}  it.
+ \item<8-> Turn \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}  it \only<10->{\textcolor{Maroon}{\textbottomtiebar\ }}  off.
 \end{enumerate}
 
 \hfill{\tiny 0126}\,{\scriptsize \myaudio{./audio/tips_enchainement_03.mp3}}
@@ -254,10 +355,10 @@
 なんといっていますか？
 \Large
  \begin{enumerate}
-  \item<2-> I \only<3->\textbottomtiebar{}  ate \only<4->\textbottomtiebar{}  an \only<5->\textbottomtiebar{}  egg.
-  \item<6-> I have \only<7->\textbottomtiebar{}  an \only<8->\textbottomtiebar{}  English book.
-  \item<9-> Bob \only<10->\textbottomtiebar{}  is \only<11->\textbottomtiebar{}  in \only<12->\textbottomtiebar{}  Africa.
-  \item<13-> I'm \only<14->\textbottomtiebar{}  an \only<15->\textbottomtiebar{}  American.
+  \item<2-> I ate \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }}  an \only<4->{\textcolor{Maroon}{\textbottomtiebar\ }}  egg.
+  \item<5-> I have \only<6->{\textcolor{Maroon}{\textbottomtiebar\ }}  an \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }}  English book.
+  \item<8-> Bob \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}  is \only<10->{\textcolor{Maroon}{\textbottomtiebar\ }}  in \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}  Africa.
+  \item<12-> I'm \only<13->{\textcolor{Maroon}{\textbottomtiebar\ }}  an \only<14->{\textcolor{Maroon}{\textbottomtiebar\ }}  American.
 \end{enumerate}
 
 \hfill{\tiny 0126}\,{\scriptsize \myaudio{./audio/tips_enchainement_04.mp3}}
@@ -266,10 +367,10 @@
 \begin{frame}[plain]{Exercises}
 \Large
  \begin{enumerate}
-  \item I bought \only<2->\textbottomtiebar{} an \only<3->\textbottomtiebar{} umbrella.
-  \item Let's talk \only<4->\textbottomtiebar{} about \only<5->\textbottomtiebar{} our future.
-  \item That was \only<6->\textbottomtiebar{} an \only<7->\textbottomtiebar{} important \only<8->\textbottomtiebar{} experience.
-  \item She lives \only<9->\textbottomtiebar{} in \only<10->\textbottomtiebar{} an \only<11->\textbottomtiebar{} old \only<12->\textbottomtiebar{} apartment.
+  \item I bought \only<2->{\textcolor{Maroon}{\textbottomtiebar\ }} an \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} umbrella.
+  \item Let's talk \only<4->{\textcolor{Maroon}{\textbottomtiebar\ }} about \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }} our future.
+  \item That was \only<6->{\textcolor{Maroon}{\textbottomtiebar\ }} an \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }} important \only<8->{\textcolor{Maroon}{\textbottomtiebar\ }} experience.
+  \item She lives \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }} in \only<10->{\textcolor{Maroon}{\textbottomtiebar\ }} an \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }} old \only<12->{\textcolor{Maroon}{\textbottomtiebar\ }}  apartment.
 \end{enumerate}
 
 \hfill{\tiny 0310}\,{\scriptsize \myaudio{./audio/tips_enchainement_05.mp3}}
@@ -281,8 +382,8 @@
 
 \Large
  \begin{enumerate}
-  \item<2-> I think \only<3->\textbottomtiebar{} I did \only<4->\textbottomtiebar{} it.
-  \item<5-> Can \only<6->\textbottomtiebar{} you get \only<7->\textbottomtiebar{} it for me? 
+  \item<2-> I think \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} I did \only<4->{\textcolor{Maroon}{\textbottomtiebar\ }} it.
+  \item<5-> Can \only<6->{\textcolor{Maroon}{\textbottomtiebar\ }} you get \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }} it for me? 
 \end{enumerate}
 
 \hfill{\tiny 0312}\,{\scriptsize \myaudio{./audio/tips_enchainement_06.mp3}}
@@ -294,13 +395,63 @@
 
 \Large
  \begin{enumerate}
-  \item We will be friends for \only<2->\textbottomtiebar{} ever.
-  \item There \only<3->\textbottomtiebar{} is a book on the table.
-  \item She lives far \only<4->\textbottomtiebar{} away from here.
-  \item I saw tears in their \only<5->\textbottomtiebar{} eyes.
+  \item We will be friends for \only<2->{\textcolor{Maroon}{\textbottomtiebar\ }} ever.
+  \item There \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} is a book on the table.
+  \item She lives far \only<4->{\textcolor{Maroon}{\textbottomtiebar\ }} away from here.
+  \item I saw tears \only<5->{{\textbottomtiebar\ }} in their \only<6->{\textcolor{Maroon}{\textbottomtiebar\ }} eyes.
 \end{enumerate}
 
 \hfill{\tiny 0312}\,{\scriptsize \myaudio{./audio/tips_enchainement_07.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% gemination 重音化
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+leg
+\hypertarget{today}{}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}e
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Large 同じ子音の連続}
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/t/} $+$ \textipa{/t/}}
+\Large
+
+\begin{enumerate}
+ \item I saw the movie eigh\alt<1>{t}{\textbf{t}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1>{t}{\textbf{t}}imes. \visible<2->{\textipa{/eIt taImz/}}
+\end{enumerate}
+
+\bigskip
+
+
+\textipa{/t/}を2回発音するのはしんどい！
+
+じゃあどうしよう
+
+\hfill{}$\longrightarrow$\,エイ\kenten{ッタ}イムズ 
+
+\hfill{\tiny 0312}\,{\scriptsize \myaudio{./audio/tips_gemination_tt_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/t/ $+$ \textipa{/t/}}}
+\Large
+ \begin{enumerate}
+ \item She likes ho\alt<1>{t}{\textbf{t}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1>{t}{\textbf{t}}ea. 
+ \item Wha\alt<1-3>{t}{\textbf{t}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1-3>{t}{\textbf{t}}ime\only<6->{{\textbottomtiebar\ }} is\only<6->{{\textbottomtiebar\ }} it now? 
+ \item Let's ge\alt<1-6>{t}{\textbf{t}} \only<8->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1-6>{t}{\textbf{t}}ogether. 
+ \item Have\only<11->{{\textbottomtiebar\ }} a grea\alt<1-8>{t}{\textbf{t}} \only<10->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1-8>{t}{\textbf{t}}ime. 
+ \end{enumerate}
+\hfill{\tiny 0317}\,{\scriptsize \myaudio{./audio/tips_gemination_tt_02.mp3}}
+
+\end{frame}
 \end{document}
