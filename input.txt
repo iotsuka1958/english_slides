@@ -1,50 +1,29 @@
-まず日本語のカタカナ読みです。。。。
-トップ。。。。
-キャット。。。。
-ブック。。。。
-英語の発音とはちがいますよね。。。。
-トップ。。。
-キャット。。。。
-ブック。。。。
+<speak>
+  <voice language="ja-JP" name="ja-JP-Wavenet-C" gender="MALE">
+    皆さん、こんにちは。
+    私は日本語の男性の声です。
+    次は女性の声に切り替わります。
+  </voice>
 
-単語の最後に余計なボインがまぎれこんでいますよね。
+  <voice language="ja-JP" name="ja-JP-Wavenet-A" gender="FEMALE">
+    はい、こんにちは。
+    私は日本語の女性の声です。
+    <break time="700ms"/>
+    では次に、英語の男性の声をお聞きください。
+  </voice>
 
-英語では、これらの単語の最後はシインです。余計なボインをはさまないように、じゅうぶんに注意しましょう。英語の発音を聞いてください。
+  <voice language="en-US" name="en-US-Wavenet-A" gender="MALE">
+    <prosody rate="0.9">
+      Hello everyone.
+      My name is David.
+      This is an English male voice from Google Cloud Text-to-Speech.
+      <break time="1s"/>
+    </prosody>
+  </voice>
 
-Now listen carefuly.
-...
-top.
-...
-top.
-...
-cat.
-...
-cat.
-...
-book.
-...
-book.
-
-いかがですか。。。。
-カタカナ読みとのちがいがわかりますよね。。。。
-
-ちがいがわかったところで、みなさんも発音の練習をしましょう。。。
-
-わたしのあとに続けてみなさんもリピートしてください。。。。
-
-Please repeat after me.
-...
-top.
-...
-top.
-...
-cat.
-...
-cat.
-...
-book.
-...
-book.
-
-いかがですか。
-とにかく、最後によけいなボインを入れないようにじゅうぶん注意して練習してください。
+  <voice language="en-US" name="en-US-Wavenet-C" gender="FEMALE">
+    <prosody rate="0.9">
+      Hello everyone. My name is Jennifer Jareaux. This is an English female voice from Google Cloud Text-to-Speech.
+    </prosody>
+  </voice>
+</speak>

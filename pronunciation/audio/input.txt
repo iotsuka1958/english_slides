@@ -1,4 +1,1 @@
-She likes hot tea.<break time="3s"/>She likes hot tea.
-What time is it now?<break time="3s"/>What time is it now?
-Let's get together.<break time="3s"/>Let's get together.
-Have a great time.<break time="3s"/>Have a great time.<break time="3s"/>
+Have a good day..<break time="3s"/>Have a good day.

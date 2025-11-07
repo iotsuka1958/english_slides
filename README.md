@@ -65,7 +65,7 @@ ffmpegを使用して、これらのファイルを結合します。
 ffmpeg -f concat -safe 0 -i file_merge_list.txt -c copy output.mp3
 ```
 
-# 音声ファイル作成
+# 音声ファイル作成(AMAZON POLLYで)
 
 ## bashのスクリプトファイルを作った
 
@@ -565,4 +565,237 @@ sketch <-  1 - threshold(zzz) |> as.cimg()
 plot(sketch)
 # 画像を保存
 imager::save.image(sketch, "./images/oyoyo.png")
+```
+
+# 音声ファイル作成(Google Cloud TTSを利用)
+
+Google Cloud TTSを利用して音声ファイルを作成する手順をまとめておく。
+
+OpenAI tts-1だとssmlが利用できないみたいなので、Google Cloud TTSを利用する。
+
+## 環境設定
+
+### pythonライブラリのインストール
+
+```
+pip install google-cloud-texttospeech
+```
+
+### Google Cloud プロジェクトの設定:
+
+- Google Cloudコンソールでプロジェクトを作成（または選択）します。
+- ナビゲーションメニューから "Cloud Text-to-Speech API" を検索し、有効にします。
+
+### サービスアカウントの作成と認証情報のダウンロード:
+
+- ナビゲーションメニューから "IAMと管理" > "サービスアカウント" に移動します。
+- "サービスアカウントを作成" をクリックし、名前と説明を入力します。
+- "役割を選択" で "プロジェクト" > "オーナー" を選択します。
+- "キーを作成" をクリックし、JSON形式でキーをダウンロードします。
+- ダウンロードしたJSONファイルのパスを環境変数 `GOOGLE_APPLICATION_CREDENTIALS` に設定します。  
+
+## pythonスクリプト
+
+まえにつくったopen AI用のスクリプトを参考にしてつくった。
+OpenAI用のスクリプトをGeminiにお願いしてGoogle TTS用に直してねといったところ
+はじめはうまくいっていたが、英語と日本語をssmlで都度指定するように修正を入れてくれといったところ、どうしてもエラーが治らない。
+ということで、とちゅうでGemini提案のスクリプトをChatGPTに投げたら、うまく修正してくれた。以下がそのスクリプト。
+
+google_text2speech.pyというファイル名にしてシェバングをつけて実行権限を付与しておく。
+
+使い方は次のとおり。
+
+  ```
+  google_text2speech.py  input_file output_file
+  ```
+
+
+```
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+google_text2speech.py
+
+Google Cloud Text-to-Speech API を使用して、
+テキストまたは SSML ファイルから音声（MP3形式）を生成するスクリプト。
+
+使い方:
+    python google_text2speech.py input.txt output.mp3
+
+前提条件:
+    - pip install google-cloud-texttospeech
+    - 環境変数 GOOGLE_APPLICATION_CREDENTIALS に
+      サービスアカウントの JSON キーファイルの絶対パスを設定済みであること。
+"""
+
+import os
+import argparse
+from pathlib import Path
+from google.cloud import texttospeech
+
+
+def main():
+    # ------------------------------------------------------------
+    # ① コマンドライン引数の設定
+    # ------------------------------------------------------------
+    parser = argparse.ArgumentParser(
+        description="Convert text/SSML to speech using Google Cloud TTS API."
+    )
+    parser.add_argument(
+        "input_file",
+        type=str,
+        help="Path to the input text or SSML file (e.g., input.txt)."
+    )
+    parser.add_argument(
+        "output_file",
+        type=str,
+        help="Path to the output MP3 file (e.g., output.mp3)."
+    )
+    args = parser.parse_args()
+
+    # ------------------------------------------------------------
+    # ② Google Cloud 認証確認
+    # ------------------------------------------------------------
+    # 環境変数 GOOGLE_APPLICATION_CREDENTIALS が設定されていない場合はエラー
+    if os.getenv("GOOGLE_APPLICATION_CREDENTIALS") is None:
+        raise EnvironmentError(
+            "Environment variable 'GOOGLE_APPLICATION_CREDENTIALS' is not set.\n"
+            "Please set it to the path of your Google Cloud service account JSON key."
+        )
+
+    # ------------------------------------------------------------
+    # ③ Text-to-Speech クライアントの初期化
+    # ------------------------------------------------------------
+    # 認証情報をもとに Google Cloud TTS クライアントを生成
+    client = texttospeech.TextToSpeechClient()
+
+    # ------------------------------------------------------------
+    # ④ 入力ファイルの存在確認と読み込み
+    # ------------------------------------------------------------
+    input_file_path = Path(args.input_file)
+    output_file_path = Path(args.output_file)
+
+    if not input_file_path.exists():
+        raise FileNotFoundError(f"Input file not found: {input_file_path}")
+
+    # UTF-8 で SSML またはテキストを読み込む
+    with input_file_path.open("r", encoding="utf-8") as f:
+        input_text = f.read()
+
+    # ------------------------------------------------------------
+    # ⑤ TTS API に送信するパラメータの準備
+    # ------------------------------------------------------------
+    # 入力は SSML として扱う（<speak> タグを使用している前提）
+    synthesis_input = texttospeech.SynthesisInput(ssml=input_text)
+
+    # 出力形式を MP3 に設定（WAVやLINEAR16に変更も可能）
+    audio_config = texttospeech.AudioConfig(
+        audio_encoding=texttospeech.AudioEncoding.MP3
+    )
+
+    # デフォルト音声設定
+    # SSML 内の <voice> タグで上書きされるが、空指定エラーを避けるため必須
+    voice = texttospeech.VoiceSelectionParams(
+        language_code="ja-JP"  # デフォルトは日本語
+    )
+
+    # ------------------------------------------------------------
+    # ⑥ 音声合成リクエストの送信
+    # ------------------------------------------------------------
+    print(f"Requesting synthesis for {input_file_path}...")
+
+    # Google Cloud TTS API へリクエスト送信
+    response = client.synthesize_speech(
+        input=synthesis_input,
+        voice=voice,
+        audio_config=audio_config
+    )
+
+    # ------------------------------------------------------------
+    # ⑦ 出力ファイルへの書き込み
+    # ------------------------------------------------------------
+    # response.audio_content は MP3 のバイナリデータ
+    with output_file_path.open("wb") as out:
+        out.write(response.audio_content)
+
+    print(f"Speech saved to {output_file_path}")
+
+    # ------------------------------------------------------------
+    # 完了メッセージ
+    # ------------------------------------------------------------
+    # この段階で output_file_path に音声ファイルが生成される
+    # SSMLに複数言語・話者を指定している場合は自動で切り替わる
+    # ------------------------------------------------------------
+
+
+# エントリーポイント（直接実行された場合のみ main() を呼び出す）
+if __name__ == "__main__":
+    main()
+```
+
+##  ssmlファイル
+
+
+実際に入力ファイルとして使うssmlファイルの例を以下に示す。
+
+
+言語指定はlanguageで行う。genderを指定すると男性女性の声になる。
+nameは指定しなくてもよいが、
+指定すると特定の声になる。このときgenderの指定は無視されるみたい。
+
+### 英語の場合
+
+| 音声名 (Name) | 性別 |
+| :--- | :--- |
+| `en-US-Wavenet-A` | **男性** |
+| `en-US-Wavenet-B` | **男性** |
+| `en-US-Wavenet-C` | **女性** |
+| `en-US-Wavenet-D` | **男性** |
+| `en-US-Wavenet-E` | **女性** |
+| `en-US-Wavenet-F` | **女性** |
+| `en-US-Wavenet-G` | **女性** |
+| `en-US-Wavenet-H` | **女性** |
+| `en-US-Wavenet-I` | **男性** |
+| `en-US-Wavenet-J` | **男性** |
+
+
+### 日本語
+| 音声名 (Name) | 性別 |
+| :--- | :--- |
+| `ja-JP-Wavenet-A` | **女性** |
+| `ja-JP-Wavenet-B` | **男性** |
+| `ja-JP-Wavenet-C` | **女性** |
+| `ja-JP-Wavenet-D` | **男性** |
+
+
+```
+<speak>
+  <voice language="ja-JP" name="ja-JP-Wavenet-C" gender="MALE">
+    皆さん、こんにちは。
+    私は日本語の男性の声です。
+    次は女性の声に切り替わります。
+  </voice>
+
+  <voice language="ja-JP" name="ja-JP-Wavenet-A" gender="FEMALE">
+    はい、こんにちは。
+    私は日本語の女性の声です。
+    <break time="700ms"/>
+    では次に、英語の男性の声をお聞きください。
+  </voice>
+
+  <voice language="en-US" name="en-US-Wavenet-A" gender="MALE">
+    <prosody rate="0.9">
+      Hello everyone.
+      My name is David.
+      This is an English male voice from Google Cloud Text-to-Speech.
+      <break time="1s"/>
+    </prosody>
+  </voice>
+
+  <voice language="en-US" name="en-US-Wavenet-C" gender="FEMALE">
+    <prosody rate="0.9">
+      Hello everyone. My name is Jennifer Jareaux. This is an English female voice from Google Cloud Text-to-Speech.
+    </prosody>
+  </voice>
+</speak>
 ```
