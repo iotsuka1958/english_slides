@@ -19,6 +19,7 @@
 \usepackage[absolute,overlay]{textpos}
 %\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{Health is more important than money.}
@@ -146,22 +147,24 @@ signback=white!80!brown
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{---lyのとき}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]{---lyで終わるとき}
 \large
 
  \begin{enumerate}
   \item \begin{enumerate}
-	 \item Bob spoke \myEmph[1-]{Maroon}{more} slow\myEmph[1-]{Maroon}{ly} than Jane.%
+	 \item<1-> Bob spoke \myEmph[1-]{Maroon}{more} slow\myEmph[1-]{Maroon}{ly} than Jane.%
 \hfill{\tiny 0144}\,{\scriptsize \myaudio{./audio/044_more_most_05.mp3}}
 
-	 \item Jane spoke \myEmph[1-]{Maroon}{more} quick\myEmph[1-]{Maroon}{ly} than Bob.
-	 \item Please speak \myEmph[1-]{Maroon}{more} quiet\myEmph[1-]{Maroon}{ly}.
+	 \item<2-> Jane spoke \myEmph[2-]{Maroon}{more} quick\myEmph[2-]{Maroon}{ly} than Bob.
+	 \item<3-> Please speak \myEmph[3-]{Maroon}{more} quiet\myEmph[3-]{Maroon}{ly}.
 	\end{enumerate}
   \item \begin{enumerate}
-	 \item<2-> Jennifer got up \myEmph[2-]{Maroon}{earlier} than Emily.%
-	      \hfill\visible<3->{{\scriptsize more earlyとはいわない}}
-	 \item<4-> Jennifer got up the \myEmph[4-]{Maroon}{earliest} of all.%
-	      \hfill\visible<5->{{\scriptsize most earlyとはいわない}}
+	 \item<5-> Jennifer got up \myEmph[5-]{Maroon}{earlier} than Emily.%
+	      \hfill\visible<6->{{\scriptsize more earlyとはいわない}}
+	 \item<7-> Jennifer got up the \myEmph[7-]{Maroon}{earliest} of all.%
+	      \hfill\visible<8->{{\scriptsize most earlyとはいわない}}
 	\end{enumerate}
  \end{enumerate}
 \vspace{-8pt}
@@ -169,15 +172,15 @@ signback=white!80!brown
 
 \vspace{60pt}
 
-\begin{block}<7->{Topics for Today}
+\begin{block}<9->{Topics for Today}
  \begin{itemize}\setbeamertemplate{items}[square]\small
-  \item<7-> --{\bfseries ly}で終わる副詞の比較級は{\bfseries more} ---, 最上級は{\bfseries most} ---
-  \item<8-> ただし{\bfseries early}は{\bfseries earlier}, {\bfseries earliest}
+  \item<9-> --{\bfseries ly}で終わる副詞の比較級は{\bfseries more} ---, 最上級は{\bfseries most} ---
+  \item<10-> ただし{\bfseries early}は{\bfseries earlier}, {\bfseries earliest}
  \end{itemize}
      \end{block}
 
 \begin{textblock*}{0.2\linewidth}(320pt,120pt)
-\visible<6->{\begin{tikzpicture}
+\visible<4->{\begin{tikzpicture}
 \duck[signpost=\scalebox{0.3}{
 \parbox{2.5cm}{\color{black}\centering
 {\Huge\bfseries more\\[3pt] most}}},
@@ -208,6 +211,70 @@ speech={\tiny --{\bfseries ly}のとき}
 	\visible<4->{She got up \textcolor{Maroon}{\bfseries the earliest} of the three.\,\,\,(✕\,most)}
  \end{enumerate}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{聞いてみよう、読んでみよう}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ 
+\includegraphics[height=1.125\textheight]{./images/nanobanana-output/passive.png}
+
+\vspace{-30pt}
+
+\hfill{\tiny 0022}\,{\scriptsize \myaudio{./audio/044_more_most_08.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-11>[plain,t]{Exercises}
+\scriptsize
+
+\vspace{-3pt}
+\small
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+before upper={\setlength{\parindent}{1.25em}},
+ title=次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\tiny 0022}\,{\scriptsize \myaudio{./audio/044_more_most_08.mp3}}
+]
+Jennifer and Emily live in Tokyo.
+Tokyo is busier\tikzmark{clue1} than my town.
+
+In the morning, Jennifer gets up (~~~ア~~~) than Emily.
+They go to school together.
+
+At school, science is more difficult\tikzmark{clue2} than history for Jennifer.
+She thinks health is more important than money.
+Emily thinks the internet is more useful\tikzmark{clue3} than old books.
+
+At home, they have to speak\tikzmark{clue4} more quietly in the evening.
+
+\end{tcolorbox}
+
+%\vspace{-5pt}
+\visible<2->{{\scriptsize A. 本文に照らし合わせて、正しければT、そうでなければFと答えましょう}}
+\vspace{-5pt}
+\begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
+ \item<2-> Tokyo is quieter than the writer's town.\tikzmark{q1}\hfill\visible<4->{F}
+ \item<2-> Science is easier than history for Jennifer.\tikzmark{q2}\hfill\visible<6->{F}
+ \item<2-> Emily thinks old books are not so useful as the internet.\tikzmark{q3}\hfill\visible<8->{T}
+ \item<2-> Jennifer and Emily speak more quietly in the evening.\tikzmark{q4}\hfill\visible<10->{T}
+\end{enumerate}
+
+\vspace*{-5pt}
+
+\visible<2->{{\scriptsize B. 本文の空所アに補うのに適切なほうを選びましょう}}%
+\hfill\visible<2->{{\alt<1-10>{earlier}{\Circled{earlier}} / more early}}
+
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[out=-90,in=0] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[out=-90,in=0] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue3) to[in=0,out=-90] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{more ---, most --- のまとめ}
 

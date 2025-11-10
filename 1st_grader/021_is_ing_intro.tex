@@ -42,6 +42,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
+\usetikzlibrary{tikzmark}
 \usepackage{tcolorbox}
 \usepackage{xcolor}
 \usepackage{amsmath}
@@ -370,17 +371,78 @@ She ( \alt<6->{\Circled{loves}}{loves} / is loving / loving ) you.
 \hfill{\tiny 0204}\,{\scriptsize \myaudio{./audio/021_is_ing_intro_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{現在進行形の基本のまとめ}
+\section{聞いてみよう、読んでみよう}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ 
+\includegraphics[height=1.15\textheight]{./images/park.png}
+
+\vspace{-30pt}
+
+\hfill{\tiny 0030}\,{\scriptsize \myaudio{./audio/021_is_ing_intro_06.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{Exercises}
+\scriptsize
+
+\vspace{-3pt}
+\small
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+before upper={\setlength{\parindent}{1.25em}},
+ title=次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\tiny 0030}\,{\scriptsize \myaudio{./audio/021_is_ing_intro_06.mp3}}
+]
+Look! It is noon\footnotemark{} now.
+Many people are in the park.
+They are playing \tikzmark{clue1}baseball and running near the big trees.
+A dog is\tikzmark{clue2} swimming in the pool.
+Our teacher, Mr. Brown, is reading\tikzmark{clue3} a book on a bench.
+He likes books very much. Two students are doing homework together, but they are not \tikzmark{clue4}studying Spanish.
+They are writing in their notebooks.
+%We know the time is passing quickly.
+What are you doing now?\footnotemark
+
+\end{tcolorbox}
+
+%\vspace{-5pt}
+{\scriptsize 本文に照らし合わせて、正しければT、そうでなければFと答えましょう}
+\begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
+ \item<2-> Many people are playing baseball and running near the small trees.\tikzmark{q1}\hfill\visible<4->{F}
+ \item<2-> The dog is swimming in the pool now.\tikzmark{q2}\hfill\visible<6->{T}
+ \item<2-> Mr. Brown likes a books very much. He is reading a newspaper.\tikzmark{q3}\hfill\visible<8->{F}
+ \item<2-> The two students are studying Spanish together\tikzmark{q4}\hfill\visible<10->{F}
+\end{enumerate}
+
+\vspace*{-15pt}
+
+\footnotetext[1]{\scriptsize noon \textipa{/n\'u:n/} 正午}
+ \footnotetext[2]{\scriptsize What are you doing now? あなたはいまなにをしていますか。}
+%\footnotetext[3]{\scriptsize go on and on：えんえんと続く}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[out=-90,in=0] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,opacity=.4,line width=2pt] ([xshift=-10pt,yshift=-2pt]pic cs:clue3) to[in=60,out=-90] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([xshift=5pt,yshift=-2pt]pic cs:clue4) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{学習したこと}\small
 \begin{block}<1->{まとめ1}
 \begin{itemize}\setbeamertemplate{items}[square]
  \item<2-> 現在進行形\,\,\Circled[fill color=white]{\,\,$\text{be動詞}+\text{---ing}$\,\,}\hfill\visible<3->{今この瞬間に起こっていること　}
  \item<4-> ---ingのつくり方
-       \begin{itemize}
-	\item<5-> 原形にing（原則）
-	\item<6-> 語尾のeをとって---ing\hfill{}make\,$\rightarrow$\, making, write\,$\rightarrow$\, writing, use\,$\rightarrow$\,using
-	\item<7-> 最後の1文字を重ねて---ing\hfill{}swim\,$\rightarrow$\, swimming, run\,$\rightarrow$\, running, sit\,$\rightarrow$\,sitting
+       \begin{itemize}\setbeamertemplate{items}[circle]
+	\item<5-> 原形に---ing（原則）\hfill{}going, playing, reading, eating, singing \ldots
+	\item<6-> 語尾のeをとって---ing\hfill{}make\,$\rightarrow$\, making, write\,$\rightarrow$\, writing, use\,$\rightarrow$\,using \ldots
+	\item<7-> 最後の1文字を重ねて---ing\hfill{}swim\,$\rightarrow$\, swimming, run\,$\rightarrow$\, running, sit\,$\rightarrow$\,sitting \ldots
        \end{itemize}
 \end{itemize}
  \end{block}
@@ -389,8 +451,8 @@ She ( \alt<6->{\Circled{loves}}{loves} / is loving / loving ) you.
 \begin{block}<8->{まとめ2}\small
 \visible<9->{「動作」を表す動詞と「状態」をあらわす動詞があります}
 \begin{itemize}\setbeamertemplate{items}[square]
- \item 「動作」をあらわす動詞\hfill{}eat, drink,  run, walk, play \ldots
- \item 「状態」を表す動詞\hfill{}know, like, have \ldots\\
+ \item<10-> 「動作」をあらわす動詞\hfill{}eat, drink,  run, walk, play \ldots
+ \item<11-> 「状態」を表す動詞\hfill{}know, like, have \ldots\\
 \hfill{}\visible<12->{$\longrightarrow$\,\,「状態」をあらわす動詞は「現在進行形」になりません}\\
 \hfill\visible<13->{{I know Tom.}}\\%
 \hfill\visible<13->{{*I am knowing Tom.}}%
