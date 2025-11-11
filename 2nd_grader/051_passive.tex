@@ -323,10 +323,10 @@ laughing,
 \begin{frame}[plain]{否定を表す語}
  \Large
 
-否定を表す語：\pause {\LARGE\bfseries not}\hspace{20pt}\textipa{/n\'At/}
+否定を表す語：\visible<2->{{\LARGE\bfseries not}}\hspace{20pt}\visible<3->{\textipa{/n\'At/}}
 
 
-\hfill\begin{tikzpicture}
+\hfill\visible<3->{\begin{tikzpicture}
 \duck[tshirt=black,
 stripes={\stripes[color=white]},
 football,
@@ -335,13 +335,13 @@ bubblecolour=cyan!20!white,
 think={ア},
 laughing
 ]
-\end{tikzpicture}
+\end{tikzpicture}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{受け身の否定}
 \large
 
-\visible<1->{Spanish \textcolor{NavyBlue}{\bfseries is spoken} in the country.}\hfill\visible<12->{{\scriptsize country \textipa{/k\'\textturnv ntri/} 国}}
+\visible<1->{Spanish \textcolor{NavyBlue}{\bfseries is spoken} in the country.}\hfill\visible<1->{{\scriptsize country \textipa{/k\'\textturnv ntri/} 国}}
 
 \visible<2->{Spanish \textcolor{NavyBlue}{\bfseries is} \textcolor{Maroon}{\bfseries not} \textcolor{NavyBlue}{\bfseries spoken} in the country.} 
 
@@ -360,13 +360,13 @@ laughing
 \begin{frame}[plain]{受け身の疑問文のつくり方}
 \large
 
-\visible<1->{English \alt<1-3>{\myAnch{be1}{white}{is}}{\myAnch{BE1}{orange}{is}} spoken there.}\hfill\visible<2->{{\scriptsize there \textipa{/D\'e\textrhookschwa /} そこでは}}
+\visible<1->{English \alt<1-2>{\myAnch{be1}{white}{is}}{\myAnch{BE1}{orange}{is}} spoken there.}\hfill\visible<1->{{\scriptsize there \textipa{/D\'e\textrhookschwa /} そこでは}}
 
 \vspace{15pt}
 
-\visible<3->{\alt<1-3>{\myAnch{be2}{white}{Is}}{\myAnch{BE2}{orange}{Is}} English spoken there?}%
+\visible<2->{\alt<1-2>{\myAnch{be2}{white}{Is}}{\myAnch{BE2}{orange}{Is}} English spoken there?}%
 \hfill%
-\visible<5->{\begin{tikzpicture}
+\visible<4->{\begin{tikzpicture}
 \duck[signpost=\scalebox{0.3}{
 \parbox{2.5cm}{\color{black}
 be動詞を\\前に\\出すだけ}},
@@ -378,7 +378,7 @@ speech={\tiny 語順がだいじ}
 ]
 \end{tikzpicture}}  
 
-\visible<4->{%
+\visible<3->{%
 \begin{tikzpicture}[remember picture,overlay]
  \draw[thick,orange,->,line width=2pt,opacity=.5] (be1.south) to[out=-90, in=90] node[sloped,above,text=black,font=\tiny,pos=.4]{be動詞を前に} (be2.north);
 \end{tikzpicture}
@@ -388,11 +388,11 @@ speech={\tiny 語順がだいじ}
 
 \hfill{\tiny 0111}\,{\scriptsize \myaudio{./audio/051_passive_07.mp3}}
 
-\begin{block}<6->{Topics for Today}\small
+\begin{block}<5->{Topics for Today}\small
 受け身の疑問文のつくり方
 \begin{itemize}\setbeamertemplate{items}[square]
- \item<3->  be動詞を先頭へ\hfill{\scriptsize ふつうのbe動詞の文と同じ(He is kind.\,$\rightarrow$\,Is he kind?)}
- \item<4-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
+ \item<6->  be動詞を先頭へ\hfill{\scriptsize ふつうのbe動詞の文と同じ(He is kind.\,$\rightarrow$\,Is he kind?)}
+ \item<7-> 文末に`?'をつける　　　イントネーションは\myRisingPitch
 \end{itemize}
       \end{block}
 \end{frame}
@@ -412,6 +412,8 @@ Is English spoken in the country?
          \text{(}$=$ \text{No, it's not.)}&{\scriptsize it isを縮めて}\\
          \text{(}$=$ \text{No, it isn't.)}&{\scriptsize is notを縮めて}
         \end{tabular}\right.$
+
+\hfill{\tiny 0224}\,{\scriptsize \myaudio{./audio/051_passive_071.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -539,17 +541,10 @@ signback=white!80!brown
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
 \againframe<18>{table}
-\end{document}
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
 
-
-\begin{frame}[plain]{受け身とは}
- \Large
-
-He makes cheese from milk.\hfill{}{\small 彼は牛乳からチーズを作る。}
-
-They made cheese from milk.\hfill{}{\small 彼は牛乳からチーズを作った。}
-
-Cheese is made from milk.\hfill{\small チーズは牛乳から作られる。}
-
+ {\tiny audio\_overview 2207}\,{\scriptsize \myaudio{./audio/overview/051_passive_audio_overview.m4a}}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%
+\end{document}
