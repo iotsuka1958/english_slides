@@ -1,5 +1,2 @@
-Is English spoken in the country?
-Yes, it is.
-No, it is not.
-No, it’s not.
-No, it isn’t.
+I like quiet music.<break time="2s"/>Please speak quietly.
+I like beautiful music.<break time="2s"/>She sings beautifully.
