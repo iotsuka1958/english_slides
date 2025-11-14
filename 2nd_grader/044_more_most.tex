@@ -262,8 +262,8 @@ Please listen carefully.
   colback=ForestGreen!10!white,
   colbacktitle=ForestGreen!40!white,
   coltitle=black, %fonttitle=\bfseries,
-before upper={\setlength{\parindent}{1.25em}},
- title=次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\tiny 0022}\,{\scriptsize \myaudio{./audio/044_more_most_08.mp3}}
+  before upper={\setlength{\parindent}{1.25em}},
+  title=次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\tiny 0022}\,{\scriptsize \myaudio{./audio/044_more_most_08.mp3}}
 ]
 Jennifer and Emily live in Tokyo.
 Tokyo is busier\tikzmark{clue1} than my town.
@@ -279,7 +279,7 @@ At home, they have to speak\tikzmark{clue4} more quietly in the evening.
 
 \end{tcolorbox}
 
-%\vspace{-5pt}
+\vspace{-2pt}
 \visible<2->{{\scriptsize A. 本文に照らし合わせて、正しければT、そうでなければFと答えましょう}}
 \vspace{-5pt}
 \begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
@@ -289,11 +289,14 @@ At home, they have to speak\tikzmark{clue4} more quietly in the evening.
  \item<2-> Jennifer and Emily speak more quietly in the evening.\tikzmark{q4}\hfill\visible<10->{T}
 \end{enumerate}
 
-\vspace*{-5pt}
+\vspace*{-7pt}
 
 \visible<2->{{\scriptsize B. 本文の空所アに補うのに適切なほうを選びましょう}}%
 \hfill\visible<2->{{\alt<1-10>{earlier}{\Circled{earlier}} / more early}}
 
+\vspace{3pt}
+
+{\scriptsize 注：\hspace{5pt}get up:起きる\hspace{12pt}history:歴史\hspace{12pt}health:健康\hspace{12pt}internet:インターネット\hspace{12pt}useful:役にたつ}
 
 \begin{tikzpicture}[remember picture,overlay]
  \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[out=-90,in=0] ([xshift=2pt, yshift=2pt] pic cs:q1);}
@@ -303,6 +306,37 @@ At home, they have to speak\tikzmark{clue4} more quietly in the evening.
 \end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+
+\begin{tcolorbox}[
+before upper={\setlength{\parindent}{1.25em}}
+]
+Jennifer and Emily live in Tokyo.
+Tokyo is busier than my town.
+
+In the morning, Jennifer gets up earlier than Emily.
+They go to school together.
+
+At school, science is more difficult than history for Jennifer.
+She thinks health is more important than money.
+Emily thinks the internet is more useful than old books.
+
+At home, they have to speak more quietly in the evening.
+\end{tcolorbox}
+
+\small
+\setlength{\parindent}{1\zw}
+ジェニファーとエミリーは東京に住んでいます。
+東京は私の町よりもにぎやかです。
+
+朝、ジェニファーはエミリーより早く起きます。彼女たちはいっしょに学校に行きます。
+
+学校では、ジェニファーにとって、理科は歴史よりも難しいです。
+彼女は、お金よりも健康のほうがたいせつだとおもっています。
+エミリーは、古い本よりもインターネットの方が役にたつとおもっています。
+ 
+家では、彼女たちは、夜、もっと静かに話さなければなりません。
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{more ---, most --- のまとめ}
 
