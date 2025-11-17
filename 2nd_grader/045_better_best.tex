@@ -19,6 +19,7 @@
 \usepackage[absolute,overlay]{textpos}
 %\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{Billy is the best pianist.}
@@ -168,6 +169,51 @@ much&\visible<8->{more}&\visible<9->{most}\\
 \hfill{\tiny 0313}\,{\scriptsize \myaudio{./audio/045_better_best_09.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{聞いてみよう、読んでみよう}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-12>[plain,t]{Exercises}
+\scriptsize
+
+\vspace{-3pt}
+\small
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+  before upper={\setlength{\parindent}{1.25em}},
+  title=次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\tiny 0022}\,{\scriptsize \myaudio{./audio/045_better_best_10.mp3}}
+]
+
+My family likes food. Pizza is good, but my dad thinks hamburgers\tikzmark{clue1} are better. My mom makes\tikzmark{clue2} the best spaghetti.
+
+I eat many fruits, like apples and bananas. My sister eats\tikzmark{clue3} more fruit than I do. My mom eats the most fruit\tikzmark{clue4} in our family. She loves strawberries.
+
+I don't drink\tikzmark{clue5} much soda. I drink water. My dad says water is better for me. My sister drinks more juice than water. We all enjoy eating good food together.
+\end{tcolorbox}
+
+\vspace{-2pt}
+\visible<2->{{\scriptsize A. 本文に照らし合わせて、正しければT、そうでなければFと答えましょう}}
+\vspace{-5pt}
+\begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
+ \item<2-> The writer's dad thinks pizza is better than hamburgers.\tikzmark{q1}\hfill\visible<4->{F}
+ \item<2-> The writer's mom makes the best spaghetti.\tikzmark{q2}\hfill\visible<6->{T}
+ \item<2-> The writer eats more fruit than their sister.\tikzmark{q3}\hfill\visible<8->{F}
+ \item<2-> The writer's mom eats the most fruit in the family.\tikzmark{q4}\hfill\visible<10->{T}
+ \item<2-> The writer drinks much soda.\tikzmark{q5}\hfill\visible<12->{F}
+\end{enumerate}
+
+\vspace{3pt}
+
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[out=-90,in=0] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[out=-90,in=0] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<7->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue3) to[in=0,out=-90] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+ \visible<11->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue5) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q5);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
 \begin{frame}[plain]{まとめ}
  \begin{block}{well, good}\small

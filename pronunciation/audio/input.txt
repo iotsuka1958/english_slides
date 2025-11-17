@@ -1,2 +1,3 @@
-A mouse ran out of the house.
-We walked around the town and sat down on the ground.
+poor<break time="2s"/>poor<break time="2s"/>poor
+tour<break time="2s"/>tour<break time="2s"/>tour
+sure<break time="2s"/>sure<break time="2s"/>sure
