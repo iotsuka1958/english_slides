@@ -1,3 +1,5 @@
-poor<break time="2s"/>poor<break time="2s"/>poor
-tour<break time="2s"/>tour<break time="2s"/>tour
-sure<break time="2s"/>sure<break time="2s"/>sure
+four<break time="2s"/>four<break time="2s"/>four
+course<break time="2s"/>course<break time="2s"/>course
+floor<break time="2s"/>floor<break time="2s"/>floor
+door<break time="2s"/>door<break time="2s"/>door
+warm<break time="2s"/>warm<break time="2s"/>warm

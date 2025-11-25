@@ -1,2 +1,4 @@
-I like quiet music.<break time="2s"/>Please speak quietly.
-I like beautiful music.<break time="2s"/>She sings beautifully.
+The plan was to make a hospital.
+To study math is important.
+I like to read books before bed.
+I need to finish my homework before dinner.
