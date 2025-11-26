@@ -31,6 +31,8 @@ data |>
   select(path, file_name)
 ```
 
+### slideの作成状況の一覧
+
 ```{r}
 slides_done_table <- data |>
   filter(slide == TRUE) |>
@@ -58,6 +60,22 @@ slides_undone_table <- data |>
 slides_done_table |> gtsave("slides_done.html") # htmlファイル作成
 # slides_done_table |> gtsave("slides_done.tex") # htmlファイル作成
 slides_undone_table |> gtsave("slides_undone.html") # htmlファイル作成
+```
+
+### 音声概要と動画の作成状況の一覧
+```{r}
+audio_video_table <- data |>
+  select(path, file_name, audio_overview, video) |>
+  gt() |>
+  tab_header(
+    title = "audio_video_status",
+    subtitle = c("as of", as.character(Sys.time()))
+  ) |>
+  sub_missing(columns = everything(), missing_text = "-")
+```
+
+```{r}
+audio_video_table |> gtsave("audio_video_status.html") # htmlファイル作成
 ```
 
 ## 進捗管理
