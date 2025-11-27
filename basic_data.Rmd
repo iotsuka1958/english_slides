@@ -62,10 +62,10 @@ slides_done_table |> gtsave("slides_done.html") # htmlファイル作成
 slides_undone_table |> gtsave("slides_undone.html") # htmlファイル作成
 ```
 
-### 音声概要と動画の作成状況の一覧
+### notebook, 音声概要, 動画, インフォグラフィックの作成状況の一覧
 ```{r}
 audio_video_table <- data |>
-  select(path, file_name, audio_overview, video) |>
+  select(path, file_name,slide, notebook, audio_overview, video_en, video_ja, infographic) |>
   gt() |>
   tab_header(
     title = "audio_video_status",
