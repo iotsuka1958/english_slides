@@ -1,5 +1,3 @@
-four<break time="2s"/>four<break time="2s"/>four
-course<break time="2s"/>course<break time="2s"/>course
-floor<break time="2s"/>floor<break time="2s"/>floor
-door<break time="2s"/>door<break time="2s"/>door
-warm<break time="2s"/>warm<break time="2s"/>warm
+night<break time="2s"/>not<break time="2s"/>notebook
+man<break time="2s"/>milk<break time="2s"/>meat
+king<break time="2s"/>sing<break time="2s"/>long
