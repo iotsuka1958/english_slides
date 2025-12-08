@@ -799,3 +799,513 @@ nameは指定しなくてもよいが、
   </voice>
 </speak>
 ```
+
+
+# beamerを音声つき動画にする
+
+beamerで作成したスライドを音声付きの動画にする手順をまとめておく。
+
+## 環境設定
+
+### pythonライブラリのインストール
+
+既にinストーリ済みなら不要です
+
+```
+pip install google-cloud-texttospeech
+```
+
+### Google Cloud プロジェクトの設定:
+
+以下もすでに設定済みであればスキップ
+
+- Google Cloudコンソールでプロジェクトを作成（または選択）します。
+- ナビゲーションメニューから "Cloud Text-to-Speech API" を検索し、有効にします。
+
+### サービスアカウントの作成と認証情報のダウンロード:
+
+これも設定済みならスキップ
+
+- ナビゲーションメニューから "IAMと管理" > "サービスアカウント" に移動します。
+- "サービスアカウントを作成" をクリックし、名前と説明を入力します。
+- "役割を選択" で "プロジェクト" > "オーナー" を選択します。
+- "キーを作成" をクリックし、JSON形式でキーをダウンロードします。
+- ダウンロードしたJSONファイルのパスを環境変数 `GOOGLE_APPLICATION_CREDENTIALS` に設定します。  
+
+## pythonスクリプト
+
+geminiに提案してもらったスクリプトをベースに、さらに改良してもらったもの。
+
+beamer2_video.pyというファイル名にしてシェバングをつけて実行権限を付与しておく。
+
+コマンドラインで
+beamer2_video.py input_file.tex
+とすると、input_file.mp4ができる。
+
+スクリプト名はbeamer2_video.pyとしてあるが、texファイルなら動くと思う。
+ただし、エンジンはlualatexを使うようにしてあるので、そこは注意。
+
+texファイルの具体例は後で掲載しておく。
+
+## 機能まとめ
+
+- SSML対応: <break time="1s"/> などのタグを自動認識して反映します。
+- 文字化け対策: PDFからテキストを安全に読み取る強力なデコーダーを搭載。
+- 日英自動切替: 文章内の言語を判定し、適切なネイティブ音声（日本語/英語）に切り替えます。
+- 性別指定: コマンドライン引数で男女の声を選べます。
+- 安全性: 動画サイズを偶数に補正し、FFmpegのクラッシュを防ぎます。
+- 注釈アイコン非表示対応: TeX側の /F 2 設定と組み合わせて動作します（スクリプト側は変更なしでOK）。
+
+```
+#! /usr/bin/env python
+
+import os
+import re
+import sys
+import argparse
+import subprocess
+from pathlib import Path
+from google.cloud import texttospeech
+from pypdf import PdfReader
+from pypdf.generic import TextStringObject, ByteStringObject
+from pdf2image import convert_from_path
+
+def show_usage():
+    print("""
+Usage: beamer2_video.py <input_file.tex> [options]
+
+Options:
+  -h, --help           Show this help message and exit.
+  --ja-gender {m,f}    Set Japanese voice gender (m=male, f=female). Default: f
+  --en-gender {m,f}    Set English voice gender (m=male, f=female). Default: f
+
+Description:
+  Converts a Beamer LaTeX file into an MP4 video using Google Cloud TTS.
+  - Requires: LuaLaTeX, FFmpeg, Poppler, Google Cloud Credentials.
+  - Supports: SSML tags (e.g., <break time="1s"/>), Mixed languages.
+""")
+
+def compile_tex(tex_file):
+    """LuaLaTeXでTeXファイルをコンパイルする"""
+    print(f">>> 1. Compiling LaTeX ({tex_file})...")
+    subprocess.run(["lualatex", "--interaction=nonstopmode", tex_file], check=True)
+
+def get_safe_text(pdf_object):
+    """
+    pypdfのオブジェクトからテキストを安全に抽出する強力なデコーダー
+    """
+    # 1. まずはバイト列(bytes)を取り出す
+    raw_bytes = None
+    
+    if isinstance(pdf_object, ByteStringObject) or isinstance(pdf_object, bytes):
+        raw_bytes = bytes(pdf_object)
+    elif isinstance(pdf_object, TextStringObject) or isinstance(pdf_object, str):
+        try:
+            # 既に文字列になっている場合、pypdfがLatin-1で誤読した可能性が高いため
+            # Latin-1でエンコードして元のバイト列に戻す
+            raw_bytes = pdf_object.encode("latin-1")
+        except UnicodeEncodeError:
+            # Latin-1に戻せない文字がある＝既に正しくデコードされている可能性が高い
+            return pdf_object
+
+    if raw_bytes is None:
+        return ""
+
+    # 2. 順次デコードを試みる
+    # LuaLaTeXの場合、UTF-8が最有力だが、PDF仕様的にはUTF-16BEも多い
+    encodings = ["utf-8", "utf-16-be", "utf-16-le", "shift_jis"]
+    
+    for enc in encodings:
+        try:
+            return raw_bytes.decode(enc)
+        except UnicodeDecodeError:
+            continue
+    
+    # 全滅した場合はLatin-1（文字化けするがエラーは出ない）で返す
+    return raw_bytes.decode("latin-1", errors="ignore")
+
+def is_japanese(text):
+    """テキストに日本語文字が含まれているか判定する"""
+    pattern = r'[ぁ-んァ-ン一-龥]'
+    return re.search(pattern, text) is not None
+
+def generate_mixed_audio(client, text, voice_ja, voice_en, audio_config):
+    """日英混合テキストを分割して音声を生成・結合する（SSML対応版）"""
+    # 制御文字などを削除
+    text = text.replace('\n', ' ').replace('\r', '')
+    
+    # 分割（日本語の塊 と それ以外）
+    split_pattern = r'([ぁ-んァ-ン一-龥。、！？「」]+)'
+    segments = re.split(split_pattern, text)
+    
+    combined_audio_content = b"" 
+    segment_logs = []
+
+    # SSMLタグっぽいものを含むか判定する正規表現
+    ssml_tag_pattern = re.compile(r'<[^>]+>')
+
+    for seg in segments:
+        if not seg.strip():
+            continue
+            
+        if is_japanese(seg):
+            voice = voice_ja
+            lang_label = "JA"
+        else:
+            voice = voice_en
+            lang_label = "EN"
+            
+        # ログ表示用
+        display_seg = seg[:15].replace('\n', '')
+        
+        try:
+            # SSMLタグ判定
+            if ssml_tag_pattern.search(seg):
+                # SSMLとして送信 (<speak>で囲む)
+                ssml_text = f"<speak>{seg}</speak>"
+                synthesis_input = texttospeech.SynthesisInput(ssml=ssml_text)
+                segment_logs.append(f"[{lang_label}/SSML]{display_seg}")
+            else:
+                # 通常テキストとして送信
+                synthesis_input = texttospeech.SynthesisInput(text=seg)
+                segment_logs.append(f"[{lang_label}]{display_seg}")
+
+            response = client.synthesize_speech(
+                input=synthesis_input, voice=voice, audio_config=audio_config
+            )
+            combined_audio_content += response.audio_content
+            
+        except Exception as e:
+            print(f"      [Error] TTS segment failed: {e}")
+            
+    print(f"      Parsed: {' '.join(segment_logs)}")
+    return combined_audio_content
+
+def extract_narrations_and_generate_audio(pdf_file, ja_gender, en_gender):
+    """PDFの注釈からテキストを抽出し、指定された性別で音声を生成する"""
+    print(f">>> 2. Extracting text from {pdf_file} and Generating Audio...")
+    
+    client = texttospeech.TextToSpeechClient()
+    
+    # 性別設定
+    ja_name = "ja-JP-Neural2-C" if ja_gender == 'm' else "ja-JP-Neural2-B"
+    en_name = "en-US-Neural2-D" if en_gender == 'm' else "en-US-Neural2-F"
+
+    print(f"    Voices: JA={ja_name}, EN={en_name}")
+
+    voice_ja = texttospeech.VoiceSelectionParams(language_code="ja-JP", name=ja_name)
+    voice_en = texttospeech.VoiceSelectionParams(language_code="en-US", name=en_name)
+    audio_config = texttospeech.AudioConfig(audio_encoding=texttospeech.AudioEncoding.MP3)
+
+    reader = PdfReader(pdf_file)
+    audio_files = []
+
+    for i, page in enumerate(reader.pages):
+        text_parts = []
+        if "/Annots" in page:
+            for annot in page["/Annots"]:
+                obj = annot.get_object()
+                if obj["/Subtype"] == "/Text":
+                    # 強力デコード関数を使用
+                    raw_content = obj["/Contents"]
+                    decoded_text = get_safe_text(raw_content)
+                    text_parts.append(decoded_text)
+        
+        full_text = " ".join(text_parts).strip()
+        print(f"   Slide {i+1}: Processing...") 
+
+        filename = f"audio_{i:03d}.mp3"
+        
+        if full_text:
+            try:
+                audio_content = generate_mixed_audio(client, full_text, voice_ja, voice_en, audio_config)
+                if audio_content:
+                    with open(filename, "wb") as out:
+                        out.write(audio_content)
+                else:
+                    generate_silent_mp3(filename)
+            except Exception as e:
+                print(f"      [Warning] TTS Error on Slide {i+1}: {e}")
+                generate_silent_mp3(filename)
+        else:
+            generate_silent_mp3(filename)
+
+        audio_files.append(filename)
+    
+    return audio_files
+
+def generate_silent_mp3(filename):
+    cmd = [
+        "ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", 
+        "-t", "1", "-q:a", "9", "-acodec", "libmp3lame", filename
+    ]
+    subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+def pdf_to_images(pdf_file):
+    print(f">>> 3. Converting {pdf_file} to Images...")
+    images = convert_from_path(pdf_file, dpi=200)
+    image_files = []
+    for i, img in enumerate(images):
+        filename = f"slide_{i:03d}.png"
+        img.save(filename, "PNG")
+        image_files.append(filename)
+    return image_files
+
+def create_video(image_files, audio_files, output_video):
+    print(f">>> 4. Combining into Video ({output_video})...")
+    
+    segment_files = []
+    
+    for i, (img, aud) in enumerate(zip(image_files, audio_files)):
+        seg_name = f"segment_{i:03d}.mp4"
+        
+        if not os.path.exists(aud) or os.path.getsize(aud) == 0:
+            generate_silent_mp3(aud)
+
+        # 画像サイズを偶数にするフィルタを追加
+        cmd = [
+            "ffmpeg", "-y", "-loop", "1", "-i", img, "-i", aud,
+            "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2",
+            "-c:v", "libx264", "-tune", "stillimage", "-c:a", "aac",
+            "-b:a", "192k", "-pix_fmt", "yuv420p", "-shortest", seg_name
+        ]
+        
+        ret = subprocess.run(cmd, stderr=subprocess.DEVNULL)
+        if ret.returncode != 0:
+            print(f"      [Error] Failed to create segment {i}.")
+            raise RuntimeError("FFmpeg failed.")
+            
+        segment_files.append(seg_name)
+
+    list_file = "concat_list.txt"
+    with open(list_file, "w") as f:
+        for seg in segment_files:
+            f.write(f"file '{seg}'\n")
+
+    subprocess.run([
+        "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", list_file,
+        "-c", "copy", output_video
+    ], check=True)
+    
+    print(f">>> Done! Video saved as {output_video}")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument("filename", nargs="?", help="Input TeX file")
+    parser.add_argument("--ja-gender", choices=['m', 'f'], default='f', help="Japanese voice gender")
+    parser.add_argument("--en-gender", choices=['m', 'f'], default='f', help="English voice gender")
+    parser.add_argument("-h", "--help", action="store_true")
+    
+    args = parser.parse_args()
+
+    if args.help or not args.filename:
+        show_usage()
+        sys.exit(0)
+
+    tex_path = Path(args.filename)
+    if not tex_path.exists():
+        print(f"Error: File '{tex_path}' not found.")
+        sys.exit(1)
+
+    base_name = tex_path.stem
+    pdf_file = f"{base_name}.pdf"
+    output_video = f"{base_name}.mp4"
+
+    try:
+        compile_tex(str(tex_path))
+        audios = extract_narrations_and_generate_audio(pdf_file, args.ja_gender, args.en_gender)
+        images = pdf_to_images(pdf_file)
+        
+        if len(images) != len(audios):
+            print("Warning: Slide count and Audio count mismatch!")
+            min_len = min(len(images), len(audios))
+            images = images[:min_len]
+            audios = audios[:min_len]
+        
+        create_video(images, audios, output_video)
+        
+    except Exception as e:
+        print(f"\n[FATAL ERROR] {e}")
+
+```
+
+## texファイルの例
+
+読み上げるテキストを
+```
+\narration{...}
+```
+とします。
+
+スライド指定は
+```
+\only<n>{\narration{...}}
+```
+とします。nは数字。
+
+以下が具体例ですが、かなり長いので、必要に応じて参照してください。
+必須とあるところを実際のtexソースのプリアンブルに追加してください。
+
+あとはdocument環境で、読み上げるテキストを
+```
+\only<n>{\narration{...}}
+```
+で囲んでください。
+
+テキストにはssml記法いもけるとおもいます。
+
+日本語も英語もネイティブの発音になります。
+
+```
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+\UseTblrLibrary{counter}%%%%tabularrayとpauseが衝突することを回避する
+%\usepackage{lmodern}
+\usetikzlibrary{tikzmark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%これ以下は必須です
+% 読み上げテキストをPDF注釈として埋め込むコマンド定義
+% 修正後 ( \newcommand<> とすることでオーバーレイ引数を受け取れるようになります )
+% ==============================================
+% ここからプリアンブルの設定
+% ==============================================
+\usepackage{luacode} % これが必要です
+
+% Luaを使ってテキストを「UTF-16BEの16進数」に変換する関数を定義
+\begin{luacode*}
+function to_utf16be_hex(str)
+    local hex = "FEFF" -- BOM (Byte Order Mark)
+    for p, c in utf8.codes(str) do
+        if c < 0x10000 then
+            hex = hex .. string.format("%04X", c)
+        else
+            -- サロゲートペア対応 (絵文字など)
+            c = c - 0x10000
+            local high = 0xD800 + math.floor(c / 1024)
+            local low = 0xDC00 + (c % 1024)
+            hex = hex .. string.format("%04X%04X", high, low)
+        end
+    end
+    tex.print(hex)
+end
+\end{luacode*}
+
+% \narrationコマンドの再定義(アイコン非表示版)
+% テキストを (...) ではなく <...> (Hex形式) で埋め込みます
+\newcommand<>{\narration}[1]{%
+  \only#2{%
+    \pdfextension annot width 0pt height 0pt depth 0pt {%
+      /Subtype /Text
+      /F 2  % <--- これを追加！ (Flag 2 = Hidden/非表示)
+      /Contents <\directlua{to_utf16be_hex("\luaescapestring{#1}")}>%
+    }%
+  }%
+}
+% ==============================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{天気について話そう}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+% ここに読み上げさせたい文章を書く
+    \narration{こんにちは。これは、エイピイアイを経由してグウグルの音声合成を使ったテスト動画です。}
+    \narration{Hello, everybody. How are you doing today? Let's begin today's lesson!}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+% ここに読み上げさせたい文章を書く
+    \narration{Hello, folks. Let's learn how to express the weather in plain English.きょうは英語で天気の表現についていろいろ学習します。さあ、準備はいいですか。}
+\end{frame}
+
+\section{いろいろな天気}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{天気をあらわすさまざまな表現}
+
+
+\begin{enumerate}
+ \item How is the weather today?
+ \item It is fine today.\hfill{\scriptsize fine \textipa{/f\'aIn/} \Circled{ 形 } 晴れた}
+\item It is sunny today.\hfill{\scriptsize sunny \textipa{/s\'\textturnv ni/} \Circled{ 形 } 晴れた}
+ \item It is cloudy today.\hfill{\scriptsize cloudy \textipa{/kr\'aUdi/} \Circled{ 形 } 曇った}
+ \item It is rainy today.\hfill{\scriptsize rainy \textipa{/r\'eIni/} \Circled{ 形 } 雨の}
+\item It is raining today.\hfill{\scriptsize rain \textipa{/r\'eIn/} \Circled{ 動 } 雨が降る}
+  \item  It is snowy today.\hfill{\scriptsize snowy \textipa{/sn\'oUi/} \Circled{ 形 } 雪の}
+\item It is snowing today.\hfill{\scriptsize snow \textipa{/sn\'oU/} \Circled{ 動 } 雪が降る}
+\end{enumerate}
+
+\begin{block}{Today's Points}\small
+天気を表すときはItを主語にします
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item It is 形容詞
+ \item It 一般動詞
+\end{itemize}
+\end{block}
+\hfill{\scriptsize \myaudio{./audio/003_weather_01.mp3}}
+
+% ここに読み上げさせたい文章を書く
+    \narration{ここにさまざまな表現をあげました。各英文に目を通してください。<break time="10s"/>これでおわかりのように天気をあらわすとき、英語では it を主語にしますよ。「それ」という意味は特になく、ばくぜんと天候を表しているとかんがえればいいでしょう。}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-8>[plain]{Exercises}
+
+日本語の意味になるよう空所に適当な語を補いましょう%
+\hfill{\scriptsize \myaudio{./audio/003_weather_02.mp3}}
+
+\begin{enumerate}
+ \item (~~\visible<2->{How}~~) was the weather yesterday?\hspace{2\zw}昨日の天気はどうでしたか
+ \item (~~~\visible<3->{It}~~~) is hot in (~~\visible<3->{August}~~).\hspace{2\zw}8月は暑い
+ \item (~~~\visible<4->{It's}~~~) cold in winter.\hspace{2\zw}冬は寒い
+ \item It (~~\visible<5->{snowed}~~) yesterday.\hspace{2\zw}昨日は雪でした
+ \item It (~~\visible<6->{rains}~~) a lot in  (~~\visible<6->{June}~~).\hspace{2\zw}6月はたくさん雨が降る\hfill{\scriptsize a lot \textipa{/@ l\'At/}} とても
+ \item (~~~\visible<7->{It}~~~) is windy  (~~\visible<7->{today}~~).\hspace{2\zw}今日は風が強い%
+\hfill{\scriptsize windy \textipa{/w\'Indi/} 風の強い}
+\end{enumerate}
+% ここに読み上げさせたい文章を書く
+    \narration<1>{さあ、ここで練習問題に取り組んでもらいましょう。これまで学習してきたことが身についているか、確認しますよ。それでは、はじめましょう。}
+   \narration<2>{きのうの天気はどうでしたか。先頭の空所には「どんな。どのような」という意味の疑問詞 how がつかわれます。全体でよく使う慣用表現です。How was the weather yesterday.<break time="2s"/>How was the weather yesterday?}
+   \narration<3>{では次の問題です。八月は暑い。It is hot in August. 主語が it であることに注意してください。}
+   \narration<4>{冬は寒い。やはり it を主語にします。 でも空所がひとつしかありません。どうすればいいでしょうか。<break time="4s"/>It is の短縮形が正解です。}
+   \narration<4>{It's cold in winter.}
+   \narration<4>{では次の問題です。 }
+   \narration<5>{きのうは雪が降った。 雪が降るという意味の動詞は snow です。きのうのことですから、過去形になります。}
+   \narration<5>{It snowed yesterday.}
+   \narration<5>{では次の問題。六月は雨がたくさん降る。梅雨のことをいっているのですね。雨が降るという意味の動詞はrainです。三人称単数現在に注意しましょう。六月はJuneです。}
+   \narration<6>{It rains a lot in June.}
+   \narration<6>{最後の問題です。windy、これは風が強いという意味の形容詞です。主語はやはり it です。きょうは、かんたんです。today.}
+   \narration<7>{It is windy today. }
+   \narration<8>{いかがでしたか。きょうは天候の表現について学習しました。That's all for today. Have a good day!}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+```
+

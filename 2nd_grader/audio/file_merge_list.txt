@@ -1,4 +1,6 @@
 file '033_infinitive_adj_01.mp3'
 file 'silent.mp3'
 file '033_infinitive_adj_02.mp3'
+file 'silent.mp3'
+file '033_infinitive_adj_03_22050.mp3'
 

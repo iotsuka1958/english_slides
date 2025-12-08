@@ -1,0 +1,150 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\usecolortheme[rgb={0.7,0.2,0.2}]{structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change alert block colors
+%%% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=mDarkTeal, bg=mLightBrown!45!yellow!45}
+\setbeamercolor{block title example}{fg=magenta!10!black, bg=mLightGreen!60}
+%%% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=mLightBrown!25}
+\setbeamercolor{block body example}{bg=mLightGreen!15}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
+\UseTblrLibrary{counter}%%%%tabularrayとpauseが衝突することを回避する
+%\usepackage{lmodern}
+\usetikzlibrary{tikzmark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 読み上げテキストをPDF注釈として埋め込むコマンド定義
+% 修正後 ( \newcommand<> とすることでオーバーレイ引数を受け取れるようになります )
+% ==============================================
+% ここからプリアンブルの設定
+% ==============================================
+\usepackage{luacode} % これが必要です
+
+% Luaを使ってテキストを「UTF-16BEの16進数」に変換する関数を定義
+\begin{luacode*}
+function to_utf16be_hex(str)
+    local hex = "FEFF" -- BOM (Byte Order Mark)
+    for p, c in utf8.codes(str) do
+        if c < 0x10000 then
+            hex = hex .. string.format("%04X", c)
+        else
+            -- サロゲートペア対応 (絵文字など)
+            c = c - 0x10000
+            local high = 0xD800 + math.floor(c / 1024)
+            local low = 0xDC00 + (c % 1024)
+            hex = hex .. string.format("%04X%04X", high, low)
+        end
+    end
+    tex.print(hex)
+end
+\end{luacode*}
+
+% \narrationコマンドの再定義(アイコン非表示版)
+% テキストを (...) ではなく <...> (Hex形式) で埋め込みます
+\newcommand<>{\narration}[1]{%
+  \only#2{%
+    \pdfextension annot width 0pt height 0pt depth 0pt {%
+      /Subtype /Text
+      /F 2  % <--- これを追加！ (Flag 2 = Hidden/非表示)
+      /Contents <\directlua{to_utf16be_hex("\luaescapestring{#1}")}>%
+    }%
+  }%
+}
+% ==============================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{English is fun.}
+\subtitle{天気について話そう}
+\author{}
+\institute[]{}
+\date[]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEXT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+% ここに読み上げさせたい文章を書く
+    \narration{こんにちは。これは、エイピイアイを経由してグウグルの音声合成を使ったテスト動画です。}
+    \narration{Hello, everybody. How are you doing today? Let's begin today's lesson!}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{授業の流れ}
+\begin{frame}[plain]
+  \frametitle{授業の流れ}
+  \tableofcontents
+% ここに読み上げさせたい文章を書く
+    \narration{Hello, folks. Let's learn how to express the weather in plain English.きょうは英語で天気の表現についていろいろ学習します。さあ、準備はいいですか。}
+\end{frame}
+
+\section{いろいろな天気}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{天気をあらわすさまざまな表現}
+
+
+\begin{enumerate}
+ \item How is the weather today?
+ \item It is fine today.\hfill{\scriptsize fine \textipa{/f\'aIn/} \Circled{ 形 } 晴れた}
+\item It is sunny today.\hfill{\scriptsize sunny \textipa{/s\'\textturnv ni/} \Circled{ 形 } 晴れた}
+ \item It is cloudy today.\hfill{\scriptsize cloudy \textipa{/kr\'aUdi/} \Circled{ 形 } 曇った}
+ \item It is rainy today.\hfill{\scriptsize rainy \textipa{/r\'eIni/} \Circled{ 形 } 雨の}
+\item It is raining today.\hfill{\scriptsize rain \textipa{/r\'eIn/} \Circled{ 動 } 雨が降る}
+  \item  It is snowy today.\hfill{\scriptsize snowy \textipa{/sn\'oUi/} \Circled{ 形 } 雪の}
+\item It is snowing today.\hfill{\scriptsize snow \textipa{/sn\'oU/} \Circled{ 動 } 雪が降る}
+\end{enumerate}
+
+\begin{block}{Today's Points}\small
+天気を表すときはItを主語にします
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item It is 形容詞
+ \item It 一般動詞
+\end{itemize}
+\end{block}
+\hfill{\scriptsize \myaudio{./audio/003_weather_01.mp3}}
+
+% ここに読み上げさせたい文章を書く
+    \narration{ここにさまざまな表現をあげました。各英文に目を通してください。<break time="10s"/>これでおわかりのように天気をあらわすとき、英語では it を主語にしますよ。「それ」という意味は特になく、ばくぜんと天候を表しているとかんがえればいいでしょう。}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-8>[plain]{Exercises}
+
+日本語の意味になるよう空所に適当な語を補いましょう%
+\hfill{\scriptsize \myaudio{./audio/003_weather_02.mp3}}
+
+\begin{enumerate}
+ \item (~~\visible<2->{How}~~) was the weather yesterday?\hspace{2\zw}昨日の天気はどうでしたか
+ \item (~~~\visible<3->{It}~~~) is hot in (~~\visible<3->{August}~~).\hspace{2\zw}8月は暑い
+ \item (~~~\visible<4->{It's}~~~) cold in winter.\hspace{2\zw}冬は寒い
+ \item It (~~\visible<5->{snowed}~~) yesterday.\hspace{2\zw}昨日は雪でした
+ \item It (~~\visible<6->{rains}~~) a lot in  (~~\visible<6->{June}~~).\hspace{2\zw}6月はたくさん雨が降る\hfill{\scriptsize a lot \textipa{/@ l\'At/}} とても
+ \item (~~~\visible<7->{It}~~~) is windy  (~~\visible<7->{today}~~).\hspace{2\zw}今日は風が強い%
+\hfill{\scriptsize windy \textipa{/w\'Indi/} 風の強い}
+\end{enumerate}
+% ここに読み上げさせたい文章を書く
+    \narration<1>{さあ、ここで練習問題に取り組んでもらいましょう。これまで学習してきたことが身についているか、確認しますよ。それでは、はじめましょう。}
+   \narration<2>{きのうの天気はどうでしたか。先頭の空所には「どんな。どのような」という意味の疑問詞 how がつかわれます。全体でよく使う慣用表現です。How was the weather yesterday.<break time="2s"/>How was the weather yesterday?}
+   \narration<3>{では次の問題です。八月は暑い。It is hot in August. 主語が it であることに注意してください。}
+   \narration<4>{冬は寒い。やはり it を主語にします。 でも空所がひとつしかありません。どうすればいいでしょうか。<break time="4s"/>It is の短縮形が正解です。}
+   \narration<4>{It's cold in winter.}
+   \narration<4>{では次の問題です。 }
+   \narration<5>{きのうは雪が降った。 雪が降るという意味の動詞は snow です。きのうのことですから、過去形になります。}
+   \narration<5>{It snowed yesterday.}
+   \narration<5>{では次の問題。六月は雨がたくさん降る。梅雨のことをいっているのですね。雨が降るという意味の動詞はrainです。三人称単数現在に注意しましょう。六月はJuneです。}
+   \narration<6>{It rains a lot in June.}
+   \narration<6>{最後の問題です。windy、これは風が強いという意味の形容詞です。主語はやはり it です。きょうは、かんたんです。today.}
+   \narration<7>{It is windy today. }
+   \narration<8>{いかがでしたか。きょうは天候の表現について学習しました。That's all for today. Have a good day!}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

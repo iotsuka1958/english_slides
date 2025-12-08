@@ -1,0 +1,233 @@
+#! /usr/bin/env python
+
+import os
+import re
+import sys
+import argparse
+import subprocess
+from pathlib import Path
+from google.cloud import texttospeech
+from pypdf import PdfReader
+from pypdf.generic import TextStringObject, ByteStringObject
+from pdf2image import convert_from_path
+
+def show_usage():
+    print("""
+Usage: python make_video.py <input_file.tex> [options]
+
+Options:
+  -h, --help           Show this help message and exit.
+  --ja-gender {m,f}    Set Japanese voice gender (m=male, f=female). Default: f
+  --en-gender {m,f}    Set English voice gender (m=male, f=female). Default: f
+
+Description:
+  Converts a Beamer LaTeX file into an MP4 video using Google Cloud TTS.
+  - Requires: LuaLaTeX, FFmpeg, Poppler, Google Cloud Credentials.
+  - Supports: SSML tags (e.g., <break time="1s"/>), Mixed languages.
+""")
+
+def compile_tex(tex_file):
+    """LuaLaTeXでTeXファイルをコンパイルする"""
+    print(f">>> 1. Compiling LaTeX ({tex_file})...")
+    subprocess.run(["lualatex", "--interaction=nonstopmode", tex_file], check=True)
+
+def get_safe_text(pdf_object):
+    """
+    pypdfのオブジェクトからテキストを安全に抽出する強力なデコーダー
+    """
+    # 1. まずはバイト列(bytes)を取り出す
+    raw_bytes = None
+    
+    if isinstance(pdf_object, ByteStringObject) or isinstance(pdf_object, bytes):
+        raw_bytes = bytes(pdf_object)
+    elif isinstance(pdf_object, TextStringObject) or isinstance(pdf_object, str):
+        try:
+            # 既に文字列になっている場合、pypdfがLatin-1で誤読した可能性が高いため
+            # Latin-1でエンコードして元のバイト列に戻す
+            raw_bytes = pdf_object.encode("latin-1")
+        except UnicodeEncodeError:
+            # Latin-1に戻せない文字がある＝既に正しくデコードされている可能性が高い
+            return pdf_object
+
+    if raw_bytes is None:
+        return ""
+
+    # 2. 順次デコードを試みる
+    # LuaLaTeXの場合、UTF-8が最有力だが、PDF仕様的にはUTF-16BEも多い
+    encodings = ["utf-8", "utf-16-be", "utf-16-le", "shift_jis"]
+    
+    for enc in encodings:
+        try:
+            return raw_bytes.decode(enc)
+        except UnicodeDecodeError:
+            continue
+    
+    # 全滅した場合はLatin-1（文字化けするがエラーは出ない）で返す
+    return raw_bytes.decode("latin-1", errors="ignore")
+
+def is_japanese(text):
+    """テキストに日本語文字が含まれているか判定する"""
+    pattern = r'[ぁ-んァ-ン一-龥]'
+    return re.search(pattern, text) is not None
+
+def generate_mixed_audio(client, text, voice_ja, voice_en, audio_config):
+    """日英混合テキストを分割して音声を生成・結合する（SSML対応版）"""
+    # 制御文字などを削除
+    text = text.replace('\n', ' ').replace('\r', '')
+    
+    # 分割（日本語の塊 と それ以外）
+    split_pattern = r'([ぁ-んァ-ン一-龥。、！？「」]+)'
+    segments = re.split(split_pattern, text)
+    
+    combined_audio_content = b"" 
+    segment_logs = []
+
+    # SSMLタグっぽいものを含むか判定する正規表現
+    ssml_tag_pattern = re.compile(r'<[^>]+>')
+
+    for seg in segments:
+        if not seg.strip():
+            continue
+            
+        if is_japanese(seg):
+            voice = voice_ja
+            lang_label = "JA"
+        else:
+            voice = voice_en
+            lang_label = "EN"
+            
+        # ログ表示用
+        display_seg = seg[:15].replace('\n', '')
+        
+        try:
+            # SSMLタグ判定
+            if ssml_tag_pattern.search(seg):
+                # SSMLとして送信 (<speak>で囲む)
+                ssml_text = f"<speak>{seg}</speak>"
+                synthesis_input = texttospeech.SynthesisInput(ssml=ssml_text)
+                segment_logs.append(f"[{lang_label}/SSML]{display_seg}")
+            else:
+                # 通常テキストとして送信
+                synthesis_input = texttospeech.SynthesisInput(text=seg)
+                segment_logs.append(f"[{lang_label}]{display_seg}")
+
+            response = client.synthesize_speech(
+                input=synthesis_input, voice=voice, audio_config=audio_config
+            )
+            combined_audio_content += response.audio_content
+            
+        except Exception as e:
+            print(f"      [Error] TTS segment failed: {e}")
+            
+    print(f"      Parsed: {' '.join(segment_logs)}")
+    return combined_audio_content
+
+def extract_narrations_and_generate_audio(pdf_file, ja_gender, en_gender):
+    """PDFの注釈からテキストを抽出し、指定された性別で音声を生成する"""
+    print(f">>> 2. Extracting text from {pdf_file} and Generating Audio...")
+    
+    client = texttospeech.TextToSpeechClient()
+    
+    # 性別設定
+    ja_name = "ja-JP-Neural2-C" if ja_gender == 'm' else "ja-JP-Neural2-B"
+    en_name = "en-US-Neural2-D" if en_gender == 'm' else "en-US-Neural2-F"
+
+    print(f"    Voices: JA={ja_name}, EN={en_name}")
+
+    voice_ja = texttospeech.VoiceSelectionParams(language_code="ja-JP", name=ja_name)
+    voice_en = texttospeech.VoiceSelectionParams(language_code="en-US", name=en_name)
+    audio_config = texttospeech.AudioConfig(audio_encoding=texttospeech.AudioEncoding.MP3)
+
+    reader = PdfReader(pdf_file)
+    audio_files = []
+
+    for i, page in enumerate(reader.pages):
+        text_parts = []
+        if "/Annots" in page:
+            for annot in page["/Annots"]:
+                obj = annot.get_object()
+                if obj["/Subtype"] == "/Text":
+                    # 強力デコード関数を使用
+                    raw_content = obj["/Contents"]
+                    decoded_text = get_safe_text(raw_content)
+                    text_parts.append(decoded_text)
+        
+        full_text = " ".join(text_parts).strip()
+        print(f"   Slide {i+1}: Processing...") 
+
+        filename = f"audio_{i:03d}.mp3"
+        
+        if full_text:
+            try:
+                audio_content = generate_mixed_audio(client, full_text, voice_ja, voice_en, audio_config)
+                if audio_content:
+                    with open(filename, "wb") as out:
+                        out.write(audio_content)
+                else:
+                    generate_silent_mp3(filename)
+            except Exception as e:
+                print(f"      [Warning] TTS Error on Slide {i+1}: {e}")
+                generate_silent_mp3(filename)
+        else:
+            generate_silent_mp3(filename)
+
+        audio_files.append(filename)
+    
+    return audio_files
+
+def generate_silent_mp3(filename):
+    cmd = [
+        "ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", 
+        "-t", "1", "-q:a", "9", "-acodec", "libmp3lame", filename
+    ]
+    subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+def pdf_to_images(pdf_file):
+    print(f">>> 3. Converting {pdf_file} to Images...")
+    images = convert_from_path(pdf_file, dpi=200)
+    image_files = []
+    for i, img in enumerate(images):
+        filename = f"slide_{i:03d}.png"
+        img.save(filename, "PNG")
+        image_files.append(filename)
+    return image_files
+
+def create_video(image_files, audio_files, output_video):
+    print(f">>> 4. Combining into Video ({output_video})...")
+    
+    segment_files = []
+    
+    for i, (img, aud) in enumerate(zip(image_files, audio_files)):
+        seg_name = f"segment_{i:03d}.mp4"
+        
+        if not os.path.exists(aud) or os.path.getsize(aud) == 0:
+            generate_silent_mp3(aud)
+
+        # 画像サイズを偶数にするフィルタを追加
+        cmd = [
+            "ffmpeg", "-y", "-loop", "1", "-i", img, "-i", aud,
+            "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2",
+            "-c:v", "libx264", "-tune", "stillimage", "-c:a", "aac",
+            "-b:a", "192k", "-pix_fmt", "yuv420p", "-shortest", seg_name
+        ]
+        
+        ret = subprocess.run(cmd, stderr=subprocess.DEVNULL)
+        if ret.returncode != 0:
+            print(f"      [Error] Failed to create segment {i}.")
+            raise RuntimeError("FFmpeg failed.")
+            
+        segment_files.append(seg_name)
+
+    list_file = "concat_list.txt"
+    with open(list_file, "w") as f:
+        for seg in segment_files:
+            f.write(f"file '{seg}'\n")
+
+    subprocess.run([
+        "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", list_file,
+        "-c", "copy", output_video
+    ], check=True)
+    
+    print(f">>> Done! Video saved as {output_video}")
+
+if __name__ == "__main__":
