@@ -1,9 +1,2 @@
-ten<break time="2s"/>ten
-twenty-three<break time="2s"/>twenty
-thirty-five<break time="2s"/>thirty-five
-forty<break time="2s"/>forty
-fifty-two<break time="2s"/>fifty-two
-sixty<break time="2s"/>sixty
-seventy-seven<break time="2s"/>seventy-seven
-eighty-eight<break time="2s"/>eighty-eight
-ninety-nine<break time="2s"/>ninety-nine
+Can I use your pen?
+Sure.<break time="2s"/>Certainly.<break time="2s"/>All right.<break time="2s"/>Of course.
