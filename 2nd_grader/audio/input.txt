@@ -1,3 +1,2 @@
-She studied hard to pass the exam.
-We came here to talk with you.
-He went to Tokyo to see a movie yesterday.
+The door opened suddenly.<break time="2s"/>Suddenly, the door opened.
+You must work hard to pass the exam.<break time="2s"/>To pass the exam, you must work hard.

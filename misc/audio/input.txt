@@ -1,2 +1,4 @@
-two thousand three hundred fifty-one
-six million, eight hundred thirty seven thousand, three hundred seventy
+What day of the week is it today?<break time="2s"/>It’s Friday.
+What day is it today?<break time="2s"/>It’s Saturday.
+We work on weekdays.
+Have a nice weekend!
