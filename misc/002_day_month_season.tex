@@ -102,6 +102,32 @@ weekend \textipa{/w\'\i:k\`end/} 週末
 \hfill{\scriptsize 0223\,\myaudio{./audio/002_day_month_season_011.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{天体}
+ \centering
+\begin{tblr}{
+        colspec = {lll},      % 2列とも中央揃え
+        rowsep = 2pt,        % 行間の微調整（お好みで）
+    }
+        \toprule
+        日本語名 & 英語名 \\
+        \midrule
+        太陽    & Sun \\
+        水星    & Mercury \\
+        金星    & Venus \\
+        地球    & Earth &月 Moon\\
+        火星    & Mars \\
+        木星    & Jupiter \\
+        土星    & Saturn \\
+        天王星  & Uranus \\
+        海王星  & Neptune \\
+        \bottomrule
+    \end{tblr}
+
+\hfill{\scriptsize 0350\,\myaudio{./audio/002_day_month_season_planets.mp3}}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{month \textipa{/m\'\textturnv nT/}　　　season \textipa{/s\'\i:zn/}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamercolor{background canvas}{bg=}
@@ -154,11 +180,11 @@ column{1} = {bg=white},
   baseline=t,
  cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
 }
-    & season& {\scriptsize \textipa{/s\'\i:zn/}\hspace{27pt}\myaudio{./audio/002_day_month_season_02b.mp3}}\\
- \myAnch{spring}{white}{}&spring&\textipa{/spr\'IN/}\\
- \myAnch{summer}{white}{}&summer&\textipa{/s\'\textturnv m\textrhookschwa /}\\
- \myAnch{fall}{white}{}&fall / autumn&\textipa{/f\'O:l/} \textipa{/\'O:t@m/}\\
- \myAnch{winter}{white}{}&winter&\textipa{/w\'Int\textrhookschwa/}\\\
+    & \visible<14->{season}& {\scriptsize \textipa{/s\'\i:zn/}\hspace{27pt}\myaudio{./audio/002_day_month_season_02b.mp3}}\\
+ \myAnch{spring}{white}{}&\visible<15->{spring}&\visible<15->{\textipa{/spr\'IN/}}\\
+ \myAnch{summer}{white}{}&\visible<16->{summer}&\visible<16->{\textipa{/s\'\textturnv m\textrhookschwa /}}\\
+ \myAnch{fall}{white}{}&\visible<17->{fall / autumn}&\visible<17->{\textipa{/f\'O:l/} \textipa{/\'O:t@m/}}\\
+ \myAnch{winter}{white}{}&\visible<18->{winter}&\visible<18->{\textipa{/w\'Int\textrhookschwa/}}\\\
 \end{tblr}
 \end{column}
 \end{columns}
@@ -219,4 +245,16 @@ column{1} = {bg=white},
 \end{tblr}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ 
+\includegraphics[width=1.01\textwidth]{./infographic/002_day_month_season_infographic.png}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ 
+\hfill{\tiny audio\_overview 1139}\,{\scriptsize \myaudio{./audio/overview/002_day_month_season_audio_overview.m4a}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%
 \end{document}
