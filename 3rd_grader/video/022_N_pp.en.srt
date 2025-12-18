@@ -1,0 +1,416 @@
+1
+00:00:00,000 --> 00:00:01,560
+Hey, welcome to The Explainer.
+
+2
+00:00:01,560 --> 00:00:03,480
+Today, we're gonna put on our detective
+hats
+
+3
+00:00:03,480 --> 00:00:06,200
+and solve this really curious grammar
+puzzle,
+
+4
+00:00:06,200 --> 00:00:08,160
+one that's hiding in plain sight.
+
+5
+00:00:08,160 --> 00:00:11,920
+Okay, so every good case has to start with
+a mystery, right? And ours?
+
+6
+00:00:11,920 --> 00:00:14,440
+Well, it's all about a simple, super
+common word
+
+7
+00:00:14,440 --> 00:00:18,960
+that just doesn't seem to play by the
+rules. So, take a look at this.
+
+8
+00:00:18,960 --> 00:00:23,080
+On one side, you've got a broken toy.
+Totally normal, right?
+
+9
+00:00:23,080 --> 00:00:27,000
+But then on the other side, a toy broken
+by my brother.
+
+10
+00:00:27,000 --> 00:00:31,200
+It's basically the same idea. But wait a
+second. Look what happened.
+
+11
+00:00:31,200 --> 00:00:34,660
+Our main word, broken, completely jumped
+to a new spot.
+
+12
+00:00:34,660 --> 00:00:38,120
+What's up with that? Yeah, why?
+
+13
+00:00:38,120 --> 00:00:43,160
+Why does it just decide to hop from before
+the noun to after it?
+
+14
+00:00:43,160 --> 00:00:45,400
+This weird little inconsistency,
+
+15
+00:00:45,400 --> 00:00:49,320
+that is the exact puzzle we are gonna
+solve together today.
+
+16
+00:00:49,320 --> 00:00:51,240
+All right, so the key to cracking this
+whole thing
+
+17
+00:00:51,240 --> 00:00:54,200
+wide open is getting to know our main
+suspect.
+
+18
+00:00:54,200 --> 00:00:58,040
+It's a special verb form and it's called
+the past participle.
+
+19
+00:00:58,040 --> 00:00:59,760
+Now to really understand our suspect,
+
+20
+00:00:59,760 --> 00:01:01,600
+You gotta look at its background, right?
+
+21
+00:01:01,600 --> 00:01:04,160
+So most verbs have these three main forms.
+
+22
+00:01:04,160 --> 00:01:07,920
+You've got the present, like break, then
+the simple past, broke,
+
+23
+00:01:07,920 --> 00:01:11,320
+and then there's this third form, the past
+participle,
+
+24
+00:01:11,320 --> 00:01:14,460
+broken, and that's the one we're zeroing
+in on.
+
+25
+00:01:14,460 --> 00:01:17,360
+Okay, so here's the absolute crucial
+point.
+
+26
+00:01:17,360 --> 00:01:21,280
+A past participle, it has what we call a
+passive meaning.
+
+27
+00:01:21,280 --> 00:01:24,240
+This means it's not describing the noun
+doing an action.
+
+28
+00:01:24,240 --> 00:01:27,320
+Nope, it's describing an action that was
+done to it.
+
+29
+00:01:27,320 --> 00:01:31,060
+So, you know, the toy didn't break
+something, It was broken.
+
+30
+00:01:31,060 --> 00:01:35,940
+See the difference? Okay, time to check
+out our first big clue.
+
+31
+00:01:35,940 --> 00:01:37,660
+This is gonna show us what happens
+
+32
+00:01:37,660 --> 00:01:41,140
+when our past participle is what I like to
+call a lone wolf
+
+33
+00:01:41,140 --> 00:01:44,700
+when it's working completely by itself.
+And you know what?
+
+34
+00:01:44,700 --> 00:01:47,140
+The rule is so simple, it's great.
+
+35
+00:01:47,140 --> 00:01:50,140
+When the past participle is just that one
+single word,
+
+36
+00:01:50,140 --> 00:01:52,740
+it acts exactly like a regular adjective.
+
+37
+00:01:52,740 --> 00:01:57,220
+You know, like a red car or a big house.
+It just pops right in there
+
+38
+00:01:57,220 --> 00:01:59,340
+before the noun it's describing.
+
+39
+00:01:59,340 --> 00:02:03,300
+And once you see it, you'll see this
+pattern absolutely everywhere.
+
+40
+00:02:03,300 --> 00:02:08,740
+A broken toy, a used car, stolen money, a
+boiled egg, see?
+
+41
+00:02:08,740 --> 00:02:12,660
+When that participle is flying solo, it
+always comes first.
+
+42
+00:02:12,660 --> 00:02:16,160
+It's simple. It's clean. It's super
+consistent.
+
+43
+00:02:16,160 --> 00:02:19,020
+But our main suspect doesn't always work
+alone.
+
+44
+00:02:19,020 --> 00:02:23,540
+Uh-uh, so let's see what happens when it
+decides to bring some friends along for
+
+45
+00:02:23,540 --> 00:02:28,920
+the ride when it's part of a whole gang.
+And this, right here.
+
+46
+00:02:28,920 --> 00:02:34,400
+This is the big twist in our mystery,
+because broken isn't always a lone wolf.
+
+47
+00:02:34,400 --> 00:02:39,560
+Sometimes it rolls up with a crew, and
+that, that just changes the entire game.
+
+48
+00:02:39,560 --> 00:02:44,320
+Okay, let's just start with a normal
+example to see what I mean.
+
+49
+00:02:44,320 --> 00:02:46,000
+An interesting book.
+
+50
+00:02:46,000 --> 00:02:50,240
+The adjective interesting is just one
+word, right? A lone wolf.
+
+51
+00:02:50,240 --> 00:02:54,560
+So it comes before book. That's our rule
+number one in action.
+
+52
+00:02:54,560 --> 00:02:58,880
+Okay, now let's try that same logic with a
+past participle phrase.
+
+53
+00:02:58,880 --> 00:03:02,080
+The main word is written, but its gang is
+in English.
+
+54
+00:03:02,080 --> 00:03:03,640
+Now, if we tried to use rule number one,
+
+55
+00:03:03,640 --> 00:03:06,320
+we'd say something like a written in
+English book.
+
+56
+00:03:06,320 --> 00:03:09,000
+And that just sounds wrong, doesn't it?
+
+57
+00:03:09,000 --> 00:03:12,640
+That's because the whole group, the whole
+gang, has to stick together.
+
+58
+00:03:12,640 --> 00:03:15,560
+So, that brings us to a rule number two.
+
+59
+00:03:15,560 --> 00:03:18,720
+And this one is just as important as the
+first.
+
+60
+00:03:18,720 --> 00:03:21,520
+The entire descriptive phrase, that's the
+participle
+
+61
+00:03:21,520 --> 00:03:24,120
+and all its buddies, it has to stick
+together
+
+62
+00:03:24,120 --> 00:03:27,400
+and it has to come after the noun it's
+describing.
+
+63
+00:03:27,400 --> 00:03:29,800
+and you see this pattern playing out
+consistently.
+
+64
+00:03:29,800 --> 00:03:32,120
+We don't say a made in Germany car, do we?
+
+65
+00:03:32,120 --> 00:03:35,840
+No, we say a car made in Germany. It's not
+the cooked by Helen meal,
+
+66
+00:03:35,840 --> 00:03:39,200
+it's the meal cooked by Helen. The gang
+always, always follows.
+
+67
+00:03:39,200 --> 00:03:41,920
+So there you have it. With just those two
+simple rules,
+
+68
+00:03:41,920 --> 00:03:44,280
+we've totally cracked the case.
+
+69
+00:03:44,280 --> 00:03:48,380
+The mystery of the moving word, it is
+officially solved.
+
+70
+00:03:48,380 --> 00:03:50,540
+Okay, let's lay out all the evidence.
+
+71
+00:03:50,540 --> 00:03:54,180
+The position of that past participle
+really just depends on one thing.
+
+72
+00:03:54,180 --> 00:03:57,080
+Is it flying solo or is it with its gang?
+
+73
+00:03:57,080 --> 00:03:59,000
+If it's a lone wolf, like broken,
+
+74
+00:03:59,000 --> 00:04:02,840
+it acts just like a regular old adjective
+and goes before the noun.
+
+75
+00:04:02,840 --> 00:04:05,800
+But if it's with the gang, like in made in
+Germany,
+
+76
+00:04:05,800 --> 00:04:08,880
+the whole freight has to move to a new
+spot, after the noun.
+
+77
+00:04:08,880 --> 00:04:11,640
+It's that simple, two situations, two
+rules.
+
+78
+00:04:11,640 --> 00:04:15,040
+And that, my friends, is the solution to
+our puzzle.
+
+79
+00:04:15,040 --> 00:04:18,380
+And you know, this is really why this
+little puzzle matters so much.
+
+80
+00:04:18,380 --> 00:04:21,680
+It isn't just about being grammatically
+correct.
+
+81
+00:04:21,680 --> 00:04:24,340
+Getting the simple pattern down is a huge
+key
+
+82
+00:04:24,340 --> 00:04:27,520
+to making your English sound way more
+fluid, way more natural.
+
+83
+00:04:27,520 --> 00:04:29,280
+It's one of those little tiny details
+
+84
+00:04:29,280 --> 00:04:31,800
+that actually makes a massive difference.
+
+85
+00:04:31,800 --> 00:04:34,360
+Solving this really makes you wonder,
+doesn't it?
+
+86
+00:04:34,360 --> 00:04:37,840
+What other grammar puzzles are just hiding
+out there in plain sight?
+
+87
+00:04:37,840 --> 00:04:39,880
+What other simple rules are just waiting
+
+88
+00:04:39,880 --> 00:04:42,520
+for a good detective to come along and
+uncover them?
