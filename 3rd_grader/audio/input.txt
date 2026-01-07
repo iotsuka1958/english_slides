@@ -1,10 +1,1 @@
-the sleeping cat
-the singing woman
-boiling water
-the rising sun
-the flying birds
-the cat sleeping in the sun
-the boys speaking English
-the man swimming in the sea
-the boy reading a book
-the girl running with a dog
+Jane stayed in London two days ago.<break time="2.2s"/>Jane has stayed in London for six days.
