@@ -1,1 +1,2 @@
-Jane stayed in London two days ago.<break time="2.2s"/>Jane has stayed in London for six days.
+English is spoken there.<break time="3s"/>speak<break time="2s"/>spoke<break time="2s"/>spoken
+All the leaves have fallen.<break time="3s"/>fall<break time="2s"/>fell<break time="2s"/>fallen
