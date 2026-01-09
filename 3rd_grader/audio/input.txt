@@ -1,2 +1,3 @@
-English is spoken there.<break time="3s"/>speak<break time="2s"/>spoke<break time="2s"/>spoken
-All the leaves have fallen.<break time="3s"/>fall<break time="2s"/>fell<break time="2s"/>fallen
+Jane has stayed in London for six days.
+I have watched the movie three times.
+Bob has lost his bag.
