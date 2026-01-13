@@ -1,0 +1,91 @@
+#! /usr/bin/env python
+
+import subprocess
+import sys
+import os
+
+def merge_videos():
+    # --- 設定項目 ---
+    input_file_1 = "hoge.mp4"
+    input_file_2 = "fuga.mp4"
+    output_file = "piyo.mp4"
+    
+    # 解像度設定 (Full HD)
+    width = 1920
+    height = 1080
+    fps = 30  # フレームレートを統一（エラー防止のため重要）
+
+    # タイムスタンプ設定 (HH:MM:SS または 秒)
+    # パート(a): hoge.mp4
+    start_a = "00:04:32"
+    end_a   = "00:37:07"
+    
+    # パート(c): hoge.mp4
+    start_c = "00:44:54"
+    end_c   = "00:45:02"
+
+    # --- 共通の映像フィルタ設定 ---
+    # 解像度リサイズ + アスペクト比維持のための黒帯追加(pad) + SAR統一 + FPS統一
+    # これにより、どんな解像度の動画がきても指定サイズ(1920x1080)に正規化されます
+    scale_filter = (
+        f"scale={width}:{height}:force_original_aspect_ratio=decrease,"
+        f"pad={width}:{height}:(ow-iw)/2:(oh-ih)/2,"
+        f"setsar=1,"
+        f"fps={fps}"
+    )
+
+    # --- filter_complex の構築 ---
+    # [0:v] は hoge.mp4 の映像, [1:v] は fuga.mp4 の映像
+    # [0:a] は hoge.mp4 の音声, [1:a] は fuga.mp4 の音声
+    
+    filter_complex = (
+        # 1. パート(a): hoge.mp4 の指定区間を切り出し & 正規化
+        f"[0:v]trim=start={start_a}:end={end_a},setpts=PTS-STARTPTS,{scale_filter}[v0];"
+        f"[0:a]atrim=start={start_a}:end={end_a},asetpts=PTS-STARTPTS[a0];"
+
+        # 2. パート(b): fuga.mp4 の全編を正規化 (トリミングなし)
+        f"[1:v]{scale_filter}[v1];"
+        # 音声はそのまま使用するためフィルタ処理なしでラベル付けしたいが、
+        # 統一性を持たせるため aformat を通して [a1] とする（サンプリングレート不一致対策）
+        f"[1:a]aformat=sample_rates=44100:channel_layouts=stereo[a1];"
+
+        # 3. パート(c): hoge.mp4 の指定区間を切り出し & 正規化
+        f"[0:v]trim=start={start_c}:end={end_c},setpts=PTS-STARTPTS,{scale_filter}[v2];"
+        f"[0:a]atrim=start={start_c}:end={end_c},asetpts=PTS-STARTPTS[a2];"
+
+        # 4. 結合 (Concat)
+        # [v0][a0] + [v1][a1] + [v2][a2] をつなぐ
+        f"[v0][a0][v1][a1][v2][a2]concat=n=3:v=1:a=1[outv][outa]"
+    )
+
+    # --- FFmpeg コマンド構築 ---
+    command = [
+        "ffmpeg",
+        "-y",               # 出力ファイルがある場合は上書き
+        "-i", input_file_1, # 入力0: hoge.mp4
+        "-i", input_file_2, # 入力1: fuga.mp4
+        "-filter_complex", filter_complex,
+        "-map", "[outv]",   # フィルタの出力映像を使用
+        "-map", "[outa]",   # フィルタの出力音声を使用
+        "-c:v", "libx264",  # 映像コーデック
+        "-crf", "23",       # 画質設定 (低いほど高画質、18-28が一般的)
+        "-preset", "medium",# エンコード速度と圧縮率のバランス
+        "-c:a", "aac",      # 音声コーデック
+        "-b:a", "192k",     # 音声ビットレート
+        output_file
+    ]
+
+    # --- 実行 ---
+    print(f"処理を開始します: {output_file} を生成中...")
+    try:
+        # check=Trueにより、FFmpegがエラー終了した場合にPythonでも例外を発生させる
+        subprocess.run(command, check=True)
+        print(f"完了しました。出力ファイル: {output_file}")
+    except subprocess.CalledProcessError as e:
+        print("FFmpegの実行中にエラーが発生しました。")
+        print(e)
+    except FileNotFoundError:
+        print("エラー: FFmpegが見つかりません。インストールされているか、パスが通っているか確認してください。")
+
+if __name__ == "__main__":
+    merge_videos()
