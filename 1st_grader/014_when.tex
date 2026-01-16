@@ -11,6 +11,22 @@
 \input{myPreamble4Slide.tex}
 \usepackage{highlightx}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --- Color Customization (Urban Night Theme) ---
+% Deep Midnight Blue for background
+\definecolor{CityNight}{HTML}{0B1021} 
+% Vibrant Cyan for accents/structure% Vibrant Cyan for accents/structure
+\definecolor{NeonCyan}{HTML}{00F0FF}
+% Soft White for text
+\definecolor{CloudWhite}{HTML}{F0F0F0}
+% Muted gray for table rows
+\definecolor{TableRowOdd}{HTML}{161B33}
+\definecolor{TableRowEven}{HTML}{0B1021}
+
+% --- Font Setup ---
+% Metropolis uses Fira Sans by default if compiled with XeLaTeX/LuaLaTeX.
+% Ensure fonts are readable.
+\usefonttheme{professionalfonts}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{When do you play baseball?}
 \author{}
@@ -198,56 +214,97 @@ You play tennis \alt<4->{\myAnch{FOCUS2}{NavyBlue}{on Sundays}}{\myAnch{focus2}{
 \footnotetext[1]{（時刻） ～ごろ}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Date}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setbeamercolor{background canvas}{bg=}
-\begin{frame}[plain]{date}
-\centering
- \begin{tblr}{
-%  colspec = {Q[r,1.1cm]Q[r,1.1cm]Q[r,1.1cm]Q[r,1.1cm]Q[r,1.1cm]Q[r,1cm]Q[r,1.1cm]}, % 
-  colspec = {X[r]X[r]X[r]X[r]X[r]X[r]X[r]}, % 
-  column{1} = {fg=red},          % 第1列の文字を赤に
-  column{7} = {fg=blue},         % 第7列の文字を青に
-  hline{1,2,Z} = {.08em},          % \toprule, \midrule, \bottomrule
-  hline{3,4,5,6} = {0.05em}           % 追加した midrule
-}
-  Sun  & Mon & Tue & Wed & Thu & Fri & Sat \\
-  \parbox[r]{\linewidth}{\raggedleft 1\\ \tiny first\\\mbox{}} &
-\parbox[r]{\linewidth}{\raggedleft 2\\ \tiny second\\\mbox{}} &
-\parbox[r]{\linewidth}{\raggedleft 3\\ \tiny third\\\mbox{}}  &
-\parbox[r]{\linewidth}{\raggedleft 4\\ \tiny fourth\\\mbox{}}  &
-\parbox[r]{\linewidth}{\raggedleft 5\\ \tiny fifth\\\mbox{}}  &
-\parbox[r]{\linewidth}{\raggedleft 6\\ \tiny sixth\\\mbox{}}  &
-\parbox[r]{\linewidth}{\raggedleft 7\\ \tiny seventh\\\mbox{}}  \\
-\parbox[r]{\linewidth}{\raggedleft 8\\ \tiny eighth\\\mbox{}}&
-\parbox[r]{\linewidth}{\raggedleft 9\\ \tiny ninth\\\mbox{}} &
-\parbox[r]{\linewidth}{\raggedleft 10\\ \tiny tenth\\\mbox{}}& 
-\parbox[r]{\linewidth}{\raggedleft 11\\ \tiny eleventh\\\mbox{}}   &
-\parbox[r]{\linewidth}{\raggedleft 12\\ \tiny twelfth\\\mbox{}}  &
-\parbox[r]{\linewidth}{\raggedleft 13\\ \tiny thirteenth\\\mbox{}}  &
-\parbox[r]{\linewidth}{\raggedleft 14\\ \tiny fourteenth\\\mbox{}}  \\
-\parbox[r]{\linewidth}{\raggedleft 15\\ \tiny fifteenth\\\mbox{}} &
-\parbox[r]{\linewidth}{\raggedleft 16\\ \tiny sixteenth\\\mbox{}} &
-\parbox[r]{\linewidth}{\raggedleft 17\\ \tiny seventeenth\\\mbox{}}  & 
-\parbox[r]{\linewidth}{\raggedleft 18\\ \tiny eighteenth\\\mbox{}}  &
-\parbox[r]{\linewidth}{\raggedleft 19\\ \tiny nineteenth\\\mbox{}}  & 
-\parbox[r]{\linewidth}{\raggedleft 20\\ \tiny twentieth\\\mbox{}}  &
-\parbox[r]{\linewidth}{\raggedleft 21\\ \tiny twenty-\\first}  \\
-\parbox[r]{\linewidth}{\raggedleft 22\\ \tiny twenty-\\second} &
-\parbox[r]{\linewidth}{\raggedleft 23\\ \tiny twenty-\\third} &
-\parbox[r]{\linewidth}{\raggedleft 24\\ \tiny twenty-\\fourth}  & 
-\parbox[r]{\linewidth}{\raggedleft 25\\ \tiny twenty-\\fifth}  &
-\parbox[r]{\linewidth}{\raggedleft 26\\ \tiny twenty-\\sixth}  & 
-\parbox[r]{\linewidth}{\raggedleft 27\\ \tiny twenty-\\seventh}  &
-\parbox[r]{\linewidth}{\raggedleft 28\\ \tiny twenty-\\eighth}  \\
-\parbox[r]{\linewidth}{\raggedleft 29\\ \tiny twenty-\\ninth}  &
-\parbox[r]{\linewidth}{\raggedleft 30\\ \tiny thirtieth\\\mbox{}}  &
-\end{tblr}
+
+%%%%%%%%%%%%%%%%%%%%%%
+\section{聞いてみよう、読んでみよう{\tiny 0037}\,{\scriptsize \myaudio{./audio/014_when_reading.mp3}}}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ 
+\includegraphics[width=1.01\textwidth]{./images/nanobanana-output/014_when_reading.png}
+
+\vspace{-15pt}
+
+\hfill{\tiny 0037}\,{\scriptsize \myaudio{./audio/014_when_reading.mp3}}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{Exercises}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+before upper={\setlength{\parindent}{1.25em}},
+ title=Family Special Days\mbox{}\hfill{\tiny 0037}\,{\scriptsize \myaudio{./audio/014_when_reading.mp3}}
+]
+I love my family.
+We have many happy days.
+
+First, my sister's birthday is coming soon.
+When is her birthday?
+It is on August 7th.
+We usually have a big party for her.
+
+I like winter events, too.
+When is St. Valentine's Day?
+It is on February 14th.
+I make chocolate for my father.
+
+When do we play games together?
+We play on Sundays.
+My family time is wonderful.
+
+\vspace*{15pt}
+
+\scriptsize
+$^{1}$vegetable：野菜\hfill{}$^{2}$health：健康\hfill$^{3}$also：また\hfill$^{4}$outside：戸外で
+
+\end{tcolorbox}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{大意}
+ 
+\begin{tcolorbox}[title=Family Special Days]
+　 私は家族が大好きです。私たちには幸せな日がたくさんあります。 まず、姉（妹）の誕生日がもうすぐ来ます。彼女の誕生日はいつでしょうか？ 8月7日です。私たちはたいてい、彼女のために大きなパーティーを開きます。 私は冬の行事も好きです。バレンタインデーはいつでしょうか？ 2月14日です。私は父のためにチョコレートを作ります。 私たちはいつ一緒にゲームをするのでしょうか？ 日曜日にします。私の家族の時間はすばらしいものです。
+\end{tcolorbox}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{疑問詞when \textipa{/w\'en/} のまとめ}
+\begin{frame}[plain]{まとめ}
+ \begin{block}{When ～? \textipa{/w\'en/}}
+\begin{description}[　　　　]
+ \item[be動詞]<2-> $\HighlightFormula{\text{When is ～?}}$%
+
+\begin{enumerate}
+ \item When is your birthday?\\
+\mbox{}\\
+\mbox{}
+\end{enumerate}
+
+ \item[一般動詞]<3-> $\HighlightFormula{\text{When}\left\{ \begin{tabular}{l}
+	do\\
+        does
+%	  do / does\\
+%	  did\\
+%	  will\\
+	 \end{tabular}\right\} + \text{S} + \text{原形 \ldots ?}}$%
+       \begin{enumerate}\setcounter{enumi}{1}
+       \item<4-> When do you play tennis?
+       \item<5-> When does she study science?
+%       \item<6-> When did he go to America?
+%       \item<7-> When will they come back?
+      \end{enumerate}
+\end{description}
+ \end{block}
+\mbox{}\hfill{\tiny 0220}\,{\scriptsize \myaudio{./audio/014_when_06.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
 \section{曜日}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=dayofweek]{曜日}
@@ -349,41 +406,196 @@ column{1} = {bg=white},
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{疑問詞when \textipa{/w\'en/} のまとめ}
-\begin{frame}[plain]{まとめ}
- \begin{block}{When ～? \textipa{/w\'en/}}
-\begin{description}[　　　　]
- \item[be動詞]<2-> $\HighlightFormula{\text{When is ～?}}$%
+\section{Date}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Introduction}
+    \begin{columns}
+        \begin{column}{0.48\textwidth}
+            \textbf{\textcolor{NavyBlue}{Cardinal Numbers}} \\
+            (基数)
+            \vspace{0.5em}
+            \begin{itemize}
+                \item "How many?"
+                \item 数を数える時に使う
+                \item 例: One, Two, Three
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \textbf{\textcolor{Maroon}{Ordinal Numbers}} \\
+            (序数)
+            \vspace{0.5em}
+            \begin{itemize}
+                \item "Which order?"
+                \item 順序を表す時に使う
+                \item 例: First, Second, Third
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 3. Table 1-10
+\begin{frame}[plain]{Numbers 1 - 10}
+    \centering
+    % tabularray settings for stylish look
+    \begin{tblr}{
+        colspec = {Q[c,m] Q[l,m] Q[l,m] Q[r,m]},
+        width = 0.9\linewidth,
+%        rows = {2.2em, m}, % Increase row height for readability
+        row{odd} = {bg=NavyBlue!50},
+%        row{odd} = {bg=TableRowOdd},
+        row{even} = {bg=Yellow!50},
+%        row{even} = {bg=TableRowEven},
+        row{1} = {bg=CityNight!50, fg=white, font=\bfseries}, % Header
+        hlines = {0.5pt, fg=gray!30},
+        vlines = {0pt}, % Remove vertical lines for cleaner look
+    }
+        \# & Cardinal (基数) & Ordinal (序数) \\
+        1 & one & \textbf{first} &(1st) \\
+        2 & two & \textbf{second} &(2nd) \\
+        3 & three & \textbf{third} &(3rd) \\
+        4 & four & fourth &(4th) \\
+        5 & five & \textbf{fifth} &(5th) \\
+        6 & six & sixth &(6th) \\
+        7 & seven & seventh &(7th) \\
+        8 & eight & \textbf{eighth} &(8th) \\
+        9 & nine & \textbf{ninth} &(9th) \\
+        10 & ten & tenth &(10th) 
+    \end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Numbers 11 - 20}
+    \centering
+    \begin{tblr}{
+        colspec = {Q[c,m] Q[l,m] Q[l,m] Q[r,m]},
+        width = 0.9\linewidth,
+%        rows = {2.2em, m},
+        row{odd} = {bg=NavyBlue!50},
+        row{even} = {bg=Yellow!50},
+        row{1} = {bg=CityNight!50, fg=white, font=\bfseries},
+        hlines = {0.5pt, fg=gray!30},
+    }
+        \# & Cardinal (基数) & Ordinal (序数) \\
+        11 & eleven & eleventh &(11th) \\
+        12 & twelve & \textbf{twelfth} &(12th) \\
+        13 & thirteen & thirteenth &(13th) \\
+        14 & fourteen & fourteenth &(14th) \\
+        15 & fifteen & fifteenth &(15th) \\
+        16 & sixteen & sixteenth &(16th) \\
+        17 & seventeen & seventeenth &(17th) \\
+        18 & eighteen & eighteenth &(18th) \\
+        19 & nineteen & nineteenth &(19th) \\
+        20 & twenty & \textbf{twentieth} &(20th) 
+    \end{tblr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Numbers 21 - 30}
+    \centering
+    % Showing the rule for compound numbers and tens
+    \begin{tblr}{
+        colspec = {Q[r,m] Q[l,m] Q[l,m] Q[r,m]},
+        width = 0.95\linewidth,
+ %       rows = {2.5em, m},
+        row{odd} = {bg=NavyBlue!50},
+        row{even} = {bg=Yellow!50},
+        row{1} = {bg=CityNight!50, fg=white, font=\bfseries},
+        hlines = {0.5pt, fg=gray!30},
+    }
+        \# & Cardinal (基数) & Ordinal (序数) \\
+        21 & twenty-one & twenty-\textbf{first} &(21st) \\
+        22 & twenty-two & twenty-\textbf{second} &(22nd) \\
+        23 & twenty-three &twenty-\textbf{third} &(23rd)\\
+        24 & twenty-four &twenty-fourth &(24th)\\
+        25 & twenty-five &twenty-\textbf{fifth} &(25th)\\
+        26 & twenty-six &twenty-sixth &(26th)\\
+        27 & twenty-seven&twenty-seventh &(27th)\\
+        28 & twenty-eight&twenty-\textbf{eighth} &(28th)\\
+        29 & twenty-nine &twenty-{ninth} &(29th)\\
+        30 & thirty & \textbf{thirtieth} &(30th) \\
+    \end{tblr}
 
-\begin{enumerate}
- \item When is your birthday?\\
-\mbox{}\\
-\mbox{}
-\end{enumerate}
+    \vspace{1em}
 
- \item[一般動詞]<3-> $\HighlightFormula{\text{When}\left\{ \begin{tabular}{l}
-	do\\
-        does
-%	  do / does\\
-%	  did\\
-%	  will\\
-	 \end{tabular}\right\} + \text{S} + \text{原形 \ldots ?}}$%
-       \begin{enumerate}\setcounter{enumi}{1}
-       \item<4-> When do you play tennis?
-       \item<5-> When does she study science?
-%       \item<6-> When did he go to America?
-%       \item<7-> When will they come back?
-      \end{enumerate}
-\end{description}
- \end{block}
-\mbox{}\hfill{\tiny 0220}\,{\scriptsize \myaudio{./audio/014_when_06.mp3}}
+\raggedleft
+    \small {Rule:} 20, 30 \ldots 90番目\hspace{1em} y $\to$ ie + th
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Patterns 30 - 1000}
+    \centering
+    % Showing the rule for compound numbers and tens
+    \begin{tblr}{
+        colspec = {Q[r,m] Q[l,m] Q[l,m] Q[r,m]},
+        width = 0.95\linewidth,
+ %       rows = {2.5em, m},
+        row{odd} = {bg=NavyBlue!40},
+        row{even} = {bg=Yellow!50},
+        row{1} = {bg=CityNight!50, fg=white, font=\bfseries},
+        hlines = {0.5pt, fg=gray!30},
+    }
+        \# & Cardinal (基数) & Ordinal (序数) \\
+        30 & thirty & thirtieth &(30th) \\
+        40 & forty & fortieth &(40th) \\
+        50 & fifty & fiftieth &(50th) \\
+        60 & sixty & sixtieth &(60th) \\
+        70 & seventy & seventieth &(70th) \\
+        80 & eighty & eightieth &(80th) \\
+        90 & ninety & ninetieth &(90th)\\
+        100 & one hundred & one hundredth &(100th)\\
+        1000 & one thousand & one thousandth &(1000th)
+    \end{tblr}
+
+\raggedleft
+    \small {Rule:} 20, 30 \ldots\,\,90番目\hspace{1em} ty $\to$ tie $+$ th
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+\begin{frame}[plain]{date}
+\centering
+ \begin{tblr}{
+%  colspec = {Q[r,1.1cm]Q[r,1.1cm]Q[r,1.1cm]Q[r,1.1cm]Q[r,1.1cm]Q[r,1cm]Q[r,1.1cm]}, % 
+  colspec = {X[r]X[r]X[r]X[r]X[r]X[r]X[r]}, % 
+  column{1} = {fg=red},          % 第1列の文字を赤に
+  column{7} = {fg=blue},         % 第7列の文字を青に
+  hline{1,2,Z} = {.08em},          % \toprule, \midrule, \bottomrule
+  hline{3,4,5,6} = {0.05em}           % 追加した midrule
+}
+  Sun  & Mon & Tue & Wed & Thu & Fri & Sat \\
+  \parbox[r]{\linewidth}{\raggedleft 1\\ \tiny first\\\mbox{}} &
+\parbox[r]{\linewidth}{\raggedleft 2\\ \tiny second\\\mbox{}} &
+\parbox[r]{\linewidth}{\raggedleft 3\\ \tiny third\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 4\\ \tiny fourth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 5\\ \tiny fifth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 6\\ \tiny sixth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 7\\ \tiny seventh\\\mbox{}}  \\
+\parbox[r]{\linewidth}{\raggedleft 8\\ \tiny eighth\\\mbox{}}&
+\parbox[r]{\linewidth}{\raggedleft 9\\ \tiny ninth\\\mbox{}} &
+\parbox[r]{\linewidth}{\raggedleft 10\\ \tiny tenth\\\mbox{}}& 
+\parbox[r]{\linewidth}{\raggedleft 11\\ \tiny eleventh\\\mbox{}}   &
+\parbox[r]{\linewidth}{\raggedleft 12\\ \tiny twelfth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 13\\ \tiny thirteenth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 14\\ \tiny fourteenth\\\mbox{}}  \\
+\parbox[r]{\linewidth}{\raggedleft 15\\ \tiny fifteenth\\\mbox{}} &
+\parbox[r]{\linewidth}{\raggedleft 16\\ \tiny sixteenth\\\mbox{}} &
+\parbox[r]{\linewidth}{\raggedleft 17\\ \tiny seventeenth\\\mbox{}}  & 
+\parbox[r]{\linewidth}{\raggedleft 18\\ \tiny eighteenth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 19\\ \tiny nineteenth\\\mbox{}}  & 
+\parbox[r]{\linewidth}{\raggedleft 20\\ \tiny twentieth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 21\\ \tiny twenty-\\first}  \\
+\parbox[r]{\linewidth}{\raggedleft 22\\ \tiny twenty-\\second} &
+\parbox[r]{\linewidth}{\raggedleft 23\\ \tiny twenty-\\third} &
+\parbox[r]{\linewidth}{\raggedleft 24\\ \tiny twenty-\\fourth}  & 
+\parbox[r]{\linewidth}{\raggedleft 25\\ \tiny twenty-\\fifth}  &
+\parbox[r]{\linewidth}{\raggedleft 26\\ \tiny twenty-\\sixth}  & 
+\parbox[r]{\linewidth}{\raggedleft 27\\ \tiny twenty-\\seventh}  &
+\parbox[r]{\linewidth}{\raggedleft 28\\ \tiny twenty-\\eighth}  \\
+\parbox[r]{\linewidth}{\raggedleft 29\\ \tiny twenty-\\ninth}  &
+\parbox[r]{\linewidth}{\raggedleft 30\\ \tiny thirtieth\\\mbox{}}  &
+\end{tblr}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe<8>[plain]{dayofweek}
-\againframe<18>[plain]{table_month_season}
-%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
 
