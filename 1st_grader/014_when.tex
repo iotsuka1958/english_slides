@@ -257,19 +257,28 @@ When do we play games together?
 We play on Sundays.
 My family time is wonderful.
 
-\vspace*{15pt}
-
-\scriptsize
-$^{1}$vegetable：野菜\hfill{}$^{2}$health：健康\hfill$^{3}$also：また\hfill$^{4}$outside：戸外で
-
 \end{tcolorbox}
+
+\visible<2->{\small 次の各文が本文の内容とあっていればT,そうでなければFと答えましょう}
+\vspace{-5pt}
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+ \item<2-> The sister's birthday is on August 7th. \hfill\visible<3->{T}
+ \item<2-> The writer makes chocolate for the sister. \hfill\visible<4->{F}
+ \item<2-> They play games on Sundays. \hfill\visible<5->{T}
+\end{enumerate}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{大意}
  
-\begin{tcolorbox}[title=Family Special Days]
-　 私は家族が大好きです。私たちには幸せな日がたくさんあります。 まず、姉（妹）の誕生日がもうすぐ来ます。彼女の誕生日はいつでしょうか？ 8月7日です。私たちはたいてい、彼女のために大きなパーティーを開きます。 私は冬の行事も好きです。バレンタインデーはいつでしょうか？ 2月14日です。私は父のためにチョコレートを作ります。 私たちはいつ一緒にゲームをするのでしょうか？ 日曜日にします。私の家族の時間はすばらしいものです。
+\begin{tcolorbox}[title=家族の特別な日]
+　 私は家族が大好きです。私たちには幸せな日がたくさんあります。 
+
+　まず、姉（妹）の誕生日がもうすぐ来ます。彼女の誕生日はいつでしょうか？ 8月7日です。私たちはたいてい、彼女のために大きなパーティーを開きます。
+
+　私は冬の行事も好きです。バレンタインデーはいつでしょうか？ 2月14日です。私は父のためにチョコレートを作ります。
+
+　私たちはいつ一緒にゲームをするのでしょうか？ 日曜日にします。私の家族の時間はすばらしいものです。
 \end{tcolorbox}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -448,7 +457,8 @@ column{1} = {bg=white},
         row{1} = {bg=CityNight!50, fg=white, font=\bfseries}, % Header
         hlines = {0.5pt, fg=gray!30},
         vlines = {0pt}, % Remove vertical lines for cleaner look
-    }
+  cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+   }
         \# & Cardinal (基数) & Ordinal (序数) \\
         1 & one & \textbf{first} &(1st) \\
         2 & two & \textbf{second} &(2nd) \\
@@ -473,6 +483,7 @@ column{1} = {bg=white},
         row{even} = {bg=Yellow!50},
         row{1} = {bg=CityNight!50, fg=white, font=\bfseries},
         hlines = {0.5pt, fg=gray!30},
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
     }
         \# & Cardinal (基数) & Ordinal (序数) \\
         11 & eleven & eleventh &(11th) \\
@@ -499,6 +510,7 @@ column{1} = {bg=white},
         row{even} = {bg=Yellow!50},
         row{1} = {bg=CityNight!50, fg=white, font=\bfseries},
         hlines = {0.5pt, fg=gray!30},
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
     }
         \# & Cardinal (基数) & Ordinal (序数) \\
         21 & twenty-one & twenty-\textbf{first} &(21st) \\
@@ -531,6 +543,7 @@ column{1} = {bg=white},
         row{even} = {bg=Yellow!50},
         row{1} = {bg=CityNight!50, fg=white, font=\bfseries},
         hlines = {0.5pt, fg=gray!30},
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
     }
         \# & Cardinal (基数) & Ordinal (序数) \\
         30 & thirty & thirtieth &(30th) \\
