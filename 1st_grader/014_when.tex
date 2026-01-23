@@ -10,6 +10,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usepackage{highlightx}
+\usetikzlibrary{positioning, decorations.pathreplacing, calc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % --- Color Customization (Urban Night Theme) ---
 % Deep Midnight Blue for background
@@ -414,6 +415,7 @@ column{1} = {bg=white},
 \end{tikzpicture}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Date}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -525,7 +527,7 @@ column{1} = {bg=white},
         26 & twenty-six &twenty-sixth &(26th)\\
         27 & twenty-seven&twenty-seventh &(27th)\\
         28 & twenty-eight&twenty-\textbf{eighth} &(28th)\\
-        29 & twenty-nine &twenty-{ninth} &(29th)\\
+        29 & twenty-nine &twenty-\textbf{ninth} &(29th)\\
         30 & thirty & \textbf{thirtieth} &(30th) \\
     \end{tblr}
 \mbox{}\hfill{\tiny 0058}\,{\scriptsize \myaudio{./audio/014_when_09.mp3}}
@@ -614,12 +616,85 @@ column{1} = {bg=white},
 \end{tblr}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{〇月〇日}
+ 
+6月28日
+
+June 28
+
+June twenty-eighth
+\end{frame}
+%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
 
  {\tiny audio\_overview 1208}\,{\scriptsize \myaudio{./audio/overview/014_when_audio_overview.m4a}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%
+\section{year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{年号}
+ 
+\centering
+    \vspace{1cm}
+
+    % overlayareaで高さを固定し、アニメーション時のガタつきを防ぐ
+    % 幅はテキスト幅いっぱい、高さは適当なサイズ(ここでは4cm)を確保
+    \begin{overlayarea}{\textwidth}{4cm}
+        \centering
+        \begin{tikzpicture}[
+            number/.style={
+                font=\fontsize{60}{70}\selectfont\bfseries,
+                inner sep=2pt,
+                anchor=south west
+            },
+            label/.style={
+                font=\Large\sffamily,
+                anchor=north % 文字の上側を基準点にする
+            },
+            brace/.style={
+                decorate,
+                decoration={brace, amplitude=10pt, mirror},
+                very thick
+            }
+        ]
+
+            % --- Slide 1: 数字を表示 (<1-> 1枚目からずっと表示) ---
+            
+            \node<1->[number] (twenty) at (0,0) {20};
+            \node<1->[number, right=0.5cm of twenty] (twentysix) {26};
+
+
+            % --- Slide 2: 波かっこを表示 (<2-> 2枚目以降で表示) ---
+            
+            % 英語テキストと分離するため、ここでは draw コマンドのみにします
+            \draw<2->[brace] (twenty.south west) -- (twenty.south east);
+            \draw<2->[brace] (twentysix.south west) -- (twentysix.south east);
+
+
+            % --- Slide 3: 英語を表示 (<3-> 3枚目以降で表示) ---
+            
+            % 波かっことは別のノードとして配置します。
+            % 位置は「数字の下端(south)」から少し下(yshift)にずらした場所です。
+            % 波かっこの深さ(10pt)より少し下になるように -15pt しています。
+            
+            \node<3->[label] at ([yshift=-15pt]twenty.south) {twenty};
+            \node<3->[label] at ([yshift=-15pt]twentysix.south) {twenty-six};
+
+        \end{tikzpicture}
+    \end{overlayarea}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ 
+\begin{enumerate}
+ \item 1776
+ \item 1789
+ \item 1853
+ \item 1861
+ \item 1929
+\end{enumerate}
+\end{frame}
+
 \end{document}
