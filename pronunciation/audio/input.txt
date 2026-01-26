@@ -1,3 +1,6 @@
-Jane has stayed in London for six days.
-I have watched the movie three times.
-Bob has lost his bag.
+hot<break time="1s"/>hot
+hut<break time="1s"/>hut
+hat<break time="1s"/>hat
+hut<break time="1s"/>hut
+hot<break time="1s"/>hot
+hat<break time="1s"/>hat

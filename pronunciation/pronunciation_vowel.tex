@@ -911,7 +911,7 @@ xshift=80pt, scale=.3, yshift=50pt]
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}\large
-\hypertarget{today}{}
+%\hypertarget{today}{}
 cap（帽子）またはcup（茶わん）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
 
 \bigskip
@@ -953,7 +953,7 @@ cap（帽子）またはcup（茶わん）を発音していきます。どち�
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}\large
-
+\hypertarget{today}{}
 hat（帽子）またはhot（暑い）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
 
 \bigskip
@@ -1074,6 +1074,50 @@ not（否定語）またはnut（ナッツ、木の実）を発音していき�
 \end{tikzpicture}
 
 \hfill{\tiny 0154}\,{\scriptsize \myaudio{./audio/vowel_not_nut_01.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz 3}\large
+%\hypertarget{ex}{}
+hat（帽子）, hot（暑い、暑い）, hut（小屋）のいずれかを発音していきます。どの単語か判断してください
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{hot}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{hut}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{hat}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{hut}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{hot}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{hat}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{ll}
+     \myAnch{a1}{white}{\textbullet}& hat \textipa{/h\'\ae t/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& hot \textipa{/h\'At/} \\
+     &\\
+     \myAnch{a3}{white}{\textbullet}& hut \textipa{/h\'\textturnv t/} 
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge,NavyBlue] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, Maroon] (q2.east) to[out=0, in=180] (a3.west);}
+ \visible<4->{\draw[hoge, olive] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a3.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, olive] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0132}\,{\scriptsize \myaudio{./audio/vowel_hat_hot_hut_01.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
