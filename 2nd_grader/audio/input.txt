@@ -1,2 +1,3 @@
-The door opened suddenly.<break time="2s"/>Suddenly, the door opened.
-You must work hard to pass the exam.<break time="2s"/>To pass the exam, you must work hard.
+Eating vegetables is good for your health.<break time="2s"/>To eat vegetables is good for your health.
+His job is helping students .<break time="2s"/>His job is to help students .
+She started singing.<break time="2s"/>She started to sing.

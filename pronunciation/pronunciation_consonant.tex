@@ -27,7 +27,7 @@
 \usetikzlibrary{decorations.pathmorphing}
 \usetikzlibrary{ducks}
 \usepackage{scsnowman}
-
+\usepackage{tikzbricks}
 \usepackage{tikzpeople}
 \usetikzlibrary{tikzmark}
 \usetikzlibrary{backgrounds}
@@ -117,6 +117,98 @@
 %\textcolor{white}{$20250919=13\times{}1,557,763$}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+
+\begin{frame}[plain]
+\centering
+\begin{tikzpicture}
+ \brick{4}{2}
+\end{tikzpicture}
+
+\begin{wall}
+\wallbrick[color=blue]{2}{1}
+\wallbrick[color=red]{1}{1}
+\addtocounter{brickx}{1}
+\wallbrick[color=orange]{1}{1}
+\newrow
+\addtocounter{brickx}{1}{1}
+\wallbrick[color=teal]{4}{1}
+\end{wall}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}[plain]
+ 
+ \textcolor{white}{\Huge\bfseries January 28th}
+
+ \textcolor{white}{\Huge\bfseries International LEGO Day}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+
+\begin{frame}[plain]
+\centering
+\begin{wall}[scale=0.5]
+\addtocounter{brickx}{3}
+\wallbrick[color=yellow!80!orange]{6}{2}
+\newrow
+\addtocounter{brickx}{2}
+\wallbrick[color=yellow!80!orange]{8}{2}
+\newrow
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{3}{2}
+\addtocounter{brickx}{4}
+\wallbrick[color=yellow!80!orange]{3}{2}
+\newrow
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{2}{2}
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{4}{2}
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{3}{2}
+\newrow
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{8}{2}
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{2}{2}
+\newrow
+\addtocounter{brickx}{2}
+\wallbrick[color=yellow!80!orange]{11}{2}
+\newrow
+\addtocounter{brickx}{3}
+\wallbrick[color=yellow!80!orange]{7}{2}
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{2}{2}
+\newrow
+\addtocounter{brickx}{1}
+\wallbrick[color=orange]{3}{2}
+\wallbrick[color=yellow!80!orange]{3}{2}
+\addtocounter{brickx}{5}
+\wallbrick[color=yellow!80!orange]{1}{2}
+\newrow
+\wallbrick[color=orange]{3}{2}
+\wallbrick[color=yellow!80!orange]{5}{2}
+\newrow
+\addtocounter{brickx}{2}
+\wallbrick[color=orange]{1}{2}
+\wallbrick[color=yellow!80!orange]{1}{2}
+\wallbrick[color=black]{1}{2}
+\wallbrick[color=yellow!80!orange]{3}{2}
+\newrow
+\addtocounter{brickx}{2}
+\wallbrick[color=yellow!80!orange]{6}{2}
+\newrow
+\addtocounter{brickx}{3}
+\wallbrick[color=yellow!80!orange]{4}{2}
+\end{wall}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
   \Huge
@@ -2619,7 +2711,7 @@ longまたはwrongを発音していきます。どちらを発音したか聞�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{\textipa{/l/}と\textipa{/r/}を区別しよう3}
-\hypertarget{ex}{}
+%\hypertarget{ex}{}
 \begin{description}
  \item[\textipa{/l/}] 舌先を上の前歯の後ろにベタっとつけます
  \item[\textipa{/r/}] 舌を口の中で少し浮かせる（舌はどこにも触れない）\\
@@ -2637,7 +2729,7 @@ longまたはwrongを発音していきます。どちらを発音したか聞�
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 3}\large
-
+\hypertarget{ex}{}
 leadまたはreadを発音していきます。どちらを発音したか聞き取って線でつなぎましょう
 
 \bigskip

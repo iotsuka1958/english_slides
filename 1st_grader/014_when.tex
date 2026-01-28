@@ -635,6 +635,11 @@ June twenty-eighth
 \section{year}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{年号}
+
+\begin{description}
+ \item[年号の読み方の基本] 前2桁、後半2桁に区切ります
+\end{description}
+
  
 \centering
     \vspace{1cm}
@@ -662,14 +667,14 @@ June twenty-eighth
 
             % --- Slide 1: 数字を表示 (<1-> 1枚目からずっと表示) ---
             
-            \node<1->[number] (twenty) at (0,0) {20};
-            \node<1->[number, right=0.5cm of twenty] (twentysix) {26};
+            \node<1->[number] (nineteen) at (0,0) {19};
+            \node<1->[number, right=0.5cm of nineteen] (twentysix) {26};
 
 
             % --- Slide 2: 波かっこを表示 (<2-> 2枚目以降で表示) ---
             
             % 英語テキストと分離するため、ここでは draw コマンドのみにします
-            \draw<2->[brace] (twenty.south west) -- (twenty.south east);
+            \draw<2->[brace] (nineteen.south west) -- (nineteen.south east);
             \draw<2->[brace] (twentysix.south west) -- (twentysix.south east);
 
 
@@ -679,7 +684,7 @@ June twenty-eighth
             % 位置は「数字の下端(south)」から少し下(yshift)にずらした場所です。
             % 波かっこの深さ(10pt)より少し下になるように -15pt しています。
             
-            \node<3->[label] at ([yshift=-15pt]twenty.south) {twenty};
+            \node<3->[label] at ([yshift=-15pt]nineteen.south) {nineteen};
             \node<3->[label] at ([yshift=-15pt]twentysix.south) {twenty-six};
 
         \end{tikzpicture}
@@ -687,13 +692,32 @@ June twenty-eighth
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
- 
+ つぎの年号を英語で書きましょう
+
+\Large
 \begin{enumerate}
- \item 1776
- \item 1789
- \item 1853
- \item 1861
- \item 1929
+ \item 1776\hfill\visible<2->{\makebox[80pt][l]{seventeen seventy-six}}\hspace{200pt}\mbox{}
+ \item 1789\hfill\visible<3->{\makebox[80pt][l]{seventeen eighty-nine}}\hspace{200pt}\mbox{}
+ \item 1853\hfill\visible<4->{\makebox[80pt][l]{eighteen fifty-three}}\hspace{200pt}\mbox{}
+ \item 1861\hfill\visible<5->{\makebox[80pt][l]{eighteen sixty-one}}\hspace{200pt}\mbox{}
+ \item 1999\hfill\visible<6->{\makebox[80pt][l]{nineteen ninety-nine}}\hspace{200pt}\mbox{}
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+ あともう少しだけ
+
+\visible<5->{ややこしいのは2000年以降}
+
+\Large
+\begin{enumerate}
+ \item 1900\hfill\visible<2->{\makebox[80pt][l]{nineteen hundred}}\hspace{200pt}\mbox{}
+ \item 1901\hfill\visible<3->{\makebox[80pt][l]{nineteen oh one}}\hspace{200pt}\mbox{}
+ \item 1910\hfill\visible<4->{\makebox[80pt][l]{nineteen ten}}\hspace{200pt}\mbox{}
+ \item 2000\hfill\visible<6->{\makebox[80pt][l]{two thousand}}\hspace{200pt}\mbox{}
+ \item 2003\hfill\visible<7->{\makebox[80pt][l]{two thousand three}}\hspace{200pt}\mbox{}
+ \item 2010\hfill\visible<8->{\makebox[80pt][l]{two thousand ten / twenty ten}}\hspace{200pt}\mbox{}
+ \item 2020\hfill\visible<9->{\makebox[80pt][l]{two thousand twenty / twenty twenty}}\hspace{200pt}\mbox{}
 \end{enumerate}
 \end{frame}
 

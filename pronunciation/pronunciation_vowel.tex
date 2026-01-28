@@ -27,6 +27,7 @@
 \usetikzlibrary{ducks}
 \usepackage{scsnowman}
 \usepackage{tikzlings}
+\usepackage{tikzbricks}
 %\usepackage{figchild}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter
@@ -111,16 +112,97 @@
 
 \hyperlink{today}{\beamergotobutton{Today's Pronunciation}}%%todayにジャンプ
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+
 \begin{frame}[plain]
-  \Huge
 \centering
+\begin{tikzpicture}
+ \brick{4}{2}
+\end{tikzpicture}
 
-\textcolor{white}{National Cookie Day}
+\begin{wall}
+\wallbrick[color=blue]{2}{1}
+\wallbrick[color=red]{1}{1}
+\addtocounter{brickx}{1}
+\wallbrick[color=orange]{1}{1}
+\newrow
+\addtocounter{brickx}{1}{1}
+\wallbrick[color=teal]{4}{1}
+\end{wall}
 
-\includegraphics[height=\textheight]{./images/nanobanana-output/a_glass_jar_full_of_various_cook.png}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}[plain]
+ 
+ \textcolor{white}{\Huge\bfseries January 28th}
+
+ \textcolor{white}{\Huge\bfseries International LEGO Day}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+
+\begin{frame}[plain]
+\centering
+\begin{wall}[scale=0.5]
+\addtocounter{brickx}{3}
+\wallbrick[color=yellow!80!orange]{6}{2}
+\newrow
+\addtocounter{brickx}{2}
+\wallbrick[color=yellow!80!orange]{8}{2}
+\newrow
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{3}{2}
+\addtocounter{brickx}{4}
+\wallbrick[color=yellow!80!orange]{3}{2}
+\newrow
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{2}{2}
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{4}{2}
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{3}{2}
+\newrow
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{8}{2}
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{2}{2}
+\newrow
+\addtocounter{brickx}{2}
+\wallbrick[color=yellow!80!orange]{11}{2}
+\newrow
+\addtocounter{brickx}{3}
+\wallbrick[color=yellow!80!orange]{7}{2}
+\addtocounter{brickx}{1}
+\wallbrick[color=yellow!80!orange]{2}{2}
+\newrow
+\addtocounter{brickx}{1}
+\wallbrick[color=orange]{3}{2}
+\wallbrick[color=yellow!80!orange]{3}{2}
+\addtocounter{brickx}{5}
+\wallbrick[color=yellow!80!orange]{1}{2}
+\newrow
+\wallbrick[color=orange]{3}{2}
+\wallbrick[color=yellow!80!orange]{5}{2}
+\newrow
+\addtocounter{brickx}{2}
+\wallbrick[color=orange]{1}{2}
+\wallbrick[color=yellow!80!orange]{1}{2}
+\wallbrick[color=black]{1}{2}
+\wallbrick[color=yellow!80!orange]{3}{2}
+\newrow
+\addtocounter{brickx}{2}
+\wallbrick[color=yellow!80!orange]{6}{2}
+\newrow
+\addtocounter{brickx}{3}
+\wallbrick[color=yellow!80!orange]{4}{2}
+\end{wall}
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamercolor{background canvas}{bg=}
 
@@ -150,7 +232,15 @@
 \hyperlink{today}{\beamergotobutton{Today's Pronunciation}}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+  \Huge
+\centering
 
+\textcolor{white}{National Cookie Day}
+
+\includegraphics[height=\textheight]{./images/nanobanana-output/a_glass_jar_full_of_various_cook.png}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{素数(a prime number)}
 \Large
@@ -953,7 +1043,7 @@ cap（帽子）またはcup（茶わん）を発音していきます。どち�
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}\large
-\hypertarget{today}{}
+%\hypertarget{today}{}
 hat（帽子）またはhot（暑い）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
 
 \bigskip
@@ -995,7 +1085,7 @@ hat（帽子）またはhot（暑い）を発音していきます。どちら�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz}\large
-
+\hypertarget{today}{}
 cat（ネコ）またはcut（切る）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
 
 \bigskip
