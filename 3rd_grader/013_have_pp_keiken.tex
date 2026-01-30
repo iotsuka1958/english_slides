@@ -9,7 +9,7 @@
 \setbeamertemplate{blocks}[rounded][shadow=false]
 \usecolortheme[rgb={0.7,0.2,0.2}]{structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{media9}
+%\usepackage{media9}
 \usepackage[absolute,overlay]{textpos}
 %\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -158,13 +158,13 @@ laughing,
 \right.$
 \end{enumerate}}
 
-\visible<2->{\signchart[width=10,height=.5]{,,,,{\textcolor{Maroon}{\textbf{visited}}},,,今}{,,},}
+\visible<2->{\signchart[width=10,height=.5]{,,,,,{\textcolor{Maroon}{\textbf{visited}}},,今}{,,},}
 \visible<3->{\signchart[width=10,height=.5]{1回目,,2回目,,{\textcolor{NavyBlue}{\textbf{have visited}}},,3回目,今}{,,,}}
 
 \begin{tikzpicture}[overlay]
 %\draw[gray!50] (0,0) grid (12,5);
  %\fill[ForestGreen!70,opacity=.5] (11.57,3.75) circle [radius=.25];
-\visible<2->{ \fill[Maroon!90,opacity=.75] (7.57,3.72) circle [radius=.25];}
+\visible<2->{ \fill[Maroon!90,opacity=.75] (8.675,3.72) circle [radius=.25];}
 \visible<3->{\fill[NavyBlue!90,opacity=.75] (3.1,1.21) circle [radius=.25];
 \fill[NavyBlue!90,opacity=.75] (5.35,1.21) circle [radius=.25];
 \fill[NavyBlue!90,opacity=.75] (9.78,1.21) circle [radius=.25];}
@@ -235,6 +235,7 @@ laughing,
 \end{tabular}}
       \end{block}
 \end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{回数}
  
@@ -269,6 +270,7 @@ laughing,
 \end{tikzpicture}}
 \end{textblock*}
 \end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{neverとever}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -287,12 +289,13 @@ laughing,
 \small
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item \visible<6->{{\bfseries never}は「今までに一度もない」(\kenten{未経験})}\\
-I {\bfseries have never} $+$ 過去分詞 \ldots\,\,\,\textbf{.}{{\footnotesize （今までに一度も〜したことがない）}}
+\visible<6->{I {\bfseries have never} $+$ 過去分詞 \ldots\,\,\,\textbf{.}{{\footnotesize （今までに一度も〜したことがない）}}}
  \item \visible<7->{{\bfseries ever}は疑問文で用いて「今までに」\hfill{\kenten{経験の有無}をたずねる}}\\
 \visible<8->{\textbf{Have you ever} $+$ 過去分詞 \ldots\,\,\,?{{\footnotesize （今までに〜したことがありますか）}}}
 \end{itemize}
 \end{block}
 \end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 
@@ -346,7 +349,7 @@ width=8cm,height=6cm
 %\hfill\visible<5->{{\small 何回？}}
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<4->{\draw[Maroon,->,line width=3pt,opacity=.5.5] (long1.south) to[out=-90,in=90] node[sloped,above,text=black,font=\tiny,pos=.5]{How many timesに置き換え先頭へ} node[sloped,below,text=black,font=\tiny,pos=.5]{後ろは疑問文の語順} (long2.north);}
+ \visible<4->{\draw[Maroon,->,line width=3pt,opacity=0.5] (long1.south) to[out=-90,in=90] node[sloped,above,text=black,font=\tiny,pos=.5]{How many timesに置き換え先頭へ} node[sloped,below,text=black,font=\tiny,pos=.5]{後ろは疑問文の語順} (long2.north);}
 \end{tikzpicture}
 
 \vspace{30pt}
@@ -378,7 +381,79 @@ speech={\tiny How many times?}
 \end{tikzpicture}}
 \end{textblock*}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+\section{聞いてみよう、読んでみよう{\tiny 0051}\,{\scriptsize \myaudio{./audio/013_have_pp_keiken_reading.mp3}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ 
+\includegraphics[width=1.01\textwidth]{./images/nanobanana-output/013_have_pp_keiken_reading.png}
+
+\vspace{-15pt}
+
+\hfill{\tiny 0051}\,{\scriptsize \myaudio{./audio/013_have_pp_keiken_reading.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{Exercises}
+
+\begin{tcolorbox}[colframe=ForestGreen,
+  colback=ForestGreen!10!white,
+  colbacktitle=ForestGreen!40!white,
+  coltitle=black, %fonttitle=\bfseries,
+before upper={\setlength{\parindent}{1.25em}},
+ title=My Travel Experiences\mbox{}\hfill{\tiny 0051}\,{\scriptsize \myaudio{./audio/013_have_pp_keiken_reading.mp3}}
+]
+I love traveling\footnotemark[1].
+I have visited Hawaii twice.
+The ocean is beautiful.
+I have eaten big pancakes there many times.
+They are delicious\footnotemark[2].
+
+However\footnotemark[3], I have never visited Europe.
+My dream is to go to Italy.
+I want to see the Colosseum\footnotemark[4].
+I have studied Italian history once, but I want to learn more.
+
+How about you?\footnotemark[5] Have you ever traveled to a foreign country?
+How many times have you been on a plane?
+
+
+\vspace*{20pt}
+
+\scriptsize
+$^{1}$travel：旅行する\hfill{}$^{2}$delicious：おいしい\hfill$^{3}$however：しかし
+
+$^{4}$the Colosseum：コロッセオ（古代ローマ帝国時代に建設された巨大な円形闘技場）
+
+$^{5}$How about you?：あなたはどうですか？
+
+\end{tcolorbox}
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{大意}
+ 
+\begin{tcolorbox}[title=わたしの旅の経験]
+　わたしは旅行が大好きです。
+わたしはハワイを2回訪れたことがあります。
+海がとてもうつくしいです。
+そこで大きなパンケーキを何度も食べたことがあります。
+それらはとてもおいしいです。
+
+　しかし、わたしはヨーロッパは一度も訪れたことがありません。
+わたしの夢はイタリアに行くことです。
+コロッセオを見たいとおもっています。
+わたしはイタリアの歴史を一度勉強したことがありますが、もっと学びたいです。
+
+　あなたはどうですか？
+今までに外国へ旅行したことはありますか？
+何回飛行機に乗ったことがありますか？
+\end{tcolorbox}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]{まとめ1}
@@ -453,4 +528,3 @@ I {\bfseries have never} $+$ 過去分詞 \ldots\,\,\,\textbf{.}{{\footnotesize 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
-  \item  Have you ever eaten Mexican food?
