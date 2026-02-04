@@ -1,3 +1,7 @@
-When is your birthday?
-When do you play tennis?
-When does she study science?
+nineteen ninety-nine
+two thousand
+two thousand three
+two thousand nine
+twenty ten<break time="2s"/>two thousand ten
+twenty twenty<break time="2s"/>two thousand twenty
+twenty twenty-six<break time="2s"/>two thousand twenty-six
