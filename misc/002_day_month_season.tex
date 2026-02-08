@@ -101,32 +101,61 @@ weekend \textipa{/w\'\i:k\`end/} 週末
 
 \hfill{\scriptsize 0223\,\myaudio{./audio/002_day_month_season_011.mp3}}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{天体}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{天体}
  \centering
 \begin{tblr}{
         colspec = {lll},      % 2列とも中央揃え
-        rowsep = 2pt,        % 行間の微調整（お好みで）
+        rowsep = 1.5pt,        % 行間の微調整（お好みで）
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
     }
         \toprule
         日本語名 & 英語名 \\
         \midrule
-        太陽    & Sun \\
-        水星    & Mercury \\
-        金星    & Venus \\
-        地球    & Earth &月 Moon\\
-        火星    & Mars \\
-        木星    & Jupiter \\
-        土星    & Saturn \\
-        天王星  & Uranus \\
-        海王星  & Neptune \\
+        太陽    & Sun \textipa{/s\'2n/}\\
+        水星    & Mercury \textipa{/m\'\textrhookschwa :kjUri/}\\
+        金星    & Venus \textipa{/v\'\i:n@s/}\\
+        地球    & Earth \textipa{/\'\textrhookschwa :T/}&月 Moon \textipa{/m\'u:n/}\\
+        火星    & Mars \textipa{/m\'A\textrhookschwa z/}\\
+        木星    & Jupiter \textipa{/dZ\'u:p@t\textrhookschwa /}\\
+        土星    & Saturn \textipa{/s\'\ae t\textrhookschwa n/}\\
+        天王星  & Uranus \textipa{/j\'Ur@n@s/}\\
+        海王星  & Neptune \textipa{/n\'ept(j)u:n/}\\
         \bottomrule
     \end{tblr}
 
 \hfill{\scriptsize 0350\,\myaudio{./audio/002_day_month_season_planets.mp3}}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ 
+\includegraphics[width=1.01\textwidth]{./images/nanobanana-output/002_day_month_season_universe.png}
 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{天体}
+ \centering
+\begin{tblr}{
+        colspec = {lll},      % 2列とも中央揃え
+        rowsep = 2pt,        % 行間の微調整（お好みで）
+ cells={cmd=\onslide<\arabic{rownum}->} %%%%tabularrayとpauseが衝突することを回避する方法→https://github.com/lvjr/tabularray/issues/226
+    }
+        \toprule
+        日本語名 & 英語名 \\
+        \midrule
+        宇宙    & universe \textipa{/j\'u:n@v\`\textrhookschwa :s/}\\
+        恒星    & star \textipa{/st\'A\textrhookschwa /}\\
+        惑星    & planet \textipa{/pl\'\ae nIt/}\\
+        衛星    & satellite \textipa{/s\'\ae t@l\`aIt/}\\
+        彗星    & comet \textipa{/k\'AmIt/}\\
+        \bottomrule
+    \end{tblr}
+
+\hfill{\scriptsize 0350\,\myaudio{./audio/002_day_month_season_stars.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{month \textipa{/m\'\textturnv nT/}　　　season \textipa{/s\'\i:zn/}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

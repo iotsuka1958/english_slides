@@ -1,4 +1,2 @@
-They have owned this house for twenty years.
-Billy has  loved Jane for a long time.
-I have been sick since this morning.
-I have known him since he was a child.
+How many times have you listened to the song?
+How many times have you seen the movie?<break time="2s"/>Three times.
