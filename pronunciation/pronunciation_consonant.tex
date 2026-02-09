@@ -3020,8 +3020,8 @@ earまたはyearを発音していきます。どちらを発音したか聞き�
 \Large
 
 {\small 練習}\hspace{20pt}
-\textipa{/i:h:i:h:/}\hspace{20pt}
-\textipa{/u:h:u:h:/}
+\textipa{/i:hi:/}\hspace{20pt}
+\textipa{/u:hu:/}
 \begin{enumerate}
 \item \textcolor{NavyBlue}{\bfseries h}e
 \hfill{\scriptsize \textipa{/h/}$+$イに類する母音}\hspace{20pt}\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{h}\'\i:/}}\hspace{140pt}\mbox{}
@@ -3036,6 +3036,87 @@ earまたはyearを発音していきます。どちらを発音したか聞き�
  \item \textcolor{NavyBlue}{\bfseries h}ook
 \hfill\makebox[80pt][l]{\textipa{/\textcolor{BurntOrange}{h}\'Uk/}}\hspace{140pt}\mbox{}
 \end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+
+heat（熱）またはfeet（脚footの複数形）を発音していきます。どちらを発音したか判断してください
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{heat}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{feet}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{heat}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{feet}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{feet}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{heat}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{ll@{　　}l}
+     \myAnch{a1}{white}{\textbullet}& heat &\textipa{/h\'\i:t/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& feet &\textipa{/f\'\i:t/}\\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0127}\,{\scriptsize \myaudio{./audio/consonant_heat_feet_01.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Quiz}\large
+hood（頭巾、フード）またはfood（食べ物）を発音していきます。どちらを発音したか判断してください
+
+\bigskip
+
+ \begin{columns}[t]
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{rlr}
+     1& \visible<2->{food}&\myAnch{q1}{white}{\textbullet} \\
+     2& \visible<3->{hood}&\myAnch{q2}{white}{\textbullet} \\
+     3& \visible<4->{hood}&\myAnch{q3}{white}{\textbullet} \\
+     4& \visible<5->{food}&\myAnch{q4}{white}{\textbullet} \\
+     5& \visible<6->{hood}&\myAnch{q5}{white}{\textbullet} \\
+     6& \visible<7->{food}&\myAnch{q6}{white}{\textbullet} 
+    \end{tabular}
+   \end{column}
+%%%%%%%%%%%
+   \begin{column}{.45\textwidth}
+    \begin{tabular}{lll}
+     \myAnch{a1}{white}{\textbullet}& hood& \textipa{/h\'Ud/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}& food& \textipa{/f\'u:d/}  \\
+    \end{tabular}
+   \end{column}
+ \end{columns}
+
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a2.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a1.west);}
+ \visible<4->{\draw[hoge, NavyBlue] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, Maroon] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a1.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a2.west);}
+\end{tikzpicture}
+
+\hfill{\tiny 0128}\,{\scriptsize \myaudio{./audio/consonant_hood_food_01.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -16,6 +16,8 @@
 \setbeamercolor{block body alerted}{bg=mLightBrown!25}
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 \UseTblrLibrary{counter}%%%%tabularrayとpauseが衝突することを回避する
@@ -131,7 +133,13 @@ weekend \textipa{/w\'\i:k\`end/} 週末
 \begin{frame}[plain]
  
 \includegraphics[width=1.01\textwidth]{./images/nanobanana-output/002_day_month_season_universe.png}
-
+\begin{textblock*}{0.8\linewidth}(29pt,235pt)
+\visible<2->{
+\scalebox{1}{\begin{tikzpicture}
+  \node[fill=white] {Solar System:\hspace{12pt}My Very Educated Mother Just Served Us Noodles};
+\end{tikzpicture}}
+}
+\end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{天体}
