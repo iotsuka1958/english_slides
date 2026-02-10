@@ -1,5 +1,7 @@
+space
 universe
 star
 planet
 satellite
 comet
+the Milky Way
