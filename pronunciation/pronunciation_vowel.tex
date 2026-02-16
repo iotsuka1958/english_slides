@@ -29,6 +29,7 @@
 \usepackage{tikzlings}
 \usepackage{tikzbricks}
 %\usepackage{figchild}
+\usepackage{fontspec}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter
 \newcommand*{\themonth}{\two@digits\month}
@@ -1541,7 +1542,7 @@ laughing
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 4}\large
-\hypertarget{today}{}
+%\hypertarget{today}{}
 it（それ）またはeat（たべる）を発音していきます。どちらを発音したか判断してください
 
 \bigskip
@@ -1587,7 +1588,7 @@ it（それ）またはeat（たべる）を発音していきます。どちら
 %\fc...を他の図に置き換えること
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Quiz 5\,\,\,\,\,\,\textipa{/i:/ or \textipa{/I/}}}\large
-
+\hypertarget{today}{}
 ship（船）またはsheep（ヒツジ）を発音していきます。どちらを発音したか聞き取って線でつなぎましょう
 
 \bigskip
@@ -1605,23 +1606,23 @@ ship（船）またはsheep（ヒツジ）を発音していきます。どち�
    \end{column}
 %%%%%%%%%%%
    \begin{column}{.45\textwidth}
-%    \begin{tabular}{ll@{　　}l}
-%     \myAnch{a1}{white}{\textbullet}& \fcSheep.35}{black}{1} &\textipa{/S\'\i:p/}\\
-%     &\\
-%     \myAnch{a2}{white}{\textbullet}& \fcShip{.3}{black}{1} &\textipa{/S\'Ip/}\\
-%    \end{tabular}
+    \begin{tabular}{ll@{　　}l}
+     \myAnch{a1}{white}{\textbullet}&  \tikz{\sheep[scale=.5]} &\textipa{/S\'\i:p/}\\
+     &\\
+     \myAnch{a2}{white}{\textbullet}&\scalebox{4}{\twemoji{ship}}&\textipa{/S\'Ip/}\\
+    \end{tabular}
    \end{column}
  \end{columns}
 
-%\begin{tikzpicture}[remember picture, overlay]
-%\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
-% \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
-% \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
-% \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
-% \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
-% \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
-% \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
-%\end{tikzpicture}
+\begin{tikzpicture}[remember picture, overlay]
+\tikzset{hoge/.style = {line width=4pt, ->, opacity=.6}}
+ \visible<2->{\draw[hoge, Maroon] (q1.east) to[out=0, in=180] (a1.west);}
+ \visible<3->{\draw[hoge, NavyBlue] (q2.east) to[out=0, in=180] (a2.west);}
+ \visible<4->{\draw[hoge, Maroon] (q3.east) to[out=0, in=180] (a1.west);}
+ \visible<5->{\draw[hoge, NavyBlue] (q4.east) to[out=0, in=180] (a2.west);}
+ \visible<6->{\draw[hoge, NavyBlue] (q5.east) to[out=0, in=180] (a2.west);}
+ \visible<7->{\draw[hoge, Maroon] (q6.east) to[out=0, in=180] (a1.west);}
+\end{tikzpicture}
 
 \hfill{\tiny 0140}\,{\scriptsize \myaudio{./audio/vowel_ship_sheep_01.mp3}}
 \end{frame}
