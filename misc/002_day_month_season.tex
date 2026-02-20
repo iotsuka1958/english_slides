@@ -317,6 +317,7 @@ column{1} = {bg=white},
 \parbox[r]{\linewidth}{\raggedleft 28\\ \tiny twenty-\\eighth}  \\
 \parbox[r]{\linewidth}{\raggedleft 29\\ \tiny twenty-\\ninth}  &
 \parbox[r]{\linewidth}{\raggedleft 30\\ \tiny thirtieth\\\mbox{}}  &
+\parbox[r]{\linewidth}{\raggedleft 31\\ \tiny thirty-\\first}  &
 \end{tblr}
 
 \end{frame}
@@ -540,8 +541,8 @@ column{1} = {bg=white},
 \begin{frame}[plain]{mm月dd日}
  
 \begin{description}[　　　　　　　　　　　　]
- \item[6月28日] June 28th / June 28\\
-               June (the) twenty-eighth
+ \item[6月28日] \visible<2->{June 28th} \visible<3->{/ June 28}\\
+               \visible<4->{June} \only<5->{(the)} \visible<4->{twenty-eighth}
 % \item[2026年6月28日] June 28th, 2026 / June 28, 2026
 \end{description}
 

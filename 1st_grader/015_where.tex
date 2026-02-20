@@ -13,6 +13,7 @@
 \usepackage{highlightx}
 \usepackage{lua-ul}
 \usepackage{pxrubrica}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{Where does Jane live?}
@@ -178,7 +179,7 @@ B: \alt<6->{She's in the kitchen now. オ}{(\hspace{100pt})}
 
 \vspace{-15pt}
 
-\hfill{\tiny 0056}\,{\scriptsize \myaudio{./audio/015_where_reading.mp3}}
+scramble \textipa{/skr\'\ae mbl/} 大あわて\hfill{\tiny 0056}\,{\scriptsize \myaudio{./audio/015_where_reading.mp3}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
@@ -196,28 +197,35 @@ It is Sunday morning.
 Ken is very busy.
 He cannot find his things.
 He asks his mother, ``Where is my red cap?''
-She says, ``It is on the chair.''
+She says, ``It is on\tikzmark{clue1} the chair.''
 Next, Ken asks his father, ``Where are my shoes?''
-His father says, ``They are by the door.''
+His father says, ``They are by\tikzmark{clue2} the door.''
 Ken has a small dog named Pochi.
 ``Where does Pochi sleep?''
-Ken asks. ``He sleeps under the table,'' says his sister.
+Ken asks. ``He sleeps under\tikzmark{clue3} the table,'' says his sister.
 ``Where do you go now?'' asks his mother.
-``I go to the park with Pochi!'' says Ken.
+``I go to the \tikzmark{clue4}park with Pochi!'' says Ken.
 
 \end{tcolorbox}
 
 \visible<2->{\small 次の各文が本文の内容とあっていればT,そうでなければFと答えましょう}
 \vspace{-5pt}
 \begin{enumerate}\setlength{\itemsep}{-2pt}
- \item<2-> The cap is under the table.\hfill\visible<3->{F}
- \item<2-> The shoes are by the door.\hfill\visible<4->{T}
- \item<2-> Pochi sleeps on the chair.\hfill\visible<5->{F}
- \item<2-> Ken goes to the park with his dog.\hfill\visible<6->{T}
+ \item<2-> The cap is under the table.\tikzmark{q1}\hfill\visible<3->{F}
+ \item<2-> The shoes are by the door.\tikzmark{q2}\hfill\visible<4->{T}
+ \item<2-> Pochi sleeps on the chair.\tikzmark{q3}\hfill\visible<5->{F}
+ \item<2-> Ken goes to the park with his dog.\tikzmark{q4}\hfill\visible<6->{T}
 \end{enumerate}
 
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<4->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<5->{\draw[<-,line width=2pt, opacity=.4] ([yshift=-2pt]pic cs:clue3) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<6->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+\end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{ask}
 \large
@@ -280,6 +288,10 @@ say \textipa{/s\'eI/}\hspace{20pt}\visible<2->{三単現はsays \textipa{/s\'ez/
 \section{疑問詞whereのまとめ}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{まとめ}
+%%%%%%%このスライドは現在形に加えて過去形や未来形の例文もある。
+%%%%%%%既習事項に考慮して適宜コメントアウトする。
+%%%%%%%なお音声ファイルには過去形・未来形の例文も収録してあるので、
+%%%%%%%コメントアウトしたときは音声ファイルを別途作成すること
  \begin{block}{Where ～?\hspace{10pt}\textipa{/w\'e\textrhookschwa /}}
 \begin{description}[　　　　]
  \item[be動詞]<2-> %Where is 単数形?\,\,\,\,\,/\,\,\,\,\,Where are 複数形?
@@ -313,7 +325,7 @@ $\HighlightFormula{\text{Where} \left\{
   
  \end{block}
 
-\mbox{}\hfill{\tiny 0236}\,{\scriptsize \myaudio{./audio/015_where_05.mp3}}
+%\mbox{}\hfill{\tiny 0236}\,{\scriptsize \myaudio{./audio/015_where_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{}
