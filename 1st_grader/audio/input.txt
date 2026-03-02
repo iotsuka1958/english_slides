@@ -1,7 +1,3 @@
-nineteen ninety-nine
-two thousand
-two thousand three
-two thousand nine
-twenty ten<break time="2s"/>two thousand ten
-twenty twenty<break time="2s"/>two thousand twenty
-twenty twenty-six<break time="2s"/>two thousand twenty-six
+I would like some milk.
+I would like to drink some milk.
+I’d like to drink some milk.
