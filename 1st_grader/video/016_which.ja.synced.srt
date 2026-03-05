@@ -92,7 +92,7 @@
 
 24
 00:01:17,720 --> 00:01:20,880  
-そうです。Ehich is your favorite season? です
+そうです。Which is your favorite season? です
 
 25
 00:01:20,880 --> 00:01:24,640  

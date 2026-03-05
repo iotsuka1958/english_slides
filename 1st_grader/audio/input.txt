@@ -1,3 +1,4 @@
-I would like some milk.
-I would like to drink some milk.
-I’d like to drink some milk.
+Do you want some tea?
+Would you like some tea?
+Do you want to eat lunch together?
+Would you like to eat lunch together?
