@@ -4,8 +4,8 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./orientation/orientation_another.tex,2025-04-24,2025-04-15,2025-04-15,,2,1,1,,done,done,done,,999,999,999,
 ./1st_grader/999quiz_full_vesion.tex,2025-05-07,2024-06-18,2024-06-18,2024-06-18,26,26,26,26,done,done,done,done,999,999,999,999
 ./1st_grader/099_pronunciation.tex,2025-06-19,2024-09-03,2024-07-18,2024-07-18,4,3,3,3,done,done,done,done,999,999,999,999
-./pronunciation/pronunciation_consonant.tex,2025-06-26,2024-09-18,2024-09-18,2024-09-18,91,,1,1,,done,done,done,,999,999,999
-./pronunciation/pronunciation_vowel.tex,,2025-04-16,2025-04-16,,,146,143,,,,,,,,,
+./pronunciation/pronunciation_consonant.tex,2025-06-26,2024-09-18,2024-09-18,2024-09-18,92,,1,1,,done,done,done,,999,999,999
+./pronunciation/pronunciation_vowel.tex,,2025-04-16,2025-04-16,,,147,143,,,,,,,,,
 ./pronunciation/pronunciation_japanese.tex,2025-11-26,2025-01-07,2025-01-07,2025-01-07,10,4,4,4,,done,done,done,48,999,999,999
 ./1st_grader/001_alphabet.tex,2025-04-30,2024-06-14,,,2,2,,,done,done,,,999,999,,
 ./1st_grader/002_sv.tex,2025-05-07,2024-06-18,2024-06-13,2024-06-13,4,4,2,2,done,done,done,done,999,999,999,999
@@ -25,7 +25,7 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./1st_grader/014_when.tex,2026-01-13,2025-01-09,2025-05-28,,15,4,4,,done,done,done,,999,999,999,
 ./1st_grader/015_where.tex,2026-02-06,2025-01-15,2025-06-04,,9,3,2,,done,done,done,,999,999,999,
 ./1st_grader/016_which.tex,2026-02-25,2025-01-22,2025-06-05,,6,4,3,,done,done,done,,999,999,999,
-./1st_grader/017_how.tex,2026-03-05,2025-01-28,2025-06-10,,3,6,6,,,done,done,,34,999,999,
+./1st_grader/017_how.tex,2026-03-05,2025-01-28,2025-06-10,,4,6,6,,,done,done,,50,999,999,
 ./1st_grader/018_why.tex,,2025-02-04,2025-06-18,,,3,2,,,done,done,,,999,999,
 ./1st_grader/019_what.tex,,2025-02-06,2025-06-20,,,4,3,,,done,done,,,999,999,
 ./1st_grader/020_whose.tex,,2025-02-13,2025-06-25,,,5,4,,,done,done,,,999,999,
@@ -39,7 +39,7 @@ file_with_path,g1_date,g2_date,g3_date,g4_date,g1_times,g2_times,g3_times,g4_tim
 ./1st_grader/027_past_did_you.tex,,2025-05-30,2024-12-03,2024-12-03,,2,3,3,,done,done,done,,999,999,999
 ./1st_grader/032_imperative.tex,,2025-03-05,2025-03-05,,,5,5,,,done,done,,,999,999,
 ./1st_grader/033_exclamatory.tex,,2025-03-12,2025-03-12,,,6,6,,,done,done,,,999,999,
-./1st_grader/041_would_like.tex,,2025-03-03,2025-03-21,,,5,1,,,,done,,,61,15,
+./1st_grader/041_would_like.tex,,2025-03-03,2025-03-21,,,6,1,,,,done,,,64,15,
 ./2nd_grader/001_there_is.tex,,2025-06-11,2025-01-09,,,5,6,,,done,done,,,999,999,
 ./2nd_grader/005_was_ing_intro.tex,,2025-06-03,2024-12-05,2024-12-05,,5,5,4,,done,done,done,,999,57,57
 ./2nd_grader/011_be_going_to.tex,,2025-06-18,2024-12-12,2024-12-12,,8,5,4,,done,done,done,,999,62,62

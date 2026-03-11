@@ -1,6 +1,3 @@
-food<break time="1s"/>food
-hood<break time="1s"/>hood
-hood<break time="1s"/>hood
-food<break time="1s"/>food
-hood<break time="1s"/>hood
-food<break time="1s"/>food
+Did he say no to her?
+He said no to her.
+Say.<break time="2s"/>Said.
