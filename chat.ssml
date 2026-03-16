@@ -1,0 +1,17 @@
+<speak>
+  <voice name="en-US-Neural2-A">
+    Hi there! How are you doing today?
+  </voice>
+
+  <voice name="en-US-Neural2-F">
+    I'm doing great, thank you for asking. How about you?
+  </voice>
+
+  <voice name="en-US-Neural2-A">
+    I'm wonderful. The weather is perfect for a walk, isn't it?
+  </voice>
+
+  <voice name="en-US-Neural2-F">
+    It certainly is. I was thinking of heading to the park later.
+  </voice>
+</speak>

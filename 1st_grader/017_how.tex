@@ -11,6 +11,8 @@
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
 \usepackage{highlightx}
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{How are you?}
@@ -22,10 +24,15 @@
 %% TEXT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
   \titlepage
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+\hyperlink{today}{\beamergotobutton{Let's begin.}}%%todayにジャンプ
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{授業の流れ}
 \begin{frame}[plain]
   \frametitle{授業の流れ}
@@ -222,9 +229,10 @@ She goes to work \alt<4->{\myAnch{FOCUS_3}{orange}{by bus}}{\myAnch{focus_3}{whi
 \end{itemize}
 \end{block}
 \end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{How $+$ X}
+\hypertarget{today}{}
+
  \begin{enumerate}
   \item \myEmph[2-]{Maroon}{\bfseries How old} is the building? --- It is 80 years old.%
 \hfill{}\visible<2->{{\small \fbox{How\raisebox{5pt}{\scalebox{1.5}[1]{$\curvearrowright$}}old}}}
@@ -238,16 +246,17 @@ She goes to work \alt<4->{\myAnch{FOCUS_3}{orange}{by bus}}{\myAnch{focus_3}{whi
 \hfill{}\visible<6->{{\small {\fbox{How\raisebox{5pt}{\scalebox{1.5}[1]{$\curvearrowright$}}much}}}}
  \end{enumerate}
 
+\vspace{-1pt}
+
 \begin{block}<7->{Topics for Today}\small
-\pause
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 「どのくらい」と`程度'をたずねるとき$\longrightarrow$\,\,\,\fcolorbox{black}{white}{\bfseries How $+$ X\,}\,\,\,\ldots{}\,\,\,?
- \item \fcolorbox{black}{white}{\bfseries How $+$ X\,}\,\,の後は疑問文と同じ語順になります\hfill{\bfseries How old} is the building\\
+ \item<7-> 「どのくらい」と`程度'をたずねるとき$\longrightarrow$\,\,\,\fcolorbox{black}{white}{\bfseries How $+$ X\,}\,\,\,\ldots{}\,\,\,?
+ \item<8-> \fcolorbox{black}{white}{\bfseries How $+$ X\,}\,\,の後は疑問文と同じ語順になります\hfill{\bfseries How old} is the building?\\
 \hfill{}{\bfseries How many} comics do you have?
- \item   {\bfseries How much}は「いくら」と`値段'をたずねるときの決まり文句です
+ \item<9->   {\bfseries How much}は「いくら」と`値段'をたずねるときの決まり文句です
 \end{itemize}
      \end{block}
-
+\vspace{-11pt}
 
 \hfill{\tiny 0327}\,{\scriptsize\myaudio{./audio/017_how_06.mp3}}
 
@@ -268,11 +277,98 @@ She goes to work \alt<4->{\myAnch{FOCUS_3}{orange}{by bus}}{\myAnch{focus_3}{whi
 \end{tabular}
 \end{center}
 
-\hfill\visible<7->{\scriptsize often \textipa{/\'O:f(t)n/} しばしば}
+\hfill\visible<8->{\scriptsize often \textipa{/\'O:f(t)n/} しばしば}
 
-\hfill\visible<8->{\textbf{How often} do you studay math? --- Every day.}
+\hfill\visible<8->{\textbf{How often} do you study math? --- Every day.}
+
+\hfill\visible<8->{\textbf{How often} do you wash your car? --- Once a month.}
+
+\hfill{\tiny 0209}\,{\scriptsize\myaudio{./audio/017_how_06a.mp3}}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{回数}
+
+ \begin{enumerate}
+  \item<1-> George washes his car \textcolor{Maroon}{\bfseries once} a week.
+  \item<2-> My mother visits her father \textcolor{Maroon}{\bfseries twice} a month.
+  \item<3-> Brush your teeth \textcolor{Maroon}{\bfseries three times} a day.\hfill{\scriptsize  teeth \textipa{/t\'\i:T/} $<$ tooth \textipa{/t\'u:T/}}
+  \item<4-> I listen to this song \textcolor{Maroon}{\bfseries many times}.
+\end{enumerate}
+
+%\vspace{-20pt}
+
+\begin{block}<9->{「何回」という表現}
+\small
+
+{\rowcolors{2}{NavyBlue!50}{yellow!50}
+\begin{tabular}{ll}
+{\scriptsize 意味}&{\scriptsize 英語}\\
+1回 &once \textipa{/w\'2ns/}\\
+2回 &twice \textipa{/tw\'aIs/}\\
+3回& three times\\
+\end{tabular}}
+{\rowcolors{2}{NavyBlue!50}{yellow!50}
+\begin{tabular}{ll}
+&\\
+4回&four times\\
+5回&five times \\
+6回&six times \\
+\end{tabular}}
+{\rowcolors{2}{NavyBlue!50}{yellow!50}
+\begin{tabular}{ll}
+&\\[5pt]
+7回&seven times\\
+8回&eight times \\
+9回&nine times \\
+\end{tabular}}
+{\rowcolors{2}{NavyBlue!50}{yellow!50}
+\begin{tabular}{ll}
+\\
+10回&ten times\\
+\multicolumn{1}{c}{$\vdots$}&\multicolumn{1}{c}{$\vdots$} \\
+何回も&many times \\
+\end{tabular}}
+      \end{block}
+\hfill{\tiny 0213}\,{\scriptsize\myaudio{./audio/017_how_06b.mp3}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{回数}
+ 
+\begin{textblock*}{0.4\linewidth}(100pt,50pt)
+\visible<1->{\begin{tikzpicture}
+\bear[
+scale=2,
+%speech={\scriptsize 現在完了},
+signpost=\scalebox{1}{
+\parbox{2.5cm}{\color{black}
+\centering onceとtwiceこの2つは特別}},
+signcolour= brown!70!gray,
+signback=white!80!brown
+]
+\end{tikzpicture}}
+\end{textblock*}
+
+\begin{textblock*}{0.4\linewidth}(280pt,120pt)
+\visible<2->{\begin{tikzpicture}
+\duck[
+scale=1.732,
+signpost=\scalebox{0.5}{
+\parbox{2.5cm}{\color{black}\centering
+{\Large その他は\\数字 times}}},
+signcolour=brown!70!gray,
+signback=white!80!brown,
+graduate=gray!20!black,
+tassel=red!70!black,
+laughing,
+%speech={\tiny 反復練習！}
+]
+\end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises 3}
  
  {\small 次の対話の ( ) に入れるのにもっとも適切なものをア～エから
@@ -361,6 +457,21 @@ Please write back soon!
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Important Words and Phrases}
+ 
+\large
+\begin{enumerate}
+ \item weather \textipa{/w\'eD\textrhookschwa /}
+ \item sunny \textipa{/s\'2ni/}
+ \item usually \textipa{/j\'u:\textyogh u@li/}
+ \item by bus \textipa{/baI b\'2s/}
+ \item ticket \textipa{/t\'IkIt/}
+ \item dollar \textipa{/d\'Al\textrhookschwa /}
+\end{enumerate}
+
+\hfill{\tiny 0227}\,{\scriptsize \myaudio{./audio/017_how_07a.mp3}}
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{大意}
  

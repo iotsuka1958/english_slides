@@ -1,0 +1,33 @@
+<speak>
+  <voice language="ja-JP" name="ja-JP-Wavenet-C" gender="MALE">
+    皆さん、こんにちは。<break time="700ms"/>
+    Take care.<break time="700ms"/>
+    これって「気をつけてね」という意味ですよね。<break time="700ms"/>
+    でも。これ、ぶつぎりにして、テイク。<break time="700ms"/>ケア。<break time="700ms"/>
+    これじゃあおかしいですよね。<break time="700ms"/>
+    いっぽうで、ケイというシインを2回続けてくりかえすのも、ちょっとむずかしいですよね。<break time="700ms"/>
+    じゃあ、デイビッドさんに見本を聞かせてもらいましょう。<break time="700ms"/>
+  </voice>
+
+  <voice language="en-US" name="en-US-Wavenet-A" gender="MALE">
+    <prosody rate="0.9">
+      Hello everyone.<break time="700ms"/>
+      My name is David.<break time="700ms"/>
+      Please listen carefully.<break time="700ms"/>
+      Take care.<break time="700ms"/>
+      Take care.<break time="700ms"/>
+      <break time="1s"/>
+      Now, please repeat after me.<break time="700ms"/>
+      Take care.<break time="2s"/>
+      Take care.<break time="2s"/>
+      Good job. <break time="700ms"/>     
+    </prosody>
+  </voice>
+
+  <voice language="ja-JP" name="ja-JP-Wavenet-C" gender="MALE">
+    デイビッドさん、どうもありがとう。<break time="700ms"/>
+    さあ、みなさん、コツはつかめましたか。<break time="700ms"/>
+    同じシインが連続するときは、カタカナのちいさい「ツ」<break time="500ms"/>があるような気持ちで発音するとうまくいきますよ。
+  </voice>
+
+</speak>
