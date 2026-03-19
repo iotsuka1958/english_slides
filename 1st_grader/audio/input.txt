@@ -1,6 +1,4 @@
- weather
- sunny
- usually
- by bus
- ticket
- dollar
+There is a book on the table.
+There are some books on the table.
+There is someone waiting at the door.
+There are children playing on the swings.
