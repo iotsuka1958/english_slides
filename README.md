@@ -9,38 +9,49 @@ editor_options:
 
 # ffmpegを利用してmp3から不要な個所を取り除く方法
 
-```{bash}
+たとえば
+
+- 0秒から210秒までを抽出
+- 215秒から318秒までを抽出
+- 328秒以降を抽出
+
+したうえで、抽出した個所をマージする方法。
+
+```
 # 0秒から210秒までを抽出
 ffmpeg -i hoge.mp3 -ss 0 -to 210 -c copy part1.mp3
+```
 
+```
 # 215秒から318秒までを抽出
 ffmpeg -i hoge.mp3 -ss 215 -to 318 -c copy part2.mp3
+```
 
+```
 # 328秒以降を抽出
 ffmpeg -i hoge.mp3 -ss 328 -c copy part3.mp3
 ```
 
-```{bash}
+```
 # 結合リストを作成
 echo "file 'part1.mp3'" > file_merge_list.txt
 echo "file 'part2.mp3'" >> file_merge_list.txt
 echo "file 'part3.mp3'" >> file_merge_list.txt
 ```
 
+```
 # 結合コマンド
 ffmpeg -f concat -safe 0 -i file_merge_list.txt -c copy output.mp3
 ```
-
 
 # ffmpegを利用してfoo.mp3とbar.mp3を5秒の空白を挟んで結合する方法
 
 以下の手順で実行できます。
 
-## 1. 5秒の空白音声ファイルを作成
+## 5秒の空白音声ファイルを作成
 
-まず、5秒の空白音声ファイル（silent.mp3）を作成します。
-
-``` bash
+```
+# 5秒の空白音声ファイル（silent.mp3）を作成します。
 ffmpeg -f lavfi -t 5 -i anullsrc=r=44100:cl=stereo -q:a 9 -acodec libmp3lame silent.mp3
 ```
 
@@ -620,7 +631,7 @@ Google Cloud Text-to-Speech API を使用して、
 テキストまたは SSML ファイルから音声（MP3形式）を生成するスクリプト。
 
 使い方:
-    python google_text2speech.py input.txt output.mp3
+    google_text2speech.py input.txt output.mp3
 
 前提条件:
     - pip install google-cloud-texttospeech
@@ -639,12 +650,16 @@ def main():
     # ① コマンドライン引数の設定
     # ------------------------------------------------------------
     parser = argparse.ArgumentParser(
-        description="Convert text/SSML to speech using Google Cloud TTS API."
+        description="Convert text/SSML to speech using Google Cloud TTS API.\n"
+                    "NOTE: The input SSML must specify 'Neural2' voice models only (e.g., ja-JP-Neural2-C) "
+                    "to prevent API errors.",
+        formatter_class=argparse.RawTextHelpFormatter
     )
     parser.add_argument(
         "input_file",
         type=str,
-        help="Path to the input text or SSML file (e.g., input.txt)."
+        help="Path to the input text or SSML file (e.g., input.txt).\n"
+             "(Must contain 'Neural2' voices)"
     )
     parser.add_argument(
         "output_file",
@@ -694,9 +709,10 @@ def main():
     )
 
     # デフォルト音声設定
-    # SSML 内の <voice> タグで上書きされるが、空指定エラーを避けるため必須
+    # SSML 内の <voice> タグで Neural2 を使用するため、ベースの音声モデルにも Neural2 を指定する
     voice = texttospeech.VoiceSelectionParams(
-        language_code="ja-JP"  # デフォルトは日本語
+        language_code="ja-JP",
+        name="ja-JP-Neural2-C"  # ここを追加：Neural2のSSMLタグを許可させるためのベース指定
     )
 
     # ------------------------------------------------------------
@@ -731,59 +747,54 @@ def main():
 # エントリーポイント（直接実行された場合のみ main() を呼び出す）
 if __name__ == "__main__":
     main()
+
 ```
 
 ##  ssmlファイル
 
+なお、WavenetではなくNeural2を使うこと
 
 実際に入力ファイルとして使うssmlファイルの例を以下に示す。
 
 
-言語指定はlanguageで行う。genderを指定すると男性女性の声になる。
-nameは指定しなくてもよいが、
-指定すると特定の声になる。このときgenderの指定は無視されるみたい。
-
-### 英語の場合
-
+### 英語 (en-US)
 | 音声名 (Name) | 性別 |
 | :--- | :--- |
-| `en-US-Wavenet-A` | **男性** |
-| `en-US-Wavenet-B` | **男性** |
-| `en-US-Wavenet-C` | **女性** |
-| `en-US-Wavenet-D` | **男性** |
-| `en-US-Wavenet-E` | **女性** |
-| `en-US-Wavenet-F` | **女性** |
-| `en-US-Wavenet-G` | **女性** |
-| `en-US-Wavenet-H` | **女性** |
-| `en-US-Wavenet-I` | **男性** |
-| `en-US-Wavenet-J` | **男性** |
+| `en-US-Neural2-A` | **男性** |
+| `en-US-Neural2-C` | **女性** |
+| `en-US-Neural2-D` | **男性** |
+| `en-US-Neural2-E` | **女性** |
+| `en-US-Neural2-F` | **女性** |
+| `en-US-Neural2-G` | **女性** |
+| `en-US-Neural2-H` | **女性** |
+| `en-US-Neural2-I` | **男性** |
+| `en-US-Neural2-J` | **男性** |
 
-
-### 日本語
+### 日本語 (ja-JP)
 | 音声名 (Name) | 性別 |
 | :--- | :--- |
-| `ja-JP-Wavenet-A` | **女性** |
-| `ja-JP-Wavenet-B` | **男性** |
-| `ja-JP-Wavenet-C` | **女性** |
-| `ja-JP-Wavenet-D` | **男性** |
+| `ja-JP-Neural2-B` | **女性** |
+| `ja-JP-Neural2-C` | **男性** |
+| `ja-JP-Neural2-D` | **女性** |
+
 
 
 ```
 <speak>
-  <voice language="ja-JP" name="ja-JP-Wavenet-C" gender="MALE">
+  <voice language="ja-JP" name="ja-JP-Neural2-C" gender="MALE">
     皆さん、こんにちは。
     私は日本語の男性の声です。
     次は女性の声に切り替わります。
   </voice>
 
-  <voice language="ja-JP" name="ja-JP-Wavenet-A" gender="FEMALE">
+  <voice language="ja-JP" name="ja-JP-Neural2-B" gender="FEMALE">
     はい、こんにちは。
     私は日本語の女性の声です。
     <break time="700ms"/>
     では次に、英語の男性の声をお聞きください。
   </voice>
 
-  <voice language="en-US" name="en-US-Wavenet-A" gender="MALE">
+  <voice language="en-US" name="en-US-Neural2-A" gender="MALE">
     <prosody rate="0.9">
       Hello everyone.
       My name is David.
@@ -792,7 +803,7 @@ nameは指定しなくてもよいが、
     </prosody>
   </voice>
 
-  <voice language="en-US" name="en-US-Wavenet-C" gender="FEMALE">
+  <voice language="en-US" name="en-US-Neural2-C" gender="FEMALE">
     <prosody rate="0.9">
       Hello everyone. My name is Jennifer Jareaux. This is an English female voice from Google Cloud Text-to-Speech.
     </prosody>
@@ -1309,3 +1320,102 @@ end
 \end{document}
 ```
 
+# 音声ファイルのサンプリングレートとdurationを取得する
+
+以下を実行すればOK.
+使用法は -h もしくは --help で。
+```
+get_audio_info.sh [PATH...]
+```
+
+## get_audio_info.sh の中身
+
+```
+#!/usr/bin/env bash
+
+# Function to display usage
+show_help() {
+    echo "Usage: $(basename "$0") [PATH...]"
+    echo ""
+    echo "Description:"
+    echo "  Extracts sampling rate and duration (HH:MM:SS) of audio files using ffprobe."
+    echo ""
+    echo "Arguments:"
+    echo "  PATH       (Optional) One or more file or directory paths."
+    echo "             Supports wildcards (e.g., *.wav)."
+    echo "             Defaults to the current directory if no arguments are provided."
+    echo ""
+    echo "Options:"
+    echo "  -h, --help Show this help message."
+}
+
+# Check for help options
+if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
+    show_help
+    exit 0
+fi
+
+# Function to convert seconds to HH:MM:SS
+format_time() {
+    # Convert floating point string to integer (remove decimals)
+    total_seconds=${1%.*}
+    
+    if [ -z "$total_seconds" ]; then
+        echo "00:00:00"
+        return
+    fi
+
+    h=$((total_seconds / 3600))
+    m=$(( (total_seconds % 3600) / 60 ))
+    s=$((total_seconds % 60))
+    
+    printf "%02d:%02d:%02d" $h $m $s
+}
+
+# Function to process a single file
+process_file() {
+    file_path="$1"
+    
+    # Extract sample_rate and duration (in seconds)
+    # Output is two lines: rate then duration
+    info=$(ffprobe -v error -select_streams a:0 \
+        -show_entries stream=sample_rate,duration \
+        -of default=noprint_wrappers=1:nokey=1 "$file_path" 2>/dev/null)
+    
+    if [ -n "$info" ]; then
+        # Parse output line by line
+        rate=$(echo "$info" | sed -n '1p')
+        raw_dur=$(echo "$info" | sed -n '2p')
+        
+        # Convert seconds to HH:MM:SS
+        duration_hhmmss=$(format_time "$raw_dur")
+
+        printf "%-10s %-12s %s\n" "${rate} Hz" "$duration_hhmmss" "$file_path"
+    fi
+}
+
+# Print Header
+printf "%-10s %-12s %s\n" "RATE" "DURATION" "FILENAME"
+echo "--------------------------------------------------------"
+
+# If no arguments are provided, set target to current directory
+if [ $# -eq 0 ]; then
+    set -- "."
+fi
+
+# Iterate through all provided arguments (supports wildcards)
+for TARGET in "$@"; do
+    if [ -f "$TARGET" ]; then
+        process_file "$TARGET"
+    elif [ -d "$TARGET" ]; then
+        # BusyBox compatible globbing
+        for f in "$TARGET"/*; do
+            if [ -f "$f" ]; then
+                process_file "$f"
+            fi
+        done
+    else
+        echo "Skip: '$TARGET' is not a valid file or directory." >&2
+    fi
+done
+```

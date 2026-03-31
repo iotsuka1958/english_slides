@@ -1,18 +1,18 @@
 <speak>
-  <voice language="ja-JP" name="ja-JP-Wavenet-C" gender="MALE">
+  <voice language="ja-JP" name="ja-JP-Neural2-C" gender="MALE">
     皆さん、こんにちは。
     私は日本語の男性の声です。
     次は女性の声に切り替わります。
   </voice>
 
-  <voice language="ja-JP" name="ja-JP-Wavenet-A" gender="FEMALE">
+  <voice language="ja-JP" name="ja-JP-Neural2-B" gender="FEMALE">
     はい、こんにちは。
     私は日本語の女性の声です。
     <break time="700ms"/>
     では次に、英語の男性の声をお聞きください。
   </voice>
 
-  <voice language="en-US" name="en-US-Wavenet-A" gender="MALE">
+  <voice language="en-US" name="en-US-Neural2-A" gender="MALE">
     <prosody rate="0.9">
       Hello everyone.
       My name is David.
@@ -21,7 +21,7 @@
     </prosody>
   </voice>
 
-  <voice language="en-US" name="en-US-Wavenet-C" gender="FEMALE">
+  <voice language="en-US" name="en-US-Neural2-C" gender="FEMALE">
     <prosody rate="0.9">
       Hello everyone. My name is Jennifer Jareaux. This is an English female voice from Google Cloud Text-to-Speech.
     </prosody>
