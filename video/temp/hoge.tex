@@ -1,0 +1,59 @@
+\documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\emph}[1]{{\upshape\bfseries #1}}
+\usetheme{metropolis}
+\metroset{block=fill}
+\usepackage{media9}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{hogehoge}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{tohoho}
+ tohoho
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\href{run:otsuka_walks_through_20260402.mp4}{\includegraphics[width=5cm]{../../images/otsuka_figure.png}}
+\end{frame}%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{center}
+\includemedia[
+%  activate=pageopen,
+  label=hoge,
+  width=.75\textwidth,height=.75\textheight,
+  addresource=otsuka_walks_through_20260402.mp4,
+  transparent,
+  flashvars={%
+     source=otsuka_walks_through_20260402.mp4%
+     &autoPlay=false%
+     &scaleMode=stretch%
+     &volume=0%
+     &loop=false%
+  }  
+%]{}{Vplayer.swf}
+]{}{StrobeMediaPlayback.swf}
+\end{center}
+ \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{youtube}
+ \includemedia[
+width=0.6\linewidth,height=0.3375\linewidth, % 16:9
+activate=pageopen,
+flashvars={
+modestbranding=1 % no YT logo in control bar
+&autohide=1 % controlbar autohide
+&showinfo=0 % no title and other info before start
+&rel=0 % no related videos after end
+}
+]{}{https://www.youtube.com/watch?v=t0Q2otsqC4I}
+
+\end{frame}
+\end{document}
+
+
