@@ -1,88 +1,213 @@
 theme,words
-encha\^{i}nement,"an apple"
-encha\^{i}nement,"an egg"
-encha\^{i}nement,"I have an apple."
-encha\^{i}nement,"I ate an egg"
-encha\^{i}nement,"I have an English book."
-encha\^{i}nement,"Bob is in Africa."
-encha\^{i}nement,"I'm an American."
-encha\^{i}nement,"Can you get it for me?"
-encha\^{i}nement,"She was born in August."
-encha\^{i}nement,"Please take it."
-encha\^{i}nement,"Please stand up."
-encha\^{i}nement,"I'll be back in an hour."
-"linking R","for ever"
-"linking R","There are tears in her eyes."
-gemination???/pp/,"Stop playing the guitar."
-,"eight times"
-gemination拇音化/tt/,"What time is it now?"
-gemination拇音化/tt/,"Let's get together."
-gemination拇音化/kk/,"Take care."
-gemination拇音化/kk/,"She drank coffee."
+encha\^{i}nement,an apple
+encha\^{i}nement,an egg
+encha\^{i}nement,I have an apple.
+encha\^{i}nement,I ate an egg
+encha\^{i}nement,I have an English book.
+encha\^{i}nement,Bob is in Africa.
+encha\^{i}nement,I'm an American.
+encha\^{i}nement,Can you get it for me?
+encha\^{i}nement,She was born in August.
+encha\^{i}nement,Please take it.
+encha\^{i}nement,Please stand up.
+encha\^{i}nement,I'll be back in an hour.
+linking R,for ever
+linking R,There are tears in her eyes.
+gemination拇音化/tt/,eight times
+gemination拇音化/tt/,She likes hot tea.
+gemination拇音化/tt/,What time is it now?
+gemination拇音化/tt/,Let's get together.
+gemination拇音化/tt/,Have a great time/
+gemination拇音化/kk/,Take care.
+gemination拇音化/kk/,She drank cold milk.
+gemination拇音化/kk/,Walk quickly.
+gemination拇音化/kk/,You have to think carefully.
+gemination拇音化/kk/,I don't like black coffee.
+gemination???/pp/,Stop playing the game.
+gemination???/pp/,They swam in the deep  pool.
+gemination???/pp/,Help Peter with his homework.
+gemination???/pp/,I hope Paul will win.
+gemination???/pp/,I'll skip practice this week.
+gemination拇音化/dd/,Have a good day.
+gemination拇音化/dd/,It's been a bad day.
+gemination拇音化/dd/,I told Dad about it.
+gemination拇音化/dd/,"There are no bad dogs, only bad owners."
+gemination拇音化/dd/,I had a good dream last night.
 gemination拇音化/bb/,
-gemination拇音化/dd/,"Have a good day."
-gemination拇音化/dd/,"It's been a bad day."
-gemination拇音化/gg/,"a big ground"
-gemination拇音化/gg/,"I saw a big girl."
-gemination拇音化/pb/,"deep blue"
-gemination拇音化/td/,"Please sit down."
-gemination拇音化/td/,"He came the next day."
-gemination拇音化/kg/,"The cat was in the back garden."
-gemination拇音化/bp/,
-gemination拇音化/dt/,"I had a very good time."
-gemination拇音化/gk/,"I ate a big cake."
-/pt/,"See you in September."
-/pt/,"top ten"
+gemination拇音化/gg/,We have a big game tomorrow.
+gemination拇音化/gg/,The pig grows fast.
+gemination拇音化/gg/,My dog goes to the park every day.
+gemination拇音化/gg/,The park has a big garden.
+gemination拇音化/gg/,She is a big girl now.
+gemination拇音化/pb/,deep blue
+gemination拇音化/pb/,Let's stop by the store.
+gemination拇音化/pb/,I like the soup bowl
+gemination拇音化/pb/,You will sleep better tonight.
+gemination拇音化/bp/,Look at this web page.
+,
+gemination拇音化/td/,Please sit down.
+gemination拇音化/td/,He came the next day.
+gemination拇音化/td/,What did you do?
+gemination拇音化/dt/,We had a good time.
+gemination拇音化/dt/,I had a very good time.
+gemination拇音化/kg/,The cat was in the back garden.
+gemination拇音化/kg/,Please close the back gate.
+gemination拇音化/kg/,I like hot dogs.
+gemination拇音化/gk/,I ate a big cake.
+gemination拇音化/gk/,He drives a big car.
+gemination拇音化/gk/,I saw a big cat.
+/pt/,See you in September.
+/pt/,top ten
 /pt/,captain
+/tp/,This is a great place.
+/tp/,I need some white paper.
+/tp/,Look at this foorprint.
 /pk/,napkin
-/kp/,
+/pk/,Please keep quiet.
+/kp/,I lost my black pen.
 /kt/,doctor
-/bd/,
-/bg/,
+/kt/,picture
+/kt/,Please take two cookies.
+/kt/,Let's work together.
+/tk/,Let's drink some hot coffee.
+/tk/,Can I pay by credit card?
+/tk/,Look at that car.
+/bd/,Bob did his homework.
+/bd/,He is a cab driver.
+/bd/,She studies web design.
+/db/,You are a good boy.
+/db/,I bought a red bag.
+/db/,That's a very good book.
+/bg/,Bob got a new phone.
+/bg/,Let's play a web game.
 /gb/,rugby
-/gd/,
-/pd/,
-/pg/,
+/gb/,You are a big boy now.
+/gd/,I saw a big dog.
+/gd/,Tomorrow is a big day.
+/dg/,He plays the bad guy.
+/pd/,Please stop doing that.
+/dp/,That is a good point.
+/pg/,She got a top grade.
+/gp/,We have a big problem.
 /tb/,football
-/kb/,"a black bird"
-/kd/,"a black dog"
-/bt/,
-/bk/,
-/gp/,
-/gt/,
-/s/+/j/,"this year"
-/s/+/j/,"miss you"
-/z/+/j/,"I was young."
-/z/+/j/,"She loves you."
-/t/+/j/,"get you"
-/t/+/j/,"that year"
-/d/+/j/,"I need your help."
-/d/+/j/,"She loved you."
+/tb/,Read that book.
+/bt/,Good job today.
+/bk/,I bought a new web camera.
+/kb/,a black bird
+/kb/,I like that dark blue shirt.
+/kd/,a black dog
+/kd/,Lock the back door.
+/dk/,You are a good kid.
+/gt/,Look at that big tree.
+/tg/,Did you watch that game?
+/s/+/j/,this year
+/s/+/j/,miss you
+/z/+/j/,I was young.
+/z/+/j/,She loves you.
+/t/+/j/,get you
+/t/+/j/,that year
+/t/+/j/,last year
+/t/+/j/,Nice to meet you.
+/d/+/j/,I need your help.
+/d/+/j/,She loved you.
+/pm/,Help me.
 /tn/,button
 /tn/,cotton
 /tn/,mountain
+/tn/,captain
+/tn/,curtain
+/tn/,fountain
+/tn/,certainly
 /tn/,eaten
 /tn/,written
 /tn/,forgotten
-/tn/,certainly
-/tn/,"I woke up at nine o'clock."
-/tn/,"Her voice was sweet and clear."
-/dn/,Sidney
+/tn/,last night
+/tn/,I woke up at nine o'clock.
+/tn/,She visited me at night.
+/tn/,Her voice was sweet and clear.
 /dn/,garden
+/dn/,golden
+/dn/,Sidney
 /dn/,hidden
 /dn/,didn't
-/dn/,"It was a bad news,"
-/tl/,bottle
+/dn/,It was a bad news.
+/dn/,It is a good news.
+/dn/,I was sad to hear the sad news.
+/pl/,people
+/pl/,apple
+/bl/,able
+/bl/,cable
+/bl/,table
+/bl/,She is able to speak three languages.
 /tl/,battle
 /tl/,little
 /tl/,title
 /tl/,kettle
+/tl/,bottle
 /dl/,middle
 /dl/,candle
-/dl/,
-/dl/,
+/dl/,handle
+/dl/,I would like some tea.
+/kl/,medical
+/kl/,local
+/kl/,vocal
+/kl/,musical
+/kl/,tropical
+/kl/,classical
+/kl/,technical
+/gl/,angle
+/gl/,eagle
+/gl/,single
+/gl/,jungle
+/gl/,Jingle bells.
+/gl/,Google
+/fl/,useful
+/fl/,careful
+/fl/,powerful
+/fl/,colorful
+/fl/,wonderful
+/fl/,beautiful
+/fl/,waffle
+/fl/,shuffle
+/fl/,rifle
+/sl/,castle
+/sl/,hustle
+/sl/,wrestle
+/zl/,puzzle
+/nl/,tunnel
+/nl/,chunnel
+/db/,a good boy
+/dm/,Good morning.
+,
+,
 /nt/,twenty
 /nt/,internet
 /nt/,international
 /nt/,interview
+/nt/,center
 /nt/,twenty
+/nt/,winter
+/nt/,rental
+/nt/,I want some tea.
+/tr/,trip
+/tr/,tree
+/tr/,trick
+/tr/,try
+/tr/,train
+/tr/,trial
+/tr/,traffic
+/tr/,traditional
+/tr/,travel
+/tr/,street
+/tr/,strike
+/dr/,dream
+/dr/,drama
+/dr/,drink
+/dr/,draw
+/dr/,dress
+/dr/,drill
+/dr/,drive
+/dr/,drop
+/dr/,dry
+/dr/,hundred
+/tm/,bottom

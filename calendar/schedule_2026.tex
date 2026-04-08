@@ -1,0 +1,160 @@
+\documentclass[landscape,a4paper, english, 10pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{tikz} 
+\usepackage{translator}
+\usepackage{fancyhdr}
+\usepackage{fix-cm}
+\usepackage[landscape, headheight = 2cm, margin=.5cm, top = 3.2cm, nofoot]{geometry}
+\usepackage[dvipsnames]{xcolor}
+
+\usetikzlibrary{calc, calendar}
+
+\renewcommand*\familydefault{\sfdefault}
+
+% 2026年設定
+\def\year{2026}
+
+% 【修正ポイント1】ラベル位置の微調整
+% yshiftを 0em にし、anchorを west にすることで日付ボックスのすぐ右側に配置します
+\newcommand{\termin}[2]{
+  \node [anchor=west, text width= 3.4cm, xshift=3.2em] at
+    (cal-#1.west) {\tiny{#2}};
+}
+
+% ヘッダー
+\renewcommand{\headrulewidth}{0.0pt}
+\setlength{\headheight}{10ex}
+\chead{
+  \fontsize{60}{70}\selectfont\textbf{\year}
+  \Large\textbf{Eduop Chiba}\hfill
+}
+%%%%%%%%%%%%%%%%%%%%%%%
+% パッケージの読み込み群に追加してください
+\usepackage{luatexja}
+% 予定を追加するマクロ（第1引数: YYYYMMDD, 第2引数: 予定のテキスト）
+% --- 予定を追加するマクロ（LuaLaTeX対応版） ---
+\makeatletter
+\newcommand{\addschedule}[2]{%
+  \@addschedule#1\relax{#2}%
+}
+\def\@addschedule#1#2#3#4#5#6#7#8\relax#9{%
+  % CJK環境は不要です。そのまま #9 を出力します。
+  \node [anchor=west, text width= 3.4cm, xshift=3.2em, text=black] at
+    (cal-#1#2#3#4-#5#6-#7#8.west) {\tiny\textbf{#9}};
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\pagestyle{fancy}
+\begin{center}
+\begin{tikzpicture}[every day/.style={anchor = north}]
+\calendar[
+  dates=\year-01-01 to \year-06-30,
+  name=cal,
+  day yshift = 3em,
+  day code={
+    \node[name=\pgfcalendarsuggestedname,every day,shape=rectangle,
+    minimum height= .53cm, text width = 4.4cm, draw = gray!30]{\tikzdaytext};
+    \draw (-1.8cm, -.1ex) node[anchor = west]{\footnotesize%
+      \pgfcalendarweekdayshortname{\pgfcalendarcurrentweekday}};
+  },
+  execute before day scope={
+    \ifdate{day of month=1}{
+      \pgftransformxshift{4.8cm}
+      \draw (0,0)node [shape=rectangle, minimum height= .53cm,
+        text width = 4.4cm, fill = NavyBlue!80, text= white, draw = NavyBlue!80, text centered]
+        {\textbf{\pgfcalendarmonthname{\pgfcalendarcurrentmonth}}};
+    }{}
+    \ifdate{workday}{\tikzset{every day/.style={fill=white}}}{}
+     \ifdate{between=2026-01-01 and 2026-01-03}{%
+       \tikzset{every day/.style={fill=gray!30}}}{}
+   \ifdate{between=2026-03-23 and 2026-04-24}{%
+       \tikzset{every day/.style={fill=gray!30}}}{}
+    \ifdate{Saturday}{\tikzset{every day/.style={fill=blue!5}}}{}
+    \ifdate{Sunday}{\tikzset{every day/.style={fill=red!10}}}{}
+    % --- 2026年 祝日判定の正確な修正 ---
+    \ifdate{equals=01-01}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=01-12}{\tikzset{every day/.style={fill=red!10}}}{} % 成人の日(1/12)
+    \ifdate{equals=02-11}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=02-23}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=03-20}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=04-29}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=05-03}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=05-04}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=05-05}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=05-06}{\tikzset{every day/.style={fill=red!10}}}{}
+  },
+  execute at begin day scope={\pgftransformyshift{-.53*\pgfcalendarcurrentday cm}}
+];
+% 【修正ポイント2】PDFでズレていた日付を2026年の正式なものに固定
+\termin{\year-01-01}{New Year's Day}
+\termin{\year-01-12}{Coming of Age Day}
+\termin{\year-02-11}{National Foundation Day}
+\termin{\year-02-23}{Emperor's Birthday}
+\termin{\year-03-20}{Vernal Equinox Day}
+\termin{\year-04-29}{Showa Day}
+\termin{\year-05-03}{Constitution Day}
+\termin{\year-05-04}{Greenery Day}
+\termin{\year-05-05}{Children's Day}
+\termin{\year-05-06}{Sub. Holiday}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%予定を追加
+\addschedule{20260319}{終業式}
+\addschedule{20260427}{始業式}
+\end{tikzpicture}
+%%%%%%%%%%%%%%%%%%
+\pagebreak
+%%%%%%%%%%%%%%%%%
+\begin{tikzpicture}[every day/.style={anchor = north}]
+\calendar[
+  dates=\year-07-01 to \year-12-31,
+  name=cal,
+  day yshift = 3em,
+  day code={
+    \node[name=\pgfcalendarsuggestedname,every day,shape=rectangle, 
+      minimum height= .53cm, text width = 4.4cm, draw = gray!30]{\tikzdaytext};
+    \draw (-1.8cm, -.1ex) node[anchor = west]{\footnotesize\pgfcalendarweekdayshortname{\pgfcalendarcurrentweekday}};
+  },
+  execute before day scope={
+    \ifdate{day of month=1} {
+      \pgftransformxshift{4.8cm}
+      \draw (0,0)node [shape=rectangle, minimum height= .53cm, 
+        text width = 4.4cm, fill = NavyBlue!80, text= white, draw = NavyBlue!80, text centered]
+        {\textbf{\pgfcalendarmonthname{\pgfcalendarcurrentmonth}}};
+    }{}
+    \ifdate{workday}{\tikzset{every day/.style={fill=white}}}{}
+    \ifdate{between=2026-07-21 and 2026-08-31}{%
+        \tikzset{every day/.style={fill=gray!30}}}{}
+    \ifdate{between=2026-11-02 and 2026-11-06}{%
+        \tikzset{every day/.style={fill=gray!30}}}{}
+    \ifdate{between=2026-12-21 and 2027-01-05}{%
+        \tikzset{every day/.style={fill=gray!30}}}{}
+    \ifdate{Saturday}{\tikzset{every day/.style={fill=blue!5}}}{}
+    \ifdate{Sunday}{\tikzset{every day/.style={fill=red!10}}}{}
+     \ifdate{equals=07-20}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=08-11}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=09-21}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=09-22}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=10-12}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=11-03}{\tikzset{every day/.style={fill=red!10}}}{}
+    \ifdate{equals=11-23}{\tikzset{every day/.style={fill=red!10}}}{}
+  },
+  execute at begin day scope={\pgftransformyshift{-.53*\pgfcalendarcurrentday cm}}
+];
+\termin{\year-07-20}{Marine Day}
+\termin{\year-08-11}{Mountain Day}
+\termin{\year-09-21}{Respect for the Aged Day}
+\termin{\year-09-22}{Autumnal Equinox Day}
+\termin{\year-10-12}{Sports Day}
+\termin{\year-11-03}{Culture Day}
+\termin{\year-11-23}{Labour Thanksgiving Day}
+%%%%%%%%%%%%%%%%%%%
+%予定を追加
+\addschedule{20260717}{終業式}
+\addschedule{20260901}{始業式}
+\addschedule{20261218}{終業式}
+\end{tikzpicture}
+\end{center}
+\end{document}
