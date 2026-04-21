@@ -1,0 +1,46 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with C-x C-f and enter text in its buffer.
+
+
+1
+
+2
+- 発音記号は、International Phonetic Association の定めたIPA記号を忠実に用いたものに修正してください
+- 右側の「比較してみよう」の矢印の上の個所についてはつぎのように修正して
+Is Paul athe door?は上り銚子です
+- 右側の「比較してみよう」の矢印の下の個所についは次のように修正して
+Who is  at the door?は下り調子です
+
+4
+- イラストの少年には、チェックのボタンダウンを着せて。第1ボタンのみ開いていて、首元から白いTシャツがのぞいている
+- イラストの少年は、ストライプのリボンベルトを着用
+- 画像のほとんどはモノクロームで、一部にのみ効果的な差し色をつける
+
+8
+スライドの右端で「質問が完成します。」という表現が2回連続しているので、二つ目は削除して
+
+9
+
+
+
+12
+右下のスピーカーのアイコン及び直下のごくは削除して
+
+
+
+78 12
+- 発音記号は、International Phonetic Association の定めたIPA記号を忠実に用いたものに修正してください
+
+14
+
+
+上の枠内の
+I と not の間の縦罫線は消去して、その位置に am を配置してください
+
+5
+「毎日のプレクシィス」は削除してください
+
+日本語の個所はすべて削除してください右下の発音記号は、International Phonetic Association の定めたIPA記号を忠実に用いたものに修正してください
+
+
+11
