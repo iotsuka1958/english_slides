@@ -1,19 +1,17 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-%
 \documentclass[
   ignorenonframetext,
   aspectratio=169,
   xcolor=dvipsnames]{beamer}
+\newif\ifbibliography
 \usepackage{pgfpages}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{caption label separator}{: }
 \setbeamercolor{caption name}{fg=normal text.fg}
 \beamertemplatenavigationsymbolsempty
-% Prevent slide breaks in the middle of a paragraph
-\widowpenalties 1 10000
-\raggedbottom
+% remove section numbering
 \setbeamertemplate{part page}{
   \centering
   \begin{beamercolorbox}[sep=16pt,center]{part title}
@@ -22,16 +20,19 @@
 }
 \setbeamertemplate{section page}{
   \centering
-  \begin{beamercolorbox}[sep=12pt,center]{part title}
+  \begin{beamercolorbox}[sep=12pt,center]{section title}
     \usebeamerfont{section title}\insertsection\par
   \end{beamercolorbox}
 }
 \setbeamertemplate{subsection page}{
   \centering
-  \begin{beamercolorbox}[sep=8pt,center]{part title}
+  \begin{beamercolorbox}[sep=8pt,center]{subsection title}
     \usebeamerfont{subsection title}\insertsubsection\par
   \end{beamercolorbox}
 }
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
 \AtBeginPart{
   \frame{\partpage}
 }
@@ -44,7 +45,6 @@
 \AtBeginSubsection{
   \frame{\subsectionpage}
 }
-\usepackage{amsmath,amssymb}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -76,8 +76,6 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
-\newif\ifbibliography
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -120,21 +118,22 @@
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{graphicx}
 \makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
 % Set default figure placement to htbp
-\makeatletter
 \def\fps@figure{htbp}
 \makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 %% PDFメタデータの文字化け防止
 % https://blog.miz-ar.info/2015/09/latex-hyperref-tips/
 % https://tex.stackexchange.com/questions/24445/hyperref-lualatex-and-unicode-bookmarks-issue-garbled-page-numbers-in-ar-for-l
@@ -223,9 +222,6 @@
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
 %%%%%%%%%%%%%%%%%
 \usepackage{pxrubrica}
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -237,13 +233,13 @@
 \title{English is fun}
 \subtitle{orientation}
 \author{}
-\date{\vspace{-2.5em}2025}
+\date{\vspace{-2.5em}2026-04-28}
 
 \begin{document}
 \frame{\titlepage}
 
 \begin{frame}{}
-\phantomsection\label{section}
+\protect\phantomsection\label{section}
 \thispagestyle{empty}
 \Large
 
@@ -271,13 +267,13 @@ Can you hear it?
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-1}
+\protect\phantomsection\label{section-1}
 \thispagestyle{empty}
 \titlepage
 \end{frame}
 
 \begin{frame}{きょうの予定}
-\phantomsection\label{ux304dux3087ux3046ux306eux4e88ux5b9a}
+\protect\phantomsection\label{ux304dux3087ux3046ux306eux4e88ux5b9a}
 \thispagestyle{empty}
 \LARGE
 
@@ -288,20 +284,25 @@ Can you hear it?
 \end{frame}
 
 \begin{frame}{自己紹介}
-\phantomsection\label{ux81eaux5df1ux7d39ux4ecb}
+\protect\phantomsection\label{ux81eaux5df1ux7d39ux4ecb}
 \thispagestyle{empty}
 \Large
 
 \pause
 
-大塚一朗(Otsuka Ichiro)
+Mr Otsuka
+
+\vspace{-20pt}
+
+\hfill\includegraphics[width=.25\textwidth]{../images/otsuka_figure.png}
 
 \pause
+\vspace{-150pt}
 
 \begin{itemize}[<+->]
 \tightlist
 \item
-  千葉LOTTE Marinesを応援しています
+  千葉LOTTE Marinesが好き
 \item
   ミステリーが好き
 
@@ -311,7 +312,7 @@ Can you hear it?
     本・ 映画・TVドラマ
   \end{itemize}
 \item
-  音楽はだいたいなんでも好き
+  音楽が好き
 
   \begin{itemize}[<+->]
   \tightlist
@@ -319,7 +320,13 @@ Can you hear it?
     BachとThe Beach Boysをよく聴きます ← 首尾一貫していない
   \end{itemize}
 \item
-  プログラミングが好き。しろうとレベルですが、楽しい
+  プログラミングが好き
+
+  \begin{itemize}[<+->]
+  \tightlist
+  \item
+    しろうとレベルですが、楽しい
+  \end{itemize}
 \item
   やっぱりネコが好き \pause
 \end{itemize}
@@ -328,7 +335,7 @@ Can you hear it?
 \end{frame}
 
 \begin{frame}{この時間は}
-\phantomsection\label{ux3053ux306eux6642ux9593ux306f}
+\protect\phantomsection\label{ux3053ux306eux6642ux9593ux306f}
 \Huge
 
 \centering
@@ -339,7 +346,7 @@ English is fun.
 \section{みんなが安心して楽しく学べるように}\label{ux307fux3093ux306aux304cux5b89ux5fc3ux3057ux3066ux697dux3057ux304fux5b66ux3079ux308bux3088ux3046ux306b}
 
 \begin{frame}{約束}
-\phantomsection\label{ux7d04ux675f}
+\protect\phantomsection\label{ux7d04ux675f}
 \LARGE
 
 みんなが\textcolor{Maroon}{安心して楽しく}学べるように
@@ -350,7 +357,7 @@ English is fun.
 \end{frame}
 
 \begin{frame}{約束}
-\phantomsection\label{ux7d04ux675f-1}
+\protect\phantomsection\label{ux7d04ux675f-1}
 \Large
 
 \begin{tabular}{ll}
@@ -364,7 +371,7 @@ English is fun.
 \end{frame}
 
 \begin{frame}{安心して学ぶための約束1}
-\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f1}
+\protect\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f1}
 \LARGE
 
 \pause
@@ -377,7 +384,7 @@ English is fun.
 \end{frame}
 
 \begin{frame}{個人情報とは}
-\phantomsection\label{ux500bux4ebaux60c5ux5831ux3068ux306f}
+\protect\phantomsection\label{ux500bux4ebaux60c5ux5831ux3068ux306f}
 \LARGE
 
 生存する個人に関する情報で、
@@ -391,14 +398,14 @@ English is fun.
 \end{frame}
 
 \begin{frame}{具体的には}
-\phantomsection\label{ux5177ux4f53ux7684ux306bux306f}
+\protect\phantomsection\label{ux5177ux4f53ux7684ux306bux306f}
 \LARGE
 
 個人情報って、具体的にはなんなの？
 \end{frame}
 
 \begin{frame}{具体的には}
-\phantomsection\label{ux5177ux4f53ux7684ux306bux306f-1}
+\protect\phantomsection\label{ux5177ux4f53ux7684ux306bux306f-1}
 \begin{tabular}
 {C{.175\textwidth}  <{\onslide<2->} C{.18\textwidth}  <{\onslide<3->} C{.27\textwidth}  <{\onslide<4->} C{.27\textwidth}  <{\onslide}}
 \noalign{\hrule height 1pt}
@@ -412,7 +419,7 @@ English is fun.
 {\scriptsize 氏名と組み合わせた場合}
 \end{tabular}\\
 \midrule
-\ruby{穂毛}{ほ|げ} ホゲ\ruby{雄}{お}&\includegraphics[width=.2\textwidth]{../images/iotsuka2025.jpg}&
+\ruby{穂毛}{ほ|げ} ホゲ\ruby{雄}{お}&\includegraphics[width=.2\textwidth]{../images/otsuka_avatar.jpg}&
 \begin{tabular}{@{}c@{}}
 千葉県○○市○○町\\
 穂毛 ホゲ雄
@@ -426,7 +433,7 @@ English is fun.
 \end{frame}
 
 \begin{frame}{安心して学ぶための約束1}
-\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f1-1}
+\protect\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f1-1}
 \LARGE
 
 個人情報は書き込まないようにしましょう
@@ -439,14 +446,14 @@ English is fun.
 \end{frame}
 
 \begin{frame}{安心して学ぶための約束2}
-\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f2}
+\protect\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f2}
 \LARGE
 
 他の人が傷つくようなことはいいません
 \end{frame}
 
 \begin{frame}{安心して学ぶための約束3}
-\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f3}
+\protect\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f3}
 \LARGE
 
 ログインに必要な情報
@@ -460,7 +467,7 @@ English is fun.
 \end{frame}
 
 \begin{frame}{安心して学ぶための約束4}
-\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f4}
+\protect\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f4}
 \LARGE
 
 パスワード
@@ -479,7 +486,7 @@ English is fun.
 \end{frame}
 
 \begin{frame}{安心して学ぶための約束5}
-\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f5}
+\protect\phantomsection\label{ux5b89ux5fc3ux3057ux3066ux5b66ux3076ux305fux3081ux306eux7d04ux675f5}
 \LARGE
 
 教材や動画等は許可なく録画・録音したり、
@@ -488,7 +495,7 @@ SNSなどにのせないようにしましょう
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-2}
+\protect\phantomsection\label{section-2}
 \Large
 
 \begin{tabular}{ll}
@@ -509,7 +516,7 @@ SNSなどにのせないようにしましょう
 \section{授業について}\label{ux6388ux696dux306bux3064ux3044ux3066}
 
 \begin{frame}{授業について}
-\phantomsection\label{ux6388ux696dux306bux3064ux3044ux3066-1}
+\protect\phantomsection\label{ux6388ux696dux306bux3064ux3044ux3066-1}
 \LARGE
 
 \begin{itemize}[<+->]
@@ -528,7 +535,7 @@ SNSなどにのせないようにしましょう
 \end{frame}
 
 \begin{frame}{授業の進め方}
-\phantomsection\label{ux6388ux696dux306eux9032ux3081ux65b9}
+\protect\phantomsection\label{ux6388ux696dux306eux9032ux3081ux65b9}
 \LARGE
 
 スライドで進めていきます
@@ -546,7 +553,7 @@ SNSなどにのせないようにしましょう
 \end{frame}
 
 \begin{frame}{授業の内容}
-\phantomsection\label{ux6388ux696dux306eux5185ux5bb9}
+\protect\phantomsection\label{ux6388ux696dux306eux5185ux5bb9}
 \LARGE
 
 \textcolor{Maroon}{基礎基本をだいじに}します
@@ -559,7 +566,7 @@ SNSなどにのせないようにしましょう
 \end{frame}
 
 \begin{frame}{準備するもの}
-\phantomsection\label{ux6e96ux5099ux3059ux308bux3082ux306e}
+\protect\phantomsection\label{ux6e96ux5099ux3059ux308bux3082ux306e}
 \LARGE
 \begin{columns}
 \begin{column}{.25\textwidth}
@@ -582,7 +589,7 @@ is licensed under CC BY 2.0. To view a copy of this license, visit
 \end{frame}
 
 \begin{frame}{予習・復習について}
-\phantomsection\label{ux4e88ux7fd2ux5fa9ux7fd2ux306bux3064ux3044ux3066}
+\protect\phantomsection\label{ux4e88ux7fd2ux5fa9ux7fd2ux306bux3064ux3044ux3066}
 \LARGE
 
 予習\pause → 必要ありません
@@ -597,7 +604,7 @@ is licensed under CC BY 2.0. To view a copy of this license, visit
 \end{frame}
 
 \begin{frame}{音声をだいじにしよう}
-\phantomsection\label{ux97f3ux58f0ux3092ux3060ux3044ux3058ux306bux3057ux3088ux3046}
+\protect\phantomsection\label{ux97f3ux58f0ux3092ux3060ux3044ux3058ux306bux3057ux3088ux3046}
 \LARGE
 
 英語の音声に親しみましょう
@@ -612,7 +619,7 @@ is licensed under CC BY 2.0. To view a copy of this license, visit
 \end{frame}
 
 \begin{frame}{授業について(まとめ)}
-\phantomsection\label{ux6388ux696dux306bux3064ux3044ux3066ux307eux3068ux3081}
+\protect\phantomsection\label{ux6388ux696dux306bux3064ux3044ux3066ux307eux3068ux3081}
 \Large
 
 \begin{itemize}
@@ -629,7 +636,7 @@ is licensed under CC BY 2.0. To view a copy of this license, visit
 \end{frame}
 
 \begin{frame}{きょうのまとめ}
-\phantomsection\label{ux304dux3087ux3046ux306eux307eux3068ux3081}
+\protect\phantomsection\label{ux304dux3087ux3046ux306eux307eux3068ux3081}
 \LARGE
 
 \begin{itemize}
@@ -641,11 +648,11 @@ is licensed under CC BY 2.0. To view a copy of this license, visit
 \section{See you next time.}\label{see-you-next-time.}
 
 \begin{frame}{}
-\phantomsection\label{section-3}
+\protect\phantomsection\label{section-3}
 \end{frame}
 
 \begin{frame}{Hello, World!}
-\phantomsection\label{hello-world}
+\protect\phantomsection\label{hello-world}
 \Large
 
 Hello, World!
@@ -654,7 +661,7 @@ Hello, World!
 \end{frame}
 
 \begin{frame}{Japan is here}
-\phantomsection\label{japan-is-here}
+\protect\phantomsection\label{japan-is-here}
 \Large
 
 \textcolor{orange}{\bfseries Japan} is here.
@@ -663,7 +670,7 @@ Hello, World!
 \end{frame}
 
 \begin{frame}{世界のことば}
-\phantomsection\label{ux4e16ux754cux306eux3053ux3068ux3070}
+\protect\phantomsection\label{ux4e16ux754cux306eux3053ux3068ux3070}
 \Large
 
 日本では日本語
@@ -674,7 +681,7 @@ Hello, World!
 \end{frame}
 
 \begin{frame}{日本語以外のことばをあげてみよう}
-\phantomsection\label{ux65e5ux672cux8a9eux4ee5ux5916ux306eux3053ux3068ux3070ux3092ux3042ux3052ux3066ux307fux3088ux3046}
+\protect\phantomsection\label{ux65e5ux672cux8a9eux4ee5ux5916ux306eux3053ux3068ux3070ux3092ux3042ux3052ux3066ux307fux3088ux3046}
 \Large
 
 \begin{itemize}[<+->]
@@ -703,7 +710,7 @@ Hello, World!
 \end{frame}
 
 \begin{frame}{Quiz}
-\phantomsection\label{quiz}
+\protect\phantomsection\label{quiz}
 \Large
 
 ところで、世界にはいくつくらいことばがあるの？
@@ -724,7 +731,7 @@ Hello, World!
 \end{frame}
 
 \begin{frame}{Answer}
-\phantomsection\label{answer}
+\protect\phantomsection\label{answer}
 \Huge
 \vfill
 
@@ -736,11 +743,11 @@ Hello, World!
 \raggedleft
 \scriptsize
 
-\url{https://www.ethnologue.com/insights/how-many-languages/による}
+\href{https://www.ethnologue.com/insights/how-many-languages/による}{https://www.ethnologue.com/insights/how-many-languages/による}
 \end{frame}
 
 \begin{frame}{びっくり}
-\phantomsection\label{ux3073ux3063ux304fux308a}
+\protect\phantomsection\label{ux3073ux3063ux304fux308a}
 \Large
 
 \begin{columns}
@@ -755,7 +762,7 @@ Hello, World!
 \end{frame}
 
 \begin{frame}{そのうちのひとつ}
-\phantomsection\label{ux305dux306eux3046ux3061ux306eux3072ux3068ux3064}
+\protect\phantomsection\label{ux305dux306eux3046ux3061ux306eux3072ux3068ux3064}
 \Large
 
 ということは\pause
@@ -776,7 +783,7 @@ Hello, World!
 \end{frame}
 
 \begin{frame}{そのことばを話す人の数}
-\phantomsection\label{ux305dux306eux3053ux3068ux3070ux3092ux8a71ux3059ux4ebaux306eux6570}
+\protect\phantomsection\label{ux305dux306eux3053ux3068ux3070ux3092ux8a71ux3059ux4ebaux306eux6570}
 \Large
 
 どのことばも7,164あることばのひとつ、\pause
@@ -795,7 +802,7 @@ Hello, World!
 \end{frame}
 
 \begin{frame}{Quiz}
-\phantomsection\label{quiz-1}
+\protect\phantomsection\label{quiz-1}
 \Large
 
 では、ここでもうひとつの問題です。
@@ -820,12 +827,12 @@ Hello, World!
 \end{frame}
 
 \begin{frame}{生まれて初めて身につけたことば}
-\phantomsection\label{ux751fux307eux308cux3066ux521dux3081ux3066ux8eabux306bux3064ux3051ux305fux3053ux3068ux3070}
+\protect\phantomsection\label{ux751fux307eux308cux3066ux521dux3081ux3066ux8eabux306bux3064ux3051ux305fux3053ux3068ux3070}
 \includegraphics[height=0.95\textheight]{orientation_files/figure-beamer/unnamed-chunk-5-1}
 \end{frame}
 
 \begin{frame}{第一言語として話す人の数がおおいことば}
-\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3068ux3057ux3066ux8a71ux3059ux4ebaux306eux6570ux304cux304aux304aux3044ux3053ux3068ux3070}
+\protect\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3068ux3057ux3066ux8a71ux3059ux4ebaux306eux6570ux304cux304aux304aux3044ux3053ux3068ux3070}
 \raggedleft
 
 (単位: 100万人)
@@ -851,11 +858,11 @@ Hindi & 345\\
 \raggedleft
 \scriptsize
 
-\url{https://www.ethnologue.com/insights/most-spoken-language/による}
+\href{https://www.ethnologue.com/insights/most-spoken-language/による}{https://www.ethnologue.com/insights/most-spoken-language/による}
 \end{frame}
 
 \begin{frame}{複数のことばを話す人もいますよね}
-\phantomsection\label{ux8907ux6570ux306eux3053ux3068ux3070ux3092ux8a71ux3059ux4ebaux3082ux3044ux307eux3059ux3088ux306d}
+\protect\phantomsection\label{ux8907ux6570ux306eux3053ux3068ux3070ux3092ux8a71ux3059ux4ebaux3082ux3044ux307eux3059ux3088ux306d}
 \Large
 
 第一言語はAということばだけれど、
@@ -864,7 +871,7 @@ Hindi & 345\\
 \end{frame}
 
 \begin{frame}{第一言語ではないけど、そのことば話します}
-\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3067ux306fux306aux3044ux3051ux3069ux305dux306eux3053ux3068ux3070ux8a71ux3057ux307eux3059}
+\protect\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3067ux306fux306aux3044ux3051ux3069ux305dux306eux3053ux3068ux3070ux8a71ux3057ux307eux3059}
 \Large
 
 第一言語ではないけれど、そのことばを話します
@@ -873,17 +880,17 @@ Hindi & 345\\
 \end{frame}
 
 \begin{frame}{第一言語として話す人の数はこうでしたね}
-\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3068ux3057ux3066ux8a71ux3059ux4ebaux306eux6570ux306fux3053ux3046ux3067ux3057ux305fux306d}
+\protect\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3068ux3057ux3066ux8a71ux3059ux4ebaux306eux6570ux306fux3053ux3046ux3067ux3057ux305fux306d}
 \includegraphics[height=0.95\textheight]{orientation_files/figure-beamer/unnamed-chunk-7-1}
 \end{frame}
 
 \begin{frame}{第一言語ではない人を合わせるとこうなります}
-\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3067ux306fux306aux3044ux4ebaux3092ux5408ux308fux305bux308bux3068ux3053ux3046ux306aux308aux307eux3059}
+\protect\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3067ux306fux306aux3044ux4ebaux3092ux5408ux308fux305bux308bux3068ux3053ux3046ux306aux308aux307eux3059}
 \includegraphics[height=0.95\textheight]{orientation_files/figure-beamer/unnamed-chunk-8-1}
 \end{frame}
 
 \begin{frame}{つまり}
-\phantomsection\label{ux3064ux307eux308a}
+\protect\phantomsection\label{ux3064ux307eux308a}
 \raggedleft
 
 (単位: 100万人)
@@ -907,11 +914,11 @@ Spanish & 485 & 74 & 559\\
 
 \scriptsize
 
-\url{https://www.ethnologue.com/insights/most-spoken-language/による}
+\href{https://www.ethnologue.com/insights/most-spoken-language/による}{https://www.ethnologue.com/insights/most-spoken-language/による}
 \end{frame}
 
 \begin{frame}{話す人を全部あわせると}
-\phantomsection\label{ux8a71ux3059ux4ebaux3092ux5168ux90e8ux3042ux308fux305bux308bux3068}
+\protect\phantomsection\label{ux8a71ux3059ux4ebaux3092ux5168ux90e8ux3042ux308fux305bux308bux3068}
 \Large
 
 世界には7,164のことばがありますが、
@@ -932,7 +939,7 @@ Spanish & 485 & 74 & 559\\
 \end{frame}
 
 \begin{frame}{空間的にはどうかしら}
-\phantomsection\label{ux7a7aux9593ux7684ux306bux306fux3069ux3046ux304bux3057ux3089}
+\protect\phantomsection\label{ux7a7aux9593ux7684ux306bux306fux3069ux3046ux304bux3057ux3089}
 \Large
 
 中国語と英語を話す人が
@@ -941,31 +948,31 @@ Spanish & 485 & 74 & 559\\
 \end{frame}
 
 \begin{frame}{Chinese}
-\phantomsection\label{chinese}
-\includegraphics{orientation_files/figure-beamer/unnamed-chunk-10-1.pdf}
+\protect\phantomsection\label{chinese}
+\pandocbounded{\includegraphics[keepaspectratio]{orientation_files/figure-beamer/unnamed-chunk-10-1.pdf}}
 \end{frame}
 
 \begin{frame}{中国語を話す人}
-\phantomsection\label{ux4e2dux56fdux8a9eux3092ux8a71ux3059ux4eba}
+\protect\phantomsection\label{ux4e2dux56fdux8a9eux3092ux8a71ux3059ux4eba}
 \Large
 
 中国語を話す人は中国に集中していますね
 \end{frame}
 
 \begin{frame}{English}
-\phantomsection\label{english}
-\includegraphics{orientation_files/figure-beamer/unnamed-chunk-11-1.pdf}
+\protect\phantomsection\label{english}
+\pandocbounded{\includegraphics[keepaspectratio]{orientation_files/figure-beamer/unnamed-chunk-11-1.pdf}}
 \end{frame}
 
 \begin{frame}{English}
-\phantomsection\label{english-1}
+\protect\phantomsection\label{english-1}
 \Large
 
 英語を話す人は世界中にいます
 \end{frame}
 
 \begin{frame}{つまり}
-\phantomsection\label{ux3064ux307eux308a-1}
+\protect\phantomsection\label{ux3064ux307eux308a-1}
 \Large
 
 中国語を話す人は、中国に集中しています\pause
@@ -974,7 +981,7 @@ Spanish & 485 & 74 & 559\\
 \end{frame}
 
 \begin{frame}{わたしたちが学ぶ英語とは}
-\phantomsection\label{ux308fux305fux3057ux305fux3061ux304cux5b66ux3076ux82f1ux8a9eux3068ux306f}
+\protect\phantomsection\label{ux308fux305fux3057ux305fux3061ux304cux5b66ux3076ux82f1ux8a9eux3068ux306f}
 \Large
 
 \begin{itemize}[<+->]
@@ -991,7 +998,7 @@ Spanish & 485 & 74 & 559\\
 \end{frame}
 
 \begin{frame}{英語は世界の共通語}
-\phantomsection\label{ux82f1ux8a9eux306fux4e16ux754cux306eux5171ux901aux8a9e}
+\protect\phantomsection\label{ux82f1ux8a9eux306fux4e16ux754cux306eux5171ux901aux8a9e}
 \Large
 
 さまざまな分野で使われています
@@ -1010,7 +1017,7 @@ Spanish & 485 & 74 & 559\\
 \end{frame}
 
 \begin{frame}{英語を身につけると}
-\phantomsection\label{ux82f1ux8a9eux3092ux8eabux306bux3064ux3051ux308bux3068}
+\protect\phantomsection\label{ux82f1ux8a9eux3092ux8eabux306bux3064ux3051ux308bux3068}
 \Large
 
 \textcolor{Maroon}{\bfseries 楽しい}ことがたくさんあります\pause
@@ -1019,7 +1026,7 @@ Spanish & 485 & 74 & 559\\
 \end{frame}
 
 \begin{frame}{英語は楽しい}
-\phantomsection\label{ux82f1ux8a9eux306fux697dux3057ux3044}
+\protect\phantomsection\label{ux82f1ux8a9eux306fux697dux3057ux3044}
 \Huge
 
 \centering
@@ -1028,11 +1035,11 @@ English is fun.
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-4}
+\protect\phantomsection\label{section-4}
 \end{frame}
 
 \begin{frame}[fragile]{Slide with R Output}
-\phantomsection\label{slide-with-r-output}
+\protect\phantomsection\label{slide-with-r-output}
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{summary}\NormalTok{(cars)}

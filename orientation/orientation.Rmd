@@ -2,7 +2,7 @@
 title: "English is fun"
 subtitle: "orientation"
 author: ""
-date: "2025"
+date: "2026-04-28"
 output:
   beamer_presentation:
     theme: metropolis
@@ -92,16 +92,21 @@ Can you hear it?
 
 \pause
 
-大塚一朗(Otsuka Ichiro)
+Mr Otsuka
+
+\vspace{-20pt}
+
+\hfill\includegraphics[width=.25\textwidth]{../images/otsuka_figure.png}
 
 \pause
-
-- 千葉LOTTE Marinesを応援しています
+\vspace{-150pt}
+- 千葉LOTTE Marinesが好き
 - ミステリーが好き
     - 本・ 映画・TVドラマ
-- 音楽はだいたいなんでも好き
+- 音楽が好き
     - BachとThe Beach Boysをよく聴きます  ← 首尾一貫していない
-- プログラミングが好き。しろうとレベルですが、楽しい
+- プログラミングが好き
+    - しろうとレベルですが、楽しい
 - やっぱりネコが好き
 \pause
 
@@ -184,7 +189,7 @@ English is fun.
 {\scriptsize 氏名と組み合わせた場合}
 \end{tabular}\\
 \midrule
-\ruby{穂毛}{ほ|げ} ホゲ\ruby{雄}{お}&\includegraphics[width=.2\textwidth]{../images/iotsuka2025.jpg}&
+\ruby{穂毛}{ほ|げ} ホゲ\ruby{雄}{お}&\includegraphics[width=.2\textwidth]{../images/otsuka_avatar.jpg}&
 \begin{tabular}{@{}c@{}}
 千葉県○○市○○町\\
 穂毛 ホゲ雄

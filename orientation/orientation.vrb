@@ -1,5 +1,5 @@
 \frametitle{Slide with R Output}
-\phantomsection\label{slide-with-r-output}
+\protect\phantomsection\label{slide-with-r-output}
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{summary}\NormalTok{(cars)}
