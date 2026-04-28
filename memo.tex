@@ -110,11 +110,78 @@ title=Question~\thetcbcounter: #2,#1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%
+\subsection*{gemini-cli}
+\verb*|npm view @google/gemini-cli version|
+
+\verb*|npm install -g @google/gemini-cli@latest|
+
+\verb*|gemini extensions list|
+
+\verb*|gemini extensions update nanobanana|
+
+\subsection*{audio関係}
+
+\paragraph{音声ファイル全般作成} inputファイルはssmlファイル。モデルはNeural2系のみ
+
+\verb|google_text2speech.py input.txt output.mp3|
+
+\paragraph{発音練習用音声ファイル作成}inputファイルはプレーンテキスト
+
+\verb|lesson_audio_generator.py input.txt output.mp3|
+
+\verb|-v en-US-Neural2-C|
+
+\verb|-r 1.0|
+
+\verb|-b 1.5s|
+
+\paragraph{音声ファイルの情報表示} sampling rateとdurationを表示
+
+
+\paragraph{音声ファイルの情報表示} sampling rateとdurationを表示
+
+\verb|get_audio_info.sh|
+
+\paragraph{音声・動画ファイル再生} \verb|my_media_player.sh|
+
+\paragraph{sampling rate変更} \verb|multi_format_converter.sh wav mp3|
+
+\begin{tblr}{
+  colspec = {l l},
+  hlines,
+  vlines,
+  row{1} = {font=\bfseries, bg=gray9},
+}
+音声名 (Name) & 性別 \\
+\texttt{en-US-Neural2-A} & \textbf{男性} \\
+\texttt{en-US-Neural2-C} & \textbf{女性} \\
+\texttt{en-US-Neural2-D} & \textbf{男性} \\
+\texttt{en-US-Neural2-E} & \textbf{女性} \\
+\texttt{en-US-Neural2-F} & \textbf{女性} \\
+\texttt{en-US-Neural2-G} & \textbf{女性} \\
+\texttt{en-US-Neural2-H} & \textbf{女性} \\
+\texttt{en-US-Neural2-I} & \textbf{男性} \\
+\texttt{en-US-Neural2-J} & \textbf{男性} \\
+\end{tblr}
+
+\begin{tblr}{
+  colspec = {l l},
+  hlines,
+  vlines,
+  row{1} = {font=\bfseries, bg=gray9},
+}
+音声名 (Name) & 性別 \\
+\texttt{ja-JP-Neural2-B} & \textbf{女性} \\
+\texttt{ja-JP-Neural2-C} & \textbf{男性} \\
+\texttt{ja-JP-Neural2-D} & \textbf{女性} \\
+\end{tblr}
+%%%%%%%%%%%%%%%%%
 \newpage
 %\tikzCoffeecup
 %\begin{tikzpicture}
 % \pig
-%\end{tikzpicture}
+%\end{tikzpicture}no
+
 %
 %\scalebox{5}{\Fork}
 %
@@ -130,30 +197,29 @@ title=Question~\thetcbcounter: #2,#1}
 
 Goob Morning! みなさん、おはようございます。
 %Hello! みなさん、こんにちは。
-お元気でいらっしゃいますか
+%お元気でいらっしゃいますか
 
 ごきげんいかがでしょう
 
 \mytoday{}、\DOWjpn{}曜日、
 時刻は
-午前10時20分
-%午前11時20分
+%午前10時20分
+午前11時20分
 %午後1時
 %午後2時
 をまわったところです。
 
-いつもどおり、きょうも、この時間は千葉市の幕張からお送りしていますが、
+%いつもどおり、きょうも、
+この英語の時間は昨年度までと同じで、千葉市の幕張からお送りしていますが、
 こちらの音声はちゃんと届いていますか。
 
 音声が届いていることが確認できて、一安心です。
 
 
 %今日は雨の降りやすい天気のようです。
-幕張は、
-気温が高めで寒さを感じません。
-ただ、
-朝から雨が降っています。
-風もかなり強くなっています。
+きのうは、いっときかなり強い雨が降りましたが、
+きょうの幕張は、
+とても気持ちのいい陽気になっています。
 
 %インフルエンザも流行しているそうです。
 %いま雨は降っていませんが、
@@ -163,14 +229,41 @@ Goob Morning! みなさん、おはようございます。
 %花粉症にお悩みの方いらしゃるとおもいますが、
 %万全の対策をお願いします。
 %外出した際には衣類などについた花粉を家の中に持ち込まないこともたいせつです。
-体調管理を万全に行ってください。
+%体調管理を万全に行ってください。
 
 %みなさんのお住まいの地域はいかがでしょうか
 %何か温かい飲み物でも用意するのもいいとおもいます。
 
 %これを頼みに、今週を乗り切れればいいなとおもっています。
 
-さて、きょうで今年度の授業もおしまいです。
+さて、2026年度のエデュオプ・ちばの授業はきのうスタートしました。
+英語についていえば、きのうは授業がありませんでしたから、きょうが初日ということになりますね。
+ところで、みなさん、きのうの授業おつかれさまでした。
+でだしはいかがでしたか。
+快調なすべりだしができました、という人もいれば、
+あまり気乗りがしないなとか、あるいは、とても緊張してしまったという人もいるかもしれませんね。
+人それぞれだとおもいますが、
+快調にスタートした人はよかったですし、
+あまり気乗りがしない人も心配することはありません。
+この先、まだまだ長いですから、ゆっくりと慣らしながら進んでいきましょう。
+いっしょうけんめいに、きちんとやらくっちゃ、などとりきむことはありませんよ。
+肩の力を抜いて、ゆったりとした気持ちで、参加できるときに参加してください。
+お手元に何か飲み物、好きなドリンクでも用意して参加するのもいいですよね。
+
+さて、申し遅れましたが、わたしは今年度、英語の時間を担当する大塚一朗
+といいます。
+おなじみの人も、初めての人も、どうぞよろしくお願いします。
+
+さて、昨年まで参加していた人はご承知のこととおもいますが、
+きょうはじめて顔を合わせるという人もいるとおもいます。
+ということで、はじめに自己紹介をごくごくかんたんにしたいとおもいます。
+
+(自己紹介)
+カメラOFF
+
+授業の進め方について
+
+
 %英語は、この時間を含めて、あと2時間ということになりました。
 %きょうは\DOWjpn{}曜日。
 %今週もはじまったばかりで、この先が長い感じがしますね。
@@ -181,49 +274,29 @@ Goob Morning! みなさん、おはようございます。
 %きょうで今週も終わり。
 %みなさんもこれが今週最後の時間ですね。
 %待ちに待っていた、かどうかまではわかりませんが、
-あと2時間で、春休みです。
+%あと2時間で、春休みです。
 %この時間で今週の授業も終わりということです。
 %やる気があまり出ないという人もいるかとおもいますが、この授業を聞いているみなさんは、いまここに参加しているだけでじゅうぶん。りっぱです。
 
-なんだかやる気がでないという人もいるとおもいますが、
-いまここに参加しているだけでもうじゅうぶん。
-あせることなく、ゆっくりと取り組んでいけばいいですね。
-
-そろそろ
-スタートしますが、
-あまり無理をせずに、
-ご自身のペースで参加してください。
-気負わず、肩の力を抜いて、
-リラックスしておつきあいください。
+%なんだかやる気がでないという人もいるとおもいますが、
+%いまここに参加しているだけでもうじゅうぶん。
+%あせることなく、ゆっくりと取り組んでいけばいいですね。
+%
+%そろそろ
+%スタートしますが、
+%あまり無理をせずに、
+%ご自身のペースで参加してください。
+%気負わず、肩の力を抜いて、
+%リラックスしておつきあいください。
 
 \hrulefill
 %
 
+英語を担当する大塚です
 
+いよいよエデュオプがスタートします
 
-
-
-せっかくの終業式なのに、
-残念ながら、あいにくの天気です
-
-でも、きょう2026年3月19日、
-べたに書けば
-20,260,319つまり
-2,026万319
-となりますが。
-素数です。
-
-天気はさえませんが、おめでたい日です。
-
-みなさん、1年間たいへんお世話になりました。
-
-いよいよ春休み。
-充実したお休みをおすごしください
-
-
-
-
-%英語を担当した大塚です
+みなさんと授業でお会いするのを楽しみにしています
 %
 %卒業式を英語ではcommencementといいます。
 %commencementはもともとは「最後、しめくくり」という意味で、
@@ -238,6 +311,47 @@ Goob Morning! みなさん、おはようございます。
 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\paragraph{資料準備}
+\begin{enumerate}
+ \item AdobeでスライドをFull Screenに
+ \item Opening VideoをChromeのTabへ
+ \item あいさつ読み原稿(Evince)
+ \item スライド手持ち(Sumatrapdf)
+\end{enumerate}
+
+\paragraph{Classroom準備}
+\begin{enumerate}
+ \item ClassroomからMeetのページへ
+ \item 自分のCameraをOFF
+ \item Micは生きているか、audio音声が流れるか確認$\longrightarrow$\,MicをOFF
+ \item 会議に参加
+ \item \begin{enumerate}
+ \item 参加者の画面共有OFF
+ \item 参加者のMicをOFF
+ \item 参加者のCameraをOFF
+\end{enumerate}
+\end{enumerate}
+
+\paragraph{資料の共有準備}
+\begin{enumerate}
+ \item 共有でスライドのwindowを共有
+ \item 共有でOpening VideoのTabを選択
+ \item Tab Audioの共有をOFF
+ \item このまま待機
+ \item 開始時刻直前にShare、MicをON
+ \item Opening Videoをrun
+\end{enumerate}
+
+\begin{enumerate}
+ \item Opening Videoが流れたら
+ \item 共有でスライドを選択、待機
+ \item Opening Videoが終わったら
+ \item スライドをShare、CameraをON
+ \item 話し始める
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 {\Huge\mbox{\tate 副校長\\
 安田 国士 様}}

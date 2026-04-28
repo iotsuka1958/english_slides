@@ -1,19 +1,17 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-%
 \documentclass[
   ignorenonframetext,
   aspectratio=169,
   xcolor=dvipsnames]{beamer}
+\newif\ifbibliography
 \usepackage{pgfpages}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{caption label separator}{: }
 \setbeamercolor{caption name}{fg=normal text.fg}
 \beamertemplatenavigationsymbolsempty
-% Prevent slide breaks in the middle of a paragraph
-\widowpenalties 1 10000
-\raggedbottom
+% remove section numbering
 \setbeamertemplate{part page}{
   \centering
   \begin{beamercolorbox}[sep=16pt,center]{part title}
@@ -22,16 +20,19 @@
 }
 \setbeamertemplate{section page}{
   \centering
-  \begin{beamercolorbox}[sep=12pt,center]{part title}
+  \begin{beamercolorbox}[sep=12pt,center]{section title}
     \usebeamerfont{section title}\insertsection\par
   \end{beamercolorbox}
 }
 \setbeamertemplate{subsection page}{
   \centering
-  \begin{beamercolorbox}[sep=8pt,center]{part title}
+  \begin{beamercolorbox}[sep=8pt,center]{subsection title}
     \usebeamerfont{subsection title}\insertsubsection\par
   \end{beamercolorbox}
 }
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
 \AtBeginPart{
   \frame{\partpage}
 }
@@ -44,7 +45,6 @@
 \AtBeginSubsection{
   \frame{\subsectionpage}
 }
-\usepackage{amsmath,amssymb}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -76,8 +76,6 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
-\newif\ifbibliography
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -120,21 +118,22 @@
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{graphicx}
 \makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
 % Set default figure placement to htbp
-\makeatletter
 \def\fps@figure{htbp}
 \makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 %% PDFメタデータの文字化け防止
 % https://blog.miz-ar.info/2015/09/latex-hyperref-tips/
 % https://tex.stackexchange.com/questions/24445/hyperref-lualatex-and-unicode-bookmarks-issue-garbled-page-numbers-in-ar-for-l
@@ -223,9 +222,6 @@
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
 %%%%%%%%%%%%%%%%%
 \usepackage{pxrubrica}
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -236,13 +232,13 @@
 
 \title{English is fun}
 \author{}
-\date{\vspace{-2.5em}2025}
+\date{\vspace{-2.5em}2026}
 
 \begin{document}
 \frame{\titlepage}
 
 \begin{frame}{}
-\phantomsection\label{section}
+\protect\phantomsection\label{section}
 \thispagestyle{empty}
 \Large
 
@@ -270,18 +266,18 @@ Can you hear it?
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-1}
+\protect\phantomsection\label{section-1}
 \thispagestyle{empty}
 \titlepage
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-2}
+\protect\phantomsection\label{section-2}
 \section{これまで}
 \end{frame}
 
 \begin{frame}{これまで}
-\phantomsection\label{ux3053ux308cux307eux3067}
+\protect\phantomsection\label{ux3053ux308cux307eux3067}
 \thispagestyle{empty}
 \LARGE
 
@@ -292,7 +288,7 @@ Can you hear it?
 \end{frame}
 
 \begin{frame}{きょうの予定}
-\phantomsection\label{ux304dux3087ux3046ux306eux4e88ux5b9a}
+\protect\phantomsection\label{ux304dux3087ux3046ux306eux4e88ux5b9a}
 \thispagestyle{empty}
 \LARGE
 
@@ -311,12 +307,12 @@ Can you hear it?
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-3}
+\protect\phantomsection\label{section-3}
 \section{世界のことば}
 \end{frame}
 
 \begin{frame}{世界のことば}
-\phantomsection\label{ux4e16ux754cux306eux3053ux3068ux3070}
+\protect\phantomsection\label{ux4e16ux754cux306eux3053ux3068ux3070}
 \Large
 
 Hello, World!
@@ -325,7 +321,7 @@ Hello, World!
 \end{frame}
 
 \begin{frame}{Japan is here}
-\phantomsection\label{japan-is-here}
+\protect\phantomsection\label{japan-is-here}
 \Large
 
 \textcolor{orange}{\bfseries Japan} is here.
@@ -334,12 +330,12 @@ Hello, World!
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-4}
+\protect\phantomsection\label{section-4}
 \section{どんなことばがあるだろう}
 \end{frame}
 
 \begin{frame}{どんなことばがあるだろう}
-\phantomsection\label{ux3069ux3093ux306aux3053ux3068ux3070ux304cux3042ux308bux3060ux308dux3046}
+\protect\phantomsection\label{ux3069ux3093ux306aux3053ux3068ux3070ux304cux3042ux308bux3060ux308dux3046}
 \Large
 
 日本では日本語
@@ -350,7 +346,7 @@ Quiz: 世界にはどんなことばがありますか
 \end{frame}
 
 \begin{frame}{日本語以外のことばをあげてみよう}
-\phantomsection\label{ux65e5ux672cux8a9eux4ee5ux5916ux306eux3053ux3068ux3070ux3092ux3042ux3052ux3066ux307fux3088ux3046}
+\protect\phantomsection\label{ux65e5ux672cux8a9eux4ee5ux5916ux306eux3053ux3068ux3070ux3092ux3042ux3052ux3066ux307fux3088ux3046}
 \Large
 
 \begin{itemize}[<+->]
@@ -379,12 +375,12 @@ Quiz: 世界にはどんなことばがありますか
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-5}
+\protect\phantomsection\label{section-5}
 \section{世界にはいくつのことばがあるの}
 \end{frame}
 
 \begin{frame}{世界にはいくつのことばがあるの}
-\phantomsection\label{ux4e16ux754cux306bux306fux3044ux304fux3064ux306eux3053ux3068ux3070ux304cux3042ux308bux306e}
+\protect\phantomsection\label{ux4e16ux754cux306bux306fux3044ux304fux3064ux306eux3053ux3068ux3070ux304cux3042ux308bux306e}
 \Large
 
 Quiz: ところで、世界にはいくつくらいことばがあるの？
@@ -405,23 +401,23 @@ Quiz: ところで、世界にはいくつくらいことばがあるの？
 \end{frame}
 
 \begin{frame}{Answer}
-\phantomsection\label{answer}
+\protect\phantomsection\label{answer}
 \Huge
 \vfill
 
 \centering
-7,159
+7,170
 
 \vfill
 
 \raggedleft
 \scriptsize
 
-\url{https://www.ethnologue.com/insights/how-many-languages/による}
+\href{https://www.ethnologue.com/insights/how-many-languages/による}{https://www.ethnologue.com/insights/how-many-languages/による}
 \end{frame}
 
 \begin{frame}{びっくり}
-\phantomsection\label{ux3073ux3063ux304fux308a}
+\protect\phantomsection\label{ux3073ux3063ux304fux308a}
 \Large
 
 \begin{columns}
@@ -436,19 +432,19 @@ Quiz: ところで、世界にはいくつくらいことばがあるの？
 \end{frame}
 
 \begin{frame}{そのうちのひとつ}
-\phantomsection\label{ux305dux306eux3046ux3061ux306eux3072ux3068ux3064}
+\protect\phantomsection\label{ux305dux306eux3046ux3061ux306eux3072ux3068ux3064}
 \Large
 
 ということは\pause
 
-日本語は\Huge \phantom{0}\(\frac{1}{7,159}\)\phantom{0}\Large ということですね
+日本語は\Huge \phantom{0}\(\frac{1}{7,170}\)\phantom{0}\Large ということですね
 
 \vfill
 \pause
 
 でもそれをいったら、\pause 英語もフランス語もドイツ語も\pause
 スペイン語もアラビア語もヒンディー語も\pause 中国語も韓国語も、\pause
-みーんな\Huge\phantom{0}\(\frac{1}{7,159}\)\phantom{0}\Large ということです
+みーんな\Huge\phantom{0}\(\frac{1}{7,170}\)\phantom{0}\Large ということです
 
 \vfill
 \pause
@@ -457,16 +453,16 @@ Quiz: ところで、世界にはいくつくらいことばがあるの？
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-6}
+\protect\phantomsection\label{section-6}
 \section{どのことばを話す人がおおいの}
 \end{frame}
 
 \begin{frame}{どのことばを話す人がおおいの}
-\phantomsection\label{ux3069ux306eux3053ux3068ux3070ux3092ux8a71ux3059ux4ebaux304cux304aux304aux3044ux306e}
+\protect\phantomsection\label{ux3069ux306eux3053ux3068ux3070ux3092ux8a71ux3059ux4ebaux304cux304aux304aux3044ux306e}
 \Large
 
-どのことばも7,159あることばのひとつ、\pause
-つまり\Huge\phantom{0}\(\frac{1}{7,159}\)\phantom{0}
+どのことばも7,170あることばのひとつ、\pause
+つまり\Huge\phantom{0}\(\frac{1}{7,170}\)\phantom{0}
 
 \Large
 \pause
@@ -481,7 +477,7 @@ Quiz: ところで、世界にはいくつくらいことばがあるの？
 \end{frame}
 
 \begin{frame}{Quiz}
-\phantomsection\label{quiz}
+\protect\phantomsection\label{quiz}
 \Large
 
 では、ここでもうひとつの問題です。
@@ -506,7 +502,7 @@ Quiz: ところで、世界にはいくつくらいことばがあるの？
 \end{frame}
 
 \begin{frame}{第一言語として話す人の数がおおいことば}
-\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3068ux3057ux3066ux8a71ux3059ux4ebaux306eux6570ux304cux304aux304aux3044ux3053ux3068ux3070}
+\protect\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3068ux3057ux3066ux8a71ux3059ux4ebaux306eux6570ux304cux304aux304aux3044ux3053ux3068ux3070}
 \raggedleft
 
 (単位: 100万人)
@@ -532,16 +528,16 @@ Hindi & 345\\
 \raggedleft
 \scriptsize
 
-\url{https://www.ethnologue.com/insights/most-spoken-language/による}
+\href{https://www.ethnologue.com/insights/most-spoken-language/による}{https://www.ethnologue.com/insights/most-spoken-language/による}
 \end{frame}
 
 \begin{frame}{生まれて初めて身につけたことば}
-\phantomsection\label{ux751fux307eux308cux3066ux521dux3081ux3066ux8eabux306bux3064ux3051ux305fux3053ux3068ux3070}
+\protect\phantomsection\label{ux751fux307eux308cux3066ux521dux3081ux3066ux8eabux306bux3064ux3051ux305fux3053ux3068ux3070}
 \includegraphics[height=0.95\textheight]{orientation_2_files/figure-beamer/unnamed-chunk-6-1}
 \end{frame}
 
 \begin{frame}{複数のことばを話す人もいますよね}
-\phantomsection\label{ux8907ux6570ux306eux3053ux3068ux3070ux3092ux8a71ux3059ux4ebaux3082ux3044ux307eux3059ux3088ux306d}
+\protect\phantomsection\label{ux8907ux6570ux306eux3053ux3068ux3070ux3092ux8a71ux3059ux4ebaux3082ux3044ux307eux3059ux3088ux306d}
 \Large
 
 ところで
@@ -552,7 +548,7 @@ Hindi & 345\\
 \end{frame}
 
 \begin{frame}{第一言語ではないけど、そのことば話します}
-\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3067ux306fux306aux3044ux3051ux3069ux305dux306eux3053ux3068ux3070ux8a71ux3057ux307eux3059}
+\protect\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3067ux306fux306aux3044ux3051ux3069ux305dux306eux3053ux3068ux3070ux8a71ux3057ux307eux3059}
 \Large
 
 第一言語ではないけれど、そのことばを話します
@@ -561,24 +557,24 @@ Hindi & 345\\
 \end{frame}
 
 \begin{frame}{第一言語として話す人の数はこうでしたね}
-\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3068ux3057ux3066ux8a71ux3059ux4ebaux306eux6570ux306fux3053ux3046ux3067ux3057ux305fux306d}
+\protect\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3068ux3057ux3066ux8a71ux3059ux4ebaux306eux6570ux306fux3053ux3046ux3067ux3057ux305fux306d}
 \includegraphics[height=0.95\textheight]{orientation_2_files/figure-beamer/unnamed-chunk-7-1}
 \end{frame}
 
 \begin{frame}{第一言語ではない人を合わせるとこうなります}
-\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3067ux306fux306aux3044ux4ebaux3092ux5408ux308fux305bux308bux3068ux3053ux3046ux306aux308aux307eux3059}
+\protect\phantomsection\label{ux7b2cux4e00ux8a00ux8a9eux3067ux306fux306aux3044ux4ebaux3092ux5408ux308fux305bux308bux3068ux3053ux3046ux306aux308aux307eux3059}
 \includegraphics[height=0.95\textheight]{orientation_2_files/figure-beamer/unnamed-chunk-8-1}
 \end{frame}
 
 \begin{frame}{あれあれ}
-\phantomsection\label{ux3042ux308cux3042ux308c}
+\protect\phantomsection\label{ux3042ux308cux3042ux308c}
 \Huge
 
 大逆転！
 \end{frame}
 
 \begin{frame}{つまり}
-\phantomsection\label{ux3064ux307eux308a}
+\protect\phantomsection\label{ux3064ux307eux308a}
 \raggedleft
 
 (単位: 100万人)
@@ -602,14 +598,14 @@ Spanish & 484 & 74 & 558\\
 
 \scriptsize
 
-\url{https://www.ethnologue.com/insights/most-spoken-language/による}
+\href{https://www.ethnologue.com/insights/most-spoken-language/による}{https://www.ethnologue.com/insights/most-spoken-language/による}
 \end{frame}
 
 \begin{frame}{話す人を全部あわせると}
-\phantomsection\label{ux8a71ux3059ux4ebaux3092ux5168ux90e8ux3042ux308fux305bux308bux3068}
+\protect\phantomsection\label{ux8a71ux3059ux4ebaux3092ux5168ux90e8ux3042ux308fux305bux308bux3068}
 \Large
 
-世界には7,159のことばがありますが、
+世界には7,170のことばがありますが、
 
 ぜんぶあわせると\pause
 話す人がいちばんおおいのは\textcolor{Maroon}{英語}\pause
@@ -630,12 +626,12 @@ Spanish & 484 & 74 & 558\\
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-7}
+\protect\phantomsection\label{section-7}
 \section{話者の空間的分布}
 \end{frame}
 
 \begin{frame}{そのことばを話す人はどこに住んでいるの}
-\phantomsection\label{ux305dux306eux3053ux3068ux3070ux3092ux8a71ux3059ux4ebaux306fux3069ux3053ux306bux4f4fux3093ux3067ux3044ux308bux306e}
+\protect\phantomsection\label{ux305dux306eux3053ux3068ux3070ux3092ux8a71ux3059ux4ebaux306fux3069ux3053ux306bux4f4fux3093ux3067ux3044ux308bux306e}
 \Large
 
 中国語と英語を話す人が
@@ -644,31 +640,31 @@ Spanish & 484 & 74 & 558\\
 \end{frame}
 
 \begin{frame}{Chinese}
-\phantomsection\label{chinese}
-\includegraphics{orientation_2_files/figure-beamer/unnamed-chunk-10-1.pdf}
+\protect\phantomsection\label{chinese}
+\pandocbounded{\includegraphics[keepaspectratio]{orientation_2_files/figure-beamer/unnamed-chunk-10-1.pdf}}
 \end{frame}
 
 \begin{frame}{中国語を話す人}
-\phantomsection\label{ux4e2dux56fdux8a9eux3092ux8a71ux3059ux4eba}
+\protect\phantomsection\label{ux4e2dux56fdux8a9eux3092ux8a71ux3059ux4eba}
 \Large
 
 \textcolor{Maroon}{中国語}を話す人は\textcolor{Maroon}{中国に集中}していますね
 \end{frame}
 
 \begin{frame}{English}
-\phantomsection\label{english}
-\includegraphics{orientation_2_files/figure-beamer/unnamed-chunk-11-1.pdf}
+\protect\phantomsection\label{english}
+\pandocbounded{\includegraphics[keepaspectratio]{orientation_2_files/figure-beamer/unnamed-chunk-11-1.pdf}}
 \end{frame}
 
 \begin{frame}{English}
-\phantomsection\label{english-1}
+\protect\phantomsection\label{english-1}
 \Large
 
 \textcolor{NavyBlue}{英語}を話す人は\textcolor{NavyBlue}{世界中にいます}
 \end{frame}
 
 \begin{frame}{つまり}
-\phantomsection\label{ux3064ux307eux308a-1}
+\protect\phantomsection\label{ux3064ux307eux308a-1}
 \Large
 
 \textcolor{Maroon}{中国語}を話す人は、\textcolor{Maroon}{中国に集中}しています\pause
@@ -677,12 +673,12 @@ Spanish & 484 & 74 & 558\\
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-8}
+\protect\phantomsection\label{section-8}
 \section{わたしたちが学ぶ英語とは}
 \end{frame}
 
 \begin{frame}{わたしたちが勉強する英語ってどんなことばなの}
-\phantomsection\label{ux308fux305fux3057ux305fux3061ux304cux52c9ux5f37ux3059ux308bux82f1ux8a9eux3063ux3066ux3069ux3093ux306aux3053ux3068ux3070ux306aux306e}
+\protect\phantomsection\label{ux308fux305fux3057ux305fux3061ux304cux52c9ux5f37ux3059ux308bux82f1ux8a9eux3063ux3066ux3069ux3093ux306aux3053ux3068ux3070ux306aux306e}
 \Large
 
 \begin{itemize}[<+->]
@@ -701,7 +697,7 @@ Spanish & 484 & 74 & 558\\
 \end{frame}
 
 \begin{frame}{英語は世界の共通語}
-\phantomsection\label{ux82f1ux8a9eux306fux4e16ux754cux306eux5171ux901aux8a9e}
+\protect\phantomsection\label{ux82f1ux8a9eux306fux4e16ux754cux306eux5171ux901aux8a9e}
 \Large
 
 さまざまな分野で使われています
@@ -720,7 +716,7 @@ Spanish & 484 & 74 & 558\\
 \end{frame}
 
 \begin{frame}{英語を身につけると}
-\phantomsection\label{ux82f1ux8a9eux3092ux8eabux306bux3064ux3051ux308bux3068}
+\protect\phantomsection\label{ux82f1ux8a9eux3092ux8eabux306bux3064ux3051ux308bux3068}
 \Large
 
 \textcolor{Maroon}{\bfseries 楽しい}ことがたくさんあります\pause
@@ -729,7 +725,7 @@ Spanish & 484 & 74 & 558\\
 \end{frame}
 
 \begin{frame}{}
-\phantomsection\label{section-9}
+\protect\phantomsection\label{section-9}
 \Huge
 
 \centering
@@ -740,11 +736,11 @@ English is fun.
 \section{See you next time.}\label{see-you-next-time.}
 
 \begin{frame}{}
-\phantomsection\label{section-10}
+\protect\phantomsection\label{section-10}
 \end{frame}
 
 \begin{frame}[fragile]{Slide with R Output}
-\phantomsection\label{slide-with-r-output}
+\protect\phantomsection\label{slide-with-r-output}
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{summary}\NormalTok{(cars)}

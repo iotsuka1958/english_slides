@@ -2,7 +2,7 @@
 title: "English is fun"
 #subtitle: "orientation"
 author: ""
-date: "2025"
+date: "2026"
 output:
   beamer_presentation:
     theme: metropolis
@@ -235,7 +235,7 @@ Quiz: ところで、世界にはいくつくらいことばがあるの？
 \vfill
 
 \centering
-7,159
+7,170
 
 \vfill
 
@@ -265,7 +265,7 @@ https://www.ethnologue.com/insights/how-many-languages/による
 ということは\pause
 
 
-日本語は\Huge \phantom{0}$\frac{1}{7,159}$\phantom{0}\Large ということですね
+日本語は\Huge \phantom{0}$\frac{1}{7,170}$\phantom{0}\Large ということですね
 
 \vfill
 \pause
@@ -274,7 +274,7 @@ https://www.ethnologue.com/insights/how-many-languages/による
 英語もフランス語もドイツ語も\pause
 スペイン語もアラビア語もヒンディー語も\pause
 中国語も韓国語も、\pause
-みーんな\Huge\phantom{0}$\frac{1}{7,159}$\phantom{0}\Large ということです
+みーんな\Huge\phantom{0}$\frac{1}{7,170}$\phantom{0}\Large ということです
 
 \vfill
 \pause
@@ -290,8 +290,8 @@ https://www.ethnologue.com/insights/how-many-languages/による
 
 \Large
 
-どのことばも7,159あることばのひとつ、\pause
-つまり\Huge\phantom{0}$\frac{1}{7,159}$\phantom{0}
+どのことばも7,170あることばのひとつ、\pause
+つまり\Huge\phantom{0}$\frac{1}{7,170}$\phantom{0}
 
 \Large
 \pause
@@ -462,7 +462,7 @@ https://www.ethnologue.com/insights/most-spoken-language/による
 ## 話す人を全部あわせると
 \Large
 
-世界には7,159のことばがありますが、
+世界には7,170のことばがありますが、
 
 ぜんぶあわせると\pause
 話す人がいちばんおおいのは\textcolor{Maroon}{英語}\pause
