@@ -1,2 +1,6 @@
-Did he say no to her?
-He said no to her.
+cook<break time="2s"/>cook
+steak<break time="2s"/>steak
+back<break time="2s"/>back
+black<break time="2s"/>black
+like<break time="2s"/>like
+sick<break time="2s"/>sick

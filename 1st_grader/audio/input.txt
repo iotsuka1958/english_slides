@@ -1,9 +1,3 @@
-popular
-famous
-fast
-slowly
-busy
-interesting
-colorful
-decide
-agree
+Why is he sad?<break time="2s"/>Because it is rainy.
+Why do you like pasta?<break time="2s"/>Because it is delicious.
+Why do you study English?<break time="2s"/>Because I like English songs.
