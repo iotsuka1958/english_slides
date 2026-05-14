@@ -141,7 +141,9 @@ title=Question~\thetcbcounter: #2,#1}
 
 \paragraph{音声・動画ファイル再生} \verb|my_media_player.sh|
 
-\paragraph{sampling rate変更} \verb|multi_format_converter.sh wav mp3|
+\paragraph{mp3ファイルのsampling rateを22050に変更} \verb|mp3_resample_22k.sh|
+
+\paragraph{音声ファイルの形式変更} \verb|multi_format_converter.sh wav mp3|
 
 \paragraph{Google TTSの音声一覧} 　
 
@@ -194,8 +196,8 @@ title=Question~\thetcbcounter: #2,#1}
 
 {\gtfamily\bfseries
 
-Goob Morning! みなさん、おはようございます。
-%Hello! みなさん、こんにちは。
+%Goob Morning! みなさん、おはようございます。
+Hello! みなさん、こんにちは。
 %お元気でいらっしゃいますか
 
 ごきげんいかがでしょう
@@ -204,8 +206,8 @@ Goob Morning! みなさん、おはようございます。
 時刻は
 %午前10時20分
 %午前11時20分
-%午後1時
-午後2時
+午後1時
+%午後2時
 をまわったところです。
 
 いつもどおり、きょうも、
@@ -219,7 +221,7 @@ Goob Morning! みなさん、おはようございます。
 %今日は雨の降りやすい天気のようです。
 きょうの幕張は、
 きれいに晴れて日差しが届いています。
-日向にでると、暑く感じます。
+暑く感じます。
 みなさんのお住まいの地域はいかがでしょうか
 
 %どうか体調管理を万全に行ってください。
@@ -229,12 +231,13 @@ Goob Morning! みなさん、おはようございます。
 \bigskip
 
 %英語は、この時間を含めて、あと2時間ということになりました。
-%きょうは\DOWjpn{}曜日。
+きょうは\DOWjpn{}曜日。
 %今週もはじまったばかりで、この先が長い感じがしますね。
-きょうは水曜日ですから、
-なんとか今週の折り返し地点まできましたね。今週の授業はきょうをいれてあと3日です。
-これは4時間目ですから、この時間が終われば、あと二日です。
-%今週の授業もきょうと明日の2日となりました。ちょっぴり先が見えてきた感じ。あともう一息というところです。
+%なんとか今週の折り返し地点まできましたね。今週の授業はきょうをいれてあと3日です。
+%これは4時間目ですから、この時間が終われば、あと二日です。
+今週の授業もきょうと明日の2日となりました。
+これは木曜日の3時間目ですから、この時間が終われば、あと1日です。
+ちょっぴり先が見えてきた感じ。あともう一息というところです。
 
 %きょうで今週も終わり。
 %みなさんもこれが今週最後の時間ですね。
@@ -256,9 +259,18 @@ Goob Morning! みなさん、おはようございます。
 
 \bigskip
 
-\noindent{}1年：資料の置き場の動画 $+$ 001\_alphabet.pdf $+$ 002\_sv.pdf\\
-2年：pronunciation\_vowel.pdf(\textipa{/ae/}) $+$ 018\_why.pdf\\
-3年：pronunciation\_{}tips.pdf $+$ 041\_as\_as.pdf
+\noindent{}%
+\begin{tabular}{ll}
+1年：&資料の置き場の動画 $+$ 002\_sv.pdf\\
+2年：&pronunciation\_vowel.pdf(\textipa{/ae/}) $+$ 018\_why.pdf\\
+&\url{video/slide/1_018_why_slides.mp4(0853)}\\
+&\url{audio/overview/018_why_audio_overview.m4a(1519)}\\
+&\url{audio/manzai/018_why_manzai.mp3(0244)}\\
+3年：&pronunciation\_{}tips.pdf $+$ 041\_as\_as.pdf\\
+&\url{video/slide/2_041_as_as_slides.mp4(0707)}\\
+&\url{audio/overview/041_as_as_audio_overview.mp4(1305)}\\
+&\url{audio/manzai/041_as_as_manzai.mp3(0256)}\\
+\end{tabular}
 
 %
 %卒業式を英語ではcommencementといいます。
@@ -277,10 +289,11 @@ Goob Morning! みなさん、おはようございます。
 \newpage
 \paragraph{資料準備}
 \begin{enumerate}
- \item AdobeでスライドをFull Screenに
- \item Opening VideoをChromeのTabへ
- \item あいさつ読み原稿(Evince)
- \item スライド手持ち(Sumatrapdf)
+ \item Adobeでスライドを読み込みFull Screenに
+ \item Opening動画をChromeのTabへ \url{my_chrome opening/opening_scene_whole.mp4}
+ \item あいさつ読み原稿を表示 \url{evince memo.pdf\&} 
+ \item スライド手持ちを表示(Sumatrapdf)
+ \item 時計表示
 \end{enumerate}
 
 \paragraph{Classroom準備}
@@ -289,31 +302,19 @@ Goob Morning! みなさん、おはようございます。
  \item 自分のCameraをOFF
  \item Micは生きているか、audio音声が流れるか確認$\longrightarrow$\,MicをOFF
  \item 会議に参加
- \item \begin{enumerate}
- \item 参加者の画面共有OFF
- \item 参加者のMicをOFF
- \item 参加者のCameraをOFF
-\end{enumerate}
+ \item 参加者の画面共有・Mic・CameraをすべてOFF
+ \item MeetでOpening動画のTabを共有(Audioの共有をOFF)してShare
+ \item Opening動画のTABに移動
+ \item picture in pictureをlaptopの画面へ
 \end{enumerate}
 
-\paragraph{資料の共有準備}
+\paragraph{Opening}
 \begin{enumerate}
- \item 共有でスライドのwindowを共有
- \item 共有でOpening VideoのTabを選択
- \item Tab Audioの共有をOFF
- \item このまま待機
- \item 開始時刻直前にShare、MicをON
- \item Opening Videoをrun
+ \item 開始時刻直前にMicをON、Opening動画をrun
+ \item (Opening動画が終わったら)CameraをON、あいさつ
+ \item あいさつが終わったらCameraをOFF、スライドを共有
 \end{enumerate}
-
-\begin{enumerate}
- \item Opening Videoが流れたら
- \item 共有でスライドを選択、待機
- \item Opening Videoが終わったら
- \item スライドをShare、CameraをON
- \item 話し始める
-\end{enumerate}
-
+\end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 {\Huge\mbox{\tate 副校長\\
