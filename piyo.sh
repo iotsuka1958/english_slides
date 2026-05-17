@@ -1,33 +1,26 @@
 #!/usr/bin/env bash
-#以下2年pdf
-pdftk pronunciation/pronunciation_vowel.pdf cat 507 517 output 2nd_grader/upload_archive/20260310/pronunciation_20260310.pdf
-pdftk pronunciation/pronunciation_vowel.pdf cat 518 528 output 2nd_grader/upload_archive/20260311/pronunciation_20260311.pdf
-pdftk pronunciation/pronunciation_vowel.pdf cat 547 557 output 2nd_grader/upload_archive/20260312/pronunciation_20260312.pdf
-pdftk pronunciation/pronunciation_vowel.pdf cat 558 568 output 2nd_grader/upload_archive/20260313/pronunciation_20260313.pdf
-pdftk pronunciation/pronunciation_vowel.pdf cat 586 596 output 2nd_grader/upload_archive/20260317/pronunciation_20260317.pdf
-pdftk pronunciation/pronunciation_vowel.pdf cat 597 607 output 2nd_grader/upload_archive/20260318/pronunciation_20260318.pdf
-pdftk pronunciation/pronunciation_vowel.pdf cat 611 612 618 output 2nd_grader/upload_archive/20260319/pronunciation_20260319.pdf
-#以下2年mp3
-cp pronunciation/audio/vowel_ei_02.mp3  2nd_grader/upload_archive/20260310/pronunciation_20260310.mp3
-cp pronunciation/audio/vowel_ei_03.mp3  2nd_grader/upload_archive/20260311/pronunciation_20260311.mp3
-cp pronunciation/audio/vowel_long_o_02.mp3  2nd_grader/upload_archive/20260312/pronunciation_20260312.mp3
-cp pronunciation/audio/vowel_long_o_03.mp3  2nd_grader/upload_archive/20260313/pronunciation_20260313.mp3
-cp pronunciation/audio/vowel_ou_02.mp3  2nd_grader/upload_archive/20260317/pronunciation_20260317.mp3
-cp pronunciation/audio/vowel_ou_03.mp3  2nd_grader/upload_archive/20260318/pronunciation_20260318.mp3
-cp pronunciation/audio/vowel_boat_bought_01.mp3  2nd_grader/upload_archive/20260319/pronunciation_20260319.mp3
-# 以下1年pdf
-pdftk pronunciation/pronunciation_consonant.pdf cat 541 output 1st_grader/upload_archive/20260310/pronunciation_20260310.pdf
-pdftk pronunciation/pronunciation_consonant.pdf cat 542 output 1st_grader/upload_archive/20260311/pronunciation_20260311.pdf
-pdftk pronunciation/pronunciation_consonant.pdf cat 543 output 1st_grader/upload_archive/20260312/pronunciation_20260312.pdf
-pdftk pronunciation/pronunciation_consonant.pdf cat 544 output 1st_grader/upload_archive/20260313/pronunciation_20260313.pdf
-pdftk pronunciation/pronunciation_consonant.pdf cat 545 538 output 1st_grader/upload_archive/20260317/pronunciation_20260317.pdf
-pdftk pronunciation/pronunciation_consonant.pdf cat 546 output 1st_grader/upload_archive/20260318/pronunciation_20260318.pdf
-pdftk pronunciation/pronunciation_consonant.pdf cat 547 output 1st_grader/upload_archive/20260319/pronunciation_20260319.pdf
-#以下1年mp3
-cp pronunciation/audio/consonant_f_v_01.mp3  1st_grader/upload_archive/20260310/pronunciation_20260310.mp3
-cp pronunciation/audio/consonant_s_z_01.mp3  1st_grader/upload_archive/20260311/pronunciation_20260311.mp3
-cp pronunciation/audio/consonant_Th_01.mp3  1st_grader/upload_archive/20260312/pronunciation_20260312.mp3
-cp pronunciation/audio/consonant_textesh_textyogh_01.mp3  1st_grader/upload_archive/20260313/pronunciation_20260313.mp3
-cp pronunciation/audio/consonant_ts_dz_01.mp3  1st_grader/upload_archive/20260317/pronunciation_20260317.mp3
-cp pronunciation/audio/consonant_ttextesh_dtextyogh_01.mp3  1st_grader/upload_archive/20260318/pronunciation_20260318.mp3
-cp pronunciation/audio/consonant_l_r_01.mp3  1st_grader/upload_archive/20260319/pronunciation_20260319.mp3
+pdftk 1st_grader/999quiz_full_version.pdf cat 16 21 output 1st_grader/upload_archive/20260519/20260519.pdf
+pdftk 1st_grader/999quiz_full_version.pdf cat 22 29 output 1st_grader/upload_archive/20260520/20260520.pdf
+pdftk 1st_grader/999quiz_full_version.pdf cat 31 36  output 1st_grader/upload_archive/20260521/20260521.pdf
+pdftk 1st_grader/999quiz_full_version.pdf cat 37 41 output 1st_grader/upload_archive/20260522/20260522.pdf
+pdftk 1st_grader/999quiz_full_version.pdf cat 42 48 output 1st_grader/upload_archive/20260526/20260526.pdf
+pdftk 1st_grader/999quiz_full_version.pdf cat 49 54  output 1st_grader/upload_archive/20260527/20260527.pdf
+pdftk 1st_grader/999quiz_full_version.pdf cat 55 59  output 1st_grader/upload_archive/20260528/20260528.pdf
+pdftk 1st_grader/999quiz_full_version.pdf cat 60 66 output 1st_grader/upload/_rchive/20260529/20260529.pdf
+# mp3
+cp 1st_grader/audio/quiz/quiz_c.mp3 1st_grader/upload_archive/20260519/quiz_20260519.pdf
+cp 1st_grader/audio/quiz/answer_c.mp3 1st_grader/upload_archive/20260519/answer_20260519.pdf
+cp 1st_grader/audio/quiz/quiz_d.mp3 1st_grader/upload_archive/20260520/quiz_20260520.pdf
+cp 1st_grader/audio/quiz/answer_d.mp3 1st_grader/upload_archive/20260520/answer_20260520.pdf
+cp 1st_grader/audio/quiz/quiz_e.mp3 1st_grader/upload_archive/20260521/quiz_20260521.pdf
+cp 1st_grader/audio/quiz/answer_e.mp3 1st_grader/upload_archive/20260521/answer_20260521.pdf
+cp 1st_grader/audio/quiz/quiz_f.mp3 1st_grader/upload_archive/20260522/quiz_20260522.pdf
+cp 1st_grader/audio/quiz/answer_f.mp3 1st_grader/upload_archive/20260522/answer_20260522.pdf
+cp 1st_grader/audio/quiz/quiz_g.mp3 1st_grader/upload_archive/20260526/quiz_20260526.pdf
+cp 1st_grader/audio/quiz/answer_g.mp3 1st_grader/upload_archive/20260526/answer_20260526.pdf
+cp 1st_grader/audio/quiz/quiz_h.mp3 1st_grader/upload_archive/20260527/quiz_20260527.pdf
+cp 1st_grader/audio/quiz/answer_h.mp3 1st_grader/upload_archive/20260527/answer_20260527.pdf
+cp 1st_grader/audio/quiz/quiz_i.mp3 1st_grader/upload_archive/20260528/quiz_20260528.pdf
+cp 1st_grader/audio/quiz/answer_i.mp3 1st_grader/upload_archive/20260528/answer_20260528.pdf
+cp 1st_grader/audio/quiz/quiz_j.mp3 1st_grader/upload_archive/20260529/quiz_20260529.pdf
+cp 1st_grader/audio/quiz/answer_j.mp3 1st_grader/upload_archive/20260529/answer_20260529.pdf
