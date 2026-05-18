@@ -1,6 +1,3 @@
-cook<break time="2s"/>cook
-steak<break time="2s"/>steak
-back<break time="2s"/>back
-black<break time="2s"/>black
-like<break time="2s"/>like
-sick<break time="2s"/>sick
+cup<break time="2s"/>cup
+cut<break time="2s"/>cut
+nut<break time="2s"/>nut
