@@ -1,3 +1,9 @@
-Eating vegetables is good for your health.<break time="2s"/>To eat vegetables is good for your health.
-His job is helping students .<break time="2s"/>His job is to help students .
-She started singing.<break time="2s"/>She started to sing.
+cheap<break time="2s"/>cheap
+famous<break time="2s"/>famous
+planet<break time="2s"/>planet
+in fact<break time="2s"/>in fact
+heavy<break time="2s"/>heavy
+near<break time="2s"/>near
+need<break time="2s"/>need
+get up<break time="2s"/>get up
+important<break time="2s"/>important
