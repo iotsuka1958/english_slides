@@ -120,7 +120,7 @@
 \end{block}
 
 % Embed the sound file
-\hfill{\tiny 0251}\,{\scriptsize \myaudio{audio/002_be_01.mp3}}
+\hfill{\tiny 0251}\,{\tiny \myaudio{audio/002_be_01.mp3}01}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]\frametitle{am, are, is --- みんな、なかまです}
@@ -170,7 +170,7 @@ be動詞$\left\{\begin{tabular}[c]{l}
      \end{block}
 
 % Embed the sound file
-\hfill{\tiny 0250}\,{\scriptsize \myaudio{./audio/002_be_02.mp3}}
+\hfill{\tiny 0250}\,{\tiny \myaudio{./audio/002_be_02.mp3}02}
 
 
 \end{frame}
@@ -253,9 +253,9 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 \end{enumerate}
 
 \normalsize
-{\tiny 0137}\,{\scriptsize \myaudio{audio/002_be_021.mp3}}
+{\tiny 0137}\,{\tiny \myaudio{audio/002_be_021.mp3}021}
 \hfill{}%
-{\tiny 0136}\,{\scriptsize \myaudio{audio/002_be_022.mp3}}
+{\tiny 0136}\,{\tiny \myaudio{audio/002_be_022.mp3}022}
 
 
 \normalsize
@@ -280,12 +280,12 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 \begin{frame}[plain,label=youare,t]\frametitle{You are 〜.}
  % \setbeamercovered{transparent}
   \begin{enumerate}
-   \item<1-> \textbf{\color{Maroon}{You are}} my friend. \visible<2->{{\scriptsize あなたはわたしのともだちです。}}\hfill\visible<1->{\scriptsize 　friend \textipa{/fr\'end/} ともだち、友人}
-   \item<1-> \textbf{\color{Maroon}{You are}} very kind. \visible<3->{{\scriptsize あなたはとても親切だ。}}\hfill\visible<1->{\scriptsize 　kind \textipa{/k\'aInd/} 親切だ}
-   \item<1-> \textbf{\color{Maroon}{You are}} a good student. \visible<4->{{\scriptsize あなたはいい生徒です。}}\hfill\visible<1->{\scriptsize 　student: 生徒}
-   \item<1-> \textbf{\color{Maroon}{You are}} good at baseball. \visible<5->{{\scriptsize あなたは野球がうまい。}}\hfill\visible<1->{\scriptsize 　good at 〜がうまい、得意だ}
-   \item<1-> \textbf{\color{Maroon}{You are}} busy. \visible<6->{{\scriptsize あなたは忙しい。}}\hfill\visible<1->{\scriptsize 　busy \textipa{/b\'Izi/} 忙しい}
-   \item<1-> \textbf{\color{Maroon}{You are}} from Chiba. \visible<7->{{\scriptsize あなたは千葉の出身です。}}\hfill\visible<1->{\scriptsize 　from 〜の出身だ}
+   \item<1-> \textbf{\color{Maroon}{You are}}\onslide*<10->{($=$You're)} my friend. \visible<2->{{\scriptsize あなたはわたしのともだちです。}}\hfill\visible<1->{\scriptsize 　friend \textipa{/fr\'end/} ともだち、友人}
+   \item<1-> \textbf{\color{Maroon}{You are}}\onslide*<10->{($=$You're)}  very kind. \visible<3->{{\scriptsize あなたはとても親切だ。}}\hfill\visible<1->{\scriptsize 　kind \textipa{/k\'aInd/} 親切だ}
+   \item<1-> \textbf{\color{Maroon}{You are}}\onslide*<10->{($=$You're)}  a good student. \visible<4->{{\scriptsize あなたはいい生徒です。}}\hfill\visible<1->{\scriptsize 　student: 生徒}
+   \item<1-> \textbf{\color{Maroon}{You are}}\onslide*<10->{($=$You're)}  good at baseball. \visible<5->{{\scriptsize あなたは野球がうまい。}}\hfill\visible<1->{\scriptsize 　good at 〜がうまい、得意だ}
+   \item<1-> \textbf{\color{Maroon}{You are}}\onslide*<10->{($=$You're)}  busy. \visible<6->{{\scriptsize あなたは忙しい。}}\hfill\visible<1->{\scriptsize 　busy \textipa{/b\'Izi/} 忙しい}
+   \item<1-> \textbf{\color{Maroon}{You are}}\onslide*<10->{($=$You're)}  from Chiba. \visible<7->{{\scriptsize あなたは千葉の出身です。}}\hfill\visible<1->{\scriptsize 　from 〜の出身だ}
   \end{enumerate}
 
 \vfill
@@ -294,12 +294,20 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 \begin{itemize}\setbeamertemplate{items}[square]
  \item 主語がyouのときbe動詞は\textbf{are}をつかいます
  \item \textbf{You are} 〜.をひとつのパターンとして覚えよう
+ \item<9-> \textbf{You are $=$ You're}\tikzmark{target1}\\
+\mbox{}\hfill{}\tikzmark{pointer1}%
+\visible<7->{{\scriptsize 短縮形といいます。 \Circled[fill color=white]{~'~}\,をapostrophy\,(アポストロフィ)といいます\phantom{あ}}}
 \end{itemize}
      \end{block}
 
 % Embed the sound file
-\hfill{\tiny 0245}\,{\scriptsize \myaudio{audio/002_be_03.mp3}}
+\hfill{\tiny you\_are 0245}\,{\tiny \myaudio{audio/002_be_03.mp3}03}
 
+\hfill{\tiny you're 0245}\,{\tiny \myaudio{audio/002_be_03a.mp3}03a}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:target1) to[out=-15, in=180] ([xshift=-2pt, yshift=2pt] pic cs:pointer1);}
+\end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}<1-9>[plain]{Exercises}
@@ -326,7 +334,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
      \end{block}
 
 % Embed the sound file
-\hfill{\tiny 0158}\,{\scriptsize \myaudio{audio/002_be_031.mp3}}
+\hfill{\tiny 0158}\,{\tiny \myaudio{audio/002_be_031.mp3}031}
 
 \begin{tikzpicture}[remember picture,overlay]
  \visible<8->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:target2) to[out=-15, in=180] ([xshift=-2pt, yshift=2pt] pic cs:pointer2);}
@@ -384,7 +392,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
      \end{block}
 
 % Embed the sound file
-\hfill{\tiny 0248}\,{\scriptsize \myaudio{audio/002_be_04.mp3}}
+\hfill{\tiny 0248}\,{\tiny \myaudio{audio/002_be_04.mp3}04}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -420,7 +428,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 \vspace*{-5pt}
 % Embed the sound file
 
-\hfill{\tiny 0200}\,{\scriptsize \myaudio{audio/002_be_041.mp3}}\\
+\hfill{\tiny 0200}\,{\tiny \myaudio{audio/002_be_041.mp3}041}\\
 \hfill{\scriptsize それぞれ2行目の短縮形の練習です}
 
 \end{frame}
@@ -450,7 +458,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 
 % Embed the sound file
 
-\hfill{\tiny 0248}\,{\scriptsize \myaudio{audio/002_be_05.mp3}}
+\hfill{\tiny 0248}\,{\tiny \myaudio{audio/002_be_05.mp3}05}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -489,7 +497,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
 
 % Embed the sound file
 
-\hfill{\tiny 0135}\,{\scriptsize \myaudio{audio/002_be_051.mp3}}\\
+\hfill{\tiny 0135}\,{\tiny \myaudio{audio/002_be_051.mp3}051}\\
 \hfill{\scriptsize それぞれ2行目の短縮形の練習です}
 
 \end{frame}
@@ -521,7 +529,7 @@ To view a copy of this license, visit \url{https://creativecommons.org/licenses/
  \item I~~( \alt<7->{\Circled[outer color=orange]{am}}{am} / is / are )~~hungry.
 \end{enumerate}
 
-\mbox{}\hfill{\tiny 0239}\,{\scriptsize \myaudio{audio/002_be_06.mp3}}
+\mbox{}\hfill{\tiny 0239}\,{\tiny \myaudio{audio/002_be_06.mp3}06}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
