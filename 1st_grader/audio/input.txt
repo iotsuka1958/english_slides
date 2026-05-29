@@ -1,3 +1,6 @@
-Why is he sad?<break time="2s"/>Because it is rainy.
-Why do you like pasta?<break time="2s"/>Because it is delicious.
-Why do you study English?<break time="2s"/>Because I like English songs.
+You're my friend.
+You're very kind.
+You're a good student.
+You're good at baseball.
+You're busy.
+You're from Chiba.
