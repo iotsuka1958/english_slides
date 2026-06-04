@@ -560,7 +560,7 @@ be動詞---am, are, is---は主語に応じて使い分けがあります
 % 補助グリッドを描画
 %\draw[step=1cm, gray!20, very thin] (-6,-2) grid (6,6);
 % ノードの定義と配置
-\visible<1->{\node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be動詞};}
+\visible<1->{\node[circle, draw=black, fill=yellow!30, minimum size=20mm, line width=1pt] (A) at (0,0) {\LARGE be};}
 \visible<2->{\node[circle, draw=black, fill=pink!30,minimum size=15mm, line width=1pt] (B) at (-6,0) {\LARGE am};}
 \visible<3->{\node[circle, draw=black, fill=blue!30, minimum size=15mm, line width=1pt] (C) at (0,5) {\LARGE are};}
 \visible<4->{\node[circle, draw=black, fill=green!30, minimum size=15mm, line width=1pt] (D) at (6,0) {\LARGE is};}
@@ -571,25 +571,41 @@ be動詞---am, are, is---は主語に応じて使い分けがあります
 \visible<6->{\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {主語がYou}  node[sloped, below] {} (C);}
 \visible<7->{\draw[-latex, line width=1.5pt] (A) -- node[sloped, above] {主語がYou}  node[sloped, below] {{\textcolor{Maroon}{主語が複数}}} (C);}
 \visible<8->{\draw[-latex, line width=1.5pt] (A) -- node[above] {\textcolor{Maroon}{主語が単数}} node[below] {} (D);}
+% 9枚目に「be」の真下に（原形）を表示
+\visible<9->{\node[below] at (0,-1.2) {(原形)};}
+% 9枚目：各ノードの周りに説明テキストを表示
+\visible<10->{
+%  \node[below] at (0,-1.2) {(原形)};       % be の真下
+  \node[below] at (-6,-1.0) {(現在形)};    % am の真下
+  \node[below] at (6,-1.0) {(現在形)};     % is の真下
+  \node[right] at (1.2,5) {(現在形)};      % are の右横
+}
 \end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{短縮形}
  \begin{center}
- \rowcolors{2}{NavyBlue!50}{yellow!40}
-\begin{tabular}{ll}\toprule
+ \begin{tabular}{ll}\toprule
 {\small }&{\small 短縮形}\\\midrule
+\rowcolor{NavyBlue!50} % 2行目（データ1行目）
 \visible<1->{I am}&\visible<2->{{\small I'm}}\\
+\rowcolor{yellow!40}   % 3行目
 \visible<1->{You are}&\visible<3->{{\small You're}}\\
+\rowcolor{NavyBlue!50} % 4行目
 \visible<1->{He is}&\visible<4->{{\small He's}}\\
+\rowcolor{yellow!40}   % 5行目
 \visible<1->{She is}&\visible<5->{{\small She's}}\\
+\rowcolor{NavyBlue!50} % 6行目
 \visible<1->{It is}&\visible<6->{{\small It's}}\\
+\rowcolor{yellow!40}   % 7行目
 \visible<1->{That is}&\visible<7->{{\small That's}}\\
+\rowcolor{NavyBlue!50} % 8行目
 \visible<1->{We are}&\visible<8->{{\small We're}}\\
+\rowcolor{yellow!40}   % 9行目
 \visible<1->{They are　　}&\visible<9->{{\small They're　　}}\\
 \bottomrule
-\end{tabular}%
+\end{tabular}
 \end{center}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
