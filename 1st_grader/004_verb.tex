@@ -25,6 +25,10 @@
 \usepackage{manfnt}
 \usepackage{array}
 \usepackage{pxrubrica}
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+\usepackage{booktabs}
+\usepackage{lua-ul}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand*\myCrossedOut[2]{%
   \tikz[baseline=(T.base)]
@@ -234,9 +238,10 @@ eat（食べる）& drink（飲む）\pause\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{わたし、あなた、それ以外}
 \subsection{人称とは}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=ninsyo]\frametitle{人称}
 
-\begin{alertblock}{人称とは}
+\begin{block}{人称とは}
 \begin{description}
 \item[1人称] 話し手（自分）のこと\pause{}\,\,{} $\longrightarrow$ \textbf{I}と\textbf{we}だけ\pause
 \item[2人称] 聞き手（相手）のこと\pause{}\,\,{} $\longrightarrow$ \textbf{you}だけ\pause
@@ -253,9 +258,9 @@ the cats\\\pause
 \ldots\hfill{}きりがない
  \end{tabular}
 \end{description}
-\end{alertblock}
+\end{block}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]\frametitle{Exercises}
 \onslide*<1->{つぎの文の主語は何人称ですか？}\hfill{\tiny 0253}\,{\scriptsize \myaudio{audio/004_verb_02.mp3}}
 
@@ -360,8 +365,45 @@ live / go / speak / drink / eat
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{be動詞と一般動詞 / 原形と現在形}
+ 
+\begin{tabular}{llll}\toprule
+ 動詞&原形 &現在形 &主語\\\midrule
+ \visible<2->{be動詞}&\visible<3->{be}&
+    \visible<4->{$\left\{\begin{tabular}{ll}
+     am&\\
+     are&\\
+     is&
+    \end{tabular}\right.$} &
+    \visible<5->{$\left.\begin{tabular}{l}
+     I\\
+     you / （\,I / you以外の）複数\\
+     \hspace{29.5pt}（\,I / you以外の）単数\\
+    \end{tabular}\right.$} \\\midrule
+\visible<6->{一般動詞}&\visible<7->{like}&
+    \visible<8->{$\left\{\begin{tabular}{ll}
+     like\,\,\,($=$\,原形と同じ)& \\
+     likes\,($=$\,原形 $+$ s\,)& \\
+    \end{tabular}\right.$} &
+     \visible<9->{$\left.\begin{tabular}{l}
+     三人称単数以外\\
+     三人称単数\\
+    \end{tabular}\right. $}\\\bottomrule
+\end{tabular} 
 
-\subsection{s以外の3単現}
+\bigskip
+
+\visible<10->{{\small Q. つぎの英文の下線部の動詞は原形か現在形か、答えてください}
+\vspace{-5pt}
+\begin{enumerate}
+ \item He \underline{is} very kind.
+ \item \underline{Are} you hungry?  
+ \item She \underline{likes} music.
+ \item I \underline{like} sushi. 
+\end{enumerate}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{注意するべき3単現}
 \begin{frame}[plain,label=exception]\frametitle{s以外の3単現}
 
   \begin{enumerate}
@@ -397,19 +439,27 @@ live / go / speak / drink / eat
 %\againframe<19>{exception}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意するべき3単現}
- \begin{center}
- \rowcolors{2}{NavyBlue!40}{yellow!40}
+\begin{center}
+{\small % 表全体の文字を小さくする指定
 \begin{tabular}{rlll}\toprule
-&{\small 原形}&{\small 3単現}&{\small 発音}\\\midrule
-1&\visible<1->{play}&\visible<2->{{\small plays}}&\visible<9->{\textipa{/z/}}\\
-2&\visible<1->{drink}&\visible<3->{{\small drinks}}&\visible<10->{\textipa{/s/}}\\
-3&\visible<1->{go}&\visible<4->{{\small goes}}&\visible<12->{\textipa{/z/}}\\
-4&\visible<1->{teach}&\visible<5->{{\small teaches}}&\visible<13->{\textipa{/\textsci{}z/}}\\
-5&\visible<1->{wash}&\visible<6->{{\small washes}}&\visible<14->{\textipa{/\textsci{}z/}}\\
-6&\visible<1->{watch}&\visible<7->{{\small watches}}&\visible<15->{\textipa{/\textsci{}z/}}\\
-7&\visible<1->{have}&\visible<8->{{\small has}}&\visible<17->{\textipa{/h\'\ae z/}}\\
+&原形&3単現&発音\\\midrule
+\rowcolor{NavyBlue!40} % 1行目：紺
+1&\visible<1->{play}&\visible<2->{plays}&\visible<9->{\textipa{/z/}}\\
+\rowcolor{yellow!40}   % 2行目：黄
+2&\visible<1->{drink}&\visible<3->{drinks}&\visible<10->{\textipa{/s/}}\\
+\rowcolor{NavyBlue!40} % 3行目：紺
+3&\visible<1->{go}&\visible<4->{goes}&\visible<12->{\textipa{/z/}}\\
+\rowcolor{yellow!40}   % 4行目：黄
+4&\visible<1->{teach}&\visible<5->{teaches}&\visible<13->{\textipa{/\textsci{}z/}}\\
+\rowcolor{NavyBlue!40} % 5行目：紺
+5&\visible<1->{wash}&\visible<6->{washes}&\visible<14->{\textipa{/\textsci{}z/}}\\
+\rowcolor{yellow!40}   % 6行目：黄
+6&\visible<1->{watch}&\visible<7->{watches}&\visible<15->{\textipa{/\textsci{}z/}}\\
+\rowcolor{NavyBlue!40} % 7行目：紺
+7&\visible<1->{have}&\visible<8->{has}&\visible<17->{\textipa{/h\'\ae z/}}\\
 \bottomrule
 \end{tabular}%
+}
 \end{center}
 
 \visible<11->{\scriptsize 3単現の\,\Circled{\,s\,}\,の発音は\textipa{/z/}と濁るときと\textipa{/s/}と濁らないときがあります}
@@ -485,20 +535,29 @@ Dangerous Bendとは「危険な曲がり角」という意味
 \begin{frame}<16-18>[plain,label=hyo]{注意するべき3単現}
 
 
- \begin{center}
- \rowcolors{2}{NavyBlue!40}{yellow!40}
+\begin{center}
+{\small % 表全体の文字を小さくする指定
 \begin{tabular}{rlll}\toprule
-&{\small 原形}&{\small 3単現}&{\small 発音}\\\midrule
-1&\visible<1->{play}&\visible<2->{{\small plays}}&\visible<10->{\textipa{/z/}}\\
-2&\visible<1->{drink}&\visible<3->{{\small drinks}}&\visible<11->{\textipa{/s/}}\\
-3&\visible<1->{go}&\visible<4->{{\small goes}}&\visible<12->{\textipa{/z/}}\\
-4&\visible<1->{teach}&\visible<5->{{\small teaches}}&\visible<13->{\textipa{/\textsci{}z/}}\\
-5&\visible<1->{wash}&\visible<6->{{\small washes}}&\visible<14->{\textipa{/\textsci{}z/}}\\
-6&\visible<1->{watch}&\visible<7->{{\small watches}}&\visible<15->{\textipa{/\textsci{}z/}}\\
-7&\visible<1->{have}&\visible<8->{{\small has}}&\visible<16->{\textipa{/z/}}\\
-8&\visible<16->{study}&\visible<17->{{\small studies}}&\visible<18->{\textipa{/z/}}\\
+&原形&3単現&発音\\\midrule
+\rowcolor{NavyBlue!40} % 1行目：紺
+1&\visible<1->{play}&\visible<2->{plays}&\visible<10->{\textipa{/z/}}\\
+\rowcolor{yellow!40}   % 2行目：黄
+2&\visible<1->{drink}&\visible<3->{drinks}&\visible<11->{\textipa{/s/}}\\
+\rowcolor{NavyBlue!40} % 3行目：紺
+3&\visible<1->{go}&\visible<4->{goes}&\visible<12->{\textipa{/z/}}\\
+\rowcolor{yellow!40}   % 4行目：黄
+4&\visible<1->{teach}&\visible<5->{teaches}&\visible<13->{\textipa{/\textsci{}z/}}\\
+\rowcolor{NavyBlue!40} % 5行目：紺（ここを修正しました）
+5&\visible<1->{wash}&\visible<6->{washes}&\visible<14->{\textipa{/\textsci{}z/}}\\
+\rowcolor{yellow!40}   % 6行目：黄
+6&\visible<1->{watch}&\visible<7->{watches}&\visible<15->{\textipa{/\textsci{}z/}}\\
+\rowcolor{NavyBlue!40} % 7行目：紺
+7&\visible<1->{have}&\visible<8->{has}&\visible<16->{\textipa{/z/}}\\
+\rowcolor{yellow!40}   % 8行目：黄
+8&\visible<16->{study}&\visible<17->{studies}&\visible<18->{\textipa{/z/}}\\
 \bottomrule
 \end{tabular}%
+}
 \end{center}
 
 
