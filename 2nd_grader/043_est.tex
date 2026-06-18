@@ -19,6 +19,7 @@
 \usepackage[absolute,overlay]{textpos}
 %\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
+\usepackage{pxrubrica}
 \usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
@@ -51,7 +52,7 @@
 
 \begin{enumerate}
  \item<1-> The Nile River is \only<2->{\myEmph[2-]{Maroon}{the}} long\only<2->{\myEmph[2-]{Maroon}{est} in the world}.%
-\hfill{\tiny 0243}\,{\scriptsize \myaudio{./audio/043_est_01.mp3}}
+\hfill{\tiny 0243}\,{\scriptsize \myaudio{./audio/043_est_01.mp3}\,01}
  \item<1-> Mt. Fuji is \only<3->{\myEmph[3-]{Maroon}{the}} high\only<3->{\myEmph[3-]{Maroon}{est} in Japan}.
  \item<1-> Jennifer is \only<4->{\myEmph[4-]{Maroon}{the}} tall\only<4->{\myEmph[4-]{Maroon}{est} in her school}.
  \item<1-> Peter is \only<5->{\myEmph[5-]{Maroon}{the}} young\only<5->{\myEmph[5-]{Maroon}{est} of the three brothers}.
@@ -60,13 +61,13 @@
 
 \begin{block}<7->{Topics for Today}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 「もっとも〜だ」は\,\,\,\,\,$\text{the} +%
+ \item<7-> 「もっとも〜だ」は\,\,\,\,\,$\text{the} +%
 \Circled[fill color=white]{\,\,\,\,\,\left\{\begin{tabular}{l}
             形容詞\\
             副詞
          \end{tabular}\right\} + \text{\myEmph[5-]{Maroon}{est}\,\,\,\,}}$
-\,\,\,\,\,で表します。「最上級」といいます
- \item \fcolorbox{white}{white}{the $+$ 最上級}のあとには\,\,$\left\{
+\,\,\,\,\,で表します。\kenten{最上級}といいます
+ \item<8-> \fcolorbox{white}{white}{the $+$ 最上級}のあとには\,\,$\left\{
 \begin{tabular}{l}
  \text{in} + \text{範囲を表す語}\\
  \text{of} + \text{複数}
@@ -100,7 +101,7 @@ cheap&\visible<9->{cheaper}&\visible<18->{cheapest}\\
 fast&\visible<10->{faster}&\visible<19->{fastest}\\
    \end{tblr}
 
-\hfill{\tiny 0654}\,{\scriptsize \myaudio{./audio/043_est_01a.mp3}}
+\hfill{\tiny 0654}\,{\scriptsize \myaudio{./audio/043_est_01a.mp3}\,01a}
 
 \begin{textblock*}{0.4\linewidth}(300pt,168pt)
 \visible<20->{\begin{tikzpicture}
@@ -119,7 +120,7 @@ speech={\tiny まずは原則！}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 日本語の意味になるよう空所に適当な語を選択肢から選んで補いましょう。\\必要に応じて変化させてください%
-\hfill{\tiny 0217}\,{\scriptsize \myaudio{./audio/043_est_02.mp3}}
+\hfill{\tiny 0217}\,{\scriptsize \myaudio{./audio/043_est_02.mp3}\,02}
 
 \begin{columns}[t]
  \begin{column}{.78\textwidth}
@@ -151,7 +152,7 @@ speech={\tiny まずは原則！}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \begin{frame}[plain]{Exercises}
 日本語の意味になるよう(~~~~~~)に適語を補いましょう%
-\hfill{\tiny 0215}\,{\scriptsize \myaudio{./audio/043_est_03.mp3}}
+\hfill{\tiny 0215}\,{\scriptsize \myaudio{./audio/043_est_03.mp3}\,03}
   \begin{enumerate}
    \item ナイル川は世界でいちばん長い。\\
 	 The Nile River is (~~\alt<2->{\myEmph[2-]{Maroon}{the}}{\phantom{the}}~~) (~~\alt<2->{\myEmph[2-]{Maroon}{longest}}{\phantom{longest}}~~) (~~\alt<2->{\myEmph[2-]{Maroon}{in}}{\phantom{in}}~~) the world.
@@ -170,7 +171,7 @@ speech={\tiny まずは原則！}
 \begin{frame}[plain]{注意すべき最上級のつくり方}
  \begin{enumerate}
   \item<1-> The park is \only<2->{\myEmph[2-]{Maroon}{the}} \alt<2->{larg\myEmph[2-]{Maroon}{est} in the city}{large}.%
-\hfill{\tiny 0304}\,{\scriptsize \myaudio{./audio/043_est_04.mp3}}
+\hfill{\tiny 0304}\,{\scriptsize \myaudio{./audio/043_est_04.mp3}\,04}
   \item<1-> The question is \only<3->{\myEmph[3-]{Maroon}{the}} \alt<3->{eas\myEmph[3-]{Maroon}{iest} of all}{easy}.
   \item<1-> The box was \only<4->{\myEmph[4-]{Maroon}{the}} \alt<4->{heav\myEmph[3-]{Maroon}{iest} of all}{heavy}.
   \item<1-> John is \only<5->{\myEmph[5-]{Maroon}{the}} \alt<5->{bus\myEmph[2-]{Maroon}{iest} in the hospital}{busy}.
@@ -180,11 +181,11 @@ speech={\tiny まずは原則！}
 
 \begin{block}<8->{Topics for Today}
 {\small 原則は語尾に--estをつける。
-ただし}
+ただし、つぎの3パターンに注意}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 最後がeのときは--stだけつける\\\hfill{}large -- largest, wide -- widest, nice --nicest, fine --finest　
- \item 最後のyをiにして--estをつけるもの\\\hfill{}easy -- easiest, heavy -- heaviest, busy -- busiest, happy -- happiest, early -- earliest　
- \item 最後の文字を重ねて --estをつけるもの\hfill{}hot -- hottest, big -- biggest　
+ \item<9-> 最後がeのときは--stだけつける\\\hfill{}large -- largest, wide -- widest, nice --nicest, fine --finest　
+ \item<10-> 最後のyをiにして--estをつけるもの\\\hfill{}easy -- easiest, heavy -- heaviest, busy -- busiest, happy -- happiest, early -- earliest　
+ \item<11-> 最後の文字を重ねて --estをつけるもの\hfill{}hot -- hottest, big -- biggest　
 
  \end{itemize}
      \end{block}
@@ -214,7 +215,7 @@ nice&\visible<2->{nicer}&\visible<5->{nicest}\\
 fine&\visible<2->{finer}&\visible<6->{finest}\\
    \end{tblr}
 
-{\tiny 0326}\,{\scriptsize \myaudio{./audio/043_est_05a.mp3}}
+{\tiny 0326}\,{\scriptsize \myaudio{./audio/043_est_05a.mp3}\,05a}
 
 
 \end{column}
@@ -239,7 +240,7 @@ happy&\visible<7->{happier}&\visible<11->{happiest}\\
 early&\visible<7->{earlier}&\visible<12->{earliest}\\
    \end{tblr}
 
-{\tiny 0411}\,{\scriptsize \myaudio{./audio/043_est_05b.mp3}}
+{\tiny 0411}\,{\scriptsize \myaudio{./audio/043_est_05b.mp3}\,05b}
 
 \end{column}
 %%%%%%%%%%%%%%%%%%%%%%
@@ -260,15 +261,15 @@ hot&\visible<13->{hotter}&\visible<14->{hottest}\\
 big&\visible<13->{bigger}&\visible<15->{biggest}
    \end{tblr}
 
-{\tiny 0157}\,{\scriptsize \myaudio{./audio/043_est_05c.mp3}}
+{\tiny 0157}\,{\scriptsize \myaudio{./audio/043_est_05c.mp3}\,05c}
 \end{column}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{columns}
 
 \vfill
 
-\visible<17->{{\small 微妙な差異はありますが、語尾が--estであることにかわりありませんね}}%
-\hfill{\tiny 0618}\,{\scriptsize \myaudio{./audio/043_est_05.mp3}}
+\visible<16->{{\small 微妙な差異はありますが、語尾が--estであることにかわりありませんね}}%
+\hfill{\tiny 0618}\,{\scriptsize \myaudio{./audio/043_est_05.mp3}\,05}
 
 \begin{textblock*}{0.4\linewidth}(350pt,140pt)
 \visible<16->{\begin{tikzpicture}
@@ -286,7 +287,7 @@ signback=white!80!brown
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 日本語の意味になるよう(~~~~~~)に適語を補いましょう%
-\hfill{\tiny 0309}\,{\scriptsize \myaudio{./audio/043_est_06.mp3}}
+\hfill{\tiny 0309}\,{\scriptsize \myaudio{./audio/043_est_06.mp3}\,06}
  \begin{enumerate}
   \item その象は動物園でいちばん大きい動物だ。\\
 	The elephant is the (~~\alt<2->{\textcolor{Maroon}{\bfseries largest}}{\phantom{largest}}~~) animal in the zoo. \visible<2->{または\textcolor{Maroon}{\bfseries biggest}}
@@ -295,13 +296,13 @@ signback=white!80!brown
   \item デイブはメンバーの中でいちばん早く起きた。\\
 	Dave got up the (~~\alt<4->{\textcolor{Maroon}{\bfseries earliest}}{\phantom{earliest}}~~) of all the members.
   \item 砂漠(desert)は地球上でもっとも暑い場所です。\hfill{\scriptsize desert \textipa{/d\'ez\textrhookschwa t/}}\\
-	The desert is the (~~\alt<5->{\textcolor{Maroon}{\bfseries hottest}}{\phantom{hottest}}~~) place on Earth.
+	The desert is the (~~\alt<5->{\textcolor{Maroon}{\bfseries hottest}}{\phantom{hottest}}~~) place on Earth.\hfill{\scriptsize cf. dessert \textipa{/dIz\'\textrhookschwa :t/} デザート}
   \item わたしにとって秋がもっとも幸せな季節です。\\
 	Fall  is the (~~\alt<6->{\textcolor{Maroon}{\bfseries happiest}}{\phantom{happiest}}~~) season for me.
  \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{聞いてみよう、読んでみよう}
+\section{聞いてみよう、読んでみよう{\tiny 0341}\,{\scriptsize \myaudio{./audio/043_est_07a.mp3}\,07a}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
@@ -310,7 +311,7 @@ signback=white!80!brown
 
 \vspace{-30pt}
 
-\hfill{\tiny 0341}\,{\scriptsize \myaudio{./audio/043_est_07a.mp3}}
+\hfill{\tiny 0341}\,{\scriptsize \myaudio{./audio/043_est_07a.mp3}\,07a}
 
 \normalsize
 \begin{textblock*}{0.4\linewidth}(128pt,218pt)
@@ -331,7 +332,6 @@ the busiest station in the world}}
 the hottest place on Earth}}
 \end{textblock*}
 
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]\frametitle{Exercises}
@@ -341,10 +341,10 @@ the hottest place on Earth}}
   colbacktitle=ForestGreen!40!white,
   coltitle=black, %fonttitle=\bfseries,
   fonttitle=\small,
-  title=次の英文を読んで、空所に適語を補いましょう\hfill{\tiny 0341}\,{\scriptsize \myaudio{./audio/043_est_07a.mp3}}]
+  title=次の英文を読んで、空所に適語を補いましょう\hfill{\tiny 0341}\,{\scriptsize \myaudio{./audio/043_est_07a.mp3}\,07a}]
 \parindent=15pt
 
-\noindent{}
+\noindent{}%
 Let's learn about our world.
 What is the highest\tikzmark{clue1} mountain in Japan?
 It is Mount Fuji.
@@ -374,7 +374,7 @@ This information is not the easiest, but it is interesting.
 
 
 \visible<2->{{\scriptsize 「なんとなく」ではなく根拠をはっきりさせましょう}}
-\hfill{\tiny 0313}\,{\scriptsize \myaudio{./audio/043_est_07b.mp3}}
+\hfill{\tiny 0313}\,{\scriptsize \myaudio{./audio/043_est_07b.mp3}\,07b}
 
 \begin{tikzpicture}[remember picture,overlay]
  \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
@@ -430,7 +430,7 @@ This information is not the easiest, but it is interesting.
 \Circled[fill color=white]{\,\,\,\,\,\left\{\begin{tabular}{l}
             形容詞\\
             副詞
-         \end{tabular}\right\} + \text{\myEmph[5-]{Maroon}{est}\,\,\,\,}}$
+         \end{tabular}\right\} + \text{\myEmph[1-]{Maroon}{est}\,\,\,\,}}$
 \,\,\,\,\,で表します。「最上級」といいます
  \item \fcolorbox{white}{white}{the $+$ 最上級}のあとには\,\,$\left\{
 \begin{tabular}{l}
@@ -443,11 +443,11 @@ This information is not the easiest, but it is interesting.
 
 \begin{block}<2->{Topics for Today}
 {\small 原則は語尾に--estをつける。
-ただし}
+ただし、つぎの3パターンに注意}
 \begin{itemize}\setbeamertemplate{items}[square]\small
- \item 最後がeのときは--stだけつける\\\hfill{}large -- largest, wide -- widest, nice --nicest, fine --finest　
- \item 最後のyをiにして--estをつけるもの\\\hfill{}easy -- easiest, heavy -- heaviest, busy -- busiest, happy -- happiest, early -- earliest　
- \item 最後の文字を重ねて --erをつけるもの\hfill{}hot -- hottest, big -- biggest　
+ \item<3-> 最後がeのときは--stだけつける\\\hfill{}large -- largest, wide -- widest, nice --nicest, fine --finest　
+ \item<4-> 最後のyをiにして--estをつけるもの\\\hfill{}easy -- easiest, heavy -- heaviest, busy -- busiest, happy -- happiest, early -- earliest　
+ \item<5-> 最後の文字を重ねて --erをつけるもの\hfill{}hot -- hottest, big -- biggest　
 
  \end{itemize}
      \end{block}
