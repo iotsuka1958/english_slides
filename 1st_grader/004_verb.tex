@@ -441,27 +441,26 @@ live / go / speak / drink / eat
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\againframe<19>{exception}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{注意するべき3単現}
 \begin{center}
 {\small % 表全体の文字を小さくする指定
-\begin{tabular}{rlll}\toprule
-&原形&3単現&発音\\\midrule
-\rowcolor{NavyBlue!40} % 1行目：紺
+\begin{tblr}{colspec={rlll},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1,Z} = { 0.08em },
+hline{2} = { 0.05em },
+row{odd}={gray9},
+row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
+}
+&原形&3単現&発音\\
 1&\visible<1->{play}&\visible<2->{plays}&\visible<9->{\textipa{/z/}}\\
-\rowcolor{yellow!40}   % 2行目：黄
 2&\visible<1->{drink}&\visible<3->{drinks}&\visible<10->{\textipa{/s/}}\\
-\rowcolor{NavyBlue!40} % 3行目：紺
 3&\visible<1->{go}&\visible<4->{goes}&\visible<12->{\textipa{/z/}}\\
-\rowcolor{yellow!40}   % 4行目：黄
 4&\visible<1->{teach}&\visible<5->{teaches}&\visible<13->{\textipa{/\textsci{}z/}}\\
-\rowcolor{NavyBlue!40} % 5行目：紺
 5&\visible<1->{wash}&\visible<6->{washes}&\visible<14->{\textipa{/\textsci{}z/}}\\
-\rowcolor{yellow!40}   % 6行目：黄
 6&\visible<1->{watch}&\visible<7->{watches}&\visible<15->{\textipa{/\textsci{}z/}}\\
-\rowcolor{NavyBlue!40} % 7行目：紺
 7&\visible<1->{have}&\visible<8->{has}&\visible<17->{\textipa{/h\'\ae z/}}\\
-\bottomrule
-\end{tabular}%
+\end{tblr}%
 }
 \end{center}
 
@@ -474,8 +473,6 @@ live / go / speak / drink / eat
 \mbox{}\hfill{\tiny 0422}\,{\scriptsize \myaudio{audio/004_verb_041.mp3}\,041}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,label=zzz]\frametitle{Exercises}
 
@@ -532,42 +529,34 @@ live / go / speak / drink / eat
 Dangerous Bendとは「危険な曲がり角」という意味
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}<16-18>[plain,label=hyo]{注意するべき3単現}
-
+\begin{frame}<15-19>[plain,label=hyo]{注意するべき3単現}
 
 \begin{center}
 {\small % 表全体の文字を小さくする指定
-\begin{tabular}{rlll}\toprule
-&原形&3単現&発音\\\midrule
-\rowcolor{NavyBlue!40} % 1行目：紺
-1&\visible<1->{play}&\visible<2->{plays}&\visible<10->{\textipa{/z/}}\\
-\rowcolor{yellow!40}   % 2行目：黄
-2&\visible<1->{drink}&\visible<3->{drinks}&\visible<11->{\textipa{/s/}}\\
-\rowcolor{NavyBlue!40} % 3行目：紺
-3&\visible<1->{go}&\visible<4->{goes}&\visible<12->{\textipa{/z/}}\\
-\rowcolor{yellow!40}   % 4行目：黄
-4&\visible<1->{teach}&\visible<5->{teaches}&\visible<13->{\textipa{/\textsci{}z/}}\\
-\rowcolor{NavyBlue!40} % 5行目：紺（ここを修正しました）
-5&\visible<1->{wash}&\visible<6->{washes}&\visible<14->{\textipa{/\textsci{}z/}}\\
-\rowcolor{yellow!40}   % 6行目：黄
-6&\visible<1->{watch}&\visible<7->{watches}&\visible<15->{\textipa{/\textsci{}z/}}\\
-\rowcolor{NavyBlue!40} % 7行目：紺
-7&\visible<1->{have}&\visible<8->{has}&\visible<16->{\textipa{/z/}}\\
-\rowcolor{yellow!40}   % 8行目：黄
+\begin{tblr}{colspec={rlll},
+% 表の最上と最下に太さ 0.08em の横罫線
+hline{1,Z} = { 0.08em },
+hline{2} = { 0.05em },
+row{odd}={gray9},
+row{1} = { halign = c, font = { \sffamily\bfseries }, bg = gray6, fg = white }
+}
+&原形&3単現&発音\\
+1&\visible<1->{play}&\visible<2->{plays}&\visible<9->{\textipa{/z/}}\\
+2&\visible<1->{drink}&\visible<3->{drinks}&\visible<10->{\textipa{/s/}}\\
+3&\visible<1->{go}&\visible<4->{goes}&\visible<11->{\textipa{/z/}}\\
+4&\visible<1->{teach}&\visible<5->{teaches}&\visible<12->{\textipa{/\textsci{}z/}}\\
+5&\visible<1->{wash}&\visible<6->{washes}&\visible<13->{\textipa{/\textsci{}z/}}\\
+6&\visible<1->{watch}&\visible<7->{watches}&\visible<14->{\textipa{/\textsci{}z/}}\\
+7&\visible<1->{have}&\visible<8->{has}&\visible<15->{\textipa{/h\'\ae z/}}\\
 8&\visible<16->{study}&\visible<17->{studies}&\visible<18->{\textipa{/z/}}\\
-\bottomrule
-\end{tabular}%
+\end{tblr}%
 }
 \end{center}
 
 
 \vspace{-40pt}
-\visible<1-18>{\raisebox{\height}{\dbend}\,studyを追加しよう$\longrightarrow$}
-
-
+\visible<16-18>{\raisebox{\height}{\dbend}\,studyを追加しよう$\longrightarrow$}
 
 \mbox{}\hfill{\tiny 0541}\,{\scriptsize \myaudio{audio/004_verb_06.mp3}\,06}
 
