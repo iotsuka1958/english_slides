@@ -1,3 +1,9 @@
-She plays the guitar.
-He lives in Boston.
-Jane drinks coffee.
+grandfather<break time="2s"/>grandfather
+zoo<break time="2s"/>zoo
+elephant<break time="2s"/>elephant
+desert<break time="2s"/>desert
+land<break time="2s"/>land
+whale<break time="2s"/>whale
+What about pizza?<break time="2s"/>What about pizza?
+information<break time="2s"/>information
+interesting<break time="2s"/>interesting

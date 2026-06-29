@@ -1,24 +1,12 @@
-pdftk  pronunciation/pronunciation_tips.pdf cat 11 output 3rd_grader/upload_archive/20260519/pronunciation_20260519.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 12 output 3rd_grader/upload_archive/20260520/pronunciation_20260520.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 13 output 3rd_grader/upload_archive/20260521/pronunciation_20260521.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 14 output 3rd_grader/upload_archive/20260522/pronunciation_20260522.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 15 25 output 3rd_grader/upload_archive/20260526/pronunciation_20260526.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 35 output 3rd_grader/upload_archive/20260527/pronunciation_20260527.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 49 output 3rd_grader/upload_archive/20260528/pronunciation_20260528.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 50 output 3rd_grader/upload_archive/20260529/pronunciation_20260529.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 62 output 3rd_grader/upload_archive/20260602/pronunciation_20260602.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 63 output 3rd_grader/upload_archive/20260603/pronunciation_20260603.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 70 output 3rd_grader/upload_archive/20260604/pronunciation_20260604.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 76 output 3rd_grader/upload_archive/20260605/pronunciation_20260605.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 77 output 3rd_grader/upload_archive/20260609/pronunciation_20260609.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 79 82 output 3rd_grader/upload_archive/20260610/pronunciation_20260610.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 93 output 3rd_grader/upload_archive/20260611/pronunciation_20260611.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 94 output 3rd_grader/upload_archive/20260612/pronunciation_20260612.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 95 98 output 3rd_grader/upload_archive/20260616/pronunciation_20260616.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 107 output 3rd_grader/upload_archive/20260617/pronunciation_20260617.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 108 output 3rd_grader/upload_archive/20260618/pronunciation_20260618.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 109 112 output 3rd_grader/upload_archive/20260619/pronunciation_20260619.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 121 output 3rd_grader/upload_archive/20260623/pronunciation_20260623.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 122 output 3rd_grader/upload_archive/20260624/pronunciation_20260624.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 123 126 output 3rd_grader/upload_archive/20260625/pronunciation_20260625.pdf
-pdftk  pronunciation/pronunciation_tips.pdf cat 141 output 3rd_grader/upload_archive/20260626/pronunciation_20260626.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 298  output 2nd_grader/upload_archive/20260630/pronunciation_20260630.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 299 309 output 2nd_grader/upload_archive/20260701/pronunciation_20260701.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 310 320 output 2nd_grader/upload_archive/20260702/pronunciation_20260702.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 321 331 output 2nd_grader/upload_archive/20260703/pronunciation_20260703.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 333-335 output 2nd_grader/upload_archive/20260707/pronunciation_20260707.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 336 output 2nd_grader/upload_archive/20260708/pronunciation_20260708.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 337 347 output 2nd_grader/upload_archive/20260709/pronunciation_20260709.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 348 358 output 2nd_grader/upload_archive/20260710/pronunciation_20260710.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 359 369 output 2nd_grader/upload_archive/20260714/pronunciation_20260714.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 370 376 output 2nd_grader/upload_archive/20260715/pronunciation_20260715.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 377 383 output 2nd_grader/upload_archive/20260716/pronunciation_20260716.pdf
+pdftk  pronunciation/pronunciation_vowel.pdf cat 390 396 output 2nd_grader/upload_archive/20260717/pronunciation_20260717.pdf
