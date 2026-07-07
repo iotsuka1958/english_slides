@@ -18,6 +18,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{いつだれがどこでなにをどんなふうにどうして?}
@@ -112,7 +113,7 @@ which&どちら、どれ&\textipa{/w\'ItS/}&Which \alt<1-2>{do}{\textbf{do}} you
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-\textdbend\,\,\,つぎの各文の意味をかんがえましょう
+\textdbend\,\,\,つぎの各文の意味をかんがえましょう。また各文の主語はなんですか
 
 \begin{enumerate}
  \item<1-> \begin{enumerate}
@@ -259,4 +260,61 @@ It is because the forest gives them a safe home and plenty of food.
 それは、森が安全な家とたくさんの食べ物をあたえてくれるからです。　
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%
+\section{Unit Review}
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Unit Review}
+ 
+\begin{block}{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[square]\small
+ \item<2-> もともと先頭にあったとき$\longrightarrow$疑問詞にするだけ\\
+\hfill{}\visible<3->{She\tikzmark{S} teaches music.}\\[8pt]
+\hfill{}\visible<3->{Who\tikzmark{wh_S} teaches music?}\\
+\hfill{}\visible<4->{{\scriptsize このwhoは主語}}
+ \item<5-> もともと先頭になかったとき$\longrightarrow$疑問詞にしてから
+       \begin{itemize}\setbeamertemplate{items}[circle]
+	\item<6-> その疑問詞を先頭に置く
+	\item<7-> さらに、その後を疑問文の順番\,\,\Circled[fill color = white]{\,\,\textbf{do(does)} $+$ \textbf{S} $+$ 原形\,\,}\,\,にします\\
+%	\item さらに、その後を\,\,\Circled[fill color = white]{\,\,\textbf{do(does)} $+$ \textbf{S} $+$ 原形\,\,}\,\,にします\\
+       \end{itemize}
+\hfill{}\visible<8->{She teaches music\tikzmark{O}.}\\[8pt]
+\hfill{}\visible<8->{What\tikzmark{wh_O} \textbf{does} she teach?}\\
+\hfill{}\visible<9->{{\scriptsize このwhatは目的語}}
+
+\end{itemize}
+\end{block}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3->{\draw[->,opacity=.4,line width=1pt] ([xshift=-6pt,yshift=-2pt]pic cs:S) to ([xshift=-8pt, yshift=8pt] pic cs:wh_S);}
+ \visible<8->{\draw[->,opacity=.4,line width=1pt] ([xshift=-14pt,yshift=-2pt]pic cs:O) to[out=-150,in=30] ([xshift=-6pt, yshift=8pt] pic cs:wh_O);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ 
+\includegraphics[width=1.01\textwidth]{./infographic/020a_wh_infographic.png}
+\hfill{\tiny audio\_overview 2010}\,{\scriptsize \myaudio{./audio/overview/020a_wh_audio_overview.m4a}}%
+\hfill{\tiny eduop\_boys 0303}\,{\scriptsize \myaudio{./audio/manzai/020a_wh_manzai.mp3
+}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Check for Understanding}
+ 
+\begin{columns}
+ \begin{column}{0.4\textwidth}
+  \includegraphics[width=1.1\textwidth]{./test_forms/020a_wh_test.png}
+ \end{column}
+ \begin{column}{0.59\textwidth}
+  \begin{itemize}
+   \item[\textbullet{}] エラーが出る場合は\\
+eduopちばのアカウント\\\hfill{}(xxxxxx@eduop-chiba.jp)\\
+で、はいりなおしてください
+  \end{itemize}
+ \end{column}
+\end{columns}
+
+\vspace{-8pt}
+
+\url{https://forms.gle/eoExCsrA7Gi1T34i8}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
 \end{document}
