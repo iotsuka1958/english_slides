@@ -1,9 +1,8 @@
-grandfather<break time="2s"/>grandfather
-zoo<break time="2s"/>zoo
-elephant<break time="2s"/>elephant
-desert<break time="2s"/>desert
-land<break time="2s"/>land
-whale<break time="2s"/>whale
-What about pizza?<break time="2s"/>What about pizza?
-information<break time="2s"/>information
-interesting<break time="2s"/>interesting
+She is a doctor at our hospital.
+I want a picture of Paris.
+The cat under the chair is cute.
+The flowers on the table are beautiful.
+The woman in the car is my mother.
+He reads a book before bed.
+We live in Boston.
+They go to work by bus.
