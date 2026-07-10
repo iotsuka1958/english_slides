@@ -1,3 +1,8 @@
+pie<break time="2s"/>pie
+pig<break time="2s"/>pig
+pin<break time="2s"/>pin
+pen<break time="2s"/>pen
+peace<break time="2s"/>peace
 cup<break time="2s"/>cup
-cut<break time="2s"/>cut
-nut<break time="2s"/>nut
+map<break time="2s"/>map
+ship<break time="2s"/>ship
