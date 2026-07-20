@@ -1419,3 +1419,71 @@ for TARGET in "$@"; do
     fi
 done
 ```
+
+# antigravity CLIで画像生成
+
+ターミナルで次のコマンドを打つ。
+
+--dangerously-skip-permissions をつけないと、エラーが出る。
+
+また、保管場所を指定しておかないと、.gemini/.antigravity以下のわけわからないところに出力されるので、./nanobanana-output/に出力されるようにしたい。
+
+```
+agy --dangerously-skip-permissions -p "/generate 'A logo with a blue sky and a banana. Clean design. Please save the generated image to the ./nanobanana-output/ folder in the current directory.'"
+```
+
+でもいちいち
+--dangerously-skip-permissions 
+とか、
+Please save the generated image to the ./nanobanana-output/ folder in the current directory.
+とか、打つのはめんどくさい。
+
+そこで、.bashrcに次の設定を入れておく。
+
+```
+# agy + nanobanana 用のカスタムコマンド（英語プロンプト版）
+# agy + nanobanana の全コマンド対応万能関数
+# agy + nanobanana omnipotent function
+my_banana() {
+    local subcommand=$1
+    local prompt=$2
+
+    # Check arguments
+    if [[ -z "$subcommand" || -z "$prompt" ]]; then
+        echo "Usage: banana <command> '<prompt>'"
+        echo "  Available commands: generate, edit, restore, icon, pattern, story"
+        echo "  (e.g.) my_banana icon 'A sleek camera icon'"
+        echo "  (e.g.) my_banana edit 'Make ./my_pic.png brighter'"
+        echo "  See https://github.com/gemini-cli-extensions/nanobanana"
+        return 1
+    fi
+
+    # Automatically append target output directory instruction
+    local save_instruction=". Please save the final output to the ./nanobanana-output/ folder in the current directory."
+
+    # Execute agy
+    agy --dangerously-skip-permissions -p "/$subcommand '$prompt$save_instruction'"
+}
+```
+
+こうしておけば
+```
+banana <使いたいコマンド名> "<指示>" と打つだけで、自動的にパーミッションをクリアし、カレントディレクトリに保存してくれます！
+```
+で画像の作成等ができる。
+
+```
+# アイコンを作りたいとき
+banana icon "A simple email app icon"
+
+# シームレスな背景パターンを作りたいとき
+banana pattern "Cute banana pattern on a white background"
+
+# 手元の画像を編集したいとき
+banana edit "Change the yellow color in ./logo.png to green"
+
+# 古い写真を綺麗にしたいとき
+banana restore "Fix the blur and noise in ./old_photo.jpg"
+```
+
+とすれば、いろいろできる
