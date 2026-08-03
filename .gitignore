@@ -77,3 +77,12 @@ zzz
 zzz~
 *.wav
 
+# === AI Agents & Claude Code ===
+# Claudeのローカルセッション・キャッシュ類を除外
+.claude/
+.claude.json
+
+# エージェント関連で、もし自動生成される内部キャッシュがあれば除外
+# (例: apm_modules などのキャッシュディレクトリがある場合)
+# .agents/skills/ などのカスタム指示書はコミットされるように残します
+**/apm_modules/

@@ -1,0 +1,17 @@
+{
+  "skill_name": "jhs2-grammar-reader",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "【文法解説】\n接続詞 when（〜するとき）と if（もし〜ならば）:\n・When + 主語 + 動詞 ..., 主語 + 動詞 ...（例: When I arrived home, my mother was cooking.）\n・If + 主語 + 現在形 ..., 主語 + will + 動詞の原形 ...（例: If it rains tomorrow, I will stay at home.）\n\n上記をもとに、中学2年レベルの英単語を用いた8行程度の英文読み物（対話文形式）を作成してください。未習語には注釈をつけ、T/F正誤問題（3問）も添えてください。",
+      "expected_output": "英文8行程度の対話文、目標文法（when/if）が盛り込まれている、中2レベルの語彙（未習語注釈付き）、日本語訳、T/F正誤問題3問（解答・解説付き）が出力されること",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "【文法解説】\n助動詞 must（〜しなければならない）と have to / has to:\n・must + 動詞の原形: 強い義務・必要を表す。（例: You must study English.）\n・don't have to + 動詞の原形: 〜しなくてもよい（不必要）。（例: You don't have to hurry.）\n\nこの文法事項を用いて、8行程度の物語風（ストーリー形式）の英文読み物を生成してください。語彙レベルは中学2年程度とし、必要に応じて脚注、日本語訳、T/F正誤問題を作成してください。",
+      "expected_output": "8行程度の物語風英文、must / have to / don't have to が含まれる、中2レベル語彙（未習語注釈あり）、日本語訳、T/F正誤問題3問（解答・解説付き）が出力されること",
+      "files": []
+    }
+  ]
+}
