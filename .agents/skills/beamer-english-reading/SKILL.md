@@ -20,7 +20,10 @@ description: Generate A1-level English reading passages (~80 words) based on gra
 - 正解を `T` または `F` で設定
 
 ### 3. TTS音声ファイルの自動生成
-- **対象テキスト**: 英文読み物本文のみ（T/F正誤問題の文章は含めない）
+- **対象テキスト構成**:
+  - 音声の先頭に**読み物のタイトル**を読み上げさせること。
+  - タイトル読み上げ後、本文の開始前に**若干の空白時間（ポーズ/インターバル）**を挟むこと（例: `Title.\n\n...\n\nBody` 等）。
+  - T/F正誤問題の文章は音声に含めないこと。
 - **言語・アクセント**: 自然なアメリカ英語 (`en-US`)
 - **声種指定**:
   - 特に指定がない場合: 男性声 (`en-US-GuyNeural` や `gTTS` 等)
@@ -31,8 +34,10 @@ description: Generate A1-level English reading passages (~80 words) based on gra
   - 例: ソースファイル名 `./012_can.pdf` → 音声出力 `./audio/012_can_reading.mp3`
 
 ### 4. 出力フォーマットと厳格な制約
-- **厳密な出力**: `\begin{frame}[plain,t]{Exercises}` から `\end{frame}` までのLaTeXコードのみを出力すること。コード以外の解説、挨拶、前後のテキスト（Markdownの補足説明など）は**一切出力しない**こと。
-- **改行と視認性**: 1行が長くなりすぎないよう、英文読み物の本文（英文1〜2文ごとなど）やLaTeXコードには適度に改行を入れること。
+- **厳密な出力**: 冒頭の `\section{Listen, Then Read...}` 定義から `\begin{frame}[plain,t]{Exercises}` ～ `\end{frame}` までのLaTeXコードを**必ずMarkdownのコードブロック（```latex ... ```）**で出力すること。コードブロック以外の解説、挨拶、前後のテキスト（Markdownの補足説明など）は**一切出力しない**こと。
+- **クォーテーションマークのLaTeX記法**: 会話文や語句を囲む二重引用符（ダブルクォーテーション）には、ASCIIの `"` ではなく、開き引用符にバッククォート2つ `` `` ``、閉じ引用符にシングルクォート2つ `''` を必ず使用すること（例: `` ``Are you awake, Emma?'' ``）。
+- **改行と物理的パラグラフ**: 英文読み物の本文は `\\` などの改行記号ではなく、**空行による物理的なパラグラフ分割（1〜2文程度ごと）**を行い、`tcolorbox` のインデント設定（`parindent`）と視認性を最大限に活かすこと。
+- **再生時間の自動反映**: `{\tiny 0047}` や `{\tiny 0031}` の部分は、生成した音声ファイルの実際の長さ（分秒4桁、例: 31秒なら `0031`）を反映すること。
 - **アニメーションカウンターの保持**: `<2->` や `<3->` ～ `<7->` のカウンター表記を変更・改変しないこと。
 - **音声ファイルパスの連動**: `\myaudio{./audio/<ソース名>_reading.mp3}` のように生成した音声ファイルパスを反映すること。
 
@@ -41,16 +46,18 @@ description: Generate A1-level English reading passages (~80 words) based on gra
 以下のテンプレート構造をそのまま厳密に使用してください。
 
 ```latex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Listen, Then Read\,\,\,\,\,{\tiny {{音声再生時間MMSS(例:0031)}}}\,{\scriptsize \myaudio{./audio/{{ソース名}}_reading.mp3}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]{Exercises}
 \begin{tcolorbox}[colframe=ForestGreen,
   colback=NavyBlue!10!white,
   colbacktitle=NavyBlue!40!white,
   coltitle=black, %fonttitle=\bfseries,
 before upper={\setlength{\parindent}{1.25em}},
- title={{{作成した英文読み物のタイトル}}\hfill{\tiny 0047}\quad{\scriptsize \myaudio{./audio/{{ソース名}}_reading.mp3}}}
+ title={{{作成した英文読み物のタイトル}}\hfill{\tiny {{音声再生時間MMSS(例:0031)}}}\quad{\scriptsize \myaudio{./audio/{{ソース名}}_reading.mp3}}}
 ]
-{{作成した英文読み物本文を出力}}
-
+{{作成した英文読み物本文（空行でパラグラフ分割）を出力}}
 \end{tcolorbox}
 
 \vspace{-4pt}
