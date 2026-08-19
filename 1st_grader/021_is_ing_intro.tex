@@ -371,8 +371,7 @@ She ( \alt<6->{\Circled{loves}}{loves} / is loving / loving ) you.
 \hfill{\tiny 0204}\,{\scriptsize \myaudio{./audio/021_is_ing_intro_05.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{聞いてみよう、読んでみよう}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Listen, Then Read\,\,\,\,\,{\tiny 0030}\,{\scriptsize \myaudio{./audio/021_is_ing_intro_06.mp3}}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
  
@@ -381,9 +380,7 @@ She ( \alt<6->{\Circled{loves}}{loves} / is loving / loving ) you.
 \vspace{-30pt}
 
 \hfill{\tiny 0030}\,{\scriptsize \myaudio{./audio/021_is_ing_intro_06.mp3}}
-
 \end{frame}
-%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]{Exercises}
 \scriptsize
@@ -397,20 +394,26 @@ She ( \alt<6->{\Circled{loves}}{loves} / is loving / loving ) you.
 before upper={\setlength{\parindent}{1.25em}},
  title=次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\tiny 0030}\,{\scriptsize \myaudio{./audio/021_is_ing_intro_06.mp3}}
 ]
-Look! It is noon\footnotemark{} now.
+\noindent{}Look! It is noon\footnotemark{} now.
+
 Many people are in the park.
 They are playing \tikzmark{clue1}baseball and running near the big trees.
 A dog is\tikzmark{clue2} swimming in the pool.
+
 Our teacher, Mr. Brown, is reading\tikzmark{clue3} a book on a bench.
-He likes books very much. Two students are doing homework together, but they are not \tikzmark{clue4}studying Spanish.
+He likes books very much.
+
+ Two students are doing homework together, but they are not \tikzmark{clue4}studying Spanish.
 They are writing in their notebooks.
 %We know the time is passing quickly.
+
 What are you doing now?\footnotemark
 
 \end{tcolorbox}
 
-%\vspace{-5pt}
+\vspace{-5pt}
 {\scriptsize 本文に照らし合わせて、正しければT、そうでなければFと答えましょう}
+\vspace{-7pt}
 \begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
  \item<2-> Many people are playing baseball and running near the small trees.\tikzmark{q1}\hfill\visible<4->{F}
  \item<2-> The dog is swimming in the pool now.\tikzmark{q2}\hfill\visible<6->{T}
@@ -427,7 +430,7 @@ What are you doing now?\footnotemark
 \begin{tikzpicture}[remember picture,overlay]
  \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[out=-90,in=0] ([xshift=2pt, yshift=2pt] pic cs:q1);}
  \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
- \visible<7->{\draw[<-,opacity=.4,line width=2pt] ([xshift=-10pt,yshift=-2pt]pic cs:clue3) to[in=60,out=-90] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<7->{\draw[<-,opacity=.4,line width=2pt] ([xshift=18pt,yshift=-2pt]pic cs:clue3) to[in=60,out=-90] ([xshift=2pt, yshift=2pt] pic cs:q3);}
  \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([xshift=5pt,yshift=-2pt]pic cs:clue4) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q4);}
 \end{tikzpicture}
 \end{frame}
