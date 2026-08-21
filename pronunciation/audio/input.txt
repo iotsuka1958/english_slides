@@ -1,8 +1,5 @@
-pie<break time="2s"/>pie
-pig<break time="2s"/>pig
-pin<break time="2s"/>pin
-pen<break time="2s"/>pen
-peace<break time="2s"/>peace
-cup<break time="2s"/>cup
-map<break time="2s"/>map
-ship<break time="2s"/>ship
+Please keep quiet.
+Stop crying.
+I want a cupcake after lunch.
+Do you like popcorns?
+Where are the paper napkins?
