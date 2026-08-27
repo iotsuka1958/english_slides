@@ -32,6 +32,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{multimedia}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% セクションの開始時に自動で目次を入れる設定
+\AtBeginSection[]{
+  \begin{frame}{発表の流れ}
+    % currentsection: 今のセクション以外を半透明（または非表示）にする
+    % currentsubsection: 今のサブセクションを強調する
+    \tableofcontents[currentsection, currentsubsection]
+  \end{frame}
+}
+%%%%%%%%%%%%%%%%%%%
 \makeatletter
 \newcommand*{\themonth}{\two@digits\month}
 \newcommand*{\theday}{\two@digits\day}
@@ -113,7 +122,13 @@
 %\textcolor{white}{$20250919=13\times{}1,557,763$}
 \end{frame}
 \setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}  
+\frametitle{目次1}  
+\tableofcontents 
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{余計な母音をはさまない！}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% enchainement
@@ -316,6 +331,8 @@
 %% enchainement
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{なめらかに！}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -494,10 +511,14 @@
 %% gemination 重音化
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{同じ子音の連続}
+\section{同じ破裂音の連続}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\textipa{/t/}+\textipa{/t/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 %\hypertarget{today}{}
 \centering
@@ -505,7 +526,7 @@
 
  \vspace{30pt}
 
-  \textcolor{white}{\Large 同じ子音の連続}
+  \textcolor{white}{\Large 同じ破裂音の連続}
 
   \textcolor{white}{\Large \textipa{/t/} $+$ \textipa{/t/}}
 
@@ -577,6 +598,8 @@
 %% gemination 重音化
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\textipa{/k/}+\textipa{/k/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
@@ -586,7 +609,7 @@
 
  \vspace{30pt}
 
-  \textcolor{white}{\Large 同じ子音の連続}
+  \textcolor{white}{\Large 同じ破裂音の連続}
 
   \textcolor{white}{\Large \textipa{/k/} $+$ \textipa{/k/}}
 
@@ -695,6 +718,8 @@ walk（歩く）またはwork（働く）を発音していきます。どちら
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\textipa{/p/}+\textipa{/p/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -705,7 +730,7 @@ walk（歩く）またはwork（働く）を発音していきます。どちら
 
  \vspace{30pt}
 
-  \textcolor{white}{\Large 同じ子音の連続}
+  \textcolor{white}{\Large 同じ破裂音の連続}
 
   \textcolor{white}{\Large \textipa{/p/} $+$ \textipa{/p/}}
 
@@ -713,9 +738,10 @@ walk（歩く）またはwork（働く）を発音していきます。どちら
 
 %\hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%
 \setbeamercolor{background canvas}{bg=}
 %%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}[plain]{\textipa{/p/} $+$ \textipa{/p/}}
 %\hypertarget{ex}{}
 \Large
@@ -773,7 +799,8 @@ walk（歩く）またはwork（働く）を発音していきます。どちら
  \end{enumerate}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\textipa{/d/}+\textipa{/d/}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
@@ -784,7 +811,7 @@ walk（歩く）またはwork（働く）を発音していきます。どちら
 
  \vspace{30pt}
 
-  \textcolor{white}{\Large 同じ子音の連続}
+  \textcolor{white}{\Large 同じ破裂音の連続}
 
   \textcolor{white}{\Large \textipa{/d/} $+$ \textipa{/d/}}
 
@@ -852,7 +879,8 @@ walk（歩く）またはwork（働く）を発音していきます。どちら
  \end{enumerate}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\textipa{/g/}+\textipa{/g/}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
@@ -863,7 +891,7 @@ walk（歩く）またはwork（働く）を発音していきます。どちら
 
  \vspace{30pt}
 
-  \textcolor{white}{\Large 同じ子音の連続}
+  \textcolor{white}{\Large 同じ破裂音の連続}
 
   \textcolor{white}{\Large \textipa{/g/} $+$ \textipa{/g/}}
 
@@ -928,7 +956,8 @@ walk（歩く）またはwork（働く）を発音していきます。どちら
  \end{enumerate}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\textipa{/b/}+\textipa{/b/}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
@@ -939,7 +968,7 @@ walk（歩く）またはwork（働く）を発音していきます。どちら
 
  \vspace{30pt}
 
-  \textcolor{white}{\Large 同じ子音の連続}
+  \textcolor{white}{\Large 同じ破裂音の連続}
 
   \textcolor{white}{\Large \textipa{/b/} $+$ \textipa{/b/}}
 
@@ -1008,7 +1037,7 @@ walk（歩く）またはwork（働く）を発音していきます。どちら
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{同じような子音の連続}
+\section{破裂音の連続}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
@@ -1093,7 +1122,6 @@ walk（歩く）またはwork（働く）を発音していきます。どちら
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -1380,7 +1408,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -1437,7 +1464,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}e
@@ -1471,7 +1497,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<8->{$\longrightarrow$\,イー\kenten{ッピ}ーッツア} 
+ \hfill{}\visible<7->{$\longrightarrow$\,イー\kenten{ッピ}ーッツア} 
 
 \hfill{\tiny 0126}\,{\scriptsize \myaudio{./audio/tips_gemination_tp_01.mp3}\,tp\_01}
 
@@ -1496,7 +1522,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -1530,7 +1555,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<8->{$\longrightarrow$\,ブラ\kenten{ッぺ}ッパ} 
+ \hfill{}\visible<7->{$\longrightarrow$\,ブラ\kenten{ッぺ}ッパ} 
 
 \hfill{\tiny 0126}\,{\scriptsize \myaudio{./audio/tips_gemination_kp_01.mp3}\,kp\_01}
 
@@ -1570,7 +1595,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -1604,7 +1628,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<8->{$\longrightarrow$\,ル\kenten{ッタ}イアド} 
+ \hfill{}\visible<7->{$\longrightarrow$\,ル\kenten{ッタ}イアド} 
 
 \hfill{\tiny 0127}\,{\scriptsize \myaudio{./audio/tips_gemination_kt_01.mp3}\,kt\_01}
 
@@ -1646,7 +1670,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -1680,7 +1703,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<8->{$\longrightarrow$\,ワイ\kenten{ッキ}ャット} 
+ \hfill{}\visible<7->{$\longrightarrow$\,ワイ\kenten{ッキ}ャット} 
 
 \hfill{\tiny 0127}\,{\scriptsize \myaudio{./audio/tips_gemination_tk_01.mp3}\,tk\_01}
 
@@ -1738,7 +1761,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -1796,7 +1818,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -1870,7 +1891,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -1904,7 +1924,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<10->{$\longrightarrow$\,バ\kenten{ッゲ}イヴ} 
+ \hfill{}\visible<7->{$\longrightarrow$\,バ\kenten{ッゲ}イヴ} 
 
 \hfill{\tiny 0128}\,{\scriptsize \myaudio{./audio/tips_gemination_bg_01.mp3}\,bg\_01}
 
@@ -1928,7 +1948,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -1962,7 +1981,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<10->{$\longrightarrow$\,ビ\kenten{ッブ}ラザ} 
+ \hfill{}\visible<7->{$\longrightarrow$\,ビ\kenten{ッブ}ラザ} 
 
 \hfill{\tiny 0130}\,{\scriptsize \myaudio{./audio/tips_gemination_gb_01.mp3}\,gb\_01}
 
@@ -2002,7 +2021,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -2075,7 +2093,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -2109,7 +2126,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<10->{$\longrightarrow$\,ビ\kenten{ッデ}イ} 
+ \hfill{}\visible<7->{$\longrightarrow$\,ビ\kenten{ッデ}イ} 
 
 \hfill{\tiny 0129}\,{\scriptsize \myaudio{./audio/tips_gemination_gd_01.mp3}\,gd\_01}
 
@@ -2149,7 +2166,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -2183,7 +2199,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<10->{$\longrightarrow$\,スタ\kenten{ッド}ライヴィン} 
+ \hfill{}\visible<7->{$\longrightarrow$\,スタ\kenten{ッド}ライヴィン} 
 
 \hfill{\tiny 0130}\,{\scriptsize \myaudio{./audio/tips_gemination_pd_01.mp3}\,pd\_01}
 
@@ -2208,7 +2224,7 @@ leg
  \begin{enumerate}
  \item<2-> I don't like a to\alt<1-2>{p}{\textbf{p}}-\only<3->{\hspace{-2pt}\textcolor{Maroon}{\textbottomtiebar\ }}\alt<1-2>{d}{\hspace{-2pt}\textbf{d}}own approach.
  \item<4-> The temperature will dro\alt<1-4>{p}{\textbf{p}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{d}{\textbf{d}}own tonight.
- \item<6-> He gave flowers to his ste\alt<1-6>{p}{\textbf{p}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{d}{\textbf{d}}aughter.
+ \item<6-> He gave flowers to his ste\alt<1-6>{p}{\textbf{p}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ \hspace{-2pt}}}\alt<1-6>{d}{\textbf{d}}aughter.
 % \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
 % \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
 % \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
@@ -2223,7 +2239,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -2257,7 +2272,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<10->{$\longrightarrow$\,レ\kenten{ッペ}ン} 
+ \hfill{}\visible<7->{$\longrightarrow$\,レ\kenten{ッペ}ン} 
 
 \hfill{\tiny 0130}\,{\scriptsize \myaudio{./audio/tips_gemination_dp_01.mp3}\,dp\_01}
 
@@ -2297,7 +2312,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -2331,7 +2345,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<10->{$\longrightarrow$\,タ\kenten{ッグ}レイド} 
+ \hfill{}\visible<7->{$\longrightarrow$\,タ\kenten{ッグ}レイド} 
 
 \hfill{\tiny 0130}\,{\scriptsize \myaudio{./audio/tips_gemination_pg_01.mp3}\,pg\_01}
 
@@ -2354,7 +2368,7 @@ leg
 \begin{frame}[plain]{Exercises \textipa{/p/} $+$ \textipa{/g/}}
 \Large
  \begin{enumerate}
- \item<2-> We went to the cam\alt<1-2>{p}{\textbf{p}}\only<3->{\hspace{-2pt}\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-2>{g}{\textbf{g}}round last year.
+ \item<2-> We went to the cam\alt<1-2>{p}{\textbf{p}}\only<3->{\hspace{-2pt}\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-2>{g}{\textbf{g}}round last year.
  \item<4-> I often hel\alt<1-4>{p}{\textbf{p}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{g}{\textbf{g}}irls with their homework.
 % \item<6-> She showed me an ol\alt<1-6>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-6>{p}{\textbf{p}}icture.
 % \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
@@ -2371,7 +2385,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -2405,7 +2418,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<10->{$\longrightarrow$\,ビ\kenten{ッパ}ーク} 
+ \hfill{}\visible<7->{$\longrightarrow$\,ビ\kenten{ッパ}ーク} 
 
  \hfill{\tiny 0128}\,{\scriptsize \myaudio{./audio/tips_gemination_gp_01.mp3}\,gp\_01}
 
@@ -2445,7 +2458,6 @@ leg
 % 背景色を黒に変更
 \setbeamercolor{background canvas}{bg=black}
 \begin{frame}
-leg
 \hypertarget{today}{}
 \centering
   \textcolor{white}{\Huge\bfseries Today's Pronunciation}
@@ -2466,7 +2478,7 @@ leg
 \begin{enumerate}
  \item<1-> foot
  \item<2-> ball
- \item<3-> They played foo\alt<3>{t}{\textbf{t}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<3>{b}{\textbf{b}}all after school. 
+ \item<3-> They played foo\alt<3>{t}{\textbf{t}}\only<4->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<3>{b}{\textbf{b}}all after school. 
 % \item<6-> I read a ba\alt<4>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<6>{b}{\textbf{b}}ook. 
 % \item<4-> See you in Se\alt<1-4>{p}{\textbf{p}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-4>{t}{\textbf{t}}ember.
 \end{enumerate}
@@ -2479,7 +2491,7 @@ leg
 
 \visible<6->{じゃあどうしよう}
 
- \hfill{}\visible<10->{$\longrightarrow$\,フ\kenten{ッボ}ーウ} 
+ \hfill{}\visible<6->{$\longrightarrow$\,フ\kenten{ッボ}ーウ} 
 
  \hfill{\tiny 0131}\,{\scriptsize \myaudio{./audio/tips_gemination_tb_01.mp3}\,tb\_01}
 
@@ -2521,7 +2533,7 @@ leg
  \begin{enumerate}
  \item<2-> Did you read tha\alt<1-2>{t}{\textbf{t}} \only<3->{\hspace{-2pt}\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-2>{b}{\textbf{b}}ook?
  \item<4-> I'd like to take a ho\alt<1-4>{t}{\textbf{t}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{b}{\textbf{b}}ath.
- \item<6-> The score was no\alt<1-6>{t}{\textbf{t}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{b}{\textbf{b}}ad.
+ \item<6-> The score was no\alt<1-6>{t}{\textbf{t}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-6>{b}{\textbf{b}}ad.
 % \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
 % \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
 % \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
@@ -2529,6 +2541,631 @@ leg
  \end{enumerate}
 
 \hfill{\tiny 0111}\,{\scriptsize \myaudio{./audio/tips_gemination_tb_04.mp3}\,tb\_04}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\hypertarget{today}{}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Large 連続する破裂音}
+
+  \textcolor{white}{\Large \textipa{/b/} $+$ \textipa{/t/}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/b/} $+$ \textipa{/t/}}
+\Large
+
+\begin{enumerate}
+ \item<1-> good
+ \item<2-> picture
+ \item<3-> Bo\alt<3>{b}{\textbf{b}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<3>{t}{\textbf{t}}akes a good picture. 
+% \item<6-> I read a ba\alt<4>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<6>{b}{\textbf{b}}ook. 
+% \item<4-> See you in Se\alt<1-4>{p}{\textbf{p}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-4>{t}{\textbf{t}}ember.
+\end{enumerate}
+\bigskip
+
+
+\visible<5->{\textipa{/b/}と\textipa{/t/}は、どちらも破裂音
+
+2つの破裂音を連続で発音するのはたいへん}
+
+\visible<6->{じゃあどうしよう}
+
+ \hfill{}\visible<7->{$\longrightarrow$\,バ\kenten{ッテ}イクス} 
+
+ \hfill{\tiny 0129}\,{\scriptsize \myaudio{./audio/tips_gemination_bt_01.mp3}\,bt\_01}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/b/ $+$ \textipa{/t/}}}
+\Large
+ \begin{enumerate}
+ \item<2-> Bo\alt<1-2>{b}{\textbf{b}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1-2>{t}{\textbf{t}}old me the story. 
+ \item<4-> She plays for a clu\alt<1-4>{b}{\textbf{b}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{t}{\textbf{t}}eam.
+% \item<6-> She has a re\alt<1-6>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-6>{b}{\textbf{b}}ag.
+% \item<8-> Don't ea\alt<1-8>{t}{\textbf{t}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{c}{\textbf{c}}oookies before dinner. 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{t}{\textbf{t}}ice 
+ \end{enumerate}
+
+\hfill{\tiny 0114}\,{\scriptsize \myaudio{./audio/tips_gemination_bt_02.mp3}\,bt\_02}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/b/} $+$ \textipa{/t/}}
+\Large
+ \begin{enumerate}
+ \item<2-> su\alt<1-2>{b}{\textbf{b}}\only<3->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-2>{t}{\textbf{t}}itle
+ \item<4-> su\alt<1-4>{b}{\textbf{b}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-4>{t}{\textbf{t}}otal
+% \item<6-> He plays the ba\alt<1-6>{g}{\textbf{g}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{p}{\textbf{p}}ipe very well.
+% \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
+% \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
+% \item<10-> Please chec\alt<1-10>{k}{\textbf{k}} \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-10>{p}{\textbf{p}}age four. 
+ \end{enumerate}
+
+\hfill{\tiny 0131}\,{\scriptsize \myaudio{./audio/tips_gemination_bt_03.mp3}\,bt\_03}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+
+\hypertarget{today}{}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Large 連続する破裂音}
+
+  \textcolor{white}{\Large \textipa{/k/} $+$ \textipa{/b/}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/k/} $+$ \textipa{/b/}}
+\Large
+
+\begin{enumerate}
+ \item<1-> black
+ \item<2-> bird
+ \item<3-> Look at the blac\alt<3>{k}{\textbf{k}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<3>{b}{\textbf{b}}ird. 
+% \item<6-> I read a ba\alt<4>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<6>{b}{\textbf{b}}ook. 
+% \item<4-> See you in Se\alt<1-4>{p}{\textbf{p}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-4>{t}{\textbf{t}}ember.
+\end{enumerate}
+\bigskip
+
+
+\visible<5->{\textipa{/k/}と\textipa{/b/}は、どちらも破裂音
+
+2つの破裂音を連続で発音するのはたいへん}
+
+\visible<6->{じゃあどうしよう}
+
+ \hfill{}\visible<7->{$\longrightarrow$\,ブラ\kenten{ッバ}ード} 
+
+ \hfill{\tiny 0129}\,{\scriptsize \myaudio{./audio/tips_gemination_kb_01.mp3}\,kb\_01}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/k/ $+$ \textipa{/b/}}}
+\Large
+ \begin{enumerate}
+ \item<2-> We saw a blac\alt<1-2>{k}{\textbf{k}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1-2>{b}{\textbf{b}}ear. 
+ \item<4-> She has dar\alt<1-4>{k}{\textbf{k}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{b}{\textbf{b}}rown hair.
+% \item<6-> She has a re\alt<1-6>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-6>{b}{\textbf{b}}ag.
+% \item<8-> Don't ea\alt<1-8>{t}{\textbf{t}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{c}{\textbf{c}}oookies before dinner. 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{t}{\textbf{t}}ice 
+ \end{enumerate}
+
+\hfill{\tiny 0112}\,{\scriptsize \myaudio{./audio/tips_gemination_kb_02.mp3}\,kb\_02}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/k/} $+$ \textipa{/b/}}
+\Large
+ \begin{enumerate}
+ \item<2-> Don't loo\alt<1-2>{k}{\textbf{k}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-2>{b}{\textbf{b}}ack.
+ \item<4-> I will coo\alt<1-4>{k}{\textbf{k}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{b}{\textbf{b}}reakfast.
+% \item<6-> He plays the ba\alt<1-6>{g}{\textbf{g}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{p}{\textbf{p}}ipe very well.
+% \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
+% \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
+% \item<10-> Please chec\alt<1-10>{k}{\textbf{k}} \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-10>{p}{\textbf{p}}age four. 
+ \end{enumerate}
+
+\hfill{\tiny 0110}\,{\scriptsize \myaudio{./audio/tips_gemination_kb_03.mp3}\,kb\_03}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/k/} $+$ \textipa{/b/}}
+\Large
+ \begin{enumerate}
+ \item<2-> I often read the coo\alt<1-2>{k}{\textbf{k}}\only<3->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-2>{b}{\textbf{b}}ook.
+ \item<4-> Look at the blac\alt<1-4>{k}{\textbf{k}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-4>{b}{\textbf{b}}oard.
+% \item<6-> He plays the ba\alt<1-6>{g}{\textbf{g}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{p}{\textbf{p}}ipe very well.
+% \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
+% \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
+% \item<10-> Please chec\alt<1-10>{k}{\textbf{k}} \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-10>{p}{\textbf{p}}age four. 
+ \end{enumerate}
+
+\hfill{\tiny 0112}\,{\scriptsize \myaudio{./audio/tips_gemination_kb_04.mp3}\,kb\_04}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+
+\hypertarget{today}{}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Large 連続する破裂音}
+
+  \textcolor{white}{\Large \textipa{/b/} $+$ \textipa{/k/}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/b/} $+$ \textipa{/k/}}
+\Large
+
+\begin{enumerate}
+ \item<1-> grab
+ \item<2-> cookies and coffee
+ \item<3-> Let's gra\alt<3>{b}{\textbf{b}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<3>{c}{\textbf{c}}ookies and coffee. 
+% \item<6-> I read a ba\alt<4>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<6>{b}{\textbf{b}}ook. 
+% \item<4-> See you in Se\alt<1-4>{p}{\textbf{p}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-4>{t}{\textbf{t}}ember.
+\end{enumerate}
+\bigskip
+
+
+\visible<5->{\textipa{/b/}と\textipa{/k/}は、どちらも破裂音
+
+2つの破裂音を連続で発音するのはたいへん}
+
+\visible<6->{じゃあどうしよう}
+
+ \hfill{}\visible<7->{$\longrightarrow$\,グラ\kenten{ック}ッキー} 
+
+ \hfill{\tiny 0129}\,{\scriptsize \myaudio{./audio/tips_gemination_bk_01.mp3}\,bk\_01}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/b/ $+$ \textipa{/k/}}}
+\Large
+ \begin{enumerate}
+ \item<2-> Bo\alt<1-2>{b}{\textbf{b}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1-2>{c}{\textbf{c}}ame to my house yesterday. 
+ \item<4-> Jane is a clu\alt<1-4>{b}{\textbf{b}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{c}{\textbf{c}}aptain.
+% \item<6-> She has a re\alt<1-6>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-6>{b}{\textbf{b}}ag.
+% \item<8-> Don't ea\alt<1-8>{t}{\textbf{t}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{c}{\textbf{c}}oookies before dinner. 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{t}{\textbf{t}}ice 
+ \end{enumerate}
+
+\hfill{\tiny 0115}\,{\scriptsize \myaudio{./audio/tips_gemination_bk_02.mp3}\,bk\_02}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/b/} $+$ \textipa{/k/}}
+\Large
+ \begin{enumerate}
+ \item<2-> Bo\alt<1-2>{b}{\textbf{b}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-2>{c}{\textbf{c}}an speak English well.
+ \item<4-> I want to buy a new we\alt<1-4>{b}{\textbf{b}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{c}{\textbf{c}}amera.
+% \item<6-> He plays the ba\alt<1-6>{g}{\textbf{g}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{p}{\textbf{p}}ipe very well.
+% \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
+% \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
+% \item<10-> Please chec\alt<1-10>{k}{\textbf{k}} \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-10>{p}{\textbf{p}}age four. 
+ \end{enumerate}
+
+
+\hfill{\tiny 0115}\,{\scriptsize \myaudio{./audio/tips_gemination_bk_03.mp3}\,bk\_03}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\hypertarget{today}{}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Large 連続する破裂音}
+
+  \textcolor{white}{\Large \textipa{/k/} $+$ \textipa{/d/}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/k/} $+$ \textipa{/d/}}
+\Large
+
+\begin{enumerate}
+ \item<1-> back
+ \item<2-> door
+ \item<3-> Please shut the bac\alt<3>{k}{\textbf{k}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<3>{d}{\textbf{d}}oor. 
+% \item<6-> I read a ba\alt<4>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<6>{b}{\textbf{b}}ook. 
+% \item<4-> See you in Se\alt<1-4>{p}{\textbf{p}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-4>{t}{\textbf{t}}ember.
+\end{enumerate}
+\bigskip
+
+
+\visible<5->{\textipa{/k/}と\textipa{/d/}は、どちらも破裂音
+
+2つの破裂音を連続で発音するのはたいへん}
+
+\visible<6->{じゃあどうしよう}
+
+ \hfill{}\visible<7->{$\longrightarrow$\,バ\kenten{ッド}ー} 
+
+ \hfill{\tiny 0129}\,{\scriptsize \myaudio{./audio/tips_gemination_kd_01.mp3}\,kd\_01}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/k/ $+$ \textipa{/d/}}}
+\Large
+ \begin{enumerate}
+ \item<2-> She has a blac\alt<1-2>{k}{\textbf{k}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1-2>{d}{\textbf{d}}og. 
+ \item<4-> I will ma\alt<1-4>{ke}{\textbf{ke}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{d}{\textbf{d}}inner tonight.
+% \item<6-> She has a re\alt<1-6>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-6>{b}{\textbf{b}}ag.
+% \item<8-> Don't ea\alt<1-8>{t}{\textbf{t}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{c}{\textbf{c}}oookies before dinner. 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{t}{\textbf{t}}ice 
+ \end{enumerate}
+
+\hfill{\tiny 0112}\,{\scriptsize \myaudio{./audio/tips_gemination_kd_02.mp3}\,kd\_02}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/k/} $+$ \textipa{/d/}}
+\Large
+ \begin{enumerate}
+ \item<2-> They li\alt<1-2>{ke}{\textbf{ke}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-2>{d}{\textbf{d}}ancing.
+ \item<4-> I'll as\alt<1-4>{k}{\textbf{k}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{D}{\textbf{D}}ad.
+% \item<6-> He plays the ba\alt<1-6>{g}{\textbf{g}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{p}{\textbf{p}}ipe very well.
+% \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
+% \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
+% \item<10-> Please chec\alt<1-10>{k}{\textbf{k}} \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-10>{p}{\textbf{p}}age four. 
+ \end{enumerate}
+
+
+\hfill{\tiny 0109}\,{\scriptsize \myaudio{./audio/tips_gemination_kd_03.mp3}\,kd\_03}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+
+\hypertarget{today}{}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Large 連続する破裂音}
+
+  \textcolor{white}{\Large \textipa{/b/} $+$ \textipa{/k/}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/b/} $+$ \textipa{/k/}}
+\Large
+
+\begin{enumerate}
+ \item<1-> grab
+ \item<2-> cookies and coffee
+ \item<3-> Let's gra\alt<3>{b}{\textbf{b}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<3>{c}{\textbf{c}}ookies and coffee. 
+% \item<6-> I read a ba\alt<4>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<6>{b}{\textbf{b}}ook. 
+% \item<4-> See you in Se\alt<1-4>{p}{\textbf{p}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-4>{t}{\textbf{t}}ember.
+\end{enumerate}
+\bigskip
+
+
+\visible<5->{\textipa{/b/}と\textipa{/k/}は、どちらも破裂音
+
+2つの破裂音を連続で発音するのはたいへん}
+
+\visible<6->{じゃあどうしよう}
+
+ \hfill{}\visible<7->{$\longrightarrow$\,グラ\kenten{ック}ッキー} 
+
+ \hfill{\tiny 0129}\,{\scriptsize \myaudio{./audio/tips_gemination_bk_01.mp3}\,bk\_01}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/b/ $+$ \textipa{/k/}}}
+\Large
+ \begin{enumerate}
+ \item<2-> Bo\alt<1-2>{b}{\textbf{b}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1-2>{c}{\textbf{c}}ame to my house yesterday. 
+ \item<4-> Jane is a clu\alt<1-4>{b}{\textbf{b}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{c}{\textbf{c}}aptain.
+% \item<6-> She has a re\alt<1-6>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-6>{b}{\textbf{b}}ag.
+% \item<8-> Don't ea\alt<1-8>{t}{\textbf{t}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{c}{\textbf{c}}oookies before dinner. 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{t}{\textbf{t}}ice 
+ \end{enumerate}
+
+\hfill{\tiny 0115}\,{\scriptsize \myaudio{./audio/tips_gemination_bk_02.mp3}\,bk\_02}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/b/} $+$ \textipa{/k/}}
+\Large
+ \begin{enumerate}
+ \item<2-> Bo\alt<1-2>{b}{\textbf{b}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-2>{c}{\textbf{c}}an speak English well.
+ \item<4-> I want to buy a new we\alt<1-4>{b}{\textbf{b}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{c}{\textbf{c}}amera.
+% \item<6-> He plays the ba\alt<1-6>{g}{\textbf{g}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{p}{\textbf{p}}ipe very well.
+% \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
+% \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
+% \item<10-> Please chec\alt<1-10>{k}{\textbf{k}} \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-10>{p}{\textbf{p}}age four. 
+ \end{enumerate}
+
+
+\hfill{\tiny 0115}\,{\scriptsize \myaudio{./audio/tips_gemination_bk_03.mp3}\,bk\_03}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\hypertarget{today}{}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Large 連続する破裂音}
+
+  \textcolor{white}{\Large \textipa{/d/} $+$ \textipa{/k/}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/d/} $+$ \textipa{/k/}}
+\Large
+
+\begin{enumerate}
+ \item<1-> bad
+ \item<2-> cold
+ \item<3-> I caught a ba\alt<3>{d}{\textbf{d}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<3>{c}{\textbf{c}}old. 
+% \item<6-> I read a ba\alt<4>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<6>{b}{\textbf{b}}ook. 
+% \item<4-> See you in Se\alt<1-4>{p}{\textbf{p}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-4>{t}{\textbf{t}}ember.
+\end{enumerate}
+\bigskip
+
+
+\visible<5->{\textipa{/d/}と\textipa{/k/}は、どちらも破裂音
+
+2つの破裂音を連続で発音するのはたいへん}
+
+\visible<6->{じゃあどうしよう}
+
+ \hfill{}\visible<7->{$\longrightarrow$\,バ\kenten{ッコ}ウド} 
+
+ \hfill{\tiny 0128}\,{\scriptsize \myaudio{./audio/tips_gemination_dk_01.mp3}\,dk\_01}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/d/ $+$ \textipa{/k/}}}
+\Large
+ \begin{enumerate}
+ \item<2-> Do you like col\alt<1-2>{d}{\textbf{d}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1-2>{c}{\textbf{c}}offee? 
+ \item<4-> She has a re\alt<1-4>{d}{\textbf{d}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{c}{\textbf{c}}ar.
+% \item<6-> She has a re\alt<1-6>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-6>{b}{\textbf{b}}ag.
+% \item<8-> Don't ea\alt<1-8>{t}{\textbf{t}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{c}{\textbf{c}}oookies before dinner. 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{t}{\textbf{t}}ice 
+ \end{enumerate}
+
+\hfill{\tiny 0110}\,{\scriptsize \myaudio{./audio/tips_gemination_dk_02.mp3}\,dk\_02}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/d/} $+$ \textipa{/k/}}
+\Large
+ \begin{enumerate}
+ \item<2-> He is a goo\alt<1-2>{d}{\textbf{d}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-2>{k}{\textbf{k}}id.
+ \item<4-> It's a har\alt<1-4>{d}{\textbf{d}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{q}{\textbf{q}}uestion.
+% \item<6-> He plays the ba\alt<1-6>{g}{\textbf{g}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{p}{\textbf{p}}ipe very well.
+% \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
+% \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
+% \item<10-> Please chec\alt<1-10>{k}{\textbf{k}} \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-10>{p}{\textbf{p}}age four. 
+ \end{enumerate}
+
+
+\hfill{\tiny 0109}\,{\scriptsize \myaudio{./audio/tips_gemination_dk_03.mp3}\,dk\_03}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/d/} $+$ \textipa{/k/}}
+\Large
+ \begin{enumerate}
+ \item<2-> My brother likes to rea\alt<1-2>{d}{\textbf{d}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-2>{c}{\textbf{c}}omics.
+ \item<4-> We ha\alt<1-4>{d}{\textbf{d}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{c}{\textbf{c}}ake and coffee.
+% \item<6-> He plays the ba\alt<1-6>{g}{\textbf{g}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{p}{\textbf{p}}ipe very well.
+% \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
+% \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
+% \item<10-> Please chec\alt<1-10>{k}{\textbf{k}} \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-10>{p}{\textbf{p}}age four. 
+ \end{enumerate}
+
+
+\hfill{\tiny 0114}\,{\scriptsize \myaudio{./audio/tips_gemination_dk_04.mp3}\,dk\_04}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\hypertarget{today}{}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Large 連続する破裂音}
+
+  \textcolor{white}{\Large \textipa{/g/} $+$ \textipa{/t/}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/g/} $+$ \textipa{/t/}}
+\Large
+
+\begin{enumerate}
+ \item<1-> big
+ \item<2-> table
+ \item<3-> Put it on the bi\alt<3>{g}{\textbf{g}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<3>{t}{\textbf{t}}able. 
+% \item<6-> I read a ba\alt<4>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<6>{b}{\textbf{b}}ook. 
+% \item<4-> See you in Se\alt<1-4>{p}{\textbf{p}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-4>{t}{\textbf{t}}ember.
+\end{enumerate}
+\bigskip
+
+
+\visible<5->{\textipa{/g/}と\textipa{/t/}は、どちらも破裂音
+
+2つの破裂音を連続で発音するのはたいへん}
+
+\visible<6->{じゃあどうしよう}
+
+ \hfill{}\visible<7->{$\longrightarrow$\,ビ\kenten{ッテ}イボウ} 
+
+ \hfill{\tiny 0128}\,{\scriptsize \myaudio{./audio/tips_gemination_gt_01.mp3}\,gt\_01}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/g/ $+$ \textipa{/t/}}}
+\Large
+ \begin{enumerate}
+ \item<2-> Can you see that bi\alt<1-2>{g}{\textbf{g}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1-2>{t}{\textbf{t}}ree? 
+ \item<4-> We have a bi\alt<1-4>{g}{\textbf{g}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{t}{\textbf{t}}est tomorrow.
+% \item<6-> She has a re\alt<1-6>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-6>{b}{\textbf{b}}ag.
+% \item<8-> Don't ea\alt<1-8>{t}{\textbf{t}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{c}{\textbf{c}}oookies before dinner. 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{t}{\textbf{t}}ice 
+ \end{enumerate}
+
+\hfill{\tiny 0112}\,{\scriptsize \myaudio{./audio/tips_gemination_gt_02.mp3}\,gt\_02}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/g/} $+$ \textipa{/t/}}
+\Large
+ \begin{enumerate}
+ \item<2-> I ate e\alt<1-2>{gg}{\textbf{gg}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-2>{t}{\textbf{t}}oast this morning.
+ \item<4-> The do\alt<1-4>{g}{\textbf{g}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{t}{\textbf{t}}ook the ball.
+% \item<6-> He plays the ba\alt<1-6>{g}{\textbf{g}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{p}{\textbf{p}}ipe very well.
+% \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
+% \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
+% \item<10-> Please chec\alt<1-10>{k}{\textbf{k}} \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-10>{p}{\textbf{p}}age four. 
+ \end{enumerate}
+
+
+\hfill{\tiny 0113}\,{\scriptsize \myaudio{./audio/tips_gemination_gt_03.mp3}\,gt\_03}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 背景色を黒に変更
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}
+\hypertarget{today}{}
+\centering
+  \textcolor{white}{\Huge\bfseries Today's Pronunciation}
+
+ \vspace{30pt}
+
+  \textcolor{white}{\Large 連続する破裂音}
+
+  \textcolor{white}{\Large \textipa{/t/} $+$ \textipa{/g/}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\setbeamercolor{background canvas}{bg=}
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{\textipa{/t/} $+$ \textipa{/g/}}
+\Large
+
+\begin{enumerate}
+ \item<1-> that
+ \item<2-> girl
+ \item<3-> Do you know tha\alt<3>{t}{\textbf{t}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<3>{g}{\textbf{g}}irl? 
+% \item<6-> I read a ba\alt<4>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<6>{b}{\textbf{b}}ook. 
+% \item<4-> See you in Se\alt<1-4>{p}{\textbf{p}}\only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-4>{t}{\textbf{t}}ember.
+\end{enumerate}
+\bigskip
+
+
+\visible<5->{\textipa{/t/}と\textipa{/g/}は、どちらも破裂音
+
+2つの破裂音を連続で発音するのはたいへん}
+
+\visible<6->{じゃあどうしよう}
+
+ \hfill{}\visible<7->{$\longrightarrow$\,ザ\kenten{ッガ}ール} 
+
+ \hfill{\tiny 0127}\,{\scriptsize \myaudio{./audio/tips_gemination_tg_01.mp3}\,tg\_01}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/t/ $+$ \textipa{/g/}}}
+\Large
+ \begin{enumerate}
+ \item<2-> It was a grea\alt<1-2>{t}{\textbf{t}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }} \alt<1-2>{g}{\textbf{g}}ame. 
+ \item<4-> She has a whi\alt<1-4>{te}{\textbf{te}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{g}{\textbf{g}}uitar.
+% \item<6-> She has a re\alt<1-6>{d}{\textbf{d}} \only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-6>{b}{\textbf{b}}ag.
+% \item<8-> Don't ea\alt<1-8>{t}{\textbf{t}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{c}{\textbf{c}}oookies before dinner. 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{t}{\textbf{t}}ice 
+ \end{enumerate}
+
+\hfill{\tiny 0112}\,{\scriptsize \myaudio{./audio/tips_gemination_tg_02.mp3}\,tg\_02}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises \textipa{/t/} $+$ \textipa{/g/}}
+\Large
+ \begin{enumerate}
+ \item<2-> Let's ea\alt<1-2>{t}{\textbf{t}} \only<3->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-2>{g}{\textbf{g}}rapes.
+ \item<4-> That's no\alt<1-4>{t}{\textbf{t}} \only<5->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}} \alt<1-4>{g}{\textbf{g}}ood.
+% \item<6-> He plays the ba\alt<1-6>{g}{\textbf{g}}\only<7->{\textcolor{Maroon}{\textbottomtiebar\ }\hspace{-2pt}}\alt<1-6>{p}{\textbf{p}}ipe very well.
+% \item<8-> O\alt<1-8>{c}{\textbf{c}}\only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-8>{ t}{\textbf{t}}ober 
+% \item<10-> pra\alt<1-10>{c}{\textbf{c}}\only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt}\alt<1-10>{ t}{\textbf{t}}ice 
+% \item<8-> Look at the blac\alt<1-8>{k}{\textbf{k}} \only<9->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-8>{p}{\textbf{p}}en. 
+% \item<10-> Please chec\alt<1-10>{k}{\textbf{k}} \only<11->{\textcolor{Maroon}{\textbottomtiebar\ }}\hspace{-2pt} \alt<1-10>{p}{\textbf{p}}age four. 
+ \end{enumerate}
+
+
+\hfill{\tiny 0109}\,{\scriptsize \myaudio{./audio/tips_gemination_tg_03.mp3}\,tg\_03}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
