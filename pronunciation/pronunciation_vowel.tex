@@ -1859,16 +1859,16 @@ seat（座席）またはsit（座る）を発音していきます。どちら�
 \Large
 
 \begin{description}
- \item[長母音 \textipa{/u:/}]
-\hspace{50pt}r\underLine{oo}m\hspace{20pt}f\underLine{oo}d\hspace{20pt}j\underLine{ui}ce\hspace{20pt}bl\underLine{ue}
- \item[短母音\textipa{/U/}]
-\hspace{58pt}b\underLine{oo}k\hspace{20pt}g\underLine{oo}d\hspace{20pt}c\underLine{oo}k\hspace{20pt}p\underLine{u}t
+ \item<2->[長母音 \textipa{/u:/}]
+\hspace{54pt}\visible<5->{r\underLine{oo}m\hspace{20pt}f\underLine{oo}d\hspace{20pt}j\underLine{ui}ce\hspace{20pt}bl\underLine{ue}}
+ \item<3->[短母音 \textipa{/U/}]
+\hspace{58pt}\visible<6->{b\underLine{oo}k\hspace{20pt}g\underLine{oo}d\hspace{20pt}c\underLine{oo}k\hspace{20pt}p\underLine{u}t}
  \end{description}
 
 \vfill
 
 \hfill%
-\begin{tikzpicture}
+\visible<4->{\begin{tikzpicture}
 \duck[%tshirt,
 cap=NavyBlue!80!black,
 glasses,
@@ -1885,9 +1885,10 @@ bubblecolour=white!30!yellow]
 \duck[xshift=60pt, scale=.3, yshift=100pt]
 \duck[body=gray!50!white, head=gray!50!white,
 xshift=80pt, scale=.3, yshift=50pt]
-\end{tikzpicture}
+\end{tikzpicture}%
+}
 
-\hfill{\tiny 0211}\,{\scriptsize \myaudio{./audio/vowel_like_u_01.mp3}}
+\hfill{\tiny 0211}\,{\scriptsize \myaudio{./audio/vowel_like_u_01.mp3}\,like\_u\_01}
 
 \hfill\hyperlink{ex}{\beamergotobutton{Today's Exercises}}
 
