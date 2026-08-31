@@ -1,11 +1,2 @@
-bird
-letter
-music
-in the morning
-well
-fast
-slowly
-here
-there
-before
-after
+It’s a nice car.
+The robot moves its arm.
