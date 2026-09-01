@@ -1,0 +1,11 @@
+<speak>
+<voice name="en-US-Neural2-A">
+  I guess you are right.
+  <break time="2s"/>
+  I guess you are right.
+  <break time="2s"/>
+  I <phoneme alphabet="ipa" ph="ˈɡɛʃuː">guess you</phoneme> are right.
+  <break time="2s"/>
+  I <phoneme alphabet="ipa" ph="ˈɡɛʃuː">guess you</phoneme> are right.
+</voice>
+</speak>

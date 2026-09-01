@@ -1,11 +1,2 @@
-<speak>
-<voice name="en-US-Neural2-A">
-  I guess you are right.
-  <break time="2s"/>
-  I guess you are right.
-  <break time="2s"/>
-  I <phoneme alphabet="ipa" ph="ˈɡɛʃuː">guess you</phoneme> are right.
-  <break time="2s"/>
-  I <phoneme alphabet="ipa" ph="ˈɡɛʃuː">guess you</phoneme> are right.
-</voice>
-</speak>
+room<break time="2s"/>food<break time="2s"/>juice<break time="2s"/>blue
+book<break time="2s"/>good<break time="2s"/>cook<break time="2s"/>put
