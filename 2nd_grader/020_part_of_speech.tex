@@ -55,14 +55,14 @@ tagfont=\color{gray}\ttfamily\footnotesize,}
 \section{品詞}
 \subsection{品詞とは}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain,label=basic]{品詞}
+\begin{frame}<1-5>[plain,label=basic]{品詞}
 \large 
 \begin{description}
  \item<2->[名詞] 人、動物、植物やモノの名前を表す語\hfill\visible<3->{\small child, cat, flower, desk \ldots}
   \item<4->[代名詞] 名詞の代わりに使う語\hfill\visible<5->{\small I, we, you he, she, it, they, this, that \ldots}
  \item<6->[動詞] 動作や状態を表す語\hfill\visible<7->{\small run, see, speak, eat, study, have, be \ldots{}}
- \item<8->[形容詞] 名詞をくわしく説明する語\hfill\visible<9->{\small big, new, happy, good \ldots}
- \item<10->[副詞] 動詞や形容詞などをくわしく説明する語\hfill\visible<11->{\small quickly, here, then\ldots}
+ \item<8->[形容詞] 名詞をくわしく説明する語\hfill\visible<9->{\small big, new, happy, good, beautiful \ldots}
+ \item<10->[副詞] 動詞や形容詞などをくわしく説明する語\hfill\visible<11->{\small quickly, here, then, very \ldots}
  \item<12->[前置詞] 名詞や代名詞と組み合わせて$+\alpha$の意味をくわえる\\
 \hfill\visible<13->{\small in, on, under, with, before, after, from, to \ldots}
 \end{description}
@@ -70,38 +70,6 @@ tagfont=\color{gray}\ttfamily\footnotesize,}
 \vfill
 
 \hfill\visible<14->{まずはこれをしっかり理解しましょう}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Exercises}
-それぞれの英文の単語の品詞がなにかかんがえましょう%
-\hfill{\tiny 0232}\,{\scriptsize \myaudio{./audio/020_part_of_speech_01.mp3}}
-
-\begin{columns}[t]
-\begin{column}{.7\textwidth}
-  \begin{enumerate}
-  \item Small cats jump quickly.\\
-	\visible<2->{{\small \Circled{ 形 }\hspace{12pt}\Circled{ 名 } \Circled{ 動 }\hspace{12pt}\Circled{ 副 }}}
-  \item Tall trees grow slowly.\\
-	\visible<3->{{\small \Circled{ 形 } \Circled{ 名 }\hspace{8pt}\Circled{ 動 }\hspace{10pt}\Circled{ 副 }}}
-  \item Big dogs bark loudly.\\
-	\visible<4->{{\small \Circled{ 形 } \Circled{ 名 } \Circled{ 動 }\hspace{10pt}\Circled{ 副 }}}
-  \item George had very old coins.\\
-	\visible<5->{{\small \Circled{ 名 }\hspace{18pt}\Circled{ 動 } \Circled{ 副 } \Circled{ 形 }} \Circled{ 名 }}
-  \item Jennifer was very happy then.\\
-	\visible<6->{{\small \Circled{ 名 }\hspace{22pt}\Circled{ 動 } \Circled{ 副 }\hspace{8pt}\Circled{ 形 }\hspace{10pt}\Circled{ 副 }}}
- \end{enumerate}
-\end{column}
-\begin{column}{.25\textwidth}
- \begin{tcolorbox}
-  \begin{tabular}{cl}
-    \Circled{ 名 }&名詞\\
-    \Circled{ 動 }&動詞\\
-    \Circled{ 形 }&形容詞\\
-    \Circled{ 副 }&副詞
-  \end{tabular}
- \end{tcolorbox}
-\end{column}
-\end{columns}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{代名詞}
@@ -140,7 +108,8 @@ tagfont=\color{gray}\ttfamily\footnotesize,}
 \hfill{\tiny 0309}\,{\scriptsize \myaudio{./audio/020_part_of_speech_03.mp3}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<5-13>{basic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{前置詞}
 \hfill{\tiny 0234}\,{\scriptsize \myaudio{../1st_grader/audio/004_verb_object_4.mp3}}
  \begin{enumerate}
@@ -165,6 +134,42 @@ with, in, after などを\kenten{前置詞}といいます%
 \end{itemize}
      \end{block}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\againframe<14>{basic}
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+それぞれの英文の単語の品詞がなにかかんがえましょう%
+\hfill{\tiny 0232}\,{\scriptsize \myaudio{./audio/020_part_of_speech_01.mp3}}
+
+\begin{columns}[t]
+\begin{column}{.7\textwidth}
+  \begin{enumerate}
+  \item Small cats jump quickly.\\
+	\visible<2->{{\small \Circled{ 形 }\hspace{12pt}\Circled{ 名 } \Circled{ 動 }\hspace{12pt}\Circled{ 副 }}}
+  \item Tall trees grow slowly.\\
+	\visible<3->{{\small \Circled{ 形 } \Circled{ 名 }\hspace{8pt}\Circled{ 動 }\hspace{10pt}\Circled{ 副 }}}
+  \item Big dogs bark loudly.\\
+	\visible<4->{{\small \Circled{ 形 } \Circled{ 名 } \Circled{ 動 }\hspace{10pt}\Circled{ 副 }}}
+  \item George had very old coins.\\
+	\visible<5->{{\small \Circled{ 名 }\hspace{18pt}\Circled{ 動 } \Circled{ 副 } \Circled{ 形 }} \Circled{ 名 }}
+  \item Jennifer was very happy then.\\
+	\visible<6->{{\small \Circled{ 名 }\hspace{22pt}\Circled{ 動 } \Circled{ 副 }\hspace{8pt}\Circled{ 形 }\hspace{10pt}\Circled{ 副 }}}
+ \end{enumerate}
+\end{column}
+\begin{column}{.25\textwidth}
+ \begin{tcolorbox}
+  \begin{tabular}{cl}
+    \Circled{ 名 }&名詞\\
+    \Circled{ 動 }&動詞\\
+    \Circled{ 形 }&形容詞\\
+    \Circled{ 副 }&副詞
+  \end{tabular}
+ \end{tcolorbox}
+\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%
 \againframe<14>[plain]{basic}
 %%%%%%%%%%%%%%%%%%%%%%%%
