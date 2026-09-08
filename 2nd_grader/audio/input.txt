@@ -1,9 +1,1 @@
-cheap<break time="2s"/>cheap
-famous<break time="2s"/>famous
-planet<break time="2s"/>planet
-in fact<break time="2s"/>in fact
-heavy<break time="2s"/>heavy
-near<break time="2s"/>near
-need<break time="2s"/>need
-get up<break time="2s"/>get up
-important<break time="2s"/>important
+George and I studied late for the exam yesterday.
