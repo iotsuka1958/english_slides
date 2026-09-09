@@ -141,13 +141,38 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{manyとmuch}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain,label=countable]{数えられる名詞と数えられない名詞}
+\begin{frame}<1-5>[plain,label=countable]{数えられる名詞と数えられない名詞}
 
 \large
-\begin{enumerate}\setlength{\itemsep}{10pt}
+\begin{enumerate}\setlength{\itemsep}{6pt}
  \item<2-> apple, cat, bird, cookie, flower \ldots\hfill{}\visible<3->{\kenten{可算}名詞}　
  \item<4-> water, tea, coffee, flour \ldots\hfill{}\visible<5->{\kenten{不可算}名詞}
 \end{enumerate}
+
+%\bigskip
+
+\visible<6->{「多くの～、たくさんの～」というとき}
+
+\begin{quote}
+\visible<7->{可算名詞なら many\hfill{}many $\left\{
+\begin{array}{l}
+ apples\\
+cats\\
+birds\\
+cookies\\
+flowers
+\end{array}\right.$}
+
+\visible<8->{不可算名詞なら much\hfill{}much $\left\{
+\begin{array}{l}
+ water\\
+ tea\\
+ coffee\\
+flour
+\end{array}\right.$
+}
+\end{quote}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -181,7 +206,7 @@
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe<4>{countable}
+\againframe<5,6-8>[plain]{countable}
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 
@@ -189,24 +214,24 @@
 \hfill{\tiny 0349}\,{\scriptsize \myaudio{./audio/045_better_best_08.mp3}\,08}
  \begin{enumerate}
   \item \begin{enumerate}
-	 \item<1-> Paul ate too ( \alt<2->{\Circled[outer color = Maroon]{many}}{ many } / much ) hotdogs.
+	 \item<1-> Paul ate too ( \alt<2->{\Circled[outer color = Maroon]{many}}{ many } / much ) hot dogs.
 	 \item<1-> Paul drank too ( many / \alt<3->{\Circled[outer color = Maroon]{much}}{ much }) water.
 	\end{enumerate}
   \item \begin{enumerate}
 	 \item<1-> ポールはジョンよりたくさんのホットドッグを食べた。\\
-	       Paul ate (~~\alt<4->{\myEmph[4-]{Maroon}{more}}{\phantom{many}}~~) hotdogs (~~\alt<4->{\myEmph[4-]{Maroon}{than}}{\phantom{than}}~~) John.
+	       Paul ate (~~\alt<4->{\myEmph[4-]{Maroon}{more}}{\phantom{many}}~~) hot dogs (~~\alt<4->{\myEmph[4-]{Maroon}{than}}{\phantom{than}}~~) John.
 	 \item<1-> ポールはジョンよりたくさんのコーヒーを飲んだ。\\
 	       Paul drank (~~\alt<5->{\myEmph[5-]{Maroon}{more}}{\phantom{many}}~~) coffee (~~\alt<5->{\myEmph[5-]{Maroon}{than}}{\phantom{than}}~~) John.
 	\end{enumerate}
   \item \begin{enumerate}
 	 \item<1-> ポールがもっともおおくのホットドッグを食べた。\\
-	       Paul ate (~~\alt<6->{\myEmph[6-]{Maroon}{the}}{\phantom{the}}~~) (~~\alt<6->{\myEmph[6-]{Maroon}{most}}{\phantom{most}}~~) hotdogs.
+	       Paul ate (~~\alt<6->{\myEmph[6-]{Maroon}{the}}{\phantom{the}}~~) (~~\alt<6->{\myEmph[6-]{Maroon}{most}}{\phantom{most}}~~) hot dogs.
 	 \item<1-> ポールがいちばん大量のコーヒーを飲んだ。\\
 	       Paul drank (~~\alt<7->{\myEmph[7-]{Maroon}{the}}{\phantom{the}}~~) (~~\alt<7->{\myEmph[7-]{Maroon}{most}}{\phantom{most}}~~) coffee.
 	\end{enumerate}
   \item \begin{enumerate}
 	 \item<1-> ポールはジョンと同数のホットドッグを食べた。\\
-	       Paul ate (~~\alt<8->{\myEmph[8-]{Maroon}{as}}{\phantom{as}}~~) (~~\alt<8->{\myEmph[8-]{Maroon}{many}}{\phantom{many}}~~) hotdogs as John.
+	       Paul ate (~~\alt<8->{\myEmph[8-]{Maroon}{as}}{\phantom{as}}~~) (~~\alt<8->{\myEmph[8-]{Maroon}{many}}{\phantom{many}}~~) hot dogs as John.
 	 \item<1-> ポールはジョンと同量のコーヒーを飲んだ。\\
 	       Paul drank (~~\alt<9->{\myEmph[9-]{Maroon}{as}}{\phantom{as}}~~) (~~\alt<9->{\myEmph[9-]{Maroon}{much}}{\phantom{much}}~~) coffee as John.
 	\end{enumerate}
@@ -259,7 +284,7 @@ much&\visible<8->{more}&\visible<9->{most}\\
   title=次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\tiny 0036}\,{\scriptsize \myaudio{./audio/045_better_best_10.mp3}\,{\tiny 10}}
 ]
 
-My family likes food. Pizza is good, but my dad thinks hamburgers\tikzmark{clue1} are better. My mom makes\tikzmark{clue2} the best spaghetti.
+\noindent{}My family likes food. Pizza is good, but my dad thinks hamburgers\tikzmark{clue1} are better. My mom makes\tikzmark{clue2} the best spaghetti.
 
 I eat many fruits, like apples and bananas. My sister eats\tikzmark{clue3} more fruit than I do. My mom eats the most fruit\tikzmark{clue4} in our family. She loves strawberries.
 
@@ -287,6 +312,36 @@ I don't drink\tikzmark{clue5} much soda. I drink water. My dad says water is bet
  \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q4);}
  \visible<11->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue5) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q5);}
 \end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Important Words and Phrases}
+ \large
+\begin{enumerate}
+ \item I like ball games \textbf{like} soccer and baseball.
+ \item A like B（AたとえばB、BのようなA）
+ \item A, like B
+
+\end{enumerate}
+
+ \hfill{\tiny 0054}\,{\scriptsize \myaudio{./audio/045_better_best_10a.mp3\,10a}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{大意}
+
+　わたしの一家は食べるのが大好きです。
+ピザもおいしいですが、父はハンバーガーのほうが好きです。
+母がつくるスパゲッティは最高です。
+
+　わたしはりんごやバナナなど、果物をたくさん食べます。
+妹（姉）はわたしよりも果物を食べます。
+家族の中でいちばん果物を食べるのは母です。
+母はいちごが大好きです。
+
+　わたしは炭酸飲料をあまり飲みません。水を飲みます。父は水のほうが体にいいと言います。
+妹（姉）は水よりもジュースをよく飲みます。
+わたしたちはみんなでいっしょに、おいしい料理を楽しむのが大好きです。
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{まとめ}
