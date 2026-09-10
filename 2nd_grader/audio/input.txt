@@ -1,1 +1,2 @@
-I like ball games like soccer and baseball.
+bad<break time="2s"/>worse<break time="2s"/>worst
+badly<break time="2s"/>worse<break time="2s"/>worst
