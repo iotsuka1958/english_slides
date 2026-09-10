@@ -338,6 +338,7 @@ the&既出で何を指すかわかるとき&\kenten{定}冠詞\end{tabular}\righ
  \begin{tcolorbox}
   \begin{tabular}{@{}cl}
     \Circled{ 名 }&名詞\\
+    \Circled{ 代 }&代名詞\\
     \Circled{ 動 }&動詞\\
     \Circled{ 形 }&形容詞\\
     \Circled{ 副 }&副詞\\
@@ -379,7 +380,7 @@ before upper={\setlength{\parindent}{1.25em}},
  title={A Busy Sunday in the Park\hfill{\tiny 0032}\quad{\scriptsize \myaudio{./audio/020_part_of_speech_reading.mp3}\,{\tiny reading}}}
 ]
 \vspace{-1pt}
-\noindent{}Look at the sunny park. Many happy children play soccer on the green grass. They run quickly and laugh loudly.
+\noindent{}Look at the sunny park. Many happy children play soccer on the green grass. They run quickly \hyperlink{AND}{and} laugh loudly.
 
 A small brown dog runs happily with the children. A young girl throws a red ball to the dog.
 
@@ -399,6 +400,22 @@ In the lake, two white birds swim slowly. Everyone enjoys this peaceful morning 
 \item<2-> Everyone enjoys the peaceful morning in nature.\hfill\visible<7->{T}
 \end{enumerate}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+ \hypertarget{AND}{}
+\begin{enumerate}
+ \item<1-> They run quickly and laugh loudly.
+ \item<2->  They \only<3->{($=$ S)} $\left\{
+       \begin{tabular}{l}
+	run \only<3->{($=$ V$_{1}$)} quickly\\
+	and\\
+	laugh \only<3->{($=$ V$_{2}$)} loudly
+       \end{tabular}
+\right\}$
+ \item<4> S (V$_{1}$ $+$ V$_{2}$)
+\end{enumerate}
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{大意}
  
@@ -409,7 +426,7 @@ In the lake, two white birds swim slowly. Everyone enjoys this peaceful morning 
 
 　背の高い木の下では、おじいさんが静かにおもしろい本を読んでいます。あたたかい一杯のお茶を飲んでいます。
 
-　では、2羽の白い鳥がゆっくりと泳いでいます。誰もが自然の中でのおだやかな朝を楽しんでいます。
+　では、2羽の白い鳥がゆっくりと泳いでいます。誰もが自然の中でおだやかな朝を楽しんでいます。
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
