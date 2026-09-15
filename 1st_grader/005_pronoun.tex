@@ -18,6 +18,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
 \usepackage{pxrubrica}
+\usetikzlibrary{tikzmark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
 \subtitle{David is a singer. He is famous.}
@@ -385,6 +386,7 @@ hline{3} = {1-7}{ 0.04em },
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]{Exercises}
+\hypertarget{reader}{}
 \begin{tcolorbox}[colframe=ForestGreen,
   colback=NavyBlue!10!white,
   colbacktitle=NavyBlue!40!white,
@@ -393,17 +395,17 @@ before upper={\setlength{\parindent}{1.25em}},
  title={{}Our Smart Robot}{}\hfill{\tiny 0027}\,{\scriptsize \myaudio{./audio/005_pronoun_reading.mp3}\,{\tiny reading}}
 ]
 My family has a new robot.
-Its name is Robo.
+Its name is Robo.\tikzmark{clue1}
 It helps us every day.
 My father likes it.
-It cleans his room.
+It cleans his room.\tikzmark{clue2}
 My mother loves Robo, too.
-It cooks dinner for her.
-My sister and I play with it after school.
+It cooks dinner\tikzmark{clue3} for her.
+My sister and I play with it after school.\tikzmark{clue4}
 It is our good friend.
 We show its funny dance to our friends.
-They like it very much.
-Robo brings happiness to us.
+They like it very much.\tikzmark{clue5}
+Robo brings \hyperlink{ness}{happiness} to us.
 We love our smart robot.
 \end{tcolorbox}
 
@@ -411,12 +413,54 @@ We love our smart robot.
 \visible<2->{\small 次の各文が本文の内容とあっていればT,そうでなければFと答えましょう}
 \vspace{-11pt}
 \begin{enumerate}\setlength{\itemsep}{-3.2pt}
-\item<2-> The robot's name is Robo.\hfill\visible<3->{T}
-\item<2-> The robot cleans the father's room.\hfill\visible<4->{T}
-\item<2-> The mother cooks dinner for the robot.\hfill\visible<5->{F}
-\item<2-> The children play with the robot before school.\hfill\visible<6->{F}
-\item<2-> The friends do not like the robot's dance.\hfill\visible<7->{F}
+\item<2-> The \hyperlink{possessive}{robot's} name is Robo.\tikzmark{q1}\hfill\visible<3->{T}
+\item<2-> The robot cleans the \hyperlink{possessive}{father's} room.\tikzmark{q2}\hfill\visible<4->{T}
+\item<2-> The mother cooks dinner for the robot.\tikzmark{q3}\hfill\visible<5->{F}
+\item<2-> The children play with the robot before school.\tikzmark{q4}\hfill\visible<6->{F}
+\item<2-> The friends do not like the robot's dance.\tikzmark{q5}\hfill\visible<7->{F}
 \end{enumerate}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<3>{\draw[<-,opacity=.4,line width=2pt] ([xshift=-15pt,yshift=-2pt]pic cs:clue1) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<4>{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[bend left] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<5>{\draw[<-,opacity=.4,line width=2pt] ([xshift=-20pt,yshift=-2pt]pic cs:clue3) to[in=0,out=-90] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<6>{\draw[<-,opacity=.4,line width=2pt] ([xshift=-30pt,yshift=-2pt]pic cs:clue4) to[out=-45, in=0] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+ \visible<7>{\draw[<-,opacity=.4,line width=2pt] ([xshift=-30pt,yshift=-2pt]pic cs:clue5) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q5);}
+\end{tikzpicture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{名詞の所有格}
+\hypertarget{possessive}{}
+\begin{enumerate}[<+->]
+ \item He is \textbf{Jane's} father.\hfill{}He is \textbf{her} father.
+ \item I know \textbf{Mike's} mother.\hfill{}I know \textbf{his} mother.
+ \item This is \textbf{my mother's} car.\hfill{}This is \textbf{her} car.
+\end{enumerate}
+
+\begin{block}{Topics for Today}
+\begin{itemize}\setbeamertemplate{items}[circle]
+ \item 名詞の所有格は、\Circled[fill color=white]{\,\,名詞\textbf\,\textbf{'s}\,\,}\hfill{}cf. 代名詞の所有格
+ \item つまり「AのB」は、\textbf{A's B}
+\end{itemize}
+     \end{block}
+
+\hfill{\tiny 0135}\,{\scriptsize \myaudio{./audio/005_pronoun_5.mp3}\,5}
+
+\hfill\hyperlink{reader}{\beamerbutton{reader}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{---ness}
+\hypertarget{ness}{}
+
+\begin{enumerate}
+ \item<2-> kindness $=$ kind $+$ ness\hfill{}Jack is \textbf{kind}.
+ \item<4-> darkness $=$ dark $+$ ness\hfill{}It was a \textbf{dark} night.
+ \item<5-> happiness $=$ happy $+$ ness\hfill{}Dave was \textbf{happy}.
+ \item<3-> 形容詞 $+$ ness $\longrightarrow$ 名詞
+\end{enumerate}
+
+\hfill\hyperlink{reader}{\beamerbutton{reader}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{大意}
@@ -440,11 +484,11 @@ We love our smart robot.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Important Words and Phrases}
-\hfill{\tiny 0510}\,{\tiny\myaudio{./audio/042_er_word.mp3}\,word}
+\hfill{\tiny 0413}\,{\tiny\myaudio{./audio/005_pronoun_word.mp3}\,word}
 \pause
 \vspace{-10pt}
 \large
-\begin{enumerate}[<+- |alert@+>]
+ \begin{enumerate}[<+- |alert@+>]
  \item singer \textipa{/s\'IN\textrhookschwa /}\hfill\visible<2->{{\scriptsize \Circled{\,名\,} 歌手、歌う人\,\,sing $+$ er}}
  \item pianist \textipa{/pi\ae nIst/}\hfill\visible<3->{{\scriptsize \Circled{\,名\,} ピアニスト}}
  \item subject \textipa{/s2bdZIkt/}\hfill\visible<4->{{\scriptsize \Circled{\,名\,} 科目、教科}}
@@ -456,10 +500,7 @@ We love our smart robot.
  \item expensive \textipa{/Iksp\'ensIv/}\hfill\visible<10->{{\scriptsize \Circled{\,形\,} 高価な}}
  \item show \textipa{/S\'oU/}\hfill\visible<11->{{\scriptsize \Circled{\,動\,} ～を見せる}}
  \item bring \textipa{/br\'IN/}\hfill\visible<10->{{\scriptsize \Circled{\,形\,} ～を持ってくる、もたらす}}
-
-
-\end{enumerate}
-
+ \end{enumerate}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
