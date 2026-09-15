@@ -20,6 +20,7 @@
 %\usepackage[grid=true,gridcolor=Maroon,subgridcolor=gray,gridunit=pt,texcoord]{eso-pic} %場所決めのためのgrid表示
 \input{myPreamble4Slide.tex}
 \usetikzlibrary{tikzmark}
+\usepackage{lua-ul}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -271,7 +272,8 @@ much&\visible<8->{more}&\visible<9->{most}\\
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}<1-12>[plain,t]{Exercises}
+\begin{frame}<1-9>[plain,t]{Exercises}
+\hypertarget{reader}{}
 \scriptsize
 
 \vspace{-3pt}
@@ -284,69 +286,74 @@ much&\visible<8->{more}&\visible<9->{most}\\
   title=次の英文を読み、あとの設問に答えましょう\mbox{}\hfill{\tiny 0036}\,{\scriptsize \myaudio{./audio/045_better_best_10.mp3}\,{\tiny 10}}
 ]
 
-\noindent{}My family likes food. Pizza is good, but my dad thinks hamburgers\tikzmark{clue1} are better. My mom makes\tikzmark{clue2} the best spaghetti.
+\noindent{}My family likes food. Pizza is good, but my dad thinks (1)\underLine{hamburgers\tikzmark{clue1} are better}. My mom makes\tikzmark{clue2} the best spaghetti.
 
-I eat many fruits, like apples and bananas. My sister eats\tikzmark{clue3} more fruit than I do. My mom eats the most fruit\tikzmark{clue4} in our family. She loves strawberries.
+I eat many fruits, \hyperlink{LIKE}{like} apples and bananas. My sister eats\tikzmark{clue3} more fruit than I do. My mom eats the most fruit\tikzmark{clue4} in our family. She loves strawberries.
 
-I don't drink\tikzmark{clue5} much soda. I drink water. My dad says water is better for me. My sister drinks more juice than water. We all enjoy eating good food together.
+I don't drink\tikzmark{clue5} much soda. I drink water. My dad says water is better for me. My sister drinks more juice than water. We all \hyperlink{ENJOY}{enjoy} eating good food together.
 \end{tcolorbox}
 
 \vspace{-2pt}
-\visible<2->{{\scriptsize A. 本文に照らし合わせて、正しければT、そうでなければFと答えましょう}}
+\visible<2->{{\scriptsize A. 本文に照らし合わせて、正しければT、そうでなければFと答えましょう\hfill{}writer: 書き手}}
 \vspace{-5pt}
 \begin{enumerate}\scriptsize\setlength{\itemsep}{-2pt}
- \item<2-> The writer's dad thinks pizza is better than hamburgers.\tikzmark{q1}\hfill\visible<4->{F}
- \item<2-> The writer's mom makes the best spaghetti.\tikzmark{q2}\hfill\visible<6->{T}
- \item<2-> The writer eats more fruit than their sister.\tikzmark{q3}\hfill\visible<8->{F}
- \item<2-> The writer's mom eats the most fruit in the family.\tikzmark{q4}\hfill\visible<10->{T}
- \item<2-> The writer drinks much soda.\tikzmark{q5}\hfill\visible<12->{F}
+ \item<2-> The writer's dad thinks pizza is better than hamburgers.\tikzmark{q1}\hfill\visible<3->{F}
+ \item<2-> The writer's mom makes the best spaghetti.\tikzmark{q2}\hfill\visible<4->{T}
+ \item<2-> The writer eats more fruit than their sister.\tikzmark{q3}\hfill\visible<5->{F}
+ \item<2-> The writer's mom eats the most fruit in the family.\tikzmark{q4}\hfill\visible<6->{T}
+ \item<2-> The writer drinks much soda.\tikzmark{q5}\hfill\visible<7->{F}
 \end{enumerate}
+
+\visible<2->{{\scriptsize B. 内容を踏まえ、下線部(1)の直後に2語を補ってください\hfill{}hamburgers are better \alt<-8>{(\phantom{than}) (\phantom{pizza})}{(than) (pizza)}
+}}
 
 \vspace{3pt}
 
 
 \begin{tikzpicture}[remember picture,overlay]
- \visible<3->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[out=-90,in=0] ([xshift=2pt, yshift=2pt] pic cs:q1);}
- \visible<5->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[out=-90,in=0] ([xshift=2pt, yshift=2pt] pic cs:q2);}
- \visible<7->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue3) to[in=0,out=-90] ([xshift=2pt, yshift=2pt] pic cs:q3);}
- \visible<9->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q4);}
- \visible<11->{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue5) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q5);}
+ \visible<3>{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue1) to[out=-90,in=0] ([xshift=2pt, yshift=2pt] pic cs:q1);}
+ \visible<4>{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue2) to[out=-90,in=0] ([xshift=2pt, yshift=2pt] pic cs:q2);}
+ \visible<5>{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue3) to[in=0,out=-90] ([xshift=2pt, yshift=2pt] pic cs:q3);}
+ \visible<6>{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue4) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q4);}
+ \visible<7>{\draw[<-,opacity=.4,line width=2pt] ([yshift=-2pt]pic cs:clue5) to[out=-90, in=0] ([xshift=2pt, yshift=2pt] pic cs:q5);}
 \end{tikzpicture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Important Words and Phrases}
+\hypertarget{LIKE}{}
+\hypertarget{ENJOY}{}
  \large
 \begin{enumerate}
- \item \begin{enumerate}
-	\item I like ball games \textbf{like} soccer and baseball.
+ \item<1-> \begin{enumerate}
+	\item I like ball games \textbf{like} soccer and baseball.\hfill{\scriptsize ball game: 球技}
 	\item A like B（AたとえばB、BのようなA）
 	\item A, like B \hfill{\tiny 0054}\,{\scriptsize \myaudio{./audio/045_better_best_10a.mp3}\,{\tiny 10a}}
 
        \end{enumerate}
- \item \begin{enumerate}
+ \item<2-> \begin{enumerate}
 	\item I \textbf{enjoyed} play\textbf{ing} tennis with my friends yesterday.
-	\item enjoy ---ing \hfill{\tiny 0054}\,{\scriptsize \myaudio{./audio/045_better_best_10b.mp3}\,{\tiny 10b}}
+	\item enjoy ---ing（～することを楽しむ） \hfill{\tiny 0054}\,{\scriptsize \myaudio{./audio/045_better_best_10b.mp3}\,{\tiny 10b}}
 
        \end{enumerate}
 \end{enumerate}
 
-
+\hfill\hyperlink{reader}{\beamerbutton{reader}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{大意}
 
 　わたしの一家は食べるのが大好きです。
-ピザもおいしいですが、父はハンバーガーのほうが好きです。
+ピザはおいしいですが、父はハンバーガーのほうがおいしいとおもっています。
 母がつくるスパゲッティは最高です。
 
 　わたしはりんごやバナナなど、果物をたくさん食べます。
 妹（姉）はわたしよりも果物を食べます。
-家族の中でいちばん果物を食べるのは母です。
+ 家族の中で母がいちばんたくさん果物を食べます。
 母はいちごが大好きです。
 
-　わたしは炭酸飲料をあまり飲みません。水を飲みます。父は水のほうが体にいいと言います。
+　わたしはソーダをあまり飲みません。水を飲みます。父は水のほうが体にいいといいます。
 妹（姉）は水よりもジュースをよく飲みます。
-わたしたちはみんなでいっしょに、おいしい料理を楽しむのが大好きです。
+わたしたちはみんなでいっしょに、おいしい料理を食べるのを楽しみます。
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -375,9 +382,10 @@ I don't drink\tikzmark{clue5} much soda. I drink water. My dad says water is bet
 
      \end{block}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{もうひとつ}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{bad, badly}
+\begin{frame}[plain]{bad /  badly}
 
 \textdbend\mbox{}\hfill{\tiny 0138}\,{\scriptsize \myaudio{./audio/045_better_best_11.mp3}}
 
@@ -398,13 +406,13 @@ I don't drink\tikzmark{clue5} much soda. I drink water. My dad says water is bet
 
 
 
-\begin{block}<11->{bad, badly}\small
+\begin{block}<11->{bad / badly}\small
 \begin{itemize}\setbeamertemplate{items}[square]\small
  \item 形容詞\textbf{bad}（悪い、へたな）、副詞\textbf{badly}（悪く、へたに）も不規則に変化します
 \end{itemize}
 
 \begin{quotation}
-\textbf{bad} --- \textbf{worse} --- \textbf{worst}
+\textbf{bad\phantom{ly}} --- \textbf{worse} --- \textbf{worst}
 
 \textbf{badly} --- \textbf{worse} --- \textbf{worst}\hfill{\tiny 0151}\,{\scriptsize \myaudio{./audio/045_better_best_13.mp3}\,{\tiny 13}}
 \end{quotation}
@@ -439,11 +447,10 @@ eduopちばのアカウント\\\hfill{}(xxxxxx@eduop-chiba.jp)\\
 
 \url{https://forms.gle/NHezUm1tFUrV8uh97}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]
- \hfill{\tiny audio\_overview\,2325}\,{\scriptsize \myaudio{./audio/overview/045_better_best_audio_overview.m4a}}
-\end{frame}
+%\begin{frame}[plain]
+% \hfill{\tiny audio\_overview\,2019}\,{\scriptsize \myaudio{./audio/overview/045_better_best_audio_overview.m4a}}
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 
