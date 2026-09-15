@@ -1,7 +1,11 @@
-This is my book.
-He is our father.
-Your cat is cute.
-His bike is new.
-This is her cat.
-The robot moves its arm.
-Their house is big.
+singer
+pianist
+subject
+every day
+favorite
+move
+arm
+owner
+expensive
+show
+bring
