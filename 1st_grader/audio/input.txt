@@ -1,11 +1,2 @@
-singer
-pianist
-subject
-every day
-favorite
-move
-arm
-owner
-expensive
-show
-bring
+I like cheese.
+I don't like cheese.
