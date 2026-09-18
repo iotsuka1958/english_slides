@@ -1,5 +1,2 @@
-They run quickly and laugh loudly.
-A small brown dog runs happily with the children.
-An old man reads an interesting book quietly.
-In the lake, two white birds swim slowly.
-Linda sings beautifully.
+Emily is a better driver than Dave.<break time="2s"/>Dave is a worse driver than Emily.<break time="2s"/>Dave drives worse than Emily.
+George sings better than Peter.<break time="2s"/>Peter sings worse than George.<break time="2s"/>Peter is a worse singer than George.
