@@ -488,14 +488,14 @@ Q. つぎの各文のcleanの品詞はなんですか
 %%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{きちんと区別しよう}
  \begin{enumerate}
-  \item<1-> birdの品詞は？\hfill\visible<2->{名詞}
-  \item<3-> Birds sing.という英文のBirdsの品詞は？\hfill\visible<4->{名詞}
-  \item<5-> Birds sing. という英文の主語は？\hfill\visible<6->{Birds}
+%  \item<1-> birdの品詞は？\hfill\visible<2->{名詞}
+  \item<1-> Birds sing.という英文のBirdsの品詞は？\hfill\visible<2->{Birdsは名詞}
+  \item<3-> Birds sing. という英文の主語は？\hfill\visible<4->{Birdsは主語}
  \end{enumerate}
 
-\visible<7->{てことはBirds sing.のBirdsは名詞でもあるし主語でもあるってことなの？}
+\visible<5->{てことはBirds sing.のBirdsは名詞でもあるし主語でもあるってことなの？}
 
-\visible<8->{Birds sing.のBirdsは「名詞です」といったり「主語です」といったり、なんか混乱しちゃうんですけど}
+\visible<6->{Birds sing.のBirdsは「名詞です」といったり「主語です」といったり、なんか混乱しちゃうんですけど}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{きちんと区別しよう}
@@ -515,6 +515,40 @@ Q. つぎの各文のcleanの品詞はなんですか
 いいかえるとbirdsという単語は文のどこに出てきても、いつでも名詞なのです。\\
 I love birds.のbirdsが名詞なのは明らかですよね
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{きちんと区別しよう}
+
+\visible<1->{{\Large I love \textcolor{Maroon}{\bfseries birds}\tikzmark{water1}. \textcolor{Maroon}{\bfseries Birds}\tikzmark{water2} sing.}}
+
+\vfill
+
+\hfill\hfill{}\tikzmark{noun}\visible<2->{名詞}\hfill~
+
+\vfill
+
+\hspace*{100pt}\visible<3->{目的語}\tikzmark{object}\hspace{60pt}\visible<4->{主語}\tikzmark{subject}
+
+\begin{tikzpicture}[remember picture,overlay]
+ \visible<2->{\draw[<-,Maroon,opacity=.7,line width=2pt] ([xshift=-35pt,yshift=-2pt]pic cs:water1) to[out=-70, in=180] ([xshift=-2pt, yshift=4pt] pic cs:noun);}
+ \visible<2->{\draw[<-,Maroon,opacity=.7,line width=2pt] ([xshift=-35pt,yshift=-2pt]pic cs:water2) to[out=-70, in=180] ([xshift=-2pt, yshift=4pt] pic cs:noun);}
+%%%%%%%%%%%%%%%
+ \visible<3->{\draw[->,opacity=.4,line width=2pt] ([xshift=-35pt,yshift=-2pt]pic cs:water1) to[out=-90, in=90] ([xshift=-14pt, yshift=10pt] pic cs:object);}
+ \visible<4->{\draw[->,opacity=.4,line width=2pt] ([xshift=-35pt,yshift=-2pt]pic cs:water2) to[out=-90, in=90] ([xshift=-14pt, yshift=10pt] pic cs:subject);}
+\end{tikzpicture}
+
+\begin{textblock*}{0.4\linewidth}(275pt,165pt)
+    % TiKZを使った図形の描画
+    \visible<5->{\begin{tikzpicture}
+      \node[name=k, shape=businessman, minimum size=55pt, mirrored] {};
+  \node[ellipse callout, xshift=-1.8cm, draw,yshift= .2cm,
+    callout absolute pointer={(k.mouth)},
+    font=\tiny\bfseries, align=center, inner sep=1pt]
+    {名詞は\\SにもOにも\\なります};
+    \end{tikzpicture}}
+\end{textblock*}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{きちんと区別しよう}
 
