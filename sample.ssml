@@ -1,0 +1,24 @@
+<speak>
+  <!-- 1. 英語・男性 (en-US-Neural2-D) -->
+  <voice name="en-US-Neural2-D">
+    Hello everyone. Thank you for joining today's session.
+  </voice>
+  <break time="600ms"/>
+
+  <!-- 2. 英語・女性 (en-US-Neural2-F) -->
+  <voice name="en-US-Neural2-F">
+    We are pleased to introduce our latest project updates with all of you.
+  </voice>
+  <break time="600ms"/>
+
+  <!-- 3. 日本語・男性 (ja-JP-Neural2-C) -->
+  <voice name="ja-JP-Neural2-C">
+    ここからは日本語でご案内いたします。本日の進行を担当いたします。
+  </voice>
+  <break time="600ms"/>
+
+  <!-- 4. 日本語・女性 (ja-JP-Neural2-B) -->
+  <voice name="ja-JP-Neural2-B">
+    それでは、最初のデモンストレーションを開始いたします。どうぞお聞きください。
+  </voice>
+</speak>
