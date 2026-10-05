@@ -1,3 +1,4 @@
+
 \documentclass[aspectratio=169,xcolor={dvipsnames,table}]{beamer}
 \usepackage[no-math,deluxe,haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
@@ -89,7 +90,7 @@
     \end{itemize}
   \end{block}
 
-  \mbox{}\hfill{\tiny 0400}\,{\scriptsize \myaudio{./audio/021_N_ing_01.mp3}}
+  \mbox{}\hfill{\tiny 0400}\,{\scriptsize \myaudio{./audio/021_N_ing_01.mp3}}\,{\tiny 01}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
 \section{現在分詞 $+$ 名詞}
@@ -99,30 +100,31 @@
     \item<1-> I looked at \fbox{the cat}.\hspace{35pt}{\scriptsize look at ～を見る}\hfill{\scriptsize {\fbox{$\text{冠詞}+\text{名詞}$}}}
     \item<2-> I looked at \fbox{the cute cat}.\hspace{10pt}{\scriptsize cute \textipa{/kj\'u:t/} かわいい}\hfill{\scriptsize {\fbox{$\text{冠詞}+\text{形容詞}+\text{名詞}$}}}
     \item<3-> I looked at \fbox{the {\bfseries sleeping} cat}.\hfill{\scriptsize {\fbox{$\text{冠詞}+\textbf{\,\,---ing\,\,}+\text{名詞}$}}}
-    \item<7->[cf.] The cat \textbf{sleeps} on the chair.
+    \item<9->[cf.] The cat \textbf{sleeps} on the chair.
   \end{enumerate}
 
   \vspace{20pt}
 
   \begin{block}<4->{Topics for Today}\small
-    動詞の\Circled[fill color = white]{\,\,---ing\,\,}\,\,が名詞を修飾することがあります%
-    \hfill{\scriptsize つまり\kenten{形容詞}の役目}
+    動詞の\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,が\kenten{名詞を修飾}することがあります%
+    \hfill{\scriptsize つまり「形容詞」の役目}
 
     \begin{itemize}\setbeamertemplate{items}[square]\small
       \item<5-> この\,\,\Circled[fill color = white]{\,\,\textbf{---in}g\,\,}\,\,は「～している」という\kenten{進行}の意味
       \item<6-> この\,\,\Circled[fill color = white]{\,\,\textbf{---ing}\,\,}\,\,を「現在分詞」といいます\\
-            {\scriptsize \textdbend\textdbend 「現在分詞」は\kenten{現在}の意味ではなく\kenten{進行}の意味}\\
-            \hfill{\scriptsize 「過去分詞」は\kenten{過去}の意味ではなく「される」という\kenten{受け身}の意味でしたね}
+            \visible<7->{{\scriptsize \textdbend\textdbend 「現在分詞」は\kenten{現在}の意味ではなく\kenten{進行}の意味}}\\
+            \hfill\visible<8->{{\scriptsize 「過去分詞」は\kenten{過去}の意味ではなく「される」という\kenten{受け身}の意味でしたね}}\\
+            \hfill\visible<8->{{\small cf.  English is \textbf{spoken} in the country.}}
     \end{itemize}
   \end{block}
   \vspace*{-5pt}
 
-  \mbox{}\hfill\tiny 0135{\,}{\scriptsize \myaudio{./audio/021_N_ing_02.mp3}}
+  \mbox{}\hfill\tiny 0135{\,}{\scriptsize \myaudio{./audio/021_N_ing_02.mp3}}\,{\tiny 02}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
 
-  {\small 日本語の意味になるよう(~~~~~~)の語を並べ替えましょう。先頭に来る語は大文字で始めてください}\hfill{\tiny 0226}\,{\scriptsize \myaudio{./audio/021_N_ing_03.mp3}}
+  {\small 日本語の意味になるよう(~~~~~~)の語を並べ替えましょう。先頭に来る語は大文字で始めてください}\hfill{\tiny 0226}\,{\scriptsize \myaudio{./audio/021_N_ing_03.mp3}}\,{\tiny 03}
   \begin{enumerate}
     \item {\small あなたは歌っているあの女性を知っていますか。}\\
           ( you / singing / the / woman / do / know ) ?\\
@@ -142,6 +144,123 @@
   \end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{ingのつくり方（おさらい）}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}<1-14>[plain,label=how2makeIng]{---ingのつくりかた}
+
+  \begin{center}
+    % \rowcolors{2}{NavyBlue!50}{yellow!40}
+    %\begin{tblr}{
+    % colspec = {l l l l}, % 列の仕様
+    % row{5-6} = {bg=yellow!50}, % 1行目の背景色を黄色に設定
+    % row{7-8} = {bg=NavyBlue!40} % 3行目の背景色を薄い灰色に設定
+    %}
+    \begin{tabular}{rlll}
+      \toprule
+                              & {\small 原形}         & {\small ---ing}                                                                                    \\\midrule
+      1                       & \visible<1->{eat}   & \visible<2->{{\small eating}}    & \visible<3->{{\small 原形に---ingをつけるだけ(原則)}}                      \\
+      2                       & \visible<1->{play}  & \visible<4->{{\small playing}}   &                                                                 \\
+      3                       & \visible<1->{go}    & \visible<5->{{\small going}}     &                                                                 \\
+      4                       & \visible<1->{read}  & \visible<6->{{\small reading}}   &                                                                 \\
+      \rowcolor{yellow!40}5   & \visible<1->{make}  & \visible<7->{{\small making}}    & \visible<10->{{\small eをとって---ing}}                             \\
+      \rowcolor{yellow!40}6   & \visible<1->{write} & \visible<8->{{\small writing}}   &                                                                 \\
+      \rowcolor{yellow!40}7   & \visible<1->{use}   & \visible<9->{{\small using}}     &                                                                 \\
+      \rowcolor{NavyBlue!40}8 & \visible<1->{swim}  & \visible<11->{{\small swimming}} & \visible<13->{{\small 最後の1文字を重ねて---ing}}                        \\
+      \rowcolor{NavyBlue!40}9 & \visible<1->{run}   & \visible<12->{{\small running}}  & \visible<14->{\scriptsize ほかにもsit $\rightarrow$ sitting \ldots} \\
+      %\rowcolor{NavyBlue!40}10&\visible<1->{sit}&\visible<14->{{\small sitting}}&\\
+      \bottomrule
+    \end{tabular}
+    %\end{tblr}%
+  \end{center}
+
+  \vspace{-13pt}
+
+  \hfill\visible<15->{\scriptsize \dbend\,\,\dbend\,\,最後の1文字を重ねるのは\,\,\Circled{\,\,$\text{短い母音}+\text{子音字}$\,\,}\,\,で終わる動詞のときです}%
+  \mbox{}\hfill{\tiny 0506}\,{\scriptsize \myaudio{../1st_grader/audio/021_is_ing_intro_03.mp3}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]
+
+  \Large
+
+  \vspace*{30pt}
+
+  sitting, running, swimming \ldots
+
+  \textdbend\,最後の1文字を重ねるときって？
+
+  \begin{textblock*}{0.4\linewidth}(90pt,130pt)
+    \visible<2->{
+        \scalebox{2}{\begin{tikzpicture}
+            \node[name=k, shape=maninblack, minimum size=1cm] {};
+            \node[ellipse callout, xshift=1.2cm, draw,yshift= .3cm,
+              callout absolute pointer={(k.mouth)},
+              font=\tiny\sffamily, align=center, inner sep=1pt]
+            {覚えるしか\\ないの？};
+          \end{tikzpicture}}
+      }
+  \end{textblock*}
+
+  \normalsize
+  \begin{textblock*}{0.4\linewidth}(250pt,70pt)
+    \visible<3->{\begin{tikzpicture}
+          \chicken[
+            scale=1.6,
+            speech={\scriptsize それはたいへん},
+            signpost=\scalebox{0.6}{
+              \parbox{2.52cm}{\color{black}
+                \centering 実は、\\そんなことはありません}},
+            signcolour= brown!70!gray,
+            signback=white!80!brown
+          ]
+        \end{tikzpicture}}
+  \end{textblock*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{最後の1文字を重ねるとき}
+  \Large
+
+  sit / eat
+
+  どちらも\,\Circled{\,t\,}\,というアルファベットで終わっているが\ldots
+
+  \bigskip
+
+  \begin{enumerate}
+    \pgfkeys{/csteps/inner xsep=15pt}
+    \item<2-> sit \textipa{/s\'It/}\,\,\,\,\,\,\,\visible<3->{si\textbf{tt}ing}\,\,\,\,\,\visible<5->{$\longleftarrow$ \Circled{{\small 短い母音}\textipa{/I/} $+$ t}}
+    \item<2-> eat \textipa{/\'\i:t/}\,\,\,\,\,\,\visible<4->{ea\textbf{t}ing}\,\,\,\,\,\visible<6->{$\longleftarrow$ \Circled{{\small 長い母音}\textipa{/i:/} $+$ t}}\hfill{}\visible<6->{\textipa{:}\,\,\,{\scriptsize 長音記号}}
+  \end{enumerate}
+
+  \bigskip
+  \begin{block}<7->{Topic for Today}\small
+    \begin{itemize}\setbeamertemplate{items}[square]
+      %\dbend\,\,\dbend\,\,最後の1文字を重ねるのは\,\,\Circled[fill color=white]{\,\,$\text{短い母音}+\text{子音字}$\,\,}\,\,で終わる動詞のときです\\
+      \item \Circled[fill color=white]{\,\,$\text{短い母音}+\text{子音字}$\,\,}\,\,で終わる動詞のとき、最後の子音字を重ねて---ing\,\,\dbend\,\,\dbend\\[5pt]
+            \hfill{swim $\rightarrow$\,swimming\hspace{15pt}run $\rightarrow$\,running}
+    \end{itemize}
+  \end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{Exercises}
+  つぎの動詞を---ing形にしてください%
+  \hfill{\tiny 0432}\,{\scriptsize \myaudio{../1st_grader/audio/021_is_ing_intro_041.mp3}}
+  \large
+  \begin{enumerate}
+    \item sit \textipa{/s\'It/}{\normalsize （座る）}\,\,\visible<2->{$\longrightarrow$\, si\textbf{tt}ing}
+    \item swim \textipa{/sw\'Im/}{\normalsize （泳ぐ）}\,\,\visible<3->{$\longrightarrow$\, swi\textbf{mm}ing}
+    \item run \textipa{/r\'2n/}{\normalsize （走る）}\,\,\visible<4->{$\longrightarrow$\, ru\textbf{nn}ing}
+    \item begin \textipa{/bIg\'In/}{\normalsize （始まる・始める）}\,\,\visible<5->{$\longrightarrow$\, begi\textbf{nn}ing}
+    \item get \textipa{/g\'et/}{\normalsize （得る）}\,\,\visible<6->{$\longrightarrow$\, ge\textbf{tt}ing}
+    \item cut \textipa{/c\'2t/}{\normalsize （切る）}\,\,\visible<7->{$\longrightarrow$\, cu\textbf{tt}ing}
+    \item put \textipa{/p\'Ut/}{\normalsize （置く）}\,\,\visible<8->{$\longrightarrow$\, pu\textbf{tt}ing}
+    \item shut \textipa{/S\'2t/}{\normalsize （閉じる）}\,\,\visible<9->{$\longrightarrow$\, shu\textbf{tt}ing}
+    \item meet \textipa{/m\'\i:t/}{\normalsize （会う）}\,\,\visible<10->{$\longrightarrow$\, mee\textbf{t}ing}
+  \end{enumerate}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{名詞 $+$ 現在分詞}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]{名詞 $+$ ---ing \ldots}
@@ -166,7 +285,7 @@
   \end{block}
   \vspace{-13pt}
 
-  \hfill{\tiny 0139}\,{\scriptsize \myaudio{./audio/021_N_ing_04.mp3}}
+  \hfill{\tiny 0139}\,{\scriptsize \myaudio{./audio/021_N_ing_04.mp3}}\,{\tiny 04}
 
   \begin{textblock*}{0.4\linewidth}(330pt,87pt)
     \visible<8->{\begin{tikzpicture}
@@ -186,11 +305,12 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Exercises}
-
+  \hypertarget{EX}{}
   {\small 日本語の意味になるよう(~~~~~~)の語を並べ替えましょう}%
-  \hfill{\tiny 0212}\,{\scriptsize \myaudio{./audio/021_N_ing_05.mp3}}
+  \hfill{\tiny 0212}\,{\scriptsize \myaudio{./audio/021_N_ing_05.mp3}}\,{\tiny 05}
   \begin{enumerate}
-    \item  {\small 英語を話している少年たちを見なさい。}\\
+    \item  {\small 英語を話している少年たちを見なさい。}%
+          \hfill\hyperlink{ZUKAI}{\beamergotobutton{図解}}\\%%図解にジャンプ
           Look ( English / the boys / speaking / at ) .\\
           \visible<2->{Look at the boys speaking English.}
     \item  {\small 海で泳いでいる男性はわたしの父です。}\\
@@ -219,7 +339,42 @@
   \end{textblock*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
-\section{Listen, Then Read\,\,\,\,\,{\tiny 0036}\,{\scriptsize \myaudio{./audio/021_N_ing_06.mp3}}}
+\begin{frame}[plain]{図解}
+  \hypertarget{ZUKAI}{}
+  \begin{enumerate}[<+->]\setlength{\itemsep}{10pt}
+    \item Look at \myAnch{a1}{Maroon}{\bfseries the boys} \myAnch{a2}{black}{speaking English}.%
+          \hfill{\scriptsize cf. Look at the boys.}
+    \item \myAnch{b1}{Maroon}{\bfseries The man} \myAnch{b2}{black}{swimming in the sea} is my father.%
+          \hfill{\scriptsize cf. The man is my father.}
+    \item \myAnch{c1}{Maroon}{\bfseries The boy} \myAnch{c2}{black}{reading a book in the room} is Spencer.%
+          \hfill{\scriptsize cf. The boy is Spencer.}
+    \item Do you know \myAnch{d1}{Maroon}{\bfseries the girl} \myAnch{d2}{black}{running with a dog} ?%
+          \hfill{\scriptsize cf. Do you know the girl?}
+  \end{enumerate}
+
+  \begin{tikzpicture}[remember picture, overlay]
+    \coordinate (A2) at ($(a2) - (0,15pt)$); % 10pt below a1
+    \coordinate (A1) at ($(a1) - (0,15pt)$); % 10pt below a1
+    \visible<1->{\draw[->,black,thick] (a2) -- (A2) -- (A1) -- (a1);}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \coordinate (B2) at ($(b2) - (0,15pt)$); % 10pt below a1
+    \coordinate (B1) at ($(b1) - (0,15pt)$); % 10pt below a1
+    \visible<2->{\draw[->,black,thick] (b2) -- (B2) -- (B1) -- (b1);}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \coordinate (C2) at ($(c2) - (0,15pt)$); % 10pt below a1
+    \coordinate (C1) at ($(c1) - (0,15pt)$); % 10pt below a1
+    \visible<3->{\draw[->,black,thick] (c2) -- (C2) -- (C1) -- (c1);}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \coordinate (D2) at ($(d2) - (0,15pt)$); % 10pt below a1
+    \coordinate (D1) at ($(d1) - (0,15pt)$); % 10pt below a1
+    \visible<4->{\draw[->,black,thick] (d2) -- (D2) -- (D1) -- (d1);}
+  \end{tikzpicture}
+
+  \hfill\hyperlink{EX}{\beamergotobutton{Exercises}}\\%%図解にジャンプ
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+\section{Listen, Then Read\,\,\,\,\,{\tiny 0036}\,{\scriptsize \myaudio{./audio/021_N_ing_06.mp3}}}\,{\tiny 06}
 %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]
@@ -228,7 +383,7 @@
 
   \vspace{-15pt}
 
-  \hfill{\tiny 0038}\,{\scriptsize \myaudio{./audio/021_N_ing_06.mp3}}
+  \hfill{\tiny 0038}\,{\scriptsize \myaudio{./audio/021_N_ing_06.mp3}}\,{\tiny 06}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%
@@ -240,7 +395,7 @@
       colbacktitle=NavyBlue!40!white,
       coltitle=black, %fonttitle=\bfseries,
       before upper={\setlength{\parindent}{1.25em}},
-      title=次の英文を読みましょう\mbox{}\hfill{\tiny 0031}\,{\scriptsize \myaudio{./audio/021_N_ing_06.mp3}}
+      title=次の英文を読みましょう\mbox{}\hfill{\tiny 0031}\,{\scriptsize \myaudio{./audio/021_N_ing_06.mp3}}\,{\tiny 06}
     ]
     \noindent{}It was a sunny Saturday.
     I visited the large City Park.
@@ -263,7 +418,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{大意}
 
-  \begin{tcolorbox}
+  \begin{tcolorbox}\parindent=1\zw
     よく晴れた土曜日のことでした。
     私は大きな町の公園に行きました。
     おもしろいものをたくさん目にしました。
@@ -282,25 +437,27 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{まとめ1}
 
-  \begin{block}{形容詞とは}\small
+  \begin{block}<1->{形容詞とは}\small
     名詞を修飾することばを「形容詞」といいます
     \begin{itemize}\setbeamertemplate{items}[square]\small
       \setlength{\itemsep}{5pt}
-      \item 形容詞は名詞の前に置きます
+      \item 形容詞は名詞の前に置きます\hfill{\small a \textbf{small} cat}
       \item \fcolorbox{black}{white}{\,$\text{(冠詞)}+\text{形容詞}+\text{名詞}$\,\,}\,\,\,は意味のかたまりになります
     \end{itemize}
   \end{block}
 
-  \begin{block}{名詞を修飾する---ing}\small
+  \begin{block}<2->{名詞を修飾する---ing}\small
     \Circled[fill color = white]{\,\,---ing\,\,}\,\,が名詞を修飾することがあります%
     \hfill{\scriptsize つまり「形容詞」の役目をしています}
 
     \begin{itemize}\setbeamertemplate{items}[square]\small
       \setlength{\itemsep}{5pt}
-      \item この\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,は「～している」という\kenten{進行}の意味
+      \item この\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,は「～している」という\kenten{進行}の意味%
+            \hfill{\small Look at the \textbf{sleeping} cat.}
       \item この\,\,\Circled[fill color = white]{\,\,---ing\,\,}\,\,を「現在分詞」といいます\\
             {\scriptsize \textdbend\textdbend 「現在分詞」は\kenten{現在}の意味ではなく\kenten{進行}の意味}\\
-            \hfill{\scriptsize 「過去分詞」は\kenten{過去}の意味ではなく「される」という\kenten{受け身}の意味でしたね}
+            \hfill{\scriptsize 「過去分詞」は\kenten{過去}の意味ではなく「される」という\kenten{受け身}の意味でしたね}\\
+            \hfill{\small cf.  English is \textbf{spoken} in the country.}
     \end{itemize}
   \end{block}
 
@@ -320,7 +477,7 @@
             \hfill{\scriptsize \textbf{boiling} water}\\
             \hfill{\scriptsize the \textbf{rising} sun}\\
             \hfill{\scriptsize the \textbf{flying} birds}
-      \item \Circled[fill color = white]{\,\,---ing\,\,}\,\,がほかの語句を伴うときは、
+      \item<2-> \Circled[fill color = white]{\,\,---ing\,\,}\,\,がほかの語句を伴うときは、
             後ろから前の名詞を修飾します
 
             \hspace{50pt}$\text{名詞\,\,}\longleftarrow$\,\,\Circled[fill color = white]{\,\,---ing\,\,+\text{\,\,ほかの語句\,\,}}\hfill{\scriptsize the cat \textbf{sleeping} in the sun}\\
