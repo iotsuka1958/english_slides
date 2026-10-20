@@ -1,0 +1,121 @@
+\documentclass[12pt, jafontscale=0.9247]{jlreq}
+%\documentclass[10pt,twocolumn,column_gap=2zw]{jlreq}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 欧文TTF/OTFフォントを利用するにはfontspec.styをロードする必要あり
+%% 和文TTF/OTFフォントを利用するにはluatexja-fontspec.styをロードする必要あり
+%% luatexja-fontspec.styはfontspec.styをないぶてきにロードする
+%% lualatex-ja-preset.sty は luatexja-fontspec.styをロードする
+%% つまり次の1行でluatexja-fontspec.sty, fontspec.styも自動的にロードされる
+%\usepackage[no-math,deluxe,expert,yu-win10]{luatexja-preset}
+\usepackage[no-math, deluxe, expert]{luatexja-preset}
+%%%%
+\usepackage{graphicx}
+\usepackage[svgnames, table]{xcolor}
+\usepackage{pxrubrica}
+
+\usepackage[default]{fontsetup}
+%%%% tabular環境の改良版
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+\usepackage{booktabs}
+\let\textipa\relax
+\usepackage{tipa}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{lmodern}
+\usepackage{worldflags}
+\usepackage{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{media9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define custom pastel colors
+\definecolor{customLightBlue}{RGB}{173, 216, 230}
+\definecolor{customLightCyan}{RGB}{224, 255, 255}
+\definecolor{customLightGreen}{RGB}{144, 238, 144}
+\definecolor{customLightYellow}{RGB}{255, 255, 224}
+\definecolor{customLightPink}{RGB}{255, 182, 193}
+\definecolor{customLightGray}{RGB}{211, 211, 211}
+\definecolor{customLavender}{RGB}{230, 230, 250}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% for tikzducks
+\definecolor{skin}{RGB}{255,209,181}
+\definecolor{lblue}{RGB}{176,172,188}
+\definecolor{lbrown}{RGB}{236,213,163}
+\definecolor{dbrown}{RGB}{176,134,95}
+\definecolor{billcol}{RGB}{230,132,82}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[at]{easylist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usepackage{tikzducks}
+\usepackage{tikzlings, tikzsymbols}
+\usetikzlibrary{arrows}
+\usepackage{tcolorbox}
+\newtcolorbox[auto
+counter,
+number
+within=section]{pabox}[2][]{%
+colback=yellow!5,fonttitle=\bfseries, title=Question~\thetcbcounter: #2,#1}
+\tcbuselibrary{skins,breakable}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{enumitem}%%[label=\textbf{\arabic*}]
+\usepackage{ascmac}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{luatexja-otf}
+\ltjsetparameter{jacharrange={-2}}
+%%%%%%%%%%
+\usepackage{longtable}
+\usepackage{datetime}
+% Coffeecupを一時退避(tikzsymbols版を保存)
+\let\tikzCoffeecup\Coffeecup
+\let\Coffeecup\relax
+\let\Heart\relax
+\let\Smiley\relax
+
+\usepackage{marvosym, utfsym, circledsteps}
+%\usepackage{figchild}
+\usepackage{cookingsymbols}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+%%%% ハイパーリンク
+%%%% hyperref.sty は preamble の最後で読み込む
+\usepackage{hyperref}
+\usepackage{xurl}
+\hypersetup{bookmarks=true, bookmarksnumbered=true, pdfauthor={iotsuka1958}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{litetable, twemojis}
+\usepackage[mono=false]{libertine}
+\usepackage{ulem}
+\usetikzlibrary{calendar, positioning}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\makeatletter
+%\newcommand*{\themonth}{\two@digits\month}
+%\newcommand*{\theday}{\two@digits\day}
+%\makeatother
+%\newcommand{\mytoday}{{\the\year}年{\themonth}月{\theday}日}
+\newcommand{\mytoday}{{\the\year}年{\the\month}月{\the\day}日}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{datetime2}
+\usepackage{datetime2-calc}
+\makeatletter
+\newcommand{\DOWjpn}{%
+\DTMcomputedayofweekindex{\@dtm@currentyear-\@dtm@currentmonth-\@dtm@currentday}{\DOWindex}%
+\ifcase\DOWindex 月\or 火\or 水\or 木\or 金\or 土\or 日\fi%
+}
+\newcommand{\DTMjpn}{%
+\@dtm@currentyear/\@dtm@currentmonth/\@dtm@currentday(\DOWjpn)%
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\pagestyle{empty}
+\thispagestyle{empty}
+
+  Goob Morning! みなさん、おはようございます。
+  %Hello! みなさん、こんにちは。 お元気でいらっしゃいますか。
+  ごきげんいかがでしょう
+\typeout{--- Region from BEGIN to END ---}
+
+\end{document}
