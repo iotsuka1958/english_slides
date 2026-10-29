@@ -17,6 +17,7 @@
 \setbeamercolor{block body example}{bg=mLightGreen!15}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{myPreamble4Slide.tex}
+\usetikzlibrary{arrows.meta}
 \usepackage{pxrubrica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{English is fun.}
@@ -267,15 +268,17 @@
     ]
     \noindent{}Let's make delicious pancakes for breakfast today!
 
-    First, put the flour, milk, \hyperlink{AND}{and} eggs into a big bowl. Mix them well. Please be careful with the hot pan.
+    First, put the flour, milk, \hyperlink{AND}{and} eggs \hyperlink{INTO}{into} a big bowl. Mix them well. Please be careful with the hot pan.
 
     Next, pour some butter into the pan. Cook the pancake \hyperlink{FOR}{for} two minutes. Don't touch the pan with your hands! \hyperlink{TURNOVER}{Turn it over} carefully.
 
-    Now, put the warm pancake on a plate. Add sweet honey \hyperlink{AND2}{and} fresh strawberries. Eat it with your family. Let's enjoy our sweet morning together!
+    Now, put the warm pancake \hyperlink{ON}{on} a plate. Add sweet honey \hyperlink{AND2}{and} fresh strawberries. Eat it with your family. Let's enjoy our sweet morning together!
   \end{tcolorbox}
 
   \vspace{-4pt}
-  \visible<2->{\footnotesize 次の各文が本文の内容とあっていればT,そうでなければFと答えましょう}
+  \visible<2->{\footnotesize 次の各文が本文の内容とあっていればT,そうでなければFと答えましょう}%
+  \hfill\hyperlink{WORDS}{\beamergotobutton{Words}}
+
   \vspace{-11pt}
   \begin{enumerate}\setlength{\itemsep}{-3.2pt}
     \item<2-> Mix the flour, milk, and eggs in a big bowl.\hfill\visible<3->{T}
@@ -363,6 +366,7 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Important Words and Phrases}
+  \hypertarget{WORDS}{}
   \hfill{\tiny 0241}\,{\tiny\myaudio{./audio/032_imperative_word.mp3}\,word}
   \pause
   \large
@@ -377,9 +381,42 @@
     \item  turn over\textipa{/t\'\textrhookschwa :n o\'Uv\textrhookschwa /}\hfill\visible<9->{{\scriptsize \Circled{\,動\,} ～をひっくり返す}}
     \item add \textipa{/\'\ae d/}\hfill\visible<10->{{\scriptsize \Circled{\,動\,} ～を加える}}
   \end{enumerate}
+
+  \hfill\hyperlink{READING}{\beamergotobutton{Reading}}
+\end{frame}
+%%%%%%%%%%%%%
+\begin{frame}[plain]{Put the flour, milk, and eggs into a big bowl.}
+  \hypertarget{INTO}{}
+
+  \begin{figure}[htbp]
+    \centering
+    \input{../images/figs/bowl-trajectory.tikz}
+    \caption{put A into B}
+    \label{fig:bowl-trajectory}
+  \end{figure}
+  \vspace{-25pt}
+  \hfill\hyperlink{READING}{\beamergotobutton{Reading}}
+\end{frame}
+%%%%%%%%%%%%%
+\begin{frame}[plain]{Put the warm pancake on a plate.}
+  \hypertarget{ON}{}
+  \begin{figure}[htbp]
+    \centering
+    \input{../images/figs/plate-trajectory.tikz}
+    \caption{put A on B}
+    \label{fig:plate-trajectory}
+  \end{figure}
+  \vspace{-25pt}
+  \hfill\hyperlink{READING}{\beamergotobutton{Reading}}
 \end{frame}
 %%%%%%%%%%%%%%
-
+\begin{frame}[plain]{前置詞 on / into}
+  \begin{description}
+    \item[on] ～に接触して、～の上に
+    \item[into] ～の中に\hfill{}{$<$ in $+$ to}
+  \end{description}
+\end{frame}
+%%%%%%%%%%%%%
 \begin{frame}[plain]{大意}
 
   パンケーキをつくろう
@@ -401,28 +438,29 @@
   \begin{block}<1->{命令文：～しなさい}
 
     \begin{itemize}\setbeamertemplate{items}[square]\small
-      \item<2-> 「～しなさい」と命令を表すには\,\Circled[fill color=white]{ 動詞の原形 }\,\,ではじめる\hfill{\scriptsize Stand up.}\\
-            {\scriptsize 一般動詞でも\textbf{be}動詞でも同じです}\hfill{\scriptsize Be quiet.}\\
+      \item<2-> 「～しなさい」と命令を表すには\,\Circled[fill color=white]{ 動詞の原形 }\,\,ではじめる\hfill{\scriptsize \textbf{Stand} up.}\\
+            {\scriptsize 一般動詞でも\textbf{be}動詞でも同じです}\hfill{\scriptsize \textbf{Be} quiet.}\\
       \item<3-> \textbf{Please} $+$ 命令文. $\Longleftrightarrow$ 命令文 $+$ , \textbf{please}.%
-            \hfill{\scriptsize Please sit down. $\Longleftrightarrow$ Sit down, please.}\\
+            \hfill{\scriptsize \textbf{Please} sit down. $\Longleftrightarrow$ Sit down, \textbf{please}.}\\
             \textipa{/pl\'\i:z/}
     \end{itemize}
   \end{block}
 
 
-  \begin{block}<4->{否定の命令文：～するな Don't \textipa{/d\'oUnt/}}
+  \begin{block}<4->{否定の命令文：～するな \textbf{Don't} \textipa{/d\'oUnt/}}
     \begin{itemize}\setbeamertemplate{items}[square]\small
-      \item<5-> 「～するな」と否定の命令を表すには\textbf{Don't} $+$ \Circled[fill color=white]{ 動詞の原形 }\hfill{\scriptsize Don't move.}\\
-            \hfill{\scriptsize Don't be late.}
+      \item<5-> 「～するな」と否定の命令を表すには\textbf{Don't} $+$ \Circled[fill color=white]{ 動詞の原形 }\hfill{\scriptsize \textbf{Don't} move.}\\
+            \hfill{\scriptsize \textbf{Don't} be late.}
     \end{itemize}
   \end{block}
 
   \begin{block}<6->{勧誘・提案：～しましょう Let's \textipa{/lets/}}
     \begin{itemize}\setbeamertemplate{items}[square]\small
-      \item<7-> 「～しましょう」と相手を誘うときは\textbf{Let's} $+$ \Circled[fill color=white]{ 動詞の原形 }\hfill{\scriptsize Let's dance.}\\
+      \item<7-> 「～しましょう」と相手を誘うときは\textbf{Let's} $+$ \Circled[fill color=white]{ 動詞の原形 }\hfill{\scriptsize \textbf{Let's} dance.}\\
             \hfill{\scriptsize *Let's lunch.\hspace{20pt}*Let's singing.}
     \end{itemize}
   \end{block}
+  \vspace{-10pt}
   \hfill{\tiny 0253}\,{\scriptsize \myaudio{./audio/032_imperative_09.mp3}}\,{\tiny 09}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
@@ -444,7 +482,7 @@
   あらためて確認しておきましょう
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+\begin{frame}[plain]
 
   \includegraphics[width=1.01\textwidth]{./infographic/032_imperative_infographic.png}
 

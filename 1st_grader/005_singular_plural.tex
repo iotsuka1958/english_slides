@@ -28,6 +28,7 @@
 \usepackage{bclogo}
 \usepackage{marvosym}
 \usepackage{tipa}
+\usepackage{lua-ul}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
@@ -547,7 +548,7 @@
   \pause
   {\LARGE a man}\pause\hspace{15pt}{\Large \textipa{/m\'\ae n/}}
   \pause
-  \hfill{\textipa{/\ae /}}\pause
+  \hfill{\textipa{/\ae /}} \underLine{a}pple, c\underLine{a}t\pause
 
   \bigskip
 
@@ -617,8 +618,6 @@
   \hspace{45pt}{\LARGE two \textcolor{orange}{\bfseries children}}%
   \pause\hspace{15pt}{\Large \textipa{/tS\'Ildr\textschwa n/}}
 
-
-  \bigskip
 
   \bigskip
 
@@ -733,7 +732,7 @@
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]{Notes}
+\begin{frame}[plain,t]{Notes}
   \hypertarget{ABandC}{}
   \begin{enumerate}[<+->]
     \setlength{\itemsep}{5pt}
@@ -753,10 +752,15 @@
               and             \\
               big potatoes    \\
             \end{tabular}\right\}$ to the families.\\
-          \hfill{\scriptsize give A to B: AをBにあたえる}
+          \hfill{\visible<4->{\scriptsize give A to B: AをBにあたえる}}
   \end{enumerate}
 
   \hfill\hyperlink{READING}{\beamerbutton{reading}}
+
+  \vspace{-90pt}
+
+  \hspace{130pt}\visible<5->{\scalebox{6}{\textcolor{red!20}{A}}}%
+  \hspace{70pt}\visible<6->{\scalebox{6}{\textcolor{red!20}{B}}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{Notes}
@@ -770,10 +774,37 @@
             \item There are 複数名詞 $+$ 場所.
             \item \textbf{There are} two cats under the table.
           \end{enumerate}
+    \item ～に\ldots{}がある / いる
   \end{enumerate}
+
+  \mbox{}\hfill{\tiny 0113}\,{\scriptsize \myaudio{./audio/005_singular_plural_13.mp3}}\,{\tiny 13}
+
 
   \hfill\hyperlink{READING}{\beamerbutton{reading}}
 \end{frame}
+%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]{大意}
+  \begin{tcolorbox}[title=小さな農場での暮らし]\parindent=1\zw
+
+    グリーンさんは大都市近くの小さな農場に住んでいます。
+    彼はすてきな家と古い納屋を2つ持っています。
+
+    農場にはたくさんの動物が住んでいます。
+    彼は2匹の犬と3匹の猫を飼っています。
+    猫は野原で小さなネズミをよく追いかけます。
+
+    毎週土曜日、男の子と女の子がバスで農場を訪れます。
+    子どもたちは馬、牛、ひな鳥に餌をあげます。
+
+    グリーンさんは、新鮮なトマト、甘いリンゴ、大きなジャガイモを家族にプレゼントします。
+    訪れた人たちは皆、そこで楽しい時間を過ごします。
+  \end{tcolorbox}
+
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%
+\section{まとめ}
 %%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain]{まとめ1}
   \begin{block}{基本}\small

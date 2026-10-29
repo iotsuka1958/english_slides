@@ -1,6 +1,8 @@
-team.
-tip.
-ticket.
-two.
-tool.
-tour.
+this
+that
+these
+those
+they
+them
+there
+mother
