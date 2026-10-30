@@ -1,5 +1,4 @@
-boil<break time="2s"/>boiled<break time="2s"/>boiled
-use<break time="2s"/>used<break time="2s"/>used
-bake<break time="2s"/>baked<break time="2s"/>baked
-break<break time="2s"/>broke<break time="2s"/>broken
-steal<break time="2s"/>stole<break time="2s"/>stolen
+cook<break time="2s"/>cooked<break time="2s"/>cooked
+make<break time="2s"/>made<break time="2s"/>made
+take<break time="2s"/>took<break time="2s"/>taken
+write<break time="2s"/>wrote<break time="2s"/>written
